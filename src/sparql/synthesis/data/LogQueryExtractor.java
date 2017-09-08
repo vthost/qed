@@ -58,26 +58,32 @@ public class LogQueryExtractor {
 		{FEATURE_OPTIONAL,FEATURE_UNION}, {FEATURE_FILTER,FEATURE_REGEX}
 	};
 
-//	TODO fix using variables for subject, predicate, too
-//	how to make sure that id occurs in all parts using sth like the following?
-//	{ ?id lsqv:mentionsSubject ?s} UNION { ?id lsqv:mentionsPredicate ?p} UNION { ?id lsqv:mentionsObject ?o}
 		
 //	TODO add condition to look only for SELECT queries (instance of sp:Select)
 	
 //	TODO check if it is possible to bound the number of nestings
+	
+//	TODO check if this works as intended
 	public static String SPARQL_TEMPLATE_START = 
 			"PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
 			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
-//			+ "SELECT ?id (COUNT(?id) as ?ovcount) WHERE { "
-			+ "SELECT DISTINCT ?id ?text WHERE { "
-			+ "?id sp:text ?text ; lsqv:resultSize ?rs ; "
-			+ "lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp ;"
-			+ "lsqv:mentionsObject ?o; ";
-	
+			+ "SELECT ?text WHERE { "
+			+ "?id sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; ";
+
 	public static String SPARQL_TEMPLATE_END = 
-			" . FILTER (?rs > 0 && ?rt < 100 && ?tp > 2 && regex(?o,\"^[?]\") )} "
-//			+ "GROUP BY ?id ORDER BY ASC(?ovcount)" 
-			+ "LIMIT 5";
+			" FILTER(?rs > 0 && ?rt < 100 && ?tp > 3). "
+			+ "{"
+			+ "SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { "
+			+ "{ SELECT ?id (0 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. }} UNION "
+			+ "{ SELECT ?id (1 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. FILTER (regex(?s,\"^[?]\"))}} UNION "
+			+ "{ SELECT ?id (1 as ?vcount) WHERE { ?id lsqv:mentionsPredicate ?p. FILTER (regex(?p,\"^[?]\"))}} UNION "
+			+ "{ SELECT ?id (1 as ?vcount) WHERE { ?id lsqv:mentionsObject ?o. FILTER (regex(?o,\"^[?]\"))}} "
+			+ "}  "
+			+ "GROUP BY ?id "
+			+ "} "
+			+ "} "
+			+ "ORDER BY ASC(?vcountsum) "
+			+ "LIMIT 5 ";
 	
 	public static String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
 
@@ -90,7 +96,7 @@ public class LogQueryExtractor {
 				SPARQL_TEMPLATE_START 
 				+ SPARQL_TEMPLATE_FEATURE
 				+ String.join("; "+SPARQL_TEMPLATE_FEATURE, config[0])
-				+ ";"
+				+ ". "
 				+ SPARQL_TEMPLATE_END;
 		
 		System.out.println(query);
@@ -108,7 +114,7 @@ public class LogQueryExtractor {
             while(rs.hasNext()) {
             	logQueries.add(rs.next().getLiteral("?text").getString());
             }
-//            System.out.println(logQueries);
+            System.out.println(logQueries);
 //          ResultSetFormatter.out(rs);
             
             FileWriter writer = new FileWriter(QUERY_FILE); 
