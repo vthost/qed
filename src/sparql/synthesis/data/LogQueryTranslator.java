@@ -15,10 +15,7 @@ import org.apache.jena.sparql.syntax.ElementPathBlock;
 
 public class LogQueryTranslator {
 	
-	public String toConstructQuery(String qs) {
-		
-
-		
+	public Query toConstructQuery(String qs) {
 
 		Query q1 = QueryFactory.create(qs);
 		Element p = q1.getQueryPattern();
@@ -26,48 +23,34 @@ public class LogQueryTranslator {
 		Query q = QueryFactory.make();
 		q.setPrefixMapping(q1.getPrefixMapping());
 		q.setBaseURI(q1.getBaseURI());
-		q.setQueryPattern(p);                              
+		q.setQueryPattern(q1.getQueryPattern());                              
 		q.setQueryConstructType();
-		q.setConstructTemplate(QueryFactory.createTemplate("{}"));
-		
-//		constructing it in this way seems to work neither
-//		String q2s = "CONSTRUCT {  } WHERE{ }";
-//		Query q2 = QueryFactory.create(q2s, Syntax.syntaxARQ);
-
 		
 		if(p instanceof ElementGroup) {
 			
-			processElementGroup((ElementGroup) p, q);
-		}
+			String s = processElementGroup((ElementGroup) p, q1);
+			
+			q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
 
+		}
 		
-		return null;
-		
+		return q;		
 	}
 	
 	
-	private void processElementGroup(ElementGroup g, Query q) {
+	private String processElementGroup(ElementGroup g, Query q) {
 		
 		for (Element e : g.getElements()) {
 			
-			if(e instanceof ElementGroup)  processElementGroup((ElementGroup) e, q);
+			if(e instanceof ElementGroup)  return processElementGroup((ElementGroup) e, q);
 			
-			else if(e instanceof ElementPathBlock) processElementPathBlock((ElementPathBlock) e, q);
+			else if(e instanceof ElementPathBlock) return e.toString();
 		}
-	}
-
-	private void processElementPathBlock(ElementPathBlock pb, Query q) {
-		for(TriplePath tp: pb.getPattern().getList()) {
-
-			Quad quad = new Quad(null, tp.asTriple());
-//			TODO the quads list is unmodifiable...
-			q.getConstructTemplate().getQuads().add(quad);
-		}
-
-		System.out.println("test");
-		System.out.println(q);
 		
+		return null;
 	}
+
+	
 
 
 	public static void main(String[] args) {
@@ -87,8 +70,8 @@ public class LogQueryTranslator {
 		}
 		
 		LogQueryTranslator t = new LogQueryTranslator();
-		t.toConstructQuery(logQueries.get(0));
-		
+		Query q = t.toConstructQuery(logQueries.get(0));
+		System.out.println(q);
 		
 //		TODO we then can query dbpedia in the same way we query the endpoint in the other class using ...
 //		QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query) 
