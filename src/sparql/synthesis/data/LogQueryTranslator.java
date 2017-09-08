@@ -1,14 +1,20 @@
 package sparql.synthesis.data;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.sparql.core.Quad;
 import org.apache.jena.sparql.core.TriplePath;
+import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementPathBlock;
@@ -70,11 +76,27 @@ public class LogQueryTranslator {
 		}
 		
 		LogQueryTranslator t = new LogQueryTranslator();
-		Query q = t.toConstructQuery(logQueries.get(0));
-		System.out.println(q);
 		
-//		TODO we then can query dbpedia in the same way we query the endpoint in the other class using ...
-//		QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query) 
+		List<Query> qs = new ArrayList<Query>();
+		for (String lq : logQueries) {
+			
+			qs.add(t.toConstructQuery(lq));
+			
+		}
+		
+		System.out.println(qs);
+		
+		try ( QueryExecution qexec = 
+        		QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qs.get(0)) ) {
+
+            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
+
+            // execute
+            ResultSet rs = qexec.execSelect();
+            ResultSetFormatter.out(rs);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } 
 		
 	}
 
