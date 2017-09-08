@@ -12,6 +12,7 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.sparql.core.Quad;
 import org.apache.jena.sparql.core.TriplePath;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
@@ -84,19 +85,25 @@ public class LogQueryTranslator {
 			
 		}
 		
-		System.out.println(qs);
+//		System.out.println(qs);
 		
-		try ( QueryExecution qexec = 
-        		QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", qs.get(0)) ) {
+		for (Query query : qs) {
+			try ( QueryExecution qexec = 
+	        		QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", query) ) {
 
-            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
+	            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
 
-            // execute
-            ResultSet rs = qexec.execSelect();
-            ResultSetFormatter.out(rs);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } 
+	            // execute
+	            Model m = qexec.execConstruct();
+	            m.write(System.out, "TURTLE");
+	            System.out.println();
+
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        } 
+		}
+		
+		
 		
 	}
 
