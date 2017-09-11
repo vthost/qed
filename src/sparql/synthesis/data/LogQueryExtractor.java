@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
@@ -59,31 +60,32 @@ public class LogQueryExtractor {
 	};
 
 		
-//	TODO add condition to look only for SELECT queries (instance of sp:Select)
-	
+
 //	TODO check if it is possible to bound the number of nestings
 	
-//	TODO check if this works as intended
 	public static String SPARQL_TEMPLATE_START = 
 			"PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
 			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
-			+ "SELECT ?text WHERE { "
+					
+			+ "SELECT ?id ?text WHERE { "
+			+ "?id a sp:Select. "
 			+ "?id sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; ";
 
 	public static String SPARQL_TEMPLATE_END = 
 			" FILTER(?rs > 0 && ?rt < 100 && ?tp > 3). "
-			+ "{"
-			+ "SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { "
+			//subquery start
+			+ "{ SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { " 
 			+ "{ SELECT ?id (0 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. }} UNION "
-			+ "{ SELECT ?id (1 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. FILTER (regex(?s,\"^[?]\"))}} UNION "
-			+ "{ SELECT ?id (1 as ?vcount) WHERE { ?id lsqv:mentionsPredicate ?p. FILTER (regex(?p,\"^[?]\"))}} UNION "
-			+ "{ SELECT ?id (1 as ?vcount) WHERE { ?id lsqv:mentionsObject ?o. FILTER (regex(?o,\"^[?]\"))}} "
-			+ "}  "
-			+ "GROUP BY ?id "
-			+ "} "
-			+ "} "
-			+ "ORDER BY ASC(?vcountsum) "
-			+ "LIMIT 5 ";
+			
+			+ "{ SELECT ?id (COUNT(DISTINCT ?v) as ?vcount) WHERE { " 
+			+ "{ SELECT ?id ?v WHERE { ?id lsqv:mentionsSubject ?v. FILTER (regex(?v,\"^[?]\"))}} UNION "
+			+ "{ SELECT ?id ?v WHERE { ?id lsqv:mentionsPredicate ?v. FILTER (regex(?v,\"^[?]\"))}} UNION "
+			+ "{ SELECT ?id ?v WHERE { ?id lsqv:mentionsObject ?v. FILTER (regex(?v,\"^[?]\"))}} "
+			+ "} GROUP BY ?id } "
+			
+			+ "} GROUP BY ?id }"
+			//subquery end
+			+ "} ORDER BY ASC(?vcountsum) LIMIT 10 ";
 	
 	public static String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
 
@@ -104,25 +106,31 @@ public class LogQueryExtractor {
         try ( QueryExecution qexec = 
         		QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query) ) {
 
-            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
+//            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
             ((QueryEngineHTTP)qexec).addParam("default-graph-uri", "http://dbpedia.org") ;
 
             // execute
             ResultSet rs = qexec.execSelect();
             
+            List<String> logQueryIds = new ArrayList<String>();
             List<String> logQueries = new ArrayList<String>();
             while(rs.hasNext()) {
-            	logQueries.add(rs.next().getLiteral("?text").getString());
+            		QuerySolution s = rs.next();
+            		logQueryIds.add(s.getResource("?id").toString());
+            		logQueries.add(s.getLiteral("?text").getString());
             }
+            System.out.println(logQueryIds);
             System.out.println(logQueries);
-//          ResultSetFormatter.out(rs);
-            
+
             FileWriter writer = new FileWriter(QUERY_FILE); 
-            int i = 0;
-            for(String str: logQueries) {
-              writer.write(str);
-              if(++i < logQueries.size()) writer.write("\n");
-            }
+            
+            for (int i = 0; i < logQueries.size(); i++) {
+            		writer.write(logQueryIds.get(i));
+            		writer.write("\n");
+            		writer.write(logQueries.get(i));
+            		if(i < logQueries.size()-1) writer.write("\n");
+			}
+
             writer.close();
 
 
