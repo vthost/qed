@@ -1,9 +1,0 @@
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:dbr="http://dbpedia.org/resource/"
-    xmlns:dbp="http://dbpedia.org/property/">
-  <rdf:Description rdf:about="http://dbpedia.org/resource/Horus">
-    <dbp:parents rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    >Osiris and Isis</dbp:parents>
-  </rdf:Description>
-</rdf:RDF>
