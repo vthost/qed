@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="containedIn"/>
+  </head>
+  <results>
+    <result>
+      <binding name="containedIn">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">*David Mitchell&#x0A;*Robert Webb&#x0A;*James Bachman&#x0A;*Mark Evans&#x0A;*Jesse Armstrong&#x0A;*Sam Bain&#x0A;*John Finnemore&#x0A;*Chris Reddy&#x0A;*Toby Davies&#x0A;*Abigail Burdess&#x0A;*Jonathan Dryden-Taylor&#x0A;*Simon Kane</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>

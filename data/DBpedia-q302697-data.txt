@@ -1,0 +1,376 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbc="http://dbpedia.org/resource/Category:"
+    xmlns:georss="http://www.georss.org/georss/"
+    xmlns:ns10="http://dbpedia.org/datatype/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:virtrdf="http://www.openlinksw.com/schemas/virtrdf#"
+    xmlns:yago="http://dbpedia.org/class/yago/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:dbp="http://dbpedia.org/property/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <yago:Municipality108626283 rdf:about="http://dbpedia.org/resource/Port_Moresby">
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Capital108518505"/>
+    <dbp:aprMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >27</dbp:aprMeanC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatProvincialCapitalsInPapuaNewGuinea"/>
+    <dbp:novHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >75</dbp:novHumidity>
+    <dbp:febLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.5</dbp:febLowC>
+    <dbp:marHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >31.399999999999998579</dbp:marHighC>
+    <dbp:location rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Port Moresby, Papua New Guinea</dbp:location>
+    <dbp:mayRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >33.799999999999997158</dbp:mayRecordHighC>
+    <dbp:decHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >77</dbp:decHumidity>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatPopulatedPlacesEstablishedIn1873"/>
+    <dbp:julSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >203</dbp:julSun>
+    <dbp:demographicsType rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Languages</dbp:demographicsType>
+    <dbp:febMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >27.300000000000000711</dbp:febMeanC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Port_Moresby"/>
+    <dbp:yearPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >114</dbp:yearPrecipitationDays>
+    <dbp:pushpinMapCaption rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Location within Papua New Guinea</dbp:pushpinMapCaption>
+    <dbp:longs rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >7.7000000000000001776</dbp:longs>
+    <dbp:mayPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >56.200000000000002842</dbp:mayPrecipitationMm>
+    <dbp:julLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >22.399999999999998579</dbp:julLowC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoGeoEntity"/>
+    <dbp:demographics1Title rdf:resource="http://dbpedia.org/resource/Languages_of_Papua_New_Guinea"/>
+    <dbp:janMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >27.399999999999998579</dbp:janMeanC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Tract108673395"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:National_Capital_District_(Papua_New_Guinea)"/>
+    <dbp:metricFirst rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Yes</dbp:metricFirst>
+    <dbp:febRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >18.800000000000000711</dbp:febRecordLowC>
+    <dbp:longm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >13</dbp:longm>
+    <dbp:subdivisionType rdf:resource="http://dbpedia.org/resource/Provinces_of_Papua_New_Guinea"/>
+    <dbp:octHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >76</dbp:octHumidity>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Location100027167"/>
+    <dbp:augHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >76</dbp:augHumidity>
+    <dbp:yearLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.300000000000000711</dbp:yearLowC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Ports_and_harbours_of_Papua_New_Guinea"/>
+    <dbp:pushpinLabelPosition rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >bottom</dbp:pushpinLabelPosition>
+    <geo:geometry rdf:datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry"
+    >POINT(147.14805603027 -9.5136384963989)</geo:geometry>
+    <dbp:marPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >189.80000000000001137</dbp:marPrecipitationMm>
+    <dbp:octPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >5</dbp:octPrecipitationDays>
+    <dbp:date rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >August 2010</dbp:date>
+    <dbp:janRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >36.200000000000002842</dbp:janRecordHighC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatCapitalDistrictsAndTerritories"/>
+    <dbp:decMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >27.800000000000000711</dbp:decMeanC>
+    <dbp:febRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >36.100000000000001421</dbp:febRecordHighC>
+    <dbp:novRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >36.299999999999997158</dbp:novRecordHighC>
+    <dbp:marRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >35.399999999999998579</dbp:marRecordHighC>
+    <dbp:decRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >19.600000000000001421</dbp:decRecordLowC>
+    <dbp:augPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >12</dbp:augPrecipitationMm>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >-9.4784717559814453125</geo:lat>
+    <dbp:decRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >36.299999999999997158</dbp:decRecordHighC>
+    <dbp:aprSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >200</dbp:aprSun>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoLegalActorGeo"/>
+    <dbp:janLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.699999999999999289</dbp:janLowC>
+    <dbp:seatType rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Capital</dbp:seatType>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Seat108647945"/>
+    <dbp:novPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >40</dbp:novPrecipitationMm>
+    <dbp:populationDensityKm rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >auto</dbp:populationDensityKm>
+    <dbp:coordinatesRegion rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >PG</dbp:coordinatesRegion>
+    <dbp:decPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >97.799999999999997158</dbp:decPrecipitationMm>
+    <dbp:mayPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >9</dbp:mayPrecipitationDays>
+    <dbp:julRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >10.400000000000000355</dbp:julRecordLowC>
+    <dbp:demographics1Info rdf:resource="http://dbpedia.org/resource/Tok_Pisin"/>
+    <dbp:yearPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >898.79999999999995453</dbp:yearPrecipitationMm>
+    <dbp:pushpinMap rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Papua New Guinea</dbp:pushpinMap>
+    <dbp:octPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >15.199999999999999289</dbp:octPrecipitationMm>
+    <dbp:decSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >216</dbp:decSun>
+    <dbp:octSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >231</dbp:octSun>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/GeographicalArea108574314"/>
+    <dbp:novSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >243</dbp:novSun>
+    <dbp:julHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >77</dbp:julHumidity>
+    <dbp:yearRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >10.400000000000000355</dbp:yearRecordLowC>
+    <dbp:yearHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >78</dbp:yearHumidity>
+    <dbp:latd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >9</dbp:latd>
+    <dbp:lats rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >49.100000000000001421</dbp:lats>
+    <dbp:junPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >21.600000000000001421</dbp:junPrecipitationMm>
+    <dbp:augPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</dbp:augPrecipitationDays>
+    <dbp:octMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >27.5</dbp:octMeanC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Provincial_capitals_in_Papua_New_Guinea"/>
+    <dbp:yearMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >26.899999999999998579</dbp:yearMeanC>
+    <dbp:julMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >25.699999999999999289</dbp:julMeanC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Port108633957"/>
+    <dbp:decHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >32.399999999999998579</dbp:decHighC>
+    <dbp:aprHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >82</dbp:aprHumidity>
+    <dbp:junSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >200</dbp:junSun>
+    <dbp:junHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >30.300000000000000711</dbp:junHighC>
+    <dbp:junHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >79</dbp:junHumidity>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/ProvincialCapital108695198"/>
+    <dbp:marRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >18.300000000000000711</dbp:marRecordLowC>
+    <dbp:aprLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.5</dbp:aprLowC>
+    <dbp:sepHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >31</dbp:sepHighC>
+    <dbp:julRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >33.299999999999997158</dbp:julRecordHighC>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >-9.5136384963989257812</geo:lat>
+    <dbp:imageSkyline rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Port Moresby Town2 Mschlauch.jpg</dbp:imageSkyline>
+    <dbp:imageFlag rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Flag of NCD.svg</dbp:imageFlag>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/City108524735"/>
+    <dbp:sepRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >34.799999999999997158</dbp:sepRecordHighC>
+    <dbp:janHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >79</dbp:janHumidity>
+    <dbp:sepMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >26.5</dbp:sepMeanC>
+    <dbp:sepRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >14.400000000000000355</dbp:sepRecordLowC>
+    <dbp:octRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >16.300000000000000711</dbp:octRecordLowC>
+    <dbp:janSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >182</dbp:janSun>
+    <dbp:sepPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >5</dbp:sepPrecipitationDays>
+    <dbp:julPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</dbp:julPrecipitationDays>
+    <dbp:yearHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >31.300000000000000711</dbp:yearHighC>
+    <dbp:aprRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >34.200000000000002842</dbp:aprRecordHighC>
+    <dbp:novPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >6</dbp:novPrecipitationDays>
+    <dbp:octRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >35.5</dbp:octRecordHighC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Center108523483"/>
+    <dbp:octLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.5</dbp:octLowC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Capitals_in_Oceania"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/AdministrativeDistrict108491826"/>
+    <dbp:novHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >32.5</dbp:novHighC>
+    <dbp:establishedTitle rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Established</dbp:establishedTitle>
+    <dbp:coordinatesType rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >region:PG_type:city_scale:1600000</dbp:coordinatesType>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatCapitals"/>
+    <dbp:junRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >33.899999999999998579</dbp:junRecordHighC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/UrbanArea108675967"/>
+    <geo:geometry rdf:datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry"
+    >POINT(147.21881103516 -9.4784717559814)</geo:geometry>
+    <dbp:maySun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >211</dbp:maySun>
+    <dbp:febPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >140.59999999999999432</dbp:febPrecipitationMm>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity"/>
+    <dbp:precipitationColour rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >green</dbp:precipitationColour>
+    <geo:geometry rdf:datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry"
+    >POINT(147.14805603027 -9.4784717559814)</geo:geometry>
+    <dbp:janHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >32.100000000000001421</dbp:janHighC>
+    <dbp:mayRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >14.5</dbp:mayRecordLowC>
+    <dbp:subdivisionType rdf:resource="http://dbpedia.org/resource/List_of_sovereign_states"/>
+    <dbp:aprHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >31.300000000000000711</dbp:aprHighC>
+    <dbp:junPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >6</dbp:junPrecipitationDays>
+    <dbp:novMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >27.600000000000001421</dbp:novMeanC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Port_cities_in_Oceania"/>
+    <dbp:flagSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >160</dbp:flagSize>
+    <dbp:marPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >18</dbp:marPrecipitationDays>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Papua_Region"/>
+    <dbp:novRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >16</dbp:novRecordLowC>
+    <dbp:janRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >20.399999999999998579</dbp:janRecordLowC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Area108497294"/>
+    <dbp:febSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >158</dbp:febSun>
+    <dbp:longew rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >E</dbp:longew>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Site108651247"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Point108620061"/>
+    <dbp:febHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >31.600000000000001421</dbp:febHighC>
+    <dbp:aprPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >11</dbp:aprPrecipitationDays>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatPortsAndHarboursOfPapuaNewGuinea"/>
+    <dbp:marMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >27.100000000000001421</dbp:marMeanC>
+    <dbp:mayHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >31</dbp:mayHighC>
+    <dbp:junRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >14.5</dbp:junRecordLowC>
+    <dbp:imageCaption rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Downtown Port Moresby</dbp:imageCaption>
+    <dbp:sepHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >76</dbp:sepHumidity>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatPortCitiesInOceania"/>
+    <dbp:junLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.100000000000001421</dbp:junLowC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Gulf_of_Papua"/>
+    <dbp:demographics1Info rdf:resource="http://dbpedia.org/resource/English_language"/>
+    <dbp:latns rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >S</dbp:latns>
+    <dbp:augSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >222</dbp:augSun>
+    <dbp:populationAsOf rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2011</dbp:populationAsOf>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >147.1480560302734375</geo:long>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatPortCities"/>
+    <dbp:yearRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >36.299999999999997158</dbp:yearRecordHighC>
+    <dbp:mayHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >81</dbp:mayHumidity>
+    <dbp:mayLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.5</dbp:mayLowC>
+    <dbp:marLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.399999999999998579</dbp:marLowC>
+    <georss:point>-9.478472 147.148058</georss:point>
+    <dbp:augLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >22.600000000000001421</dbp:augLowC>
+    <dbp:augHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >30.300000000000000711</dbp:augHighC>
+    <dbp:mayMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >26.899999999999998579</dbp:mayMeanC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/District108552138"/>
+    <dbp:augMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >26.100000000000001421</dbp:augMeanC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Capital_districts_and_territories"/>
+    <dbp:aprRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >16.800000000000000711</dbp:aprRecordLowC>
+    <geo:geometry rdf:datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry"
+    >POINT(147.21881103516 -9.5136384963989)</geo:geometry>
+    <dbp:julPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >13.800000000000000711</dbp:julPrecipitationMm>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Object100002684"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PhysicalEntity100001930"/>
+    <dbp:junMeanC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >26.100000000000001421</dbp:junMeanC>
+    <dbp:febPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >16</dbp:febPrecipitationDays>
+    <dbp:marHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >81</dbp:marHumidity>
+    <georss:point>-9.513638888888888 147.21880555555555</georss:point>
+    <dbp:establishedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1873</dbp:establishedDate>
+    <dbp:singleLine rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Yes</dbp:singleLine>
+    <dbp:janPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >192.19999999999998863</dbp:janPrecipitationMm>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >147.21881103515625</geo:long>
+    <dbp:sepSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >213</dbp:sepSun>
+    <dbp:julHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >29.899999999999998579</dbp:julHighC>
+    <dbp:aprPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >105.20000000000000284</dbp:aprPrecipitationMm>
+    <dbp:sepPrecipitationMm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >14.400000000000000355</dbp:sepPrecipitationMm>
+    <dbp:octHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >32</dbp:octHighC>
+    <dbp:febHumidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >81</dbp:febHumidity>
+    <dbp:longd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >147</dbp:longd>
+    <dbp:marSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >184</dbp:marSun>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/GeographicPoint108578706"/>
+    <dbp:latm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >30</dbp:latm>
+    <dbp:source rdf:resource="http://dbpedia.org/resource/World_Meteorological_Organization"/>
+    <dbp:unitPrecipitationDays rdf:datatype="http://dbpedia.org/datatype/millimetre"
+    >0.1</dbp:unitPrecipitationDays>
+    <dbp:yearSun rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2463</dbp:yearSun>
+    <dbp:source rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Deutscher Wetterdienst</dbp:source>
+    <dbp:demographics1Info rdf:resource="http://dbpedia.org/resource/Motu_language"/>
+    <dbp:decPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >12</dbp:decPrecipitationDays>
+    <dbp:decLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.699999999999999289</dbp:decLowC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Populated_places_established_in_1873"/>
+    <dbp:janPrecipitationDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >18</dbp:janPrecipitationDays>
+    <dbp:augRecordHighC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >33.799999999999997158</dbp:augRecordHighC>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Region108630985"/>
+    <dbp:novLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.600000000000001421</dbp:novLowC>
+    <dbp:postalCodeType rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Postal code</dbp:postalCodeType>
+    <dbp:sepLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >23.199999999999999289</dbp:sepLowC>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:1873_establishments_in_Oceania"/>
+    <dbp:augRecordLowC rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >14.800000000000000711</dbp:augRecordLowC>
+  </yago:Municipality108626283>
+</rdf:RDF>

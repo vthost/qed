@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameas"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://data.linkedmdb.org/resource/film/42309</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://www.wikidata.org/entity/Q471500</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://de.dbpedia.org/resource/Das_geheime_Leben_der_Worte</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://es.dbpedia.org/resource/La_vida_secreta_de_las_palabras</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://eu.dbpedia.org/resource/La_vida_secreta_de_las_palabras</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://fr.dbpedia.org/resource/The_Secret_Life_of_Words</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://it.dbpedia.org/resource/La_vita_segreta_delle_parole</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://ja.dbpedia.org/resource/あなたになら言える秘密のこと</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://pl.dbpedia.org/resource/Życie_ukryte_w_słowach</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://wikidata.dbpedia.org/resource/Q471500</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://pt.dbpedia.org/resource/A_Vida_Secreta_das_Palavras</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://rdf.freebase.com/ns/m.06crxf</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://yago-knowledge.org/resource/The_Secret_Life_of_Words</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Secret Life of Words</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">The Secret Life of Words is a 2005 Spanish drama film written and directed by Isabel Coixet and starring Sarah Polley, Tim Robbins, Javier Cámara and Julie Christie. It was released on December 15, 2006.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://d-nb.info/gnd/7526458-4</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:dbp="http://dbpedia.org/property/">
+  <rdf:Description rdf:about="http://dbpedia.org/resource/The_Kevin_Bishop_Show">
+    <dbp:executiveProducer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:executiveProducer>
+    <dbp:director rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:director>
+    <dbp:producer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:producer>
+    <dbp:series rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:series>
+    <dbp:executiveProducer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:executiveProducer>
+    <dbp:director rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:director>
+    <dbp:writer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:writer>
+    <dbp:writer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:writer>
+    <dbp:starring rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:starring>
+    <dbp:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:creator>
+    <dbp:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:creator>
+    <dbp:guest rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:guest>
+    <dbp:director rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:director>
+    <dbp:executiveProducer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:executiveProducer>
+    <dbp:starring rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:starring>
+    <dbp:starring rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:starring>
+    <dbp:writer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:writer>
+    <dbp:guest rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:guest>
+    <dbp:series rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Samantha Martin</dbp:series>
+    <dbp:series rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:series>
+    <dbp:producer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Michael Livingstone</dbp:producer>
+    <dbp:producer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:producer>
+    <dbp:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:creator>
+    <dbp:guest rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Lee Hupfield</dbp:guest>
+  </rdf:Description>
+</rdf:RDF>

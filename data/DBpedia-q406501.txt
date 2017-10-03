@@ -1,0 +1,2 @@
+http://lsq.aksw.org/res/DBpedia-q406501
+PREFIX  :     <http://dbpedia.org/resource/> PREFIX  p:    <http://dbpedia.org/property/>  SELECT  * WHERE   { ?club  p:league  ?league .       { ?club  p:league  :Premier_League .}     UNION       { ?club  p:league  :Football_League_One .}     UNION       { ?club  p:league  :Football_League_Two .}     UNION       { ?club  p:league  :Scottish_Premier_League .}     UNION       { ?club  p:league  :Football_League_Championship .}   } 

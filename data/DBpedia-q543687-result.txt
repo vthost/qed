@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="prop"/>
+    <variable name="val"/>
+  </head>
+  <results>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/AdministrativeDistrict108491826</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Area108497294</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Capital108518505</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Center108523483</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/City108524735</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/District108552138</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/GeographicPoint108578706</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/GeographicalArea108574314</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Location100027167</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Municipality108626283</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Object100002684</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/PhysicalEntity100001930</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Point108620061</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Port108633957</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/ProvincialCapital108695198</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Region108630985</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Seat108647945</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Site108651247</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Tract108673395</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/UrbanArea108675967</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/YagoGeoEntity</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/YagoLegalActorGeo</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatCapitalDistrictsAndTerritories</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatCapitals</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatPopulatedPlacesEstablishedIn1873</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatPortCities</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatPortCitiesInOceania</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatPortsAndHarboursOfPapuaNewGuinea</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatProvincialCapitalsInPapuaNewGuinea</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#lat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">-9.51364</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#lat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">-9.47847</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#long</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">147.148</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#long</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">147.219</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(147.14805603027 -9.5136384963989)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(147.14805603027 -9.4784717559814)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(147.21881103516 -9.5136384963989)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(147.21881103516 -9.4784717559814)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.georss.org/georss/point</uri>
+      </binding>
+      <binding name="val">
+        <literal>-9.513638888888888 147.21880555555555</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.georss.org/georss/point</uri>
+      </binding>
+      <binding name="val">
+        <literal>-9.478472 147.148058</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:1873_establishments_in_Oceania</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Capitals_in_Oceania</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Gulf_of_Papua</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:National_Capital_District_(Papua_New_Guinea)</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Papua_Region</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Populated_places_established_in_1873</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Port_Moresby</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Port_cities_in_Oceania</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Ports_and_harbours_of_Papua_New_Guinea</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Provincial_capitals_in_Papua_New_Guinea</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Capital_districts_and_territories</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationAsOf</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">2011</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationDensityKm</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">auto</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>

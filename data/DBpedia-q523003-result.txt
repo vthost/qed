@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameas"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Everything Bad Is Good for You</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://rdf.freebase.com/ns/m.089q7n</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Everything Bad Is Good for You</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://www.wikidata.org/entity/Q5417971</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Everything Bad Is Good for You</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://id.dbpedia.org/resource/Everything_Bad_is_Good_for_You</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Everything Bad Is Good for You</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://wikidata.dbpedia.org/resource/Q5417971</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Everything Bad Is Good for You</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://yago-knowledge.org/resource/Everything_Bad_Is_Good_for_You</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

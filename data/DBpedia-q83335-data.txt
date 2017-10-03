@@ -1,0 +1,414 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbc="http://dbpedia.org/resource/Category:"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:yago="http://dbpedia.org/class/yago/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Wilhelm_Cuno">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Wilhelm Cuno</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Kurt_Daluege">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Kurt Daluege</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Anthony_Barber">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Anthony Barber</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Benno_Martin">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Benno Martin</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/S_N_Balakrishnan">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">S N Balakrishnan</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Perry_Broad">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Perry Broad</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Gustav_Sorge">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Gustav Sorge</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Lutz_Graf_Schwerin_von_Krosigk">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Lutz Graf Schwerin von Krosigk</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/André_Simonazzi">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">André Simonazzi</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Zhu_Guozhen_(Ming_dynasty)">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Zhu Guozhen (Ming dynasty)</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Johann_Schober">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Johann Schober</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Prince_Maximilian_of_Baden">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Prince Maximilian of Baden</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Gustav_Stresemann">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Gustav Stresemann</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Tô_Hiến_Thành">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Tô Hiến Thành</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Georg_von_Hertling">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Georg von Hertling</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Wilhelm_Stuckart">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Wilhelm Stuckart</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Theobald_von_Bethmann-Hollweg">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Theobald von Bethmann-Hollweg</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Hermann_Senkowsky">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Hermann Senkowsky</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/James_L._Oblinger">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">James L. Oblinger</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Rayson_Huang">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Rayson Huang</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Lê_Văn_Thịnh">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Lê Văn Thịnh</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Nigel_Lawson">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Nigel Lawson</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Guido_Schmidt">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Guido Schmidt</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Thomas_Helbling">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Thomas Helbling</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Franz_Vranitzky">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Franz Vranitzky</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Kingsley_Wood">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Kingsley Wood</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Hermann_Müller_(politician)">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Hermann Müller (politician)</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Friedrich_von_Payer">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Friedrich von Payer</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Zhang_Juzheng">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Zhang Juzheng</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Fred_Sinowatz">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Fred Sinowatz</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Heinrich_Schwarz">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Heinrich Schwarz</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Omar_Davies">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Omar Davies</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Hans_Frank">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Hans Frank</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Yan_Song">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Yan Song</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Arnold_Strippel">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Arnold Strippel</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Arpad_Wigand">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Arpad Wigand</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Wilhelm_Kube">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Wilhelm Kube</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Victor_Capesius">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Victor Capesius</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Hans_Luther">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Hans Luther</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Đỗ_Anh_Vũ">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Đỗ Anh Vũ</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Alfons_Gorbach">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Alfons Gorbach</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Viktor_Klima">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Viktor Klima</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Oskar_Hergt">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Oskar Hergt</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Kurt_Lischka">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Kurt Lischka</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/John_Simon,_1st_Viscount_Simon">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">John Simon, 1st Viscount Simon</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Bernhard_von_Bülow">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Bernhard von Bülow</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Lawrence_Lau">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Lawrence Lau</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Clemens_von_Delbrück">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Clemens von Delbrück</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Wang_Xijue">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Wang Xijue</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Constantin_Fehrenbach">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Constantin Fehrenbach</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Walter_Breisky">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Walter Breisky</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Josef_Klaus">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Josef Klaus</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Lý_Đạo_Thành">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Lý Đạo Thành</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Judith_A._Bense">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Judith A. Bense</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Maximilian_Grabner">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Maximilian Grabner</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Gustav_Bauer">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Gustav Bauer</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Norman_Lamont">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Norman Lamont</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Georg_Michaelis">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Georg Michaelis</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Henry_Hu">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Henry Hu</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Yang_Tinghe">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Yang Tinghe</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Ambrose_King">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Ambrose King</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Hugh_Fraser_(British_politician)">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Hugh Fraser (British politician)</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Richard_Haldane,_1st_Viscount_Haldane">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Richard Haldane, 1st Viscount Haldane</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Reginald_Bray">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Reginald Bray</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Heinz_Baumkötter">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Heinz Baumkötter</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Denis_Healey">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Denis Healey</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Michael_Mayr">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Michael Mayr</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/John_Anderson,_1st_Viscount_Waverley">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">John Anderson, 1st Viscount Waverley</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Anton_Kaindl">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Anton Kaindl</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Otto_of_Stolberg-Wernigerode">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Otto of Stolberg-Wernigerode</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Selwyn_Lloyd">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Selwyn Lloyd</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Ye_Xianggao">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Ye Xianggao</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Samuel_David_Mendelssohn">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Samuel David Mendelssohn</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Willi_Schatz">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Willi Schatz</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Joseph_Wirth">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Joseph Wirth</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/George_Osborne">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">George Osborne</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Wilhelm_Boger">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Wilhelm Boger</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Peter_Thorneycroft">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Peter Thorneycroft</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <dbo:Chancellor rdf:about="http://dbpedia.org/resource/Max_Pauly">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Max Pauly</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Chancellor"/>
+  </dbo:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Derick_Heathcoat-Amory,_1st_Viscount_Amory">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Derick Heathcoat-Amory, 1st Viscount Amory</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+  <yago:Chancellor rdf:about="http://dbpedia.org/resource/Franz_von_Papen">
+    <skos:subject rdf:resource="http://dbpedia.org/resource/Category:Chancellor"/>
+    <rdfs:label xml:lang="en">Franz von Papen</rdfs:label>
+    <rdf:type rdf:resource="http://dbpedia.org/ontology/Chancellor"/>
+  </yago:Chancellor>
+</rdf:RDF>

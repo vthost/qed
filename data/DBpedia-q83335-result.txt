@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="entities"/>
+    <variable name="label"/>
+  </head>
+  <results>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Prince_Maximilian_of_Baden</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Prince Maximilian of Baden</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Georg_Michaelis</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Georg Michaelis</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Otto_of_Stolberg-Wernigerode</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Otto of Stolberg-Wernigerode</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Kingsley_Wood</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Kingsley Wood</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Denis_Healey</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Denis Healey</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Norman_Lamont</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Norman Lamont</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Franz_Vranitzky</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Franz Vranitzky</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Fred_Sinowatz</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Fred Sinowatz</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Peter_Thorneycroft</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Peter Thorneycroft</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Yang_Tinghe</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Yang Tinghe</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Gustav_Stresemann</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Gustav Stresemann</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/John_Simon,_1st_Viscount_Simon</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">John Simon, 1st Viscount Simon</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Joseph_Wirth</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Joseph Wirth</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Hans_Frank</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Hans Frank</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Nigel_Lawson</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Nigel Lawson</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Georg_von_Hertling</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Georg von Hertling</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Đỗ_Anh_Vũ</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Đỗ Anh Vũ</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Reginald_Bray</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Reginald Bray</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Wilhelm_Stuckart</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Wilhelm Stuckart</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Josef_Klaus</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Josef Klaus</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Selwyn_Lloyd</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Selwyn Lloyd</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Ambrose_King</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Ambrose King</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Lawrence_Lau</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Lawrence Lau</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Heinz_Baumkötter</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Heinz Baumkötter</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Arnold_Strippel</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Arnold Strippel</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Hermann_Senkowsky</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Hermann Senkowsky</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Johann_Schober</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Johann Schober</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Willi_Schatz</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Willi Schatz</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/André_Simonazzi</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">André Simonazzi</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Thomas_Helbling</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Thomas Helbling</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/S_N_Balakrishnan</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">S N Balakrishnan</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Bernhard_von_Bülow</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Bernhard von Bülow</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Gustav_Sorge</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Gustav Sorge</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Viktor_Klima</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Viktor Klima</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Alfons_Gorbach</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Alfons Gorbach</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Wilhelm_Boger</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Wilhelm Boger</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Henry_Hu</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Henry Hu</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Samuel_David_Mendelssohn</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Samuel David Mendelssohn</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Judith_A._Bense</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Judith A. Bense</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/John_Anderson,_1st_Viscount_Waverley</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">John Anderson, 1st Viscount Waverley</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Rayson_Huang</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Rayson Huang</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Derick_Heathcoat-Amory,_1st_Viscount_Amory</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Derick Heathcoat-Amory, 1st Viscount Amory</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/George_Osborne</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">George Osborne</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Franz_von_Papen</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Franz von Papen</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Constantin_Fehrenbach</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Constantin Fehrenbach</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Gustav_Bauer</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Gustav Bauer</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Yan_Song</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Yan Song</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Heinrich_Schwarz</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Heinrich Schwarz</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Richard_Haldane,_1st_Viscount_Haldane</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Richard Haldane, 1st Viscount Haldane</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Kurt_Daluege</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Kurt Daluege</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Lý_Đạo_Thành</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Lý Đạo Thành</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Maximilian_Grabner</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Maximilian Grabner</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Guido_Schmidt</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Guido Schmidt</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Zhang_Juzheng</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Zhang Juzheng</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Victor_Capesius</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Victor Capesius</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Anton_Kaindl</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Anton Kaindl</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Arpad_Wigand</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Arpad Wigand</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Benno_Martin</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Benno Martin</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Clemens_von_Delbrück</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Clemens von Delbrück</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Friedrich_von_Payer</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Friedrich von Payer</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Max_Pauly</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Max Pauly</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Oskar_Hergt</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Oskar Hergt</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Perry_Broad</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Perry Broad</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Zhu_Guozhen_(Ming_dynasty)</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Zhu Guozhen (Ming dynasty)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Lê_Văn_Thịnh</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Lê Văn Thịnh</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Tô_Hiến_Thành</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Tô Hiến Thành</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Ye_Xianggao</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Ye Xianggao</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Hermann_Müller_(politician)</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Hermann Müller (politician)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Lutz_Graf_Schwerin_von_Krosigk</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Lutz Graf Schwerin von Krosigk</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Michael_Mayr</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Michael Mayr</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Theobald_von_Bethmann-Hollweg</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Theobald von Bethmann-Hollweg</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Hugh_Fraser_(British_politician)</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Hugh Fraser (British politician)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Wilhelm_Kube</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Wilhelm Kube</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Hans_Luther</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Hans Luther</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Wilhelm_Cuno</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Wilhelm Cuno</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Walter_Breisky</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Walter Breisky</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Anthony_Barber</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Anthony Barber</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Kurt_Lischka</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Kurt Lischka</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/James_L._Oblinger</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">James L. Oblinger</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Omar_Davies</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Omar Davies</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="entities">
+        <uri>http://dbpedia.org/resource/Wang_Xijue</uri>
+      </binding>
+      <binding name="label">
+        <literal xml:lang="en">Wang Xijue</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>
