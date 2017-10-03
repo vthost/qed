@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <dbo:Writer rdf:about="http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe">
+    <foaf:name xml:lang="en">Johann Wolfgang (von) Goethe</foaf:name>
+    <foaf:name xml:lang="en">Johann Wolfgang von Goethe</foaf:name>
+    <dbo:birthPlace rdf:resource="http://dbpedia.org/resource/Holy_Roman_Empire"/>
+    <dbo:birthPlace rdf:resource="http://dbpedia.org/resource/Frankfurt-am-Main"/>
+    <dbo:birthPlace rdf:resource="http://dbpedia.org/resource/Frankfurt"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </dbo:Writer>
+  <dbo:Writer rdf:about="http://dbpedia.org/resource/Katharina_Elisabeth_Goethe">
+    <foaf:name xml:lang="en">Katharina Elisabeth Goethe</foaf:name>
+    <dbo:birthPlace rdf:resource="http://dbpedia.org/resource/Frankfurt_am_Main"/>
+    <dbo:birthPlace rdf:resource="http://dbpedia.org/resource/Frankfurt"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </dbo:Writer>
+</rdf:RDF>

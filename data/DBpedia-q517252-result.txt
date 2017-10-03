@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="Where"/>
+  </head>
+  <results>
+    <result>
+      <binding name="Where">
+        <uri>http://dbpedia.org/resource/Gastonia,_North_Carolina</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="Where">
+        <uri>http://dbpedia.org/resource/Jacksonville,_Florida</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="Where">
+        <uri>http://dbpedia.org/resource/Gastonia,_North_Carolina</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="Where">
+        <uri>http://dbpedia.org/resource/Jacksonville,_Florida</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

@@ -1,0 +1,39 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:dbp="http://dbpedia.org/property/">
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Andy_Pandy">
+    <dbp:series rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:series>
+    <dbp:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:creator>
+    <dbp:executiveProducer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:executiveProducer>
+    <dbp:writer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:writer>
+    <dbp:starring rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:starring>
+    <dbp:producer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:producer>
+    <dbp:director rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:director>
+    <dbp:creator rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:creator>
+    <dbp:series rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:series>
+    <dbp:writer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:writer>
+    <dbp:guest rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:guest>
+    <dbp:starring rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:starring>
+    <dbp:executiveProducer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:executiveProducer>
+    <dbp:director rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:director>
+    <dbp:guest rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >David Boisseau</dbp:guest>
+    <dbp:producer rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Peter Thompson</dbp:producer>
+  </rdf:Description>
+</rdf:RDF>

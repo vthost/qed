@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameas"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Terry and Julian</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Terry and Julian is a British sitcom that aired on Channel 4 in 1992. Starring Julian Clary, it was written by Clary, Paul Merton and John Henderson. The title is a spoof the title of the long-running BBC sitcom Terry and June, whose star June Whitfield made a guest appearance in one episode of Terry and Julian.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://www.wikidata.org/entity/Q7705174</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Terry and Julian</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Terry and Julian is a British sitcom that aired on Channel 4 in 1992. Starring Julian Clary, it was written by Clary, Paul Merton and John Henderson. The title is a spoof the title of the long-running BBC sitcom Terry and June, whose star June Whitfield made a guest appearance in one episode of Terry and Julian.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://wikidata.dbpedia.org/resource/Q7705174</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Terry and Julian</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Terry and Julian is a British sitcom that aired on Channel 4 in 1992. Starring Julian Clary, it was written by Clary, Paul Merton and John Henderson. The title is a spoof the title of the long-running BBC sitcom Terry and June, whose star June Whitfield made a guest appearance in one episode of Terry and Julian.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://rdf.freebase.com/ns/m.02psvnq</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

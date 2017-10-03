@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameas"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://de.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://es.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://fr.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://id.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://it.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://ja.dbpedia.org/resource/アーロン・ソーキン</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://ko.dbpedia.org/resource/아론_소킨</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://nl.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://pl.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://pt.dbpedia.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://wikidata.dbpedia.org/resource/Q299194</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://www.wikidata.org/entity/Q299194</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://rdf.freebase.com/ns/m.01d8yn</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://data.europa.eu/euodp/jrc-names/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://data.nytimes.com/16254415251938501303</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://sw.cyc.com/concept/Mx4rLyZQNrS-T0a3dzWhzStt9g</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://yago-knowledge.org/resource/Aaron_Sorkin</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Aaron Sorkin</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://d-nb.info/gnd/130028649</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

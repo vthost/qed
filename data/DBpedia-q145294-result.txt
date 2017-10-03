@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="containedIn"/>
+  </head>
+  <results>
+    <result>
+      <binding name="containedIn">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Peter Thompson</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="containedIn">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">David Boisseau</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>

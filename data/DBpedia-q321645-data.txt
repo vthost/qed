@@ -1,0 +1,68 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbc="http://dbpedia.org/resource/Category:"
+    xmlns:georss="http://www.georss.org/georss/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:virtrdf="http://www.openlinksw.com/schemas/virtrdf#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:yago="http://dbpedia.org/class/yago/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:dbp="http://dbpedia.org/property/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <yago:Municipality108626283 rdf:about="http://dbpedia.org/resource/Seoul">
+    <dbp:populationAsOf rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2016</dbp:populationAsOf>
+    <geo:geometry rdf:datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry"
+    >POINT(126.96666717529 37.566665649414)</geo:geometry>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >126.96666717529296875</geo:long>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Capital108518505"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Center108523483"/>
+    <dbp:caption rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Religion in Seoul</dbp:caption>
+    <georss:point>37.56666666666667 126.96666666666667</georss:point>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Capitals_in_Asia"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatCapitalsInAsia"/>
+    <dbo:populationMetro rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >25000000</dbo:populationMetro>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Tract108673395"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/AdministrativeDistrict108491826"/>
+    <dbp:populationBlank rdf:resource="http://dbpedia.org/resource/Gyeonggi_dialect"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Special_Cities_and_Metropolitan_Cities_of_South_Korea"/>
+    <dbp:populationBlank rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >서울 사람 , 서울시민 , Seoulite</dbp:populationBlank>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Location100027167"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatSubdivisionsOfSouthKorea"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Seoul"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Region108630985"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Seat108647945"/>
+    <dbp:populationBlank2Title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Dialect</dbp:populationBlank2Title>
+    <dbo:populationTotal rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >9971111</dbo:populationTotal>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/UrbanArea108675967"/>
+    <foaf:name xml:lang="en">Seoul Special City</foaf:name>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/City108524735"/>
+    <dbp:populationBlank1Title rdf:resource="http://dbpedia.org/resource/Demonym"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Area108497294"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatCitiesWithMillionsOfInhabitants"/>
+    <dbp:name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >서울특별시</dbp:name>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoLegalActorGeo"/>
+    <dbp:populationDensityKm rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >auto</dbp:populationDensityKm>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/State108654360"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Seoul_Capital_Area"/>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >37.5666656494140625</geo:lat>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PhysicalEntity100001930"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoGeoEntity"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/District108552138"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Subdivision108674251"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Object100002684"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/GeographicalArea108574314"/>
+  </yago:Municipality108626283>
+</rdf:RDF>

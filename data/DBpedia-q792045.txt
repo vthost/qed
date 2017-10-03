@@ -1,0 +1,2 @@
+http://lsq.aksw.org/res/DBpedia-q792045
+select ?prop ?val where{ {<http://dbpedia.org/resource/Seoul> ?prop ?val FILTER regex(?val, 'class/')} union        {<http://dbpedia.org/resource/Seoul> ?prop ?val FILTER regex(?prop, 'geo')} union        {<http://dbpedia.org/resource/Seoul> ?prop ?val FILTER regex(?prop, 'subject')} union        {<http://dbpedia.org/resource/Seoul> ?prop ?val FILTER regex(?prop, 'property')}  } 

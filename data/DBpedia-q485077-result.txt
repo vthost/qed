@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="name"/>
+    <variable name="person"/>
+    <variable name="birthPlace"/>
+  </head>
+  <results>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Johann Wolfgang von Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Frankfurt</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Johann Wolfgang von Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Holy_Roman_Empire</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Johann Wolfgang von Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Frankfurt-am-Main</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Johann Wolfgang (von) Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Frankfurt</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Johann Wolfgang (von) Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Holy_Roman_Empire</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Johann Wolfgang (von) Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Johann_Wolfgang_von_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Frankfurt-am-Main</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Katharina Elisabeth Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Katharina_Elisabeth_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Frankfurt</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="name">
+        <literal xml:lang="en">Katharina Elisabeth Goethe</literal>
+      </binding>
+      <binding name="person">
+        <uri>http://dbpedia.org/resource/Katharina_Elisabeth_Goethe</uri>
+      </binding>
+      <binding name="birthPlace">
+        <uri>http://dbpedia.org/resource/Frankfurt_am_Main</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

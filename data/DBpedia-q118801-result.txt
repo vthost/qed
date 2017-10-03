@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameas"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Adam and Joe Show</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">For the radio show, see Adam and Joe (radio show) The Adam and Joe Show is a British television comedy show, written and presented by Adam and Joe (Adam Buxton and Joe Cornish), which ran for four series on Channel 4 between 1996 and 2001. All four series are available free to watch on 4oD, but currently only a compilation of the best of the entire run is available on DVD, however all episodes are available on iTunes.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://www.wikidata.org/entity/Q7712350</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Adam and Joe Show</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">For the radio show, see Adam and Joe (radio show) The Adam and Joe Show is a British television comedy show, written and presented by Adam and Joe (Adam Buxton and Joe Cornish), which ran for four series on Channel 4 between 1996 and 2001. All four series are available free to watch on 4oD, but currently only a compilation of the best of the entire run is available on DVD, however all episodes are available on iTunes.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://wikidata.dbpedia.org/resource/Q7712350</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">The Adam and Joe Show</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">For the radio show, see Adam and Joe (radio show) The Adam and Joe Show is a British television comedy show, written and presented by Adam and Joe (Adam Buxton and Joe Cornish), which ran for four series on Channel 4 between 1996 and 2001. All four series are available free to watch on 4oD, but currently only a compilation of the best of the entire run is available on DVD, however all episodes are available on iTunes.</literal>
+      </binding>
+      <binding name="sameas">
+        <uri>http://rdf.freebase.com/ns/m.0171r9</uri>
+      </binding>
+    </result>
+  </results>
+</sparql>

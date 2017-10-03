@@ -1,0 +1,1097 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="prop"/>
+    <variable name="val"/>
+  </head>
+  <results>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatIslandCountries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatStatesAndTerritoriesEstablishedIn660BC</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/AdministrativeDistrict108491826</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Archipelago109203827</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Country108544813</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/District108552138</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Domain108556491</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Empire108557482</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Land109334396</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Location100027167</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Object100002684</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/PhysicalEntity100001930</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/Region108630985</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/YagoGeoEntity</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/YagoLegalActorGeo</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatCountries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatEastAsianCountries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatEmpires</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatArchipelagoes</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatArchipelagoesOfThePacificOcean</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatMemberStatesOfTheUnitedNations</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/class/yago/WikicatNortheastAsianCountries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#lat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">35.0</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#lat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">35.6833</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#long</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">136.0</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#long</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#float">139.767</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(136 35)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(136 35.683334350586)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(139.76666259766 35)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.w3.org/2003/01/geo/wgs84_pos#geometry</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry">POINT(139.76666259766 35.683334350586)</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.georss.org/georss/point</uri>
+      </binding>
+      <binding name="val">
+        <literal>35.68333333333333 139.76666666666668</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://www.georss.org/georss/point</uri>
+      </binding>
+      <binding name="val">
+        <literal>35.0 136.0</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:7th-century_BC_establishments_in_Asia</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Countries_in_Asia</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:East_Asian_countries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:G20_nations</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:G7_nations</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:G8_nations</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Island_countries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Japan</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Liberal_democracies</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Member_states_of_the_United_Nations</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:Northeast_Asian_countries</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://purl.org/dc/terms/subject</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Category:States_and_territories_established_in_the_7th_century_BC</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/altCoat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Golden circle subdivided by golden wedges with rounded outer edges and thin black outlines</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/altFlag</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Centered red circle on a white rectangle</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/areaMagnitude</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">100000000000</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/areaRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">62</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/callingCode</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Telephone_numbers_in_Japan</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/caption</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cherry blossoms of Mount Yoshino have been the subject of many plays and waka poetry</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/caption</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Autumn maple leaves  at Kongōbu-ji on Mount Kōya, a UNESCO World Heritage Site</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/cctld</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/.jp</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/countryCode</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JPN</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/currencyCode</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JPY</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/dateFormat</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Japanese_era_name</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/dateFormat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">yyyy-mm-dd</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/dateFormat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">yyyy年m月d日</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/dateFormat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">yy年m月d日</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/direction</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">vertical</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/drivesOn</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Right-_and_left-hand_traffic</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/establishedDate</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#date">1947-05-03</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/establishedDate</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#date">1952-04-28</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/establishedEvent</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Meiji_Constitution</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/establishedEvent</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Constitution_of_Japan</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/establishedEvent</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Treaty_of_San_Francisco</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/establishedEvent</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/National_Foundation_Day</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpNominal</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://dbpedia.org/datatype/usDollar">4.412E12</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpNominalPerCapita</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://dbpedia.org/datatype/usDollar">34871.0</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpNominalPerCapitaRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">25</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpNominalRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://dbpedia.org/datatype/rod">3.0</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpNominalYear</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">2016</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpPpp</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://dbpedia.org/datatype/usDollar">4.901E12</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpPppPerCapita</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://dbpedia.org/datatype/usDollar">38731.0</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpPppPerCapitaRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">29</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpPppRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gdpPppYear</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">2016</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/gini</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#double">37.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/giniRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">76</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/giniYear</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">2008</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/hdi</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#double">0.891</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/hdiChange</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">increase</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/hdiRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">20</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/hdiYear</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">2014</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/hiragana</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">にっぽん</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/hiragana</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">にっぽんこく</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/image</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Cherry blossoms at Yoshinoyama 01.jpg</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/image</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Kongobuji Koyasan07n3200.jpg</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/imageCoat</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Imperial Seal of Japan.svg</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/imageMap</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Japan .svg</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/iso3166–1Alpha</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JP</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/iso3166–1Alpha</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JPN</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/iso3166–1Numeric</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">392</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/japaneseHeader</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">State of Japan</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/kana</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">ニッポン</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/kana</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">ニッポン コク</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/kanji</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">日本</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/kyujitai</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">日夲國</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/kyujitai</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">日本国</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/l</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Sun origin</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/l</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Sun origin state</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/languagesType</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">National languages</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/largestCity</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">capital</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/latd</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">35</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/latm</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">41</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/latns</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">N</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/legislature</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/National_Diet</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/linkingName</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Japan</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/longd</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">139</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/longew</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">E</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/longm</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">46</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/lowerHouse</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/House_of_Representatives_(Japan)</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/mapWidth</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">220</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/officialLanguages</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">None</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/otherSymbol</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">75</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/otherSymbolType</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/Government_Seal_of_Japan</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationCensus</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">127110047</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationCensusRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">11</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationCensusYear</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">2015</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationDensityRank</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">36</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/populationDensitymi</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#double">882.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/revhep</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Nippon</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/revhep</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Nippon-koku</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/romaji</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Nihon</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/romaji</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Nihon-koku</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/sovereigntyType</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/History_of_Japan</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/sportCode</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">JPN</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/symbolType</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Imperial Seal</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/timeZoneDst</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">not observed</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/title</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">25</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/title</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Japan</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/upperHouse</uri>
+      </binding>
+      <binding name="val">
+        <uri>http://dbpedia.org/resource/House_of_Councillors_(Japan)</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/utcOffset</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">+9</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/utcOffsetDst</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">+9</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/vehicleCode</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">J</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="prop">
+        <uri>http://dbpedia.org/property/width</uri>
+      </binding>
+      <binding name="val">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#integer">250</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>

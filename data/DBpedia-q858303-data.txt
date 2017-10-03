@@ -1,0 +1,61 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbc="http://dbpedia.org/resource/Category:"
+    xmlns:georss="http://www.georss.org/georss/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:virtrdf="http://www.openlinksw.com/schemas/virtrdf#"
+    xmlns:yago="http://dbpedia.org/class/yago/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:dbp="http://dbpedia.org/property/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <yago:YagoPermanentlyLocatedEntity rdf:about="http://dbpedia.org/resource/Seoul">
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >126.96666717529296875</geo:long>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Capitals_in_Asia"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/State108654360"/>
+    <dbp:populationBlank rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >서울 사람 , 서울시민 , Seoulite</dbp:populationBlank>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Object100002684"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/UrbanArea108675967"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoLegalActorGeo"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatCapitalsInAsia"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Tract108673395"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Seoul_Capital_Area"/>
+    <dbp:caption rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Religion in Seoul</dbp:caption>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatSubdivisionsOfSouthKorea"/>
+    <dbp:name rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >서울특별시</dbp:name>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Seat108647945"/>
+    <dbp:populationAsOf rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2016</dbp:populationAsOf>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >37.5666656494140625</geo:lat>
+    <georss:point>37.56666666666667 126.96666666666667</georss:point>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/GeographicalArea108574314"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/PhysicalEntity100001930"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/District108552138"/>
+    <geo:geometry rdf:datatype="http://www.openlinksw.com/schemas/virtrdf#Geometry"
+    >POINT(126.96666717529 37.566665649414)</geo:geometry>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Region108630985"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatCitiesWithMillionsOfInhabitants"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Location100027167"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Capital108518505"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Municipality108626283"/>
+    <dbp:populationDensityKm rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >auto</dbp:populationDensityKm>
+    <dbp:populationBlank1Title rdf:resource="http://dbpedia.org/resource/Demonym"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Special_Cities_and_Metropolitan_Cities_of_South_Korea"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/AdministrativeDistrict108491826"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Subdivision108674251"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Area108497294"/>
+    <dbp:populationBlank2Title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    >Dialect</dbp:populationBlank2Title>
+    <dbp:populationBlank rdf:resource="http://dbpedia.org/resource/Gyeonggi_dialect"/>
+    <dct:subject rdf:resource="http://dbpedia.org/resource/Category:Seoul"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/City108524735"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/Center108523483"/>
+    <rdf:type rdf:resource="http://dbpedia.org/class/yago/YagoGeoEntity"/>
+  </yago:YagoPermanentlyLocatedEntity>
+</rdf:RDF>
