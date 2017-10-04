@@ -1,0 +1,71 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpedia-ko="http://ko.dbpedia.org/resource/"
+    xmlns:dbpedia-pt="http://pt.dbpedia.org/resource/"
+    xmlns:dbpedia-fr="http://fr.dbpedia.org/resource/"
+    xmlns:dbpedia-id="http://id.dbpedia.org/resource/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dbpedia-de="http://de.dbpedia.org/resource/"
+    xmlns:dbpedia-ja="http://ja.dbpedia.org/resource/"
+    xmlns:dbpedia-it="http://it.dbpedia.org/resource/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbpedia-es="http://es.dbpedia.org/resource/"
+    xmlns:dbpedia-pl="http://pl.dbpedia.org/resource/"
+    xmlns:dbpedia-nl="http://nl.dbpedia.org/resource/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Aaron_Sorkin">
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://id.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://de.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://it.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://pt.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <rdfs:comment xml:lang="en">Aaron Benjamin Sorkin (born June 9, 1961) is an American screenwriter, producer, and playwright. His works include the Broadway plays A Few Good Men and The Farnsworth Invention; the television series Sports Night, The West Wing, Studio 60 on the Sunset Strip and The Newsroom; and the films A Few Good Men, The American President, Charlie Wilson's War, The Social Network, Moneyball and Steve Jobs.</rdfs:comment>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://ja.dbpedia.org/resource/アーロン・ソーキン">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://pl.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://ko.dbpedia.org/resource/아론_소킨">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <foaf:name xml:lang="en">Aaron Sorkin</foaf:name>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://nl.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://es.dbpedia.org/resource/Aaron_Sorkin">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aaron_Sorkin"/>
+      </rdf:Description>
+    </owl:sameAs>
+  </rdf:Description>
+</rdf:RDF>

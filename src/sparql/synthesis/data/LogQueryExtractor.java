@@ -11,45 +11,58 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
 public class LogQueryExtractor {
 	
-	//LSQ features we can query for 
-//	
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Avg" rdfs:label="Avg" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Bind" rdfs:label="Bind" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Count" rdfs:label="Count" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Distinct" rdfs:label="Distinct" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Filter" rdfs:label="Filter" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#FromNamed" rdfs:label="FromNamed" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#GroupBy" rdfs:label="GroupBy" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Having" rdfs:label="Having" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Limit" rdfs:label="Limit" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Max" rdfs:label="Max" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Min" rdfs:label="Min" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Minus" rdfs:label="Minus" />
-//<!-- typo in the current data ... should be NamedGraph, not namedGraph ... -->
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#NamedGraph" rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Offset" rdfs:label="Offset" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Optional" rdfs:label="Optional" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#OrderBy" rdfs:label="OrderBy" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Regex" rdfs:label="Regex" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Service" rdfs:label="Service" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#SubQuery" rdfs:label="SubQuery" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Sum" rdfs:label="Sum" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Union" rdfs:label="Union" />
-//<sd:Feature rdf:about="http://lsq.aksw.org/vocab#Values" rdfs:label="Values" />
-	
-//	TODO complete...
-	public static String FEATURE_OPTIONAL = "Optional";
-	public static String FEATURE_UNION = "Union";
-	public static String FEATURE_FILTER = "Filter";
-	public static String FEATURE_REGEX = "Regex";
+//	LSQ features we can query for 
+//TODO	in a recent gitlab version, there should be a feature for property paths 
+	public static String FEATURE_AVG ="Avg";
+	public static String FEATURE_BIND ="Bind";
+	public static String FEATURE_COUNT ="Count";
+	public static String FEATURE_DISTINCT ="Distinct";
+	public static String FEATURE_FILTER ="Filter";
+	public static String FEATURE_FROM_NAMED ="FromNamed";
+	public static String FEATURE_GROUP_BY ="GroupBy";
+	public static String FEATURE_HAVING ="Having";
+	public static String FEATURE_LIMIT ="Limit";
+	public static String FEATURE_MAX ="Max";
+	public static String FEATURE_MIN ="Min";
+	public static String FEATURE_MINUS ="Minus";
+	//<!-- typo in the current LSQ data ... should be NamedGraph, not namedGraph ... -->
+	public static String FEATURE_NAMED_GRAPH ="NamedGraph";
+	//rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
+	public static String FEATURE_OFFSET ="Offset";
+	public static String FEATURE_OPTIONAL ="Optional";
+	public static String FEATURE_ORDER_BY ="OrderBy";
+	public static String FEATURE_REGEX ="Regex";
+	public static String FEATURE_SERVICE ="Service";
+	public static String FEATURE_SUBQUERY ="SubQuery";
+	public static String FEATURE_SUM ="Sum";
+	public static String FEATURE_UNION ="Union";
+	public static String FEATURE_VALUES ="Values";
 
 //	one configuration specifies the SPARQL queries we look for
-//	(every query needs to contain all features from one array)
+//	(we look for queries that contain all features from one array)
 	public static String[][] FEATURE_CONFIG_SIMPLE = {
-		{FEATURE_OPTIONAL},
-//		{FEATURE_UNION}, 
-//		{FEATURE_FILTER},
-//		{FEATURE_REGEX}
+//	{ FEATURE_AVG },
+//	{ FEATURE_BIND },
+//	{ FEATURE_COUNT },
+//	{ FEATURE_DISTINCT },
+//	{ FEATURE_FILTER },
+//	{ FEATURE_FROM_NAMED },
+//	{ FEATURE_GROUP_BY },
+//	{ FEATURE_HAVING },
+//	{ FEATURE_LIMIT },
+//	{ FEATURE_MAX },
+//	{ FEATURE_MIN },
+//	{ FEATURE_MINUS },
+//	{ FEATURE_NAMED_GRAPH },
+//	{ FEATURE_OFFSET },
+	{ FEATURE_OPTIONAL },
+//	{ FEATURE_ORDER_BY },
+//	{ FEATURE_REGEX },
+//	{ FEATURE_SERVICE },
+//	{ FEATURE_SUBQUERY },
+//	{ FEATURE_SUM },
+//	{ FEATURE_UNION },
+//	{ FEATURE_VALUES }
 	};
 	
 	private String defaultLog = "http://dbpedia.org";
@@ -85,7 +98,7 @@ public class LogQueryExtractor {
 	
 	private String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
 	
-//TODO	num is per config
+//  num is per config
 //	we might change this by using a big union
 	public void extractQueries(String logUri, int num, String[][] configs) {
 		

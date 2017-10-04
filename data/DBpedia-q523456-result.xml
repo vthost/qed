@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameasWHERE"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Muhammad Yunus</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">(For other people with similar names, see Mohammad Yunus (disambiguation).) Muhammad Yunus (Bengali: মুহাম্মদ ইউনূস; born 28 June 1940) is a Bangladeshi social entrepreneur, banker, economist, and civil society leader who was awarded the Nobel Peace Prize for founding the Grameen Bank and pioneering the concepts of microcredit and microfinance. These loans are given to entrepreneurs too poor to qualify for traditional bank loans. In 2006, Yunus and the Grameen Bank were jointly awarded the Nobel Peace Prize "for their efforts through microcredit to create economic and social development from below". The Norwegian Nobel Committee said that "lasting peace cannot be achieved unless large population groups find ways in which to break out of poverty" and that "across cultures and civilizations,</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>

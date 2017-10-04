@@ -20,7 +20,7 @@ public class LogQueryDataExtractor {
 	
 	private int defaultLimit = 10;
 	
-	public Query toConstructQuery(String qs, int limit) {
+	private Query toConstructQuery(String qs, int limit) {
 
 		Query q1 = QueryFactory.create(qs);
 		Element p = q1.getQueryPattern();
@@ -63,7 +63,7 @@ public class LogQueryDataExtractor {
 			
 			return processElementList(((ElementUnion) e).getElements());
 		}
-//		TODO cover other cases
+//		TODO do we need to cover other cases? not sure...
 		
 		return new ArrayList<ElementPathBlock>();		
 	}
@@ -133,7 +133,6 @@ public class LogQueryDataExtractor {
 	        	continue; // queryLoop;
 	        } 
 			
-			//TODO add limit here in construct to get a small data set
 			Query cq = toConstructQuery(q, dataLimit); 
 			
 			try ( QueryEngineHTTP qexec = 
@@ -148,8 +147,8 @@ public class LogQueryDataExtractor {
 //	            	System.out.println(query);
 	            	
 	            	//delete other files
-	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
-	            	(new File(Utils.getQueryResultFilePath(logQueryIds.get(i)))).delete();
+//	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
+//	            	(new File(Utils.getQueryResultFilePath(logQueryIds.get(i)))).delete();
 	            } else {
 	            	Utils.writeQueryDataFile(logQueryIds.get(i), m);
 	            }
