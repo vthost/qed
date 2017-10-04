@@ -18,7 +18,6 @@ import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class LogQueryDataExtractor {
 	
-	private String defaultLog = "http://dbpedia.org/sparql";
 	private int defaultLimit = 10;
 	
 	private Query toConstructQuery(String qs, int limit) {
@@ -79,8 +78,6 @@ public class LogQueryDataExtractor {
 
 	
 	public void extractQueryDataAndResults(String log, int datasetSizeMax) {
-		
-		log = log == "" || log == null ? defaultLog : log;
 		
 		//clean data directory 
 		for(File file: (new File(Config.DATA_DIR)).listFiles()) {
