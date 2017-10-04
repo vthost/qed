@@ -80,10 +80,10 @@ public class LogQueryDataExtractor {
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
 		//clean data directory 
-		File dir = new File(Config.DATA_DIR);
+		File dir = new File(Utils.DATA_DIR);
 		for(File file: dir.listFiles()) {
-		    if (file.getName().endsWith(Config.QUERY_DATA_FILE_EXT) || 
-		    		file.getName().endsWith(Config.QUERY_RESULT_FILE_EXT) ) {
+		    if (file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
+		    		file.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
 		        file.delete();
 		    }
 		}

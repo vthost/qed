@@ -13,20 +13,25 @@ import org.apache.jena.rdf.model.Model;
 
 public class Utils {
 	
+	public static String DATA_DIR = "data/";	
+	public static String QUERY_FILE_EXT = ".txt";
+	public static String QUERY_DATA_FILE_EXT = "-data.xml";
+	public static String QUERY_RESULT_FILE_EXT = "-result.xml";
+	
 	public static String getQueryId(String lsqIdUrl) {
 		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf("/") + 1);
 	}
 	
 	public static String getQueryFilePath(String lsqIdUrl) {
-		return Config.DATA_DIR + Utils.getQueryId(lsqIdUrl) + Config.QUERY_FILE_EXT;
+		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
 	}
 	
 	public static String getQueryDataFilePath(String lsqIdUrl) {
-		return Config.DATA_DIR + Utils.getQueryId(lsqIdUrl) + Config.QUERY_DATA_FILE_EXT;
+		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_DATA_FILE_EXT;
 	}
 	
 	public static String getQueryResultFilePath(String lsqIdUrl) {
-		return Config.DATA_DIR + Utils.getQueryId(lsqIdUrl) + Config.QUERY_RESULT_FILE_EXT;
+		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_RESULT_FILE_EXT;
 	}
 	
 	public static void writeQueryFile(String lsqIdUrl, String query) {
