@@ -1,0 +1,69 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpedia-fr="http://fr.dbpedia.org/resource/"
+    xmlns:dbpedia-id="http://id.dbpedia.org/resource/"
+    xmlns:wikidata="http://www.wikidata.org/entity/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dbpedia-de="http://de.dbpedia.org/resource/"
+    xmlns:dbpedia-ja="http://ja.dbpedia.org/resource/"
+    xmlns:dbpedia-it="http://it.dbpedia.org/resource/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbpedia-nl="http://nl.dbpedia.org/resource/"
+    xmlns:dbpedia-eu="http://eu.dbpedia.org/resource/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Meet_Joe_Black">
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://de.dbpedia.org/resource/Rendezvous_mit_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://it.dbpedia.org/resource/Vi_presento_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://es.dbpedia.org/resource/¿Conoces_a_Joe_Black%3F">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://ja.dbpedia.org/resource/ジョー・ブラックをよろしく">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://cs.dbpedia.org/resource/Seznamte_se,_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://eu.dbpedia.org/resource/Meet_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <foaf:name xml:lang="en">Meet Joe Black</foaf:name>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q676513">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Rencontre_avec_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <rdfs:comment xml:lang="en">Meet Joe Black is a 1998 American fantasy romance film produced by Universal Studios, directed by Martin Brest and starring Brad Pitt, Anthony Hopkins and Claire Forlani, loosely based on the 1934 film Death Takes a Holiday. It was the second pairing of Hopkins and Pitt after their 1994 film Legends of the Fall.</rdfs:comment>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://nl.dbpedia.org/resource/Meet_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://id.dbpedia.org/resource/Meet_Joe_Black">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Meet_Joe_Black"/>
+      </rdf:Description>
+    </owl:sameAs>
+  </rdf:Description>
+</rdf:RDF>

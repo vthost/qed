@@ -1,0 +1,19 @@
+http://lsq.aksw.org/res/DBpedia-q523456
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT DISTINCT  ?title ?description ?sameas
+WHERE
+  { <http://dbpedia.org/resource/Muhammad_Yunus>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+    FILTER ( lang(?description) = "en" )
+    OPTIONAL
+      {   { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Muhammad_Yunus> }
+        UNION
+          { <http://dbpedia.org/resource/Muhammad_Yunus>
+                      owl:sameAs  ?sameas
+          }
+      }
+  }

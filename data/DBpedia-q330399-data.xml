@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:wikidata="http://www.wikidata.org/entity/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbpedia-wikidata="http://wikidata.dbpedia.org/resource/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Terry_and_Julian">
+    <foaf:name xml:lang="en">Terry and Julian</foaf:name>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://rdf.freebase.com/ns/m.02psvnq">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Terry_and_Julian"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q7705174">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Terry_and_Julian"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://wikidata.dbpedia.org/resource/Q7705174">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Terry_and_Julian"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <rdfs:comment xml:lang="en">Terry and Julian is a British sitcom that aired on Channel 4 in 1992. Starring Julian Clary, it was written by Clary, Paul Merton and John Henderson. The title is a spoof the title of the long-running BBC sitcom Terry and June, whose star June Whitfield made a guest appearance in one episode of Terry and Julian.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

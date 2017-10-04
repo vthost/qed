@@ -1,0 +1,40 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpedia-id="http://id.dbpedia.org/resource/"
+    xmlns:wikidata="http://www.wikidata.org/entity/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dbpedia-wikidata="http://wikidata.dbpedia.org/resource/"
+    xmlns:yago-res="http://yago-knowledge.org/resource/"
+    xmlns:dbr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Everything_Bad_Is_Good_for_You">
+    <foaf:name xml:lang="en">Everything Bad Is Good for You</foaf:name>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://rdf.freebase.com/ns/m.089q7n">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Everything_Bad_Is_Good_for_You"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q5417971">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Everything_Bad_Is_Good_for_You"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://wikidata.dbpedia.org/resource/Q5417971">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Everything_Bad_Is_Good_for_You"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://id.dbpedia.org/resource/Everything_Bad_is_Good_for_You">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Everything_Bad_Is_Good_for_You"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <owl:sameAs>
+      <rdf:Description rdf:about="http://yago-knowledge.org/resource/Everything_Bad_Is_Good_for_You">
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Everything_Bad_Is_Good_for_You"/>
+      </rdf:Description>
+    </owl:sameAs>
+    <rdfs:comment xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

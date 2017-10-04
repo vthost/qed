@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="title"/>
+    <variable name="description"/>
+    <variable name="sameasWHERE"/>
+  </head>
+  <results>
+    <result>
+      <binding name="title">
+        <literal xml:lang="en">Everything Bad Is Good for You</literal>
+      </binding>
+      <binding name="description">
+        <literal xml:lang="en">Everything Bad Is Good for You: How Today's Popular Culture Is Actually Making Us Smarter is a non-fiction book written by Steven Johnson. Published in 2005, it is based upon Johnson's theory that popular culture – in particular television programs and video games – has grown more complex and demanding over time and is making society as a whole more intelligent. The book's claims, especially related to the proposed benefits of television, drew media attention. It received mixed critical reviews.</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>
