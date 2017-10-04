@@ -99,7 +99,7 @@ public class LogQueryExtractor {
 	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
 		
 		//clean data directory
-		for(File file: (new File(Config.DATA_DIR)).listFiles()) file.delete();
+		for(File file: (new File(Utils.DATA_DIR)).listFiles()) file.delete();
 		
 
 		for(String[] config: configs == null ? defaultConfig : configs) {
