@@ -47,9 +47,9 @@ public class LogQueryExtractor {
 //	(every query needs to contain all features from one array)
 	public static String[][] FEATURE_CONFIG_SIMPLE = {
 		{FEATURE_OPTIONAL},
-		{FEATURE_UNION}, 
-		{FEATURE_FILTER},
-		{FEATURE_REGEX}
+//		{FEATURE_UNION}, 
+//		{FEATURE_FILTER},
+//		{FEATURE_REGEX}
 	};
 	
 	private String defaultLog = "http://dbpedia.org";
@@ -85,7 +85,8 @@ public class LogQueryExtractor {
 	
 	private String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
 	
-	
+//TODO	num is per config
+//	we might change this by using a big union
 	public void extractQueries(String logUri, int num, String[][] configs) {
 		
 		//clean data directory

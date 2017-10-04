@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
@@ -34,7 +35,8 @@ public class Utils {
 			FileWriter writer = new FileWriter(Utils.getQueryFilePath(lsqIdUrl));
 		  	writer.write(lsqIdUrl);
 		  	writer.write("\n");
-		  	writer.write(query);
+		  	//using the factory we get a formatting that is more readable
+		  	writer.write(QueryFactory.create(query).toString()); 
 		  	writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -74,7 +76,10 @@ public class Utils {
 	public static String[] readQueryFile(File f) {
 		try {
 			Scanner s = new Scanner(f);
-			String[] result = {s.nextLine(), s.nextLine()};
+			String id = s.nextLine();
+			String q = s.nextLine();
+			while(s.hasNextLine()) q += s.nextLine();
+			String[] result = {id, q};
 			s.close();
 			
 			return result;

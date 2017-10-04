@@ -18,7 +18,9 @@ import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class LogQueryDataExtractor {
 	
-	public Query toConstructQuery(String qs) {
+	private int defaultLimit = 10;
+	
+	public Query toConstructQuery(String qs, int limit) {
 
 		Query q1 = QueryFactory.create(qs);
 		Element p = q1.getQueryPattern();
@@ -28,6 +30,7 @@ public class LogQueryDataExtractor {
 		q.setBaseURI(q1.getBaseURI());
 		q.setQueryPattern(q1.getQueryPattern());                              
 		q.setQueryConstructType();
+		q.setLimit(limit > 0 ? limit : defaultLimit);
 		
 		List<String> l = new ArrayList<String>();
 		for (ElementPathBlock b: processElement(p)) {
@@ -74,7 +77,7 @@ public class LogQueryDataExtractor {
 	}
 
 	
-	public void extractQueryDataAndResults() {
+	public void extractQueryDataAndResults(int dataLimit) {
 		//clean data directory 
 		for(File file: (new File(Config.DATA_DIR)).listFiles()) {
 		    if (file.getName().endsWith(Config.QUERY_DATA_FILE_EXT) || 
@@ -97,7 +100,7 @@ public class LogQueryDataExtractor {
 			e.printStackTrace();
 		}
 		
-		qloop: for (int i = 0; i < logQueries.size(); i++) {
+		for (int i = 0; i < logQueries.size(); i++) {
 			
 			String q = logQueries.get(i);
 			
@@ -113,6 +116,7 @@ public class LogQueryDataExtractor {
 	            	
 	            	//delete query file
 	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
+	            	continue;
 	            } else {
 	            	Utils.writeQueryResultFile(logQueryIds.get(i), rs);
 	            }
@@ -126,11 +130,11 @@ public class LogQueryDataExtractor {
 	        	System.out.println("------------------ ");
 	        	System.out.println(q);
 	        	System.out.println("------------------ Query failed END");
-	        	continue qloop; // queryLoop;
+	        	continue; // queryLoop;
 	        } 
 			
 			//TODO add limit here in construct to get a small data set
-			Query cq = toConstructQuery(q); 
+			Query cq = toConstructQuery(q, dataLimit); 
 			
 			try ( QueryEngineHTTP qexec = 
 	        		(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", cq) ) {
@@ -143,8 +147,9 @@ public class LogQueryDataExtractor {
 	            	System.out.println("NO DATA "+ logQueryIds.get(i));
 //	            	System.out.println(query);
 	            	
-	            	//delete query file
+	            	//delete other files
 	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
+	            	(new File(Utils.getQueryResultFilePath(logQueryIds.get(i)))).delete();
 	            } else {
 	            	Utils.writeQueryDataFile(logQueryIds.get(i), m);
 	            }
@@ -167,7 +172,7 @@ public class LogQueryDataExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
-		de.extractQueryDataAndResults();
+		de.extractQueryDataAndResults(0);
 	}
 
 
