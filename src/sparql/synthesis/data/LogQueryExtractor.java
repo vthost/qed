@@ -65,7 +65,6 @@ public class LogQueryExtractor {
 //	{ FEATURE_VALUES }
 	};
 	
-	private String defaultLog = "http://dbpedia.org";
 	private String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
 	private int defaultQueryNumMax = 20;
 	private int defaultQuerySizeMin = 3;
@@ -127,7 +126,7 @@ public class LogQueryExtractor {
 			try ( QueryEngineHTTP qexec =  
 					(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
 
-	        	qexec.addParam("default-graph-uri", logUri == null ? defaultLog : logUri) ;
+	        	qexec.addParam("default-graph-uri", logUri) ;
 	        	
 	            ResultSet rs = qexec.execSelect();
 	            
