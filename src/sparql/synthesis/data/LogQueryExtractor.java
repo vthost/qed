@@ -108,8 +108,8 @@ public class LogQueryExtractor {
 
 		for(String[] config: configs == null ? defaultConfig : configs) {
 			String filter = 
-					" FILTER(?rs > " + (queryResultSizeMin >= 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
-					+ " && ?rt < 100 && ?tp > " + (querySizeMin >= 0 ? querySizeMin : defaultQuerySizeMin) + "). ";
+					" FILTER(?rs > " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
+					+ " && ?rt < 100 && ?tp > " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + "). ";
 					
 			String query = 
 					SPARQL_TEMPLATE_START 
@@ -117,7 +117,7 @@ public class LogQueryExtractor {
 					+ String.join("; "+SPARQL_TEMPLATE_FEATURE, config)
 					+ ". "
 					+ filter
-					+ SPARQL_TEMPLATE_END + (queryNumMax >= 0 ? queryNumMax : defaultQueryNumMax);
+					+ SPARQL_TEMPLATE_END + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax);
 			
 			
 			
@@ -151,7 +151,7 @@ public class LogQueryExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries(null, null, 20, -1, -1);
+		qe.extractQueries(null, null, 0, 0, 0);
 	}
 
 }
