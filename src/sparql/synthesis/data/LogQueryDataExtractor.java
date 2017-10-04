@@ -80,30 +80,30 @@ public class LogQueryDataExtractor {
 	public void extractQueryDataAndResults(String log, int datasetSizeMax) {
 		
 		//clean data directory 
-		for(File file: (new File(Config.DATA_DIR)).listFiles()) {
+		File dir = new File(Config.DATA_DIR);
+		for(File file: dir.listFiles()) {
 		    if (file.getName().endsWith(Config.QUERY_DATA_FILE_EXT) || 
 		    		file.getName().endsWith(Config.QUERY_RESULT_FILE_EXT) ) {
 		        file.delete();
 		    }
 		}
+
+
+		List<String[]> lqs = new ArrayList<String[]>();
 		
-		List<String> logQueryIds = new ArrayList<String>();
-		List<String> logQueries = new ArrayList<String>();
 		try { 		
-			for(File f: (new File(Config.DATA_DIR)).listFiles()) {
-				
-				String[] q = Utils.readQueryFile(f);
-				logQueryIds.add(q[0]);
-				logQueries.add(q[1]);
+			for(File f: dir.listFiles()) {
+				lqs.add(Utils.readQueryFile(f));
 			}	
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		for (int i = 0; i < logQueries.size(); i++) {
-			
-			String q = logQueries.get(i);
+		for (String[] lq: lqs) {
+
+			String qid = lq[0];
+			String q = lq[1];
 			
 			try ( QueryEngineHTTP qexec = 
 					(QueryEngineHTTP) QueryExecutionFactory.sparqlService(log, q) ) {
@@ -112,21 +112,21 @@ public class LogQueryDataExtractor {
 
 	            ResultSet rs = qexec.execSelect();            
 	            if(!rs.hasNext()) {
-	            	System.out.println("NO RESULT "+ logQueryIds.get(i));
+	            	System.out.println("NO RESULT "+ qid);
 //	            	System.out.println(q);
 	            	
 	            	//delete query file
-	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
+	            	(new File(Utils.getQueryFilePath(qid))).delete();
 	            	continue;
 	            } else {
-	            	Utils.writeQueryResultFile(logQueryIds.get(i), rs);
+	            	Utils.writeQueryResultFile(qid, rs);
 	            }
 
 	        } catch (Exception e) { 
 
-	        	System.out.println("EXCEPTION " + logQueryIds.get(i));
+	        	System.out.println("EXCEPTION " + qid);
 	        	System.out.println("------------------ Query failed START");
-	        	System.out.println(logQueryIds.get(i));
+	        	System.out.println(qid);
 	        	System.out.println(e);
 	        	System.out.println("------------------ ");
 	        	System.out.println(q);
@@ -144,21 +144,21 @@ public class LogQueryDataExtractor {
 	            Model m = qexec.execConstruct();
 	            
 	            if(!m.listStatements().hasNext()) {
-	            	System.out.println("NO DATA "+ logQueryIds.get(i));
+	            	System.out.println("NO DATA "+ qid);
 //	            	System.out.println(query);
 	            	
 	            	//delete other files
 //	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
 //	            	(new File(Utils.getQueryResultFilePath(logQueryIds.get(i)))).delete();
 	            } else {
-	            	Utils.writeQueryDataFile(logQueryIds.get(i), m);
+	            	Utils.writeQueryDataFile(qid, m);
 	            }
 
 	        } catch (Exception e) { 
 
-	        	System.out.println("EXCEPTION " + logQueryIds.get(i));
+	        	System.out.println("EXCEPTION " + qid);
 	        	System.out.println("------------------ Query failed START");
-	        	System.out.println(logQueryIds.get(i++));
+	        	System.out.println(qid);
 	        	System.out.println(e);
 	        	System.out.println("------------------ ");
 	        	System.out.println(q);
