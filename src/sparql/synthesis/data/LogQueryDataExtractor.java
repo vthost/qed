@@ -105,6 +105,9 @@ public class LogQueryDataExtractor {
 			String qid = lq[0];
 			String q = lq[1];
 			
+			//some queries are erroneous; missing whitespace
+			q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
+			
 			try ( QueryEngineHTTP qexec = 
 					(QueryEngineHTTP) QueryExecutionFactory.sparqlService(log, q) ) {
 
@@ -127,10 +130,12 @@ public class LogQueryDataExtractor {
 	        	System.out.println("EXCEPTION " + qid);
 	        	System.out.println("------------------ Query failed START");
 	        	System.out.println(qid);
-	        	System.out.println(e);
+	        	System.out.println(e);e.printStackTrace();
 	        	System.out.println("------------------ ");
 	        	System.out.println(q);
 	        	System.out.println("------------------ Query failed END");
+            	//TODO delete?
+//            	(new File(Utils.getQueryFilePath(qid))).delete();
 	        	continue; // queryLoop;
 	        } 
 			
@@ -148,8 +153,8 @@ public class LogQueryDataExtractor {
 //	            	System.out.println(query);
 	            	
 	            	//delete other files
-//	            	(new File(Utils.getQueryFilePath(logQueryIds.get(i)))).delete();
-//	            	(new File(Utils.getQueryResultFilePath(logQueryIds.get(i)))).delete();
+//	            	(new File(Utils.getQueryFilePath(qid))).delete();
+//	            	(new File(Utils.getQueryResultFilePath(qid))).delete();
 	            } else {
 	            	Utils.writeQueryDataFile(qid, m);
 	            }
@@ -163,6 +168,8 @@ public class LogQueryDataExtractor {
 	        	System.out.println("------------------ ");
 	        	System.out.println(q);
 	        	System.out.println("------------------ Query failed END");
+            	//TODO delete?
+//            	(new File(Utils.getQueryFilePath(qid))).delete();
 	        } 
 			
 		}
@@ -172,7 +179,7 @@ public class LogQueryDataExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
-		de.extractQueryDataAndResults(null, 0);
+		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
 	}
 
 
