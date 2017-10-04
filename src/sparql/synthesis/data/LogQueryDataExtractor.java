@@ -18,6 +18,7 @@ import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class LogQueryDataExtractor {
 	
+	private String defaultLog = "http://dbpedia.org/sparql";
 	private int defaultLimit = 10;
 	
 	private Query toConstructQuery(String qs, int limit) {
@@ -77,7 +78,10 @@ public class LogQueryDataExtractor {
 	}
 
 	
-	public void extractQueryDataAndResults(int dataLimit) {
+	public void extractQueryDataAndResults(String log, int datasetSizeMax) {
+		
+		log = log == "" || log == null ? defaultLog : log;
+		
 		//clean data directory 
 		for(File file: (new File(Config.DATA_DIR)).listFiles()) {
 		    if (file.getName().endsWith(Config.QUERY_DATA_FILE_EXT) || 
@@ -105,7 +109,7 @@ public class LogQueryDataExtractor {
 			String q = logQueries.get(i);
 			
 			try ( QueryEngineHTTP qexec = 
-					(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", q) ) {
+					(QueryEngineHTTP) QueryExecutionFactory.sparqlService(log, q) ) {
 
 	            qexec.addParam("timeout", "10000") ;
 
@@ -133,10 +137,10 @@ public class LogQueryDataExtractor {
 	        	continue; // queryLoop;
 	        } 
 			
-			Query cq = toConstructQuery(q, dataLimit); 
+			Query cq = toConstructQuery(q, datasetSizeMax); 
 			
 			try ( QueryEngineHTTP qexec = 
-	        		(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://dbpedia.org/sparql", cq) ) {
+	        		(QueryEngineHTTP) QueryExecutionFactory.sparqlService(log, cq) ) {
 
 	            qexec.addParam("timeout", "10000") ;
 
@@ -171,7 +175,7 @@ public class LogQueryDataExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
-		de.extractQueryDataAndResults(0);
+		de.extractQueryDataAndResults(null, 0);
 	}
 
 

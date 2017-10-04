@@ -9,5 +9,4 @@ public class Config {
 	public static String QUERY_DATA_FILE_EXT = "-data.xml";
 	
 	public static String QUERY_RESULT_FILE_EXT = "-result.xml";
-	
 }
