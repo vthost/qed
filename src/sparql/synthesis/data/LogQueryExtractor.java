@@ -94,7 +94,6 @@ public class LogQueryExtractor {
 	
 	private String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
 	
-//	we could add querySizeMax...
 //  num is per config
 //	we might change this by using a big union
 	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
@@ -105,8 +104,8 @@ public class LogQueryExtractor {
 
 		for(String[] config: configs == null ? defaultConfig : configs) {
 			String filter = 
-					" FILTER(?rs > " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
-					+ " && ?rt < 100 && ?tp > " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + "). ";
+					" FILTER(?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
+					+ " && ?rt < 100 && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + "). ";
 					
 			String query = 
 					SPARQL_TEMPLATE_START 
@@ -114,8 +113,7 @@ public class LogQueryExtractor {
 					+ String.join("; "+SPARQL_TEMPLATE_FEATURE, config)
 					+ ". "
 					+ filter
-					+ SPARQL_TEMPLATE_END + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax);
-			
+					+ SPARQL_TEMPLATE_END + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); //System.out.println(QueryFactory.create(query));
 
 			try ( QueryEngineHTTP qexec =  
 					(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
@@ -125,7 +123,7 @@ public class LogQueryExtractor {
 	            ResultSet rs = qexec.execSelect();
 	            
 	            while(rs.hasNext()) {
-	            		QuerySolution s = rs.next();  		
+	            		QuerySolution s = rs.next();  //System.out.println(s.getResource("?id").toString());		
 	            		Utils.writeQueryFile(s.getResource("?id").toString(), s.getLiteral("?text").getString());
 	            }
 
@@ -140,7 +138,7 @@ public class LogQueryExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries(null, null, 0, 0, 0);
+		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
 	}
 
 }
