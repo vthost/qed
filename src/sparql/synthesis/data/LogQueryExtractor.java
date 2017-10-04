@@ -1,8 +1,6 @@
 package sparql.synthesis.data;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;
@@ -118,11 +116,7 @@ public class LogQueryExtractor {
 					+ filter
 					+ SPARQL_TEMPLATE_END + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax);
 			
-			
-			
-	        List<String> logQueryIds = new ArrayList<String>();
-	        List<String> logQueries = new ArrayList<String>();
-	        
+
 			try ( QueryEngineHTTP qexec =  
 					(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
 
@@ -131,18 +125,14 @@ public class LogQueryExtractor {
 	            ResultSet rs = qexec.execSelect();
 	            
 	            while(rs.hasNext()) {
-	            		QuerySolution s = rs.next();
-	            		logQueryIds.add(s.getResource("?id").toString());
-	            		logQueries.add(s.getLiteral("?text").getString());
+	            		QuerySolution s = rs.next();  		
+	            		Utils.writeQueryFile(s.getResource("?id").toString(), s.getLiteral("?text").getString());
 	            }
 
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        } 
-			
-	        for (int i = 0; i < logQueries.size(); i++) {
-	      	  Utils.writeQueryFile(logQueryIds.get(i), logQueries.get(i));
-	        }
+
 		}
 
 	}
