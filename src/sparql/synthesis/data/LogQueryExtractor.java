@@ -66,10 +66,10 @@ public class LogQueryExtractor {
 	};
 	
 	private String defaultLog = "http://dbpedia.org";
-	private int defaultNum = 20;
-	private String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;	
-
-
+	private String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
+	private int defaultQueryNumMax = 20;
+	private int defaultQuerySizeMin = 3;
+	private int defaultQueryResultSizeMin = 1;
 //	TODO check if it is possible to bound the number of nestings
 	
 	private String SPARQL_TEMPLATE_START = 
@@ -81,9 +81,8 @@ public class LogQueryExtractor {
 			+ "?id sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; ";
 
 	private String SPARQL_TEMPLATE_END = 
-			" FILTER(?rs > 0 && ?rt < 100 && ?tp > 3). "
 			//subquery start
-			+ "{ SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { " 
+			"{ SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { " 
 			+ "{ SELECT ?id (0 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. }} UNION "
 			
 			+ "{ SELECT ?id (COUNT(DISTINCT ?v) as ?vcount) WHERE { " 
@@ -98,21 +97,29 @@ public class LogQueryExtractor {
 	
 	private String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
 	
+//	we could add querySizeMax...
 //  num is per config
 //	we might change this by using a big union
-	public void extractQueries(String logUri, int num, String[][] configs) {
+	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
 		
 		//clean data directory
 		for(File file: (new File(Config.DATA_DIR)).listFiles()) file.delete();
 		
 
 		for(String[] config: configs == null ? defaultConfig : configs) {
+			String filter = 
+					" FILTER(?rs > " + (queryResultSizeMin >= 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
+					+ " && ?rt < 100 && ?tp > " + (querySizeMin >= 0 ? querySizeMin : defaultQuerySizeMin) + "). ";
+					
 			String query = 
 					SPARQL_TEMPLATE_START 
 					+ SPARQL_TEMPLATE_FEATURE
 					+ String.join("; "+SPARQL_TEMPLATE_FEATURE, config)
 					+ ". "
-					+ SPARQL_TEMPLATE_END + (num > 0 ? num : defaultNum);
+					+ filter
+					+ SPARQL_TEMPLATE_END + (queryNumMax >= 0 ? queryNumMax : defaultQueryNumMax);
+			
+			
 			
 	        List<String> logQueryIds = new ArrayList<String>();
 	        List<String> logQueries = new ArrayList<String>();
@@ -144,7 +151,7 @@ public class LogQueryExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries(null, 20, null);
+		qe.extractQueries(null, null, 20, -1, -1);
 	}
 
 }
