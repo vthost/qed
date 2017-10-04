@@ -77,7 +77,7 @@ public class LogQueryDataExtractor {
 	}
 
 	
-	public void extractQueryDataAndResults(String log, int datasetSizeMax) {
+	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
 		//clean data directory 
 		File dir = new File(Config.DATA_DIR);
@@ -109,7 +109,7 @@ public class LogQueryDataExtractor {
 			q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
 			
 			try ( QueryEngineHTTP qexec = 
-					(QueryEngineHTTP) QueryExecutionFactory.sparqlService(log, q) ) {
+					(QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, q) ) {
 
 	            qexec.addParam("timeout", "10000") ;
 
@@ -142,7 +142,7 @@ public class LogQueryDataExtractor {
 			Query cq = toConstructQuery(q, datasetSizeMax); 
 			
 			try ( QueryEngineHTTP qexec = 
-	        		(QueryEngineHTTP) QueryExecutionFactory.sparqlService(log, cq) ) {
+	        		(QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq) ) {
 
 	            qexec.addParam("timeout", "10000") ;
 
