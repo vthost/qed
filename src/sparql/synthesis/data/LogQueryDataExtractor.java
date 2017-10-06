@@ -119,7 +119,7 @@ public class LogQueryDataExtractor {
 //	            	System.out.println(q);
 	            	
 	            	//delete query file
-	            	(new File(Utils.getQueryFilePath(qid))).delete();
+//	            	(new File(Utils.getQueryFilePath(qid))).delete();
 	            	continue;
 	            } else {
 	            	Utils.writeQueryResultFile(qid, rs);

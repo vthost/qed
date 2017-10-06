@@ -40,7 +40,8 @@ public class Utils {
 			FileWriter writer = new FileWriter(Utils.getQueryFilePath(lsqIdUrl));
 		  	writer.write(lsqIdUrl);
 		  	writer.write("\n");
-		  	//using the factory we get a formatting that is more readable
+//		  	using the factory we get a formatting that is more readable. 
+//		  	but sometimes it then writes no whitespace ?! (http://lsq.aksw.org/res/DBpedia-q390826)
 		  	writer.write(QueryFactory.create(query).toString()); 
 		  	writer.close();
 		} catch (IOException e) {
@@ -95,9 +96,16 @@ public class Utils {
 			
 		return null;
 	}
+	
+	public static void cleanDataDir() {
+		
+		for(File file: (new File(DATA_DIR)).listFiles()) 
+			file.delete();
+	}
 
 	public static void main(String[] args) {
 		
 	}
+	
 
 }
