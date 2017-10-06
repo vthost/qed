@@ -1,7 +1,5 @@
 package sparql.synthesis.data;
 
-import java.io.File;
-
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
@@ -67,19 +65,55 @@ public class LogQueryExtractor {
 	private int defaultQueryNumMax = 20;
 	private int defaultQuerySizeMin = 3;
 	private int defaultQueryResultSizeMin = 1;
-//	TODO check if it is possible to bound the number of nestings
-	
-	private String SPARQL_TEMPLATE_START = 
-			"PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
-			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
-					
-			+ "SELECT ?id ?text WHERE { "
-			+ "?id a sp:Select. "
-			+ "?id sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; ";
 
-	private String SPARQL_TEMPLATE_END = 
+	
+	private void queryLogAndWriteFiles(String query, String logUri) {
+		
+		try ( QueryEngineHTTP qexec =  
+				(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
+
+			if(logUri != null && !logUri.equals(""))
+				qexec.addParam("default-graph-uri", logUri) ;
+        	
+            ResultSet rs = qexec.execSelect();
+            
+            while(rs.hasNext()) {
+            		QuerySolution s = rs.next();  //System.out.println(s.getResource("?id").toString());		
+            		Utils.writeQueryFile(s.getResource("?id").toString(), s.getLiteral("?text").getString());
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } 
+
+	}
+	
+//  num is per config
+//	we might change this by using a big union
+	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
+		
+		Utils.cleanDataDir();
+		
+		for(String[] config: configs == null ? defaultConfig : configs) {
+			
+			String filter = 
+					" FILTER(?rt < 100"
+					+ " && ?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
+					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
+					
+			
+			String query =  "PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
+			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
+									
+//			TODO for the benchmark we might need to consider also types other than select!
+			+ "SELECT ?id ?text WHERE { "
+			+ "?id a sp:Select; "
+			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "
+			
+			+ "lsqv:usesFeature lsqv:" + String.join("; lsqv:usesFeature lsqv:", config) + ". "
+			+ filter + ". "
 			//subquery start
-			"{ SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { " 
+			+ "{ SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { " 
 			+ "{ SELECT ?id (0 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. }} UNION "
 			
 			+ "{ SELECT ?id (COUNT(DISTINCT ?v) as ?vcount) WHERE { " 
@@ -90,55 +124,37 @@ public class LogQueryExtractor {
 			
 			+ "} GROUP BY ?id }"
 			//subquery end
-			+ "} ORDER BY ASC(?vcountsum) LIMIT ";
-	
-	private String SPARQL_TEMPLATE_FEATURE = "lsqv:usesFeature lsqv:";
-	
-//  num is per config
-//	we might change this by using a big union
-	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
-		
-		//clean data directory
-		for(File file: (new File(Utils.DATA_DIR)).listFiles()) file.delete();
-		
+			+ "} ORDER BY ASC(?vcountsum) "
+			+ "LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); //System.out.println(QueryFactory.create(query));
 
-		for(String[] config: configs == null ? defaultConfig : configs) {
-			String filter = 
-					" FILTER(?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
-					+ " && ?rt < 100 && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + "). ";
-					
-			String query = 
-					SPARQL_TEMPLATE_START 
-					+ SPARQL_TEMPLATE_FEATURE
-					+ String.join("; "+SPARQL_TEMPLATE_FEATURE, config)
-					+ ". "
-					+ filter
-					+ SPARQL_TEMPLATE_END + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); //System.out.println(QueryFactory.create(query));
-
-			try ( QueryEngineHTTP qexec =  
-					(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
-
-	        	qexec.addParam("default-graph-uri", logUri) ;
-	        	
-	            ResultSet rs = qexec.execSelect();
-	            
-	            while(rs.hasNext()) {
-	            		QuerySolution s = rs.next();  //System.out.println(s.getResource("?id").toString());		
-	            		Utils.writeQueryFile(s.getResource("?id").toString(), s.getLiteral("?text").getString());
-	            }
-
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        } 
-
+			queryLogAndWriteFiles(query, logUri);
+			
 		}
 
 	}
 
-	
+	public void extractQueries(String[] queryIds) {
+		
+		if(queryIds == null || queryIds.length == 0) return;
+		
+		Utils.cleanDataDir();
+		
+		String query =  "PREFIX  sp:   <http://spinrdf.org/sp#> "
+				+ "PREFIX  lsqv: <http://lsq.aksw.org/vocab#>  "
+				+ "SELECT  ?id ?text WHERE { "
+				+ "?id sp:text ?text . "
+				+ "FILTER ( (?id=<http://lsq.aksw.org/res/" 
+				+ String.join(">) || (?id=<http://lsq.aksw.org/res/", queryIds) + ">) ) }";
+
+		queryLogAndWriteFiles(query, null);
+	}
+
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
+//		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
+		
+		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
+		qe.extractQueries(ids);
 	}
 
 }
