@@ -11,7 +11,10 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.apache.jena.sparql.syntax.Element;
+import org.apache.jena.sparql.syntax.Element1;
+import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
+import org.apache.jena.sparql.syntax.ElementMinus;
 import org.apache.jena.sparql.syntax.ElementOptional;
 import org.apache.jena.sparql.syntax.ElementPathBlock;
 import org.apache.jena.sparql.syntax.ElementUnion;
@@ -20,6 +23,115 @@ public class LogQueryDataExtractor {
 	
 	private int defaultLimit = 10;
 	
+	private List<ElementPathBlock> extractBGPs(Element e) {	
+			
+			if(e instanceof ElementGroup) {
+				
+				return extractBGPs(((ElementGroup) e).getElements());
+			
+			} else if(e instanceof ElementPathBlock) {
+				
+				List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
+				l.add((ElementPathBlock) e);
+				return l;
+				
+			} 
+	//TODO what to do here? is that still used?
+	//		else if(e instanceof ElementTriplesBlock) {
+	//			
+	//			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
+	//			l.add((ElementTriplesBlock) e);
+	//			return l;
+	//			
+	//		} 
+			else if(e instanceof ElementOptional) {
+				
+				return extractBGPs(((ElementOptional) e).getOptionalElement());
+				
+			} else if(e instanceof ElementUnion) {
+				
+				return extractBGPs(((ElementUnion) e).getElements());
+			}
+//			TODO the below were not tested yet
+			else if(e instanceof Element1) {
+				
+				return extractBGPs(((Element1) e).getElement());
+				
+			} else if(e instanceof ElementMinus) {
+				
+				return extractBGPs(((ElementMinus) e).getMinusElement());
+			}
+			//		TODO do we need to cover other cases? not sure how regarding:
+			//		ElementData, ElementNamedGraph, ElementService, ElementSubQuery,
+		
+			return new ArrayList<ElementPathBlock>();		
+		}
+
+	private List<ElementPathBlock> extractBGPs(List<Element> l) {		
+		
+		List<ElementPathBlock> l2 = new ArrayList<ElementPathBlock>();		
+		for (Element e : l) l2.addAll(extractBGPs(e));
+	
+		return l2;
+	}
+
+	private Element removeFilters(Element e) {
+			
+			if(e instanceof ElementFilter) {
+			
+				return null;
+				
+			} else if(e instanceof ElementGroup) {
+				
+				ElementGroup e1 = (ElementGroup) e;
+				
+				List<Element> fElements = removeFilters(e1.getElements());
+				e1.getElements().clear();
+				e1.getElements().addAll(fElements);
+				
+				return e1;
+			
+			} 
+	//		else if(e instanceof ElementPathBlock) {
+	//			
+	//			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
+	//			l.add((ElementPathBlock) e);
+	//			return l;
+	//			
+	//		} 
+			else if(e instanceof ElementOptional) {
+				
+				Element e1 = removeFilters(((ElementOptional) e).getOptionalElement());
+				
+				return e1 == null ? null : new ElementOptional(e1);
+				
+			} else if(e instanceof ElementUnion) {
+				
+				ElementUnion e1 = (ElementUnion) e;
+				List<Element> fElements = removeFilters(e1.getElements());
+				e1.getElements().clear();
+				e1.getElements().addAll(fElements);
+				
+				return e1;
+			}
+			//		TODO do we need to cover other cases? not sure how regarding:
+			//		ElementDataSet, ElementNamedGraph, ElementService, ElementSubQuery,
+
+			
+			return e;		
+		}
+
+	private List<Element> removeFilters(List<Element> l) {
+		
+		List<Element> l1 = new ArrayList<Element> ();
+		for (Element e : l) {
+			Element e1 = removeFilters(e);
+			if(e1 != null) l1.add(e1);
+		}
+		 
+		return l1;
+	}
+
 	private Query toConstructQuery(String qs, int limit) {
 
 		Query q1 = QueryFactory.create(qs);
@@ -33,16 +145,19 @@ public class LogQueryDataExtractor {
 		q.setLimit(limit > 0 ? limit : defaultLimit);
 		
 		List<String> l = new ArrayList<String>();
-		for (ElementPathBlock b: processElement(p)) {
+		for (ElementPathBlock b: extractBGPs(p)) {
 			l.add(b.toString());
 		}
 		
+//		TODO We currently only consider BGPs in the WHERE clause
+//		What if subgraphs, data sets etc. occur in the SELECT clause?
 		String s =  String.join(".", l);		
 		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
 		
 		return q;		
 	}
 	
+//	TODO cover also MINUS (and others?)
 	private Query toConstructQueryWithoutFilters(String qs, int limit) {
 
 		Query q1 = QueryFactory.create(qs);
@@ -55,84 +170,17 @@ public class LogQueryDataExtractor {
 		q.setLimit(limit > 0 ? limit : defaultLimit);
 		
 		List<String> l = new ArrayList<String>();
-		for (ElementPathBlock b: processElement(p)) {
+		for (ElementPathBlock b: extractBGPs(p)) {
 			l.add(b.toString());
 		}
 		
 		String s =  String.join(".", l);		
 		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
 		
-//		TODO pattern remove filters and set!
+		q.setQueryPattern(removeFilters(p));   
 		
 		return q;		
 	}
-	
-	private List<ElementPathBlock> processElement(Element e) {	
-		
-		if(e instanceof ElementGroup) {
-			
-			return processElementList(((ElementGroup) e).getElements());
-		
-		} else if(e instanceof ElementPathBlock) {
-			
-			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
-			l.add((ElementPathBlock) e);
-			return l;
-			
-		} else if(e instanceof ElementOptional) {
-			
-			return processElement(((ElementOptional) e).getOptionalElement());
-			
-		} else if(e instanceof ElementUnion) {
-			
-			return processElementList(((ElementUnion) e).getElements());
-		}
-//		TODO do we need to cover other cases? not sure...
-		
-		return new ArrayList<ElementPathBlock>();		
-	}
-		
-	private List<ElementPathBlock> processElementList(List<Element> l) {		
-		
-		List<ElementPathBlock> l2 = new ArrayList<ElementPathBlock>();		
-		for (Element e : l) l2.addAll(processElement(e));
-
-		return l2;
-	}
-	
-	private List<ElementPathBlock> processElementF(Element e) {	
-		
-		if(e instanceof ElementGroup) {
-			
-			return processElementListF(((ElementGroup) e).getElements());
-		
-		} else if(e instanceof ElementPathBlock) {
-			
-			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
-			l.add((ElementPathBlock) e);
-			return l;
-			
-		} else if(e instanceof ElementOptional) {
-			
-			return processElementF(((ElementOptional) e).getOptionalElement());
-			
-		} else if(e instanceof ElementUnion) {
-			
-			return processElementListF(((ElementUnion) e).getElements());
-		}
-//		TODO do we need to cover other cases? not sure...
-		
-		return new ArrayList<ElementPathBlock>();		
-	}
-		
-	private List<ElementPathBlock> processElementListF(List<Element> l) {		
-		
-		List<ElementPathBlock> l2 = new ArrayList<ElementPathBlock>();		
-		for (Element e : l) l2.addAll(processElement(e));
-
-		return l2;
-	}
-
 	
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
@@ -196,7 +244,7 @@ public class LogQueryDataExtractor {
 	        	continue; // queryLoop;
 	        } 
 			
-			Query cq = toConstructQuery(q, datasetSizeMax); 
+			Query cq = toConstructQuery(q, datasetSizeMax); System.out.println("------------------ ");System.out.println(cq);
 			
 			try ( QueryEngineHTTP qexec = 
 	        		(QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq) ) {
@@ -229,6 +277,7 @@ public class LogQueryDataExtractor {
 //            	(new File(Utils.getQueryFilePath(qid))).delete();
 	        } 
 			
+			System.out.println(toConstructQueryWithoutFilters(q, datasetSizeMax));
 		}
 		
 	}
