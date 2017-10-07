@@ -28,7 +28,7 @@ public class LogQueryDataExtractor {
 		Query q = QueryFactory.make();
 		q.setPrefixMapping(q1.getPrefixMapping());
 		q.setBaseURI(q1.getBaseURI());
-		q.setQueryPattern(q1.getQueryPattern());                              
+		q.setQueryPattern(p);                              
 		q.setQueryConstructType();
 		q.setLimit(limit > 0 ? limit : defaultLimit);
 		
@@ -39,6 +39,30 @@ public class LogQueryDataExtractor {
 		
 		String s =  String.join(".", l);		
 		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
+		
+		return q;		
+	}
+	
+	private Query toConstructQueryWithoutFilters(String qs, int limit) {
+
+		Query q1 = QueryFactory.create(qs);
+		Element p = q1.getQueryPattern();
+		
+		Query q = QueryFactory.make();
+		q.setPrefixMapping(q1.getPrefixMapping());
+		q.setBaseURI(q1.getBaseURI());                          
+		q.setQueryConstructType();
+		q.setLimit(limit > 0 ? limit : defaultLimit);
+		
+		List<String> l = new ArrayList<String>();
+		for (ElementPathBlock b: processElement(p)) {
+			l.add(b.toString());
+		}
+		
+		String s =  String.join(".", l);		
+		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
+		
+//		TODO pattern remove filters and set!
 		
 		return q;		
 	}
@@ -69,6 +93,39 @@ public class LogQueryDataExtractor {
 	}
 		
 	private List<ElementPathBlock> processElementList(List<Element> l) {		
+		
+		List<ElementPathBlock> l2 = new ArrayList<ElementPathBlock>();		
+		for (Element e : l) l2.addAll(processElement(e));
+
+		return l2;
+	}
+	
+	private List<ElementPathBlock> processElementF(Element e) {	
+		
+		if(e instanceof ElementGroup) {
+			
+			return processElementListF(((ElementGroup) e).getElements());
+		
+		} else if(e instanceof ElementPathBlock) {
+			
+			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
+			l.add((ElementPathBlock) e);
+			return l;
+			
+		} else if(e instanceof ElementOptional) {
+			
+			return processElementF(((ElementOptional) e).getOptionalElement());
+			
+		} else if(e instanceof ElementUnion) {
+			
+			return processElementListF(((ElementUnion) e).getElements());
+		}
+//		TODO do we need to cover other cases? not sure...
+		
+		return new ArrayList<ElementPathBlock>();		
+	}
+		
+	private List<ElementPathBlock> processElementListF(List<Element> l) {		
 		
 		List<ElementPathBlock> l2 = new ArrayList<ElementPathBlock>();		
 		for (Element e : l) l2.addAll(processElement(e));
