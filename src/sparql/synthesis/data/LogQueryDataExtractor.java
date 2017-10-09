@@ -12,6 +12,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;
+import org.apache.jena.sparql.syntax.ElementData;
 import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementMinus;
@@ -60,9 +61,12 @@ public class LogQueryDataExtractor {
 			} else if(e instanceof ElementMinus) {
 				
 				return extractBGPs(((ElementMinus) e).getMinusElement());
+			
+			} else if(e instanceof ElementData) {
+				
+//				return extractBGPs(((ElementData) e).);
 			}
-			//		TODO do we need to cover other cases? not sure how regarding:
-			//		ElementData, ElementNamedGraph, ElementService, ElementSubQuery,
+//			cases currently ignored: ElementNamedGraph, ElementService, ElementSubQuery,
 		
 			return new ArrayList<ElementPathBlock>();		
 		}

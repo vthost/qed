@@ -53,7 +53,7 @@ public class Application {
 		
 //		(new Application()).createDataSet(null, null, 0, 0, 0, 0);
 		
-		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
+		String[] ids = {"DBpedia-q129923"};//DBpedia-q482443","DBpedia-q330584"};
 		(new Application()).createDataSet(null, ids);
 	}
 
