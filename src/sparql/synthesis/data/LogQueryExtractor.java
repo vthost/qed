@@ -100,7 +100,7 @@ public class LogQueryExtractor {
 					" FILTER(?rt < 100"
 					+ " && ?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
 					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
-					
+//					TODO filter not exists feature named graph...
 			
 			String query =  "PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
 			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
