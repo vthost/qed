@@ -51,10 +51,10 @@ public class Application {
 	
 	public static void main(String[] args) {
 		
-//		(new Application()).createDataSet(null, null, 0, 0, 0, 0);
-		
-		String[] ids = {"DBpedia-q129923"};//DBpedia-q482443","DBpedia-q330584"};
-		(new Application()).createDataSet(null, ids);
+		(new Application()).createDataSet(null, null, 0, 0, 0, 0);
+//		
+//		String[] ids = {"DBpedia-q129923"};//DBpedia-q482443","DBpedia-q330584"};
+//		(new Application()).createDataSet(null, ids);
 	}
 
 }

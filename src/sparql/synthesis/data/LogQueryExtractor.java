@@ -99,8 +99,10 @@ public class LogQueryExtractor {
 			String filter = 
 					" FILTER(?rt < 100"
 					+ " && ?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
-					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
-//					TODO filter not exists feature named graph...
+					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + "). "
+					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_NAMED_GRAPH + " } "
+					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_SERVICE + " } "
+					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_NAMED_GRAPH + " } ";
 			
 			String query =  "PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
 			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
