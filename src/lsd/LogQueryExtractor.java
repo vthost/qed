@@ -1,4 +1,4 @@
-package sparql.synthesis.data;
+package lsd;
 
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;

@@ -1,4 +1,4 @@
-package sparql.synthesis.data;
+package lsd;
 
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;

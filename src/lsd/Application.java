@@ -1,4 +1,4 @@
-package sparql.synthesis.data;
+package lsd;
 
 public class Application {
 	
