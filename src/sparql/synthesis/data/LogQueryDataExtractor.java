@@ -4,10 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Collection;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -33,7 +31,7 @@ public class LogQueryDataExtractor {
 //	then make powersets of sets
 //	one construct query per possible opt to opt set map
 	
-	private int defaultLimit = 10;
+	private int defaultDataLimit = 10;
 	
 	private List<ElementPathBlock> extractBGPs(Element e) {	
 			
@@ -90,143 +88,210 @@ public class LogQueryDataExtractor {
 		return l2;
 	}
 
-	private Element removeFilters(Element e) {
-			
-			if(e instanceof ElementFilter) {
-			
-				return null;
-				
-			} else if(e instanceof ElementGroup) {
-				
-				ElementGroup e1 = (ElementGroup) e;
-				
-				List<Element> fElements = removeFilters(e1.getElements());
-				e1.getElements().clear();
-				e1.getElements().addAll(fElements);
-				
-				return e1;
-			
-			} 
-	//		else if(e instanceof ElementPathBlock) {
-	//			
-	//			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
-	//			l.add((ElementPathBlock) e);
-	//			return l;
-	//			
-	//		} 
-			else if(e instanceof ElementOptional) {
-				
-				Element e1 = removeFilters(((ElementOptional) e).getOptionalElement());
-				
-				return e1 == null ? null : new ElementOptional(e1);
-				
-			} else if(e instanceof ElementUnion) {
-				
-				ElementUnion e1 = (ElementUnion) e;
-				List<Element> fElements = removeFilters(e1.getElements());
-				e1.getElements().clear();
-				e1.getElements().addAll(fElements);
-				
-				return e1;
-			}
-			//		TODO do we need to cover other cases? not sure how regarding:
-			//		ElementDataSet, ElementNamedGraph, ElementService, ElementSubQuery,
-
-			
-			return e;		
-		}
-
-	private List<Element> removeFilters(List<Element> l) {
-		
-		List<Element> l1 = new ArrayList<Element> ();
-		for (Element e : l) {
-			Element e1 = removeFilters(e);
-			if(e1 != null) l1.add(e1);
-		}
+	//	http://jvalentino.blogspot.de/2007/02/shortcut-to-calculating-power-set-using.html
+	private <T> List<List<T>> powerset(Collection<T> list) {
+		  List<List<T>> ps = new ArrayList<List<T>>();
+		  ps.add(new ArrayList<T>());   // add the empty set
 		 
-		return l1;
+		  // for every item in the original list
+		  for (T item : list) {
+		    List<List<T>> newPs = new ArrayList<List<T>>();
+		 
+		    for (List<T> subset : ps) {
+		      // copy all of the current powerset's subsets
+		      newPs.add(subset);
+		 
+		      // plus the subsets appended with the current item
+		      List<T> newSubset = new ArrayList<T>(subset);
+		      newSubset.add(item);
+		      newPs.add(newSubset);
+		    }
+		 
+		    // powerset is now powerset of list.subList(0, list.indexOf(item)+1)
+		    ps = newPs;
+		  }
+		  return ps;
 	}
 
-	private Query toConstructQuery(String qs, int limit) {
-
-		Query q1 = QueryFactory.create(qs);
-		Element p = q1.getQueryPattern();
+//	get all subsets of size size satisfying additional conditions of the powerset of 
+//	a merged version of set where the elements are represented as integers
+	private List<List<Integer>> oneElementPowerset(List<List<Element>> set, int size) {
 		
-		Query q = QueryFactory.make();
-		q.setPrefixMapping(q1.getPrefixMapping());
-		q.setBaseURI(q1.getBaseURI());
-		q.setQueryPattern(p);                              
-		q.setQueryConstructType();
-		q.setLimit(limit > 0 ? limit : defaultLimit);
-		
-		List<String> l = new ArrayList<String>();
-		for (ElementPathBlock b: extractBGPs(p)) { //TODO make method dependent on kind of SELECT clause
-			l.add(b.toString());
+//		elements in first list in set are represented as 00 01 02 ...
+//		elements in second list by 10 11 12 ...
+//		etc.
+		List<Integer> iset = new ArrayList<Integer>();
+		for (int i = 0; i < set.size(); i++) {		
+			for (int j = 0; j < set.get(i).size(); j++) {
+				iset.add(10*i+j);
+			}
 		}
 		
-//		TODO We currently only consider BGPs in the WHERE clause
-//		What if subgraphs, data sets etc. occur in the SELECT clause?
-		String s =  String.join(".", l);		
-		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
+		List<List<Integer>> ps = powerset(iset);  
 		
-		return q;		
+		outer: for (int i = ps.size()-1; i >= 0 ; i--) {
+			if(ps.get(i).size() != size) {
+				ps.remove(ps.get(i));
+			} else {
+				for (Integer i1 : ps.get(i)) {
+					for (Integer i2 : ps.get(i)) {
+						if((i1 / 10) == (i2 / 10) && i1 != i2) {
+							ps.remove(ps.get(i));
+							continue outer;
+						}
+					}
+				}
+			}
+		}
+		
+	    return ps;
 	}
+
+//	TODO add also variability for union, and negation
+	private List<Element> getInVariability(Element e, String qs) {	
+		
+		if(e instanceof ElementGroup) {
+
+			List<Element> l1 = new ArrayList<Element>();
+			
+			List<List<Element>> l = getInVariability(((ElementGroup) e).getElements(),qs);
+//			TODO opimize size one
+			List<List<Integer>> l2 = oneElementPowerset(l,l.size());
+//			TODO optimize
+			for (List<Integer> indices : l2) {
+				ElementGroup e1 = (ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
+				e1.getElements().clear();
+				
+				for (Integer i : indices) {
+					e1.getElements().add(l.get(i/10).get(i%10));
+				}
+				l1.add(e1);
+			}
+
+			return l1;
+		
+		} else if(e instanceof ElementOptional) {
+			
+			Element e1 = ((ElementOptional) e).getOptionalElement();
+			Element e2 = ElementUtils.findElement(e1, QueryFactory.create(qs).getQueryPattern()); 
+				
+			List<Element> l1 = getInVariability(e1,qs);
+			List<Element> l2 = getInVariability(e2,qs);
+
+//					l1.addAll(l2.stream().
+//							map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
+			
+			for (Element e3 : l2) {
+				l1.add(new ElementFilter(new E_NotExists(e3))); 
+			}
+			return l1;
+			
+		} else if(e instanceof ElementUnion) {
+			
+			List<Element> l1 = new ArrayList<Element>();
+			
+			List<List<Element>> l = getInVariability(((ElementUnion) e).getElements(),qs);
+			List<List<Integer>> l2 = oneElementPowerset(l,l.size());
+//			TODO optimize
+			for (List<Integer> indices : l2) {
+				ElementUnion e1 = (ElementUnion) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
+				e1.getElements().clear();
+				
+				for (Integer i : indices) {
+					e1.getElements().add(l.get(i/10).get(i%10));
+				}
+				l1.add(e1);
+			}
+
+			return l1;			
+		}	
+//		TODO else if(e instanceof Element1) { //is ElementDataset, ElementExists, ElementNotExists. 
+//					
+//					return extractOptionals(((Element1) e).getElement());
+//					
+//				} else if(e instanceof ElementMinus) {
+//					
+//					return extractOptionals(((ElementMinus) e).getMinusElement());
+//				
+//				} 
+//		System.out.println(e.getClass());
+//		cases currently ignored: ElementNamedGraph, ElementService, ElementSubQuery,
+//		TODO we currently do not go into the inners of (filter etc.) expressions.
+//		check if this is necessary
+		
+		List<Element> l = new ArrayList<Element>();
+		l.add(e);		
+		return l;		
+	}
+
+	private List<List<Element>> getInVariability(List<Element> elements, String queryString) {		
+		
+		List<List<Element>> els = new ArrayList<List<Element>>();		
+		for (Element e : elements) 
+			els.add(getInVariability(e, queryString));
 	
-	private Query toConstructQuery2(String qs, int limit) {
+		return els;
+	}
 
-		Query q1 = QueryFactory.create(qs);
-		Element p = q1.getQueryPattern();
+	private List<Query> createConstructQueries(String queryString, int datasetSizeMax) {
+
+		Query q = QueryFactory.create(queryString);
+		Element p = q.getQueryPattern();
+
+		List<Query> cqs = new ArrayList<Query>();
 		
-		Query q = QueryFactory.make();
-		q.setPrefixMapping(q1.getPrefixMapping());
-		q.setBaseURI(q1.getBaseURI());
-		q.setQueryPattern(p);                              
-		q.setQueryConstructType();
-		q.setLimit(limit > 0 ? limit : defaultLimit);
-		
-		List<String> l = new ArrayList<String>();
-		for (ElementPathBlock b: extractBGPs(p)) { //TODO make method dependent on kind of SELECT clause
-			l.add(b.toString());
+		for (Element e : getInVariability(p,queryString)) {
+			
+			Query cq = QueryFactory.make();
+			cq.setQueryConstructType();
+			cq.setBaseURI(q.getBaseURI());
+			cq.setPrefixMapping(q.getPrefixMapping());	
+//			the WHERE clause is the original one, 
+//			but possibly adapted to make the dataset more variable
+			cq.setQueryPattern(e);                              
+			cq.setLimit(datasetSizeMax > 0 ? datasetSizeMax : defaultDataLimit);
+			
+//			create the construct part of the query
+			List<String> l1 = new ArrayList<String>();
+			for (ElementPathBlock b: extractBGPs(p)) { //TODO make method dependent on kind of SELECT clause
+				l1.add(b.toString());
+			}
+			
+			cq.setConstructTemplate(QueryFactory.createTemplate("{"+ String.join(".", l1) +"}"));
+			
+			cqs.add(cq);
 		}
-		
+				
 //		TODO We currently only consider BGPs in the WHERE clause
-//		What if subgraphs, data sets etc. occur in the SELECT clause?
-		String s =  String.join(".", l);		
-		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
-		
-		Set<Element> os = new HashSet<Element>(extractOptionals(p));
-		Set<Set<Element>> os1 = powerSetWithoutEmptySet(os);
-		Set<Set<Element>> os2 = new HashSet<Set<Element>>(); 
-		
-		
-		System.out.println(os1);
-		return q;		
-	}
-	
-//	TODO cover also MINUS (and others?)
-	private Query toConstructQueryWithoutFilters(String qs, int limit) {
+//		TODO What if subgraphs, data sets etc. occur in the SELECT clause?
 
-		Query q1 = QueryFactory.create(qs);
-		Element p = q1.getQueryPattern();
-		
-		Query q = QueryFactory.make();
-		q.setPrefixMapping(q1.getPrefixMapping());
-		q.setBaseURI(q1.getBaseURI());                          
-		q.setQueryConstructType();
-		q.setLimit(limit > 0 ? limit : defaultLimit);
-		
-		List<String> l = new ArrayList<String>();
-		for (ElementPathBlock b: extractBGPs(p)) {
-			l.add(b.toString());
-		}
-		
-		String s =  String.join(".", l);		
-		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
-		
-		q.setQueryPattern(removeFilters(p));   
-		
-		return q;		
+		return cqs;		
 	}
+//	
+////	TODO cover also MINUS (and others?)
+//	private Query toConstructQueryWithoutFilters(String qs, int limit) {
+//
+//		Query q1 = QueryFactory.create(qs);
+//		Element p = q1.getQueryPattern();
+//		
+//		Query q = QueryFactory.make();
+//		q.setPrefixMapping(q1.getPrefixMapping());
+//		q.setBaseURI(q1.getBaseURI());                          
+//		q.setQueryConstructType();
+//		q.setLimit(limit > 0 ? limit : defaultLimit);
+//		
+//		List<String> l = new ArrayList<String>();
+//		for (ElementPathBlock b: extractBGPs(p)) {
+//			l.add(b.toString());
+//		}
+//		
+//		String s =  String.join(".", l);		
+//		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
+//		
+//		q.setQueryPattern(removeFilters(p));   
+//		
+//		return q;		
+//	}
 	
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
@@ -253,51 +318,59 @@ public class LogQueryDataExtractor {
 		}
 		
 		for (String[] lq: lqs) {
+			
+			boolean hasData = false;
 
 			String qid = lq[0];
 			String q = lq[1];			
 			//some queries are erroneous; missing whitespace
 			q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
 
-			Query cq = toConstructQuery2(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
+			List<Query> qss = createConstructQueries(q, datasetSizeMax);
 			
-			QueryEngineHTTP qe = null;
-			try {			 
-				qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
-	            qe.addParam("timeout", "10000") ;
+			for (Query cq : qss) {
+//				Query cq = toConstructQuery(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
+				System.out.println("------------------ ");System.out.println(cq);
+//				
+				QueryEngineHTTP qe = null;
+				try {			 
+					qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
+		            qe.addParam("timeout", "10000") ;
 
-	            Model m = qe.execConstruct();
-	            
-	            if(!m.listStatements().hasNext()) {
-	            	
-	            	System.out.println("NO DATA "+ qid);
-//	            	System.out.println(query);
-	            	
-	            	//delete other files
+		            Model m = qe.execConstruct();
+		            
+		            if(!m.listStatements().hasNext()) {
+		            	
+		            	System.out.println("NO DATA "+ qid);
+//		            	System.out.println(query);
+		            	
+		            	//delete other files
+//		            	(new File(Utils.getQueryFilePath(qid))).delete();
+		            	continue;
+		            	
+		            } else {
+		            	hasData = true;
+		            	Utils.writeQueryDataFile(qid, m);
+		            }
+
+		        } catch (Exception e) { 
+
+		        	System.out.println("EXCEPTION " + qid);
+		        	System.out.println("------------------ Query failed START");
+		        	System.out.println(qid);
+		        	System.out.println(e);
+		        	System.out.println("------------------ ");
+		        	System.out.println(q);
+		        	System.out.println("------------------ Query failed END");
+	            	//TODO delete - just leave it in currently to be able to look at the query
 //	            	(new File(Utils.getQueryFilePath(qid))).delete();
-	            	continue;
-	            	
-	            } else {
-	            	Utils.writeQueryDataFile(qid, m);
-	            }
-
-	        } catch (Exception e) { 
-
-	        	System.out.println("EXCEPTION " + qid);
-	        	System.out.println("------------------ Query failed START");
-	        	System.out.println(qid);
-	        	System.out.println(e);
-	        	System.out.println("------------------ ");
-	        	System.out.println(q);
-	        	System.out.println("------------------ Query failed END");
-            	//TODO delete - just leave it in currently to be able to look at the query
-//            	(new File(Utils.getQueryFilePath(qid))).delete();
-	        	continue;
-	        } finally {
-	        	if(qe != null) qe.close();
-	        }
+		        	continue;
+		        } finally {
+		        	if(qe != null) qe.close();
+		        }
+			}
 			
-			
+			if(!hasData) continue;
 			InputStream in = null; Model m;
 			try {
 				
@@ -338,137 +411,7 @@ public class LogQueryDataExtractor {
 		}
 		
 	}
-	
-//	adapted from https://stackoverflow.com/questions/1670862/obtaining-a-powerset-of-a-set-in-java
-	private <T> Set<Set<T>> powerSetWithoutEmptySet(Set<T> originalSet) {
-	    Set<Set<T>> sets = new HashSet<Set<T>>();
-	    if (originalSet.isEmpty()) {
-	    	sets.add(new HashSet<T>());
-	        return sets;
-	    }
-	    List<T> list = new ArrayList<T>(originalSet);
-	    T head = list.get(0);
-	    Set<T> rest = new HashSet<T>(list.subList(1, list.size())); 
-	    for (Set<T> set : powerSetWithoutEmptySet(rest)) {
-	        Set<T> newSet = new HashSet<T>();
-	        newSet.add(head);
-	        newSet.addAll(set);
-	        sets.add(newSet);
-	        sets.add(set);
-	    }       
-	    sets.remove(new HashSet<T>());
-	    return sets;
-	}  
-	
-	private <T> List<List<T>> powerSetWithoutEmptySet1(List<T> originalSet) {
-	    List<List<T>> sets = new ArrayList<List<T>>();
-	    if (originalSet.isEmpty()) {
-	    	sets.add(new ArrayList<T>());
-	        return sets;
-	    }
-	    List<T> list = new ArrayList<T>(originalSet);
-	    T head = list.get(0);
-	    List<T> rest = new ArrayList<T>(list.subList(1, list.size())); 
-	    for (List<T> set : powerSetWithoutEmptySet1(rest)) {
-	        List<T> newSet = new ArrayList<T>();
-	        newSet.add(head);
-	        newSet.addAll(set);
-	        sets.add(newSet);
-	        sets.add(set);
-	    }       
-	    sets.remove(new ArrayList<T>());
-	    return sets;
-	}  
-	
-	private List<List<Integer>> powerSet1(List<Integer> originalSet, int size) {
-		
-		List<List<Integer>> ps = powerSetWithoutEmptySet1(originalSet);
-		outer: for (int i = ps.size()-1; i >= 0 ; i--) {
-			if(ps.get(i).size() != size) {
-				ps.remove(ps.get(i));
-			} else {
-				for (Integer i1 : ps.get(i)) {
-					for (Integer i2 : ps.get(i)) {
-						if((i1 / 10) == (i2 / 10)) {
-							ps.remove(ps.get(i));
-							continue outer;
-						}
-					}
-				}
-			}
-		}
-		
-	    return ps;
-	}  
-	
-	private List<List<Integer>> powerSet0(List<List<Element>> originalSet0, int size) {
-		
-		
-		List<Integer> originalSet;
-		List<List<Integer>> ps = powerSet1(originalSet, size);
-		
-		return ps;
-	}
-	//replace optionals
-	private List<Element> extractOptionals(Element e) {	
-				
-				if(e instanceof ElementGroup) {
-					//no take one from each
-					List<Element> l1 = new ArrayList<Element>();
-					
-					
-					for (List<Element> l2 : extractOptionals(((ElementGroup) e).getElements())) {
-						ElementGroup e1 = (ElementGroup) DeepCopy.copy(e);
-						e1.getElements().clear();
-						e1.getElements().addAll(l2);
-						l1.add(e1);
-					}
-					return l1;
-				
-				} else if(e instanceof ElementOptional) {
-					
-					Element e1 = ((ElementOptional) e).getOptionalElement();
-					Element e2 = (Element) DeepCopy.copy(e1);
-						
-					List<Element> l1 = extractOptionals(e1);
-					List<Element> l2 = extractOptionals(e2);
-
-//					l1.addAll(l2.stream().
-//							map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
-					
-					for (Element e3 : l2) {
-						l1.add(new ElementFilter(new E_NotExists(e3))); 
-					}
-					return l1;
-					
-				} 
-//				else if(e instanceof ElementUnion) {
-//					
-//					return extractOptionals(((ElementUnion) e).getElements());
-//					
-//				}	else if(e instanceof Element1) { //is ElementDataset, ElementExists, ElementNotExists. 
-//					
-//					return extractOptionals(((Element1) e).getElement());
-//					
-//				} else if(e instanceof ElementMinus) {
-//					
-//					return extractOptionals(((ElementMinus) e).getMinusElement());
-//				
-//				} 
-	//			cases currently ignored: ElementNamedGraph, ElementService, ElementSubQuery,
-			
-				return new ArrayList<Element>();		
-		}
-
-	private List<List<Element>> extractOptionals(List<Element> l) {		
-		
-		List<List<Element>> l2 = new ArrayList<List<Element>>();		
-//		for (Element e : l) l2.addAll(extractOptionals(e));
-	
-		return l2;
-	}
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
 		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
 	}
