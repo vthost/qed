@@ -41,7 +41,7 @@ public class LogQueryExtractor {
 //	{ FEATURE_BIND },
 //	{ FEATURE_COUNT },
 //	{ FEATURE_DISTINCT },
-//	{ FEATURE_FILTER },
+	{ FEATURE_OPTIONAL},
 //	{ FEATURE_FROM_NAMED },
 //	{ FEATURE_GROUP_BY },
 //	{ FEATURE_HAVING },
@@ -51,7 +51,7 @@ public class LogQueryExtractor {
 //	{ FEATURE_MINUS },
 //	{ FEATURE_NAMED_GRAPH },
 //	{ FEATURE_OFFSET },
-	{ FEATURE_OPTIONAL },
+//	{ FEATURE_OPTIONAL },
 //	{ FEATURE_ORDER_BY },
 //	{ FEATURE_REGEX },
 //	{ FEATURE_SERVICE },
@@ -88,7 +88,7 @@ public class LogQueryExtractor {
 
 	}
 	
-//  num is per config
+//  queryNumMax is per config
 //	we might change this by using a big union
 	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
 		
@@ -99,13 +99,15 @@ public class LogQueryExtractor {
 			String filter = 
 					" FILTER(?rt < 100"
 					+ " && ?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
-					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
-					
+					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + "). "
+					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_NAMED_GRAPH + " } "
+					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_SERVICE + " } "
+					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_NAMED_GRAPH + " } ";
 			
 			String query =  "PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
 			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
 									
-//			TODO for the benchmark we might need to consider also types other than select!
+//			TODO for the benchmark we might want to consider also types other than select!
 			+ "SELECT ?id ?text WHERE { "
 			+ "?id a sp:Select; "
 			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "
@@ -151,10 +153,10 @@ public class LogQueryExtractor {
 
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-//		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
+		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
 		
-		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
-		qe.extractQueries(ids);
+//		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
+//		qe.extractQueries(ids);
 	}
 
 }
