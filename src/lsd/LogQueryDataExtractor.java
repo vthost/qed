@@ -267,32 +267,7 @@ public class LogQueryDataExtractor {
 
 		return cqs;		
 	}
-//	
-////	TODO cover also MINUS (and others?)
-//	private Query toConstructQueryWithoutFilters(String qs, int limit) {
-//
-//		Query q1 = QueryFactory.create(qs);
-//		Element p = q1.getQueryPattern();
-//		
-//		Query q = QueryFactory.make();
-//		q.setPrefixMapping(q1.getPrefixMapping());
-//		q.setBaseURI(q1.getBaseURI());                          
-//		q.setQueryConstructType();
-//		q.setLimit(limit > 0 ? limit : defaultLimit);
-//		
-//		List<String> l = new ArrayList<String>();
-//		for (ElementPathBlock b: extractBGPs(p)) {
-//			l.add(b.toString());
-//		}
-//		
-//		String s =  String.join(".", l);		
-//		q.setConstructTemplate(QueryFactory.createTemplate("{"+s+"}"));
-//		
-//		q.setQueryPattern(removeFilters(p));   
-//		
-//		return q;		
-//	}
-	
+
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
 		//clean data directory 
@@ -330,7 +305,7 @@ public class LogQueryDataExtractor {
 			
 			for (Query cq : qss) {
 //				Query cq = toConstructQuery(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
-				System.out.println("------------------ ");System.out.println(cq);
+//				System.out.println("------------------ ");System.out.println(cq);
 //				
 				QueryEngineHTTP qe = null;
 				try {			 
@@ -356,21 +331,24 @@ public class LogQueryDataExtractor {
 		        } catch (Exception e) { 
 
 		        	System.out.println("EXCEPTION " + qid);
-		        	System.out.println("------------------ Query failed START");
-		        	System.out.println(qid);
-		        	System.out.println(e);
-		        	System.out.println("------------------ ");
-		        	System.out.println(q);
-		        	System.out.println("------------------ Query failed END");
+//		        	System.out.println("------------------ Query failed START");
+//		        	System.out.println(qid);
+//		        	System.out.println(e);
+//		        	System.out.println("------------------ ");
+//		        	System.out.println(q);
+//		        	System.out.println("------------------ Query failed END");
 	            	//TODO delete - just leave it in currently to be able to look at the query
 //	            	(new File(Utils.getQueryFilePath(qid))).delete();
 		        	continue;
+		        	
 		        } finally {
+		        	
 		        	if(qe != null) qe.close();
 		        }
 			}
 			
 			if(!hasData) continue;
+			
 			InputStream in = null; Model m;
 			try {
 				

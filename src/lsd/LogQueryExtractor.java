@@ -41,7 +41,7 @@ public class LogQueryExtractor {
 //	{ FEATURE_BIND },
 //	{ FEATURE_COUNT },
 //	{ FEATURE_DISTINCT },
-	{ FEATURE_OPTIONAL},
+	{ FEATURE_FILTER },
 //	{ FEATURE_FROM_NAMED },
 //	{ FEATURE_GROUP_BY },
 //	{ FEATURE_HAVING },

@@ -1,7 +1,10 @@
 package lsd;
 
+import java.util.List;
+
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;
+import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementMinus;
 import org.apache.jena.sparql.syntax.ElementOptional;
@@ -9,50 +12,64 @@ import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class ElementUtils {
 	
-//	find 1 in 2
-//	(our method to copy element 1)
+//	find e1 in e2
+//	(our method to copy jena sparql syntax Element e1)
+//	
+//	kinds of elements:
+//	Element1 (ElementDataset - Unused in parser???, ElementExists, ElementNotExists), 
+//	ElementAssign, ElementBind, ElementData, ElementFilter, ElementGroup, ElementMinus, 
+//	ElementNamedGraph, ElementOptional, ElementPathBlock, ElementService, ElementSubQuery, 
+//	ElementTriplesBlock, ElementUnion
+//	
+//	can be ignored:
+//	ElementAssign, ElementBind, (ElementFilter?): no jena sparql syntax Elements in expressions
+//	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
+//	ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
+//	TODO we currently (erroneously?) ignore: 
+//	ElementNamedGraph, ElementService, ElementSubQuery
 	public static Element findElement(Element e1, Element e2) {
-		
+				
 		if(e1 == null || e2 == null) return null;
 		
 		if(e1.equals(e2)) return e2;
 		
-		if(e2 instanceof ElementGroup) {
+		
+		if(e2 instanceof Element1) {
 			
-			for (Element e3 : ((ElementGroup) e2).getElements()) {
-				Element e4 = findElement(e1, e3);
-				if(e4 != null) return e4;
-			}
+			return findElement(e1, ((Element1) e2).getElement());
+			
+		} else if(e2 instanceof ElementFilter) { 
+			System.out.println( ((ElementFilter) e2).getExpr().getClass());
+//			return findElement(e1, ((ElementFilter) e2).getExpr();
+		
+		} 
+		else if(e2 instanceof ElementGroup) {
+			
+			return findElement(e1, ((ElementGroup) e2).getElements());
 					
+		} else if(e2 instanceof ElementMinus) {
+			
+			return findElement(e1, ((ElementMinus) e2).getMinusElement());
+		
 		} else if(e2 instanceof ElementOptional) {
 			
 			return findElement(e1, ((ElementOptional) e2).getOptionalElement());
 			
 		} else if(e2 instanceof ElementUnion) {
 			
-			for (Element e3 : ((ElementUnion) e2).getElements()) {
-				Element e4 = findElement(e1, e3);
-				if(e4 != null) return e4;
-			}
-		} else if(e2 instanceof Element1) {
+			return findElement(e1, ((ElementUnion) e2).getElements());
 			
-			return findElement(e1, ((Element1) e2).getElement());
-			
-		} else if(e2 instanceof ElementMinus) {
-			
-			return findElement(e1, ((ElementMinus) e2).getMinusElement());
+		} // else System.out.println(e2.getClass());
+
+		return null;
+	}
+	
+	private static Element findElement(Element e, List<Element> els) {
 		
-		} 
-//		TODO look also into expressions
-//		same for ElementAssign, ElementBind
-//		else if(e2 instanceof ElementFilter) { 
-//			
-//			return findElement(e1, ((ElementFilter) e2).getExpr();
-//		
-//		} 
-//		else System.out.println(e2.getClass());
-//		can be ignored: ElementPathBlock, ElementData, ElementTriplesBlock, 
-//		TODO cases currently ignored: ElementNamedGraph, ElementService, ElementSubQuery,
+		for (Element e2 : els) {
+			Element e3 = findElement(e, e2);
+			if(e3 != null) return e3;
+		}
 		
 		return null;
 	}
