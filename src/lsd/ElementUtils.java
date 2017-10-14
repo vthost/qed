@@ -2,6 +2,7 @@ package lsd;
 
 import java.util.List;
 
+import org.apache.jena.sparql.expr.ExprFunctionOp;
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;
 import org.apache.jena.sparql.syntax.ElementFilter;
@@ -22,7 +23,8 @@ public class ElementUtils {
 //	ElementTriplesBlock, ElementUnion
 //	
 //	can be ignored:
-//	ElementAssign, ElementBind, (ElementFilter?): no jena sparql syntax Elements in expressions
+//	ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
+//	(except in , but that may only occur in filters - according to the spec)
 //	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
 //	ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
 //	TODO we currently (erroneously?) ignore: 
@@ -38,9 +40,10 @@ public class ElementUtils {
 			
 			return findElement(e1, ((Element1) e2).getElement());
 			
-		} else if(e2 instanceof ElementFilter) { 
-			System.out.println( ((ElementFilter) e2).getExpr().getClass());
-//			return findElement(e1, ((ElementFilter) e2).getExpr();
+		} else if(e2 instanceof ElementFilter && //one of E_Exists, E_NotExists
+				((ElementFilter) e2).getExpr() instanceof ExprFunctionOp) { 
+
+			return findElement(e1, ((ExprFunctionOp) ((ElementFilter) e2).getExpr()).getElement());
 		
 		} 
 		else if(e2 instanceof ElementGroup) {
