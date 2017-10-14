@@ -24,7 +24,7 @@ public class ElementUtils {
 //	
 //	can be ignored:
 //	ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
-//	(except in , but that may only occur in filters - according to the spec)
+//	(except in (not) exists, but that may only occur in filters - according to the spec)
 //	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
 //	ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
 //	TODO we currently (erroneously?) ignore: 
@@ -45,8 +45,7 @@ public class ElementUtils {
 
 			return findElement(e1, ((ExprFunctionOp) ((ElementFilter) e2).getExpr()).getElement());
 		
-		} 
-		else if(e2 instanceof ElementGroup) {
+		} else if(e2 instanceof ElementGroup) {
 			
 			return findElement(e1, ((ElementGroup) e2).getElements());
 					

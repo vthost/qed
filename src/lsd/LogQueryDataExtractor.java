@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -16,73 +17,74 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.apache.jena.sparql.expr.E_NotExists;
+import org.apache.jena.sparql.expr.ExprFunctionOp;
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;
-import org.apache.jena.sparql.syntax.ElementData;
 import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementMinus;
 import org.apache.jena.sparql.syntax.ElementOptional;
 import org.apache.jena.sparql.syntax.ElementPathBlock;
+import org.apache.jena.sparql.syntax.ElementTriplesBlock;
 import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class LogQueryDataExtractor {
-//	TODO method gather optionals returns map opt to set of opts
-//	then make powersets of sets
-//	one construct query per possible opt to opt set map
 	
 	private int defaultDataLimit = 10;
 	
-	private List<ElementPathBlock> extractBGPs(Element e) {	
+//	can be ignored:
+//	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
+//	(except in (not) exists, but that may only occur in filters - according to the spec)
+//	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
+//	TODO we currently (erroneously?) ignore: 
+//	ElementNamedGraph, ElementService, ElementSubQuery
+	private List<Element> extractBGPs(Element e) {	
+
+		if(e instanceof Element1) {
 			
-			if(e instanceof ElementGroup) {
-				
-				return extractBGPs(((ElementGroup) e).getElements());
+			return extractBGPs(((Element1) e).getElement());
 			
-			} else if(e instanceof ElementPathBlock) {
-				
-				List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
-				l.add((ElementPathBlock) e);
-				return l;
-				
-			} 
-	//TODO what to do here? is that still used?
-	//		else if(e instanceof ElementTriplesBlock) {
-	//			
-	//			List<ElementPathBlock> l = new ArrayList<ElementPathBlock>();		
-	//			l.add((ElementTriplesBlock) e);
-	//			return l;
-	//			
-	//		} 
-			else if(e instanceof ElementOptional) {
-				
-				return extractBGPs(((ElementOptional) e).getOptionalElement());
-				
-			} else if(e instanceof ElementUnion) {
-				
-				return extractBGPs(((ElementUnion) e).getElements());
-			}
-//			TODO the below were not tested yet
-			else if(e instanceof Element1) {
-				
-				return extractBGPs(((Element1) e).getElement());
-				
-			} else if(e instanceof ElementMinus) {
-				
-				return extractBGPs(((ElementMinus) e).getMinusElement());
-			
-			} else if(e instanceof ElementData) {
-//				TODO implement
-//				return extractBGPs(((ElementData) e).);
-			}
-//			cases currently ignored: ElementNamedGraph, ElementService, ElementSubQuery,
+		} else if(e instanceof ElementFilter && //one of E_Exists, E_NotExists
+				((ElementFilter) e).getExpr() instanceof ExprFunctionOp) { 
+
+			return extractBGPs(((ExprFunctionOp) ((ElementFilter) e).getExpr()).getElement());
 		
-			return new ArrayList<ElementPathBlock>();		
+		} else if(e instanceof ElementGroup) {
+			
+			return extractBGPs(((ElementGroup) e).getElements());
+					
+		} else if(e instanceof ElementMinus) {
+			
+			return extractBGPs(((ElementMinus) e).getMinusElement());
+		
+		} else if(e instanceof ElementOptional) {
+			
+			return extractBGPs(((ElementOptional) e).getOptionalElement());
+			
+		} else if(e instanceof ElementPathBlock) {
+			
+			List<Element> l = new ArrayList<Element>();		
+			l.add((Element) e);
+			return l;
+			
+		} else if(e instanceof ElementTriplesBlock) {
+			
+			List<Element> l = new ArrayList<Element>();		
+			l.add((Element) e);
+			return l;
+			
+		} else if(e instanceof ElementUnion) {
+			
+			return extractBGPs(((ElementUnion) e).getElements());
+			
+		} 
+		
+		return new ArrayList<Element>();		
 	}
 
-	private List<ElementPathBlock> extractBGPs(List<Element> l) {		
+	private List<Element> extractBGPs(List<Element> l) {		
 		
-		List<ElementPathBlock> l2 = new ArrayList<ElementPathBlock>();		
+		List<Element> l2 = new ArrayList<Element>();		
 		for (Element e : l) l2.addAll(extractBGPs(e));
 	
 		return l2;
@@ -147,28 +149,59 @@ public class LogQueryDataExtractor {
 	    return ps;
 	}
 
-//	TODO add also variability for union, and negation
+//	TODO add also variability for cases in comments? or at least treat subelements!
 	private List<Element> getInVariability(Element e, String qs) {	
 		
-		if(e instanceof ElementGroup) {
-
-			List<Element> l1 = new ArrayList<Element>();
+//		if(e instanceof Element1) {
+//			
+//			return extractBGPs(((Element1) e).getElement());
+//			
+//		} 
+//		consider filter AND exists/not exists also by themselves
+//		else if(e instanceof ElementFilter && //one of E_Exists, E_NotExists
+//				((ElementFilter) e).getExpr() instanceof ExprFunctionOp) { 
+//
+//			return extractBGPs(((ExprFunctionOp) ((ElementFilter) e).getExpr()).getElement());
+//		
+//		} else 
+			if(e instanceof ElementGroup) {
 			
-			List<List<Element>> l = getInVariability(((ElementGroup) e).getElements(),qs);
-//			TODO opimize size one
-			List<List<Integer>> l2 = oneElementPowerset(l,l.size());
-//			TODO optimize
-			for (List<Integer> indices : l2) {
-				ElementGroup e1 = (ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
-				e1.getElements().clear();
+			List<Element> els = new ArrayList<Element>();
+			List<List<Element>> l1 = getInVariability(((ElementGroup) e).getElements(),qs);
+			//optimization
+			if(l1.stream().allMatch(l2 -> l2.size() == 1)) {
 				
-				for (Integer i : indices) {
-					e1.getElements().add(l.get(i/10).get(i%10));
+				els.add(e);
+				
+			} else {
+				
+				List<List<Integer>> l2 = oneElementPowerset(l1,l1.size());
+				for (List<Integer> indices : l2) {
+					ElementGroup e1 = (ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
+					e1.getElements().clear();
+					
+					for (Integer i : indices) {
+						e1.getElements().add(l1.get(i/10).get(i%10));
+					}
+					els.add(e1);
 				}
-				l1.add(e1);
 			}
 
-			return l1;
+			return els;
+		
+		} else if(e instanceof ElementMinus) { //TODO add variability for THAT e (we only apply recursion)
+			
+			Element e1 = ((ElementMinus) e).getMinusElement();
+//			Element e2 = ElementUtils.findElement(e1, QueryFactory.create(qs).getQueryPattern()); 
+//				
+			List<Element> l1 = getInVariability(e1,qs);
+//			List<Element> l2 = getInVariability(e2,qs);
+//
+//			l1.addAll(l2.stream().
+//					map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
+			
+			l1.stream().map(e2 -> new ElementMinus(e2));
+			return l1;	
 		
 		} else if(e instanceof ElementOptional) {
 			
@@ -178,50 +211,51 @@ public class LogQueryDataExtractor {
 			List<Element> l1 = getInVariability(e1,qs);
 			List<Element> l2 = getInVariability(e2,qs);
 
-//					l1.addAll(l2.stream().
-//							map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
+			l1.addAll(l2.stream().
+					map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
 			
-			for (Element e3 : l2) {
-				l1.add(new ElementFilter(new E_NotExists(e3))); 
-			}
 			return l1;
 			
-		} else if(e instanceof ElementUnion) {
+		} if(e instanceof ElementUnion) {
 			
-			List<Element> l1 = new ArrayList<Element>();
-			
-			List<List<Element>> l = getInVariability(((ElementUnion) e).getElements(),qs);
-			List<List<Integer>> l2 = oneElementPowerset(l,l.size());
-//			TODO optimize
-			for (List<Integer> indices : l2) {
-				ElementUnion e1 = (ElementUnion) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
-				e1.getElements().clear();
+			List<Element> els = new ArrayList<Element>();
+			List<List<Element>> l1 = getInVariability(((ElementUnion) e).getElements(),qs);
+			//optimization
+			if(l1.stream().allMatch(l2 -> l2.size() == 1)) {
 				
-				for (Integer i : indices) {
-					e1.getElements().add(l.get(i/10).get(i%10));
+				els.add(e);
+				
+			} else {
+				
+				List<List<Integer>> l2 = oneElementPowerset(l1,l1.size());
+				for (List<Integer> indices : l2) {
+					ElementUnion e1 = (ElementUnion) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
+					e1.getElements().clear();
+					
+					for (Integer i : indices) {
+						e1.getElements().add(l1.get(i/10).get(i%10));
+					}
+					els.add(e1);
 				}
-				l1.add(e1);
 			}
 
-			return l1;			
+			return els;
+		
 		}	
-//		TODO else if(e instanceof Element1) { //is ElementDataset, ElementExists, ElementNotExists. 
-//					
-//					return extractOptionals(((Element1) e).getElement());
-//					
-//				} else if(e instanceof ElementMinus) {
-//					
-//					return extractOptionals(((ElementMinus) e).getMinusElement());
-//				
-//				} 
-//		System.out.println(e.getClass());
-//		cases currently ignored: ElementNamedGraph, ElementService, ElementSubQuery,
-//		TODO we currently do not go into the inners of (filter etc.) expressions.
-//		check if this is necessary
+		
+//		jena sparql syntax Element that
+//		...are treated correctly in default case:
+//		ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
+//		(except in (not) exists, but that may only occur in filters - according to the spec)
+//		ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
+//		ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
+//		TODO ...we currently (erroneously?) treat in default case: 
+//		ElementNamedGraph, ElementService, ElementSubQuery
 		
 		List<Element> l = new ArrayList<Element>();
 		l.add(e);		
-		return l;		
+		return l;	
+		
 	}
 
 	private List<List<Element>> getInVariability(List<Element> elements, String queryString) {		
@@ -233,14 +267,16 @@ public class LogQueryDataExtractor {
 		return els;
 	}
 
-	private List<Query> createConstructQueries(String queryString, int datasetSizeMax) {
+	private List<Query> createConstructQueries(String selectOrAskQueryString, int datasetSizeMax) {
+		
+//		TODO check if it's a selectOrAsk ...
 
-		Query q = QueryFactory.create(queryString);
+		Query q = QueryFactory.create(selectOrAskQueryString);
 		Element p = q.getQueryPattern();
 
 		List<Query> cqs = new ArrayList<Query>();
 		
-		for (Element e : getInVariability(p,queryString)) {
+		for (Element e : getInVariability(p,selectOrAskQueryString)) {
 			
 			Query cq = QueryFactory.make();
 			cq.setQueryConstructType();
@@ -253,7 +289,7 @@ public class LogQueryDataExtractor {
 			
 //			create the construct part of the query
 			List<String> l1 = new ArrayList<String>();
-			for (ElementPathBlock b: extractBGPs(p)) { //TODO make method dependent on kind of SELECT clause
+			for (Element b: extractBGPs(p)) { //TODO make method dependent on kind of SELECT clause
 				l1.add(b.toString());
 			}
 			
