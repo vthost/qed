@@ -27,6 +27,7 @@ import org.apache.jena.sparql.syntax.ElementExists;
 import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementMinus;
+import org.apache.jena.sparql.syntax.ElementNamedGraph;
 import org.apache.jena.sparql.syntax.ElementNotExists;
 import org.apache.jena.sparql.syntax.ElementOptional;
 import org.apache.jena.sparql.syntax.ElementPathBlock;
@@ -35,21 +36,18 @@ import org.apache.jena.sparql.syntax.ElementSubQuery;
 import org.apache.jena.sparql.syntax.ElementTriplesBlock;
 import org.apache.jena.sparql.syntax.ElementUnion;
 
-//@SuppressWarnings("unchecked")
+
 public class LogQueryDataExtractor {
 	
 	private int defaultDataLimit = 10;
 	
-//	TODO how do we ensure that all variables occuring in filter expressions etc
+//	TODO not sure if Service, Subquery, and Graph are treated correctly everywhere
 //	
-//	jena sparql syntax Element that...
-//	...can be ignored:
+//	jena sparql syntax Element that can be ignored:
 //	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
 //	(except in (not) exists, but that may only occur in filters - according to the spec)
 //	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
 //	maybe also the sparql values clause
-//	TODO ...we currently (erroneously?) ignore: 
-//	ElementNamedGraph
 	private List<Element> extractBGPs(Element e) {	
 
 		if(e instanceof Element1) {
@@ -69,6 +67,10 @@ public class LogQueryDataExtractor {
 			
 			return extractBGPs(((ElementMinus) e).getMinusElement());
 		
+		} else if(e instanceof ElementNamedGraph) {
+			
+			return extractBGPs(((ElementNamedGraph) e).getElement());
+			
 		} else if(e instanceof ElementOptional) {
 			
 			return extractBGPs(((ElementOptional) e).getOptionalElement());
@@ -265,6 +267,13 @@ public class LogQueryDataExtractor {
 			els.stream().map(e2 -> new ElementMinus(e2));
 			return els;	
 		
+		}  else if(e instanceof ElementNamedGraph) {
+			
+			ElementNamedGraph e1 = (ElementNamedGraph) e;
+			List<Element> els = getInVariability(e1.getElement(),qs);
+			els.stream().map(e2 -> new ElementNamedGraph(e1.getGraphNameNode(), e2));
+			return els;	
+			
 		} else if(e instanceof ElementOptional) {
 			
 			List<Element> l1 = getInVariability(((ElementOptional) e).getOptionalElement(),qs);
@@ -272,10 +281,16 @@ public class LogQueryDataExtractor {
 			List<Element> els = new ArrayList<Element>();
 			els.addAll(l1);
 			els.addAll(l1.stream().
-					map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));
-			
+					map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));			
 			return els;
 		
+		} else if(e instanceof ElementService) {
+			
+			ElementService e1 = (ElementService) e;
+			List<Element> els = getInVariability(e1.getElement(),qs);
+			els.stream().map(e2 -> new ElementService(e1.getServiceNode(), e2, e1.getSilent()));
+			return els;	
+			
 		} else if(e instanceof ElementSubQuery) {
 			
 			List<Element> els = getInVariability(((ElementSubQuery) e).getQuery().getQueryPattern(),qs);
@@ -315,15 +330,12 @@ public class LogQueryDataExtractor {
 		
 		}	
 		
-//		jena sparql syntax Element that...
-//		...are treated correctly in default case:
+//		jena sparql syntax Element that are treated correctly in default case:
 //		ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
 //		(except in (not) exists, but that may only occur in filters - according to the spec)
 //		ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
 //		maybe also the sparql values clause
 //		ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
-//		TODO ...we currently (erroneously?) treat in default case: 
-//		ElementNamedGraph, ElementService
 		
 		List<Element> els = new ArrayList<Element>();
 		els.add(e);		

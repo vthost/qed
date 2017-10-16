@@ -8,6 +8,7 @@ import org.apache.jena.sparql.syntax.Element1;
 import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementMinus;
+import org.apache.jena.sparql.syntax.ElementNamedGraph;
 import org.apache.jena.sparql.syntax.ElementOptional;
 import org.apache.jena.sparql.syntax.ElementService;
 import org.apache.jena.sparql.syntax.ElementSubQuery;
@@ -26,13 +27,11 @@ public class ElementUtils {
 //	ElementTriplesBlock, ElementUnion
 //	
 //	can be ignored:
-//	ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
+//	- ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
 //	(except in (not) exists, but that may only occur in filters - according to the spec)
-//	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
+//	- ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
 //	maybe also the sparql values clause
-//	ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
-//	TODO we currently (erroneously?) ignore: 
-//	ElementNamedGraph
+//	- ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements- 
 	public static Element findElement(Element e1, Element e2) {
 				
 		if(e1 == null || e2 == null) return null;
@@ -57,6 +56,10 @@ public class ElementUtils {
 			
 			return findElement(e1, ((ElementMinus) e2).getMinusElement());
 		
+		} else if(e2 instanceof ElementNamedGraph) {
+			
+			return findElement(e1, ((ElementNamedGraph) e2).getElement());
+			
 		} else if(e2 instanceof ElementOptional) {
 			
 			return findElement(e1, ((ElementOptional) e2).getOptionalElement());
