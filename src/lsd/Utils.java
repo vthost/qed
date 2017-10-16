@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
+import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
@@ -15,6 +17,7 @@ public class Utils {
 	
 	public static String DATA_DIR = "data/";	
 	public static String QUERY_FILE_EXT = ".txt";
+	public static String CONSTRUCT_QUERIES_FILE_EXT = "-cqs.txt";
 	public static String QUERY_DATA_FILE_EXT = "-data.xml";
 	public static String QUERY_RESULT_FILE_EXT = "-result.xml";
 	
@@ -24,6 +27,10 @@ public class Utils {
 	
 	public static String getQueryFilePath(String lsqIdUrl) {
 		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
+	}
+	
+	public static String getConstructQueriesFilePath(String lsqIdUrl) {
+		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + CONSTRUCT_QUERIES_FILE_EXT;
 	}
 	
 	public static String getQueryDataFilePath(String lsqIdUrl) {
@@ -43,6 +50,19 @@ public class Utils {
 //		  	using the factory we get a formatting that is more readable. 
 //		  	but sometimes it then writes no whitespace ?! (http://lsq.aksw.org/res/DBpedia-q390826)
 		  	writer.write(QueryFactory.create(query).toString()); 
+		  	writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void writeConstructQueriesFile(String lsqIdUrl, List<Query> queries) {
+
+		try {
+			FileWriter writer = new FileWriter(getConstructQueriesFilePath(lsqIdUrl));
+		  	for (Query query : queries) {
+		  		writer.write(query + "\n----------------------------------------------\n"); 
+			}
 		  	writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();

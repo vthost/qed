@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,28 +17,39 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
+import org.apache.jena.sparql.expr.E_Exists;
+import org.apache.jena.sparql.expr.E_LogicalNot;
 import org.apache.jena.sparql.expr.E_NotExists;
 import org.apache.jena.sparql.expr.ExprFunctionOp;
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;
+import org.apache.jena.sparql.syntax.ElementExists;
 import org.apache.jena.sparql.syntax.ElementFilter;
 import org.apache.jena.sparql.syntax.ElementGroup;
 import org.apache.jena.sparql.syntax.ElementMinus;
+import org.apache.jena.sparql.syntax.ElementNotExists;
 import org.apache.jena.sparql.syntax.ElementOptional;
 import org.apache.jena.sparql.syntax.ElementPathBlock;
+import org.apache.jena.sparql.syntax.ElementService;
+import org.apache.jena.sparql.syntax.ElementSubQuery;
 import org.apache.jena.sparql.syntax.ElementTriplesBlock;
 import org.apache.jena.sparql.syntax.ElementUnion;
 
+//@SuppressWarnings("unchecked")
 public class LogQueryDataExtractor {
 	
 	private int defaultDataLimit = 10;
 	
-//	can be ignored:
+//	TODO how do we ensure that all variables occuring in filter expressions etc
+//	
+//	jena sparql syntax Element that...
+//	...can be ignored:
 //	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
 //	(except in (not) exists, but that may only occur in filters - according to the spec)
 //	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
-//	TODO we currently (erroneously?) ignore: 
-//	ElementNamedGraph, ElementService, ElementSubQuery
+//	maybe also the sparql values clause
+//	TODO ...we currently (erroneously?) ignore: 
+//	ElementNamedGraph
 	private List<Element> extractBGPs(Element e) {	
 
 		if(e instanceof Element1) {
@@ -67,6 +79,14 @@ public class LogQueryDataExtractor {
 			l.add((Element) e);
 			return l;
 			
+		} else if(e instanceof ElementService) {
+			
+			return extractBGPs(((ElementService) e).getElement());
+					
+		} else if(e instanceof ElementSubQuery) {
+				
+			return extractBGPs(((ElementSubQuery) e).getQuery().getQueryPattern());
+						
 		} else if(e instanceof ElementTriplesBlock) {
 			
 			List<Element> l = new ArrayList<Element>();		
@@ -75,8 +95,7 @@ public class LogQueryDataExtractor {
 			
 		} else if(e instanceof ElementUnion) {
 			
-			return extractBGPs(((ElementUnion) e).getElements());
-			
+			return extractBGPs(((ElementUnion) e).getElements());			
 		} 
 		
 		return new ArrayList<Element>();		
@@ -88,6 +107,11 @@ public class LogQueryDataExtractor {
 		for (Element e : l) l2.addAll(extractBGPs(e));
 	
 		return l2;
+	}
+	
+	private int getIndexOffset(int elementCount) {
+
+		return (int) Math.pow(10,Math.ceil(Math.log10(elementCount)));
 	}
 
 	//	http://jvalentino.blogspot.de/2007/02/shortcut-to-calculating-power-set-using.html
@@ -121,11 +145,13 @@ public class LogQueryDataExtractor {
 		
 //		elements in first list in set are represented as 00 01 02 ...
 //		elements in second list by 10 11 12 ...
-//		etc.
+//		etc.		
 		List<Integer> iset = new ArrayList<Integer>();
+		int indexOffset =  getIndexOffset( Collections.max( 
+				(Collection<Integer>)  set.stream().map(List::size).collect(Collectors.toList())));
 		for (int i = 0; i < set.size(); i++) {		
 			for (int j = 0; j < set.get(i).size(); j++) {
-				iset.add(10*i+j);
+				iset.add(indexOffset*i+j);
 			}
 		}
 		
@@ -137,7 +163,7 @@ public class LogQueryDataExtractor {
 			} else {
 				for (Integer i1 : ps.get(i)) {
 					for (Integer i2 : ps.get(i)) {
-						if((i1 / 10) == (i2 / 10) && i1 != i2) {
+						if((i1/indexOffset) == (i2/indexOffset) && i1 != i2) {
 							ps.remove(ps.get(i));
 							continue outer;
 						}
@@ -149,39 +175,83 @@ public class LogQueryDataExtractor {
 	    return ps;
 	}
 
-//	TODO add also variability for cases in comments? or at least treat subelements!
+//	TODO discuss if solutions are ok like this
+//	
+//	we ignore ElementDataset since it is unused by the parser (according to the JavaDoc)
 	private List<Element> getInVariability(Element e, String qs) {	
 		
-//		if(e instanceof Element1) {
-//			
-//			return extractBGPs(((Element1) e).getElement());
-//			
-//		} 
-//		consider filter AND exists/not exists also by themselves
-//		else if(e instanceof ElementFilter && //one of E_Exists, E_NotExists
-//				((ElementFilter) e).getExpr() instanceof ExprFunctionOp) { 
-//
-//			return extractBGPs(((ExprFunctionOp) ((ElementFilter) e).getExpr()).getElement());
-//		
-//		} else 
-			if(e instanceof ElementGroup) {
+//		not sure where this class, Element(Not)Exists, is actually used. 
+//		in filter this is not possible given the type?!
+//		TODO add variability?
+		if(e instanceof ElementExists) {
+			
+			List<Element> els = getInVariability(
+						(((ElementExists) e).getElement()),qs);
+			els.stream().map(e1 -> new ElementExists(e1));
+			return els;
+		
+		} else if(e instanceof ElementNotExists) {
+			
+			List<Element> els = getInVariability(
+						(((ElementExists) e).getElement()),qs);
+			els.stream().map(e1 -> new ElementNotExists(e1));
+			return els;
+	
+//		TODO add variability for the (not)exists itself in the filter?
+		} else if(e instanceof ElementFilter) { 
+			
+			List<Element> els = new ArrayList<Element>();			
+			
+			//first, recursion
+			if(((ElementFilter) e).getExpr() instanceof E_Exists) {
+				
+				List<Element> l1 = getInVariability(
+						((ExprFunctionOp) ((ElementFilter) e).getExpr()).getElement(),qs);
+				l1.stream().map(e1 -> new ElementFilter(new E_Exists(e1)));
+				
+				els.addAll(l1);
+				
+			} else if(((ElementFilter) e).getExpr() instanceof E_NotExists) {
+				
+				List<Element> l1 = getInVariability(
+						((ExprFunctionOp) ((ElementFilter) e).getExpr()).getElement(),qs);
+				l1.stream().map(e1 -> new ElementFilter(new E_NotExists(e1)));
+				
+				els.addAll(l1);
+				
+			} else {
+				els.add(e);
+			}
+				
+			int c = els.size();
+//			then, the variability for the filter itself
+			for (int i = 0; i < c; i++) {
+				els.add(new ElementFilter(new E_LogicalNot(((ElementFilter) els.get(i)).getExpr())));
+			}
+
+			return els;
+		
+		} else if(e instanceof ElementGroup) {
 			
 			List<Element> els = new ArrayList<Element>();
 			List<List<Element>> l1 = getInVariability(((ElementGroup) e).getElements(),qs);
-			//optimization
+			//optimization; here we do not have to calculate the one element powerset
 			if(l1.stream().allMatch(l2 -> l2.size() == 1)) {
 				
-				els.add(e);
-				
+				els.add(e);				
 			} else {
 				
 				List<List<Integer>> l2 = oneElementPowerset(l1,l1.size());
+				int indexOffset = getIndexOffset( Collections.max( 
+						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
+
 				for (List<Integer> indices : l2) {
+
 					ElementGroup e1 = (ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
 					e1.getElements().clear();
 					
 					for (Integer i : indices) {
-						e1.getElements().add(l1.get(i/10).get(i%10));
+						e1.getElements().add(l1.get(i/indexOffset).get(i%indexOffset));
 					}
 					els.add(e1);
 				}
@@ -189,35 +259,34 @@ public class LogQueryDataExtractor {
 
 			return els;
 		
-		} else if(e instanceof ElementMinus) { //TODO add variability for THAT e (we only apply recursion)
+		} else if(e instanceof ElementMinus) { //TODO add variability?
 			
-			Element e1 = ((ElementMinus) e).getMinusElement();
-//			Element e2 = ElementUtils.findElement(e1, QueryFactory.create(qs).getQueryPattern()); 
-//				
-			List<Element> l1 = getInVariability(e1,qs);
-//			List<Element> l2 = getInVariability(e2,qs);
-//
-//			l1.addAll(l2.stream().
-//					map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
-			
-			l1.stream().map(e2 -> new ElementMinus(e2));
-			return l1;	
+			List<Element> els = getInVariability(((ElementMinus) e).getMinusElement(),qs);
+			els.stream().map(e2 -> new ElementMinus(e2));
+			return els;	
 		
 		} else if(e instanceof ElementOptional) {
 			
-			Element e1 = ((ElementOptional) e).getOptionalElement();
-			Element e2 = ElementUtils.findElement(e1, QueryFactory.create(qs).getQueryPattern()); 
-				
-			List<Element> l1 = getInVariability(e1,qs);
-			List<Element> l2 = getInVariability(e2,qs);
-
-			l1.addAll(l2.stream().
-					map(e3 -> new ElementFilter(new E_NotExists(e3))).collect(Collectors.toList()));
+			List<Element> l1 = getInVariability(((ElementOptional) e).getOptionalElement(),qs);
 			
-			return l1;
+			List<Element> els = new ArrayList<Element>();
+			els.addAll(l1);
+			els.addAll(l1.stream().
+					map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));
 			
-		} if(e instanceof ElementUnion) {
+			return els;
+		
+		} else if(e instanceof ElementSubQuery) {
 			
+			List<Element> els = getInVariability(((ElementSubQuery) e).getQuery().getQueryPattern(),qs);
+			els.stream().map(e2 -> {
+				Query q = ((ElementSubQuery) e).getQuery().cloneQuery(); 
+				q.setQueryPattern(e2); 
+				return q;});
+			return els;	
+			
+		} else if(e instanceof ElementUnion) {
+//			TODO!
 			List<Element> els = new ArrayList<Element>();
 			List<List<Element>> l1 = getInVariability(((ElementUnion) e).getElements(),qs);
 			//optimization
@@ -228,12 +297,15 @@ public class LogQueryDataExtractor {
 			} else {
 				
 				List<List<Integer>> l2 = oneElementPowerset(l1,l1.size());
+				int indexOffset = getIndexOffset( Collections.max( 
+						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
+				
 				for (List<Integer> indices : l2) {
 					ElementUnion e1 = (ElementUnion) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
 					e1.getElements().clear();
 					
 					for (Integer i : indices) {
-						e1.getElements().add(l1.get(i/10).get(i%10));
+						e1.getElements().add(l1.get(i/indexOffset).get(i%indexOffset));
 					}
 					els.add(e1);
 				}
@@ -243,18 +315,19 @@ public class LogQueryDataExtractor {
 		
 		}	
 		
-//		jena sparql syntax Element that
+//		jena sparql syntax Element that...
 //		...are treated correctly in default case:
 //		ElementAssign, ElementBind: no jena sparql syntax Elements in expressions
 //		(except in (not) exists, but that may only occur in filters - according to the spec)
 //		ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
+//		maybe also the sparql values clause
 //		ElementPathBlock, ElementTriplesBlock: bgps are no jena sparql syntax Elements
 //		TODO ...we currently (erroneously?) treat in default case: 
-//		ElementNamedGraph, ElementService, ElementSubQuery
+//		ElementNamedGraph, ElementService
 		
-		List<Element> l = new ArrayList<Element>();
-		l.add(e);		
-		return l;	
+		List<Element> els = new ArrayList<Element>();
+		els.add(e);		
+		return els;	
 		
 	}
 
@@ -309,7 +382,8 @@ public class LogQueryDataExtractor {
 		//clean data directory 
 		File dir = new File(Utils.DATA_DIR);
 		for(File file: dir.listFiles()) {
-		    if (file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
+		    if (file.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
+		    		file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
 		    		file.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
 		        file.delete();
 		    }
@@ -332,36 +406,30 @@ public class LogQueryDataExtractor {
 			
 			boolean hasData = false;
 
-			String qid = lq[0];
+			String qid = lq[0];System.out.println(qid);
 			String q = lq[1];			
 			//some queries are erroneous; missing whitespace
 			q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
 
 			List<Query> qss = createConstructQueries(q, datasetSizeMax);
+//			uncomment the following line to get a file with all the cqs
+			Utils.writeConstructQueriesFile(qid,qss);
 			
 			for (Query cq : qss) {
 //				Query cq = toConstructQuery(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
 //				System.out.println("------------------ ");System.out.println(cq);
 //				
 				QueryEngineHTTP qe = null;
-				try {			 
+				try {		
+					
 					qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
 		            qe.addParam("timeout", "10000") ;
 
 		            Model m = qe.execConstruct();
 		            
-		            if(!m.listStatements().hasNext()) {
-		            	
-		            	System.out.println("NO DATA "+ qid);
-//		            	System.out.println(query);
-		            	
-		            	//delete other files
-//		            	(new File(Utils.getQueryFilePath(qid))).delete();
-		            	continue;
-		            	
-		            } else {
-		            	hasData = true;
-		            	Utils.writeQueryDataFile(qid, m);
+		            if(m.listStatements().hasNext()) {
+		            		hasData = true;
+		            		Utils.writeQueryDataFile(qid, m);
 		            }
 
 		        } catch (Exception e) { 
@@ -373,17 +441,22 @@ public class LogQueryDataExtractor {
 //		        	System.out.println("------------------ ");
 //		        	System.out.println(q);
 //		        	System.out.println("------------------ Query failed END");
-	            	//TODO delete - just leave it in currently to be able to look at the query
+	            	//just leave this in currently to be able to look at the query
 //	            	(new File(Utils.getQueryFilePath(qid))).delete();
-		        	continue;
 		        	
 		        } finally {
-		        	
-		        	if(qe != null) qe.close();
+		        		if(qe != null) qe.close();
 		        }
 			}
 			
-			if(!hasData) continue;
+			if(!hasData) { 	
+//            	System.out.println("NO DATA "+ qid);
+//            	System.out.println(query);
+            	
+//            	delete other files
+//            	(new File(Utils.getQueryFilePath(qid))).delete();
+            		continue;
+			}
 			
 			InputStream in = null; Model m;
 			try {
@@ -413,7 +486,7 @@ public class LogQueryDataExtractor {
 				System.out.println("NO RESULT "+ qid);
 //	            	System.out.println(q);
             	
-            	//TODO delete files
+            	//delete files
 //	            (new File(Utils.getQueryFilePath(qid))).delete();
 //				(new File(Utils.getQueryDataFilePath(qid))).delete();
             	
