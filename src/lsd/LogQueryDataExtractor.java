@@ -249,6 +249,7 @@ public class LogQueryDataExtractor {
 
 				for (List<Integer> indices : l2) {
 
+					//TODO we can probably just create a new group instead of the find...
 					ElementGroup e1 = (ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
 					e1.getElements().clear();
 					
@@ -261,11 +262,15 @@ public class LogQueryDataExtractor {
 
 			return els;
 		
-		} else if(e instanceof ElementMinus) { //TODO add variability?
+		} else if(e instanceof ElementMinus) { 
 			
-			List<Element> els = getInVariability(((ElementMinus) e).getMinusElement(),qs);
-			els.stream().map(e2 -> new ElementMinus(e2));
-			return els;	
+			List<Element> l1 = getInVariability(((ElementMinus) e).getMinusElement(),qs);
+			
+			List<Element> els = new ArrayList<Element>();
+			els.addAll(l1);
+			els.addAll(l1.stream().
+					map(e1 -> new ElementMinus(e1)).collect(Collectors.toList()));			
+			return els;
 		
 		}  else if(e instanceof ElementNamedGraph) {
 			
@@ -301,13 +306,22 @@ public class LogQueryDataExtractor {
 			return els;	
 			
 		} else if(e instanceof ElementUnion) {
-//			TODO!
+
 			List<Element> els = new ArrayList<Element>();
 			List<List<Element>> l1 = getInVariability(((ElementUnion) e).getElements(),qs);
 			//optimization
 			if(l1.stream().allMatch(l2 -> l2.size() == 1)) {
 				
-				els.add(e);
+				for (List<Element> l : powerset(((ElementUnion) e).getElements())) {
+					
+					ElementGroup e1 = new ElementGroup();
+					for (Element e2 : ((ElementUnion) e).getElements()) {
+						e1.getElements().add(l.contains(e2) ? e2 :
+							new ElementFilter(new E_NotExists(e1)));
+					}
+
+					els.add(e1);
+				}			
 				
 			} else {
 				
@@ -316,13 +330,21 @@ public class LogQueryDataExtractor {
 						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
 				
 				for (List<Integer> indices : l2) {
-					ElementUnion e1 = (ElementUnion) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
-					e1.getElements().clear();
 					
-					for (Integer i : indices) {
-						e1.getElements().add(l1.get(i/indexOffset).get(i%indexOffset));
-					}
-					els.add(e1);
+					Collection<Element> l3 = (Collection<Element>) indices.stream().
+							map(i -> l1.get(i/indexOffset).get(i%indexOffset)).collect(Collectors.toList());
+					
+					for (List<Element> l : powerset(l3)) {
+						
+						ElementGroup e1 = new ElementGroup();
+						for (Element e2 : ((ElementUnion) e).getElements()) {
+							e1.getElements().add(l.contains(e2) ? e2 :
+								new ElementFilter(new E_NotExists(e1)));
+						}
+
+						els.add(e1);
+					}			
+				
 				}
 			}
 
