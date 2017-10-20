@@ -248,9 +248,8 @@ public class LogQueryDataExtractor {
 						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
 
 				for (List<Integer> indices : l2) {
-
-					//TODO we can probably just create a new group instead of the find...
-					ElementGroup e1 = (ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); //(ElementGroup) DeepCopy.copy(e);
+System.out.println();e.toString();
+					ElementGroup e1 = new ElementGroup(); //(ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); 
 					e1.getElements().clear();
 					
 					for (Integer i : indices) {

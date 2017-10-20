@@ -49,7 +49,7 @@ public class Utils {
 		  	writer.write("\n");
 //		  	using the factory we get a formatting that is more readable. 
 //		  	but sometimes it then writes no whitespace ?! (http://lsq.aksw.org/res/DBpedia-q390826)
-		  	writer.write(QueryFactory.create(query).toString()); 
+		  	writer.write(query);//QueryFactory.create(query).toString()); 
 		  	writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -72,11 +72,15 @@ public class Utils {
 	public static void writeQueryDataFile(String lsqIdUrl, Model m) {
 
 		try {
+			if(new File(Utils.getQueryDataFilePath(lsqIdUrl)).isFile())
+				m.read(Utils.getQueryDataFilePath(lsqIdUrl));
+			
 			FileWriter writer = new FileWriter(Utils.getQueryDataFilePath(lsqIdUrl));
 //    	  	writer.write(logQueryIds.get(i));
 //    	  	writer.write("\n");
+			
             m.write(writer, "RDF/XML");
-    	  	writer.close();
+    	  		writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
