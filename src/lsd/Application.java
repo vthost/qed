@@ -21,6 +21,20 @@ public class Application {
 			return "http://dbpedia.org/sparql";
 		}
 	}
+	
+//	private void createDirectoryStructure(String[][] configs) {
+//		
+//		File f = new File(Utils.DATA_DIR);
+//		if(f.isFile()) f.delete();
+//
+//		new File(Utils.DATA_DIR).mkdir();
+//		
+//		if(configs == null) return;
+//		
+//		for (String[] c : configs) {
+//			new File(Utils.getDirPath(c)).mkdir();
+//		}
+//	}
 
 //		logUri can be one of	
 //		DBpedia: http://dbpedia.org
@@ -33,6 +47,8 @@ public class Application {
 			int queryResultSizeMin, int datasetSizeMax) {
 		
 		logUri = logUri == "" || logUri == null ? defaultLog : logUri;
+		
+//		createDirectoryStructure(configs == null ? LogQueryExtractor.defaultConfig : configs);
 		
 		(new LogQueryExtractor()).extractQueries(logUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
 		(new LogQueryDataExtractor()).extractQueryDataAndResults(getEndpoint(logUri), datasetSizeMax);
@@ -51,10 +67,10 @@ public class Application {
 	
 	public static void main(String[] args) {
 		
-//		(new Application()).createDataSet(null, null, 0, 0, 0, 0);
+		(new Application()).createDataSet(null, null, 0, 0, 0, 0);
 //		
-		String[] ids = {"DBpedia-q710195"};//DBpedia-q482443","DBpedia-q330584"};
-		(new Application()).createDataSet(null, ids);
+//		String[] ids = {"DBpedia-q710195"};//DBpedia-q482443","DBpedia-q330584"};
+//		(new Application()).createDataSet(null, ids);
 	}
 
 }

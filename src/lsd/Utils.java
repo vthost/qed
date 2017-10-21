@@ -7,44 +7,94 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
 
 public class Utils {
 	
-	public static String DATA_DIR = "data/";	
+	public static String DATA_DIR = System.getProperty("user.dir") + File.separator + "data" + File.separator;	
 	public static String QUERY_FILE_EXT = ".txt";
 	public static String CONSTRUCT_QUERIES_FILE_EXT = "-cqs.txt";
 	public static String QUERY_DATA_FILE_EXT = "-data.xml";
 	public static String QUERY_RESULT_FILE_EXT = "-result.xml";
 	
+//	private static void deleteDir(File file) {
+//		
+//		if(!file.isFile()) return;
+//		
+//	    File[] contents = file.listFiles();
+//	    if (contents != null) {
+//	        for (File f : contents) {
+//	            deleteDir(f);
+//	        }
+//	    }
+//	    file.delete();
+//	}
+	
+	public static void cleanDataDir() {
+		
+		File f = new File(DATA_DIR);
+		if(f.exists()) {
+			try {
+				FileUtils.deleteDirectory(f);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		new File(DATA_DIR).mkdir();
+	}
+	
+	public static File cleanDataSubDir(String[] config) {
+		
+		String p = DATA_DIR + (config == null ? "" : String.join("_", config) + File.separator);
+		
+		File f = new File(p);
+		if(f.exists()) {
+			try {
+				FileUtils.deleteDirectory(f);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	
+		f = new File(p); 
+		f.mkdir();
+		return f;
+	}
+
 	public static String getQueryId(String lsqIdUrl) {
-		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf("/") + 1);
+		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf(File.separator) + 1);
 	}
 	
-	public static String getQueryFilePath(String lsqIdUrl) {
-		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
+//	public static String getQueryFilePath(String lsqIdUrl, String[] config) {
+//		return DATA_DIR + (config == null ? "" : String.join("_", config) + File.separator) + 
+//				getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
+//	}
+	public static String getQueryFileName(String lsqIdUrl) {
+		return getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
 	}
 	
-	public static String getConstructQueriesFilePath(String lsqIdUrl) {
-		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + CONSTRUCT_QUERIES_FILE_EXT;
+	public static String getConstructQueriesFileName(String lsqIdUrl) {
+		return getQueryId(lsqIdUrl) + CONSTRUCT_QUERIES_FILE_EXT;
 	}
 	
-	public static String getQueryDataFilePath(String lsqIdUrl) {
-		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_DATA_FILE_EXT;
+	public static String getQueryDataFileName(String lsqIdUrl) {
+		return getQueryId(lsqIdUrl) + QUERY_DATA_FILE_EXT;
 	}
 	
-	public static String getQueryResultFilePath(String lsqIdUrl) {
-		return DATA_DIR + Utils.getQueryId(lsqIdUrl) + QUERY_RESULT_FILE_EXT;
+	public static String getQueryResultFileName(String lsqIdUrl) {
+		return getQueryId(lsqIdUrl) + QUERY_RESULT_FILE_EXT;
 	}
 	
-	public static void writeQueryFile(String lsqIdUrl, String query) {
+	public static void writeQueryFile(File directory, String lsqIdUrl, String query) {
 
 		try {
-			FileWriter writer = new FileWriter(Utils.getQueryFilePath(lsqIdUrl));
+			String p = directory == null ? Utils.DATA_DIR : directory.getPath() + File.separator;
+			
+			FileWriter writer = new FileWriter(p + Utils.getQueryFileName(lsqIdUrl));
 		  	writer.write(lsqIdUrl);
 		  	writer.write("\n");
 //		  	using the factory we get a formatting that is more readable. 
@@ -56,10 +106,10 @@ public class Utils {
 		}
 	}
 	
-	public static void writeConstructQueriesFile(String lsqIdUrl, List<Query> queries) {
+	public static void writeConstructQueriesFile(File directory, String lsqIdUrl, List<Query> queries) {
 
 		try {
-			FileWriter writer = new FileWriter(getConstructQueriesFilePath(lsqIdUrl));
+			FileWriter writer = new FileWriter(directory.getPath() + File.separator + getConstructQueriesFileName(lsqIdUrl));
 		  	for (Query query : queries) {
 		  		writer.write(query + "\n----------------------------------------------\n"); 
 			}
@@ -69,13 +119,14 @@ public class Utils {
 		}
 	}
 	
-	public static void writeQueryDataFile(String lsqIdUrl, Model m) {
+	public static void writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
 
 		try {
-			if(new File(Utils.getQueryDataFilePath(lsqIdUrl)).isFile())
-				m.read(Utils.getQueryDataFilePath(lsqIdUrl));
+			String path = directory.getPath() + File.separator + getQueryDataFileName(lsqIdUrl);
+			if(new File(path).isFile())
+				m.read(path);
 			
-			FileWriter writer = new FileWriter(Utils.getQueryDataFilePath(lsqIdUrl));
+			FileWriter writer = new FileWriter(path);
 //    	  	writer.write(logQueryIds.get(i));
 //    	  	writer.write("\n");
 			
@@ -86,10 +137,10 @@ public class Utils {
 		}
 	}
 	
-	public static void writeQueryResultFile(String lsqIdUrl, ResultSet rs) {
+	public static void writeQueryResultFile(File directory, String lsqIdUrl, ResultSet rs) {
 
 		try {
-			FileWriter writer = new FileWriter(Utils.getQueryResultFilePath(lsqIdUrl));
+			FileWriter writer = new FileWriter(directory.getPath() + File.separator + getQueryResultFileName(lsqIdUrl));
 //    	  	writer.write(logQueryIds.get(i));
 //    	  	writer.write("\n");
 			writer.write(ResultSetFormatter.asXMLString(rs));
@@ -121,12 +172,6 @@ public class Utils {
 		return null;
 	}
 	
-	public static void cleanDataDir() {
-		
-		for(File file: (new File(DATA_DIR)).listFiles()) 
-			file.delete();
-	}
-
 	public static void main(String[] args) {
 		
 	}

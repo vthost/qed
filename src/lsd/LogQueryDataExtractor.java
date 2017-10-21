@@ -248,7 +248,7 @@ public class LogQueryDataExtractor {
 						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
 
 				for (List<Integer> indices : l2) {
-System.out.println();e.toString();
+//System.out.println();e.toString();
 					ElementGroup e1 = new ElementGroup(); //(ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); 
 					e1.getElements().clear();
 					
@@ -413,125 +413,140 @@ System.out.println();e.toString();
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
 		//clean data directory 
-		File dir = new File(Utils.DATA_DIR);
-		for(File file: dir.listFiles()) {
-		    if (file.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
-		    		file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
-		    		file.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
-		        file.delete();
-		    }
-		}
+		File d1 = new File(Utils.DATA_DIR);
+//		for(File d2: d1.listFiles()) {
+//			for(File file: d2.listFiles()) {
+//			    if (file.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
+//			    		file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
+//			    		file.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
+//			        file.delete();
+//			    }
+//			}
+//		}
 
-
-		List<String[]> lqs = new ArrayList<String[]>();
-		
-		try { 		
-			
-			for(File f: dir.listFiles()) {
-				lqs.add(Utils.readQueryFile(f));
-			}	
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		for (String[] lq: lqs) {
-			
-			boolean hasData = false;
-
-			String qid = lq[0];System.out.println(qid);
-			String q = lq[1];			
-			//some queries are erroneous; missing whitespace
-			q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
-
-			List<Query> qss = createConstructQueries(q, datasetSizeMax);
-//			uncomment the following line to get a file with all the cqs
-			Utils.writeConstructQueriesFile(qid,qss);
-			
-			for (Query cq : qss) {
-//				Query cq = toConstructQuery(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
-//				System.out.println("------------------ ");System.out.println(cq);
-//				
-				QueryEngineHTTP qe = null;
-				try {		
-					
-					qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
-		            qe.addParam("timeout", "10000") ;
-
-		            Model m = qe.execConstruct();
-		            
-		            if(m.listStatements().hasNext()) {
-		            		hasData = true;
-		            		Utils.writeQueryDataFile(qid, m);
-		            }
-
-		        } catch (Exception e) { 
-
-		        	System.out.println("EXCEPTION " + qid);
-//		        	System.out.println("------------------ Query failed START");
-//		        	System.out.println(qid);
-//		        	System.out.println(e);
-//		        	System.out.println("------------------ ");
-//		        	System.out.println(q);
-//		        	System.out.println("------------------ Query failed END");
-	            	//just leave this in currently to be able to look at the query
-//	            	(new File(Utils.getQueryFilePath(qid))).delete();
-		        	
-		        } finally {
-		        		if(qe != null) qe.close();
-		        }
+//		for each config directory
+		for(File d2: d1.listFiles()) {//TODO does not work like this for qid case. extract inners to method
+			for(File f: d2.listFiles()) {
+			    
+			    if (f.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
+			    		f.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
+			    		f.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
+			        f.delete();
+			    }
 			}
-			
-			if(!hasData) { 	
-//            	System.out.println("NO DATA "+ qid);
-//            	System.out.println(query);
-            	
-//            	delete other files
-//            	(new File(Utils.getQueryFilePath(qid))).delete();
-            		continue;
-			}
-			
-			InputStream in = null; Model m;
-			try {
-				
-				in = new FileInputStream(new File(Utils.getQueryDataFilePath(qid)));
-				 
-				// Create an empty in-memory model and populate it from the data
-				m = ModelFactory.createMemModelMaker().createModel(qid+"");
-				m.read(in, null); // null base URI, since model URIs are absolute
-				
-				in.close();
 
+			List<String[]> lqs = new ArrayList<String[]>();
+			
+			try { 		
+				
+				for(File f: d2.listFiles()) {
+					lqs.add(Utils.readQueryFile(f));
+				}	
+				
 			} catch (Exception e) {
 				e.printStackTrace();
-				continue;
-			} 
-
-			Query query = QueryFactory.create(q);
-//			we cannot allow/test this given our restricted dataset size
-			query.setOffset(0);
-
-			QueryExecution qe1 = QueryExecutionFactory.create(query, m);
-			ResultSet rs = qe1.execSelect();
-			 
-			if(!rs.hasNext()) {
+			}
+			
+			for (String[] lq: lqs) {
 				
-				System.out.println("NO RESULT "+ qid);
-//	            	System.out.println(q);
-            	
-            	//delete files
-//	            (new File(Utils.getQueryFilePath(qid))).delete();
-//				(new File(Utils.getQueryDataFilePath(qid))).delete();
-            	
-            } else {
-            	Utils.writeQueryResultFile(qid, rs);
-            }
+				int hasData = 0; 
+				
+				String qid = lq[0];System.out.println(qid);
+				String q = lq[1];			
+				//some queries are erroneous; missing whitespace
+				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
 
-			qe1.close();
+				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
+//					uncomment the following line to get a file with all the cqs
+				Utils.writeConstructQueriesFile(d2,qid,cqs);
+				
+				for (Query cq : cqs) {
+//						Query cq = toConstructQuery(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
+//						System.out.println("------------------ ");System.out.println(cq);
+//						
+					QueryEngineHTTP qe = null;
+					try {		
+						
+						qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
+			            qe.addParam("timeout", "10000") ;
+
+			            Model m = qe.execConstruct();
+			            
+			            if(m.listStatements().hasNext()) {
+			            		hasData++;
+			            		Utils.writeQueryDataFile(d2,qid, m);
+			            }
+
+			        } catch (Exception e) { 
+
+			        	System.out.println("EXCEPTION " + qid);e.printStackTrace();
+//				        	System.out.println("------------------ Query failed START");
+//				        	System.out.println(qid);
+//				        	System.out.println(e);
+//				        	System.out.println("------------------ ");
+//				        	System.out.println(q);
+//				        	System.out.println("------------------ Query failed END");
+		            	//just leave this in currently to be able to look at the query
+//			            	(new File(Utils.getQueryFilePath(qid))).delete();
+			        	
+			        } finally {
+			        		if(qe != null) qe.close();
+			        }
+				}
+				
+				System.out.println("variability queries with data: "+hasData+ "/" +cqs.size() );
+				if(hasData == 0) { 	
+//		            	System.out.println("NO DATA "+ qid);
+//		            	System.out.println(query);
+	            	
+//		            	delete other files
+//		            	(new File(Utils.getQueryFilePath(qid))).delete();
+	            		continue;
+				}
+				
+				InputStream in = null; Model m;
+				try {
+					
+					in = new FileInputStream(new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid)));
+					 
+					// Create an empty in-memory model and populate it from the data
+					m = ModelFactory.createMemModelMaker().createModel(qid+"");
+					m.read(in, null); // null base URI, since model URIs are absolute
+					
+					in.close();
+
+				} catch (Exception e) {
+					e.printStackTrace();
+					continue;
+				} 
+
+				Query query = QueryFactory.create(q);
+//					we cannot allow/test this given our restricted dataset size
+				query.setOffset(0);
+
+				QueryExecution qe1 = QueryExecutionFactory.create(query, m);
+				ResultSet rs = qe1.execSelect();
+				 
+				if(!rs.hasNext()) {
+					
+					System.out.println("NO RESULT "+ qid);
+//			            	System.out.println(q);
+	            	
+	            	//delete files
+//			            (new File(Utils.getQueryFilePath(qid))).delete();
+//						(new File(Utils.getQueryDataFilePath(qid))).delete();
+	            	
+	            } else {
+	            	Utils.writeQueryResultFile(d2, qid, rs);
+	            }
+
+				qe1.close();
+			}
 		}
 		
 	}
-public static void main(String[] args) {
+	
+	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
 		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
 	}

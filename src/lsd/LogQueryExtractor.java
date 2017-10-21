@@ -1,5 +1,7 @@
 package lsd;
 
+import java.io.File;
+
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
@@ -41,17 +43,17 @@ public class LogQueryExtractor {
 //	{ FEATURE_BIND },
 //	{ FEATURE_COUNT },
 //	{ FEATURE_DISTINCT },
-	{ FEATURE_FILTER },
+//	{ FEATURE_FILTER,FEATURE_OPTIONAL },
 //	{ FEATURE_FROM_NAMED },
 //	{ FEATURE_GROUP_BY },
 //	{ FEATURE_HAVING },
 //	{ FEATURE_LIMIT },
 //	{ FEATURE_MAX },
 //	{ FEATURE_MIN },
-//	{ FEATURE_MINUS },
+	{ FEATURE_MINUS },
 //	{ FEATURE_NAMED_GRAPH },
 //	{ FEATURE_OFFSET },
-//	{ FEATURE_OPTIONAL },
+	{ FEATURE_OPTIONAL },
 //	{ FEATURE_ORDER_BY },
 //	{ FEATURE_REGEX },
 //	{ FEATURE_SERVICE },
@@ -61,13 +63,13 @@ public class LogQueryExtractor {
 //	{ FEATURE_VALUES }
 	};
 	
-	private String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
-	private int defaultQueryNumMax = 1;//20;
+	public static String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
+	private int defaultQueryNumMax = 10;//20;
 	private int defaultQuerySizeMin = 3;
 	private int defaultQueryResultSizeMin = 1;
 
 	
-	private void queryLogAndWriteFiles(String query, String logUri) {
+	private void queryLogAndWriteFiles(String query, String logUri, File directory) {
 		
 		try ( QueryEngineHTTP qexec =  
 				(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
@@ -79,7 +81,7 @@ public class LogQueryExtractor {
             
             while(rs.hasNext()) {
             		QuerySolution s = rs.next();  //System.out.println(s.getResource("?id").toString());		
-            		Utils.writeQueryFile(s.getResource("?id").toString(), s.getLiteral("?text").getString());
+            		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());
             }
 
         } catch (Exception e) {
@@ -129,7 +131,7 @@ public class LogQueryExtractor {
 			+ "} ORDER BY ASC(?vcountsum) "
 			+ "LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); //System.out.println(QueryFactory.create(query));
 
-			queryLogAndWriteFiles(query, logUri);
+			queryLogAndWriteFiles(query, logUri, Utils.cleanDataSubDir(config));
 			
 		}
 
@@ -148,7 +150,7 @@ public class LogQueryExtractor {
 				+ "FILTER ( (?id=<http://lsq.aksw.org/res/" 
 				+ String.join(">) || (?id=<http://lsq.aksw.org/res/", queryIds) + ">) ) }";
 
-		queryLogAndWriteFiles(query, null);
+		queryLogAndWriteFiles(query, null, null);
 	}
 
 	public static void main(String[] args) {
