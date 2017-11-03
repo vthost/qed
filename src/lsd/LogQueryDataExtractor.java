@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -111,10 +110,6 @@ public class LogQueryDataExtractor {
 		return l2;
 	}
 	
-	private int getIndexOffset(int elementCount) {
-
-		return (int) Math.pow(10,Math.ceil(Math.log10(elementCount)));
-	}
 
 	//	http://jvalentino.blogspot.de/2007/02/shortcut-to-calculating-power-set-using.html
 	private <T> List<List<T>> powerset(Collection<T> list) {
@@ -140,43 +135,35 @@ public class LogQueryDataExtractor {
 		  }
 		  return ps;
 	}
+	
+	private <T> List<List<T>> oneElementPowerset(List<List<T>> list) {
+		
+		if(list.size() == 1) {
+			return list.get(0).stream().map(e -> { 
+				List<T>  l = new ArrayList<T>();
+				l.add(e);
+				return l;
+			}).collect(Collectors.toList());	
+		}
+		
+		List<T> first = list.get(0);
+		list.remove(0);		
+		list = oneElementPowerset(list); 
 
-//	get all subsets of size size satisfying additional conditions of the powerset of 
-//	a merged version of set where the elements are represented as integers
-	private List<List<Integer>> oneElementPowerset(List<List<Element>> set, int size) {
+		List<List<T>> newlist = new ArrayList<List<T>>();
 		
-//		elements in first list in set are represented as 00 01 02 ...
-//		elements in second list by 10 11 12 ...
-//		etc.		
-		List<Integer> iset = new ArrayList<Integer>();
-		int indexOffset =  getIndexOffset( Collections.max( 
-				(Collection<Integer>)  set.stream().map(List::size).collect(Collectors.toList())));
-		for (int i = 0; i < set.size(); i++) {		
-			for (int j = 0; j < set.get(i).size(); j++) {
-				iset.add(indexOffset*i+j);
+		for (T t : first) {
+			for (List<T> l : list) {
+				List<T> l2 = new ArrayList<T>();
+				l2.addAll(l);
+				l2.add(t);
+				newlist.add(l2);
 			}
 		}
-		
-		List<List<Integer>> ps = powerset(iset);  
-		
-		outer: for (int i = ps.size()-1; i >= 0 ; i--) {
-			if(ps.get(i).size() != size) {
-				ps.remove(ps.get(i));
-			} else {
-				for (Integer i1 : ps.get(i)) {
-					for (Integer i2 : ps.get(i)) {
-						if((i1/indexOffset) == (i2/indexOffset) && i1 != i2) {
-							ps.remove(ps.get(i));
-							continue outer;
-						}
-					}
-				}
-			}
-		}
-		
-	    return ps;
+
+		return newlist;
 	}
-
+	
 //	TODO discuss if solutions are ok like this
 //	
 //	we ignore ElementDataset since it is unused by the parser (according to the JavaDoc)
@@ -243,18 +230,13 @@ public class LogQueryDataExtractor {
 				els.add(e);				
 			} else {
 				
-				List<List<Integer>> l2 = oneElementPowerset(l1,l1.size());
-				int indexOffset = getIndexOffset( Collections.max( 
-						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
-
-				for (List<Integer> indices : l2) {
+				List<List<Element>> l2 = oneElementPowerset(l1);
+				
+				for (List<Element> els2 : l2) {
 //System.out.println();e.toString();
-					ElementGroup e1 = new ElementGroup(); //(ElementGroup) ElementUtils.findElement(e, QueryFactory.create(qs).getQueryPattern()); 
-					e1.getElements().clear();
-					
-					for (Integer i : indices) {
-						e1.getElements().add(l1.get(i/indexOffset).get(i%indexOffset));
-					}
+					ElementGroup e1 = new ElementGroup(); 
+					e1.getElements().addAll(els2);
+
 					els.add(e1);
 				}
 			}
@@ -316,7 +298,7 @@ public class LogQueryDataExtractor {
 					ElementGroup e1 = new ElementGroup();
 					for (Element e2 : ((ElementUnion) e).getElements()) {
 						e1.getElements().add(l.contains(e2) ? e2 :
-							new ElementFilter(new E_NotExists(e1)));
+							new ElementFilter(new E_NotExists(e2)));
 					}
 
 					els.add(e1);
@@ -324,21 +306,15 @@ public class LogQueryDataExtractor {
 				
 			} else {
 				
-				List<List<Integer>> l2 = oneElementPowerset(l1,l1.size());
-				int indexOffset = getIndexOffset( Collections.max( 
-						(Collection<Integer>)  l1.stream().map(List::size).collect(Collectors.toList())));
-				
-				for (List<Integer> indices : l2) {
+				List<List<Element>> l2 = oneElementPowerset(l1);
+				for (List<Element> els2 : l2) {
 					
-					Collection<Element> l3 = (Collection<Element>) indices.stream().
-							map(i -> l1.get(i/indexOffset).get(i%indexOffset)).collect(Collectors.toList());
-					
-					for (List<Element> l : powerset(l3)) {
+					for (List<Element> l : powerset(els2)) {
 						
 						ElementGroup e1 = new ElementGroup();
 						for (Element e2 : ((ElementUnion) e).getElements()) {
 							e1.getElements().add(l.contains(e2) ? e2 :
-								new ElementFilter(new E_NotExists(e1)));
+								new ElementFilter(new E_NotExists(e2)));
 						}
 
 						els.add(e1);
@@ -549,6 +525,17 @@ public class LogQueryDataExtractor {
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
 		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
+		
+//		Integer[] i1 = {1,2,3};
+//		Integer[] i2 = {11,22,33};
+//		Integer[] i3 = {111,222,333};
+//		
+//		List<List<Integer>> list = new ArrayList<List<Integer>>();
+//		list.add(Arrays.asList(i1));
+//		list.add(Arrays.asList(i2));
+//		list.add(Arrays.asList(i3));
+//System.out.println(list);
+//		System.out.println(de.oneElementPowerset(list));
 	}
 
 
