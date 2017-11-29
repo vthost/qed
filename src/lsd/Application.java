@@ -50,7 +50,7 @@ public class Application {
 		
 //		createDirectoryStructure(configs == null ? LogQueryExtractor.defaultConfig : configs);
 		
-//		(new LogQueryExtractor()).extractQueries(logUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
+		(new LogQueryExtractor()).extractQueries(logUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
 		(new LogQueryDataExtractor()).extractQueryDataAndResults(getEndpoint(logUri), datasetSizeMax);
 	}
 	

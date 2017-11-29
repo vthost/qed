@@ -2,24 +2,37 @@ package lsd;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.ResourceFactory;
+import org.apache.jena.vocabulary.RDF;
+import org.apache.jena.vocabulary.RDFS;
 
 public class Utils {
 	
 	public static String DATA_DIR = System.getProperty("user.dir") + File.separator + "data" + File.separator;	
-	public static String QUERY_FILE_EXT = ".txt";
+	public static String QUERY_FILE_EXT = ".txt";//TODO change to rq
 	public static String CONSTRUCT_QUERIES_FILE_EXT = "-cqs.txt";
-	public static String QUERY_DATA_FILE_EXT = "-data.xml";
-	public static String QUERY_RESULT_FILE_EXT = "-result.xml";
+	public static String QUERY_DATA_FILE_EXT = "-data.ttl";
+	public static String QUERY_RESULT_FILE_EXT = "-result.ttl";
+	
+	public static String LSQR_URI = "http://lsq.aksw.org/res/";
 	
 //	private static void deleteDir(File file) {
 //		
@@ -48,8 +61,8 @@ public class Utils {
 	}
 	
 	public static File cleanDataSubDir(String[] config) {
-		
-		String p = DATA_DIR + (config == null ? "" : String.join("_", config) + File.separator);
+
+		String p = DATA_DIR + (config == null ? "" : toString(config) + File.separator);
 		
 		File f = new File(p);
 		if(f.exists()) {
@@ -64,10 +77,28 @@ public class Utils {
 		f.mkdir();
 		return f;
 	}
+	
+	public static String toString(String[] config) {
+		return String.join("_", Arrays.asList(config).
+				stream().map(String::toLowerCase).collect(Collectors.toList()));
+	}
+	
+//	public static String getConfigTestsName(String config) {
+//		return config + " test cases";
+//	}
+	
+//	public static String getTestName(String config, String lsqId) {
+//		return config + " semantics: " + lsqId;
+//	}
 
 	public static String getQueryId(String lsqIdUrl) {
 		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf(File.separator) + 1);
 	}
+	
+	public static String getQueryIdUrl(String lsqId) {
+		return LSQR_URI + lsqId;
+	}
+
 	
 //	public static String getQueryFilePath(String lsqIdUrl, String[] config) {
 //		return DATA_DIR + (config == null ? "" : String.join("_", config) + File.separator) + 
@@ -75,6 +106,10 @@ public class Utils {
 //	}
 	public static String getQueryFileName(String lsqIdUrl) {
 		return getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
+	}
+	
+	public static String getQueryIdFromFileName(String queryFileName) {
+		return queryFileName.replace(QUERY_FILE_EXT, "");
 	}
 	
 	public static String getConstructQueriesFileName(String lsqIdUrl) {
@@ -157,7 +192,7 @@ public class Utils {
 	public static String[] readQueryFile(File f) {
 		try {
 			Scanner s = new Scanner(f);
-			String id = s.nextLine();
+			String id = s.nextLine();//TODO remove id from first line to in line with compliance tests
 			String q = s.nextLine();
 			while(s.hasNextLine()) q += s.nextLine();
 			String[] result = {id, q};
@@ -172,8 +207,84 @@ public class Utils {
 		return null;
 	}
 	
-	public static void main(String[] args) {
+//	one simple in each subdir and manifest-all.ttl
+	public static void writeManifestFiles() { //, String lsqId) {
+
+		String mfURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest/";
+		String qtURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-query/";
+//		to add properties approval/approvedBy
+//		String dawgtURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-dawg/";
 		
+		Resource manifest = ResourceFactory.createResource(mfURI + "Manifest");
+		Resource queryEvaluationTest = ResourceFactory.createResource(mfURI + "QueryEvaluationTest");
+
+		Property entries = ResourceFactory.createProperty(mfURI, "entries"); 
+		Property name = ResourceFactory.createProperty(mfURI, "name"); 
+		Property action = ResourceFactory.createProperty(mfURI, "action"); 
+		Property result = ResourceFactory.createProperty(mfURI, "result"); 
+		Property query = ResourceFactory.createProperty(qtURI, "query"); 
+		Property data = ResourceFactory.createProperty(qtURI, "data"); 
+
+		
+		for(File f: new File(DATA_DIR).listFiles()) {			
+			//create one manifest file for each test config
+			if(f.isDirectory()) {
+				
+				String config = f.getName();			
+//				TODO fix sth like:
+				String dummyURI = "http://www.w3.org/2001/sw/DataAccess/tests/data-r2/"+config+"/manifest/";
+				
+				Model m = ModelFactory.createDefaultModel();
+				m.setNsPrefix("rdf", RDF.getURI());
+				m.setNsPrefix("rdfs", RDFS.getURI());//System.out.println(RDFS.getURI());
+				m.setNsPrefix("mf", mfURI);
+				m.setNsPrefix("qt", qtURI);
+				m.setNsPrefix("", dummyURI);
+
+				List<RDFNode> testList = new ArrayList<RDFNode>();
+	
+				Resource tests = m.createResource("").
+						addProperty(RDF.type, manifest).
+						addProperty(RDFS.comment, config + " test cases");
+	
+				for(File qf: f.listFiles(
+						(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT)
+						&& !name1.toLowerCase().endsWith(CONSTRUCT_QUERIES_FILE_EXT))) {
+
+					String lsqId = getQueryIdFromFileName(qf.getName());
+					String lsqIdUrl = getQueryIdUrl(lsqId);
+					
+					Resource test = m.createResource(dummyURI+"dawg-"+config+"-"+lsqId).
+							addProperty(RDF.type, queryEvaluationTest).
+							addProperty(name, config + " semantics: " + getQueryIdFromFileName(qf.getName())).
+							addProperty(action, m.createResource().
+									addProperty(query, m.createResource(getQueryFileName(lsqIdUrl))).
+									addProperty(data, m.createResource(getQueryDataFileName(lsqIdUrl)))).							
+							addProperty(result, m.createResource(getQueryResultFileName(lsqIdUrl)));
+		//							to describe syntax tree
+		//							test.addProperty(RDFS.comment, );
+		//							to add instance of dawgt:Approved
+		//							test.addProperty(approval, );
+		//							test.addProperty(approvedBy, );
+					testList.add(test);
+				}
+				
+				tests.addProperty(entries, m.createList(testList.toArray(new RDFNode[0])));
+				
+				try {
+					m.write(new FileOutputStream(
+							Utils.DATA_DIR + File.separator + f.getName() + File.separator + "manifest.ttl"),
+							"TURTLE");
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+	
+	public static void main(String[] args) {
+		Utils.writeManifestFiles();
 	}
 	
 
