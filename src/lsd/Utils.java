@@ -218,68 +218,92 @@ public class Utils {
 		Resource manifest = ResourceFactory.createResource(mfURI + "Manifest");
 		Resource queryEvaluationTest = ResourceFactory.createResource(mfURI + "QueryEvaluationTest");
 
+		Property include = ResourceFactory.createProperty(mfURI, "include");
 		Property entries = ResourceFactory.createProperty(mfURI, "entries"); 
 		Property name = ResourceFactory.createProperty(mfURI, "name"); 
 		Property action = ResourceFactory.createProperty(mfURI, "action"); 
 		Property result = ResourceFactory.createProperty(mfURI, "result"); 
 		Property query = ResourceFactory.createProperty(qtURI, "query"); 
 		Property data = ResourceFactory.createProperty(qtURI, "data"); 
-
 		
-		for(File f: new File(DATA_DIR).listFiles()) {			
+		File[] dirs = new File(DATA_DIR).listFiles(
+				(f, name1) -> new File(f+File.separator+name1).isDirectory());
+		
+		for(File f: dirs) {		
 			//create one manifest file for each test config
-			if(f.isDirectory()) {
-				
-				String config = f.getName();			
+			String config = f.getName();			
 //				TODO fix sth like:
-				String dummyURI = "http://www.w3.org/2001/sw/DataAccess/tests/data-r2/"+config+"/manifest/";
-				
-				Model m = ModelFactory.createDefaultModel();
-				m.setNsPrefix("rdf", RDF.getURI());
-				m.setNsPrefix("rdfs", RDFS.getURI());//System.out.println(RDFS.getURI());
-				m.setNsPrefix("mf", mfURI);
-				m.setNsPrefix("qt", qtURI);
-				m.setNsPrefix("", dummyURI);
+			String dummyURI = "http://www.w3.org/2001/sw/DataAccess/tests/data-r2/"+config+"/manifest/";
+			
+			Model m = ModelFactory.createDefaultModel();
+			m.setNsPrefix("rdf", RDF.getURI());
+			m.setNsPrefix("rdfs", RDFS.getURI());//System.out.println(RDFS.getURI());
+			m.setNsPrefix("mf", mfURI);
+			m.setNsPrefix("qt", qtURI);
+			m.setNsPrefix("", dummyURI);
 
-				List<RDFNode> testList = new ArrayList<RDFNode>();
-	
-				Resource tests = m.createResource("").
-						addProperty(RDF.type, manifest).
-						addProperty(RDFS.comment, config + " test cases");
-	
-				for(File qf: f.listFiles(
-						(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT)
-						&& !name1.toLowerCase().endsWith(CONSTRUCT_QUERIES_FILE_EXT))) {
+			List<RDFNode> testList = new ArrayList<RDFNode>();
 
-					String lsqId = getQueryIdFromFileName(qf.getName());
-					String lsqIdUrl = getQueryIdUrl(lsqId);
-					
-					Resource test = m.createResource(dummyURI+"dawg-"+config+"-"+lsqId).
-							addProperty(RDF.type, queryEvaluationTest).
-							addProperty(name, config + " semantics: " + getQueryIdFromFileName(qf.getName())).
-							addProperty(action, m.createResource().
-									addProperty(query, m.createResource(getQueryFileName(lsqIdUrl))).
-									addProperty(data, m.createResource(getQueryDataFileName(lsqIdUrl)))).							
-							addProperty(result, m.createResource(getQueryResultFileName(lsqIdUrl)));
-		//							to describe syntax tree
-		//							test.addProperty(RDFS.comment, );
-		//							to add instance of dawgt:Approved
-		//							test.addProperty(approval, );
-		//							test.addProperty(approvedBy, );
-					testList.add(test);
-				}
+			Resource tests = m.createResource("").
+					addProperty(RDF.type, manifest).
+					addProperty(RDFS.comment, config + " test cases");
+
+			for(File qf: f.listFiles(
+					(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT)
+					&& !name1.toLowerCase().endsWith(CONSTRUCT_QUERIES_FILE_EXT))) {
+
+				String lsqId = getQueryIdFromFileName(qf.getName());
+				String lsqIdUrl = getQueryIdUrl(lsqId);
 				
-				tests.addProperty(entries, m.createList(testList.toArray(new RDFNode[0])));
-				
-				try {
-					m.write(new FileOutputStream(
-							Utils.DATA_DIR + File.separator + f.getName() + File.separator + "manifest.ttl"),
-							"TURTLE");
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-				}
+				Resource test = m.createResource(dummyURI+"dawg-"+config+"-"+lsqId).
+						addProperty(RDF.type, queryEvaluationTest).
+						addProperty(name, config + " semantics: " + getQueryIdFromFileName(qf.getName())).
+						addProperty(action, m.createResource().
+								addProperty(query, m.createResource(getQueryFileName(lsqIdUrl))).
+								addProperty(data, m.createResource(getQueryDataFileName(lsqIdUrl)))).							
+						addProperty(result, m.createResource(getQueryResultFileName(lsqIdUrl)));
+	//							to describe syntax tree
+	//							test.addProperty(RDFS.comment, );
+	//							to add instance of dawgt:Approved
+	//							test.addProperty(approval, );
+	//							test.addProperty(approvedBy, );
+				testList.add(test);
+			}
+			
+			tests.addProperty(entries, m.createList(testList.toArray(new RDFNode[0])));
+			
+			try {
+				m.write(new FileOutputStream(
+						Utils.DATA_DIR + File.separator + f.getName() + File.separator + "manifest.ttl"),
+						"TURTLE");
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
 			}
 		}
+		
+		//one manifest file for collecting everything
+		Model m = ModelFactory.createDefaultModel();
+		m.setNsPrefix("rdf", RDF.getURI()).
+		setNsPrefix("rdfs", RDFS.getURI()).
+		setNsPrefix("mf", mfURI);	
+		m.createResource("").
+				addProperty(RDF.type, manifest).
+				addProperty(RDFS.label, "SPARQL Query Evaluation tests").
+				addProperty(include, m.createList(
+						Arrays.asList(dirs).stream().
+						map(dir -> { 
+							return m.createResource(dir.getName()+File.separator+"manifest.ttl");}).
+						collect(Collectors.toList()).toArray(new RDFNode[0])));
+
+		
+		try {
+			m.write(new FileOutputStream(
+					Utils.DATA_DIR + File.separator + "manifest-evaluation.ttl"),
+					"TURTLE");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	
