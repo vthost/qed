@@ -395,8 +395,7 @@ public class LogQueryDataExtractor {
 		Map<String,List<int[]>> stats = Arrays.asList(dirs).stream().
 				//map(d -> (d.getName(),new ArrayList<int[]>()).
 				collect(Collectors.toMap(d -> d.getName(), d -> new ArrayList<int[]>()));
-		System.out.println(stats);
-		int i = 0;
+
 //		for each config directory
 		for(File d2: dirs) {
 
@@ -521,7 +520,7 @@ public class LogQueryDataExtractor {
 				qe1.close();
 			}
 		}
-		System.out.println(stats);
+//		System.out.println(stats);
 		Utils.writeStatisticsFile(stats);
 		
 	}
