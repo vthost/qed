@@ -388,29 +388,14 @@ public class LogQueryDataExtractor {
 
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
-		//clean data directory 
 		File d1 = new File(Utils.DATA_DIR);
-//		for(File d2: d1.listFiles()) {
-//			for(File file: d2.listFiles()) {
-//			    if (file.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
-//			    		file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
-//			    		file.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
-//			        file.delete();
-//			    }
-//			}
-//		}
 
 //		for each config directory
-		for(File d2: d1.listFiles()) {//TODO does not work like this for qid case. extract inners to method
-			for(File f: d2.listFiles()) {
-			    
-			    if (f.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
-			    		f.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
-			    		f.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
-			        f.delete();
-			    }
-			}
+		for(File d2: d1.listFiles()) {
 
+			String[] exclude = { Utils.QUERY_FILE_EXT, Utils.MANIFEST_FILE_NAME };
+			Utils.cleanDir(d2, exclude);
+			
 			List<String[]> lqs = new ArrayList<String[]>();
 			
 			try { 		
@@ -525,17 +510,6 @@ public class LogQueryDataExtractor {
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
 		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
-		
-//		Integer[] i1 = {1,2,3};
-//		Integer[] i2 = {11,22,33};
-//		Integer[] i3 = {111,222,333};
-//		
-//		List<List<Integer>> list = new ArrayList<List<Integer>>();
-//		list.add(Arrays.asList(i1));
-//		list.add(Arrays.asList(i2));
-//		list.add(Arrays.asList(i3));
-//System.out.println(list);
-//		System.out.println(de.oneElementPowerset(list));
 	}
 
 

@@ -27,8 +27,10 @@ import org.apache.jena.vocabulary.RDFS;
 public class Utils {
 	
 	public static String DATA_DIR = System.getProperty("user.dir") + File.separator + "data" + File.separator;	
-	public static String QUERY_FILE_EXT = ".txt";//TODO change to rq
+	public static String MANIFEST_EVALUATION_FILE_NAME = "manifest_evaluation.ttl";
+	public static String MANIFEST_FILE_NAME = "manifest.ttl";
 	public static String CONSTRUCT_QUERIES_FILE_EXT = "-cqs.txt";
+	public static String QUERY_FILE_EXT = ".rq";
 	public static String QUERY_DATA_FILE_EXT = "-data.ttl";
 	public static String QUERY_RESULT_FILE_EXT = "-result.ttl";
 	
@@ -47,6 +49,7 @@ public class Utils {
 //	    file.delete();
 //	}
 	
+//	make sure that there is an empty data directory 
 	public static void cleanDataDir() {
 		
 		File f = new File(DATA_DIR);
@@ -60,12 +63,13 @@ public class Utils {
 		new File(DATA_DIR).mkdir();
 	}
 	
+//	make sure that there is a (clean) directory for each name in config
 	public static File cleanDataSubDir(String[] config) {
 
 		String p = DATA_DIR + (config == null ? "" : toString(config) + File.separator);
 		
 		File f = new File(p);
-		if(f.exists()) {
+		if(f.exists()) {//should not be the case where we use this method currently
 			try {
 				FileUtils.deleteDirectory(f);
 			} catch (IOException e) {
@@ -76,6 +80,16 @@ public class Utils {
 		f = new File(p); 
 		f.mkdir();
 		return f;
+	}
+	
+//	do not delete files with extensions
+	public static void cleanDir(File directory, String[] excludeExtensions) {
+		
+		for(File f: directory.listFiles(
+				(f1, name1) -> !Arrays.asList(excludeExtensions).stream().anyMatch(ext -> name1.endsWith(QUERY_FILE_EXT)))) {
+		    System.out.println(f);
+		    f.delete();
+		}
 	}
 	
 	public static String toString(String[] config) {
@@ -165,7 +179,7 @@ public class Utils {
 //    	  	writer.write(logQueryIds.get(i));
 //    	  	writer.write("\n");
 			
-            m.write(writer, "RDF/XML");
+            m.write(writer, "TURTLE");
     	  		writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -218,6 +232,7 @@ public class Utils {
 		Resource manifest = ResourceFactory.createResource(mfURI + "Manifest");
 		Resource queryEvaluationTest = ResourceFactory.createResource(mfURI + "QueryEvaluationTest");
 
+//		TODO discuss: do we want to add other properties, e.g., describing that the tests are from us?
 		Property include = ResourceFactory.createProperty(mfURI, "include");
 		Property entries = ResourceFactory.createProperty(mfURI, "entries"); 
 		Property name = ResourceFactory.createProperty(mfURI, "name"); 
@@ -274,7 +289,7 @@ public class Utils {
 			
 			try {
 				m.write(new FileOutputStream(
-						Utils.DATA_DIR + File.separator + f.getName() + File.separator + "manifest.ttl"),
+						DATA_DIR + f.getName() + File.separator + MANIFEST_FILE_NAME),
 						"TURTLE");
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
@@ -292,13 +307,13 @@ public class Utils {
 				addProperty(include, m.createList(
 						Arrays.asList(dirs).stream().
 						map(dir -> { 
-							return m.createResource(dir.getName()+File.separator+"manifest.ttl");}).
+							return m.createResource(dir.getName()+File.separator+MANIFEST_FILE_NAME);}).
 						collect(Collectors.toList()).toArray(new RDFNode[0])));
 
 		
 		try {
 			m.write(new FileOutputStream(
-					Utils.DATA_DIR + File.separator + "manifest-evaluation.ttl"),
+					Utils.DATA_DIR + MANIFEST_EVALUATION_FILE_NAME),
 					"TURTLE");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -308,7 +323,9 @@ public class Utils {
 
 	
 	public static void main(String[] args) {
-		Utils.writeManifestFiles();
+//		Utils.writeManifestFiles();
+//		String[] a = {QUERY_FILE_EXT};
+//		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
 	}
 	
 

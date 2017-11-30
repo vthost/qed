@@ -150,7 +150,9 @@ public class LogQueryExtractor {
 				+ "FILTER ( (?id=<http://lsq.aksw.org/res/" 
 				+ String.join(">) || (?id=<http://lsq.aksw.org/res/", queryIds) + ">) ) }";
 
-		queryLogAndWriteFiles(query, null, null);
+		String[] dummyConfig = {"data"};
+		
+		queryLogAndWriteFiles(query, null, Utils.cleanDataSubDir(dummyConfig));
 	}
 
 	public static void main(String[] args) {
