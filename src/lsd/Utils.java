@@ -34,7 +34,7 @@ public class Utils {
 	public static String QUERY_DATA_FILE_EXT = "-data.ttl";
 	public static String QUERY_RESULT_FILE_EXT = "-result.ttl";
 	
-	public static String LSQR_URI = "http://lsq.aksw.org/res/";
+	public static String LSQR_RESOURCE_URI = "http://lsq.aksw.org/res/";
 	
 //	private static void deleteDir(File file) {
 //		
@@ -110,7 +110,7 @@ public class Utils {
 	}
 	
 	public static String getQueryIdUrl(String lsqId) {
-		return LSQR_URI + lsqId;
+		return LSQR_RESOURCE_URI + lsqId;
 	}
 
 	

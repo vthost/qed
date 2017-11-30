@@ -147,8 +147,8 @@ public class LogQueryExtractor {
 				+ "PREFIX  lsqv: <http://lsq.aksw.org/vocab#>  "
 				+ "SELECT  ?id ?text WHERE { "
 				+ "?id sp:text ?text . "
-				+ "FILTER ( (?id=<http://lsq.aksw.org/res/" 
-				+ String.join(">) || (?id=<http://lsq.aksw.org/res/", queryIds) + ">) ) }";
+				+ "FILTER ( (?id=<" + Utils.LSQR_RESOURCE_URI
+				+ String.join(">) || (?id=<" + Utils.LSQR_RESOURCE_URI, queryIds) + ">) ) }";
 
 		String[] dummyConfig = {"data"};
 		
