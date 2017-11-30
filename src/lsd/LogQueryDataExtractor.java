@@ -2,11 +2,12 @@ package lsd;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FilenameFilter;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.apache.jena.query.Query;
@@ -389,14 +390,21 @@ public class LogQueryDataExtractor {
 
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
+		File[] dirs = Utils.listDirectories(new File(Utils.DATA_DIR));
+//		to collect statistics for construct queries
+		Map<String,List<int[]>> stats = Arrays.asList(dirs).stream().
+				//map(d -> (d.getName(),new ArrayList<int[]>()).
+				collect(Collectors.toMap(d -> d.getName(), d -> new ArrayList<int[]>()));
+		System.out.println(stats);
+		int i = 0;
 //		for each config directory
-		for(File d2: Utils.listDirectories(new File(Utils.DATA_DIR))) {
+		for(File d2: dirs) {
 
 			String[] delete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
-					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT,"-data.xml","-result.xml"};
-			
+					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT,"-data.xml","-result.xml"};		
 			Utils.cleanDir(d2, delete);
 
+			List<int[]> stat = stats.get(d2.getName());
 			List<String[]> lqs = new ArrayList<String[]>();
 			
 			try { 		
@@ -411,9 +419,11 @@ public class LogQueryDataExtractor {
 			
 			for (String[] lq: lqs) {
 				
-				int hasData = 0; 
+				int cqsWithData = 0; 
+//        		note that this number may count some data items multiple times
+				int cqsDataCountTotal = 0;
 				
-				String qid = lq[0];System.out.println(qid);
+				String qid = lq[0];//System.out.println(qid);
 				String q = lq[1];			
 				//some queries are erroneous; missing whitespace
 				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
@@ -435,7 +445,9 @@ public class LogQueryDataExtractor {
 			            Model m = qe.execConstruct();
 			            
 			            if(m.listStatements().hasNext()) {
-			            		hasData++;
+			            		cqsWithData++;
+			            		cqsDataCountTotal += m.listStatements().toList().size();
+
 			            		Utils.writeQueryDataFile(d2,qid, m);
 			            }
 
@@ -456,8 +468,12 @@ public class LogQueryDataExtractor {
 			        }
 				}
 				
-				System.out.println("variability queries with data: "+hasData+ "/" +cqs.size() );
-				if(hasData == 0) { 	
+				System.out.println("cq nbr/cqs with data/total data: "+
+				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal );	
+				int[] ns = {cqs.size(), cqsWithData, cqsDataCountTotal};
+				stat.add(ns);
+				
+				if(cqsWithData == 0) { 	
 //		            	System.out.println("NO DATA "+ qid);
 //		            	System.out.println(query);
 	            	
@@ -505,6 +521,8 @@ public class LogQueryDataExtractor {
 				qe1.close();
 			}
 		}
+		System.out.println(stats);
+		Utils.writeStatisticsFile(stats);
 		
 	}
 	

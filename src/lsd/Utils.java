@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -202,23 +203,35 @@ public class Utils {
 		}
 	}
 	
-//	returns array with: 0 : id, 1 : query
-	public static String[] readQueryFile(File f) {
-		try {
-			Scanner s = new Scanner(f);
-			String id = s.nextLine();//TODO remove id from first line to in line with compliance tests
-			String q = s.nextLine();
-			while(s.hasNextLine()) q += s.nextLine();
-			String[] result = {id, q};
-			s.close();
-			
-			return result;
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-			
-		return null;
+	public static void writeStatisticsFile(Map<String,List<int[]>> stats) {
+//		try {		
+//			FileWriter writer = new FileWriter(Utils.DATA_DIR);
+//		  	
+//			writer.write("config;cqs-count-avg;cqs-with-data;avg-data-count");
+//			stats.entrySet().stream().forEach(e -> {
+//				
+//				int cqsCountTotal = 0;
+//				int cqsWithDataAvgPerCase = 0;
+//				int avgDataCount = 0;
+//				List<int[]> v = e.getValue();
+//				v.stream().forEach(ns -> {
+//					cqsCountTotal+=ns[0];
+////					cqsWithDataAvgPerCase =;
+//					avgDataCount += ns[2];	
+//				});	
+////				try {	
+//				writer.write( e.getKey() + ";" + 
+//						"\n");
+////				} catch (Exception ex) {
+////					ex.printStackTrace();
+////				}
+//			});
+//
+//			writer.close();
+//		} catch (Exception ex) {
+//			ex.printStackTrace();
+//		}
+
 	}
 	
 //	one simple in each subdir and manifest-all.ttl
@@ -319,8 +332,26 @@ public class Utils {
 
 	}
 
+	//	returns array with: 0 : id, 1 : query
+	public static String[] readQueryFile(File f) {
+		try {
+			Scanner s = new Scanner(f);
+			String id = s.nextLine();//TODO remove id from first line to in line with compliance tests
+			String q = s.nextLine();
+			while(s.hasNextLine()) q += s.nextLine();
+			String[] result = {id, q};
+			s.close();
+			
+			return result;
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+			
+		return null;
+	}
 	
-	public static void main(String[] args) {
+public static void main(String[] args) {
 //		Utils.writeManifestFiles();
 		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
 //		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
