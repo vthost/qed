@@ -2,6 +2,7 @@ package lsd;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FilenameFilter;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -389,17 +390,18 @@ public class LogQueryDataExtractor {
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
 //		for each config directory
-		for(File d2: new File(Utils.DATA_DIR).listFiles()) {
+		for(File d2: Utils.listDirectories(new File(Utils.DATA_DIR))) {
 
 			String[] delete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
-					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT };
-			Utils.cleanDir(d2, delete);
+					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT,"-data.xml","-result.xml"};
 			
+			Utils.cleanDir(d2, delete);
+
 			List<String[]> lqs = new ArrayList<String[]>();
 			
 			try { 		
 				
-				for(File f: d2.listFiles()) {
+				for(File f: d2.listFiles((dir,name) -> name.endsWith(Utils.QUERY_FILE_EXT))) {
 					lqs.add(Utils.readQueryFile(f));
 				}	
 				
@@ -471,7 +473,7 @@ public class LogQueryDataExtractor {
 					 
 					// Create an empty in-memory model and populate it from the data
 					m = ModelFactory.createMemModelMaker().createModel(qid+"");
-					m.read(in, null); // null base URI, since model URIs are absolute
+					m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
 					
 					in.close();
 

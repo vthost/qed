@@ -21,6 +21,7 @@ import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.ResourceFactory;
+import org.apache.jena.sparql.resultset.ResultsFormat;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
 
@@ -48,6 +49,11 @@ public class Utils {
 //	    }
 //	    file.delete();
 //	}
+	
+	public static File[] listDirectories(File directory) {
+		return directory.listFiles(
+				(current, name) -> new File(current+File.separator+name).isDirectory());
+	}
 	
 //	make sure that there is an empty data directory 
 	public static void cleanDataDir() {
@@ -87,8 +93,8 @@ public class Utils {
 		
 		for(File f: directory.listFiles(
 				(f1, name1) -> Arrays.asList(delExtensions).stream().anyMatch(ext -> name1.endsWith(ext)))) {
-//		    f.delete();
-		    System.out.println(f);
+		    
+			f.delete();
 		}
 	}
 	
@@ -176,11 +182,9 @@ public class Utils {
 				m.read(path);
 			
 			FileWriter writer = new FileWriter(path);
-//    	  	writer.write(logQueryIds.get(i));
-//    	  	writer.write("\n");
-			
-            m.write(writer, "TURTLE");
-    	  		writer.close();
+			m.write(writer, "TURTLE");
+    	  	writer.close();
+    	  	
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -189,14 +193,10 @@ public class Utils {
 	public static void writeQueryResultFile(File directory, String lsqIdUrl, ResultSet rs) {
 
 		try {
-			FileWriter writer = new FileWriter(directory.getPath() + File.separator + getQueryResultFileName(lsqIdUrl));
-//    	  	writer.write(logQueryIds.get(i));
-//    	  	writer.write("\n");
-			writer.write(ResultSetFormatter.asXMLString(rs));
-//			while(rs.hasNext()) {
-//				writer.write(rs.next().toString());
-//			}
-    	  	writer.close();
+			ResultSetFormatter.output(new FileOutputStream(
+					directory.getPath() + File.separator + getQueryResultFileName(lsqIdUrl)), 
+					rs, ResultsFormat.FMT_RDF_TURTLE);
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -241,8 +241,7 @@ public class Utils {
 		Property query = ResourceFactory.createProperty(qtURI, "query"); 
 		Property data = ResourceFactory.createProperty(qtURI, "data"); 
 		
-		File[] dirs = new File(DATA_DIR).listFiles(
-				(f, name1) -> new File(f+File.separator+name1).isDirectory());
+		File[] dirs = listDirectories(new File(DATA_DIR));
 		
 		for(File f: dirs) {		
 			//create one manifest file for each test config
@@ -264,8 +263,7 @@ public class Utils {
 					addProperty(RDFS.comment, config + " test cases");
 
 			for(File qf: f.listFiles(
-					(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT)
-					&& !name1.toLowerCase().endsWith(CONSTRUCT_QUERIES_FILE_EXT))) {
+					(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT))) {
 
 				String lsqId = getQueryIdFromFileName(qf.getName());
 				String lsqIdUrl = getQueryIdUrl(lsqId);
@@ -324,8 +322,9 @@ public class Utils {
 	
 	public static void main(String[] args) {
 //		Utils.writeManifestFiles();
-		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
-		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
+		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
+//		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
+//		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
 	}
 	
 
