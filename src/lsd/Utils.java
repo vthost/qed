@@ -83,12 +83,12 @@ public class Utils {
 	}
 	
 //	do not delete files with extensions
-	public static void cleanDir(File directory, String[] excludeExtensions) {
+	public static void cleanDir(File directory, String[] delExtensions) {
 		
 		for(File f: directory.listFiles(
-				(f1, name1) -> !Arrays.asList(excludeExtensions).stream().anyMatch(ext -> name1.endsWith(QUERY_FILE_EXT)))) {
+				(f1, name1) -> Arrays.asList(delExtensions).stream().anyMatch(ext -> name1.endsWith(ext)))) {
+//		    f.delete();
 		    System.out.println(f);
-		    f.delete();
 		}
 	}
 	
@@ -324,8 +324,8 @@ public class Utils {
 	
 	public static void main(String[] args) {
 //		Utils.writeManifestFiles();
-//		String[] a = {QUERY_FILE_EXT};
-//		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
+		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
+		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
 	}
 	
 

@@ -388,13 +388,12 @@ public class LogQueryDataExtractor {
 
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
-		File d1 = new File(Utils.DATA_DIR);
-
 //		for each config directory
-		for(File d2: d1.listFiles()) {
+		for(File d2: new File(Utils.DATA_DIR).listFiles()) {
 
-			String[] exclude = { Utils.QUERY_FILE_EXT, Utils.MANIFEST_FILE_NAME };
-			Utils.cleanDir(d2, exclude);
+			String[] delete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
+					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT };
+			Utils.cleanDir(d2, delete);
 			
 			List<String[]> lqs = new ArrayList<String[]>();
 			
