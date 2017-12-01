@@ -204,33 +204,51 @@ public class Utils {
 	}
 	
 	public static void writeStatisticsFile(Map<String,List<int[]>> stats) {
-//		try {		
-//			FileWriter writer = new FileWriter(Utils.DATA_DIR);
-//		  	
-//			writer.write("config;cqs-count-avg;cqs-with-data;avg-data-count");
-//			stats.entrySet().stream().forEach(e -> {
-//				
-//				int cqsCountTotal = 0;
-//				int cqsWithDataAvgPerCase = 0;
-//				int avgDataCount = 0;
-//				List<int[]> v = e.getValue();
-//				v.stream().forEach(ns -> {
-//					cqsCountTotal+=ns[0];
-////					cqsWithDataAvgPerCase =;
-//					avgDataCount += ns[2];	
-//				});	
-////				try {	
-//				writer.write( e.getKey() + ";" + 
-//						"\n");
-////				} catch (Exception ex) {
-////					ex.printStackTrace();
-////				}
-//			});
-//
-//			writer.close();
-//		} catch (Exception ex) {
-//			ex.printStackTrace();
-//		}
+		try {		
+			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
+			writer.write("config;cqs;cqs-with-data;stmt-avg\n");
+			
+			stats.entrySet().stream().forEach(e -> {
+								
+				String config = e.getKey();
+				e.getValue().stream().forEach(ns -> {
+					try {
+						writer.write(config + ";" + ns[0] + ";" + ns[1] + ";" + ns[2]/ns[1] + "\n");
+	
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+				});	
+			});
+			writer.close();
+			
+			
+			FileWriter writer2 = new FileWriter(Utils.DATA_DIR + File.separator + "stats.txt");	
+			writer2.write("config;cqs-avg;cqs-with-data-agv;stmt-avg\n");//TODO add quartiles, min...?
+
+			stats.entrySet().stream().forEach(e -> {
+				
+				String config = e.getKey();
+				List<int[]> v = e.getValue();
+
+				int cqsAvg = v.stream().mapToInt(ns -> ns[0]).sum()/v.size();
+				int cqsWithDataAvg = v.stream().mapToInt(ns -> ns[1]).sum()/v.size();
+//				TODO I think this is not correct
+				int avgDataCount = v.stream().mapToInt(ns -> ns[2]/ns[1]).sum()/v.size();
+				try {
+					writer2.write(config + ";" + cqsAvg  + ";" + 
+				cqsWithDataAvg  + ";" + avgDataCount  + "\n" );
+
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			});
+			
+			writer2.close();
+						
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 
 	}
 	
