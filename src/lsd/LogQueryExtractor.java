@@ -64,7 +64,7 @@ public class LogQueryExtractor {
 	};
 	
 	public static String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
-	private int defaultQueryNumMax = 10;//20;
+	private int defaultQueryNumMax = 100;//20;
 	private int defaultQuerySizeMin = 3;
 	private int defaultQueryResultSizeMin = 1;
 
