@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.apache.jena.query.Query;
@@ -388,34 +390,25 @@ public class LogQueryDataExtractor {
 
 	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
 		
-		//clean data directory 
-		File d1 = new File(Utils.DATA_DIR);
-//		for(File d2: d1.listFiles()) {
-//			for(File file: d2.listFiles()) {
-//			    if (file.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
-//			    		file.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
-//			    		file.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
-//			        file.delete();
-//			    }
-//			}
-//		}
+		File[] dirs = Utils.listDirectories(new File(Utils.DATA_DIR));
+//		to collect statistics for construct queries
+		Map<String,List<int[]>> stats = Arrays.asList(dirs).stream().
+				//map(d -> (d.getName(),new ArrayList<int[]>()).
+				collect(Collectors.toMap(d -> d.getName(), d -> new ArrayList<int[]>()));
 
 //		for each config directory
-		for(File d2: d1.listFiles()) {//TODO does not work like this for qid case. extract inners to method
-			for(File f: d2.listFiles()) {
-			    
-			    if (f.getName().endsWith(Utils.CONSTRUCT_QUERIES_FILE_EXT) ||
-			    		f.getName().endsWith(Utils.QUERY_DATA_FILE_EXT) || 
-			    		f.getName().endsWith(Utils.QUERY_RESULT_FILE_EXT) ) {
-			        f.delete();
-			    }
-			}
+		for(File d2: dirs) {
 
+			String[] delete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
+					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT,"-data.xml","-result.xml"};		
+			Utils.cleanDir(d2, delete);
+
+			List<int[]> stat = stats.get(d2.getName());
 			List<String[]> lqs = new ArrayList<String[]>();
 			
 			try { 		
 				
-				for(File f: d2.listFiles()) {
+				for(File f: d2.listFiles((dir,name) -> name.endsWith(Utils.QUERY_FILE_EXT))) {
 					lqs.add(Utils.readQueryFile(f));
 				}	
 				
@@ -425,12 +418,14 @@ public class LogQueryDataExtractor {
 			
 			for (String[] lq: lqs) {
 				
-				int hasData = 0; 
+				int cqsWithData = 0; 
+//        		note that this number may count some data items multiple times
+				int cqsDataCountTotal = 0;
 				
-				String qid = lq[0];System.out.println(qid);
+				String qid = lq[0];//System.out.println(qid);
 				String q = lq[1];			
 				//some queries are erroneous; missing whitespace
-				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
+//				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
 
 				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
 //					uncomment the following line to get a file with all the cqs
@@ -449,7 +444,9 @@ public class LogQueryDataExtractor {
 			            Model m = qe.execConstruct();
 			            
 			            if(m.listStatements().hasNext()) {
-			            		hasData++;
+			            		cqsWithData++;
+			            		cqsDataCountTotal += m.listStatements().toList().size();
+
 			            		Utils.writeQueryDataFile(d2,qid, m);
 			            }
 
@@ -470,8 +467,12 @@ public class LogQueryDataExtractor {
 			        }
 				}
 				
-				System.out.println("variability queries with data: "+hasData+ "/" +cqs.size() );
-				if(hasData == 0) { 	
+				System.out.println("cq nbr/cqs with data/total data: "+
+				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal );	
+				int[] ns = {cqs.size(), cqsWithData, cqsDataCountTotal};
+				stat.add(ns);
+				
+				if(cqsWithData == 0) { 	
 //		            	System.out.println("NO DATA "+ qid);
 //		            	System.out.println(query);
 	            	
@@ -487,7 +488,7 @@ public class LogQueryDataExtractor {
 					 
 					// Create an empty in-memory model and populate it from the data
 					m = ModelFactory.createMemModelMaker().createModel(qid+"");
-					m.read(in, null); // null base URI, since model URIs are absolute
+					m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
 					
 					in.close();
 
@@ -519,23 +520,14 @@ public class LogQueryDataExtractor {
 				qe1.close();
 			}
 		}
+//		System.out.println(stats);
+		Utils.writeStatisticsFile(stats);
 		
 	}
 	
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
-		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
-		
-//		Integer[] i1 = {1,2,3};
-//		Integer[] i2 = {11,22,33};
-//		Integer[] i3 = {111,222,333};
-//		
-//		List<List<Integer>> list = new ArrayList<List<Integer>>();
-//		list.add(Arrays.asList(i1));
-//		list.add(Arrays.asList(i2));
-//		list.add(Arrays.asList(i3));
-//System.out.println(list);
-//		System.out.println(de.oneElementPowerset(list));
+		de.extractQueryDataAndResults("http://localhost:8080/sparql", 0);//http://dbpedia.org/sparql
 	}
 
 

@@ -39,28 +39,28 @@ public class LogQueryExtractor {
 //	one configuration specifies the SPARQL queries we look for
 //	(we look for queries that contain all features from one array)
 	public static String[][] FEATURE_CONFIG_SIMPLE = {
-//	{ FEATURE_AVG },
-//	{ FEATURE_BIND },
-//	{ FEATURE_COUNT },
-//	{ FEATURE_DISTINCT },
-//	{ FEATURE_FILTER,FEATURE_OPTIONAL },
-//	{ FEATURE_FROM_NAMED },
-//	{ FEATURE_GROUP_BY },
-//	{ FEATURE_HAVING },
-//	{ FEATURE_LIMIT },
-//	{ FEATURE_MAX },
-//	{ FEATURE_MIN },
+	{ FEATURE_AVG },
+	{ FEATURE_BIND },
+	{ FEATURE_COUNT },
+	{ FEATURE_DISTINCT },
+	{ FEATURE_FILTER,FEATURE_OPTIONAL },
+	{ FEATURE_FROM_NAMED },
+	{ FEATURE_GROUP_BY },
+	{ FEATURE_HAVING },
+	{ FEATURE_LIMIT },
+	{ FEATURE_MAX },
+	{ FEATURE_MIN },
 	{ FEATURE_MINUS },
-//	{ FEATURE_NAMED_GRAPH },
+	{ FEATURE_NAMED_GRAPH },
 //	{ FEATURE_OFFSET },
 	{ FEATURE_OPTIONAL },
-//	{ FEATURE_ORDER_BY },
-//	{ FEATURE_REGEX },
-//	{ FEATURE_SERVICE },
-//	{ FEATURE_SUBQUERY },
-//	{ FEATURE_SUM },
-//	{ FEATURE_UNION },
-//	{ FEATURE_VALUES }
+	{ FEATURE_ORDER_BY },
+	{ FEATURE_REGEX },
+	{ FEATURE_SERVICE },
+	{ FEATURE_SUBQUERY },
+	{ FEATURE_SUM },
+	{ FEATURE_UNION },
+	{ FEATURE_VALUES }
 	};
 	
 	public static String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
@@ -72,10 +72,15 @@ public class LogQueryExtractor {
 	private void queryLogAndWriteFiles(String query, String logUri, File directory) {
 		
 		try ( QueryEngineHTTP qexec =  
-				(QueryEngineHTTP) QueryExecutionFactory.sparqlService("http://lsq.aksw.org/sparql", query)  ) {
+				(QueryEngineHTTP) QueryExecutionFactory.sparqlService(
+						"http://localhost:8080/sparql", query)  ) {
+//						"http://akswnc9.aksw.uni-leipzig.de:8911/sparql", query)  ) {
 
 			if(logUri != null && !logUri.equals(""))
 				qexec.addParam("default-graph-uri", logUri) ;
+			
+//			qexec.addParam("user", "dba") ;
+//			qexec.addParam("password", "dba") ;
         	
             ResultSet rs = qexec.execSelect();
             
@@ -147,10 +152,12 @@ public class LogQueryExtractor {
 				+ "PREFIX  lsqv: <http://lsq.aksw.org/vocab#>  "
 				+ "SELECT  ?id ?text WHERE { "
 				+ "?id sp:text ?text . "
-				+ "FILTER ( (?id=<http://lsq.aksw.org/res/" 
-				+ String.join(">) || (?id=<http://lsq.aksw.org/res/", queryIds) + ">) ) }";
+				+ "FILTER ( (?id=<" + Utils.LSQR_RESOURCE_URI
+				+ String.join(">) || (?id=<" + Utils.LSQR_RESOURCE_URI, queryIds) + ">) ) }";
 
-		queryLogAndWriteFiles(query, null, null);
+		String[] dummyConfig = {"data"};
+		
+		queryLogAndWriteFiles(query, null, Utils.cleanDataSubDir(dummyConfig));
 	}
 
 	public static void main(String[] args) {
