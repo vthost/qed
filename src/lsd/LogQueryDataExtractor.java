@@ -425,7 +425,7 @@ public class LogQueryDataExtractor {
 				String qid = lq[0];//System.out.println(qid);
 				String q = lq[1];			
 				//some queries are erroneous; missing whitespace
-				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
+//				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
 
 				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
 //					uncomment the following line to get a file with all the cqs
@@ -527,7 +527,7 @@ public class LogQueryDataExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
-		de.extractQueryDataAndResults("http://dbpedia.org/sparql", 0);
+		de.extractQueryDataAndResults("http://localhost:8080/sparql", 0);//http://dbpedia.org/sparql
 	}
 
 

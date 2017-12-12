@@ -151,8 +151,8 @@ public class Utils {
 			String p = directory == null ? Utils.DATA_DIR : directory.getPath() + File.separator;
 			
 			FileWriter writer = new FileWriter(p + Utils.getQueryFileName(lsqIdUrl));
-		  	writer.write(lsqIdUrl);
-		  	writer.write("\n");
+//		  	writer.write(lsqIdUrl);
+//		  	writer.write("\n");
 //		  	using the factory we get a formatting that is more readable. 
 //		  	but sometimes it then writes no whitespace ?! (http://lsq.aksw.org/res/DBpedia-q390826)
 		  	writer.write(query);//QueryFactory.create(query).toString()); 
@@ -213,7 +213,7 @@ public class Utils {
 				String config = e.getKey();
 				e.getValue().stream().forEach(ns -> {
 					try {
-						writer.write(config + ";" + ns[0] + ";" + ns[1] + ";" + ns[2]/ns[1] + "\n");
+						writer.write(config + ";" + ns[0] + ";" + ns[1] + ";" + ( ns[1] > 0 ? ns[2]/ns[1] : 0) + "\n");
 	
 					} catch (IOException e1) {
 						e1.printStackTrace();
@@ -234,7 +234,7 @@ public class Utils {
 				int cqsAvg = v.stream().mapToInt(ns -> ns[0]).sum()/v.size();
 				int cqsWithDataAvg = v.stream().mapToInt(ns -> ns[1]).sum()/v.size();
 //				TODO I think this is not correct
-				int avgDataCount = v.stream().mapToInt(ns -> ns[2]/ns[1]).sum()/v.size();
+				int avgDataCount = v.stream().mapToInt(ns -> ( ns[1] > 0 ? ns[2]/ns[1] : 0)).sum()/v.size();
 				try {
 					writer2.write(config + ";" + cqsAvg  + ";" + 
 				cqsWithDataAvg  + ";" + avgDataCount  + "\n" );
@@ -354,7 +354,7 @@ public class Utils {
 	public static String[] readQueryFile(File f) {
 		try {
 			Scanner s = new Scanner(f);
-			String id = s.nextLine();//TODO remove id from first line to in line with compliance tests
+			String id = getQueryIdFromFileName(f.getName()) ;//s.nextLine();
 			String q = s.nextLine();
 			while(s.hasNextLine()) q += s.nextLine();
 			String[] result = {id, q};
