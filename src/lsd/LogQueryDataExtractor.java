@@ -440,6 +440,9 @@ public class LogQueryDataExtractor {
 						
 						qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
 			            qe.addParam("timeout", "10000") ;
+			            
+//						qe.addParam("user", "dba") ;
+//						qe.addParam("password", "dba") ;
 
 			            Model m = qe.execConstruct();
 			            
