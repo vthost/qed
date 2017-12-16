@@ -73,9 +73,12 @@ public class LogQueryExtractor {
 		
 		try ( QueryEngineHTTP qexec =  
 				(QueryEngineHTTP) QueryExecutionFactory.sparqlService(
-						"http://localhost:8080/sparql", query)  ) {
+						"http://lsq.aksw.org/sparql?", query)  ) {
+//						"http://localhost:8080/sparql", query)  ) {
 //						"http://akswnc9.aksw.uni-leipzig.de:8911/sparql", query)  ) {
 
+			
+			qexec.addParam("timeout", "10000") ;
 			if(logUri != null && !logUri.equals(""))
 				qexec.addParam("default-graph-uri", logUri) ;
 			
