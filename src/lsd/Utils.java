@@ -230,7 +230,7 @@ public class Utils {
 				
 				String config = e.getKey();
 				List<int[]> v = e.getValue();
-
+				if (v.size() > 0) {
 				int cqsAvg = v.stream().mapToInt(ns -> ns[0]).sum()/v.size();
 				int cqsWithDataAvg = v.stream().mapToInt(ns -> ns[1]).sum()/v.size();
 //				TODO I think this is not correct
@@ -241,6 +241,7 @@ public class Utils {
 
 				} catch (IOException e1) {
 					e1.printStackTrace();
+				}
 				}
 			});
 			

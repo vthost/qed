@@ -380,6 +380,10 @@ public class LogQueryDataExtractor {
 			cq.setConstructTemplate(QueryFactory.createTemplate("{"+ String.join(".", l1) +"}"));
 			
 			cqs.add(cq);
+			
+			if (cqs.size() > 10) {
+				break;
+			}
 		}
 				
 //		TODO We currently only consider BGPs in the WHERE clause
@@ -470,7 +474,7 @@ public class LogQueryDataExtractor {
 			        }
 				}
 				
-				System.out.println("cq nbr/cqs with data/total data: "+
+				System.out.println(qid + ": cq nbr/cqs with data/total data: "+
 				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal );	
 				int[] ns = {cqs.size(), cqsWithData, cqsDataCountTotal};
 				stat.add(ns);
