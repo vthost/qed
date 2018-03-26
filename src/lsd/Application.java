@@ -9,7 +9,7 @@ public class Application {
 		switch(logUri) {
 		
 		case "http://dbpedia.org": 
-			return "http://dbpedia.org/sparql";
+			return "http://localhost:8080/sparql";
 		case "http://linkedgeodata.org": 
 //		TODO ?	
 //		case "http://data.semanticweb.org": 
@@ -18,7 +18,7 @@ public class Application {
 		case "http://bm.rkbexplorer.com": 
 			return "http://bm.rkbexplorer.com/sparql/";
 		default: 
-			return "http://dbpedia.org/sparql";
+			return "http://localhost:8080/sparql";
 		}
 	}
 	
