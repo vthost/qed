@@ -528,7 +528,7 @@ public class LogQueryDataExtractor {
 			}
 		}
 //		System.out.println(stats);
-		Utils.writeStatisticsFile(stats);
+		Utils.writeStatisticsFile2(stats);
 		
 	}
 	

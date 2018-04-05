@@ -165,7 +165,7 @@ public class LogQueryExtractor {
 
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries("http://localhost:8080", null, 0, 0, 0);
+		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
 		
 //		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
 //		qe.extractQueries(ids);

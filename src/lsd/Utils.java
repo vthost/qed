@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.OptionalInt;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -203,6 +204,8 @@ public class Utils {
 		}
 	}
 	
+	
+	
 	public static void writeStatisticsFile(Map<String,List<int[]>> stats) {
 		try {		
 			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
@@ -213,7 +216,7 @@ public class Utils {
 				String config = e.getKey();
 				e.getValue().stream().forEach(ns -> {
 					try {
-						writer.write(config + ";" + ns[0] + ";" + ns[1] + ";" + ( ns[1] > 0 ? ns[2]/ns[1] : 0) + "\n");
+						writer.write(config.replace("_", "\\_") + ";" + ns[0] + ";" + ns[1] + ";" + ( ns[1] > 0 ? ns[2]/ns[1] : 0) + "\n");
 	
 					} catch (IOException e1) {
 						e1.printStackTrace();
@@ -236,8 +239,66 @@ public class Utils {
 //				TODO I think this is not correct
 				int avgDataCount = v.stream().mapToInt(ns -> ( ns[1] > 0 ? ns[2]/ns[1] : 0)).sum()/v.size();
 				try {
-					writer2.write(config + ";" + cqsAvg  + ";" + 
+					writer2.write(config.replace("_", "\\_") + ";" + cqsAvg  + ";" + 
 				cqsWithDataAvg  + ";" + avgDataCount  + "\n" );
+
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+				}
+			});
+			
+			writer2.close();
+						
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+
+	}
+	
+	public static void writeStatisticsFile2(Map<String,List<int[]>> stats) {
+		try {		
+			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
+			writer.write("config;cqs;cqs-with-data;stmt-avg\n");
+			
+			stats.entrySet().stream().forEach(e -> {
+								
+				String config = e.getKey();
+				e.getValue().stream().forEach(ns -> {
+					try {
+						writer.write(config.replace("_", "\\_") + ";" + ns[0] + ";" + ns[1] + ";" + ( ns[1] > 0 ? ns[2]/ns[1] : 0) + "\n");
+	
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+				});	
+			});
+			writer.close();
+			
+			
+			FileWriter writer2 = new FileWriter(Utils.DATA_DIR + File.separator + "stats.txt");
+			writer2.write("config;cqs;cmin;cmed;cmax;ecmin;ecmed;ecmax;smin;smed;smax\n");
+//			writer2.write("config;cqs-avg;cqs-with-data-agv;stmt-avg\n");//TODO add quartiles, min...?
+
+			stats.entrySet().stream().forEach(e -> {
+				
+				String config = e.getKey();
+				List<int[]> v = e.getValue();
+				if (v.size() > 0) {
+				int cqsmin = v.stream().mapToInt(ns -> ns[0]).min().orElse(0);
+				int cqsmed = v.stream().mapToInt(ns -> ns[0]).sum()/v.size();
+				int cqsmax = v.stream().mapToInt(ns -> ns[0]).max().orElse(0);;
+
+				int cqs2min = v.stream().mapToInt(ns -> ns[1]).min().orElse(0);;
+				int cqs2med = v.stream().mapToInt(ns -> ns[1]).sum()/v.size();
+				int cqs2max = v.stream().mapToInt(ns -> ns[1]).max().orElse(0);;
+
+//				TODO I think this is not correct
+				int avgDataCount = v.stream().mapToInt(ns -> ( ns[1] > 0 ? ns[2]/ns[1] : 0)).sum()/v.size();
+				try {
+					writer2.write(config.replace("_", "\\_") + ";"+v.size()+ ";"  
+				+ cqsmin+ ";"  +cqsmed+ ";" +cqsmax   + ";" 
+				+cqs2min+ ";"  +cqs2med+ ";"   +cqs2max + ";" + avgDataCount +";" + avgDataCount+ ";" + avgDataCount  + "\n" );
 
 				} catch (IOException e1) {
 					e1.printStackTrace();
