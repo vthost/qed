@@ -277,7 +277,7 @@ public class Utils {
 			
 			
 			FileWriter writer2 = new FileWriter(Utils.DATA_DIR + File.separator + "stats.txt");
-			writer2.write("config;cqs;cmin;cmed;cmax;ecmin;ecmed;ecmax;smin;smed;smax\n");
+			writer2.write("config;cqs;cmin;cmed;cavg;cmax;ecmin;ecmed;ecavg;ecmax;smin;smed;savg;smax\n");
 //			writer2.write("config;cqs-avg;cqs-with-data-agv;stmt-avg\n");//TODO add quartiles, min...?
 
 			stats.entrySet().stream().forEach(e -> {
@@ -285,20 +285,30 @@ public class Utils {
 				String config = e.getKey();
 				List<int[]> v = e.getValue();
 				if (v.size() > 0) {
+				int[] a = v.stream().mapToInt(ns -> ns[0]).sorted().toArray();
+				int l = a.length;
 				int cqsmin = v.stream().mapToInt(ns -> ns[0]).min().orElse(0);
-				int cqsmed = v.stream().mapToInt(ns -> ns[0]).sum()/v.size();
-				int cqsmax = v.stream().mapToInt(ns -> ns[0]).max().orElse(0);;
+				int cqsmed = l % 2 == 0 ? (a[l/2-1] + a[l/2]) / 2 : a[l/2];
+				int cqsavg = (int) v.stream().mapToInt(ns -> ns[0]).average().orElse(0);
+				int cqsmax = v.stream().mapToInt(ns -> ns[0]).max().orElse(0);
 
-				int cqs2min = v.stream().mapToInt(ns -> ns[1]).min().orElse(0);;
-				int cqs2med = v.stream().mapToInt(ns -> ns[1]).sum()/v.size();
-				int cqs2max = v.stream().mapToInt(ns -> ns[1]).max().orElse(0);;
-
-//				TODO I think this is not correct
-				int avgDataCount = v.stream().mapToInt(ns -> ( ns[1] > 0 ? ns[2]/ns[1] : 0)).sum()/v.size();
+				int[] a2 = v.stream().mapToInt(ns -> ns[1]).sorted().toArray();
+				int l2 = a2.length;
+				double cqs2min = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).min().orElse(0);
+				int cqs2med = l2 % 2 == 0 ? (a2[l2/2-1] + a2[l2/2]) / 2 : a2[l2/2];
+				double cqs2avg = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).average().orElse(0);
+				double cqs2max = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).max().orElse(0);
+				
+				int[] a3 = v.stream().mapToInt(ns -> ns[2]).sorted().toArray();
+				int l3 = a3.length;
+				int smin = v.stream().mapToInt(ns -> ns[2]).min().orElse(0);
+				int smed = l3 % 2 == 0 ? (a3[l3/2-1] + a3[l3/2]) / 2 : a3[l3/2];
+				int savg = (int) v.stream().mapToInt(ns -> ns[2]).average().orElse(0);
+				int smax = v.stream().mapToInt(ns -> ns[2]).max().orElse(0);
 				try {
 					writer2.write(config.replace("_", "\\_") + ";"+v.size()+ ";"  
-				+ cqsmin+ ";"  +cqsmed+ ";" +cqsmax   + ";" 
-				+cqs2min+ ";"  +cqs2med+ ";"   +cqs2max + ";" + avgDataCount +";" + avgDataCount+ ";" + avgDataCount  + "\n" );
+				+ cqsmin+ ";"  +cqsmed+ ";"+cqsavg+ ";" +cqsmax   + ";" 
+				+cqs2min+ ";"  +cqs2med+ ";" +cqs2avg+ ";"  +cqs2max + ";" + smin +";" + smed+ ";" + savg  +";" + smax  + "\n" );
 
 				} catch (IOException e1) {
 					e1.printStackTrace();
