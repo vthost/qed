@@ -1,0 +1,15 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns4:   <http://dbpedia.org/ontology/> .
+
+dbpedia:New_York_Collegiate_Baseball_League
+        a           ns4:BaseballLeague , ns4:SportsLeague , owl:Thing , yago:SportsClubsEstablishedIn1978 , <http://dbpedia.org/class/yago/SportsInRochester,NewYork> , ns4:Organisation ;
+        rdfs:label  "New York Collegiate Baseball League"@en .
+
+dbpedia:Intercounty_Baseball_League
+        a           owl:Thing , yago:League108231184 , ns4:BaseballLeague , yago:IndependentBaseballLeagues , ns4:Organisation , ns4:SportsLeague ;
+        rdfs:label  "Intercounty Baseball League"@en .

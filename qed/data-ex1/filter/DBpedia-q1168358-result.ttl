@@ -1,0 +1,11 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "abs" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Bushy Park is the second largest of the Royal Parks of London, at 445 hectares (1,100 acres) in area, and lies immediately north of Hampton Court Palace and Hampton Court Park, a few minutes' walk west of Kingston upon Thames. It is in the London Borough of Richmond upon Thames in south-west London and most of it is open to the public. It is surrounded by Hampton, Hampton Hill, Teddington and Hampton Wick. Its acid grasslands are mostly just above the 25 foot contour."@en ;
+                                     rs:variable  "abs"
+                                   ] ]
+] .

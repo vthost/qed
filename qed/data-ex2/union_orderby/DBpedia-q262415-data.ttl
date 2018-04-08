@@ -1,0 +1,59 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+ns3:RadioStation  a  ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "radio station"@en .
+
+ns3:PoloLeague  a   ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "polo league"@en .
+
+ns3:GolfLeague  a   ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "golf league"@en .
+
+ns3:MeanOfTransportation
+        a           owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "mean of transportation"@en .
+
+ns3:Activity  a     owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "Aktivität"@de .
+
+dbpedia:Paul_Emery  a  ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "Paul Emery"@en , "Paul Emery"@ro , "Paul Emery"@it , "Paul Emery"@sl , "Paul Emery"@fi , "Paul Emery"@de .
+
+ns3:EurovisionSongContestEntry
+        a           owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "Eurovision song contest entry"@en .
+
+owl:Nothing  a      ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "Nothing" .
+
+ns3:Single  a       owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "single"@en .
+
+<http://dbpedia.org/resource/Jacques_Villeneuve_%28elder%29>
+        a           ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "Jacques Villeneuve (elder)"@en .
+
+ns3:EthnicGroup  a  owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "ethnic group"@en .
+
+ns3:Hospital  a     owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "hospital"@en .
+
+ns3:CyclingLeague  a  owl:Class , ns3:FormulaOneRacer ;
+        rdfs:label  "cycling league"@en .
+
+owl:Thing  a        ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "Thing" .
+
+ns3:Language  a     ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "language"@en .
+
+dbpedia:Mario_Andretti
+        a           ns3:FormulaOneRacer , owl:Class ;
+        rdfs:label  "Mario Andretti"@en .

@@ -1,0 +1,9 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns4:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Vivary_Park  geo:lat  51.008 , "51.008"^^xsd:float ;
+        geo:long      "-3.102"^^xsd:float , -3.102 ;
+        skos:subject  ns4:Parks_by_city .

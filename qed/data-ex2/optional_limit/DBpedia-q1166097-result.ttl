@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://eu.wikipedia.org/wiki/Heliogabalo> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Elagabalus_Denarius_Fides.jpg/200px-Elagabalus_Denarius_Fides.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/c/cd/Elagabalus_Denarius_Fides.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "For the deity with the same name see Elagabalus (deity) Elagabalus (c. 203 &ndash; March 11, 222), also known as Heliogabalus or Marcus Aurelius Antoninus, was a Roman Emperor of the Severan dynasty who reigned from 218 to 222. Born Varius Avitus Bassianus, he was Syrian on his mother's side, the son of Julia Soaemias and Sextus Varius Marcellus, and in his early youth he served as a priest of the god El-Gabal at his hometown, Emesa. Upon becoming emperor he took the name Marcus Aurelius Antoninus Augustus, and was called Elagabalus only a long time after his death. In 217, the emperor Caracalla was assassinated and replaced by his Praetorian prefect, Marcus Opellius Macrinus. Caracalla's maternal aunt, Julia Maesa, successfully instigated a revolt among the Third Legion to have her eldest grandson, Elagabalus, declared as emperor in his place. Macrinus was defeated on June 8, 218, at the Battle of Antioch, upon which Elagabalus, barely fourteen years old, ascended to the imperial power and began a reign that was marred by infamous controversies. During his rule, Elagabalus showed a disregard for Roman religious traditions and sexual taboos. He replaced the traditional head of the Roman pantheon, Jupiter, with a lesser god, Deus Sol Invictus, and forced leading members of Rome's government to participate in religious rites celebrating this deity, which he personally led. Elagabalus was married as many as five times, lavished favors on courtiers popularly assumed to have been his homosexual lovers, and was reported to have prostituted himself in the imperial palace. His reputed behaviour infuriated the Praetorian Guard, the Senate and the common people alike. Amidst growing opposition, Elagabalus, only 18 years old, was assassinated and replaced by his cousin Alexander Severus on March 11, 222, in a plot formed by his grandmother, Julia Maesa, and disgruntled members of the Praetorian Guard. Elagabalus developed a reputation among his contemporaries for extreme eccentricity, decadence, and zealotry which was likely exaggerated by his successors and political rivals. This likely propaganda was passed on and, as a result, he was one of the most reviled Roman emperors to early historians. For example, Edward Gibbon wrote that Elagabalus \"abandoned himself to the grossest pleasures and ungoverned fury. \" \"The name Elagabalus is branded in history above all others\" because of his \"unspeakably disgusting life,\" wrote B.G. Niebuhr."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Elagabalus> ;
+                          rs:variable  "king"
+                        ] ]
+] .

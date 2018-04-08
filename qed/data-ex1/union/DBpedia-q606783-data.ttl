@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/L%27Effront%C3%A9e>
+        dbpprop:creator            dbpedia:Marie-Laure_Reyre , dbpedia:Claude_Miller ;
+        dbpprop:director           dbpedia:Claude_Miller , dbpedia:Marie-Laure_Reyre ;
+        dbpprop:executiveProducer  dbpedia:Claude_Miller , dbpedia:Marie-Laure_Reyre ;
+        dbpprop:guest              dbpedia:Claude_Miller , dbpedia:Marie-Laure_Reyre ;
+        dbpprop:producer           dbpedia:Claude_Miller , dbpedia:Marie-Laure_Reyre ;
+        dbpprop:series             dbpedia:Claude_Miller , dbpedia:Marie-Laure_Reyre ;
+        dbpprop:starring           dbpedia:Marie-Laure_Reyre , dbpedia:Claude_Miller ;
+        dbpprop:writer             dbpedia:Marie-Laure_Reyre , dbpedia:Claude_Miller .

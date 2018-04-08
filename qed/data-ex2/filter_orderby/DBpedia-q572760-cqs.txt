@@ -1,0 +1,42 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/resource/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+  }
+WHERE
+  { { FILTER ( ?populationTotal > 1000000 )
+      ?id  dbpedia-owl:populationTotal  ?populationTotal
+      { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+      ?id  skos:subject  ?usc
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/resource/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+  }
+WHERE
+  { { FILTER ( ! ( ?populationTotal > 1000000 ) )
+      ?id  dbpedia-owl:populationTotal  ?populationTotal
+      { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+      ?id  skos:subject  ?usc
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

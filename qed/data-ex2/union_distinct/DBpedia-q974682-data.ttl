@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/resource/The_Transformers:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+ns1:_The_Movie  dbpprop:creator    dbpedia:Lee_Gunther , dbpedia:Margaret_Loesch , dbpedia:Nelson_Shin , dbpedia:Thom_Griffith , dbpedia:Joe_Bacal ;
+        dbpprop:director           dbpedia:Joe_Bacal , dbpedia:Lee_Gunther , dbpedia:Margaret_Loesch , dbpedia:Thom_Griffith , dbpedia:Nelson_Shin ;
+        dbpprop:executiveProducer  dbpedia:Lee_Gunther , dbpedia:Joe_Bacal , dbpedia:Margaret_Loesch , dbpedia:Nelson_Shin , dbpedia:Thom_Griffith ;
+        dbpprop:guest              dbpedia:Nelson_Shin , dbpedia:Thom_Griffith , dbpedia:Lee_Gunther , dbpedia:Margaret_Loesch , dbpedia:Joe_Bacal ;
+        dbpprop:producer           dbpedia:Thom_Griffith , dbpedia:Margaret_Loesch , dbpedia:Lee_Gunther , dbpedia:Nelson_Shin , dbpedia:Joe_Bacal ;
+        dbpprop:series             dbpedia:Joe_Bacal , dbpedia:Nelson_Shin , dbpedia:Lee_Gunther , dbpedia:Margaret_Loesch , dbpedia:Thom_Griffith ;
+        dbpprop:starring           dbpedia:Margaret_Loesch , dbpedia:Lee_Gunther , dbpedia:Thom_Griffith , dbpedia:Joe_Bacal , dbpedia:Nelson_Shin ;
+        dbpprop:writer             dbpedia:Joe_Bacal , dbpedia:Nelson_Shin , dbpedia:Margaret_Loesch , dbpedia:Lee_Gunther , dbpedia:Thom_Griffith .

@@ -1,0 +1,13 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/datatype/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpprop:wikilink  rdfs:label  "wikilink"@da .
+
+dbpprop:frequency  rdfs:label  "frequency"@ar , "frequency"@ja , "frequency"@tl , "frequency"@ca , "frequency"@bn .
+
+dbpedia:WANY-FM  dbpprop:frequency  "106.3"^^ns2:megahertz ;
+        dbpprop:wikilink   dbpedia:Kentucky .
+
+dbpedia:Kentucky  rdfs:label  "Kentucky"@af , "Kentucky"@en , "Kentucky"@an , "Kentucky"@es .

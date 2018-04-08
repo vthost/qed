@@ -1,0 +1,9 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Keio_University
+        rdfs:label  "慶應義塾大学"@ja , "Keio University"@en , "Universitas Keio"@in , "게이오기주쿠 대학"@ko , "Università Keio"@it ;
+        geo:lat     "35.6492"^^xsd:float ;
+        geo:long    "139.743"^^xsd:float .

@@ -1,0 +1,10 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://en.wikipedia.org/wiki/> .
+
+dbpedia:James_I_of_Scotland
+        ns0:abstract    "James I (10 December 1394 &ndash; 21 February 1437) was nominal King of Scots from 4 April 1406 until his death, although his effective reign only began in May 1424. He spent the earlier part of his reign as a prisoner in England. On his release he made moves to create a strong centralised monarchy in Scotland, and was assassinated by dissident nobles."@en , "جيمس الأول ملك اسكتلندا وكان شاعرا أيضا. وكان قد أرسل إلى فرنسا ولكنه اختطف وظل سجينا في إنكلترا، وعند عودته قام بإصلاحات جذرية في الدولة."@ar ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/King_James_I_of_Scotland.jpg/200px-King_James_I_of_Scotland.jpg> ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/8/8f/King_James_I_of_Scotland.jpg> ;
+        foaf:page       <http://ca.wikipedia.org/wiki/Jaume_I_d%27Esc%C3%B2cia> , <http://fr.wikipedia.org/wiki/Jacques_Ier_d%27%C3%89cosse> , ns3:James_I_of_Scotland .

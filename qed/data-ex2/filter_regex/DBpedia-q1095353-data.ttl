@@ -1,0 +1,21 @@
+@prefix ns6:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix ns7:   <http://ca.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix ns4:   <http://nn.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Behavior  rdfs:label  "Behavior"@en , "Comportamento"@it ;
+        skos:subject  ns2:Behavior ;
+        foaf:page     ns7:Comportament , <http://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A0%D7%94%D7%92%D7%95%D7%AA> , ns6:Comportement , <http://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%A4ytyminen> , ns5:Behavior .
+
+<http://dbpedia.org/resource/Habit_%28psychology%29>
+        rdfs:label    "Навик"@bg , "Habit (psychology)"@en ;
+        skos:subject  ns2:Behavior ;
+        foaf:page     <http://en.wikipedia.org/wiki/Habit_%28psychology%29> , <http://ja.wikipedia.org/wiki/%E6%82%AA%E7%99%96> , <http://ca.wikipedia.org/wiki/H%C3%A0bit> , <http://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B2%D0%B8%D0%BA> , ns4:Vane .
+
+ns2:Behavior  rdfs:label  "Behavior"@en .

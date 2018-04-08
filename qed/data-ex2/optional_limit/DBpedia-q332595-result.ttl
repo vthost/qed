@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://he.wikipedia.org/wiki/%D7%90%D7%90%D7%9C%D7%99%D7%94_%D7%A4%D7%9C%D7%A7%D7%99%D7%9C%D7%94> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/8/81/As-Aelia_Flaccilla-antioch_RIC_62.jpg/200px-As-Aelia_Flaccilla-antioch_RIC_62.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/8/81/As-Aelia_Flaccilla-antioch_RIC_62.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Aelia Flavia Flaccilla (died 385), first wife of the Roman Emperor Theodosius I. She was of Hispanian Roman descent. During her marriage to Theodosius, she gave birth to two sons &mdash; future Emperors Arcadius and Honorius &mdash; and a daughter, Aelia Pulcheria. She was given the title of Augusta, as her coinage shows."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Aelia_Flaccilla> ;
+                          rs:variable  "king"
+                        ] ]
+] .

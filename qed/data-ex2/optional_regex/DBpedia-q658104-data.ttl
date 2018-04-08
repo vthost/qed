@@ -1,0 +1,14 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+ns1:Computational_complexity_theory
+        rdfs:label  "Computational complexity theory"@en .
+
+dbpedia:Truth_table_reduction
+        rdfs:label    "Truth table reduction"@en ;
+        skos:subject  ns1:Computational_complexity_theory ;
+        foaf:page     ns5:Truth_table_reduction .

@@ -1,0 +1,27 @@
+@prefix ns6:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns5:   <http://it.wikipedia.org/wiki/> .
+@prefix ns8:   <http://en.wikipedia.org/wiki/> .
+@prefix ns7:   <http://en.wikipedia.org/wiki/> .
+@prefix ns9:   <http://io.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Sampan  rdfs:comment  "A sampan is a relatively flat bottomed Chinese wooden boat from 3.5 to 4.5 m (approximately twelve to fifteen feet) long. Some sampans include a small shelter on board, and may be used as a permanent habitation on inland waters. Sampans are generally used for fishing or transportation, in coastal areas or rivers. It is unusual for a sampan to sail far from land as they do not have the means to survive rough weather."@en , "Le sampan (chinois sānbǎn \"trois bords\") est un bateau chinois à fond plat, à voile unique, servant aussi d'habitation. Il est utilisé principalement en Asie du Sud-Est pour le cabotage."@fr ;
+        rdfs:label      "Sampan"@en , "Sampan"@de ;
+        skos:subject    ns3:Boat_types ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/e/e9/YangtzeSampan.jpg> ;
+        foaf:page       ns7:Sampan , ns6:Sampan , ns5:Sampan .
+
+dbpedia:Longboat  rdfs:comment  "A longboat is a long boat used by the Vikings. It was made of wood and moved on the sea by rowing."@en , "Une chaloupe est une grosse embarcation de construction plus robuste que celle d'un canot. Dans l'ancienne marine, la chaloupe était à avirons et était la plus grosse embarcation du bord, capable de porter l'artillerie. Les chaloupes modernes sont à moteur. Au Canada, une chaloupe est une embarcation légère utilisée notamment pour la pêche sportive."@fr ;
+        rdfs:label    "Longboat"@en , "Beiboot"@de ;
+        skos:subject  ns3:Boat_types ;
+        foaf:page     ns7:Longboat , <http://de.wikipedia.org/wiki/Beiboot> , ns9:Shalupo , ns6:Chaloupe , <http://pt.wikipedia.org/wiki/Escaler> .
+
+dbpedia:Fish_class_sloop
+        rdfs:comment  "The Fish class sloop, also known informally as Fish boat is a one-design sailboat designed in 1919 by New Orleans resident Rathbone De Buys, member of the Southern Yacht Club. It is reputed to have been the most popular sailboat racing class on the US Gulf Coast in the early 20th century and was the Gulf Yachting Association one-design racer until it was replaced by the Flying Scot in 1969."@en ;
+        rdfs:label    "Fish class sloop"@en ;
+        skos:subject  ns3:Boat_types ;
+        foaf:page     ns7:Fish_class_sloop .

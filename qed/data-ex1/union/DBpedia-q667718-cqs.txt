@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/This_Film_Is_Not_Yet_Rated>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

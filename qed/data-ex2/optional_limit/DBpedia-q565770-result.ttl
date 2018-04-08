@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/James_IV_of_Scotland> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "199"^^xsd:int ;
+                          rs:variable  "imgw"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/James_IV_of_Scotland.jpg/200px-James_IV_of_Scotland.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/6/69/James_IV_of_Scotland.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "James IV was King of Scotland from 1488 through 1513."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/James_IV_of_Scotland> ;
+                          rs:variable  "king"
+                        ] ]
+] .

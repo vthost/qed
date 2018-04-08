@@ -1,0 +1,1 @@
+PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>  PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>   SELECT ?l ?t WHERE {   ?l geo:lat ?lat; geo:long ?lng; a ?t.    } limit 10

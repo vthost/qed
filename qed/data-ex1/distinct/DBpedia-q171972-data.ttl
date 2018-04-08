@@ -1,0 +1,11 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Mister_Maker  dbpprop:creator  "Driana Jones"@en ;
+        dbpprop:director           "Driana Jones"@en ;
+        dbpprop:executiveProducer  "Driana Jones"@en ;
+        dbpprop:guest              "Driana Jones"@en ;
+        dbpprop:producer           "Driana Jones"@en ;
+        dbpprop:series             "Driana Jones"@en ;
+        dbpprop:starring           "Driana Jones"@en ;
+        dbpprop:writer             "Driana Jones"@en .

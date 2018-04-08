@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label" , "lat" , "long" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "MTV2 Europe"@es ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "MTV Two"@hu ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "MTV Two"@pl ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "MTV Two"@de ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "MTV Two"@en ;
+                                     rs:variable  "label"
+                                   ] ]
+] .

@@ -1,0 +1,42 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/resource/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?movie <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dbpedia-owl:Film .
+    ?movie rdfs:label ?title .
+    ?title <bif:contains> "splice" .
+  }
+WHERE
+  { FILTER ( lang(?title) = "en" )
+    ?movie  a                     dbpedia-owl:Film ;
+            rdfs:label            ?title .
+    ?title  <bif:contains>        "splice"
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/resource/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?movie <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dbpedia-owl:Film .
+    ?movie rdfs:label ?title .
+    ?title <bif:contains> "splice" .
+  }
+WHERE
+  { FILTER ( ! ( lang(?title) = "en" ) )
+    ?movie  a                     dbpedia-owl:Film ;
+            rdfs:label            ?title .
+    ?title  <bif:contains>        "splice"
+  }
+LIMIT   10
+
+----------------------------------------------

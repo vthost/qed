@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Moon_%28film%29>
+        dbpprop:creator            "Stuart Fenegan"@en , "Stuart Fenegan"@hu ;
+        dbpprop:creator            dbpedia:Trudie_Styler , dbpedia:Duncan_Jones ;
+        dbpprop:director           "Stuart Fenegan"@en , "Stuart Fenegan"@hu ;
+        dbpprop:director           dbpedia:Duncan_Jones , dbpedia:Trudie_Styler ;
+        dbpprop:executiveProducer  "Stuart Fenegan"@hu , "Stuart Fenegan"@en ;
+        dbpprop:executiveProducer  dbpedia:Trudie_Styler , dbpedia:Duncan_Jones ;
+        dbpprop:guest              "Stuart Fenegan"@en , "Stuart Fenegan"@hu ;
+        dbpprop:guest              dbpedia:Trudie_Styler , dbpedia:Duncan_Jones ;
+        dbpprop:producer           "Stuart Fenegan"@en , "Stuart Fenegan"@hu ;
+        dbpprop:producer           dbpedia:Trudie_Styler , dbpedia:Duncan_Jones ;
+        dbpprop:series             "Stuart Fenegan"@en , "Stuart Fenegan"@hu ;
+        dbpprop:series             dbpedia:Duncan_Jones , dbpedia:Trudie_Styler ;
+        dbpprop:starring           "Stuart Fenegan"@hu , "Stuart Fenegan"@en ;
+        dbpprop:starring           dbpedia:Trudie_Styler , dbpedia:Duncan_Jones ;
+        dbpprop:writer             "Stuart Fenegan"@hu , "Stuart Fenegan"@en ;
+        dbpprop:writer             dbpedia:Trudie_Styler , dbpedia:Duncan_Jones .

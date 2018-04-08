@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Magic_Kitchen> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Magic_Kitchen>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Magic_Kitchen>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

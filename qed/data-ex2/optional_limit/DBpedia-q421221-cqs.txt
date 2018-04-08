@@ -1,0 +1,224 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { { FILTER ( lang(?name) = "en" )
+      ?museum  rdfs:label  ?name ;
+               geo:lat     ?lat ;
+               geo:long    ?long
+      FILTER ( lang(?com) = "en" )
+      { ?museum  rdfs:comment  ?com }
+    }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?name) = "en" ) )
+      ?museum  rdfs:label  ?name ;
+               geo:lat     ?lat ;
+               geo:long    ?long
+      FILTER ( lang(?com) = "en" )
+      { ?museum  rdfs:comment  ?com }
+    }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { { FILTER ( lang(?name) = "en" )
+      ?museum  rdfs:label  ?name ;
+               geo:lat     ?lat ;
+               geo:long    ?long
+      FILTER ( ! ( lang(?com) = "en" ) )
+      { ?museum  rdfs:comment  ?com }
+    }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?name) = "en" ) )
+      ?museum  rdfs:label  ?name ;
+               geo:lat     ?lat ;
+               geo:long    ?long
+      FILTER ( ! ( lang(?com) = "en" ) )
+      { ?museum  rdfs:comment  ?com }
+    }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?name) = "en" )
+                        ?museum  rdfs:label  ?name ;
+                                 geo:lat     ?lat ;
+                                 geo:long    ?long
+                        FILTER ( lang(?com) = "en" )
+                        { ?museum  rdfs:comment  ?com }
+                      }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?name) = "en" ) )
+                        ?museum  rdfs:label  ?name ;
+                                 geo:lat     ?lat ;
+                                 geo:long    ?long
+                        FILTER ( lang(?com) = "en" )
+                        { ?museum  rdfs:comment  ?com }
+                      }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?name) = "en" )
+                        ?museum  rdfs:label  ?name ;
+                                 geo:lat     ?lat ;
+                                 geo:long    ?long
+                        FILTER ( ! ( lang(?com) = "en" ) )
+                        { ?museum  rdfs:comment  ?com }
+                      }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?museum skos:subject <http://dbpedia.org/resource/Category:Museums_in_Paris> .
+    ?museum rdfs:comment ?com .
+    ?museum rdfs:label ?name .
+    ?museum geo:lat ?lat .
+    ?museum geo:long ?long .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?name) = "en" ) )
+                        ?museum  rdfs:label  ?name ;
+                                 geo:lat     ?lat ;
+                                 geo:long    ?long
+                        FILTER ( ! ( lang(?com) = "en" ) )
+                        { ?museum  rdfs:comment  ?com }
+                      }
+    ?museum  skos:subject  <http://dbpedia.org/resource/Category:Museums_in_Paris>
+  }
+LIMIT   10
+
+----------------------------------------------

@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Cartoon_All-Stars_to_the_Rescue
+        dbpprop:creator            "Buzz Potamkin"@en , "Karen Peterson"@en , "Marsh Lamore"@en , "Mike Svayko"@en , "Bob Shellhorn"@en , "Milton Gray"@en ;
+        dbpprop:director           "Karen Peterson"@en , "Marsh Lamore"@en , "Milton Gray"@en , "Bob Shellhorn"@en , "Mike Svayko"@en , "Buzz Potamkin"@en ;
+        dbpprop:executiveProducer  "Marsh Lamore"@en , "Bob Shellhorn"@en , "Milton Gray"@en , "Mike Svayko"@en , "Karen Peterson"@en , "Buzz Potamkin"@en ;
+        dbpprop:guest              "Marsh Lamore"@en , "Buzz Potamkin"@en , "Bob Shellhorn"@en , "Mike Svayko"@en , "Karen Peterson"@en , "Milton Gray"@en ;
+        dbpprop:producer           "Buzz Potamkin"@en , "Marsh Lamore"@en , "Milton Gray"@en , "Mike Svayko"@en , "Bob Shellhorn"@en , "Karen Peterson"@en ;
+        dbpprop:series             "Mike Svayko"@en , "Karen Peterson"@en , "Milton Gray"@en , "Buzz Potamkin"@en , "Bob Shellhorn"@en , "Marsh Lamore"@en ;
+        dbpprop:starring           "Bob Shellhorn"@en , "Milton Gray"@en , "Marsh Lamore"@en , "Mike Svayko"@en , "Buzz Potamkin"@en , "Karen Peterson"@en ;
+        dbpprop:writer             "Karen Peterson"@en , "Mike Svayko"@en , "Marsh Lamore"@en , "Buzz Potamkin"@en , "Bob Shellhorn"@en , "Milton Gray"@en .

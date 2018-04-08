@@ -1,0 +1,77 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "subject" , "description" , "title" , "image" , "wikipage" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/3/32/Tuna.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://fi.wikipedia.org/wiki/Tonnikalat> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Tuna are fish from the family Scombridae, mostly in the genus Thunnus. Tuna are fast swimmers—they have been clocked at 70 kilometres per hour (43 mph)—and include several warm-blooded species. Unlike most fish, which have white flesh, tuna flesh is pink to dark red, which could explain their odd nick-name, \"rose of the sea. \" The red coloring comes from tuna muscle tissue's greater quantities of myoglobin, an oxygen-binding molecule."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Tuna"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tuna> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/3/32/Tuna.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Tuna> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Tuna are fish from the family Scombridae, mostly in the genus Thunnus. Tuna are fast swimmers—they have been clocked at 70 kilometres per hour (43 mph)—and include several warm-blooded species. Unlike most fish, which have white flesh, tuna flesh is pink to dark red, which could explain their odd nick-name, \"rose of the sea. \" The red coloring comes from tuna muscle tissue's greater quantities of myoglobin, an oxygen-binding molecule."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Tuna"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tuna> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Yellowhead_disease> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Yellowhead disease (YHD) is a viral infection of shrimp and prawn, in particular of the giant tiger prawn (Penaeus monodon), one of the two major species of farmed shrimp. The disease is highly lethal and contagious, killing shrimp quickly. Outbreaks of this disease have wiped out in a matter of days the entire populations of many shrimp farms that cultivated P. monodon, i.e. particularly Southeast Asian farms. In Thai, the disease is called Hua leung."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Yellowhead disease"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Yellowhead_disease> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fr.wikipedia.org/wiki/Maladie_de_la_t%C3%AAte_jaune> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Yellowhead disease (YHD) is a viral infection of shrimp and prawn, in particular of the giant tiger prawn (Penaeus monodon), one of the two major species of farmed shrimp. The disease is highly lethal and contagious, killing shrimp quickly. Outbreaks of this disease have wiped out in a matter of days the entire populations of many shrimp farms that cultivated P. monodon, i.e. particularly Southeast Asian farms. In Thai, the disease is called Hua leung."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Yellowhead disease"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Yellowhead_disease> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/3/32/Tuna.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%86%D8%A9_%28%D8%B7%D8%B9%D8%A7%D9%85%29> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Tuna are fish from the family Scombridae, mostly in the genus Thunnus. Tuna are fast swimmers—they have been clocked at 70 kilometres per hour (43 mph)—and include several warm-blooded species. Unlike most fish, which have white flesh, tuna flesh is pink to dark red, which could explain their odd nick-name, \"rose of the sea. \" The red coloring comes from tuna muscle tissue's greater quantities of myoglobin, an oxygen-binding molecule."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Tuna"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tuna> ;
+                          rs:variable  "subject"
+                        ] ]
+] .

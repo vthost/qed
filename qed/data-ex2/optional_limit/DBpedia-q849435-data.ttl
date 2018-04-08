@@ -1,0 +1,20 @@
+@prefix ns6:   <http://en.wikipedia.org/wiki/> .
+@prefix ns5:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns7:   <http://it.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Artificial_Linguistic_Internet_Computer_Entity
+        rdfs:comment  "A.L.I.C.E. (Artificial Linguistic Internet Computer Entity), also referred to as Alicebot, or simply Alice, is a natural language processing chatterbot&mdash;a program that engages in a conversation with a human by applying some heuristical pattern matching rules to the human's input, and in its online form it also relies on a hidden third person. It was inspired by Joseph Weizenbaum's classical ELIZA program."@en , "A.L.I.C.E. (celým názvem Artificial Linguistic Internet Computer Entity, artificial intelligence foundation) je počítačový robot s lidským uvažováním. Tohoto robota vytvořil Richard S. Wallace. ALICE získal v roce 2000 ocenění za 'nejlidštější počítač'. Tento robot obdržel třikrát Loebnerovu cenu, tato cena je udělována robotů, které mají lidské vyjadřování. Nicméně Turingův test nezvládl. Robot komunikuje v angličtině."@cs ;
+        rdfs:label    "Artificial Linguistic Internet Computer Entity"@en , "A.L.I.C.E."@cs ;
+        skos:subject  ns3:Chatterbots ;
+        foaf:page     <http://de.wikipedia.org/wiki/A.L.I.C.E.> , <http://ja.wikipedia.org/wiki/Artificial_Linguistic_Internet_Computer_Entity> , <http://es.wikipedia.org/wiki/Artificial_Linguistic_Internet_Computer_Entity> , ns6:Artificial_Linguistic_Internet_Computer_Entity , <http://it.wikipedia.org/wiki/A.L.I.C.E.> .
+
+dbpedia:ELIZA  rdfs:comment  "'ELIZA estas komputila programo verkita de Joseph Weizenbaum je 1966. Ĝi imitas Personocentrigitan psikoterapiiston. Ĝi estas nomita honore de Eliza DOLITTLE de Pygmalion fare de George Bernard Shaw."@eo , "ELIZA was a computer program and an early example (by modern standards) of primitive natural language processing. ELIZA operated by processing users' responses to scripts, the most famous of which was DOCTOR, a simulation of a Rogerian psychotherapist. In this mode, ELIZA mostly rephrased the user's statements as questions and posed those to the 'patient. ' ELIZA was written by Joseph Weizenbaum between 1964 to 1966."@en ;
+        rdfs:label      "Eliza"@es , "ELIZA"@en ;
+        skos:subject    ns3:Chatterbots ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/9/98/GNU_Emacs_ELIZA_example.png> ;
+        foaf:page       ns7:ELIZA , <http://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%99%D7%96%D7%94> , ns5:ELIZA , <http://hu.wikipedia.org/wiki/Eliza_%28program%29> , ns6:ELIZA .

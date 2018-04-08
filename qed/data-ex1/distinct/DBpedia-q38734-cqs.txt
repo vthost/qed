@@ -1,0 +1,17 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+
+CONSTRUCT 
+  { 
+    ?artist <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Alternative_rock> .
+    ?artist <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Post-punk> .
+    ?artist <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Rock_music> .
+  }
+WHERE
+  { ?artist  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Alternative_rock> ;
+             <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Post-punk> ;
+             <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Rock_music>
+  }
+LIMIT   10
+
+----------------------------------------------

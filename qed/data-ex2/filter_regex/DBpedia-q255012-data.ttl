@@ -1,0 +1,19 @@
+@prefix ns6:   <http://ca.wikipedia.org/wiki/> .
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix ns7:   <http://hr.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+ns3:Motivation  rdfs:label  "Motivation"@en .
+
+dbpedia:Building_a_Better_Business
+        rdfs:label    "Building a Better Business"@en ;
+        skos:subject  ns3:Motivation ;
+        foaf:page     ns5:Building_a_Better_Business .
+
+dbpedia:Hedonism  rdfs:label  "Hedonism"@en , "Edonismo"@it ;
+        skos:subject  ns3:Motivation ;
+        foaf:page     ns7:Hedonizam , <http://fa.wikipedia.org/wiki/%D9%84%D8%B0%D8%AA%E2%80%8C%D8%A8%D8%A7%D9%88%D8%B1%DB%8C> , <http://fr.wikipedia.org/wiki/H%C3%A9donisme> , ns6:Hedonisme , ns5:Hedonism .

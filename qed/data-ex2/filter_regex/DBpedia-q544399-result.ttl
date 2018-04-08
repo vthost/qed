@@ -1,0 +1,38 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coverURL" , "releaseDate" , "wpURL" , "albumTitle" , "artistName" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "I_Refuse.jpg"@en ;
+                                     rs:variable  "coverURL"
+                                   ] ;
+            rs:binding  [ rs:value     "September 2001"@en ;
+                          rs:variable  "releaseDate"
+                        ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/I_Refuse> ;
+                          rs:variable  "wpURL"
+                        ] ;
+            rs:binding  [ rs:value     "I Refuse"@en ;
+                          rs:variable  "albumTitle"
+                        ] ;
+            rs:binding  [ rs:value     "Aaliyah"@en ;
+                          rs:variable  "artistName"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "I_Refuse.jpg"@en ;
+                                     rs:variable  "coverURL"
+                                   ] ;
+            rs:binding  [ rs:value     "September 2001"@en ;
+                          rs:variable  "releaseDate"
+                        ] ;
+            rs:binding  [ rs:value     <http://hu.wikipedia.org/wiki/I_Refuse> ;
+                          rs:variable  "wpURL"
+                        ] ;
+            rs:binding  [ rs:value     "I Refuse"@en ;
+                          rs:variable  "albumTitle"
+                        ] ;
+            rs:binding  [ rs:value     "Aaliyah"@en ;
+                          rs:variable  "artistName"
+                        ] ]
+] .

@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Pleasantville_%28film%29>
+        dbpprop:creator            "Jon Kilik"@en , "Steven Soderbergh,"@en , "Gary Ross,"@en ;
+        dbpprop:creator            dbpedia:Bob_Degus ;
+        dbpprop:director           "Gary Ross,"@en , "Jon Kilik"@en , "Steven Soderbergh,"@en ;
+        dbpprop:director           dbpedia:Bob_Degus ;
+        dbpprop:executiveProducer  "Gary Ross,"@en , "Jon Kilik"@en , "Steven Soderbergh,"@en ;
+        dbpprop:executiveProducer  dbpedia:Bob_Degus ;
+        dbpprop:guest              "Steven Soderbergh,"@en , "Jon Kilik"@en , "Gary Ross,"@en ;
+        dbpprop:guest              dbpedia:Bob_Degus ;
+        dbpprop:producer           "Jon Kilik"@en , "Gary Ross,"@en , "Steven Soderbergh,"@en ;
+        dbpprop:producer           dbpedia:Bob_Degus ;
+        dbpprop:series             "Jon Kilik"@en , "Steven Soderbergh,"@en , "Gary Ross,"@en ;
+        dbpprop:series             dbpedia:Bob_Degus ;
+        dbpprop:starring           "Steven Soderbergh,"@en , "Jon Kilik"@en , "Gary Ross,"@en ;
+        dbpprop:starring           dbpedia:Bob_Degus ;
+        dbpprop:writer             "Steven Soderbergh,"@en , "Gary Ross,"@en , "Jon Kilik"@en ;
+        dbpprop:writer             dbpedia:Bob_Degus .

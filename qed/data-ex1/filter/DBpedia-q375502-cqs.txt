@@ -1,0 +1,42 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?country rdf:type dbpedia-owl:Country .
+    ?country skos:subject <http://dbpedia.org/resource/Category:European_countries> .
+    ?country rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( lang(?name) = "en" )
+    ?country  rdf:type      dbpedia-owl:Country ;
+              skos:subject  <http://dbpedia.org/resource/Category:European_countries> ;
+              rdfs:label    ?name
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?country rdf:type dbpedia-owl:Country .
+    ?country skos:subject <http://dbpedia.org/resource/Category:European_countries> .
+    ?country rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( ! ( lang(?name) = "en" ) )
+    ?country  rdf:type      dbpedia-owl:Country ;
+              skos:subject  <http://dbpedia.org/resource/Category:European_countries> ;
+              rdfs:label    ?name
+  }
+LIMIT   10
+
+----------------------------------------------

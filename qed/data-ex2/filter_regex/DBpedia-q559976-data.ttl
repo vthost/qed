@@ -1,0 +1,15 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Bruce_Willis  a  ns3:Person ;
+        dbpprop:name  "Willis, Bruce"@en , "Bruce Willis"@de , "Willis, Bruce"@de , "Bruce Willis"@bs , "Bruce Willis"@en .
+
+dbpedia:The_Sixth_Sense
+        dbpprop:wikilink  dbpedia:Bruce_Willis , dbpedia:Olivia_Williams .
+
+dbpedia:Olivia_Williams
+        a             ns3:Person ;
+        dbpprop:name  "Williams, Olivia"@de , "Olivia Williams"@fr , "Williams, Olivia"@en , "Olivia Williams"@en , "Olivia Williams"@de .

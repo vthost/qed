@@ -1,0 +1,14 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Kalymnos_Island_National_Airport
+        a                 ns2:Place ;
+        ns2:abstract      "Kalymnos Island National Airport is an airport on the island of Kalymnos in Greece. The airport is located a few kilometers from Pothaia, the capital of Kalymnos. It is also known as Kalymnos National Airport."@en , "Bandar Udara Nasional Pulau Kalymnos merupakan sebuah bandar udara yang terletak di Kalymnos, Yunani. Kalymnos memiliki sebuah bandar udara baru yang memulai operasinya pada tanggal 10 Agustus 2006. Bandar udara ini terletak di Argos, Kalymnos, letaknya sekitar beberapa kilometer dari kota Pothia."@in ;
+        dbpprop:location  dbpedia:Greece .
+
+<http://dbpedia.org/resource/Mount_Ossa_%28Greece%29>
+        a                 ns2:Place ;
+        ns2:abstract      "Mount Ossa, alternative Kissavos, is a mountain in the Larissa prefecture, in Thessaly, Greece. It is located between Pelion to the south and Olympus to the north, separated from the latter by the Vale of Tempe, with its height at 1,978 metres (6,490 ft). In Greek mythology, the Aloadaes are said to have attempted to pile it upon Mount Pelion, in their attempt to scale Olympus."@en , "Планината О&#768;са, също известна като Кисавос, е част от планинска верига пресичаща Тесалия от север на юг и изграждаща естествена бариера по пътя от Солун за Лариса. Намира се в периферия Лариса между Пелион на юг и Олимп на север, като от Олимп я разделя река Пеней и Темпейската долина. Най високият връх е Пророк Илия, издигащ се 1978 м. над морското равнище."@bg ;
+        dbpprop:location  dbpedia:Greece .

@@ -1,0 +1,13 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Color_of_Money
+        a                 ns2:Film ;
+        rdfs:comment      "El color dels diners (The Color of Money) és una pel·lícula estatunidenca dirigida per Martin Scorsese, estrenada el 1986, adaptació de la novel·la homònima de Walter Tevis. És la continuació de la pel·lícula El vividor de 1961, dirigida per Robert Rossen. Aquesta pel·lícula ha estat doblada al català."@ca , "The Color of Money is a 1984 novel by American writer Walter Tevis, and a 1986 film semi-adaptation by the same title, continuing the story of pool hustler and stakehorse Edward \"Fast Eddie\" Felson, with Paul Newman reprising his role from the The Hustler (1959) and its film adaptation (1961)."@en , "A A pénz színe (The Color of Money) egy 1986-ban bemutatott filmdráma Martin Scorsese rendezésében. A film főszereplője Paul Newman, aki a filmben nyújtott alakításáért elnyerte a legjobb férfi főszereplőnek járó Oscar-díjat."@hu , "La Couleur de l'argent (The Color of Money) est un film américain réalisé par Martin Scorsese, sorti en 1986, adapté du roman éponyme de Walter Tevis. Il est la suite du film L'Arnaqueur de 1961, réalisé par Robert Rossen."@fr , "Die Farbe des Geldes ist ein Film aus dem Jahr 1986 von Martin Scorsese nach der gleichnamigen Romanvorlage von Walter Tevis aus dem Jahr 1984."@de , "Il colore dei soldi (The Color of Money) è un film del 1986 diretto da Martin Scorsese, che prosegue, alla reale distanza di 25 anni, la storia cinematografica de \"Lo spaccone\" Eddy lo svelto, un abile giocatore di biliardo americano che conobbe tragicamente lo squallore e i rischi del gioco. Il titolo del film si riferisce sia al colore dei dollari sia del tavolo da biliardo, il verde."@it ;
+        rdfs:label        "The Color of Money"@en ;
+        ns2:releaseDate   "1986-10-17"^^xsd:date ;
+        dbpprop:starring  dbpedia:Paul_Newman , dbpedia:Tom_Cruise .

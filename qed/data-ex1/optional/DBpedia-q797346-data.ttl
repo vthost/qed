@@ -1,0 +1,4 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Rob_Lowe  rdfs:label  "Rob Lowe"@en , "روب لوو"@ar , "Rob Lowe"@es , "Rob Lowe"@cy , "Роб Лоу"@bg .

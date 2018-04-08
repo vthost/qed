@@ -1,0 +1,22 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbont: <http://dbpedia.org/ontology/>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?link dbont:artist <http://dbpedia.org/resource/The_Beatles> .
+    ?link rdf:type dbont:Album .
+    ?link dbp:name ?name .
+    ?link dbont:releaseDate ?date .
+  }
+WHERE
+  { ?link  dbont:artist       <http://dbpedia.org/resource/The_Beatles> ;
+           rdf:type           dbont:Album ;
+           dbp:name           ?name ;
+           dbont:releaseDate  ?date
+  }
+LIMIT   10
+
+----------------------------------------------

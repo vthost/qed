@@ -1,0 +1,74 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "kfor" , "label_en" , "label_it" , "label" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "American businesspeople"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "American businesspeople"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fi.wikipedia.org/wiki/Guy_Kawasaki> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "American businesspeople"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fr.wikipedia.org/wiki/Guy_Kawasaki> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "American businesspeople"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Guy_Kawasaki> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "American businesspeople"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ja.wikipedia.org/wiki/%E3%82%AC%E3%82%A4%E3%83%BB%E3%82%AB%E3%83%AF%E3%82%B5%E3%82%AD> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "American businesspeople"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://nl.wikipedia.org/wiki/Guy_Kawasaki> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Guy Kawasaki"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "American businesspeople"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

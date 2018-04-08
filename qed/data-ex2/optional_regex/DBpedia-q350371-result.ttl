@@ -1,0 +1,167 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "label_en" , "kfor" , "label_it" , "label" ;
+  rs:size            "13"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eugenics> ;
+                                     rs:variable  "kfor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://es.wikipedia.org/wiki/Francis_Galton> ;
+                          rs:variable  "page"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eugenics> ;
+                                     rs:variable  "kfor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A0%D7%A1%D7%99%D7%A1_%D7%92%D7%9C%D7%98%D7%95%D7%9F> ;
+                          rs:variable  "page"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Statistics> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Statìstica"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Statistics"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://he.wikipedia.org/wiki/%D7%A1%D7%98%D7%98%D7%99%D7%A1%D7%98%D7%99%D7%A7%D7%94> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Statìstica"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Statistics"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eugenics> ;
+                                     rs:variable  "kfor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://fi.wikipedia.org/wiki/Francis_Galton> ;
+                          rs:variable  "page"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://bg.wikipedia.org/wiki/%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD_%D0%BE%D1%86%D0%B5%D0%BD%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Online assessment"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Psychometrics"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fy.wikipedia.org/wiki/Statistyk> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Statìstica"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Statistics"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://eu.wikipedia.org/wiki/Estatistika> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Statìstica"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Statistics"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eugenics> ;
+                                     rs:variable  "kfor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Francis_Galton> ;
+                          rs:variable  "page"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eugenics> ;
+                                     rs:variable  "kfor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Francis_Galton> ;
+                          rs:variable  "page"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Francis Galton"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Online_assessment> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Online assessment"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://be-x-old.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D1%82%D1%8B%D1%81%D1%82%D1%8B%D0%BA%D0%B0> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Statìstica"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Statistics"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Psychometrics"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

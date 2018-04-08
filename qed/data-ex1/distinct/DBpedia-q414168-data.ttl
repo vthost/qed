@@ -1,0 +1,21 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/resource/FernGully:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+ns1:_The_Last_Rainforest
+        dbpprop:creator            "Wayne Young"@en ;
+        dbpprop:creator            dbpedia:Peter_Faiman , dbpedia:Bill_Kroyer ;
+        dbpprop:director           "Wayne Young"@en ;
+        dbpprop:director           dbpedia:Peter_Faiman , dbpedia:Bill_Kroyer ;
+        dbpprop:executiveProducer  "Wayne Young"@en ;
+        dbpprop:executiveProducer  dbpedia:Bill_Kroyer , dbpedia:Peter_Faiman ;
+        dbpprop:guest              "Wayne Young"@en ;
+        dbpprop:guest              dbpedia:Bill_Kroyer , dbpedia:Peter_Faiman ;
+        dbpprop:producer           "Wayne Young"@en ;
+        dbpprop:producer           dbpedia:Bill_Kroyer , dbpedia:Peter_Faiman ;
+        dbpprop:series             "Wayne Young"@en ;
+        dbpprop:series             dbpedia:Bill_Kroyer , dbpedia:Peter_Faiman ;
+        dbpprop:starring           "Wayne Young"@en ;
+        dbpprop:starring           dbpedia:Bill_Kroyer , dbpedia:Peter_Faiman ;
+        dbpprop:writer             "Wayne Young"@en ;
+        dbpprop:writer             dbpedia:Peter_Faiman , dbpedia:Bill_Kroyer .

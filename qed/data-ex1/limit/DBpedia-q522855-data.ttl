@@ -1,0 +1,15 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns4:   <http://dbpedia.org/ontology/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Junkers_Ju_322
+        a           ns3:MeanOfTransportation , ns3:Aircraft , owl:Thing , yago:Aircraft102686568 ;
+        rdfs:label  "Junkers Ju 322"@de .
+
+dbpedia:British_Army_Aeroplane_No_1
+        a           yago:Aircraft102686568 , ns3:MeanOfTransportation , owl:Thing , ns3:Aircraft ;
+        rdfs:label  "British Army Aeroplane No 1"@en .

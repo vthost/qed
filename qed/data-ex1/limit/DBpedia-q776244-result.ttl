@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "com" , "name" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "凱旋門大賽（Prix de l'Arc de Triomphe）是每年10月第一個星期日在法國巴黎隆尚馬場舉行的比賽。距離是草地2400米，是國際一級賽，總獎金達400萬歐元。3歲或以上雄馬（閹馬不得參與）及雌馬可以出戰此賽事。凱旋門大賽是目前為止最高獎金的草地賽事。"@zh ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     "Prix de l'Arc de Triomphe"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "凱旋門賞（がいせんもんしょう、仏：Prix de l'Arc de Triomphe）とはフランスのフランスギャロが毎年10月の第1日曜日（ロンシャンウィークエンド2日目）にロンシャン競馬場の芝2400mで施行する競馬の重賞（グループ1）競走である。略してアルクまたはアーク（Arc）と呼ばれる。"@ja ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     "Prix de l'Arc de Triomphe"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Prix de l'Arc de Triomphe (česky Cena Vítězného oblouku) je rovinový dostih kategorie G1 který se koná na francouzském dostihovém závodišti Longchamp v Paříži. Určen je pro tříleté a starší koně. Běhá se na vzdálenost 2400 m což je přibližně 1,5 míle. Celková dotace je 4 milióny eur a jedná se o nejbohatší evropský dostih. Koná se každoročně první říjnovou neděli. První ročník se uskutečnil v roce 1920. Dostih je pojmenován podle pařížského Vítězného oblouku."@cs ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     "Prix de l'Arc de Triomphe"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .

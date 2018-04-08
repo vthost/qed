@@ -1,0 +1,32 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "label" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://pt.wikipedia.org/wiki/Categoria:Informa%C3%A7%C3%A3o_assim%C3%A9trica> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Asymmetric information"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://pl.wikipedia.org/wiki/Kategoria:Asymetria_informacji> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Asymmetric information"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://vi.wikipedia.org/wiki/Th%E1%BB%83_lo%E1%BA%A1i:Th%C3%B4ng_tin_phi_%C4%91%E1%BB%91i_x%E1%BB%A9ng> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Asymmetric information"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%90%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Asymmetric information"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

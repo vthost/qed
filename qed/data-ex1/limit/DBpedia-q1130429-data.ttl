@@ -1,0 +1,13 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Pro_Evolution_Soccer_2010
+        a           ns2:Software , ns2:Work , ns2:VideoGame , owl:Thing ;
+        rdfs:label  "Pro Evolution Soccer 2010"@en .
+
+dbpedia:Air_Support  a  yago:AmigaGames , ns2:VideoGame , ns2:Work , owl:Thing , yago:StrategyVideoGames , ns2:Software ;
+        rdfs:label  "Air Support"@en .

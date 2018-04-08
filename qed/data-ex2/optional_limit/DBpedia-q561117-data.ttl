@@ -1,0 +1,34 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix ns4:   <http://pl.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Jack_A._Davenport
+        rdfs:comment    "Jack Arden Davenport (September 7, 1931 &ndash; September 21, 1951) was a former Golden Gloves boxer and a United States Marine who was posthumously awarded the Medal of Honor for his heroic actions and sacrifice of life during the Korean War."@en ;
+        rdfs:label      "Jack A. Davenport"@en ;
+        skos:subject    ns2:Marine_Corps_Medal_of_Honor_recipients ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/4/43/Ribbon-MOH.jpg> ;
+        foaf:page       ns5:Jack_A._Davenport .
+
+dbpedia:John_F._Mackie
+        rdfs:comment    "John Freeman Mackie (October 1, 1835&ndash;June 18, 1910) was a United States Marine and a recipient of America's highest military decoration—the Medal of Honor—for his actions in the American Civil War. He was the first Marine to receive the Medal of Honor."@en , "John Freeman Mackie to żołnierz amerykański. Za męstwo wykazane 15 maja 1862 roku podczas bitwy pod Drewry's Bluff został odznaczony 10 lipca 1863 roku Medalem Honoru. W randze kaprala Mackie na pokładzie USS \"Galena\" odważnie otwierał ogień z muszkietu i dzielnie zastępował na stanowiskach ogniowych swoich poległych i rannych towarzyszy. Został pierwszym w historii marine, który otrzymał to najwyższe odznaczenie amerykańskie."@pl ;
+        rdfs:label      "John F. Mackie"@en , "John Freeman Mackie"@pl ;
+        skos:subject    ns2:Marine_Corps_Medal_of_Honor_recipients ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/1/11/John_Mackie_Cpl.jpg> ;
+        foaf:page       ns5:John_F._Mackie , ns4:John_Freeman_Mackie .
+
+dbpedia:Robert_Hugo_Dunlap
+        rdfs:comment  "Robert Hugo Dunlap (October 19, 1920-March 24, 2000) was a United States Marine Corps officer who received the Medal of Honor during World War II for his actions in the Battle of Iwo Jima."@en ;
+        rdfs:label    "Robert Hugo Dunlap"@en ;
+        skos:subject  ns2:Marine_Corps_Medal_of_Honor_recipients ;
+        foaf:page     ns5:Robert_Hugo_Dunlap .
+
+dbpedia:Darrell_S._Cole
+        rdfs:comment  "Sergeant Darrell Samuel Cole (July 20, 1920 &ndash; February 19, 1945) was a United States marine who posthumously received the United States' highest military decoration, the Medal of Honor, for his \"conspicuous gallantry\" at the Battle of Iwo Jima during World War II. Although he was originally assigned to play the bugle, Sergeant Cole repeatedly requested that his rating be changed from field musician to machine-gunner."@en , "Darrell S. Cole - amerykański sierżant, dowódca sekcji karabinów maszynowych kompanii B 1. Batalionu 23. Pułku 4. Dywizji Marines Urodził się 20. lipca 1920r. w miasteczku Flat River(dziś część Park Hills) w stanie Missouri. Gdy w 1938 r. ukończył szkołę, wstąpił do paramilitarnej organizacji Civilian Conservation Corps (CCC). 25 sierpnia 1941r. został przyjęty do Korpusu Piechoty Morskiej. Ku swojemu niezadowoleniu został przydzielony do orkiestry 1. Pułku 1."@pl ;
+        rdfs:label    "Darrell S. Cole"@en , "Darrell S. Cole"@pl ;
+        skos:subject  ns2:Marine_Corps_Medal_of_Honor_recipients ;
+        foaf:page     ns4:Darrell_S._Cole , ns5:Darrell_S._Cole .

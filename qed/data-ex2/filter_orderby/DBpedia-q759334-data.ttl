@@ -1,0 +1,11 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Andr%C3%A9_Gide>
+        ns1:birthDate       "1869-11-22"^^xsd:date ;
+        ns1:deathDate       "1951-02-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Paris ;
+        foaf:name           "André Gide"@en , "André Gide"@de .

@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Girl_with_the_Dragon_Tattoo>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

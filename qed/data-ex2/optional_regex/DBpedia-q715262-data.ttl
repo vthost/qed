@@ -1,0 +1,14 @@
+@prefix ns6:   <http://fi.wikipedia.org/wiki/> .
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:The_Lady_of_the_Camellias
+        rdfs:label    "La signora delle camelie (romanzo)"@it , "The Lady of the Camellias"@en , "غادة الكاميليا"@ar ;
+        skos:subject  ns1:French_novels ;
+        foaf:page     ns6:Kamelianainen , <http://ca.wikipedia.org/wiki/La_Dama_de_les_Cam%C3%A8lies> , <http://ar.wikipedia.org/wiki/%D8%BA%D8%A7%D8%AF%D8%A9_%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%8A%D9%84%D9%8A%D8%A7> , <http://cs.wikipedia.org/wiki/D%C3%A1ma_s_kam%C3%A9liemi> , ns5:The_Lady_of_the_Camellias .
+
+ns1:French_novels  rdfs:label  "French novels"@en .

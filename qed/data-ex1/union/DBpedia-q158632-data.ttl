@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/The_Edge_%28film%29>
+        dbpprop:creator            dbpedia:Art_Linson , dbpedia:Lee_Tamahori ;
+        dbpprop:director           dbpedia:Art_Linson , dbpedia:Lee_Tamahori ;
+        dbpprop:executiveProducer  dbpedia:Art_Linson , dbpedia:Lee_Tamahori ;
+        dbpprop:guest              dbpedia:Lee_Tamahori , dbpedia:Art_Linson ;
+        dbpprop:producer           dbpedia:Lee_Tamahori , dbpedia:Art_Linson ;
+        dbpprop:series             dbpedia:Art_Linson , dbpedia:Lee_Tamahori ;
+        dbpprop:starring           dbpedia:Lee_Tamahori , dbpedia:Art_Linson ;
+        dbpprop:writer             dbpedia:Lee_Tamahori , dbpedia:Art_Linson .

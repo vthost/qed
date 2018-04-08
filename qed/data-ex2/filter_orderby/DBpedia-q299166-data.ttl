@@ -1,0 +1,15 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Otto_Winzer  dbpprop:birth  "1902-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Berlin ;
+        dbpprop:death       "1975-03-03"^^xsd:date ;
+        foaf:name           "Otto Winzer"@en , "Otto Winzer"@de .
+
+dbpedia:Adolf_Otto_Reinhold_Windaus
+        dbpprop:birth       "1876-12-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Berlin ;
+        dbpprop:death       "1959-06-09"^^xsd:date ;
+        foaf:name           "Adolf Otto Reinhold Windaus"@en , "Adolf Windaus"@de .

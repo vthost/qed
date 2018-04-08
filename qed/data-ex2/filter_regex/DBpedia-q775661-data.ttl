@@ -1,0 +1,14 @@
+@prefix ns5:   <http://fr.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix ns4:   <http://de.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+ns1:Social_psychology
+        rdfs:label  "Social psychology"@en .
+
+<http://dbpedia.org/resource/Trust_%28social_sciences%29>
+        rdfs:label    "Confiance"@fr , "Trust (social sciences)"@en ;
+        skos:subject  ns1:Social_psychology ;
+        foaf:page     ns5:Confiance , <http://en.wikipedia.org/wiki/Trust_%28social_sciences%29> , <http://ca.wikipedia.org/wiki/Confian%C3%A7a> , ns4:Vertrauen , <http://he.wikipedia.org/wiki/%D7%90%D7%9E%D7%95%D7%9F> .

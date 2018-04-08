@@ -1,0 +1,74 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "label_it" , "label_en" , "kfor" , "label" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://lt.wikipedia.org/wiki/Martin_Seligman> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Martin E. P. Seligman"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Martin Seligman"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Martin_Seligman> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Martin E. P. Seligman"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Martin Seligman"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://da.wikipedia.org/wiki/Martin_Seligman> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Martin E. P. Seligman"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Martin Seligman"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://es.wikipedia.org/wiki/Martin_Seligman> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Martin E. P. Seligman"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Martin Seligman"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Martin_Seligman> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Martin E. P. Seligman"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Martin Seligman"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Positive psychology"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

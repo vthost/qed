@@ -1,0 +1,4 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:BMW_Z1  rdfs:label  "BMW Z1"@fr , "BMW Z1"@en , "BMW・Z1"@ja , "BMW Z1"@es , "BMW Z1"@de .

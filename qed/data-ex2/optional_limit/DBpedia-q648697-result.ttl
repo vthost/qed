@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://eu.wikipedia.org/wiki/Juliano_Apostata> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Solidus_Julian.jpg/200px-Solidus_Julian.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/6/68/Solidus_Julian.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Flavius Claudius Iulianus, known also as Julianus, Julian, Julian the Apostate or Julian the Philosopher, was Roman Emperor (Caesar, November 355 to February 360; Augustus, February 360 to June 363), last of the Constantinian dynasty. Julian was a man of \"unusually complex character\": he was \"the military commander, the theosophist, the social reformer, and the man of letters\". Julian was the last non-Christian ruler of the Roman Empire and it was his desire to bring the empire back to its ancient Roman values in order to save it from \"dissolution\". He purged the top-heavy state bureaucracy and attempted to revive traditional Roman religious practices at the cost of Christianity. His rejection of Christianity in favour of Neoplatonic paganism caused him to be called Julian the Apostate by the church, as Edward Gibbon wrote: In 363, after a reign of only 19 months as absolute ruler of the Roman Empire, Julian was killed in Persia during a campaign against the Sassanid Empire."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Julian_the_Apostate> ;
+                          rs:variable  "king"
+                        ] ]
+] .

@@ -1,0 +1,8 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Madrid  rdfs:label  "Madrid"@de , "Madrit"@an , "Madrid"@en , "Madrid"@af ;
+        geo:lat     "40.0"^^xsd:float ;
+        geo:long    "-3.68333"^^xsd:float .

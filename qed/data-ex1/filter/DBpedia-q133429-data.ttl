@@ -1,0 +1,11 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Glee_%28TV_series%29>
+        rdfs:comment  "Glee is anAmerican musical comedy-drama television series that airs on Fox in the United States. It focuses on a high school glee club called \"New Directions\", at the fictional William McKinley High School in Lima, Ohio. The pilot episode of the show was broadcast after American Idol on May 19, 2009, and the first season began airing on September 9, 2009. On September 21, 2009, Fox officially gave the series a full-season pick-up."@en , "Glee er en amerikansk musical komedie-drama tv-serie, der blev sendt første gang på Fox i USA. Den handler om showkoret (også kendt som glee club), kallet \"New Directions!\", på den opdigtede William McKinley High School i Lima (Ohio). Pilotepisode af serien blev sendt efter American Idol den 19. maj 2009, og den første sæson blev sendt fra den 9. september 2009. TV 2 begyndte at sende serien fra søndag den 7. februar 2010 kl. 20."@da , "Glee ist eine US-amerikanische Fernsehserie, die seit dem 2. September 2009 auf dem Sender FOX ausgestrahlt wird."@de , "『glee』（グリー）は、アメリカのFOXで2009年に放送開始された、『NIP/TUCK マイアミ整形外科医』のライアン・マーフィー制作によるドラマ（海外ドラマ）。オハイオ州にある架空の学校、ウィリアム・マッキンリー高校の合唱部（グリークラブ）を中心に描かれ、舞台経験などを持つ実力派のキャストたちが毎回様々なジャンルの名曲をカバーするミュージカルシーンが見どころのひとつ。2010年1月に第2シーズンの製作が決定した。第67回ゴールデングローブ賞テレビドラマシリーズ、ミュージカル・コメディ部門最優秀作品賞受賞。"@ja , "Glee est une série télévisée américaine créée par Ian Brennan, Brad Falchuk et Ryan Murphy est diffusée depuis le 19 mai 2009 sur FOX."@fr , "Glee estas muzika komedia drama televidprogramo kreita de Ryan Murphy, Brad Falchuk kaj Ian Brennan. Ĝi dissendiĝas en la FOX-a reto. Ĝi elsendiĝis kaj ricevis kelkajn premiojn en 2009 kaj 2010."@eo ;
+        owl:sameAs    <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000ad26b8c> ;
+        foaf:name     "Glee"@en .
+
+<http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000ad26b8c>
+        owl:sameAs  <http://dbpedia.org/resource/Glee_%28TV_series%29> .

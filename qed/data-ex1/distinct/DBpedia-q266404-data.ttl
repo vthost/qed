@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Lipstick_on_Your_Collar
+        dbpprop:creator            dbpedia:Renny_Rye ;
+        dbpprop:director           dbpedia:Renny_Rye ;
+        dbpprop:executiveProducer  dbpedia:Renny_Rye ;
+        dbpprop:guest              dbpedia:Renny_Rye ;
+        dbpprop:producer           dbpedia:Renny_Rye ;
+        dbpprop:series             dbpedia:Renny_Rye ;
+        dbpprop:starring           dbpedia:Renny_Rye ;
+        dbpprop:writer             dbpedia:Renny_Rye .

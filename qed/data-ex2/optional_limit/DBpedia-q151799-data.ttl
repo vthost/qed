@@ -1,0 +1,24 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Detlef_Wiedeke
+        rdfs:comment  "Detlef Wiedeke (May 7, 1950) is a German singer, composer and producer. Between 1984 and 2000 he collaborated with Dieter Bohlen for which he sang in the Modern Talking and Blue System choruses. Since 2003 he works on his music group, Systems in Blue. His voice type is bass."@en , "Detlef Wiedeke - niemiecki wokalista, kompozytor i producent. W latach 1984-2000 współpracował z Dieterem Bohlenem dla którego śpiewał w chórkach w Modern Talking oraz Blue System. Od 2003 roku należy do projektu muzycznego Systems in Blue."@pl ;
+        skos:subject  ns3:German_musicians ;
+        foaf:name     "Detlef Wiedeke"@en .
+
+dbpedia:Sascha_Gerstner
+        rdfs:comment  "Sascha Gerbig es un guitarrista, cantante, compositor y productor alemán que desde el 2003 toca en la banda de Power Metal alemán Helloween."@es ;
+        skos:subject  ns3:German_musicians ;
+        foaf:name     "Sascha Gerstner"@en .
+
+dbpedia:Lou_Bega  rdfs:comment  "Lou Bega je německý zpěvák latinskoamerické hudby, jenž se proslavil zejména díky písni Mambo No. 5."@cs , "David Lubega (born April 13, 1975), also known as Lou Bega, is a German musician of Italian and Ugandan descent, and is famous for his song \"Mambo No. 5\". This song is a remake of the Perez Prado instrumental from 1949. Bega added his own words to the song and sampled the original version extensively."@en , "Lou Bega ist ein deutscher Latin-Pop-Sänger."@de ;
+        skos:subject  ns3:German_musicians ;
+        foaf:name     "Lou Bega"@en , "Lou Bega"@de .
+
+dbpedia:Christoph_Koncz
+        rdfs:comment  "Christoph Koncz (born 3 September 1987) is an Austrian violinist. He is possibly most notable in popular culture for his role as the orphaned prodigy Kaspar Weiss in the 1998 Canadian film The Red Violin."@en ;
+        skos:subject  ns3:German_musicians ;
+        foaf:name     "Christoph Koncz"@en .

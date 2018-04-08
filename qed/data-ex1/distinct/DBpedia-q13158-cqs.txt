@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Gordon_Ramsay:_Cookalong_Live>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

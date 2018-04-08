@@ -1,0 +1,25 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Switzerland  a  ns3:Country .
+
+dbpedia:Stuart_Sutcliffe
+        dbpprop:placeOfBirth  "Edinburgh, Scotland"@en ;
+        dbpprop:placeOfDeath  dbpedia:West_Germany .
+
+dbpedia:Theodor_W._Adorno
+        dbpprop:placeOfBirth  dbpedia:Germany ;
+        dbpprop:placeOfDeath  dbpedia:Switzerland .
+
+dbpedia:Dalida  dbpprop:placeOfBirth  dbpedia:Cairo ;
+        dbpprop:placeOfDeath  dbpedia:France .
+
+dbpedia:Reynaldo_Hahn
+        dbpprop:placeOfBirth  dbpedia:Venezuela , dbpedia:Caracas ;
+        dbpprop:placeOfDeath  dbpedia:France .
+
+dbpedia:France  a  ns3:Country .
+
+dbpedia:West_Germany  a  ns3:Country .

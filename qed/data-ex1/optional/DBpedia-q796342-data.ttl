@@ -1,0 +1,4 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Truman_Smith  rdfs:label  "Truman Smith"@pl , "Truman Smith"@sv , "Truman Smith"@de , "Truman Smith"@en .

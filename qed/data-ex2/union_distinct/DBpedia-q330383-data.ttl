@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/All_Good_Things...>
+        dbpprop:creator            "Patti Yasutake"@en , "TNG"@en , "John de Lancie"@en , "Denise Crosby"@en , "Andreas Katsulas"@en ;
+        dbpprop:creator            dbpedia:Colm_Meaney , dbpedia:Winrich_Kolbe ;
+        dbpprop:director           "TNG"@en , "Andreas Katsulas"@en , "John de Lancie"@en , "Patti Yasutake"@en , "Denise Crosby"@en ;
+        dbpprop:director           dbpedia:Winrich_Kolbe , dbpedia:Colm_Meaney ;
+        dbpprop:executiveProducer  "Patti Yasutake"@en , "Andreas Katsulas"@en , "Denise Crosby"@en , "TNG"@en , "John de Lancie"@en ;
+        dbpprop:executiveProducer  dbpedia:Colm_Meaney , dbpedia:Winrich_Kolbe ;
+        dbpprop:guest              "John de Lancie"@en , "Denise Crosby"@en , "TNG"@en , "Patti Yasutake"@en , "Andreas Katsulas"@en ;
+        dbpprop:guest              dbpedia:Colm_Meaney , dbpedia:Winrich_Kolbe ;
+        dbpprop:producer           "TNG"@en , "Patti Yasutake"@en , "Denise Crosby"@en , "Andreas Katsulas"@en , "John de Lancie"@en ;
+        dbpprop:producer           dbpedia:Colm_Meaney , dbpedia:Winrich_Kolbe ;
+        dbpprop:series             "Patti Yasutake"@en , "Andreas Katsulas"@en , "John de Lancie"@en , "Denise Crosby"@en , "TNG"@en ;
+        dbpprop:series             dbpedia:Winrich_Kolbe , dbpedia:Colm_Meaney ;
+        dbpprop:starring           "Denise Crosby"@en , "Andreas Katsulas"@en , "Patti Yasutake"@en , "John de Lancie"@en , "TNG"@en ;
+        dbpprop:starring           dbpedia:Colm_Meaney , dbpedia:Winrich_Kolbe ;
+        dbpprop:writer             "Patti Yasutake"@en , "TNG"@en , "John de Lancie"@en , "Denise Crosby"@en , "Andreas Katsulas"@en ;
+        dbpprop:writer             dbpedia:Winrich_Kolbe , dbpedia:Colm_Meaney .

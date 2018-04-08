@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Love_%26_Basketball>
+        dbpprop:creator            "Jay Stern"@en ;
+        dbpprop:creator            dbpedia:Andrew_Z._Davis , dbpedia:Gina_Prince-Bythewood , dbpedia:Sam_Kitt , dbpedia:Cynthia_Guidry , dbpedia:Spike_Lee ;
+        dbpprop:director           "Jay Stern"@en ;
+        dbpprop:director           dbpedia:Gina_Prince-Bythewood , dbpedia:Cynthia_Guidry , dbpedia:Andrew_Z._Davis , dbpedia:Sam_Kitt , dbpedia:Spike_Lee ;
+        dbpprop:executiveProducer  "Jay Stern"@en ;
+        dbpprop:executiveProducer  dbpedia:Andrew_Z._Davis , dbpedia:Gina_Prince-Bythewood , dbpedia:Spike_Lee , dbpedia:Cynthia_Guidry , dbpedia:Sam_Kitt ;
+        dbpprop:guest              "Jay Stern"@en ;
+        dbpprop:guest              dbpedia:Gina_Prince-Bythewood , dbpedia:Spike_Lee , dbpedia:Sam_Kitt , dbpedia:Andrew_Z._Davis , dbpedia:Cynthia_Guidry ;
+        dbpprop:producer           "Jay Stern"@en ;
+        dbpprop:producer           dbpedia:Andrew_Z._Davis , dbpedia:Cynthia_Guidry , dbpedia:Gina_Prince-Bythewood , dbpedia:Spike_Lee , dbpedia:Sam_Kitt ;
+        dbpprop:series             "Jay Stern"@en ;
+        dbpprop:series             dbpedia:Spike_Lee , dbpedia:Cynthia_Guidry , dbpedia:Andrew_Z._Davis , dbpedia:Gina_Prince-Bythewood , dbpedia:Sam_Kitt ;
+        dbpprop:starring           "Jay Stern"@en ;
+        dbpprop:starring           dbpedia:Gina_Prince-Bythewood , dbpedia:Sam_Kitt , dbpedia:Cynthia_Guidry , dbpedia:Andrew_Z._Davis , dbpedia:Spike_Lee ;
+        dbpprop:writer             "Jay Stern"@en ;
+        dbpprop:writer             dbpedia:Sam_Kitt , dbpedia:Cynthia_Guidry , dbpedia:Gina_Prince-Bythewood , dbpedia:Andrew_Z._Davis , dbpedia:Spike_Lee .

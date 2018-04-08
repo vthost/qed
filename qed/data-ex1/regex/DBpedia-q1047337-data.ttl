@@ -1,0 +1,16 @@
+@prefix ns6:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns5:   <http://fi.wikipedia.org/wiki/> .
+@prefix ns8:   <http://en.wikipedia.org/wiki/> .
+@prefix ns7:   <http://nl.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+ns3:American_businesspeople
+        rdfs:label  "American businesspeople"@en .
+
+dbpedia:Guy_Kawasaki  rdfs:label  "Guy Kawasaki"@it , "Guy Kawasaki"@en ;
+        skos:subject  ns3:American_businesspeople ;
+        foaf:page     ns8:Guy_Kawasaki , ns7:Guy_Kawasaki , <http://ja.wikipedia.org/wiki/%E3%82%AC%E3%82%A4%E3%83%BB%E3%82%AB%E3%83%AF%E3%82%B5%E3%82%AD> , ns6:Guy_Kawasaki , ns5:Guy_Kawasaki .

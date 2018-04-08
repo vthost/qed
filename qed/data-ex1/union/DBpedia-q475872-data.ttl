@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:When_We_Were_Beautiful
+        dbpprop:creator            "Jon Kamen"@en , "Jack Rovner"@en ;
+        dbpprop:creator            dbpedia:Justin_Wilkes , dbpedia:Phil_Griffin ;
+        dbpprop:director           "Jack Rovner"@en , "Jon Kamen"@en ;
+        dbpprop:director           dbpedia:Phil_Griffin , dbpedia:Justin_Wilkes ;
+        dbpprop:executiveProducer  "Jon Kamen"@en , "Jack Rovner"@en ;
+        dbpprop:executiveProducer  dbpedia:Justin_Wilkes , dbpedia:Phil_Griffin ;
+        dbpprop:guest              "Jon Kamen"@en , "Jack Rovner"@en ;
+        dbpprop:guest              dbpedia:Justin_Wilkes , dbpedia:Phil_Griffin ;
+        dbpprop:producer           "Jon Kamen"@en , "Jack Rovner"@en ;
+        dbpprop:producer           dbpedia:Phil_Griffin , dbpedia:Justin_Wilkes ;
+        dbpprop:series             "Jon Kamen"@en , "Jack Rovner"@en ;
+        dbpprop:series             dbpedia:Phil_Griffin , dbpedia:Justin_Wilkes ;
+        dbpprop:starring           "Jack Rovner"@en , "Jon Kamen"@en ;
+        dbpprop:starring           dbpedia:Phil_Griffin , dbpedia:Justin_Wilkes ;
+        dbpprop:writer             "Jon Kamen"@en , "Jack Rovner"@en ;
+        dbpprop:writer             dbpedia:Justin_Wilkes , dbpedia:Phil_Griffin .

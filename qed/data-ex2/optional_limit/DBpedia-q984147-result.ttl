@@ -1,0 +1,77 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "description" , "wikipage" , "subject" , "image" , "title" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/2/28/ErnestHemingway.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Ernest_Hemingway> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Ernest Miller Hemingway was an American writer, generally considered to be a member of the Lost Generation. Some people say that, of the many people he created in his books, the author himself was his own best creation."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Ernest Hemingway"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Ernest_Hemingway> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/2/28/ErnestHemingway.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://ast.wikipedia.org/wiki/Ernest_Hemingway> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Ernest Miller Hemingway was an American writer, generally considered to be a member of the Lost Generation. Some people say that, of the many people he created in his books, the author himself was his own best creation."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Ernest Hemingway"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Ernest_Hemingway> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Gloria_Hemingway> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Gloria Hemingway (November 12, 1931 &ndash; October 1, 2001) was the third and youngest child of author Ernest Hemingway, the second by his second wife Pauline Pfeiffer."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Gloria Hemingway"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gloria_Hemingway> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://pt.wikipedia.org/wiki/Gregory_Hemingway> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Gloria Hemingway (November 12, 1931 &ndash; October 1, 2001) was the third and youngest child of author Ernest Hemingway, the second by his second wife Pauline Pfeiffer."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Gloria Hemingway"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gloria_Hemingway> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/2/28/ErnestHemingway.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://eu.wikipedia.org/wiki/Ernest_Hemingway> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Ernest Miller Hemingway was an American writer, generally considered to be a member of the Lost Generation. Some people say that, of the many people he created in his books, the author himself was his own best creation."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Ernest Hemingway"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Ernest_Hemingway> ;
+                          rs:variable  "subject"
+                        ] ]
+] .

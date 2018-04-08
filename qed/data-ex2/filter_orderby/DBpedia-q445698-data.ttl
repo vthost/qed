@@ -1,0 +1,17 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Arne_Tiselius
+        ns1:birthDate       "1902-08-10"^^xsd:date ;
+        ns1:deathDate       "1971-10-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Sweden ;
+        foaf:name           "Arne Tiselius"@de , "Arne Wilhelm Kaurin Tiselius"@en .
+
+dbpedia:Gunnar_Myrdal
+        ns1:birthDate       "1898-12-06"^^xsd:date ;
+        ns1:deathDate       "1987-05-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Sweden ;
+        foaf:name           "Gunnar Myrdal"@en , "Gunnar Myrdal"@de .

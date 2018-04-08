@@ -1,0 +1,18 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://mpii.de/yago/resource/> .
+
+<http://zitgist.com/music/record/015f38c8-99e9-43ff-8b0d-6afd65779f3c>
+        owl:sameAs  dbpedia:Meet_Joe_Black .
+
+<http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000032a972>
+        owl:sameAs  dbpedia:Meet_Joe_Black .
+
+ns3:Meet_Joe_Black  owl:sameAs  dbpedia:Meet_Joe_Black .
+
+dbpedia:Meet_Joe_Black
+        rdfs:comment  "با جو بلک آشنا شوید فیلمی‌ست محصول کشور آمریکا در سال ۱۹۹۸ به کارگردانی مارتین برست و با بازی برد پیت، آنتونی هاپکینز و کلاری فورلانی."@fa , "Rencontre avec Joe Black (Meet Joe Black dans la version originale) est un film américain Romantique, réalisé par Martin Brest, sorti sur les écrans en 1998. Le sujet a été inspiré au début des années 1980 au réalisateur Martin Brest par la pièce de théâtre Death Takes Holiday (« la mort prend des vacances ») de Alberto Casella. Jouée dans les années 1920, cette pièce avait connu une adaptation cinématographique en 1934 réalisée par Mitchell Leisen."@fr , "Meet Joe Black (en español \"¿Conoces a Joe Black?\"), es una película de Universal Pictures, dirigida por Martin Brest y protagonizado por Brad Pitt, Anthony Hopkins, Claire Forlani, Jake Weber, Marcia Gay Harden y Jeffrey Tambor."@es , "Meet Joe Black er et amerikansk romantisk drama fra 1998 instrueret af Martin Brest og Alan Smithee efter manuskript af Bo Goldman og Kevin Wade. Filmen har Brad Pitt, Anthony Hopkins og Claire Forlani i hovedrollerne."@da , "Rendezvous mit Joe Black ist ein US-amerikanischer Spielfilm von Regisseur Martin Brest aus dem Jahr 1998, in dem der Tod in menschlicher Gestalt einen sterbenden Milliardär bittet, ihm zu helfen, das Leben kennenzulernen."@de , "Meet Joe Black is a 1998 romantic drama produced by Universal Studios and starring Brad Pitt, Anthony Hopkins and Claire Forlani, loosely based on the 1934 film Death Takes a Holiday (originally by Paramount Pictures, but now owned by Universal through EMKA, Ltd.)."@en ;
+        owl:sameAs    <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000032a972> , ns3:Meet_Joe_Black , <http://zitgist.com/music/record/015f38c8-99e9-43ff-8b0d-6afd65779f3c> ;
+        foaf:name     "Meet Joe Black"@en .

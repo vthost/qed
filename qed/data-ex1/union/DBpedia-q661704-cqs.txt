@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Drop_the_Dead_Donkey> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Drop_the_Dead_Donkey>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

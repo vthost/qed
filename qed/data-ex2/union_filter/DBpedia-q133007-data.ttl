@@ -1,0 +1,11 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000b937fb>
+        owl:sameAs  <http://dbpedia.org/resource/And_It%27s_Surely_to_Their_Credit> .
+
+<http://dbpedia.org/resource/And_It%27s_Surely_to_Their_Credit>
+        rdfs:comment  "\"And It's Surely to Their Credit\" is the fifth episode of the second season of the television series The West Wing, which premiered on NBC on November 1, 2000."@en , "Y seguramente sea en su Honor es el quinto capítulo de la Segunda Temporada de la Serie dramática El Ala Oeste."@es ;
+        owl:sameAs    <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000b937fb> ;
+        foaf:name     "And It's Surely to Their Credit"@en .

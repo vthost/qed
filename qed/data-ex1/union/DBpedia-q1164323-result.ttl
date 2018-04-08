@@ -1,0 +1,29 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "containedIn" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Frank da Vinci"@en ;
+                                     rs:variable  "containedIn"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "TOS"@en ;
+                                     rs:variable  "containedIn"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Eddie Paskey"@en ;
+                                     rs:variable  "containedIn"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marc_Daniels> ;
+                                     rs:variable  "containedIn"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "William Blackburn"@en ;
+                                     rs:variable  "containedIn"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marj_Dusay> ;
+                                     rs:variable  "containedIn"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "James Daris"@en ;
+                                     rs:variable  "containedIn"
+                                   ] ]
+] .

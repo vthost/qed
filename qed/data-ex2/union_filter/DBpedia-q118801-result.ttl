@@ -1,0 +1,17 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "sameas" , "description" , "title" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001386e9> ;
+                                     rs:variable  "sameas"
+                                   ] ;
+            rs:binding  [ rs:value     "The Adam and Joe Show was a British television comedy show, written and presented by Adam and Joe, that is, Adam Buxton and Joe Cornish, which ran for four series on Channel 4 between 1996 and 2001. All four series are available free to watch on 4oD, but currently only a compilation of the best of the entire run is available on DVD, however all episodes are available on iTunes."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "The Adam and Joe Show"@en ;
+                          rs:variable  "title"
+                        ] ]
+] .

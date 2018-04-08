@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Terminal> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Terminal> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Terminal>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Terminal>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Maxentius> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/RomaBasilicaMassenzioDaPalatino.JPG/200px-RomaBasilicaMassenzioDaPalatino.JPG> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/f/ff/RomaBasilicaMassenzioDaPalatino.JPG> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Marcus Aurelius Valerius Maxentius (c. 278 &ndash; 28 October 312) was Western Roman Emperor from 306 to 312. He was the son of former emperor Maximian, and the son-in-law of Galerius, also an emperor."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Maxentius> ;
+                          rs:variable  "king"
+                        ] ]
+] .

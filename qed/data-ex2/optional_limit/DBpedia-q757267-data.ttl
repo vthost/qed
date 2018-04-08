@@ -1,0 +1,11 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix ns4:   <http://ceb.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://en.wikipedia.org/wiki/> .
+
+dbpedia:Agrippina_the_Younger
+        ns0:abstract    "Julia Agrippina (from AD 50, Julia Augusta Agrippina), also known as Agrippina the Younger and Agrippina Minor (7 November AD 15–19/23 March AD 59) was a Roman empress. She was a great-granddaughter of the emperor Augustus, great-niece and adoptive granddaughter of the emperor Tiberius, sister to the emperor Caligula, niece and fourth wife of the emperor Claudius, and mother of the emperor Nero. Agrippina the Younger has been described by the ancient and modern sources as ‘ruthless, ambitious, violent and domineering’. She was a beautiful and reputable woman and according to Pliny the Elder, she had a double canine in her upper right jaw, a sign of good fortune. Many ancient historians accuse Agrippina of poisoning Emperor Claudius, though accounts vary."@en , "الإمبراطورة الرومانية أغريبينا الصغرى أو جوليا أغريبينا هي ابنة أغريبينا الكبرى وأخت الإمبراطور كاليغولا وجدّ أمها هو الإمبراطور أوغسطوس. كما أنها أم الإمبراطور الروماني نيرون. عام 39م اتهمها أخوها كاليغولا بالمشاركة في مؤامرة فاشلة لقتله، وأمر بنفيها. عام 40م توفي زوجها الأول دوميتيوس (والد نيرون). وعام 41 قُتل كاليغولا وزوجته وابنته، فخلفه على العرش الإمبراطور كلوديوس الذي أعاد أغريبينا الصغرى من المنفى، فتزوجت من رجل آخر، لكنه مات عام 47م وراجت شائعات أن أغريبينا قامت بتسميمه. عام 49م تزوجت أغريبينا الصغرى من عمّها الإمبراطور كلوديوس (رغم اعتبار الرومان لذلك سفاحا ً)، وكانت هي رابع زوجاته. وقد اتهمها العديد من المؤرخين القدامى بعد ذلك بقتل كلوديوس أيضا ًعام 54م بأن دسّت السم له. عُرفت أغريبينا الصغرى بقسوتها واستبدادها. وقد حاولت في حقبة تولي ابنها نيرون للعرش أن تحكم الإمبراطورية من خلال ابنها، إلاّ أن ابنها أمر بقتلها."@ar ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Agrippina_Minor_with_Claudius.jpg/200px-Agrippina_Minor_with_Claudius.jpg> ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/c/c9/Agrippina_Minor_with_Claudius.jpg> ;
+        foaf:page       ns4:Agrippina_ang_Manghod , ns3:Agrippina_the_Younger , <http://cs.wikipedia.org/wiki/Agrippina_mlad%C5%A1%C3%AD> .

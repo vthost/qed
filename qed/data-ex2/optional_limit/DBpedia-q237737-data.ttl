@@ -1,0 +1,21 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix ns4:   <http://da.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Unidentified_flying_object
+        rdfs:comment    "أجسام طائرة غير مُعرّفة, ظاهرة يؤمن بها بعض الناس في العالم وهى تختص بظهور أجسام لامعة في السماء وهبوط بعضها على الأرض وخروج بعض المخلوقات منها في زيارة سريعة للأرض مع اختطاف بعض الافراد من الأرض. ويعتقد كثير من الناس إنها طائرات من صنع البشر ولكنها متطورة تقنيا وذات شكل أقرب إلى الإسطوانة، أو الكرة المفلطحة."@ar , "Unidentified flying object (commonly abbreviated as UFO or U.F.O. ) is the popular term for any apparent phenomenon whose cause cannot be easily or immediately identified by the observer. The United States Air Force, which coined the term in 1952, initially defined UFOs as those objects that remain unidentified after scrutiny by expert investigators, though today the term UFO is colloquially used to refer to any unidentifiable sighting regardless of whether it has been investigated."@en , "A UFO (Unidentified Flying Object) is any object flying in the sky which cannot be by the person who sees it. Sometimes the object is . If people can still not figure out what the object is after an investigation, it is called a UFO. If they figure out what the object is, it can no longer be called a UFO because it has been identified. Even though UFOs can be anything, people often use the word UFO when they are talking about alien spacecraft."@en ;
+        rdfs:label      "Unidentified flying object"@en , "UFO"@cs , "НЛО"@bg ;
+        skos:subject    ns2:Mysteries ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/d/d1/Arnold_AAF_drawing.jpg> ;
+        foaf:page       <http://ast.wikipedia.org/wiki/Oxetu_esnalador_non_identific%C3%A1u> , <http://fr.wikipedia.org/wiki/Objet_volant_non_identifi%C3%A9> , ns5:Unidentified_flying_object .
+
+<http://dbpedia.org/resource/USS_Maine_%28ACR-1%29>
+        rdfs:comment  "USS Maine (ACR-1), was the United States Navy's second \"modern\" battleship. She is best known for her catastrophic loss in Havana harbor. Maine had been sent to Havana, Cuba, to protect U.S. interests during the Cuban revolt against Spain. On the evening of February 15, 1898, she suddenly exploded, and swiftly sank, killing nearly three quarters of her crew."@en , "El USS Maine (ACR-1) foi un acorazau pre-dreadnought de Segunda Clas de l'Armada de los Estaos Xuníos, foi entamau nel Astilleru Naval de Nueva York el 17 d'ochobre de 1888; botau el 18 de payares de 1889. Patrocinau pola Srta. Alicia Tracy Willnerding, nieta del Secretariu de Marina Benjamin Tracy. La nueche del 15 de febreru, españó la proa del barcu, llanzando cuerpos y partes de la estructura, y fundiose aína, causando 266 víctimes."@es ;
+        rdfs:label    "USS Maine (ACR-1)"@en , "USS Maine"@da ;
+        skos:subject  ns2:Mysteries ;
+        foaf:page     <http://ast.wikipedia.org/wiki/USS_Maine_%28ACR-1%29> , <http://en.wikipedia.org/wiki/USS_Maine_%28ACR-1%29> , <http://de.wikipedia.org/wiki/USS_Maine_%28ACR-1%29> , ns4:USS_Maine , <http://la.wikipedia.org/wiki/USS_Maine> .

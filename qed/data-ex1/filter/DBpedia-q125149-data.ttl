@@ -1,0 +1,19 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Paul_Rubell  rdfs:label  "ポール・ルベル"@ja ;
+        skos:subject  ns3:American_Cinema_Editors ;
+        foaf:page     <http://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%AB%E3%83%99%E3%83%AB> , ns5:Paul_Rubell .
+
+dbpedia:Mark_Helfrich
+        rdfs:label    "Mark Helfrich"@en ;
+        skos:subject  ns3:American_Cinema_Editors ;
+        foaf:page     ns5:Mark_Helfrich .
+
+dbpedia:Antony_Gibbs  rdfs:label  "Antony Gibbs"@en ;
+        skos:subject  ns3:American_Cinema_Editors ;
+        foaf:page     ns5:Antony_Gibbs .

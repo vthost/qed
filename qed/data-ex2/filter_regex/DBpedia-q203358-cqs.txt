@@ -1,0 +1,385 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { { ?subject  dbpedia-owl:knownFor  ?kfor }
+    { ?subject  foaf:page  ?page }
+    { FILTER ( lang(?label_it) = "it" )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?subject  dbpedia-owl:knownFor  ?kfor }
+    { ?subject  foaf:page  ?page }
+    { FILTER ( lang(?label_it) = "it" )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { { ?subject  dbpedia-owl:knownFor  ?kfor }
+    FILTER NOT EXISTS { ?subject  foaf:page  ?page }
+    { FILTER ( lang(?label_it) = "it" )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?subject  dbpedia-owl:knownFor  ?kfor }
+    FILTER NOT EXISTS { ?subject  foaf:page  ?page }
+    { FILTER ( lang(?label_it) = "it" )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { { ?subject  dbpedia-owl:knownFor  ?kfor }
+    { ?subject  foaf:page  ?page }
+    { FILTER ( ! ( lang(?label_it) = "it" ) )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?subject  dbpedia-owl:knownFor  ?kfor }
+    { ?subject  foaf:page  ?page }
+    { FILTER ( ! ( lang(?label_it) = "it" ) )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { { ?subject  dbpedia-owl:knownFor  ?kfor }
+    FILTER NOT EXISTS { ?subject  foaf:page  ?page }
+    { FILTER ( ! ( lang(?label_it) = "it" ) )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?subject  dbpedia-owl:knownFor  ?kfor }
+    FILTER NOT EXISTS { ?subject  foaf:page  ?page }
+    { FILTER ( ! ( lang(?label_it) = "it" ) )
+      ?subject  rdfs:label  ?label_it
+    }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { { ?subject  dbpedia-owl:knownFor  ?kfor }
+    { ?subject  foaf:page  ?page }
+    FILTER NOT EXISTS { FILTER ( lang(?label_it) = "it" )
+                        ?subject  rdfs:label  ?label_it
+                      }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?subject  dbpedia-owl:knownFor  ?kfor }
+    { ?subject  foaf:page  ?page }
+    FILTER NOT EXISTS { FILTER ( lang(?label_it) = "it" )
+                        ?subject  rdfs:label  ?label_it
+                      }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:American_psychiatrists> rdfs:label ?label .
+    ?subject skos:subject <http://dbpedia.org/resource/Category:American_psychiatrists> .
+    ?subject rdfs:label ?label_en .
+    ?subject rdfs:label ?label_it .
+    ?subject foaf:page ?page .
+    ?subject dbpedia-owl:knownFor ?kfor .
+  }
+WHERE
+  { { ?subject  dbpedia-owl:knownFor  ?kfor }
+    FILTER NOT EXISTS { ?subject  foaf:page  ?page }
+    FILTER NOT EXISTS { FILTER ( lang(?label_it) = "it" )
+                        ?subject  rdfs:label  ?label_it
+                      }
+    { FILTER ( lang(?label_en) = "en" )
+      ?subject  rdfs:label  ?label_en
+    }
+    { FILTER regex(?subject, "[^a-z A-Z 0-9]*")
+      ?subject  skos:subject  <http://dbpedia.org/resource/Category:American_psychiatrists>
+    }
+    FILTER ( lang(?label) = "en" )
+    <http://dbpedia.org/resource/Category:American_psychiatrists>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------

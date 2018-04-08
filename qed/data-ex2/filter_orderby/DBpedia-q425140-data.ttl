@@ -1,0 +1,15 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Adolf_Otto_Reinhold_Windaus
+        ns1:birthDate       "1876-12-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Berlin ;
+        foaf:name           "Adolf Windaus"@de , "Adolf Otto Reinhold Windaus"@en .
+
+dbpedia:Alexander_von_Humboldt
+        ns1:birthDate       "1769-09-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Berlin ;
+        foaf:name           "Alexander von Humboldt"@de , "Alexander von Humboldt"@en .

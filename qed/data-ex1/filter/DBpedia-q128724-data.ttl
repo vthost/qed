@@ -1,0 +1,18 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Category:People_from_Yellow_Springs%2C_Ohio>
+        rdfs:label  "People from Yellow Springs, Ohio"@en .
+
+ns2:American_science_writers
+        rdfs:label  "Kategorie:Američtí spisovatelé vědecké literatury"@cs , "American science writers"@en ;
+        foaf:page   <http://cs.wikipedia.org/wiki/Kategorie:Ameri%C4%8Dt%C3%AD_spisovatel%C3%A9_v%C4%9Bdeck%C3%A9_literatury> , <http://pt.wikipedia.org/wiki/Categoria:Escritores_de_ci%C3%AAncia_dos_Estados_Unidos_da_Am%C3%A9rica> , <http://pt.wikipedia.org/wiki/Categoria:Escritores_de_ci%C3%AAncia_dos_Estados_Unidos> .
+
+ns2:Antioch_College_alumni
+        rdfs:label  "Antioch College alumni"@en .
+
+dbpedia:Joseph_Young_Bergen
+        skos:subject  ns2:American_science_writers , <http://dbpedia.org/resource/Category:People_from_Yellow_Springs%2C_Ohio> , ns2:Antioch_College_alumni .

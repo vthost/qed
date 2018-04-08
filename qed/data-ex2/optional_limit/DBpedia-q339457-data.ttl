@@ -1,0 +1,8 @@
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Nicol%C3%B2_Tron>
+        ns0:abstract    "Nicolò Tron (Born circa 1399; died 1473 in Venice) was the 68th Doge of Venice, reigning from 1471 to 1473."@en , "Ніколо Трон — 68-й венеціанський дож. Це незавершена стаття про особу. Ви можете допомогти проекту, виправивши або дописавши її."@uk ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Doge_Niccol%C3%B2_Tron.png/200px-Doge_Niccol%C3%B2_Tron.png> ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/7/71/Doge_Niccol%C3%B2_Tron.png> ;
+        foaf:page       <http://en.wikipedia.org/wiki/Nicol%C3%B2_Tron> , <http://de.wikipedia.org/wiki/Niccol%C3%B2_Tron> , <http://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A7%D7%95%D7%9C%D7%95_%D7%98%D7%A8%D7%95%D7%9F> .

@@ -1,0 +1,9 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Watching_Too_Much_Television
+        ns1:episodeNumber  46 ;
+        ns1:releaseDate    "2002-10-27"^^xsd:date ;
+        ns1:seasonNumber   4 ;
+        ns1:series         dbpedia:The_Sopranos .

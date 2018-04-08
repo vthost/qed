@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "Birthday" , "Name" , "Person" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "1896-08-09"^^xsd:date ;
+                                     rs:variable  "Birthday"
+                                   ] ;
+            rs:binding  [ rs:value     "Hückel, Erich Armand Arthur Joseph"@en ;
+                          rs:variable  "Name"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Erich_H%C3%BCckel> ;
+                          rs:variable  "Person"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1820-12-17"^^xsd:date ;
+                                     rs:variable  "Birthday"
+                                   ] ;
+            rs:binding  [ rs:value     "Eckert, Karl Anton"@de ;
+                          rs:variable  "Name"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Karl_Anton_Eckert> ;
+                          rs:variable  "Person"
+                        ] ]
+] .

@@ -1,0 +1,28 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Life_and_Times_of_Judge_Roy_Bean
+        a                 ns1:Film ;
+        rdfs:comment      "Das war Roy Bean (The Life and Times of Judge Roy Bean) ist eine US-amerikanische Westernkomödie von John Huston aus dem Jahr 1972."@de , "The Life and Times of Judge Roy Bean je američki western film snimljen 1972. godine. U njemu je Paul Newman tumačio stvarni lik ekscentričnog teksaškog mirovnog suca Roya Beana. Scenarij je napisao John Milius, a film režirao John Huston. Film je poznat po muzičkoj temi Maurice Jarrea, koja se često koristila u TV-kalendaru, emisiji Hrvatske televizije."@sr , "Juge et Hors-la-loi (The Life and Times of Judge Roy Bean) est un film américain réalisé par John Huston, sorti en 1972."@fr , "L'uomo dai sette capestri (The Life and Times of Judge Roy Bean) è un film del 1972 diretto da John Huston, con Paul Newman, Jacqueline Bisset e Ava Gardner: la sceneggiatura è del regista John Milius. È basato sulla vita del barista e \"giudice\" Planty Roy Bean."@it , "The Life and Times of Judge Roy Bean is a 1972 western film written by John Milius, directed by John Huston, and starring Paul Newman (at the height of his career, between Butch Cassidy and the Sundance Kid and The Sting). It was loosely based on the real-life, self-appointed frontier judge."@en ;
+        rdfs:label        "The Life and Times of Judge Roy Bean"@en ;
+        ns1:releaseDate   "1972-12-18"^^xsd:date ;
+        dbpprop:starring  dbpedia:Paul_Newman .
+
+dbpedia:Mater_and_the_Ghostlight
+        a                 ns1:Film ;
+        rdfs:comment      "Złomek i błędny ognik (ang. Mater and the Ghostlight) – krótkometrażowy film animowany z wytwórni Pixar, w którym występują bohaterowie filmu Auta. Złomek straszy wszystkich mieszkańców Chłodnicy Górskiej. Mieszkańcy postanawiają dać mu nauczkę i opowiadają mu o Błędnym Ogniku – zjawie, która rozkręca samochody. Złomek boi się. Gdy wraca do garażu, przez przypadek o jego hak zaczepia się latarnia. Złomek myśli, że to Błędny Ognik i ucieka z garażu."@pl , "Mate e a Luz Fantasma / Mate e a Luz do Além é uma animação de curta-metragem lançada em 2006, pela Pixar Animation Studios, como bônus do filme Carros, utilizando os personagens do longa-metragem."@pt , "《板牙遇上鬼火》（Mater and the Ghostlight）是2006年皮克斯动画工作室制作的一部动画短片，该片与《赛车总动员》（Cars）的DVD一起发行。发行时间为2006年10月25日（澳洲），11月7日（美国）。此片中板牙（Larry the Cable Guy配音）碰到一个神秘的蓝光。本片利用已经发行的电影中的角色塑造了一个新的故事，如同短片《大眼仔的新车》（Mike's New Car，《怪兽电力公司》（Monsters, Inc. ）中的角色）和《小杰的攻击》（Jack-Jack Attack，《超人总动员》（The Incredibles）中的角色）。该片中国大陆配音闪电麦坤和莎莉分别是黄磊、徐静蕾，粤语配音是林海峰、林嘉欣。"@zh , "Martin et la lumière fantôme est un court-métrage des Studios Pixar, réalisé en même temps que leur septième film, Cars, le 9 juin 2006 et réalisé par John Lasseter et Dan Scanlon. Cependant, ce court métrage fut sorti bien après le film puisqu'il fut destiné à servir de bonus pour la sortie du DVD de Cars."@fr , "Carl Attrezzi e il Semaforo fantasma è un cortometraggio prodotto dalla Pixar Animation Studios. Si può considerare uno spin-off di Cars - Motori ruggenti."@it ;
+        rdfs:label        "Mater and the Ghostlight"@en ;
+        ns1:releaseDate   "2006-11-07"^^xsd:date ;
+        dbpprop:starring  dbpedia:Paul_Newman .
+
+<http://dbpedia.org/resource/Our_Town_%282003_film%29>
+        a                 ns1:Film ;
+        rdfs:comment      "Our Town is a 2003 film adaptation of a play of the same name by Thornton Wilder. It stars Paul Newman, who was nominated for both an Emmy and a SAG award for outstanding acting. It was shown on PBS as part of Masterpiece Theatre. It was filmed at the Booth Theatre in Manhattan."@en ;
+        rdfs:label        "Our Town (2003 film)"@en ;
+        ns1:releaseDate   "2003-05-23"^^xsd:date ;
+        dbpprop:starring  dbpedia:Paul_Newman .

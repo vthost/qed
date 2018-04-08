@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Half_Nelson_%28film%29>
+        dbpprop:creator            dbpedia:Jamie_Patricof , dbpedia:Anna_Boden , dbpedia:Ryan_Fleck , dbpedia:Alex_Orlovsky , dbpedia:Rosanne_Korenberg ;
+        dbpprop:director           dbpedia:Alex_Orlovsky , dbpedia:Jamie_Patricof , dbpedia:Anna_Boden , dbpedia:Rosanne_Korenberg , dbpedia:Ryan_Fleck ;
+        dbpprop:executiveProducer  dbpedia:Rosanne_Korenberg , dbpedia:Jamie_Patricof , dbpedia:Ryan_Fleck , dbpedia:Alex_Orlovsky , dbpedia:Anna_Boden ;
+        dbpprop:guest              dbpedia:Rosanne_Korenberg , dbpedia:Ryan_Fleck , dbpedia:Anna_Boden , dbpedia:Jamie_Patricof , dbpedia:Alex_Orlovsky ;
+        dbpprop:producer           dbpedia:Alex_Orlovsky , dbpedia:Jamie_Patricof , dbpedia:Rosanne_Korenberg , dbpedia:Anna_Boden , dbpedia:Ryan_Fleck ;
+        dbpprop:series             dbpedia:Jamie_Patricof , dbpedia:Ryan_Fleck , dbpedia:Rosanne_Korenberg , dbpedia:Alex_Orlovsky , dbpedia:Anna_Boden ;
+        dbpprop:starring           dbpedia:Rosanne_Korenberg , dbpedia:Alex_Orlovsky , dbpedia:Ryan_Fleck , dbpedia:Anna_Boden , dbpedia:Jamie_Patricof ;
+        dbpprop:writer             dbpedia:Jamie_Patricof , dbpedia:Anna_Boden , dbpedia:Alex_Orlovsky , dbpedia:Ryan_Fleck , dbpedia:Rosanne_Korenberg .

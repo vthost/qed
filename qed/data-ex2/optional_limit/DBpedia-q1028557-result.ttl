@@ -1,0 +1,89 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "subject" , "image" , "wikipage" , "description" , "title" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://it.wikipedia.org/wiki/Sage_%28estensione%29> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Sage is a lightweight RSS and atom feed aggregator extension for the Mozilla Firefox web browser. The extension was developed by Peter Andrews and Erik Arvidsson. The current stable release of Sage is version 1.4.5, compatible with Firefox 3.6, released on February 8, 2010. Sage won the most \"Most Innovative\" award in Mozilla's 2006 \"Extend Firefox\" competition."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Sage (Mozilla Firefox extension)"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sage_%28Mozilla_Firefox_extension%29> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Atom_%28standard%29> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "The name Atom applies to a pair of related standards. The Atom Syndication Format is an XML language used for web feeds, while the Atom Publishing Protocol (AtomPub or APP) is a simple HTTP-based protocol for creating and updating web resources. Web feeds allow software programs to check for updates published on a website."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Atom (standard)"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Atom_%28standard%29> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Sage_%28Mozilla_Firefox_extension%29> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Sage is a lightweight RSS and atom feed aggregator extension for the Mozilla Firefox web browser. The extension was developed by Peter Andrews and Erik Arvidsson. The current stable release of Sage is version 1.4.5, compatible with Firefox 3.6, released on February 8, 2010. Sage won the most \"Most Innovative\" award in Mozilla's 2006 \"Extend Firefox\" competition."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Sage (Mozilla Firefox extension)"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sage_%28Mozilla_Firefox_extension%29> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://ar.wikipedia.org/wiki/%D8%B5%D9%8A%D8%BA%D8%A9_%D8%A3%D8%AA%D9%88%D9%85> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "The name Atom applies to a pair of related standards. The Atom Syndication Format is an XML language used for web feeds, while the Atom Publishing Protocol (AtomPub or APP) is a simple HTTP-based protocol for creating and updating web resources. Web feeds allow software programs to check for updates published on a website."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Atom (standard)"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Atom_%28standard%29> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://pl.wikipedia.org/wiki/Sage_%28Firefox%29> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Sage is a lightweight RSS and atom feed aggregator extension for the Mozilla Firefox web browser. The extension was developed by Peter Andrews and Erik Arvidsson. The current stable release of Sage is version 1.4.5, compatible with Firefox 3.6, released on February 8, 2010. Sage won the most \"Most Innovative\" award in Mozilla's 2006 \"Extend Firefox\" competition."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Sage (Mozilla Firefox extension)"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sage_%28Mozilla_Firefox_extension%29> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://eu.wikipedia.org/wiki/Atom> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "The name Atom applies to a pair of related standards. The Atom Syndication Format is an XML language used for web feeds, while the Atom Publishing Protocol (AtomPub or APP) is a simple HTTP-based protocol for creating and updating web resources. Web feeds allow software programs to check for updates published on a website."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Atom (standard)"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Atom_%28standard%29> ;
+                          rs:variable  "subject"
+                        ] ]
+] .

@@ -1,0 +1,4 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Sagi_Kalev  rdfs:label  "Sagi Kalev"@de , "Sagi Kalev"@pl , "Sagi Kalev"@en .

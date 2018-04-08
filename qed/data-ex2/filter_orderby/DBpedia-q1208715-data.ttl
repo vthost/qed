@@ -1,0 +1,20 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Get_Smart_%28film%29>
+        a             ns1:Film ;
+        ns1:starring  dbpedia:Dwayne_Johnson ;
+        foaf:name     "Get Smart"@en .
+
+<http://dbpedia.org/resource/Antitrust_%28film%29>
+        a             ns1:Film ;
+        ns1:starring  dbpedia:Tim_Robbins ;
+        foaf:name     "Antitrust"@en .
+
+dbpedia:Tim_Robbins  ns1:birthDate  "1958-10-16"^^xsd:date .
+
+dbpedia:Dwayne_Johnson
+        ns1:birthDate  "1972-05-02"^^xsd:date .

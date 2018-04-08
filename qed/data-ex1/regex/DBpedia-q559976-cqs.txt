@@ -1,0 +1,40 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Sixth_Sense> ?p ?s .
+    ?s dbpedia_property:name ?o .
+    ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dbpedia:Person .
+  }
+WHERE
+  { FILTER regex(?o, "Bruce")
+    <http://dbpedia.org/resource/The_Sixth_Sense>
+              ?p                    ?s .
+    ?s        dbpedia_property:name  ?o ;
+              a                     dbpedia:Person
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Sixth_Sense> ?p ?s .
+    ?s dbpedia_property:name ?o .
+    ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dbpedia:Person .
+  }
+WHERE
+  { FILTER ( ! regex(?o, "Bruce") )
+    <http://dbpedia.org/resource/The_Sixth_Sense>
+              ?p                    ?s .
+    ?s        dbpedia_property:name  ?o ;
+              a                     dbpedia:Person
+  }
+LIMIT   10
+
+----------------------------------------------

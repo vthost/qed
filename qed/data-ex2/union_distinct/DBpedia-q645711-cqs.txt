@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_London_News> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_London_News>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_London_News>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

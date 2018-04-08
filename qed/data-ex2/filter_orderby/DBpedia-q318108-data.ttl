@@ -1,0 +1,14 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Yair_Lapid  ns1:birthDate  "1963-11-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Tel_Aviv ;
+        foaf:name           "Yair Lapid"@en .
+
+dbpedia:Benjamin_Netanyahu
+        ns1:birthDate       "1949-10-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Tel_Aviv ;
+        foaf:name           "Benjamin Netanyahu"@en .

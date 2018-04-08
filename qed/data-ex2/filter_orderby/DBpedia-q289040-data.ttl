@@ -1,0 +1,12 @@
+@prefix ns5:   <http://dbpedia.org/resource/Category:> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Max_Ernst  rdfs:comment  "Max Ernst (2 April 1891 &ndash; 1 April 1976) was a German painter, sculptor, graphic artist, and poet. A prolific artist, Ernst is considered to be one of the primary pioneers of the Dada movement and Surrealism."@en , "Max Ernst va ser un artista alemany nacionalitzat francès que va ser una figura fonamental tant en el moviment dadà com en el surrealisme. Es va caracteritzar per la utilització d'una extraordinària diversitat de tècniques, estils i materials."@ca ;
+        ns3:birthDate  "1891-04-02"^^xsd:date ;
+        skos:subject   ns5:German_artists ;
+        foaf:name      "Max Ernst"@en , "Max Ernst"@de .

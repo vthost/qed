@@ -1,0 +1,14 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Daniel_Mayer  ns1:birthDate  "1909-04-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:France ;
+        foaf:name           "Daniel Mayer"@de , "Daniel William Mayer"@en .
+
+dbpedia:Louis_Daguerre
+        ns1:birthDate       "1787-11-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:France ;
+        foaf:name           "Louis Daguerre"@de , "Louis Daguerre"@en .

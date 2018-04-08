@@ -1,0 +1,15 @@
+@prefix ns6:   <http://dbpedia.org/resource/Category:> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Wiwaxia  a    ns2:Burgess_Shale_fossils , yago:Burgess_Shale_fossils ;
+        rdfs:label    "Wiwaxia"@en , "Wiwaxia corrugata"@fi , "Wiwaxia corrugata"@ca , "Wiwaxia"@es ;
+        skos:subject  ns6:Burgess_Shale_fossils .
+
+dbpedia:Vetulicola  a  yago:Burgess_Shale_fossils , ns2:Burgess_Shale_fossils ;
+        rdfs:label    "Vetulicola"@en , "ウェツリコラ"@ja ;
+        skos:subject  ns6:Burgess_Shale_fossils .

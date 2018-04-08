@@ -1,0 +1,11 @@
+@prefix ns6:   <http://dbpedia.org/ontology/> .
+@prefix ns5:   <http://es.wikipedia.org/wiki/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns4:   <http://en.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://de.wikipedia.org/wiki/> .
+
+dbpedia:The_Trial  rdfs:label  "The Trial"@en , "El proceso"@es ;
+        ns6:author  dbpedia:Franz_Kafka ;
+        foaf:page   ns5:El_proceso , ns4:The_Trial , <http://fi.wikipedia.org/wiki/Oikeusjuttu_%28romaani%29> , ns3:Der_Process , <http://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%A9%D7%A4%D7%98> .

@@ -1,0 +1,16 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Road_Warrior_Hawk
+        ns1:birthDate       "1957-09-12"^^xsd:date ;
+        ns1:deathDate       "2003-10-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Minneapolis ;
+        foaf:name           "Road Warrior Hawk"@en , "Hawk Warrior"@en , "Michael Hegstrand"@de , "Crusher Von Haig"@en .
+
+dbpedia:George_Dahl  ns1:birthDate  "1894-05-11"^^xsd:date ;
+        ns1:deathDate       "1987-07-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Minneapolis ;
+        foaf:name           "George Dahl"@en .

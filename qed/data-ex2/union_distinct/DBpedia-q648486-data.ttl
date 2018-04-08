@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Usual_Suspects
+        dbpprop:creator            "布莱恩·辛格（Bryan Singer）"@zh , "Bryan Singer"@hu , "Bryan Singer"@en ;
+        dbpprop:creator            dbpedia:Michael_McDonnell , dbpedia:Kenneth_Kokin , dbpedia:Bryan_Singer ;
+        dbpprop:director           "布莱恩·辛格（Bryan Singer）"@zh , "Bryan Singer"@hu , "Bryan Singer"@en ;
+        dbpprop:director           dbpedia:Michael_McDonnell , dbpedia:Bryan_Singer , dbpedia:Kenneth_Kokin ;
+        dbpprop:executiveProducer  "Bryan Singer"@en , "Bryan Singer"@hu , "布莱恩·辛格（Bryan Singer）"@zh ;
+        dbpprop:executiveProducer  dbpedia:Kenneth_Kokin , dbpedia:Bryan_Singer , dbpedia:Michael_McDonnell ;
+        dbpprop:guest              "Bryan Singer"@hu , "Bryan Singer"@en , "布莱恩·辛格（Bryan Singer）"@zh ;
+        dbpprop:guest              dbpedia:Michael_McDonnell , dbpedia:Bryan_Singer , dbpedia:Kenneth_Kokin ;
+        dbpprop:producer           "布莱恩·辛格（Bryan Singer）"@zh , "Bryan Singer"@hu , "Bryan Singer"@en ;
+        dbpprop:producer           dbpedia:Bryan_Singer , dbpedia:Michael_McDonnell , dbpedia:Kenneth_Kokin ;
+        dbpprop:series             "布莱恩·辛格（Bryan Singer）"@zh , "Bryan Singer"@hu , "Bryan Singer"@en ;
+        dbpprop:series             dbpedia:Kenneth_Kokin , dbpedia:Bryan_Singer , dbpedia:Michael_McDonnell ;
+        dbpprop:starring           "布莱恩·辛格（Bryan Singer）"@zh , "Bryan Singer"@en , "Bryan Singer"@hu ;
+        dbpprop:starring           dbpedia:Kenneth_Kokin , dbpedia:Bryan_Singer , dbpedia:Michael_McDonnell ;
+        dbpprop:writer             "Bryan Singer"@hu , "Bryan Singer"@en , "布莱恩·辛格（Bryan Singer）"@zh ;
+        dbpprop:writer             dbpedia:Kenneth_Kokin , dbpedia:Michael_McDonnell , dbpedia:Bryan_Singer .

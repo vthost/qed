@@ -1,0 +1,77 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "wikipage" , "title" , "description" , "subject" , "image" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/a/a0/Tidepools_Small.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://pt.wikipedia.org/wiki/Bentos> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Benthos are the organisms which live on, in, or near the seabed, also known as the benthic zone. They live in or near marine sedimentary environments, from tidal pools along the foreshore, out to the continental shelf, and then down to the abyssal depths. Many organisms adapted to deep-water pressure cannot survive in the upper parts of the water column. The pressure difference can be very significant (approximately one atmosphere for each 10 meters of water depth)."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Benthos"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Benthos> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Water_dispute> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Water dispute is a term describing a conflict between two parties over a source of water. These conflicts occur over both freshwater and saltwater, and between international boundaries. The United Nations recognizes that water disputes result from opposing interests of water users, public or private. Conflicts occur mostly over freshwater; because freshwater resources are necessary, yet limited, they are the center of water disputes arising out of need for potable water."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Water dispute"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Water_dispute> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/a/a0/Tidepools_Small.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Bentos> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Benthos are the organisms which live on, in, or near the seabed, also known as the benthic zone. They live in or near marine sedimentary environments, from tidal pools along the foreshore, out to the continental shelf, and then down to the abyssal depths. Many organisms adapted to deep-water pressure cannot survive in the upper parts of the water column. The pressure difference can be very significant (approximately one atmosphere for each 10 meters of water depth)."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Benthos"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Benthos> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/a/a0/Tidepools_Small.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Benthos> ;
+                          rs:variable  "wikipage"
+                        ] ;
+            rs:binding  [ rs:value     "Benthos are the organisms which live on, in, or near the seabed, also known as the benthic zone. They live in or near marine sedimentary environments, from tidal pools along the foreshore, out to the continental shelf, and then down to the abyssal depths. Many organisms adapted to deep-water pressure cannot survive in the upper parts of the water column. The pressure difference can be very significant (approximately one atmosphere for each 10 meters of water depth)."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Benthos"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Benthos> ;
+                          rs:variable  "subject"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ar.wikipedia.org/wiki/%D9%86%D8%B2%D8%A7%D8%B9_%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87> ;
+                                     rs:variable  "wikipage"
+                                   ] ;
+            rs:binding  [ rs:value     "Water dispute is a term describing a conflict between two parties over a source of water. These conflicts occur over both freshwater and saltwater, and between international boundaries. The United Nations recognizes that water disputes result from opposing interests of water users, public or private. Conflicts occur mostly over freshwater; because freshwater resources are necessary, yet limited, they are the center of water disputes arising out of need for potable water."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Water dispute"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Water_dispute> ;
+                          rs:variable  "subject"
+                        ] ]
+] .

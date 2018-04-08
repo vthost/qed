@@ -1,0 +1,13 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Matthew_Fox_%28actor%29>
+        dbpprop:birthplace  dbpedia:United_States .
+
+<http://dbpedia.org/resource/Lost_%28TV_series%29>
+        ns2:director  <http://dbpedia.org/resource/Stephen_Williams_%28director%29> , dbpedia:Jack_Bender ;
+        ns2:starring  <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> .
+
+dbpedia:Party_of_Five
+        ns2:starring  <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> .

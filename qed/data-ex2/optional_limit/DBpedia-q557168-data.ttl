@@ -1,0 +1,11 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns4:   <http://en.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Theodosius_I  ns0:abstract  "Flavius Theodosius, also called Theodosius I and Theodosius the Great, was Roman Emperor from 379-395. He reunited the Eastern and Western Roman Empire, but was the last emperor of both parts of the empire. After his death, the two parts split permanently. He is also known for making Christianity the official state religion of the Roman Empire."@en , "Teodosio I o Grant estió un emperador d'o Imperio román que imposó o cristianismo con biolenzia en tot o Imperio. Ye naxito l'11 de chinero de 347 en Coca u Italica, e morió en Milán o 17 de chinero de 395. Estió o zaguer emperador d'orichen ispanorromán. En l'año 392 Teodosio achuntó a partita oriental con a partita ozidental d'o Imperio, estando o zaguer emperador que gobernó en tot o Imperio Román. Dimpués d'a suya muerte o Imperio se deseparó en dos partitas ya de pa cutio."@an ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Theodosius-1-.jpg/200px-Theodosius-1-.jpg> ;
+        dbpprop:imgw    "300px"@ms , "300px"@en ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/b/b1/Theodosius-1-.jpg> ;
+        foaf:page       ns4:Theodosius_I , <http://eu.wikipedia.org/wiki/Teodosio_I.a_Handia> .

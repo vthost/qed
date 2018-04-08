@@ -1,0 +1,83 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label_it" , "page" , "kfor" , "label" , "label_en" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://es.wikipedia.org/wiki/Liderazgo> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Leadership"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Leadership"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Leadership> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Leadership"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Leadership"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%94%D7%99%D7%92%D7%95%D7%AA> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Leadership"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Leadership"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Social psychology"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ar.wikipedia.org/wiki/%D9%82%D9%8A%D8%A7%D8%AF%D8%A9> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Leadership"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Leadership"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Chinese_social_relations> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Chinese social relations"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://nl.wikipedia.org/wiki/Leiderschap> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Leadership"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Leadership"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Social psychology"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

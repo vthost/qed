@@ -1,0 +1,35 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "long" , "lat" , "label" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "4.00611"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     51.8333 ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Havenhoofd"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "4.00611"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     51.8333 ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Havenhoofd"@fr ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "4.00611"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     51.8333 ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Havenhoofd (plaats)"@nl ;
+                          rs:variable  "label"
+                        ] ]
+] .

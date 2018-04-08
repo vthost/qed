@@ -1,0 +1,13 @@
+@prefix ns5:   <http://dbpedia.org/resource/Category:> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Billie_Joe_Armstrong
+        rdfs:comment   "Billie Joe Armstrong (born February 17, 1972) is the lead vocalist, chief songwriter and guitarist for the rock band Green Day. He is also a guitarist and vocalist for the rock band Pinhead Gunpowder and sings for garage rock band Foxboro Hot Tubs."@en , "Били Джо Армстронг е вокалист, текстописец и китарист на пънк-рок групата Green Day и китарист на пънк-рок групата Pinhead Gunpowder."@bg ;
+        ns3:birthDate  "1972-02-17"^^xsd:date ;
+        skos:subject   ns5:Green_Day_members ;
+        foaf:name      "Billie Joe Armstrong"@de , "Billie Joe Armstrong"@en .

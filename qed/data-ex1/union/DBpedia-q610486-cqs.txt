@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Law_%26_Order:_UK> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Law_%26_Order:_UK>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

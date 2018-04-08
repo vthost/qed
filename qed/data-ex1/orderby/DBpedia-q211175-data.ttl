@@ -1,0 +1,11 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Rafael_Gordillo
+        ns1:birthDate         "1957-02-24"^^xsd:date ;
+        dbpprop:clubs         <http://dbpedia.org/resource/Real_Madrid_C.F.> ;
+        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
+        foaf:name             "Rafael Gordillo"@de , "Rafael Gordillo Vázquez"@en , "Rafael Gordillo"@en .

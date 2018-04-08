@@ -1,0 +1,5 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Torben_Piechnik
+        rdfs:label  "Torben Piechnik"@en , "Torben Piechnik"@it , "Torben Piechnik"@fr , "Torben Piechnik"@da , "Torben Piechnik"@pl .

@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://cs.wikipedia.org/wiki/Eduard_III.> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/7/74/King_Edward_III_from_NPG.jpg/200px-King_Edward_III_from_NPG.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/7/74/King_Edward_III_from_NPG.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Edward III (13 November 1312 – 21 June 1377) was one of the most successful English monarchs of the Middle Ages. Restoring royal authority after the disastrous reign of his father, Edward II, Edward III went on to transform the Kingdom of England into the most efficient military power in Europe. His reign saw vital developments in legislature and government—in particular the evolution of the English parliament—as well as the ravages of the Black Death. He remained on the throne for 50 years; no English monarch had reigned for as long since Henry III, and none would again until George III, as King of the United Kingdom. Edward was crowned at the age of fourteen, following the deposition of his father. When he was only seventeen years old, he led a coup against his regent, Roger Mortimer, and began his personal reign. After defeating, but not subjugating, the Kingdom of Scotland, he declared himself rightful heir to the French throne in 1338, starting what would be known as the Hundred Years' War. Following some initial setbacks, the war went exceptionally well for England; the victories of Crécy and Poitiers led up to the highly favourable Treaty of Brétigny. Edward’s later years, however, were marked by international failure and domestic strife, largely as a result of his inertia and eventual bad health. Edward III was a temperamental man, but also capable of great clemency. He was, in most ways, a conventional king, mainly interested in warfare. Highly revered in his own time and for centuries after, Edward was denounced as an irresponsible adventurer by later Whig historians. This view has turned, and modern historiography credits him with many achievements."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Edward_III_of_England> ;
+                          rs:variable  "king"
+                        ] ]
+] .

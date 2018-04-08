@@ -1,0 +1,11 @@
+@prefix ns1:   <http://dbpedia.org/resource/Law_%26_Order:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+ns1:_UK  dbpprop:creator           <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> ;
+        dbpprop:director           <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> ;
+        dbpprop:executiveProducer  <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> ;
+        dbpprop:guest              <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> ;
+        dbpprop:producer           <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> ;
+        dbpprop:series             <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> ;
+        dbpprop:starring           <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> ;
+        dbpprop:writer             <http://dbpedia.org/resource/Richard_Stokes_%28producer%29> , <http://dbpedia.org/resource/Richard_Stokes_%28producent%29> .

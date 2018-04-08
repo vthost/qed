@@ -1,0 +1,17 @@
+@prefix ns6:   <http://ast.wikipedia.org/wiki/> .
+@prefix ns5:   <http://eu.wikipedia.org/wiki/> .
+@prefix ns8:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns7:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:John_Maynard_Keynes
+        rdfs:label    "John Maynard Keynes"@it , "John Maynard Keynes"@en ;
+        skos:subject  ns3:British_economists ;
+        foaf:page     ns8:John_Maynard_Keynes , ns7:John_Maynard_Keynes , <http://he.wikipedia.org/wiki/%D7%92%27%D7%95%D7%9F_%D7%9E%D7%99%D7%99%D7%A0%D7%A8%D7%93_%D7%A7%D7%99%D7%99%D7%A0%D7%A1> , ns6:John_Maynard_Keynes , ns5:John_Maynard_Keynes .
+
+ns3:British_economists
+        rdfs:label  "British economists"@en .

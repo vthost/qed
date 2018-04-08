@@ -1,0 +1,21 @@
+@prefix ns6:   <http://en.wikipedia.org/wiki/> .
+@prefix ns5:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns8:   <http://pl.wikipedia.org/wiki/> .
+@prefix ns7:   <http://de.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Helmsman  rdfs:comment  "A helmsman is a person who steers a ship, sailboat, submarine, or other type of maritime vessel. In the merchant marine, the person at the helm is usually an able seaman, particularly during ship arrivals, departures, and while maneuvering in restricted waters or other conditions requiring precise steering. An ordinary seaman is commonly restricted to steering in open waters. Moreover, military ships may have a seaman or quartermaster at the wheel."@en , "Als Rudergänger wird derjenige Seemann bezeichnet, der nach den Weisungen des Steuermanns, des nautischen Offiziers oder des Kapitäns bzw. Skippers ein Schiff mit dem Ruder steuert. In der Marine wird der beste Rudergänger als Gefechtsrudergänger bezeichnet. Dieser Begriff hat auch in die Handelsschifffahrt Eingang gefunden. Dieser Rudergänger wird dann eingesetzt, wenn es auf sehr genaues Steuern ankommt, zum Beispiel im Revier oder bei Hafen- oder Anlegemanövern."@de ;
+        rdfs:label      "Helmsman"@en , "Rorsman"@sv ;
+        skos:subject    ns3:Nautical_terms ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/e/e5/Scross_helmsman.jpg> ;
+        foaf:page       <http://de.wikipedia.org/wiki/Ruderg%C3%A4nger> , ns6:Helmsman , ns5:Timonier .
+
+dbpedia:Chief_Engineer
+        rdfs:comment  "A maritime Chief Engineer is a licensed mariner in charge of the engineering department on a merchant vessel. \"Chief Engineer\" is the official title of someone qualified to oversee the entire engine department; the qualification is colloquially called a \"Chief's Ticket\". Commercially, a Chief Engineer is the individual with overall responsibility for the engineering projects undertaken for or by a company. A Chief Engineer may also refer to an occupation in hotel management."@en , "Maskinsjefen er høyeste maskinoffiser og teknisk sjef ombord i skip, hovedsakelig ansvarlig for fremdrift, hjelpemaskineriet ombord, vedlikehold av alt teknisk utstyr og elektriske installasjoner, ansvarlig for å planlegging av verkstedopphold og lede utførelsen. Maskinsjefen er nest rangert etter kapteinen, og leder for alt teknisk personell."@nn ;
+        rdfs:label    "Leitender Ingenieur"@de , "Chief Engineer"@en ;
+        skos:subject  ns3:Nautical_terms ;
+        foaf:page     <http://fr.wikipedia.org/wiki/Chef_m%C3%A9canicien> , ns6:Chief_Engineer , ns7:Leitender_Ingenieur , ns8:Starszy_mechanik , <http://no.wikipedia.org/wiki/Maskinsjef> .

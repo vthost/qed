@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Ghost_Busters
+        dbpprop:creator            "Norman Abbott"@en , "Dick Rosenbloom"@nl ;
+        dbpprop:director           "Dick Rosenbloom"@nl , "Norman Abbott"@en ;
+        dbpprop:executiveProducer  "Dick Rosenbloom"@nl , "Norman Abbott"@en ;
+        dbpprop:guest              "Norman Abbott"@en , "Dick Rosenbloom"@nl ;
+        dbpprop:producer           "Norman Abbott"@en , "Dick Rosenbloom"@nl ;
+        dbpprop:series             "Norman Abbott"@en , "Dick Rosenbloom"@nl ;
+        dbpprop:starring           "Dick Rosenbloom"@nl , "Norman Abbott"@en ;
+        dbpprop:writer             "Dick Rosenbloom"@nl , "Norman Abbott"@en .

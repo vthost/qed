@@ -1,0 +1,38 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Alakina_Mann  a    ns2:Actor ;
+        dbpprop:birthdate  "1990-08-01"^^xsd:date .
+
+dbpedia:Rei_Yoshii  a  ns2:Actor .
+
+dbpedia:Laura_Esterman
+        a                  ns2:Actor ;
+        dbpprop:birthdate  "1945-04-12"^^xsd:date .
+
+dbpedia:Bond_girl  a  ns2:Actor .
+
+dbpedia:Rajshree_Thakur
+        a                  ns2:Actor ;
+        dbpprop:birthdate  "1981-09-22"^^xsd:date .
+
+dbpedia:Ronald_Guttman
+        a       ns2:Actor .
+
+dbpedia:Adrien_Brody  a    ns2:Actor ;
+        dbpprop:birthdate  "1973-04-14"^^xsd:date ;
+        dbpprop:name       "Adrien Brody"@en , "Adrien Brody"@de , "Brody, Adrien"@de , "Arturo jk"@es .
+
+dbpedia:Adam_Herschman
+        a       ns2:Actor .
+
+dbpedia:Sasha_Gabor  a  ns2:Actor .
+
+dbpedia:Jens_Hammer  a  ns2:Actor ;
+        dbpprop:name  "Jens Hammer"@en .
+
+dbpedia:Paige_Turco  a  ns2:Actor ;
+        dbpprop:name  "Turco, Paige"@de , "Paige Turco"@en .

@@ -1,0 +1,5 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Judas_as_Black_Moth
+        rdfs:label  "Judas as Black Moth"@en .

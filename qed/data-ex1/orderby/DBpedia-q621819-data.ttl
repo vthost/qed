@@ -1,0 +1,13 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Denial%2C_Anger%2C_Acceptance>
+        ns1:episodeNumber  3 ;
+        ns1:releaseDate    "1999-01-24"^^xsd:date ;
+        ns1:series         dbpedia:The_Sopranos .
+
+dbpedia:Watching_Too_Much_Television
+        ns1:episodeNumber  46 ;
+        ns1:releaseDate    "2002-10-27"^^xsd:date ;
+        ns1:series         dbpedia:The_Sopranos .

@@ -1,0 +1,23 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/resource/Template:> .
+
+<http://dbpedia.org/resource/Category:Polk_County%2C_Florida>
+        rdfs:label  "Catégorie:Comté de Polk (Floride)"@fr , "Categoria:Condado de Polk (Flórida)"@pt .
+
+dbpedia:List_of_countries
+        rdfs:label  "List of countries"@en , "Valstu uzskaitījumi"@lv , "Списак држава"@sr , "Список країн за алфавітом"@uk , "Országok autójele és domainneve"@hu .
+
+dbpprop:wikilink  rdfs:label  "Wikilink"@nl , "wikilink"@da .
+
+<http://dbpedia.org/resource/Winston%2C_Florida>
+        rdfs:comment                  "Winston is een plaats in de Amerikaanse staat Florida, en valt bestuurlijk gezien onder Polk County."@nl , "Winston é uma região censo-designada localizada no estado americano de Flórida, no Condado de Polk."@pt ;
+        rdfs:label                    "Winston (Flórida)"@pt , "Winston (Florida)"@nl , "Winston (Florida)"@vo ;
+        dbpprop:wikiPageUsesTemplate  ns1:Infobox_Settlement ;
+        dbpprop:wikilink              <http://dbpedia.org/resource/Lakeland_%28Florida%29> , <http://dbpedia.org/resource/Estados_Unidos_da_Am%C3%A9rica> , dbpedia:List_of_countries ;
+        skos:subject                  <http://dbpedia.org/resource/Category:Polk_County%2C_Florida> .
+
+ns1:Infobox_Settlement
+        rdfs:label  "قالب:معلومات مدينة 2"@ar .

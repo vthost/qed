@@ -1,0 +1,68 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "entita" , "valoreProprieta" , "nome" , "prop" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/ontology/MeanOfTransportation> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "British Army Aeroplane No 1"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/British_Army_Aeroplane_No_1> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "British Army Aeroplane No 1"@en ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#label> ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "British Army Aeroplane No 1"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/British_Army_Aeroplane_No_1> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/ontology/Aircraft> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "British Army Aeroplane No 1"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/British_Army_Aeroplane_No_1> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Aircraft102686568> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "British Army Aeroplane No 1"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/British_Army_Aeroplane_No_1> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.w3.org/2002/07/owl#Thing> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "British Army Aeroplane No 1"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/British_Army_Aeroplane_No_1> ;
+                          rs:variable  "entita"
+                        ] ]
+] .

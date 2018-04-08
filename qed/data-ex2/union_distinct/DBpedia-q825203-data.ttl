@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Girl_with_the_Dragon_Tattoo
+        dbpprop:creator            "Millennium Trilogy"@en ;
+        dbpprop:director           "Millennium Trilogy"@en ;
+        dbpprop:executiveProducer  "Millennium Trilogy"@en ;
+        dbpprop:guest              "Millennium Trilogy"@en ;
+        dbpprop:producer           "Millennium Trilogy"@en ;
+        dbpprop:series             "Millennium Trilogy"@en ;
+        dbpprop:starring           "Millennium Trilogy"@en ;
+        dbpprop:writer             "Millennium Trilogy"@en .

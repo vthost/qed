@@ -1,0 +1,44 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Andreneasa_Creek
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  dbpedia:Romania .
+
+<http://dbpedia.org/resource/B%C4%83c%C4%83in%C5%A3i_River>
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  dbpedia:Romania .
+
+<http://dbpedia.org/resource/Albac_River_%28H%C3%A2rtibaciu%29>
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  dbpedia:Romania .
+
+<http://dbpedia.org/resource/Island_Bayou_%28Oklahoma%29>
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  "United States of America"@en .
+
+dbpedia:Necanicum_River
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  "United States"@en .
+
+dbpedia:Clatskanie_River
+        a                ns1:Stream , ns1:River ;
+        dbpprop:country  "United States"@en .
+
+dbpedia:Black_Mingo_Creek
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  dbpedia:United_States .
+
+dbpedia:Volta_River  a   ns1:Stream , ns1:River ;
+        dbpprop:country  "বুর্কিনা ফাসো, ঘানা"@bn .
+
+<http://dbpedia.org/resource/Smith_Creek_%28Virginia%29>
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  dbpedia:United_States .
+
+<http://dbpedia.org/resource/Elk_River_%28North_Carolina%29>
+        a                ns1:River , ns1:Stream ;
+        dbpprop:country  "United States"@en .

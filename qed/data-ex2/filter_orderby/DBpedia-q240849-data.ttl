@@ -1,0 +1,17 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Konstantinos_Tsatsos
+        ns1:birthDate       "1899-07-01"^^xsd:date ;
+        ns1:deathDate       "1987-10-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Greece ;
+        foaf:name           "Konstantinos Tsatsos"@en , "Konstantin Tsatsos"@de .
+
+dbpedia:Michail_Stasinopoulos
+        ns1:birthDate       "1903-07-27"^^xsd:date ;
+        ns1:deathDate       "2002-10-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Greece ;
+        foaf:name           "Μιχαήλ Στασινόπουλος"@en , "Michael Stasinopoulos"@de , "Michail Stasinopoulos"@en .

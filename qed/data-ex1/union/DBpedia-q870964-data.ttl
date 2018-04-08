@@ -1,0 +1,11 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Win_My_Wage  dbpprop:creator  "Hotbed Media"@en ;
+        dbpprop:director           "Hotbed Media"@en ;
+        dbpprop:executiveProducer  "Hotbed Media"@en ;
+        dbpprop:guest              "Hotbed Media"@en ;
+        dbpprop:producer           "Hotbed Media"@en ;
+        dbpprop:series             "Hotbed Media"@en ;
+        dbpprop:starring           "Hotbed Media"@en ;
+        dbpprop:writer             "Hotbed Media"@en .

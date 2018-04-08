@@ -1,0 +1,13 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Edward_V_of_England
+        ns0:abstract    "Edward V was the King of England from 9 April 1483 until he was removed two months later, on 25 June 1483. He was never officially made the king."@en , "Eduard V was van 9 April tot 25 Junie 1483 koning van Engeland. Hy was die seun van Eduard IV van die Huis van York en Elizabeth Woodville. Hy is gebore in die tyd toe Hendrik VI van die Huis van Lancaster vir ’n kort rukkie terug was op die Engelse troon. Sy ma het in dié tyd in die Westminster-abdy geskuil. Toe sy pa weer koning word, het hy die Prins van Wallis geword. Ná die skielike dood van sy pa in 1483 het Eduard op 12-jarige leeftyd die troon geërf onder regentskap van sy oom Richard, die Hertog van Gloucester. Hy is twee maande ná sy troonbestyging saam met sy broer, Richard (9), in die Londense Tower opgesluit, vermoedelik deur Richard, wat die troon vir homself toegeëien het as Richard III. Die prinse is nooit weer gesien nie. Hulle is waarskynlik in die Tower vermoor, óf deur Richard óf deur sy opvolger, Hendrik VII. Saam met Edward VIII, hertogin Matilda en lady Jane Grey is Eduard V een van net vier monarge ná 1066 wat nooit gekroon is nie. As hy, soos waarskynlik is, voor sy vyftiende verjaarsdag dood is, is hy die monarg wat die kortste gelewe het in die geskiedenis van Engeland."@af ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/5/53/King-edward-v.jpg/200px-King-edward-v.jpg> ;
+        dbpprop:imgw    "213"^^xsd:int ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/5/53/King-edward-v.jpg> ;
+        foaf:page       <http://ca.wikipedia.org/wiki/Eduard_V_d%27Anglaterra> , ns5:Edward_V_of_England .

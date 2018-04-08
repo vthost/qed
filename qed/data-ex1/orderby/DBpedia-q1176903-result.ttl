@@ -1,0 +1,56 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "name" , "person" , "birth" , "description" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Marcus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Marcus ist eine Kunstfigur des deutschen House-Musikproduzenten Felix Rennefeld."@de ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1979-12-24"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Marcus"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Marcus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Marcus (born 24 December 1979 in Berlin) is a persona of the German music producer Felix Rennefeld. He has become popular throughout Germany after a series of videos he produced and displayed on youtube."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1979-12-24"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Marcus"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Marcus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Marcus (born 24 December 1979 in Berlin) is a persona of the German music producer Felix Rennefeld. He has become popular throughout Germany after a series of videos he produced and displayed on youtube."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1979-12-24"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Marcus"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Marcus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Marcus ist eine Kunstfigur des deutschen House-Musikproduzenten Felix Rennefeld."@de ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1979-12-24"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Marcus"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .

@@ -1,0 +1,28 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+<http://dbpedia.org/resource/Iroquois%2C_South_Dakota>
+        ns0:populationTotal  278 ;
+        skos:subject         ns2:Cities_in_South_Dakota .
+
+<http://dbpedia.org/resource/Weslaco%2C_Texas>
+        ns0:populationTotal  26935 ;
+        skos:subject         ns2:Cities_in_Texas .
+
+ns2:Cities_in_Texas  skos:broader  ns2:Cities_in_the_United_States_by_state .
+
+ns2:Cities_in_South_Dakota
+        skos:broader  ns2:Cities_in_the_United_States_by_state .
+
+dbpedia:Houston  ns0:populationTotal  2242193 ;
+        skos:subject         ns2:Cities_in_Texas .
+
+dbpedia:Dallas  ns0:populationTotal  1279910 ;
+        skos:subject         ns2:Cities_in_Texas .
+
+<http://dbpedia.org/resource/Fort_Worth%2C_Texas>
+        ns0:populationTotal  720250 ;
+        skos:subject         ns2:Cities_in_Texas .

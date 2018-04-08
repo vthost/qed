@@ -1,0 +1,25 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/We_Are_Marshall> <http://dbpedia.org/ontology/director> ?x0 .
+    <http://dbpedia.org/resource/We_Are_Marshall> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> .
+    <http://dbpedia.org/resource/We_Are_Marshall> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Kate_Mara> .
+    <http://dbpedia.org/resource/We_Are_Marshall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+    <http://dbpedia.org/resource/Party_of_Five> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> .
+    <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> <http://dbpedia.org/property/birthplace> <http://dbpedia.org/resource/United_States> .
+  }
+WHERE
+  { <http://dbpedia.org/resource/We_Are_Marshall>
+              <http://dbpedia.org/ontology/director>  ?x0 ;
+              <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> ;
+              <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Kate_Mara> ;
+              a                     <http://dbpedia.org/ontology/Film> .
+    <http://dbpedia.org/resource/Party_of_Five>
+              <http://dbpedia.org/ontology/starring>  <http://dbpedia.org/resource/Matthew_Fox_%28actor%29> .
+    <http://dbpedia.org/resource/Matthew_Fox_%28actor%29>
+              <http://dbpedia.org/property/birthplace>  <http://dbpedia.org/resource/United_States>
+  }
+LIMIT   10
+
+----------------------------------------------

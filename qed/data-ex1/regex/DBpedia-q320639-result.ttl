@@ -1,0 +1,83 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "kfor" , "label" , "page" , "label_it" , "label_en" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://pt.wikipedia.org/wiki/Software_social> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Software sociale"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Social software"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Social_software> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Software sociale"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Social software"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://de.wikipedia.org/wiki/Soziale_Software> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Software sociale"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Social software"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Programari_social> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Software sociale"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Social software"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Box.net> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Box.net"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://es.wikipedia.org/wiki/Software_social> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Software sociale"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Social software"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Collaboration"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Collaboration"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

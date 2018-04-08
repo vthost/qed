@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Natural_World> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Natural_World> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Natural_World>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Natural_World>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

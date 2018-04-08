@@ -1,0 +1,275 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      FILTER NOT EXISTS { ?club  p:league  :Scottish_Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      FILTER NOT EXISTS { ?club  p:league  :Scottish_Premier_League }
+      { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      { ?club  p:league  :Scottish_Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      { ?club  p:league  :Scottish_Premier_League }
+      { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      { ?club  p:league  :Football_League_Two }
+      FILTER NOT EXISTS { ?club  p:league  :Scottish_Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      { ?club  p:league  :Football_League_Two }
+      FILTER NOT EXISTS { ?club  p:league  :Scottish_Premier_League }
+      { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      { ?club  p:league  :Football_League_Two }
+      { ?club  p:league  :Scottish_Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_One }
+      { ?club  p:league  :Football_League_Two }
+      { ?club  p:league  :Scottish_Premier_League }
+      { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      FILTER NOT EXISTS { ?club  p:league  :Scottish_Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      FILTER NOT EXISTS { ?club  p:league  :Scottish_Premier_League }
+      { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?club p:league ?league .
+    ?club p:league :Premier_League .
+    ?club p:league :Football_League_One .
+    ?club p:league :Football_League_Two .
+    ?club p:league :Scottish_Premier_League .
+    ?club p:league :Football_League_Championship .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?club  p:league  :Premier_League }
+      { ?club  p:league  :Football_League_One }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Two }
+      { ?club  p:league  :Scottish_Premier_League }
+      FILTER NOT EXISTS { ?club  p:league  :Football_League_Championship }
+    }
+    ?club  p:league  ?league
+  }
+LIMIT   10
+
+----------------------------------------------

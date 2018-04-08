@@ -1,0 +1,21 @@
+@prefix ns6:   <http://eu.wikipedia.org/wiki/> .
+@prefix ns5:   <http://it.wikipedia.org/wiki/> .
+@prefix ns8:   <http://es.wikipedia.org/wiki/> .
+@prefix ns7:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns9:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+ns3:Renewable_energy_companies
+        rdfs:label  "Renewable energy companies"@en .
+
+dbpedia:Acciona  rdfs:label  "Acciona"@en , "Acciona"@it ;
+        skos:subject  ns3:Renewable_energy_companies ;
+        foaf:page     ns9:Acciona , ns8:Acciona , ns7:Acciona , ns6:Acciona , ns5:Acciona .
+
+dbpedia:Good_Energy  rdfs:label  "Good Energy"@en ;
+        skos:subject  ns3:Renewable_energy_companies ;
+        foaf:page     ns9:Good_Energy .

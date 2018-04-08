@@ -1,0 +1,224 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( lang(?artistName) = "en" )
+    FILTER regex(?albumTitle, "")
+    FILTER regex(?artistName, "")
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( ! ( lang(?artistName) = "en" ) )
+    FILTER regex(?albumTitle, "")
+    FILTER regex(?artistName, "")
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( lang(?artistName) = "en" )
+    FILTER ( ! regex(?albumTitle, "") )
+    FILTER regex(?artistName, "")
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( ! ( lang(?artistName) = "en" ) )
+    FILTER ( ! regex(?albumTitle, "") )
+    FILTER regex(?artistName, "")
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( lang(?artistName) = "en" )
+    FILTER regex(?albumTitle, "")
+    FILTER ( ! regex(?artistName, "") )
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( ! ( lang(?artistName) = "en" ) )
+    FILTER regex(?albumTitle, "")
+    FILTER ( ! regex(?artistName, "") )
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( lang(?artistName) = "en" )
+    FILTER ( ! regex(?albumTitle, "") )
+    FILTER ( ! regex(?artistName, "") )
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?s dbpedia2:artist ?artist .
+    ?s dbpedia2:name ?albumTitle .
+    ?s foaf:page ?wpURL .
+    ?s dbpedia2:released ?releaseDate .
+    ?s dbpedia2:cover ?coverURL .
+    ?artist rdfs:label ?artistName .
+  }
+WHERE
+  { FILTER ( ! ( lang(?artistName) = "en" ) )
+    FILTER ( ! regex(?albumTitle, "") )
+    FILTER ( ! regex(?artistName, "") )
+    ?s       dbpedia2:artist    ?artist ;
+             dbpedia2:name      ?albumTitle ;
+             foaf:page          ?wpURL ;
+             dbpedia2:released  ?releaseDate ;
+             dbpedia2:cover     ?coverURL .
+    ?artist  rdfs:label         ?artistName
+  }
+LIMIT   10
+
+----------------------------------------------

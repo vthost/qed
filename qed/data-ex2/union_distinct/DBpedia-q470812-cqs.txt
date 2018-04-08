@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Tenko_and_the_Guardians_of_the_Magic>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

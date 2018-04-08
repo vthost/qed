@@ -1,0 +1,15 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Abbyville%2C_Kansas>
+        a         ns1:City ;
+        geo:lat   37.9706 , "37.9706"^^xsd:float ;
+        geo:long  "-98.2039"^^xsd:float , -98.2039 .
+
+dbpedia:Portsmouth  a  ns1:City ;
+        geo:lat   "50.8167"^^xsd:float ;
+        geo:long  "-1.08333"^^xsd:float , -1.08333 .

@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Spione> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/Spione> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/Spione>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Spione>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

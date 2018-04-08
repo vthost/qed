@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label" , "entities" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Han purple and Han blue"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Han_purple_and_Han_blue> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Green in Islam"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Green_in_Islam> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Vermilion"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Vermilion> ;
+                          rs:variable  "entities"
+                        ] ]
+] .

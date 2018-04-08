@@ -1,0 +1,385 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ?seasons > 4 )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ! ( ?seasons > 4 ) )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ?seasons > 4 )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ! ( ?seasons > 4 ) )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ?seasons > 4 )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ! ( ?seasons > 4 ) )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ?seasons > 4 )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ! ( ?seasons > 4 ) )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ?seasons > 4 )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ! ( ?seasons > 4 ) )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  ont:  <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdfsyntax-ns#>
+PREFIX  prop: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  fb:   <http://rdf.freebase.com/ns/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  db:   <http://dbpedia.org/resource/>
+
+CONSTRUCT 
+  { 
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:network ?network .
+    ?dbpedia prop:showName ?name .
+    ?dbpedia prop:numSeasons ?seasons .
+    ?dbpedia owl:sameAs ?freebase .
+  }
+WHERE
+  { { ?dbpedia  owl:sameAs  ?freebase
+      FILTER ( ?seasons > 4 )
+      ?dbpedia  prop:showName    ?name ;
+                prop:numSeasons  ?seasons
+      { FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "HBO")
+                          }
+        FILTER NOT EXISTS { ?dbpedia  prop:network  ?network
+                            FILTER regex(?network, "Showtime")
+                          }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

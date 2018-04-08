@@ -1,0 +1,5 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Jakarta_Tower
+        rdfs:label  "Menara Jakarta"@in , "Джакартская телебашня"@ru , "Jakarta Tower"@en , "Menara Jakarta"@fr , "Jakarta Tower"@de .

@@ -1,0 +1,12 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Overboard_%28film%29>
+        dbpprop:starring  dbpedia:Goldie_Hawn , dbpedia:Kurt_Russell .
+
+dbpedia:Goldie_Hawn  a  ns2:Actor .
+
+dbpedia:Kurt_Russell  a  ns2:Actor ;
+        ns2:partner  dbpedia:Goldie_Hawn .

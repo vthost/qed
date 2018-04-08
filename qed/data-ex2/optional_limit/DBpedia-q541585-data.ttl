@@ -1,0 +1,12 @@
+@prefix ns5:   <http://eu.wikipedia.org/wiki/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns4:   <http://en.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Tiberius  ns0:abstract  "Tiberius Caesar Augustus, born Tiberius Claudius Nero, was the second Roman Emperor. He ruled from 14 to 37 AD."@en , "Tiberio Zésar Augusto (Tiberius Caesar Augustus en latín, naxito Tiberius Claudius Nero) naxito de Roma o 16 de nobiembre de 42 aC - muerto en †Miseno, 16 de marzo de 37) estió o suzesor de Zésar Augusto como emperador d'o Imperio román."@an ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tiberius_NyCarlsberg_Mirrored.png/200px-Tiberius_NyCarlsberg_Mirrored.png> ;
+        dbpprop:imgw    "250px"@en ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/e/e5/Tiberius_NyCarlsberg_Mirrored.png> ;
+        foaf:page       ns5:Tiberio , ns4:Tiberius .

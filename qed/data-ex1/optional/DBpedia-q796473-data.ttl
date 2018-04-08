@@ -1,0 +1,4 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/1st_Fighter_Wing>
+        rdfs:label  "1st Fighter Wing"@en , "1st Fighter Wing"@fr .

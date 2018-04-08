@@ -1,0 +1,33 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns4:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Charlotte_of_Mecklenburg-Strelitz
+        dbpprop:dateOfBirth   "1744-05-19"^^xsd:date ;
+        dbpprop:placeOfBirth  dbpedia:Germany ;
+        dbpprop:placeOfDeath  dbpedia:United_Kingdom_of_Great_Britain_and_Ireland .
+
+dbpedia:Switzerland  a  ns4:Country .
+
+dbpedia:Louis_Daguerre
+        dbpprop:dateOfBirth   "1787-11-18"^^xsd:date ;
+        dbpprop:placeOfBirth  dbpedia:France ;
+        dbpprop:placeOfDeath  dbpedia:France .
+
+dbpedia:Reynaldo_Hahn
+        dbpprop:dateOfBirth   "1874-08-09"^^xsd:date ;
+        dbpprop:placeOfBirth  dbpedia:Caracas , dbpedia:Venezuela ;
+        dbpprop:placeOfDeath  dbpedia:France .
+
+dbpedia:Giovanni_Rossi
+        dbpprop:dateOfBirth   "1926-05-07"^^xsd:date ;
+        dbpprop:placeOfBirth  dbpedia:France ;
+        dbpprop:placeOfDeath  dbpedia:Switzerland .
+
+dbpedia:France  a  ns4:Country .
+
+dbpedia:United_Kingdom_of_Great_Britain_and_Ireland
+        a       ns4:Country .

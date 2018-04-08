@@ -1,0 +1,12 @@
+@prefix ns5:   <http://dbpedia.org/resource/Category:> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Alan_Wren  rdfs:comment  "Alan John Wren (born on 10 April 1964, in Manchester, England), better known as Reni, was the drummer of The Stone Roses from 1984 to 1995. Reni is considered by many to be the best drummer of his generation, and the \"single most important drummer in UK indie circles\" and according to former Hacienda General Manager Howard Jones, he \"played the drums like Hendrix played the guitar."@en , "Alan John Wren, mejor conocido como Reni, nació en 10 de abril de 1964 en Mánchester, Inglaterra. Fue baterista de The Stone Roses entre los años 1984 y 1995. Reni es considerado como uno de los mejores bateristas de su generación, y como el \"baterista más importante del círculo indie del Reino Unido\" (Rhythm, 2004). Según el ex Gerente General de The Haçienda Howard Jones \"tocaba la batería como Hendrix tocaba la guitarra\"."@es , "Alan Wren, bedre kjent som Reni, er en britisk trommeslager. Han var et medlem av The Stone Roses fra 1985 til 1995. Reni er en mediesky person, og derfor er mye uvisst om omstendighetene rundt hans grunnlag for å trekke seg fra bandet. The Stone Roses ble oppløst et år etter at Reni trakk seg. Reni kan spille gitar, bassgitar og piano i tillegg til trommer. Etter hans tid i The Stone Roses startet Reni bandet The Rub, hvor han spiller gitar."@nn ;
+        ns3:birthDate  "1964-04-10"^^xsd:date ;
+        skos:subject   ns5:The_Stone_Roses_members ;
+        foaf:name      "Reni"@en .

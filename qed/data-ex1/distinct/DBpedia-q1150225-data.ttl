@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Magic_Kitchen
+        dbpprop:creator            dbpedia:John_Chong ;
+        dbpprop:director           dbpedia:John_Chong ;
+        dbpprop:executiveProducer  dbpedia:John_Chong ;
+        dbpprop:guest              dbpedia:John_Chong ;
+        dbpprop:producer           dbpedia:John_Chong ;
+        dbpprop:series             dbpedia:John_Chong ;
+        dbpprop:starring           dbpedia:John_Chong ;
+        dbpprop:writer             dbpedia:John_Chong .

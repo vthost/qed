@@ -1,0 +1,14 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Henry_II%2C_Holy_Roman_Emperor>
+        ns1:birthDate       "0973-05-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Germany ;
+        foaf:name           "Saint Henry II, Holy Roman Emperor"@en , "Heinrich II."@de , "Holy Roman Emperor Henry II"@en .
+
+dbpedia:Otto_Mencke  ns1:birthDate  "1644-03-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Germany ;
+        foaf:name           "Otto Mencke"@en , "Otto Mencke"@de .

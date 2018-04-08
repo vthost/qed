@@ -1,0 +1,12 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:List_of_non-fiction_writers
+        skos:subject  ns1:Writers_by_non-fiction_subject_area .
+
+ns1:Writers_by_non-fiction_subject_area
+        rdfs:label  "Writers by non-fiction subject area"@en , "분류:저술가"@ko ;
+        foaf:page   <http://tr.wikipedia.org/wiki/Kategori:Konular%C4%B1na_g%C3%B6re_kurgusal_olmayan_yazarlar> , <http://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%EC%A0%80%EC%88%A0%EA%B0%80> , <http://ro.wikipedia.org/wiki/Categorie:Scriitori_dup%C4%83_domeniu_non-fic%C5%A3iune> .

@@ -1,0 +1,17 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "sameas" , "description" , "title" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000ad26b8c> ;
+                                     rs:variable  "sameas"
+                                   ] ;
+            rs:binding  [ rs:value     "Glee is anAmerican musical comedy-drama television series that airs on Fox in the United States. It focuses on a high school glee club called \"New Directions\", at the fictional William McKinley High School in Lima, Ohio. The pilot episode of the show was broadcast after American Idol on May 19, 2009, and the first season began airing on September 9, 2009. On September 21, 2009, Fox officially gave the series a full-season pick-up."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Glee"@en ;
+                          rs:variable  "title"
+                        ] ]
+] .

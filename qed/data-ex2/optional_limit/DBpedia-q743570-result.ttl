@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fi.wikipedia.org/wiki/Tetricus_II> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Antoninianus_Tetricus_II-s3191.jpg/200px-Antoninianus_Tetricus_II-s3191.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/9/92/Antoninianus_Tetricus_II-s3191.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Caius Pius Esuvius Tetricus (also seen as Gaius Pius Esuvius Tetricus but better known in English as Tetricus II) was the son of Tetricus I, Emperor of the Gallic Empire (270-274). In 273, he was raised to the rank of Caesar, with the title of princeps iuventutis, and in January 274 he started his first consulship, together with his father. After the defeat and deposition of his father in the autumn of 274, he appeared as a prisoner in Aurelian's triumph, but the emperor spared their lives. According to some sources, he even kept his senatorial rank."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tetricus_II> ;
+                          rs:variable  "king"
+                        ] ]
+] .

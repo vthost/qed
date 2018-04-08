@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Caligula> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "250px"@en ;
+                          rs:variable  "imgw"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Gaius_Caesar_Caligula.jpg/200px-Gaius_Caesar_Caligula.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/3/35/Gaius_Caesar_Caligula.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Gaius Julius Caesar Augustus Germanicus, better known by his nickname, Caligula, was the third Roman Emperor from 37 AD to when he died in 41 AD. He was born in 12 AD and was assassinated by members of his bodyguard and the Roman Senate. He was popular with the Roman public in his time but most historians now consider him insane and a tyrant. He was a member of the Julio-Claudian dynasty founded by Augustus."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Caligula> ;
+                          rs:variable  "king"
+                        ] ]
+] .

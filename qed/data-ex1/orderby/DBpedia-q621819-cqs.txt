@@ -1,0 +1,16 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    ?e <http://dbpedia.org/ontology/series> <http://dbpedia.org/resource/The_Sopranos> .
+    ?e <http://dbpedia.org/ontology/releaseDate> ?date .
+    ?e <http://dbpedia.org/ontology/episodeNumber> ?number .
+  }
+WHERE
+  { ?e  <http://dbpedia.org/ontology/series>  <http://dbpedia.org/resource/The_Sopranos> ;
+        <http://dbpedia.org/ontology/releaseDate>  ?date ;
+        <http://dbpedia.org/ontology/episodeNumber>  ?number
+  }
+LIMIT   10
+
+----------------------------------------------

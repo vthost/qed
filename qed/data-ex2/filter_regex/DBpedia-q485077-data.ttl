@@ -1,0 +1,15 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Gabriela_Zapolska
+        a               ns3:Writer , foaf:Person ;
+        ns3:birthPlace  dbpedia:Lutsk ;
+        foaf:name       "Gabriela Zapolska"@de , "Gabriela Zapolska"@en .
+
+dbpedia:Johann_Wolfgang_von_Goethe
+        a               ns3:Writer , foaf:Person ;
+        ns3:birthPlace  dbpedia:Free_City_of_Frankfurt ;
+        foaf:name       "Johann Wolfgang von Goethe"@en , "Johann Wolfgang von Goethe"@de .

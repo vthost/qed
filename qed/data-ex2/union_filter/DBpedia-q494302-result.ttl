@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label" , "entities" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Bohol Sea"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Bohol_Sea> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Camotes Sea"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Camotes_Sea> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Sulu Sea"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sulu_Sea> ;
+                          rs:variable  "entities"
+                        ] ]
+] .

@@ -1,0 +1,44 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "long" , "lat" , "label" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "-3.68333"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     "40.0"^^xsd:float ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Madrid"@de ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "-3.68333"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     "40.0"^^xsd:float ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Madrit"@an ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "-3.68333"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     "40.0"^^xsd:float ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Madrid"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "-3.68333"^^xsd:float ;
+                                     rs:variable  "long"
+                                   ] ;
+            rs:binding  [ rs:value     "40.0"^^xsd:float ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Madrid"@af ;
+                          rs:variable  "label"
+                        ] ]
+] .

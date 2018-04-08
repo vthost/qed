@@ -1,0 +1,11 @@
+@prefix ns5:   <http://fi.wikipedia.org/wiki/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix ns4:   <http://ca.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://en.wikipedia.org/wiki/> .
+
+dbpedia:Mariniana  ns0:abstract  "Egnatia Mariniana probably was the wife of Roman Emperor Valerian and mother of Emperor Gallienus and Valerianus Minor. Several coins bearing the legend date back to the beginning of the reign of Valerian and Gallienus. Given the use of deifying the wife's dead before their husbands' accession to the throne, it is possible Mariniana died before 253. It is possible that Egnatius Victor Marinianus, Legatus of Arabia Petraea and Moesia Superior, was the father of Mariniana. If this is true, Mariniana is also the mother of Gallienus, whose name was Publius Licinius Egnatius Gallienus. Other sources, however, make her the daughter of Lucius Egnatius Victor and sister of Lucius Egnatius Victor Lollianus, which makes him her uncle or perhaps brother. This is sustained by the fact that her great-great-great-great-great-nephew was named Flavius Avitus Marinianus."@en , "Mariniana fou una dama romana d'alt rang que apareix en diverses monedes com a Divae Marinianae, amb data de l'any 254. Fou probablement la dona, la germana o la filla de Valerià I. La teoria més probable es que fos la mare de Valerià (II) ja que se sap que Valerià junior i Gal·liè eren germanastres (de diferenta mare) i com que la mare de Gal·liè es deia probablement Gal·liena, la mare de Valerià es devia dir Mariniana o Mariana. Va morir al menys quatre anys abans de l'expedició a Pèrsia."@ca ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/089_Mariniana.jpg/200px-089_Mariniana.jpg> ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/6/67/089_Mariniana.jpg> ;
+        foaf:page       ns5:Egnatia_Mariniana , ns4:Mariniana , ns3:Mariniana .

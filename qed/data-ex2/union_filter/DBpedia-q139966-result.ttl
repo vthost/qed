@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "sameas" , "description" , "title" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://mpii.de/yago/resource/KSIQ> ;
+                                     rs:variable  "sameas"
+                                   ] ;
+            rs:binding  [ rs:value     "KSIQ is a move-in FM station from Brawley to San Diego . The station is licensed to Campo, California, east of San Diego and West of El Centro. It airs a Rhythmic CHR-leaning Top 40 Mainstream Format."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "KSIQ"@en ;
+                          rs:variable  "title"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000005616081> ;
+                                     rs:variable  "sameas"
+                                   ] ;
+            rs:binding  [ rs:value     "KSIQ is a move-in FM station from Brawley to San Diego . The station is licensed to Campo, California, east of San Diego and West of El Centro. It airs a Rhythmic CHR-leaning Top 40 Mainstream Format."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "KSIQ"@en ;
+                          rs:variable  "title"
+                        ] ]
+] .

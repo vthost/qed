@@ -1,0 +1,26 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?person dbpedia2:nationalteam :Spain_national_football_team .
+    ?person dbpedia2:clubs <http://dbpedia.org/resource/Real_Madrid_C.F.> .
+    ?person foaf:name ?name .
+  }
+WHERE
+  { ?person  dbpedia2:nationalteam  :Spain_national_football_team ;
+             dbpedia2:clubs        <http://dbpedia.org/resource/Real_Madrid_C.F.> ;
+             foaf:name             ?name
+  }
+LIMIT   10
+
+----------------------------------------------

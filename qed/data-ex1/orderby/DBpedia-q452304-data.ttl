@@ -1,0 +1,14 @@
+@prefix ns5:   <http://dbpedia.org/resource/Category:> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Alexander_Marcus
+        rdfs:comment    "Alexander Marcus (born 24 December 1979 in Berlin) is a persona of the German music producer Felix Rennefeld. He has become popular throughout Germany after a series of videos he produced and displayed on youtube."@en , "Alexander Marcus ist eine Kunstfigur des deutschen House-Musikproduzenten Felix Rennefeld."@de ;
+        ns3:birthDate   "1979-12-24"^^xsd:date ;
+        ns3:birthPlace  dbpedia:Berlin ;
+        skos:subject    ns5:German_musicians ;
+        foaf:name       "Alexander Marcus"@de , "Alexander Marcus"@en .

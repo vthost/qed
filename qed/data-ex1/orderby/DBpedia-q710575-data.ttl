@@ -1,0 +1,11 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Roger_Revelle
+        ns1:birthDate       "1909-03-07"^^xsd:date ;
+        ns1:deathDate       "1991-07-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:Washington ;
+        foaf:name           "Roger Revelle"@en , "Roger Revelle"@de .

@@ -1,0 +1,92 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "prop" , "nome" , "valoreProprieta" , "entita" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/ontology/Artist> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/ontology/Actor> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.w3.org/2002/07/owl#Thing> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/ontology/Person> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/class/yago/LivingPeople> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Russell Crowe"@en ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#label> ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/Person> ;
+                                     rs:variable  "valoreProprieta"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "prop"
+                        ] ;
+            rs:binding  [ rs:value     "Russell Crowe"@en ;
+                          rs:variable  "nome"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Crowe> ;
+                          rs:variable  "entita"
+                        ] ]
+] .

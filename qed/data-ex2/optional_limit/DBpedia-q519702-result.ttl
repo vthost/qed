@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fr.wikipedia.org/wiki/Ethelred_II_d%27Angleterre> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/EthelUn.jpg/200px-EthelUn.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/a/a1/EthelUn.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Æthelred the Unready, or Æthelred II (c. 968 – 23 April 1016), was king of the English (978–1013 and 1014–1016). He was son of King Edgar and Queen Ælfthryth. Æthelred was only about 10 (no more than 13) when his half-brother Edward was murdered. Æthelred was not personally suspected of participation, but as the murder was committed at Corfe Castle by the attendants of Ælfthryth, it made it more difficult for the new king to rally the nation against the invader, especially as a legend of St Edward the Martyr soon grew. Later, Æthelred ordered a massacre of Danish settlers in 1002 and also paid tribute, or Danegeld, to Danish leaders from 991 onwards. His reign was much troubled by Danish Viking raiders. In 1013, Æthelred fled to Normandy and was replaced by Sweyn, who was also king of Denmark. However, Æthelred returned as king after Sweyn died in 1014. \"Unready\" is a mistranslation of Old English unræd (meaning bad-counsel) – a twist on his name \"Æthelred\" (meaning noble-counsel)."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/%C3%86thelred_the_Unready> ;
+                          rs:variable  "king"
+                        ] ]
+] .

@@ -1,0 +1,17 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "poza" , "abstract" , "tip" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Xerox_Roman_PS_Daisywheel_-_mono.jpg/200px-Xerox_Roman_PS_Daisywheel_-_mono.jpg> ;
+                                     rs:variable  "poza"
+                                   ] ;
+            rs:binding  [ rs:value     "Daisy wheel printers use an impact printing technology invented in 1969 by David S. Lee at Diablo Data Systems. It uses interchangeable pre-formed type elements, each with typically 96 glyphs, to generate high-quality output comparable to premium typewriters such as the IBM \"Golfball\" Selectric, but three times faster. Daisy-wheel printing was used in electronic typewriters, word processors and computer systems from 1972. By 1980 daisy-wheel printers had become the dominant technology for high-quality print. Dot-matrix impact or thermal printers were used where higher speed was required and poor print quality was acceptable. Both technologies were rapidly superseded for most purposes when dot-based printers&mdash;in particular laser printers&mdash;that could print any characters or graphics rather than being restricted to a limited character set became able to produce output of comparable quality. Daisy-wheel technology is now found only in some electronic typewriters."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Daisy_wheel_printer> ;
+                          rs:variable  "tip"
+                        ] ]
+] .

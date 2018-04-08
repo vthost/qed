@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/The_Philadelphia_Story_%28film%29>
+        dbpprop:creator            dbpedia:Joseph_L._Mankiewicz , dbpedia:George_Cukor , <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> ;
+        dbpprop:director           <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> , dbpedia:George_Cukor , dbpedia:Joseph_L._Mankiewicz ;
+        dbpprop:executiveProducer  <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> , dbpedia:Joseph_L._Mankiewicz , dbpedia:George_Cukor ;
+        dbpprop:guest              dbpedia:George_Cukor , dbpedia:Joseph_L._Mankiewicz , <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> ;
+        dbpprop:producer           dbpedia:Joseph_L._Mankiewicz , <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> , dbpedia:George_Cukor ;
+        dbpprop:series             dbpedia:George_Cukor , <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> , dbpedia:Joseph_L._Mankiewicz ;
+        dbpprop:starring           dbpedia:George_Cukor , <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> , dbpedia:Joseph_L._Mankiewicz ;
+        dbpprop:writer             dbpedia:Joseph_L._Mankiewicz , dbpedia:George_Cukor , <http://dbpedia.org/resource/%E5%96%AC%E6%B2%BB%C2%B7%E4%B8%98%E5%85%8B> .

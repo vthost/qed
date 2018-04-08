@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://eu.wikipedia.org/wiki/Graziano> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "200px"@en ;
+                          rs:variable  "imgw"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/TGratian.png/200px-TGratian.png> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/d/dd/TGratian.png> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "For other figures with this name, see Gratian (disambiguation). Flavius Gratianus (18 April/23 May 359 &ndash; 25 August 383), known usually by the anglicised name Gratian, was a Western Roman Emperor from 375 to 383. He favoured the Christian religion against Roman polytheism, refusing the traditional polytheistic attributes of the emperors and removing the Altar of Victory from the Roman Senate."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gratian> ;
+                          rs:variable  "king"
+                        ] ]
+] .

@@ -1,0 +1,13 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Alice_%28Italian_singer%29>
+        a                         ns1:MusicalArtist ;
+        ns1:activeYearsStartYear  "1971-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns1:associatedBand        dbpedia:Franco_Battiato .
+
+dbpedia:Daddy_Kev  a              ns1:MusicalArtist ;
+        ns1:activeYearsStartYear  "1992-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns1:associatedBand        dbpedia:Busdriver .

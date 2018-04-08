@@ -1,0 +1,4 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Tony_Hart  rdfs:label  "Tony Hart"@cy , "Tony Hart"@en , "Tony Hart"@de .

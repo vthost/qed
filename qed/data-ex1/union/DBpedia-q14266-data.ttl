@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Legend_of_Dick_and_Dom
+        dbpprop:creator            "Steve Ryde"@en , "Dez McCarthy"@en , "Jeremy Wooding"@en ;
+        dbpprop:director           "Dez McCarthy"@en , "Steve Ryde"@en , "Jeremy Wooding"@en ;
+        dbpprop:executiveProducer  "Jeremy Wooding"@en , "Dez McCarthy"@en , "Steve Ryde"@en ;
+        dbpprop:guest              "Dez McCarthy"@en , "Steve Ryde"@en , "Jeremy Wooding"@en ;
+        dbpprop:producer           "Steve Ryde"@en , "Dez McCarthy"@en , "Jeremy Wooding"@en ;
+        dbpprop:series             "Jeremy Wooding"@en , "Steve Ryde"@en , "Dez McCarthy"@en ;
+        dbpprop:starring           "Dez McCarthy"@en , "Steve Ryde"@en , "Jeremy Wooding"@en ;
+        dbpprop:writer             "Jeremy Wooding"@en , "Steve Ryde"@en , "Dez McCarthy"@en .

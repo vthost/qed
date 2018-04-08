@@ -1,0 +1,50 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  resource: <http://dbpedia.org/resource/>
+PREFIX  property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  category: <http://dbpedia.org/resource/Category:>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbo:populationTotal ?populationTotal .
+  }
+WHERE
+  { FILTER ( ?populationTotal > 1000000 )
+    ?id  dbo:populationTotal  ?populationTotal
+    { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+    ?id  skos:subject  ?usc
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbo:  <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  resource: <http://dbpedia.org/resource/>
+PREFIX  property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  category: <http://dbpedia.org/resource/Category:>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbo:populationTotal ?populationTotal .
+  }
+WHERE
+  { FILTER ( ! ( ?populationTotal > 1000000 ) )
+    ?id  dbo:populationTotal  ?populationTotal
+    { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+    ?id  skos:subject  ?usc
+  }
+LIMIT   10
+
+----------------------------------------------

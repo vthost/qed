@@ -1,0 +1,18 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix ns4:   <http://eu.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://dbpedia.org/resource/Atom_%28standard%29>
+        rdfs:comment    "The name Atom applies to a pair of related standards. The Atom Syndication Format is an XML language used for web feeds, while the Atom Publishing Protocol (AtomPub or APP) is a simple HTTP-based protocol for creating and updating web resources. Web feeds allow software programs to check for updates published on a website."@en , "Atom (plným názvem Atom Syndication Format) je webový standard pro publikování syndikovaného obsahu, přijatý IETF v prosinci 2005 jako RFC 4287. Je nástupcem formátu RSS. Kromě něj je pod RFC 5023 v říjnu 2007 přijat také Atom Publishing Protocol (zkráceně APP či AtomPub) umožňující vytváření a aktualizaci webových zdrojů ve formátu Atom pomocí HTTP."@cs ;
+        rdfs:label      "Atom (standard)"@en , "Atom"@ca ;
+        skos:subject    ns2:Atom ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg> ;
+        foaf:page       <http://ar.wikipedia.org/wiki/%D8%B5%D9%8A%D8%BA%D8%A9_%D8%A3%D8%AA%D9%88%D9%85> , ns4:Atom , <http://en.wikipedia.org/wiki/Atom_%28standard%29> .
+
+<http://dbpedia.org/resource/Sage_%28Mozilla_Firefox_extension%29>
+        rdfs:comment  "Sage is a lightweight RSS and atom feed aggregator extension for the Mozilla Firefox web browser. The extension was developed by Peter Andrews and Erik Arvidsson. The current stable release of Sage is version 1.4.5, compatible with Firefox 3.6, released on February 8, 2010. Sage won the most \"Most Innovative\" award in Mozilla's 2006 \"Extend Firefox\" competition."@en , "Sage è un'estensione per Mozilla Firefox che permette di leggere direttamente nel browser i feed RSS, XML ed Atom. L'estensione è stata sviluppata da Peter Andrews ed Erik Arvidsson. L'attuale versione stabile di Sage è la versione 1.4.3, rilasciata il 13 Luglio 2009, ed è compatibile con Mozilla Firefox 3.5. Sage ha vinto il premio \"Most Innovative\" nell'edizione 2006 della competizione \"Extend Firefox\"."@it ;
+        rdfs:label    "Sage (Mozilla Firefox extension)"@en , "Sage (estensione)"@it ;
+        skos:subject  ns2:Atom ;
+        foaf:page     <http://it.wikipedia.org/wiki/Sage_%28estensione%29> , <http://pl.wikipedia.org/wiki/Sage_%28Firefox%29> , <http://en.wikipedia.org/wiki/Sage_%28Mozilla_Firefox_extension%29> .

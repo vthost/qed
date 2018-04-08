@@ -1,0 +1,11 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Dad%27s_Army>
+        dbpprop:creator            "Harold Snoad"@en , "David Croft"@en , "Bob Spiers"@en ;
+        dbpprop:director           "Bob Spiers"@en , "David Croft"@en , "Harold Snoad"@en ;
+        dbpprop:executiveProducer  "Harold Snoad"@en , "David Croft"@en , "Bob Spiers"@en ;
+        dbpprop:guest              "Harold Snoad"@en , "Bob Spiers"@en , "David Croft"@en ;
+        dbpprop:producer           "Bob Spiers"@en , "David Croft"@en , "Harold Snoad"@en ;
+        dbpprop:series             "Harold Snoad"@en , "Bob Spiers"@en , "David Croft"@en ;
+        dbpprop:starring           "Harold Snoad"@en , "David Croft"@en , "Bob Spiers"@en ;
+        dbpprop:writer             "Harold Snoad"@en , "David Croft"@en , "Bob Spiers"@en .

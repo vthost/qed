@@ -1,0 +1,13 @@
+@prefix ns6:   <http://nn.wikipedia.org/wiki/> .
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Fjordkraft  rdfs:label  "Fjordkraft"@nn , "Fjordkraft"@en ;
+        skos:subject  ns3:Statkraft ;
+        foaf:page     ns6:Fjordkraft , ns5:Fjordkraft .
+
+ns3:Statkraft  rdfs:label  "Statkraft"@en .

@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+dbpedia:Cody_Hawkins  ns1:sport  dbpedia:American_football ;
+        ns1:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Cody_Hawkins_Colorado.jpg/200px-Cody_Hawkins_Colorado.jpg> ;
+        dc:description  "American football quarterback"@en .
+
+<http://dbpedia.org/resource/Vernon_Smith_%28American_football%29>
+        ns1:sport       dbpedia:American_football ;
+        ns1:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Catfish_Smith.jpg/200px-Catfish_Smith.jpg> ;
+        dc:description  "football player, baseball player, military serviceman"@en .

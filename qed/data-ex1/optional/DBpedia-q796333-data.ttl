@@ -1,0 +1,8 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Havenhoofd  rdfs:label  "Havenhoofd"@en , "Havenhoofd"@fr , "Havenhoofd (plaats)"@nl ;
+        geo:lat     51.8333 ;
+        geo:long    "4.00611"^^xsd:float .

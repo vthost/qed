@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Calendar_Girls
+        dbpprop:creator            dbpedia:Nigel_Cole , dbpedia:Nick_Barton ;
+        dbpprop:director           dbpedia:Nick_Barton , dbpedia:Nigel_Cole ;
+        dbpprop:executiveProducer  dbpedia:Nigel_Cole , dbpedia:Nick_Barton ;
+        dbpprop:guest              dbpedia:Nick_Barton , dbpedia:Nigel_Cole ;
+        dbpprop:producer           dbpedia:Nigel_Cole , dbpedia:Nick_Barton ;
+        dbpprop:series             dbpedia:Nick_Barton , dbpedia:Nigel_Cole ;
+        dbpprop:starring           dbpedia:Nigel_Cole , dbpedia:Nick_Barton ;
+        dbpprop:writer             dbpedia:Nigel_Cole , dbpedia:Nick_Barton .

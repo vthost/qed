@@ -1,0 +1,56 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "birth" , "name" , "death" , "person" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_Otto_Reinhold_Windaus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Adolf Otto Reinhold Windaus fou un metge, químic i professor universitari alemany guardonat amb el Premi Nobel de Química l'any 1928."@ca ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1876-12-25"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Adolf Otto Reinhold Windaus"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_Otto_Reinhold_Windaus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Adolf Otto Reinhold Windaus fou un metge, químic i professor universitari alemany guardonat amb el Premi Nobel de Química l'any 1928."@ca ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1876-12-25"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Adolf Windaus"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_Otto_Reinhold_Windaus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "أدولف فينداوس هو كيميائي ألماني ولد في 25 ديسمبر 1876 في برلين وتوفي في 9 جوان 1959. نال جائزة نوبل في الكيمياء سنة 1928 نظراً لأبحاثه في علاقة الستيرولات بالفيتامينات. إهتم أولا بالأدب ولكنه إنصرف لدراسة الطب في سنة 1895. تأثر بمحاضرات الفائز بجائوة نوبل إميل فيشر. إلتقى بأوتو ديلس الذي فاز بجائزة نوبل سنة 1950 وعقد معه صداقة متينة. في سنة 1901 ذهب إلى فرايبورغ حيث قام بأبحاث حول الكوليسترول. في سنة 1906 بدأ في التدريس في جامعة انسبرك ومن ثم في جامعة جوتنجن بين 1915 و 1944."@ar ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1876-12-25"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Adolf Otto Reinhold Windaus"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_Otto_Reinhold_Windaus> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "أدولف فينداوس هو كيميائي ألماني ولد في 25 ديسمبر 1876 في برلين وتوفي في 9 جوان 1959. نال جائزة نوبل في الكيمياء سنة 1928 نظراً لأبحاثه في علاقة الستيرولات بالفيتامينات. إهتم أولا بالأدب ولكنه إنصرف لدراسة الطب في سنة 1895. تأثر بمحاضرات الفائز بجائوة نوبل إميل فيشر. إلتقى بأوتو ديلس الذي فاز بجائزة نوبل سنة 1950 وعقد معه صداقة متينة. في سنة 1901 ذهب إلى فرايبورغ حيث قام بأبحاث حول الكوليسترول. في سنة 1906 بدأ في التدريس في جامعة انسبرك ومن ثم في جامعة جوتنجن بين 1915 و 1944."@ar ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1876-12-25"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Adolf Windaus"@de ;
+                          rs:variable  "name"
+                        ] ]
+] .

@@ -1,0 +1,20 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "abstract" , "released" , "label" , "subject" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "The Color of Money is a 1984 novel by American writer Walter Tevis, and a 1986 film semi-adaptation by the same title, continuing the story of pool hustler and stakehorse Edward \"Fast Eddie\" Felson, with Paul Newman reprising his role from the The Hustler (1959) and its film adaptation (1961)."@en ;
+                                     rs:variable  "abstract"
+                                   ] ;
+            rs:binding  [ rs:value     "1986-10-17"^^xsd:date ;
+                          rs:variable  "released"
+                        ] ;
+            rs:binding  [ rs:value     "The Color of Money"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Color_of_Money> ;
+                          rs:variable  "subject"
+                        ] ]
+] .

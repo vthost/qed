@@ -1,0 +1,8 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+
+<http://dbpedia.org/resource/Prix_de_l%27Arc_de_Triomphe>
+        rdfs:comment  "The Prix de l'Arc de Triomphe is a Group 1 flat horse race in France which is open to thoroughbreds aged three years or older. It is run at Longchamp over a distance of 2,400 metres (about 1½ miles), and it is scheduled to take place each year, usually on the first Sunday in October. Popularly referred to as the \"Arc\", it is the most prestigious horse race in Europe, and one of the most renowned international events in any sport."@en , "Prix de l'Arc de Triomphe (česky Cena Vítězného oblouku) je rovinový dostih kategorie G1 který se koná na francouzském dostihovém závodišti Longchamp v Paříži. Určen je pro tříleté a starší koně. Běhá se na vzdálenost 2400 m což je přibližně 1,5 míle. Celková dotace je 4 milióny eur a jedná se o nejbohatší evropský dostih. Koná se každoročně první říjnovou neděli. První ročník se uskutečnil v roce 1920. Dostih je pojmenován podle pařížského Vítězného oblouku."@cs ;
+        rdfs:label    "Prix de l'Arc de Triomphe"@cs , "Prix de l'Arc de Triomphe"@de , "Qatar Prix de l'Arc de Triomphe"@fr , "凱旋門賞"@ja , "Prix de l'Arc de Triomphe"@en ;
+        skos:subject  ns2:Sport_in_Paris .

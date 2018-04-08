@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fy.wikipedia.org/wiki/Postumus> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Postumus_Treves_aureus_268_gold_7400g.jpg/200px-Postumus_Treves_aureus_268_gold_7400g.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/4/40/Postumus_Treves_aureus_268_gold_7400g.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Marcus Cassianius Latinius Postumus was a Roman emperor of Batavian origin. He usurped power from Gallienus in 260 and formed the so called Gallic Empire. He was recognised in Gaul, Germania, Britannia and Iberia until his murder in 268."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Postumus> ;
+                          rs:variable  "king"
+                        ] ]
+] .

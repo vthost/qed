@@ -1,0 +1,4 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Tetrapanax  rdfs:label  "Tetrapanax"@pt , "Tetrapanax"@en , "Tetrapanax"@es , "蓪草"@zh , "カミヤツデ"@ja .

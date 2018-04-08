@@ -1,0 +1,15 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Robert_Hichens_%28RMS_Titanic%29>
+        a           ns3:Artist , ns3:Person , owl:Thing , ns3:Actor , foaf:Person ;
+        rdfs:label  "Robert Hichens (RMS Titanic)"@en .
+
+dbpedia:Adrien_Brody  a  ns3:Artist , yago:LivingPeople , ns3:Actor , foaf:Person , ns3:Person , owl:Thing ;
+        rdfs:label  "Adrien Brody"@en .

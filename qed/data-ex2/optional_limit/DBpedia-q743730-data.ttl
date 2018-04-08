@@ -1,0 +1,12 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix ns4:   <http://de.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://fr.wikipedia.org/wiki/> .
+
+dbpedia:Burgred_of_Mercia
+        ns0:abstract    "Burgred or Burhred or Burghred was the king of Mercia (852 - 874)."@en , "Burgred, más írásmóddal Burhred vagy Burghred,, Mercia királya 852–874 között, a dánok űzték el. Burgred 852-ben, vagy 853-ban felszólította Aethelwulfot, Wessex királyát, hogy segítsen neki az észak walesiek leigázásában. Kérése meghallgatásra talált, a hadjárat pedig, miután szövetségüket Burgred és Æthelswith – Æthelwulf leánya – házasságával is megpecsételték, sikeresnek bizonyult. 868-ban Mercia királya Æthelredhez és Ælfredhez fordult, hogy támogassák őt a Nottinghamet birtokló dánok ellen. Wessex és Mercia seregei nem kezdeményeztek komolyabb harcot, és a dánok a tél folyamán a helyükön maradhattak. 874-ben a dánok Lindseytől Reptonig nyomultak előre, elűzve királyságából Burgredet. A király Rómába ment, és ott halt meg röviddel később."@hu ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Burgred_king_of_Mercia_852_874.jpg/200px-Burgred_king_of_Mercia_852_874.jpg> ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/e/ee/Burgred_king_of_Mercia_852_874.jpg> ;
+        foaf:page       ns5:Burgred_of_Mercia , ns4:Burgred , ns3:Burgred_de_Mercie .

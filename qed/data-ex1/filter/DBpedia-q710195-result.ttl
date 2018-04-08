@@ -1,0 +1,14 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "abs" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "The Olympic Stadium, is a stadium that is part of the Athens Olympic Sports Complex. It is also known as the Athens Olympic Stadium, and Spiridon \"Spiros\" Louis Stadium, named after the man to win the first (modern) Olympic marathon race in 1896."@en ;
+                                     rs:variable  "abs"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Athens Olympic Stadium(Ολυμπιακό Στάδιο) is a sports stadium in Athens, Greece."@en ;
+                                     rs:variable  "abs"
+                                   ] ]
+] .

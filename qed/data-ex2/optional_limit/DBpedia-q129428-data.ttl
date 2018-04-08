@@ -1,0 +1,13 @@
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Edward_the_Elder
+        ns0:abstract    "Edward the Elder was King of England from 899 until his death in 924. He was the son of Alfred the Great but had to fight his cousin, Aethelwold, to become King. He fought many battles during his time as King. Most of them were to expand his territory and to stop other groups of people becoming more powerful. He was killed in battle in 924. After his death the Kingdom of England was divided between Ælfweard and Athelstan."@en , "Eduard die Ouere was van 899 tot met sy dood koning van Engeland. Hy was die seun van Alfred die Grote, wat hy ná sy dood opgevolg het. Hy het die Oostelike Middellande en Oos-Anglië in 917 van die Dene verower en het in 918 die heerser van Mercië geword ná die dood van sy suster Ethelfled. Sy opvolging is betwis deur sy neef Ethelwold, wat by die Dene in Northumbrië en Oos-Anglië aangesluit het. Ethelwold se dood in 902 het ’n einde gemaak aan dié stryd."@af ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Edward_the_Elder.jpg/200px-Edward_the_Elder.jpg> ;
+        dbpprop:imgw    "218"^^xsd:int ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/d/d5/Edward_the_Elder.jpg> ;
+        foaf:page       <http://he.wikipedia.org/wiki/%D7%90%D7%93%D7%95%D7%90%D7%A8%D7%93_%D7%94%D7%96%D7%A7%D7%9F> , ns5:Edward_the_Elder .

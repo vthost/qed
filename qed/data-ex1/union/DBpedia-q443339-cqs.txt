@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/The_Last_Samurai> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/The_Last_Samurai>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/The_Last_Samurai>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

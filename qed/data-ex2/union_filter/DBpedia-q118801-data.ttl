@@ -1,0 +1,12 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001386e9>
+        owl:sameAs  dbpedia:The_Adam_and_Joe_Show .
+
+dbpedia:The_Adam_and_Joe_Show
+        rdfs:comment  "The Adam and Joe Show was a British television comedy show, written and presented by Adam and Joe, that is, Adam Buxton and Joe Cornish, which ran for four series on Channel 4 between 1996 and 2001. All four series are available free to watch on 4oD, but currently only a compilation of the best of the entire run is available on DVD, however all episodes are available on iTunes."@en ;
+        owl:sameAs    <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001386e9> ;
+        foaf:name     "The Adam and Joe Show"@en .

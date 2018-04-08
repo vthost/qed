@@ -1,0 +1,6 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+
+dbpedia:U218_Singles  ns0:genre  dbpedia:Rock_music , dbpedia:Alternative_rock , dbpedia:Post-punk .
+
+dbpedia:4-4-1  ns0:genre  dbpedia:Alternative_rock , dbpedia:Post-punk , dbpedia:Rock_music .

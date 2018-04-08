@@ -1,0 +1,341 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+    <http://dbpedia.org/resource/Kuwait_City> ?prop ?val .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "type")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "geo")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "subject")
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/Kuwait_City>
+                                    ?prop  ?val
+                          FILTER regex(?prop, "property")
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

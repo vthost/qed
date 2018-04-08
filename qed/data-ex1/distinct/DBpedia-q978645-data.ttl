@@ -1,0 +1,13 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/resource/Star_Trek:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Return_of_the_Archons
+        dbpprop:creator            dbpedia:Joseph_Pevney , ns2:_The_Original_Series ;
+        dbpprop:director           ns2:_The_Original_Series , dbpedia:Joseph_Pevney ;
+        dbpprop:executiveProducer  ns2:_The_Original_Series , dbpedia:Joseph_Pevney ;
+        dbpprop:guest              dbpedia:Joseph_Pevney , ns2:_The_Original_Series ;
+        dbpprop:producer           dbpedia:Joseph_Pevney , ns2:_The_Original_Series ;
+        dbpprop:series             ns2:_The_Original_Series , dbpedia:Joseph_Pevney ;
+        dbpprop:starring           dbpedia:Joseph_Pevney , ns2:_The_Original_Series ;
+        dbpprop:writer             dbpedia:Joseph_Pevney , ns2:_The_Original_Series .

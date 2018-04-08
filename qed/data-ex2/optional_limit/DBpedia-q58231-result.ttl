@@ -1,0 +1,98 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "sublabel" , "suplabel" , "sub" , "super" ;
+  rs:size            "10"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "OntologyProperty" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "versionInfo" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Class" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Ontology" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "priorVersion" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "unionOf" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "complementOf" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "imports" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Thing" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Nothing" ;
+                                     rs:variable  "suplabel"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/Entity100001740> ;
+                          rs:variable  "super"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/class/yago/YagoFact> ;
+                          rs:variable  "sub"
+                        ] ]
+] .

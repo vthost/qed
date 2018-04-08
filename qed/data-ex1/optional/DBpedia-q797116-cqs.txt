@@ -1,0 +1,42 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Dave_Wannstedt> rdfs:label ?label .
+    <http://dbpedia.org/resource/Dave_Wannstedt> wgs84_pos:lat ?lat .
+    <http://dbpedia.org/resource/Dave_Wannstedt> wgs84_pos:long ?long .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Dave_Wannstedt>
+                wgs84_pos:lat   ?lat ;
+                wgs84_pos:long  ?long
+    }
+    <http://dbpedia.org/resource/Dave_Wannstedt>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Dave_Wannstedt> rdfs:label ?label .
+    <http://dbpedia.org/resource/Dave_Wannstedt> wgs84_pos:lat ?lat .
+    <http://dbpedia.org/resource/Dave_Wannstedt> wgs84_pos:long ?long .
+  }
+WHERE
+  { FILTER NOT EXISTS { <http://dbpedia.org/resource/Dave_Wannstedt>
+                                  wgs84_pos:lat   ?lat ;
+                                  wgs84_pos:long  ?long
+                      }
+    <http://dbpedia.org/resource/Dave_Wannstedt>
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------

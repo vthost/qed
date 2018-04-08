@@ -1,0 +1,9 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://en.wikipedia.org/wiki/> .
+
+dbpedia:Gordian_I  ns0:abstract  "Marcus Antonius Gordianus Sempronianus Romanus Africanus (c. 159 – April 12, 238), known in English as Gordian I, was Roman Emperor during the year 238."@en , "غُرْدِيَان الأوّل أو غُورِدْيَان الأوّل (اسمه اللاتيني Marcus Antonius Gordianus Sempronianus Romanus Africanus) حاكم مقاطعة أفريكا الرومانية، ثم إمبراطور روماني في عام 238 م. ملف:Gordianus elder pushkin. jpg|تمثال غورديان الأول في المتحف البريطاني ملف:Gordian I Musei Capitolini MC475. jpg|تمثال غورديان الأول في متحف كابيتوليني بإيطاليا ملف:Sestertius Gordian I-s2385. jpg|صورة غورديان الأول على نقد روماني"@ar ;
+        ns0:thumbnail   <http://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sestertius_Gordian_I-s2385.jpg/200px-Sestertius_Gordian_I-s2385.jpg> ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/c/ce/Sestertius_Gordian_I-s2385.jpg> ;
+        foaf:page       ns3:Gordian_I , <http://eu.wikipedia.org/wiki/Gordiano_I.a> , <http://ca.wikipedia.org/wiki/Gordi%C3%A0_I> .

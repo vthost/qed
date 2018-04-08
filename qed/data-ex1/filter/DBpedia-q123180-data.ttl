@@ -1,0 +1,10 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+
+ns2:Boarding_schools_in_Singapore
+        rdfs:label  "Boarding schools in Singapore"@en .
+
+dbpedia:Hwa_Chong_Institution_Boarding_School
+        skos:subject  ns2:Boarding_schools_in_Singapore .

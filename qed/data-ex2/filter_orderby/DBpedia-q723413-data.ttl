@@ -1,0 +1,21 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Steve_Carell  ns1:birthDate  "1962-08-16"^^xsd:date .
+
+<http://dbpedia.org/resource/Get_Smart_%28film%29>
+        a             ns1:Film ;
+        ns1:starring  dbpedia:Steve_Carell ;
+        foaf:name     "Get Smart"@en .
+
+dbpedia:William_Devane
+        ns1:birthDate  "1937-09-05"^^xsd:date .
+
+dbpedia:Space_Cowboys
+        a             ns1:Film ;
+        ns1:starring  dbpedia:William_Devane ;
+        foaf:name     "Space Cowboys"@en .

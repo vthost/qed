@@ -1,0 +1,18 @@
+@prefix ns6:   <http://lt.wikipedia.org/wiki/> .
+@prefix ns5:   <http://es.wikipedia.org/wiki/> .
+@prefix ns8:   <http://ca.wikipedia.org/wiki/> .
+@prefix ns7:   <http://da.wikipedia.org/wiki/> .
+@prefix ns9:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+ns3:Positive_psychology
+        rdfs:label  "Positive psychology"@en .
+
+dbpedia:Martin_Seligman
+        rdfs:label    "Martin E. P. Seligman"@it , "Martin Seligman"@en , "Martin Seligman"@ca ;
+        skos:subject  ns3:Positive_psychology ;
+        foaf:page     ns9:Martin_Seligman , ns8:Martin_Seligman , ns7:Martin_Seligman , ns6:Martin_Seligman , ns5:Martin_Seligman .

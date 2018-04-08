@@ -1,0 +1,1 @@
+BASE <http://localhost/arc/speriamo.php> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX dbpedia2: <http://dbpedia.org/property/> SELECT ?person ?name ?birth WHERE {               ?person dbpedia2:birthPlace <http://dbpedia.org/resource/Berlin> .               ?person dbpedia2:birth ?birth .               ?person foaf:name ?name .               }               LIMIT 10

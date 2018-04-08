@@ -1,0 +1,11 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Andreas_Ivanschitz
+        rdfs:comment    "Andreas Ivanschitz (born 15 October 1983 in Eisenstadt) is an Austrian football player who plays as an attacking midfielder for Fußball-Bundesliga club 1. FSV Mainz 05 on loan from Panathinaikos."@en , "أندرياس إيفانسكيتز ، من مواليد 15 أكتوبر 1983 في إيسينستادت في النمسا ، لاعب كرة قدم نمساوي. يلعب مع نادي ريد بل سالزبورغ منذ عام 2006. بدأ باللعب مع منتخب النمسا لكرة القدم في عام 2002."@ar ;
+        ns3:birthDate   "1983-10-15"^^xsd:date ;
+        ns3:birthPlace  dbpedia:Eisenstadt ;
+        foaf:name       "Andreas Ivanschitz"@de , "Andreas Ivanschitz"@en .

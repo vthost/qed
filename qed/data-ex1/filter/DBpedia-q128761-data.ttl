@@ -1,0 +1,24 @@
+@prefix ns6:   <http://en.wikipedia.org/wiki/> .
+@prefix ns5:   <http://en.wikipedia.org/wiki/> .
+@prefix ns8:   <http://ro.wikipedia.org/wiki/> .
+@prefix ns7:   <http://de.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Jessica_Hagedorn
+        rdfs:label    "Jessica Hagedorn"@es , "Jessica Hagedorn"@de ;
+        skos:subject  ns3:Filipino_American_writers ;
+        foaf:page     ns8:Jessica_Hagedorn , ns7:Jessica_Hagedorn , ns5:Jessica_Hagedorn , <http://es.wikipedia.org/wiki/Jessica_Hagedorn> .
+
+dbpedia:Cecilia_Manguerra_Brainard
+        rdfs:label    "Cecilia Manguerra Brainard"@en ;
+        skos:subject  ns3:Filipino_American_writers ;
+        foaf:page     ns5:Cecilia_Manguerra_Brainard .
+
+dbpedia:Philippine_American_Women_Writers_and_Artists
+        rdfs:label    "Philippine American Women Writers and Artists"@en ;
+        skos:subject  ns3:Filipino_American_writers ;
+        foaf:page     ns5:Philippine_American_Women_Writers_and_Artists .

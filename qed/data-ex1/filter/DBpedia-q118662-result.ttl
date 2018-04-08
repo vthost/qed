@@ -1,0 +1,29 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "label" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ro.wikipedia.org/wiki/Categorie:Scriitori_dup%C4%83_domeniu_non-fic%C5%A3iune> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Writers by non-fiction subject area"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%EC%A0%80%EC%88%A0%EA%B0%80> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Writers by non-fiction subject area"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://tr.wikipedia.org/wiki/Kategori:Konular%C4%B1na_g%C3%B6re_kurgusal_olmayan_yazarlar> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Writers by non-fiction subject area"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "People related to wine"@en ;
+                                     rs:variable  "label"
+                                   ] ]
+] .

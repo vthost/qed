@@ -1,0 +1,5 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Transport_in_Oman
+        rdfs:label  "Transportes em Omã"@pt , "Transport in Oman"@en , "Trasporti in Oman"@it , "Omano transportas"@lt .

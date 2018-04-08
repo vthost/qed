@@ -1,0 +1,9 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Robert_Gibbs  a  ns2:Person ;
+        rdfs:label     "Robert Gibbs"@en ;
+        foaf:homepage  <http://www.whitehouse.gov/briefing-room/> .

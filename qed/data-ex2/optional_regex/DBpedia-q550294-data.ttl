@@ -1,0 +1,16 @@
+@prefix ns6:   <http://en.wikipedia.org/wiki/> .
+@prefix ns5:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns7:   <http://nl.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+ns3:Core_issues_in_ethics
+        rdfs:label  "Core issues in ethics"@en .
+
+dbpedia:Meaning_of_life
+        rdfs:label    "Смысл жизни"@ru , "Meaning of life"@en ;
+        skos:subject  ns3:Core_issues_in_ethics ;
+        foaf:page     ns7:Zin_van_het_leven , ns6:Meaning_of_life , ns5:Sens_de_la_vie , <http://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%9E%D7%A2%D7%95%D7%AA_%D7%94%D7%97%D7%99%D7%99%D7%9D> , <http://ja.wikipedia.org/wiki/%E4%BA%BA%E7%94%9F%E3%81%AE%E6%84%8F%E7%BE%A9> .

@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/BBC_Newsline> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/BBC_Newsline>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/BBC_Newsline>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

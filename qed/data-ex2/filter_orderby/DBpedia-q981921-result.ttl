@@ -1,0 +1,44 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" , "death" , "birth" , "name" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gabriel_Lippmann> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "1921-07-13"^^xsd:date ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1845-08-16"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Gabriel Lippmann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gabriel_Lippmann> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "1921-07-13"^^xsd:date ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1845-08-16"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Gabriel Jonas Lippmann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gabriel_Lippmann> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "1921-07-13"^^xsd:date ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1845-08-16"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Gabriel Lippmann"@de ;
+                          rs:variable  "name"
+                        ] ]
+] .

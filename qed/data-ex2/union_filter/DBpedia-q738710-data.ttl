@@ -1,0 +1,22 @@
+@prefix ns6:   <http://dbpedia.org/resource/Category:> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Carambola  a  yago:Tropical_fruit , ns3:Tropical_fruit ;
+        rdfs:label    "Carambola"@en , "Karambol"@da , "Averrhoa carambola"@es , "اختری"@fa , "Karambola"@fi , "Sternfrucht"@de ;
+        skos:subject  ns6:Tropical_fruit .
+
+dbpedia:Psidium_friedrichsthalium
+        a             yago:Tropical_fruit , ns3:Tropical_fruit ;
+        rdfs:label    "Psidium friedrichsthalium"@en ;
+        skos:subject  ns6:Tropical_fruit .
+
+dbpedia:Malpighia_emarginata
+        a             ns3:Tropical_fruit , yago:Tropical_fruit ;
+        rdfs:label    "Malpighia emarginata"@en ;
+        skos:subject  ns6:Tropical_fruit .

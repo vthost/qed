@@ -1,0 +1,24 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Getting_Played
+        a       ns1:Film .
+
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29>
+        a             ns1:Film ;
+        ns1:director  dbpedia:David_Lynch .
+
+dbpedia:Bahurani  a  ns1:Film .
+
+<http://dbpedia.org/resource/Pumpkin_%28film%29>
+        a       ns1:Film .
+
+<http://dbpedia.org/resource/Dak_Bangla_%28film%29>
+        a       ns1:Film .
+
+<http://dbpedia.org/resource/Aldri_annet_enn_br%C3%A5k>
+        a       ns1:Film .
+
+dbpedia:David_Lynch  rdfs:label  "ديفيد لينش"@ar , "David Lynch"@pt , "Дейвид Линч"@bg , "David Lynch"@en , "David Lynch"@ca .

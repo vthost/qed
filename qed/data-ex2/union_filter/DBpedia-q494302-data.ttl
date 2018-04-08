@@ -1,0 +1,19 @@
+@prefix ns6:   <http://dbpedia.org/resource/Category:> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Bohol_Sea  a  ns3:Seas_of_the_Philippines , yago:Seas_of_the_Philippines ;
+        rdfs:label    "Bohol Sea"@en ;
+        skos:subject  ns6:Seas_of_the_Philippines .
+
+dbpedia:Camotes_Sea  a  ns3:Seas_of_the_Philippines , yago:Seas_of_the_Philippines ;
+        rdfs:label    "Camotes Sea"@en , "Mar de Camotes"@ca , "カモテス海"@ja , "Море Камотес"@ru , "Mar de Camotes"@es , "Mar de Camotes"@pt ;
+        skos:subject  ns6:Seas_of_the_Philippines .
+
+dbpedia:Sulu_Sea  a   yago:Seas_of_the_Philippines , ns3:Seas_of_the_Philippines ;
+        rdfs:label    "Sulu Sea"@en ;
+        skos:subject  ns6:Seas_of_the_Philippines .

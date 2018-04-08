@@ -1,0 +1,32 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" , "description" , "birth" , "name" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Ernst> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Ernst (2 April 1891 &ndash; 1 April 1976) was a German painter, sculptor, graphic artist, and poet. A prolific artist, Ernst is considered to be one of the primary pioneers of the Dada movement and Surrealism."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1891-04-02"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Max Ernst"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Ernst> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Ernst (2 April 1891 &ndash; 1 April 1976) was a German painter, sculptor, graphic artist, and poet. A prolific artist, Ernst is considered to be one of the primary pioneers of the Dada movement and Surrealism."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1891-04-02"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Max Ernst"@de ;
+                          rs:variable  "name"
+                        ] ]
+] .

@@ -1,0 +1,528 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:director  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:guest  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:director  ?containedIn
+      }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:producer  ?containedIn
+      }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:producer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:producer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:series  ?containedIn
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/A_Prophet> dbpp:writer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:creator ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:starring ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:executiveProducer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:guest ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:director ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:producer ?containedIn .
+    <http://dbpedia.org/resource/A_Prophet> dbpp:series ?containedIn .
+  }
+WHERE
+  { { FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:writer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:creator  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:starring  ?containedIn
+                        }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:executiveProducer  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:guest  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:director  ?containedIn
+                        }
+      { <http://dbpedia.org/resource/A_Prophet>
+                  dbpp:producer  ?containedIn
+      }
+      FILTER NOT EXISTS { <http://dbpedia.org/resource/A_Prophet>
+                                    dbpp:series  ?containedIn
+                        }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Divine_Intervention_%28film%29>
+        dbpprop:creator            dbpedia:Humbert_Balsan ;
+        dbpprop:director           dbpedia:Humbert_Balsan ;
+        dbpprop:executiveProducer  dbpedia:Humbert_Balsan ;
+        dbpprop:guest              dbpedia:Humbert_Balsan ;
+        dbpprop:producer           dbpedia:Humbert_Balsan ;
+        dbpprop:series             dbpedia:Humbert_Balsan ;
+        dbpprop:starring           dbpedia:Humbert_Balsan ;
+        dbpprop:writer             dbpedia:Humbert_Balsan .

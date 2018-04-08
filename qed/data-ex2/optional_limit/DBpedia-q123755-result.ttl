@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Enric_I_d%27Anglaterra> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "230"^^xsd:int ;
+                          rs:variable  "imgw"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Henry1.jpg/200px-Henry1.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/c/c1/Henry1.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Henry I (c. 1068/1069 – 1 December 1135) was the fourth son of William I of England. He succeeded his elder brother William II as King of England in 1100 and defeated his eldest brother, Robert Curthose, to become Duke of Normandy in 1106. He was called Beauclerc for his scholarly interests and Lion of Justice for refinements which he brought about in the administrative and legislative machinery of the time. Henry's reign is noted for its political opportunism. His succession was confirmed while his brother Robert was away on the First Crusade and the beginning of his reign was occupied by wars with Robert for control of England and Normandy. He successfully reunited the two realms again after their separation on his father's death in 1087. Upon his succession he granted the baronage a Charter of Liberties, which formed a basis for subsequent challenges to rights of kings and presaged Magna Carta, which subjected the King to law. The rest of Henry's reign was filled with judicial and financial reforms. He established the biannual Exchequer to reform the treasury. He used itinerant officials to curb abuses of power at the local and regional level, garnering the praise of the people. The differences between the English and Norman populations began to break down during his reign and he himself married a daughter of the old English royal house. He made peace with the church after the disputes of his brother's reign, but he could not smooth out his succession after the disastrous loss of his eldest son William in the wreck of the White Ship. His will stipulated that he was to be succeeded by his daughter, the Empress Matilda, but his stern rule was followed by a period of civil war known as the Anarchy."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Henry_I_of_England> ;
+                          rs:variable  "king"
+                        ] ]
+] .

@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "imgw" , "thumb" , "depiction" , "abstract" , "king" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Edward_II_of_England> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/EdwardII-Cassell.jpg/200px-EdwardII-Cassell.jpg> ;
+                          rs:variable  "thumb"
+                        ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/f/f6/EdwardII-Cassell.jpg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "Edward II, (25 April 1284 &ndash; 21 September 1327) called Edward of Carnarvon, was King of England from 1307 until he was deposed in January 1327. He was the seventh Plantagenet king, in a line that began with the reign of Henry II. Interspersed between the strong reigns of his father Edward I and son Edward III, the reign of Edward II was disastrous for England, marked by incompetence, political squabbling, and military defeats. Widely rumoured to have been either homosexual or bisexual, Edward nevertheless fathered at least five children by two women. He was unable to deny even the most grandiose favours to his male favourites (first a Gascon knight named Piers Gaveston, later a young English lord named Hugh Despenser) which led to constant political unrest and his eventual deposition. Whereas Edward I had conquered all of Wales and the Scottish lowlands, and ruled them with an iron hand, the army of Edward II was devastatingly defeated at Bannockburn, freeing Scotland from English control and allowing Scottish forces to raid unchecked throughout the north of England. In addition to these disasters, Edward II is remembered for his probable death in Berkeley Castle, allegedly by murder; and for being the first monarch to establish colleges in the universities of Oxford and Cambridge."@en ;
+                          rs:variable  "abstract"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Edward_II_of_England> ;
+                          rs:variable  "king"
+                        ] ]
+] .

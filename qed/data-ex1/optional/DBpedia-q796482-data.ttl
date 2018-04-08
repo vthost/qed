@@ -1,0 +1,8 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/Genesee%2C_New_York>
+        rdfs:label  "Genesee, New York"@ht , "Genesee, New York"@en ;
+        geo:lat     "42.0547"^^xsd:float ;
+        geo:long    "-78.2589"^^xsd:float .

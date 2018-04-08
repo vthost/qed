@@ -1,0 +1,74 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label_en" , "page" , "label_it" , "kfor" , "label" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ja.wikipedia.org/wiki/%E5%89%B5%E9%80%A0%E5%8A%9B> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Creatività"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Creativity"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Creativity> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Creatività"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Creativity"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Positive psychology"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Creativitat> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Creatività"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Creativity"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fa.wikipedia.org/wiki/%D8%AE%D9%84%D8%A7%D9%82%DB%8C%D8%AA> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Creatività"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Creativity"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://is.wikipedia.org/wiki/Sk%C3%B6punarg%C3%A1fa> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Creatività"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Creativity"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Positive psychology"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

@@ -1,0 +1,11 @@
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Parenthood_%282010_TV_series%29>
+        dbpprop:creator            "Dylan Massin"@en ;
+        dbpprop:director           "Dylan Massin"@en ;
+        dbpprop:executiveProducer  "Dylan Massin"@en ;
+        dbpprop:guest              "Dylan Massin"@en ;
+        dbpprop:producer           "Dylan Massin"@en ;
+        dbpprop:series             "Dylan Massin"@en ;
+        dbpprop:starring           "Dylan Massin"@en ;
+        dbpprop:writer             "Dylan Massin"@en .

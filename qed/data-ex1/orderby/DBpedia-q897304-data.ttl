@@ -1,0 +1,11 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Beatles_for_Sale
+        a                ns2:Album ;
+        ns2:artist       dbpedia:The_Beatles ;
+        ns2:releaseDate  "1964-12-04"^^xsd:date ;
+        dbpprop:name     "Beatles for Sale"@en , "Beatles for Sale"@ca , "ビートルズ・フォー・セール"@ja .

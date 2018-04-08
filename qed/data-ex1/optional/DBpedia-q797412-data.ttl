@@ -1,0 +1,5 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+dbpedia:Up_from_the_Ground
+        rdfs:label  "Up from the Ground"@en , "Up from the Ground"@fr , "Up From The Ground"@de .

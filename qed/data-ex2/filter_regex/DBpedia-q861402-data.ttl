@@ -1,0 +1,21 @@
+@prefix ns6:   <http://en.wikipedia.org/wiki/> .
+@prefix ns5:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns7:   <http://it.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+<http://dbpedia.org/resource/Regression_%28psychology%29>
+        rdfs:label    "Regression (psychology)"@en ;
+        skos:subject  ns2:Defence_mechanism ;
+        foaf:page     <http://da.wikipedia.org/wiki/Regression_%28psykologi%29> , <http://en.wikipedia.org/wiki/Regression_%28psychology%29> , <http://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D0%B8%D1%8F_%28%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%29> , <http://es.wikipedia.org/wiki/Regresi%C3%B3n_%28psicolog%C3%ADa%29> , <http://sk.wikipedia.org/wiki/Regresia_%28psychol%C3%B3gia%29> .
+
+dbpedia:Humour  rdfs:label  "Humor"@ca , "Humour"@en , "Umorismo"@it ;
+        skos:subject  ns2:Defence_mechanism ;
+        foaf:page     ns5:Humour , <http://he.wikipedia.org/wiki/%D7%94%D7%95%D7%9E%D7%95%D7%A8> , ns6:Humour , <http://bn.wikipedia.org/wiki/%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%B0%E0%A6%B8> , ns7:Umorismo .
+
+ns2:Defence_mechanism
+        rdfs:label  "Defence mechanism"@en .

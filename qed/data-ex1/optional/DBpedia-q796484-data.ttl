@@ -1,0 +1,18 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/resource/Template:> .
+
+ns1:Infobox_settlement
+        rdfs:label  "Şablon:Şəhər/doc"@az , "Plantilla:Ficha de entidad subnacional/doc"@es , "Sjabloon:Inligtingskas Nedersetting"@af , "Шаблон:Американски окръг"@bg , "Şablon:Əyalət və ya ada/doc/doc"@az .
+
+dbpprop:wikilink  rdfs:label  "Wikilink"@nl , "wikilink"@da .
+
+dbpedia:List_of_countries
+        rdfs:label  "List of countries"@en , "Valstu uzskaitījumi"@lv , "Списак држава"@sr , "Список країн за алфавітом"@uk , "Országok autójele és domainneve"@hu .
+
+<http://dbpedia.org/resource/Powhatan%2C_Virginia>
+        rdfs:comment                  "Powhatan binon zif in komot: Powhatan, in tat: Virginia, in Lamerikän."@vo ;
+        rdfs:label                    "Powhatan (Virginia)"@vo ;
+        dbpprop:wikiPageUsesTemplate  ns1:Infobox_settlement ;
+        dbpprop:wikilink              dbpedia:County_seats_in_Virginia , dbpedia:Unincorporated_communities_in_Virginia , dbpedia:List_of_countries .

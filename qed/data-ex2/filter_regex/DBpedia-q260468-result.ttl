@@ -1,0 +1,95 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "page" , "kfor" , "label_en" , "label_it" , "label" ;
+  rs:size            "8"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fy.wikipedia.org/wiki/Underwizer> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Docente"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Teacher"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/University_of_the_People> ;
+                                     rs:variable  "kfor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Shai_Reshef> ;
+                          rs:variable  "page"
+                        ] ;
+            rs:binding  [ rs:value     "Shai Reshef"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ar.wikipedia.org/wiki/%D9%85%D8%AF%D8%B1%D8%B3> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Docente"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Teacher"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://ca.wikipedia.org/wiki/Mestre> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Docente"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Teacher"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%94> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Docente"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Teacher"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Bo%C5%BEina_Ivanovi%C4%87> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Božina Ivanović"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Educators"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/Teacher> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "Docente"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "Teacher"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Educators"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

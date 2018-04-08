@@ -1,0 +1,56 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?subject geo:lat ?lat .
+    ?subject geo:long ?long .
+    ?subject rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ( ( ( ( xsd:float(?lat) - 39.993333 ) * ( xsd:float(?lat) - 39.993333 ) ) <= 0.05 ) && ( ( 39.993333 - xsd:float(?lat) ) <= 0.05 ) ) && ( lang(?label) = "en" ) )
+    ?subject  geo:lat     ?lat ;
+              geo:long    ?long ;
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?subject geo:lat ?lat .
+    ?subject geo:long ?long .
+    ?subject rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( ( ( ( ( xsd:float(?lat) - 39.993333 ) * ( xsd:float(?lat) - 39.993333 ) ) <= 0.05 ) && ( ( 39.993333 - xsd:float(?lat) ) <= 0.05 ) ) && ( lang(?label) = "en" ) ) )
+    ?subject  geo:lat     ?lat ;
+              geo:long    ?long ;
+              rdfs:label  ?label
+  }
+LIMIT   10
+
+----------------------------------------------

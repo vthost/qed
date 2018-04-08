@@ -1,0 +1,19 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+
+<http://dbpedia.org/resource/Dead_Space_%28video_game%29>
+        rdfs:label    "Dead Space"@en , "Dead Space"@es , "Dead Space"@it , "Dead Space"@fi , "Dead Space"@de , "Dead Space (video game)"@en , "DEAD SPACE"@ja ;
+        skos:subject  ns2:Third-person_shooters , ns2:First-person_shooters , ns2:Horror_video_games .
+
+<http://dbpedia.org/resource/The_Suffering_%28video_game%29>
+        rdfs:label    "The Suffering (video game)"@en , "The Suffering"@es , "The Suffering"@pl , "The Suffering"@fr , "The Suffering"@it , "The Suffering"@de ;
+        skos:subject  ns2:First-person_shooters , ns2:Horror_video_games , ns2:Third-person_shooters .
+
+<http://dbpedia.org/resource/F.E.A.R._Files>
+        rdfs:label    "F.E.A.R. Files"@en ;
+        skos:subject  ns2:Third-person_shooters , ns2:First-person_shooters , ns2:Horror_video_games .
+
+<http://dbpedia.org/resource/Blood_%28video_game%29>
+        rdfs:label    "Blood (video game)"@en , "Blood"@lv , "Blood"@ru , "Blood"@pt , "Blood"@da , "Blood"@cs ;
+        skos:subject  ns2:Horror_video_games , ns2:First-person_shooters , ns2:Third-person_shooters .

@@ -1,0 +1,26 @@
+@prefix ns6:   <http://en.wikipedia.org/wiki/> .
+@prefix ns5:   <http://fy.wikipedia.org/wiki/> .
+@prefix ns7:   <http://ca.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Shai_Reshef  rdfs:label  "Shai Reshef"@en ;
+        <http://dbpedia.org/ontology/knownFor>
+                dbpedia:University_of_the_People ;
+        skos:subject  ns2:Educators ;
+        foaf:page     ns6:Shai_Reshef .
+
+dbpedia:Teacher  rdfs:label  "Teacher"@en , "Docente"@it ;
+        skos:subject  ns2:Educators ;
+        foaf:page     <http://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%94> , ns7:Mestre , <http://ar.wikipedia.org/wiki/%D9%85%D8%AF%D8%B1%D8%B3> , ns6:Teacher , ns5:Underwizer .
+
+ns2:Educators  rdfs:label  "Educators"@en .
+
+<http://dbpedia.org/resource/Bo%C5%BEina_Ivanovi%C4%87>
+        rdfs:label    "Božina Ivanović"@en ;
+        skos:subject  ns2:Educators ;
+        foaf:page     <http://en.wikipedia.org/wiki/Bo%C5%BEina_Ivanovi%C4%87> .

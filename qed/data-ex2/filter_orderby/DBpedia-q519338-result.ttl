@@ -1,0 +1,20 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" , "description" , "birth" , "name" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alan_Wren> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Alan John Wren (born on 10 April 1964, in Manchester, England), better known as Reni, was the drummer of The Stone Roses from 1984 to 1995. Reni is considered by many to be the best drummer of his generation, and the \"single most important drummer in UK indie circles\" and according to former Hacienda General Manager Howard Jones, he \"played the drums like Hendrix played the guitar."@en ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "1964-04-10"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Reni"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .

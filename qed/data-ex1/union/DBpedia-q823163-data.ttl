@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Sarah_Jane_Adventures
+        dbpprop:creator            "Matthew Bouch"@en ;
+        dbpprop:creator            dbpedia:Nikki_Smith , dbpedia:Susie_Liggat , dbpedia:Matthew_Bouch ;
+        dbpprop:director           "Matthew Bouch"@en ;
+        dbpprop:director           dbpedia:Nikki_Smith , dbpedia:Matthew_Bouch , dbpedia:Susie_Liggat ;
+        dbpprop:executiveProducer  "Matthew Bouch"@en ;
+        dbpprop:executiveProducer  dbpedia:Nikki_Smith , dbpedia:Matthew_Bouch , dbpedia:Susie_Liggat ;
+        dbpprop:guest              "Matthew Bouch"@en ;
+        dbpprop:guest              dbpedia:Susie_Liggat , dbpedia:Matthew_Bouch , dbpedia:Nikki_Smith ;
+        dbpprop:producer           "Matthew Bouch"@en ;
+        dbpprop:producer           dbpedia:Matthew_Bouch , dbpedia:Nikki_Smith , dbpedia:Susie_Liggat ;
+        dbpprop:series             "Matthew Bouch"@en ;
+        dbpprop:series             dbpedia:Nikki_Smith , dbpedia:Matthew_Bouch , dbpedia:Susie_Liggat ;
+        dbpprop:starring           "Matthew Bouch"@en ;
+        dbpprop:starring           dbpedia:Matthew_Bouch , dbpedia:Nikki_Smith , dbpedia:Susie_Liggat ;
+        dbpprop:writer             "Matthew Bouch"@en ;
+        dbpprop:writer             dbpedia:Susie_Liggat , dbpedia:Nikki_Smith , dbpedia:Matthew_Bouch .

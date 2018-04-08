@@ -1,0 +1,74 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label_en" , "page" , "label" , "kfor" , "label_it" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Classical economists"@en ;
+                                     rs:variable  "label_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Classical economists"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://hr.wikipedia.org/wiki/David_Ricardo> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "David Ricardo"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "David Ricardo"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Classical economists"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://fr.wikipedia.org/wiki/David_Ricardo> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "David Ricardo"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "David Ricardo"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Classical economists"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://bn.wikipedia.org/wiki/%E0%A6%A1%E0%A7%87%E0%A6%AD%E0%A6%BF%E0%A6%A1_%E0%A6%B0%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A7%8B> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "David Ricardo"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "David Ricardo"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Classical economists"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://he.wikipedia.org/wiki/%D7%93%D7%99%D7%99%D7%95%D7%95%D7%99%D7%93_%D7%A8%D7%99%D7%A7%D7%90%D7%A8%D7%93%D7%95> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "David Ricardo"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "David Ricardo"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Classical economists"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://en.wikipedia.org/wiki/David_Ricardo> ;
+                                     rs:variable  "page"
+                                   ] ;
+            rs:binding  [ rs:value     "David Ricardo"@it ;
+                          rs:variable  "label_it"
+                        ] ;
+            rs:binding  [ rs:value     "David Ricardo"@en ;
+                          rs:variable  "label_en"
+                        ] ;
+            rs:binding  [ rs:value     "Classical economists"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Dani%27s_House>
+        dbpprop:creator            dbpedia:Paul_McKenzie , dbpedia:Jemma_Rodgers ;
+        dbpprop:director           dbpedia:Paul_McKenzie , dbpedia:Jemma_Rodgers ;
+        dbpprop:executiveProducer  dbpedia:Jemma_Rodgers , dbpedia:Paul_McKenzie ;
+        dbpprop:guest              dbpedia:Jemma_Rodgers , dbpedia:Paul_McKenzie ;
+        dbpprop:producer           dbpedia:Paul_McKenzie , dbpedia:Jemma_Rodgers ;
+        dbpprop:series             dbpedia:Paul_McKenzie , dbpedia:Jemma_Rodgers ;
+        dbpprop:starring           dbpedia:Paul_McKenzie , dbpedia:Jemma_Rodgers ;
+        dbpprop:writer             dbpedia:Paul_McKenzie , dbpedia:Jemma_Rodgers .

@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Never_Back_Down
+        dbpprop:creator            "Bill Bannerman"@en , "Craig Baumgarten"@en , "David Zelon"@en ;
+        dbpprop:creator            dbpedia:David_Zelon , dbpedia:Jeff_Wadlow , dbpedia:Craig_Baumgarten ;
+        dbpprop:director           "David Zelon"@en , "Bill Bannerman"@en , "Craig Baumgarten"@en ;
+        dbpprop:director           dbpedia:Craig_Baumgarten , dbpedia:Jeff_Wadlow , dbpedia:David_Zelon ;
+        dbpprop:executiveProducer  "Bill Bannerman"@en , "David Zelon"@en , "Craig Baumgarten"@en ;
+        dbpprop:executiveProducer  dbpedia:Craig_Baumgarten , dbpedia:David_Zelon , dbpedia:Jeff_Wadlow ;
+        dbpprop:guest              "David Zelon"@en , "Craig Baumgarten"@en , "Bill Bannerman"@en ;
+        dbpprop:guest              dbpedia:David_Zelon , dbpedia:Craig_Baumgarten , dbpedia:Jeff_Wadlow ;
+        dbpprop:producer           "Bill Bannerman"@en , "David Zelon"@en , "Craig Baumgarten"@en ;
+        dbpprop:producer           dbpedia:David_Zelon , dbpedia:Jeff_Wadlow , dbpedia:Craig_Baumgarten ;
+        dbpprop:series             "Bill Bannerman"@en , "David Zelon"@en , "Craig Baumgarten"@en ;
+        dbpprop:series             dbpedia:Craig_Baumgarten , dbpedia:David_Zelon , dbpedia:Jeff_Wadlow ;
+        dbpprop:starring           "Craig Baumgarten"@en , "Bill Bannerman"@en , "David Zelon"@en ;
+        dbpprop:starring           dbpedia:Craig_Baumgarten , dbpedia:David_Zelon , dbpedia:Jeff_Wadlow ;
+        dbpprop:writer             "Craig Baumgarten"@en , "Bill Bannerman"@en , "David Zelon"@en ;
+        dbpprop:writer             dbpedia:David_Zelon , dbpedia:Jeff_Wadlow , dbpedia:Craig_Baumgarten .

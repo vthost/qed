@@ -1,0 +1,638 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        FILTER NOT EXISTS { ?company  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        FILTER NOT EXISTS { ?company  owl:sameAs  ?sameAsUri }
+        { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        { ?company  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        { ?company  owl:sameAs  ?sameAsUri }
+        { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        { ?company  dbpedia-prop:symbol  ?symbol }
+        FILTER NOT EXISTS { ?company  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        { ?company  dbpedia-prop:symbol  ?symbol }
+        FILTER NOT EXISTS { ?company  owl:sameAs  ?sameAsUri }
+        { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        { ?company  dbpedia-prop:symbol  ?symbol }
+        { ?company  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  ?companyName }
+        { ?company  dbpedia-prop:symbol  ?symbol }
+        { ?company  owl:sameAs  ?sameAsUri }
+        { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        FILTER NOT EXISTS { ?company  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        FILTER NOT EXISTS { ?company  owl:sameAs  ?sameAsUri }
+        { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.> dbpedia-prop:redirect ?company .
+    ?company rdfs:label "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:name "Konami Digital Entertainment Co., Ltd."@en .
+    ?company dbpedia-prop:companyName "Konami Digital Entertainment Co., Ltd."@en .
+    ?company foaf:name "Konami Digital Entertainment Co., Ltd." .
+    ?company rdf:type ?type .
+    ?company rdfs:label ?label .
+    ?company dbpedia-prop:homepage ?webaddress .
+    ?company dbpedia-prop:companyName ?companyName .
+    ?company dbpedia-prop:symbol ?symbol .
+    ?company owl:sameAs ?sameAsUri .
+    ?company foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?company  dbpedia-prop:homepage  ?webaddress }
+        { ?company  dbpedia-prop:companyName  ?companyName }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:symbol  ?symbol }
+        { ?company  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?company  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?company  rdfs:label  ?label
+    }
+    { FILTER regex(?type, ".+/((Company)|(Business)|(Company.*)|(CompaniesBasedIn.*)|(.*CompaniesOf.*))$", "i")
+      ?company  rdf:type  ?type
+    }
+    { { FILTER NOT EXISTS { <http://dbpedia.org/resource/Konami_Digital_Entertainment_Co.%2c_Ltd.>
+                                      dbpedia-prop:redirect  ?company
+                          }
+        FILTER NOT EXISTS { ?company  rdfs:label  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:name  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  dbpedia-prop:companyName  "Konami Digital Entertainment Co., Ltd."@en }
+        FILTER NOT EXISTS { ?company  foaf:name  "Konami Digital Entertainment Co., Ltd." }
+      }
+    }
+  }
+LIMIT   10
+
+----------------------------------------------

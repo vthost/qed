@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" , "death" , "birth" , "name" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Kobi_Alexander> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "1952-05-04"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Jacob \"Kobi\" Alexander"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ehud_Olmert> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "1945-09-30"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Ehud Olmert"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .

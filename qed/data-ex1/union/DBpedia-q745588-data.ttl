@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Mouse_Trouble
+        dbpprop:creator            "William Hanna"@en , "Joseph Barbera"@en , "Fred Quimby"@en ;
+        dbpprop:creator            <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> , dbpedia:Tom_and_Jerry ;
+        dbpprop:director           "Joseph Barbera"@en , "William Hanna"@en , "Fred Quimby"@en ;
+        dbpprop:director           <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> , dbpedia:Tom_and_Jerry ;
+        dbpprop:executiveProducer  "Fred Quimby"@en , "Joseph Barbera"@en , "William Hanna"@en ;
+        dbpprop:executiveProducer  <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> , dbpedia:Tom_and_Jerry ;
+        dbpprop:guest              "Joseph Barbera"@en , "William Hanna"@en , "Fred Quimby"@en ;
+        dbpprop:guest              dbpedia:Tom_and_Jerry , <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> ;
+        dbpprop:producer           "Joseph Barbera"@en , "Fred Quimby"@en , "William Hanna"@en ;
+        dbpprop:producer           <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> , dbpedia:Tom_and_Jerry ;
+        dbpprop:series             "Joseph Barbera"@en , "Fred Quimby"@en , "William Hanna"@en ;
+        dbpprop:series             dbpedia:Tom_and_Jerry , <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> ;
+        dbpprop:starring           "William Hanna"@en , "Fred Quimby"@en , "Joseph Barbera"@en ;
+        dbpprop:starring           <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> , dbpedia:Tom_and_Jerry ;
+        dbpprop:writer             "Joseph Barbera"@en , "Fred Quimby"@en , "William Hanna"@en ;
+        dbpprop:writer             <http://dbpedia.org/resource/%D0%A4%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D0%B8%D0%BC%D0%B1%D0%B8> , dbpedia:Tom_and_Jerry .

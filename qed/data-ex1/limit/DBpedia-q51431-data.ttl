@@ -1,0 +1,10 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns4:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Allianz_Arena
+        geo:lat       "48.2186"^^xsd:float ;
+        geo:long      11.6248 , "11.6248"^^xsd:float , "11.6247"^^xsd:float , "11.6244"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .

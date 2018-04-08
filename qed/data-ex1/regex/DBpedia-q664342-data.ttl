@@ -1,0 +1,16 @@
+@prefix ns6:   <http://ast.wikipedia.org/wiki/> .
+@prefix ns5:   <http://eu.wikipedia.org/wiki/> .
+@prefix ns8:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns7:   <http://en.wikipedia.org/wiki/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+ns1:Classical_economists
+        rdfs:label  "Classical economists"@en .
+
+dbpedia:Adam_Smith  rdfs:label  "Adam Smith"@it , "Adam Smith"@en ;
+        skos:subject  ns1:Classical_economists ;
+        foaf:page     <http://he.wikipedia.org/wiki/%D7%90%D7%93%D7%9D_%D7%A1%D7%9E%D7%99%D7%AA> , ns8:Adam_Smith , ns7:Adam_Smith , ns6:Adam_Smith , ns5:Adam_Smith .

@@ -1,0 +1,20 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Fallen_%28ABC_Family_miniseries%29>
+        dbpprop:creator            "Rochelle Bates"@en , "Edward Bates"@en , "Patti Allen"@en ;
+        dbpprop:creator            dbpedia:Mikael_Salomon , dbpedia:Kevin_Kerslake ;
+        dbpprop:director           "Edward Bates"@en , "Patti Allen"@en , "Rochelle Bates"@en ;
+        dbpprop:director           dbpedia:Mikael_Salomon , dbpedia:Kevin_Kerslake ;
+        dbpprop:executiveProducer  "Edward Bates"@en , "Patti Allen"@en , "Rochelle Bates"@en ;
+        dbpprop:executiveProducer  dbpedia:Kevin_Kerslake , dbpedia:Mikael_Salomon ;
+        dbpprop:guest              "Patti Allen"@en , "Edward Bates"@en , "Rochelle Bates"@en ;
+        dbpprop:guest              dbpedia:Kevin_Kerslake , dbpedia:Mikael_Salomon ;
+        dbpprop:producer           "Edward Bates"@en , "Patti Allen"@en , "Rochelle Bates"@en ;
+        dbpprop:producer           dbpedia:Mikael_Salomon , dbpedia:Kevin_Kerslake ;
+        dbpprop:series             "Patti Allen"@en , "Rochelle Bates"@en , "Edward Bates"@en ;
+        dbpprop:series             dbpedia:Kevin_Kerslake , dbpedia:Mikael_Salomon ;
+        dbpprop:starring           "Patti Allen"@en , "Edward Bates"@en , "Rochelle Bates"@en ;
+        dbpprop:starring           dbpedia:Mikael_Salomon , dbpedia:Kevin_Kerslake ;
+        dbpprop:writer             "Edward Bates"@en , "Patti Allen"@en , "Rochelle Bates"@en ;
+        dbpprop:writer             dbpedia:Mikael_Salomon , dbpedia:Kevin_Kerslake .

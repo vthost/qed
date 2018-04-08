@@ -1,0 +1,12 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Sandpiper
+        dbpprop:creator            dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli ;
+        dbpprop:director           dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli ;
+        dbpprop:executiveProducer  dbpedia:Vincente_Minnelli , dbpedia:Martin_Ransohoff ;
+        dbpprop:guest              dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli ;
+        dbpprop:producer           dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli ;
+        dbpprop:series             dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli ;
+        dbpprop:starring           dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli ;
+        dbpprop:writer             dbpedia:Martin_Ransohoff , dbpedia:Vincente_Minnelli .

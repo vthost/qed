@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "com" , "name" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "The Prix de l'Arc de Triomphe is a Group 1 flat horse race in France which is open to thoroughbreds aged three years or older. It is run at Longchamp over a distance of 2,400 metres (about 1½ miles), and it is scheduled to take place each year, usually on the first Sunday in October. Popularly referred to as the \"Arc\", it is the most prestigious horse race in Europe, and one of the most renowned international events in any sport."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     "Qatar Prix de l'Arc de Triomphe"@fr ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Prix de l'Arc de Triomphe is a Group 1 flat horse race in France which is open to thoroughbreds aged three years or older. It is run at Longchamp over a distance of 2,400 metres (about 1½ miles), and it is scheduled to take place each year, usually on the first Sunday in October. Popularly referred to as the \"Arc\", it is the most prestigious horse race in Europe, and one of the most renowned international events in any sport."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     "凱旋門賞"@ja ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Prix de l'Arc de Triomphe is a Group 1 flat horse race in France which is open to thoroughbreds aged three years or older. It is run at Longchamp over a distance of 2,400 metres (about 1½ miles), and it is scheduled to take place each year, usually on the first Sunday in October. Popularly referred to as the \"Arc\", it is the most prestigious horse race in Europe, and one of the most renowned international events in any sport."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     "Prix de l'Arc de Triomphe"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .
