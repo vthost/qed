@@ -1,1 +1,1 @@
-# qed
+# SPARQL QED
