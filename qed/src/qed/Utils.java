@@ -176,8 +176,9 @@ public class Utils {
 		}
 	}
 	
-	public static void writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
+	public static long writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
 
+		long size = 0;
 		try {
 			String path = directory.getPath() + File.separator + getQueryDataFileName(lsqIdUrl);
 			if(new File(path).isFile())
@@ -185,11 +186,13 @@ public class Utils {
 			
 			FileWriter writer = new FileWriter(path);
 			m.write(writer, "TURTLE");
-    	  	writer.close();
+			size = m.size();
+    	  		writer.close();
     	  	
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return size;
 	}
 	
 	public static void writeQueryResultFile(File directory, String lsqIdUrl, ResultSet rs) {
@@ -292,10 +295,10 @@ public class Utils {
 				int cqsavg = (int) v.stream().mapToInt(ns -> ns[0]).average().orElse(0);
 				int cqsmax = v.stream().mapToInt(ns -> ns[0]).max().orElse(0);
 
-				int[] a2 = v.stream().mapToInt(ns -> ns[1]).sorted().toArray();
+				double[] a2 = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).sorted().toArray();
 				int l2 = a2.length;
 				double cqs2min = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).min().orElse(0);
-				int cqs2med = l2 % 2 == 0 ? (a2[l2/2-1] + a2[l2/2]) / 2 : a2[l2/2];
+				double cqs2med = l2 % 2 == 0 ? (a2[l2/2-1] + a2[l2/2]) / 2 : a2[l2/2];
 				double cqs2avg = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).average().orElse(0);
 				double cqs2max = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).max().orElse(0);
 				

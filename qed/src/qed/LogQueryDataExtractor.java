@@ -425,6 +425,7 @@ public class LogQueryDataExtractor {
 				int cqsWithData = 0; 
 //        		note that this number may count some data items multiple times
 				int cqsDataCountTotal = 0;
+				int cqsDataCountTotal2 = 0;
 				
 				String qid = lq[0];//System.out.println(qid);
 				String q = lq[1];			
@@ -454,7 +455,7 @@ public class LogQueryDataExtractor {
 			            		cqsWithData++;
 			            		cqsDataCountTotal += m.listStatements().toList().size();
 
-			            		Utils.writeQueryDataFile(d2,qid, m);
+			            		cqsDataCountTotal = (int) Utils.writeQueryDataFile(d2,qid, m);
 			            }
 
 			        } catch (Exception e) { 
@@ -475,7 +476,7 @@ public class LogQueryDataExtractor {
 				}
 				
 				System.out.println(qid + ": cq nbr/cqs with data/total data: "+
-				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal );	
+				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal +"/"+ cqsDataCountTotal2);	
 				int[] ns = {cqs.size(), cqsWithData, cqsDataCountTotal};
 				stat.add(ns);
 				

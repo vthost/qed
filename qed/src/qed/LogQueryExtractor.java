@@ -43,7 +43,7 @@ public class LogQueryExtractor {
 	{ FEATURE_BIND },
 	{ FEATURE_COUNT },
 	{ FEATURE_DISTINCT },
-	{ FEATURE_FILTER,FEATURE_OPTIONAL },
+	{ FEATURE_FILTER},
 	{ FEATURE_FROM_NAMED },
 	{ FEATURE_GROUP_BY },
 	{ FEATURE_HAVING },
@@ -61,6 +61,16 @@ public class LogQueryExtractor {
 	{ FEATURE_SUM },
 	{ FEATURE_UNION },
 	{ FEATURE_VALUES }
+	};
+	public static String[][] FEATURE_CONFIG_EXAMPLE = {
+	{ FEATURE_FILTER,FEATURE_ORDER_BY },
+	{ FEATURE_FILTER,FEATURE_REGEX },
+	{ FEATURE_UNION,FEATURE_DISTINCT },
+	{ FEATURE_UNION,FEATURE_FILTER },
+	{ FEATURE_UNION,FEATURE_ORDER_BY },
+	{ FEATURE_UNION,FEATURE_REGEX },
+	{ FEATURE_OPTIONAL,FEATURE_REGEX },
+	{ FEATURE_OPTIONAL,FEATURE_LIMIT }
 	};
 	
 	public static String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
@@ -165,7 +175,7 @@ public class LogQueryExtractor {
 
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries("http://dbpedia.org", null, 0, 0, 0);
+		qe.extractQueries("http://dbpedia.org", FEATURE_CONFIG_EXAMPLE, 0, 0, 0);
 		
 //		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
 //		qe.extractQueries(ids);
