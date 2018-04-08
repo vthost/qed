@@ -42,8 +42,6 @@ public class LogQueryDataExtractor {
 	
 	private int defaultDataLimit = 10;
 	
-//	TODO not sure if Service, Subquery, and Graph are treated correctly everywhere
-//	
 //	jena sparql syntax Element that can be ignored:
 //	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
 //	(except in (not) exists, but that may only occur in filters - according to the spec)
@@ -166,8 +164,7 @@ public class LogQueryDataExtractor {
 		return newlist;
 	}
 	
-//	TODO discuss if solutions are ok like this
-//	
+	
 //	we ignore ElementDataset since it is unused by the parser (according to the JavaDoc)
 	private List<Element> getInVariability(Element e, String qs) {	
 		
@@ -397,7 +394,6 @@ public class LogQueryDataExtractor {
 		File[] dirs = Utils.listDirectories(new File(Utils.DATA_DIR));
 //		to collect statistics for construct queries
 		Map<String,List<int[]>> stats = Arrays.asList(dirs).stream().
-				//map(d -> (d.getName(),new ArrayList<int[]>()).
 				collect(Collectors.toMap(d -> d.getName(), d -> new ArrayList<int[]>()));
 
 //		for each config directory
@@ -427,27 +423,20 @@ public class LogQueryDataExtractor {
 				int cqsDataCountTotal = 0;
 				int cqsDataCountTotal2 = 0;
 				
-				String qid = lq[0];//System.out.println(qid);
+				String qid = lq[0];System.out.println(qid);
 				String q = lq[1];			
-				//some queries are erroneous; missing whitespace
-//				q = q.replace("FROM <http://dbpedia.org>", " FROM <http://dbpedia.org> ");
-
+	
 				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
 //					uncomment the following line to get a file with all the cqs
-				Utils.writeConstructQueriesFile(d2,qid,cqs);
+//				Utils.writeConstructQueriesFile(d2,qid,cqs);
 				
 				for (Query cq : cqs) {
-//						Query cq = toConstructQuery(q, datasetSizeMax); //System.out.println("------------------ ");System.out.println(cq);
-//						System.out.println("------------------ ");System.out.println(cq);
-//						
+					
 					QueryEngineHTTP qe = null;
 					try {		
 						
 						qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
 			            qe.addParam("timeout", "10000") ;
-			            
-//						qe.addParam("user", "dba") ;
-//						qe.addParam("password", "dba") ;
 
 			            Model m = qe.execConstruct();
 			            
@@ -481,7 +470,7 @@ public class LogQueryDataExtractor {
 				stat.add(ns);
 				
 				if(cqsWithData == 0) { 	
-//		            	System.out.println("NO DATA "+ qid);
+		            	System.out.println("NO DATA "+ qid);
 //		            	System.out.println(query);
 	            	
 //		            	delete other files
@@ -528,8 +517,8 @@ public class LogQueryDataExtractor {
 				qe1.close();
 			}
 		}
-//		System.out.println(stats);
-		Utils.writeStatisticsFile2(stats);
+
+		Utils.writeStatisticsFile(stats);
 		
 	}
 	
@@ -537,6 +526,6 @@ public class LogQueryDataExtractor {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
 		de.extractQueryDataAndResults("http://localhost:8080/sparql", 0);//http://dbpedia.org/sparql
 	}
-
+//finally, delete empty write report, make outprint nice
 
 }

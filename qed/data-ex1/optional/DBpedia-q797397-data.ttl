@@ -1,4 +1,0 @@
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-<http://dbpedia.org/resource/Th%C3%A9r%C3%A8se_Rein>
-        rdfs:label  "Thérèse Rein"@en .

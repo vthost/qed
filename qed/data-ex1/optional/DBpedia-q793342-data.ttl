@@ -1,5 +1,0 @@
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns1:   <http://dbpedia.org/resource/Resident_Evil:> .
-
-ns1:_The_Umbrella_Chronicles
-        rdfs:label  "Resident Evil: The Umbrella Chronicles"@fi , "Resident Evil: The Umbrella Chronicles"@en , "Resident Evil: The Umbrella Chronicles"@es , "Resident Evil: The Umbrella Chronicles"@it , "Resident Evil: The Umbrella Chronicles"@de .

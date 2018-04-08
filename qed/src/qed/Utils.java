@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.OptionalInt;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -207,59 +206,7 @@ public class Utils {
 		}
 	}
 	
-	
-	
 	public static void writeStatisticsFile(Map<String,List<int[]>> stats) {
-		try {		
-			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
-			writer.write("config;cqs;cqs-with-data;stmt-avg\n");
-			
-			stats.entrySet().stream().forEach(e -> {
-								
-				String config = e.getKey();
-				e.getValue().stream().forEach(ns -> {
-					try {
-						writer.write(config.replace("_", "\\_") + ";" + ns[0] + ";" + ns[1] + ";" + ( ns[1] > 0 ? ns[2]/ns[1] : 0) + "\n");
-	
-					} catch (IOException e1) {
-						e1.printStackTrace();
-					}
-				});	
-			});
-			writer.close();
-			
-			
-			FileWriter writer2 = new FileWriter(Utils.DATA_DIR + File.separator + "stats.txt");	
-			writer2.write("config;cqs-avg;cqs-with-data-agv;stmt-avg\n");//TODO add quartiles, min...?
-
-			stats.entrySet().stream().forEach(e -> {
-				
-				String config = e.getKey();
-				List<int[]> v = e.getValue();
-				if (v.size() > 0) {
-				int cqsAvg = v.stream().mapToInt(ns -> ns[0]).sum()/v.size();
-				int cqsWithDataAvg = v.stream().mapToInt(ns -> ns[1]).sum()/v.size();
-//				TODO I think this is not correct
-				int avgDataCount = v.stream().mapToInt(ns -> ( ns[1] > 0 ? ns[2]/ns[1] : 0)).sum()/v.size();
-				try {
-					writer2.write(config.replace("_", "\\_") + ";" + cqsAvg  + ";" + 
-				cqsWithDataAvg  + ";" + avgDataCount  + "\n" );
-
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-				}
-			});
-			
-			writer2.close();
-						
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-
-	}
-	
-	public static void writeStatisticsFile2(Map<String,List<int[]>> stats) {
 		try {		
 			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
 			writer.write("config;cqs;cqs-with-data;stmt-avg\n");

@@ -1,9 +1,0 @@
-@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix ns4:   <http://dbpedia.org/resource/Category:> .
-
-dbpedia:Leeds  geo:lat  "53.7997"^^xsd:float ;
-        geo:long      "-1.54917"^^xsd:float , -1.54917 , "-1.55"^^xsd:float ;
-        skos:subject  ns4:Towns_in_West_Yorkshire .

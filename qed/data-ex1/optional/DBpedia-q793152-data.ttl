@@ -1,5 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:Oliver_La_Farge
-        rdfs:label  "Oliver La Farge"@en , "Oliver La Farge"@pl , "Oliver La Farge"@pt , "Oliverius La Farge"@la , "Oliver La Farge"@de .

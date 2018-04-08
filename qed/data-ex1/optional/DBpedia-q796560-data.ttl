@@ -1,4 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:Comet_tank  rdfs:label  "Comet tank"@tr , "Comet tank"@hu , "Comet"@fi , "A34 Comet"@es , "A34 Comet"@ca .

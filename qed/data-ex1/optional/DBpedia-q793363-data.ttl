@@ -1,4 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:Cuban_Link  rdfs:label  "Cuban Link"@en , "Cuban Link"@fr , "Cuban Link"@es , "Cuban Link"@de , "Cuban Link"@it .

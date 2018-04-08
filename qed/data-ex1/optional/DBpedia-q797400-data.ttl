@@ -1,5 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:Joint_Direct_Attack_Munition
-        rdfs:label  "Joint Direct Attack Munition"@de , "JDAM"@es , "مهمات تهاجم مستقیم مشترک"@fa , "JDAM"@it , "Joint Direct Attack Munition"@en .

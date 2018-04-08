@@ -1,1 +1,0 @@
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbont: <http://dbpedia.org/ontology/> SELECT ?link ?date WHERE {          ?link dbont:artist <http://dbpedia.org/resource/The_Beatles> .         ?link rdf:type dbont:Album .         ?link dbont:releaseDate ?date} ORDER BY ?date

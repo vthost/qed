@@ -10,7 +10,6 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 public class LogQueryExtractor {
 	
 //	LSQ features we can query for 
-//TODO	in a recent gitlab version, there should be a feature for property paths 
 	public static String FEATURE_AVG ="Avg";
 	public static String FEATURE_BIND ="Bind";
 	public static String FEATURE_COUNT ="Count";
@@ -52,7 +51,7 @@ public class LogQueryExtractor {
 	{ FEATURE_MIN },
 	{ FEATURE_MINUS },
 	{ FEATURE_NAMED_GRAPH },
-//	{ FEATURE_OFFSET },
+	{ FEATURE_OFFSET },
 	{ FEATURE_OPTIONAL },
 	{ FEATURE_ORDER_BY },
 	{ FEATURE_REGEX },
@@ -73,8 +72,33 @@ public class LogQueryExtractor {
 	{ FEATURE_OPTIONAL,FEATURE_LIMIT }
 	};
 	
+	public static String[][] FEATURE_CONFIG_TEST_ONE = {
+//			{ FEATURE_AVG },
+//			{ FEATURE_BIND },
+//			{ FEATURE_COUNT },
+//			{ FEATURE_DISTINCT },
+//			{ FEATURE_FILTER},
+//			{ FEATURE_FROM_NAMED },
+//			{ FEATURE_GROUP_BY },
+//			{ FEATURE_HAVING },
+//			{ FEATURE_LIMIT },
+//			{ FEATURE_MAX },
+//			{ FEATURE_MIN },
+//			{ FEATURE_MINUS },
+//			{ FEATURE_NAMED_GRAPH },
+////			{ FEATURE_OFFSET },
+//			{ FEATURE_OPTIONAL },
+//			{ FEATURE_ORDER_BY },
+//			{ FEATURE_REGEX },
+//			{ FEATURE_SERVICE },
+//			{ FEATURE_SUBQUERY },
+//			{ FEATURE_SUM },
+			{ FEATURE_UNION },
+//			{ FEATURE_VALUES }
+			};
+	
 	public static String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
-	private int defaultQueryNumMax = 100;//20;
+	private int defaultQueryNumMax = 10;
 	private int defaultQuerySizeMin = 3;
 	private int defaultQueryResultSizeMin = 1;
 
@@ -84,17 +108,11 @@ public class LogQueryExtractor {
 		try ( QueryEngineHTTP qexec =  
 				(QueryEngineHTTP) QueryExecutionFactory.sparqlService(
 						"http://lsq.aksw.org/sparql?", query)  ) {
-//						"http://localhost:8080/sparql", query)  ) {
-//						"http://akswnc9.aksw.uni-leipzig.de:8911/sparql", query)  ) {
-
 			
 			qexec.addParam("timeout", "10000") ;
 			if(logUri != null && !logUri.equals(""))
 				qexec.addParam("default-graph-uri", logUri) ;
-			
-//			qexec.addParam("user", "dba") ;
-//			qexec.addParam("password", "dba") ;
-        	
+       	
             ResultSet rs = qexec.execSelect();
             
             while(rs.hasNext()) {
@@ -120,20 +138,26 @@ public class LogQueryExtractor {
 					" FILTER(?rt < 100"
 					+ " && ?rs >= " + (queryResultSizeMin > 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
 					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
-//					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_NAMED_GRAPH + " } "
-//					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_SERVICE + " } "
-//					+ "FILTER NOT EXISTS { ?id lsqv:usesFeature lsqv:" + FEATURE_NAMED_GRAPH + " } ";
 			
 			String query =  "PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
 			+ "PREFIX sp: <http://spinrdf.org/sp#>  "
 									
-//			TODO for the benchmark we might want to consider also types other than select!
 			+ "SELECT ?id ?text WHERE { "
+//			TODO consider also forms other than select!
 			+ "?id a sp:Select; "
-			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "
-			
+			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "		
 			+ "lsqv:usesFeature lsqv:" + String.join("; lsqv:usesFeature lsqv:", config) + ". "
-			+ filter + ". "
+			+ filter + " . "
+
+			//this is a shortcut to sort out "bot" queries that only differ in some values in the queries
+//			TODO this could be enhanced..
+			//subquery start
+			+ "{ SELECT (SAMPLE(?text0) AS ?text) WHERE { "
+			+ "?y sp:text ?text0 . BIND (STRBEFORE(?text0,\"WHERE\") AS ?textstart)"			
+			+ "} GROUP BY ?textstart } ."
+			//subquery end
+			
+//			we currently select queries with few variables to make the data set generation faster
 			//subquery start
 			+ "{ SELECT ?id (SUM(?vcount) as ?vcountsum) WHERE { " 
 			+ "{ SELECT ?id (0 as ?vcount) WHERE { ?id lsqv:mentionsSubject ?s. }} UNION "
@@ -144,10 +168,11 @@ public class LogQueryExtractor {
 			+ "{ SELECT ?id ?v WHERE { ?id lsqv:mentionsObject ?v. FILTER (regex(?v,\"^[?]\"))}} "
 			+ "} GROUP BY ?id } "
 			
-			+ "} GROUP BY ?id }"
+			+ "} GROUP BY ?id } "
 			//subquery end
-			+ "} ORDER BY ASC(?vcountsum) "
-			+ "LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); //System.out.println(QueryFactory.create(query));
+
+			
+			+ "} ORDER BY ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
 
 			queryLogAndWriteFiles(query, logUri, Utils.cleanDataSubDir(config));
 			

@@ -1,8 +1,0 @@
-@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-<http://dbpedia.org/resource/Redstone%2C_Colorado>
-        rdfs:label  "Redstone, Colorado"@en , "Redstone (Colorado)"@vo ;
-        geo:lat     39.1806 , "39.1806"^^xsd:float ;
-        geo:long    "-107.239"^^xsd:float .

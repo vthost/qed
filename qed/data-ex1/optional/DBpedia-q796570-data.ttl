@@ -1,4 +1,0 @@
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-<http://dbpedia.org/resource/Jos%C3%A9_Francisco_de_Isla>
-        rdfs:label  "José Francisco de Isla"@es , "Исла, Хосе Франсиско де"@ru , "José Francisco de Isla"@de , "José Francisco de Isla"@en , "José Francisco de Isla"@ca .

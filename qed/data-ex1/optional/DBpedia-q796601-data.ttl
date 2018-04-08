@@ -1,5 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:Robert_Ritter_von_Greim
-        rdfs:label  "Robert Ritter von Greim"@hu , "Robert Ritter von Greim"@nl , "Robert Ritter von Greim"@en , "Robert Ritter von Greim"@it , "Robert Ritter von Greim"@fr .

@@ -1,9 +1,0 @@
-@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns3:   <http://dbpedia.org/resource/Category:> .
-
-<http://dbpedia.org/resource/Pico_do_Jaragu%C3%A1>
-        geo:lat       "-23.4583"^^xsd:float ;
-        geo:long      "-46.7653"^^xsd:float , -46.7653 ;
-        skos:subject  ns3:Mountains_of_Brazil .

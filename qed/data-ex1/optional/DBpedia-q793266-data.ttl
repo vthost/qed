@@ -1,4 +1,0 @@
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-<http://dbpedia.org/resource/Brianz%C3%B6%C3%B6>
-        rdfs:label  "Dialetto brianzolo"@it , "Brianzöö"@en , "Брианцийский диалект западноломбардского языка"@ru , "Brianzoeu"@it .

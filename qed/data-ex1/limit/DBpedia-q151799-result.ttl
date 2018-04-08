@@ -3,18 +3,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "musician" , "name" , "description_en" , "description_de" ;
+  rs:resultVariable  "name" , "description_de" , "description_en" , "musician" ;
   rs:size            "5"^^xsd:int ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Lou_Bega> ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Detlef_Wiedeke> ;
                                      rs:variable  "musician"
                                    ] ;
-            rs:binding  [ rs:value     "Lou Bega ist ein deutscher Latin-Pop-Sänger."@de ;
-                          rs:variable  "description_de"
-                        ] ;
-            rs:binding  [ rs:value     "David Lubega (born April 13, 1975), also known as Lou Bega, is a German musician of Italian and Ugandan descent, and is famous for his song \"Mambo No. 5\". This song is a remake of the Perez Prado instrumental from 1949. Bega added his own words to the song and sampled the original version extensively."@en ;
+            rs:binding  [ rs:value     "Detlef Wiedeke (May 7, 1950) is a German singer, composer and producer. Between 1984 and 2000 he collaborated with Dieter Bohlen for which he sang in the Modern Talking and Blue System choruses. Since 2003 he works on his music group, Systems in Blue. His voice type is bass."@en ;
                           rs:variable  "description_en"
                         ] ;
-            rs:binding  [ rs:value     "Lou Bega"@en ;
+            rs:binding  [ rs:value     "Detlef Wiedeke"@en ;
                           rs:variable  "name"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christoph_Koncz> ;
@@ -44,13 +41,16 @@
             rs:binding  [ rs:value     "Lou Bega"@de ;
                           rs:variable  "name"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Detlef_Wiedeke> ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Lou_Bega> ;
                                      rs:variable  "musician"
                                    ] ;
-            rs:binding  [ rs:value     "Detlef Wiedeke (May 7, 1950) is a German singer, composer and producer. Between 1984 and 2000 he collaborated with Dieter Bohlen for which he sang in the Modern Talking and Blue System choruses. Since 2003 he works on his music group, Systems in Blue. His voice type is bass."@en ;
+            rs:binding  [ rs:value     "Lou Bega ist ein deutscher Latin-Pop-Sänger."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     "David Lubega (born April 13, 1975), also known as Lou Bega, is a German musician of Italian and Ugandan descent, and is famous for his song \"Mambo No. 5\". This song is a remake of the Perez Prado instrumental from 1949. Bega added his own words to the song and sampled the original version extensively."@en ;
                           rs:variable  "description_en"
                         ] ;
-            rs:binding  [ rs:value     "Detlef Wiedeke"@en ;
+            rs:binding  [ rs:value     "Lou Bega"@en ;
                           rs:variable  "name"
                         ] ]
 ] .

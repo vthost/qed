@@ -1,4 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:MTV_Two  rdfs:label  "MTV Two"@de , "MTV Two"@en , "MTV Two"@pl , "MTV Two"@hu , "MTV2 Europe"@es .

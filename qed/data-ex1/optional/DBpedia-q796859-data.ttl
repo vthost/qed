@@ -1,5 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-dbpedia:Onychomycosis
-        rdfs:label  "Onychomycosis"@en , "Grzybica paznokci"@pl , "Onicomicosi"@it , "Онихомикоз"@ru , "甲癬"@zh .
