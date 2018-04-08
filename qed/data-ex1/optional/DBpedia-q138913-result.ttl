@@ -1,0 +1,20 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "dateofrelease" , "cover" , "comment" , "name" , "album" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Velvet Underground and Nico.jpg"@en ;
+                                     rs:variable  "cover"
+                                   ] ;
+            rs:binding  [ rs:value     "The Velvet Underground &amp; Nico is the debut album by American rock band The Velvet Underground and vocal collaborator Nico. It was originally released in March 1967 by Verve Records. Recorded in 1966 during Andy Warhol's Exploding Plastic Inevitable multimedia event tour, The Velvet Underground &amp; Nico would gain notoriety for its experimentalist performance sensibilities, as well as its focus on controversial subject matter expressed in many of their songs."@en ;
+                          rs:variable  "comment"
+                        ] ;
+            rs:binding  [ rs:value     "The Velvet Underground & Nico"@en ;
+                          rs:variable  "name"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> ;
+                          rs:variable  "album"
+                        ] ]
+] .

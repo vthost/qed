@@ -1,0 +1,32 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "homepage" , "depiction" , "long" , "lat" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "http:/www.ayto-siero.es/"^^xsd:anyURI ;
+                                     rs:variable  "homepage"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/1/18/Siero_flag.svg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "-5.65"^^xsd:float ;
+                          rs:variable  "long"
+                        ] ;
+            rs:binding  [ rs:value     "43.3833"^^xsd:float ;
+                          rs:variable  "lat"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.ayto-siero.es/> ;
+                                     rs:variable  "homepage"
+                                   ] ;
+            rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/1/18/Siero_flag.svg> ;
+                          rs:variable  "depiction"
+                        ] ;
+            rs:binding  [ rs:value     "-5.65"^^xsd:float ;
+                          rs:variable  "long"
+                        ] ;
+            rs:binding  [ rs:value     "43.3833"^^xsd:float ;
+                          rs:variable  "lat"
+                        ] ]
+] .

@@ -1,0 +1,18 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Benton%2C_Missouri>
+        dbpprop:officialName     "Benton, Missouri"@en ;
+        dbpprop:populationTotal  "732"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Abbyville%2C_Kansas>
+        dbpprop:officialName     "Abbyville, Kansas"@en ;
+        dbpprop:populationTotal  "128"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:San_Diego  dbpprop:officialName
+                "The City of San Diego"@fa , "City of San Diego"@in , "Sandjego"@lv , "San Diego, California"@es , "Mesto San Diego"@sl ;
+        dbpprop:populationTotal  "1255240"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .

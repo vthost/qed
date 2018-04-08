@@ -1,0 +1,19 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/resource/Template:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+ns2:Infobox_nrhp  rdfs:label  "Templat:Infobox nrhp"@in , "Bản mẫu:Infobox nrhp/doc"@vi , "Sjabloon:Infobox nrhp"@nl , "Plantilla:Ficha de NRHP/doc"@es , "แม่แบบ:Infobox nrhp"@th .
+
+<http://dbpedia.org/resource/Canton%2C_Massachusetts>
+        rdfs:label  "Canton, Massachusetts"@en , "Canton (Massachusetts)"@vo , "Canton, Massachusetts"@ht .
+
+dbpprop:wikilink  rdfs:label  "wikilink"@da .
+
+dbpprop:built  rdfs:label  "built"@ca , "built"@ar , "built"@fr , "built"@bn , "built"@es .
+
+dbpedia:Blue_Hills_Reservation_Parkways
+        dbpprop:built                 "1894"^^xsd:int ;
+        dbpprop:wikiPageUsesTemplate  ns2:Infobox_nrhp ;
+        dbpprop:wikilink              <http://dbpedia.org/resource/Canton%2C_Massachusetts> .

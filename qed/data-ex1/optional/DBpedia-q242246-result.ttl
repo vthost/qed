@@ -1,0 +1,56 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" , "com" , "placeOfDeath" , "name" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Albrecht Theodor Emil Graf von Roon (30 April 1803 &ndash; 23 February 1879) was a Prussian soldier and politician. Roon, along with Otto von Bismarck and Helmuth von Moltke, was one of the leading figures in Prussia's government during the key decade of the 1860s, when Germany was unified under Prussia's leadership."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/German_Empire> ;
+                          rs:variable  "placeOfDeath"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Albrecht_von_Roon> ;
+                          rs:variable  "person"
+                        ] ;
+            rs:binding  [ rs:value     "Albrecht Theodor Emil von Roon"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Albrecht Theodor Emil Graf von Roon (30 April 1803 &ndash; 23 February 1879) was a Prussian soldier and politician. Roon, along with Otto von Bismarck and Helmuth von Moltke, was one of the leading figures in Prussia's government during the key decade of the 1860s, when Germany was unified under Prussia's leadership."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/German_Empire> ;
+                          rs:variable  "placeOfDeath"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Albrecht_von_Roon> ;
+                          rs:variable  "person"
+                        ] ;
+            rs:binding  [ rs:value     "Albrecht von Roon"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Albrecht Theodor Emil Graf von Roon (30 April 1803 &ndash; 23 February 1879) was a Prussian soldier and politician. Roon, along with Otto von Bismarck and Helmuth von Moltke, was one of the leading figures in Prussia's government during the key decade of the 1860s, when Germany was unified under Prussia's leadership."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Berlin> ;
+                          rs:variable  "placeOfDeath"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Albrecht_von_Roon> ;
+                          rs:variable  "person"
+                        ] ;
+            rs:binding  [ rs:value     "Albrecht von Roon"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Albrecht Theodor Emil Graf von Roon (30 April 1803 &ndash; 23 February 1879) was a Prussian soldier and politician. Roon, along with Otto von Bismarck and Helmuth von Moltke, was one of the leading figures in Prussia's government during the key decade of the 1860s, when Germany was unified under Prussia's leadership."@en ;
+                                     rs:variable  "com"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Berlin> ;
+                          rs:variable  "placeOfDeath"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Albrecht_von_Roon> ;
+                          rs:variable  "person"
+                        ] ;
+            rs:binding  [ rs:value     "Albrecht Theodor Emil von Roon"@de ;
+                          rs:variable  "name"
+                        ] ]
+] .

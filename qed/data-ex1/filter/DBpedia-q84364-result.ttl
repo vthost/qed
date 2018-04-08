@@ -1,0 +1,20 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "img" , "sl" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/en/d/df/BoschCureofFolly.jpg> ;
+                                     rs:variable  "img"
+                                   ] ;
+            rs:binding  [ rs:value     "The Extraction of the Stone of Madness (The Cure of Folly)"@en ;
+                          rs:variable  "sl"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/b/ba/Garden_delights.jpg> ;
+                                     rs:variable  "img"
+                                   ] ;
+            rs:binding  [ rs:value     "The Garden of Earthly Delights"@en ;
+                          rs:variable  "sl"
+                        ] ]
+] .

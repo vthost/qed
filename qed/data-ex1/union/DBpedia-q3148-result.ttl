@@ -1,0 +1,134 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "isValueOf" , "name2WHERE" , "name" , "hasValue" , "property" ;
+  rs:size            "16"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@el ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/wikilink> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_Anderson> ;
+                                     rs:variable  "isValueOf"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/filmsNotables> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_Anderson> ;
+                                     rs:variable  "isValueOf"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/filmsNotables> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS – Die Serie"@de ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/redirect> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_Anderson> ;
+                                     rs:variable  "isValueOf"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/filmsNotables> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@nl ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/redirect> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS – Die Serie"@de ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/wikilink> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Joe_Jonas> ;
+                                     rs:variable  "isValueOf"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/wikilink> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@es ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/wikilink> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@fr ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/redirect> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@el ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/redirect> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_Anderson> ;
+                                     rs:variable  "isValueOf"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/filmsNotables> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_Anderson> ;
+                                     rs:variable  "isValueOf"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/filmsNotables> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@fr ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/wikilink> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@nl ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/wikilink> ;
+                          rs:variable  "property"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "JONAS"@es ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Jonas_%28TV_series%29> ;
+                          rs:variable  "hasValue"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/redirect> ;
+                          rs:variable  "property"
+                        ] ]
+] .

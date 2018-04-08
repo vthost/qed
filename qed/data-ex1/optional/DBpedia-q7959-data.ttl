@@ -1,0 +1,14 @@
+@prefix ns6:   <http://fr.wikipedia.org/wiki/> .
+@prefix ns5:   <http://es.wikipedia.org/wiki/> .
+@prefix ns7:   <http://es.wikipedia.org/wiki/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns4:   <http://en.wikipedia.org/wiki/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://fi.wikipedia.org/wiki/> .
+
+dbpedia:Funk_carioca  rdfs:comment  "Rio Funk (auch Favela Funk oder Baile Funk, in Brasilien meist einfach nur Funk oder Funk Carioca) nennt man eine in den 90er Jahren sehr populär gewordene Form des Hip-Hop aus Brasilien."@de , "Funk Carioca, favela funk and, elsewhere in the world, baile funk, is a type of dance music from Rio de Janeiro, derived from Miami bass. In Rio de Janeiro it is most often simply known as funk, although it is very different musically from what funk means in most other places. \"Baile funk\", in Rio, refers not to the music, but to the actual parties in which the music is played."@en ;
+        rdfs:label          "Funk carioca"@en , "Rio Funk"@de ;
+        dbpprop:popularity  "Large mid-1990s and current in Brazil, Moderate mid-2000s in Eastern Europe."@en ;
+        foaf:page           <http://de.wikipedia.org/wiki/Rio_Funk> , ns4:Funk_carioca , ns3:Baile_funk , ns7:Funk_carioca , ns6:Baile_funk .

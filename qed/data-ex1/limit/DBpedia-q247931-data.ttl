@@ -1,0 +1,18 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns5:   <http://www.opengis.net/gml/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://www.opengis.net/gml/> .
+@prefix ns4:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Allscot  a  yago:Site108651247 , owl:Thing , ns4:Settlement , ns4:Place , ns4:PopulatedPlace , ns1:_Feature ;
+        geo:lat   "52.56"^^xsd:float ;
+        geo:long  "-2.39"^^xsd:float .
+
+dbpedia:16th_Street_Mall
+        a         ns1:_Feature , yago:I.M.PeiBuildings ;
+        geo:lat   39.7486 ;
+        geo:long  -104.997 .

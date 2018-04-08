@@ -1,0 +1,10 @@
+@prefix ns5:   <http://dbpedia.org/resource/Category:> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Switzerland  a  ns2:Country ;
+        rdfs:label    "Switzerland"@en , "Schweiz"@de , "Suíça"@pt , "Switserland"@af , "سويسرا"@ar ;
+        skos:subject  ns5:European_countries .
