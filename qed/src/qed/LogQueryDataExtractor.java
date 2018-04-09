@@ -421,13 +421,12 @@ public class LogQueryDataExtractor {
 				int cqsWithData = 0; 
 //        		note that this number may count some data items multiple times
 				int cqsDataCountTotal = 0;
-				int cqsDataCountTotal2 = 0;
 				
-				String qid = lq[0];System.out.println(qid);
+				String qid = lq[0];//System.out.println(qid);
 				String q = lq[1];			
 	
 				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
-//					uncomment the following line to get a file with all the cqs
+//				uncomment the following line to get a file with all the cqs
 //				Utils.writeConstructQueriesFile(d2,qid,cqs);
 				
 				for (Query cq : cqs) {
@@ -456,16 +455,20 @@ public class LogQueryDataExtractor {
 //				        	System.out.println("------------------ ");
 //				        	System.out.println(q);
 //				        	System.out.println("------------------ Query failed END");
-		            	//just leave this in currently to be able to look at the query
-//			            	(new File(Utils.getQueryFilePath(qid))).delete();
-			        	
+		            	//or just leave this in currently to be able to look at the query
+//			        (new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
+//			        	
 			        } finally {
 			        		if(qe != null) qe.close();
 			        }
 				}
 				
+//				//exceptions
+//				if(cqsDataCountTotal==0)         (new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
+//				
+				
 				System.out.println(qid + ": cq nbr/cqs with data/total data: "+
-				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal +"/"+ cqsDataCountTotal2);	
+				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal );	
 				int[] ns = {cqs.size(), cqsWithData, cqsDataCountTotal};
 				stat.add(ns);
 				
@@ -474,7 +477,7 @@ public class LogQueryDataExtractor {
 //		            	System.out.println(query);
 	            	
 //		            	delete other files
-//		            	(new File(Utils.getQueryFilePath(qid))).delete();
+		            	(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
 	            		continue;
 				}
 				
@@ -507,9 +510,8 @@ public class LogQueryDataExtractor {
 //			            	System.out.println(q);
 	            	
 	            	//delete files
-//			            (new File(Utils.getQueryFilePath(qid))).delete();
-//						(new File(Utils.getQueryDataFilePath(qid))).delete();
-	            	
+					(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
+					(new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
 	            } else {
 	            	Utils.writeQueryResultFile(d2, qid, rs);
 	            }

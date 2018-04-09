@@ -174,7 +174,9 @@ public class LogQueryExtractor {
 			
 			+ "} ORDER BY ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
 
-			queryLogAndWriteFiles(query, logUri, Utils.cleanDataSubDir(config));
+			File f = Utils.cleanDataSubDir(config);
+			queryLogAndWriteFiles(query, logUri, f);
+			if(f.list().length == 0) f.delete();
 			
 		}
 

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -27,8 +28,8 @@ import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
 
 public class Utils {
-	
-	public static String DATA_DIR = System.getProperty("user.dir") + File.separator + "data" + File.separator;	
+
+	public static String DATA_DIR =  System.getProperty("user.dir")+ File.separator +".."+File.separator +".."+File.separator + "data" + File.separator;	
 	public static String MANIFEST_EVALUATION_FILE_NAME = "manifest_evaluation.ttl";
 	public static String MANIFEST_FILE_NAME = "manifest.ttl";
 	public static String CONSTRUCT_QUERIES_FILE_EXT = "-cqs.txt";
@@ -85,7 +86,7 @@ public class Utils {
 		}
 	
 		f = new File(p); 
-		f.mkdir();
+		f.mkdir();//System.out.println(f);
 		return f;
 	}
 	
@@ -228,7 +229,6 @@ public class Utils {
 			
 			FileWriter writer2 = new FileWriter(Utils.DATA_DIR + File.separator + "stats.txt");
 			writer2.write("config;cqs;cmin;cmed;cavg;cmax;ecmin;ecmed;ecavg;ecmax;smin;smed;savg;smax\n");
-//			writer2.write("config;cqs-avg;cqs-with-data-agv;stmt-avg\n");//TODO add quartiles, min...?
 
 			stats.entrySet().stream().forEach(e -> {
 				
@@ -255,10 +255,16 @@ public class Utils {
 				int smed = l3 % 2 == 0 ? (a3[l3/2-1] + a3[l3/2]) / 2 : a3[l3/2];
 				int savg = (int) v.stream().mapToInt(ns -> ns[2]).average().orElse(0);
 				int smax = v.stream().mapToInt(ns -> ns[2]).max().orElse(0);
+				
+				DecimalFormat f = new DecimalFormat("#.##");
 				try {
 					writer2.write(config.replace("_", "\\_") + ";"+v.size()+ ";"  
 				+ cqsmin+ ";"  +cqsmed+ ";"+cqsavg+ ";" +cqsmax   + ";" 
-				+cqs2min+ ";"  +cqs2med+ ";" +cqs2avg+ ";"  +cqs2max + ";" + smin +";" + smed+ ";" + savg  +";" + smax  + "\n" );
+				+f.format(cqs2min)+ ";"
+				+f.format(cqs2med)+ ";"
+				+f.format(cqs2avg)+ ";"
+				+f.format(cqs2max)+ ";"
+				+smin +";" + smed+ ";" + savg  +";" + smax  + "\n" );
 
 				} catch (IOException e1) {
 					e1.printStackTrace();
