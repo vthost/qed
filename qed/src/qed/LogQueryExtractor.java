@@ -98,16 +98,18 @@ public class LogQueryExtractor {
 			};
 	
 	public static String[][] defaultConfig = FEATURE_CONFIG_SIMPLE;
+	
+//	private String defaultLogEndpoint = "http://lsq.aksw.org/sparql?";
 	private int defaultQueryNumMax = 10;
 	private int defaultQuerySizeMin = 3;
 	private int defaultQueryResultSizeMin = 1;
 
 	
-	private void queryLogAndWriteFiles(String query, String logUri, File directory) {
+	private void queryLogAndWriteFiles(String logEndpoint, String logUri, String query, File directory) {
 		
 		try ( QueryEngineHTTP qexec =  
 				(QueryEngineHTTP) QueryExecutionFactory.sparqlService(
-						"http://lsq.aksw.org/sparql?", query)  ) {
+						logEndpoint, query)  ) {
 			
 			qexec.addParam("timeout", "10000") ;
 			if(logUri != null && !logUri.equals(""))
@@ -128,7 +130,7 @@ public class LogQueryExtractor {
 	
 //  queryNumMax is per config
 //	we might change this by using a big union
-	public void extractQueries(String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
+	public void extractQueries(String logEndpoint, String logUri, String[][] configs, int queryNumMax, int querySizeMin, int queryResultSizeMin) {
 		
 		Utils.cleanDataDir();
 		
@@ -175,14 +177,14 @@ public class LogQueryExtractor {
 			+ "} ORDER BY ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
 
 			File f = Utils.cleanDataSubDir(config);
-			queryLogAndWriteFiles(query, logUri, f);
+			queryLogAndWriteFiles(logEndpoint, logUri, query, f);
 			if(f.list().length == 0) f.delete();
 			
 		}
 
 	}
 
-	public void extractQueries(String[] queryIds) {
+	public void extractQueries(String logEndpoint, String logUri, String[] queryIds) {
 		
 		if(queryIds == null || queryIds.length == 0) return;
 		
@@ -197,12 +199,12 @@ public class LogQueryExtractor {
 
 		String[] dummyConfig = {"data"};
 		
-		queryLogAndWriteFiles(query, null, Utils.cleanDataSubDir(dummyConfig));
+		queryLogAndWriteFiles(logEndpoint, logUri, query, Utils.cleanDataSubDir(dummyConfig));
 	}
 
 	public static void main(String[] args) {
 		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries("http://dbpedia.org", FEATURE_CONFIG_EXAMPLE, 0, 0, 0);
+		qe.extractQueries(null, "http://dbpedia.org", FEATURE_CONFIG_EXAMPLE, 0, 0, 0);
 		
 //		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
 //		qe.extractQueries(ids);

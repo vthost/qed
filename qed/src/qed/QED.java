@@ -1,28 +1,14 @@
 package qed;
 
+import java.io.File;
 import java.util.Properties;
 
 public class QED {
-	
+
+	private String defaultLogEndpoint = "http://lsq.aksw.org/sparql?";
 	private String defaultLog = "http://dbpedia.org";
+	private String defaultDataEndpoint = "http://localhost:8080/sparql";
 	
-//	private String getEndpoint(String logUri) {
-//		
-//		switch(logUri) {
-//		
-//		case "http://dbpedia.org": 
-//			return "http://localhost:8080/sparql";
-//		case "http://linkedgeodata.org": 
-////		TODO ?	
-////		case "http://data.semanticweb.org": 
-////			logEndpoint = http://www.scholarlydata.org/sparql/
-////			break;
-//		case "http://bm.rkbexplorer.com": 
-//			return "http://bm.rkbexplorer.com/sparql/";
-//		default: 
-//			return "http://localhost:8080/sparql";
-//		}
-//	}
 	
 //	private void createDirectoryStructure(String[][] configs) {
 //		
@@ -38,32 +24,35 @@ public class QED {
 //		}
 //	}
 
-//		logUri can be one of	
+//		with LSQ logUri can be one of	
 //		DBpedia: http://dbpedia.org
 //		Linked Geo Data: http://linkedgeodata.org
 //		Semantic Web Dog Food: http://data.semanticweb.org
 //		British Museum: http://bm.rkbexplorer.com
 	
 //	TODO we could add also parameters querySizeMax...
-	public void createDataSet(String logUri, String[][] configs, int queryNumMax, int querySizeMin, 
-			int queryResultSizeMin, int datasetSizeMax) {
+	public void createDataSet(String logEndpoint, String logUri, String[][] configs, int queryNumMax, int querySizeMin, 
+			int queryResultSizeMin, String dataEndpoint, int datasetSizeMax, String dataLoc) {
 		
+		if(dataLoc != "" && dataLoc != null)
+			Utils.DATA_DIR = dataLoc+File.separator + "data" + File.separator;	
+		
+		logEndpoint = logEndpoint == "" || logEndpoint == null ? defaultLogEndpoint : logEndpoint;
 		logUri = logUri == "" || logUri == null ? defaultLog : logUri;
-		
-//		createDirectoryStructure(configs == null ? LogQueryExtractor.defaultConfig : configs);
-		
-		(new LogQueryExtractor()).extractQueries(logUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
-		(new LogQueryDataExtractor()).extractQueryDataAndResults("http://localhost:8080/sparql", datasetSizeMax);
+		dataEndpoint = dataEndpoint == "" || dataEndpoint == null ? defaultDataEndpoint : dataEndpoint;
+				
+		(new LogQueryExtractor()).extractQueries(logEndpoint, logUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
+		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, datasetSizeMax);
 	}
 	
-	public void createDataSet(String logUri, String[] queryIds) {
+	public void createDataSet(String logEndpoint, String logUri, String[] queryIds, String dataEndpoint) {
 		
 		if(queryIds == null || queryIds.length == 0) return;
 		
 		logUri = logUri == "" || logUri == null ? defaultLog : logUri;
 
-		(new LogQueryExtractor()).extractQueries(queryIds);
-		(new LogQueryDataExtractor()).extractQueryDataAndResults("http://localhost:8080/sparql", queryIds.length);
+		(new LogQueryExtractor()).extractQueries(logEndpoint, logUri, queryIds);
+		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, queryIds.length);
 	}
 	
 	
@@ -76,12 +65,14 @@ public class QED {
 		
 		
 		Properties prop = new Properties(System.getProperties());
+
 		(new QED()).createDataSet(
-				prop.getProperty("q"),
+				prop.getProperty("q"),prop.getProperty("u"),
 				null, 
 				prop.getProperty("m") == null ? 0 :Integer.valueOf(prop.getProperty("m")),
 				prop.getProperty("s") == null ? 0 :Integer.valueOf(prop.getProperty("s")),
-				prop.getProperty("r") == null ? 0 :Integer.valueOf(prop.getProperty("r")), 0);
+				prop.getProperty("r") == null ? 0 :Integer.valueOf(prop.getProperty("r")), 
+				prop.getProperty("d"),0,prop.getProperty("l"));
 
 //				new Properties();
 //		InputStream input = null;
