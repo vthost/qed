@@ -56,7 +56,7 @@ v.3.5.1, available at http://wiki.dbpedia.org/services-resources/datasets/data-s
 
 Currently, the feature configuration can only be customized if you #RUN THE SOURCE CODE. For that, check out class qed/QED!
 
-This is the initial version of QED, and we are working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or jdolbyATgmail.com!
+This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or jdolbyATgmail.com!
 
 
 
