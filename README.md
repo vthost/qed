@@ -33,22 +33,30 @@ FEATURE_CONFIG_SIMPLE = {
 	{ FEATURE_UNION },
 	{ FEATURE_VALUES }
 	}.
-- query log: DBpedia provided by the LSQ endpoint http://lsq.aksw.org/sparql
+- query log: the LSQ endpoint http://lsq.aksw.org/sparql
+- query log uri: the queries for DBpedia, i.e., the uri http://dbpedia.org
 - data: assumed to be hosted somewhere by you and available at http://localhost:8080/sparql
 - maximal number of queries extracted per feature set: 10
 - minimum size of each query extracted (number of triples): 3
 - minimum size of the result of each query extracted and answered (number of triples): 1
+- location of the data folder containing the test suite: location of the jar file on your machine
 
 To #CHANGE PARAMETERS, use the following as options when running the jar, e.g: java -jar -Dm=20 qed.jar 
 - query log: -Dq=YOUR_ADDRESS
+- query log uri: -Du=YOUR_STRING
 - data: -Dd=YOUR_ADDRESS
 - maximal number of queries extracted per feature set: -Dm=YOUR_NUMBER
 - minimum size of each query extracted (number of triples): -Ds=YOUR_NUMBER
 - minimum size of the result of each query extracted and answered (number of triples): -Dr=YOUR_NUMBER
+- location of the data folder containing the test suite: -Dl=YOUR_STRING
 
 #NOTE
 We recommend to host the DBpedia data from the time point at which the LSQ data set was created (DBpedia
 v.3.5.1, available at http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-set-351), since some properties represented in the LSQ data set are specific to that (see the LSQ paper for a more detailed overview of that query format, it is linked at http://aksw.github.io/LSQ/). However, if you want to just get an idea of QED you can also take the current DBpedia version hosted at http://dbpedia.org/sparql.
 
 Currently, the feature configuration can only be customized if you #RUN THE SOURCE CODE. For that, check out class qed/QED!
+
+This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or jdolbyATgmail.com!
+
+
 
