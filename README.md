@@ -50,7 +50,7 @@ To #CHANGE PARAMETERS, use the following (optional) options when running the jar
 - maximal number of queries extracted per feature set: -m YOUR_NUMBER
 - minimum size of each query extracted (number of triples): -s YOUR_NUMBER
 - minimum size of the result of each query extracted and answered (number of triples): -r YOUR_NUMBER
-- location of the data folder containing the test suite: -l YOUR_FILE_PATH
+- directory containing the test suite: -l YOUR_FILE_PATH
 
 
 #NOTE
