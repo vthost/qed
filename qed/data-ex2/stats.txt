@@ -1,7 +1,0 @@
-config;cqs;cmin;cmed;cavg;cmax;ecmin;ecmed;ecavg;ecmax;smin;smed;savg;smax
-filter\_orderby;7;2;2;2;4;0.0;1.0;0.7142857142857143;1.0;4;11;12;21
-filter\_regex;1;2;2;2;2;1.0;1.0;1.0;1.0;11;11;11;11
-union\_filter;4;11;11;11;11;0.0;0.0;0.0;0.0;0;0;3;15
-union\_orderby;1;4;4;4;4;0.0;0.0;0.0;0.0;12;12;12;12
-union\_distinct;5;11;11;11;11;0.0;0.0;0.0;0.0;0;0;12;46
-optional\_limit;2;11;11;11;11;0.0;0.0;0.0;0.0;0;8;8;16
