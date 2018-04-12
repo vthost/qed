@@ -43,7 +43,7 @@ FEATURE_CONFIG_SIMPLE = {
 - minimum size of the result of each query extracted and answered (number of triples): 1
 - directory containing the test suite: data, located at the root of the project
 
-To #CHANGE PARAMETERS, use the following (optional) options when running the jar, e.g: java -jar -m 20 qed.jar 
+To #CHANGE PARAMETERS, use the following (optional) options when running the jar, e.g: java -jar -m 20 PATH_ON_YOUR_MACHINE/qed-core-0.0.1-SNAPSHOT-stand-alone.jar
 - query log: -q YOUR_URL
 - graph uri: -u YOUR_URI
 - data: -d YOUR_URL
