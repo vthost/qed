@@ -4,7 +4,9 @@ SPAQRL QED is a system generating out-of-the-box datasets for SPARQL queries ove
 
 For a more detailed introduction into the approach and a coarse overview of the system see qed/paper.pdf
 
-You can #RUN the application using the qed/qed.jar file: java -jar qed.jar 
+You can #RUN the core application qed/qed-core as follows using the command line:
+- build the project qed-core: mvn clean install
+- run the generated .jar file (located in the generated target directory): java -jar PATH_ON_YOUR_MACHINE/qed-core-0.0.1-SNAPSHOT-stand-alone.jar
 
 The #DEFAULT CONFIGURATION uses the following parameters:
 - selected features: 
@@ -39,22 +41,23 @@ FEATURE_CONFIG_SIMPLE = {
 - maximal number of queries extracted per feature set: 10
 - minimum size of each query extracted (number of triples): 3
 - minimum size of the result of each query extracted and answered (number of triples): 1
-- location of the data folder containing the test suite: location of the jar file on your machine
+- directory containing the test suite: data, located at the root of the project
 
-To #CHANGE PARAMETERS, use the following as options when running the jar, e.g: java -jar -Dm=20 qed.jar 
-- query log: -Dq=YOUR_ADDRESS
-- query log uri: -Du=YOUR_STRING
-- data: -Dd=YOUR_ADDRESS
-- maximal number of queries extracted per feature set: -Dm=YOUR_NUMBER
-- minimum size of each query extracted (number of triples): -Ds=YOUR_NUMBER
-- minimum size of the result of each query extracted and answered (number of triples): -Dr=YOUR_NUMBER
-- location of the data folder containing the test suite: -Dl=YOUR_STRING
+To #CHANGE PARAMETERS, use the following (optional) options when running the jar, e.g: java -jar -m 20 qed.jar 
+- query log: -q YOUR_URL
+- graph uri: -u YOUR_URI
+- data: -d YOUR_URL
+- maximal number of queries extracted per feature set: -m YOUR_NUMBER
+- minimum size of each query extracted (number of triples): -s YOUR_NUMBER
+- minimum size of the result of each query extracted and answered (number of triples): -r YOUR_NUMBER
+- location of the data folder containing the test suite: -l YOUR_FILE_PATH
+
 
 #NOTE
 We recommend to host the DBpedia data from the time point at which the LSQ data set was created (DBpedia
 v.3.5.1, available at http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-set-351), since some properties represented in the LSQ data set are specific to that (see the LSQ paper for a more detailed overview of that query format, it is linked at http://aksw.github.io/LSQ/). However, if you want to just get an idea of QED you can also take the current DBpedia version hosted at http://dbpedia.org/sparql.
 
-Currently, the feature configuration can only be customized if you #RUN THE SOURCE CODE. For that, check out class qed/QED!
+Currently, the feature configuration can only be customized if you #RUN THE SOURCE CODE. For that, check out class qed-core/Application!
 
 This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or jdolbyATgmail.com!
 
