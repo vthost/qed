@@ -6,7 +6,7 @@ For a more detailed introduction into the approach and a coarse overview of the 
 
 You can #RUN the core application qed/qed-core as follows using the command line:
 - build the project qed-core: mvn clean install
-- run the generated .jar file (located in the generated target directory): java -jar PATH_ON_YOUR_MACHINE/qed-core-0.0.1-SNAPSHOT-stand-alone.jar
+- run the generated .jar file: java -jar PATH_ON_YOUR_MACHINE/qed/qed-core/target/qed-core-0.0.1-SNAPSHOT-stand-alone.jar
 
 The #DEFAULT CONFIGURATION uses the following parameters:
 - selected features: 
@@ -43,7 +43,7 @@ FEATURE_CONFIG_SIMPLE = {
 - minimum size of the result of each query extracted and answered (number of triples): 1
 - directory containing the test suite: data, located at the root of the project
 
-To #CHANGE PARAMETERS, use the following (optional) options when running the jar, e.g: java -jar -m 20 PATH_ON_YOUR_MACHINE/qed-core-0.0.1-SNAPSHOT-stand-alone.jar
+To #CHANGE PARAMETERS, use the following (optional) options when running the jar, e.g: java -jar -m 20 PATH_ON_YOUR_MACHINE/qed/qed-core/target/qed-core-0.0.1-SNAPSHOT-stand-alone.jar
 - query log: -q YOUR_URL
 - graph uri: -u YOUR_URI
 - data: -d YOUR_URL
