@@ -36,7 +36,7 @@ FEATURE_CONFIG_SIMPLE = {
 	{ FEATURE_VALUES }
 	}.
 - query log: the LSQ endpoint http://lsq.aksw.org/sparql
-- query log uri: the queries for DBpedia, i.e., the uri http://dbpedia.org
+- graph uri: the DBpedia queries, i.e., the uri http://dbpedia.org
 - data: assumed to be hosted somewhere by you and available at http://localhost:8080/sparql
 - maximal number of queries extracted per feature set: 10
 - minimum size of each query extracted (number of triples): 3
