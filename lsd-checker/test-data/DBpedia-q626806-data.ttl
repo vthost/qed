@@ -1,0 +1,21 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://dbpedia.org/resource/The_King_of_Kong:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+ns1:_A_Fistful_of_Quarters
+        dbpprop:creator            "Ed Cunningham"@en , "Beau Bauman"@en , "Luis Lopez"@en , "J. Clay Tweel"@en , "Ross Tuttle"@en ;
+        dbpprop:creator            dbpedia:Seth_Gordon ;
+        dbpprop:director           "J. Clay Tweel"@en , "Beau Bauman"@en , "Luis Lopez"@en , "Ed Cunningham"@en , "Ross Tuttle"@en ;
+        dbpprop:director           dbpedia:Seth_Gordon ;
+        dbpprop:executiveProducer  "Ross Tuttle"@en , "Ed Cunningham"@en , "Beau Bauman"@en , "Luis Lopez"@en , "J. Clay Tweel"@en ;
+        dbpprop:executiveProducer  dbpedia:Seth_Gordon ;
+        dbpprop:guest              "J. Clay Tweel"@en , "Luis Lopez"@en , "Beau Bauman"@en , "Ed Cunningham"@en , "Ross Tuttle"@en ;
+        dbpprop:guest              dbpedia:Seth_Gordon ;
+        dbpprop:producer           "Ross Tuttle"@en , "Luis Lopez"@en , "J. Clay Tweel"@en , "Ed Cunningham"@en , "Beau Bauman"@en ;
+        dbpprop:producer           dbpedia:Seth_Gordon ;
+        dbpprop:series             "J. Clay Tweel"@en , "Luis Lopez"@en , "Ross Tuttle"@en , "Beau Bauman"@en , "Ed Cunningham"@en ;
+        dbpprop:series             dbpedia:Seth_Gordon ;
+        dbpprop:starring           "J. Clay Tweel"@en , "Ed Cunningham"@en , "Beau Bauman"@en , "Luis Lopez"@en , "Ross Tuttle"@en ;
+        dbpprop:starring           dbpedia:Seth_Gordon ;
+        dbpprop:writer             "Ross Tuttle"@en , "J. Clay Tweel"@en , "Luis Lopez"@en , "Beau Bauman"@en , "Ed Cunningham"@en ;
+        dbpprop:writer             dbpedia:Seth_Gordon .
