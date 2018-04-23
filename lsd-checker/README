@@ -1,0 +1,7 @@
+To build this code and run a simple test, please follow the steps below:
+
+1) make sure you have recent Ant and Maven installed
+
+2) run the script 'scripts/build.sh', which will clone and install the needed portions of Quetzal
+
+3) run 'mvn clean install' in this directory
