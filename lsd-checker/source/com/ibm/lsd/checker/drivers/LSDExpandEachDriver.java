@@ -1,5 +1,6 @@
 package com.ibm.lsd.checker.drivers;
 
+import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.Set;
@@ -17,13 +18,17 @@ import kodkod.ast.Relation;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
 
+	public LSDExpandEachDriver(String queryFile) {
+		super(queryFile);
+	}
+
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { new LSDExpandEachDriver().mainLoop(s, new EachPath()); });
+		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s); exp.mainLoop(exp.new EachPath()); });
 	}
 	
-	static class EachPath implements Process {
+	class EachPath implements Process {
 		public void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator)
-				throws URISyntaxException {
+				throws URISyntaxException, FileNotFoundException {
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {

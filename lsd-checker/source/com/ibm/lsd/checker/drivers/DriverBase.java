@@ -2,6 +2,7 @@ package com.ibm.lsd.checker.drivers;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 
 import com.hp.hpl.jena.query.Query;
@@ -13,7 +14,7 @@ public abstract class DriverBase {
 
 	@FunctionalInterface
 	interface Process {
-		void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator) throws URISyntaxException;
+		void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator) throws URISyntaxException, FileNotFoundException;
 	}
 
 	@FunctionalInterface

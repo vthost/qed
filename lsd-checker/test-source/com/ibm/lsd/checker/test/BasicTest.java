@@ -7,6 +7,7 @@ import java.net.URL;
 import org.junit.Test;
 
 import com.ibm.lsd.checker.drivers.LSDCheckerDriver;
+import com.ibm.lsd.checker.drivers.LSDExpandAllDriver;
 import com.ibm.lsd.checker.drivers.LSDExpandEachDriver;
 
 public class BasicTest {
@@ -23,7 +24,7 @@ public class BasicTest {
 		testQuery("DBpedia-q626806.rq");
 	}
 	
-	public void testExpand(String query) throws Exception {
+	public void testExpandEach(String query) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
@@ -31,8 +32,20 @@ public class BasicTest {
 	}
 
 	@Test
-	public void testExpand626806() throws Exception {
-		testExpand("DBpedia-q626806.rq");
+	public void testExpandEach626806() throws Exception {
+		testExpandEach("DBpedia-q626806.rq");
+	}
+
+	public void testExpandAll(String query) throws Exception {
+		URL url = BasicTest.class.getClassLoader().getResource(query);
+		assert url != null;
+		
+		LSDExpandAllDriver.main(new String[] {url.toString()});
+	}
+
+	@Test
+	public void testExpandAll626806() throws Exception {
+		testExpandAll("DBpedia-q626806.rq");
 	}
 
 }

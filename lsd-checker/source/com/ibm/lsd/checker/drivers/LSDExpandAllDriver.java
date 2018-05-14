@@ -1,5 +1,6 @@
 package com.ibm.lsd.checker.drivers;
 
+import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.Set;
@@ -19,13 +20,17 @@ import kodkod.instance.TupleSet;
 
 public class LSDExpandAllDriver extends LSDExpanderBase {
 
+	public LSDExpandAllDriver(String queryFile) {
+		super(queryFile);
+	}
+
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { new LSDExpandAllDriver().mainLoop(s, new AllPaths()); });
+		main(args[0], (String s) -> { LSDExpandAllDriver exp = new LSDExpandAllDriver(s); exp.mainLoop(exp.new AllPaths()); });
 	}
 		
-	static class AllPaths implements Process {
+	class AllPaths implements Process {
 		public void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator)
-				throws URISyntaxException {
+				throws URISyntaxException, FileNotFoundException {
 			Formula f = Formula.TRUE;
 			Formula s1 = null;
 			Formula s2 = null;

@@ -1,5 +1,7 @@
 package com.ibm.lsd.checker.drivers;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -45,8 +47,17 @@ import kodkod.instance.TupleSet;
 
 public abstract class LSDExpanderBase extends DriverBase {
 
-	protected static void checkExpanded(Query ast, Op query, BasicUniverse U, Formula f, Formula s1, Formula s2)
-			throws URISyntaxException {
+	private final String queryFile;
+	
+	private int datasets = 0;
+	
+	public LSDExpanderBase(String queryFile) {
+		super();
+		this.queryFile = queryFile;
+	}
+
+	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Formula f, Formula s1, Formula s2)
+			throws URISyntaxException, FileNotFoundException {
 		SolutionRelation s;
 		JenaTranslator xlator;
 		Pair<Formula, Pair<Formula, Formula>> xlation;
@@ -131,14 +142,15 @@ public abstract class LSDExpanderBase extends DriverBase {
 		System.out.println(Drivers.check(U, xlation, "solution"));
 		System.out.println("the dataset:");
 		RDFDataMgr.write(System.out, dataset, Lang.NQ);
+		RDFDataMgr.write(new FileOutputStream(stem().substring(5) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
 		System.out.println("\n\n");
 	}
 
-	public void mainLoop(String queryFile, Process p) throws URISyntaxException, IOException {
+	public void mainLoop(Process p) throws URISyntaxException, IOException {
 		Query ast = JenaUtil.parse(queryFile);
 		Op query = JenaUtil.compile(ast);
 
-		String stem = queryFile.substring(0, queryFile.length()-3);
+		String stem = stem();
 
 		BasicUniverse U = new OpenDatasetUniverse(new URL(stem + "-data.ttl"));
 		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, null);
@@ -146,8 +158,8 @@ public abstract class LSDExpanderBase extends DriverBase {
 		p.process(ast, query, U, xlator);
 	}
 
-	public LSDExpanderBase() {
-		super();
+	private String stem() {
+		return queryFile.substring(0, queryFile.length()-3);
 	}
 
 }
