@@ -3,6 +3,11 @@
 mkdir -p /tmp/build_qed
 pushd /tmp/build_qed
 
+git clone https://github.com/themadcreator/rabinfingerprint
+pushd rabinfingerprint
+mvn clean install
+popd
+
 git clone https://github.com/Quetzal-RDF/quetzal
 cd quetzal
 
