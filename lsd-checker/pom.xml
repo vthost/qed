@@ -25,7 +25,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <forkMode>once</forkMode>
-          <argLine>-Djava.library.path=${project.basedir}/jni/x86-mac</argLine>
+          <argLine>-Djava.library.path=${project.basedir}/jni/darwin_x86_64:${project.basedir}/jni/linux_x86_64</argLine>
         </configuration>
       </plugin>
     </plugins>
