@@ -142,7 +142,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 		System.out.println(Drivers.check(U, xlation, "solution"));
 		System.out.println("the dataset:");
 		RDFDataMgr.write(System.out, dataset, Lang.NQ);
-		RDFDataMgr.write(new FileOutputStream(stem().substring(5) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
+		RDFDataMgr.write(new FileOutputStream(System.getProperty("java.io.tmpdir") + stem().substring(stem().lastIndexOf('/')) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
 		System.out.println("\n\n");
 	}
 
