@@ -38,7 +38,7 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 
 			Set<Relation> prs = HashSetFactory.make();
-			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
+			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {//System.out.println("pp "+p);
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
 
@@ -57,6 +57,7 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 							continue formulae;
 						}
 
+//						TODO is this an error???
 						System.err.println("tuples:" + x);
 						
 						Formula nextf = f.and(thisf);
@@ -65,6 +66,7 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 
 						TupleSet t = Drivers.check(U, Pair.make(nextf,  Pair.make(nexts1, nexts2)), "quads");
 						if (t == null) {
+//							TODO why f here and not thisf. f is only TRUE in the beginning anyway?
 							checkExpanded(ast, query, U, f, s1, s2);
 							f = thisf;
 							s1 = p.snd.fst;

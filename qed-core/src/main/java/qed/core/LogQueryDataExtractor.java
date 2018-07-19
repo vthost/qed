@@ -17,6 +17,7 @@ import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.StmtIterator;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 import org.apache.jena.sparql.expr.E_Exists;
 import org.apache.jena.sparql.expr.E_LogicalNot;
@@ -40,7 +41,7 @@ import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class LogQueryDataExtractor {
 	
-	private int defaultDataLimit = 10;
+	private int defaultDataLimit = 10000;
 	
 //	jena sparql syntax Element that can be ignored:
 //	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
@@ -265,8 +266,10 @@ public class LogQueryDataExtractor {
 			
 			List<Element> els = new ArrayList<Element>();
 			els.addAll(l1);
-			els.addAll(l1.stream().
-					map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));			
+			els.add(new ElementFilter(new E_NotExists(((ElementOptional) e).getOptionalElement())));			
+
+//			els.addAll(l1.stream().
+//					map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));			
 			return els;
 		
 		} else if(e instanceof ElementService) {
@@ -422,7 +425,7 @@ public class LogQueryDataExtractor {
 //        		note that this number may count some data items multiple times
 				int cqsDataCountTotal = 0;
 				
-				String qid = lq[0];//System.out.println(qid);
+				String qid = lq[0];System.out.println(qid);
 				String q = lq[1];			
 	
 				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
@@ -430,7 +433,7 @@ public class LogQueryDataExtractor {
 //				Utils.writeConstructQueriesFile(d2,qid,cqs);
 				
 				for (Query cq : cqs) {
-					
+					System.out.println(cq);
 					QueryEngineHTTP qe = null;
 					try {		
 						
@@ -438,14 +441,18 @@ public class LogQueryDataExtractor {
 			            qe.addParam("timeout", "10000") ;
 
 			            Model m = qe.execConstruct();
-			            
+			            StmtIterator i = m.listStatements();
+			             while(i.hasNext()) {
+			             	System.out.println(i.next());
+			             } 
+
 			            if(m.listStatements().hasNext()) {
 			            		cqsWithData++;
 //			            		cqsDataCountTotal += m.listStatements().toList().size();
 
 			            		cqsDataCountTotal = (int) Utils.writeQueryDataFile(d2,qid, m);
 			            }
-
+			             
 			        } catch (Exception e) { 
 
 			        	System.out.println("EXCEPTION " + qid);e.printStackTrace();
@@ -477,7 +484,7 @@ public class LogQueryDataExtractor {
 //		            	System.out.println(query);
 	            	
 //		            	delete other files
-		            	(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
+//		            	(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
 	            		continue;
 				}
 				
@@ -511,8 +518,8 @@ public class LogQueryDataExtractor {
 //			            	System.out.println(q);
 	            	
 	            	//delete files
-					(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-					(new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
+//					(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
+//					(new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
 	            } else {
 	            	Utils.writeQueryResultFile(d2, qid, rs);
 	            }

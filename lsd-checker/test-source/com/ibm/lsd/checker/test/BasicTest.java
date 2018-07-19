@@ -34,6 +34,7 @@ public class BasicTest {
 	@Test
 	public void testExpandEach626806() throws Exception {
 		testExpandEach("DBpedia-q626806.rq");
+		testExpandEach("DBpedia-q1.rq");
 	}
 
 	public void testExpandAll(String query) throws Exception {
