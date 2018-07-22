@@ -31,6 +31,7 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 				throws URISyntaxException, FileNotFoundException {
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
+				System.out.println("p: "+p);
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
 						Formula thisf = p.fst.and(minimal? r.one(): r.some());

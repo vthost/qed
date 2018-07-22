@@ -14,8 +14,6 @@ import org.apache.jena.ext.com.google.common.base.Strings;
 
 
 /**
- * Hello world!
- *
  */
 public class Application 
 {
@@ -32,7 +30,7 @@ public class Application
 		
 		if(!Strings.isNullOrEmpty(dataFile))//TODO check if valid file path
 			Utils.DATA_DIR = dataFile;	
-
+//System.out.println(Utils.DATA_DIR);
 		(new LogQueryExtractor()).extractQueries(logEndpoint, graphUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
 		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, datasetSizeMax);
 	}

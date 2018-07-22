@@ -30,8 +30,10 @@ public class LogQueryExtractor {
             ResultSet rs = qexec.execSelect();
             
             while(rs.hasNext()) {
-            		QuerySolution s = rs.next();  //System.out.println(s.getResource("?id").toString());		
+            		QuerySolution s = rs.next();  	
             		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());
+            		System.out.println(s.getResource("?id").toString());	
+            		System.out.println(s.getLiteral("?text").toString());	
             }
 
         } catch (Exception e) {
@@ -52,8 +54,8 @@ public class LogQueryExtractor {
 		for(String[] config: configs == null ? defaultConfig : configs) {
 			
 			String filter = 
-					" FILTER(?rt < 100"
-					+ " && ?rs >= " + (queryResultSizeMin >= 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
+					" FILTER(?rt < 100  && "
+					+ " ?rs >= " + (queryResultSizeMin >= 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
 					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
 			
 			String query =  "PREFIX lsqv: <http://lsq.aksw.org/vocab#> "
@@ -120,11 +122,13 @@ public class LogQueryExtractor {
 
 	public static void main(String[] args) {
 		
-		LogQueryExtractor qe = new LogQueryExtractor();
-		qe.extractQueries("http://lsq.aksw.org/sparql", "http://dbpedia.org", null, -1, 0, 0);
+//		LogQueryExtractor qe = new LogQueryExtractor();
+//		qe.extractQueries("http://lsq.aksw.org/sparql", "http://dbpedia.org", Feature.FEATURE_CONFIG_THREE, 30, 0, 0);
 		
-//		String[] ids = {"DBpedia-q482443","DBpedia-q330584"};
-//		qe.extractQueries(ids);
+//		String[] ids = {"DBpedia-q626806"//"DBpedia-q482443","DBpedia-q330584"
+//				};
+//		
+//		qe.extractQueries("http://lsq.aksw.org/sparql", "http://dbpedia.org",ids);
 	}
 
 }

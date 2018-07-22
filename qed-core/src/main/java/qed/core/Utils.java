@@ -176,6 +176,7 @@ public class Utils {
 		}
 	}
 	
+//	extend existing file
 	public static long writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
 
 		long size = 0;
@@ -194,6 +195,19 @@ public class Utils {
 		}
 		return size;
 	}
+	
+//	public static void writeQueryDataFile2(File directory, String lsqIdUrl, Dataset dataset) {
+//
+//		String path = directory.getPath() + File.separator + getQueryDataFileName(lsqIdUrl);
+//		
+//		try {
+//			RDFDataMgr.write(new FileOutputStream(path), dataset, Lang.TURTLE);
+//			
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		}
+//
+//	}
 	
 	public static void writeQueryResultFile(File directory, String lsqIdUrl, ResultSet rs) {
 

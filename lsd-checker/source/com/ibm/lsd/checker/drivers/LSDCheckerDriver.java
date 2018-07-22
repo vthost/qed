@@ -21,6 +21,7 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.instance.TupleSet;
+import qed.core.Utils;
 
 public class LSDCheckerDriver extends DriverBase {
 
@@ -31,16 +32,16 @@ public class LSDCheckerDriver extends DriverBase {
 	public static void mainLoop(String queryFile) throws URISyntaxException, IOException {
 		Query ast = JenaUtil.parse(queryFile);
 		Op query = JenaUtil.compile(ast);
-
-		String stem = queryFile.substring(0, queryFile.length()-3);
 		
+		String stem = queryFile.substring(0, queryFile.length()-Utils.QUERY_FILE_EXT.length());
+	
 		BasicUniverse U;
 		try {
-			U = new DatasetUniverse(new URL(stem + "-data.ttl"));
+			U = new DatasetUniverse(new URL(stem + Utils.QUERY_DATA_FILE_EXT));
 		} catch (RiotNotFoundException e) {
 			return;
 		}
-		SparqlSelectResult answer = new SparqlRdfResultReader(stem + "-result.ttl");
+		SparqlSelectResult answer = new SparqlRdfResultReader(stem + Utils.QUERY_RESULT_FILE_EXT);
 		SolutionRelation s = new SolutionRelation(answer, ast.getProjectVars(), Collections.<String,Object>emptyMap());
 		s.init(U);
 		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, s);

@@ -46,6 +46,7 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.instance.TupleSet;
+import qed.core.Utils;
 
 public abstract class LSDExpanderBase extends DriverBase {
 
@@ -61,8 +62,9 @@ public abstract class LSDExpanderBase extends DriverBase {
 		this.minimal = minimal;
 	}
 
+//	TODO a check only occurs in the very beginning, no?
 	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Formula f, Formula s1, Formula s2)
-			throws URISyntaxException, FileNotFoundException {
+			throws URISyntaxException, FileNotFoundException {//System.out.println("check2: "+f);
 		SolutionRelation s;
 		JenaTranslator xlator;
 		Pair<Formula, Pair<Formula, Formula>> xlation;
@@ -142,12 +144,14 @@ public abstract class LSDExpanderBase extends DriverBase {
 		xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, s);
 		xlation = xlator.translateSingle(Collections.<String,Object>emptyMap(), false).iterator().next();
 		
-		
+		RDFDataMgr.write(new FileOutputStream(//Utils.DATA_DIR 
+				"test-data/data/"+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + Utils.QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+//		Utils.writeQueryDataFile2(Utils.DATA_DIR, stem(), dataset);
 		System.out.println("\n\nthe solution:");
 		System.out.println(Drivers.check(U, xlation, "solution"));
 		System.out.println("the dataset:");
 		RDFDataMgr.write(System.out, dataset, Lang.NQ);
-		RDFDataMgr.write(new FileOutputStream(System.getProperty("java.io.tmpdir") + stem().substring(stem().lastIndexOf('/')) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
+//		RDFDataMgr.write(new FileOutputStream(System.getProperty("java.io.tmpdir") + stem().substring(stem().lastIndexOf('/')) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
 		System.out.println("\n\n");
 	}
 
@@ -159,7 +163,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 		BasicUniverse U;
 		try {
-			U = new OpenDatasetUniverse(new URL(stem + "-data.ttl"));
+			U = new OpenDatasetUniverse(new URL(stem + Utils.QUERY_DATA_FILE_EXT));
 		} catch (RiotNotFoundException e) {
 			U = new BoundedUniverse();
 		}
@@ -170,7 +174,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 	}
 
 	private String stem() {
-		return queryFile.substring(0, queryFile.length()-3);
+		return queryFile.substring(0, queryFile.length()-Utils.QUERY_FILE_EXT.length());
 	}
 
 }
