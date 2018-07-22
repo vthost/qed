@@ -20,12 +20,12 @@ import kodkod.instance.TupleSet;
 
 public class LSDExpandAllDriver extends LSDExpanderBase {
 
-	public LSDExpandAllDriver(String queryFile) {
-		super(queryFile);
+	public LSDExpandAllDriver(String queryFile, boolean minimal) {
+		super(queryFile, minimal);
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandAllDriver exp = new LSDExpandAllDriver(s); exp.mainLoop(exp.new AllPaths()); });
+		main(args[0], (String s) -> { LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Boolean.parseBoolean(args[1])); exp.mainLoop(exp.new AllPaths()); });
 	}
 		
 	class AllPaths implements Process {
@@ -42,7 +42,7 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
 
-						Formula thisf = p.fst.and(r.some());
+						Formula thisf = p.fst.and(minimal? r.one(): r.some());
 						for(Relation pr : prs) {
 							if (r.arity() == pr.arity()) {
 								thisf = thisf.and(pr.eq(r).not());

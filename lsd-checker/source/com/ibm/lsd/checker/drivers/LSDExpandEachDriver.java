@@ -18,12 +18,12 @@ import kodkod.ast.Relation;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
 
-	public LSDExpandEachDriver(String queryFile) {
-		super(queryFile);
+	public LSDExpandEachDriver(String queryFile, boolean minimal) {
+		super(queryFile, minimal);
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s); exp.mainLoop(exp.new EachPath()); });
+		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Boolean.parseBoolean(args[1])); exp.mainLoop(exp.new EachPath()); });
 	}
 	
 	class EachPath implements Process {
@@ -33,7 +33,7 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
-						Formula thisf = p.fst.and(r.some());
+						Formula thisf = p.fst.and(minimal? r.one(): r.some());
 						if ((Drivers.check(U, Pair.make(thisf, p.snd), "solution")) == null) {
 							continue formulae;
 						}

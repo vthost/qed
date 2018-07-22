@@ -10,6 +10,7 @@ import java.util.Iterator;
 
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.riot.RiotNotFoundException;
 
 import com.hp.hpl.jena.graph.Graph;
 import com.hp.hpl.jena.query.Dataset;
@@ -32,6 +33,7 @@ import com.ibm.research.rdf.store.sparql11.model.QueryTripleTerm;
 import com.ibm.research.rdf.store.sparql11.model.StringLiteral;
 import com.ibm.research.rdf.store.sparql11.model.Variable;
 import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
+import com.ibm.research.rdf.store.sparql11.semantics.BoundedUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.DatasetUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
@@ -51,9 +53,12 @@ public abstract class LSDExpanderBase extends DriverBase {
 	
 	private int datasets = 0;
 	
-	public LSDExpanderBase(String queryFile) {
+	protected boolean minimal;
+	
+	public LSDExpanderBase(String queryFile, boolean minimal) {
 		super();
 		this.queryFile = queryFile;
+		this.minimal = minimal;
 	}
 
 	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Formula f, Formula s1, Formula s2)
@@ -152,7 +157,13 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 		String stem = stem();
 
-		BasicUniverse U = new OpenDatasetUniverse(new URL(stem + "-data.ttl"));
+		BasicUniverse U;
+		try {
+			U = new OpenDatasetUniverse(new URL(stem + "-data.ttl"));
+		} catch (RiotNotFoundException e) {
+			U = new BoundedUniverse();
+		}
+
 		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, null);
 
 		p.process(ast, query, U, xlator);

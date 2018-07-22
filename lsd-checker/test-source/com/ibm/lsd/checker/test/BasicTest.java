@@ -24,23 +24,38 @@ public class BasicTest {
 		testQuery("DBpedia-q626806.rq");
 	}
 	
-	public void testExpandEach(String query) throws Exception {
+	public void testExpandEach(String query, boolean minimal) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
-		LSDExpandEachDriver.main(new String[] {url.toString()});
+		LSDExpandEachDriver.main(new String[] {url.toString(), String.valueOf(minimal)});
 	}
 
 	@Test
 	public void testExpandEach626806() throws Exception {
-		testExpandEach("DBpedia-q626806.rq");
+		testExpandEach("DBpedia-q626806.rq", false);
+	}
+
+	@Test
+	public void testExpandEach1733Minimal() throws Exception {
+		testExpandEach("DBpedia-q1733.rq", true);
+	}
+
+	@Test
+	public void testExpandEach1733() throws Exception {
+		testExpandEach("DBpedia-q1733.rq", false);
+	}
+
+	@Test
+	public void testExpandEach759686() throws Exception {
+		testExpandEach("DBpedia-759686.rq", false);
 	}
 
 	public void testExpandAll(String query) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
-		LSDExpandAllDriver.main(new String[] {url.toString()});
+		LSDExpandAllDriver.main(new String[] {url.toString(), "false"});
 	}
 
 	@Test
