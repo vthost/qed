@@ -10,9 +10,9 @@ import com.hp.hpl.jena.sparql.algebra.Op;
 import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 
-import qed.core.Utils;
+import qed.core.Constants;
 
-public abstract class DriverBase {
+public abstract class DriverBase implements Constants {
 
 	@FunctionalInterface
 	interface Process {
@@ -31,7 +31,7 @@ public abstract class DriverBase {
 				for(File rq : f.listFiles(new FileFilter() {
 					@Override
 					public boolean accept(File name) {
-						return name.getName().endsWith(Utils.QUERY_FILE_EXT);
+						return name.getName().endsWith(QUERY_FILE_EXT);
 					}
 				})) {
 					main(rq.toURI().toURL().toString(), process);

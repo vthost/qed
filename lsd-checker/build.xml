@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="lsd-checker" default="getSat" basedir=".">
+        <condition property="platform.solvers" value="darwin_x86_64">
+	  <os family="mac" />
+	</condition>
+
+	<condition property="platform.solvers" value="linux_x86_64">
+ 	  <os family="unix" />
+	</condition>
+
+  <target name="init">
+    <condition property="pluginTemp" value="${buildTempFolder}/plugins">
+      <isset property="buildTempFolder"/>
+    </condition>
+    <property name="pluginTemp" value="${basedir}"/>
+    <condition property="build.result.folder" value="${pluginTemp}/com.ibm.wala.core.testdata">
+      <isset property="buildTempFolder"/>
+    </condition>
+    <property name="build.result.folder" value="${basedir}"/>
+    <property name="temp.folder" value="${basedir}/temp.folder"/>
+    <property name="plugin.destination" value="${basedir}"/>
+  </target>
+
+  <target name="KodkodPresent" depends="init">
+    <available file="${plugin.destination}/jni" property="kodkod.present"/>
+  </target>
+
+  <target name="fetchKodkod" depends="KodkodPresent" unless="kodkod.present">
+    <delete dir="${temp.folder}"/>
+    <mkdir dir="${temp.folder}"/>
+
+    <mkdir dir="${plugin.destination}/jni" />
+    <get src="https://github.com/emina/kodkod/releases/download/v2.1/${platform.solvers}.zip" dest="${temp.folder}/platform.zip" />
+    <unzip src="${temp.folder}/platform.zip" dest="${plugin.destination}/jni/"/>
+
+     <delete dir="${temp.folder}"/>
+  </target>
+
+  <target name="getSat" depends="fetchKodkod" />
+
+</project>

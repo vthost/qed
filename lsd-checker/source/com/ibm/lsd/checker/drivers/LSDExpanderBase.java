@@ -145,7 +145,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 		xlation = xlator.translateSingle(Collections.<String,Object>emptyMap(), false).iterator().next();
 		
 		RDFDataMgr.write(new FileOutputStream(//Utils.DATA_DIR 
-				"test-data/data/"+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + Utils.QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+				"test-data/data/"+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
 //		Utils.writeQueryDataFile2(Utils.DATA_DIR, stem(), dataset);
 		System.out.println("\n\nthe solution:");
 		System.out.println(Drivers.check(U, xlation, "solution"));
@@ -163,7 +163,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 		BasicUniverse U;
 		try {
-			U = new OpenDatasetUniverse(new URL(stem + Utils.QUERY_DATA_FILE_EXT));
+			U = new OpenDatasetUniverse(new URL(stem + QUERY_DATA_FILE_EXT));
 		} catch (RiotNotFoundException e) {
 			U = new BoundedUniverse();
 		}
@@ -174,7 +174,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 	}
 
 	private String stem() {
-		return queryFile.substring(0, queryFile.length()-Utils.QUERY_FILE_EXT.length());
+		return queryFile.substring(0, queryFile.length()-QUERY_FILE_EXT.length());
 	}
 
 }
