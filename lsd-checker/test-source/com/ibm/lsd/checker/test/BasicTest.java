@@ -33,7 +33,7 @@ public class BasicTest {
 
 	@Test
 	public void testExpandEach626806() throws Exception {
-		testExpandEach("DBpedia-q626806.rq", false);
+		testExpandEach("DBpedia-q626806.rq", true);
 	}
 
 	@Test
@@ -47,8 +47,13 @@ public class BasicTest {
 	}
 
 	@Test
+	public void testExpandEach194196() throws Exception {
+		testExpandEach("DBpedia-q194196.rq", true);
+	}
+
+	@Test
 	public void testExpandEach759686() throws Exception {
-		testExpandEach("DBpedia-759686.rq", false);
+		testExpandEach("DBpedia-759686.rq", true);
 	}
 
 	public void testExpandAll(String query) throws Exception {

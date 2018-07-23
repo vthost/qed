@@ -14,6 +14,7 @@ import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
+import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
@@ -34,7 +35,7 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 				//System.out.println("p: "+p);
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
-						Formula thisf = p.fst.and(minimal? r.one(): r.some());
+						Formula thisf = p.fst.and(minimal? r.count().eq(IntConstant.constant(1)): r.some());
 						if ((Drivers.check(U, Pair.make(thisf, p.snd), "solution")) == null) {
 							continue formulae;
 						}
