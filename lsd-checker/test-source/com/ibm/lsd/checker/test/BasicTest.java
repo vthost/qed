@@ -42,6 +42,11 @@ public class BasicTest {
 	}
 
 	@Test
+	public void testExpandEachFilter1() throws Exception {
+		testExpandEach("filter1.rq", true);
+	}
+
+	@Test
 	public void testExpandEach1733Minimal() throws Exception {
 		testExpandEach("DBpedia-q1733.rq", true);
 	}
