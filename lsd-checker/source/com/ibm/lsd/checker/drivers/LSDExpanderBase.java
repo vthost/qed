@@ -76,9 +76,11 @@ public abstract class LSDExpanderBase extends DriverBase {
 		Graph G = dataset.asDatasetGraph().getDefaultGraph();
 		if (t != null) {
 			Map<Object,String> langs = HashMapFactory.make();
-			for(Tuple m : t.get("literal_languages")) {
-				if (m.atom(1) instanceof Pair && ((Pair<?,?>)m.atom(1)).fst instanceof String) {
-					langs.put(m.atom(0), (String) ((Pair<?,?>)m.atom(1)).fst);
+			if (t.get("literal_languages") != null) {
+				for(Tuple m : t.get("literal_languages")) {
+					if (m.atom(1) instanceof Pair && ((Pair<?,?>)m.atom(1)).fst instanceof String) {
+						langs.put(m.atom(0), (String) ((Pair<?,?>)m.atom(1)).fst);
+					}
 				}
 			}
 			
