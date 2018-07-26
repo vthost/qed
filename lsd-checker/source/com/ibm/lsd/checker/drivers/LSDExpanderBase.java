@@ -7,6 +7,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.Map;
 
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
@@ -41,10 +42,12 @@ import com.ibm.research.rdf.store.sparql11.semantics.JenaUtil;
 import com.ibm.research.rdf.store.sparql11.semantics.OpenDatasetUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.SolutionRelation;
 import com.ibm.research.rdf.store.utilities.io.SparqlSelectResult;
+import com.ibm.wala.util.collections.HashMapFactory;
 import com.ibm.wala.util.collections.MapIterator;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
+import kodkod.instance.Tuple;
 import kodkod.instance.TupleSet;
 import qed.core.Utils;
 
@@ -68,11 +71,18 @@ public abstract class LSDExpanderBase extends DriverBase {
 		SolutionRelation s;
 		JenaTranslator xlator;
 		Pair<Formula, Pair<Formula, Formula>> xlation;
-		TupleSet t = Drivers.check(U, Pair.make(f,  Pair.make(s1, s2)), "quads");
+		Map<String, TupleSet> t = Drivers.check(U, Pair.make(f,  Pair.make(s1, s2)));
 		Dataset dataset = DatasetFactory.createMem();
 		Graph G = dataset.asDatasetGraph().getDefaultGraph();
 		if (t != null) {
-			JenaUtil.addTupleSet(G, t);
+			Map<Object,String> langs = HashMapFactory.make();
+			for(Tuple m : t.get("literal_languages")) {
+				if (m.atom(1) instanceof Pair && ((Pair<?,?>)m.atom(1)).fst instanceof String) {
+					langs.put(m.atom(0), (String) ((Pair<?,?>)m.atom(1)).fst);
+				}
+			}
+			
+			JenaUtil.addTupleSet(G, t.get("quads"), langs);
 		}
 
 		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
