@@ -15,6 +15,7 @@ import com.ibm.wala.util.collections.HashSetFactory;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
+import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
 import kodkod.instance.TupleSet;
 
@@ -42,7 +43,7 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
 
-						Formula thisf = p.fst.and(minimal? r.one(): r.some());
+						Formula thisf = p.fst.and(minimal? r.count().eq(IntConstant.constant(1)): r.some());
 						for(Relation pr : prs) {
 							if (r.arity() == pr.arity()) {
 								thisf = thisf.and(pr.eq(r).not());

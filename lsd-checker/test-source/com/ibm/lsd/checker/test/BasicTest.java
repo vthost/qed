@@ -66,7 +66,7 @@ public class BasicTest {
 		testExpandEach("DBpedia-759686.rq", true);
 	}
 
-	public void testExpandAll(String query) throws Exception {
+	public void testExpandAll(String query, boolean minimal) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
@@ -75,7 +75,37 @@ public class BasicTest {
 
 	@Test
 	public void testExpandAll626806() throws Exception {
-		testExpandAll("DBpedia-q626806.rq");
+		testExpandAll("DBpedia-q626806.rq", true);
+	}
+
+	@Test
+	public void testExpandAllV1() throws Exception {
+		testExpandAll("veronika1.rq", true);
+	}
+
+	@Test
+	public void testExpandAllFilter1() throws Exception {
+		testExpandAll("filter1.rq", true);
+	}
+
+	@Test
+	public void testExpandAll1733Minimal() throws Exception {
+		testExpandAll("DBpedia-q1733.rq", true);
+	}
+
+	@Test
+	public void testExpandAll1733() throws Exception {
+		testExpandAll("DBpedia-q1733.rq", false);
+	}
+
+	@Test
+	public void testExpandAll194196() throws Exception {
+		testExpandAll("DBpedia-q194196.rq", true);
+	}
+
+	@Test
+	public void testExpandAll759686() throws Exception {
+		testExpandAll("DBpedia-759686.rq", true);
 	}
 
 }
