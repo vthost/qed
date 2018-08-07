@@ -51,7 +51,6 @@ import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
 import kodkod.instance.Tuple;
 import kodkod.instance.TupleSet;
-import qed.core.Utils;
 
 public abstract class LSDExpanderBase extends DriverBase {
 

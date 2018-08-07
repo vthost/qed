@@ -14,7 +14,6 @@ import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
-import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {

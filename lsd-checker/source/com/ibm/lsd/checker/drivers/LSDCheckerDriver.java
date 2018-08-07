@@ -21,7 +21,6 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.instance.TupleSet;
-import qed.core.Utils;
 
 public class LSDCheckerDriver extends DriverBase {
 
