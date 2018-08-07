@@ -15,7 +15,6 @@ import com.ibm.wala.util.collections.HashSetFactory;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
-import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
 import kodkod.instance.TupleSet;
 
@@ -26,7 +25,10 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Boolean.parseBoolean(args[1])); exp.mainLoop(exp.new AllPaths()); });
+		main(args[0], (String s) -> { 
+			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Boolean.parseBoolean(args[1])); 
+			AllPaths paths = exp.new AllPaths();
+			exp.mainLoop(paths); });
 	}
 		
 	class AllPaths implements Process {
@@ -43,7 +45,7 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
 
-						Formula thisf = p.fst.and(minimal? r.count().eq(IntConstant.constant(1)): r.some());
+						Formula thisf = p.fst.and(ensureSolutions(r));
 						for(Relation pr : prs) {
 							if (r.arity() == pr.arity()) {
 								thisf = thisf.and(pr.eq(r).not());
@@ -86,4 +88,5 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 			checkExpanded(ast, query, U, f, s1, s2);
 		}
 	}
+
 }

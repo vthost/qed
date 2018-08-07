@@ -70,12 +70,12 @@ public class BasicTest {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
-		LSDExpandAllDriver.main(new String[] {url.toString(), "false"});
+		LSDExpandAllDriver.main(new String[] {url.toString(), String.valueOf(minimal)});
 	}
 
 	@Test
 	public void testExpandAll626806() throws Exception {
-		testExpandAll("DBpedia-q626806.rq", true);
+		testExpandAll("DBpedia-q626806.rq", false);
 	}
 
 	@Test

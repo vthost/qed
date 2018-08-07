@@ -35,7 +35,7 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 				//System.out.println("p: "+p);
 				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
 					if (r.name().equals("solution")) {
-						Formula thisf = p.fst.and(minimal? r.count().eq(IntConstant.constant(1)): r.some());
+						Formula thisf = p.fst.and(ensureSolutions(r));
 						if ((Drivers.check(U, Pair.make(thisf, p.snd), "solution")) == null) {
 							continue formulae;
 						}

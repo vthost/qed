@@ -47,6 +47,8 @@ import com.ibm.wala.util.collections.MapIterator;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
+import kodkod.ast.IntConstant;
+import kodkod.ast.Relation;
 import kodkod.instance.Tuple;
 import kodkod.instance.TupleSet;
 import qed.core.Utils;
@@ -83,8 +85,9 @@ public abstract class LSDExpanderBase extends DriverBase {
 					}
 				}
 			}
-			
-			JenaUtil.addTupleSet(G, t.get("quads"), langs);
+			if (t.get("quads") != null) {
+				JenaUtil.addTupleSet(G, t.get("quads"), langs);
+			}
 		}
 
 		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
@@ -187,6 +190,10 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 	private String stem() {
 		return queryFile.substring(0, queryFile.length()-QUERY_FILE_EXT.length());
+	}
+
+	protected Formula ensureSolutions(Relation r) {
+		return minimal? r.count().eq(IntConstant.constant(1)): r.some();
 	}
 
 }
