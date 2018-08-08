@@ -1,0 +1,20 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" , "death" , "birth" , "name" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_Heinrich_von_Arnim-Boitzenburg> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "1868-01-08"^^xsd:date ;
+                          rs:variable  "death"
+                        ] ;
+            rs:binding  [ rs:value     "1803-04-10"^^xsd:date ;
+                          rs:variable  "birth"
+                        ] ;
+            rs:binding  [ rs:value     "Adolf Heinrich Graf von Arnim-Boitzenburg"@de ;
+                          rs:variable  "name"
+                        ] ]
+] .

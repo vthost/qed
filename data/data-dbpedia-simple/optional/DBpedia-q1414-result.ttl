@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "lat" , "label" , "long" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "John Stewart (Musiker)"@de ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John Stewart (musician)"@en ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John Stewart"@fi ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John Stewart (musicien)"@fr ;
+                                     rs:variable  "label"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John Stewart"@nn ;
+                                     rs:variable  "label"
+                                   ] ]
+] .

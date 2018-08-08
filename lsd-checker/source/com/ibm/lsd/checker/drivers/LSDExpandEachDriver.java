@@ -18,12 +18,12 @@ import kodkod.ast.Relation;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
 
-	public LSDExpandEachDriver(String queryFile, boolean minimal) {
-		super(queryFile, minimal);
+	public LSDExpandEachDriver(String queryFile, boolean minimal, String dataDir) {
+		super(queryFile, minimal, dataDir);
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Boolean.parseBoolean(args[1])); exp.mainLoop(exp.new EachPath()); });
+		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Boolean.parseBoolean(args[1]), args[2]); exp.mainLoop(exp.new EachPath()); });
 	}
 	
 	class EachPath implements Process {

@@ -1,0 +1,2 @@
+<http://synthetic/0> <http://xmlns.com/foaf/0.1/name> "Peugeot S.A."@en .
+<http://dbpedia.org/resource/Peugeot> <http://synthetic/0> <http://synthetic/0> .

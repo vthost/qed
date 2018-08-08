@@ -1,0 +1,16 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+
+dbpedia:U218_Singles  ns0:genre  dbpedia:Rock_music , dbpedia:Alternative_rock , dbpedia:Post-punk .
+
+dbpedia:4-4-1  ns0:genre  dbpedia:Alternative_rock , dbpedia:Post-punk , dbpedia:Rock_music .
+
+dbpedia:Pete_Wylie  ns0:genre  dbpedia:Alternative_rock , dbpedia:Rock_music , dbpedia:Post-punk .
+
+dbpedia:Judging_Ronald
+        ns0:genre  dbpedia:Post-punk , dbpedia:Alternative_rock , dbpedia:Rock_music .
+
+<http://dbpedia.org/resource/Whipping_Boy_%28Irish_band%29>
+        ns0:genre  dbpedia:Alternative_rock , dbpedia:Rock_music , dbpedia:Post-punk .
+
+dbpedia:Soda_Stereo  ns0:genre  dbpedia:Post-punk , dbpedia:Alternative_rock , dbpedia:Rock_music .

@@ -1,0 +1,248 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "person" ;
+  rs:size            "80"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Kenneth_G._Wilson> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stanley_B._Prusiner> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Roderick_MacKinnon> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jody_Williams> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Burton_Richter> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Samuel_C._C._Ting> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Karl_Barry_Sharpless> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/David_Lee_%28physicist%29> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Steven_Chu> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Thomas_Cech> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jack_W._Szostak> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Richard_Axel> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Louis_Ignarro> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Walter_Gilbert> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alan_J._Heeger> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Robert_H._Grubbs> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eric_Allin_Cornell> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Peter_Agre> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Joseph_Hooton_Taylor%2C_Jr.> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/William_Daniel_Phillips> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Leland_H._Hartwell> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mario_Capecchi> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Robert_Curl> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Al_Gore> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Robert_B._Laughlin> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/J._Michael_Bishop> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jerome_Isaac_Friedman> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/George_Smoot> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eric_F._Wieschaus> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/John_Robert_Schrieffer> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Michael_Stuart_Brown> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Charles_K._Kao> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Joseph_L._Goldstein> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Yuan_T._Lee> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Barack_Obama> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Thomas_A._Steitz> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/David_Gross> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Riccardo_Giacconi> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Frank_Wilczek> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/George_E._Smith> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Roald_Hoffmann> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Toni_Morrison> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Douglas_D._Osheroff> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/G%C3%BCnter_Blobel> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Robert_Woodrow_Wilson> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ferid_Murad> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Carol_W._Greider> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ahmed_Zewail> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Craig_Mello> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Roger_Y._Tsien> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Elizabeth_Blackburn> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/James_Cronin> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hamilton_O._Smith> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Harold_E._Varmus> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Anthony_James_Leggett> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Steven_Weinberg> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alfred_G._Gilman> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Robert_C._Merton> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Daniel_C._Tsui> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Leon_Cooper> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/H._Robert_Horvitz> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Andrew_Fire> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Arno_Allan_Penzias> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Martin_Chalfie> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Kary_Mullis> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/William_Forsyth_Sharpe> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Linda_B._Buck> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Richard_R._Schrock> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Roger_D._Kornberg> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/David_Baltimore> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hugh_David_Politzer> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Phillip_Allen_Sharp> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Russell_Alan_Hulse> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Carl_Wieman> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Daniel_McFadden> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/John_C._Mather> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dudley_R._Herschbach> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Robert_Coleman_Richardson> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/John_L._Hall> ;
+                                     rs:variable  "person"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sheldon_Lee_Glashow> ;
+                                     rs:variable  "person"
+                                   ] ]
+] .

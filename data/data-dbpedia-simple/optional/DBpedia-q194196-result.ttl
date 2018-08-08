@@ -1,0 +1,2321 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "name" , "musician" , "description_en" ;
+  rs:size            "257"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Konstantin_Wecker> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Konstantin Alexander Wecker (born June 1, 1947, Munich) is one of the best-known German singer-songwriters; he also works as a composer, author, and actor."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Konstantin Wecker"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Peter_Ries> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Peter Ries (also known as Marc Cassandra, Gilbert or Steve Hall) is a German record producer, composer, arranger, and remixer. Ries started his career as a singer in 1980 under nickname Gilbert. Following collaborations Sandra and Sally Oldfield, he became widely known for his work with 'N Sync, Kylie Minogue, Love Inc. , Eros Ramazzotti, the No Angels, Bro'Sis, Joana Zimmer, Thomas Anders, Xavier Naidoo, Kool &amp; the Gang, Mr."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Peter Ries"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Herre> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Maximilian Herre is a German musician who rose to fame as a member of the group Freundeskreis."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Herre"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hannes_Wader> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hannes Wader (born Hans Eckard Wader on 23 June 1942) is a German songwriter, singer and guitarist. He was an important figure in German leftist circles from the 1970s on, with his songs covering such themes as socialist and communist resistance to oppression in Europe and other places like Latin America. He both wrote new songs and played versions of older historical works."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hannes Wader"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dieter_Bohlen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dieter Gunther Bohlen is a German musician, born on 7 February 1954. He was a member of Modern Talking, but now appears in the TV programme \"Germany Searches for a Superstar\" German: Deutschland sucht den Superstar, which is the German version of Pop Idol and American Idol."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dieter Bohlen"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gentleman_%28musician%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Tilmann Otto, better known by his stage name Gentleman, is a German Reggae musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Gentleman"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rennie_Hatzke> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Renard \"Rennie\" Hatzke (born November 30, 1955) is best known as the drummer for German pop group Münchener Freiheit. Hatzke was born in Edmonton, Alberta, Canada, moving to Munich at age 11. After performing in several professional rock groups (Wheels produced by Roger Glover), Inker &amp; Hamilton, Hatzke joined up with Stefan Zauner, a multi-instrumentalist fresh out of Amon Düül II, drumming on his 1976 solo album Narziss."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rennie Hatzke"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Oliver_Lieb> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Oliver Lieb (born December 31, 1969 in Frankfurt, Germany) is a German electronic music producer and DJ. Lieb is known to have more than a dozen aliases with over 200 productions and remixes in various electronic genres such as, trance, house, and techno. He's also produced tracks for other artists. One such production is \"Electric Blue\", a track by San Francisco's Mars &amp; Mystre."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Oliver Lieb"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johannes_Gmeinder> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johannes Gmeinder (born 1976 in Konstanz) is a German clarinetist. Gmeinder studied clarinet at the Musikhochschules in Trossingen and Berlin. In 1996, he won a scholarship from the Orchesterakademie of the Berlin Philharmonic Orchestra. He has been the principal clarinetist of the Frankfurt Opera since 1999. In 2004, he became a professor at the Johannes Gutenberg University Mainz."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johannes Gmeinder"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mathis_Mootz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mathis Mootz (born 19 August 1976) is a prolific German electronic musician and DJ from Germany. Mootz is best known as The Panacea (until 2005, simply as Panacea), his drum and bass stage name and main musical project, and as m (pronounced \"Squaremeter\"), his dark ambient side project and alter-ego. Born August 19, 1976 in Wetzlar, Germany, Mootz served an apprenticeship in classical music and was a member of the boy's choir of Windsbach."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Panacea"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eric_Fish> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Eric Fish (real name Eric Hecht, born May 28, 1969 in Treuenbrietzen, Germany), singer of Subway to Sally and solo artist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Eric Fish"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dieter_Bohlen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dieter Bohlen is a German musician, songwriter, entertainer, TV personality, producer and writer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dieter Bohlen"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Friedrich_Wieck> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann Gottlob Friedrich Wieck (18 August 1785 &ndash; 6 October 1873) was a noted German piano teacher, voice teacher, piano firm owner, and music reviewer. Famous pupils included two of his six children, Clara and Marie Wieck, as well as Hans von Bülow and Robert Schumann. Schumann and Clara Wieck were married against Friedrich Wieck's will."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johann Gottlob Friedrich Wieck"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christopher_Blenkinsop> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christopher Blenkinsop (born 7 March 1963) is an English-German writer, composer, musician and producer, and a member of the band 17 Hippies."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christopher Blenkinsop"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Klaus_Wunderlich> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Klaus Wunderlich (born 18 June 1931 &ndash; died 28 October 1997) was a German musician. Wunderlich was born in Chemnitz and died in Engen from a heart attack. Wunderlich played the Hammond organ during the first half of his career, and later switched to Wersi organs and Moog synthesizers with which he created his own unique electronic sound. He was open to different music styles and played classical, operetta, Broadway musical, as well as popular music."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Klaus Wunderlich"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_Deinzer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hans Deinzer is a clarinetist and clarinet teacher. Now retired, he taught at the Hochschule für Musik und Theater, Hannover for thirty years, and retired in 1996. He was a student of Rudolf Gall in Munich. He was one of the first clarinetists to professionally adopt the use of rubber mouthpieces, and also was a champion of historical instruments and playing."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hans Deinzer"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Deuter> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Deuter is a German New Age instrumentalist and recording artist known for his meditative style that blends Eastern and Western musical styles."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Georg Deuter"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_Michels> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Michels is a German singer-songwriter."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Michels"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christian_Burchard> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christian Burchard is a German vibist, composer and drummer known for his band Embryo and for his collaboration with Mal Waldron. Burchard is a co-founder of the German indie record label Schneeball."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christian Burchard"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Detlef_Wiedeke> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Detlef Wiedeke (May 7, 1950) is a German singer, composer and producer. Between 1984 and 2000 he collaborated with Dieter Bohlen for which he sang in the Modern Talking and Blue System choruses. Since 2003 he works on his music group, Systems in Blue. His voice type is bass."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Detlef Wiedeke"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stephan_Remmler> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stephan Remmler (born 25 October 1946) is one of three members of the German band Trio. He performed most of the vocals for the band's songs. He was a member of the band alongside Gert Krawinkel, who played the guitar, and Peter Behrens, who played the drums. After the split of Trio in 1986 Remmler continued his musical career as solo artist, releasing various singles and albums until 1996. His work contains Schlager and drinking songs as well."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stephan Remmler"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christian_Ferdinand_Abel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christian Ferdinand Abel (July or August 1682, Hanover, Germany &ndash; buried 3 April 1761, Köthen, Germany) was one of the most famous German Baroque violinists, cellists and especially viol virtuosos. His father was a composer, violinist and organist Clamor Heinrich Abel. For some time Christian served in the Swedish army of Charles XII during the occupation of the northern Germany. There he married Swede Anna Christina Holm."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christian Ferdinand Abel"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Oliver_Shanti> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Oliver Shanti (Born Ulrich Schulz 16 November 1948 in Hamburg), later known as Oliver Serano-Alve, is a New Age musician. Founder of the band Inkarnation which was originally based on meditative music, and later transformed into \"Oliver Shanti &amp; Friends\". Because of Oliver's unavailability, the rest of the group is continuing with multi-instrumentalist Margot Reisinger (formerly known as Margot Vogl and Margot Shanti), the member of original staff, as \"Existence\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Oliver Shanti"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rolf_K%C3%B6hler> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rolf Köhler (May 24 1951 – September 16 2007, Hamburg-Altona) was a German singer, musician and musical producer. Rolf Köhler was a not very succesful singer from Germany. He released \"Walking Alone In The Rain\", \"California\" and others under this name. He sang for many German pop productions (including Westernhagen) and international hard metal bands (by example, from Saxony). He also written many commercials songs (by example Wenns um Geld geht, Tortella, BIFI, etc.)."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rolf Köhler"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Andi_Deris> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Andreas \"Andi\" Deris is the vocalist and main songwriter for power metal band Helloween, has an active solo career, as well as his own recording studio in Tenerife."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Andi Deris"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Place_Vendome_%28band%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Place Vendome is a melodic hard rock / album-oriented rock (AOR) project founded in 2004 by Serafino Perugino, the president of the Italian record label Frontiers Records. Place Vendome is composed of musicians Dennis Ward (bass), Kostas Zafiriou (drums) and Uwe Reitenauer (guitars) from the band Pink Cream 69, Gunther Werno (keyboards) from the band Vanden Plas and ex-Helloween vocalist Michael Kiske."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Place Vendome"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Raab> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stefan Konrad Raab (born on October 20, 1966, in Cologne) is a German entertainer, music producer, singer and comedian. He attended Jesuit boarding school Aloisiuskolleg in Bonn. Before entering the media world, he worked as a butcher and studied law before dropping out of college after five semesters."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stefan Konrad Raab"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Michael_Kiske> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Michael Kiske is a singer best known as the lead vocalist for the German power metal band Helloween from 1986 to 1993. Kiske has been recording solo albums since 1996, has participated on various metal/rock related projects and has performed with many bands as a guest vocalist. He also wrote a book, 'Kunst Und Materialismus', which is only available in German."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Michael Kiske"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/LaFee> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christina Klein (born December 9, 1990), better known by her stage name LaFee, is a German singer/songwriter who has sold more than 1 million albums worldwide. She is best known as the lead singer of LaFee and she is most famous in mainland Europe, particularly in German-speaking countries."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "LaFee"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Karl_Straube> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Montgomery Rufus Karl/Carl Siegfried Straube (January 6, 1873, Berlin - April 27, 1950, Leipzig) was a German church musician, organist, and choral conductor, famous above all for championing the abundant organ music of Max Reger. He studied organ under Heinrich Reimann in Berlin from 1894 to 1897 and became a widely respected concert organist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Karl Straube"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Reger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann Baptist Joseph Maximilian Reger (March 19, 1873 &ndash; May 11, 1916) was a German composer, conductor, pianist, organist, and teacher."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Reger"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Oliver_Lieb> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Oliver Lieb (born December 31, 1969 in Frankfurt, Germany) is a German electronic music producer and DJ. Lieb is known to have more than a dozen aliases with over 200 productions and remixes in various electronic genres such as, trance, house, and techno. He's also produced tracks for other artists. One such production is \"Electric Blue\", a track by San Francisco's Mars &amp; Mystre."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Oliver Lieb"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nic_Endo> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nic Endo (born January 7, 1976) is a Japanese-German-American noise musician who played with the German digital hardcore group Atari Teenage Riot. The daughter of a Japanese mother and a German father, Endo was born in Texas, US. She lived in Frankfurt from 1994 to 1996 and later moved to Berlin. Nic Endo joined ATR while they were on tour in 1997 and was involved with the production of their final album 60 Second Wipe Out."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nic Endo"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/PeterLicht> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Peter Licht is a German electropop musician and author from Cologne signed with the record label Motor Music, best known for his 2001 single Sonnendeck."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "PeterLicht"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Peter_Behrens_%28musician%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Peter Behrens (Born September 4, 1947) is a German drummer, actor, musician and clown."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Peter Behrens"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Andi_Deris> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Andreas \"Andi\" Deris is the vocalist and main songwriter for power metal band Helloween, has an active solo career, as well as his own recording studio in Tenerife."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Andi Deris"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jan_Jelinek> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jan Jelinek is a German electronic musician who also operates under the names of Farben, Gramm and The Exposures. His music is usually categorized as minimal techno, glitch or microhouse, and is characterized by deep basslines, extensive use of samples from earlier jazz and rock recordings, and clicks &amp; cuts effects."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Jan Jelinek"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dr._Ring-Ding> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dr. Ring-Ding, real-life name Richard Alexander Jung, is a German reggae, ska and dancehall artist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dr. Ring-Ding"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Lou_Bega> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "David Lubega (born April 13, 1975), also known as Lou Bega, is a German musician of Italian and Ugandan descent, and is famous for his song \"Mambo No. 5\". This song is a remake of the Perez Prado instrumental from 1949. Bega added his own words to the song and sampled the original version extensively."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Lou Bega"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marcus_Wiebusch> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marcus Wiebusch is a German musician and lyricist. From 1992 to 1999 he played in the political punk-band ... But Alive, for which he sang, played guitar, and wrote lyrics. He also had two even more aggressive and politically charged, but less prolific and recognized by-projects, the bands Die vom Himmel fielen and Utell A Lie, his only ever English-speaking project. During this time he established an independent record label called \"B.A."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marcus Wiebusch"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christof_Lauer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christof Lauer (born May 5, 1953) is a German jazz tenor and soprano saxophonist, born in Melsungen, Germany, perhaps most well known in Europe where he has done projects with various musicians, such as Palle Danielsson, Carla Bley, Michel Godard, Volker Kriegel, Michel Portal, Maria Joao, Anthony Cox, Gary Husband, Alphonse Mouzon, Eric Watson, and Peter Erskine."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christof Lauer"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sabine_Meyer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sabine Meyer is a German classical clarinetist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sabine Meyer"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Veljanov> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Veljanov became famous through singing in the darkwave band Deine Lakaien which he founded with Ernst Horn in 1985."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Veljanov"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/K%C3%A4te_van_Tricht> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Käte van Tricht (October 22, 1909&ndash;July 13, 1996), was a German organist, pianist, harpsichordist, and pedagogue."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Käte van Tricht"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hermann_Scherchen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hermann Scherchen (21 June 1891 in Berlin &ndash; 12 June 1966 in Florence) was a German conductor."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hermann Scherchen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_van_der_Rose> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max van der Rose is a German composer, musician, record producer and painter."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max van der Rose"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Igor_Flach> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Igor Flach, who was born 12 March 1966 in Jena, Germany and died 8 March 2008 in Berlin was a German musician and harmonica virtuoso, considered by many to be one of the most gifted harmonica players ever. He was originally drawn to blues, but later defied any attempt to pigeonhole him into any specific genre as he experimented with folk (such as African, Greek and Russian styles) and country music. Flach incorporated all that into an unorthodox, hypnotic rhythm."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Igor Flach"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jo_Ment> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jo Ment (1923 – 2002) was a German musician. Born Jochen Ment in 1923, he became a successful musician in Hamburg, Germany, showing proficiency on accordion and saxophone. In the 1950s, he became a member of the NDR (Norddeutscher Rundfunk, or North German Radio) Big Band, then under the direction of Alfred Hause; his fellow bandmates included Bert Kaempfert, James Last, Horst Wende and Ladi Geisler. He also toured with Hause's popular tango orchestra."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Jo Ment"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Friedrich_Chrysander> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Karl Franz Friedrich Chrysander (July 8, 1826 – September 3, 1901) was a German music historian and critic, whose edition of the works of George Frideric Handel and authoritative writings on many other composers established him as a pioneer of 19th-century musicology. Born at Lübtheen, in Mecklenburg-Schwerin, Chrysander was the son of a miller. He earned a Doctorate in Philosophy from the University of Rostock in 1853."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Friedrich Chrysander"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marc_Mozart> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marc Christian Gernert, who performs as Marc Mozart and Marc Z, is a German songwriter, record producer and music manager. He started his career in Germany during the early 1990s. His professional career started after high school when he signed a contract, in 1993, with Sony Music Germany. Later on, he spent time in New York to start working with various international artists including Bad Boy Records artist Victoria Hilton and girl band Dream."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marc Christian Gernert"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Anton_Friedrich_Justus_Thibaut> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Anton Friedrich Justus Thibaut (4 January 1772 - 20 March 1840), was a German jurist and musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Anton Friedrich Justus Thibaut"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Pulsedriver> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Slobodan Petrovic Jr. (born on 22 February 1974 in Trappenkamp) is a Yugoslavian-German electronic dance music DJ, producer and is the founder of Aqualoop Records in 2000. He is best known by his alias, Pulsedriver."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Slobodan Petrovic Jr."@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gunnar_Geisse> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Gunnar Geisse is a musician, improviser, composer, and interpreter. He moves along the cutting edge between experimental/improvised music and new music. He has developed a complex instrumental concept combining guitar and electronics/computer which he calls laptop guitar. He also plays several other string instruments including banjo, mandolin, and a variety of instruments from Central Asia, among them the Uzbek and the Persian dotâr. Gunnar Geisse has been living in Munich, Germany since 1985."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Gunnar Geisse"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gina_V._D%27Orio> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Gina V. D'Orio (born Gina Vaporjieff D'Orio, 23 September 1976 in Germany) is the main former vocalist from German Digital Hardcore band EC8OR and member of Cobra Killer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Gina D’Orio"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Georg_Ratzinger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "The Right Reverend Monsignor Georg Ratzinger, PA, (born January 15, 1924 in Pleiskirchen) is a German Catholic priest and musician, known for his work as the conductor of the Regensburger Domspatzen, the cathedral choir of Regensburg, Germany. He is the elder brother of Pope Benedict XVI. His grand uncle was German politician Georg Ratzinger."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Georg Ratzinger"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Carl_Crack> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Carl Crack (born Carl Böhm, May 5, 1971 in Swaziland &ndash; died September 6, 2001) was a Berlin-based techno artist best known for his membership in the digital hardcore band Atari Teenage Riot from 1992 to 2000. Around 1992 Crack displayed little interest in the music scene as it was at the time."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Carl Crack"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mathis_Mootz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mathis Mootz (born 19 August 1976) is a prolific German electronic musician and DJ from Germany. Mootz is best known as The Panacea (until 2005, simply as Panacea), his drum and bass stage name and main musical project, and as m (pronounced \"Squaremeter\"), his dark ambient side project and alter-ego. Born August 19, 1976 in Wetzlar, Germany, Mootz served an apprenticeship in classical music and was a member of the boy's choir of Windsbach."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mathis Mootz"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Uwe_Schmidt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Uwe Schmidt (aka Atom Heart, Atom™, Señor Coconut; born August 27, 1968 in Frankfurt am Main, West Germany), is a German composer, musician and producer of electronic music. He is often regarded as the father of electrolatino, electrogospel and aciton (acid-reggaeton) music."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Uwe Schmidt"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Farin_Urlaub> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jan Ulrich Max Vetter, better known as Farin Urlaub (like German \"Fahr in Urlaub!\", after his love of travelling) was born on October 27, 1963 in what was then West Berlin, Germany . He is best known as the guitarist/vocalist for the German punk rock band Die Ärzte. He has also been a solo artist since 2001, touring with his band, the \"Farin Urlaub Racing Team\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Farin Urlaub"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Anni_Becker> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Anni Becker (b. 1926 in Kaiserslautern) + 22.06.2009 is a writer and performer of popular and folk songs. She was a teacher by profession and taught until 1991. Her songs come out of the tradition of folk music as well as the German cabaret. Many of her songs are in Pfälzisch, the dialect of the region she grew up in. Anni Becker has received a number of awards, including the Nürnberg Bard's Prize. She has published 11 song books and made several records."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Anni Becker"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sabrina_Setlur> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sabrina Setlur (born January 10, 1974), formerly known as Schwester S. , is a German rapper, songwriter, Hebbar Iyengar and occasional actress. Her debut was in 1995 under the guidance of 3p Records executive and mentor Moses Pelham, producer of her breakthrough single \"Ja Klar. \" Following the drop of her pseudonym and a number-one single, \"Du Liebst Mich Nicht,\" in 1997, a series of hit records established her position as Germany's \"best known and highest-selling female rap act\" to date."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sabrina Setlur"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Lou_Bega> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "David Lubega (born April 13, 1975), also known as Lou Bega, is a German musician of Italian and Ugandan descent, and is famous for his song \"Mambo No. 5\". This song is a remake of the Perez Prado instrumental from 1949. Bega added his own words to the song and sampled the original version extensively."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Lou Bega"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sebastian_Virdung> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sebastian Virdung (born c. 1465) was a German composer and theorist on musical instruments. He studied in Heidelberg as a scholar of Johannes von Soest at the chapel of the ducal court. After being ordained, he became chaplain at the court in Heidelberg. Verdung sung in the choir as a male alto until 1505/1506. Around 1506 Virdung became a singer in the chapel of the court of Württemberg in Stuttgart."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sebastian Virdung"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hanin_Elias> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hanin Elias, is a German industrial/techno artist. She was a member of Atari Teenage Riot and is now a solo artist. After Atari Teenage Riot's non-definitive break in 2000, and the subsequent death of Carl Crack due to a psychosis and drug overdose, the members of ATR split up, and Hanin set up her own record label, Fatal Recordings."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hanin Elias"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Siggi_Mueller> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Siggi Mueller, also Siegfried Müller, (born October 12, 1964) is a German film composer, photographer, keyboarder, accordion and piano player. Siggi Mueller is considered one of the most renowned German film composers. He composes music for numerous German cinema and TV productions as well as TV series. He cooperates with the most prestigious film directors, media companies and almost all large public and private TV &amp; broadcasting corporations in Germany and Austria."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Siggi Mueller"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sascha_Gerstner> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sascha Gerstner is a German guitarist, singer, songwriter and photographer, currently playing guitar in German rock/heavy metal act Helloween."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sascha Gerstner"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ernst-Ulrich_von_Kameke> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ernst-Ulrich von Kameke was born in Potsdam, 1926. From 1949 to 1954 was Kantor and Organist in Heidelberg. In 1954 as organist at the Friedenkirche in Düsseldorf. In 1959 was called by the St Petri Church in Hamburg as Organist and Choir Director. In 1962 was nominated Professor at the Hochschule fuer Musik in Hamburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ernst-Ulrich von Kameke"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Marcus> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Marcus (born 24 December 1979 in Berlin) is a persona of the German music producer Felix Rennefeld. He has become popular throughout Germany after a series of videos he produced and displayed on youtube."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Marcus"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johannes_Khuen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johannes K(h)uen (1606 &ndash; November 14, 1675), priest, poet, and composer, was one of the leading literary figures of the early Baroque in Bavaria. Khuen, who was born in Moosach and studied with the Munich Jesuits in the early 1620s, spent his entire career in the Bavarian capital as a chaplain to the Wartenberg family and beneficiary at the church of St. Peter."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johannes Kuen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jan_Jelinek> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jan Jelinek is a German electronic musician who also operates under the names of Farben, Gramm and The Exposures. His music is usually categorized as minimal techno, glitch or microhouse, and is characterized by deep basslines, extensive use of samples from earlier jazz and rock recordings, and clicks &amp; cuts effects."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Jan Jelinek"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nikolaus_Selnecker> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nikolaus Selnecker or Selneccer was a German musician and theologian. He is now known mainly as a hymn writer. He is also known as one of the principal authors of the Formula of Concord along with Jakob Andreä and Martin Chemnitz. At a young age he was an organist in Nuremberg. He studied under Melanchthon at the University of Wittenberg, graduating M. A. in 1554. Later he was a court preacher and musician at Dresden."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nikolaus Selnecker"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Leonid_Soybelman> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Leonid Soybelman (born July 20, 1966 in Bălţi, USSR) is a Germany-based musician and film composer of Jewish origin, leader of the band Ne Zhdali. The guitarist and singer, he also collaborated with Alec Kopyt in the \"Poza\" project, with bands Auktyon, The Billy Tipton Memorial Saxophone Quartet and many others. His musical style has roots from eastern European traditional Yiddish folk music, yet is played in more modern arrangements on the electric guitar, often accompanied by a band."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Leonid Soybelman"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jacques_Palminger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jacques Palminger, legal name Heinrich Ebber is a German actor, musician, and member of Studio Braun."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Jacques Palminger"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans-Joachim_Roedelius> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hans-Joachim Roedelius (Hans-Joachim Rödelius, born October 26, 1934 in Berlin) is an German experimental / ambient / electronic musician. He best known as a co-founder of the German krautrock groups Cluster and Harmonia and his work in the ambient jazz trio Aquarello."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hans-Joachim Roedelius"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Maximilian_Hecker> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Maximilian Hecker is a German musician known for airy pop music. After performing as a drummer in a number of small German bands, his demo tapes attracted the attention of Kitty-Yo Records, who released his debut album Infinite Love Songs in 2001. He has since done numerous European tours and released a number of albums, his latest effort being I Am Nothing But Emotion, No Human Being, No Son, Never Again Son, which is slated for release in early 2010."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Maximilian Hecker"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dieter_Bohlen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dieter Gunther Bohlen is a German musician, born on 7 February 1954. He was a member of Modern Talking, but now appears in the TV programme \"Germany Searches for a Superstar\" German: Deutschland sucht den Superstar, which is the German version of Pop Idol and American Idol."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dieter Bohlen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Uwe_Fahrenkrog-Petersen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jörn-Uwe Fahrenkrog-Petersen (\"Uwe\") (born March 10, 1960) is a keyboard player and songwriter, known for his work with the German rock group Nena. Born in Berlin he first played in a band called \"Odessa\" in 1980 with bassist Jürgen Dehmel. The two joined Nena in 1981 and played with the group until 1987. When the band split, he moved to New York."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Uwe Fahrenkrog-Petersen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_Meyer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Meyer (born 1954 in Crailsheim) is a German clarinetist. Meyer studied clarinet at the Staatliche Hochschule für Musik in Stuttgart, and the Hochschule fuer Musik und Theater in Hannover along with his sister Sabine Meyer. He has led masterclasses in Brazil, Italy, Japan, Canada and Finland. He is a member of Trio di Clarone, Carmina Quartett and Quatuor Mosaiques. He has been a professor at the Musikhochschule in Karlsruhe since 1989, and was its director from 2001 to 2007."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Meyer"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bruno_Schleinstein> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bruno Schleinstein (born 2 June 1932) is a German film actor, artist, and musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bruno Schleinstein"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mark_Ashley_%28musician%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "The producer Steffen Ehrhardt discovered the singer Mark Ashley at the age of 13 in a German discothèque, where he sang songs of Modern Talking. He was born in 1973 in Apolda/Thuringia and currently lives in Bad Salzungen. He had always performed songs at Christmas for his parents, who were the first ones to notice his musical talent. Mark Ashley had already made several successful performances on radio and TV."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mark Ashley"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Karl_Erb> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Karl Erb (b. 13 July 1877 in Ravensburg &ndash; 13 July 1958) was a German tenor vocalist who made his career first in opera and then in oratorio and lieder recital. He excelled in all these genres, and before 1920 gave classic performances of key roles in modern works, and created lead roles in those of Hans Pfitzner. He was the first husband of Maria Ivogün, and was considered by many the ideal Evangelist in the St Matthew Passion of Johann Sebastian Bach."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Karl Erb"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Axel_Zwingenberger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Axel Zwingenberger (born May 7, 1955 in Hamburg, Germany) is a blues and boogie-woogie pianist, and songwriter. He is considered one of the finest boogie-woogie music masters in the world."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Axel Zwingenberger"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Raabe> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Raabe (December 12, 1962 in Lünen) is a German singer and band leader of the Palast Orchester. He and his orchestra specialize in recreating the sound of German dance and film music of the 1920s and 1930s, especially by performing songs of the Comedian Harmonists. He founded the Palast Orchester in 1986."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Raabe"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/George_Kranz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "George Kranz is a German dance music singer and percussionist. He is best known for his song \"Trommeltanz\", otherwise known as \"Din Daa Daa\". The song hit No. 1 on the Hot Dance Music/Club Play chart in 1984 and then returned to the chart in a new version in 1991, peaking at No. 8."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "George Kranz"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christoph_Dreher> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christoph Dreher is an author, filmmaker and musician. Since 2000, he has been a professor for audiovisual media. After having studied Political Science and philosophy at Berlin's Freie Universität, he studied filmmaking at DFFB (Deutsche Film- und Fernsehakademie in Berlin) between 1978 and 1983. In 1980, Christoph Dreher founded the post-punk – post-rock band Die Haut (the first line-up consisted of, in addition to Dreher, Martin Peter, Thomas Wydler and Remo Park)."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christoph Dreher"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Friedlaender_%28musicologist%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Friedlaender was a German bass concert-singer, writer on music and musicologist (Musikwissenschaftler)."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Friedlaender"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sebastian_Krumbiegel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sebastian Krumbiegel (born 5 June 1966 in Leipzig) is a German singer and musician. He is a member of the a cappella band Die Prinzen. From 1976 to 1985 Krumbiegel attended the Thomasschule zu Leipzig where he took the Abitur examination in 1985. In 1981 he founded the rockband \"Phoenix\" together with his classmate Wolfgang Lenk. Whilst serving in the NVA (1985-1987) Krumbiegel was the singer of the band \"Rockpol\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sebastian Krumbiegel"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mike_Mareen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mike Mareen was born in post-war West Berlin, West Germany, and grew up in Lüneburg. His first musical success was with the band Cemetery Institution who played at Hamburg's Star-Club. Mareen later became a merchant sailor, a job which eventually took him to New York City where he played with several American groups. Upon his return to Europe, Mareen became involved with the production of Italo Disco records."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mike Mareen"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mark_Ashley_%28musician%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "The producer Steffen Ehrhardt discovered the singer Mark Ashley at the age of 13 in a German discothèque, where he sang songs of Modern Talking. He was born in 1973 in Apolda/Thuringia and currently lives in Bad Salzungen. He had always performed songs at Christmas for his parents, who were the first ones to notice his musical talent. Mark Ashley had already made several successful performances on radio and TV."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mark Ashley"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Micki_Meuser> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Micki Meuser a.k. a Mickey Meuser (real name Hans-Georg Meuser) from Alsdorf near Aachen, Germany. Bass player, studio musician and music producer for Die Ärzte, Ideal, Ina Deter, Lemonbabies and other german bands. In 1974 he played the electric bass guitar in diverse formations like and the Alsdorf Big Band. In the early 1980s he formed the Nervösen Deutschen and brought Australian lead singer Grant Stevens from London to Germany."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Micki Meuser"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Bader> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Bader is a German clarinetist. Bader was born in 1965 in Stuttgart. He studied piano and clarinet at Berlin's Hochschule der Künste. His clarinet teachers were Manfred Preis and Peter Rieckhoff. He studied under Wolfgang Meyer in the Staatliche Hochschule für Musik. He became a member of the Berliner Philharmoniker in 2006, after playing in Komische Oper as principal clarinet, as well as the Bavarian State Opera and the Philharmonic of Munich."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Bader"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christof_Lauer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christof Lauer (born May 5, 1953) is a German jazz tenor and soprano saxophonist, born in Melsungen, Germany, perhaps most well known in Europe where he has done projects with various musicians, such as Palle Danielsson, Carla Bley, Michel Godard, Volker Kriegel, Michel Portal, Maria Joao, Anthony Cox, Gary Husband, Alphonse Mouzon, Eric Watson, and Peter Erskine."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christof Lauer"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Carl_Crack> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Carl Crack (born Carl Böhm, May 5, 1971 in Swaziland &ndash; died September 6, 2001) was a Berlin-based techno artist best known for his membership in the digital hardcore band Atari Teenage Riot from 1992 to 2000. Around 1992 Crack displayed little interest in the music scene as it was at the time."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Carl Crack"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christian_Ferdinand_Abel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christian Ferdinand Abel (July or August 1682, Hanover, Germany &ndash; buried 3 April 1761, Köthen, Germany) was one of the most famous German Baroque violinists, cellists and especially viol virtuosos. His father was a composer, violinist and organist Clamor Heinrich Abel. For some time Christian served in the Swedish army of Charles XII during the occupation of the northern Germany. There he married Swede Anna Christina Holm."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christian Ferdinand Abel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_M%C3%BCller> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Müller (born 24 October 1957 in Wolfsburg) is a German artist, musician and writer, based in Berlin, Germany and Reykjavík, Iceland. Müller is the founder of the Berlin based multi-media performance art group Die Tödliche Doris ('The Deadly Doris'). The group was active for seven years, between 1980 and 1987. Müller published the book Geniale Dilletanten in 1982, naming a musical genre encompassing Die Tödliche Doris, Einstürzende Neubauten, Sprung Aus Den Wolken and many others."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Müller"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bernd_Begemann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bernd Begemann is a contemporary German alt/pop singer-songwriter linked to the Hamburger Schule."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bernd Begemann"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hermann_Kotzschmar> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann Carl Hermann Kotzschmar (July 4, 1829 &ndash; April 15, 1908) was a German-American musician, conductor, and composer. Kotzschmar was born in 1829 in Finsterwalde, Germany. His father, Johann Gottfried Kotzschmar, was the town Stadtmusiker and taught his son to play the violin, keyboard, flute, and horn. At age 14, Kotzschmar went to Dresden to study with Julius Otto, a choral conductor who was the cantor at the Dresden Kreuzkirche."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hermann Kotzschmar"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rolf_K%C3%B6hler> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rolf Köhler (May 24 1951 – September 16 2007, Hamburg-Altona) was a German singer, musician and musical producer. Rolf Köhler was a not very succesful singer from Germany. He released \"Walking Alone In The Rain\", \"California\" and others under this name. He sang for many German pop productions (including Westernhagen) and international hard metal bands (by example, from Saxony). He also written many commercials songs (by example Wenns um Geld geht, Tortella, BIFI, etc.)."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rolf Köhler"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Namosh> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Namosh or Namosh E. Arslan (born May 8, 1981 in Bietigheim-Bissingen) is a German singer, musician and performance-artist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Namosh"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Kristian_Schultze> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Kristian Schultze is one half of the German New Age band Cusco. Schultze has partnered up with Michael Holm and the two have produced numerous new age albums. The two met in late 1970s where they discovered they shared a similar interest in pre-colonial America."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Kristian Schultze"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ricky_King> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ricky King (born March 12, 1946 in Rastatt) is a German guitarist. His singles \"Verde\" and \"Le rêve\" reached the top ten in Germany, Austria, and Switzerland in 1976."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ricky King"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sebastian_Krumbiegel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sebastian Krumbiegel (born 5 June 1966 in Leipzig) is a German singer and musician. He is a member of the a cappella band Die Prinzen. From 1976 to 1985 Krumbiegel attended the Thomasschule zu Leipzig where he took the Abitur examination in 1985. In 1981 he founded the rockband \"Phoenix\" together with his classmate Wolfgang Lenk. Whilst serving in the NVA (1985-1987) Krumbiegel was the singer of the band \"Rockpol\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sebastian Krumbiegel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Schorsch_Kamerun> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Schorsch Kamerun, whose real name is Thomas Sehl, is a German musician, singer, author, theatre director, and club proprietor. His stage name is a parody of the name of the singer of American punk band Dead Kennedys, called Jello Biafra. He is best known as the founding member and lead singer of Die Goldenen Zitronen, a political punk band from Hamburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Schorsch Kamerun"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Uwe_Schmidt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Uwe Schmidt (aka Atom Heart, Atom™, Señor Coconut; born August 27, 1968 in Frankfurt am Main, West Germany), is a German composer, musician and producer of electronic music. He is often regarded as the father of electrolatino, electrogospel and aciton (acid-reggaeton) music."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Uwe Schmidt"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johannes_Schmoelling> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johannes Schmoelling Johannes was a member of the prolific electronic music group Tangerine Dream from 1980 to 1986. A classically trained musician he began playing piano at the age of eight. By twelve he had begun playing the pipe organ and successfully mastered the instrument so well that he began to play professionally at various churches."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johannes Schmoelling"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_Voigt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Voigt is an electronic music artist from Cologne, Germany, known for his output under various aliases on a plethora of record labels, including Warp, Harvest, Raster-Noton and Force Inc. Although widely known as a tireless producer, he is best known for co-founding the influential German techno label Kompakt alongside Michael Mayer and Jürgen Paape."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Voigt"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Franz_Josef_Degenhardt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Franz-Josef Degenhardt is a German poet, satirist, novelist, and -- first and foremost -- folksinger/songwriter with decidedly left-wing politics. He is also a lawyer, bearing the academic degree of Doctor of Law. After studying law from 1952 to 1956 in Cologne and Freiburg, he passed the first German state bar examination in 1956 and the second in 1960. From 1961 he worked for the Institute for European Law of the University at Saarbrücken, where he obtained his doctorate in 1966."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Franz-Josef Degenhardt"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Candy_DeRouge> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Candy de Rouge (sometimes credited as Alexandre DeRouge) is a German producer and songwriter. His real name is Wolfgang Detmann. He has worked extensively with the likes of Jennifer Rush, Celine Dion, Bonnie Bianco, Sally Oldfield, Laura Branigan, Thomas Anders, Chris Norman, Falco, The Window Speaks, Helen Schneider and other international artists."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Candy DeRouge"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/And.Ypsilon> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Andreas Rieke, better know by his pseudonym And. Y or And. Ypsilon (pronounced andy epsilon,\"üpsilon\" in German) is the producer of the German hip hop band Die Fantastischen Vier."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Andreas Rieke"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gina_V._D%27Orio> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Gina V. D'Orio (born Gina Vaporjieff D'Orio, 23 September 1976 in Germany) is the main former vocalist from German Digital Hardcore band EC8OR and member of Cobra Killer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Gina V. D'Orio"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Horst_Wende> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Horst Wende (5 November 1919 &mdash; 23 January 1996) was a German bandleader, arranger and composer. He made easy-listening records under his own name as well as under the name Roberto Delgado. He was part of the wave of German-based easy listening artists who were popular in the 1960s and 1970s, along with Bert Kaempfert and James Last. Born in Zeitz, Saxony, he showed musical proficiency at an early age."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Horst Wende"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Thorsten_Br%C3%B6tzmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Thorsten Brötzmann is a German record producer, composer, and arranger. He is perhaps best known for his collaboration with the No Angels, Bro'Sis, Christina Stürmer, Monrose, Jeanette, Alexander Klaws, and Modern Talking."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Thorsten Brötzmann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Raab> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stefan Konrad Raab (born on October 20, 1966, in Cologne) is a German entertainer, music producer, singer and comedian. He attended Jesuit boarding school Aloisiuskolleg in Bonn. Before entering the media world, he worked as a butcher and studied law before dropping out of college after five semesters."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stefan Raab"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rex_Joswig> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rex Joswig, \"The living repetition machine\" &amp; \"Dubprotector\", has produced wordsounds with Herbst in Peking, Column One, Babylon 23, Badphish and Bert Papenfuß. Joswig moved to East Berlin in the early 80s where he began working as a roadie. He soon met Dr. Totenhöfer with whom he started playing music. In Spring 1987 they gathered a number of musicians around them and formed Herbst in Peking."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rex Joswig"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ralf_Stemmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ralf Stemmann (sometimes credited as Ralph Stemmann or Ralf Stemman) is a record producer, composer, arranger, keyboards player, synthesizer programmer of German origin, who currently resides in Malibu, California. He started his music career in early 80s with signing to Night’n’Day Records where he collaborated with Mike Mareen. In mid-80s Ralf worked as a studio engineer and sound designer at Studio 33 (formerly Star Studio) with Modern Talking co-producer Luis Rodriguez."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ralf Stemmann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_%28German_singer%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nicole (Nicole Seibert, née Hohloch; born October 25, 1964, Saarbrücken, Germany) is a successful German singer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nicole"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Klaus_Wunderlich> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Klaus Wunderlich (born 18 June 1931 &ndash; died 28 October 1997) was a German musician. Wunderlich was born in Chemnitz and died in Engen from a heart attack. Wunderlich played the Hammond organ during the first half of his career, and later switched to Wersi organs and Moog synthesizers with which he created his own unique electronic sound. He was open to different music styles and played classical, operetta, Broadway musical, as well as popular music."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Klaus Wunderlich"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_S%C3%B6llner> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann Michael Söllner (born 24 December 1955), better known as Hans Söllner, is a German singer-songwriter. Throughout German-speaking countries, especially in Germany and Austria, he is famous for publicly criticizing the German government and political systems in general to a vast extent. While Söllner sings in Bavarian dialect his music can be considered as Reggae, creating an extremely exceptional contrast."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hans Söllner"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stephan_Krehl> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stephan Krehl (July 5, 1864 – April 9, 1924 in Leipzig) was a German composer, teacher, and theoretician. His writings include Traité général de la musique and Théorie de la musique et de science de la composition."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stephan Krehl"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/H._P._Baxxter> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hans Peter Geerdes (better known by his stage name H.P. Baxxter), born on 16 March 1966 in Sheffield, England, is a German entertainer and the frontman of the techno group Scooter. He founded Scooter with his friend Rick J. Jordan in 1994. Baxxter studied law for one semester, however he completed an apprenticeship as a wholesale and foreign trade buyer. Following that, he held a job with a record label. On 6 May 2006, he married his girlfriend Simone."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "H.P. Baxxter"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Quickmix> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Quickmix is a German hip-hop producer and composer. He got his name from a Grandmaster Flash record, where there is a vocal part: \"He is the King of the Quickmix\". His first DJ name was General Cut in the early 1980s."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "kmix"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ernst_Horn> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ernst Horn (born 1949 in Munich) is a German musician who played a crucial part in founding the bands Deine Lakaien, Qntal and Helium Vola."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ernst Horn"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marcus_Brosch> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marcus Brosch is a German songwriter, record producer and remixer. Because of missing success of football in the early eighties, he stopped playing it in favour of playing the guitar at the age of thirteen years, playing in several bands with his later partner in productions, Henrik Menzel. In the mid-90s, he founded the Hip-Hop group Aroma with Menzel and Philipp Grüthering which was the predecessor of the progressive group Deichkind."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marcus Brosch"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Walter_Andreas_Schwarz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Walter Andreas Schwarz (2 June 1913 - 1 April 1992) was a German singer, songwriter, novelist, Kabarettist, author of radio dramas and translator."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Walter Andreas Schwarz"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Extrabreit> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Extrabreit is a German band established in Hagen, Germany in 1978. The band was one of the most successful exponents of the Neue Deutsche Welle movement of the 1980s."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Extrabreit"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Frank_Bornemann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Frank Bornemann (born 1949) is the guitarist for German progressive rock band Eloy. He has been the only consistent member of the band since its formation in the late 1960s. Bornemann is currently a leading producer and engineer with Horus Studios in Hannover, Germany."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Frank Bornemann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Michael_Holm> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Michael Holm (born Lothar Walter on July 29, 1943, Stettin, today Szczecin) is a German singer, musician, songwriter and producer. Above all he is known as a Schlager singer. Although his first presence in hit parade was in 1962 (\"Lauter Schöne Worte\"), he had his first big hit in 1969. \"Mendocino\", the German adulteration of a song by the Sir Douglas Quintet, was the biggest selling single in that year in Germany."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Michael Holm"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Marcus> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Marcus (born 24 December 1979 in Berlin) is a persona of the German music producer Felix Rennefeld. He has become popular throughout Germany after a series of videos he produced and displayed on youtube."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Marcus"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Schwarzmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stefan Schwarzmann (born 11 November 1965) is a German drummer who has recorded for Accept, U.D.O. , Running Wild, X-Wild, Krokus and Helloween. Schwarzmann joined Helloween as a replacement for departing drummer Mark Cross in 2003. Although Stefan got on well with the members of the band, he had other musical preferences; as a result, he chose to leave Helloween after the Rabbits on the Run Tour in early 2005."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stefan Schwarzmann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Klaus_Lage> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Klaus Lage (born June 16, 1950) is a musician from Soltau, Germany. He is known for his 1984 single \"1000 und 1 Nacht (Zoom!)\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Klaus Lage"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alfred_Harth> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alfred Harth is a German multimedia artist, band leader, multi-instrumentalist musician, and composer who mixes genres in a polystylistic manner. He is now known as Alfred 23 Harth or A23H."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alfred Harth"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Pole_%28musician%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Pole is the artistic name of Stefan Betke, a German electronic music artist commonly associated with the glitch genre as well as dubtronica."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Pole"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Keine_ruhige_Minute> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Keine ruhige Minute is the ninth album by the singer-songwriter Reinhard Mey. All songs have been written by Mey."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Kein ruhige Minute"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Paul_Ehrenberg> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Paul Ehrenberg (1876 - 1949) was a German violinist and painter, and brother of Carl Ehrenberg. From 1899 to about 1903, he had an intense friendship with Thomas Mann."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Paul Ehrenberg"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rocko_Schamoni> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rocko Schamoni, (born May 8, 1966 in Lütjenburg) real name is Tobias Albrecht, is a German entertainer, author, musician, club proprietor and member of the comedy ensemble Studio Braun. In the early 1980s he moved to Hamburg, where he resides as of 2008. In the end of the 1980s Rocko Schamoni released his first vinyl-single Liebe kann man sich nicht kaufen (1987). A lot of albums and singles followed. In 1998 he started the project Studio Braun with two other musicians from Hamburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rocko Schamoni"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hanin_Elias> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hanin Elias, is a German industrial/techno artist. She was a member of Atari Teenage Riot and is now a solo artist. After Atari Teenage Riot's non-definitive break in 2000, and the subsequent death of Carl Crack due to a psychosis and drug overdose, the members of ATR split up, and Hanin set up her own record label, Fatal Recordings."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hanin Elias"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Timo_Rose> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Timo Rose (born February 22, 1977) is a German horror and science fiction filmmaker, rapper, and founder of the production company Sword of Independence Filmworks (later Germaica/Rosecalypse Films and Records)."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Timo Rose"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sabrina_Setlur> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sabrina Setlur (born January 10, 1974), formerly known as Schwester S. , is a German rapper, songwriter, Hebbar Iyengar and occasional actress. Her debut was in 1995 under the guidance of 3p Records executive and mentor Moses Pelham, producer of her breakthrough single \"Ja Klar. \" Following the drop of her pseudonym and a number-one single, \"Du Liebst Mich Nicht,\" in 1997, a series of hit records established her position as Germany's \"best known and highest-selling female rap act\" to date."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sabrina Setlur"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stephan_Micus> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stephan Micus (born January 19, 1953) is a German musician and composer, whose musical style is heavily influenced by his study of traditional instruments and musical techniques from Japan, India, South America, and other countries around the world. In many cases, he plays all of the instruments on his recordings, combining styles from different countries and using the instruments in unprecedented ways in each of his pieces."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stephan Micus"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ernst_Horn> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ernst Horn (born 1949 in Munich) is a German musician who played a crucial part in founding the bands Deine Lakaien, Qntal and Helium Vola."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ernst Horn"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_Michels> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Michels is a German singer-songwriter."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Michels"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Schorsch_Kamerun> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Schorsch Kamerun, whose real name is Thomas Sehl, is a German musician, singer, author, theatre director, and club proprietor. His stage name is a parody of the name of the singer of American punk band Dead Kennedys, called Jello Biafra. He is best known as the founding member and lead singer of Die Goldenen Zitronen, a political punk band from Hamburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Schorsch Kamerun"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Renate_Blauel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Renata Blauel (born ca. 1953) is a German music engineer who was married to Elton John for four and a half years. They divorced when both John and Blauel felt that he could no longer deny his true sexuality. Already a sound engineer, she had engineered albums including Hysteria for the Human League and Croatia Records. Blauel was then a recording engineer on John's 1983 album Too Low For Zero in Sydney, Australia. John admitted that his bisexuality was a \"compromise\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Renata Blauel"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marc_Mozart> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marc Christian Gernert, who performs as Marc Mozart and Marc Z, is a German songwriter, record producer and music manager. He started his career in Germany during the early 1990s. His professional career started after high school when he signed a contract, in 1993, with Sony Music Germany. Later on, he spent time in New York to start working with various international artists including Bad Boy Records artist Victoria Hilton and girl band Dream."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marc Mozart"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Funny_van_Dannen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Funny van Dannen is a German singer, songwriter, author, and painter of Dutch origin. He sings about politics, society, sexuality, religion, and many other topics, usually in a humorous way. He accompanies his songs with guitar, sometimes with harmonica. He founded the band Lassie Singers. Since 1978 he has lived in Berlin. He is married and has four children."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Funny van Dannen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nic_Endo> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nic Endo (born January 7, 1976) is a Japanese-German-American noise musician who played with the German digital hardcore group Atari Teenage Riot. The daughter of a Japanese mother and a German father, Endo was born in Texas, US. She lived in Frankfurt from 1994 to 1996 and later moved to Berlin. Nic Endo joined ATR while they were on tour in 1997 and was involved with the production of their final album 60 Second Wipe Out."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nic Endo"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Schwarzmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stefan Schwarzmann (born 11 November 1965) is a German drummer who has recorded for Accept, U.D.O. , Running Wild, X-Wild, Krokus and Helloween. Schwarzmann joined Helloween as a replacement for departing drummer Mark Cross in 2003. Although Stefan got on well with the members of the band, he had other musical preferences; as a result, he chose to leave Helloween after the Rabbits on the Run Tour in early 2005."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stefan Schwarzmann"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Peter_Maffay> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Peter Maffay is a German musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Peter Maffay"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Heinz_Rudolf_Kunze> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Heinz Rudolf Erich Arthur Kunze is a German writer and rock singer. His greatest hits were Dein ist mein ganzes Herz (not to be confused with the homonymous song from the operetta Das Land des Lächelns) and Mit Leib und Seele in 1985 and 1986."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Heinz Rudolf Kunze"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Elli_Erl> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Elli Erl (born Elisabeth Maria Erl on May 25, 1979 in Straubing, Bavaria) is a German musician, who came to fame as the winner of the second season of the television show Deutschland sucht den SuperStar, the German version of Pop Idol."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Elli Erl"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Herbert_Gr%C3%B6nemeyer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Herbert Arthur Wiglev Clamor Grönemeyer (born April 12, 1956) is a German musician and actor, popular in Germany, Austria and Switzerland. He starred as war correspondent Lieutenant Werner in Wolfgang Petersen's movie Das Boot, but later concentrated on his musical career. His fifth album Bochum (1984) is the best-selling German language record to date."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Herbert Arthur Wiglev Clamor Grönemeyer"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Michael_Kiske> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Michael Kiske is a singer best known as the lead vocalist for the German power metal band Helloween from 1986 to 1993. Kiske has been recording solo albums since 1996, has participated on various metal/rock related projects and has performed with many bands as a guest vocalist. He also wrote a book, 'Kunst Und Materialismus', which is only available in German."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Michael Kiske"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Raab> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Stefan Konrad Raab (born on October 20, 1966, in Cologne) is a German entertainer, music producer, singer and comedian. He attended Jesuit boarding school Aloisiuskolleg in Bonn. Before entering the media world, he worked as a butcher and studied law before dropping out of college after five semesters."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Stefan Raab"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johann_Andreas_Stein> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann (Georg) Andreas Stein, (Heidesheim, 16 May 1728 - Augsburg, 29 February 1792) was an outstanding German maker of keyboard instruments, a central figure in the history of the piano. He was primarily responsible for the design of the so-called \"Viennese\" fortepiano, for which the piano music of Haydn, Mozart, and the early Beethoven was written."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johann Andreas Stein"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Michael_Scholz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Michael Scholz (January 26, 1949) is a German singer, composer and producer. Between 1984 and 2000 he collaborated with Dieter Bohlen for which he sang in the Modern Talking and Blue System choruses. Since 2003 he works on his music group, Systems in Blue. His voice type is falsetto."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Michael Scholz"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Eric_Fish> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Eric Fish (real name Eric Hecht, born May 28, 1969 in Treuenbrietzen, Germany), singer of Subway to Sally and solo artist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Eric Fish"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Tom_Gaebel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Tom Gaebel is a German singer and leader of a big band named after himself. He changed the spelling of his last name, avoiding the umlaut to give it a more international sheen. In addition to singing and arranging music, Gaebel writes lyrics in English. Tom Gaebel was born on 13 January 1975 in Gelsenkirchen, North Rhine-Westphalia, Germany into a highly musical family. His younger brother Denis Gäbel plays tenor saxophone in the Tom Gaebel big band."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Tom Gaebel"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nargaroth> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nargaroth is a German black metal solo project led by René \"Kanwulf\" Wagner."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nargaroth"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bernd_Friedmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bernd Friedmann (also Burnt Friedman) is a German musician and producer who works under a variety of project names in the fields of Electronica, Dub und Jazz. Friedmann was raised in Kassel where he studied painting, performance and video at the Kunsthochschule from 1984 to 1990. His first recordings of found and self-built instruments, done with Wolfram Der Spyra from 1978 to 1982, have been released under the name TOXH in 1989."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bernd Friedmann"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Heinz_Strunk> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Heinz Strunk, legal name Mathias Halfpape (born 17 May 1962 in Hamburg) is a German entertainer, author, and member of Studio Braun. Strunk's comedy ranges from goofy prank calls to biting political and cultural satire, often involving music. Perhaps Strunk's most recognizable piece comes from a Studio Braun album full of prank calls made in and around the city of Hamburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Heinz Strunk"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hermann_Kretzschmar> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "August Ferdinand Hermann Kretzschmar (19 January 1848 – 10 May 1924) was a German musicologist and writer, and is considered a founder of interpretation in musical study."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hermann Kretzschmar"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Benjamin-Gunnar_Cohrs> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Benjamin-Gunnar Cohrs (born 21 September 1965 in Hameln) is a German conductor, scholar, and publicist on music."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Benjamin Gunnar Cohrs"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Joachim_Witt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Joachim Witt is a German musician and actor."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Joachim Witt"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/James_Last> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "James Last (born Hans Last on 17 April 1929 in Bremen) is a German composer and big band leader."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "James Last"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bruno_Schleinstein> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bruno Schleinstein (born 2 June 1932) is a German film actor, artist, and musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bruno S."@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alfred_Wolfsohn> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alfred Wolfsohn (born 23 September 1896, died 5 February 1962) was a German singing teacher. He taught Charlotte Salomon, and figures in her paintings as Amadeus Daberlohn. He was the founder of a special style of voice training today known as the Roy Hart Theatre approach. His experiences of the cries of dying soldiers during World War I, and later his disgust at the artificially broadcast voices heard everywhere in Hitler's Berlin, led him to explore the nature and possibilities of the voice."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alfred Wolfsohn"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Daniel_Fichelscher> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Daniel \"Danny\" Secundus Fichelscher, (Berlin, 3.7.1953), is a German multi-instrumentalist who played a pivotal role in Krautrock band Popol Vuh, was a member of German group \"Gila\" and is currently Amon Düül II's drummer. Fichelscher is the son of Jazz pianist and singer Toby Fichelscher."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Daniel Secundus Fichelscher"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Susanne_Lautenbacher> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Susanne Lautenbacher (born 19 April 1932, in Augsburg) is a German violinist. She studied violin with the Munich-based violin pedagogue Karl Freund (first violin of the Freund Quartet) and later with Henryk Szeryng. She was a prizewinner in the early years of the Munich ARD Violin Competition."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Susanne Lautenbacher"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Timo_Rose> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Timo Rose (born February 22, 1977) is a German horror and science fiction filmmaker, rapper, and founder of the production company Sword of Independence Filmworks (later Germaica/Rosecalypse Films and Records)."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Timo Rose"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johann_Bernhard_Logier> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann Bernhard Logier (February 9, 1777 – February 13, 1846) was a German music teacher. Logier was born in Kassel, and was first taught music by his father, a violinist. He moved to the United Kingdom in 1805, where he received further instruction and spent the remainder of his life, except for a three-year stay in Berlin (1822–25). He died in Dublin in 1846. Logier invented the Chiroplast, a pedagogical device that guides the hands and fingers while playing the piano."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johann Bernhard Logier"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christoph_von_Dohn%C3%A1nyi> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christoph von Dohnányi (born September 8, 1929) is a German conductor of Hungarian ancestry."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christoph von Dohnányi"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Eichinger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Since 1994 Stefan Eichinger, also known as LOPAZZ, has been part of the Heidelberg based HD800 team; he also runs the multimedia label 800achtspur, and is renowned as a film composer, having written more than 30 scores over the years."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Lopazz"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Heidi_Kabel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Heidi Kabel (born August 27, 1914 in Hamburg as Heidi Bertha Auguste Kabel) is a German musician and actress. Most of her stage roles were performed at the Ohnsorg-Theater in Hamburg, many of them in Low German. She was married to stage director and actor Hans Mahler until his death in 1970. Their daughter, Heidi Mahler, is also an actress."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Heidi Kabel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dr._Ring-Ding> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dr. Ring-Ding, real-life name Richard Alexander Jung, is a German reggae, ska and dancehall artist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dr. Ring-Ding"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Goldt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Goldt (pseudonym of Matthias Ernst) is a German satirical author and musician. Goldt's distinctive style defies definition or comparison."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Goldt"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Carlprit> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rudi Frank Schwamborn (born 20 May 1986), currently known by his stage name Carlprit, is a half Zimbabwean half German rapper and actor. He is the younger brother of Söhne Mannheim's rapper Metaphysics. In 2009 he made his most notable appearance on Cascada's hit single \"Evacuate the dance floor\" which sold over a million copy's world wide, and now his new single which is entitled \"See you at the top\" is set to be released in 2010."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Carlprit"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christoph_Koncz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christoph Koncz (born 3 September 1987) is an Austrian violinist. He is possibly most notable in popular culture for his role as the orphaned prodigy Kaspar Weiss in the 1998 Canadian film The Red Violin."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christoph Koncz"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rocko_Schamoni> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rocko Schamoni, (born May 8, 1966 in Lütjenburg) real name is Tobias Albrecht, is a German entertainer, author, musician, club proprietor and member of the comedy ensemble Studio Braun. In the early 1980s he moved to Hamburg, where he resides as of 2008. In the end of the 1980s Rocko Schamoni released his first vinyl-single Liebe kann man sich nicht kaufen (1987). A lot of albums and singles followed. In 1998 he started the project Studio Braun with two other musicians from Hamburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rocko Schamoni"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Bader> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Bader is a German clarinetist. Bader was born in 1965 in Stuttgart. He studied piano and clarinet at Berlin's Hochschule der Künste. His clarinet teachers were Manfred Preis and Peter Rieckhoff. He studied under Wolfgang Meyer in the Staatliche Hochschule für Musik. He became a member of the Berliner Philharmoniker in 2006, after playing in Komische Oper as principal clarinet, as well as the Bavarian State Opera and the Philharmonic of Munich."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Bader"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Clara_Mannes> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Clara Mannes, born Clara Damrosch was a German-born American musician, music educator. With her husband David Mannes she founded the Mannes College The New School for Music in 1916 (then simply the David Mannes Music School). Mannes was born in Breslau, a younger sister of Walter Damrosch. Leopold Mannes Damrosch is her son."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Clara Mannes"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Farin_Urlaub> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jan Ulrich Max Vetter, better known as Farin Urlaub (like German \"Fahr in Urlaub!\", after his love of travelling) was born on October 27, 1963 in what was then West Berlin, Germany . He is best known as the guitarist/vocalist for the German punk rock band Die Ärzte. He has also been a solo artist since 2001, touring with his band, the \"Farin Urlaub Racing Team\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Farin Urlaub"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johanna_Senfter> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johanna Senfter (* 27 November 1879 in Oppenheim; † 11 August 1961 in Oppenheim) was a German composer. From 1885 Johanna Senfter studied composition under Knorr, violin under Rebner, piano under Friedberg and organ at the Hoch Conservatory in Frankfurt am Main. This gave her a considerable amount of musical training when in 1908 she became a student of Max Reger in Leipzig. She composed 9 symphonies, 26 orchestral works and concertos for piano, violin, viola, and cello."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johanna Senfter"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/John_Starlight> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "John Starlight is another pseudonym of the Munich based musician and producer Florian Senfter. Beside his main project Zombie Nation he started releasing tracks as John Starlight in 2001."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "John Starlight"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sabine_Meyer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sabine Meyer is a German classical clarinetist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sabine Meyer"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Udo_Lindenberg> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Udo Lindenberg (born May 17, 1946 in Gronau) is a German rock musician and composer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Udo Lindenberg"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Pulsedriver> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Slobodan Petrovic Jr. (born on 22 February 1974 in Trappenkamp) is a Yugoslavian-German electronic dance music DJ, producer and is the founder of Aqualoop Records in 2000. He is best known by his alias, Pulsedriver."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Pulsedriver"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nannette_Streicher> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nannette Streicher née Stein (2 January 1769, Augsburg – 16 January 1833, Vienna) was a German piano maker, composer, music educator and writer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nannette Streicher"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Axel_Zwingenberger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Axel Zwingenberger (born May 7, 1955 in Hamburg, Germany) is a blues and boogie-woogie pianist, and songwriter. He is considered one of the finest boogie-woogie music masters in the world."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Axel Zwingenberger"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ian_Pooley> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ian Pooley (born Ian Pinnekamp in 1973) is a German-born record producer and DJ. While incorporating samples of various musical genres, Pooley's creations are usually classified as house or tech house with Brazilian influence."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ian Pooley"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Holger_Hiller> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Holger Hiller (born 26 December 1956 in Hamburg) is a German musician. Holger Hiller studied art at the art school in Hamburg, where he met Walter Thielsch and Thomas Fehlmann and recorded first works with them. With Fehlmann he later founded the band Palais Schaumburg in 1980, of which he was the singer. At the same time his solo career began. Hiller was one of the first musicians in Europe to use the sampler as his main or sole instrument."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Holger Hiller"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_S%C3%B6llner> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johann Michael Söllner (born 24 December 1955), better known as Hans Söllner, is a German singer-songwriter. Throughout German-speaking countries, especially in Germany and Austria, he is famous for publicly criticizing the German government and political systems in general to a vast extent. While Söllner sings in Bavarian dialect his music can be considered as Reggae, creating an extremely exceptional contrast."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hans Söllner"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Goldt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Goldt (pseudonym of Matthias Ernst) is a German satirical author and musician. Goldt's distinctive style defies definition or comparison."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Goldt"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Govi> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Govi is a new age/ambient musician. A native of Germany, Govi spent eight years living in India in order to create music with Deuter and Karunesh. His album Guitar Odyssey became one of the most successful albums in its genre; in 1997, it reached the ten best of the \"Billboard\" new age albums and eventually took third place. Govi is now living in Hawaii."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Santoo Govi"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Stefan_Eichinger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Since 1994 Stefan Eichinger, also known as LOPAZZ, has been part of the Heidelberg based HD800 team; he also runs the multimedia label 800achtspur, and is renowned as a film composer, having written more than 30 scores over the years."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "LOPAZZ"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Conrad_Schnitzler> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Conrad Schnitzler is a prolific German experimental musician. Schnitzler has been a major, though reclusive, figure on the European music scene since the late 1960s. Schnitzler was an early member of Tangerine Dream (1969–1970) and a founder of the band Kluster. He left Kluster in 1971, first working with his group Eruption and then focusing on solo works. He continued to record from his home studio in Dallgow, Germany, creating CD-Rs which he sells independently."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Conrad Schnitzler"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Kettcar> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Kettcar is an indie pop music band based in Hamburg, Germany."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Kettcar"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Herbert_Gr%C3%B6nemeyer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Herbert Arthur Wiglev Clamor Grönemeyer (born April 12, 1956) is a German musician and actor, popular in Germany, Austria and Switzerland. He starred as war correspondent Lieutenant Werner in Wolfgang Petersen's movie Das Boot, but later concentrated on his musical career. His fifth album Bochum (1984) is the best-selling German language record to date."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Herbert Grönemeyer"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_Lange> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hans Lange (born February 17, 1884 in Istanbul; died August 13, 1960 in Albuquerque, New Mexico) was a German-American conductor and musician. He was a son of Paul Lange, who had been a lecturer for music at the American College for Girls and German High School Istanbul in the 1890s, and later was appointed the Sultan's director of music. Hans Lange himself was an alumnus of German High School Istanbul. Lange was educated in Prague and other European cities."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hans Lange"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bernd_Friedmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bernd Friedmann (also Burnt Friedman) is a German musician and producer who works under a variety of project names in the fields of Electronica, Dub und Jazz. Friedmann was raised in Kassel where he studied painting, performance and video at the Kunsthochschule from 1984 to 1990. His first recordings of found and self-built instruments, done with Wolfram Der Spyra from 1978 to 1982, have been released under the name TOXH in 1989."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bernd Friedmann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/LaFee> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christina Klein (born December 9, 1990), better known by her stage name LaFee, is a German singer/songwriter who has sold more than 1 million albums worldwide. She is best known as the lead singer of LaFee and she is most famous in mainland Europe, particularly in German-speaking countries."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "LaFee"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Kai_Warner> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Kai Warner was the stage name of Werner Last (October 27, 1926 - July 9, 1982), a German bandleader and musician. Born in Bremen, Warner took piano lessons from Ernst Weelen and received theory instruction from the Reger and Humperdinck student Richard Bulling. After the war, Werner Last appeared as a trombonist along with his brothers Hans (bassist, later known as James Last) and Robert Last (drummer) in Bremen music halls and in the American clubs in the vicinity of Bremerhaven."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Kai Warner"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bruno_Hoffmann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bruno Hoffmann (b. Stuttgart, Germany, 15 September 1913; d. Stuttgart, 11 April 1991) was a German player of the glass harp. Hoffmann is widely acknowledged as the virtuoso who reanimated contemporary interest in the glass harp and glass harmonica. The son of a church music director, he was trained in piano and organ playing, but on encountering the \"musical glasses\" at age 16 his lifelong devotion to resurrecting this unearthly beauty was begun."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bruno Hoffmann"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_Judenk%C3%B6nig> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Hans Judenkönig (also Judenkunig or Judenkünig) (b. c. 1450, Schwäbisch Gmünd - d. Mar. 4, 1526, Vienna) was a German lutenist of the Renaissance. He worked as a lutenist in the vicinity of the University of Vienna and was best known for his two lute books written for the self-teaching of a lay audience."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Hans Judenkönig"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ulrich_S._Schubert> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ulrich Sigmar Schubert is a professor of Chemistry at Jena University. He was born in Tübingen in 1969. He studied chemistry at the Universities of Frankfurt and Bayreuth (both Germany) and the Virginia Commonwealth University, Richmond (USA). His Ph.D. work was performed under the supervision of Professor Eisenbach (Bayreuth, Germany) and Professor Newkome Florida, USA. In 1995 he obtained his doctorate with Prof. Eisenbach."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ulrich S. Schubert"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Heinz-Klaus_Metzger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Heinz-Klaus Metzger (Born February 6, 1932 in Konstanz; died October 25, 2009 in Berlin) was a German music critic and theorist. Metzger studied piano under Carl Seemann in Freiburg and composition under Max Deutsch in Paris. Later, attending a summer course for new music in Darmstadt, he met Theodor W. Adorno, Edgard Varèse, Karlheinz Stockhausen and Luigi Nono. Here he found his role as a notable theoretician and proponent of Serialism in musical theory."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Heinz-Klaus Metzger"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marlon_Klein> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marlon Klein is working since many years as a German musician and producer in the field of World Music and Fusion. He is a co-founder of the groundbreaking German group Dissidenten who helped to establish the term World Music in the early eighties. Concerts and recordings with artists from various cultures have taken him around the world several times. Klein also is part of the label Exil Musik."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marlon Klein"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Tom_Gaebel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Tom Gaebel is a German singer and leader of a big band named after himself. He changed the spelling of his last name, avoiding the umlaut to give it a more international sheen. In addition to singing and arranging music, Gaebel writes lyrics in English. Tom Gaebel was born on 13 January 1975 in Gelsenkirchen, North Rhine-Westphalia, Germany into a highly musical family. His younger brother Denis Gäbel plays tenor saxophone in the Tom Gaebel big band."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Tom Gaebel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marius_M%C3%BCller-Westernhagen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marius Müller-Westernhagen (born December 6, 1948 in Düsseldorf) is a German actor and musician. Possibly best known for the hit \"Johnny Walker\", Marius Müller Westernhagen has been a feature in German rock music since the mid seventies. Marius is known for his energetic public concerts, and his fans know his anthem-like songs by heart."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marius Müller-Westernhagen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dragan_Espenschied> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dragan Espenschied (born 1975) is an 8-bit musician and media artist who lives and works in Stuttgart, Germany. He studied communication design at the Merz Academy in Stuttgart. Dragan started to develop software for Atari computers in 1991. In 1995 he founded the 8-bit band \"Bodenständig 2000\" together with Bernd Kirsch. They got signed on the label Rephlex in London, and started touring throughout Europe and the USA."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dragan Espenschied, aka drx"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Sebastian_Manz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Sebastian Manz (born 1986 in Hanover) is a German clarinetist. Manz began studying clarinet at Musikhochschule Lübeck in 1997. He won first place in Jugend musiziert in 1994 and 1999-2003. He was the first clarinetist in 40 years to win first prize in the ARD International Music Competition in Munich. He currently studies under Sabine Meyer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Sebastian Manz"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Bernd_Begemann> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Bernd Begemann is a contemporary German alt/pop singer-songwriter linked to the Hamburger Schule."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Bernd Begemann"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Walter_Quintus> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Walter Quintus (born April 15, 1949) is a German musician, composer and sound engineer. As a musician, composer, producer, arranger, engineer and real-time processor, “Master of the Craft of Sound” Walter Quintus has collaborated with a diverse assortment of some of the greatest musicians from the world's musical cultures."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Walter Quintus"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Michael_Simon> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Michael Simon (Born 1972) is a German DJ and musician from Hamburg, and currently a member of the band Scooter. His work with Scooter includes The Ultimate Aural Orgasm, Jumping All Over The World, and Under The Radar Over The Top. He previously worked as a technician for Scooter, while Jay Frog had Michael's place. In 2006, Simon officially joined Scooter after about 10 years of working as a technician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Michael Simon"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_M%C3%BCller> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Müller (born 24 October 1957 in Wolfsburg) is a German artist, musician and writer, based in Berlin, Germany and Reykjavík, Iceland. Müller is the founder of the Berlin based multi-media performance art group Die Tödliche Doris ('The Deadly Doris'). The group was active for seven years, between 1980 and 1987. Müller published the book Geniale Dilletanten in 1982, naming a musical genre encompassing Die Tödliche Doris, Einstürzende Neubauten, Sprung Aus Den Wolken and many others."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Müller"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Laith_Al-Deen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Laith Al-Deen, born February 20, 1972 in Karlsruhe, Germany, is a German language pop musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Laith Al-Deen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Gentleman_%28musician%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Tilmann Otto, better known by his stage name Gentleman, is a German Reggae musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Gentleman"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ulrich_Tukur> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ulrich Tukur (born Ulrich Scheurlen, July 29, 1957 in Viernheim) is a German actor and musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ulrich Tukur"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Raabe> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Raabe (December 12, 1962 in Lünen) is a German singer and band leader of the Palast Orchester. He and his orchestra specialize in recreating the sound of German dance and film music of the 1920s and 1930s, especially by performing songs of the Comedian Harmonists. He founded the Palast Orchester in 1986."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Raabe"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Walter_Andreas_Schwarz> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Walter Andreas Schwarz (2 June 1913 - 1 April 1992) was a German singer, songwriter, novelist, Kabarettist, author of radio dramas and translator."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Walter Andreas Schwarz"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Dieter_Bohlen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Dieter Bohlen is a German musician, songwriter, entertainer, TV personality, producer and writer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Dieter Bohlen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Ulrich_Tukur> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Ulrich Tukur (born Ulrich Scheurlen, July 29, 1957 in Viernheim) is a German actor and musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Ulrich Tukur"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Richard_Klemm> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Richard Klemm (* 1902 in Dresden; † 1988 in Berlin) was a German cellist, composer and a renowned teacher."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Richard Klemm"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Oskar_Sala> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Oskar Sala (18 June 1910 - 26 February 2002) was a 20th century German composer and a pioneer of electronic music. He played an instrument called the trautonium, a predecessor to the synthesizer. Sala was a pupil of Friedrich Trautwein, the inventor of the trautonium, and studied with Paul Hindemith in 1930 at the Berlin conservatory. Oskar Sala further developed the trautonium into the Mixtur-Trautonium."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Oskar Sala"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Farin_Urlaub> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jan Ulrich Max Vetter, better known as Farin Urlaub (like German \"Fahr in Urlaub!\", after his love of travelling) was born on October 27, 1963 in what was then West Berlin, Germany . He is best known as the guitarist/vocalist for the German punk rock band Die Ärzte. He has also been a solo artist since 2001, touring with his band, the \"Farin Urlaub Racing Team\"."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Jan Ulrich Max Vetter"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mousse_T.> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mousse T. (born Mustafa Gündoğdu on 2 October 1966 in Hagen, North Rhine-Westphalia) is a German DJ and record producer of Turkish descent. He is perhaps best known for his collaboration with Tom Jones, \"Sex Bomb\", released on the album Reload."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mousse T."@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christopher_von_Deylen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christopher von Deylen is an electronica music producer, formerly one-half of a duo, and now the main member of the band Schiller. He is best known for his work in the house and trance genres, and has collaborated with several notable performers from that scene, including Ferry Corsten, Danny Tenaglia, Scott Henry, Dave Seaman, Trance Allstars, as well as Sasha + John Digweed."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christopher von Deylen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marcus_Wiebusch> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Marcus Wiebusch is a German musician and lyricist. From 1992 to 1999 he played in the political punk-band ... But Alive, for which he sang, played guitar, and wrote lyrics. He also had two even more aggressive and politically charged, but less prolific and recognized by-projects, the bands Die vom Himmel fielen and Utell A Lie, his only ever English-speaking project. During this time he established an independent record label called \"B.A."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Marcus Wiebusch"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Achim_Reichel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Achim Reichel (born on January 28, 1944) is a musician, producer and songwriter from Hamburg, Germany. He is known for his 1991 single \"Aloha Heja He\", as well as for having fronted British Invasion-influenced band The Rattles, who, among other achievements, were selected to open for The Beatles on the Fabs' last-ever tour of Europe in 1966."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Achim Reichel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Conrad_Schnitzler> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Conrad Schnitzler is a prolific German experimental musician. Schnitzler has been a major, though reclusive, figure on the European music scene since the late 1960s. Schnitzler was an early member of Tangerine Dream (1969–1970) and a founder of the band Kluster. He left Kluster in 1971, first working with his group Eruption and then focusing on solo works. He continued to record from his home studio in Dallgow, Germany, creating CD-Rs which he sells independently."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Conrad Schnitzler"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Georg_Friedrich_Treitschke> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Georg Friedrich Treitschke was a German librettist, translator and lepidopterist. In 1800 he came to the Vienna Hofoper. From 1809 to 1814 he was principal of the Viennese Theater an der Wien. He wrote mostly librettos for Paul Wranitzky, Adalbert Gyrowetz and C. Weigl (Weisenhaus, The Orphanage), and translated many French operas into German. In 1814 he revised the libretto of Fidelio at Ludwig van Beethoven's request."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Georg Friedrich Treitschke"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nora_Balling> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nora Balling (July 31, 1964, Koblenz, Germany) is a German woman, the first wife of the singer and ex-Modern Talking member, Thomas Anders, between 1985 and 1999. Balling is often said to be the cause of the group's split in 1987."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nora Balling"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Alexander_Veljanov> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Alexander Veljanov became famous through singing in the darkwave band Deine Lakaien which he founded with Ernst Horn in 1985."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Alexander Veljanov"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Jochen_Hippel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Jochen Hippel (born October 14, 1971) is a musician from Kirchheimbolanden in southwest Germany. He played one of the most prominent roles in computer music during the 16-bit microcomputer era, composing the music for tens of games. He was also an experienced Amiga programmer and ported many of Thalion Software's Atari ST titles."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Jochen Hippel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Nicole_%28German_singer%29> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Nicole (Nicole Seibert, née Hohloch; born October 25, 1964, Saarbrücken, Germany) is a successful German singer."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Nicole"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Johannes_Schmoelling> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Johannes Schmoelling Johannes was a member of the prolific electronic music group Tangerine Dream from 1980 to 1986. A classically trained musician he began playing piano at the age of eight. By twelve he had begun playing the pipe organ and successfully mastered the instrument so well that he began to play professionally at various churches."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Johannes Schmoelling"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_Meyer> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Wolfgang Meyer (born 1954 in Crailsheim) is a German clarinetist. Meyer studied clarinet at the Staatliche Hochschule für Musik in Stuttgart, and the Hochschule fuer Musik und Theater in Hannover along with his sister Sabine Meyer. He has led masterclasses in Brazil, Italy, Japan, Canada and Finland. He is a member of Trio di Clarone, Carmina Quartett and Quatuor Mosaiques. He has been a professor at the Musikhochschule in Karlsruhe since 1989, and was its director from 2001 to 2007."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Wolfgang Meyer"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christopher_von_Deylen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Christopher von Deylen is an electronica music producer, formerly one-half of a duo, and now the main member of the band Schiller. He is best known for his work in the house and trance genres, and has collaborated with several notable performers from that scene, including Ferry Corsten, Danny Tenaglia, Scott Henry, Dave Seaman, Trance Allstars, as well as Sasha + John Digweed."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christopher von Deylen"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Rudolf_Kelber> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Rudolf Kelber is a German organist, harpsichordist, conductor and church musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Rudolf Kelber"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Steffen_Basho-Junghans> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Steffen Basho-Junghans (born Steffen Junghans in 1953) is a German guitarist and composer. He was born in North Thuringia in the former German Democratic Republic. At the age of 17 he taught himself to play acoustic guitar and in 1978 formed the folk band Wacholder. In 1979, influenced by the American guitarist Leo Kottke, he began performing solo instrumental music on 6- and 12-string guitar. Throughout the 1980s he became influenced by artists on John Fahey's Takoma Records label."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Steffen Basho-Junghans"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Elli_Erl> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Elli Erl (born Elisabeth Maria Erl on May 25, 1979 in Straubing, Bavaria) is a German musician, who came to fame as the winner of the second season of the television show Deutschland sucht den SuperStar, the German version of Pop Idol."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Elli Erl"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Judy_Weiss> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Judy Weiss (born May 31, 1972 in Berlin) is a German singer who became internationally renowned when she sang \"Vivo per Lei\" with Andrea Bocelli in a German-Italian duet in 1996, While Judy Weiss sang in German, Andrea Bocelli sang in italian. In 1994 she starred for the first time in a Musical in the role of Anita in West Side Story. In 1995 she performed in The Beauty and the Beast. She also played Macchina in the German musical Space Dream and Esmeralda in The Hunchback of Notre Dame."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Judy Weiss"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mike_Mareen> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mike Mareen was born in post-war West Berlin, West Germany, and grew up in Lüneburg. His first musical success was with the band Cemetery Institution who played at Hamburg's Star-Club. Mareen later became a merchant sailor, a job which eventually took him to New York City where he played with several American groups. Upon his return to Europe, Mareen became involved with the production of Italo Disco records."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mike Mareen"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Herre> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Maximilian Herre is a German musician who rose to fame as a member of the group Freundeskreis."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Herre"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Holger_Hiller> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Holger Hiller (born 26 December 1956 in Hamburg) is a German musician. Holger Hiller studied art at the art school in Hamburg, where he met Walter Thielsch and Thomas Fehlmann and recorded first works with them. With Fehlmann he later founded the band Palais Schaumburg in 1980, of which he was the singer. At the same time his solo career began. Hiller was one of the first musicians in Europe to use the sampler as his main or sole instrument."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Holger Hiller"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Peter_Maffay> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Peter Maffay is a German musician."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Peter Maffay"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Verena_Rehm> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Verena Carmen Rehm (born May 14, 1984), born in Neuburg, Bavaria, is best known as the backing vocalist and pianist of the Euro-Trance dance group Groove Coverage. She has many song writing credits both within and outside the group and also sings for many other German dance acts."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Verena Rehm"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Linda_Pearl> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Linda Pearl (born Ivonne Hinkel) is a German Schranz DJ and record producer. She is getting to be a known DJ in the German Schranz and Hardtechno scene, mainly thanks to her appearance on the now-classic compilation Schranz Total."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Linda Pearl"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mambo_Kurt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mambo Kurt (born Rainer Limpinsel; 11 April 1967 in Hagen) is a German artist who does covers of various mainstream and classical/modern rock hits. Just a comedy and novelty act, Mambo has played The Wacken Open Air festival and provides music for a German television show called Verona's World. but when he plays the covers, he does them a little different from the usual type of song, as he plays a home organ and changes the style of the song into a Bossa Nova, Samba or Polka style song."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mambo Kurt"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Reger> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Max Reger was a German composer, organist, pianist and teacher."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Max Reger"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Mousse_T.> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Mousse T. (born Mustafa Gündoğdu on 2 October 1966 in Hagen, North Rhine-Westphalia) is a German DJ and record producer of Turkish descent. He is perhaps best known for his collaboration with Tom Jones, \"Sex Bomb\", released on the album Reload."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Mousse T."@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Heinrich_St%C3%B6lzel> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Heinrich David Stölzel (7 September 1777 &ndash; 16 February 1844) was a German horn player who developed some of the first valves for brass instruments. He developed the first valve for a brass instrument, the Stölzel valve, in 1814, and went on to develop various other designs, some jointly with other inventor musicians. Stölzel was born in Schneeberg, Saxony, and died in Berlin."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Heinrich Stölzel"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Manfred_Preis> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Manfred Preis (born 1954 in Hengersberg) is a German bass clarinetist and saxophonist. Preis studied at the Munich Musikhochschule and the Orchestra Academy of the Berliner Philharmoniker. He played clarinet in the Berlin Radio Symphony Orchestra. He plays bass clarinet in the Berlin Philharmonic. He also plays clarinet in Trio Berlin and the Winds of the Berlin Philharmonic. He teaches at the Hochschule für Musik of Nuremberg-Augsburg."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Manfred Preis"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/And.Ypsilon> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Andreas Rieke, better know by his pseudonym And. Y or And. Ypsilon (pronounced andy epsilon,\"üpsilon\" in German) is the producer of the German hip hop band Die Fantastischen Vier."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "And.Ypsilon"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Joachim_Witt> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Joachim Witt is a German musician and actor."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Joachim Witt"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Christopher_Evans_Ironside> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Musician Christopher Evans Ironside (AKA \"Chris Evans\" or \"Ironside\"), is a successful and award-winning songwriter, composer and music producer. Born in England and based in Hamburg, Germany, his awards have included Gold and Platinum discs for collaborations with Nino de Angelo and Drafi Deutscher as Mixed Emotions and Masquerade."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Christopher Evans Ironside"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Masterboy> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Masterboy was a German eurodance group with notable success in Europe, Asia, Oceania and South America in the mid-1990s. They are one of the most representative group for 90's \"high energy\" eurodance phenomenon, when this genre crossed over from dance clubs to the pop music arena. Famous songs by Masterboy include Everybody Needs Somebody, Feel The Heat Of The Night and Is This The Love."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Masterboy"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Namosh> ;
+                                     rs:variable  "musician"
+                                   ] ;
+            rs:binding  [ rs:value     "Namosh or Namosh E. Arslan (born May 8, 1981 in Bietigheim-Bissingen) is a German singer, musician and performance-artist."@en ;
+                          rs:variable  "description_en"
+                        ] ;
+            rs:binding  [ rs:value     "Namosh"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .

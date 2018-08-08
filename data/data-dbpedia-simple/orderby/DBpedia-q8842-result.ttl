@@ -1,0 +1,224 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "name" , "person" ;
+  rs:size            "36"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Abelardo_Fern%C3%A1ndez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Abelardo Fernández Antuña"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/David_Villa> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "David Villa"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Luis_Garc%C3%ADa_Fern%C3%A1ndez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Luis García"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Oliverio_Jes%C3%BAs_Alvarez_Gonz%C3%A1lez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Oli"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Juan_Carlos_Ablanedo> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Juan Carlos Ablanedo Iglesias"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Santi_Cazorla> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Santi Cazorla"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Santi_Cazorla> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Santiago Cazorla"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/C%C3%A9sar_Mart%C3%ADn> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "César Martín Villar"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Julio_Alberto_Moreno> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Julio Alberto Moreno Casas"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Abelardo_Fern%C3%A1ndez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Abelardo Fernández"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/David_Villa> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "David Villa"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Oliverio_Jes%C3%BAs_Alvarez_Gonz%C3%A1lez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Oliverio Jesús Alvarez González"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marcelino_Elena> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Marcelino Elena Sierra"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Quini> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Quini"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Luis_Garc%C3%ADa_Fern%C3%A1ndez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Luis García Fernández"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Miguel_%C3%81ngel_Angulo> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Miguel Ángel Angulo"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Quini> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Quini"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Juan_Manuel_Mata> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Juan Manuel Mata García"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Cundi_%28footballer%29> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Secundino Suárez Vázquez"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Luis_Garc%C3%ADa_Fern%C3%A1ndez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Luis García Fernández"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Cundi_%28footballer%29> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Cundi"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Quini> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Enrique Castro González"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Juan_Manuel_Mata> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Juan Mata"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Cundi_%28footballer%29> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Secundino Suárez Vázquez"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marcelino_Elena> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Marcelino Elena"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Julio_Alberto_Moreno> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Julio Alberto"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Miguel_%C3%81ngel_Angulo> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Miguel Angulo"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Miguel_%C3%81ngel_Angulo> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Miguel Ángel Angulo Valderrey"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Juan_Carlos_Ablanedo> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Juan Carlos Ablanedo"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Abelardo_Fern%C3%A1ndez> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Abelardo"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Juan_Manuel_Mata> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Juan Mata"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/C%C3%A9sar_Mart%C3%ADn> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "César"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/C%C3%A9sar_Mart%C3%ADn> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "César Martín"@de ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/David_Villa> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "David Villa Sánchez"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Santi_Cazorla> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Santiago Cazorla González"@en ;
+                          rs:variable  "name"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Marcelino_Elena> ;
+                                     rs:variable  "person"
+                                   ] ;
+            rs:binding  [ rs:value     "Marcelino"@en ;
+                          rs:variable  "name"
+                        ] ]
+] .

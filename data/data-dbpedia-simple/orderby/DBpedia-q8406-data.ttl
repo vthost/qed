@@ -1,0 +1,3558 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Kenneth_Horne
+        ns1:birthDate       "1907-02-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Kenneth Horne"@en .
+
+<http://dbpedia.org/resource/John_Spencer%2C_5th_Earl_Spencer>
+        ns1:birthDate       "1835-10-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Spencer, John Poyntz, 5. Earl Spencer"@de , "The Earl Spencer"@en .
+
+<http://dbpedia.org/resource/Patrick_Blackett%2C_Baron_Blackett>
+        ns1:birthDate       "1897-11-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Patrick Blackett"@en , "Patrick Maynard Stuart Blackett"@de .
+
+dbpedia:Bob_Woods  ns1:birthDate  "1947-04-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dr Bob Woods"@en , "Robert Leslie Woods"@en .
+
+dbpedia:Ashley_Montagu
+        ns1:birthDate       "1905-06-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ashley Montagu"@en , "Ashley Montagu"@de .
+
+dbpedia:Alicia_Markova
+        ns1:birthDate       "1910-12-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alicia Markova"@de , "Dame Alicia Markova DBE"@en .
+
+dbpedia:Harry_Cohen  ns1:birthDate  "1949-12-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harry Cohen"@en .
+
+dbpedia:Margaret_Gowing
+        ns1:birthDate       "1921-04-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Margaret Mary Gowing"@en .
+
+<http://dbpedia.org/resource/Matthew_White_Ridley%2C_1st_Viscount_Ridley>
+        ns1:birthDate       "1842-07-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Ridley"@en .
+
+<http://dbpedia.org/resource/Richard_Hanson_%28Australian_politician%29>
+        ns1:birthDate       "1805-12-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Richard Hanson"@en .
+
+<http://dbpedia.org/resource/Frederic_Thesiger%2C_1st_Viscount_Chelmsford>
+        ns1:birthDate       "1868-08-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Chelmsford"@en , "Thesiger, Frederic, 1. Viscount Chelmsford"@de .
+
+dbpedia:Peter_Mansbridge
+        ns1:birthDate       "1948-07-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Mansbridge"@en .
+
+<http://dbpedia.org/resource/James_Gascoyne-Cecil%2C_4th_Marquess_of_Salisbury>
+        ns1:birthDate       "1861-10-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Salisbury"@en .
+
+dbpedia:Joe_Calzaghe  ns1:birthDate  "1972-03-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joseph William Calzaghe"@en , "Joe Calzaghe"@de , "Joe Calzaghe CBE"@en .
+
+<http://dbpedia.org/resource/Charles_Bathurst%2C_1st_Viscount_Bledisloe>
+        ns1:birthDate       "1867-09-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Viscount Bledisloe"@en , "Bledisloe, Charles Bathurst, Viscount"@en .
+
+dbpedia:Clement_Attlee
+        ns1:birthDate       "1883-01-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Clement Attlee"@en , "Clement Attlee"@de , "The Earl Attlee"@en .
+
+<http://dbpedia.org/resource/Brian_Cotter%2C_Baron_Cotter>
+        ns1:birthDate       "1938-08-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Cotter"@en .
+
+<http://dbpedia.org/resource/Nicholas_Vansittart%2C_1st_Baron_Bexley>
+        ns1:birthDate       "1766-04-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nicholas Vansittart"@de , "The Lord Bexley"@en .
+
+<http://dbpedia.org/resource/Alexander_Windsor%2C_Earl_of_Ulster>
+        ns1:birthDate       "1974-10-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Earl of Ulster"@en .
+
+dbpedia:Jeremy_Bentham
+        ns1:birthDate       "1748-02-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jeremy Bentham"@en , "Jeremy Bentham"@de .
+
+dbpedia:Lady_Sarah_Chatto
+        ns1:birthDate       "1964-05-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lady Sarah Chatto"@en .
+
+dbpedia:Harold_Spencer_Jones
+        ns1:birthDate       "1890-03-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harold Spencer Jones"@de , "Sir Harold Spencer Jones"@en .
+
+dbpedia:John_Bowser  ns1:birthDate  "1856-09-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Bowser"@en .
+
+dbpedia:Joseph_Henry_Collins
+        ns1:birthDate       "1841-03-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joseph Henry Collins"@en .
+
+dbpedia:Alan_Breeze  ns1:birthDate  "1909-10-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Breeze"@en .
+
+dbpedia:Alan_Coren  ns1:birthDate  "1938-06-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Coren"@en .
+
+dbpedia:Richard_Mead  ns1:birthDate  "1673-08-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Richard Mead"@en .
+
+dbpedia:Anthony_James_Leggett
+        ns1:birthDate       "1938-03-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anthony James Leggett"@en , "Anthony James Leggett"@de , "Anthony James \"Tony\" Leggett"@en .
+
+<http://dbpedia.org/resource/Henry_Addington%2C_1st_Viscount_Sidmouth>
+        ns1:birthDate       "1757-05-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Sidmouth"@en , "Henry Addington"@de .
+
+dbpedia:William_Hogarth
+        ns1:birthDate       "1697-11-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William  Hogarth"@en , "William Hogarth"@de , "William Hogarth"@en .
+
+<http://dbpedia.org/resource/Edward_Stanley%2C_17th_Earl_of_Derby>
+        ns1:birthDate       "1865-04-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Derby"@en .
+
+<http://dbpedia.org/resource/George_Grossmith%2C_Jr.>
+        ns1:birthDate       "1874-05-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Grossmith, George, Jr."@en , "George Grossmith, Jr."@en .
+
+<http://dbpedia.org/resource/Benjamin_Bathurst_%28diplomat%29>
+        ns1:birthDate       "1784-03-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Benjamin Bathurst"@de , "Benjamin Bathurst"@en .
+
+<http://dbpedia.org/resource/Frederic_Thesiger%2C_1st_Baron_Chelmsford>
+        ns1:birthDate       "1794-04-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Chelmsford"@en , "Thesiger, Frederic, 1. Baron Chelmsford"@de .
+
+dbpedia:Stuart_Donaldson
+        ns1:birthDate       "1812-12-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Stuart Alexander Donaldson"@en , "Sir Stuart Donaldson"@en .
+
+dbpedia:Joe_Beeston  ns1:birthDate  "1947-02-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joseph Beeston"@en .
+
+dbpedia:Nigel_McGuinness
+        ns1:birthDate       "1978-01-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nigel McGuinness"@de , "Desmond Wolfe"@en , "Nigel McGuinness"@en .
+
+<http://dbpedia.org/resource/Nigel_Barker_%28photographer%29>
+        ns1:birthDate       "1972-04-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nigel Barker"@en .
+
+dbpedia:Nigel_Sheinwald
+        ns1:birthDate       "1953-06-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nigel Elton Sheinwald"@en .
+
+dbpedia:Angela_Evans_Smith
+        ns1:birthDate       "1959-01-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Angela Evans Smith"@en .
+
+dbpedia:Fabian_Hamilton
+        ns1:birthDate       "1955-04-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Fabian Hamilton"@en .
+
+dbpedia:Mayer_Amschel_de_Rothschild
+        ns1:birthDate       "1818-06-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mayer Amschel de Rothschild"@en .
+
+<http://dbpedia.org/resource/Tom%C3%A1s_Harris>
+        ns1:birthDate       "1908-04-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tomás Harris"@en .
+
+dbpedia:Bombadier_Billy_Wells
+        ns1:birthDate       "1889-08-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bombardier Billy Wells"@en , "William Thomas Wells"@en .
+
+dbpedia:Harold_Max_Rosenberg
+        ns1:birthDate       "1911-08-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harry Rosenberg"@en .
+
+<http://dbpedia.org/resource/Noel_Murphy_%28politician%29>
+        ns1:birthDate       "1915-12-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Noel Murphy"@en .
+
+dbpedia:Hugh_Grant  ns1:birthDate  "1960-09-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hugh Grant"@de , "Hugh John Mungo Grant"@en .
+
+dbpedia:Norman_Jaques
+        ns1:birthDate       "1880-06-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Norman Jaques"@en .
+
+dbpedia:Lionel_Monckton
+        ns1:birthDate       "1861-12-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lionel J. A. Monckton"@en .
+
+dbpedia:Jan_Kavan  ns1:birthDate  "1946-10-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jan Kavan"@de , "Jan Kavan"@en .
+
+dbpedia:Michael_Bentt
+        ns1:birthDate       "1964-09-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael  Bentt"@en , "Michael Bentt"@en , "Michael Bentt"@de .
+
+dbpedia:Patrick_Hastings
+        ns1:birthDate       "1880-03-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Patrick Gardiner Hastings"@en .
+
+dbpedia:Richard_Seifert
+        ns1:birthDate       "1910-11-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Richard Seifert"@en .
+
+dbpedia:Alan_Keith  ns1:birthDate  "1908-10-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Keith"@en .
+
+dbpedia:Saira_Shah  ns1:birthDate  "1964-10-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Saira Shah"@en , "Saira Shah"@de .
+
+dbpedia:James_Joseph_Sylvester
+        ns1:birthDate       "1814-09-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Joseph Sylvester"@en , "James Joseph Sylvester"@de .
+
+<http://dbpedia.org/resource/Terry_Marsh_%28boxer%29>
+        ns1:birthDate       "1958-02-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Terry Marsh"@en .
+
+dbpedia:Michael_Woodruff
+        ns1:birthDate       "1911-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Michael Woodruff"@en , "Michael Francis Addison Woodruff"@en .
+
+dbpedia:Charles_Gabriel_Seligman
+        ns1:birthDate       "1873-12-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Gabriel Seligman"@de .
+
+<http://dbpedia.org/resource/George_Sclater-Booth%2C_1st_Baron_Basing>
+        ns1:birthDate       "1826-05-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Basing"@en .
+
+dbpedia:George_Warren_Russell
+        ns1:birthDate       "1854-02-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Warren Russell"@en .
+
+dbpedia:Victor_Benjamin_Neuburg
+        ns1:birthDate       "1883-05-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Victor Benjamin Neuburg"@en .
+
+dbpedia:Jack_Coggins  ns1:birthDate  "1911-07-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jack Banham Coggins"@en .
+
+dbpedia:Mel_Smith  ns1:birthDate  "1952-12-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mel Smith"@de , "Mel Smith"@en .
+
+dbpedia:Kitty_Davy  ns1:birthDate  "1891-08-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Katherine Laura Davy"@en .
+
+dbpedia:Virginia_Woolf
+        ns1:birthDate       "1882-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Virginia Woolf"@de , "Virginia Woolf"@en .
+
+dbpedia:Andrew_Huxley
+        ns1:birthDate       "1917-11-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew Fielding Huxley"@de , "Sir Andrew Huxley"@en , "Andrew Huxley"@en .
+
+<http://dbpedia.org/resource/Henry_Petty-Fitzmaurice%2C_4th_Marquess_of_Lansdowne>
+        ns1:birthDate       "1816-01-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Lansdowne"@en .
+
+<http://dbpedia.org/resource/Frederick_Pethick-Lawrence%2C_1st_Baron_Pethick-Lawrence>
+        ns1:birthDate       "1871-12-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Pethick-Lawrence"@en .
+
+<http://dbpedia.org/resource/Robert_Wynn_Carrington%2C_1st_Marquess_of_Lincolnshire>
+        ns1:birthDate       "1843-05-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Lincolnshire"@en .
+
+<http://dbpedia.org/resource/David_Howell%2C_Baron_Howell_of_Guildford>
+        ns1:birthDate       "1936-01-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Howell of Guildford"@en .
+
+<http://dbpedia.org/resource/Louisa_Hamilton%2C_Duchess_of_Abercorn>
+        ns1:birthDate       "1812-07-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Louisa Jane"@en , "Duchess of Abercorn"@en , "----"@en .
+
+dbpedia:Mark_Wing-Davey
+        ns1:birthDate       "1948-11-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mark Wing-Davey"@en , "Mark Wing-Davey"@de .
+
+dbpedia:Peter_Ackroyd
+        ns1:birthDate       "1949-10-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Ackroyd"@de , "Peter Ackroyd"@en .
+
+dbpedia:Edmund_Andros
+        ns1:birthDate       "1637-12-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edmund Andros"@de , "Sir Edmund Andros"@en .
+
+dbpedia:Hilda_Hewlett
+        ns1:birthDate       "1864-02-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hilda Hewlett"@en , "Hilda Beatrice Hewlett"@en .
+
+dbpedia:Raymond_Buckland
+        ns1:birthDate       "1934-08-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Raymond Buckland"@en .
+
+dbpedia:Sarah-Jane_Mee
+        ns1:birthDate       "1978-01-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sarah-Jane Mee"@en .
+
+dbpedia:Dan_Snow  ns1:birthDate  "1978-12-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dan Snow"@en , "Daniel Robert Snow"@en .
+
+dbpedia:Tommy_Boyd  ns1:birthDate  "1952-12-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tommy Boyd"@en .
+
+<http://dbpedia.org/resource/William_Bridgeman%2C_1st_Viscount_Bridgeman>
+        ns1:birthDate       "1864-12-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Bridgeman"@en .
+
+dbpedia:Billy_Hughes  ns1:birthDate  "1862-09-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Hughes"@en , "William Morris Hughes"@en , "Billy Hughes"@de .
+
+dbpedia:Mark_Francois
+        ns1:birthDate       "1965-08-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mark Francois"@en .
+
+dbpedia:John_Maynard_Smith
+        ns1:birthDate       "1920-01-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Maynard Smith"@en , "John Maynard Smith"@de .
+
+dbpedia:Norman_Wisdom
+        ns1:birthDate       "1915-02-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Norman Wisdom"@de , "Sir Norman Wisdom"@en .
+
+dbpedia:John_Graunt  ns1:birthDate  "1580-04-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Graunt"@en , "John Graunt"@de .
+
+dbpedia:Matt_Preston  ns1:birthDate  "1961-07-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Matthew Preston"@en .
+
+dbpedia:Gus_Elen  ns1:birthDate  "1862-07-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Gus Elen"@en .
+
+<http://dbpedia.org/resource/Sidney_Webb%2C_1st_Baron_Passfield>
+        ns1:birthDate       "1859-07-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Passfield"@en , "Webb, Sidney, 1. Baron Passfield Webb, Sidney James"@de .
+
+<http://dbpedia.org/resource/George_Howard%2C_6th_Earl_of_Carlisle>
+        ns1:birthDate       "1773-09-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Howard, George, 6. Earl of Carlisle"@de , "The Earl of Carlisle"@en .
+
+dbpedia:Alfred_Kempe  ns1:birthDate  "1849-07-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Alfred Kempe"@en , "Alfred Kempe"@de .
+
+dbpedia:Nigel_Planer  ns1:birthDate  "1953-02-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nigel Planer"@en .
+
+<http://dbpedia.org/resource/Paul_Goodman_%28politician%29>
+        ns1:birthDate       "1959-11-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Goodman"@en .
+
+dbpedia:John_Amery  ns1:birthDate  "1912-03-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Amery"@en , "John Amery"@de .
+
+<http://dbpedia.org/resource/Peter_Howson_%28Australian_politician%29>
+        ns1:birthDate       "1919-05-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Howson"@en .
+
+dbpedia:Caron_Keating
+        ns1:birthDate       "1962-10-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Caron Keating"@en , "Caron Louisa Keating"@en .
+
+dbpedia:William_Burnside
+        ns1:birthDate       "1852-07-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Burnside"@en , "William Burnside"@de .
+
+dbpedia:Charles_Babbage
+        ns1:birthDate       "1792-12-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Babbage"@en , "Charles Babbage"@de .
+
+dbpedia:Roy_Kendall  ns1:birthDate  "1899-06-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Roy Kendall"@en .
+
+dbpedia:Herbert_C._Brown
+        ns1:birthDate       "1912-05-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Herbert Charles Brown"@de , "Herbert Charles Brown"@en .
+
+dbpedia:Susan_Stranks
+        ns1:birthDate       "1939-12-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Susan Stranks"@en .
+
+dbpedia:Don_Cockell  ns1:birthDate  "1928-09-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Donald John Cockell"@en , "Don Cockell"@de , "Don Cockell"@en .
+
+dbpedia:Tony_Baldry  ns1:birthDate  "1950-07-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tony Baldry"@en .
+
+dbpedia:Roger_Cohen  ns1:birthDate  "1955-08-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Roger Cohen"@en .
+
+dbpedia:Harold_Macmillan
+        ns1:birthDate       "1894-02-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Stockton"@en , "Maurice Macmillan"@de .
+
+dbpedia:James_Parkinson
+        ns1:birthDate       "1755-04-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Parkinson"@en , "James Parkinson"@de .
+
+dbpedia:John_Crow  ns1:birthDate  "1937-01-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John William Crow"@en .
+
+dbpedia:Dan_Eldon  ns1:birthDate  "1970-09-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Daniel Eldon"@en .
+
+<http://dbpedia.org/resource/John_Robertson_%28New_South_Wales_Premier%29>
+        ns1:birthDate       "1816-10-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Robertson"@en .
+
+dbpedia:Bertram_Walter_Elles
+        ns1:birthDate       "1877-07-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bertram Walter Elles"@en .
+
+<http://dbpedia.org/resource/Ernest_Roberts_%28Australian_politician%29>
+        ns1:birthDate       "1868-02-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ernest Alfred Roberts"@en , "Ernest Roberts"@en .
+
+dbpedia:Will_Self  ns1:birthDate  "1961-09-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Will Self"@en , "Will Self"@de .
+
+dbpedia:Peter_Phillips
+        ns1:birthDate       "1977-11-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Mark Andrew Phillips"@en , "Peter Phillips"@en , "Peter Phillips"@de .
+
+dbpedia:Giles_Coren  ns1:birthDate  "1969-07-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Giles Coren"@en .
+
+dbpedia:Henry_Goulburn
+        ns1:birthDate       "1784-03-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Goulburn"@en .
+
+dbpedia:Rachel_Riley  ns1:birthDate  "1986-01-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rachel Annabelle Riley"@en .
+
+dbpedia:Miquita_Oliver
+        ns1:birthDate       "1984-04-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Miquita Oliver"@en .
+
+<http://dbpedia.org/resource/Henry_Petty-Fitzmaurice%2C_5th_Marquess_of_Lansdowne>
+        ns1:birthDate       "1845-01-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Lansdowne"@en , "Petty-Fitzmaurice, Henry, 5. Marquess of Lansdowne"@de .
+
+<http://dbpedia.org/resource/Horace_Walpole%2C_4th_Earl_of_Orford>
+        ns1:birthDate       "1717-09-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Walpole, Horace, 4. Earl of Orford"@de , "The Earl of Orford"@en .
+
+<http://dbpedia.org/resource/Richard_Lane_%28architect%29>
+        ns1:birthDate       "1795-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Richard Lane"@en .
+
+<http://dbpedia.org/resource/Sir_Frederick_Pollock%2C_1st_Baronet>
+        ns1:birthDate       "1783-09-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Frederick Pollock, Bt"@en .
+
+dbpedia:John_Orchard  ns1:birthDate  "1928-11-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Orchard"@en .
+
+dbpedia:John_Burns  ns1:birthDate  "1858-10-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Burns"@en .
+
+dbpedia:J._P._Monroe  ns1:birthDate  "1977-08-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tail End Charlie"@en , "J. P. Monroe"@en .
+
+dbpedia:Paul_Roundhill
+        ns1:birthDate       "1955-03-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Roundhill"@en .
+
+<http://dbpedia.org/resource/Montagu_Norman%2C_1st_Baron_Norman>
+        ns1:birthDate       "1871-09-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Norman"@en , "Montagu Norman"@de .
+
+dbpedia:Johann_Heinrich_von_Bernstorff
+        ns1:birthDate       "1862-11-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Johann Heinrich Graf von Bernstorff"@de , "Johann Heinrich von Bernstorff"@en .
+
+<http://dbpedia.org/resource/Granville_Waldegrave%2C_3rd_Baron_Radstock>
+        ns1:birthDate       "1833-04-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Radstock"@en .
+
+dbpedia:Edmund_Campion
+        ns1:birthDate       "1540-01-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edmund Campion"@de , "Saint Edmund Campion"@en .
+
+dbpedia:Andrew_Smith_Hallidie
+        ns1:birthDate       "1836-03-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew Smith Hallidie"@en , "Andrew Smith Hallidie"@de .
+
+dbpedia:Francis_Maseres
+        ns1:birthDate       "1731-12-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Francis Maseres"@en .
+
+dbpedia:Meral_Ece  ns1:birthDate  "1955-10-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Meral Ece"@en .
+
+<http://dbpedia.org/resource/Frederick_North%2C_Lord_North>
+        ns1:birthDate       "1732-04-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick North"@en , "The Earl of Guilford"@en , "North, Frederick, 2. Earl of Guilford"@de .
+
+dbpedia:William_Jackson_Pope
+        ns1:birthDate       "1870-10-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Jackson Pope"@en .
+
+dbpedia:Mark_Tami  ns1:birthDate  "1962-10-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mark Tami"@en .
+
+dbpedia:Christopher_Gable
+        ns1:birthDate       "1940-03-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Christopher Gable"@en .
+
+dbpedia:Jeremy_Beadle
+        ns1:birthDate       "1948-04-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jeremy Beadle MBE"@en , "Beadle, Jeremy James Anthony Gibson, MBE"@en .
+
+<http://dbpedia.org/resource/William_Lamb%2C_2nd_Viscount_Melbourne>
+        ns1:birthDate       "1779-03-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Melbourne"@en , "Lamb, William, 2. Viscount Melbourne"@de .
+
+dbpedia:Hugh_Childers
+        ns1:birthDate       "1827-06-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hugh Childers"@en .
+
+<http://dbpedia.org/resource/John_Pratt%2C_1st_Marquess_Camden>
+        ns1:birthDate       "1759-02-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess Camden"@en .
+
+dbpedia:Andrew_Slaughter
+        ns1:birthDate       "1960-09-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew Slaughter"@en .
+
+dbpedia:Hal_Herbert  ns1:birthDate  "1922-06-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harold Thomas Herbert"@en .
+
+dbpedia:Stewart_Jackson
+        ns1:birthDate       "1965-01-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Stewart Jackson"@en .
+
+dbpedia:Alfred_Lawson
+        ns1:birthDate       "1869-03-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alfred William Lawson"@en .
+
+<http://dbpedia.org/resource/Charles_Lamb_%28writer%29>
+        ns1:birthDate       "1775-02-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Lamb"@en , "Charles Lamb"@de .
+
+dbpedia:G._E._Moore  ns1:birthDate  "1873-11-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Edward Moore"@en , "George Edward Moore"@de .
+
+dbpedia:Peter_Llewelyn_Davies
+        ns1:birthDate       "1897-02-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Llewelyn Davies"@en .
+
+dbpedia:Thomas_Graham_Jackson
+        ns1:birthDate       "1835-12-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Thomas Graham Jackson, Baronet"@en .
+
+<http://dbpedia.org/resource/Katharine_Elliot%2C_Baroness_Elliot_of_Harwood>
+        ns1:birthDate       "1903-01-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Baroness Elliot of Harwood"@en .
+
+<http://dbpedia.org/resource/Francis_Wollaston_%28priest_and_astronomer%29>
+        ns1:birthDate       "1731-11-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Francis Wollaston"@en .
+
+dbpedia:Screaming_Lord_Sutch
+        ns1:birthDate       "1940-11-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Edward Sutch"@en , "Screaming Lord Sutch"@de .
+
+dbpedia:Norris_McWhirter
+        ns1:birthDate       "1925-08-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Norris McWhirter"@de , "Norris Dewar McWhirter"@en .
+
+dbpedia:John_Stuart_Mill
+        ns1:birthDate       "1806-05-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Stuart Mill"@de , "John Stuart Mill"@en .
+
+dbpedia:Ben_Elton  ns1:birthDate  "1959-05-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ben Elton"@en , "Ben Elton"@de .
+
+dbpedia:Philip_Hall  ns1:birthDate  "1904-04-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Philip Hall"@en , "Philip Hall"@de .
+
+<http://dbpedia.org/resource/Robert_Cochrane_%28witch%29>
+        ns1:birthDate       "1931-01-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Robert Cochrane"@en .
+
+dbpedia:Stephen_Wolfram
+        ns1:birthDate       "1959-08-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Stephen Wolfram"@en , "Stephen Wolfram"@de .
+
+<http://dbpedia.org/resource/Sir_George_Cornewall_Lewis%2C_2nd_Baronet>
+        ns1:birthDate       "1806-04-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir George Cornewall Lewis, Bt"@en .
+
+<http://dbpedia.org/resource/John_Campbell%2C_9th_Duke_of_Argyll>
+        ns1:birthDate       "1845-08-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Duke of Argyll"@en , "Campbell, John, 9. Duke of Argyll"@de .
+
+dbpedia:David_Boadella
+        ns1:birthDate       "1931-07-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Boadella"@de , "David Boadella"@en .
+
+dbpedia:Reginald_Maudling
+        ns1:birthDate       "1917-03-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Reginald Maudling"@de , "Reginald Maudling"@en .
+
+dbpedia:Philip_Fysh  ns1:birthDate  "1835-03-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Philip Oakley Fysh"@en .
+
+dbpedia:Bunny_Roger  ns1:birthDate  "1911-06-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bunny Roger"@en .
+
+<http://dbpedia.org/resource/Charles_Vane-Tempest-Stewart%2C_6th_Marquess_of_Londonderry>
+        ns1:birthDate       "1852-07-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Londonderry"@en .
+
+<http://dbpedia.org/resource/David_Newman_%28political_geographer%29>
+        ns1:birthDate       "1956-07-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Newman"@en .
+
+<http://dbpedia.org/resource/John_Murray_%28ice_hockey%29>
+        ns1:birthDate       "1924-01-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Murray"@en .
+
+dbpedia:David_Caminer
+        ns1:birthDate       "1915-06-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Caminer"@en .
+
+<http://dbpedia.org/resource/John_Ellis_%28physicist%29>
+        ns1:birthDate       "1946-07-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Ellis"@en , "John Ellis"@de .
+
+dbpedia:Bernard_Benjamin
+        ns1:birthDate       "1910-03-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bernard Benjamin"@en .
+
+dbpedia:Tony_Abbott  ns1:birthDate  "1957-11-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tony Abbott"@en , "Tony Abbott"@de .
+
+dbpedia:Jackie_Collins
+        ns1:birthDate       "1937-10-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jackie Collins"@en .
+
+dbpedia:Ray_Santilli  ns1:birthDate  "1957-09-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ray Santilli"@en , "Ray Santilli"@de .
+
+<http://dbpedia.org/resource/Lawrence_Dundas%2C_1st_Marquess_of_Zetland>
+        ns1:birthDate       "1844-08-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Zetland"@en .
+
+dbpedia:John_Elliotson
+        ns1:birthDate       "1791-10-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Elliotson"@en .
+
+<http://dbpedia.org/resource/Jack_Good_%28producer%29>
+        ns1:birthDate       "1931-08-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jack Good"@de , "Jack Good"@en .
+
+dbpedia:Henry_Saunders
+        ns1:birthDate       "1855-02-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry John Saunders"@en , "Henry Saunders"@en .
+
+dbpedia:Reginald_Talbot
+        ns1:birthDate       "1841-07-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Reginald Talbot"@en .
+
+dbpedia:Michael_Atiyah
+        ns1:birthDate       "1929-04-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Francis Atiyah"@de , "Michael Atiyah"@en , "Sir Michael Atiyah"@en .
+
+<http://dbpedia.org/resource/Rufus_Isaacs%2C_1st_Marquess_of_Reading>
+        ns1:birthDate       "1860-10-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Reading"@en , "Isaacs, Rufus, 1. Marquess of Reading"@de .
+
+<http://dbpedia.org/resource/Bob_Russell_%28politician%29>
+        ns1:birthDate       "1946-03-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bob Russell"@en .
+
+dbpedia:Laura_Moffatt
+        ns1:birthDate       "1954-04-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Laura Moffatt"@en .
+
+dbpedia:Ben_Gordon  ns1:birthDate  "1983-04-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ben Gordon"@en , "Ben Gordon"@de .
+
+<http://dbpedia.org/resource/Sir_William_Molesworth%2C_8th_Baronet>
+        ns1:birthDate       "1810-05-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir William Molesworth, Bt"@en .
+
+<http://dbpedia.org/resource/Thomas_Pelham-Holles%2C_1st_Duke_of_Newcastle>
+        ns1:birthDate       "1693-07-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Duke of Newcastle"@en , "Thomas Pelham-Holles Newcastle"@de , "Pelham-Holles, Thomas, 1st Duke of Newcastle-upon-Tyne"@en .
+
+dbpedia:Jason_Vale  ns1:birthDate  "1969-06-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jason Vale"@en .
+
+dbpedia:Peter_Patton  ns1:birthDate  "1876-03-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bethune Minet Patton"@en .
+
+dbpedia:Cyril_Domb  ns1:birthDate  "1920-12-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Cyril Domb"@en , "Cyril Domb"@de .
+
+dbpedia:Asma_al-Assad
+        ns1:birthDate       "1975-08-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Asma al-Assadأسماء الأسد"@en .
+
+<http://dbpedia.org/resource/Rowland_Allanson-Winn%2C_5th_Baron_Headley>
+        ns1:birthDate       "1855-01-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rowland Allanson-Winn"@en .
+
+dbpedia:Noel_Harrison
+        ns1:birthDate       "1934-01-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Noel Harrison"@en .
+
+dbpedia:Saad_Mohseni  ns1:birthDate  "1966-04-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Saad Mohseni"@en .
+
+dbpedia:Lauren_Booth  ns1:birthDate  "1967-07-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lauren Booth"@en .
+
+dbpedia:Louisa_Adams  ns1:birthDate  "1775-02-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Louisa Adams"@de , "Louisa Adams"@en .
+
+dbpedia:Sarvadaman_Chowla
+        ns1:birthDate       "1907-10-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sarvadaman Chowla"@en , "Sarvadaman D. S. Chowla"@en , "S. Chowla"@de .
+
+dbpedia:Alastair_Stewart
+        ns1:birthDate       "1952-06-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alastair Stewart"@en .
+
+dbpedia:John_Brooke-Little
+        ns1:birthDate       "1927-04-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Philip Brooke Brooke-Little"@en , "John Philip Brooke-Little"@en .
+
+dbpedia:Frederick_Bellenger
+        ns1:birthDate       "1894-07-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick Bellenger"@en .
+
+<http://dbpedia.org/resource/Gilbert_Elliot-Murray-Kynynmound%2C_4th_Earl_of_Minto>
+        ns1:birthDate       "1845-07-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Minto"@en .
+
+dbpedia:Edward_Nares  ns1:birthDate  "1762-03-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Nares"@en .
+
+dbpedia:George_Canning
+        ns1:birthDate       "1770-04-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Canning"@en , "George Canning"@de .
+
+dbpedia:Dugald_Thomson
+        ns1:birthDate       "1849-12-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dugald Thomson"@en .
+
+dbpedia:Dennis_Weatherstone
+        ns1:birthDate       "1930-11-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dennis Weatherstone"@en .
+
+dbpedia:Millvina_Dean
+        ns1:birthDate       "1912-02-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Millvina Dean"@en , "Millvina Dean"@de .
+
+dbpedia:Jo_Frost  ns1:birthDate  "1971-06-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jo Frost"@en .
+
+dbpedia:Jade_Goody  ns1:birthDate  "1981-06-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jade Goody"@de , "Jade Goody"@en .
+
+dbpedia:Brian_Conley  ns1:birthDate  "1961-08-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Brian Conley"@en .
+
+dbpedia:Bernard_Weatherill
+        ns1:birthDate       "1920-11-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Weatherill"@en , "Bernard Weatherill"@de .
+
+dbpedia:Dennis_Lindley
+        ns1:birthDate       "1923-07-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dennis Victor Lindley"@en .
+
+dbpedia:John_Sebastian_Helmcken
+        ns1:birthDate       "1824-06-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Sebastian Helmcken"@en , "John Sebastian Helmcken"@de .
+
+dbpedia:Max_Mosley  ns1:birthDate  "1940-04-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Max Mosley"@de , "Max Mosley"@en .
+
+dbpedia:Cameron_Sinclair
+        ns1:birthDate       "1973-11-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Cameron Sinclair"@en .
+
+dbpedia:Simon_McCoy  ns1:birthDate  "1961-10-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Simon McCoy"@en .
+
+dbpedia:John_Frederic_Daniell
+        ns1:birthDate       "1790-03-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Frederic Daniell"@de , "John Frederic Daniell"@en .
+
+<http://dbpedia.org/resource/Leslie_O%27Brien%2C_Baron_O%27Brien_of_Lothbury>
+        ns1:birthDate       "1908-02-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord O'Brien of Lothbury"@en .
+
+<http://dbpedia.org/resource/Louis_Spencer%2C_Viscount_Althorp>
+        ns1:birthDate       "1994-03-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Louis Spencer, Viscount Althorp"@en .
+
+dbpedia:Lord_Frederick_Windsor
+        ns1:birthDate       "1979-04-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lord Frederick Windsor"@en .
+
+<http://dbpedia.org/resource/William_Ward%2C_2nd_Earl_of_Dudley>
+        ns1:birthDate       "1867-05-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Dudley"@en , "Ward, William Humble, 2. Earl of Dudley"@de .
+
+<http://dbpedia.org/resource/Henry_Norris_%28businessman%29>
+        ns1:birthDate       "1865-07-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Norris"@de , "Henry Norris"@en .
+
+dbpedia:David_Napley  ns1:birthDate  "1915-07-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir David Napley"@en .
+
+dbpedia:Carl_Donnelly
+        ns1:birthDate       "1982-01-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Carl Donnelly"@en .
+
+<http://dbpedia.org/resource/David_Davies_%28Welsh_politician%29>
+        ns1:birthDate       "1970-07-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Davies"@en .
+
+dbpedia:Michael_Cashman
+        ns1:birthDate       "1950-12-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Cashman"@de , "Michael Cashman"@en .
+
+dbpedia:Leslie_Orme_Wilson
+        ns1:birthDate       "1876-08-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Leslie Wilson"@en .
+
+dbpedia:Ofspring_Blackall
+        ns1:birthDate       "1655-04-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dr. Ofspring Blackall"@en , "Ofspring Blackall"@en .
+
+dbpedia:Tom_Parker_Bowles
+        ns1:birthDate       "1974-12-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tom Parker Bowles"@en .
+
+dbpedia:Margaret_Eliot
+        ns1:birthDate       "1914-02-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Margaret Augusta Eliot"@en , "Margaret Augusta Asher"@en .
+
+dbpedia:Sian_Elias  ns1:birthDate  "1949-03-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sian Seerpoohi Elias"@en , "Dame Sian Elias"@en .
+
+dbpedia:Graham_Moffatt
+        ns1:birthDate       "1919-12-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Graham Moffatt"@en .
+
+dbpedia:Reginald_John_Hollingdale
+        ns1:birthDate       "1930-10-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Reginald John Hollingdale"@en .
+
+<http://dbpedia.org/resource/Mark_Austin_%28journalist%29>
+        ns1:birthDate       "1958-11-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mark Austin"@en .
+
+<http://dbpedia.org/resource/Henry_Petty-Fitzmaurice%2C_3rd_Marquess_of_Lansdowne>
+        ns1:birthDate       "1780-07-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Lansdowne"@en .
+
+dbpedia:Sidney_Gilchrist_Thomas
+        ns1:birthDate       "1850-04-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sidney Gilchrist Thomas"@en , "Sidney Gilchrist Thomas"@de .
+
+dbpedia:George_Grenville
+        ns1:birthDate       "1712-10-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Grenville"@en , "George Grenville"@de .
+
+dbpedia:Percy_Gardner
+        ns1:birthDate       "1846-11-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Percy Gardner"@en .
+
+dbpedia:Peter_Emery  ns1:birthDate  "1926-02-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Emery"@en .
+
+dbpedia:Audrey_Richards
+        ns1:birthDate       "1899-07-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Audrey Richards"@de .
+
+dbpedia:Chris_Huhne  ns1:birthDate  "1954-07-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Chris Huhne"@en .
+
+dbpedia:Bill_Cash  ns1:birthDate  "1940-05-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bill Cash"@en .
+
+dbpedia:William_Holman
+        ns1:birthDate       "1871-08-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Arthur Holman"@en , "William Holman"@en .
+
+dbpedia:A.S._Douglas  ns1:birthDate  "1921-05-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alexander \"Sandy\" Shafto Douglas"@en .
+
+<http://dbpedia.org/resource/Charles_Shaw-Lefevre%2C_1st_Viscount_Eversley>
+        ns1:birthDate       "1794-02-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Shaw-Lefevre, Charles, 1. Viscount Eversley"@de , "The Viscount Eversley"@en .
+
+dbpedia:Adolfo_Canepa
+        ns1:birthDate       "1940-12-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Hon. Adolfo John Canepa"@en .
+
+dbpedia:Bernard_Burke
+        ns1:birthDate       "1814-01-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bernard Burke"@en .
+
+dbpedia:Siobhain_McDonagh
+        ns1:birthDate       "1960-02-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Siobhain McDonagh"@en .
+
+dbpedia:Janet_Woollard
+        ns1:birthDate       "1955-02-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dr Janet Woollard"@en .
+
+dbpedia:Nevil_Maskelyne
+        ns1:birthDate       "1732-10-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rev. Dr Nevil Maskelyne"@en , "Nevil Maskelyne"@en , "Nevil Maskelyne"@de .
+
+<http://dbpedia.org/resource/Archibald_Primrose%2C_5th_Earl_of_Rosebery>
+        ns1:birthDate       "1847-05-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Primrose, Archibald Philip, 5. Earl of Rosebery"@de , "The Earl of Rosebery"@en .
+
+<http://dbpedia.org/resource/Arthur_Stanley%2C_5th_Baron_Sheffield>
+        ns1:birthDate       "1875-09-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Sheffield"@en .
+
+<http://dbpedia.org/resource/George_Robinson%2C_1st_Marquess_of_Ripon>
+        ns1:birthDate       "1827-10-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Ripon"@en , "Robinson, George, 1. Marquess of Ripon"@de .
+
+dbpedia:Arnold_Spencer-Smith
+        ns1:birthDate       "1883-03-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Arnold Spencer-Smith"@de , "Arnold Patrick Spencer-Smith"@en .
+
+dbpedia:Francis_Chaplin
+        ns1:birthDate       "1866-08-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Francis Chaplin"@en .
+
+dbpedia:Harry_Foll  ns1:birthDate  "1890-05-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hattil Spencer Foll"@en , "Harry Foll"@en .
+
+dbpedia:James_Joynton_Smith
+        ns1:birthDate       "1858-10-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir James Joynton Smith"@en .
+
+dbpedia:Jack_Llewelyn_Davies
+        ns1:birthDate       "1894-09-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jack Llewelyn Davies"@en .
+
+dbpedia:James_Drake  ns1:birthDate  "1850-04-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James George Drake"@en , "James Drake"@en .
+
+dbpedia:Clive_Efford  ns1:birthDate  "1958-07-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Clive Efford"@en .
+
+dbpedia:Francis_Bacon
+        ns1:birthDate       "1561-01-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Francis Bacon"@de , "Francis Bacon"@en .
+
+dbpedia:Lucia_Newman  ns1:birthDate  "1952-02-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lucia Newman"@en .
+
+dbpedia:Layla_El  ns1:birthDate  "1978-06-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Layla"@en , "Layla El"@en , "Layla El"@de .
+
+dbpedia:David_Haye  ns1:birthDate  "1980-10-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Haye"@en , "David Haye"@de .
+
+<http://dbpedia.org/resource/Vere_Ponsonby%2C_9th_Earl_of_Bessborough>
+        ns1:birthDate       "1880-10-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ponsonby, Vere, 9. Earl of Bessborough"@de , "The Earl of Bessborough"@en .
+
+dbpedia:Christopher_Kelk_Ingold
+        ns1:birthDate       "1893-10-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Christopher Kelk Ingold"@en , "Christopher Kelk Ingold"@de .
+
+<http://dbpedia.org/resource/Edward_Northey_%28barrister%29>
+        ns1:birthDate       "1652-05-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Edward Northey"@en , "Edward Northey"@en .
+
+<http://dbpedia.org/resource/David_Collins_%28governor%29>
+        ns1:birthDate       "1754-03-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Collins"@en .
+
+dbpedia:Frederick_Guest
+        ns1:birthDate       "1875-06-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick Guest"@en .
+
+<http://dbpedia.org/resource/Cecil_Harmsworth%2C_1st_Baron_Harmsworth>
+        ns1:birthDate       "1869-09-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Harmsworth"@en .
+
+<http://dbpedia.org/resource/Sir_George_Bonham%2C_1st_Baronet>
+        ns1:birthDate       "1803-09-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Samuel George Bonham, Bt"@en .
+
+dbpedia:James_Pope-Hennessy
+        ns1:birthDate       "1916-11-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Pope-Hennessy"@en .
+
+<http://dbpedia.org/resource/Robert_Jenkinson%2C_2nd_Earl_of_Liverpool>
+        ns1:birthDate       "1770-06-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jenkinson, Robert Banks, 2. Earl of Liverpool"@de , "The Earl of Liverpool"@en .
+
+dbpedia:Alan_Keen  ns1:birthDate  "1937-11-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Keen"@en .
+
+dbpedia:Paul_Merton  ns1:birthDate  "1957-07-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Merton"@en .
+
+<http://dbpedia.org/resource/John_West_%28Australian_politician%29>
+        ns1:birthDate       "1852-01-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Edward West"@en , "John West"@en .
+
+dbpedia:Samuel_Pepys  ns1:birthDate  "1633-02-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Samuel Pepys"@de , "Samuel Pepys"@en .
+
+dbpedia:Bamber_Gascoigne
+        ns1:birthDate       "1935-01-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bamber Gascoigne"@en .
+
+<http://dbpedia.org/resource/Rob_Johnson_%28politician%29>
+        ns1:birthDate       "1943-10-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rob Johnson"@en .
+
+<http://dbpedia.org/resource/John_Moore-Brabazon%2C_1st_Baron_Brabazon_of_Tara>
+        ns1:birthDate       "1884-02-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Brabazon of Tara"@en , "Moore-Brabazon, John, 1. Baron Brabazon of Tara"@de .
+
+dbpedia:Isabel_Burton
+        ns1:birthDate       "1831-03-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lady Isabel Burton"@en , "Isabel Burton"@de .
+
+dbpedia:Michael_Macklin
+        ns1:birthDate       "1943-02-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dr Michael Macklin"@en .
+
+<http://dbpedia.org/resource/Derick_Heathcoat-Amory%2C_1st_Viscount_Amory>
+        ns1:birthDate       "1899-12-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Heathcoat-Amory, Derick, 1. Viscount Amory"@de , "Derick Heathcoat Amory"@en , "The Viscount Amory"@en .
+
+dbpedia:Anno_Birkin  ns1:birthDate  "1980-12-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anno Birkin"@en .
+
+dbpedia:Reginald_Victor_Jones
+        ns1:birthDate       "1911-09-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Reginald Victor Jones"@de , "Reginald Victor Jones"@en , "Professor R. V. Jones"@en .
+
+dbpedia:Spencer_Perceval
+        ns1:birthDate       "1762-11-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Spencer Perceval"@de , "Spencer Perceval"@en .
+
+dbpedia:William_Holman_Hunt
+        ns1:birthDate       "1827-04-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Holman Hunt"@de , "William Holman Hunt"@en .
+
+<http://dbpedia.org/resource/William_Legge%2C_6th_Earl_of_Dartmouth>
+        ns1:birthDate       "1851-05-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Dartmouth"@en .
+
+<http://dbpedia.org/resource/John_Manners-Sutton%2C_3rd_Viscount_Canterbury>
+        ns1:birthDate       "1814-05-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Manners-Sutton, John, 3. Viscount Canterbury"@de , "The Viscount Canterbury"@en .
+
+<http://dbpedia.org/resource/Fred_Harvey_%28entrepreneur%29>
+        ns1:birthDate       "1835-06-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick Henry Harvey"@en .
+
+dbpedia:Edward_Henry_Sieveking
+        ns1:birthDate       "1816-08-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Sieveking"@de , "Edward Henry Sieveking"@en .
+
+dbpedia:Tony_Robinson
+        ns1:birthDate       "1946-08-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tony Robinson"@en .
+
+dbpedia:Della_Butcher
+        ns1:birthDate       "1922-04-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Della Butcher"@en .
+
+<http://dbpedia.org/resource/Henry_Northcote%2C_1st_Baron_Northcote>
+        ns1:birthDate       "1846-11-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Northcote, Henry Stafford, 1. Baron Northcote"@de , "The Lord Northcote"@en .
+
+<http://dbpedia.org/resource/David_Nixon_%28magician%29>
+        ns1:birthDate       "1919-12-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Nixon"@en .
+
+dbpedia:W._W._Rouse_Ball
+        ns1:birthDate       "1850-08-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Walter William Rouse Ball"@de , "Walter William Rouse Ball"@en .
+
+dbpedia:Joseph_Chamberlain
+        ns1:birthDate       "1836-07-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joseph Chamberlain"@de , "Joseph Chamberlain"@en .
+
+dbpedia:Michael_Wills
+        ns1:birthDate       "1952-05-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Wills"@en .
+
+dbpedia:Robert_Wyman  ns1:birthDate  "1909-04-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Robert Wyman"@en .
+
+<http://dbpedia.org/resource/Thomas_Pelham%2C_2nd_Earl_of_Chichester>
+        ns1:birthDate       "1756-04-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Chichester"@en .
+
+dbpedia:J._M._W._Turner
+        ns1:birthDate       "1775-04-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "J. M. W. Turner"@en , "Joseph Mallord William Turner"@en , "William Turner"@de .
+
+dbpedia:Charles_Rosher
+        ns1:birthDate       "1885-11-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Rosher"@de , "Charles Rosher"@en .
+
+dbpedia:Penelope_Leach
+        ns1:birthDate       "1937-11-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dr Penelope Leach"@en , "Penelope J. Leach"@en .
+
+dbpedia:David_Burrowes
+        ns1:birthDate       "1969-06-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Burrowes"@en .
+
+dbpedia:Thomas_Bladen_Capel
+        ns1:birthDate       "1776-08-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas Bladen Capel"@en .
+
+dbpedia:Henry_Drysdale_Dakin
+        ns1:birthDate       "1880-03-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Drysdale Dakin"@en , "Henry Drysdale Dakin"@de .
+
+dbpedia:Johnnie_Cradock
+        ns1:birthDate       "1904-05-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Johnnie Cradock"@en .
+
+dbpedia:Henry_Pollock
+        ns1:birthDate       "1864-12-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "普樂爵士"@en , "Sir Henry Pollock"@en .
+
+dbpedia:Emily_Benn  ns1:birthDate  "1989-10-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Emily Benn"@en .
+
+<http://dbpedia.org/resource/Ted_%22Kid%22_Lewis>
+        ns1:birthDate       "1893-10-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ted Lewis"@de , "Gershon Mendeloff"@en , "Ted \"Kid\" Lewis"@en .
+
+dbpedia:David_Gold  ns1:birthDate  "1937-01-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Gold"@en .
+
+dbpedia:Brian_Paddick
+        ns1:birthDate       "1958-04-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Brian Paddick"@en .
+
+dbpedia:Jack_Bloomfield
+        ns1:birthDate       "1899-11-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jack Bloomfield"@en , "Sol Blumenfeld"@en .
+
+<http://dbpedia.org/resource/George_Brown%2C_Baron_George-Brown>
+        ns1:birthDate       "1914-09-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord George-Brown"@en , "George Brown"@de , "George-Brown, George Alfred, Baron George-Brown"@en .
+
+dbpedia:A._Follett_Osler
+        ns1:birthDate       "1808-03-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Abraham Follett Osler"@en .
+
+<http://dbpedia.org/resource/James_Graham%2C_6th_Duke_of_Montrose>
+        ns1:birthDate       "1878-05-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Duke of Montrose"@en .
+
+<http://dbpedia.org/resource/Edward_Hawke%2C_1st_Baron_Hawke>
+        ns1:birthDate       "1705-02-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Hawke, 1st Baron Hawke"@en .
+
+dbpedia:Annabel_Jankel
+        ns1:birthDate       "1955-06-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Annabel Jankel"@en .
+
+dbpedia:Christian_Jessen
+        ns1:birthDate       "1977-03-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Christian Jessen"@en .
+
+dbpedia:Edward_Walter_Maunder
+        ns1:birthDate       "1851-04-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Walter Maunder"@de , "Edward Maunder"@en , "Edward Walter Maunder"@en .
+
+dbpedia:Thomas_More  ns1:birthDate  "1478-02-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas More"@en , "Thomas Morus"@de , "Sir Thomas More"@en .
+
+<http://dbpedia.org/resource/James_Gray_%28zoologist%29>
+        ns1:birthDate       "1891-10-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Gray"@en , "James Gray"@de .
+
+dbpedia:Benjamin_Disraeli
+        ns1:birthDate       "1804-12-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Disraeli, Benjamin, Earl of Beaconsfield"@en , "Benjamin Disraeli"@de , "The Earl of Beaconsfield"@en .
+
+dbpedia:Robert_John_Pratt
+        ns1:birthDate       "1907-02-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Robert John Pratt"@en .
+
+dbpedia:Sharon_Osbourne
+        ns1:birthDate       "1952-10-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sharon Osbourne"@de , "Sharon Osbourne"@en .
+
+dbpedia:Jeremy_Thorpe
+        ns1:birthDate       "1929-04-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jeremy Thorpe"@en .
+
+dbpedia:Malcolm_McEacharn
+        ns1:birthDate       "1852-02-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Malcolm McEacharn"@en .
+
+dbpedia:Zvi_Schreiber
+        ns1:birthDate       "1969-06-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Zvi Schreiber"@en .
+
+dbpedia:Henry_Hallett_Dale
+        ns1:birthDate       "1875-06-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Henry Hallett Dale"@en , "Henry Hallett Dale"@de .
+
+dbpedia:Martin_Sorrell
+        ns1:birthDate       "1945-02-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Martin Sorrell"@en .
+
+dbpedia:Gary_Lewin  ns1:birthDate  "1964-05-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Gary Lewin"@en .
+
+dbpedia:Elias_Solomon
+        ns1:birthDate       "1839-09-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Elias Solomon"@en .
+
+dbpedia:Marion_Roe  ns1:birthDate  "1936-07-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dame Marion Roe"@en .
+
+<http://dbpedia.org/resource/Frances_Anne_Vane%2C_Marchioness_of_Londonderry>
+        ns1:birthDate       "1800-01-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frances Anne Vane"@en , "Marchioness of Londonderry"@en .
+
+dbpedia:Laura_Solon  ns1:birthDate  "1979-04-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Laura Solon"@en .
+
+dbpedia:Francis_Brabazon
+        ns1:birthDate       "1907-01-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Francis Brabazon"@en .
+
+dbpedia:Ken_Bates  ns1:birthDate  "1931-12-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ken Bates"@de , "Ken Bates"@en .
+
+<http://dbpedia.org/resource/Edward_Brooker_%28Australian_politician%29>
+        ns1:birthDate       "1891-01-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Brooker"@en .
+
+dbpedia:Edward_Thomas_Hall
+        ns1:birthDate       "1924-05-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Thomas Hall"@en .
+
+<http://dbpedia.org/resource/Henry_Herbert%2C_4th_Earl_of_Carnarvon>
+        ns1:birthDate       "1831-06-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Carnarvon"@en .
+
+dbpedia:Dawn_Butler  ns1:birthDate  "1969-11-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dawn Butler"@en .
+
+dbpedia:Arnold_Toynbee
+        ns1:birthDate       "1852-08-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Arnold Toynbee"@de , "Arnold Toynbee"@en .
+
+<http://dbpedia.org/resource/William_Wood%2C_1st_Baron_Hatherley>
+        ns1:birthDate       "1801-11-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Hatherley"@en , "William Page Wood Hatherley"@de .
+
+dbpedia:Jamie_McGrigor
+        ns1:birthDate       "1949-10-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jamie McGrigor"@en .
+
+dbpedia:Thomas_Browne
+        ns1:birthDate       "1605-10-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Browne, Thomas, Sir"@en , "Thomas Browne"@de , "Thomas Browne"@en .
+
+dbpedia:Harold_Pinter
+        ns1:birthDate       "1930-10-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harold Pinter"@en , "Harold Pinter"@de .
+
+dbpedia:Jack_W._Szostak
+        ns1:birthDate       "1952-11-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jack Szostak"@de , "Jack William Szostak"@en .
+
+<http://dbpedia.org/resource/Mike_Winters_%28comedian%29>
+        ns1:birthDate       "1930-11-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mike Winters"@en .
+
+<http://dbpedia.org/resource/George_Windsor%2C_Earl_of_St_Andrews>
+        ns1:birthDate       "1962-06-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Windsor"@en .
+
+dbpedia:Benjamin_Daydon_Jackson
+        ns1:birthDate       "1846-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Benjamin Daydon Jackson"@de , "Benjamin Daydon Jackson"@en .
+
+<http://dbpedia.org/resource/Terry_O%27Neill_%28photographer%29>
+        ns1:birthDate       "1938-07-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Terry O’Neill"@de , "Terry O'Neill"@en .
+
+dbpedia:Andy_Hamilton
+        ns1:birthDate       "1954-05-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andy Hamilton"@en , "Andrew Neil Hamilton"@en , "Andy Hamilton"@de .
+
+dbpedia:Robert_Stanes
+        ns1:birthDate       "1841-05-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Robert Stanes"@en .
+
+dbpedia:Des_Bishop  ns1:birthDate  "1975-11-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Des Bishop"@en .
+
+dbpedia:John_J._Beckley
+        ns1:birthDate       "1757-08-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John James Beckley"@de , "John James Beckley"@en .
+
+dbpedia:Rosalind_Franklin
+        ns1:birthDate       "1920-07-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rosalind Elsie Franklin"@de , "Rosalind Franklin"@en .
+
+dbpedia:Shivani_Kapoor
+        ns1:birthDate       "1984-09-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Shivani Kapoor"@en .
+
+dbpedia:Henry_Sweet  ns1:birthDate  "1845-09-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Sweet"@en , "Henry Sweet"@de .
+
+dbpedia:Thomas_McKinnon_Wood
+        ns1:birthDate       "1855-01-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas McKinnon Wood"@en .
+
+dbpedia:Philip_Green  ns1:birthDate  "1952-03-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Philip Green"@en .
+
+dbpedia:David_Dolphin
+        ns1:birthDate       "1940-01-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Dolphin"@en .
+
+dbpedia:Cliff_Stanford
+        ns1:birthDate       "1954-10-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Cliff Stanford"@en .
+
+dbpedia:Israel_Regardie
+        ns1:birthDate       "1907-11-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Israel Regardie"@en , "Israel Regardie"@de .
+
+dbpedia:Caroline_Flack
+        ns1:birthDate       "1980-11-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Caroline Flack"@en , "Caroline Louise Flack"@en .
+
+dbpedia:Paul_Staines  ns1:birthDate  "1967-02-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Staines"@en .
+
+dbpedia:Laurence_Llewelyn-Bowen
+        ns1:birthDate       "1965-03-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Laurence Llewelyn-Bowen"@en .
+
+dbpedia:Tim_Berners-Lee
+        ns1:birthDate       "1955-06-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Timothy Berners-Lee"@en , "Tim Berners-Lee"@de .
+
+dbpedia:Donald_Coggan
+        ns1:birthDate       "1909-10-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick Donald Coggan"@en , "Frederick Donald Coggan"@de .
+
+dbpedia:Bill_Wiggin  ns1:birthDate  "1966-06-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bill Wiggin"@en .
+
+<http://dbpedia.org/resource/William_Ellis_%28missionary%29>
+        ns1:birthDate       "1794-08-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Ellis"@de , "William Ellis"@en .
+
+dbpedia:Dominic_Grieve
+        ns1:birthDate       "1956-05-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dominic Grieve"@en .
+
+<http://dbpedia.org/resource/Edward_Grey%2C_1st_Viscount_Grey_of_Fallodon>
+        ns1:birthDate       "1862-04-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Grey of Fallodon"@en , "Grey, Edward, 1. Viscount Grey of Fallodon"@de .
+
+<http://dbpedia.org/resource/William_Watson_%28scientist%29>
+        ns1:birthDate       "1715-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Watson"@de , "William Watson"@en .
+
+dbpedia:Michael_Beahan
+        ns1:birthDate       "1937-01-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Beahan"@en .
+
+dbpedia:John_Keats  ns1:birthDate  "1795-10-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Keats"@en , "John Keats"@de .
+
+dbpedia:James_Oglethorpe
+        ns1:birthDate       "1696-12-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Oglethorpe"@de , "James Oglethorpe"@en .
+
+dbpedia:Tom_Hurndall  ns1:birthDate  "1981-11-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas Hurndall"@en .
+
+<http://dbpedia.org/resource/James_Bidgood_%28Australian_politician%29>
+        ns1:birthDate       "1959-05-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Bidgood"@en .
+
+<http://dbpedia.org/resource/John_Diamond_%28journalist%29>
+        ns1:birthDate       "1953-05-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Diamond"@en .
+
+dbpedia:Agar_Wynne  ns1:birthDate  "1850-07-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Agar Wynne"@en .
+
+dbpedia:Anne_Evans  ns1:birthDate  "1941-08-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dame Anne Evans"@en .
+
+dbpedia:Joan_Hughes  ns1:birthDate  "1918-04-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joan Hughes"@en .
+
+dbpedia:Charles_La_Trobe
+        ns1:birthDate       "1801-03-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles La Trobe"@en , "Charles La Trobe"@de .
+
+dbpedia:Frank_Pullen  ns1:birthDate  "1915-09-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frank Pullen"@en .
+
+<http://dbpedia.org/resource/Henry_Baker_%28naturalist%29>
+        ns1:birthDate       "1698-05-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Baker"@de , "Henry Baker"@en .
+
+dbpedia:Hughie_Green  ns1:birthDate  "1920-02-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hughie Green"@en .
+
+dbpedia:John_Francis_Davis
+        ns1:birthDate       "1795-07-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Francis Davis"@en .
+
+dbpedia:William_Shockley
+        ns1:birthDate       "1910-02-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William B. Shockley"@de , "William Shockley"@en .
+
+dbpedia:Paul_Huson  ns1:birthDate  "1942-09-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Anthony Huson"@en .
+
+dbpedia:Michael_McIntyre
+        ns1:birthDate       "1976-02-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael McIntyre"@en .
+
+dbpedia:Benjamin_Gompertz
+        ns1:birthDate       "1779-03-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Benjamin Gompertz"@de , "Benjamin Gompertz"@en .
+
+dbpedia:Nick_Hurd  ns1:birthDate  "1962-05-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nick Hurd"@en .
+
+<http://dbpedia.org/resource/John_Hawkesworth_%28producer%29>
+        ns1:birthDate       "1920-12-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Hawkesworth"@en .
+
+<http://dbpedia.org/resource/John_Freeman-Mitford%2C_1st_Baron_Redesdale>
+        ns1:birthDate       "1748-08-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Freeman-Mitford"@de , "The Lord Redesdale"@en .
+
+dbpedia:Hilary_Benn  ns1:birthDate  "1953-11-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hilary Benn"@de , "Hilary James Wedgwood Benn"@en , "Hilary Benn"@en .
+
+dbpedia:Andrew_MacKinlay
+        ns1:birthDate       "1949-04-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew MacKinlay"@en .
+
+dbpedia:William_Campion
+        ns1:birthDate       "1870-07-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir William Campion"@en .
+
+dbpedia:Colin_Turnbull
+        ns1:birthDate       "1924-11-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Colin Turnbull"@en .
+
+dbpedia:Val_Parnell  ns1:birthDate  "1892-02-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Val Parnell"@en .
+
+<http://dbpedia.org/resource/Jack_Warner_%28actor%29>
+        ns1:birthDate       "1895-10-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jack Warner"@en .
+
+dbpedia:Martin_Ruane  ns1:birthDate  "1947-10-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Giant Haystacks"@en , "The Loch Ness Monster"@en , "Martin Ruane"@de , "Martin Ruane"@en , "Loch Ness"@en .
+
+dbpedia:Christopher_Ryan
+        ns1:birthDate       "1950-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Christopher Ryan"@en .
+
+dbpedia:Maurice_Cowling
+        ns1:birthDate       "1926-09-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Maurice John Cowling"@en , "Maurice Cowling"@en .
+
+dbpedia:Roy_Daniells  ns1:birthDate  "1902-04-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Roy Daniells"@en .
+
+<http://dbpedia.org/resource/Walter_Cunliffe%2C_1st_Baron_Cunliffe>
+        ns1:birthDate       "1855-12-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Cunliffe"@en .
+
+dbpedia:Becky_Hogge  ns1:birthDate  "1979-08-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Becky Hogge"@en .
+
+dbpedia:Peter_Bazalgette
+        ns1:birthDate       "1955-04-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Bazalgette"@en .
+
+dbpedia:Christopher_Salmon_Patterson
+        ns1:birthDate       "1823-01-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Christopher Salmon Patterson"@en .
+
+dbpedia:Martin_Salter
+        ns1:birthDate       "1954-04-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Martin Salter"@en .
+
+dbpedia:Anthony_Gustav_de_Rothschild
+        ns1:birthDate       "1887-06-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anthony Gustav de Rothschild"@en .
+
+dbpedia:Terence_Morgan
+        ns1:birthDate       "1921-12-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Terence Morgan"@en , "Terence Morgan"@de .
+
+<http://dbpedia.org/resource/Charles_Cochrane-Baillie%2C_2nd_Baron_Lamington>
+        ns1:birthDate       "1860-07-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "2nd Baron Lamington"@en , "Charles Cochrane-Baillie,"@en .
+
+dbpedia:Andrew_Brons  ns1:birthDate  "1947-06-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew Brons"@en .
+
+<http://dbpedia.org/resource/Shirley_Williams%2C_Baroness_Williams_of_Crosby>
+        ns1:birthDate       "1930-07-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Williams, Shirley, Baroness Williams of Crosby"@de , "The Baroness Williams of Crosby"@en .
+
+dbpedia:Joel_Defries  ns1:birthDate  "1985-03-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joel Defries"@en .
+
+dbpedia:Shenton_Thomas
+        ns1:birthDate       "1879-10-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas Shenton Whitelegge Thomas"@en , "Shenton Thomas"@de , "Shenton Thomas"@en .
+
+dbpedia:Margaret_Masterman
+        ns1:birthDate       "1910-05-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Margaret Mary Masterman"@en , "Margaret Masterman (Braithwaite)"@en .
+
+dbpedia:Jocelyn_Field_Thorpe
+        ns1:birthDate       "1872-12-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jocelyn Field Thorpe"@en .
+
+dbpedia:James_Francis
+        ns1:birthDate       "1819-01-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Goodall Francis"@en .
+
+dbpedia:Joshua_Toulmin
+        ns1:birthDate       "1740-04-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joshua Toulmin"@en , "Joshua Toulmin Toulmin"@en .
+
+dbpedia:James_Jurin  ns1:birthDate  "1684-12-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Jurin"@en .
+
+dbpedia:William_Daniel_Conybeare
+        ns1:birthDate       "1787-06-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Daniel Conybeare"@de , "William Daniel Conybeare"@en .
+
+<http://dbpedia.org/resource/Sir_Robert_Peel%2C_3rd_Baronet>
+        ns1:birthDate       "1822-05-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Robert Peel, Bt"@en .
+
+dbpedia:Hanif_Kureishi
+        ns1:birthDate       "1954-12-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hanif Kureishi"@en , "Hanif Kureishi"@de .
+
+<http://dbpedia.org/resource/Charles_Long%2C_1st_Baron_Farnborough>
+        ns1:birthDate       "1760-01-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Farnborough"@en .
+
+dbpedia:William_Laird_Clowes
+        ns1:birthDate       "1856-02-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir William Laird Clowes"@en , "William Laird Clowes"@en .
+
+dbpedia:H.G.H._Kearns
+        ns1:birthDate       "1902-05-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Professor Howard George Henry (H.G.H) Kearns"@en , "Howard George Henry Kearns"@en .
+
+dbpedia:Janet_Street-Porter
+        ns1:birthDate       "1946-12-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Janet Street-Porter"@en .
+
+dbpedia:Thomas_Heatherwick
+        ns1:birthDate       "1970-02-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas Heatherwick"@en .
+
+dbpedia:Tony_Benn  ns1:birthDate  "1925-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tony Benn"@en , "Tony Benn"@de .
+
+dbpedia:Giles_Chichester
+        ns1:birthDate       "1946-07-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Giles Chichester"@de , "Giles Chichester"@en .
+
+<http://dbpedia.org/resource/William_Courtenay%2C_11th_Earl_of_Devon>
+        ns1:birthDate       "1807-04-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Devon"@en .
+
+dbpedia:William_Edward_Ayrton
+        ns1:birthDate       "1847-09-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Edward Ayrton"@en , "William Edward Ayrton"@de .
+
+dbpedia:Andi_Peters  ns1:birthDate  "1970-07-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andi Peters"@en .
+
+dbpedia:John_Alexander_Reina_Newlands
+        ns1:birthDate       "1837-11-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Alexander Newlands"@en , "John Alexander Reina Newlands"@de .
+
+<http://dbpedia.org/resource/Terence_O%27Neill%2C_Baron_O%27Neill_of_the_Maine>
+        ns1:birthDate       "1914-09-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord O'Neill of the Maine"@en , "Terence O’Neill"@de .
+
+dbpedia:Garry_Bushell
+        ns1:birthDate       "1955-05-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Garry Bushell"@de , "Garry Bushell"@en .
+
+dbpedia:Leonard_Woolf
+        ns1:birthDate       "1880-11-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Leonard Woolf"@en , "Leonard Sidney Woolf"@de .
+
+dbpedia:Thomas_Spurgeon
+        ns1:birthDate       "1856-09-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Thomas Spurgeon"@en .
+
+dbpedia:Archer_John_Porter_Martin
+        ns1:birthDate       "1910-03-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Archer John Porter Martin"@en , "Archer J. P. Martin"@de .
+
+<http://dbpedia.org/resource/John_Wall_%28judge%29>
+        ns1:birthDate       "1930-06-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Anthony Wall"@en .
+
+dbpedia:Mike_Gapes  ns1:birthDate  "1952-09-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mike Gapes"@en .
+
+dbpedia:Alec_Douglas-Home
+        ns1:birthDate       "1903-07-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Douglas-Home, Alexander Frederick, Baron Home of the Hirsel"@en , "The Lord Home of the Hirsel"@en , "Alec Douglas-Home"@de .
+
+dbpedia:Annie_Besant  ns1:birthDate  "1847-10-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Annie Besant"@de , "Annie Besant"@en .
+
+dbpedia:Samuel_Gompers
+        ns1:birthDate       "1850-01-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Samuel Gompers"@de , "Samuel Gompers"@en .
+
+<http://dbpedia.org/resource/John_Russell%2C_1st_Earl_Russell>
+        ns1:birthDate       "1792-08-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Russell, John, 1. Earl Russell"@de , "The Earl Russell"@en .
+
+dbpedia:Domino_Harvey
+        ns1:birthDate       "1969-08-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Domino Harvey"@en , "Domino Harvey"@de .
+
+dbpedia:Brian_Nissen  ns1:birthDate  "1927-10-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Brian Nissen"@en .
+
+dbpedia:Max_Bygraves  ns1:birthDate  "1922-10-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Max Bygraves"@en .
+
+dbpedia:Toby_Philpott
+        ns1:birthDate       "1946-02-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Toby Philpott"@en .
+
+<http://dbpedia.org/resource/William_Peel%2C_1st_Earl_Peel>
+        ns1:birthDate       "1867-01-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl Peel"@en .
+
+dbpedia:Michael_Ancram
+        ns1:birthDate       "1945-07-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Marquess of Lothian"@en , "Michael Ancram"@de .
+
+dbpedia:William_Archibald
+        ns1:birthDate       "1850-06-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Archibald"@en .
+
+dbpedia:Bernard_Cornwell
+        ns1:birthDate       "1944-02-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bernard Cornwell"@en , "Bernard Cornwell"@de .
+
+<http://dbpedia.org/resource/John_Lambton%2C_1st_Earl_of_Durham>
+        ns1:birthDate       "1792-04-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Durham"@en , "Lambton, John George, 1. Earl of Durham"@de .
+
+dbpedia:Marina_Warner
+        ns1:birthDate       "1946-11-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Marina Warner"@en .
+
+dbpedia:Lennox_Lewis  ns1:birthDate  "1965-09-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lennox Lewis"@de , "Lennox Claudius Lewis"@en , "Lennox Lewis, CM, CBE"@en .
+
+<http://dbpedia.org/resource/Lee_Scott_%28UK_politician%29>
+        ns1:birthDate       "1956-04-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lee Scott"@en .
+
+dbpedia:Godfrey_Bloom
+        ns1:birthDate       "1949-11-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Godfrey Bloom"@de , "Godfrey Bloom"@en .
+
+dbpedia:Pete_Bennett  ns1:birthDate  "1982-03-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Pete Bennett"@en .
+
+dbpedia:Harold_Scott_MacDonald_Coxeter
+        ns1:birthDate       "1907-02-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harold Scott MacDonald Coxeter"@de , "H. S. M. \"Donald\" Coxeter"@en .
+
+dbpedia:Albert_Richardson
+        ns1:birthDate       "1880-05-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Albert Edward Richardson"@en , "Albert Edward Richardson"@en .
+
+<http://dbpedia.org/resource/Cameron_Cobbold%2C_1st_Baron_Cobbold>
+        ns1:birthDate       "1904-09-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Cobbold"@en .
+
+<http://dbpedia.org/resource/William_Burges_%28architect%29>
+        ns1:birthDate       "1827-12-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Burges"@en .
+
+dbpedia:Clare_Frewen_Sheridan
+        ns1:birthDate       "1885-09-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Clare Consuelo Frewen Sheridan"@en .
+
+dbpedia:Philip_Henry_Pye-Smith
+        ns1:birthDate       "1839-08-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Philip Henry Pye-Smith"@en .
+
+<http://dbpedia.org/resource/Edward_Ellice_%28merchant%29>
+        ns1:birthDate       "1783-09-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Ellice"@en .
+
+dbpedia:Leslie_Orgel  ns1:birthDate  "1927-01-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Leslie Eleazer Orgel"@de , "Leslie Eleazer Orgel"@en .
+
+dbpedia:Susannah_Constantine
+        ns1:birthDate       "1962-06-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Susannah Constantine"@en .
+
+dbpedia:Samuel_Shute  ns1:birthDate  "1662-01-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Samuel Shute"@en .
+
+dbpedia:Curtis_McElhinney
+        ns1:birthDate       "1983-05-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Curtis McElhinney"@de .
+
+dbpedia:Herbert_Fisher
+        ns1:birthDate       "1865-03-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Herbert Fisher"@en , "Herbert Fisher"@de .
+
+dbpedia:Nancy_Hodges  ns1:birthDate  "1888-10-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nancy Hodges"@en .
+
+dbpedia:Alfred_Gwynne_Vanderbilt_II
+        ns1:birthDate       "1912-09-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Vanderbilt, Alfred Gwynne, II"@en , "Alfred Gwynne Vanderbilt II"@en .
+
+dbpedia:Fanny_Davenport
+        ns1:birthDate       "1850-04-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Fanny Lily Gipsy Davenport"@en .
+
+dbpedia:Wizard_of_New_Zealand
+        ns1:birthDate       "1932-12-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Wizard of New Zealand"@en .
+
+dbpedia:Tommy_Sandhu  ns1:birthDate  "1976-11-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Tommy Sandhu"@en .
+
+<http://dbpedia.org/resource/John_Marek_%28politician%29>
+        ns1:birthDate       "1940-12-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Marek"@en .
+
+<http://dbpedia.org/resource/Edmund_Calamy_%28historian%29>
+        ns1:birthDate       "1671-04-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edmund Calamy"@en .
+
+dbpedia:Constance_Markiewicz
+        ns1:birthDate       "1868-02-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Constance Georgine Markiewicz"@en , "Constance Georgine Markiewicz"@de .
+
+dbpedia:Hugh_Norman-Walker
+        ns1:birthDate       "1916-12-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "羅樂民爵士"@en , "Sir Hugh Norman-Walker"@en .
+
+dbpedia:Paul_Bernays  ns1:birthDate  "1888-10-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Bernays"@en , "Paul Bernays"@de .
+
+dbpedia:William_Speirs_Bruce
+        ns1:birthDate       "1867-08-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Speirs Bruce"@de , "William Speirs Bruce"@en .
+
+dbpedia:Douglas_Carswell
+        ns1:birthDate       "1971-05-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Douglas Carswell"@en .
+
+dbpedia:Kathleen_Kenyon
+        ns1:birthDate       "1906-01-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Kathleen Kenyon"@en , "Kathleen Mary Kenyon"@de .
+
+<http://dbpedia.org/resource/Hester_Pitt%2C_Countess_of_Chatham>
+        ns1:birthDate       "1720-11-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Countess of Chatham"@en , "Hester Pitt"@en .
+
+dbpedia:Ada_Lovelace  ns1:birthDate  "1815-12-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ada Lovelace"@de , "Ada Lovelace"@en .
+
+<http://dbpedia.org/resource/David_Thompson_%28explorer%29>
+        ns1:birthDate       "1770-04-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Thompson"@de , "David Thompson"@en .
+
+dbpedia:Nicholas_J._Phillips
+        ns1:birthDate       "1933-09-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nick Phillips"@en .
+
+dbpedia:Esther_Cailingold
+        ns1:birthDate       "1925-06-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Esther Cailingold"@en .
+
+<http://dbpedia.org/resource/William_Pitt%2C_1st_Earl_of_Chatham>
+        ns1:birthDate       "1708-11-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Chatham"@en , "William Pitt Chatham"@de .
+
+dbpedia:Glenn_Harrold
+        ns1:birthDate       "1962-06-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Glenn Harrold"@en .
+
+dbpedia:George_Bellas_Greenough
+        ns1:birthDate       "1778-01-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Bellas Greenough"@en , "George Bellas Greenough"@de .
+
+dbpedia:Trevor_Phillips
+        ns1:birthDate       "1953-12-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Trevor Phillips"@en .
+
+dbpedia:Cyril_Norman_Hinshelwood
+        ns1:birthDate       "1897-06-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Cyril Norman Hinshelwood"@en , "Cyril Norman Hinshelwood"@de .
+
+dbpedia:Lilian_Baylis
+        ns1:birthDate       "1874-05-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lilian Mary Baylis"@en .
+
+dbpedia:Edward_Leigh  ns1:birthDate  "1950-07-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Leigh"@en .
+
+dbpedia:George_Hadley
+        ns1:birthDate       "1685-02-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Hadley"@en , "George Hadley"@de .
+
+dbpedia:Alfred_Lyttelton
+        ns1:birthDate       "1857-02-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alfred Lyttelton"@en .
+
+dbpedia:Denis_Thatcher
+        ns1:birthDate       "1915-05-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Denis Thatcher, Bt"@en , "Denis Thatcher"@de .
+
+dbpedia:Ian_Stuart_Black
+        ns1:birthDate       "1915-03-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ian Stuart Black"@en .
+
+dbpedia:Samir_Soni  ns1:birthDate  "1968-09-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Samir Soni"@en .
+
+dbpedia:Lord_Randolph_Churchill
+        ns1:birthDate       "1849-02-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lord Randolph Churchill"@en , "Randolph Churchill"@de .
+
+dbpedia:Charles_Algernon_Parsons
+        ns1:birthDate       "1854-06-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Algernon Parsons"@en , "Charles Parsons"@de .
+
+dbpedia:Dan_Norris  ns1:birthDate  "1960-01-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dan Norris"@en .
+
+<http://dbpedia.org/resource/Carlos_Ra%C3%BAl_Villanueva>
+        ns1:birthDate       "1900-05-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Carlos Raúl Villanueva"@en .
+
+dbpedia:Heather_Hill  ns1:birthDate  "1960-08-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Heather Hill"@en .
+
+dbpedia:Richard_William_Briginshaw
+        ns1:birthDate       "1908-05-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Briginshaw"@en .
+
+dbpedia:James_Hamilton-Paterson
+        ns1:birthDate       "1941-11-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Hamilton-Paterson"@en .
+
+dbpedia:Christian_Jones
+        ns1:birthDate       "1979-09-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Christian Jones"@en .
+
+dbpedia:Stuart_Milner-Barry
+        ns1:birthDate       "1906-09-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Philip Stuart Milner-Barry"@en , "Philip Stuart Milner-Barry"@de .
+
+dbpedia:Oswald_Mosley
+        ns1:birthDate       "1896-11-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Oswald Mosley, Bt."@en , "Oswald Ernald Mosley"@en , "Oswald Mosley"@de .
+
+<http://dbpedia.org/resource/Thomas_Denman%2C_1st_Baron_Denman>
+        ns1:birthDate       "1779-07-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Denman, Thomas, 1. Baron Denman"@de , "The Lord Denman"@en .
+
+dbpedia:John_Henry_Hayes
+        ns1:birthDate       "1958-06-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Henry Hayes"@en .
+
+dbpedia:Gale_Benson  ns1:birthDate  "1944-11-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Gale Ann Benson"@en .
+
+dbpedia:David_Attenborough
+        ns1:birthDate       "1926-05-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Attenborough"@de , "David Attenborough"@en , "Sir David Attenborough"@en .
+
+dbpedia:Mick_McManus  ns1:birthDate  "1928-01-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mick McManus"@en .
+
+dbpedia:Richard_Meinertzhagen
+        ns1:birthDate       "1878-03-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Richard Meinertzhagen"@en .
+
+dbpedia:Dante_Gabriel_Rossetti
+        ns1:birthDate       "1828-05-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dante Gabriel Rossetti"@en , "Dante Gabriel Rossetti"@de .
+
+dbpedia:Walter_Frank_Raphael_Weldon
+        ns1:birthDate       "1860-03-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Raphael Weldon"@de , "Walter Frank Raphael Weldon"@en .
+
+dbpedia:Alan_Turing  ns1:birthDate  "1912-06-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Turing"@en , "Alan Mathison Turing"@en , "Alan Turing"@de .
+
+dbpedia:Cornelius_Hendricksen_Kortright
+        ns1:birthDate       "1817-12-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Cornelius Hendricksen Kortright"@de , "Sir Cornelius Hendricksen Kortright"@en .
+
+dbpedia:Hugh_Gaitskell
+        ns1:birthDate       "1906-04-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hugh Gaitskell"@de , "Hugh Gaitskell"@en .
+
+dbpedia:Red_Madrell  ns1:birthDate  "1987-06-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Red Madrell"@en .
+
+dbpedia:Elizabeth_Siddal
+        ns1:birthDate       "1829-07-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Elizabeth Siddal"@en , "Elizabeth Eleanor Siddal"@de .
+
+dbpedia:William_A._Richardson
+        ns1:birthDate       "1795-08-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Richardson"@en .
+
+dbpedia:Aston_Webb  ns1:birthDate  "1849-05-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Aston Webb"@en , "Aston Webb"@de .
+
+dbpedia:Alan_R._Katritzky
+        ns1:birthDate       "1928-08-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan R. Katritzky"@en .
+
+dbpedia:David_E._Hughes
+        ns1:birthDate       "1831-05-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Edward Hughes"@de , "David Edward Hughes"@en .
+
+<http://dbpedia.org/resource/Thomas_Denman%2C_3rd_Baron_Denman>
+        ns1:birthDate       "1874-11-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Denman, Thomas, 3. Baron Denman"@de , "The Lord Denman"@en .
+
+dbpedia:Lynda_Waltho  ns1:birthDate  "1960-05-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lynda Waltho"@en .
+
+<http://dbpedia.org/resource/George_Spencer%2C_2nd_Earl_Spencer>
+        ns1:birthDate       "1758-09-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Spencer, George John, 2. Earl Spencer"@de , "The Earl Spencer"@en .
+
+dbpedia:Calvert_Vaux  ns1:birthDate  "1824-12-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Calvert Vaux"@en .
+
+dbpedia:Audley_Harrison
+        ns1:birthDate       "1971-10-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Audley Harrison"@en , "Audley Hugh Harrison"@de .
+
+dbpedia:Marcus_du_Sautoy
+        ns1:birthDate       "1965-08-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Marcus Peter Francis du Sautoy"@en , "Marcus du Sautoy"@de , "Marcus du Sautoy"@en .
+
+dbpedia:P._F._Strawson
+        ns1:birthDate       "1919-11-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Frederick Strawson"@de , "Peter Frederick Strawson"@en .
+
+<http://dbpedia.org/resource/Oliver_Lyttelton%2C_1st_Viscount_Chandos>
+        ns1:birthDate       "1893-03-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Chandos"@en .
+
+dbpedia:Konnie_Huq  ns1:birthDate  "1975-07-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Konnie Huq"@en .
+
+<http://dbpedia.org/resource/John_Moore%2C_Baron_Moore_of_Lower_Marsh>
+        ns1:birthDate       "1937-11-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Moore of Lower Marsh"@en .
+
+dbpedia:Roger_Helmer  ns1:birthDate  "1944-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Roger Helmer"@en .
+
+dbpedia:William_George_Beech
+        ns1:birthDate       "1898-06-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William George Beech"@en .
+
+<http://dbpedia.org/resource/Nicholas_Eliot%2C_9th_Earl_of_St_Germans>
+        ns1:birthDate       "1914-01-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nicholas Eliot"@en .
+
+<http://dbpedia.org/resource/David_Young%2C_Baron_Young_of_Graffham>
+        ns1:birthDate       "1932-02-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Young, David, Baron Young of Graffham"@de .
+
+dbpedia:Sarah_Greene  ns1:birthDate  "1958-10-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sarah Greene"@en .
+
+dbpedia:Susan_Kramer  ns1:birthDate  "1950-07-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Susan Kramer"@en , "Susan Veronica Kramer"@en .
+
+<http://dbpedia.org/resource/Michael_Green_%28physicist%29>
+        ns1:birthDate       "1946-05-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Boris Green"@de , "Michael Green"@en .
+
+dbpedia:Raymond_St._Leger
+        ns1:birthDate       "1957-04-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Raymond St. Leger"@en .
+
+dbpedia:Andrew_Selous
+        ns1:birthDate       "1962-04-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew Selous"@en .
+
+dbpedia:Laura_Lopes  ns1:birthDate  "1978-01-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Laura Lopes"@en .
+
+<http://dbpedia.org/resource/George_Osborne%2C_6th_Duke_of_Leeds>
+        ns1:birthDate       "1775-07-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Osborne, George William Frederick, 6. Duke of Leeds"@de , "The Duke of Leeds"@en .
+
+dbpedia:Derek_Laud  ns1:birthDate  "1964-08-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Derek Laud"@en .
+
+dbpedia:Warrick_Brownlow-Pike
+        ns1:birthDate       "1985-01-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Warrick Brownlow-Pike"@en .
+
+dbpedia:Meg_Hillier  ns1:birthDate  "1969-02-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Meg Hillier"@en .
+
+dbpedia:Donald_Calne  ns1:birthDate  "1936-05-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Donald Calne"@en .
+
+dbpedia:Shami_Chakrabarti
+        ns1:birthDate       "1969-06-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Shami Chakrabarti"@en .
+
+<http://dbpedia.org/resource/George_Gordon_Byron%2C_6th_Baron_Byron>
+        ns1:birthDate       "1788-01-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Byron, George Gordon Byron, 6th Baron"@en , "George Gordon Byron"@de , "Lord Byron"@en .
+
+dbpedia:Sue_Perkins  ns1:birthDate  "1969-09-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sue Perkins"@en .
+
+dbpedia:James_Edmund_Harting
+        ns1:birthDate       "1841-04-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Edmund Harting"@en .
+
+<http://dbpedia.org/resource/Hardinge_Giffard%2C_1st_Earl_of_Halsbury>
+        ns1:birthDate       "1823-09-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Halsbury"@en .
+
+dbpedia:Nicholas_Llewelyn_Davies
+        ns1:birthDate       "1903-11-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nicholas Llewelyn Davies"@en .
+
+dbpedia:Michael_Llewelyn_Davies
+        ns1:birthDate       "1900-06-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Llewelyn Davies"@en .
+
+dbpedia:Walter_Thomas_James_Morgan
+        ns1:birthDate       "1900-10-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Walter Thomas James Morgan"@en .
+
+dbpedia:Jody_Fleisch  ns1:birthDate  "1980-04-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jody Fleisch"@en , "Jody Flash"@en , "Dakko Chan (Japan)"@en , "Doc Chan (Japan)"@en .
+
+dbpedia:Judy_Mallaber
+        ns1:birthDate       "1951-07-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Judy Mallaber"@en .
+
+<http://dbpedia.org/resource/George_Cave%2C_1st_Viscount_Cave>
+        ns1:birthDate       "1856-02-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Cave"@en .
+
+dbpedia:Moira_Stuart  ns1:birthDate  "1949-09-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Moira Stuart OBE"@en .
+
+dbpedia:Mark_Dolan  ns1:birthDate  "1974-03-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mark Dolan"@en .
+
+dbpedia:Frederick_Abel
+        ns1:birthDate       "1827-07-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick Augustus Abel"@de , "Sir Frederick Abel, Bt"@en .
+
+<http://dbpedia.org/resource/Frederick_Robinson%2C_1st_Viscount_Goderich>
+        ns1:birthDate       "1782-11-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Goderich"@en , "Robinson, Frederick John, 1. Viscount Goderich"@de .
+
+dbpedia:Oliver_Stapleton
+        ns1:birthDate       "1948-04-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Oliver Stapleton"@en .
+
+<http://dbpedia.org/resource/Anne%2C_Princess_Royal>
+        ns1:birthDate       "1950-08-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anne Elizabeth Alice Mountbatten-Windsor"@de , "Anne Royal"@en , "Anne"@en , "Anne Elizabeth Alice Louise"@en .
+
+dbpedia:William_Spottiswoode
+        ns1:birthDate       "1825-01-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Spottiswoode"@en , "William Spottiswoode"@de .
+
+dbpedia:Anthony_Steen
+        ns1:birthDate       "1939-07-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anthony Steen"@en .
+
+<http://dbpedia.org/resource/Charles_Wood%2C_2nd_Viscount_Halifax>
+        ns1:birthDate       "1839-06-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Halifax"@en .
+
+<http://dbpedia.org/resource/Peter_Saunders_%28theatre%29>
+        ns1:birthDate       "1911-11-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Peter Saunders"@de , "Sir Peter Saunders"@en .
+
+dbpedia:Julius_Vogel  ns1:birthDate  "1835-02-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Julius Vogel"@de , "Sir Julius Vogel"@en .
+
+<http://dbpedia.org/resource/Harold_Alexander%2C_1st_Earl_Alexander_of_Tunis>
+        ns1:birthDate       "1891-12-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harold Alexander"@de , "The Earl Alexander of Tunis"@en .
+
+dbpedia:Bernie_Winters
+        ns1:birthDate       "1932-09-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bernie Winters"@en .
+
+dbpedia:Julian_Howard_Ashton
+        ns1:birthDate       "1877-08-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Julian Howard Ashton"@en .
+
+dbpedia:James_Guillaume
+        ns1:birthDate       "1844-02-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Guillaume"@en , "James Guillaume"@de , "150px"@en .
+
+<http://dbpedia.org/resource/Louis_de_Berni%C3%A8res>
+        ns1:birthDate       "1954-12-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Louis de Bernières"@en , "Louis de Bernières"@de .
+
+dbpedia:Frank_Rutter  ns1:birthDate  "1876-02-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frank Rutter"@en .
+
+dbpedia:Frederick_William_Cumberland
+        ns1:birthDate       "1821-04-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederick William Cumberland"@en .
+
+dbpedia:Athina_Livanos
+        ns1:birthDate       "1929-03-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Athina Livanos"@en .
+
+dbpedia:Ronald_Fisher
+        ns1:birthDate       "1890-02-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ronald Fisher"@en , "Ronald Aylmer Fisher"@de , "R. A. Fisher"@en .
+
+dbpedia:Alice_Liddell
+        ns1:birthDate       "1852-05-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alice Liddell"@de , "Alice Pleasance Liddell (Hargreaves)"@en .
+
+dbpedia:Charles_Valentine_Riley
+        ns1:birthDate       "1843-09-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Valentine Riley"@de , "Charles Valentine Riley"@en .
+
+dbpedia:Henry_Akinwande
+        ns1:birthDate       "1965-10-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Akinwande"@en , "Henry Akinwande"@de .
+
+dbpedia:Nicholas_Lyell
+        ns1:birthDate       "1938-12-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nicholas Lyell"@en , "Lyell, Nicholas Walter, Baron Lyell of Markyate"@en .
+
+dbpedia:Nick_Palmer  ns1:birthDate  "1950-02-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Nick Palmer"@en .
+
+dbpedia:George_William_Featherstonhaugh
+        ns1:birthDate       "1780-04-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Featherstonhaugh"@en .
+
+dbpedia:Michael_Flanders
+        ns1:birthDate       "1922-03-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Flanders"@en .
+
+dbpedia:Mark_Thompson
+        ns1:birthDate       "1957-07-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mark Thompson"@en .
+
+dbpedia:John_Justin  ns1:birthDate  "1917-11-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Justin"@en .
+
+dbpedia:Rory_Jennings
+        ns1:birthDate       "1983-07-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rory Jennings"@en .
+
+dbpedia:Edward_Stanford
+        ns1:birthDate       "1827-05-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Stanford"@en .
+
+dbpedia:Simon_Amstell
+        ns1:birthDate       "1979-11-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Simon Amstell"@de , "Simon Marc Amstell"@en .
+
+dbpedia:Alan_Yentob  ns1:birthDate  "1947-03-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Yentob"@en .
+
+dbpedia:Anna_Wintour  ns1:birthDate  "1949-11-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anna Wintour"@en , "Anna Wintour"@de .
+
+<http://dbpedia.org/resource/Joe_Cornish_%28comedian%29>
+        ns1:birthDate       "1968-12-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joe Cornish"@en .
+
+dbpedia:Anna_Brassey  ns1:birthDate  "1839-10-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anna Brassey"@en .
+
+dbpedia:Anthony_Trollope
+        ns1:birthDate       "1815-04-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Anthony Trollope"@de , "Anthony Trollope"@en .
+
+<http://dbpedia.org/resource/Arabella_Churchill_%28charity_founder%29>
+        ns1:birthDate       "1949-10-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Arabella Spencer-Churchill"@en .
+
+dbpedia:Lady_Nicholas_Windsor
+        ns1:birthDate       "1969-08-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lady Nicholas Windsor"@en .
+
+dbpedia:Frank_Anstey  ns1:birthDate  "1865-08-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frank Anstey"@en , "Francis George Anstey"@en .
+
+<http://dbpedia.org/resource/Michael_Hicks_Beach%2C_1st_Earl_St_Aldwyn>
+        ns1:birthDate       "1837-10-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl St Aldwyn"@en , "Hicks Beach, Michael, 1. Earl St. Aldwyn"@de .
+
+dbpedia:Archibald_Garrod
+        ns1:birthDate       "1857-11-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Archibald Garrod"@en .
+
+dbpedia:Joyce_Trimmer
+        ns1:birthDate       "1927-11-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joyce Trimmer"@en , "Joyce Trimmer"@de .
+
+<http://dbpedia.org/resource/William_Anderson_%28missionary%29>
+        ns1:birthDate       "1769-12-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Reverend William Anderson"@en .
+
+dbpedia:Edward_Stanhope
+        ns1:birthDate       "1840-09-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Stanhope"@en .
+
+dbpedia:Michael_Faraday
+        ns1:birthDate       "1791-09-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Michael Faraday"@en , "Michael Faraday"@de .
+
+dbpedia:Frederic_Thomas_Nicholls
+        ns1:birthDate       "1856-11-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frederic Thomas Nicholls"@en .
+
+dbpedia:Glynne_Thomas
+        ns1:birthDate       "1935-05-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Glynne Thomas"@en .
+
+dbpedia:Chris_Grayling
+        ns1:birthDate       "1962-04-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Chris Grayling"@en .
+
+<http://dbpedia.org/resource/Ann_Taylor%2C_Baroness_Taylor_of_Bolton>
+        ns1:birthDate       "1947-07-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Baroness Taylor of Bolton"@en .
+
+<http://dbpedia.org/resource/Dudley_Ryder%2C_2nd_Earl_of_Harrowby>
+        ns1:birthDate       "1798-05-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Harrowby"@en .
+
+dbpedia:William_IV_of_the_United_Kingdom
+        ns1:birthDate       "1765-08-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Heinrich Wilhelm IV."@de , "William IV"@en , "William Henry"@en , "William IV of the United Kingdom"@en .
+
+dbpedia:Lady_Rose_Gilman
+        ns1:birthDate       "1980-03-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lady Rose Gilman"@en .
+
+dbpedia:Matthew_Nathan
+        ns1:birthDate       "1862-01-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Matthew Nathan"@en .
+
+<http://dbpedia.org/resource/David_Jones_%28Welsh_politician%29>
+        ns1:birthDate       "1952-03-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Jones"@en .
+
+dbpedia:Doris_Beale  ns1:birthDate  "1889-08-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Doris Beale"@en .
+
+dbpedia:Simon_Schama  ns1:birthDate  "1945-02-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Simon Schama"@en , "Simon Schama"@de .
+
+<http://dbpedia.org/resource/John_Davis_%28academic%29>
+        ns1:birthDate       "1938-09-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Davis"@en .
+
+dbpedia:John_Negroponte
+        ns1:birthDate       "1939-07-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Negroponte"@de , "John Dimitri Negroponte"@en .
+
+dbpedia:Derek_Wyatt  ns1:birthDate  "1949-12-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Derek Wyatt"@en .
+
+dbpedia:Ross_McWhirter
+        ns1:birthDate       "1925-08-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ross McWhirter"@de , "Alan Ross McWhirter"@en .
+
+dbpedia:Ernest_Eldridge
+        ns1:birthDate       "1897-07-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ernest Arthur Douglas Eldridge"@en .
+
+dbpedia:John_Hegley  ns1:birthDate  "1953-10-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Hegley"@de , "John Hegley"@en .
+
+<http://dbpedia.org/resource/Victor_Child_Villiers%2C_7th_Earl_of_Jersey>
+        ns1:birthDate       "1845-03-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Jersey"@en .
+
+dbpedia:Evelyn_Achille_de_Rothschild
+        ns1:birthDate       "1886-01-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Evelyn Achille de Rothschild"@en .
+
+dbpedia:Angus_MacIsaac
+        ns1:birthDate       "1943-06-04"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Angus MacIsaac"@en .
+
+dbpedia:Robin_Squire  ns1:birthDate  "1944-07-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Robin Squire MP"@en .
+
+dbpedia:Les_Bury  ns1:birthDate  "1913-02-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Les Bury"@de , "Les Bury"@en , "Leslie Harry Ernest Bury"@en .
+
+<http://dbpedia.org/resource/James_Clark_%28programmer%29>
+        ns1:birthDate       "1964-02-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Clark"@en , "James Clark"@de .
+
+dbpedia:Dennis_Spooner
+        ns1:birthDate       "1932-12-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dennis Spooner"@en .
+
+dbpedia:Patrick_White
+        ns1:birthDate       "1912-05-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Patrick White"@en , "Patrick White"@de .
+
+dbpedia:Zara_Phillips
+        ns1:birthDate       "1981-05-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Zara Phillips"@en , "Zara Anne Elizabeth Phillips"@de .
+
+dbpedia:Derek_Abbott  ns1:birthDate  "1960-05-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Derek Abbott"@en .
+
+<http://dbpedia.org/resource/Charles_Pepys%2C_1st_Earl_of_Cottenham>
+        ns1:birthDate       "1781-04-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Cottenham"@en .
+
+dbpedia:Noel_Field  ns1:birthDate  "1904-01-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Noel Haviland Field"@en , "Noel Field"@de .
+
+dbpedia:Denis_C._Twitchett
+        ns1:birthDate       "1925-09-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Denis Twitchett"@de , "Denis C. Twitchett"@en .
+
+dbpedia:Rosa_Bassett  ns1:birthDate  "1871-08-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Rosa Bassett"@en .
+
+<http://dbpedia.org/resource/Adam_Cooper_%28dancer%29>
+        ns1:birthDate       "1971-07-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Adam Cooper"@en .
+
+dbpedia:Danny_Baker  ns1:birthDate  "1957-06-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Danny Baker"@en .
+
+dbpedia:Edward_Burnett_Tylor
+        ns1:birthDate       "1832-10-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edward Burnett Tylor"@en , "Sir Edward Burnett Tylor"@de .
+
+dbpedia:David_Lack  ns1:birthDate  "1910-07-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Lambert Lack"@de , "David Lack"@en .
+
+dbpedia:E._M._Forster
+        ns1:birthDate       "1879-01-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "E. M. Forster"@de , "Edward Morgan Forster"@en .
+
+<http://dbpedia.org/resource/Leslie_Scarman%2C_Baron_Scarman>
+        ns1:birthDate       "1911-07-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Leslie George Scarman"@en , "Leslie George Scarman, Baron Scarman,"@en .
+
+dbpedia:Joe_Mace  ns1:birthDate  "1971-10-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joe Mace"@en .
+
+dbpedia:Hugh_Orde  ns1:birthDate  "1958-08-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Hugh Orde"@en .
+
+dbpedia:David_Collenette
+        ns1:birthDate       "1946-06-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Michael Collenette"@en .
+
+dbpedia:Augustus_Welby_Northmore_Pugin
+        ns1:birthDate       "1812-03-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Augustus Welby Northmore Pugin"@en , "Augustus Welby Northmore Pugin"@de .
+
+<http://dbpedia.org/resource/John_Stanley_%28politician%29>
+        ns1:birthDate       "1942-01-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Paul Stanley"@en , "Sir John Stanley"@en .
+
+dbpedia:Kevin_Lear  ns1:birthDate  "1977-04-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Kevin Lear"@en .
+
+<http://dbpedia.org/resource/William_Henry_Smith_%28politician%29>
+        ns1:birthDate       "1825-06-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Henry Smith"@de , "William Henry Smith"@en .
+
+<http://dbpedia.org/resource/Alan_Baker_%28mathematician%29>
+        ns1:birthDate       "1939-08-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alan Baker"@en , "Alan Baker"@de .
+
+dbpedia:Paul_Nurse  ns1:birthDate  "1949-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Nurse"@de , "Sir Paul Maxime Nurse"@en .
+
+dbpedia:Simon_Baron-Cohen
+        ns1:birthDate       "1958-08-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Simon Baron-Cohen"@en , "Simon Baron-Cohen"@de .
+
+dbpedia:George_Osborne
+        ns1:birthDate       "1971-05-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Osborne"@de , "George Osborne"@en .
+
+dbpedia:Daniel_Peacock
+        ns1:birthDate       "1958-08-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Daniel Peacock"@en .
+
+dbpedia:Andrew_Mitchell
+        ns1:birthDate       "1956-03-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Andrew Mitchell"@en .
+
+dbpedia:Alexander_William_Williamson
+        ns1:birthDate       "1824-05-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alexander William Williamson"@en , "Alexander William Williamson"@de .
+
+dbpedia:Chris_Brosnan
+        ns1:birthDate       "1972-10-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Chris Harris"@en .
+
+dbpedia:John_D._Barrow
+        ns1:birthDate       "1952-11-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John David Barrow"@de , "John D. Barrow"@en .
+
+dbpedia:Billy_Cotton  ns1:birthDate  "1899-05-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Billy Cotton"@en .
+
+dbpedia:John_Milton  ns1:birthDate  "1608-12-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Milton"@de , "John Milton"@en .
+
+dbpedia:K._A._C._Creswell
+        ns1:birthDate       "1879-09-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "K. A. C. Creswell"@en .
+
+dbpedia:David_Bellamy
+        ns1:birthDate       "1933-01-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Bellamy OBE"@en , "Bellamy, David, OBE"@en .
+
+dbpedia:George_Llewelyn_Davies
+        ns1:birthDate       "1893-07-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "George Llewelyn Davies"@en .
+
+<http://dbpedia.org/resource/Granville_Leveson-Gower%2C_2nd_Earl_Granville>
+        ns1:birthDate       "1815-05-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Leveson-Gower, Granville George, 2. Earl Granville"@de , "The Earl Granville"@en .
+
+dbpedia:Jeremy_Kyle  ns1:birthDate  "1965-07-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jeremy Kyle"@en .
+
+dbpedia:Charles_Keeping
+        ns1:birthDate       "1924-09-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Keeping"@en .
+
+<http://dbpedia.org/resource/Henry_Paget%2C_1st_Marquess_of_Anglesey>
+        ns1:birthDate       "1768-05-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paget, Henry William, 1. Marquess of Anglesey"@de , "The Marquess of Anglesey"@en .
+
+<http://dbpedia.org/resource/Kevin_Mitchell_%28boxer%29>
+        ns1:birthDate       "1984-10-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Kevin Mitchell"@en , "Kevin Martin Mitchell"@en .
+
+dbpedia:Jonathan_Djanogly
+        ns1:birthDate       "1965-06-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jonathan Simon Djanogly"@en , "Jonathan Djanogly"@en .
+
+<http://dbpedia.org/resource/Sydney_Buxton%2C_1st_Earl_Buxton>
+        ns1:birthDate       "1853-10-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl Buxton"@en .
+
+dbpedia:Paul_Davies  ns1:birthDate  "1946-04-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Paul Davies"@de , "Paul C.W. Davies"@en , "Paul C. W. Davies"@en .
+
+<http://dbpedia.org/resource/Edgar_Adrian%2C_1st_Baron_Adrian>
+        ns1:birthDate       "1889-11-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Edgar Douglas Adrian"@en , "The Lord Adrian"@en , "Edgar Douglas Adrian"@de .
+
+<http://dbpedia.org/resource/Herbert_Gladstone%2C_1st_Viscount_Gladstone>
+        ns1:birthDate       "1854-02-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Gladstone"@en .
+
+dbpedia:Verity_Lambert
+        ns1:birthDate       "1935-11-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Verity Lambert"@en .
+
+dbpedia:George_Carey  ns1:birthDate  "1935-11-13"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Carey of Clifton"@en , "George Leonard Carey"@de .
+
+dbpedia:Matt_Lucas  ns1:birthDate  "1974-03-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Matt Lucas"@de , "Matt Lucas"@en .
+
+dbpedia:Angellica_Bell
+        ns1:birthDate       "1977-03-24"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Angellica Bell"@en .
+
+dbpedia:Louise_Bagshawe
+        ns1:birthDate       "1971-06-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Louise Bagshawe"@en .
+
+<http://dbpedia.org/resource/William_Cavendish-Bentinck%2C_7th_Duke_of_Portland>
+        ns1:birthDate       "1893-03-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Cavendish-Bentinck"@en , "Cavendish-Bentinck, William, 7. Duke of Portland"@de .
+
+<http://dbpedia.org/resource/Steve_Bell_%28cartoonist%29>
+        ns1:birthDate       "1951-02-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Steve Bell"@en .
+
+dbpedia:Alex_Shane  ns1:birthDate  "1979-11-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alex Shane"@en , "Alexander Daniel Spilling"@en , "\"The Showstealer\""@en , "LX Blade"@en , "\"The Kamikaze Kid\""@en .
+
+dbpedia:Sarah_Cawood  ns1:birthDate  "1972-08-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sarah Cawood"@en .
+
+dbpedia:C._Robin_Ganellin
+        ns1:birthDate       "1934-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charon Robin Ganellin"@en , "Robin Charon"@en .
+
+<http://dbpedia.org/resource/Quintin_Hogg%2C_Baron_Hailsham_of_St_Marylebone>
+        ns1:birthDate       "1907-10-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Hogg, Quintin McGarel, Baron Hailsham of St Marylebone"@en , "Quintin McGarel Hogg"@de , "The Lord Hailsham of St Marylebone"@en .
+
+<http://dbpedia.org/resource/Aaron_Hart_%28businessman%29>
+        ns1:birthDate       "1724-08-16"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Aaron Hart"@en .
+
+dbpedia:Flinders_Petrie
+        ns1:birthDate       "1853-06-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Flinders Petrie"@en , "William Matthew Flinders Petrie"@de .
+
+<http://dbpedia.org/resource/John_MacGregor%2C_Baron_MacGregor_of_Pulham_Market>
+        ns1:birthDate       "1937-02-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord MacGregor of Pulham Market"@en .
+
+<http://dbpedia.org/resource/Dudley_Ryder%2C_1st_Earl_of_Harrowby>
+        ns1:birthDate       "1762-12-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Harrowby"@en , "Ryder, Dudley, 1. Earl of Harrowby"@de .
+
+<http://dbpedia.org/resource/Roger_Williams_%28theologian%29>
+        ns1:birthDate       "1603-12-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Roger Williams"@en , "Roger Williams"@de .
+
+<http://dbpedia.org/resource/Sidney_Herbert%2C_14th_Earl_of_Pembroke>
+        ns1:birthDate       "1853-02-20"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Pembroke"@en .
+
+dbpedia:John_Charles_Molteno
+        ns1:birthDate       "1814-06-05"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Charles Molteno"@en .
+
+dbpedia:Premiership_of_Benjamin_Disraeli
+        ns1:birthDate       "1804-12-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Rt Hon Benjamin Disraeli"@en .
+
+dbpedia:Ryszard_Czarnecki
+        ns1:birthDate       "1963-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Ryszard Czarnecki"@de , "Ryszard Czarnecki"@en .
+
+dbpedia:Iris_Hoey  ns1:birthDate  "1885-07-17"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Iris Hoey"@en .
+
+dbpedia:David_Cameron
+        ns1:birthDate       "1966-10-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David Cameron"@en , "David Cameron"@de .
+
+dbpedia:John_Donne  ns1:birthDate  "1572-01-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Donne"@en , "John Donne"@de .
+
+<http://dbpedia.org/resource/Alexander_Cambridge%2C_1st_Earl_of_Athlone>
+        ns1:birthDate       "1874-04-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Athlone"@en .
+
+dbpedia:John_Rost  ns1:birthDate  "1944-03-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Rost"@en .
+
+dbpedia:Francis_Cole  ns1:birthDate  "1872-02-03"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Francis Cole"@en .
+
+dbpedia:Geoffrey_Ingram_Taylor
+        ns1:birthDate       "1886-03-07"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Geoffrey Ingram Taylor"@en , "Geoffrey Ingram Taylor"@de .
+
+<http://dbpedia.org/resource/Griffith_Jones_%28actor%29>
+        ns1:birthDate       "1909-11-19"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Griffith Jones"@en .
+
+dbpedia:John_Langdon_Bonython
+        ns1:birthDate       "1848-10-15"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Langdon Bonython"@en .
+
+<http://dbpedia.org/resource/Bethsab%C3%A9e_de_Rothschild>
+        ns1:birthDate       "1914-09-23"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Bethsabée de Rothschild"@en .
+
+dbpedia:Harold_Baily_Dixon
+        ns1:birthDate       "1852-08-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Harold Baily Dixon"@en .
+
+<http://dbpedia.org/resource/Brendan_O%27Connor>
+        ns1:birthDate       "1962-03-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Brendan O'Connor"@en .
+
+<http://dbpedia.org/resource/Victor_Cavendish%2C_9th_Duke_of_Devonshire>
+        ns1:birthDate       "1868-05-31"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Duke of Devonshire"@en .
+
+dbpedia:John_Bunyan  ns1:birthDate  "1628-11-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "John Bunyan"@de , "John Bunyan"@en .
+
+dbpedia:James_Sowerby
+        ns1:birthDate       "1757-03-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "James Sowerby"@en , "James Sowerby"@de .
+
+<http://dbpedia.org/resource/David_Thompson_%28Barbadian_politician%29>
+        ns1:birthDate       "1961-12-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "David John Howard Thompson"@de , "David John Howard Thompson"@en .
+
+dbpedia:Mitchell_Symons
+        ns1:birthDate       "1957-02-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Mitchell Symons"@en .
+
+dbpedia:William_Hamilton_Fyfe
+        ns1:birthDate       "1878-07-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir William Hamilton Fyfe"@en .
+
+<http://dbpedia.org/resource/Frank_Warren_%28promoter%29>
+        ns1:birthDate       "1952-02-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Frank Warren"@de , "Frank Warren"@en .
+
+dbpedia:Irene_Handl  ns1:birthDate  "1901-12-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Irene Handl"@en .
+
+dbpedia:Roger_T._Forster
+        ns1:birthDate       "1933-03-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Roger T. Forster"@en .
+
+dbpedia:Ernest_Mason_Satow
+        ns1:birthDate       "1843-06-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sir Ernest Mason Satow"@en , "Ernest Satow"@de .
+
+<http://dbpedia.org/resource/Alfred_Hayes_%28wrestler%29>
+        ns1:birthDate       "1928-08-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Alfred Hayes"@en , "The White Angel"@en , "Lord Alfred Hayes"@en , "\"Judo\" Al Hayes"@en , "Alfred Hayes"@de .
+
+dbpedia:Wes_Streeting
+        ns1:birthDate       "1983-01-21"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Wes Streeting"@en .
+
+<http://dbpedia.org/resource/John_Spencer%2C_3rd_Earl_Spencer>
+        ns1:birthDate       "1782-05-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl Spencer"@en .
+
+<http://dbpedia.org/resource/Charlotte%2C_Princess_Royal>
+        ns1:birthDate       "1766-09-29"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Irland und Hannover Charlotte Auguste Mathilde von Großbritannien"@de , "Charlotte of Great Britain"@en .
+
+dbpedia:Lorna_Arnold  ns1:birthDate  "1915-12-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Lorna Arnold"@en .
+
+dbpedia:William_H._Clark
+        ns1:birthDate       "1869-07-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Harold Clark"@en .
+
+dbpedia:Augustus_Matthiessen
+        ns1:birthDate       "1831-01-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Augustus Matthiessen"@en , "Augustus Matthiessen"@de .
+
+dbpedia:Emma_Albertazzi
+        ns1:birthDate       "1814-05-01"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Emma Albertazzi"@en .
+
+dbpedia:William_Ryott_Maughan
+        ns1:birthDate       "1863-01-08"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Maughan"@en , "William John Ryott Maughan"@en .
+
+<http://dbpedia.org/resource/Sid_Smith_%28boxer%29>
+        ns1:birthDate       "1889-02-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sid Smith"@en .
+
+<http://dbpedia.org/resource/Charles_Tomlinson_%28scientist%29>
+        ns1:birthDate       "1808-11-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Charles Tomlinson"@en .
+
+dbpedia:Drummond_Money-Coutts
+        ns1:birthDate       "1986-05-11"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Drummond Money-Coutts / DMC"@en .
+
+dbpedia:Dickie_Henderson
+        ns1:birthDate       "1922-10-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dickie Henderson"@en .
+
+dbpedia:Graham_Berry  ns1:birthDate  "1822-08-28"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Graham Berry"@en .
+
+dbpedia:Henry_Edward_Armstrong
+        ns1:birthDate       "1848-05-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Henry Edward Armstrong"@de , "Henry Edward Armstrong"@en .
+
+dbpedia:Jon_Sopel  ns1:birthDate  "1959-05-22"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Jon Sopel"@en .
+
+dbpedia:Sydney_Skaife
+        ns1:birthDate       "1889-12-12"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Sydney Harold Skaife"@en .
+
+dbpedia:Aml_Ameen  ns1:birthDate  "1985-07-30"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Aml Ameen"@en .
+
+dbpedia:Karl_Pearson  ns1:birthDate  "1857-03-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Karl Pearson"@de , "Karl Pearson"@en .
+
+dbpedia:P._E._MacKenzie
+        ns1:birthDate       "1872-01-09"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "P. E. MacKenzie"@en .
+
+<http://dbpedia.org/resource/George_Goschen%2C_1st_Viscount_Goschen>
+        ns1:birthDate       "1831-08-10"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Viscount Goschen"@en , "Goschen, George Joachim, 1. Viscount Goschen"@de .
+
+dbpedia:Richard_Littlejohn
+        ns1:birthDate       "1954-01-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Richard Littlejohn"@en .
+
+dbpedia:Anthony_Giddens
+        ns1:birthDate       "1938-01-18"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Lord Giddens"@en , "Giddens, Anthony, Baron Giddens"@en , "Anthony Giddens"@de .
+
+dbpedia:Monty_Berman  ns1:birthDate  "1905-03-26"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Monty Berman"@en .
+
+dbpedia:Kenneth_Higson
+        ns1:birthDate       "1934-03-14"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Kenneth James Higson"@en .
+
+dbpedia:William_Ross_Ashby
+        ns1:birthDate       "1903-09-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "William Ross Ashby"@de , "W. Ross Ashby"@en .
+
+dbpedia:Joseph_Needham
+        ns1:birthDate       "1900-12-06"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Joseph Needham"@en , "Joseph Needham"@de .
+
+dbpedia:Dawn_Primarolo
+        ns1:birthDate       "1954-05-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dawn Primarolo"@en .
+
+<http://dbpedia.org/resource/Stafford_Northcote%2C_1st_Earl_of_Iddesleigh>
+        ns1:birthDate       "1818-10-27"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "The Earl of Iddesleigh"@en , "Northcote, Stafford, 1. Earl of Iddesleigh"@de .
+
+dbpedia:Renton_Skinner
+        ns1:birthDate       "1973-01-25"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Dan Renton Skinner"@en .
+
+dbpedia:Norman_Grubb  ns1:birthDate  "1895-08-02"^^xsd:date ;
+        dbpprop:birthPlace  dbpedia:London ;
+        foaf:name           "Norman Grubb"@de , "Norman Grubb"@en .

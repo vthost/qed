@@ -1,0 +1,1 @@
+SELECT DISTINCT ?X ?dcterms_title  WHERE {  ?X <http://purl.org/dc/terms/creator> <http://data.semanticweb.org/person/abraham-bernstein> .  ?X a <http://rdfs.org/sioc/ns#Site> .  ?X <http://purl.org/dc/terms/title> ?dcterms_title .   } LIMIT 50

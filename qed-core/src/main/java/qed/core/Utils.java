@@ -49,6 +49,11 @@ public class Utils implements Constants {
 				(current, name) -> new File(current+File.separator+name).isDirectory());
 	}
 	
+	public static File[] listQueryFiles(File directory) {
+		return directory.listFiles(
+				(current, name) -> name.endsWith(Constants.QUERY_FILE_EXT));
+	}
+	
 //	make sure that there is an empty data directory 
 	public static void cleanDataDir() {
 		

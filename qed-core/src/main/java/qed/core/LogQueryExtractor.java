@@ -33,7 +33,7 @@ public class LogQueryExtractor {
             		QuerySolution s = rs.next();  	
             		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());
             		System.out.println(s.getResource("?id").toString());	
-            		System.out.println(s.getLiteral("?text").toString());	
+            		System.out.println(s.getLiteral("?text").toString().substring(s.getLiteral("?text").toString().toLowerCase().indexOf("select")));	
             }
 
         } catch (Exception e) {
@@ -45,7 +45,7 @@ public class LogQueryExtractor {
 //  queryNumMax is per config
 //	we might change this by using a big union
 	public void extractQueries(String logEndpoint, String graphUri, String[][] configs, 
-			int queryNumMax, int querySizeMin, int queryResultSizeMin) {
+			int queryNumMax, int querySizeMin, int queryResultSizeMin) {//, String dataDir
 		
 		if(Strings.isNullOrEmpty(logEndpoint)) return;
 		
@@ -66,6 +66,7 @@ public class LogQueryExtractor {
 			+ "?id a sp:Select; "
 			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "		
 			+ "lsqv:usesFeature lsqv:" + String.join("; lsqv:usesFeature lsqv:", config) + ". "
+			+ "FILTER NOT EXISTS {?id lsqv:parseError ?error .}. "
 			+ filter + " . "
 
 			//this is a shortcut to sort out "bot" queries that only differ in some values in the queries

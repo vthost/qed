@@ -1,0 +1,518 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "entities" , "label" ;
+  rs:size            "85"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Wilhelm Stuckart"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wilhelm_Stuckart> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Alfons Gorbach"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Alfons_Gorbach> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "André Simonazzi"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Andr%C3%A9_Simonazzi> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Selwyn Lloyd"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Selwyn_Lloyd> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Lê Văn Thịnh"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/L%C3%AA_V%C4%83n_Th%E1%BB%8Bnh> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Kingsley Wood"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Kingsley_Wood> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gerhard Schröder"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gerhard_Schr%C3%B6der> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Joseph Goebbels"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Joseph_Goebbels> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Thomas Helbling"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Thomas_Helbling> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Helmut Kohl"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Helmut_Kohl> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Zhangsun Wuji"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Zhangsun_Wuji> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Richard Thomalla"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Richard_Thomalla> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Kurt Daluege"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Kurt_Daluege> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Heinrich Brüning"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Heinrich_Br%C3%BCning> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Walter Scheel"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Walter_Scheel> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John Anderson, 1st Viscount Waverley"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/John_Anderson%2C_1st_Viscount_Waverley> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Willy Brandt"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Willy_Brandt> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Derick Heathcoat-Amory, 1st Viscount Amory"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Derick_Heathcoat-Amory%2C_1st_Viscount_Amory> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Tô Hiến Thành"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/T%C3%B4_Hi%E1%BA%BFn_Th%C3%A0nh> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Leo von Caprivi"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Leo_von_Caprivi> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Đỗ Anh Vũ"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/%C4%90%E1%BB%97_Anh_V%C5%A9> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Anthony Barber, Baron Barber"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Anthony_Barber%2C_Baron_Barber> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Georg von Hertling"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Georg_von_Hertling> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Martin Bormann"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Martin_Bormann> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Viktor Klima"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Viktor_Klima> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Werner Hoppe (SS-Officer)"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Werner_Hoppe_%28SS-Officer%29> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Iain Macleod"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Iain_Macleod> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Rayson Huang"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Rayson_Huang> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Guido Schmidt"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Guido_Schmidt> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Bernhard von Bülow"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Bernhard_von_B%C3%BClow> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Liu Ji (14th century)"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Liu_Ji_%2814th_century%29> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Kurt von Schleicher"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Kurt_von_Schleicher> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Hermann Müller (politician)"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Hermann_M%C3%BCller_%28politician%29> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John W. Harrelson"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/John_W._Harrelson> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Franz von Papen"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Franz_von_Papen> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "James C. Renick"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/James_C._Renick> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Wilhelm Boger"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wilhelm_Boger> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Angela Merkel"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Angela_Merkel> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Hans Luther"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_Luther> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Chlodwig, Prince of Hohenlohe-Schillingsfürst"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Chlodwig%2C_Prince_of_Hohenlohe-Schillingsf%C3%BCrst> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Kurt Georg Kiesinger"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Kurt_Georg_Kiesinger> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "William Murray, 1st Earl of Mansfield"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/William_Murray%2C_1st_Earl_of_Mansfield> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Omar Davies"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Omar_Davies> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Judith A. Bense"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Judith_A._Bense> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Josef Klaus"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Josef_Klaus> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Ludwig Erhard"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Ludwig_Erhard> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Wolfgang Schüssel"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wolfgang_Sch%C3%BCssel> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Reinhard Heydrich"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Reinhard_Heydrich> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Henry Hu"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Henry_Hu> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Wilhelm Frick"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wilhelm_Frick> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Christian Wirth"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Christian_Wirth> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Achille Casanova"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Achille_Casanova> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Richard Haldane, 1st Viscount Haldane"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Richard_Haldane%2C_1st_Viscount_Haldane> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Theobald von Bethmann-Hollweg"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Theobald_von_Bethmann-Hollweg> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gustav Stresemann"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gustav_Stresemann> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Albrecht von Roon"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Albrecht_von_Roon> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Prince Maximilian of Baden"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Prince_Maximilian_of_Baden> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Lutz Graf Schwerin von Krosigk"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Lutz_Graf_Schwerin_von_Krosigk> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Konstantin Fehrenbach"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Konstantin_Fehrenbach> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "John Simon, 1st Viscount Simon"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/John_Simon%2C_1st_Viscount_Simon> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Joseph Wirth"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Joseph_Wirth> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Alistair Darling"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Alistair_Darling> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Helmut Schmidt"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Helmut_Schmidt> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Reginald Maudling"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Reginald_Maudling> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Philipp Scheidemann"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Philipp_Scheidemann> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Max Pauly"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Max_Pauly> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gustav Bauer"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gustav_Bauer> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gustav Sorge"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gustav_Sorge> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Wilhelm Cuno"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wilhelm_Cuno> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Annemarie Huber-Hotz"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Annemarie_Huber-Hotz> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Peter Thorneycroft, Baron Thorneycroft"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Peter_Thorneycroft%2C_Baron_Thorneycroft> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Georg Michaelis"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Georg_Michaelis> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Franz Vranitzky"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Franz_Vranitzky> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Kenneth Clarke"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Kenneth_Clarke> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Fred Sinowatz"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Fred_Sinowatz> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Alfred Gusenbauer"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Alfred_Gusenbauer> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Samuel David Mendelssohn"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Samuel_David_Mendelssohn> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Lorenz Hackenholt"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Lorenz_Hackenholt> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "James L. Oblinger"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/James_L._Oblinger> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Hans Frank"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Hans_Frank> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Heinrich Schwarz"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Heinrich_Schwarz> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Zhang Juzheng"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Zhang_Juzheng> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Ambrose King"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Ambrose_King> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Lawrence Lau"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Lawrence_Lau> ;
+                          rs:variable  "entities"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Wei Zheng"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wei_Zheng> ;
+                          rs:variable  "entities"
+                        ] ]
+] .

@@ -1,0 +1,1938 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Bay_City%2C_Michigan>
+        dbpprop:officialName     "Beisitija"@lv , "Bay City"@en ;
+        dbpprop:populationTotal  "36817"^^xsd:int , "36 817"@lv ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Alma%2C_Nebraska>
+        dbpprop:officialName     "Alma, Nebraska"@en ;
+        dbpprop:populationTotal  "1214"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Annapolis%2C_Missouri>
+        dbpprop:officialName     "Annapolis, Missouri"@en ;
+        dbpprop:populationTotal  "310"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Aurora%2C_Colorado>
+        dbpprop:officialName     "Aurora, Colorado"@zh , "City of Aurora"@en ;
+        dbpprop:populationTotal  "319057"^^xsd:int , "297235"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Elkhart%2C_Kansas>
+        dbpprop:officialName     "Elkhart, Kansas"@en ;
+        dbpprop:populationTotal  "2233"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mylo%2C_North_Dakota>
+        dbpprop:officialName     "Mylo, North Dakota"@en ;
+        dbpprop:populationTotal  "19"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Columbia%2C_South_Carolina>
+        dbpprop:officialName     "கொலம்பியா நகரம்"@ta , "Columbia, South Carolina"@zh , "Columbia, South Carolina"@en , "Kolumbija"@lv , "Columbia"@en ;
+        dbpprop:populationTotal  "127029"^^xsd:int , "122819"^^xsd:int , 122.819 , "124 818"@lv ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hartley%2C_Iowa>
+        dbpprop:officialName     "Hartley, Iowa"@en ;
+        dbpprop:populationTotal  "1733"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/White_Plains%2C_New_York>
+        dbpprop:officialName     "White Plains, Nueva York"@es , "White Plains, New York"@en , "White Plains, New York"@sl ;
+        dbpprop:populationTotal  57.3 , "57300"^^xsd:int , "53077"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dunn%2C_North_Carolina>
+        dbpprop:officialName     "Dunn, North Carolina"@en ;
+        dbpprop:populationTotal  "9196"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Sarajevo  dbpprop:officialName  "City of Sarajevo"@en , "Сарајево"@vi , "Grad Sarajevo"@ta , "Grad Sarajevo"@en , "சாரயேவோ நகரம்"@ta , "Sarajeva"@sl , "Sarajevo"@vi , "Sarajevo"@sl , "Sarajevo"@ms ;
+        dbpprop:populationTotal  "305242"^^xsd:int , "602500"^^xsd:int , "418891"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/South_Pasadena%2C_California>
+        dbpprop:officialName     "City of South Pasadena"@zh , "City of South Pasadena"@en ;
+        dbpprop:populationTotal  "24292"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lula%2C_Georgia>
+        dbpprop:officialName     "Lula, Georgia"@en ;
+        dbpprop:populationTotal  "1438"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Pendleton%2C_Oregon>
+        dbpprop:officialName     "Pendleton, Oregon"@vi , "Pendleton, Oregon"@en ;
+        dbpprop:populationTotal  "17310"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Plymouth%2C_Iowa>
+        dbpprop:officialName     "Plymouth, Iowa"@en ;
+        dbpprop:populationTotal  "429"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fairfield%2C_Ohio>
+        dbpprop:officialName     "Fairfield, Ohio"@en ;
+        dbpprop:populationTotal  "42097"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bedford%2C_Ohio>
+        dbpprop:officialName     "Bedford, Ohio"@en ;
+        dbpprop:populationTotal  "14214"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Tigard%2C_Oregon>
+        dbpprop:officialName     "ไทการ์ด, ออริกอน"@th , "Tigard, Oregon"@en , "Tigard, Oregon"@vi ;
+        dbpprop:populationTotal  "46300"^^xsd:int , 46.3 , "47460"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Republic%2C_Missouri>
+        dbpprop:officialName     "Republic, Missouri"@en ;
+        dbpprop:populationTotal  "8438"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/San_Juan_Bautista%2C_California>
+        dbpprop:officialName     "City of San Juan Bautista"@en ;
+        dbpprop:populationTotal  "1549"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Merced%2C_California>
+        dbpprop:officialName     "City of Merced"@zh , "City of Merced"@en ;
+        dbpprop:populationTotal  "7萬3610"@zh , "80608"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lynd%2C_Minnesota>
+        dbpprop:officialName     "Lynd, Minnesota"@en ;
+        dbpprop:populationTotal  "346"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/St._Francis%2C_Minnesota>
+        dbpprop:officialName     "St. Francis, Minnesota"@en ;
+        dbpprop:populationTotal  "4910"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Nulato%2C_Alaska>
+        dbpprop:officialName     "Nulato"@en ;
+        dbpprop:populationTotal  "302"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Charlevoix%2C_Michigan>
+        dbpprop:officialName     "Charlevoix, Michigan"@en ;
+        dbpprop:populationTotal  "2994"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Farr_West%2C_Utah>
+        dbpprop:officialName     "Farr West, Utah"@en ;
+        dbpprop:populationTotal  "3094"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Tuscaloosa%2C_Alabama>
+        dbpprop:officialName     "Tuscaloosa, Alabama"@es , "City of Tuscaloosa"@en , "Tuscaloosa, Alabama"@en ;
+        dbpprop:populationTotal  "७७,९०६"@ne , "83052"^^xsd:int , "90221"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Oil_City%2C_Pennsylvania>
+        dbpprop:officialName     "Oil City, Pennsylvania"@en ;
+        dbpprop:populationTotal  "11504"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Southgate%2C_Michigan>
+        dbpprop:officialName     "Southgate, Michigan"@en ;
+        dbpprop:populationTotal  "30136"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mansfield%2C_Ohio>
+        dbpprop:officialName     "City of Mansfield"@en ;
+        dbpprop:populationTotal  "49579"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Muskegon%2C_Michigan>
+        dbpprop:officialName     "Muskegon, Michigan"@en ;
+        dbpprop:populationTotal  "40105"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sanborn%2C_Iowa>
+        dbpprop:officialName     "Sanborn, Iowa"@en ;
+        dbpprop:populationTotal  "1353"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Antioch%2C_California>
+        dbpprop:officialName     "City of Antioch"@en , "Antioch, California"@en ;
+        dbpprop:populationTotal  "100219"^^xsd:int , 100.59 ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Milwaukee  dbpprop:officialName
+                "Milwaukeeja"@sl , "City of Milwaukee"@ta , "City of Milwaukee"@zh , "มิลวอกี"@th , "Milwaukee, Wisconsin"@es , "Milwaukee, Wisconsin"@ca , "Milwaukee, Wisconsin"@tr , "Milwaukee, Wisconsin"@vi , "The City of Milwaukee"@fa , "Milvoki"@lv , "Mesto Milwaukee"@sl ;
+        dbpprop:populationTotal  "578887"^^xsd:int , "596974"^^xsd:int , "573378"^^xsd:int , "602782"^^xsd:int , "604477"^^xsd:int , "602191"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mission_Viejo%2C_California>
+        dbpprop:officialName     "City of Mission Viejo"@en ;
+        dbpprop:populationTotal  "100242"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Ceylon%2C_Minnesota>
+        dbpprop:officialName     "Ceylon, Minnesota"@en ;
+        dbpprop:populationTotal  "413"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Rosedale%2C_Mississippi>
+        dbpprop:officialName     "Rosedale, Mississippi"@en ;
+        dbpprop:populationTotal  "2414"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Devils_Lake%2C_North_Dakota>
+        dbpprop:officialName     "Devils Lake, North Dakota"@en ;
+        dbpprop:populationTotal  "7222"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mountain_View%2C_California>
+        dbpprop:officialName     "City of Mountain View, California"@es , "Thành phố Mountain View, California"@vi , "City of Mountain View"@en , "เมาน์เทนวิว"@th , "City of Mountain View, California"@bn , "City of Mountain View, California"@zh ;
+        dbpprop:populationTotal  "70708"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Miami  dbpprop:officialName  "City of Miami"@en , "City of Miami"@vi , "City of Miami"@fa , "City of Miami"@sr , "Miami"@zh , "Miamija"@sl , "Maiami"@lv , "মায়ামির শহর"@bn , "Mesto Miami"@sl , "ไมแอมี"@th , "மயாமி நகரம்"@ta ;
+        dbpprop:populationTotal  "420048"^^xsd:int , "404048"^^xsd:int , "409 719"@lv , 409.719 , "409719"^^xsd:int , "362470"^^xsd:int , 404.048 ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lake_Winnebago%2C_Missouri>
+        dbpprop:officialName     "Lake Winnebago, Missouri"@en ;
+        dbpprop:populationTotal  "902"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Montgomery%2C_Ohio>
+        dbpprop:officialName     "Montgomery, Ohio"@en ;
+        dbpprop:populationTotal  "10163"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Covington%2C_Virginia>
+        dbpprop:officialName     "Covington, Virginia"@en ;
+        dbpprop:populationTotal  "6303"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/California_City%2C_California>
+        dbpprop:officialName     "City of California City"@en ;
+        dbpprop:populationTotal  "8385"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Spring_Hill%2C_Tennessee>
+        dbpprop:officialName     "Spring Hill, Tennessee"@en ;
+        dbpprop:populationTotal  "23462"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bloomfield%2C_Kentucky>
+        dbpprop:officialName     "Bloomfield, Kentucky"@en ;
+        dbpprop:populationTotal  "855"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Delaware%2C_Iowa>
+        dbpprop:officialName     "Delaware, Iowa"@en ;
+        dbpprop:populationTotal  "188"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bushnell%2C_Florida>
+        dbpprop:officialName     "Bushnell, Florida"@en ;
+        dbpprop:populationTotal  "2050"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Jackson%2C_Mississippi>
+        dbpprop:officialName     "City of Jackson"@fa , "City of Jackson"@es , "City of Jackson"@ca , "City of Jackson"@en , "ஜாக்சன் நகரம்"@ta , "Džeksona"@lv , "Jackson, Mississippi"@en ;
+        dbpprop:populationTotal  "176614"^^xsd:int , 184.256 , "156 382"@lv , "184256"^^xsd:int , "156382"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Blairstown%2C_Missouri>
+        dbpprop:officialName     "Blairstown, Missouri"@en ;
+        dbpprop:populationTotal  "141"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Elephant_Butte%2C_New_Mexico>
+        dbpprop:officialName     "Elephant Butte, New Mexico"@en ;
+        dbpprop:populationTotal  "1390"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dodge_Center%2C_Minnesota>
+        dbpprop:officialName     "Dodge Center, Minnesota"@en ;
+        dbpprop:populationTotal  "2226"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Woodhaven%2C_Michigan>
+        dbpprop:officialName     "Woodhaven, Michigan"@en ;
+        dbpprop:populationTotal  "12530"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Whitewood%2C_South_Dakota>
+        dbpprop:officialName     "Whitewood, South Dakota"@en ;
+        dbpprop:populationTotal  "844"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sumiton%2C_Alabama>
+        dbpprop:officialName     "Sumiton, Alabama"@en , "Sumiton"@en ;
+        dbpprop:populationTotal  "2665"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Elliott%2C_North_Dakota>
+        dbpprop:officialName     "Elliott, North Dakota"@en ;
+        dbpprop:populationTotal  "44"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bangor%2C_Maine>
+        dbpprop:officialName     "Bangor, Maine"@es , "Bangor, Maine"@en ;
+        dbpprop:populationTotal  "31473"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Alpine%2C_Utah>
+        dbpprop:officialName     "Alpine, Utah"@en , "Alpine, Utah"@vi ;
+        dbpprop:populationTotal  "7146"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:San_Diego  dbpprop:officialName
+                "Sandjego"@lv , "City of San Diego, California"@zh , "சான் டியேகோ நகரம்"@ta , "San Diego, California"@es , "City of San Diego"@vi , "City of San Diego"@in , "San Diego, Kaliforniya"@tr , "Mesto San Diego"@sl , "The City of San Diego"@fa , "แซนดีเอโก"@th , "San Diega"@sl ;
+        dbpprop:populationTotal  "1,366,865"@in , "1279329"^^xsd:int , "1305736"^^xsd:int , "1 279 329"@lv , "130萬5736"@zh , "1256951"^^xsd:int , "1,256,951"@th , "1,256,951"@ta , "1255240"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Abu_Dhabi  dbpprop:officialName
+                "அபுதாபி நகரம்"@ta , "ʼAbū Ẓaby"@vi , "Kota Abu Dhabi"@in , "Lungsod Abu Dhabi"@tl , "مدينة أبوظبي"@ar , "Bandaraya Abu Dhabi"@ms , "Абу Даби"@mk , "City of Abu Dhabi"@ml , "City of Abu Dhabi"@en , "আবু ধাবির শহর"@bn ;
+        dbpprop:populationTotal  "1850230"^^xsd:int , "1463491"^^xsd:int , 945.268 , "1, 463, 491"@ar , "1, 463, 491"@ta , "৮৯৬,৭৫১"@bn , "859749"^^xsd:int , "896751"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Old_Town%2C_Maine>
+        dbpprop:officialName     "Old Town, Maine"@en ;
+        dbpprop:populationTotal  "8130"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Nooksack%2C_Washington>
+        dbpprop:officialName     "Nooksack, Washington"@en ;
+        dbpprop:populationTotal  "851"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Peoria%2C_Arizona>
+        dbpprop:officialName     "City of Peoria"@en ;
+        dbpprop:populationTotal  "146743"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bloomfield%2C_New_Mexico>
+        dbpprop:officialName     "Bloomfield, New Mexico"@en ;
+        dbpprop:populationTotal  "6417"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Norfork%2C_Arkansas>
+        dbpprop:officialName     "Norfork, Arkansas"@en ;
+        dbpprop:populationTotal  "484"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lake_Andes%2C_South_Dakota>
+        dbpprop:officialName     "Lake Andes, South Dakota"@en ;
+        dbpprop:populationTotal  "819"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Morehead_City%2C_North_Carolina>
+        dbpprop:officialName     "Morehead City, North Carolina"@en ;
+        dbpprop:populationTotal  "14548"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sumas%2C_Washington>
+        dbpprop:officialName     "Sumas, Washington"@en ;
+        dbpprop:populationTotal  "960"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/South_Daytona%2C_Florida>
+        dbpprop:officialName     "South Daytona, Florida"@en ;
+        dbpprop:populationTotal  "13177"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Gaylord%2C_Minnesota>
+        dbpprop:officialName     "Gaylord, Minnesota"@en ;
+        dbpprop:populationTotal  "2279"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Iroquois%2C_South_Dakota>
+        dbpprop:officialName     "Iroquois, South Dakota"@en ;
+        dbpprop:populationTotal  "278"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Westgate%2C_Iowa>
+        dbpprop:officialName     "Westgate, Iowa"@en ;
+        dbpprop:populationTotal  "234"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Joshua%2C_Texas>
+        dbpprop:officialName     "Joshua, Texas"@en ;
+        dbpprop:populationTotal  "5574"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Herculaneum%2C_Missouri>
+        dbpprop:officialName     "Herculaneum, Missouri"@en ;
+        dbpprop:populationTotal  "3582"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Leachville%2C_Arkansas>
+        dbpprop:officialName     "Leachville, Arkansas"@es , "Leachville, Arkansas"@en ;
+        dbpprop:populationTotal  "1981"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Shelbyville%2C_Missouri>
+        dbpprop:officialName     "Shelbyville, Missouri"@en ;
+        dbpprop:populationTotal  "682"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Troy%2C_New_York>
+        dbpprop:officialName     "City of Troy, New York"@zh , "City of Troy"@en ;
+        dbpprop:populationTotal  "49170"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Forada%2C_Minnesota>
+        dbpprop:officialName     "Forada, Minnesota"@en ;
+        dbpprop:populationTotal  "197"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Faribault%2C_Minnesota>
+        dbpprop:officialName     "Faribault, Minnesota"@en ;
+        dbpprop:populationTotal  "20818"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Kimberly%2C_Idaho>
+        dbpprop:officialName     "Kimberly, Idaho"@en ;
+        dbpprop:populationTotal  "2614"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Akron%2C_Ohio>
+        dbpprop:officialName     "City of Akron"@en , "ஏக்ரன் நகரம்"@ta , "Akron, Ohio"@vi ;
+        dbpprop:populationTotal  "217074"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Milan%2C_Kansas>
+        dbpprop:officialName     "Milan, Kansas"@en ;
+        dbpprop:populationTotal  "137"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Albert%2C_Kansas>
+        dbpprop:officialName     "Albert, Kansas"@en ;
+        dbpprop:populationTotal  "181"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Huntsville%2C_Alabama>
+        dbpprop:officialName     "Huntsville"@en , "Huntsville, Alabama"@en ;
+        dbpprop:populationTotal  "176645"^^xsd:int , "168132"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Brownsville%2C_Tennessee>
+        dbpprop:officialName     "Brownsville, Tennessee"@en ;
+        dbpprop:populationTotal  "10748"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Allen%2C_Kentucky>
+        dbpprop:officialName     "Allen, Kentucky"@en ;
+        dbpprop:populationTotal  "150"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Apopka%2C_Florida>
+        dbpprop:officialName     "City of Apopka, Florida"@en ;
+        dbpprop:populationTotal  "26642"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Islandia%2C_Florida>
+        dbpprop:officialName     "Islandia, Florida"@en ;
+        dbpprop:populationTotal  "6"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Woodville%2C_Georgia>
+        dbpprop:officialName     "Woodville, Georgia"@en ;
+        dbpprop:populationTotal  "400"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Matlock%2C_Iowa>
+        dbpprop:officialName     "Matlock, Iowa"@en ;
+        dbpprop:populationTotal  "83"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/LaBelle%2C_Florida>
+        dbpprop:officialName     "LaBelle, Florida"@en ;
+        dbpprop:populationTotal  "4210"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bock%2C_Minnesota>
+        dbpprop:officialName     "Bock, Minnesota"@en ;
+        dbpprop:populationTotal  "106"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Petersburg%2C_Virginia>
+        dbpprop:officialName     "Petersburg, Virginia"@zh , "Petersburg, Virginia"@en ;
+        dbpprop:populationTotal  "32757"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Oppelo%2C_Arkansas>
+        dbpprop:officialName     "Oppelo, Arkansas"@en ;
+        dbpprop:populationTotal  "725"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Baytown%2C_Texas>
+        dbpprop:officialName     "City of Baytown"@en , "City of Baytown"@zh ;
+        dbpprop:populationTotal  "72215"^^xsd:int , "66430"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Muskegon_Heights%2C_Michigan>
+        dbpprop:officialName     "Muskegon Heights, Michigan"@en ;
+        dbpprop:populationTotal  "12049"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/St._Mary%2C_Missouri>
+        dbpprop:officialName     "St. Mary, Missouri"@en ;
+        dbpprop:populationTotal  "377"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Toledo%2C_Ohio>
+        dbpprop:officialName     "Toledo, Ohio"@es , "City of Toledo"@en ;
+        dbpprop:populationTotal  "316851"^^xsd:int , "298446"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Marquette%2C_Michigan>
+        dbpprop:officialName     "Marquette, Michigan"@en , "Marquette, Michigan"@es ;
+        dbpprop:populationTotal  "19661"^^xsd:int , "20714"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Muscatine%2C_Iowa>
+        dbpprop:officialName     "Muscatine"@en ;
+        dbpprop:populationTotal  "22719"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Houston  dbpprop:officialName  "সিটি অফ হাউস্টন"@bn , "ஹியூஸ்டன் நகரம்"@ta , "Houstona"@sl , "Hjūstona"@lv , "Mesto Houston"@sl , "ฮิวสตัน"@th , "Houston"@en , "Houston"@zh , "സിറ്റി ഓഫ് ഹ്യൂസ്റ്റണ്‍"@ml , "City of Houston"@vi , "City of Houston"@fa , "City of Houston"@te , "City of Houston"@ms , "City of Houston"@en ;
+        dbpprop:populationTotal  "2242193"^^xsd:int , "2,144,491"@ml , "2,144,491"@ta , "3,231,000"@lv , "২২৪২১৯৩"@bn , "2,208,180"@te , "2,208,180"@th , "2144491"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Unity%2C_Oregon>
+        dbpprop:officialName     "Unity, Oregon"@en ;
+        dbpprop:populationTotal  "131"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Rio_Rancho%2C_New_Mexico>
+        dbpprop:officialName     "City of Rio Rancho"@en ;
+        dbpprop:populationTotal  "75978"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Quebec_City  dbpprop:officialName
+                "கெபெக் நகரம்"@ta , "Kebeko"@eo , "Quebec City"@ta , "Quebec City"@sl , "Quebec City"@ur ;
+        dbpprop:populationTotal  "491142"^^xsd:int , 491.142 ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dunkirk%2C_Indiana>
+        dbpprop:officialName     "City of Dunkirk"@en ;
+        dbpprop:populationTotal  "2646"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Terrell%2C_Texas>
+        dbpprop:officialName     "Terrell, Texas"@en ;
+        dbpprop:populationTotal  "19527"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Charleston%2C_South_Carolina>
+        dbpprop:officialName     "City of Charleston"@en , "مدينة، تشارلستون"@ar , "City of Charleston"@zh , "Charleston"@es ;
+        dbpprop:populationTotal  "107844"^^xsd:int , "118270"^^xsd:int , "126567"^^xsd:int , 118.492 ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Brooklyn%2C_Ohio>
+        dbpprop:officialName     "Brooklyn, Ohio"@en ;
+        dbpprop:populationTotal  "11586"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mountain_View%2C_Arkansas>
+        dbpprop:officialName     "Mountain View, Arkansas"@en ;
+        dbpprop:populationTotal  "2876"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Colony%2C_Kansas>
+        dbpprop:officialName     "Colony, Kansas"@en ;
+        dbpprop:populationTotal  "397"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Richmond_Heights%2C_Ohio>
+        dbpprop:officialName     "Richmond Heights, Ohio"@en ;
+        dbpprop:populationTotal  "10944"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/McKenzie%2C_Tennessee>
+        dbpprop:officialName     "McKenzie, Tennessee"@en ;
+        dbpprop:populationTotal  "5295"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Oregon_City%2C_Oregon>
+        dbpprop:officialName     "Oregon City, Oregon"@vi , "俄勒冈城"@zh , "City of Oregon City"@en ;
+        dbpprop:populationTotal  "29540"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Stuttgart%2C_Arkansas>
+        dbpprop:officialName     "Stuttgart, Arkansas"@en ;
+        dbpprop:populationTotal  "9745"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Shelby%2C_Ohio>
+        dbpprop:officialName     "Shelby, Ohio"@en ;
+        dbpprop:populationTotal  "9821"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hardy%2C_Iowa>
+        dbpprop:officialName     "Hardy, Iowa"@en ;
+        dbpprop:populationTotal  "57"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hazard%2C_Kentucky>
+        dbpprop:officialName     "Hazard"@en ;
+        dbpprop:populationTotal  "4806"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Seattle  dbpprop:officialName  "Seattlea"@sl , "ซีแอตเทิล"@th , "Mesto Seattle"@sl , "சியாட்டில் நகரம்"@ta , "City of Seattle"@en , "City of Seattle"@es , "City of Seattle"@in , "Seattle, Washington"@tr , "City of Seattle"@fa , "Thành phố Seattle"@vi , "Seattle"@ca ;
+        dbpprop:populationTotal  "594210"^^xsd:int , "580089"^^xsd:int , "582484"^^xsd:int , "602000"^^xsd:int , "582174"^^xsd:int , "598541"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Warwick%2C_Rhode_Island>
+        dbpprop:officialName     "City of Warwick"@en ;
+        dbpprop:populationTotal  "85808"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Morgantown%2C_West_Virginia>
+        dbpprop:officialName     "City of Morgantown, West Virginia"@en ;
+        dbpprop:populationTotal  "28654"^^xsd:int , "29642"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Walcott%2C_Iowa>
+        dbpprop:officialName     "Walcott, Iowa"@en ;
+        dbpprop:populationTotal  "1528"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Belleview%2C_Florida>
+        dbpprop:officialName     "Belleview, Florida"@en ;
+        dbpprop:populationTotal  "3478"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Maplewood%2C_Minnesota>
+        dbpprop:officialName     "Maplewood, Minnesota"@en ;
+        dbpprop:populationTotal  "34947"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Statham%2C_Georgia>
+        dbpprop:officialName     "Statham, Georgia"@en ;
+        dbpprop:populationTotal  "2040"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Los_Ybanez%2C_Texas>
+        dbpprop:officialName     "Los Ybanez, Texas"@en ;
+        dbpprop:populationTotal  "32"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Galt%2C_California>
+        dbpprop:officialName     "City of Galt"@en ;
+        dbpprop:populationTotal  "23173"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/New_Haven%2C_Kentucky>
+        dbpprop:officialName     "New Haven, Kentucky"@en ;
+        dbpprop:populationTotal  "849"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Charleston%2C_West_Virginia>
+        dbpprop:officialName     "ČārlstonaCharleston"@lv , "சார்ல்ஸ்டன், மேற்கு வர்ஜீனியா"@ta , "City of Charleston, West Virginia"@en , "City of Charleston, West Virginia"@in , "City of Charleston, West Virginia"@fa , "Charleston, West Virginia"@en ;
+        dbpprop:populationTotal  51.342 , 50.846 , "53 421"@lv , 50.302 , "50302"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Schenectady%2C_New_York>
+        dbpprop:officialName     "City of Schenectady, New York"@zh , "City of Schenectady, New York"@en ;
+        dbpprop:populationTotal  "61821"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hazen%2C_Arkansas>
+        dbpprop:officialName     "Hazen, Arkansas"@es , "Hazen, Arkansas"@en ;
+        dbpprop:populationTotal  "1637"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Centralia%2C_Kansas>
+        dbpprop:officialName     "Centralia, Kansas"@en ;
+        dbpprop:populationTotal  "534"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bedford%2C_Virginia>
+        dbpprop:officialName     "Bedford, Virginia"@zh , "Bedford, Virginia"@en ;
+        dbpprop:populationTotal  "6299"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Streetsboro%2C_Ohio>
+        dbpprop:officialName     "Streetsboro, Ohio"@en ;
+        dbpprop:populationTotal  "12311"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Washington%2C_North_Carolina>
+        dbpprop:officialName     "Washington, North Carolina"@en ;
+        dbpprop:populationTotal  "12946"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Rockford%2C_Tennessee>
+        dbpprop:officialName     "Rockford, Tennessee"@en ;
+        dbpprop:populationTotal  "798"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fairbury%2C_Nebraska>
+        dbpprop:officialName     "Fairbury, Nebraska"@en ;
+        dbpprop:populationTotal  "4262"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Maysville%2C_Iowa>
+        dbpprop:officialName     "Maysville, Iowa"@en ;
+        dbpprop:populationTotal  "163"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Adams%2C_Wisconsin>
+        dbpprop:officialName     "Adams, Wisconsin"@en ;
+        dbpprop:populationTotal  "1914"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Shaktoolik%2C_Alaska>
+        dbpprop:officialName     "Shaktoolik"@en ;
+        dbpprop:populationTotal  "232"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Castlewood%2C_South_Dakota>
+        dbpprop:officialName     "Castlewood, South Dakota"@en ;
+        dbpprop:populationTotal  "666"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sikeston%2C_Missouri>
+        dbpprop:officialName     "Sikeston, Missouri"@en ;
+        dbpprop:populationTotal  "16992; 17,180 est."@en ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Jeffersonville%2C_Indiana>
+        dbpprop:officialName     "City of Jeffersonville, Indiana"@en , "City of Jeffersonville"@en ;
+        dbpprop:populationTotal  "38100"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Spirit_Lake%2C_Iowa>
+        dbpprop:officialName     "Spirit Lake, Iowa"@en ;
+        dbpprop:populationTotal  "4261"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/McCleary%2C_Washington>
+        dbpprop:officialName     "McCleary, Washington"@en ;
+        dbpprop:populationTotal  "1454"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Glenaire%2C_Missouri>
+        dbpprop:officialName     "Glenaire, Missouri"@en ;
+        dbpprop:populationTotal  "553"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Alpha%2C_Minnesota>
+        dbpprop:officialName     "Alpha, Minnesota"@en ;
+        dbpprop:populationTotal  "126"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Satin%2C_Texas>
+        dbpprop:officialName     "Satin, Texas"@en ;
+        dbpprop:populationTotal  "109"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Utica%2C_New_York>
+        dbpprop:officialName     "City of Utica"@zh ;
+        dbpprop:populationTotal  "60651"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Burwell%2C_Nebraska>
+        dbpprop:officialName     "Burwell, Nebraska"@en ;
+        dbpprop:populationTotal  "1130"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Orient%2C_Iowa>
+        dbpprop:officialName     "Orient, Iowa"@en ;
+        dbpprop:populationTotal  "402"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Portland%2C_Oregon>
+        dbpprop:officialName     "พอร์ตแลนด์"@th , "Thành phố Portland, Oregon"@vi , "Mesto Portland"@sl , "Portlanda"@sl , "Portland, Oregon"@tr , "Portland, Oregon"@ca , "City of Portland"@fa , "City of Portland"@sk , "City of Portland"@ta , "City of Portland"@en , "波特蘭"@zh ;
+        dbpprop:populationTotal  "550396"^^xsd:int , "582 130"@lv , "568380"^^xsd:int , 575.93 , "556370"^^xsd:int , "562690"^^xsd:int , "582130"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Checotah%2C_Oklahoma>
+        dbpprop:officialName     "Checotah, Oklahoma"@en ;
+        dbpprop:populationTotal  "3481"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Swainsboro%2C_Georgia>
+        dbpprop:officialName     "Swainsboro, Georgia"@en ;
+        dbpprop:populationTotal  "6943"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bremen%2C_Georgia>
+        dbpprop:officialName     "Bremen, Georgia"@en ;
+        dbpprop:populationTotal  "4579"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Aliso_Viejo%2C_California>
+        dbpprop:officialName     "City of Aliso Viejo"@en ;
+        dbpprop:populationTotal  "40166"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Redwood_City%2C_California>
+        dbpprop:officialName     "City of Redwood City, California"@zh , "Ciudad de Redwood City"@es , "City of Redwood City"@en ;
+        dbpprop:populationTotal  "7萬6000"@zh , 81.522 , "79000"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mindenmines%2C_Missouri>
+        dbpprop:officialName     "Mindenmines, Missouri"@en ;
+        dbpprop:populationTotal  "409"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Johnson_City%2C_Kansas>
+        dbpprop:officialName     "Johnson City, Kansas"@en ;
+        dbpprop:populationTotal  "1528"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Richmond%2C_Michigan>
+        dbpprop:officialName     "Richmond, Michigan"@en ;
+        dbpprop:populationTotal  "4897"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Dallas  dbpprop:officialName  "Dallas, Texas"@es , "டாலஸ்"@ta , "Mesto Dallas"@sl , "แดลลัส"@th , "Dallasa"@sl , "Dalasa"@lv , "City of Dallas"@fa , "City of Dallas"@zh , "City of Dallas"@vi , "Dallas, Teksas"@tr ;
+        dbpprop:populationTotal  "1240499"^^xsd:int , "1248810"^^xsd:int , "1232940"^^xsd:int , "1188580"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Pitts%2C_Georgia>
+        dbpprop:officialName     "Pitts, Georgia"@en ;
+        dbpprop:populationTotal  "308"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Marion%2C_Kansas>
+        dbpprop:officialName     "Marion, Kansas"@en ;
+        dbpprop:populationTotal  "2110"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Milford%2C_Nebraska>
+        dbpprop:officialName     "Milford, Nebraska"@en ;
+        dbpprop:populationTotal  "2070"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Reeds_Spring%2C_Missouri>
+        dbpprop:officialName     "Reeds Spring, Missouri"@en ;
+        dbpprop:populationTotal  "465"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dwight%2C_North_Dakota>
+        dbpprop:officialName     "Dwight, North Dakota"@en ;
+        dbpprop:populationTotal  "75"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sartell%2C_Minnesota>
+        dbpprop:officialName     "Sartell, Minnesota"@en ;
+        dbpprop:populationTotal  "9641"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Petersburg%2C_Alaska>
+        dbpprop:officialName     "Petersburg, Alaska"@en ;
+        dbpprop:populationTotal  "3224"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/West_Des_Moines%2C_Iowa>
+        dbpprop:officialName     "West Des Moines, Iowa"@en ;
+        dbpprop:populationTotal  "55426"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Luverne%2C_Alabama>
+        dbpprop:officialName     "Luverne, Alabama"@en , "Luverne, Alabama"@in ;
+        dbpprop:populationTotal  "2635"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Birmingham%2C_Alabama>
+        dbpprop:officialName     "பர்மிங்காம் நகரம்"@ta , "City of Birmingham"@en , "Birmingham"@en , "City of Birmingham"@vi ;
+        dbpprop:populationTotal  "229800"^^xsd:int , "229424"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Parker%2C_Florida>
+        dbpprop:officialName     "Parker, Florida"@en ;
+        dbpprop:populationTotal  "4623"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Martins_Ferry%2C_Ohio>
+        dbpprop:officialName     "Martins Ferry, Ohio"@en ;
+        dbpprop:populationTotal  "7226"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/New_London%2C_Iowa>
+        dbpprop:officialName     "New London, Iowa"@en ;
+        dbpprop:populationTotal  "1937"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Jolley%2C_Iowa>
+        dbpprop:officialName     "Jolley, Iowa"@en ;
+        dbpprop:populationTotal  "54"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cassville%2C_Missouri>
+        dbpprop:officialName     "Cassville, Missouri"@en ;
+        dbpprop:populationTotal  "2890"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/St._Louis_Park%2C_Minnesota>
+        dbpprop:officialName     "Saint Louis Park, Minnesota"@en ;
+        dbpprop:populationTotal  "44126"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Picher%2C_Oklahoma>
+        dbpprop:officialName     "Picher, Oklahoma"@en ;
+        dbpprop:populationTotal  "1640"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Benton%2C_Missouri>
+        dbpprop:officialName     "Benton, Missouri"@en ;
+        dbpprop:populationTotal  "732"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bozeman%2C_Montana>
+        dbpprop:officialName     "Bozeman, Montana"@es , "Bozeman, Montana"@en ;
+        dbpprop:populationTotal  "37981"^^xsd:int , "27509"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Newdale%2C_Idaho>
+        dbpprop:officialName     "Newdale, Idaho"@en ;
+        dbpprop:populationTotal  "358"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Rolla%2C_Kansas>
+        dbpprop:officialName     "Rolla, Kansas"@en ;
+        dbpprop:populationTotal  "482"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Umatilla%2C_Oregon>
+        dbpprop:officialName     "Umatilla, Oregon"@vi , "Umatilla, Oregon"@en ;
+        dbpprop:populationTotal  "6385"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Milan%2C_Michigan>
+        dbpprop:officialName     "Milan, Michigan"@en ;
+        dbpprop:populationTotal  "4775"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Arcadia%2C_Iowa>
+        dbpprop:officialName     "Arcadia, Iowa"@en ;
+        dbpprop:populationTotal  "443"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Brea%2C_California>
+        dbpprop:officialName     "City of Brea"@en ;
+        dbpprop:populationTotal  "49,560 as of 2007"@en ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Valparaiso%2C_Florida>
+        dbpprop:officialName     "Valparaiso, Florida"@en ;
+        dbpprop:populationTotal  "6408"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Madison%2C_Wisconsin>
+        dbpprop:officialName     "Медісон"@uk , "Madison, Wisconsin"@ms , "Madison, Wisconsin"@es , "Madison, Wisconsin"@en , "Madison, Wisconsin"@in , "Madison, Wisconsin"@vi , "மேடிசன்"@ta , "City of Madison"@en , "City of Madison"@fa , "City of Madison"@zh ;
+        dbpprop:populationTotal  "228775"^^xsd:int , "231916"^^xsd:int , 223.389 , "223389"^^xsd:int , "221551"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Abbyville%2C_Kansas>
+        dbpprop:officialName     "Abbyville, Kansas"@en ;
+        dbpprop:populationTotal  "128"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Black_Jack%2C_Missouri>
+        dbpprop:officialName     "Black Jack, Missouri"@en ;
+        dbpprop:populationTotal  "6792"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cibolo%2C_Texas>
+        dbpprop:officialName     "Cibolo, Texas"@en ;
+        dbpprop:populationTotal  "3035"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Portsmouth%2C_New_Hampshire>
+        dbpprop:officialName     "Portsmouth, New Hampshire"@en ;
+        dbpprop:populationTotal  "20784"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Shoreline%2C_Washington>
+        dbpprop:officialName     "Shoreline, Washington"@en ;
+        dbpprop:populationTotal  "53025"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Napa%2C_California>
+        dbpprop:officialName     "City of Napa"@en ;
+        dbpprop:populationTotal  "72585"^^xsd:int , "74247"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Centerville%2C_North_Carolina>
+        dbpprop:officialName     "Centerville, North Carolina"@en ;
+        dbpprop:populationTotal  "99"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Crosby%2C_North_Dakota>
+        dbpprop:officialName     "Crosby, North Dakota"@en ;
+        dbpprop:populationTotal  "1089"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Butler%2C_Kentucky>
+        dbpprop:officialName     "Butler, Kentucky"@en ;
+        dbpprop:populationTotal  "613"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Birchwood_Village%2C_Minnesota>
+        dbpprop:officialName     "Birchwood Village, Minnesota"@en ;
+        dbpprop:populationTotal  "968"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Wray%2C_Colorado>
+        dbpprop:officialName     "City of Wray, Colorado"@en ;
+        dbpprop:populationTotal  "2187"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cathedral_City%2C_California>
+        dbpprop:officialName     "City of Cathedral City"@en ;
+        dbpprop:populationTotal  "42647"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hawley%2C_Texas>
+        dbpprop:officialName     "Hawley, Texas"@en ;
+        dbpprop:populationTotal  "646"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Marianna%2C_Florida>
+        dbpprop:officialName     "Marianna, Florida"@en ;
+        dbpprop:populationTotal  "6230"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Martin%2C_Kentucky>
+        dbpprop:officialName     "Martin, Kentucky"@en ;
+        dbpprop:populationTotal  "633"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Prairie_Home%2C_Missouri>
+        dbpprop:officialName     "Prairie Home, Missouri"@en ;
+        dbpprop:populationTotal  "220"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Coldstream%2C_Kentucky>
+        dbpprop:officialName     "Coldstream, Kentucky"@en ;
+        dbpprop:populationTotal  "956"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Wabbaseka%2C_Arkansas>
+        dbpprop:officialName     "Wabbaseka, Arkansas"@en ;
+        dbpprop:populationTotal  "323"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Eyota%2C_Minnesota>
+        dbpprop:officialName     "Eyota, Minnesota"@en ;
+        dbpprop:populationTotal  "1644"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Garden_City%2C_Idaho>
+        dbpprop:officialName     "Garden City, Idaho"@en ;
+        dbpprop:populationTotal  "10624"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sun_Prairie%2C_Wisconsin>
+        dbpprop:officialName     "City of Sun Prairie"@en ;
+        dbpprop:populationTotal  "20369"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hanover%2C_Kansas>
+        dbpprop:officialName     "Hanover, Kansas"@en ;
+        dbpprop:populationTotal  "653"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Garrison%2C_Minnesota>
+        dbpprop:officialName     "Garrison, Minnesota"@en ;
+        dbpprop:populationTotal  "213"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Royston%2C_Georgia>
+        dbpprop:officialName     "Royston, Georgia"@en ;
+        dbpprop:populationTotal  "2493"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lewis%2C_Kansas>
+        dbpprop:officialName     "Lewis, Kansas"@en ;
+        dbpprop:populationTotal  "486"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Essex%2C_Iowa>
+        dbpprop:officialName     "Essex, Iowa"@en ;
+        dbpprop:populationTotal  "884"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/New_Albany%2C_Indiana>
+        dbpprop:officialName     "City of New Albany, Indiana"@en ;
+        dbpprop:populationTotal  "37603"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Champlin%2C_Minnesota>
+        dbpprop:officialName     "Champlin, Minnesota"@en ;
+        dbpprop:populationTotal  "22193"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Yuma%2C_Arizona>
+        dbpprop:officialName     "City of Yuma, Arizona"@es , "City of Yuma, Arizona"@ro , "City of Yuma, Arizona"@en , "City of Yuma, Arizona"@zh ;
+        dbpprop:populationTotal  87.423 , "88687"^^xsd:int , "90041"^^xsd:int , "87423"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Zearing%2C_Iowa>
+        dbpprop:officialName     "Zearing, Iowa"@en ;
+        dbpprop:populationTotal  "617"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Buena_Vista%2C_Virginia>
+        dbpprop:officialName     "Buena Vista, Virginia"@en ;
+        dbpprop:populationTotal  "6349"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Harrisonville%2C_Missouri>
+        dbpprop:officialName     "Harrisonville, Missouri"@en ;
+        dbpprop:populationTotal  "8946"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Broxton%2C_Georgia>
+        dbpprop:officialName     "Broxton, Georgia"@en ;
+        dbpprop:populationTotal  "1428"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Azusa%2C_California>
+        dbpprop:officialName     "City of Azusa"@en ;
+        dbpprop:populationTotal  "44712"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Evanston%2C_Wyoming>
+        dbpprop:officialName     "Evanston, Wyoming"@en ;
+        dbpprop:populationTotal  "11507"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Egan%2C_South_Dakota>
+        dbpprop:officialName     "Egan, South Dakota"@en ;
+        dbpprop:populationTotal  "265"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Byram%2C_Mississippi>
+        dbpprop:officialName     "Byram"@en ;
+        dbpprop:populationTotal  "7386"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Torrington%2C_Connecticut>
+        dbpprop:officialName     "Torrington, Connecticut"@en ;
+        dbpprop:populationTotal  "35995"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hope%2C_Idaho>
+        dbpprop:officialName     "Hope, Idaho"@en ;
+        dbpprop:populationTotal  "79"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Litchfield_Park%2C_Arizona>
+        dbpprop:officialName     "Litchfield Park, Arizona"@en ;
+        dbpprop:populationTotal  "5593"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Milford%2C_Connecticut>
+        dbpprop:officialName     "Milford, Connecticut"@en ;
+        dbpprop:populationTotal  "54802"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lindstrom%2C_Minnesota>
+        dbpprop:officialName     "Lindström, Minnesota"@en ;
+        dbpprop:populationTotal  "3015"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Swaledale%2C_Iowa>
+        dbpprop:officialName     "Swaledale, Iowa"@en ;
+        dbpprop:populationTotal  "174"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/La_Verne%2C_California>
+        dbpprop:officialName     "City of La Verne"@en , "Ciudad de La Verne"@es ;
+        dbpprop:populationTotal  "31638"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Urmia  dbpprop:officialName  "乌尔米耶"@zh , "Urmia"@en ;
+        dbpprop:populationTotal  "871204"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Ferndale%2C_Michigan>
+        dbpprop:officialName     "City of Ferndale"@en ;
+        dbpprop:populationTotal  "22105"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Gassville%2C_Arkansas>
+        dbpprop:officialName     "Gassville, Arkansas"@en , "Gassville, Arkansas"@es ;
+        dbpprop:populationTotal  "1706"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Judsonia%2C_Arkansas>
+        dbpprop:officialName     "765 hwy 367 judsonia arkansas"@en , "Judsonia, Arkansas"@es ;
+        dbpprop:populationTotal  "1982"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Somerville%2C_Massachusetts>
+        dbpprop:officialName     "Somerville, Massachusetts"@en ;
+        dbpprop:populationTotal  "74405"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Brigham_City%2C_Utah>
+        dbpprop:officialName     "Brigham City, Utah"@en ;
+        dbpprop:populationTotal  "18712"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Apple_Valley%2C_Minnesota>
+        dbpprop:officialName     "Apple Valley, Minnesota"@en ;
+        dbpprop:populationTotal  "45527"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/South_Euclid%2C_Ohio>
+        dbpprop:officialName     "South Euclid, Ohio"@en ;
+        dbpprop:populationTotal  "23537"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Ashtabula%2C_Ohio>
+        dbpprop:officialName     "Ashtabula, Ohio"@en ;
+        dbpprop:populationTotal  "20962"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Auburn%2C_Maine>
+        dbpprop:officialName     "Auburn, Maine"@en ;
+        dbpprop:populationTotal  "23690"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Madison%2C_Missouri>
+        dbpprop:officialName     "Madison, Missouri"@en ;
+        dbpprop:populationTotal  "586"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Texarkana%2C_Arkansas>
+        dbpprop:officialName     "Texarkana, Arkansas"@en ;
+        dbpprop:populationTotal  "30006"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Loyal%2C_Wisconsin>
+        dbpprop:officialName     "Loyal, Wisconsin"@en ;
+        dbpprop:populationTotal  "1308"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Geneva%2C_Ohio>
+        dbpprop:officialName     "City of Geneva"@en ;
+        dbpprop:populationTotal  "6595"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Parkway_Village%2C_Kentucky>
+        dbpprop:officialName     "Parkway Village, Kentucky"@en ;
+        dbpprop:populationTotal  "715"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bellevue%2C_Washington>
+        dbpprop:officialName     "City of Bellevue, Washington"@en ;
+        dbpprop:populationTotal  "123771"^^xsd:int , "121347"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Kirkland%2C_Washington>
+        dbpprop:officialName     "Kirkland, Washington"@en ;
+        dbpprop:populationTotal  "45054"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Stow%2C_Ohio>
+        dbpprop:officialName     "Stow, Ohio"@en ;
+        dbpprop:populationTotal  "33899"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Santa_Clara%2C_California>
+        dbpprop:officialName     "City of Santa Clara"@en , "City of Santa Clara, California"@zh , "City of Santa Clara, California"@es ;
+        dbpprop:populationTotal  "109000"^^xsd:int , "102361"^^xsd:int , "10萬9000"@zh ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/George_West%2C_Texas>
+        dbpprop:officialName     "George West, Texas"@en ;
+        dbpprop:populationTotal  "2524"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Evansdale%2C_Iowa>
+        dbpprop:officialName     "Evansdale, Iowa"@en ;
+        dbpprop:populationTotal  "4526"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Spencer%2C_Idaho>
+        dbpprop:officialName     "Spencer, Idaho"@en ;
+        dbpprop:populationTotal  "38"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Alton%2C_Missouri>
+        dbpprop:officialName     "Alton, Missouri"@en ;
+        dbpprop:populationTotal  "668"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Perley%2C_Minnesota>
+        dbpprop:officialName     "Perley, Minnesota"@en ;
+        dbpprop:populationTotal  "121"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Moxee%2C_Washington>
+        dbpprop:officialName     "Moxee, Washington"@en ;
+        dbpprop:populationTotal  "3403"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Providence%2C_Rhode_Island>
+        dbpprop:officialName     "Providence, Rhode Island"@en , "City of Providence"@en , "பிராவிடென்ஸ் நகரம்"@ta , "City of Providence"@fa , "Providence, Rhode Island"@tr ;
+        dbpprop:populationTotal  "171557"^^xsd:int , "175255"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hudson%2C_Iowa>
+        dbpprop:officialName     "Hudson, Iowa"@en ;
+        dbpprop:populationTotal  "2117"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Tinsman%2C_Arkansas>
+        dbpprop:officialName     "Tinsman, Arkansas"@en ;
+        dbpprop:populationTotal  "75"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Manistique%2C_Michigan>
+        dbpprop:officialName     "Manistique, Michigan"@en ;
+        dbpprop:populationTotal  "3583"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bradford%2C_Pennsylvania>
+        dbpprop:officialName     "Bradford, Pennsylvania"@en ;
+        dbpprop:populationTotal  "9175"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Gulfport%2C_Florida>
+        dbpprop:officialName     "Gulfport, Florida"@en ;
+        dbpprop:populationTotal  "12527"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Buffalo%2C_New_York>
+        dbpprop:officialName     "Bufalo"@lv , "Buffalo, Nueva York"@es , "Buffalo"@zh , "பஃபலோ நகரம்"@ta , "City of Buffalo"@fa , "City of Buffalo"@sr ;
+        dbpprop:populationTotal  279.745 , "292648"^^xsd:int , "279745"^^xsd:int , 272.632 , "270 919"@lv , "270919"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Los_Alamitos%2C_California>
+        dbpprop:officialName     "City of Los Alamitos"@en ;
+        dbpprop:populationTotal  "11536"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Glendive%2C_Montana>
+        dbpprop:officialName     "Glendive, Montana"@en ;
+        dbpprop:populationTotal  "4729"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bay_Village%2C_Ohio>
+        dbpprop:officialName     "Bay Village, Ohio"@en ;
+        dbpprop:populationTotal  "16087"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Narka%2C_Kansas>
+        dbpprop:officialName     "Narka, Kansas"@en ;
+        dbpprop:populationTotal  "93"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Long_Pine%2C_Nebraska>
+        dbpprop:officialName     "Long Pine, Nebraska"@en ;
+        dbpprop:populationTotal  "341"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Durant%2C_Mississippi>
+        dbpprop:officialName     "Durant, Mississippi"@en ;
+        dbpprop:populationTotal  "2932"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Indianapolis  dbpprop:officialName
+                "Indiapolisa"@lv , "City of Indianapolis"@en , "City of Indianapolis"@vi , "City of Indianapolis"@fa , "Indianapolisa"@sl , "อินเดียแนโพลิส"@th , "Mesto Indianapolis"@sl , "இண்டியானபொலிஸ் நகரம்"@ta , "Indianapolis, Indiana"@es , "Indianapolis, Indiana"@tr ;
+        dbpprop:populationTotal  "795458"^^xsd:int , "785597"^^xsd:int , "791926"^^xsd:int , "798382"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Normandy_Park%2C_Washington>
+        dbpprop:officialName     "Normandy Park, Washington"@en ;
+        dbpprop:populationTotal  "6392"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/La_Junta%2C_Colorado>
+        dbpprop:officialName     "City of La Junta, Colorado"@en ;
+        dbpprop:populationTotal  "7568"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Crosby%2C_Minnesota>
+        dbpprop:officialName     "Crosby, Minnesota"@en ;
+        dbpprop:populationTotal  "2299"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bremerton%2C_Washington>
+        dbpprop:officialName     "Bremerton, Washington"@en ;
+        dbpprop:populationTotal  "37259"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Blakesburg%2C_Iowa>
+        dbpprop:officialName     "Blakesburg, Iowa"@en ;
+        dbpprop:populationTotal  "374"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Otho%2C_Iowa>
+        dbpprop:officialName     "Otho, Iowa"@en ;
+        dbpprop:populationTotal  "571"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Galesburg%2C_Kansas>
+        dbpprop:officialName     "Galesburg, Kansas"@en ;
+        dbpprop:populationTotal  "150"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lancaster%2C_California>
+        dbpprop:officialName     "City of Lancaster"@en ;
+        dbpprop:populationTotal  "118718"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Shreveport%2C_Louisiana>
+        dbpprop:officialName     "Shreveport"@en , "Shreveport"@es ;
+        dbpprop:populationTotal  "200145"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Meridian%2C_Mississippi>
+        dbpprop:officialName     "Meridian, Mississippi"@en , "Meridian, Mississippi"@es ;
+        dbpprop:populationTotal  "39968"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Baldwyn%2C_Mississippi>
+        dbpprop:officialName     "Baldwyn, Mississippi"@en ;
+        dbpprop:populationTotal  "3321"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Scotts_Mills%2C_Oregon>
+        dbpprop:officialName     "Scotts Mills, Oregon"@en ;
+        dbpprop:populationTotal  "312"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Magnolia%2C_Iowa>
+        dbpprop:officialName     "Magnolia, Iowa"@en ;
+        dbpprop:populationTotal  "200"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Sterling_Heights%2C_Michigan>
+        dbpprop:officialName     "City of Sterling Heights"@en ;
+        dbpprop:populationTotal  "124471"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lebanon%2C_Ohio>
+        dbpprop:officialName     "City of Lebanon, Ohio"@en ;
+        dbpprop:populationTotal  "16962"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Rockmart%2C_Georgia>
+        dbpprop:officialName     "The City of Rockmart"@en ;
+        dbpprop:populationTotal  "3870"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Goessel%2C_Kansas>
+        dbpprop:officialName     "Goessel, Kansas"@en ;
+        dbpprop:populationTotal  "565"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Montrose%2C_South_Dakota>
+        dbpprop:officialName     "Montrose, South Dakota"@en ;
+        dbpprop:populationTotal  "460"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Louisville%2C_Tennessee>
+        dbpprop:officialName     "Louisville, Tennessee"@en ;
+        dbpprop:populationTotal  "2001"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Temple_Terrace%2C_Florida>
+        dbpprop:officialName     "Temple Terrace"@en ;
+        dbpprop:populationTotal  "21694"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fayetteville%2C_Arkansas>
+        dbpprop:officialName     "Fayetteville, Arkansas"@es , "Fayetteville, Arkansas"@vi , "Fayetteville, Arkansas"@en , "Fayetteville, Arkansas"@fa ;
+        dbpprop:populationTotal  "73372"^^xsd:int , "68726"^^xsd:int , "58047"^^xsd:int , 72.208 ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lockridge%2C_Iowa>
+        dbpprop:officialName     "Lockridge, Iowa"@en ;
+        dbpprop:populationTotal  "275"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Oldtown%2C_Idaho>
+        dbpprop:officialName     "Oldtown, Idaho"@en ;
+        dbpprop:populationTotal  "190"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Elko_New_Market%2C_Minnesota>
+        dbpprop:officialName     "Elko New Market, Minnesota"@en ;
+        dbpprop:populationTotal  "1818"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Ann_Arbor%2C_Michigan>
+        dbpprop:officialName     "Ann Arbor, Michigan"@tr , "City of Ann Arbor"@ms , "ஏன் ஆர்பர்"@ta , "City of Ann Arbor"@en , "AnnārboraCity of Ann Arbor"@lv ;
+        dbpprop:populationTotal  "114024"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Columbia%2C_Mississippi>
+        dbpprop:officialName     "Columbia, Mississippi"@en ;
+        dbpprop:populationTotal  "6603"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Portland%2C_Texas>
+        dbpprop:officialName     "Portland, Texas"@en ;
+        dbpprop:populationTotal  "14827"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fairmont%2C_West_Virginia>
+        dbpprop:officialName     "Fairmont, West Virginia"@en ;
+        dbpprop:populationTotal  "19024"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Seat_Pleasant%2C_Maryland>
+        dbpprop:officialName     "Seat Pleasant, Maryland"@en ;
+        dbpprop:populationTotal  "4885"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Vinita%2C_Oklahoma>
+        dbpprop:officialName     "Vinita, Oklahoma"@en ;
+        dbpprop:populationTotal  "6017"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Harrison%2C_Arkansas>
+        dbpprop:officialName     "Harrison, Arkansas"@es , "Harrison, Arkansas"@en ;
+        dbpprop:populationTotal  "12152"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Ghent%2C_Kentucky>
+        dbpprop:officialName     "Ghent, Kentucky"@en ;
+        dbpprop:populationTotal  "371"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Eureka_Springs%2C_Arkansas>
+        dbpprop:officialName     "Eureka Springs, Arkansas"@es , "Eureka Springs, Arkansas"@en ;
+        dbpprop:populationTotal  "2278"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Easton%2C_Missouri>
+        dbpprop:officialName     "Easton, Missouri"@en ;
+        dbpprop:populationTotal  "258"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Shasta_Lake%2C_California>
+        dbpprop:officialName     "City of Shasta Lake"@en ;
+        dbpprop:populationTotal  "10293"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Memphis%2C_Tennessee>
+        dbpprop:officialName     "City of Memphis, Tennessee"@zh , "เมมฟิส"@th , "City of Memphis"@vi , "City of Memphis"@fa , "Memphisa"@sl , "மெம்ஃபிஸ் நகரம்"@ta , "Mesto Memphis"@sl , "Memphis, Tennessee"@tr , "Memphis, Tennessee"@es ;
+        dbpprop:populationTotal  "669651"^^xsd:int , "680768"^^xsd:int , "670902"^^xsd:int , "674028"^^xsd:int , "870902"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Wheeling%2C_Missouri>
+        dbpprop:officialName     "Wheeling, Missouri"@en ;
+        dbpprop:populationTotal  "268"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Stuart%2C_Florida>
+        dbpprop:officialName     "Stuart, Florida"@en ;
+        dbpprop:populationTotal  "14633"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hayward%2C_Minnesota>
+        dbpprop:officialName     "Hayward, Minnesota"@en ;
+        dbpprop:populationTotal  "249"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hawkinsville%2C_Georgia>
+        dbpprop:officialName     "Hawkinsville, Georgia"@en ;
+        dbpprop:populationTotal  "3280"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+dbpedia:Cleveland  dbpprop:officialName
+                "City of Cleveland"@en , "City of Cleveland"@fa , "கிளீவ்லண்ட் நகரம்"@ta , "คลีฟแลนด์"@th , "Cleveland, Ohio"@in , "Cleveland, Ohio"@ca , "Cleveland, Ohio"@es ;
+        dbpprop:populationTotal  "433748"^^xsd:int , "478403"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mitchellville%2C_Arkansas>
+        dbpprop:officialName     "Mitchellville, Arkansas"@en ;
+        dbpprop:populationTotal  "497"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Alexander%2C_Kansas>
+        dbpprop:officialName     "Alexander, Kansas"@en ;
+        dbpprop:populationTotal  "75"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Greer%2C_South_Carolina>
+        dbpprop:officialName     "Greer, South Carolina"@en ;
+        dbpprop:populationTotal  "16843"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Mentor%2C_Ohio>
+        dbpprop:officialName     "Mentor, Ohio"@en ;
+        dbpprop:populationTotal  "50278"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Neptune_Beach%2C_Florida>
+        dbpprop:officialName     "Neptune Beach, Florida"@en ;
+        dbpprop:populationTotal  "7270"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lone_Tree%2C_Colorado>
+        dbpprop:officialName     "City of Lone Tree, Colorado"@en ;
+        dbpprop:populationTotal  "4873"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dover%2C_Minnesota>
+        dbpprop:officialName     "Dover, Minnesota"@en ;
+        dbpprop:populationTotal  "438"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Norcross%2C_Georgia>
+        dbpprop:officialName     "Norcross, Georgia"@en ;
+        dbpprop:populationTotal  "8410"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Iron_Mountain_Lake%2C_Missouri>
+        dbpprop:officialName     "Iron Mountain Lake, Missouri"@en ;
+        dbpprop:populationTotal  "693"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Live_Oak%2C_Sutter_County%2C_California>
+        dbpprop:officialName     "City of Live Oak"@en ;
+        dbpprop:populationTotal  "8245"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Oakville%2C_Washington>
+        dbpprop:officialName     "Oakville, Washington"@en ;
+        dbpprop:populationTotal  "675"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Alberta%2C_Minnesota>
+        dbpprop:officialName     "Alberta, Minnesota"@en ;
+        dbpprop:populationTotal  "142"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/North_Las_Vegas%2C_Nevada>
+        dbpprop:officialName     "Thành phố Bắc Las Vegas, Nevada"@vi , "North Las Vegas, Nevada"@es , "City of North Las Vegas"@en , "Kota North Las Vegas, Nevada"@in ;
+        dbpprop:populationTotal  "215026"^^xsd:int , "217253"^^xsd:int , "197567"^^xsd:int , 197.597 ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Osceola%2C_Iowa>
+        dbpprop:officialName     "Osceola, Iowa"@en ;
+        dbpprop:populationTotal  "4659"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Reile%27s_Acres%2C_North_Dakota>
+        dbpprop:officialName     "Reile's Acres, North Dakota"@en ;
+        dbpprop:populationTotal  "254"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Belington%2C_West_Virginia>
+        dbpprop:officialName     "Belington, West Virginia"@en ;
+        dbpprop:populationTotal  "1788"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Compton%2C_California>
+        dbpprop:officialName     "Compton, California"@es , "City of Compton"@en ;
+        dbpprop:populationTotal  "93493"^^xsd:int , "94425"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Malvern%2C_Arkansas>
+        dbpprop:officialName     "Malvern, Arkansas"@en ;
+        dbpprop:populationTotal  "9021"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/East_Lansing%2C_Michigan>
+        dbpprop:officialName     "East Lansing, Michigan"@en ;
+        dbpprop:populationTotal  "46525"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bangor%2C_Michigan>
+        dbpprop:officialName     "Bangor, Michigan"@en ;
+        dbpprop:populationTotal  "1933"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Clarkston%2C_Georgia>
+        dbpprop:officialName     "Clarkston, Georgia"@en ;
+        dbpprop:populationTotal  "7231"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Franklin%2C_Ohio>
+        dbpprop:officialName     "Franklin, Ohio"@en ;
+        dbpprop:populationTotal  "11396"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Jenkins%2C_Minnesota>
+        dbpprop:officialName     "Jenkins, Minnesota"@en ;
+        dbpprop:populationTotal  "287"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Abbeville%2C_South_Carolina>
+        dbpprop:officialName     "Abbeville, South Carolina"@en ;
+        dbpprop:populationTotal  "5840"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Clatskanie%2C_Oregon>
+        dbpprop:officialName     "Clatskanie, Oregon"@en ;
+        dbpprop:populationTotal  "1710"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Owatonna%2C_Minnesota>
+        dbpprop:officialName     "Owatonna, Minnesota"@en ;
+        dbpprop:populationTotal  "24533"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Crestwood%2C_Kentucky>
+        dbpprop:officialName     "Crestwood, Kentucky"@en ;
+        dbpprop:populationTotal  "1999"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Heber_City%2C_Utah>
+        dbpprop:officialName     "Heber City, Utah"@en ;
+        dbpprop:populationTotal  "9715"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fallon%2C_Nevada>
+        dbpprop:officialName     "Fallon, Nevada"@en ;
+        dbpprop:populationTotal  "7536"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Medford%2C_Massachusetts>
+        dbpprop:officialName     "Medford, Massachusetts"@en ;
+        dbpprop:populationTotal  "55565"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Leland%2C_Mississippi>
+        dbpprop:officialName     "Leland, Mississippi"@en ;
+        dbpprop:populationTotal  "5502"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Webster%2C_South_Dakota>
+        dbpprop:officialName     "Webster, South Dakota"@en ;
+        dbpprop:populationTotal  "1952"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dixon%2C_California>
+        dbpprop:officialName     "City of Dixon"@en ;
+        dbpprop:populationTotal  "16103"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fillmore%2C_Utah>
+        dbpprop:officialName     "Fillmore, Utah"@en ;
+        dbpprop:populationTotal  "2253"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Littleton%2C_Colorado>
+        dbpprop:officialName     "City of Littleton, Colorado"@en ;
+        dbpprop:populationTotal  "40340"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Pensacola%2C_Florida>
+        dbpprop:officialName     "City of Pensacola"@es , "Pensacola, Florida"@en , "City of Pensacola"@zh , "City of Pensacola"@ca ;
+        dbpprop:populationTotal  "54 283"@lv , "53248"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Stanberry%2C_Missouri>
+        dbpprop:officialName     "Stanberry, Missouri"@en ;
+        dbpprop:populationTotal  "1243"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Garland%2C_Utah>
+        dbpprop:officialName     "Garland, Utah"@en ;
+        dbpprop:populationTotal  "6000"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cedartown%2C_Georgia>
+        dbpprop:officialName     "Cedartown, Georgia"@en ;
+        dbpprop:populationTotal  "9470"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/New_Rochelle%2C_New_York>
+        dbpprop:officialName     "New Rochelle, New York"@en ;
+        dbpprop:populationTotal  "72182"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Phenix_City%2C_Alabama>
+        dbpprop:officialName     "Phenix City, Alabama"@en , "Phenix City"@en ;
+        dbpprop:populationTotal  "30067"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Enterprise%2C_Oregon>
+        dbpprop:officialName     "Enterprise, Oregon"@vi , "Enterprise, Oregon"@en ;
+        dbpprop:populationTotal  "1895"^^xsd:int , "1940"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fenton%2C_Michigan>
+        dbpprop:officialName     "City of Fenton"@en ;
+        dbpprop:populationTotal  "10582"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Belmont%2C_West_Virginia>
+        dbpprop:officialName     "Belmont, West Virginia"@en ;
+        dbpprop:populationTotal  "1036"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Poulan%2C_Georgia>
+        dbpprop:officialName     "Poulan, Georgia"@en ;
+        dbpprop:populationTotal  "946"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fort_Benton%2C_Montana>
+        dbpprop:officialName     "Fort Benton, Montana"@en ;
+        dbpprop:populationTotal  "1594"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Eagle_Grove%2C_Iowa>
+        dbpprop:officialName     "Eagle Grove, Iowa"@en ;
+        dbpprop:populationTotal  "3712"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Rockville%2C_Maryland>
+        dbpprop:officialName     "Rockville, Maryland"@en ;
+        dbpprop:populationTotal  "58706"^^xsd:int , "52375"^^xsd:int , "60734"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Greenville%2C_Mississippi>
+        dbpprop:officialName     "Greenville, Mississippi"@en ;
+        dbpprop:populationTotal  "35764"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Eloy%2C_Arizona>
+        dbpprop:officialName     "City of Eloy, Arizona"@en ;
+        dbpprop:populationTotal  "11896"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cotulla%2C_Texas>
+        dbpprop:officialName     "Cotulla, Texas"@en ;
+        dbpprop:populationTotal  "3614"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Iredell%2C_Texas>
+        dbpprop:officialName     "Iredell, Texas"@en ;
+        dbpprop:populationTotal  "360"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Hugoton%2C_Kansas>
+        dbpprop:officialName     "Hugoton, Kansas"@en ;
+        dbpprop:populationTotal  "3708"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Reklaw%2C_Texas>
+        dbpprop:officialName     "Reklaw, Texas"@en ;
+        dbpprop:populationTotal  "327"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Claude%2C_Texas>
+        dbpprop:officialName     "Claude, Texas"@en ;
+        dbpprop:populationTotal  "1313"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dwight%2C_Kansas>
+        dbpprop:officialName     "Dwight, Kansas"@en ;
+        dbpprop:populationTotal  "330"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Jordan_Valley%2C_Oregon>
+        dbpprop:officialName     "Jordan Valley, Oregon"@en ;
+        dbpprop:populationTotal  "239"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Weslaco%2C_Texas>
+        dbpprop:officialName     "Weslaco, Texas"@en ;
+        dbpprop:populationTotal  "26935"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Dearing%2C_Kansas>
+        dbpprop:officialName     "Dearing, Kansas"@en ;
+        dbpprop:populationTotal  "415"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Auxvasse%2C_Missouri>
+        dbpprop:officialName     "Auxvasse, Missouri"@en ;
+        dbpprop:populationTotal  "901"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Decatur_City%2C_Iowa>
+        dbpprop:officialName     "Decatur City, Iowa"@en ;
+        dbpprop:populationTotal  "199"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Heyburn%2C_Idaho>
+        dbpprop:officialName     "Heyburn, Idaho"@en ;
+        dbpprop:populationTotal  "2899"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Brookfield%2C_Missouri>
+        dbpprop:officialName     "Brookfield, Missouri"@en ;
+        dbpprop:populationTotal  "4769"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Wilton%2C_Minnesota>
+        dbpprop:officialName     "Wilton, Minnesota"@en ;
+        dbpprop:populationTotal  "186"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Farmington%2C_New_Mexico>
+        dbpprop:officialName     "The City of Farmington"@en ;
+        dbpprop:populationTotal  "43573"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Ten_Broeck%2C_Kentucky>
+        dbpprop:officialName     "Ten Broeck, Kentucky"@en ;
+        dbpprop:populationTotal  "129"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Lindsay%2C_California>
+        dbpprop:officialName     "City of Lindsay"@en ;
+        dbpprop:populationTotal  "10297"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Bountiful%2C_Utah>
+        dbpprop:officialName     "Bountiful, Utah"@en ;
+        dbpprop:populationTotal  "41301"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Fullerton%2C_California>
+        dbpprop:officialName     "City of Fullerton, California"@es , "City of Fullerton"@en ;
+        dbpprop:populationTotal  "126003"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cotton_Plant%2C_Arkansas>
+        dbpprop:officialName     "Cotton Plant, Arkansas"@en , "Cotton Plant, Arkansas"@es ;
+        dbpprop:populationTotal  "960"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Enid%2C_Oklahoma>
+        dbpprop:officialName     "Enid"@en ;
+        dbpprop:populationTotal  "47045"^^xsd:int , "46436"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/East_Palo_Alto%2C_California>
+        dbpprop:officialName     "Ciudad de East Palo Alto, California"@es , "City of East Palo Alto"@en ;
+        dbpprop:populationTotal  "30506"^^xsd:int , "31915"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Cudahy%2C_Wisconsin>
+        dbpprop:officialName     "Cudahy, Wisconsin"@en ;
+        dbpprop:populationTotal  "18429"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Boxholm%2C_Iowa>
+        dbpprop:officialName     "Boxholm, Iowa"@en ;
+        dbpprop:populationTotal  "215"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Saint_Paul%2C_Minnesota>
+        dbpprop:officialName     "เซนต์พอล"@th , "City of Saint Paul"@fa , "City of Saint Paul"@en , "City of Saint Paul"@zh , "Saint Paul, Minnesota"@en , "St. Paul, Minnesota"@tr , "செயின்ட் பால் நகரம்"@ta , "सेंट पॉल शहर"@hi ;
+        dbpprop:officialName     <http://dbpedia.org/resource/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Stpaul-logo.png> , dbpedia:Stpaul-logo.svg ;
+        dbpprop:populationTotal  287.151 , "287151"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Canton%2C_Mississippi>
+        dbpprop:officialName     "Canton, Mississippi"@en ;
+        dbpprop:populationTotal  "12911"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .
+
+<http://dbpedia.org/resource/Maple_Lake%2C_Minnesota>
+        dbpprop:officialName     "Maple Lake, Minnesota"@en ;
+        dbpprop:populationTotal  "1633"^^xsd:int ;
+        dbpprop:settlementType   dbpedia:City .

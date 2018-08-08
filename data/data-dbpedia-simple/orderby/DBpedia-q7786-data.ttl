@@ -1,0 +1,844 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Adolf_von_Baeyer
+        dbpprop:dateOfBirth   "1835-10-31"^^xsd:date ;
+        dbpprop:name          "Baeyer, Adolf von"@en , "Baeyer, Adolf von"@de , "Adolf von Baeyer"@en , "Adolf von Baeyer"@in ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Kurt_Tucholsky
+        dbpprop:dateOfBirth   "1890-01-09"^^xsd:date ;
+        dbpprop:name          "Tucholsky, Kurt"@en , "Tucholsky, Kurt"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Klaus_Voormann
+        dbpprop:dateOfBirth   "1938-04-29"^^xsd:date ;
+        dbpprop:name          "קלאוס פורמן"@iw , "Voormann, Klaus"@de , "-->, Klaus Voormann"@en , "Klaus Voormann"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Prince_Louis_Charles_of_Prussia
+        dbpprop:dateOfBirth   "1773-11-05"^^xsd:date ;
+        dbpprop:name          "Preußen, Louis von"@de , "Louis Charles of Prussia"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ellen_Franz  dbpprop:dateOfBirth
+                "1839-05-30"^^xsd:date ;
+        dbpprop:name          "Helene"@en , "Franz, Ellen"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Martin_Liebers
+        dbpprop:dateOfBirth   "1985-06-22"^^xsd:date ;
+        dbpprop:name          "Liebers Martin"@en , "Liebers, Martin"@de , "Nicole Gurny & Martin Liebers"@en , "Martin Liebers"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Mike_Kluge  dbpprop:dateOfBirth
+                "1962-09-25"^^xsd:date ;
+        dbpprop:name          "Kluge, Mike"@de , "Kluge, Mike"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Katarina_Witt
+        dbpprop:dateOfBirth   "1965-12-03"^^xsd:date ;
+        dbpprop:name          "Witt, Katarina"@de , "Катарина Вит"@bg , "Katarina Witt"@tr , "Katarina Witt"@es , "Katarina Witt"@en , "Witt, Katarina"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Frederick_II_of_Prussia
+        dbpprop:dateOfBirth   "1712-01-24"^^xsd:date ;
+        dbpprop:name          "Frederick II of Prussia"@en , "Frederick II"@en , "Friedrich II."@de , "Friedrich II"@vi ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Alexander_Engel
+        dbpprop:dateOfBirth   "1902-06-04"^^xsd:date ;
+        dbpprop:name          "Engel, Alexander"@de , "Engel, Alexander"@en , "Alexander Engel"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Princess_Alexandrine_of_Prussia
+        dbpprop:dateOfBirth   "1803-02-23"^^xsd:date ;
+        dbpprop:name          "Princess Alexandrine of Prussia"@en , "Alexandrine von Preußen"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Otto_von_der_Gablentz
+        dbpprop:dateOfBirth   "1930-10-09"^^xsd:date ;
+        dbpprop:name          "Gablentz, Otto Martin von der"@de , "Gablentz, Otto Martin von der"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Siegfried_Lowitz
+        dbpprop:dateOfBirth   "1914-09-22"^^xsd:date ;
+        dbpprop:name          "Siegfried Lowitz"@de , "Siegfried Lowitz"@fi , "Lowitz, Siegfried"@de , "Siegfried Lowitz"@en , "Lowitz, Siegfried"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/K%C3%A4the_Haack>
+        dbpprop:dateOfBirth   "1897-08-11"^^xsd:date ;
+        dbpprop:name          "Haack, Käthe"@en , "Käthe Haack"@en , "Käte Haack"@de , "Käthe Haack"@de , "Haack, Käthe"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/G%C3%BCnter_Pfitzmann>
+        dbpprop:dateOfBirth   "1924-04-08"^^xsd:date ;
+        dbpprop:name          "Günter Pfitzmann"@en , "Günter Pfitzmann"@de , "Pfitzmann, Günter"@en , "Pfitzmann, Günter"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Karl-Hermann_Knoblauch
+        dbpprop:dateOfBirth   "1820-04-11"^^xsd:date ;
+        dbpprop:name          "Knoblauch, Hermann"@de , "Knoblauch, Karl Hermann"@en , "Karl Hermann Knoblauch\nImage:Hermann Knoblauch(1820-1895).jpg"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Karin_Baal  dbpprop:dateOfBirth
+                "1940-09-19"^^xsd:date ;
+        dbpprop:name          "Baal, Karin"@en , "Karin Baal"@en , "Baal, Karin"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Constantin_Carath%C3%A9odory>
+        dbpprop:dateOfBirth   "1873-09-13"^^xsd:date ;
+        dbpprop:name          "Constantin Carathéodory"@en , "Carathéodory, Constantin"@en , "Carathéodory, Constantin"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Henry_H._Barschall
+        dbpprop:dateOfBirth   "1915-04-29"^^xsd:date ;
+        dbpprop:name          "Barschall, Henry Herman"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Michael_Mietke
+        dbpprop:dateOfBirth   "c.1656-1671"@en ;
+        dbpprop:name          "Mietke, Michael"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Bj%C3%B6rn_Schr%C3%B6der>
+        dbpprop:dateOfBirth   "1980-10-27"^^xsd:date ;
+        dbpprop:name          "Schröder, Björn"@en , "Schröder, Björn"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Hansj%C3%B6rg_Felmy>
+        dbpprop:dateOfBirth   "1931-01-31"^^xsd:date ;
+        dbpprop:name          "Hansjörg Felmy"@en , "Hansjörg Felmy"@de , "Felmy, Hansjörg"@de , "Felmy, Hansjörg"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Paul_Otto  dbpprop:dateOfBirth  "1878-02-08"^^xsd:date ;
+        dbpprop:name          "Paul Otto"@de , "Paul Otto"@en , "Otto, Paul"@en , "Otto, Paul"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ferid_Heider  dbpprop:dateOfBirth
+                "1979"^^xsd:int ;
+        dbpprop:name          "Heider, Ferid"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Peter_Schamoni
+        dbpprop:dateOfBirth   "1934-03-27"^^xsd:date ;
+        dbpprop:name          "Schamoni, Peter"@de , "Peter Schamoni"@en , "Peter Schamoni"@eo , "Schamoni, Peter"@en , "Peter Schamoni"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Fay_Godwin  dbpprop:dateOfBirth
+                "1931-02-17"^^xsd:date ;
+        dbpprop:name          "Godwin, Fay"@en , "Fay Godwin"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Johanna_Schall
+        dbpprop:dateOfBirth   "1958-09-19"^^xsd:date ;
+        dbpprop:name          "Schall, Johanna"@de , "Schall, Johanna"@en , "Johanna Schall"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ernst_Reicher
+        dbpprop:dateOfBirth   "1885-09-19"^^xsd:date ;
+        dbpprop:name          "Reicher, Ernst"@de , "Reicher, Ernst"@en , "Ernst Reicher"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Adelheid_Seeck
+        dbpprop:dateOfBirth   "1912-11-03"^^xsd:date ;
+        dbpprop:name          "Adelheid Seeck"@en , "Seeck, Adelheid"@de , "Seeck, Adelheid"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Prince_Heinrich_of_Prussia
+        dbpprop:dateOfBirth   "1862-08-14"^^xsd:date ;
+        dbpprop:name          "Prince Heinrich"@en , "Preußen, Heinrich von"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Charlotte_Frederica_of_Prussia
+        dbpprop:dateOfBirth   "1831-06-21"^^xsd:date ;
+        dbpprop:name          "Preußen, Charlotte von"@de , "Charlotte Frederica of Prussia"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Torsten_Hiekmann
+        dbpprop:dateOfBirth   "1980-03-17"^^xsd:date ;
+        dbpprop:name          "Hiekmann, Torsten"@de , "Hiekmann, Torsten"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Jan_Jagla  dbpprop:dateOfBirth  "1981-06-25"^^xsd:date ;
+        dbpprop:name          "Jagla, Jan-Hendrik"@de , "Jan-Hendrik Jagla"@en , "Jagla, Jan"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Leopold_Andrian
+        dbpprop:dateOfBirth   "1875-05-09"^^xsd:date ;
+        dbpprop:name          "Andrian, Leopold"@en , "Andrian, Leopold"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Princess_Philippine_Charlotte_of_Prussia
+        dbpprop:dateOfBirth   "1716-03-13"^^xsd:date ;
+        dbpprop:name          "Philippine Charlotte von Preußen"@de , "Philippine Charlotte of Prussia"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Lennart_Hartmann
+        dbpprop:dateOfBirth   "1991-04-03"^^xsd:date ;
+        dbpprop:name          "Hartmann, Lennart"@en , "Hartmann, Lennart"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Christian_Wolff_%28actor%29>
+        dbpprop:dateOfBirth   "1938-03-11"^^xsd:date ;
+        dbpprop:name          "Christian Wolff"@en , "Wolff, Christian"@en , "Wolff, Christian"@de , "Christian Wolff"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Evelyn_Hecht-Galinski
+        dbpprop:dateOfBirth   "1949"^^xsd:int ;
+        dbpprop:name          "Hecht-Galinski, Evelyn"@de , "Hecht-Galinski, Evelyn"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Eduard_Knoblauch
+        dbpprop:dateOfBirth   "1801-09-25"^^xsd:date ;
+        dbpprop:name          "Knoblauch,  Eduard Knoblauch"@en , "Knoblauch, Eduard"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Erich_H%C3%BCckel>
+        dbpprop:dateOfBirth   "1896-08-09"^^xsd:date ;
+        dbpprop:name          "Hückel, Erich Armand Arthur Joseph"@en , "Hückel, Erich"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Nastassja_Kinski
+        dbpprop:dateOfBirth   "1961-01-24"^^xsd:date ;
+        dbpprop:name          "Настася Кински"@bg , "נסטסיה קינסקי"@iw , "Kinski, Nastassja"@de , "Kinski, Nastassja"@en , "Nastassja Kinski"@en , "Nastassja Kinski"@zh , "Nastassja Kinski"@de , "Настасья Кински"@ru , "娜妲莎·金斯基"@zh ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Betty_Schade  dbpprop:dateOfBirth
+                "1894-11-22"^^xsd:date ;
+        dbpprop:name          "Schade, Betty"@en , "Betty Schade"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Hannelore_Kohl
+        dbpprop:dateOfBirth   "1933-03-07"^^xsd:date ;
+        dbpprop:name          "Kohl, Hannelore"@de , "Kohl, Hannelore"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Timo_Stein  dbpprop:dateOfBirth
+                "1990"^^xsd:int ;
+        dbpprop:name          "Stein, Timo"@en , "Timo Alexander Stein"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Rudolf_Bredow
+        dbpprop:dateOfBirth   "1909-11-02"^^xsd:date ;
+        dbpprop:name          "Bredow, Rudolf"@de , "Bredow, Rudolf"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Monika_Kruse  dbpprop:dateOfBirth
+                "July, 1971"@en ;
+        dbpprop:name          "Monika Kruse"@en , "Kruse, Monika"@de , "Kruse, Monika"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Max_Davidson  dbpprop:dateOfBirth
+                "1875-05-23"^^xsd:date ;
+        dbpprop:name          "Davidson, Max"@en , "Max Davidson"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Burghart_Klau%C3%9Fner>
+        dbpprop:dateOfBirth   "1949-09-13"^^xsd:date ;
+        dbpprop:name          "Burghart Klaußner"@en , "Klaußner, Burghart"@en , "Burghart Klaußner"@de , "Klaußner, Burghart"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Princess_Frederica_Wilhelmina_of_Prussia
+        dbpprop:dateOfBirth   "1796-09-30"^^xsd:date ;
+        dbpprop:name          "Frederica Wilhelmina of Prussia"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Heinz_Berggruen
+        dbpprop:dateOfBirth   "1914-01-05"^^xsd:date ;
+        dbpprop:name          "Berggruen, Heinz"@de , "Berggruen, Heinz"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Paul_Bildt  dbpprop:dateOfBirth
+                "1885-05-19"^^xsd:date ;
+        dbpprop:name          "Paul Bildt"@en , "Bildt, Paul"@en , "Bildt, Paul"@de , "Paul Bildt"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Luigi_Bonos  dbpprop:dateOfBirth
+                "1910"^^xsd:int ;
+        dbpprop:name          "Luigi Bonos"@en , "Bonos, Luigi"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Lucie_Mannheim
+        dbpprop:dateOfBirth   "1899-04-30"^^xsd:date ;
+        dbpprop:name          "Mannheim, Lucie"@en , "Mannheim, Lucie"@de , "Lucie Mannheim"@de , "Lucie Mannheim"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Fritz_Bornemann
+        dbpprop:dateOfBirth   "1912-02-12"^^xsd:date ;
+        dbpprop:name          "Bornemann, Fritz"@en , "Bornemann, Fritz"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Prince_Albert_of_Prussia_%281837%E2%80%931906%29>
+        dbpprop:dateOfBirth   "1837-05-08"^^xsd:date ;
+        dbpprop:name          "Preußen, Albrecht von"@de , "Prince Albert"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Thomas_Emmrich
+        dbpprop:dateOfBirth   "1953-07-21"^^xsd:date ;
+        dbpprop:name          "Emmrich, Thomas"@de , "Emmrich, Thomas"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Heinz_Franke  dbpprop:dateOfBirth
+                "1915-11-30"^^xsd:date ;
+        dbpprop:name          "Heinz Franke"@en , "Franke, Heinz"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ferdinand_Eisenstein
+        dbpprop:dateOfBirth   "1823-04-16"^^xsd:date ;
+        dbpprop:name          "Eisenstein, Ferdinand"@en , "Ferdinand Eisenstein"@en , "Eisenstein, Ferdinand"@de , "Ferdinand Eisenstein"@ja ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Tanja_Kolbe  dbpprop:dateOfBirth
+                "1990-09-07"^^xsd:date ;
+        dbpprop:name          "Tanja Kolbe"@de , "Kolbe, Tanja"@en , "Kolbe &  Rabe"@en , "Kolbe, Tanja"@de , "Kolbe & Boll"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Heinrich_Roller
+        dbpprop:dateOfBirth   "1839-03-10"^^xsd:date ;
+        dbpprop:name          "Roller, Heinrich"@en , "Heinrich Roller"@en , "Roller, Heinrich"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Hermann_Buse  dbpprop:dateOfBirth
+                "1907-02-27"^^xsd:date ;
+        dbpprop:name          "Buse, Hermann"@de , "Buse, Hermann"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Max_Delbr%C3%BCck>
+        dbpprop:dateOfBirth   "1906-09-04"^^xsd:date ;
+        dbpprop:name          "Delbrück, Max"@en , "Delbrück, Max"@de , "Max Delbrück"@en , "ম্যাক্স ডেলবুর্ক"@bn , "馬克斯·德爾布呂克"@zh ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Rainer_Brandt
+        dbpprop:dateOfBirth   "1936-01-19"^^xsd:date ;
+        dbpprop:name          "Brandt, Rainer"@en , "Brandt, Rainer"@de , "Rainer Brandt"@de , "Rainer Brandt"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Max_Schreck  dbpprop:dateOfBirth
+                "1879-09-06"^^xsd:date ;
+        dbpprop:name          "Max Schreck"@en , "Max Shreck"@es , "Max Schreck"@de , "Schreck, Max"@en , "Schreck, Max"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Manfred_Durniok
+        dbpprop:dateOfBirth   "1934-05-02"^^xsd:date ;
+        dbpprop:name          "Durniok, Manfred"@en , "Manfred Durniok"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Murat_Tosun  dbpprop:dateOfBirth
+                "1984-02-26"^^xsd:date ;
+        dbpprop:name          "Tosun, Murat"@de , "Tosun, Murat"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Wilhelm_I%2C_German_Emperor>
+        dbpprop:dateOfBirth   "1797-03-22"^^xsd:date ;
+        dbpprop:dateOfBirth   <http://dbpedia.org/resource/22_th%C3%A1ng_3> , dbpedia:1797 ;
+        dbpprop:name          "Wilhelm I"@vi , "William I"@en , "Wilhelm I."@de , "Wilhelm I"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Jack_Trevor  dbpprop:dateOfBirth
+                "1890-12-14"^^xsd:date ;
+        dbpprop:name          "Jack Trevor"@de , "Trevor, Jack"@de , "Jack Trevor"@en , "Trevor, Jack"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Carl_Froelich
+        dbpprop:dateOfBirth   "1875-09-05"^^xsd:date ;
+        dbpprop:name          "Froelich, Carl"@de , "Froelich, Carl"@en , "Carl Froelich"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Johanna_von_Koczian
+        dbpprop:dateOfBirth   "1933-10-30"^^xsd:date ;
+        dbpprop:name          "Johanna von Koczian"@de , "Koczian, Johanna von"@de , "Johanna von Koczian"@en , "Koczian, Johanna von"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Dora_Gerson  dbpprop:dateOfBirth
+                "1899-03-23"^^xsd:date ;
+        dbpprop:name          "Dora Gerson"@de , "Gerson, Dora"@de , "דורה גרשון"@iw , "Gerson, Dora"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Konrad_Zuse  dbpprop:dateOfBirth
+                "1910-06-22"^^xsd:date ;
+        dbpprop:name          "Zuse, Konrad"@en , "Konrad Zuse"@ml , "Konrad Zuse"@en , "Zuse, Konrad"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Trude_Hesterberg
+        dbpprop:dateOfBirth   "1897-05-02"^^xsd:date ;
+        dbpprop:name          "Hesterberg, Trude"@en , "Trude Hesterberg"@en , "Trude Hesterberg"@de , "Hesterberg, Trude"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Christian_Ziege
+        dbpprop:dateOfBirth   "1972-02-01"^^xsd:date ;
+        dbpprop:name          "Christian Ziege"@en , "Ziege, Christian"@en , "Ziege, Christian"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Reinhard_Kolldehoff
+        dbpprop:dateOfBirth   "1914-04-29"^^xsd:date ;
+        dbpprop:name          "Reinhard Kolldehoff"@en , "Kolldehoff, Reinhard"@de , "Kolldehoff, Reinhard"@en , "Reinhard Kolldehoff"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Kurt_Maetzig  dbpprop:dateOfBirth
+                "1911-01-25"^^xsd:date ;
+        dbpprop:name          "Kurt Maetzig"@en , "Maetzig, Kurt"@de , "Maetzig, Kurt"@en , "Kurt Maetzig"@nn , "Kurt Maetzig"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Helmut_Hauptmann
+        dbpprop:dateOfBirth   "1928-03-12"^^xsd:date ;
+        dbpprop:name          "Hauptmann, Helmut"@de , "Hauptmann, Helmut"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Robert_Ren%C3%A9_Kuczynski>
+        dbpprop:dateOfBirth   "1876"^^xsd:int ;
+        dbpprop:name          "Kuczynski, Robert René"@en , "Kuczynski, Robert René"@de , "Robert René Kuczynski"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Julius_Falkenstein
+        dbpprop:dateOfBirth   "1879-02-25"^^xsd:date ;
+        dbpprop:name          "Julius Falkenstein"@en , "Julius Falkenstein"@de , "Falkenstein, Julius"@en , "Falkenstein, Julius"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Vera_Tschechowa
+        dbpprop:dateOfBirth   "1940-07-22"^^xsd:date ;
+        dbpprop:name          "Tschechowa, Vera"@en , "Tschechowa, Vera"@de , "Vera Tschechowa"@de , "Vera Tschechowa"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Sascha_Bigalke
+        dbpprop:dateOfBirth   "1990-01-08"^^xsd:date ;
+        dbpprop:name          "Bigalke, Sascha"@en , "Bigalke, Sascha"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Prince_Waldemar_of_Prussia_%281868%E2%80%931879%29>
+        dbpprop:dateOfBirth   "1868-02-10"^^xsd:date ;
+        dbpprop:name          "Prince Waldemar"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Heinrich_Gustav_Magnus
+        dbpprop:dateOfBirth   "1802-05-02"^^xsd:date ;
+        dbpprop:name          "Gustav Magnus"@en , "Magnus, Heinrich Gustav"@en , "Magnus, Heinrich Gustav"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Harald_Braun  dbpprop:dateOfBirth
+                "1901-04-26"^^xsd:date ;
+        dbpprop:name          "Harald Braun"@en , "Harald Braun"@de , "Braun, Harald"@de , "Braun, Harald"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Natascha_Engel
+        dbpprop:dateOfBirth   "1967-04-09"^^xsd:date ;
+        dbpprop:name          "Natascha Engel"@en , "Engel, Natascha"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Wassili_Luckhardt
+        dbpprop:dateOfBirth   "1889-07-22"^^xsd:date ;
+        dbpprop:name          "Luckhardt, Wassili"@de , "Luckhardt, Wassili"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Arthur_Wellin
+        dbpprop:dateOfBirth   "1880-10-31"^^xsd:date ;
+        dbpprop:name          "Wellin, Arthur"@en , "Arthur Wellin"@en , "Wellin, Arthur"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Werner_Hinz  dbpprop:dateOfBirth
+                "1903-01-18"^^xsd:date ;
+        dbpprop:name          "Werner Hinz"@de , "Werner Hinz"@en , "Hinz, Werner"@en , "Hinz, Werner"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Christine_Errath
+        dbpprop:dateOfBirth   "1956-12-29"^^xsd:date ;
+        dbpprop:name          "Errath, Christine"@en , "Errath, Christine"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Uwe_von_Schamann
+        dbpprop:dateOfBirth   "1956-04-23"^^xsd:date ;
+        dbpprop:name          "Uwe von Schamann"@en , "Schamann, Uwe von"@de , "von Schamann, Uwe"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Horst_Wendlandt
+        dbpprop:dateOfBirth   "1922-03-15"^^xsd:date ;
+        dbpprop:name          "Wendlandt, Horst"@en , "Horst Wendlandt"@de , "Horst Wendlandt"@en , "Wendlandt, Horst"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Louise-Rosalie_Lefebvre
+        dbpprop:dateOfBirth   "1755"^^xsd:int ;
+        dbpprop:name          "Lefebvre, Louise-Rosalie"@de , "Lefebvre, Louise-Rosalie"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Isadore_S._Jachman
+        dbpprop:dateOfBirth   "1922-12-14"^^xsd:date ;
+        dbpprop:name          "Jachman, Isadore S."@en , "World War II"@en , "United States Army"@en , "Isadore Seigfreid Jachman"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Erich_Schmidt-Leichner
+        dbpprop:dateOfBirth   "1910-10-14"^^xsd:date ;
+        dbpprop:name          "Schmidt-Leichner, Erich"@de , "Schmidt-Leichner, Erich"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Frederick_William_II_of_Prussia
+        dbpprop:dateOfBirth   "1744-09-25"^^xsd:date ;
+        dbpprop:name          "Frederick William II"@en , "Friedrich Wilhelm II."@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Alfred_Schmidt_%28philosopher%29>
+        dbpprop:dateOfBirth   "1931-05-19"^^xsd:date ;
+        dbpprop:name          "Schmidt, Alfred"@de , "Schmidt, Alfred"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Wolfgang_Reinhardt_%28producer%29>
+        dbpprop:dateOfBirth   "1908-12-13"^^xsd:date ;
+        dbpprop:name          "Reinhardt, Wolfgang"@de , "Wolfgang Reinhardt"@en , "Wolfgang Reinhardt"@de , "Reinhardt, Wolfgang"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Florentine_Lahme
+        dbpprop:dateOfBirth   "1974-07-21"^^xsd:date ;
+        dbpprop:name          "Florentine Lahme"@en , "Lahme, Florentine"@en , "Lahme, Florentine"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Philipp_Veit  dbpprop:dateOfBirth
+                "1793-02-13"^^xsd:date ;
+        dbpprop:name          "Veit, Philipp"@en , "Philipp Veit"@en , "Veit, Philipp"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Wolfgang_Lukschy
+        dbpprop:dateOfBirth   "1905-10-19"^^xsd:date ;
+        dbpprop:name          "Lukschy, Wolfgang"@de , "Wolfgang Lukschy"@en , "Lukschy, Wolfgang"@en , "Wolfgang Lukschy"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ludwig_Rex  dbpprop:dateOfBirth
+                "1888-01-01"^^xsd:date ;
+        dbpprop:name          "Ludwig Rex"@en , "Rex, Ludwig"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Frederick_William_I_of_Prussia
+        dbpprop:dateOfBirth   "1688-08-14"^^xsd:date ;
+        dbpprop:dateOfBirth   dbpedia:1688 , <http://dbpedia.org/resource/Augusztus_14.> ;
+        dbpprop:name          "Frederick William I"@en , "Friedrich Wilhelm I."@de , "I. Frigyes Vilmos"@hu ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Serdar_G%C3%BCne%C5%9F>
+        dbpprop:dateOfBirth   "1987-06-24"^^xsd:date ;
+        dbpprop:name          "Güneş, Serdar"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Erich_Unger  dbpprop:dateOfBirth
+                "1887-10-25"^^xsd:date ;
+        dbpprop:name          "Unger, Erich, Dr"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Harry_Benjamin
+        dbpprop:dateOfBirth   "1885-01-12"^^xsd:date ;
+        dbpprop:name          "Benjamin, Harry"@en , "Benjamin, Harry"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Helga_M._Novak
+        dbpprop:dateOfBirth   "1935-09-08"^^xsd:date ;
+        dbpprop:name          "Novak, Helga M."@en , "Novak, Helga M."@de , "Maria Karlsdottir"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Martin_Gropius
+        dbpprop:dateOfBirth   "1824-08-11"^^xsd:date ;
+        dbpprop:name          "Gropius, Martin"@de , "Gropius, Martin"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Harry_W%C3%BCstenhagen>
+        dbpprop:dateOfBirth   "1928-01-11"^^xsd:date ;
+        dbpprop:name          "Wüstenhagen, Harry"@de , "Wüstenhagen, Harry"@en , "Harry Wüstenhagen"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Johanna_Hofer
+        dbpprop:dateOfBirth   "1896-07-30"^^xsd:date ;
+        dbpprop:name          "Hofer, Johanna"@de , "Johanna Hofer"@fi , "Johanna Hofer"@en , "Hofer, Johanna"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Julius_Klaproth
+        dbpprop:dateOfBirth   "1783-10-11"^^xsd:date ;
+        dbpprop:name          "Klaproth, Julius"@en , "Klaproth, Heinrich Julius"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ludwig_Tieck  dbpprop:dateOfBirth
+                "1773-05-31"^^xsd:date ;
+        dbpprop:name          "Tieck, Ludwig"@de , "Tieck, Ludwig"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Nadja_Auermann
+        dbpprop:dateOfBirth   "1971-03-19"^^xsd:date ;
+        dbpprop:name          "娜嘉·奧爾曼"@zh , "Nadja Auermann"@en , "Auermann, Nadja"@de , "Nadja Auermann"@zh , "Auermann, Nadja"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Prince_Friedrich_Leopold_of_Prussia
+        dbpprop:dateOfBirth   "1865-11-14"^^xsd:date ;
+        dbpprop:name          "Preußen, Friedrich Leopold von"@de , "Friedrich Leopold"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/David_Sch%C3%BCtz>
+        dbpprop:dateOfBirth   "1941-08-05"^^xsd:date ;
+        dbpprop:name          "Schutz, David"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Karl_Oenike  dbpprop:dateOfBirth
+                "1862"^^xsd:int ;
+        dbpprop:name          "Karl Oenike"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Princess_Louise_of_Hesse-Darmstadt_%281757%E2%80%931830%29>
+        dbpprop:dateOfBirth   "1757-01-30"^^xsd:date ;
+        dbpprop:name          "Hessen-Darmstadt, Luise von"@de , "Louisa of Hesse-Darmstadt"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Princess_Marianne_of_the_Netherlands
+        dbpprop:dateOfBirth   "1810-05-09"^^xsd:date ;
+        dbpprop:name          "Princess Marianne"@en , "Oranien-Nassau, Marianne von"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Princess_Anna_Amalia_of_Prussia
+        dbpprop:dateOfBirth   "1723-11-09"^^xsd:date ;
+        dbpprop:name          "Princess Anna Amalia"@en , "Amalie von Preußen"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Alfred_Neumann_%28East_Germany%29>
+        dbpprop:dateOfBirth   "1909-12-15"^^xsd:date ;
+        dbpprop:name          "Neumann, Alfred"@en , "Neumann, Alfred"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Alice_Treff  dbpprop:dateOfBirth
+                "1906-06-04"^^xsd:date ;
+        dbpprop:name          "Alice Treff"@de , "Treff, Alice"@en , "Alice Treff"@en , "Treff, Alice"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Thomas_Elsaesser
+        dbpprop:dateOfBirth   "1943"^^xsd:int ;
+        dbpprop:name          "Elsaesser, Thomas"@de , "Elsaesser, Thomas"@en , "Thomas Elsaesser"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Frederick_William_IV_of_Prussia
+        dbpprop:dateOfBirth   "1795-10-15"^^xsd:date , "1795. október 15."@hu ;
+        dbpprop:name          "Frederick William IV"@en , "Friedrich Wilhelm IV."@de , "IV. Frigyes Vilmos"@hu ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Jorge_Henrique_Papf
+        dbpprop:dateOfBirth   "1863"^^xsd:int ;
+        dbpprop:name          "Papf, Jorge Henrique"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Gerhard_Lamprecht
+        dbpprop:dateOfBirth   "1897-10-06"^^xsd:date ;
+        dbpprop:name          "Lamprecht, Gerhard"@de , "Gerhard Lamprecht"@de , "Lamprecht, Gerhard"@en , "Gerhard Lamprecht"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Ren%C3%A9_Lohse>
+        dbpprop:dateOfBirth   "1973-09-23"^^xsd:date ;
+        dbpprop:name          "Lohse, René"@en , "Lohse, René"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Willy_Semmelrogge
+        dbpprop:dateOfBirth   "1923-03-15"^^xsd:date ;
+        dbpprop:name          "Semmelrogge, Willy"@de , "Semmelrogge, Willy"@en , "Willy Semmelrogge"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Henry_Brandon_%28actor%29>
+        dbpprop:dateOfBirth   "1912-06-08"^^xsd:date ;
+        dbpprop:name          "Brandon, Henry"@de , "Henry Brandon"@en , "Brandon, Henry"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Bruno_Walter  dbpprop:dateOfBirth
+                "1876-09-15"^^xsd:date ;
+        dbpprop:name          "ブルーノ・ワルター"@ja , "Walter, Bruno"@de , "Walter, Bruno"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Max_Ehrlich  dbpprop:dateOfBirth
+                "1892-12-07"^^xsd:date ;
+        dbpprop:name          "Max Ehrlich"@de , "Ehrlich, Max"@en , "Ehrlich, Max"@de , "מקס ארליך"@iw , "Max Ehrlich"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Claus_Moser%2C_Baron_Moser>
+        dbpprop:dateOfBirth   "1922-11-24"^^xsd:date ;
+        dbpprop:name          "Moser, Claus Adolf"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Eugen_Rosenstock-Huessy
+        dbpprop:dateOfBirth   "1888-07-06"^^xsd:date ;
+        dbpprop:name          "Eugen Rosenstock-Huessy"@en , "Rosenstock-Huessy, Eugen"@en , "Rosenstock-Huessy, Eugen"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Wilhelm_Taubert
+        dbpprop:dateOfBirth   "1811-03-23"^^xsd:date ;
+        dbpprop:name          "Taubert, Wilhelm"@de , "Taubert, Carl Gottfried Wilhelm"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Richard_Eichberg
+        dbpprop:dateOfBirth   "1888-10-27"^^xsd:date ;
+        dbpprop:name          "Eichberg, Richard Albert"@de , "Richard Eichberg"@en , "Eichberg, Richard"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Wilhelm_II%2C_German_Emperor>
+        dbpprop:dateOfBirth   "1859-01-27"^^xsd:date , "27 tháng 1 năm 1859"@vi ;
+        dbpprop:dateOfBirth   dbpedia:27_Januari , dbpedia:1859 , <http://dbpedia.org/resource/Janu%C3%A1r_27.> ;
+        dbpprop:name          "William II"@ms , "Wilhelm II"@vi , "II. Vilmos"@hu , "Wilhelm II."@de , "Wilhelm II"@en , "Wilhelm II, German Emperor"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Paul_Lincke  dbpprop:dateOfBirth
+                "1866-11-07"^^xsd:date ;
+        dbpprop:name          "Lincke, Paul"@de , "パウル・リンケ"@ja , "Paul Lincke"@ja , "Lincke, Carl Emil Paul"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Alexander_Lion
+        dbpprop:dateOfBirth   "1870-12-15"^^xsd:date ;
+        dbpprop:name          "Lion, Alexander"@en , "Lion, Alexander"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ernst_Henrici
+        dbpprop:dateOfBirth   "1854-12-10"^^xsd:date ;
+        dbpprop:name          "Henrici, Ernst"@en , "Henrici, Ernst"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Carolina_Micha%C3%ABlis_de_Vasconcellos>
+        dbpprop:dateOfBirth   "1851-03-15"^^xsd:date ;
+        dbpprop:name          "de Vasconcelos, Carolina Michaëlis"@en , "Michaëlis de Vasconcelos, Carolina"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Manuela_Gro%C3%9F>
+        dbpprop:dateOfBirth   "1957-01-29"^^xsd:date ;
+        dbpprop:name          "Groß, Manuela"@de , "Gross, Manuela"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Hans_Schweikart
+        dbpprop:dateOfBirth   "1895-10-01"^^xsd:date ;
+        dbpprop:name          "Schweikart, Hans"@de , "Schweikart, Hans"@en , "Hans Schweikart"@en , "Hans Schweikart"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Ferdinand_Avenarius
+        dbpprop:dateOfBirth   "1856-12-20"^^xsd:date ;
+        dbpprop:name          "Avenarius, Ferdinand"@en , "Avenarius, Ferdinand"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Willi_Stoph  dbpprop:dateOfBirth
+                "1914-07-09"^^xsd:date ;
+        dbpprop:name          "Stoph, Willi"@de , "Stoph, Willi"@en , "Willi Stoph"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Manfred_George
+        dbpprop:dateOfBirth   "1893-10-22"^^xsd:date ;
+        dbpprop:name          "George, Manfred"@de , "George, Manfred"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Horst_Walter  dbpprop:dateOfBirth
+                "1936-06-14"^^xsd:date ;
+        dbpprop:name          "Walter, Horst"@en , "Walter, Horst"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Helga_Lin%C3%A9>
+        dbpprop:dateOfBirth   "1932-07-14"^^xsd:date ;
+        dbpprop:name          "Helga Liné"@en , "Liné, Helga"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Karl_Anton_Eckert
+        dbpprop:dateOfBirth   "1820-12-17"^^xsd:date ;
+        dbpprop:name          "Eckert, Karl Anton"@en , "Eckert, Karl Anton"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Peretz_Naftali
+        dbpprop:dateOfBirth   "1888-03-19"^^xsd:date ;
+        dbpprop:name          "Naphtali, Fritz"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Kurt_Ulrich  dbpprop:dateOfBirth
+                "1905-06-28"^^xsd:date ;
+        dbpprop:name          "Kurt Ulrich"@en , "Ulrich, Kurt"@en , "Ulrich, Kurt"@de , "Kurt Ulrich"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/Erhan_Ayd%C4%B1n>
+        dbpprop:dateOfBirth   "1981-02-13"^^xsd:date ;
+        dbpprop:name          "Aydın, Erhan"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Hans_Curschmann
+        dbpprop:dateOfBirth   "1875-08-14"^^xsd:date ;
+        dbpprop:name          "Curschmann, Hans"@en , "Curschmann, Hans"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Drafi_Deutscher
+        dbpprop:dateOfBirth   "1946-05-09"^^xsd:date ;
+        dbpprop:name          "Deutscher, Drafi"@en , "Deutscher, Drafi"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Louisa_Ulrika_of_Prussia
+        dbpprop:dateOfBirth   "1720-07-24"^^xsd:date ;
+        dbpprop:name          "Louisa Ulrika of Prussia"@en , "Luise Ulrike von Preußen"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+<http://dbpedia.org/resource/G%C3%BCnter_de_Bruyn>
+        dbpprop:dateOfBirth   "1926-11-01"^^xsd:date ;
+        dbpprop:name          "Bruyn, Günter de"@de , "de Bruyn, Günter"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Otto_Devrient
+        dbpprop:dateOfBirth   "Oktober 3, 1838"@en ;
+        dbpprop:name          "Devrient, Otto"@en , "Devrient, Otto"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Richard_Jaeger
+        dbpprop:dateOfBirth   "1913-02-16"^^xsd:date ;
+        dbpprop:name          "Jaeger, Richard"@en , "Jaeger, Richard"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:George_V_of_Hanover
+        dbpprop:dateOfBirth   "1819-05-27"^^xsd:date ;
+        dbpprop:name          "George V"@en , "George V of Hanover"@en , "Georg V."@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Prince_Augustus_Ferdinand_of_Prussia
+        dbpprop:dateOfBirth   "1730-05-23"^^xsd:date ;
+        dbpprop:name          "Augustus Ferdinand"@en , "Preußen, August Ferdinand von"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Princess_Sophia_Dorothea_of_Prussia
+        dbpprop:dateOfBirth   "1719-01-25"^^xsd:date ;
+        dbpprop:name          "Sophia Dorothea of Prussia"@en , "Preußen, Sophie Dorothea Marie von"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Gary_Wehrkamp
+        dbpprop:dateOfBirth   "1963-05-11"^^xsd:date ;
+        dbpprop:name          "Gary Wehrkamp"@en , "Wehrkamp, Gary"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Johann_Christoph_Pepusch
+        dbpprop:dateOfBirth   "1667"^^xsd:int ;
+        dbpprop:name          "Pepusch, Johann Christoph"@de , "Johann Christoph Pepusch"@en , "Pepusch, Johann Christoph"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Peter_Zadek  dbpprop:dateOfBirth
+                "--05-19"^^xsd:gMonthDay ;
+        dbpprop:name          "Peter Zadek"@en , "Zadek, Peter"@de , "Zadek, Peter"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Norman_Jeschke
+        dbpprop:dateOfBirth   "1979-03-02"^^xsd:date ;
+        dbpprop:name          "Kautz & Jeschke"@en , "Kierkgaard & Jeschke"@en , "Jeschke, Norman"@en , "Jeschke, Norman"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Peter_Capell  dbpprop:dateOfBirth
+                "1912-09-03"^^xsd:date ;
+        dbpprop:name          "Peter Capell"@en , "Capell, Peter"@de , "Capell, Peter"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Tania_Long  dbpprop:dateOfBirth
+                "1913-04-29"^^xsd:date ;
+        dbpprop:name          "Long, Tania"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Francis_Lieber
+        dbpprop:dateOfBirth   "1800-03-18"^^xsd:date ;
+        dbpprop:name          "Lieber, Francis"@en , "Lieber, Francis"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Franz_Schafheitlin
+        dbpprop:dateOfBirth   "1895-08-09"^^xsd:date ;
+        dbpprop:name          "Schafheitlin, Franz"@de , "Schafheitlin, Franz"@en , "Franz Schafheitlin"@en , "Franz Schafheitlin"@de ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Leni_Riefenstahl
+        dbpprop:dateOfBirth   "1902-08-22"^^xsd:date ;
+        dbpprop:name          "Riefenstahl, Leni"@de , "Riefenstahl, Leni"@en , "Leni Riefenstahl"@tr , "Leni Riefenstahl"@es , "Leni Riefenstahl"@en , "Leni Riefenstahl"@zh , "Leni Riefenstahl"@de , "Leni Riefenstahl"@vi , "Leni Riefenstahl"@fr , "לני ריפנשטאהל"@iw , "Leni Rieferstahl"@tr , "　レニ・リーフェンシュタール"@ja ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .
+
+dbpedia:Carl_Wilhelm_Borchardt
+        dbpprop:dateOfBirth   "1817-02-22"^^xsd:date ;
+        dbpprop:name          "Carl Borchardt"@en , "Borchardt, Karl Wilhelm"@de , "Borchardt, Carl Wilhelm"@en ;
+        dbpprop:placeOfBirth  dbpedia:Berlin .

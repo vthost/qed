@@ -1,0 +1,37 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://www.britannica.com/nations/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns4:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:South_Korea  ns4:populationTotal
+                "36"^^xsd:int , "127"^^xsd:int , "37.5833"^^xsd:float , "128.0"^^xsd:float , "37"^^xsd:int , "127.5"^^xsd:float , "127.0"^^xsd:float , "36.0"^^xsd:float , "37.0"^^xsd:float ;
+        ns4:populationTotal          <http://www.turbomaps.com.ar/english/southkorea.php> , <http://lcweb2.loc.gov/frd/cs/krtoc.html> , <http://www.nso.go.kr/eng2006/emain/index.html> , <http://www.climate-charts.com/Locations/k/KO47108.html> , <http://www.korea.net/> , ns2:Korea ;
+        dbpprop:bnpPr.IndbyggerPlacering
+                "36"^^xsd:int ;
+        dbpprop:breddeD              "37"^^xsd:int ;
+        dbpprop:dnfc                 "127"^^xsd:int ;
+        dbpprop:dnlc                 "37"^^xsd:int ;
+        dbpprop:gdpNominalPerCapitaRank
+                "36"^^xsd:int ;
+        dbpprop:gdpPppPerCapitaRank  "36"^^xsd:int ;
+        dbpprop:kinh_percent_C4_percent_90_percent_E1_percent_BB_percent_99
+                "127"^^xsd:int ;
+        dbpprop:l_percent_C3_percent_A6ngdeD
+                "127"^^xsd:int ;
+        dbpprop:latd                 "37"^^xsd:int ;
+        dbpprop:longd                "127"^^xsd:int ;
+        dbpprop:reference            "127"^^xsd:int , "37"^^xsd:int , "37.0"^^xsd:float , "128.0"^^xsd:float , "127.5"^^xsd:float , "127.0"^^xsd:float , "36"^^xsd:int , "37.5833"^^xsd:float , "36.0"^^xsd:float ;
+        dbpprop:reference            ns2:Korea , <http://www.nso.go.kr/eng2006/emain/index.html> , <http://www.korea.net/> , <http://www.climate-charts.com/Locations/k/KO47108.html> , <http://www.turbomaps.com.ar/english/southkorea.php> , <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
+        dbpprop:v_percent_C4_percent_A9_percent_C4_percent_90_percent_E1_percent_BB_percent_99
+                "37"^^xsd:int ;
+        geo:lat                      "37.0"^^xsd:float , "36"^^xsd:int , "127"^^xsd:int , "37.5833"^^xsd:float , "128.0"^^xsd:float , "127.5"^^xsd:float , "127.0"^^xsd:float , "36.0"^^xsd:float , "37"^^xsd:int ;
+        geo:lat                      <http://www.climate-charts.com/Locations/k/KO47108.html> , <http://lcweb2.loc.gov/frd/cs/krtoc.html> , ns2:Korea , <http://www.turbomaps.com.ar/english/southkorea.php> , <http://www.korea.net/> , <http://www.nso.go.kr/eng2006/emain/index.html> ;
+        geo:long                     "127"^^xsd:int , "37.5833"^^xsd:float , "127.5"^^xsd:float , "127.0"^^xsd:float , "37"^^xsd:int , "37.0"^^xsd:float , "128.0"^^xsd:float , "36.0"^^xsd:float , "36"^^xsd:int ;
+        geo:long                     ns2:Korea , <http://www.nso.go.kr/eng2006/emain/index.html> , <http://www.climate-charts.com/Locations/k/KO47108.html> , <http://www.korea.net/> , <http://www.turbomaps.com.ar/english/southkorea.php> , <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
+        foaf:homepage                "128.0"^^xsd:float , "37"^^xsd:int , "127.0"^^xsd:float , "37.5833"^^xsd:float , "127.5"^^xsd:float , "127"^^xsd:int , "37.0"^^xsd:float , "36.0"^^xsd:float , "36"^^xsd:int ;
+        foaf:homepage                ns2:Korea , <http://www.korea.net/> , <http://lcweb2.loc.gov/frd/cs/krtoc.html> , <http://www.climate-charts.com/Locations/k/KO47108.html> , <http://www.turbomaps.com.ar/english/southkorea.php> , <http://www.nso.go.kr/eng2006/emain/index.html> ;
+        foaf:name                    "36"^^xsd:int , "37.0"^^xsd:float , "36.0"^^xsd:float , "127"^^xsd:int , "37"^^xsd:int , "127.0"^^xsd:float , "37.5833"^^xsd:float , "128.0"^^xsd:float , "127.5"^^xsd:float ;
+        foaf:name                    <http://www.turbomaps.com.ar/english/southkorea.php> , <http://www.nso.go.kr/eng2006/emain/index.html> , <http://lcweb2.loc.gov/frd/cs/krtoc.html> , ns2:Korea , <http://www.climate-charts.com/Locations/k/KO47108.html> , <http://www.korea.net/> .

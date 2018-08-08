@@ -1,0 +1,2019 @@
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns4:   <http://dbpedia.org/resource/Dodgeball:> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+@prefix ns6:   <http://dbpedia.org/resource/Cocoon:> .
+@prefix ns5:   <http://dbpedia.org/resource/Scooby-Doo_2:> .
+@prefix ns8:   <http://dbpedia.org/resource/Left_Behind:> .
+@prefix ns7:   <http://dbpedia.org/resource/Left_Behind_II:> .
+@prefix ns13:  <http://dbpedia.org/resource/Tag:> .
+@prefix ns9:   <http://dbpedia.org/resource/My_Little_Pony:> .
+@prefix ns12:  <http://dbpedia.org/resource/Roman_Polanski:> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns11:  <http://dbpedia.org/resource/Sold_Out:> .
+@prefix ns10:  <http://dbpedia.org/resource/Growing_Pains:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Mark_Speight  a  ns3:Actor ;
+        ns3:partner  dbpedia:Natasha_Collins ;
+        ns3:spouse   dbpedia:Natasha_Collins .
+
+dbpedia:Matt_Passmore
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Rachael_Carpani ;
+        ns3:spouse   dbpedia:Rachael_Carpani .
+
+<http://dbpedia.org/resource/Country_%28film%29>
+        dbpprop:starring  dbpedia:Jessica_Lange , dbpedia:Sam_Shepard .
+
+dbpedia:Angelina_Jolie
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jonny_Lee_Miller , dbpedia:Brad_Pitt ;
+        ns3:spouse   dbpedia:Jonny_Lee_Miller , dbpedia:Brad_Pitt .
+
+dbpedia:Frances  dbpprop:starring  dbpedia:Sam_Shepard , dbpedia:Jessica_Lange .
+
+dbpedia:Bronco_Billy  dbpprop:starring  dbpedia:Clint_Eastwood , dbpedia:Sondra_Locke .
+
+dbpedia:Tim_Robbins  a  ns3:Actor ;
+        ns3:partner  dbpedia:Susan_Sarandon ;
+        ns3:spouse   dbpedia:Susan_Sarandon .
+
+dbpedia:Pontiac_Moon  dbpprop:starring  dbpedia:Mary_Steenburgen , dbpedia:Ted_Danson .
+
+dbpedia:Sagina_Mahato
+        dbpprop:starring  dbpedia:Dilip_Kumar , dbpedia:Saira_Banu .
+
+dbpedia:Alice_Taglioni
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jocelyn_Quivrin ;
+        ns3:spouse   dbpedia:Jocelyn_Quivrin .
+
+dbpedia:Head_in_the_Clouds
+        dbpprop:starring  dbpedia:Stuart_Townsend , dbpedia:Charlize_Theron .
+
+dbpedia:John_Orcsik  a  ns3:Actor ;
+        ns3:partner  dbpedia:Paula_Duncan ;
+        ns3:spouse   dbpedia:Paula_Duncan .
+
+dbpedia:After_the_Fox
+        dbpprop:starring  dbpedia:Peter_Sellers , dbpedia:Britt_Ekland .
+
+dbpedia:Humphrey_Bogart
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Lauren_Bacall ;
+        ns3:spouse   dbpedia:Lauren_Bacall .
+
+dbpedia:Paul_Gross  a  ns3:Actor ;
+        ns3:partner  dbpedia:Martha_Burns ;
+        ns3:spouse   dbpedia:Martha_Burns .
+
+dbpedia:Adam_and_Evelyne
+        dbpprop:starring  dbpedia:Stewart_Granger , dbpedia:Jean_Simmons .
+
+<http://dbpedia.org/resource/Hurlyburly_%28film%29>
+        dbpprop:starring  dbpedia:Sean_Penn , dbpedia:Robin_Wright_Penn .
+
+dbpedia:Zoolander  dbpprop:starring  dbpedia:Ben_Stiller , dbpedia:Christine_Taylor .
+
+dbpedia:Rachael_Bella
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Edward_Furlong ;
+        ns3:spouse   dbpedia:Edward_Furlong .
+
+dbpedia:My_Pal_Trigger
+        dbpprop:starring  dbpedia:Dale_Evans , dbpedia:Roy_Rogers .
+
+<http://dbpedia.org/resource/The_Fly_%281986_film%29>
+        dbpprop:starring  dbpedia:Jeff_Goldblum , dbpedia:Geena_Davis .
+
+<http://dbpedia.org/resource/The_Green_Years_%28film%29>
+        dbpprop:starring  dbpedia:Hume_Cronyn , dbpedia:Jessica_Tandy .
+
+dbpedia:Imelda_Staunton
+        a            ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Jim_Carter_%28actor%29> ;
+        ns3:spouse   <http://dbpedia.org/resource/Jim_Carter_%28actor%29> .
+
+<http://dbpedia.org/resource/The_Getaway_%281994_film%29>
+        dbpprop:starring  dbpedia:Alec_Baldwin , dbpedia:Kim_Basinger .
+
+dbpedia:Suzanne_Pleshette
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Troy_Donahue ;
+        ns3:spouse   dbpedia:Troy_Donahue .
+
+<http://dbpedia.org/resource/Ondine_%28film%29>
+        dbpprop:starring  dbpedia:Alicja_Bachleda , dbpedia:Colin_Farrell .
+
+dbpedia:Geena_Davis  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jeff_Goldblum ;
+        ns3:spouse   dbpedia:Jeff_Goldblum .
+
+dbpedia:Joan_Plowright
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Laurence_Olivier ;
+        ns3:spouse   dbpedia:Laurence_Olivier .
+
+dbpedia:Joanne_Whalley
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Val_Kilmer ;
+        ns3:spouse   dbpedia:Val_Kilmer .
+
+dbpedia:Michele_Placido
+        a       ns3:Actor .
+
+dbpedia:Cop_Shop  dbpprop:starring  dbpedia:John_Orcsik , dbpedia:Paula_Duncan .
+
+dbpedia:The_Roy_Rogers_Show
+        dbpprop:starring  dbpedia:Dale_Evans , dbpedia:Roy_Rogers .
+
+<http://dbpedia.org/resource/Cobra_%28film%29>
+        dbpprop:starring  dbpedia:Sylvester_Stallone , dbpedia:Brigitte_Nielsen .
+
+dbpedia:Florence_Eldridge
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Fredric_March ;
+        ns3:spouse   dbpedia:Fredric_March .
+
+dbpedia:Gary_Merrill  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Who%27s_Afraid_of_Virginia_Woolf%3F_%28film%29>
+        dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Cary_Grant  a  ns3:Actor ;
+        ns3:partner  dbpedia:Betsy_Drake ;
+        ns3:spouse   dbpedia:Betsy_Drake .
+
+dbpedia:Far_and_Away  dbpprop:starring  dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Winona_Ryder  a  ns3:Actor .
+
+dbpedia:The_Clay_Pigeon
+        dbpprop:starring  dbpedia:Barbara_Hale , <http://dbpedia.org/resource/Bill_Williams_%28actor%29> .
+
+<http://dbpedia.org/resource/Pen%C3%A9lope_Cruz>
+        a       ns3:Actor .
+
+dbpedia:Husbands_and_Wives
+        dbpprop:starring  dbpedia:Mia_Farrow , dbpedia:Woody_Allen .
+
+dbpedia:Danny_DeVito  a  ns3:Actor ;
+        ns3:partner  dbpedia:Rhea_Perlman ;
+        ns3:spouse   dbpedia:Rhea_Perlman .
+
+<http://dbpedia.org/resource/The_Gauntlet_%28film%29>
+        dbpprop:starring  dbpedia:Clint_Eastwood , dbpedia:Sondra_Locke .
+
+dbpedia:Paige_Turco  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Jason_O%27Mara> ;
+        ns3:spouse   <http://dbpedia.org/resource/Jason_O%27Mara> .
+
+dbpedia:Cynda_Williams
+        a       ns3:Actor .
+
+dbpedia:Romy_Schneider
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Alain_Delon ;
+        ns3:spouse   dbpedia:Alain_Delon .
+
+dbpedia:2_Young  dbpprop:starring  dbpedia:Jaycee_Chan , dbpedia:Fiona_Sit .
+
+<http://dbpedia.org/resource/Hackers_%28film%29>
+        dbpprop:starring  dbpedia:Jonny_Lee_Miller , dbpedia:Angelina_Jolie .
+
+dbpedia:Danny_Huston  a  ns3:Actor ;
+        ns3:partner  dbpedia:Virginia_Madsen ;
+        ns3:spouse   dbpedia:Virginia_Madsen .
+
+dbpedia:Michael_Weatherly
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jessica_Alba ;
+        ns3:spouse   dbpedia:Jessica_Alba .
+
+dbpedia:Colin_Farrell
+        a       ns3:Actor .
+
+dbpedia:Sharon_Tate  a  ns3:Actor ;
+        ns3:partner  dbpedia:Roman_Polanski ;
+        ns3:spouse   dbpedia:Roman_Polanski .
+
+<http://dbpedia.org/resource/Kurbaan_%282009_film%29>
+        dbpprop:starring  dbpedia:Kareena_Kapoor , dbpedia:Saif_Ali_Khan .
+
+dbpedia:The_Fox_with_Nine_Tails
+        dbpprop:starring  dbpedia:Ko_So-young , dbpedia:Jung_Woo-sung .
+
+<http://dbpedia.org/resource/Time_After_Time%23Film_and_television>
+        dbpprop:starring  dbpedia:Malcolm_McDowell , dbpedia:Mary_Steenburgen .
+
+dbpedia:Rachael_Carpani
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Matt_Passmore ;
+        ns3:spouse   dbpedia:Matt_Passmore .
+
+dbpedia:Sophia_Bush  a  ns3:Actor ;
+        ns3:partner  dbpedia:Chad_Michael_Murray ;
+        ns3:spouse   dbpedia:Chad_Michael_Murray .
+
+dbpedia:Space_Mutiny  dbpprop:starring  dbpedia:Reb_Brown , dbpedia:Cisse_Cameron .
+
+dbpedia:Season_Hubley
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Kurt_Russell ;
+        ns3:spouse   dbpedia:Kurt_Russell .
+
+dbpedia:Footsteps_in_the_Fog
+        dbpprop:starring  dbpedia:Stewart_Granger , dbpedia:Jean_Simmons .
+
+<http://dbpedia.org/resource/Scream_%28film%29>
+        dbpprop:starring  dbpedia:David_Arquette , dbpedia:Courteney_Cox .
+
+dbpedia:Ruby_Dee  a  ns3:Actor .
+
+<http://dbpedia.org/resource/One_Tree_Hill_%28TV_series%29>
+        dbpprop:starring  dbpedia:Chad_Michael_Murray , dbpedia:Sophia_Bush .
+
+<http://dbpedia.org/resource/A_Midsummer_Night%27s_Sex_Comedy>
+        dbpprop:starring  dbpedia:Woody_Allen , dbpedia:Mia_Farrow .
+
+dbpedia:Edward_Furlong
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Rachael_Bella ;
+        ns3:spouse   dbpedia:Rachael_Bella .
+
+<http://dbpedia.org/resource/Journey_into_Fear_%281943_film%29>
+        dbpprop:starring  dbpedia:Orson_Welles , <http://dbpedia.org/resource/Dolores_del_R%C3%ADo> .
+
+dbpedia:Susan_Sarandon
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Tim_Robbins ;
+        ns3:spouse   dbpedia:Tim_Robbins .
+
+dbpedia:Stewart_Granger
+        a       ns3:Actor .
+
+dbpedia:I_Know_What_You_Did_Last_Summer
+        dbpprop:starring  <http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.> , dbpedia:Sarah_Michelle_Gellar .
+
+dbpedia:Carice_van_Houten
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Sebastian_Koch ;
+        ns3:spouse   dbpedia:Sebastian_Koch .
+
+dbpedia:Robin_Wright_Penn
+        a       ns3:Actor .
+
+dbpedia:Aaja_Nachle  dbpprop:starring  dbpedia:Konkona_Sen_Sharma , dbpedia:Ranvir_Shorey .
+
+dbpedia:Greg_Wise  a  ns3:Actor ;
+        ns3:partner  dbpedia:Emma_Thompson ;
+        ns3:spouse   dbpedia:Emma_Thompson .
+
+dbpedia:Alicja_Bachleda
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Colin_Farrell ;
+        ns3:spouse   dbpedia:Colin_Farrell .
+
+<http://dbpedia.org/resource/War_and_Peace_%281956_film%29>
+        dbpprop:starring  dbpedia:Mel_Ferrer , dbpedia:Audrey_Hepburn .
+
+dbpedia:Diane_Ladd  a  ns3:Actor ;
+        ns3:partner  dbpedia:Bruce_Dern ;
+        ns3:spouse   dbpedia:Bruce_Dern .
+
+dbpedia:Stuart_Townsend
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Charlize_Theron ;
+        ns3:spouse   dbpedia:Charlize_Theron .
+
+<http://dbpedia.org/resource/Michelle_Williams_%28actress%29>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Heath_Ledger ;
+        ns3:spouse   dbpedia:Heath_Ledger .
+
+dbpedia:Daniel_Auteuil
+        a       ns3:Actor .
+
+dbpedia:Dale_Evans  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Soul_Food_%28TV_series%29>
+        dbpprop:starring  dbpedia:Nicole_Ari_Parker , dbpedia:Boris_Kodjoe .
+
+dbpedia:Jean_Wallace  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Houdini_%28film%29>
+        dbpprop:starring  dbpedia:Tony_Curtis , dbpedia:Janet_Leigh .
+
+dbpedia:Jack_Hoxie  a  ns3:Actor ;
+        ns3:partner  dbpedia:Marin_Sais ;
+        ns3:spouse   dbpedia:Marin_Sais .
+
+dbpedia:All_About_Eve
+        dbpprop:starring  dbpedia:Bette_Davis , dbpedia:Gary_Merrill .
+
+dbpedia:Brad_Pitt  a  ns3:Actor ;
+        ns3:partner  dbpedia:Angelina_Jolie ;
+        ns3:spouse   dbpedia:Angelina_Jolie .
+
+dbpedia:Adam_Sandler  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jackie_Sandler ;
+        ns3:spouse   dbpedia:Jackie_Sandler .
+
+dbpedia:Rhea_Perlman  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Adam%27s_Rib>
+        dbpprop:starring  dbpedia:Spencer_Tracy , dbpedia:Katharine_Hepburn .
+
+dbpedia:Crimes_and_Misdemeanors
+        dbpprop:starring  dbpedia:Mia_Farrow , dbpedia:Woody_Allen .
+
+dbpedia:Jackie_Sandler
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/The_Big_Bounce_%281969_film%29>
+        dbpprop:starring  dbpedia:Leigh_Taylor-Young , <http://dbpedia.org/resource/Ryan_O%27Neal> .
+
+dbpedia:In_Pursuit_of_Honor
+        dbpprop:starring  dbpedia:Gabrielle_Anwar , dbpedia:Craig_Sheffer .
+
+dbpedia:Mel_Ferrer  a  ns3:Actor .
+
+dbpedia:Simonetta_Stefanelli
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Michele_Placido ;
+        ns3:spouse   dbpedia:Michele_Placido .
+
+dbpedia:Nicoletta_Braschi
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Roberto_Benigni ;
+        ns3:spouse   dbpedia:Roberto_Benigni .
+
+dbpedia:Louise_Lasser
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Manon_des_Sources_%281986_film%29>
+        dbpprop:starring  dbpedia:Daniel_Auteuil , <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> .
+
+dbpedia:Blades_of_Glory
+        dbpprop:starring  dbpedia:Will_Arnett , dbpedia:Amy_Poehler .
+
+<http://dbpedia.org/resource/Wild_Orchid_%28film%29>
+        dbpprop:starring  dbpedia:Mickey_Rourke , <http://dbpedia.org/resource/Carr%C3%A9_Otis> .
+
+dbpedia:Leigh_Taylor-Young
+        a       ns3:Actor .
+
+dbpedia:Cisse_Cameron
+        a       ns3:Actor .
+
+dbpedia:Away_from_Her
+        dbpprop:starring  dbpedia:Wendy_Crewson , <http://dbpedia.org/resource/Michael_Murphy_%28actor%29> .
+
+dbpedia:Sam_Elliott  a  ns3:Actor ;
+        ns3:partner  dbpedia:Katharine_Ross ;
+        ns3:spouse   dbpedia:Katharine_Ross .
+
+dbpedia:Jada_Pinkett_Smith
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Will_Smith ;
+        ns3:spouse   dbpedia:Will_Smith .
+
+dbpedia:Kim_Basinger  a  ns3:Actor ;
+        ns3:partner  dbpedia:Alec_Baldwin ;
+        ns3:spouse   dbpedia:Alec_Baldwin .
+
+dbpedia:Thunderbolt_Jack
+        dbpprop:starring  dbpedia:Jack_Hoxie , dbpedia:Marin_Sais .
+
+dbpedia:Jean-Louis_Trintignant
+        a       ns3:Actor .
+
+dbpedia:Kurt_Russell  a  ns3:Actor ;
+        ns3:partner  dbpedia:Season_Hubley , dbpedia:Goldie_Hawn ;
+        ns3:spouse   dbpedia:Season_Hubley , dbpedia:Goldie_Hawn .
+
+<http://dbpedia.org/resource/Keeper_of_the_Flame_%28film%29>
+        dbpprop:starring  dbpedia:Spencer_Tracy , dbpedia:Katharine_Hepburn .
+
+dbpedia:Two_Much  dbpprop:starring  dbpedia:Antonio_Banderas , dbpedia:Melanie_Griffith .
+
+<http://dbpedia.org/resource/Milena_Dravi%C4%87>
+        a            ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Dragan_Nikoli%C4%87> ;
+        ns3:spouse   <http://dbpedia.org/resource/Dragan_Nikoli%C4%87> .
+
+dbpedia:Johnny_Depp  a  ns3:Actor ;
+        ns3:partner  dbpedia:Winona_Ryder ;
+        ns3:spouse   dbpedia:Winona_Ryder .
+
+<http://dbpedia.org/resource/John_Ireland_%28actor%29>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Joanne_Dru ;
+        ns3:spouse   dbpedia:Joanne_Dru .
+
+dbpedia:Ben_Stiller  a  ns3:Actor ;
+        ns3:partner  dbpedia:Christine_Taylor ;
+        ns3:spouse   dbpedia:Christine_Taylor .
+
+dbpedia:Bebe_Daniels  a  ns3:Actor ;
+        ns3:partner  dbpedia:Ben_Lyon ;
+        ns3:spouse   dbpedia:Ben_Lyon .
+
+dbpedia:Audrey_Hepburn
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Mel_Ferrer ;
+        ns3:spouse   dbpedia:Mel_Ferrer .
+
+dbpedia:Anna_Faris  a  ns3:Actor ;
+        ns3:partner  dbpedia:Chris_Pratt ;
+        ns3:spouse   dbpedia:Chris_Pratt .
+
+dbpedia:Laurence_Olivier
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Joan_Plowright , dbpedia:Vivien_Leigh ;
+        ns3:spouse   dbpedia:Vivien_Leigh , dbpedia:Joan_Plowright .
+
+dbpedia:Forbidden_Journey
+        dbpprop:starring  dbpedia:Susan_Douglas_Rubes , dbpedia:Jan_Rubes .
+
+dbpedia:Craig_Sheffer
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Pinocchio_%282002_film%29>
+        dbpprop:starring  dbpedia:Roberto_Benigni , dbpedia:Nicoletta_Braschi .
+
+dbpedia:Reece_Dinsdale
+        a       ns3:Actor .
+
+dbpedia:Bette_Davis  a  ns3:Actor ;
+        ns3:partner  dbpedia:Gary_Merrill ;
+        ns3:spouse   dbpedia:Gary_Merrill .
+
+<http://dbpedia.org/resource/Ink_%28TV_series%29>
+        dbpprop:starring  dbpedia:Mary_Steenburgen , dbpedia:Ted_Danson .
+
+<http://dbpedia.org/resource/The_King_of_Comedy_%281983_film%29>
+        dbpprop:starring  dbpedia:Robert_De_Niro , dbpedia:Diahnne_Abbott .
+
+dbpedia:SpongeBob_SquarePants
+        dbpprop:starring  dbpedia:Jill_Talley , dbpedia:Tom_Kenny .
+
+<http://dbpedia.org/resource/Boom%21_%281968_film%29>
+        dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Amitabh_Bachchan
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jaya_Bachchan ;
+        ns3:spouse   dbpedia:Jaya_Bachchan .
+
+<http://dbpedia.org/resource/Mili_%28film%29>
+        dbpprop:starring  dbpedia:Jaya_Bachchan , dbpedia:Amitabh_Bachchan .
+
+<http://dbpedia.org/resource/Abhimaan_%281973_film%29>
+        dbpprop:starring  dbpedia:Jaya_Bachchan , dbpedia:Amitabh_Bachchan .
+
+dbpedia:Isabelle_Adjani
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Warren_Beatty ;
+        ns3:spouse   dbpedia:Warren_Beatty .
+
+dbpedia:Jessica_Lange
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Sam_Shepard ;
+        ns3:spouse   dbpedia:Sam_Shepard .
+
+dbpedia:Sam_Shepard  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jessica_Lange ;
+        ns3:spouse   dbpedia:Jessica_Lange .
+
+<http://dbpedia.org/resource/Flesh_and_Bone_%28film%29>
+        dbpprop:starring  dbpedia:Meg_Ryan , dbpedia:Dennis_Quaid .
+
+dbpedia:A_Distant_Trumpet
+        dbpprop:starring  dbpedia:Suzanne_Pleshette , dbpedia:Troy_Donahue .
+
+<http://dbpedia.org/resource/Sharpe%27s_Mission>
+        dbpprop:starring  dbpedia:Abigail_Cruttenden , dbpedia:Sean_Bean .
+
+dbpedia:John_Malkovich
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Glenne_Headly ;
+        ns3:spouse   dbpedia:Glenne_Headly .
+
+dbpedia:Woody_Allen  a  ns3:Actor ;
+        ns3:partner  dbpedia:Louise_Lasser ;
+        ns3:spouse   dbpedia:Louise_Lasser .
+
+dbpedia:Gabrielle_Anwar
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Craig_Sheffer ;
+        ns3:spouse   dbpedia:Craig_Sheffer .
+
+<http://dbpedia.org/resource/The_Woman_in_Red_%281984_film%29>
+        dbpprop:starring  dbpedia:Gene_Wilder , dbpedia:Gilda_Radner .
+
+<http://dbpedia.org/resource/Key_Largo_%28film%29>
+        dbpprop:starring  dbpedia:Lauren_Bacall , dbpedia:Humphrey_Bogart .
+
+<http://dbpedia.org/resource/Overboard_%28film%29>
+        dbpprop:starring  dbpedia:Kurt_Russell , dbpedia:Goldie_Hawn .
+
+dbpedia:Mary_Steenburgen
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Ted_Danson , dbpedia:Malcolm_McDowell ;
+        ns3:spouse   dbpedia:Malcolm_McDowell , dbpedia:Ted_Danson .
+
+dbpedia:Guillaume_Canet
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Marion_Cotillard ;
+        ns3:spouse   dbpedia:Marion_Cotillard .
+
+dbpedia:Jessica_Tandy
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Hume_Cronyn ;
+        ns3:spouse   dbpedia:Hume_Cronyn .
+
+<http://dbpedia.org/resource/St%C3%A9phane_Audran>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jean-Louis_Trintignant ;
+        ns3:spouse   dbpedia:Jean-Louis_Trintignant .
+
+dbpedia:Paula_Duncan  a  ns3:Actor .
+
+dbpedia:Ian_Holm  a  ns3:Actor ;
+        ns3:partner  dbpedia:Penelope_Wilton ;
+        ns3:spouse   dbpedia:Penelope_Wilton .
+
+dbpedia:David_Carradine
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Barbara_Hershey ;
+        ns3:spouse   dbpedia:Barbara_Hershey .
+
+dbpedia:Ben_Lyon  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Christopher_Columbus_%28film%29>
+        dbpprop:starring  dbpedia:Fredric_March , dbpedia:Florence_Eldridge .
+
+dbpedia:Alain_Delon  a  ns3:Actor ;
+        ns3:partner  dbpedia:Romy_Schneider ;
+        ns3:spouse   dbpedia:Romy_Schneider .
+
+<http://dbpedia.org/resource/Ryan_O%27Neal>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Leigh_Taylor-Young , dbpedia:Farrah_Fawcett ;
+        ns3:spouse   dbpedia:Leigh_Taylor-Young , dbpedia:Farrah_Fawcett .
+
+dbpedia:David_Arquette
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Courteney_Cox ;
+        ns3:spouse   dbpedia:Courteney_Cox .
+
+dbpedia:Anna_Friel  a  ns3:Actor ;
+        ns3:partner  dbpedia:David_Thewlis ;
+        ns3:spouse   dbpedia:David_Thewlis .
+
+<http://dbpedia.org/resource/Control_%282007_film%29>
+        dbpprop:starring  dbpedia:Alexandra_Maria_Lara , dbpedia:Sam_Riley .
+
+<http://dbpedia.org/resource/The_Rocketeer_%28film%29>
+        dbpprop:starring  dbpedia:Jennifer_Connelly , dbpedia:Billy_Campbell .
+
+dbpedia:Jean_Simmons  a  ns3:Actor ;
+        ns3:partner  dbpedia:Stewart_Granger ;
+        ns3:spouse   dbpedia:Stewart_Granger .
+
+<http://dbpedia.org/resource/Barabbas_%281961_film%29>
+        dbpprop:starring  dbpedia:Ernest_Borgnine , dbpedia:Katy_Jurado .
+
+<http://dbpedia.org/resource/Jason_O%27Mara>
+        a       ns3:Actor .
+
+dbpedia:Scream_2  dbpprop:starring  dbpedia:Courteney_Cox , dbpedia:David_Arquette .
+
+dbpedia:Hard_to_Kill  dbpprop:starring  dbpedia:Steven_Seagal , dbpedia:Kelly_LeBrock .
+
+dbpedia:Chris_Pratt  a  ns3:Actor .
+
+dbpedia:Jenna_Dewan  a  ns3:Actor ;
+        ns3:partner  dbpedia:Channing_Tatum ;
+        ns3:spouse   dbpedia:Channing_Tatum .
+
+dbpedia:Played  dbpprop:starring  dbpedia:Val_Kilmer , dbpedia:Joanne_Whalley .
+
+<http://dbpedia.org/resource/Ishtar_%28film%29>
+        dbpprop:starring  dbpedia:Isabelle_Adjani , dbpedia:Warren_Beatty .
+
+dbpedia:Carol_for_Another_Christmas
+        dbpprop:starring  dbpedia:Britt_Ekland , dbpedia:Peter_Sellers .
+
+<http://dbpedia.org/resource/Kirk_%28TV_series%29>
+        dbpprop:starring  dbpedia:Chelsea_Noble , dbpedia:Kirk_Cameron .
+
+dbpedia:Elizabeth_Taylor
+        a       ns3:Actor .
+
+dbpedia:The_Perfect_Furlough
+        dbpprop:starring  dbpedia:Tony_Curtis , dbpedia:Janet_Leigh .
+
+dbpedia:Stripperella  dbpprop:starring  dbpedia:Jill_Talley , dbpedia:Tom_Kenny .
+
+dbpedia:Eyes_Wide_Shut
+        dbpprop:starring  dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Gilda_Radner  a  ns3:Actor ;
+        ns3:partner  dbpedia:Gene_Wilder ;
+        ns3:spouse   dbpedia:Gene_Wilder .
+
+dbpedia:George_C._Scott
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Colleen_Dewhurst ;
+        ns3:spouse   dbpedia:Colleen_Dewhurst .
+
+dbpedia:The_Experts  dbpprop:starring  dbpedia:John_Travolta , dbpedia:Kelly_Preston .
+
+dbpedia:Sebastian_Koch
+        a       ns3:Actor .
+
+dbpedia:Nicole_Kidman
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Omkara_%28film%29>
+        dbpprop:starring  dbpedia:Saif_Ali_Khan , dbpedia:Kareena_Kapoor .
+
+dbpedia:Rebecca_Romijn
+        a            ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Jerry_O%27Connell> ;
+        ns3:spouse   <http://dbpedia.org/resource/Jerry_O%27Connell> .
+
+dbpedia:The_Big_Combo
+        dbpprop:starring  dbpedia:Jean_Wallace , dbpedia:Cornel_Wilde .
+
+dbpedia:John_Travolta
+        a       ns3:Actor .
+
+dbpedia:Wallace_Beery
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Gloria_Swanson ;
+        ns3:spouse   dbpedia:Gloria_Swanson .
+
+dbpedia:Maggie_Smith  a  ns3:Actor ;
+        ns3:partner  dbpedia:Robert_Stephens ;
+        ns3:spouse   dbpedia:Robert_Stephens .
+
+dbpedia:Brokeback_Mountain
+        dbpprop:starring  <http://dbpedia.org/resource/Michelle_Williams_%28actress%29> , dbpedia:Heath_Ledger .
+
+dbpedia:The_Grudge  dbpprop:starring  dbpedia:Jason_Behr , dbpedia:KaDee_Strickland .
+
+<http://dbpedia.org/resource/Ready%3F_OK%21>
+        dbpprop:starring  dbpedia:Michael_Emerson , dbpedia:Carrie_Preston .
+
+dbpedia:Natasha_Collins
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Mark_Speight ;
+        ns3:spouse   dbpedia:Mark_Speight .
+
+dbpedia:Vivien_Leigh  a  ns3:Actor ;
+        ns3:partner  dbpedia:Laurence_Olivier ;
+        ns3:spouse   dbpedia:Laurence_Olivier .
+
+dbpedia:Anne_Heche  a  ns3:Actor ;
+        ns3:partner  dbpedia:James_Tupper ;
+        ns3:spouse   dbpedia:James_Tupper .
+
+dbpedia:Epic_Movie  dbpprop:starring  <http://dbpedia.org/resource/Adam_Campbell_%28actor%29> , dbpedia:Jayma_Mays .
+
+dbpedia:Boxcar_Bertha
+        dbpprop:starring  dbpedia:David_Carradine , dbpedia:Barbara_Hershey .
+
+dbpedia:Judi_Dench  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Michael_Williams_%28actor%29> ;
+        ns3:spouse   <http://dbpedia.org/resource/Michael_Williams_%28actor%29> .
+
+<http://dbpedia.org/resource/She%27s_So_Lovely>
+        dbpprop:starring  dbpedia:Sean_Penn , dbpedia:Robin_Wright_Penn .
+
+<http://dbpedia.org/resource/Sharpe%27s_Regiment_%28TV_programme%29>
+        dbpprop:starring  dbpedia:Sean_Bean , dbpedia:Abigail_Cruttenden .
+
+<http://dbpedia.org/resource/Shampoo_%28film%29>
+        dbpprop:starring  dbpedia:Warren_Beatty , dbpedia:Julie_Christie .
+
+dbpedia:Take_the_Money_and_Run
+        dbpprop:starring  dbpedia:Louise_Lasser , dbpedia:Woody_Allen .
+
+dbpedia:Love_Me_If_You_Dare
+        dbpprop:starring  dbpedia:Marion_Cotillard , dbpedia:Guillaume_Canet .
+
+dbpedia:Pyrates  dbpprop:starring  dbpedia:Kyra_Sedgwick , dbpedia:Kevin_Bacon .
+
+dbpedia:Debra_Winger  a  ns3:Actor .
+
+<http://dbpedia.org/resource/McLeod%27s_Daughters>
+        dbpprop:starring  dbpedia:Matt_Passmore , dbpedia:Rachael_Carpani .
+
+dbpedia:Bruce_Willis  a  ns3:Actor ;
+        ns3:partner  dbpedia:Demi_Moore ;
+        ns3:spouse   dbpedia:Demi_Moore .
+
+dbpedia:C._Thomas_Howell
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Rae_Dawn_Chong ;
+        ns3:spouse   dbpedia:Rae_Dawn_Chong .
+
+dbpedia:Jeremy_Irons  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Sin%C3%A9ad_Cusack> ;
+        ns3:spouse   <http://dbpedia.org/resource/Sin%C3%A9ad_Cusack> .
+
+dbpedia:Neil_Morrissey
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Elizabeth_Carling ;
+        ns3:spouse   dbpedia:Elizabeth_Carling .
+
+dbpedia:Ted_Danson  a  ns3:Actor ;
+        ns3:partner  dbpedia:Mary_Steenburgen ;
+        ns3:spouse   dbpedia:Mary_Steenburgen .
+
+dbpedia:Jennifer_Connelly
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Billy_Campbell ;
+        ns3:spouse   dbpedia:Billy_Campbell .
+
+dbpedia:Dhoom_2  dbpprop:starring  dbpedia:Abhishek_Bachchan , dbpedia:Aishwarya_Rai .
+
+dbpedia:Channing_Tatum
+        a       ns3:Actor .
+
+dbpedia:Frankie_Lam  a  ns3:Actor .
+
+dbpedia:Cornel_Wilde  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jean_Wallace ;
+        ns3:spouse   dbpedia:Jean_Wallace .
+
+dbpedia:Fire_Over_England
+        dbpprop:starring  dbpedia:Laurence_Olivier , dbpedia:Vivien_Leigh .
+
+dbpedia:The_Tiger_Makes_Out
+        dbpprop:starring  dbpedia:Anne_Jackson , dbpedia:Eli_Wallach .
+
+dbpedia:Julie_Christie
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Warren_Beatty ;
+        ns3:spouse   dbpedia:Warren_Beatty .
+
+dbpedia:Marin_Sais  a  ns3:Actor .
+
+dbpedia:Melanie_Griffith
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Don_Johnson , dbpedia:Antonio_Banderas ;
+        ns3:spouse   dbpedia:Antonio_Banderas , dbpedia:Don_Johnson .
+
+dbpedia:Abigail_Cruttenden
+        a       ns3:Actor .
+
+dbpedia:South_of_Caliente
+        dbpprop:starring  dbpedia:Roy_Rogers , dbpedia:Dale_Evans .
+
+dbpedia:Escape_from_New_York
+        dbpprop:starring  dbpedia:Kurt_Russell , dbpedia:Season_Hubley .
+
+dbpedia:Demi_Moore  a  ns3:Actor .
+
+dbpedia:Courteney_Cox
+        a       ns3:Actor .
+
+dbpedia:The_Woodsman  dbpprop:starring  dbpedia:Kevin_Bacon , dbpedia:Kyra_Sedgwick .
+
+<http://dbpedia.org/resource/Christine_%281958_film%29>
+        dbpprop:starring  dbpedia:Romy_Schneider , dbpedia:Alain_Delon .
+
+dbpedia:Fredric_March
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Uncle_Vanya_%281963_film%29>
+        dbpprop:starring  dbpedia:Laurence_Olivier , dbpedia:Joan_Plowright .
+
+<http://dbpedia.org/resource/The_Howling_%28film%29>
+        dbpprop:starring  dbpedia:Dee_Wallace-Stone , <http://dbpedia.org/resource/Christopher_Stone_%28actor%29> .
+
+dbpedia:KaDee_Strickland
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jason_Behr ;
+        ns3:spouse   dbpedia:Jason_Behr .
+
+ns12:_Wanted_and_Desired
+        dbpprop:starring  dbpedia:Sharon_Tate , dbpedia:Roman_Polanski .
+
+<http://dbpedia.org/resource/Kabhi_Khushi_Kabhie_Gham...>
+        dbpprop:starring  dbpedia:Amitabh_Bachchan , dbpedia:Jaya_Bachchan .
+
+dbpedia:Casper_Van_Dien
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Catherine_Oxenberg ;
+        ns3:spouse   dbpedia:Catherine_Oxenberg .
+
+<http://dbpedia.org/resource/The_Agency_%282001_TV_series%29>
+        dbpprop:starring  <http://dbpedia.org/resource/Jason_O%27Mara> , dbpedia:Paige_Turco .
+
+dbpedia:Troy_Donahue  a  ns3:Actor ;
+        ns3:partner  dbpedia:Suzanne_Pleshette ;
+        ns3:spouse   dbpedia:Suzanne_Pleshette .
+
+dbpedia:Edward_Scissorhands
+        dbpprop:starring  dbpedia:Winona_Ryder , dbpedia:Johnny_Depp .
+
+<http://dbpedia.org/resource/Time_After_Time_%281979_film%29>
+        dbpprop:starring  dbpedia:Malcolm_McDowell , dbpedia:Mary_Steenburgen .
+
+dbpedia:Mia_Farrow  a  ns3:Actor ;
+        ns3:partner  dbpedia:Woody_Allen ;
+        ns3:spouse   dbpedia:Woody_Allen .
+
+ns11:_A_Threevening_with_Kevin_Smith
+        dbpprop:starring  dbpedia:Kevin_Smith , dbpedia:Jennifer_Schwalbach_Smith .
+
+dbpedia:Ko_So-young  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jung_Woo-sung ;
+        ns3:spouse   dbpedia:Jung_Woo-sung .
+
+<http://dbpedia.org/resource/Boon_%28TV_series%29>
+        dbpprop:starring  dbpedia:Elizabeth_Carling , dbpedia:Neil_Morrissey .
+
+<http://dbpedia.org/resource/Everything_You_Always_Wanted_to_Know_About_Sex*_%28*But_Were_Afraid_to_Ask%29>
+        dbpprop:starring  dbpedia:Louise_Lasser , dbpedia:Woody_Allen .
+
+<http://dbpedia.org/resource/The_Taming_of_the_Shrew_%281967_film%29>
+        dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+<http://dbpedia.org/resource/John_Abraham_%28actor%29>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Bipasha_Basu ;
+        ns3:spouse   dbpedia:Bipasha_Basu .
+
+<http://dbpedia.org/resource/Dragan_Nikoli%C4%87>
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/The_Borrowers_%28TV_miniseries%29>
+        dbpprop:starring  dbpedia:Ian_Holm , dbpedia:Penelope_Wilton .
+
+<http://dbpedia.org/resource/Paradise_%281991_film%29>
+        dbpprop:starring  dbpedia:Don_Johnson , dbpedia:Melanie_Griffith .
+
+dbpedia:Jennifer_Schwalbach_Smith
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Adam_Campbell_%28actor%29>
+        a       ns3:Actor .
+
+dbpedia:Brent_Butt  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Nancy_Robertson_%28actress%29> ;
+        ns3:spouse   <http://dbpedia.org/resource/Nancy_Robertson_%28actress%29> .
+
+<http://dbpedia.org/resource/Room_for_One_More_%28film%29>
+        dbpprop:starring  dbpedia:Betsy_Drake , dbpedia:Cary_Grant .
+
+<http://dbpedia.org/resource/The_Painted_Veil_%282006_film%29>
+        dbpprop:starring  dbpedia:Naomi_Watts , dbpedia:Liev_Schreiber .
+
+<http://dbpedia.org/resource/Dolores_del_R%C3%ADo>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Orson_Welles ;
+        ns3:spouse   dbpedia:Orson_Welles .
+
+dbpedia:Reese_Witherspoon
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Ryan_Phillippe ;
+        ns3:spouse   dbpedia:Ryan_Phillippe .
+
+dbpedia:Elsa_Lanchester
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Charles_Laughton ;
+        ns3:spouse   dbpedia:Charles_Laughton .
+
+dbpedia:Life_Is_Beautiful
+        dbpprop:starring  dbpedia:Roberto_Benigni , dbpedia:Nicoletta_Braschi .
+
+dbpedia:Michael_Emerson
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Carrie_Preston ;
+        ns3:spouse   dbpedia:Carrie_Preston .
+
+dbpedia:Anne_Jackson  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Mayerling_%281957_TV_film%29>
+        dbpprop:starring  dbpedia:Audrey_Hepburn , dbpedia:Mel_Ferrer .
+
+dbpedia:Susan_Douglas_Rubes
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/The_Entertainer_%28film%29>
+        dbpprop:starring  dbpedia:Joan_Plowright , dbpedia:Laurence_Olivier .
+
+dbpedia:Bipasha_Basu  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/John_Abraham_%28actor%29> ;
+        ns3:spouse   <http://dbpedia.org/resource/John_Abraham_%28actor%29> .
+
+<http://dbpedia.org/resource/Michael_and_Mary_%28film%29>
+        dbpprop:starring  dbpedia:Herbert_Marshall , dbpedia:Edna_Best .
+
+<http://dbpedia.org/resource/Rembrandt_%28film%29>
+        dbpprop:starring  dbpedia:Elsa_Lanchester , dbpedia:Charles_Laughton .
+
+dbpedia:Sondra_Locke  a  ns3:Actor ;
+        ns3:partner  dbpedia:Clint_Eastwood ;
+        ns3:spouse   dbpedia:Clint_Eastwood .
+
+dbpedia:Jessica_Alba  a  ns3:Actor .
+
+dbpedia:Kyra_Sedgwick
+        a       ns3:Actor .
+
+dbpedia:The_Badlanders
+        dbpprop:starring  dbpedia:Ernest_Borgnine , dbpedia:Katy_Jurado .
+
+<http://dbpedia.org/resource/Midnight_Man_%28TV_serial%29>
+        dbpprop:starring  dbpedia:Reece_Dinsdale , dbpedia:Zara_Turner .
+
+dbpedia:Catherine_Oxenberg
+        a       ns3:Actor .
+
+dbpedia:Bull_Durham  dbpprop:starring  dbpedia:Susan_Sarandon , dbpedia:Tim_Robbins .
+
+<http://dbpedia.org/resource/A_Fine_Romance_%28TV_series%29>
+        dbpprop:starring  dbpedia:Judi_Dench , <http://dbpedia.org/resource/Michael_Williams_%28actor%29> .
+
+dbpedia:Places_in_the_Heart
+        dbpprop:starring  dbpedia:Ed_Harris , dbpedia:Amy_Madigan .
+
+dbpedia:Days_of_Thunder
+        dbpprop:starring  dbpedia:Nicole_Kidman , dbpedia:Tom_Cruise .
+
+dbpedia:One_False_Move
+        dbpprop:starring  dbpedia:Cynda_Williams , dbpedia:Billy_Bob_Thornton .
+
+dbpedia:The_Omega_Code
+        dbpprop:starring  dbpedia:Casper_Van_Dien , dbpedia:Catherine_Oxenberg .
+
+dbpedia:Quiet_Days_in_Hollywood
+        dbpprop:starring  dbpedia:Chad_Lowe , dbpedia:Hilary_Swank .
+
+dbpedia:Flying_Virus  dbpprop:starring  dbpedia:Gabrielle_Anwar , dbpedia:Craig_Sheffer .
+
+<http://dbpedia.org/resource/Who_Was_That_Lady%3F>
+        dbpprop:starring  dbpedia:Tony_Curtis , dbpedia:Janet_Leigh .
+
+dbpedia:Fiona_Sit  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jaycee_Chan ;
+        ns3:spouse   dbpedia:Jaycee_Chan .
+
+<http://dbpedia.org/resource/The_Mighty_B%21>
+        dbpprop:starring  dbpedia:Andy_Richter , dbpedia:Sarah_Thyre .
+
+dbpedia:James_Tupper  a  ns3:Actor .
+
+dbpedia:The_Private_Life_of_Henry_VIII
+        dbpprop:starring  dbpedia:Elsa_Lanchester , dbpedia:Charles_Laughton .
+
+dbpedia:Scream_3  dbpprop:starring  dbpedia:Courteney_Cox , dbpedia:David_Arquette .
+
+dbpedia:Alexandra_Maria_Lara
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Sam_Riley ;
+        ns3:spouse   dbpedia:Sam_Riley .
+
+dbpedia:Saif_Ali_Khan
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Kareena_Kapoor ;
+        ns3:spouse   dbpedia:Kareena_Kapoor .
+
+dbpedia:Farrah_Fawcett
+        a            ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Ryan_O%27Neal> ;
+        ns3:spouse   <http://dbpedia.org/resource/Ryan_O%27Neal> .
+
+dbpedia:Every_Girl_Should_Be_Married
+        dbpprop:starring  dbpedia:Cary_Grant , dbpedia:Betsy_Drake .
+
+dbpedia:Pat_and_Mike  dbpprop:starring  dbpedia:Spencer_Tracy , dbpedia:Katharine_Hepburn .
+
+dbpedia:The_V.I.P.s  dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Kevin_Smith  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jennifer_Schwalbach_Smith ;
+        ns3:spouse   dbpedia:Jennifer_Schwalbach_Smith .
+
+dbpedia:Sarah_Thyre  a  ns3:Actor .
+
+ns4:_A_True_Underdog_Story
+        dbpprop:starring  dbpedia:Ben_Stiller , dbpedia:Christine_Taylor .
+
+dbpedia:Edna_Best  a  ns3:Actor ;
+        ns3:partner  dbpedia:Herbert_Marshall ;
+        ns3:spouse   dbpedia:Herbert_Marshall .
+
+dbpedia:Jeff_Goldblum
+        a       ns3:Actor .
+
+dbpedia:Reb_Brown  a  ns3:Actor ;
+        ns3:partner  dbpedia:Cisse_Cameron ;
+        ns3:spouse   dbpedia:Cisse_Cameron .
+
+dbpedia:Eli_Wallach  a  ns3:Actor ;
+        ns3:partner  dbpedia:Anne_Jackson ;
+        ns3:spouse   dbpedia:Anne_Jackson .
+
+dbpedia:Gloria_Swanson
+        a       ns3:Actor .
+
+dbpedia:Love_Streams  dbpprop:starring  dbpedia:Gena_Rowlands , dbpedia:John_Cassavetes .
+
+dbpedia:Anne-Marie_Duff
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Sense_and_Sensibility_%28film%29>
+        dbpprop:starring  dbpedia:Emma_Thompson , dbpedia:Greg_Wise .
+
+dbpedia:Richard_Burton
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Elizabeth_Taylor ;
+        ns3:spouse   dbpedia:Elizabeth_Taylor .
+
+dbpedia:James_McAvoy  a  ns3:Actor ;
+        ns3:partner  dbpedia:Anne-Marie_Duff ;
+        ns3:spouse   dbpedia:Anne-Marie_Duff .
+
+dbpedia:Jim_Carrey  a  ns3:Actor ;
+        ns3:partner  dbpedia:Lauren_Holly ;
+        ns3:spouse   dbpedia:Lauren_Holly .
+
+<http://dbpedia.org/resource/The_Comedians_%281967_film%29>
+        dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Beavis_and_Butt-head_Do_America
+        dbpprop:starring  dbpedia:Demi_Moore , dbpedia:Bruce_Willis .
+
+<http://dbpedia.org/resource/Bill_Williams_%28actor%29>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Barbara_Hale ;
+        ns3:spouse   dbpedia:Barbara_Hale .
+
+dbpedia:Gena_Rowlands
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:John_Cassavetes ;
+        ns3:spouse   dbpedia:John_Cassavetes .
+
+dbpedia:Dhan_Dhana_Dhan_Goal
+        dbpprop:starring  dbpedia:Bipasha_Basu , <http://dbpedia.org/resource/John_Abraham_%28actor%29> .
+
+dbpedia:Charlize_Theron
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Stuart_Townsend ;
+        ns3:spouse   dbpedia:Stuart_Townsend .
+
+<http://dbpedia.org/resource/Nancy_Robertson_%28actress%29>
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/All_the_King%27s_Men_%281949_film%29>
+        dbpprop:starring  dbpedia:Joanne_Dru , <http://dbpedia.org/resource/John_Ireland_%28actor%29> .
+
+<http://dbpedia.org/resource/Sharpe%27s_Waterloo_%28TV_programme%29>
+        dbpprop:starring  dbpedia:Abigail_Cruttenden , dbpedia:Sean_Bean .
+
+<http://dbpedia.org/resource/Sharpe%27s_Justice>
+        dbpprop:starring  dbpedia:Abigail_Cruttenden , dbpedia:Sean_Bean .
+
+dbpedia:Jill_Talley  a  ns3:Actor .
+
+dbpedia:Man_About_Town
+        dbpprop:starring  <http://dbpedia.org/resource/Jerry_O%27Connell> , dbpedia:Rebecca_Romijn .
+
+dbpedia:Joanne_Dru  a  ns3:Actor .
+
+dbpedia:John_Cassavetes
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Gena_Rowlands ;
+        ns3:spouse   dbpedia:Gena_Rowlands .
+
+<http://dbpedia.org/resource/Mr._%26_Mrs._Smith_%282005_film%29>
+        dbpprop:starring  dbpedia:Angelina_Jolie , dbpedia:Brad_Pitt .
+
+dbpedia:Honky_Tonk_Freeway
+        dbpprop:starring  dbpedia:Hume_Cronyn , dbpedia:Jessica_Tandy .
+
+<http://dbpedia.org/resource/Dark_Angel_%28TV_series%29>
+        dbpprop:starring  dbpedia:Jessica_Alba , dbpedia:Michael_Weatherly .
+
+dbpedia:Big_Bad_Love  dbpprop:starring  dbpedia:Debra_Winger , dbpedia:Arliss_Howard .
+
+dbpedia:Lights_of_Old_Santa_Fe
+        dbpprop:starring  dbpedia:Dale_Evans , dbpedia:Roy_Rogers .
+
+dbpedia:Billy_Bob_Thornton
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Angelina_Jolie , dbpedia:Cynda_Williams ;
+        ns3:spouse   dbpedia:Angelina_Jolie , dbpedia:Cynda_Williams .
+
+dbpedia:Spies_Like_Us
+        dbpprop:starring  dbpedia:Dan_Aykroyd , dbpedia:Donna_Dixon .
+
+<http://dbpedia.org/resource/McCabe_%26_Mrs._Miller>
+        dbpprop:starring  dbpedia:Warren_Beatty , dbpedia:Julie_Christie .
+
+dbpedia:The_Sandpiper
+        dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Glenne_Headly
+        a       ns3:Actor .
+
+dbpedia:Chad_Lowe  a  ns3:Actor .
+
+dbpedia:Earth_Girls_Are_Easy
+        dbpprop:starring  dbpedia:Geena_Davis , dbpedia:Jeff_Goldblum .
+
+<http://dbpedia.org/resource/Clash_of_the_Titans_%281981_film%29>
+        dbpprop:starring  dbpedia:Harry_Hamlin , dbpedia:Ursula_Andress .
+
+dbpedia:Will_Arnett  a  ns3:Actor .
+
+dbpedia:Wendy_Crewson
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Les_Biches_%281968_film%29>
+        dbpprop:starring  <http://dbpedia.org/resource/St%C3%A9phane_Audran> , dbpedia:Jean-Louis_Trintignant .
+
+dbpedia:Rae_Dawn_Chong
+        a       ns3:Actor .
+
+dbpedia:Jaycee_Chan  a  ns3:Actor .
+
+dbpedia:Barbara_Hershey
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Happily_N%27Ever_After>
+        dbpprop:starring  <http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.> , dbpedia:Sarah_Michelle_Gellar .
+
+dbpedia:Michael_Ansara
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Barbara_Eden ;
+        ns3:spouse   dbpedia:Barbara_Eden .
+
+<http://dbpedia.org/resource/Dark_Passage_%28film%29>
+        dbpprop:starring  dbpedia:Humphrey_Bogart , dbpedia:Lauren_Bacall .
+
+<http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.>
+        a       ns3:Actor .
+
+dbpedia:Hume_Cronyn  a  ns3:Actor .
+
+dbpedia:Boris_Kodjoe  a  ns3:Actor ;
+        ns3:partner  dbpedia:Nicole_Ari_Parker ;
+        ns3:spouse   dbpedia:Nicole_Ari_Parker .
+
+ns7:_Tribulation_Force
+        dbpprop:starring  dbpedia:Chelsea_Noble , dbpedia:Kirk_Cameron .
+
+dbpedia:Kelly_Preston
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:John_Travolta ;
+        ns3:spouse   dbpedia:John_Travolta .
+
+dbpedia:Kirk_Cameron  a  ns3:Actor ;
+        ns3:partner  dbpedia:Chelsea_Noble ;
+        ns3:spouse   dbpedia:Chelsea_Noble .
+
+dbpedia:Katy_Jurado  a  ns3:Actor ;
+        ns3:partner  dbpedia:Ernest_Borgnine ;
+        ns3:spouse   dbpedia:Ernest_Borgnine .
+
+dbpedia:Esmond_Knight
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Nora_Swinburne ;
+        ns3:spouse   dbpedia:Nora_Swinburne .
+
+dbpedia:Kelly_LeBrock
+        a       ns3:Actor .
+
+dbpedia:Far_Out_Man  dbpprop:starring  dbpedia:Rae_Dawn_Chong , dbpedia:C._Thomas_Howell .
+
+<http://dbpedia.org/resource/Michael_Williams_%28actor%29>
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Three_Sisters_%281970_film%29>
+        dbpprop:starring  dbpedia:Laurence_Olivier , dbpedia:Joan_Plowright .
+
+<http://dbpedia.org/resource/Love_Affair_%281994_film%29>
+        dbpprop:starring  dbpedia:Annette_Bening , dbpedia:Warren_Beatty .
+
+dbpedia:Kill_Me_Again
+        dbpprop:starring  dbpedia:Joanne_Whalley , dbpedia:Val_Kilmer .
+
+<http://dbpedia.org/resource/Guru_%282007_film%29>
+        dbpprop:starring  dbpedia:Aishwarya_Rai , dbpedia:Abhishek_Bachchan .
+
+dbpedia:Arliss_Howard
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Debra_Winger ;
+        ns3:spouse   dbpedia:Debra_Winger .
+
+dbpedia:Doctor_Detroit
+        dbpprop:starring  dbpedia:Dan_Aykroyd , dbpedia:Donna_Dixon .
+
+dbpedia:Billy_Campbell
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jennifer_Connelly ;
+        ns3:spouse   dbpedia:Jennifer_Connelly .
+
+dbpedia:Vengeance_Valley
+        dbpprop:starring  dbpedia:Joanne_Dru , <http://dbpedia.org/resource/John_Ireland_%28actor%29> .
+
+<http://dbpedia.org/resource/Carr%C3%A9_Otis>
+        a       ns3:Actor .
+
+ns10:_Return_of_the_Seavers
+        dbpprop:starring  dbpedia:Kirk_Cameron , dbpedia:Chelsea_Noble .
+
+<http://dbpedia.org/resource/Cocoon_%28film%29>
+        dbpprop:starring  dbpedia:Hume_Cronyn , dbpedia:Jessica_Tandy .
+
+dbpedia:Gene_Wilder  a  ns3:Actor ;
+        ns3:partner  dbpedia:Gilda_Radner ;
+        ns3:spouse   dbpedia:Gilda_Radner .
+
+<http://dbpedia.org/resource/Horton_Hears_a_Who%21_%28film%29>
+        dbpprop:starring  dbpedia:Will_Arnett , dbpedia:Amy_Poehler .
+
+<http://dbpedia.org/resource/Sin%C3%A9ad_Cusack>
+        a       ns3:Actor .
+
+dbpedia:Ryan_Phillippe
+        a       ns3:Actor .
+
+dbpedia:Martha_Burns  a  ns3:Actor .
+
+dbpedia:Peter_Sellers
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Britt_Ekland ;
+        ns3:spouse   dbpedia:Britt_Ekland .
+
+dbpedia:Jonny_Lee_Miller
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/The_Seventh_Cross_%28film%29>
+        dbpprop:starring  dbpedia:Hume_Cronyn , dbpedia:Jessica_Tandy .
+
+dbpedia:Spencer_Tracy
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Katharine_Hepburn ;
+        ns3:spouse   dbpedia:Katharine_Hepburn .
+
+dbpedia:Harry_Hamlin  a  ns3:Actor ;
+        ns3:partner  dbpedia:Ursula_Andress ;
+        ns3:spouse   dbpedia:Ursula_Andress .
+
+dbpedia:21_Days  dbpprop:starring  dbpedia:Laurence_Olivier , dbpedia:Vivien_Leigh .
+
+dbpedia:Bairaag  dbpprop:starring  dbpedia:Saira_Banu , dbpedia:Dilip_Kumar .
+
+dbpedia:The_Last_Station
+        dbpprop:starring  dbpedia:James_McAvoy , dbpedia:Anne-Marie_Duff .
+
+dbpedia:Don_Johnson  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Another_Part_of_the_Forest_%28film%29>
+        dbpprop:starring  dbpedia:Florence_Eldridge , dbpedia:Fredric_March .
+
+dbpedia:Left_Behind_film_series
+        dbpprop:starring  dbpedia:Kirk_Cameron , dbpedia:Chelsea_Noble .
+
+dbpedia:Slings_and_Arrows
+        dbpprop:starring  dbpedia:Paul_Gross , dbpedia:Martha_Burns .
+
+<http://dbpedia.org/resource/The_Edge_%28Fox_TV_series%29>
+        dbpprop:starring  dbpedia:Jill_Talley , dbpedia:Tom_Kenny .
+
+dbpedia:Ossie_Davis  a  ns3:Actor ;
+        ns3:partner  dbpedia:Ruby_Dee ;
+        ns3:spouse   dbpedia:Ruby_Dee .
+
+dbpedia:Naomi_Watts  a  ns3:Actor ;
+        ns3:partner  dbpedia:Liev_Schreiber ;
+        ns3:spouse   dbpedia:Liev_Schreiber .
+
+dbpedia:Jan_Rubes  a  ns3:Actor ;
+        ns3:partner  dbpedia:Susan_Douglas_Rubes ;
+        ns3:spouse   dbpedia:Susan_Douglas_Rubes .
+
+ns5:_Monsters_Unleashed
+        dbpprop:starring  <http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.> , dbpedia:Sarah_Michelle_Gellar .
+
+dbpedia:Hugh_Dancy  a  ns3:Actor ;
+        ns3:partner  dbpedia:Claire_Danes ;
+        ns3:spouse   dbpedia:Claire_Danes .
+
+dbpedia:The_Couch_Trip
+        dbpprop:starring  dbpedia:Donna_Dixon , dbpedia:Dan_Aykroyd .
+
+dbpedia:Natalie_Wood  a  ns3:Actor ;
+        ns3:partner  dbpedia:Robert_Wagner ;
+        ns3:spouse   dbpedia:Robert_Wagner .
+
+<http://dbpedia.org/resource/The_Last_Flight_%282009_film%29>
+        dbpprop:starring  dbpedia:Marion_Cotillard , dbpedia:Guillaume_Canet .
+
+<http://dbpedia.org/resource/Trapped_%282002_film%29>
+        dbpprop:starring  dbpedia:Stuart_Townsend , dbpedia:Charlize_Theron .
+
+dbpedia:Penelope_Wilton
+        a       ns3:Actor .
+
+dbpedia:Sean_Bean  a  ns3:Actor ;
+        ns3:partner  dbpedia:Abigail_Cruttenden ;
+        ns3:spouse   dbpedia:Abigail_Cruttenden .
+
+<http://dbpedia.org/resource/Gopi_%281970_film%29>
+        dbpprop:starring  dbpedia:Saira_Banu , dbpedia:Dilip_Kumar .
+
+dbpedia:Ed_Harris  a  ns3:Actor ;
+        ns3:partner  dbpedia:Amy_Madigan ;
+        ns3:spouse   dbpedia:Amy_Madigan .
+
+<http://dbpedia.org/resource/Scooby-Doo_%28film%29>
+        dbpprop:starring  <http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.> , dbpedia:Sarah_Michelle_Gellar .
+
+<http://dbpedia.org/resource/The_Vikings_%28film%29>
+        dbpprop:starring  dbpedia:Tony_Curtis , dbpedia:Janet_Leigh .
+
+dbpedia:Life_With_The_Lyons
+        dbpprop:starring  dbpedia:Ben_Lyon , dbpedia:Bebe_Daniels .
+
+<http://dbpedia.org/resource/Born_Yesterday_%281993_film%29>
+        dbpprop:starring  dbpedia:Don_Johnson , dbpedia:Melanie_Griffith .
+
+dbpedia:Charlie_Sheen
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Denise_Richards ;
+        ns3:spouse   dbpedia:Denise_Richards .
+
+dbpedia:Tom_Cruise  a  ns3:Actor ;
+        ns3:partner  dbpedia:Nicole_Kidman , <http://dbpedia.org/resource/Pen%C3%A9lope_Cruz> ;
+        ns3:spouse   dbpedia:Nicole_Kidman , <http://dbpedia.org/resource/Pen%C3%A9lope_Cruz> .
+
+ns8:_World_at_War  dbpprop:starring  dbpedia:Chelsea_Noble , dbpedia:Kirk_Cameron .
+
+dbpedia:Virginia_Madsen
+        a       ns3:Actor .
+
+dbpedia:That_Hamilton_Woman
+        dbpprop:starring  dbpedia:Vivien_Leigh , dbpedia:Laurence_Olivier .
+
+dbpedia:Scandal_in_the_Family
+        dbpprop:starring  dbpedia:Michele_Placido , dbpedia:Simonetta_Stefanelli .
+
+dbpedia:Ursula_Andress
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Harry_Hamlin ;
+        ns3:spouse   dbpedia:Harry_Hamlin .
+
+dbpedia:Mekhi_Phifer  a  ns3:Actor ;
+        ns3:partner  dbpedia:Malinda_Williams ;
+        ns3:spouse   dbpedia:Malinda_Williams .
+
+dbpedia:Kevin_Bacon  a  ns3:Actor ;
+        ns3:partner  dbpedia:Kyra_Sedgwick ;
+        ns3:spouse   dbpedia:Kyra_Sedgwick .
+
+dbpedia:Party_of_Five
+        dbpprop:starring  dbpedia:Paula_Devicq , dbpedia:Scott_Wolf .
+
+dbpedia:Camp_Lazlo  dbpprop:starring  dbpedia:Jill_Talley , dbpedia:Tom_Kenny .
+
+dbpedia:Abhishek_Bachchan
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Aishwarya_Rai ;
+        ns3:spouse   dbpedia:Aishwarya_Rai .
+
+dbpedia:Uma_Thurman  a  ns3:Actor ;
+        ns3:partner  dbpedia:Ethan_Hawke ;
+        ns3:spouse   dbpedia:Ethan_Hawke .
+
+dbpedia:Zara_Turner  a  ns3:Actor ;
+        ns3:partner  dbpedia:Reece_Dinsdale ;
+        ns3:spouse   dbpedia:Reece_Dinsdale .
+
+dbpedia:Alec_Baldwin  a  ns3:Actor .
+
+dbpedia:Raavan  dbpprop:starring  dbpedia:Aishwarya_Rai , dbpedia:Abhishek_Bachchan .
+
+dbpedia:Roman_Polanski
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Sharon_Tate ;
+        ns3:spouse   dbpedia:Sharon_Tate .
+
+dbpedia:Nicole_Ari_Parker
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Boris_Kodjoe ;
+        ns3:spouse   dbpedia:Boris_Kodjoe .
+
+dbpedia:Good_Sports  dbpprop:starring  dbpedia:Farrah_Fawcett , <http://dbpedia.org/resource/Ryan_O%27Neal> .
+
+dbpedia:The_Blood_Bond
+        dbpprop:starring  dbpedia:Jennifer_Blanc , dbpedia:Michael_Biehn .
+
+dbpedia:Betsy_Drake  a  ns3:Actor .
+
+dbpedia:Roy_Rogers  a  ns3:Actor ;
+        ns3:partner  dbpedia:Dale_Evans ;
+        ns3:spouse   dbpedia:Dale_Evans .
+
+dbpedia:Madhoshi  dbpprop:starring  dbpedia:Bipasha_Basu , <http://dbpedia.org/resource/John_Abraham_%28actor%29> .
+
+dbpedia:Katharine_Hepburn
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Spencer_Tracy ;
+        ns3:spouse   dbpedia:Spencer_Tracy .
+
+dbpedia:Antonio_Banderas
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Sharpe%27s_Revenge_%28TV_programme%29>
+        dbpprop:starring  dbpedia:Sean_Bean , dbpedia:Abigail_Cruttenden .
+
+dbpedia:Warren_Beatty
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Annette_Bening ;
+        ns3:spouse   dbpedia:Annette_Bening .
+
+<http://dbpedia.org/resource/Michael_Murphy_%28actor%29>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Wendy_Crewson ;
+        ns3:spouse   dbpedia:Wendy_Crewson .
+
+dbpedia:Bruce_Abbott  a  ns3:Actor .
+
+dbpedia:Stealing_Beauty
+        dbpprop:starring  dbpedia:Jeremy_Irons , <http://dbpedia.org/resource/Sin%C3%A9ad_Cusack> .
+
+<http://dbpedia.org/resource/Brown_Sugar_%282002_film%29>
+        dbpprop:starring  dbpedia:Nicole_Ari_Parker , dbpedia:Boris_Kodjoe .
+
+<http://dbpedia.org/resource/Hanky_Panky_%28film%29>
+        dbpprop:starring  dbpedia:Gene_Wilder , dbpedia:Gilda_Radner .
+
+dbpedia:Jungle_Fever  dbpprop:starring  dbpedia:Ossie_Davis , dbpedia:Ruby_Dee .
+
+dbpedia:The_Singing_Detective
+        dbpprop:starring  dbpedia:Imelda_Staunton , <http://dbpedia.org/resource/Jim_Carter_%28actor%29> .
+
+dbpedia:Clint_Eastwood
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Sondra_Locke ;
+        ns3:spouse   dbpedia:Sondra_Locke .
+
+dbpedia:Any_Which_Way_You_Can
+        dbpprop:starring  dbpedia:Sondra_Locke , dbpedia:Clint_Eastwood .
+
+dbpedia:The_Number_23
+        dbpprop:starring  dbpedia:Danny_Huston , dbpedia:Virginia_Madsen .
+
+dbpedia:St._George_Shoots_the_Dragon
+        dbpprop:starring  <http://dbpedia.org/resource/Dragan_Nikoli%C4%87> , <http://dbpedia.org/resource/Milena_Dravi%C4%87> .
+
+dbpedia:Robert_Wagner
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Natalie_Wood ;
+        ns3:spouse   dbpedia:Natalie_Wood .
+
+dbpedia:Aetbaar  dbpprop:starring  dbpedia:Bipasha_Basu , <http://dbpedia.org/resource/John_Abraham_%28actor%29> .
+
+dbpedia:Chelsea_Noble
+        a       ns3:Actor .
+
+dbpedia:Amy_Madigan  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Young_Americans_%282010_film%29>
+        dbpprop:starring  dbpedia:Anna_Faris , dbpedia:Chris_Pratt .
+
+dbpedia:Shadows_and_Fog
+        dbpprop:starring  dbpedia:Mia_Farrow , dbpedia:Woody_Allen .
+
+dbpedia:Goldie_Hawn  a  ns3:Actor ;
+        ns3:partner  dbpedia:Kurt_Russell ;
+        ns3:spouse   dbpedia:Kurt_Russell .
+
+dbpedia:Kenix_Kwok  a  ns3:Actor ;
+        ns3:partner  dbpedia:Frankie_Lam ;
+        ns3:spouse   dbpedia:Frankie_Lam .
+
+dbpedia:Jocelyn_Quivrin
+        a       ns3:Actor .
+
+dbpedia:Steven_Seagal
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Kelly_LeBrock ;
+        ns3:spouse   dbpedia:Kelly_LeBrock .
+
+dbpedia:Robert_Stephens
+        a       ns3:Actor .
+
+dbpedia:The_Rebel_Rousers
+        dbpprop:starring  dbpedia:Bruce_Dern , dbpedia:Diane_Ladd .
+
+<http://dbpedia.org/resource/Eleni_%28film%29>
+        dbpprop:starring  dbpedia:John_Malkovich , dbpedia:Glenne_Headly .
+
+dbpedia:Liev_Schreiber
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Naomi_Watts ;
+        ns3:spouse   dbpedia:Naomi_Watts .
+
+dbpedia:Dhai_Akshar_Prem_Ke
+        dbpprop:starring  dbpedia:Aishwarya_Rai , dbpedia:Abhishek_Bachchan .
+
+<http://dbpedia.org/resource/Every_Which_Way_but_Loose_%28film%29>
+        dbpprop:starring  dbpedia:Clint_Eastwood , dbpedia:Sondra_Locke .
+
+<http://dbpedia.org/resource/Doctor_Faustus_%281967_film%29>
+        dbpprop:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Children_of_a_Lesser_God
+        dbpprop:starring  dbpedia:Marlee_Matlin , dbpedia:William_Hurt .
+
+dbpedia:Jung_Woo-sung
+        a       ns3:Actor .
+
+dbpedia:Lesley_Manville
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Ten_Brothers_%28TVB%29>
+        dbpprop:starring  dbpedia:Kenix_Kwok , dbpedia:Frankie_Lam .
+
+dbpedia:Diahnne_Abbott
+        a       ns3:Actor .
+
+dbpedia:Hilary_Swank  a  ns3:Actor ;
+        ns3:partner  dbpedia:Chad_Lowe ;
+        ns3:spouse   dbpedia:Chad_Lowe .
+
+<http://dbpedia.org/resource/Tape_%28film%29>
+        dbpprop:starring  dbpedia:Uma_Thurman , dbpedia:Ethan_Hawke .
+
+<http://dbpedia.org/resource/Grande_%C3%89cole_%28film%29>
+        dbpprop:starring  dbpedia:Alice_Taglioni , dbpedia:Jocelyn_Quivrin .
+
+<http://dbpedia.org/resource/Tempest_%281982_film%29>
+        dbpprop:starring  dbpedia:Gena_Rowlands , dbpedia:John_Cassavetes .
+
+dbpedia:Michael_Biehn
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Jennifer_Blanc ;
+        ns3:spouse   dbpedia:Jennifer_Blanc .
+
+dbpedia:Tony_Curtis  a  ns3:Actor ;
+        ns3:partner  dbpedia:Janet_Leigh ;
+        ns3:spouse   dbpedia:Janet_Leigh .
+
+dbpedia:Lauren_Holly  a  ns3:Actor .
+
+dbpedia:Orson_Welles  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Dolores_del_R%C3%ADo> ;
+        ns3:spouse   <http://dbpedia.org/resource/Dolores_del_R%C3%ADo> .
+
+dbpedia:Chupke_Chupke
+        dbpprop:starring  dbpedia:Amitabh_Bachchan , dbpedia:Jaya_Bachchan .
+
+dbpedia:Opening_Night
+        dbpprop:starring  dbpedia:Gena_Rowlands , dbpedia:John_Cassavetes .
+
+dbpedia:Donna_Dixon  a  ns3:Actor ;
+        ns3:partner  dbpedia:Dan_Aykroyd ;
+        ns3:spouse   dbpedia:Dan_Aykroyd .
+
+dbpedia:Loaded_Weapon_1
+        dbpprop:starring  dbpedia:Denise_Richards , dbpedia:Charlie_Sheen .
+
+dbpedia:London_Boulevard
+        dbpprop:starring  dbpedia:David_Thewlis , dbpedia:Anna_Friel .
+
+dbpedia:Colleen_Dewhurst
+        a       ns3:Actor .
+
+dbpedia:William_Hurt  a  ns3:Actor ;
+        ns3:partner  dbpedia:Marlee_Matlin ;
+        ns3:spouse   dbpedia:Marlee_Matlin .
+
+<http://dbpedia.org/resource/State_of_the_Union_%28film%29>
+        dbpprop:starring  dbpedia:Spencer_Tracy , dbpedia:Katharine_Hepburn .
+
+dbpedia:High_School_High
+        dbpprop:starring  dbpedia:Malinda_Williams , dbpedia:Mekhi_Phifer .
+
+dbpedia:Scott_Wolf  a  ns3:Actor .
+
+dbpedia:Katharine_Ross
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Tashan_%28film%29>
+        dbpprop:starring  dbpedia:Saif_Ali_Khan , dbpedia:Kareena_Kapoor .
+
+dbpedia:Vanilla_Sky  dbpprop:starring  <http://dbpedia.org/resource/Pen%C3%A9lope_Cruz> , dbpedia:Tom_Cruise .
+
+dbpedia:Tom_Kenny  a  ns3:Actor ;
+        ns3:partner  dbpedia:Jill_Talley ;
+        ns3:spouse   dbpedia:Jill_Talley .
+
+dbpedia:Two-Minute_Warning
+        dbpprop:starring  dbpedia:John_Cassavetes , dbpedia:Gena_Rowlands .
+
+dbpedia:Robert_De_Niro
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Diahnne_Abbott ;
+        ns3:spouse   dbpedia:Diahnne_Abbott .
+
+<http://dbpedia.org/resource/Sagina_%28film%29>
+        dbpprop:starring  dbpedia:Saira_Banu , dbpedia:Dilip_Kumar .
+
+<http://dbpedia.org/resource/The_River_%281951_film%29>
+        dbpprop:starring  dbpedia:Nora_Swinburne , dbpedia:Esmond_Knight .
+
+dbpedia:Herbert_Marshall
+        a       ns3:Actor .
+
+dbpedia:Hammersmith_Is_Out
+        dbpprop:starring  dbpedia:Elizabeth_Taylor , dbpedia:Richard_Burton .
+
+<http://dbpedia.org/resource/Emmanuelle_B%C3%A9art>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Daniel_Auteuil ;
+        ns3:spouse   dbpedia:Daniel_Auteuil .
+
+dbpedia:Zanjeer  dbpprop:starring  dbpedia:Amitabh_Bachchan , dbpedia:Jaya_Bachchan .
+
+<http://dbpedia.org/resource/Step_Up_%28film%29>
+        dbpprop:starring  dbpedia:Channing_Tatum , dbpedia:Jenna_Dewan .
+
+dbpedia:Brigitte_Nielsen
+        a       ns3:Actor .
+
+dbpedia:Jimmy_and_Judy
+        dbpprop:starring  dbpedia:Rachael_Bella , dbpedia:Edward_Furlong .
+
+<http://dbpedia.org/resource/Cleopatra_%281963_film%29>
+        dbpprop:starring  dbpedia:Elizabeth_Taylor , dbpedia:Richard_Burton .
+
+ns9:_The_Movie  dbpprop:starring  dbpedia:Danny_DeVito , dbpedia:Rhea_Perlman .
+
+dbpedia:Gattaca  dbpprop:starring  dbpedia:Ethan_Hawke , dbpedia:Uma_Thurman .
+
+ns8:_The_Movie  dbpprop:starring  dbpedia:Kirk_Cameron , dbpedia:Chelsea_Noble .
+
+dbpedia:Nora_Swinburne
+        a       ns3:Actor .
+
+dbpedia:Andy_Richter  a  ns3:Actor ;
+        ns3:partner  dbpedia:Sarah_Thyre ;
+        ns3:spouse   dbpedia:Sarah_Thyre .
+
+dbpedia:Cruel_Intentions
+        dbpprop:starring  dbpedia:Reese_Witherspoon , dbpedia:Ryan_Phillippe .
+
+dbpedia:Saira_Banu  a  ns3:Actor ;
+        ns3:partner  dbpedia:Dilip_Kumar ;
+        ns3:spouse   dbpedia:Dilip_Kumar .
+
+dbpedia:Men_in_Trees  dbpprop:starring  dbpedia:Anne_Heche , dbpedia:James_Tupper .
+
+<http://dbpedia.org/resource/The_Firm_%281988_film%29>
+        dbpprop:starring  dbpedia:Gary_Oldman , dbpedia:Lesley_Manville .
+
+dbpedia:Bugsy  dbpprop:starring  dbpedia:Warren_Beatty , dbpedia:Annette_Bening .
+
+dbpedia:Straight-Jacket
+        dbpprop:starring  dbpedia:Carrie_Preston , dbpedia:Michael_Emerson .
+
+dbpedia:Val_Kilmer  a  ns3:Actor ;
+        ns3:partner  dbpedia:Joanne_Whalley ;
+        ns3:spouse   dbpedia:Joanne_Whalley .
+
+dbpedia:Will_Smith  a  ns3:Actor .
+
+<http://dbpedia.org/resource/The_Legacy_%28film%29>
+        dbpprop:starring  dbpedia:Katharine_Ross , dbpedia:Sam_Elliott .
+
+dbpedia:Elizabeth_Carling
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Neil_Morrissey ;
+        ns3:spouse   dbpedia:Neil_Morrissey .
+
+dbpedia:Barbara_Hale  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Evening_%28film%29>
+        dbpprop:starring  dbpedia:Hugh_Dancy , dbpedia:Claire_Danes .
+
+dbpedia:Denise_Richards
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Charlie_Sheen ;
+        ns3:spouse   dbpedia:Charlie_Sheen .
+
+dbpedia:Ranvir_Shorey
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Konkona_Sen_Sharma ;
+        ns3:spouse   dbpedia:Konkona_Sen_Sharma .
+
+dbpedia:Dennis_Quaid  a  ns3:Actor .
+
+dbpedia:A_Heart_in_Winter
+        dbpprop:starring  <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> , dbpedia:Daniel_Auteuil .
+
+dbpedia:Meg_Ryan  a  ns3:Actor ;
+        ns3:partner  dbpedia:Dennis_Quaid ;
+        ns3:spouse   dbpedia:Dennis_Quaid .
+
+dbpedia:Lauren_Bacall
+        a       ns3:Actor .
+
+dbpedia:The_Bobo  dbpprop:starring  dbpedia:Peter_Sellers , dbpedia:Britt_Ekland .
+
+dbpedia:Broadway_Danny_Rose
+        dbpprop:starring  dbpedia:Mia_Farrow , dbpedia:Woody_Allen .
+
+dbpedia:Ernest_Borgnine
+        a       ns3:Actor .
+
+dbpedia:Barbara_Eden  a  ns3:Actor .
+
+dbpedia:Kareena_Kapoor
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Saif_Ali_Khan ;
+        ns3:spouse   dbpedia:Saif_Ali_Khan .
+
+<http://dbpedia.org/resource/Silsila_%28film%29>
+        dbpprop:starring  dbpedia:Amitabh_Bachchan , dbpedia:Jaya_Bachchan .
+
+ns13:_The_Assassination_Game
+        dbpprop:starring  dbpedia:Bruce_Abbott , dbpedia:Linda_Hamilton .
+
+ns6:_The_Return  dbpprop:starring  dbpedia:Jessica_Tandy , dbpedia:Hume_Cronyn .
+
+dbpedia:Amy_Poehler  a  ns3:Actor ;
+        ns3:partner  dbpedia:Will_Arnett ;
+        ns3:spouse   dbpedia:Will_Arnett .
+
+dbpedia:Gary_Oldman  a  ns3:Actor ;
+        ns3:partner  dbpedia:Lesley_Manville ;
+        ns3:spouse   dbpedia:Lesley_Manville .
+
+dbpedia:Linda_Hamilton
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Bruce_Abbott ;
+        ns3:spouse   dbpedia:Bruce_Abbott .
+
+<http://dbpedia.org/resource/A_Little_Piece_of_Heaven_%28film%29>
+        dbpprop:starring  dbpedia:Kirk_Cameron , dbpedia:Chelsea_Noble .
+
+<http://dbpedia.org/resource/Christopher_Stone_%28actor%29>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Dee_Wallace-Stone ;
+        ns3:spouse   dbpedia:Dee_Wallace-Stone .
+
+<http://dbpedia.org/resource/The_Sea_of_Grass_%28film%29>
+        dbpprop:starring  dbpedia:Spencer_Tracy , dbpedia:Katharine_Hepburn .
+
+dbpedia:Dumb_and_Dumber
+        dbpprop:starring  dbpedia:Jim_Carrey , dbpedia:Lauren_Holly .
+
+dbpedia:Sarah_Michelle_Gellar
+        a            ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.> ;
+        ns3:spouse   <http://dbpedia.org/resource/Freddie_Prinze%2C_Jr.> .
+
+dbpedia:Young_Bess  dbpprop:starring  dbpedia:Jean_Simmons , dbpedia:Stewart_Granger .
+
+dbpedia:Mickey_Rourke
+        a            ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Carr%C3%A9_Otis> ;
+        ns3:spouse   <http://dbpedia.org/resource/Carr%C3%A9_Otis> .
+
+dbpedia:Corner_Gas  dbpprop:starring  dbpedia:Brent_Butt , <http://dbpedia.org/resource/Nancy_Robertson_%28actress%29> .
+
+dbpedia:Laurence_Olivier_Presents
+        dbpprop:starring  dbpedia:Natalie_Wood , dbpedia:Robert_Wagner , dbpedia:Laurence_Olivier , dbpedia:Joan_Plowright .
+
+dbpedia:Paula_Devicq  a  ns3:Actor ;
+        ns3:partner  dbpedia:Scott_Wolf ;
+        ns3:spouse   dbpedia:Scott_Wolf .
+
+dbpedia:Woman_of_the_Year
+        dbpprop:starring  dbpedia:Spencer_Tracy , dbpedia:Katharine_Hepburn .
+
+<http://dbpedia.org/resource/Matilda_%28film%29>
+        dbpprop:starring  dbpedia:Rhea_Perlman , dbpedia:Danny_DeVito .
+
+<http://dbpedia.org/resource/Jerry_O%27Connell>
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Rebecca_Romijn ;
+        ns3:spouse   dbpedia:Rebecca_Romijn .
+
+dbpedia:Voyage_to_the_Bottom_of_the_Sea
+        dbpprop:starring  dbpedia:Barbara_Eden , dbpedia:Michael_Ansara .
+
+dbpedia:Eight_Crazy_Nights
+        dbpprop:starring  dbpedia:Jackie_Sandler , dbpedia:Adam_Sandler .
+
+dbpedia:Jay_and_Silent_Bob_Strike_Back
+        dbpprop:starring  dbpedia:Jennifer_Schwalbach_Smith , dbpedia:Kevin_Smith .
+
+<http://dbpedia.org/resource/Ali_%28film%29>
+        dbpprop:starring  dbpedia:Will_Smith , dbpedia:Jada_Pinkett_Smith .
+
+dbpedia:The_Last_Run  dbpprop:starring  dbpedia:George_C._Scott , dbpedia:Colleen_Dewhurst .
+
+dbpedia:Desk_Set  dbpprop:starring  dbpedia:Katharine_Hepburn , dbpedia:Spencer_Tracy .
+
+<http://dbpedia.org/resource/Sharpe%27s_Siege_%28TV_programme%29>
+        dbpprop:starring  dbpedia:Sean_Bean , dbpedia:Abigail_Cruttenden .
+
+<http://dbpedia.org/resource/Crimes_of_the_Heart_%28film%29>
+        dbpprop:starring  dbpedia:Jessica_Lange , dbpedia:Sam_Shepard .
+
+dbpedia:Heath_Ledger  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Michelle_Williams_%28actress%29> ;
+        ns3:spouse   <http://dbpedia.org/resource/Michelle_Williams_%28actress%29> .
+
+<http://dbpedia.org/resource/The_Prime_of_Miss_Jean_Brodie_%28film%29>
+        dbpprop:starring  dbpedia:Robert_Stephens , dbpedia:Maggie_Smith .
+
+<http://dbpedia.org/resource/Willow_%28film%29>
+        dbpprop:starring  dbpedia:Joanne_Whalley , dbpedia:Val_Kilmer .
+
+dbpedia:David_Thewlis
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Anna_Friel ;
+        ns3:spouse   dbpedia:Anna_Friel .
+
+dbpedia:Claire_Danes  a  ns3:Actor .
+
+dbpedia:Dan_Aykroyd  a  ns3:Actor ;
+        ns3:partner  dbpedia:Donna_Dixon ;
+        ns3:spouse   dbpedia:Donna_Dixon .
+
+<http://dbpedia.org/resource/Waterland_%28film%29>
+        dbpprop:starring  dbpedia:Jeremy_Irons , <http://dbpedia.org/resource/Sin%C3%A9ad_Cusack> .
+
+<http://dbpedia.org/resource/Heaven_Can_Wait_%281978_film%29>
+        dbpprop:starring  dbpedia:Julie_Christie , dbpedia:Warren_Beatty .
+
+dbpedia:Britt_Ekland  a  ns3:Actor ;
+        ns3:partner  dbpedia:Peter_Sellers ;
+        ns3:spouse   dbpedia:Peter_Sellers .
+
+dbpedia:Alamo_Bay  dbpprop:starring  dbpedia:Amy_Madigan , dbpedia:Ed_Harris .
+
+dbpedia:Aishwarya_Rai
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Abhishek_Bachchan ;
+        ns3:spouse   dbpedia:Abhishek_Bachchan .
+
+<http://dbpedia.org/resource/Jim_Carter_%28actor%29>
+        a       ns3:Actor .
+
+dbpedia:Malcolm_McDowell
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Mary_Steenburgen ;
+        ns3:spouse   dbpedia:Mary_Steenburgen .
+
+dbpedia:See_It_Saw_It
+        dbpprop:starring  dbpedia:Mark_Speight , dbpedia:Natasha_Collins .
+
+<http://dbpedia.org/resource/Black_Book_%28film%29>
+        dbpprop:starring  dbpedia:Carice_van_Houten , dbpedia:Sebastian_Koch .
+
+dbpedia:Emma_Thompson
+        a       ns3:Actor .
+
+dbpedia:Janet_Leigh  a  ns3:Actor ;
+        ns3:partner  dbpedia:Tony_Curtis ;
+        ns3:spouse   dbpedia:Tony_Curtis .
+
+dbpedia:Sam_Riley  a  ns3:Actor .
+
+dbpedia:Annette_Bening
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Warren_Beatty ;
+        ns3:spouse   dbpedia:Warren_Beatty .
+
+dbpedia:All_the_Fine_Young_Cannibals
+        dbpprop:starring  dbpedia:Natalie_Wood , dbpedia:Robert_Wagner .
+
+dbpedia:Ethan_Hawke  a  ns3:Actor .
+
+<http://dbpedia.org/resource/Elvis_%281979_film%29>
+        dbpprop:starring  dbpedia:Season_Hubley , dbpedia:Kurt_Russell .
+
+dbpedia:The_Wild_Angels
+        dbpprop:starring  dbpedia:Diane_Ladd , dbpedia:Bruce_Dern .
+
+dbpedia:Jason_Behr  a  ns3:Actor .
+
+<http://dbpedia.org/resource/*batteries_not_included>
+        dbpprop:starring  dbpedia:Jessica_Tandy , dbpedia:Hume_Cronyn .
+
+dbpedia:Sean_Penn  a  ns3:Actor ;
+        ns3:partner  dbpedia:Robin_Wright_Penn ;
+        ns3:spouse   dbpedia:Robin_Wright_Penn .
+
+dbpedia:Dee_Wallace-Stone
+        a       ns3:Actor .
+
+dbpedia:Carrie_Preston
+        a       ns3:Actor .
+
+dbpedia:Ashton_Kutcher
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Demi_Moore ;
+        ns3:spouse   dbpedia:Demi_Moore .
+
+dbpedia:Kuch_Naa_Kaho
+        dbpprop:starring  dbpedia:Abhishek_Bachchan , dbpedia:Aishwarya_Rai .
+
+dbpedia:Marlee_Matlin
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:William_Hurt ;
+        ns3:spouse   dbpedia:William_Hurt .
+
+dbpedia:Scary_Movie_3
+        dbpprop:starring  dbpedia:Charlie_Sheen , dbpedia:Denise_Richards .
+
+<http://dbpedia.org/resource/Transylvania_6-5000_%281985_film%29>
+        dbpprop:starring  dbpedia:Jeff_Goldblum , dbpedia:Geena_Davis .
+
+dbpedia:Pushing_Tin  dbpprop:starring  dbpedia:Billy_Bob_Thornton , dbpedia:Angelina_Jolie .
+
+dbpedia:Sylvester_Stallone
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Brigitte_Nielsen ;
+        ns3:spouse   dbpedia:Brigitte_Nielsen .
+
+dbpedia:Christine_Taylor
+        a       ns3:Actor .
+
+dbpedia:Jaya_Bachchan
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Amitabh_Bachchan ;
+        ns3:spouse   dbpedia:Amitabh_Bachchan .
+
+<http://dbpedia.org/resource/Bobby_%282006_film%29>
+        dbpprop:starring  dbpedia:Demi_Moore , dbpedia:Ashton_Kutcher .
+
+dbpedia:The_Shrink_Is_In
+        dbpprop:starring  dbpedia:Courteney_Cox , dbpedia:David_Arquette .
+
+dbpedia:Chad_Michael_Murray
+        a       ns3:Actor .
+
+dbpedia:Malinda_Williams
+        a       ns3:Actor .
+
+dbpedia:Dilip_Kumar  a  ns3:Actor .
+
+dbpedia:Roberto_Benigni
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Nicoletta_Braschi ;
+        ns3:spouse   dbpedia:Nicoletta_Braschi .
+
+<http://dbpedia.org/resource/Another_Man%27s_Poison>
+        dbpprop:starring  dbpedia:Gary_Merrill , dbpedia:Bette_Davis .
+
+<http://dbpedia.org/resource/Swing_Shift_%28film%29>
+        dbpprop:starring  dbpedia:Kurt_Russell , dbpedia:Goldie_Hawn .
+
+dbpedia:The_Marrying_Man
+        dbpprop:starring  dbpedia:Kim_Basinger , dbpedia:Alec_Baldwin .
+
+<http://dbpedia.org/resource/The_Big_Sleep_%281946_film%29>
+        dbpprop:starring  dbpedia:Lauren_Bacall , dbpedia:Humphrey_Bogart .
+
+dbpedia:Jayma_Mays  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/Adam_Campbell_%28actor%29> ;
+        ns3:spouse   <http://dbpedia.org/resource/Adam_Campbell_%28actor%29> .
+
+dbpedia:Charles_Laughton
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Elsa_Lanchester ;
+        ns3:spouse   dbpedia:Elsa_Lanchester .
+
+dbpedia:Jennifer_Blanc
+        a       ns3:Actor .
+
+dbpedia:The_Broken_Pledge
+        dbpprop:starring  dbpedia:Wallace_Beery , dbpedia:Gloria_Swanson .
+
+dbpedia:Bruce_Dern  a  ns3:Actor .
+
+dbpedia:Konkona_Sen_Sharma
+        a       ns3:Actor .
+
+dbpedia:Marion_Cotillard
+        a            ns3:Actor ;
+        ns3:partner  dbpedia:Guillaume_Canet ;
+        ns3:spouse   dbpedia:Guillaume_Canet .

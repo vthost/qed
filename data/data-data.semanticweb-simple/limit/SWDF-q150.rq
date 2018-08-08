@@ -1,0 +1,1 @@
+SELECT DISTINCT ?X ?dc_title  WHERE {  ?X <http://swrc.ontoware.org/ontology#author> <http://data.semanticweb.org/person/abraham-bernstein> .  ?X a <http://data.semanticweb.org/ns/swc/ontology#Paper> .  ?X <http://purl.org/dc/elements/1.1/title> ?dc_title .   } LIMIT 50

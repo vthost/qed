@@ -1,0 +1,4247 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Brittany_Snow
+        a          foaf:Person ;
+        foaf:name  "Brittany Snow"@en , "Brittany Snow"@de .
+
+dbpedia:Mark_Viduka  a  foaf:Person ;
+        foaf:name  "Mark Anthony Viduka"@en , "Mark Viduka"@en , "Mark Anthony Viduka"@de .
+
+dbpedia:Gabriela_Zapolska
+        a          foaf:Person ;
+        foaf:name  "Gabriela Zapolska"@de , "Gabriela Zapolska"@en .
+
+dbpedia:Marco_Amelia  a  foaf:Person ;
+        foaf:name  "Marco Amelia"@de , "Marco Amelia"@en .
+
+<http://dbpedia.org/resource/Theodor_K%C3%B6rner_%28author%29>
+        a          foaf:Person ;
+        foaf:name  "Theodor Körner"@de .
+
+dbpedia:Hermann_Emil_Fischer
+        a          foaf:Person ;
+        foaf:name  "Emil Fischer"@en , "Emil Fischer"@de , "Hermann Emil Fischer"@en .
+
+dbpedia:Katrina_Leskanich
+        a          foaf:Person ;
+        foaf:name  "Katrina Leskanich"@de , "Katrina Leskanich"@en .
+
+dbpedia:Spagna  a  foaf:Person ;
+        foaf:name  "Spagna"@de , "Spagna"@en .
+
+dbpedia:Bobby_Timmons
+        a          foaf:Person ;
+        foaf:name  "Bobby Timmons"@de , "Bobby Timmons"@en .
+
+dbpedia:Manuel_Esquivel
+        a          foaf:Person ;
+        foaf:name  "Manuel Esquivel"@de , "Sir Manuel Esquivel"@en .
+
+dbpedia:Violante_Beatrice_of_Bavaria
+        a          foaf:Person ;
+        foaf:name  "Violante Beatrix von Bayern"@de , "Violante Beatrice of Bavaria"@en , "Violante Beatrice"@en .
+
+dbpedia:Dan_George  a  foaf:Person ;
+        foaf:name  "Dan George"@en , "Dan George"@de .
+
+dbpedia:Alfredo_Ildefonso_Schuster
+        a          foaf:Person ;
+        foaf:name  "Alfredo Ildefonso Schuster"@de .
+
+dbpedia:Fabrice_Guy  a  foaf:Person ;
+        foaf:name  "Fabrice Guy"@de .
+
+dbpedia:Gemma_Hayes  a  foaf:Person ;
+        foaf:name  "Gemma Hayes"@de , "Gemma Hayes"@en .
+
+dbpedia:Kenny_Ortega  a  foaf:Person ;
+        foaf:name  "Kenny Ortega"@de , "Kenny Ortega"@en .
+
+dbpedia:David_C._Broderick
+        a          foaf:Person ;
+        foaf:name  "David Colbreth Broderick"@en , "David Colbreth Broderick"@de .
+
+dbpedia:Julius_Caldeen_Gunter
+        a          foaf:Person ;
+        foaf:name  "Julius C. Gunter"@en , "Julius Caldeen Gunter"@de .
+
+dbpedia:Ruud_Boffin  a  foaf:Person ;
+        foaf:name  "Ruud Boffin"@de , "Ruud Boffin"@en .
+
+<http://dbpedia.org/resource/Francisco_Moraz%C3%A1n>
+        a          foaf:Person ;
+        foaf:name  "José Francisco Morazán Quezada"@de , "Francisco Morazán"@en .
+
+dbpedia:Richard_Lugar
+        a          foaf:Person ;
+        foaf:name  "Richard Lugar"@de , "Richard Lugar"@en .
+
+dbpedia:Kate_Leigh  a  foaf:Person ;
+        foaf:name  "Kathleen Mary Josephine (Kate) Leigh"@en .
+
+dbpedia:Masashi_Tashiro
+        a          foaf:Person ;
+        foaf:name  "Masashi Tashiro"@en .
+
+dbpedia:Charles_I_of_England
+        a          foaf:Person ;
+        foaf:name  "Charles I"@en , "Karl I."@de , "Charles I of England"@en .
+
+<http://dbpedia.org/resource/Mosh%C3%A9_Feldenkrais>
+        a          foaf:Person ;
+        foaf:name  "Moshé Feldenkrais"@de , "Moshé Feldenkrais"@en .
+
+dbpedia:Jeff_Torrington
+        a          foaf:Person ;
+        foaf:name  "Jeff Torrington"@de .
+
+<http://dbpedia.org/resource/Ram%C3%B3n_N%C3%BA%C3%B1ez-Juarez>
+        a          foaf:Person ;
+        foaf:name  "Ramon Nunez-juarez"@en , "Ramón Nuñez-Juarez"@en .
+
+dbpedia:Alexander_Helios
+        a          foaf:Person ;
+        foaf:name  "Alexander Helios"@de .
+
+dbpedia:Johann_Georg_Walch
+        a          foaf:Person ;
+        foaf:name  "Johann Georg Walch"@de .
+
+dbpedia:Frank_Benford
+        a          foaf:Person ;
+        foaf:name  "Frank Albert Benford, Jr."@en , "Frank Benford"@de .
+
+dbpedia:Julian_May  a  foaf:Person ;
+        foaf:name  "Julian May"@en , "Julian May"@de .
+
+dbpedia:Dinocrates  a  foaf:Person ;
+        foaf:name  "Deinokrates"@de .
+
+dbpedia:Robertas_Javtokas
+        a          foaf:Person ;
+        foaf:name  "Robertas Javtokas"@de .
+
+dbpedia:Julius_Wagner-Jauregg
+        a          foaf:Person ;
+        foaf:name  "Julius Wagner-Jauregg"@de .
+
+<http://dbpedia.org/resource/Surgeon_%28musician%29>
+        a          foaf:Person ;
+        foaf:name  "Surgeon"@en , "Surgeon"@de .
+
+dbpedia:Leon_C._Phillips
+        a          foaf:Person ;
+        foaf:name  "Leon Chase Phillips"@en , "Leon Chase Phillips"@de , "Leon C. Phillips"@en .
+
+dbpedia:Jean-Marie_Guyau
+        a          foaf:Person ;
+        foaf:name  "Jean-Marie Guyau"@de .
+
+<http://dbpedia.org/resource/Paul_Goodman_%28writer%29>
+        a          foaf:Person ;
+        foaf:name  "Paul Goodman"@en , "Paul Goodman"@de .
+
+dbpedia:Ruslan_Chagaev
+        a          foaf:Person ;
+        foaf:name  "Ruslan Chagaev"@en , "Ruslan Chagayev"@de .
+
+dbpedia:Vicente_Fox  a  foaf:Person ;
+        foaf:name  "Vicente Fox"@en , "Vicente Fox Quesada"@en , "Vicente Fox"@de .
+
+dbpedia:Camiel_Eurlings
+        a          foaf:Person ;
+        foaf:name  "Camiel Eurlings"@de , "Camiel Eurlings"@en .
+
+dbpedia:John_Fredriksen
+        a          foaf:Person ;
+        foaf:name  "John Fredriksen"@de .
+
+dbpedia:Attalus_II_Philadelphus
+        a          foaf:Person ;
+        foaf:name  "Attalos II. Philadelphos"@de .
+
+dbpedia:Ibrahim_Rugova
+        a          foaf:Person ;
+        foaf:name  "Ibrahim Rugova"@en , "Ibrahim Rugova"@de .
+
+<http://dbpedia.org/resource/Barak_Sop%C3%A9>
+        a          foaf:Person ;
+        foaf:name  "Barak Sopé"@en , "Barak Sopé"@de .
+
+dbpedia:Roy_Buchanan  a  foaf:Person ;
+        foaf:name  "Roy Buchanan"@de , "Roy Buchanan"@en .
+
+dbpedia:Henry_Roth  a  foaf:Person ;
+        foaf:name  "Henry Roth"@en , "Henry Roth"@de .
+
+dbpedia:Alexandra_Ievleva
+        a          foaf:Person ;
+        foaf:name  "Alexandra Ievleva"@en , "Alexandra Andrejewna Ijewlewa"@de .
+
+dbpedia:Justin_Peroff
+        a          foaf:Person ;
+        foaf:name  "Justin Peroff"@en , "Justin Peter\nis his birth name it was legally changed to Peroff 1986 Papadimitriou"@en .
+
+dbpedia:Gustavo_Santaolalla
+        a          foaf:Person ;
+        foaf:name  "Gustavo Santaolalla"@en , "Gustavo Santaolalla"@de .
+
+dbpedia:Jamie_T  a  foaf:Person ;
+        foaf:name  "Jamie T"@en , "Jamie T"@de .
+
+dbpedia:Hotsumi_Ozaki
+        a          foaf:Person ;
+        foaf:name  "Hotsumi Ozaki"@de .
+
+dbpedia:Tim_Flowers  a  foaf:Person ;
+        foaf:name  "Timothy David Flowers"@de , "Timothy David Flowers"@en , "Tim Flowers"@en .
+
+<http://dbpedia.org/resource/J%C3%B3hann_Sigurj%C3%B3nsson>
+        a          foaf:Person ;
+        foaf:name  "Jóhann Sigurjónsson"@de .
+
+dbpedia:Cliff_Huxford
+        a          foaf:Person ;
+        foaf:name  "Clifford George Huxford"@en , "Cliff Huxford"@en .
+
+dbpedia:James_Madison
+        a          foaf:Person ;
+        foaf:name  "James Madison"@en , "James Madison"@de .
+
+dbpedia:Emanuel_Augustus
+        a          foaf:Person ;
+        foaf:name  "Emanuel Burton (birth name)"@en , "Emanuel Ya'Kov Augustus"@en , "Emanuel Augustus"@de .
+
+<http://dbpedia.org/resource/Alexander_Monro_%28secundus%29>
+        a          foaf:Person ;
+        foaf:name  "Alexander II. Monro"@de .
+
+dbpedia:Josef_Marha  a  foaf:Person ;
+        foaf:name  "Josef Marha"@de .
+
+dbpedia:Yongzheng_Emperor
+        a          foaf:Person ;
+        foaf:name  "Yongzheng Emperor"@en , "Manchu: Aisin-Gioro In Jen"@en , "Yongzheng"@de , "Chinese: Aixin-Jueluo Yinzhen 愛新覺羅胤禛"@en .
+
+dbpedia:Lothar_Ledderose
+        a          foaf:Person ;
+        foaf:name  "Lothar Ledderose"@de .
+
+dbpedia:Martinus_Beijerinck
+        a          foaf:Person ;
+        foaf:name  "Martinus Willem Beijerinck"@de , "Martinus Beijerinck"@en .
+
+dbpedia:Ludwig_Darmstaedter
+        a          foaf:Person ;
+        foaf:name  "Ludwig Darmstaedter"@de .
+
+dbpedia:Toni_Frissell
+        a          foaf:Person ;
+        foaf:name  "Toni Frissell"@de , "Toni Frissell"@en .
+
+dbpedia:Johnny_Kelley
+        a          foaf:Person ;
+        foaf:name  "Johnny Kelley"@de .
+
+dbpedia:Frank_R._Paul
+        a          foaf:Person ;
+        foaf:name  "Frank R. Paul"@de .
+
+dbpedia:Ronnie_Stam  a  foaf:Person ;
+        foaf:name  "Ron Stam"@de , "Ronnie Stam"@en , "Ron Theodorus Stam"@en .
+
+dbpedia:John_Stossel  a  foaf:Person ;
+        foaf:name  "John Stossel"@en .
+
+dbpedia:Sheena_Easton
+        a          foaf:Person ;
+        foaf:name  "Sheena Easton"@de , "Sheena Easton"@en .
+
+dbpedia:Ludwig_Boltzmann
+        a          foaf:Person ;
+        foaf:name  "Ludwig Boltzmann"@en , "Ludwig Boltzmann"@de .
+
+dbpedia:E._G._Marshall
+        a          foaf:Person ;
+        foaf:name  "E. G. Marshall"@de .
+
+dbpedia:Friedrich_Scherfke
+        a          foaf:Person ;
+        foaf:name  "Friedrich Scherfke"@en , "Fryderyk Scherfke"@de .
+
+dbpedia:George_Washington
+        a          foaf:Person ;
+        foaf:name  "George Washington"@de , "George Washington"@en .
+
+dbpedia:Enzo_Scifo  a  foaf:Person ;
+        foaf:name  "Enzo Scifo"@de , "Enzo Scifo"@en , "Vincenzo Daniele Scifo"@en .
+
+dbpedia:Jean-Jacques_Bachelier
+        a          foaf:Person ;
+        foaf:name  "Jean-Jacques Bachelier"@de .
+
+<http://dbpedia.org/resource/Jeff_Chandler_%28actor%29>
+        a          foaf:Person ;
+        foaf:name  "Jeff Chandler"@de , "Jeff Chandler"@en .
+
+dbpedia:Domitilla_the_Elder
+        a          foaf:Person ;
+        foaf:name  "Domitilla die Ältere"@de .
+
+dbpedia:Daniel_Day-Lewis
+        a          foaf:Person ;
+        foaf:name  "Daniel Day-Lewis"@en , "Daniel Day-Lewis"@de .
+
+dbpedia:Mistinguett  a  foaf:Person ;
+        foaf:name  "Mistinguett"@de , "Mistinguett"@en .
+
+dbpedia:Hale_Boggs  a  foaf:Person ;
+        foaf:name  "Hale Boggs"@de , "Hale Boggs"@en .
+
+dbpedia:Billy_Burch  a  foaf:Person ;
+        foaf:name  "William Burch"@de .
+
+dbpedia:Karl_Kaufmann
+        a          foaf:Person ;
+        foaf:name  "Karl Kaufmann"@de , "Karl Kaufmann"@en .
+
+dbpedia:Francis_de_Rottenburg
+        a          foaf:Person ;
+        foaf:name  "Francis de Rottenburg"@de .
+
+dbpedia:John_Adson  a  foaf:Person ;
+        foaf:name  "John Adson"@de .
+
+dbpedia:Jim_Duggan  a  foaf:Person ;
+        foaf:name  "Jim Duggan"@en , "The Convict"@en , "King Duggan"@en , "Jim Duggan"@de , "Crazy Duggan"@en .
+
+dbpedia:Nawaz_Sharif  a  foaf:Person ;
+        foaf:name  "Nawaz Sharif"@de , "Nawaz Sharif web address( www.mooon.web.officelive.com)"@en .
+
+dbpedia:Alisha_Klass  a  foaf:Person ;
+        foaf:name  "Alisha Klass"@de .
+
+dbpedia:Matt_Stover  a  foaf:Person ;
+        foaf:name  "Matt Stover"@de .
+
+dbpedia:Wayne_Rooney  a  foaf:Person ;
+        foaf:name  "Wayne Rooney"@de , "Wayne Rooney"@en , "Wayne Mark Rooney"@en .
+
+dbpedia:Louisa_Lawson
+        a          foaf:Person ;
+        foaf:name  "Louisa Lawson"@de , "Louisa Lawson"@en .
+
+dbpedia:Chief_Wyandanch
+        a          foaf:Person ;
+        foaf:name  "Wyandanch"@de .
+
+dbpedia:Johan_Galtung
+        a          foaf:Person ;
+        foaf:name  "Johan Galtung"@en , "Johan Galtung"@de .
+
+dbpedia:Arthur_Stanley_Eddington
+        a          foaf:Person ;
+        foaf:name  "Arthur Stanley Eddington"@de , "Arthur Eddington"@en .
+
+dbpedia:John_Tzetzes  a  foaf:Person ;
+        foaf:name  "Johannes Tzetzes"@de .
+
+dbpedia:Wilhelm_Franz
+        a          foaf:Person ;
+        foaf:name  "Wilhelm Franz"@de .
+
+dbpedia:Master_P  a  foaf:Person ;
+        foaf:name  "Master P"@en , "Master P"@de .
+
+<http://dbpedia.org/resource/Zdzis%C5%82aw_Peszkowski>
+        a          foaf:Person ;
+        foaf:name  "Zdzisław Peszkowski"@en .
+
+dbpedia:Didier_Deschamps
+        a          foaf:Person ;
+        foaf:name  "Didier Deschamps"@en , "Didier Deschamps"@de , "Didier Claude Deschamps"@en .
+
+dbpedia:Mikhail_Kravchuk
+        a          foaf:Person ;
+        foaf:name  "Mychajlo Pylypowytsch Krawtschuk"@de , "Mykhailo Pylypovych Kravchuk"@en .
+
+dbpedia:Owen_Arthur  a  foaf:Person ;
+        foaf:name  "Owen Seymour Arthur MP"@en , "Owen Seymour Arthur"@de .
+
+dbpedia:Kurt_Cobain  a  foaf:Person ;
+        foaf:name  "Kurt Cobain"@en , "Kurt Donald Cobain"@en , "Kurt Cobain"@de .
+
+dbpedia:Chip_Ganassi  a  foaf:Person ;
+        foaf:name  "Chip Ganassi"@de .
+
+dbpedia:J._William_Fulbright
+        a          foaf:Person ;
+        foaf:name  "James William Fulbright"@de , "James William Fulbright"@en .
+
+dbpedia:Thora_Birch  a  foaf:Person ;
+        foaf:name  "Thora Birch"@de , "Thora Birch"@en .
+
+<http://dbpedia.org/resource/%C3%86thelwulf_of_Wessex>
+        a          foaf:Person ;
+        foaf:name  "Æthelwulf"@de , "Æthelwulf"@en .
+
+dbpedia:Daniel_Cudmore
+        a          foaf:Person ;
+        foaf:name  "Daniel Cudmore"@en , "Daniel Cudmore"@de .
+
+<http://dbpedia.org/resource/Darin_%28singer%29>
+        a          foaf:Person ;
+        foaf:name  "Darin"@en , "Darin"@de .
+
+dbpedia:Arnold_Henry_Guyot
+        a          foaf:Person ;
+        foaf:name  "Arnold Henri Guyot"@de .
+
+<http://dbpedia.org/resource/Vasile_D%C3%AEncu>
+        a          foaf:Person ;
+        foaf:name  "Vasile Dîncu"@de , "Vasile Dîncu"@en .
+
+dbpedia:Jason_Freese  a  foaf:Person ;
+        foaf:name  "Jason Freese"@en , "Jason Freese"@de .
+
+dbpedia:Victor_G._Atiyeh
+        a          foaf:Person ;
+        foaf:name  "Victor G. Atiyeh"@en , "Victor Atiyeh"@de .
+
+dbpedia:Joachim_Standfest
+        a          foaf:Person ;
+        foaf:name  "Joachim Standfest"@en , "Joachim Standfest"@de .
+
+dbpedia:Brian_Robbins
+        a          foaf:Person ;
+        foaf:name  "Brian Robbins"@de , "Brian Robbins"@en .
+
+dbpedia:Romy_Schneider
+        a          foaf:Person ;
+        foaf:name  "Romy Schneider"@de , "Romy Schneider"@en .
+
+dbpedia:David_D._McKiernan
+        a          foaf:Person ;
+        foaf:name  "David D. McKiernan"@de , "David D. McKiernan"@en .
+
+dbpedia:Nancy_Parsons
+        a          foaf:Person ;
+        foaf:name  "Nancy Parsons"@de , "Nancy Parsons"@en .
+
+dbpedia:Doug_Reinhardt
+        a          foaf:Person ;
+        foaf:name  "Doug Reinhardt"@de , "Doug Reinhardt"@en .
+
+dbpedia:Paige_Turco  a  foaf:Person ;
+        foaf:name  "Paige Turco"@de .
+
+dbpedia:Morris_Bates  a  foaf:Person ;
+        foaf:name  "Joseph Morris Bates"@en , "Morris Bates"@de , "Morris Bates"@en .
+
+dbpedia:Gracie_Fields
+        a          foaf:Person ;
+        foaf:name  "Grace Fields"@de , "Gracie Fields"@en .
+
+dbpedia:Matt_Hardy  a  foaf:Person ;
+        foaf:name  "Surge"@en , "Grim Reaper"@en , "Matt Hardy Version 1.0"@en , "White Cheetah"@en , "High Voltage"@en , "Evil Knieval"@en , "Matt Hardy"@en , "Ignis Fatuus"@en , "Executioner"@en , "(The) Angelic Diablo"@en , "Matthew Moore Hardy"@de .
+
+<http://dbpedia.org/resource/Robert_Ford_%28outlaw%29>
+        a          foaf:Person ;
+        foaf:name  "Robert Newton Ford"@en , "Robert Newton Ford"@de .
+
+dbpedia:Joseph_Raphson
+        a          foaf:Person ;
+        foaf:name  "Joseph Raphson"@de , "Joseph Raphson"@en .
+
+dbpedia:Harry_Emerson_Fosdick
+        a          foaf:Person ;
+        foaf:name  "Harry Emerson Fosdick"@de .
+
+dbpedia:David_Gates  a  foaf:Person ;
+        foaf:name  "David Gates"@de .
+
+dbpedia:Kanye_West  a  foaf:Person ;
+        foaf:name  "Kanye West"@de , "Kanye West"@en , "Kanye Omari West"@en .
+
+dbpedia:Alexander_McDougall
+        a          foaf:Person ;
+        foaf:name  "Alexander :Macdougall"@en .
+
+dbpedia:Antoine_Watteau
+        a          foaf:Person ;
+        foaf:name  "Antoine Watteau"@de .
+
+dbpedia:John_Tradescant_the_elder
+        a          foaf:Person ;
+        foaf:name  "John der Ältere Tradescant"@de .
+
+dbpedia:Sony_Dwi_Kuncoro
+        a          foaf:Person ;
+        foaf:name  "Sony Dwi Kuncoro"@de , "Sony Dwi Kuncoro"@en .
+
+dbpedia:Otto_Struve  a  foaf:Person ;
+        foaf:name  "Otto von Struve"@de , "Otto Struve"@en .
+
+dbpedia:Carl_Humann  a  foaf:Person ;
+        foaf:name  "Carl Humann"@de , "Carl Humann"@en .
+
+<http://dbpedia.org/resource/Francisco_de_Toledo%2C_Count_of_Oropesa>
+        a          foaf:Person ;
+        foaf:name  "Francisco de Toledo"@de .
+
+dbpedia:Malin_Akerman
+        a          foaf:Person ;
+        foaf:name  "Malin Akerman"@de , "Malin Åkerman"@en .
+
+dbpedia:Nicki_French  a  foaf:Person ;
+        foaf:name  "Nicki French"@de , "Nicki French"@en .
+
+dbpedia:Franck_Jurietti
+        a          foaf:Person ;
+        foaf:name  "Franck Jurietti"@en , "Franck Jurietti"@de .
+
+dbpedia:Edison_Chen  a  foaf:Person ;
+        foaf:name  "Edison Chen"@en , "Chen GuanXi"@en , "陈冠希"@en , "陳冠希"@en , "Edison Chen"@de , "Can4 Gun3 hei1"@en .
+
+dbpedia:Roderic  a  foaf:Person ;
+        foaf:name  "Roderich"@de .
+
+<http://dbpedia.org/resource/Se%C3%A1n_Lester>
+        a          foaf:Person ;
+        foaf:name  "Seán Lester"@de .
+
+dbpedia:Evelyn_De_Morgan
+        a          foaf:Person ;
+        foaf:name  "Evelyn De Morgan"@en , "Evelyn de Morgan"@de .
+
+dbpedia:Todd_May  a  foaf:Person ;
+        foaf:name  "Todd May"@de .
+
+dbpedia:Joey_Lauren_Adams
+        a          foaf:Person ;
+        foaf:name  "Joey Lauren Adams"@de , "Joey Lauren Adams"@en .
+
+dbpedia:Mena_Suvari  a  foaf:Person ;
+        foaf:name  "Mena Suvari"@de .
+
+dbpedia:Bob_Kaufman  a  foaf:Person ;
+        foaf:name  "Bob Kaufman"@de .
+
+dbpedia:Faye_Wong  a  foaf:Person ;
+        foaf:name  "Fei Wang"@de , "Faye Wong"@en , "王菲"@en , "Wáng Fēi"@en , "Wong4 Fei1"@en .
+
+dbpedia:Bernadette_Chirac
+        a          foaf:Person ;
+        foaf:name  "Bernadette Chirac"@de , "Bernadette Chodron de Courcel"@en .
+
+dbpedia:Nuria_Llagostera_Vives
+        a          foaf:Person ;
+        foaf:name  "Nuria Llagostera Vives"@en , "Nuria Llagostera Vives"@de .
+
+dbpedia:Gerald_Jay_Sussman
+        a          foaf:Person ;
+        foaf:name  "Gerald Jay Sussman"@de , "Gerald Jay Sussman"@en .
+
+dbpedia:Robert_Mitchum
+        a          foaf:Person ;
+        foaf:name  "Robert Mitchum"@de , "Robert Mitchum"@en .
+
+dbpedia:Eddie_Levert  a  foaf:Person ;
+        foaf:name  "Eddie Levert"@en , "Eddie Levert"@de .
+
+dbpedia:Ronda_Storms  a  foaf:Person ;
+        foaf:name  "Ronda Storms"@en .
+
+dbpedia:Lennart_von_Post
+        a          foaf:Person ;
+        foaf:name  "Ernst Jakob Lennart von Post"@en , "Lennart von Post"@de .
+
+dbpedia:Lee_McCulloch
+        a          foaf:Person ;
+        foaf:name  "Lee McCulloch"@de , "Lee Henry McCulloch"@en , "Lee McCulloch"@en .
+
+dbpedia:John_Badham  a  foaf:Person ;
+        foaf:name  "John Badham"@de , "John Badham"@en .
+
+<http://dbpedia.org/resource/Bob_Simmons_%28stunt_man%29>
+        a          foaf:Person ;
+        foaf:name  "Bob Simmons"@de .
+
+dbpedia:Ann_Winterton
+        a          foaf:Person ;
+        foaf:name  "Ann, Lady Winterton"@en , "Ann Winterton"@en .
+
+dbpedia:Arthur_Dake  a  foaf:Person ;
+        foaf:name  "Arthur William Dake"@de .
+
+dbpedia:Philip_I_of_France
+        a          foaf:Person ;
+        foaf:name  "Philip I"@en , "Philipp I."@de .
+
+dbpedia:Darren_Fletcher
+        a          foaf:Person ;
+        foaf:name  "Darren Fletcher"@de , "Darren Fletcher"@en , "Darren Barr Fletcher"@en .
+
+<http://dbpedia.org/resource/Andy_Garc%C3%ADa>
+        a          foaf:Person ;
+        foaf:name  "Andy García"@de , "Andy García"@en .
+
+dbpedia:Dalida  a  foaf:Person ;
+        foaf:name  "Dalida"@en , "Dalida"@de .
+
+dbpedia:Victor_Maddern
+        a          foaf:Person ;
+        foaf:name  "Victor Maddern"@en .
+
+<http://dbpedia.org/resource/E._F._L._Wood%2C_1st_Earl_of_Halifax>
+        a          foaf:Person ;
+        foaf:name  "The Earl of Halifax"@en , "Wood, Edward Frederick Lindley, 1. Earl of Halifax"@de .
+
+dbpedia:Shawn_Fanning
+        a          foaf:Person ;
+        foaf:name  "Shawn Fanning"@de , "Shawn Fanning"@en .
+
+dbpedia:Gary_Bailey  a  foaf:Person ;
+        foaf:name  "Gary Richard Bailey"@en , "Gary Bailey"@en .
+
+dbpedia:Gia_Paloma  a  foaf:Person ;
+        foaf:name  "Gia Paloma"@de .
+
+dbpedia:Cee-Lo_Green  a  foaf:Person ;
+        foaf:name  "Cee-Lo"@en , "Cee-Lo Green"@de .
+
+dbpedia:Hendrick_Zwaardecroon
+        a          foaf:Person ;
+        foaf:name  "Hendrick Zwaardecroon"@de .
+
+dbpedia:Glen_Campbell
+        a          foaf:Person ;
+        foaf:name  "Glen Campbell"@de , "Glen Campbell"@en .
+
+dbpedia:Archibald_Montgomery-Massingberd
+        a          foaf:Person ;
+        foaf:name  "Sir Archibald Montgomery-Massingberd"@en , "Archibald Montgomery-Massingberd"@de .
+
+dbpedia:Joe_Scarborough
+        a          foaf:Person ;
+        foaf:name  "Joe Scarborough"@de .
+
+dbpedia:Bernard_Parker
+        a          foaf:Person ;
+        foaf:name  "Bernard Parker"@en , "Bernard Parker"@de , "Bernard Melvin Parker"@en .
+
+<http://dbpedia.org/resource/Andrej_Podkonick%C3%BD>
+        a          foaf:Person ;
+        foaf:name  "Andrej Podkonický"@de .
+
+<http://dbpedia.org/resource/Paul_Friedl%C3%A4nder_%28chemist%29>
+        a          foaf:Person ;
+        foaf:name  "Paul Friedländer"@de , "Paul Friedländer"@en .
+
+dbpedia:Stacy_Keibler
+        a          foaf:Person ;
+        foaf:name  "Stacy Keibler"@en , "Super Stacy"@en , "Stacy Keibler"@de , "Nitro Girl Skye"@en , "Miss Hancock"@en .
+
+dbpedia:Elliott_Gould
+        a          foaf:Person ;
+        foaf:name  "Elliott Gould"@de .
+
+dbpedia:Jean_Webster  a  foaf:Person ;
+        foaf:name  "Jean Webster"@de , "Jean Webster"@en .
+
+dbpedia:Ron_Duguay  a  foaf:Person ;
+        foaf:name  "Ron Duguay"@de .
+
+dbpedia:Philip_K._Dick
+        a          foaf:Person ;
+        foaf:name  "Philip Kindred Dick"@en , "Philip Kindred Dick"@de .
+
+dbpedia:Jacob_Dolson_Cox
+        a          foaf:Person ;
+        foaf:name  "Jacob Dolson Cox"@de , "Jacob Dolson Cox"@en .
+
+dbpedia:Charles_Philippe_Dieussart
+        a          foaf:Person ;
+        foaf:name  "Charles Philippe Dieussart"@de .
+
+dbpedia:Lhakpa_Tsamchoe
+        a          foaf:Person ;
+        foaf:name  "Lhakpa Tsamchoe"@de .
+
+dbpedia:Mariah_Carey  a  foaf:Person ;
+        foaf:name  "Mariah Carey"@en , "Mariah Carey"@de .
+
+dbpedia:Jim_Jones  a  foaf:Person ;
+        foaf:name  "Jim Jones"@en , "Jim Jones"@de .
+
+dbpedia:Hrithik_Roshan
+        a          foaf:Person ;
+        foaf:name  "Hrithik Nagrath Roshan"@de , "Hrithik Roshan"@en .
+
+dbpedia:Pepe_Marchena
+        a          foaf:Person ;
+        foaf:name  "Pepe Marchena"@en , "Pepe Marchena"@de .
+
+dbpedia:John_Whitmire
+        a          foaf:Person ;
+        foaf:name  "John Whitmire"@en , "John Harris Whitmire"@en .
+
+dbpedia:Sabbas_the_Sanctified
+        a          foaf:Person ;
+        foaf:name  "Saint Sabbas the Sanctified"@en , "Sabas"@de .
+
+dbpedia:Carl_Crawford
+        a          foaf:Person ;
+        foaf:name  "Carl Crawford"@de , "Carl Crawford"@en .
+
+dbpedia:Johann_Wilhelm_Ritter
+        a          foaf:Person ;
+        foaf:name  "Johann Wilhelm Ritter"@de .
+
+<http://dbpedia.org/resource/John_Barnwell_%28colonist%29>
+        a          foaf:Person ;
+        foaf:name  "John Barnwell"@de .
+
+dbpedia:Big_Gipp  a  foaf:Person ;
+        foaf:name  "Big Gipp"@de , "Big Gipp"@en .
+
+dbpedia:Mario_Brega  a  foaf:Person ;
+        foaf:name  "Mario Brega"@en , "Mario Brega"@de .
+
+dbpedia:Alana_Stewart
+        a          foaf:Person ;
+        foaf:name  "Alana Stewart"@en .
+
+dbpedia:Jochen_Fraatz
+        a          foaf:Person ;
+        foaf:name  "Jochen Fraatz"@de .
+
+dbpedia:Marie_Janson  a  foaf:Person ;
+        foaf:name  "Marie Janson"@de .
+
+dbpedia:Howard_Stringer
+        a          foaf:Person ;
+        foaf:name  "Sir Howard Stringer"@en , "Howard Stringer"@de .
+
+dbpedia:David_Starr_Jordan
+        a          foaf:Person ;
+        foaf:name  "David Starr Jordan"@de .
+
+dbpedia:Al_Sharpton  a  foaf:Person ;
+        foaf:name  "Al Sharpton"@de , "Al Sharpton"@en .
+
+dbpedia:Ceslaus  a  foaf:Person ;
+        foaf:name  "Ceslaus von Breslau"@de , "Saint Ceslaus"@en .
+
+<http://dbpedia.org/resource/George_Villiers%2C_4th_Earl_of_Clarendon>
+        a          foaf:Person ;
+        foaf:name  "Villiers, George, 4. Earl of Clarendon"@de , "The Earl of Clarendon"@en .
+
+dbpedia:Mary_Lyon  a  foaf:Person ;
+        foaf:name  "Mary Lyon"@de .
+
+<http://dbpedia.org/resource/Heinrich_Wilhelm_Matth%C3%A4us_Olbers>
+        a          foaf:Person ;
+        foaf:name  "Heinrich Wilhelm Matthäus Olbers"@en , "Heinrich Wilhelm Matthias Olbers"@de .
+
+<http://dbpedia.org/resource/David_Gilmour_%28writer%29>
+        a          foaf:Person ;
+        foaf:name  "David Gilmour"@en , "David Gilmour"@de .
+
+dbpedia:George_W._Bush
+        a          foaf:Person ;
+        foaf:name  "George Walker Bush"@en , "George W. Bush"@de .
+
+dbpedia:Hawksley_Workman
+        a          foaf:Person ;
+        foaf:name  "Hawksley Workman"@en , "Hawksley Hawksley Workman"@de .
+
+<http://dbpedia.org/resource/Christina_St%C3%BCrmer>
+        a          foaf:Person ;
+        foaf:name  "Christina Stürmer"@en , "Christina Stürmer"@de .
+
+dbpedia:Philip_Vian  a  foaf:Person ;
+        foaf:name  "Sir Philip Louis Vian"@en , "Philip S. Vian"@de .
+
+dbpedia:Michael_Moorcock
+        a          foaf:Person ;
+        foaf:name  "Michael Moorcock"@de , "Michael John Moorcock"@en .
+
+dbpedia:Robert_Ehrlich
+        a          foaf:Person ;
+        foaf:name  "Robert L. Ehrlich"@de , "Bob Ehrlich"@en .
+
+dbpedia:Duncan_Hunter
+        a          foaf:Person ;
+        foaf:name  "Duncan Lee Hunter"@de , "Duncan Hunter"@en .
+
+dbpedia:Gustav_Krupp_von_Bohlen_und_Halbach
+        a          foaf:Person ;
+        foaf:name  "Gustav Krupp von Bohlen und Halbach"@en , "Gustav Krupp von Bohlen und Halbach"@de .
+
+dbpedia:Joseph_Conrad
+        a          foaf:Person ;
+        foaf:name  "Joseph Conrad"@de , "Joseph Conrad"@en .
+
+dbpedia:Karl_Farkas  a  foaf:Person ;
+        foaf:name  "Karl Farkas"@en , "Karl Farkas"@de .
+
+dbpedia:Walter_Kraft  a  foaf:Person ;
+        foaf:name  "Walter Kraft"@de .
+
+<http://dbpedia.org/resource/Katharine%2C_Duchess_of_Kent>
+        a          foaf:Person ;
+        foaf:name  "Katharine Kent"@en , "Katharine"@en , "Katharine Lucy Mary"@en , "Duchess of Kent Katharine"@de .
+
+dbpedia:Gordon_McQueen
+        a          foaf:Person ;
+        foaf:name  "Gordon McQueen"@en , "Gordon McQueen"@de .
+
+dbpedia:Pope_Agatho  a  foaf:Person ;
+        foaf:name  "Agatho"@de .
+
+<http://dbpedia.org/resource/Davina_Ingrams%2C_18th_Baroness_Darcy_de_Knayth>
+        a          foaf:Person ;
+        foaf:name  "Ingrams, Davina, 18. Baroness Darcy de Knayth"@de .
+
+dbpedia:Graham_West  a  foaf:Person ;
+        foaf:name  "Graham West"@en , "Graham James West"@en .
+
+dbpedia:Kjell_Magne_Bondevik
+        a          foaf:Person ;
+        foaf:name  "Kjell Magne Bondevik"@en , "Kjell Magne Bondevik"@de .
+
+dbpedia:Hans-Joachim_Stuck
+        a          foaf:Person ;
+        foaf:name  "Hans-Joachim Stuck"@en , "Hans-Joachim Stuck"@de .
+
+dbpedia:Thomas_Kinkade
+        a          foaf:Person ;
+        foaf:name  "Thomas Kinkade"@en , "Thomas Kinkade"@de .
+
+dbpedia:Henry_Fairfield_Osborn
+        a          foaf:Person ;
+        foaf:name  "Henry Fairfield Osborn"@de , "Henry Fairfield Osborn"@en .
+
+dbpedia:Alberto_Giacometti
+        a          foaf:Person ;
+        foaf:name  "Alberto Giacometti"@de , "Alberto Giacometti"@en .
+
+dbpedia:Jonathan_Cheechoo
+        a          foaf:Person ;
+        foaf:name  "Jonathan Cheechoo"@de .
+
+dbpedia:Rashida_Jones
+        a          foaf:Person ;
+        foaf:name  "Rashida Jones"@en .
+
+dbpedia:Georgy_Flyorov
+        a          foaf:Person ;
+        foaf:name  "Georgy Nikolayevich Flyorov"@en , "Georgi Nikolajewitsch Fljorow"@de .
+
+dbpedia:Bubba_Smith  a  foaf:Person ;
+        foaf:name  "Bubba Smith"@en , "Bubba Smith"@de .
+
+dbpedia:Theodor_de_Bry
+        a          foaf:Person ;
+        foaf:name  "Theodor de Bry"@de .
+
+dbpedia:Gunnar_Myrdal
+        a          foaf:Person ;
+        foaf:name  "Gunnar Myrdal"@de , "Gunnar Myrdal"@en .
+
+dbpedia:Ed_Farhat  a  foaf:Person ;
+        foaf:name  "The Sheik of Araby"@en , "The Original Sheik"@en , "The Sheik"@en , "The Sheik"@de , "Ed Farhat"@en .
+
+dbpedia:Lisa_Marie_Presley
+        a          foaf:Person ;
+        foaf:name  "Lisa Marie Presley"@de .
+
+dbpedia:Antonio_Bagioli
+        a          foaf:Person ;
+        foaf:name  "Antonio Bagioli"@en , "Giuseppe Antonio Bagioli"@en .
+
+dbpedia:Theodore_Gill
+        a          foaf:Person ;
+        foaf:name  "Theodore Nicholas Gill"@de .
+
+dbpedia:Garikapati_Varalakshmi
+        a          foaf:Person ;
+        foaf:name  "G. Varalakshmi"@de , "G. Varalakshmi"@en .
+
+dbpedia:Houman_Younessi
+        a          foaf:Person ;
+        foaf:name  "Houman Younessi, Ph.D."@en , "Houman Younessi"@en .
+
+dbpedia:Tyler_Wright  a  foaf:Person ;
+        foaf:name  "Tyler Wright"@de .
+
+dbpedia:Norbert_Schultze
+        a          foaf:Person ;
+        foaf:name  "Norbert Schultze"@de .
+
+dbpedia:Ridley_Scott  a  foaf:Person ;
+        foaf:name  "Ridley Scott"@en , "Ridley Scott"@de , "Sir Ridley Scott"@en .
+
+dbpedia:Alice_B._Russell
+        a          foaf:Person ;
+        foaf:name  "Alice B. Russell"@en .
+
+dbpedia:Marcia_Ball  a  foaf:Person ;
+        foaf:name  "Marcia Ball"@en , "Marcia Ball"@de .
+
+dbpedia:George_Halas  a  foaf:Person ;
+        foaf:name  "George Halas"@de .
+
+dbpedia:Leon_Cooper  a  foaf:Person ;
+        foaf:name  "Leon Neil Cooper"@de , "Leon Cooper"@en .
+
+dbpedia:Leslie_Ward  a  foaf:Person ;
+        foaf:name  "Leslie Ward"@de .
+
+dbpedia:Alfred_Schwarzmann
+        a          foaf:Person ;
+        foaf:name  "Alfred Schwarzmann"@en , "Alfred Schwarzmann"@de .
+
+dbpedia:Alex_Russell  a  foaf:Person ;
+        foaf:name  "Alexander John Russell"@en , "Alex Russell"@en .
+
+dbpedia:Mikkel_Thygesen
+        a          foaf:Person ;
+        foaf:name  "Mikkel Thygesen"@en , "Mikkel Thygesen"@de .
+
+dbpedia:Claire-Hope_Ashitey
+        a          foaf:Person ;
+        foaf:name  "Claire-Hope Ashitey"@de , "Clare Hope-Ashitey"@en .
+
+dbpedia:Kostas_Varnalis
+        a          foaf:Person ;
+        foaf:name  "Kostas Varnalis"@de .
+
+dbpedia:Joe_Jonas  a  foaf:Person ;
+        foaf:name  "Joe Jonas"@de , "Joe Jonas"@en .
+
+dbpedia:Adam_Goldberg
+        a          foaf:Person ;
+        foaf:name  "Adam Goldberg"@de , "Adam Goldberg"@en .
+
+dbpedia:Fermin  a  foaf:Person ;
+        foaf:name  "Saint Fermin"@en , "Firminus der Ältere von Amiens"@de .
+
+dbpedia:Kate_Beckinsale
+        a          foaf:Person ;
+        foaf:name  "Kate Beckinsale"@en , "Kate Beckinsale"@de .
+
+dbpedia:Juan_Carvajal
+        a          foaf:Person ;
+        foaf:name  "Juan Carvajal"@de .
+
+dbpedia:Gustav_I_of_Sweden
+        a          foaf:Person ;
+        foaf:name  "Gustav I"@en , "Gustav Eriksson"@en , "Gustav I. Wasa"@de .
+
+dbpedia:Russell_Kirk  a  foaf:Person ;
+        foaf:name  "Russell Kirk"@de , "Russell Kirk"@en .
+
+dbpedia:Claude_Shannon
+        a          foaf:Person ;
+        foaf:name  "Claude Shannon"@en , "Claude Elwood Shannon"@de .
+
+dbpedia:David_Duval  a  foaf:Person ;
+        foaf:name  "David Duval"@de .
+
+dbpedia:Ray_Charles  a  foaf:Person ;
+        foaf:name  "Ray Charles"@en , "Ray Charles"@de .
+
+dbpedia:Elizabeth_I_of_England
+        a          foaf:Person ;
+        foaf:name  "Elisabeth I."@de , "Elizabeth I"@en .
+
+dbpedia:Connie_Francis
+        a          foaf:Person ;
+        foaf:name  "Connie Francis"@en , "Connie Francis"@de .
+
+dbpedia:Joe_Walters  a  foaf:Person ;
+        foaf:name  "Joe Walters"@en .
+
+dbpedia:John_Kricfalusi
+        a          foaf:Person ;
+        foaf:name  "John Kricfalusi"@de , "John Kricfalusi"@en .
+
+dbpedia:Carmit_Bachar
+        a          foaf:Person ;
+        foaf:name  "Carmit Bachar"@de .
+
+dbpedia:Susan_Raye  a  foaf:Person ;
+        foaf:name  "Susan Raye"@en , "Susan Raye"@de .
+
+dbpedia:Israel_Tal  a  foaf:Person ;
+        foaf:name  "Israel Tal"@de , "Israel Tal"@en .
+
+dbpedia:Wolfgang_Hottenrott
+        a          foaf:Person ;
+        foaf:name  "Wolfgang Hottenrott"@de .
+
+dbpedia:Henry_Clay  a  foaf:Person ;
+        foaf:name  "Henry Clay"@en , "Henry Clay"@de .
+
+dbpedia:Dan_Hill  a  foaf:Person ;
+        foaf:name  "Dan Hill"@de , "Dan Hill"@en .
+
+dbpedia:Kaare_Wahlberg
+        a          foaf:Person ;
+        foaf:name  "Kaare Wahlberg"@de , "Kaare Wahlberg"@en .
+
+dbpedia:Jean_Ferrat  a  foaf:Person ;
+        foaf:name  "Jean Ferrat"@de , "Jean Ferrat"@en .
+
+dbpedia:Davie_Irons  a  foaf:Person ;
+        foaf:name  "David John Irons"@en , "Davie Irons"@en .
+
+dbpedia:Ahman_Green  a  foaf:Person ;
+        foaf:name  "Ahman Green"@de .
+
+dbpedia:Saint_Joseph  a  foaf:Person ;
+        foaf:name  "Saint Joseph"@en , "Josef von Nazaret"@de .
+
+dbpedia:Fritz_Moravec
+        a          foaf:Person ;
+        foaf:name  "Fritz Moravec"@de .
+
+dbpedia:Stanley_Holloway
+        a          foaf:Person ;
+        foaf:name  "Stanley Holloway"@de , "Stanley Holloway"@en .
+
+dbpedia:Zhou_Enlai  a  foaf:Person ;
+        foaf:name  "Ēnlái Zhōu"@de , "周恩来"@en , "Zhou Enlai"@en .
+
+dbpedia:Mohamed_Sissoko
+        a          foaf:Person ;
+        foaf:name  "Mohamed Lamine Sissoko Gillan"@en , "Mohamed Sissoko"@de , "Mohamed Sissoko"@en , "Mohamed Lamine Sissoko"@en .
+
+dbpedia:Matt_Bonner  a  foaf:Person ;
+        foaf:name  "Matt Bonner"@de , "Matt Bonner"@en .
+
+dbpedia:Amit_Ben_Shushan
+        a          foaf:Person ;
+        foaf:name  "Amit Ben-Shushan"@de , "Amit Ben Shushan"@en .
+
+dbpedia:Alban_Berg  a  foaf:Person ;
+        foaf:name  "Alban Berg"@en , "Alban Berg"@de .
+
+dbpedia:Max_Merkel  a  foaf:Person ;
+        foaf:name  "Maximilian Merkel"@en , "Max Merkel"@en , "Max Merkel"@de .
+
+dbpedia:Hideki_Matsui
+        a          foaf:Person ;
+        foaf:name  "Hideki Matsui"@de , "Hideki Matsui"@en .
+
+dbpedia:Leonid_Hurwicz
+        a          foaf:Person ;
+        foaf:name  "Leonid Hurwicz"@de .
+
+dbpedia:Javad_Nekounam
+        a          foaf:Person ;
+        foaf:name  "Javad Nekounam"@en , "Javad Nekounam"@de .
+
+dbpedia:Paul_Otellini
+        a          foaf:Person ;
+        foaf:name  "Paul S. Otellini"@en , "Paul Otellini"@en , "Paul Otellini"@de .
+
+<http://dbpedia.org/resource/Luis_Javier_Garc%C3%ADa_Sanz>
+        a          foaf:Person ;
+        foaf:name  "Luis Javier García Sanz"@en , "Luis García"@en , "Luis García"@de .
+
+dbpedia:Grandpa_Jones
+        a          foaf:Person ;
+        foaf:name  "Grandpa Jones"@en , "Grandpa Jones"@de .
+
+dbpedia:Dirk_Kuyt  a  foaf:Person ;
+        foaf:name  "Dirk Kuijt"@de , "Dirk Kuijt"@en , "Dirk Kuyt"@en .
+
+dbpedia:Christina_Beier
+        a          foaf:Person ;
+        foaf:name  "Christina Beier"@de , "Christina Beier"@en .
+
+dbpedia:Chris_de_Burgh
+        a          foaf:Person ;
+        foaf:name  "Chris de Burgh"@de , "Chris de Burgh"@en .
+
+dbpedia:Michael_Cullen
+        a          foaf:Person ;
+        foaf:name  "Michael Cullen"@de , "Michael John Cullen"@en .
+
+dbpedia:Jim_Neidhart  a  foaf:Person ;
+        foaf:name  "Jim Neidhart"@en , "James Neidhart"@de , "Who"@en .
+
+dbpedia:Paulo_Mendes_da_Rocha
+        a          foaf:Person ;
+        foaf:name  "Paulo Mendes da Rocha"@de .
+
+dbpedia:Nicolas_Baudin
+        a          foaf:Person ;
+        foaf:name  "Nicolas Baudin"@en , "Nicolas Thomas Baudin"@de .
+
+dbpedia:Greg_de_Vries
+        a          foaf:Person ;
+        foaf:name  "Greg de Vries"@de .
+
+dbpedia:Frank_Murkowski
+        a          foaf:Person ;
+        foaf:name  "Frank Murkowski"@de , "Frank Murkowski"@en .
+
+dbpedia:Joe_Hamill  a  foaf:Person ;
+        foaf:name  "Joseph Hamill"@en , "Joe Hamill"@en .
+
+dbpedia:George_Washington_Cullum
+        a          foaf:Person ;
+        foaf:name  "George Washington Cullum"@en .
+
+dbpedia:Reginald_Owen
+        a          foaf:Person ;
+        foaf:name  "Reginald Owen"@en , "Reginald Owen"@de .
+
+dbpedia:Henry_Gage  a  foaf:Person ;
+        foaf:name  "Henry Tifft Gage"@de , "Henry Tifft Gage"@en .
+
+dbpedia:Dorothea_Maria_of_Anhalt
+        a          foaf:Person ;
+        foaf:name  "Sophie Dorothea Maria von Anhalt"@de , "Dorothea Maria of Anhalt"@en .
+
+dbpedia:Olivier_De_Cock
+        a          foaf:Person ;
+        foaf:name  "Olivier De Cock"@en , "Olivier De Cock"@de .
+
+dbpedia:Ramzi_Binalshibh
+        a          foaf:Person ;
+        foaf:name  "Ramzi Binalshibh"@en , "Ramzi bin asch-Schaiba"@de .
+
+dbpedia:Willie_Nile  a  foaf:Person ;
+        foaf:name  "Willie Nile"@en .
+
+dbpedia:Steve_Yzerman
+        a          foaf:Person ;
+        foaf:name  "Steve Yzerman"@de .
+
+dbpedia:Todd_Martin  a  foaf:Person ;
+        foaf:name  "Todd Christopher Martin"@de , "Todd Martin"@en .
+
+dbpedia:Henry_Corbin  a  foaf:Person ;
+        foaf:name  "Henry Corbin"@de , "Henry Corbin"@en .
+
+dbpedia:Dino_Dini  a  foaf:Person ;
+        foaf:name  "Dino Dini"@de .
+
+dbpedia:James_E._English
+        a          foaf:Person ;
+        foaf:name  "James Edward English"@en , "James Edward English"@de .
+
+dbpedia:Harriet_Andersson
+        a          foaf:Person ;
+        foaf:name  "Harriet Andersson"@en , "Harriet Andersson"@de .
+
+dbpedia:Karl_Friedrich_Gottlob_Wetzel
+        a          foaf:Person ;
+        foaf:name  "Karl Friedrich Gottlob Wetzel"@de .
+
+dbpedia:David_Crosby  a  foaf:Person ;
+        foaf:name  "David Crosby"@en , "David Crosby"@de .
+
+<http://dbpedia.org/resource/I%C3%B1igo_Landaluze>
+        a          foaf:Person ;
+        foaf:name  "Iñigo Landaluze Intxaurraga"@en , "Iñigo Landaluze"@en , "Iñigo Landaluze Intxaurraga"@de .
+
+dbpedia:Alexander_Biddle
+        a          foaf:Person ;
+        foaf:name  "Alexander Biddle"@en .
+
+dbpedia:Elliott_Waters_Montroll
+        a          foaf:Person ;
+        foaf:name  "Elliott Montroll"@de , "Elliot W. Montroll"@en .
+
+dbpedia:Victor_Moses  a  foaf:Person ;
+        foaf:name  "Victor Moses"@de , "Victor Moses"@en .
+
+dbpedia:Heath_Ledger  a  foaf:Person ;
+        foaf:name  "Heath Ledger"@de , "Heath Andrew Ledger"@en , "Heath Ledger"@en .
+
+dbpedia:Patience_Cleveland
+        a          foaf:Person ;
+        foaf:name  "Patience Cleveland"@de , "Patience Cleveland"@en .
+
+dbpedia:Jones_Kusi-Asare
+        a          foaf:Person ;
+        foaf:name  "Jones Kusi-Asare"@de , "Jones Kusi Asare"@en .
+
+dbpedia:George_Canning
+        a          foaf:Person ;
+        foaf:name  "George Canning"@en , "George Canning"@de .
+
+dbpedia:Cristiano_Lucarelli
+        a          foaf:Person ;
+        foaf:name  "Cristiano Lucarelli"@de , "Cristiano Lucarelli"@en .
+
+dbpedia:Lil_Wayne  a  foaf:Person ;
+        foaf:name  "Lil Wayne"@en , "Lil Wayne"@de .
+
+dbpedia:Nils_Boe  a  foaf:Person ;
+        foaf:name  "Nils Andreas Boe"@de , "Nils Boe"@en .
+
+dbpedia:Odette_Yustman
+        a          foaf:Person ;
+        foaf:name  "Odette Yustman"@de .
+
+dbpedia:Mary_Hopkin  a  foaf:Person ;
+        foaf:name  "Mary Hopkin"@de , "Mary Hopkin"@en .
+
+dbpedia:Arthur_Henry_Adams
+        a          foaf:Person ;
+        foaf:name  "Arthur Henry Adams"@en .
+
+<http://dbpedia.org/resource/%C3%80lex_Crivill%C3%A9>
+        a          foaf:Person ;
+        foaf:name  "Àlex Crivillé"@de .
+
+dbpedia:Jim_Vandermeer
+        a          foaf:Person ;
+        foaf:name  "Jim Vandermeer"@de .
+
+dbpedia:Gerd_Faltings
+        a          foaf:Person ;
+        foaf:name  "Gerd Faltings"@de , "Gerd Faltings"@en .
+
+dbpedia:Rahul_Gandhi  a  foaf:Person ;
+        foaf:name  "Rahul Gandhi"@de , "Rahul Gandhi"@en .
+
+dbpedia:Christian_IX_of_Denmark
+        a          foaf:Person ;
+        foaf:name  "Christian IX of Denmark"@en , "Christian IX."@de , "Christian IX"@en .
+
+dbpedia:Ingrid_Chauvin
+        a          foaf:Person ;
+        foaf:name  "Ingrid Chauvin"@de , "Ingrid Chauvin"@en .
+
+dbpedia:Gilberto_Freyre
+        a          foaf:Person ;
+        foaf:name  "Gilberto Freyre"@de .
+
+dbpedia:Zvi_Hermann_Schapira
+        a          foaf:Person ;
+        foaf:name  "Hermann Schapira"@de .
+
+dbpedia:Kim_Seung-kew
+        a          foaf:Person ;
+        foaf:name  "Kim Seung-kew"@en .
+
+dbpedia:John_Wayne  a  foaf:Person ;
+        foaf:name  "John Wayne"@en , "John Wayne Wayne"@en , "John Wayne"@de .
+
+dbpedia:Graham_Coxon  a  foaf:Person ;
+        foaf:name  "Graham Coxon"@de , "Graham Coxon"@en .
+
+dbpedia:Megumi_Hayashibara
+        a          foaf:Person ;
+        foaf:name  "Megumi Hayashibara"@en , "Megumi Hayashibara"@de .
+
+dbpedia:Madeleine_Albright
+        a          foaf:Person ;
+        foaf:name  "Dr. Madeleine Albright"@en , "Madeleine Albright"@de .
+
+dbpedia:Filippino_Lippi
+        a          foaf:Person ;
+        foaf:name  "Filippino Lippi"@en , "Filippino Lippi"@de .
+
+dbpedia:Pope_Leo_I  a  foaf:Person ;
+        foaf:name  "Leo der Große"@de .
+
+dbpedia:Peter_Purves  a  foaf:Person ;
+        foaf:name  "Peter Purves"@en .
+
+dbpedia:Georgios_Papanikolaou
+        a          foaf:Person ;
+        foaf:name  "George Nicolas Papanicolaou"@de , "Georgios Papanikolaou"@en .
+
+dbpedia:Johann_Nikolaus_von_Hontheim
+        a          foaf:Person ;
+        foaf:name  "Johann Nikolaus von Hontheim"@de .
+
+dbpedia:David_Broza  a  foaf:Person ;
+        foaf:name  "David Broza"@de , "David Broza"@en .
+
+<http://dbpedia.org/resource/Willy_Br%C3%BCderlin>
+        a          foaf:Person ;
+        foaf:name  "Willy Brüderlin"@de .
+
+dbpedia:Derek_Grant  a  foaf:Person ;
+        foaf:name  "Derek Grant"@en , "Derek Grant"@de .
+
+dbpedia:Alfred_Caldwell
+        a          foaf:Person ;
+        foaf:name  "Alfred Caldwell"@de , "Alfred Caldwell"@en .
+
+<http://dbpedia.org/resource/George_Goschen%2C_2nd_Viscount_Goschen>
+        a          foaf:Person ;
+        foaf:name  "George Goschen"@en , "Viscount Goschen"@en .
+
+dbpedia:Jim_Guy_Tucker
+        a          foaf:Person ;
+        foaf:name  "Jim Tucker"@de , "Jim Guy Tucker"@en .
+
+dbpedia:Mathias_Zdarsky
+        a          foaf:Person ;
+        foaf:name  "Mathias Zdarsky"@en , "Mathias Zdarsky"@de .
+
+dbpedia:Ladislas_of_Naples
+        a          foaf:Person ;
+        foaf:name  "Ladislaus von Neapel"@de .
+
+dbpedia:Haim_Laskov  a  foaf:Person ;
+        foaf:name  "Chaim Laskow"@de , "Haim Laskov"@en .
+
+dbpedia:Robert_P._Patterson
+        a          foaf:Person ;
+        foaf:name  "Robert Porter Patterson, Sr."@en , "Robert Porter Patterson"@de .
+
+dbpedia:Ken_Olandt  a  foaf:Person ;
+        foaf:name  "Ken Olandt"@de .
+
+dbpedia:Lucie_Silvas  a  foaf:Person ;
+        foaf:name  "Lucie Silvas"@de , "Lucie Silvas"@en .
+
+dbpedia:Sheys_Rezaei  a  foaf:Person ;
+        foaf:name  "Sheys Rezaei"@en , "Sheys Rezaei Khonakdar"@en , "Scheys Rezai Chonakdar"@de .
+
+dbpedia:Kurt_Jara  a  foaf:Person ;
+        foaf:name  "Kurt Jara"@de , "Kurt Jara"@en .
+
+dbpedia:Jean_Stas  a  foaf:Person ;
+        foaf:name  "Jean Servais Stas"@de .
+
+dbpedia:Blake_Lively  a  foaf:Person ;
+        foaf:name  "Blake Lively"@en , "Blake Lively"@de .
+
+dbpedia:Carl_Orff  a  foaf:Person ;
+        foaf:name  "Carl Orff"@en , "Carl Orff"@de .
+
+dbpedia:Katherine_Heigl
+        a          foaf:Person ;
+        foaf:name  "Katherine Heigl"@en , "Katherine Heigl"@de .
+
+dbpedia:Arne_Duncan  a  foaf:Person ;
+        foaf:name  "Arne Duncan"@de , "Arne Duncan"@en .
+
+<http://dbpedia.org/resource/Dado_Topi%C4%87>
+        a          foaf:Person ;
+        foaf:name  "Dado Topić"@de , "Dado Topić"@en .
+
+dbpedia:Masayoshi_Son
+        a          foaf:Person ;
+        foaf:name  "Masayoshi Son"@de .
+
+dbpedia:Al_Smith  a  foaf:Person ;
+        foaf:name  "Alfred Emanuel Smith"@en , "Alfred E. Smith"@de .
+
+dbpedia:Jayne_Torvill
+        a          foaf:Person ;
+        foaf:name  "Jayne Torvill"@en , "Jayne Torvill"@de .
+
+dbpedia:Taharqa  a  foaf:Person ;
+        foaf:name  "Taharqa"@de .
+
+dbpedia:Robert_Keohane
+        a          foaf:Person ;
+        foaf:name  "Robert O. Keohane"@de .
+
+dbpedia:Hubie_McDonough
+        a          foaf:Person ;
+        foaf:name  "Hubert Brian McDonough"@de .
+
+dbpedia:Maria_Julia_Zaleska
+        a          foaf:Person ;
+        foaf:name  "Maria Julia Zaleska"@en .
+
+dbpedia:Heinz_Tiessen
+        a          foaf:Person ;
+        foaf:name  "Heinz Tiessen"@de .
+
+dbpedia:Felix_Dahn  a  foaf:Person ;
+        foaf:name  "Felix Dahn"@de .
+
+dbpedia:Gebmund  a  foaf:Person ;
+        foaf:name  "Gebmund"@en .
+
+dbpedia:Nick_Pippenger
+        a          foaf:Person ;
+        foaf:name  "Nick Pippenger"@de .
+
+dbpedia:Frank_Sinatra
+        a          foaf:Person ;
+        foaf:name  "Frank Sinatra"@de , "Frank Sinatra"@en .
+
+dbpedia:Jogesh_Pati  a  foaf:Person ;
+        foaf:name  "Jogesh Pati"@de .
+
+<http://dbpedia.org/resource/Frederick_I%2C_Holy_Roman_Emperor>
+        a          foaf:Person ;
+        foaf:name  "Frederick I"@en , "Friedrich I."@de .
+
+dbpedia:Andre_Braugher
+        a          foaf:Person ;
+        foaf:name  "Andre Braugher"@de .
+
+dbpedia:Slim_Whitman  a  foaf:Person ;
+        foaf:name  "Whitman, Otis Dewey, Jr."@en , "Slim Whitman"@en , "Slim Whitman"@de .
+
+dbpedia:Rudolf_Clausius
+        a          foaf:Person ;
+        foaf:name  "Rudolf Clausius"@de , "Rudolf Clausius"@en .
+
+dbpedia:Albert_Costa  a  foaf:Person ;
+        foaf:name  "Albert Costa"@de , "Albert Costa"@en .
+
+dbpedia:Thomas_Henry_Huxley
+        a          foaf:Person ;
+        foaf:name  "Thomas Henry Huxley"@de , "Thomas Henry Huxley"@en .
+
+dbpedia:Teddy_Wilson  a  foaf:Person ;
+        foaf:name  "Teddy Wilson"@en , "Teddy Wilson"@de .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Peseiro>
+        a          foaf:Person ;
+        foaf:name  "José Peseiro"@en , "José Peseiro"@de , "José Vítor dos Santos Peseiro"@en .
+
+dbpedia:Henry_Darcy  a  foaf:Person ;
+        foaf:name  "Henry Darcy"@de , "Henry Darcy"@en .
+
+<http://dbpedia.org/resource/Elizabeth_Alexeievna_%28Louise_of_Baden%29>
+        a          foaf:Person ;
+        foaf:name  "Luise Marie Auguste von Baden"@de , "Elizabeth Alexeievna"@en .
+
+dbpedia:Doc_Holliday  a  foaf:Person ;
+        foaf:name  "Doc Holliday"@en , "Doc Holliday"@de .
+
+dbpedia:Shaun_Wright-Phillips
+        a          foaf:Person ;
+        foaf:name  "Shaun Wright-Phillips"@en , "Shaun Wright-Phillips"@de , "Shaun Cameron Wright-Phillips"@en .
+
+dbpedia:William_Yardley
+        a          foaf:Person ;
+        foaf:name  "William Yardley"@en .
+
+dbpedia:Richard_Widmark
+        a          foaf:Person ;
+        foaf:name  "Richard Widmark"@de , "Richard Widmark"@en .
+
+dbpedia:Johanna_von_Puttkamer
+        a          foaf:Person ;
+        foaf:name  "Johanna Von Puttkamer"@en , "Johanna von Puttkamer"@de .
+
+dbpedia:Ole_Worm  a  foaf:Person ;
+        foaf:name  "Olaus Wormius"@de .
+
+dbpedia:Muniruddin_Ahmed
+        a          foaf:Person ;
+        foaf:name  "Muniruddin Ahmed"@de .
+
+dbpedia:Adrian_Ilie  a  foaf:Person ;
+        foaf:name  "Adrian Ilie"@en , "Adrian Bucurel Ilie"@en , "Adrian Ilie"@de .
+
+dbpedia:Avigdor_Lieberman
+        a          foaf:Person ;
+        foaf:name  "Avigdor Levi Lieberman"@en , "Avigdor Lieberman"@de .
+
+dbpedia:Jovanotti  a  foaf:Person ;
+        foaf:name  "Jovanotti"@en , "Jovanotti"@de .
+
+dbpedia:Richard_Musgrave
+        a          foaf:Person ;
+        foaf:name  "Richard Musgrave"@en , "Richard Musgrave"@de .
+
+dbpedia:Jerzy_Petersburski
+        a          foaf:Person ;
+        foaf:name  "Jerzy Petersburski"@de .
+
+dbpedia:Daniel_Pratt  a  foaf:Person ;
+        foaf:name  "Daniel Pratt"@en .
+
+dbpedia:Hu_Sansheng  a  foaf:Person ;
+        foaf:name  "Sansheng Hu"@de .
+
+dbpedia:Bill_Rixon  a  foaf:Person ;
+        foaf:name  "Barry William Rixon"@en .
+
+<http://dbpedia.org/resource/Michael_Duffy_%28politician%29>
+        a          foaf:Person ;
+        foaf:name  "Michael John Duffy"@en , "Michael Duffy"@en .
+
+dbpedia:David_Packard
+        a          foaf:Person ;
+        foaf:name  "David Packard"@de , "David Packard"@en .
+
+dbpedia:John_Jensen  a  foaf:Person ;
+        foaf:name  "Faxe Jensen"@en , "John Jensen"@en , "John Jensen"@de .
+
+dbpedia:Wayne_Morse  a  foaf:Person ;
+        foaf:name  "Wayne Lyman Morse"@en , "Wayne Morse"@de .
+
+dbpedia:Kimberly_Elise
+        a          foaf:Person ;
+        foaf:name  "Kimberly Elise"@de .
+
+dbpedia:Princess_Irene_of_Greece_and_Denmark
+        a          foaf:Person ;
+        foaf:name  "Irene von Griechenland"@de , "Princess Irene"@en .
+
+dbpedia:Antonio_Saura
+        a          foaf:Person ;
+        foaf:name  "Antonio Saura"@de .
+
+dbpedia:Sylvester_Stallone
+        a          foaf:Person ;
+        foaf:name  "Sylvester Stallone"@de , "Sylvester Stallone"@en .
+
+dbpedia:Makoto_Shinkai
+        a          foaf:Person ;
+        foaf:name  "Makoto Shinkai"@de .
+
+dbpedia:Michael_Howard
+        a          foaf:Person ;
+        foaf:name  "Michael Howard"@en , "Michael Howard"@de .
+
+dbpedia:Stefan_Read  a  foaf:Person ;
+        foaf:name  "Stefan Read"@de .
+
+dbpedia:Webster_Anderson
+        a          foaf:Person ;
+        foaf:name  "Webster Anderson"@en .
+
+dbpedia:Jean-Sifrein_Maury
+        a          foaf:Person ;
+        foaf:name  "Jean-Siffrein Maury"@de .
+
+dbpedia:Randy_Pausch  a  foaf:Person ;
+        foaf:name  "Randy Pausch"@de , "Randy Pausch"@en .
+
+dbpedia:Judith_A._Reisman
+        a          foaf:Person ;
+        foaf:name  "Judith A. Reisman"@de .
+
+dbpedia:Judy_Chicago  a  foaf:Person ;
+        foaf:name  "Judy Chicago"@de .
+
+dbpedia:Erhard_Melcher
+        a          foaf:Person ;
+        foaf:name  "Erhard Melcher"@de .
+
+dbpedia:Angus_Young  a  foaf:Person ;
+        foaf:name  "Angus Young"@de , "Angus Young"@en .
+
+dbpedia:Terry_Crews  a  foaf:Person ;
+        foaf:name  "Terry Crews"@de , "Terry Crews"@en .
+
+dbpedia:Donald_Trump  a  foaf:Person ;
+        foaf:name  "Donald Trump"@en , "Donald Trump"@de .
+
+dbpedia:Wendell_Meredith_Stanley
+        a          foaf:Person ;
+        foaf:name  "Wendell Meredith Stanley"@de , "Wendell Meredith Stanley"@en .
+
+dbpedia:Thomas_McKean
+        a          foaf:Person ;
+        foaf:name  "Thomas McKean"@en , "Thomas McKean"@de .
+
+dbpedia:Matthew_Briggs
+        a          foaf:Person ;
+        foaf:name  "Matthew Anthony Briggs"@en , "Matthew Briggs"@en .
+
+dbpedia:Dale_Russell  a  foaf:Person ;
+        foaf:name  "Dale Russell"@en .
+
+dbpedia:Francis_I_of_France
+        a          foaf:Person ;
+        foaf:name  "Francis I"@en , "Franz I."@de .
+
+dbpedia:John_Foxx  a  foaf:Person ;
+        foaf:name  "John Foxx"@de , "John Foxx"@en .
+
+dbpedia:Jie_of_Xia  a  foaf:Person ;
+        foaf:name  "Jie von Xia"@de .
+
+dbpedia:Erich_Mendelsohn
+        a          foaf:Person ;
+        foaf:name  "Erich Mendelsohn"@de .
+
+dbpedia:Benjamin_Silliman
+        a          foaf:Person ;
+        foaf:name  "Benjamin Silliman"@de , "Benjamin Silliman"@en .
+
+dbpedia:Ricky_Gervais
+        a          foaf:Person ;
+        foaf:name  "Ricky Gervais"@en , "Ricky Gervais"@de .
+
+dbpedia:Charles_Lyell
+        a          foaf:Person ;
+        foaf:name  "Sir Charles Lyell, Bt"@en , "Charles Lyell"@de .
+
+<http://dbpedia.org/resource/John_Hay_%28politician%29>
+        a          foaf:Person ;
+        foaf:name  "John Hay"@en .
+
+dbpedia:Tom_Standage  a  foaf:Person ;
+        foaf:name  "Tom Standage"@de .
+
+dbpedia:Julian_Barratt
+        a          foaf:Person ;
+        foaf:name  "Julian Barratt"@de , "Julian Barratt"@en .
+
+dbpedia:John_Parkhurst
+        a          foaf:Person ;
+        foaf:name  "John Parkhurst"@en , "John Parkurst"@en , "John Parkhurst"@de .
+
+dbpedia:Neale_Fraser  a  foaf:Person ;
+        foaf:name  "Neale Fraser"@de .
+
+dbpedia:Jack_A._Davenport
+        a          foaf:Person ;
+        foaf:name  "Jack Arden Davenport"@en , "Jack A. Davenport"@en .
+
+dbpedia:Luis_Batlle_Berres
+        a          foaf:Person ;
+        foaf:name  "Luis Batlle Berres"@de , "Luis Batlle"@en .
+
+dbpedia:Miranda_Cosgrove
+        a          foaf:Person ;
+        foaf:name  "Miranda Cosgrove"@de , "Miranda Cosgrove"@en .
+
+dbpedia:John_Lennon  a  foaf:Person ;
+        foaf:name  "John Lennon"@de , "John Lennon"@en .
+
+<http://dbpedia.org/resource/Jacques_Villeneuve_%28elder%29>
+        a          foaf:Person ;
+        foaf:name  "Jacques Villeneuve Sr."@en , "Jacques senior Villeneuve"@de .
+
+dbpedia:Beniamino_Gigli
+        a          foaf:Person ;
+        foaf:name  "Beniamino Gigli"@de .
+
+dbpedia:Florus  a  foaf:Person ;
+        foaf:name  "Florus"@de .
+
+dbpedia:Daniel_Mayer  a  foaf:Person ;
+        foaf:name  "Daniel William Mayer"@en , "Daniel Mayer"@de .
+
+dbpedia:Brad_Purdie  a  foaf:Person ;
+        foaf:name  "Brad Purdie"@de .
+
+dbpedia:John_Baylor  a  foaf:Person ;
+        foaf:name  "John Robert Baylor"@en , "John Baylor"@en .
+
+dbpedia:Lucie_Arnaz  a  foaf:Person ;
+        foaf:name  "Lucie Arnaz"@de , "Lucie Arnaz"@en .
+
+dbpedia:Aleksander_Wolszczan
+        a          foaf:Person ;
+        foaf:name  "Aleksander Wolszczan"@en , "Aleksander Wolszczan"@de .
+
+dbpedia:William_Kingdon_Clifford
+        a          foaf:Person ;
+        foaf:name  "William Clifford"@en , "William Kingdon Clifford"@de .
+
+dbpedia:Antoine_August_Michel_Gaujot
+        a          foaf:Person ;
+        foaf:name  "Antoine August Michel Gaujot"@en .
+
+dbpedia:Jouko_Karjalainen
+        a          foaf:Person ;
+        foaf:name  "Jouko Karjalainen"@de .
+
+dbpedia:Bo_Gustafsson
+        a          foaf:Person ;
+        foaf:name  "Bo Gustafsson"@de .
+
+dbpedia:Jean_Lucas  a  foaf:Person ;
+        foaf:name  "Jean Lucas"@en , "Jean Lucas"@de .
+
+dbpedia:Carles_Puyol  a  foaf:Person ;
+        foaf:name  "Carles Puyol i Saforcada"@de , "Carles Puyol i Saforcada"@en , "Carles Puyol"@en .
+
+dbpedia:Adolf_von_Trotha
+        a          foaf:Person ;
+        foaf:name  "Adolf von Trotha"@de .
+
+dbpedia:Tuesday_Weld  a  foaf:Person ;
+        foaf:name  "Tuesday Weld"@de , "Tuesday Weld"@en .
+
+dbpedia:Johann_Kies  a  foaf:Person ;
+        foaf:name  "Johann Kies"@de .
+
+dbpedia:Charles_Dutoit
+        a          foaf:Person ;
+        foaf:name  "Charles Dutoit"@de , "Charles Dutoit"@en .
+
+<http://dbpedia.org/resource/Bartolom%C3%A9_de_Torres_Naharro>
+        a          foaf:Person ;
+        foaf:name  "Bartolomé de Torres Naharro"@de .
+
+dbpedia:Lewis_Stone  a  foaf:Person ;
+        foaf:name  "Lewis Shepard Stone"@de , "Lewis Stone"@en .
+
+dbpedia:Bridgette_Wilson
+        a          foaf:Person ;
+        foaf:name  "Bridgette Wilson"@de .
+
+<http://dbpedia.org/resource/Alexander_Dub%C4%8Dek>
+        a          foaf:Person ;
+        foaf:name  "Alexander Dubček"@de , "Alexander Dubček"@en .
+
+dbpedia:Sean_Connery  a  foaf:Person ;
+        foaf:name  "Sean Connery"@de , "Sean Connery"@en .
+
+<http://dbpedia.org/resource/Francesco_Farnese%2C_Duke_of_Parma>
+        a          foaf:Person ;
+        foaf:name  "Francesco Farnese"@de , "Francesco Farnese"@en .
+
+dbpedia:Frigyes_Riesz
+        a          foaf:Person ;
+        foaf:name  "Frigyes Riesz"@de , "Frigyes Riesz"@en .
+
+dbpedia:Tsuneyasu_Miyamoto
+        a          foaf:Person ;
+        foaf:name  "Tsuneyasu Miyamoto"@en , "Tsuneyasu Miyamoto"@de .
+
+dbpedia:Nahum_Sokolow
+        a          foaf:Person ;
+        foaf:name  "Nachum Sokolow"@de .
+
+dbpedia:Stefan_Nimke  a  foaf:Person ;
+        foaf:name  "Stefan Nimke"@en , "Stefan Nimke"@de .
+
+dbpedia:Albert_II_of_Belgium
+        a          foaf:Person ;
+        foaf:name  "Albert II"@en , "Albert II. von Belgien"@de , "Albert II of Belgium"@en .
+
+dbpedia:Henry_Gibson  a  foaf:Person ;
+        foaf:name  "Henry Gibson"@en , "Henry Gibson"@de .
+
+dbpedia:Paul_Rodriguez
+        a          foaf:Person ;
+        foaf:name  "Paul Rodriguez"@de , "Paul Rodriguez"@en .
+
+dbpedia:John_Rabe  a  foaf:Person ;
+        foaf:name  "John Rabe"@en , "John Rabe"@de .
+
+dbpedia:Shy_Love  a  foaf:Person ;
+        foaf:name  "Shy Love"@de , "Shy Love"@en .
+
+dbpedia:Luke_Howard  a  foaf:Person ;
+        foaf:name  "Luke Howard"@en , "Luke Howard"@de .
+
+<http://dbpedia.org/resource/Bill_Williams_%28actor%29>
+        a          foaf:Person ;
+        foaf:name  "Bill Williams"@en .
+
+dbpedia:Heinrich_Liebe
+        a          foaf:Person ;
+        foaf:name  "Heinrich Liebe"@en , "Heinrich Liebe"@de .
+
+dbpedia:Rafael_Gordillo
+        a          foaf:Person ;
+        foaf:name  "Rafael Gordillo"@en , "Rafael Gordillo"@de , "Rafael Gordillo Vázquez"@en .
+
+dbpedia:Enzo_Trossero
+        a          foaf:Person ;
+        foaf:name  "Enzo Trossero"@en , "Enzo Trossero"@de , "Enzo Hector Trossero"@en .
+
+dbpedia:Ambrogio_Fogar
+        a          foaf:Person ;
+        foaf:name  "Ambrogio Fogar"@de , "Ambrogio Fogar"@en .
+
+dbpedia:Joachim_Andersen
+        a          foaf:Person ;
+        foaf:name  "Joachim Andersen"@de .
+
+<http://dbpedia.org/resource/Alice_%28Italian_singer%29>
+        a          foaf:Person ;
+        foaf:name  "Alice"@de , "Alice"@en .
+
+dbpedia:Tony_Halme  a  foaf:Person ;
+        foaf:name  "Finnish Hellraiser Thor"@en , "Ludvig Borga"@en , "Tony Halme"@de , "Finland Thor"@en , "Tony Halme"@en , "The Viking"@en .
+
+dbpedia:Jenny_Frost  a  foaf:Person ;
+        foaf:name  "Jenny Frost"@en .
+
+<http://dbpedia.org/resource/Se%C3%A1n_MacBride>
+        a          foaf:Person ;
+        foaf:name  "Seán MacBride"@de , "Seán MacBride"@en .
+
+dbpedia:Heinrich_Freiherr_von_Stackelberg
+        a          foaf:Person ;
+        foaf:name  "Heinrich Freiherr von Stackelberg"@en , "Heinrich Freiherr von Stackelberg"@de .
+
+dbpedia:Colin_Farrell
+        a          foaf:Person ;
+        foaf:name  "Colin Farrell"@en , "Colin Farrell"@de .
+
+dbpedia:Shafi_Hadi  a  foaf:Person ;
+        foaf:name  "Shafi Hadi"@en , "Shafi Hadi"@de .
+
+dbpedia:A._R._Rahman  a  foaf:Person ;
+        foaf:name  "A. R. Rahman"@en , "A. R. Rahman"@de .
+
+dbpedia:Ed_Sprinkle  a  foaf:Person ;
+        foaf:name  "Ed Sprinkle"@de .
+
+<http://dbpedia.org/resource/Terence_Boston%2C_Baron_Boston_of_Faversham>
+        a          foaf:Person ;
+        foaf:name  "Boston, Terence, Baron Boston of Faversham"@de .
+
+dbpedia:Charice_Pempengco
+        a          foaf:Person ;
+        foaf:name  "Charice"@en , "Charice Pempengco"@de .
+
+dbpedia:Henry_George  a  foaf:Person ;
+        foaf:name  "Henry George"@de .
+
+dbpedia:Joan_Laporta  a  foaf:Person ;
+        foaf:name  "Joan Laporta i Estruch"@de , "Joan Laporta"@en .
+
+dbpedia:Carl_Gottlieb_Reissiger
+        a          foaf:Person ;
+        foaf:name  "Carl Gottlieb Reißiger"@de .
+
+dbpedia:Azzeddine_Laraki
+        a          foaf:Person ;
+        foaf:name  "Azzeddine Laraki"@en , "Azzedine Laraki"@de .
+
+dbpedia:Edward_Walter_Maunder
+        a          foaf:Person ;
+        foaf:name  "Edward Maunder"@en , "Edward Walter Maunder"@de , "Edward Walter Maunder"@en .
+
+dbpedia:Zbigniew_of_Poland
+        a          foaf:Person ;
+        foaf:name  "Zbigniew"@en , "Zbigniew"@de .
+
+dbpedia:John_McCain  a  foaf:Person ;
+        foaf:name  "John McCain"@de , "John McCain"@en .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Ram%C3%B3n_Alexanko>
+        a          foaf:Person ;
+        foaf:name  "José Ramón Alexanko"@de , "José Ramón Alexanko"@en , "José Ramón Alexanko Ventosa"@en .
+
+dbpedia:Dorothy_Parker
+        a          foaf:Person ;
+        foaf:name  "Dorothy Parker"@en , "Dorothy Parker"@de .
+
+dbpedia:Eduard_Buchner
+        a          foaf:Person ;
+        foaf:name  "Eduard Buchner"@de , "Eduard Buchner"@en .
+
+dbpedia:Jules_de_Balincourt
+        a          foaf:Person ;
+        foaf:name  "Jules de Balincourt"@de .
+
+dbpedia:Jimmy_Murakami
+        a          foaf:Person ;
+        foaf:name  "Jimmy T. Murakami"@de , "Jimmy Teru Murakami"@en .
+
+dbpedia:Renny_Harlin  a  foaf:Person ;
+        foaf:name  "Renny Harlin"@en , "Renny Harlin"@de .
+
+dbpedia:Wen_Tong  a  foaf:Person ;
+        foaf:name  "Wén Tóng"@de .
+
+<http://dbpedia.org/resource/Beverly_D%27Angelo>
+        a          foaf:Person ;
+        foaf:name  "Beverly D’Angelo"@de .
+
+dbpedia:John_of_Paris
+        a          foaf:Person ;
+        foaf:name  "Johannes von Paris"@de .
+
+dbpedia:Gilles_Rousset
+        a          foaf:Person ;
+        foaf:name  "Gilles Rousset"@en .
+
+dbpedia:Ruud_Hesp  a  foaf:Person ;
+        foaf:name  "Ruud Hesp"@de , "Rudolfus Hubertus Hesp"@en , "Ruud Hesp"@en .
+
+dbpedia:Francis_Bond_Head
+        a          foaf:Person ;
+        foaf:name  "Francis Bond Head"@en , "Francis Bond Head"@de .
+
+dbpedia:Adolf_Hitler  a  foaf:Person ;
+        foaf:name  "Adolf Hitler"@en , "Adolf Hitler"@de .
+
+dbpedia:Ernst_Stuhlinger
+        a          foaf:Person ;
+        foaf:name  "Ernst Stuhlinger"@de .
+
+dbpedia:Ryder_Hesjedal
+        a          foaf:Person ;
+        foaf:name  "Ryder Hesjedal"@de , "Ryder Hesjedal"@en .
+
+dbpedia:Pedro_de_Alvarado
+        a          foaf:Person ;
+        foaf:name  "Don Pedro de Alvarado"@en , "Pedro de Alvarado"@de .
+
+dbpedia:Bruce_Beresford
+        a          foaf:Person ;
+        foaf:name  "Bruce Beresford"@de , "Bruce Beresford"@en .
+
+dbpedia:Hans-Ulrich_Schmied
+        a          foaf:Person ;
+        foaf:name  "Hans-Ulrich Schmied"@de .
+
+<http://dbpedia.org/resource/Benito_Quinquela_Mart%C3%ADn>
+        a          foaf:Person ;
+        foaf:name  "Benito Quinquela Martín"@en , "Benito Quinquela Martín"@de .
+
+dbpedia:Horace_M._Thorne
+        a          foaf:Person ;
+        foaf:name  "Horace M. Thorne"@en , "Horace Marvin Thorne"@en .
+
+dbpedia:Hardee_Kirkland
+        a          foaf:Person ;
+        foaf:name  "Hardee Kirkland"@en .
+
+dbpedia:Hans_Nieland  a  foaf:Person ;
+        foaf:name  "Hans Nieland"@de .
+
+dbpedia:John_Arpin  a  foaf:Person ;
+        foaf:name  "John Arpin"@de , "John Francis Oscar Arpin"@en .
+
+dbpedia:Edmund_Lacey  a  foaf:Person ;
+        foaf:name  "Edmund Lacey"@en .
+
+dbpedia:Scarlett_Johansson
+        a          foaf:Person ;
+        foaf:name  "Scarlett Johansson"@en , "Scarlett Johansson"@de .
+
+dbpedia:Don_Revie  a  foaf:Person ;
+        foaf:name  "Don Revie"@en , "Don Revie"@de , "Donald George Revie"@en .
+
+dbpedia:Cuong_Vu  a  foaf:Person ;
+        foaf:name  "Cuong Vu"@de .
+
+dbpedia:Steve_Allen  a  foaf:Person ;
+        foaf:name  "Stephen Valentine Patrick William Allen"@en , "Steve Allen"@de , "Steve Allen"@en .
+
+dbpedia:Jack_Hallam  a  foaf:Person ;
+        foaf:name  "Jack Hallam"@en , "John Hallam"@en .
+
+dbpedia:Jesper_Olsen  a  foaf:Person ;
+        foaf:name  "Jesper Olsen"@de , "Jesper Olsen"@en .
+
+dbpedia:Darrell_Waltrip
+        a          foaf:Person ;
+        foaf:name  "Darrell Lee Waltrip"@en , "Darrell Waltrip"@de .
+
+dbpedia:Heinrich_Knote
+        a          foaf:Person ;
+        foaf:name  "Heinrich Knote"@de .
+
+dbpedia:Lado_Gudiashvili
+        a          foaf:Person ;
+        foaf:name  "Lado Gudiaschwili"@de .
+
+dbpedia:Robert_Kraft  a  foaf:Person ;
+        foaf:name  "Robert Kraft"@en , "Robert K. Kraft"@de .
+
+dbpedia:Tony_Curran  a  foaf:Person ;
+        foaf:name  "Tony Curran"@en , "Tony Curran"@de .
+
+<http://dbpedia.org/resource/Jack_Jones_%28singer%29>
+        a          foaf:Person ;
+        foaf:name  "Jack Jones"@en , "Jack Jones"@de .
+
+dbpedia:Donna_Haraway
+        a          foaf:Person ;
+        foaf:name  "Donna Haraway"@de , "Donna Haraway"@en .
+
+dbpedia:Spencer_Fullerton_Baird
+        a          foaf:Person ;
+        foaf:name  "Spencer Fullerton Baird"@en , "Spencer Fullerton Baird"@de .
+
+dbpedia:Johannes_Crellius
+        a          foaf:Person ;
+        foaf:name  "Johannes Crellius"@de .
+
+dbpedia:Quintilian  a  foaf:Person ;
+        foaf:name  "Quintilian"@de .
+
+dbpedia:Wilhelm_Stuckart
+        a          foaf:Person ;
+        foaf:name  "Wilhelm Stuckart"@en , "Wilhelm Stuckart"@de .
+
+dbpedia:Edwin_McMillan
+        a          foaf:Person ;
+        foaf:name  "Edwin Mattison McMillan"@de , "Edwin Mattison McMillan"@en .
+
+dbpedia:Darren_Clark  a  foaf:Person ;
+        foaf:name  "Darren Clark"@de .
+
+dbpedia:Dimitri_Nanopoulos
+        a          foaf:Person ;
+        foaf:name  "Dimitri Nanopoulos"@en , "Dimitri Nanopoulos"@de .
+
+dbpedia:Marie_Louise_Marcadet
+        a          foaf:Person ;
+        foaf:name  "Marie Louise Marcadet"@en .
+
+dbpedia:D._J._Fontana
+        a          foaf:Person ;
+        foaf:name  "D. J. Fontana"@de .
+
+dbpedia:Peter_G._Van_Winkle
+        a          foaf:Person ;
+        foaf:name  "Peter G. Van Winkle"@en , "Peter G. Van Winkle"@de .
+
+dbpedia:Stanley_Frederick_Gibbs
+        a          foaf:Person ;
+        foaf:name  "Stanley Frederick Gibbs"@en .
+
+dbpedia:Otto_Mencke  a  foaf:Person ;
+        foaf:name  "Otto Mencke"@de , "Otto Mencke"@en .
+
+dbpedia:Simon_Helberg
+        a          foaf:Person ;
+        foaf:name  "Simon Helberg"@en , "Simon Maxwell Helberg"@de .
+
+dbpedia:Kyle_Secor  a  foaf:Person ;
+        foaf:name  "Kyle Secor"@de .
+
+dbpedia:Scott_McNealy
+        a          foaf:Person ;
+        foaf:name  "Scott McNealy"@en , "Scott McNealy"@de .
+
+dbpedia:Nolan_Bushnell
+        a          foaf:Person ;
+        foaf:name  "Nolan Bushnell"@en , "Nolan Bushnell"@de .
+
+<http://dbpedia.org/resource/Tony_Smith_%28footballer%29>
+        a          foaf:Person ;
+        foaf:name  "Anthony Smith"@en , "Tony Smith"@en .
+
+dbpedia:Keith_Urban  a  foaf:Person ;
+        foaf:name  "Keith Urban"@en , "Keith Urban"@de .
+
+dbpedia:Ron_Francis  a  foaf:Person ;
+        foaf:name  "Ron Francis"@de .
+
+dbpedia:Al_Parker  a  foaf:Person ;
+        foaf:name  "Al Parker"@de .
+
+dbpedia:Jim_Starlin  a  foaf:Person ;
+        foaf:name  "Jim Starlin"@de , "James P. Starlin"@en .
+
+dbpedia:Banana_Yoshimoto
+        a          foaf:Person ;
+        foaf:name  "Banana Yoshimoto"@de , "Banana Yoshimoto"@en .
+
+dbpedia:James_Denton  a  foaf:Person ;
+        foaf:name  "James Denton"@en , "James Denton"@de .
+
+dbpedia:Abigail_Williams
+        a          foaf:Person ;
+        foaf:name  "Abigail Williams"@de .
+
+dbpedia:Paul_Otlet  a  foaf:Person ;
+        foaf:name  "Paul Otlet"@en , "Paul Otlet"@de .
+
+dbpedia:Jule_Gregory_Charney
+        a          foaf:Person ;
+        foaf:name  "Jule Gregory Charney"@de .
+
+dbpedia:Shirley_Franklin
+        a          foaf:Person ;
+        foaf:name  "Shirley Franklin"@de , "Shirley Franklin"@en .
+
+dbpedia:Wilhelm_Maurenbrecher
+        a          foaf:Person ;
+        foaf:name  "Karl Peter Wilhelm Maurenbrecher"@de .
+
+dbpedia:Joseph_Bromilow
+        a          foaf:Person ;
+        foaf:name  "Joseph Bromilow"@en .
+
+dbpedia:Arturo_Sandoval
+        a          foaf:Person ;
+        foaf:name  "Arturo Sandoval"@en , "Arturo Sandoval"@de .
+
+dbpedia:Alexander_Stepanovich_Popov
+        a          foaf:Person ;
+        foaf:name  "Alexander Stepanovich Popov"@en , "Alexander Stepanowitsch Popow"@de .
+
+dbpedia:Duke_Robillard
+        a          foaf:Person ;
+        foaf:name  "Duke Robillard"@de , "Duke Robillard"@en .
+
+dbpedia:Michael_Cole  a  foaf:Person ;
+        foaf:name  "Michael Cole"@de , "Michael Cole"@en .
+
+dbpedia:Heungseon_Daewongun
+        a          foaf:Person ;
+        foaf:name  "이하응 李昰應"@en , "Yi Ha-eung"@en , "Daewon-gun"@de .
+
+<http://dbpedia.org/resource/Walter_Smith_%28footballer%29>
+        a          foaf:Person ;
+        foaf:name  "Walter Smith"@de , "Walter Smith"@en .
+
+dbpedia:Israel_Regardie
+        a          foaf:Person ;
+        foaf:name  "Israel Regardie"@en , "Israel Regardie"@de .
+
+<http://dbpedia.org/resource/Andr%C3%A9_Gide>
+        a          foaf:Person ;
+        foaf:name  "André Gide"@de , "André Gide"@en .
+
+dbpedia:Paulo_Lins  a  foaf:Person ;
+        foaf:name  "Paulo Lins"@de .
+
+dbpedia:Aravind_Joshi
+        a          foaf:Person ;
+        foaf:name  "Aravind Joshi"@de .
+
+dbpedia:Erika_Christensen
+        a          foaf:Person ;
+        foaf:name  "Erika Christensen"@de .
+
+dbpedia:Sybil_Danning
+        a          foaf:Person ;
+        foaf:name  "Sybil Danning"@de , "Sybil Danning"@en .
+
+dbpedia:Graham_Rix  a  foaf:Person ;
+        foaf:name  "Graham Cryril Rix"@en , "Graham Rix"@de .
+
+dbpedia:Edward_Skinner_King
+        a          foaf:Person ;
+        foaf:name  "Edward Skinner King"@de .
+
+dbpedia:Olexandra_Tymoshenko
+        a          foaf:Person ;
+        foaf:name  "Alexandra Alexandrowna Timoschenko"@de .
+
+dbpedia:Thad_Allen  a  foaf:Person ;
+        foaf:name  "Thad W. Allen"@de , "Thad W. Allen"@en .
+
+dbpedia:Buakaw_Por._Pramuk
+        a          foaf:Person ;
+        foaf:name  "Buakaw Por. Pramuk"@de .
+
+<http://dbpedia.org/resource/Branko_Gr%C3%BCnbaum>
+        a          foaf:Person ;
+        foaf:name  "Branko Grünbaum"@de .
+
+dbpedia:Mary_of_Teck  a  foaf:Person ;
+        foaf:name  "Victoria Mary Augusta Louise Olga Pauline Claudine Agnes"@en , "Mary of Teck"@en , "Maria von Teck"@de .
+
+dbpedia:Carrie_Snodgress
+        a          foaf:Person ;
+        foaf:name  "Carrie Snodgress"@de , "Carrie Snodgress"@en .
+
+dbpedia:Clotilde  a  foaf:Person ;
+        foaf:name  "Saint Clotilde"@en , "Chrodechild"@de .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Antonio_Rem%C3%B3n_Cantera>
+        a          foaf:Person ;
+        foaf:name  "José Antonio Remón Cantera"@de .
+
+dbpedia:Martijn_Padding
+        a          foaf:Person ;
+        foaf:name  "Martijn Padding"@de .
+
+dbpedia:Dan_Slobin  a  foaf:Person ;
+        foaf:name  "Dan I. Slobin"@en , "Dan Slobin"@de .
+
+dbpedia:Pirjo_Muranen
+        a          foaf:Person ;
+        foaf:name  "Pirjo Muranen"@de .
+
+dbpedia:Raynell_Williams
+        a          foaf:Person ;
+        foaf:name  "Raynell Williams"@de .
+
+dbpedia:John_Houbolt  a  foaf:Person ;
+        foaf:name  "John C. Houbolt"@de .
+
+dbpedia:Steve_Peat  a  foaf:Person ;
+        foaf:name  "Steve Peat"@en , "Steve Peat"@de .
+
+dbpedia:Wilhelm_Jordan
+        a          foaf:Person ;
+        foaf:name  "Wilhelm Jordan"@de .
+
+dbpedia:Joseph_Coutts
+        a          foaf:Person ;
+        foaf:name  "Joseph Coutts"@en , "Joseph Coutts"@de .
+
+dbpedia:Richard_Derr  a  foaf:Person ;
+        foaf:name  "Richard Derr"@en .
+
+dbpedia:Homer_Hickam  a  foaf:Person ;
+        foaf:name  "Homer Hickam"@de , "Homer Hickam, Jr."@en .
+
+<http://dbpedia.org/resource/Stanislaus_of_Szczepan%C3%B3w>
+        a          foaf:Person ;
+        foaf:name  "Stanislaus von Krakau"@de , "Saint Stanislaus of Szczepanów"@en .
+
+dbpedia:Link_Wray  a  foaf:Person ;
+        foaf:name  "Link Wray"@de , "Link Wray"@en .
+
+dbpedia:Najwa_Nimri  a  foaf:Person ;
+        foaf:name  "Najwa Nimri"@en , "Najwa Nimri"@de .
+
+dbpedia:Adriana_Karembeu
+        a          foaf:Person ;
+        foaf:name  "Adriana Karembeu"@en , "Adriana Karembeu"@de .
+
+dbpedia:Sandra_Cisa  a  foaf:Person ;
+        foaf:name  "Sandra Cisa"@en .
+
+dbpedia:Susan_Tedeschi
+        a          foaf:Person ;
+        foaf:name  "Susan Tedeschi"@en , "Susan Tedeschi"@de .
+
+dbpedia:Pierre_Auguste_Cot
+        a          foaf:Person ;
+        foaf:name  "Pierre Auguste Cot"@de .
+
+<http://dbpedia.org/resource/S%C3%A1vio>
+        a          foaf:Person ;
+        foaf:name  "Sávio"@en , "Sávio Bortolini Pimentel"@en , "Sávio"@de .
+
+<http://dbpedia.org/resource/El%C5%BCbieta_Czy%C5%BCewska>
+        a          foaf:Person ;
+        foaf:name  "Elżbieta Czyżewska"@de .
+
+dbpedia:Adolf_Reinach
+        a          foaf:Person ;
+        foaf:name  "Adolf Reinach"@de .
+
+dbpedia:Guido_van_Rossum
+        a          foaf:Person ;
+        foaf:name  "Guido van Rossum"@de , "Guido van Rossum"@en .
+
+dbpedia:Andrew_Cogliano
+        a          foaf:Person ;
+        foaf:name  "Andrew Cogliano"@en , "Andrew Cogliano"@de .
+
+dbpedia:Michael_Steinbach
+        a          foaf:Person ;
+        foaf:name  "Michael Steinbach"@de .
+
+<http://dbpedia.org/resource/Hermann_Hrei%C3%B0arsson>
+        a          foaf:Person ;
+        foaf:name  "Hermann Hreiðarsson"@en , "Hermann Hreiðarsson"@de .
+
+dbpedia:Kathleen_Heddle
+        a          foaf:Person ;
+        foaf:name  "Kathleen Heddle"@de .
+
+dbpedia:John_Harsanyi
+        a          foaf:Person ;
+        foaf:name  "John Charles Harsanyi"@de , "John C. Harsanyi"@en .
+
+dbpedia:Joseph_Prathan_Sridarunsil
+        a          foaf:Person ;
+        foaf:name  "Joseph Prathan Sridanusil"@de , "Joseph Prathan Sridanusil"@en .
+
+dbpedia:Rabiu_Afolabi
+        a          foaf:Person ;
+        foaf:name  "Rabiu Afolabi"@de , "Rabiu Afolabi"@en .
+
+dbpedia:Johnnie_Cochran
+        a          foaf:Person ;
+        foaf:name  "Johnnie L. Cochran, Jr."@en , "Johnnie L. Cochran"@de .
+
+dbpedia:Richard_Kendall_Brooke
+        a          foaf:Person ;
+        foaf:name  "Richard Brooke"@en , "Richard Kendall Brooke"@de , "Richard Kendall Brooke"@en .
+
+dbpedia:Denise_Scott_Brown
+        a          foaf:Person ;
+        foaf:name  "Denise Scott Brown"@en , "Denise Scott Brown"@de .
+
+dbpedia:John_Mortimer
+        a          foaf:Person ;
+        foaf:name  "Sir John Clifford Mortimer''', CBE, QC"@en , "John Mortimer"@de , "John Mortimer"@en .
+
+dbpedia:Louis_Jacolliot
+        a          foaf:Person ;
+        foaf:name  "Louis Jacolliot"@de .
+
+dbpedia:Brian_Whitehouse
+        a          foaf:Person ;
+        foaf:name  "Brian Whitehouse"@en .
+
+dbpedia:Mal_Waldron  a  foaf:Person ;
+        foaf:name  "Mal Waldron"@en , "Mal Waldron"@de .
+
+dbpedia:Alain_Robbe-Grillet
+        a          foaf:Person ;
+        foaf:name  "Alain Robbe-Grillet"@de .
+
+dbpedia:Henry_Morton_Stanley
+        a          foaf:Person ;
+        foaf:name  "Sir Henry Morton Stanley"@en , "Henry Morton Stanley"@de , "Henry Morton Stanley"@en .
+
+dbpedia:Gary_Barlow  a  foaf:Person ;
+        foaf:name  "Gary Barlow"@de , "Gary Barlow"@en .
+
+dbpedia:Grace_Slick  a  foaf:Person ;
+        foaf:name  "Grace Slick"@en , "Grace Slick"@de .
+
+<http://dbpedia.org/resource/Karl_B%C3%B6hm>
+        a          foaf:Person ;
+        foaf:name  "Karl Böhm"@de .
+
+dbpedia:John_Philipot
+        a          foaf:Person ;
+        foaf:name  "John Philipot"@en .
+
+dbpedia:Helmut_Newton
+        a          foaf:Person ;
+        foaf:name  "Helmut Newton"@de .
+
+dbpedia:Khalifah_ibn_Sulman_Al_Khalifah
+        a          foaf:Person ;
+        foaf:name  "Chalifa ibn Salman Al Chalifa"@de , "His Royal Highness Prince Khalifa ibn Salman Al Khalifa"@en .
+
+dbpedia:Dan_Aykroyd  a  foaf:Person ;
+        foaf:name  "Dan Aykroyd"@de .
+
+dbpedia:Jane_Goodall  a  foaf:Person ;
+        foaf:name  "Jane Goodall"@de , "Jane Goodall"@en , "Dame Jane Goodall"@en .
+
+dbpedia:Samuel_Pierpont_Langley
+        a          foaf:Person ;
+        foaf:name  "Samuel Pierpont Langley"@en , "Samuel Pierpont Langley"@de .
+
+dbpedia:John_W._Harreld
+        a          foaf:Person ;
+        foaf:name  "John W. Harreld"@de .
+
+dbpedia:Kadambini_Ganguly
+        a          foaf:Person ;
+        foaf:name  "Kadambini Ganguly"@en .
+
+dbpedia:Nora_Gregor  a  foaf:Person ;
+        foaf:name  "Nora Gregor"@de .
+
+dbpedia:Laurence_Foley
+        a          foaf:Person ;
+        foaf:name  "Laurence Foley"@de .
+
+dbpedia:Milton_Lewis_Schwartz
+        a          foaf:Person ;
+        foaf:name  "Milton Lewis Schwartz"@en .
+
+dbpedia:Naomi_Nishida
+        a          foaf:Person ;
+        foaf:name  "Naomi Nishida"@de .
+
+dbpedia:Hank_Aaron  a  foaf:Person ;
+        foaf:name  "Hank Aaron"@de , "Hank Aaron"@en .
+
+<http://dbpedia.org/resource/Sebasti%C3%A1n_Porto>
+        a          foaf:Person ;
+        foaf:name  "Sebastián Porto"@de .
+
+dbpedia:Marius_Goring
+        a          foaf:Person ;
+        foaf:name  "Marius Goring"@en .
+
+dbpedia:Jack_Kingston
+        a          foaf:Person ;
+        foaf:name  "Jack Kingston"@en , "Jack Kingston"@de .
+
+dbpedia:Linda_Hamilton
+        a          foaf:Person ;
+        foaf:name  "Linda Hamilton"@de .
+
+dbpedia:Kerry_Dixon  a  foaf:Person ;
+        foaf:name  "Kerry Dixon"@de , "Kerry Dixon"@en , "Kerry Michael Dixon"@en .
+
+dbpedia:Heinrich_Burger
+        a          foaf:Person ;
+        foaf:name  "Heinrich Burger"@de , "Heinrich Burger"@en .
+
+dbpedia:Stephen_Campbell_Moore
+        a          foaf:Person ;
+        foaf:name  "Stephen Campbell Moore"@en , "Stephen Campbell Moore"@de .
+
+dbpedia:James_II_of_England
+        a          foaf:Person ;
+        foaf:name  "Jakob II."@de , "James II & VII"@en , "James II"@en .
+
+<http://dbpedia.org/resource/Andr%C3%A9_Heller>
+        a          foaf:Person ;
+        foaf:name  "André Heller"@de , "Franz André Heller"@en .
+
+<http://dbpedia.org/resource/Kemal_T%C3%BCrkler>
+        a          foaf:Person ;
+        foaf:name  "Kemal Türkler"@de .
+
+<http://dbpedia.org/resource/John_Lloyd_%28writer%29>
+        a          foaf:Person ;
+        foaf:name  "John Lloyd"@de .
+
+dbpedia:Eilley_Bowers
+        a          foaf:Person ;
+        foaf:name  "Alison Oram Bowers"@en , "Alison \"Eilley\" Oram Bowers"@en .
+
+<http://dbpedia.org/resource/Johann_M%C3%BChlegg>
+        a          foaf:Person ;
+        foaf:name  "Johann Mühlegg"@de .
+
+dbpedia:Donal_Logue  a  foaf:Person ;
+        foaf:name  "Donal Logue"@de , "Donal Logue"@en .
+
+dbpedia:Charles_K._Williams
+        a          foaf:Person ;
+        foaf:name  "Charles K. Williams"@de , "Charles K. Williams"@en .
+
+dbpedia:Oskar_Seidlin
+        a          foaf:Person ;
+        foaf:name  "Oskar Seidlin"@de .
+
+dbpedia:Niklaus_Wirth
+        a          foaf:Person ;
+        foaf:name  "Niklaus Wirth"@de , "Niklaus E. Wirth"@en .
+
+dbpedia:Guo_Jingjing  a  foaf:Person ;
+        foaf:name  "Jingjing Guo"@de .
+
+dbpedia:John_Kundla  a  foaf:Person ;
+        foaf:name  "[File: kundla.jpg]"@en , "John Kundla"@en , "John Kundla"@de .
+
+dbpedia:Wayne_Routledge
+        a          foaf:Person ;
+        foaf:name  "Wayne Routledge"@de , "Wayne Routledge"@en , "Wayne Neville Anthony Routledge"@en .
+
+<http://dbpedia.org/resource/Johannes_Friedrich_%28bishop%29>
+        a          foaf:Person ;
+        foaf:name  "Johannes Friedrich"@de .
+
+<http://dbpedia.org/resource/August_S%C3%B6derman>
+        a          foaf:Person ;
+        foaf:name  "Johan August Söderman"@en , "August Söderman"@de .
+
+dbpedia:Max-Hellmuth_Ostermann
+        a          foaf:Person ;
+        foaf:name  "Max-Hellmuth Ostermann"@de , "Max-Hellmuth Ostermann"@en .
+
+dbpedia:La_Monte_Young
+        a          foaf:Person ;
+        foaf:name  "La Monte Young"@de .
+
+dbpedia:Charles_Augustus_FitzRoy
+        a          foaf:Person ;
+        foaf:name  "Charles Augustus FitzRoy"@en , "Sir Charles Augustus FitzRoy"@en .
+
+dbpedia:Kirill_Meretskov
+        a          foaf:Person ;
+        foaf:name  "K.A. Meretskov"@en , "Kirill Afanasjewitsch Merezkow"@de .
+
+dbpedia:Johann_Georg_Wagler
+        a          foaf:Person ;
+        foaf:name  "Johann Georg Wagler"@de .
+
+<http://dbpedia.org/resource/Jean_Bon_Saint-Andr%C3%A9>
+        a          foaf:Person ;
+        foaf:name  "Jeanbon St. André"@de .
+
+dbpedia:Jeffrey_Eugenides
+        a          foaf:Person ;
+        foaf:name  "Jeffrey Eugenides"@en , "Jeffrey Eugenides"@de .
+
+dbpedia:Jan_Foltys  a  foaf:Person ;
+        foaf:name  "Jan Foltys"@de .
+
+dbpedia:Michael_Franti
+        a          foaf:Person ;
+        foaf:name  "Michael Franti"@de , "Michael Franti"@en .
+
+dbpedia:Leonardo_DiCaprio
+        a          foaf:Person ;
+        foaf:name  "Leonardo DiCaprio"@en , "Leonardo DiCaprio"@de , "Leonardo Dicaprio"@en .
+
+<http://dbpedia.org/resource/Willy_F._James%2C_Jr.>
+        a          foaf:Person ;
+        foaf:name  "Willy F. James, Jr."@en , "Willy F. James"@en .
+
+dbpedia:Fabio_Capello
+        a          foaf:Person ;
+        foaf:name  "Fabio Capello"@de , "Fabio Capello"@en .
+
+dbpedia:Daryl_Clare  a  foaf:Person ;
+        foaf:name  "Daryl Clare"@en , "Daryl Adam Clare"@en .
+
+dbpedia:Kenneth_Lay  a  foaf:Person ;
+        foaf:name  "Kenneth Lee Lay"@de , "Kenneth Lay"@en .
+
+dbpedia:Henry_Tonks  a  foaf:Person ;
+        foaf:name  "Henry Tonks"@de .
+
+dbpedia:Stirling_Mortlock
+        a          foaf:Person ;
+        foaf:name  "Stirling Mortlock"@de .
+
+dbpedia:Heinrich_von_Kittlitz
+        a          foaf:Person ;
+        foaf:name  "Heinrich von Kittlitz"@de .
+
+dbpedia:Elena_Georgescu
+        a          foaf:Person ;
+        foaf:name  "Elena Georgescu"@de .
+
+dbpedia:James_Henderson_Berry
+        a          foaf:Person ;
+        foaf:name  "James Henderson Berry"@de , "James Henderson Berry"@en .
+
+dbpedia:Hedi_Lang  a  foaf:Person ;
+        foaf:name  "Hedi Lang"@de .
+
+dbpedia:Bob_Nystrom  a  foaf:Person ;
+        foaf:name  "Bob Nystrom"@de .
+
+dbpedia:Michio_Kushi  a  foaf:Person ;
+        foaf:name  "Michio Kushi"@de .
+
+dbpedia:Manuel_dos_Santos_Fernandes
+        a          foaf:Person ;
+        foaf:name  "Manuel dos Santos Fernandes"@en , "Manuel dos Santos"@de , "Manuel dos Santos"@en .
+
+dbpedia:Laura_Benanti
+        a          foaf:Person ;
+        foaf:name  "Laura Benanti"@de , "Laura Benanti"@en .
+
+dbpedia:Louis_Daguerre
+        a          foaf:Person ;
+        foaf:name  "Louis Daguerre"@en , "Louis Daguerre"@de .
+
+dbpedia:John_Huchra  a  foaf:Person ;
+        foaf:name  "John Huchra"@de .
+
+dbpedia:Ashley_Tisdale
+        a          foaf:Person ;
+        foaf:name  "Ashley Michelle Tisdale"@en , "Ashley Tisdale"@en , "Ashley Tisdale"@de .
+
+dbpedia:Richard_Kern  a  foaf:Person ;
+        foaf:name  "Richard Kern"@en , "Richard Kern"@de .
+
+<http://dbpedia.org/resource/Dervi%C5%9F_Ero%C4%9Flu>
+        a          foaf:Person ;
+        foaf:name  "Derviş Eroğlu"@de , "Derviş Eroğlu"@en .
+
+dbpedia:Salman_Khan  a  foaf:Person ;
+        foaf:name  "Salman Khan"@en , "Salman Khan"@de .
+
+dbpedia:Jan_de_Hartog
+        a          foaf:Person ;
+        foaf:name  "Jan de Hartog"@en , "Jan de Hartog"@de .
+
+dbpedia:Alex_Pettyfer
+        a          foaf:Person ;
+        foaf:name  "Alex Pettyfer"@en , "Alex Pettyfer"@de .
+
+dbpedia:Benning_W._Jenness
+        a          foaf:Person ;
+        foaf:name  "Benning Wentworth Jenness"@en , "Benning W. Jenness"@de .
+
+dbpedia:Thomas_de_Keyser
+        a          foaf:Person ;
+        foaf:name  "Thomas de Keyser"@de .
+
+dbpedia:Marisa_Berenson
+        a          foaf:Person ;
+        foaf:name  "Marisa Berenson"@en , "Marisa Berenson"@de .
+
+dbpedia:James_Bonwick
+        a          foaf:Person ;
+        foaf:name  "James Bonwick"@en .
+
+dbpedia:Dr._Seuss  a  foaf:Person ;
+        foaf:name  "Dr. Seuss"@en , "Theodor Geisel"@en , "Theodor Seuss Geisel"@de .
+
+dbpedia:Mary_Ann_Davidson
+        a          foaf:Person ;
+        foaf:name  "Mary Ann Davdison"@en .
+
+dbpedia:Craig_Emerson
+        a          foaf:Person ;
+        foaf:name  "Dr Craig Anthony Emerson"@en , "Craig Anthony Emerson"@en .
+
+dbpedia:Andrea_Pozzo  a  foaf:Person ;
+        foaf:name  "Andrea Pozzo"@de , "Andrea Pozzo"@en .
+
+dbpedia:Monica_Potter
+        a          foaf:Person ;
+        foaf:name  "Monica Potter"@en , "Monica Potter"@de .
+
+dbpedia:Chris_Vrenna  a  foaf:Person ;
+        foaf:name  "Chris Vrenna"@en , "Chris Vrenna"@de .
+
+dbpedia:Edmund_Ignatius_Rice
+        a          foaf:Person ;
+        foaf:name  "Edmund Ignatius Rice"@de , "Edmund Ignatius Rice"@en , "Blessed Edmund Rice"@en .
+
+<http://dbpedia.org/resource/D%C3%A9odat_Gratet_de_Dolomieu>
+        a          foaf:Person ;
+        foaf:name  "Déodat Gratet de Dolomieu"@en , "Déodat Gratet de Dolomieu"@de .
+
+dbpedia:Lance_Bass  a  foaf:Person ;
+        foaf:name  "Lance Bass"@en , "James Lance Bass"@de .
+
+dbpedia:Artemisia_Gentileschi
+        a          foaf:Person ;
+        foaf:name  "Artemisia Gentileschi"@en , "Artemisia Gentileschi"@de .
+
+dbpedia:Ambra_Angiolini
+        a          foaf:Person ;
+        foaf:name  "Ambra Angiolini"@de , "Ambra Angiolini"@en .
+
+dbpedia:Claude_Davis  a  foaf:Person ;
+        foaf:name  "Claude Davis"@en , "Claude Davis"@de .
+
+dbpedia:Ingvild_Stensland
+        a          foaf:Person ;
+        foaf:name  "Ingvild Stensland"@en , "Ingvild Stensland"@de .
+
+dbpedia:Mike_Inez  a  foaf:Person ;
+        foaf:name  "Mike Inez"@de , "Mike Inez"@en .
+
+dbpedia:Billie_Joe_Armstrong
+        a          foaf:Person ;
+        foaf:name  "Billie Joe Armstrong"@de , "Billie Joe Armstrong"@en .
+
+dbpedia:Daniel_Gygax  a  foaf:Person ;
+        foaf:name  "Daniel Gygax"@de , "Daniel Gygax"@en .
+
+dbpedia:Charles_Champion_Gilbert
+        a          foaf:Person ;
+        foaf:name  "Charles Champion Gilbert"@en .
+
+<http://dbpedia.org/resource/Paul_Rudolph_%28architect%29>
+        a          foaf:Person ;
+        foaf:name  "Paul Rudolph"@de , "Paul Rudolph"@en .
+
+dbpedia:Max_Bill  a  foaf:Person ;
+        foaf:name  "Max Bill"@de .
+
+dbpedia:Eric_Dane  a  foaf:Person ;
+        foaf:name  "Eric Dane"@en , "Eric Dane"@de .
+
+dbpedia:Gene_Robinson
+        a          foaf:Person ;
+        foaf:name  "Gene E. Robinson"@de , "Gene Robinson"@en .
+
+dbpedia:J._T._Walsh  a  foaf:Person ;
+        foaf:name  "James Patrick Walsh"@de .
+
+dbpedia:Hans_Adolf_Eduard_Driesch
+        a          foaf:Person ;
+        foaf:name  "Hans Driesch"@de , "Hans Adolf Eduard Driesch"@en .
+
+dbpedia:Arthur_Mourant
+        a          foaf:Person ;
+        foaf:name  "Arthur Mourant"@en .
+
+dbpedia:Edward_Lloyd_Thomas
+        a          foaf:Person ;
+        foaf:name  "Edward Lloyd Thomas"@en .
+
+dbpedia:Nick_Stahl  a  foaf:Person ;
+        foaf:name  "Nick Stahl"@de .
+
+dbpedia:Kenny_Easley  a  foaf:Person ;
+        foaf:name  "Kenny Easley"@de .
+
+dbpedia:Nelson_Rockefeller
+        a          foaf:Person ;
+        foaf:name  "Nelson Rockefeller"@en , "Nelson Aldrich Rockefeller"@de .
+
+dbpedia:Walther_Bothe
+        a          foaf:Person ;
+        foaf:name  "Walther Bothe"@de , "Walther Bothe"@en .
+
+dbpedia:David_Lynch  a  foaf:Person ;
+        foaf:name  "David Lynch"@en , "David Lynch"@de .
+
+<http://dbpedia.org/resource/Ben_Foster_%28actor%29>
+        a          foaf:Person ;
+        foaf:name  "Ben Foster"@en , "Ben Foster"@de .
+
+dbpedia:Anthony_Rolfe_Johnson
+        a          foaf:Person ;
+        foaf:name  "Anthony Rolfe Johnson"@de .
+
+dbpedia:Jaque_Fourie  a  foaf:Person ;
+        foaf:name  "Jaque Fourie"@de .
+
+<http://dbpedia.org/resource/%C3%96zer_Hurmac%C4%B1>
+        a          foaf:Person ;
+        foaf:name  "Özer Hurmacı"@de , "Özer Hurmacı"@en .
+
+dbpedia:Fergus_Anderson
+        a          foaf:Person ;
+        foaf:name  "Fergus Anderson"@de .
+
+dbpedia:Douglas_Rinaldi
+        a          foaf:Person ;
+        foaf:name  "Douglas Rinaldi"@en .
+
+dbpedia:Liam_Sharp  a  foaf:Person ;
+        foaf:name  "Liam Sharp"@en , "Liam Roger Sharp"@en .
+
+dbpedia:John_Keegan  a  foaf:Person ;
+        foaf:name  "Sir John Keegan"@de .
+
+dbpedia:Lionel_Bah  a  foaf:Person ;
+        foaf:name  "Lionel Bah"@en , "Lionel Bah"@de .
+
+dbpedia:Chris_Evert  a  foaf:Person ;
+        foaf:name  "Chris Evert"@de , "Chris Evert"@en .
+
+dbpedia:Stephen_Dorff
+        a          foaf:Person ;
+        foaf:name  "Stephen Dorff"@de , "Stephen Dorff"@en .
+
+dbpedia:Davey_Boy_Smith
+        a          foaf:Person ;
+        foaf:name  "(The) British Bulldog"@en , "Davey Boy Smith"@en , "David Smith"@de , "Young David"@en .
+
+dbpedia:Friedrich_Wilhelm_von_Steuben
+        a          foaf:Person ;
+        foaf:name  "Friedrich Wilhelm von Steuben"@en , "Friedrich Wilhelm von Steuben"@de .
+
+dbpedia:Mark_Sanford  a  foaf:Person ;
+        foaf:name  "Mark Sanford"@en , "Mark Sanford"@de .
+
+dbpedia:Isa_Gambar  a  foaf:Person ;
+        foaf:name  "İsa Yunis oğlu Qəmbər"@en , "İsa Qəmbər"@de .
+
+dbpedia:Julian_Nowak  a  foaf:Person ;
+        foaf:name  "Julian Nowak"@de .
+
+dbpedia:Jens_Boden  a  foaf:Person ;
+        foaf:name  "Jens Boden"@de .
+
+<http://dbpedia.org/resource/Albrecht_Fr%C3%B6hlich>
+        a          foaf:Person ;
+        foaf:name  "Albrecht Fröhlich"@de .
+
+<http://dbpedia.org/resource/John_de_Vere%2C_13th_Earl_of_Oxford>
+        a          foaf:Person ;
+        foaf:name  "Vere, John de, 13. Earl of Oxford"@de .
+
+dbpedia:Ludwig_Wittgenstein
+        a          foaf:Person ;
+        foaf:name  "Ludwig Wittgenstein"@de , "Ludwig Josef Johann Wittgenstein"@en , "Ludwig Wittgenstein"@en .
+
+dbpedia:Arduino_Berlam
+        a          foaf:Person ;
+        foaf:name  "Arduino Berlam"@de .
+
+<http://dbpedia.org/resource/John_Young_%28actor%29>
+        a          foaf:Person ;
+        foaf:name  "John Young"@de .
+
+dbpedia:Joseph_Chebet
+        a          foaf:Person ;
+        foaf:name  "Joseph Chebet"@de .
+
+dbpedia:John_DeFrancis
+        a          foaf:Person ;
+        foaf:name  "John DeFrancis"@de .
+
+dbpedia:Rove_McManus  a  foaf:Person ;
+        foaf:name  "Rove McManus"@de , "Rove McManus"@en .
+
+dbpedia:Riley_Smith  a  foaf:Person ;
+        foaf:name  "Riley Smith"@de .
+
+dbpedia:John_Fashanu  a  foaf:Person ;
+        foaf:name  "John Fashanu"@de , "John Fashanu"@en .
+
+dbpedia:August_Oetker
+        a          foaf:Person ;
+        foaf:name  "August Oetker"@de .
+
+dbpedia:Harald_Neubauer
+        a          foaf:Person ;
+        foaf:name  "Harald Neubauer"@de .
+
+dbpedia:Maria_Antonietta_of_Spain
+        a          foaf:Person ;
+        foaf:name  "Maria Antonietta"@en , "Maria Antonia von Spanien"@de .
+
+dbpedia:Joseph_Celli  a  foaf:Person ;
+        foaf:name  "Joseph Celli"@de .
+
+dbpedia:Sonny_Perdue  a  foaf:Person ;
+        foaf:name  "Sonny Perdue"@en , "Sonny Perdue"@de .
+
+dbpedia:Glenn_Hall  a  foaf:Person ;
+        foaf:name  "Glenn Hall"@de .
+
+dbpedia:Anatoly_Durov
+        a          foaf:Person ;
+        foaf:name  "Anatoli Anatoljewitsch Durow"@de .
+
+dbpedia:Anton_Geesink
+        a          foaf:Person ;
+        foaf:name  "Anton Geesink"@de .
+
+dbpedia:Syd_Mead  a  foaf:Person ;
+        foaf:name  "Syd Mead"@de , "Syd Mead"@en .
+
+dbpedia:John_J._Toffey
+        a          foaf:Person ;
+        foaf:name  "John J. Toffey"@en , "John James Toffey"@en .
+
+dbpedia:Herbert_MacNair
+        a          foaf:Person ;
+        foaf:name  "James Herbert McNair"@de .
+
+dbpedia:Olga_of_Kiev  a  foaf:Person ;
+        foaf:name  "Olga"@de , "Holy Equal-to-the-Apostles Olga"@en .
+
+dbpedia:Samira_Ahmed  a  foaf:Person ;
+        foaf:name  "Samira Ahmed"@en .
+
+dbpedia:Tony_Accardo  a  foaf:Person ;
+        foaf:name  "Antonino Accardo"@en , "Anthony Accardo"@de .
+
+dbpedia:Hugh_Hefner  a  foaf:Person ;
+        foaf:name  "Hugh Marston Hefner"@en , "Hugh Hefner"@de , "Hugh Hefner"@en .
+
+dbpedia:Roselyne_Bachelot
+        a          foaf:Person ;
+        foaf:name  "Roselyne Bachelot"@de , "Roselyne Bachelot-Narquin"@en .
+
+dbpedia:Lukas_Podolski
+        a          foaf:Person ;
+        foaf:name  "Lukas Podolski"@en , "Lukas Podolski"@de .
+
+dbpedia:David_Faustino
+        a          foaf:Person ;
+        foaf:name  "David Faustino"@en , "David Faustino"@de .
+
+dbpedia:Abraham_bar_Hiyya
+        a          foaf:Person ;
+        foaf:name  "Abraham bar Chija"@de , "Abraham bar Hiyya Ha-Nasi"@en .
+
+dbpedia:Alexander_Lernet-Holenia
+        a          foaf:Person ;
+        foaf:name  "Alexander Lernet-Holenia"@en , "Alexander Lernet-Holenia"@de .
+
+<http://dbpedia.org/resource/Laurent_Lef%C3%A8vre>
+        a          foaf:Person ;
+        foaf:name  "Laurent Lefèvre"@en , "Laurent Lefèvre"@de .
+
+<http://dbpedia.org/resource/Leonel_Fern%C3%A1ndez>
+        a          foaf:Person ;
+        foaf:name  "Leonel Fernández"@en , "Leonel Fernández Reyna"@de .
+
+dbpedia:Juice_Newton  a  foaf:Person ;
+        foaf:name  "Juice Newton"@en , "Juice Newton"@de .
+
+dbpedia:Stephanie_Storp
+        a          foaf:Person ;
+        foaf:name  "Stephanie Storp"@de .
+
+dbpedia:Nat_Friedman  a  foaf:Person ;
+        foaf:name  "Nat Friedman"@de .
+
+dbpedia:Ken_Leung  a  foaf:Person ;
+        foaf:name  "Ken Leung"@de .
+
+dbpedia:John_Money  a  foaf:Person ;
+        foaf:name  "John Money"@en , "John Money"@de .
+
+dbpedia:Johnny_Griffin
+        a          foaf:Person ;
+        foaf:name  "Johnny Griffin"@de , "Johnny Griffin"@en .
+
+dbpedia:Gabriel_Pareyon
+        a          foaf:Person ;
+        foaf:name  "Gabriel Pareyon"@en , "Gabriel Pareyon"@de .
+
+dbpedia:Acca_of_Hexham
+        a          foaf:Person ;
+        foaf:name  "Saint Acca"@en , "Acca"@de , "Acca"@en .
+
+dbpedia:Peter_Bogdanovich
+        a          foaf:Person ;
+        foaf:name  "Peter Bogdanovich"@de , "Peter Bogdanovich"@en .
+
+<http://dbpedia.org/resource/John_Douglas%2C_9th_Marquess_of_Queensberry>
+        a          foaf:Person ;
+        foaf:name  "Douglas, John Sholto, 9. Marquess of Queensberry"@de .
+
+<http://dbpedia.org/resource/Barry_Ryan_%28singer%29>
+        a          foaf:Person ;
+        foaf:name  "Barry Ryan"@de .
+
+dbpedia:Sam_Rainsy  a  foaf:Person ;
+        foaf:name  "Sam Rainsy"@de .
+
+dbpedia:Arnold_Palmer
+        a          foaf:Person ;
+        foaf:name  "Arnold Palmer"@de .
+
+dbpedia:Armi_Kuusela  a  foaf:Person ;
+        foaf:name  "Armi Kuusela"@en .
+
+dbpedia:MC_Solaar  a  foaf:Person ;
+        foaf:name  "MC Solaar"@en , "MC Solaar"@de .
+
+dbpedia:Frank_D._Peregory
+        a          foaf:Person ;
+        foaf:name  "Frank D. Peregory"@en , "John Henry Quick"@en .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Enrique_Varela>
+        a          foaf:Person ;
+        foaf:name  "José Varela"@de .
+
+dbpedia:James_May  a  foaf:Person ;
+        foaf:name  "James May"@en , "James May"@de .
+
+dbpedia:Nels_Cline  a  foaf:Person ;
+        foaf:name  "Nels Cline"@en , "Nels Cline"@de .
+
+dbpedia:Christoph_Willibald_Gluck
+        a          foaf:Person ;
+        foaf:name  "Christoph Willibald Gluck"@de .
+
+dbpedia:Barbara_Dulinsky
+        a          foaf:Person ;
+        foaf:name  "Barbara Dulinsky"@en .
+
+dbpedia:Jane_Espenson
+        a          foaf:Person ;
+        foaf:name  "Jane Espenson"@de , "Jane Espenson"@en .
+
+dbpedia:Ngwane_V_of_Swaziland
+        a          foaf:Person ;
+        foaf:name  "Nggwane V."@de .
+
+dbpedia:Elon_Musk  a  foaf:Person ;
+        foaf:name  "Elon Musk"@de , "Elon Musk"@en .
+
+dbpedia:Pribislav_of_Mecklenburg
+        a          foaf:Person ;
+        foaf:name  "Pribislaw"@de .
+
+dbpedia:Tom_Cora  a  foaf:Person ;
+        foaf:name  "Tom Cora"@de , "Tom Cora"@en .
+
+dbpedia:Paul_Steinitz
+        a          foaf:Person ;
+        foaf:name  "Paul Steinitz"@de .
+
+dbpedia:Nora_Roberts  a  foaf:Person ;
+        foaf:name  "Nora Roberts"@en , "Nora Roberts"@de , "Nora (pseudonym) Roberts"@en .
+
+dbpedia:John_Nunn  a  foaf:Person ;
+        foaf:name  "John Nunn"@de .
+
+dbpedia:Josel_of_Rosheim
+        a          foaf:Person ;
+        foaf:name  "Josel von Rosheim"@de .
+
+dbpedia:William_Sanderson
+        a          foaf:Person ;
+        foaf:name  "William Sanderson"@de , "William Sanderson"@en .
+
+dbpedia:Devon_Aoki  a  foaf:Person ;
+        foaf:name  "Devon Aoki"@de , "Devon Aoki"@en .
+
+dbpedia:Thomas_Horsfield
+        a          foaf:Person ;
+        foaf:name  "Thomas Walker Horsfield"@de .
+
+dbpedia:K._H._Scheer  a  foaf:Person ;
+        foaf:name  "Karl-Herbert Scheer"@de .
+
+dbpedia:Franz_Stuck  a  foaf:Person ;
+        foaf:name  "Franz von Stuck"@de .
+
+dbpedia:John_Henninger_Reagan
+        a          foaf:Person ;
+        foaf:name  "John Henninger Reagan"@en , "John Henninger Reagan"@de .
+
+dbpedia:Albrecht_von_Roon
+        a          foaf:Person ;
+        foaf:name  "Albrecht Theodor Emil von Roon"@de , "Albrecht von Roon"@en .
+
+dbpedia:Cliff_Harris  a  foaf:Person ;
+        foaf:name  "Cliff Harris"@de .
+
+dbpedia:Andre_Iguodala
+        a          foaf:Person ;
+        foaf:name  "Andre Iguodala"@en , "Andre Iguodala"@de .
+
+dbpedia:Ford_Konno  a  foaf:Person ;
+        foaf:name  "Ford Konno"@de .
+
+dbpedia:Ian_Duncan  a  foaf:Person ;
+        foaf:name  "Ian Duncan"@de .
+
+dbpedia:Florence_Foster_Jenkins
+        a          foaf:Person ;
+        foaf:name  "Florence Foster Jenkins"@en , "Florence Foster Jenkins"@de .
+
+dbpedia:Greta_Garbo  a  foaf:Person ;
+        foaf:name  "Greta Garbo"@de , "Greta Garbo"@en .
+
+dbpedia:Michael_Vick  a  foaf:Person ;
+        foaf:name  "Michael Vick"@de , "Michael Dwayne Vick"@en .
+
+dbpedia:Friedrich_Bidder
+        a          foaf:Person ;
+        foaf:name  "Friedrich Bidder"@en , "Friedrich Bidder"@de .
+
+dbpedia:Ambrosius_Hubrecht
+        a          foaf:Person ;
+        foaf:name  "Ambrosius Arnold Willem Hubrecht"@de .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Puyet>
+        a          foaf:Person ;
+        foaf:name  "José Puyet"@de , "José Puyet"@en .
+
+dbpedia:Lizzy_Mercier_Descloux
+        a          foaf:Person ;
+        foaf:name  "Lizzy Mercier Descloux"@de , "Lizzy Mercier Descloux"@en .
+
+dbpedia:Michael_McKean
+        a          foaf:Person ;
+        foaf:name  "Michael McKean"@de , "Michael McKean"@en .
+
+<http://dbpedia.org/resource/L%C3%A1zaro_C%C3%A1rdenas>
+        a          foaf:Person ;
+        foaf:name  "Lázaro Cárdenas del Río"@de , "Lazaro Cardenas"@en , "Lázaro Cárdenas"@en .
+
+dbpedia:Stoyan_Kolev  a  foaf:Person ;
+        foaf:name  "Stoyan Petrov Kolev"@en , "Stoyan Kolev"@en .
+
+dbpedia:Lavinia_Fontana
+        a          foaf:Person ;
+        foaf:name  "Lavinia Fontana"@de .
+
+dbpedia:Joseph_Rotman
+        a          foaf:Person ;
+        foaf:name  "Joseph L. Rotman"@en .
+
+dbpedia:James_Rossiter
+        a          foaf:Person ;
+        foaf:name  "James Rossiter"@de .
+
+dbpedia:John_Hennigan
+        a          foaf:Person ;
+        foaf:name  "Johnny Nitro"@en , "John Morrison"@en , "John Hennigan"@en , "Johnny Blaze"@en , "Johnny Superstar"@en , "John Randall Hennigan"@de , "Johnny Spade"@en , "Johnny Onyx"@en .
+
+dbpedia:Daryl_Hannah  a  foaf:Person ;
+        foaf:name  "Daryl Hannah"@en , "Daryl Hannah"@de .
+
+dbpedia:Gerard_Butler
+        a          foaf:Person ;
+        foaf:name  "Gerard Butler"@de .
+
+dbpedia:Bruce_Reitherman
+        a          foaf:Person ;
+        foaf:name  "Bruce Reitherman"@de , "Bruce Reitherman"@en .
+
+<http://dbpedia.org/resource/Teemu_Sel%C3%A4nne>
+        a          foaf:Person ;
+        foaf:name  "Teemu Selänne"@de .
+
+dbpedia:Karl_Groos  a  foaf:Person ;
+        foaf:name  "Karl Groos"@de .
+
+dbpedia:Willard_Van_Orman_Quine
+        a          foaf:Person ;
+        foaf:name  "Willard Van Orman Quine"@en , "Willard Van Orman Quine"@de .
+
+dbpedia:Yukio_Mishima
+        a          foaf:Person ;
+        foaf:name  "Kimitake Hiraoka"@en , "Yukio Mishima"@en , "Yukio Mishima"@de , "三島 由紀夫"@en .
+
+dbpedia:Kurt_Russell  a  foaf:Person ;
+        foaf:name  "Kurt Russell"@en , "Kurt Russell"@de .
+
+dbpedia:Albert_Piddington
+        a          foaf:Person ;
+        foaf:name  "Albert Piddington"@en , "Albert Bathurst Piddington"@en .
+
+dbpedia:David_Beckham
+        a          foaf:Person ;
+        foaf:name  "David Robert Joseph Beckham"@en , "David Beckham"@de , "David Beckham"@en .
+
+dbpedia:John_G._McCullough
+        a          foaf:Person ;
+        foaf:name  "John G. McCullough"@de .
+
+dbpedia:Amanda_Coetzer
+        a          foaf:Person ;
+        foaf:name  "Amanda Coetzer"@en , "Amanda Coetzer"@de .
+
+dbpedia:Hugh_Laurie  a  foaf:Person ;
+        foaf:name  "Hugh Laurie, OBE"@en , "Hugh Laurie"@de , "James Hugh Calum Laurie"@en .
+
+dbpedia:J._B._S._Haldane
+        a          foaf:Person ;
+        foaf:name  "J.B.S. Haldane"@en , "J. B. S. Haldane"@de , "J. B. S. Haldane"@en .
+
+dbpedia:Richard_Frankland
+        a          foaf:Person ;
+        foaf:name  "Richard Frankland"@en , "Richard F. Frankland"@de .
+
+<http://dbpedia.org/resource/%C5%A0tefan_Zn%C3%A1m>
+        a          foaf:Person ;
+        foaf:name  "Štefan Znám"@en .
+
+dbpedia:Zayed_bin_Sultan_Al_Nahyan
+        a          foaf:Person ;
+        foaf:name  "Sheikh Zayed bin Sultan bin Zayed Al Nahyan"@en , "Zayid bin Sultan Al Nahyan"@de , "Sheikh Zayed bin Sultan bin Zayed bin Khalifa Al Nahyan"@en .
+
+dbpedia:Gilles_Deleuze
+        a          foaf:Person ;
+        foaf:name  "Gilles Deleuze"@en , "Gilles Deleuze"@de .
+
+dbpedia:Erlend_Loe  a  foaf:Person ;
+        foaf:name  "Erlend Loe"@de , "Erlend Loe"@en .
+
+<http://dbpedia.org/resource/George_Mackay_%28Australian_politician%29>
+        a          foaf:Person ;
+        foaf:name  "George Mackay"@en , "George Hugh Alexander Mackay"@en .
+
+dbpedia:Marc_Potvin  a  foaf:Person ;
+        foaf:name  "Marc Potvin"@de .
+
+<http://dbpedia.org/resource/%C4%B0lhan_Parlak>
+        a          foaf:Person ;
+        foaf:name  "İlhan Parlak"@en , "İlhan Parlak"@de .
+
+dbpedia:Renato_Ruggiero
+        a          foaf:Person ;
+        foaf:name  "Renato Ruggiero"@de , "Renato Ruggiero"@en .
+
+dbpedia:Julia_Roberts
+        a          foaf:Person ;
+        foaf:name  "Julia Roberts"@en , "Julia Roberts"@de .
+
+dbpedia:Gerhard_Hanappi
+        a          foaf:Person ;
+        foaf:name  "Gerhard Hanappi"@de , "Gerhard Hanappi"@en .
+
+dbpedia:Nathan_K._Hall
+        a          foaf:Person ;
+        foaf:name  "Nathan Kelsey Hall"@de , "Nathan Kelsey Hall"@en .
+
+dbpedia:Mario_Monicelli
+        a          foaf:Person ;
+        foaf:name  "Mario Monicelli"@en , "Mario Monicelli"@de .
+
+dbpedia:Sarah_Polley  a  foaf:Person ;
+        foaf:name  "Sarah Polley"@de , "Sarah Polley"@en .
+
+dbpedia:Jay_Rockefeller
+        a          foaf:Person ;
+        foaf:name  "Jay Rockefeller"@en , "Jay Rockefeller"@de .
+
+dbpedia:Michael_Everson
+        a          foaf:Person ;
+        foaf:name  "Michael Everson"@de .
+
+dbpedia:Benny_Goodman
+        a          foaf:Person ;
+        foaf:name  "Benny Goodman"@en , "Benny Goodman"@de .
+
+dbpedia:John_Cornforth
+        a          foaf:Person ;
+        foaf:name  "John Warcup Cornforth"@de , "Sir John Cornforth"@en .
+
+dbpedia:Wesley_Clair_Mitchell
+        a          foaf:Person ;
+        foaf:name  "Wesley Clair Mitchell"@de .
+
+dbpedia:Matthew_Brettingham
+        a          foaf:Person ;
+        foaf:name  "Matthew Brettingham"@en , "Matthew Brettingham"@de .
+
+dbpedia:Mel_Renfro  a  foaf:Person ;
+        foaf:name  "Mel Renfro"@de .
+
+<http://dbpedia.org/resource/Andr%C3%A9_Henri_Constant_van_Hasselt>
+        a          foaf:Person ;
+        foaf:name  "André Henri Constant van Hasselt"@de .
+
+dbpedia:Yasuhiro_Takeda
+        a          foaf:Person ;
+        foaf:name  "Yasuhiro Takeda"@en .
+
+dbpedia:Thomas_Cranmer
+        a          foaf:Person ;
+        foaf:name  "Thomas Cranmer"@en , "Thomas Cranmer"@de .
+
+dbpedia:Steve_Buscemi
+        a          foaf:Person ;
+        foaf:name  "Steve Buscemi"@de .
+
+dbpedia:Anders_Thomas_Jensen
+        a          foaf:Person ;
+        foaf:name  "Anders Thomas Jensen"@de .
+
+dbpedia:Roger_Revelle
+        a          foaf:Person ;
+        foaf:name  "Roger Revelle"@en , "Roger Revelle"@de .
+
+dbpedia:Lawrence_Weiskrantz
+        a          foaf:Person ;
+        foaf:name  "Lawrence Weiskrantz"@de .
+
+dbpedia:Buck_Adams  a  foaf:Person ;
+        foaf:name  "Buck Adams"@de .
+
+dbpedia:Niels_of_Denmark
+        a          foaf:Person ;
+        foaf:name  "Niels"@en , "Erik Svendsen"@en , "Niels"@de .
+
+dbpedia:John_Crawfurd
+        a          foaf:Person ;
+        foaf:name  "John Crawfurd"@en , "John Crawfurd"@de .
+
+dbpedia:Petr_Korda  a  foaf:Person ;
+        foaf:name  "Petr Korda"@de , "Petr Korda"@en .
+
+dbpedia:Adalgott  a  foaf:Person ;
+        foaf:name  "Saint Adalgott"@en , "Adalgott"@de .
+
+dbpedia:Alf_Landon  a  foaf:Person ;
+        foaf:name  "Alf Landon"@de , "Alfred \"Alf\" Mossman Landon"@en .
+
+dbpedia:James_S._Jackson
+        a          foaf:Person ;
+        foaf:name  "James Streshly Jackson"@en , "James Streshley Jackson"@en .
+
+dbpedia:Johann_Georg_Repsold
+        a          foaf:Person ;
+        foaf:name  "Johann Georg Repsold"@de .
+
+dbpedia:Ken_Linseman  a  foaf:Person ;
+        foaf:name  "Ken Linseman"@de .
+
+dbpedia:Jim_Sensenbrenner
+        a          foaf:Person ;
+        foaf:name  "Jim Sensenbrenner"@de , "Jim Sensenbrenner"@en .
+
+dbpedia:Sophie_Ellis-Bextor
+        a          foaf:Person ;
+        foaf:name  "Sophie Ellis-Bextor"@de , "Sophie Ellis-Bextor"@en , "Sophie Ellis Bextor"@en .
+
+dbpedia:Robert_Murray_Gibson
+        a          foaf:Person ;
+        foaf:name  "Robert Murray Gibson"@en .
+
+dbpedia:Josef_Pischna
+        a          foaf:Person ;
+        foaf:name  "Josef Pischna"@de .
+
+<http://dbpedia.org/resource/Arkaitz_Dur%C3%A1n>
+        a          foaf:Person ;
+        foaf:name  "Arkaitz Durán"@en , "Arkaitz Durán"@de , "Arkaitz Durán Aroca"@en .
+
+dbpedia:Eddy_Ottoz  a  foaf:Person ;
+        foaf:name  "Eddy Ottoz"@de .
+
+dbpedia:Orville_H._Platt
+        a          foaf:Person ;
+        foaf:name  "Orville H. Platt"@en , "Orville H. Platt"@de .
+
+dbpedia:Henry_the_Navigator
+        a          foaf:Person ;
+        foaf:name  "Henry the Navigator"@en , "Heinrich der Seefahrer"@de .
+
+dbpedia:Leslie_Valiant
+        a          foaf:Person ;
+        foaf:name  "Leslie Valiant"@de .
+
+<http://dbpedia.org/resource/Hethum_II%2C_King_of_Armenia>
+        a          foaf:Person ;
+        foaf:name  "Hethum II."@de , "Hethum II"@en .
+
+dbpedia:Katie_Holmes  a  foaf:Person ;
+        foaf:name  "Katie Noelle Holmes"@en , "Katie Holmes"@de .
+
+dbpedia:Ferdinand_Hiller
+        a          foaf:Person ;
+        foaf:name  "Ferdinand Hiller"@de .
+
+dbpedia:Michael_T._Weiss
+        a          foaf:Person ;
+        foaf:name  "Michael T. Weiss"@de , "Michael T. Weiss"@en .
+
+dbpedia:Rick_Rubin  a  foaf:Person ;
+        foaf:name  "Frederick Jay Rubin"@en , "Rick Rubin"@de , "Rick Rubin"@en .
+
+dbpedia:Piet_Zwart  a  foaf:Person ;
+        foaf:name  "Piet Zwart"@de .
+
+dbpedia:Tina_Russell  a  foaf:Person ;
+        foaf:name  "Tina Russell"@en .
+
+dbpedia:Donna_Murphy  a  foaf:Person ;
+        foaf:name  "Donna Murphy"@de , "Donna Murphy"@en .
+
+dbpedia:Peter_Thomas_Bauer
+        a          foaf:Person ;
+        foaf:name  "Peter Thomas Bauer"@de .
+
+dbpedia:Joseph_Goldberger
+        a          foaf:Person ;
+        foaf:name  "Joseph Goldberger"@en .
+
+dbpedia:Yossi_Benayoun
+        a          foaf:Person ;
+        foaf:name  "Yossi Benayoun"@de , "Yossi Shai Benayoun"@en , "Yossi Benayoun"@en .
+
+dbpedia:Stuart_Sutcliffe
+        a          foaf:Person ;
+        foaf:name  "Stuart Sutcliffe"@de , "Stuart Sutcliffe"@en .
+
+dbpedia:Sally_Field  a  foaf:Person ;
+        foaf:name  "Sally Field"@de , "Sally Field"@en .
+
+dbpedia:Gavrilo_Princip
+        a          foaf:Person ;
+        foaf:name  "Gavrilo Princip"@de , "Gavrilo Princip"@en .
+
+dbpedia:Daniel_Passarella
+        a          foaf:Person ;
+        foaf:name  "Daniel Alberto Passarella"@en , "Daniel Passarella"@en , "Daniel Alberto Passarella"@de .
+
+dbpedia:Paul_Strand  a  foaf:Person ;
+        foaf:name  "Paul Strand"@de , "Paul Strand"@en .
+
+dbpedia:Filipe_Morais
+        a          foaf:Person ;
+        foaf:name  "Filipe Alexandre Morais"@en , "Filipe Morais"@de .
+
+dbpedia:Giampaolo_Pazzini
+        a          foaf:Person ;
+        foaf:name  "Giampaolo Pazzini"@en , "Giampaolo Pazzini"@de .
+
+dbpedia:Rob_Marshall  a  foaf:Person ;
+        foaf:name  "Rob Marshall"@en , "Rob Marshall"@de .
+
+dbpedia:Paul_Oscar  a  foaf:Person ;
+        foaf:name  "Páll Óskar Hjálmtýsson"@de , "Paul Oscar"@en .
+
+dbpedia:Robert_E._Lee
+        a          foaf:Person ;
+        foaf:name  "Robert Edward Lee"@de , "Robert Edward Lee"@en .
+
+dbpedia:Kalu_Rinpoche
+        a          foaf:Person ;
+        foaf:name  "Kalu Rinpoche"@de .
+
+dbpedia:Ibn_al-Nafis  a  foaf:Person ;
+        foaf:name  "Ibn an-Nafis"@de .
+
+dbpedia:Samir_Chatterjee
+        a          foaf:Person ;
+        foaf:name  "Samir Chatterjee"@de .
+
+dbpedia:Fiorenzo_Magni
+        a          foaf:Person ;
+        foaf:name  "Fiorenzo Magni"@de , "Fiorenzo Magni"@en .
+
+dbpedia:Daniel_Hoghton
+        a          foaf:Person ;
+        foaf:name  "Daniel Hoghton"@en .
+
+dbpedia:Sheila_McCarthy
+        a          foaf:Person ;
+        foaf:name  "Sheila McCarthy"@en , "Sheila McCarthy"@de .
+
+dbpedia:Ingo_Steuer  a  foaf:Person ;
+        foaf:name  "Ingo Steuer"@en , "Ingo Steuer"@de .
+
+dbpedia:Henry_Beaufort
+        a          foaf:Person ;
+        foaf:name  "Henry Beaufort"@en , "Henry Beaufort"@de .
+
+dbpedia:Julius_Deutsch
+        a          foaf:Person ;
+        foaf:name  "Julius Deutsch"@de .
+
+<http://dbpedia.org/resource/Arne_N%C3%A6ss>
+        a          foaf:Person ;
+        foaf:name  "Arne Dekke Eide Næss"@en , "Arne Næss"@de .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Montilla>
+        a          foaf:Person ;
+        foaf:name  "José Montilla Aguilera"@de , "José Montilla"@en .
+
+dbpedia:Angelyne  a  foaf:Person ;
+        foaf:name  "Angelyne"@en .
+
+<http://dbpedia.org/resource/Ronald_G%C3%ABr%C3%A7aliu>
+        a          foaf:Person ;
+        foaf:name  "Ronald Gërçaliu"@en , "Ronald Gercaliu"@de .
+
+dbpedia:James_L._Alcorn
+        a          foaf:Person ;
+        foaf:name  "James L. Alcorn"@de , "James Lusk Alcorn"@en , "James L. Alcorn"@en .
+
+<http://dbpedia.org/resource/John_Mills_%28Australian_politician%29>
+        a          foaf:Person ;
+        foaf:name  "John Charles Mills"@en .
+
+dbpedia:Charles_Steggall
+        a          foaf:Person ;
+        foaf:name  "Charles H. Steggall"@en .
+
+dbpedia:Jan_Smuts  a  foaf:Person ;
+        foaf:name  "Jan Christian Smuts"@en , "Jan Christiaan Smuts"@de , "Jan Christiaan Smuts"@en .
+
+dbpedia:Reynaldo_Hahn
+        a          foaf:Person ;
+        foaf:name  "Reynaldo Hahn"@en , "Reynaldo Hahn"@de .
+
+dbpedia:Mariano_Rivera
+        a          foaf:Person ;
+        foaf:name  "Mariano Rivera"@en , "Mariano Rivera"@de .
+
+dbpedia:Diana_Quick  a  foaf:Person ;
+        foaf:name  "Diana Quick"@de , "Diana Quick"@en .
+
+dbpedia:William_Devane
+        a          foaf:Person ;
+        foaf:name  "William Devane"@en , "William Devane"@de .
+
+dbpedia:Carlene_Carter
+        a          foaf:Person ;
+        foaf:name  "Carlene Carter"@en , "Carlene Carter"@de .
+
+dbpedia:Maurice_Swynfen_Fitzmaurice
+        a          foaf:Person ;
+        foaf:name  "Maurice Swynfen Fitzmaurice"@en .
+
+dbpedia:Barry_Melton  a  foaf:Person ;
+        foaf:name  "Barry Melton"@de , "Barry Melton"@en .
+
+<http://dbpedia.org/resource/Michael_Hicks_Beach%2C_1st_Earl_St_Aldwyn>
+        a          foaf:Person ;
+        foaf:name  "Hicks Beach, Michael, 1. Earl St. Aldwyn"@de , "The Earl St Aldwyn"@en .
+
+dbpedia:Mogamed_Ibragimov
+        a          foaf:Person ;
+        foaf:name  "Magomed Ibragimow"@de .
+
+dbpedia:Pete_Kircher  a  foaf:Person ;
+        foaf:name  "Pete Kircher"@de .
+
+dbpedia:John_Whiteaker
+        a          foaf:Person ;
+        foaf:name  "John Whiteaker"@de , "John Whiteaker"@en .
+
+dbpedia:Martin_Lewis_Perl
+        a          foaf:Person ;
+        foaf:name  "Martin Lewis Perl"@en , "Martin Lewis Perl"@de .
+
+dbpedia:Michelle_Obama
+        a          foaf:Person ;
+        foaf:name  "Michelle Robinson Obama"@de , "Michelle Obama"@en .
+
+dbpedia:Werner_Henke  a  foaf:Person ;
+        foaf:name  "Werner Henke"@en , "Werner Henke"@de .
+
+dbpedia:James_Monroe_Miller
+        a          foaf:Person ;
+        foaf:name  "James Monroe Miller"@de .
+
+dbpedia:Lionel_Hampton
+        a          foaf:Person ;
+        foaf:name  "Lionel Hampton"@de , "Lionel Leo Hampton"@en .
+
+dbpedia:Kenshiro_Abbe
+        a          foaf:Person ;
+        foaf:name  "Kenshiro Abe"@de .
+
+dbpedia:James_Macpherson
+        a          foaf:Person ;
+        foaf:name  "James Macpherson"@de , "Seumas Mac a' Phearsain"@en .
+
+dbpedia:Robert_Bruce_Merrifield
+        a          foaf:Person ;
+        foaf:name  "Robert Bruce Merrifield"@en , "Robert Bruce Merrifield"@de .
+
+dbpedia:Eckhart_Tolle
+        a          foaf:Person ;
+        foaf:name  "Eckhart Tolle"@de , "Eckhart Tolle"@en .
+
+dbpedia:Paul_Morton  a  foaf:Person ;
+        foaf:name  "Paul Morton"@en , "Paul Morton"@de .
+
+dbpedia:Jonathan_Lethem
+        a          foaf:Person ;
+        foaf:name  "Jonathan Lethem"@en , "Jonathan Lethem"@de .
+
+dbpedia:Kajsa_Bergqvist
+        a          foaf:Person ;
+        foaf:name  "Kajsa Bergqvist"@de .
+
+dbpedia:Pierce_Brosnan
+        a          foaf:Person ;
+        foaf:name  "Pierce Brosnan"@de , "Pierce Brosnan"@en .
+
+dbpedia:Ric_Flair  a  foaf:Person ;
+        foaf:name  "Ric Flair"@de , "Ric Flair"@en , "(Ramblin') Ricky Rhodes"@en , "The Black Scorpion"@en , "\"The Nature Boy\""@en , "'''Ric Flair"@en .
+
+dbpedia:Dana_Andrews  a  foaf:Person ;
+        foaf:name  "Dana Andrews"@de , "Dana Andrews"@en .
+
+<http://dbpedia.org/resource/John_Flanagan_%28author%29>
+        a          foaf:Person ;
+        foaf:name  "John Anthony Flanagan"@de , "John Anthony Flanagan"@en , "John Flanagan"@en .
+
+dbpedia:Bogdan_Achimescu
+        a          foaf:Person ;
+        foaf:name  "Bogdan Achimescu"@en .
+
+dbpedia:Anselme_Payen
+        a          foaf:Person ;
+        foaf:name  "Anselme Payen"@en , "Anselme Payen"@de .
+
+dbpedia:Clint_Malarchuk
+        a          foaf:Person ;
+        foaf:name  "Clint Regan Malarchuk"@de .
+
+dbpedia:Jean-Louis_Schlesser
+        a          foaf:Person ;
+        foaf:name  "Jean-Louis Schlesser"@de , "Jean-Louis Schlesser"@en .
+
+dbpedia:Kyriakos_of_Makuria
+        a          foaf:Person ;
+        foaf:name  "Cyriacus"@de .
+
+dbpedia:Laurie_Johnson
+        a          foaf:Person ;
+        foaf:name  "Laurie Johnson"@en , "Laurie Johnson"@de .
+
+dbpedia:Gustaf_Dalman
+        a          foaf:Person ;
+        foaf:name  "Gustaf Dalman"@de .
+
+dbpedia:Massari  a  foaf:Person ;
+        foaf:name  "Sari Abboud"@en , "Massari"@en , "Massari"@de .
+
+dbpedia:Donald_Healey
+        a          foaf:Person ;
+        foaf:name  "Donald Mitchell Healey"@de .
+
+dbpedia:Willem_de_Clercq
+        a          foaf:Person ;
+        foaf:name  "Willem de Clercq"@de .
+
+dbpedia:Nicole_Scherzinger
+        a          foaf:Person ;
+        foaf:name  "Nicole Scherzinger"@de , "Nicole Prescovia Elikolani Valiente Scherzinger"@en .
+
+dbpedia:Ron_Ely  a  foaf:Person ;
+        foaf:name  "Ron Ely"@en , "Ron Ely"@de .
+
+dbpedia:Silanion  a  foaf:Person ;
+        foaf:name  "Silanion"@de .
+
+dbpedia:Jean-Pierre_Lecocq
+        a          foaf:Person ;
+        foaf:name  "Jean-Pierre Lecocq"@en , "Jean-Pierre Lecocq"@de .
+
+dbpedia:Josey_Scott  a  foaf:Person ;
+        foaf:name  "Josey Scott"@en , "Josey Scott"@de .
+
+dbpedia:Hjalmar_Petersen
+        a          foaf:Person ;
+        foaf:name  "Hjalmar Petersen"@de , "Hjalmar Petersen"@en .
+
+dbpedia:Norman_Spinrad
+        a          foaf:Person ;
+        foaf:name  "Norman Spinrad"@de .
+
+dbpedia:Erika_von_Brockdorff
+        a          foaf:Person ;
+        foaf:name  "Erika Gräfin von Brockdorff"@de , "Erika von Brockdorff"@en .
+
+dbpedia:Marie_Calm  a  foaf:Person ;
+        foaf:name  "Marie Calm"@de .
+
+dbpedia:Jerry_Lawler  a  foaf:Person ;
+        foaf:name  "Jerry \"The King\" Lawler"@en , "Jerry Lawler"@de , "Jerry Lawler"@en .
+
+<http://dbpedia.org/resource/Henrik_J%C3%B8rgensen>
+        a          foaf:Person ;
+        foaf:name  "Henrik Jørgensen"@de .
+
+<http://dbpedia.org/resource/Kurt_W%C3%BCthrich>
+        a          foaf:Person ;
+        foaf:name  "Kurt Wüthrich"@en , "Kurt Wüthrich"@de .
+
+dbpedia:Toni_Braxton  a  foaf:Person ;
+        foaf:name  "Toni Braxton"@en , "Toni Braxton"@de .
+
+dbpedia:Joseph_Agassi
+        a          foaf:Person ;
+        foaf:name  "Joseph Agassi"@de .
+
+dbpedia:Chico_Hamilton
+        a          foaf:Person ;
+        foaf:name  "Chico Hamilton"@en , "Chico Hamilton"@de .
+
+dbpedia:Alexander_Gennadiyevich_Zaitsev
+        a          foaf:Person ;
+        foaf:name  "Alexander Gennadijewitsch Saizew"@de .
+
+dbpedia:Colin_Powell  a  foaf:Person ;
+        foaf:name  "Colin Powell"@de , "Colin Luther Powell"@en , "Colin Powell"@en .
+
+dbpedia:Josef_Peukert
+        a          foaf:Person ;
+        foaf:name  "Josef Peukert"@de .
+
+dbpedia:Carl_Chun  a  foaf:Person ;
+        foaf:name  "Carl Chun"@de .
+
+dbpedia:Adrian_Zmed  a  foaf:Person ;
+        foaf:name  "Adrian Zmed"@de , "Adrian Zmed"@en .
+
+dbpedia:Martin_Lawrence
+        a          foaf:Person ;
+        foaf:name  "Martin Lawrence"@en , "Martin Fitzgerald Lawrence"@de .
+
+dbpedia:Jean_Rapp  a  foaf:Person ;
+        foaf:name  "Jean Rapp"@de .
+
+<http://dbpedia.org/resource/Ricardo_Montalb%C3%A1n>
+        a          foaf:Person ;
+        foaf:name  "Ricardo Montalbán"@de , "Ricardo Montalbán"@en .
+
+dbpedia:Shamima_Shaikh
+        a          foaf:Person ;
+        foaf:name  "Shamima Shaikh"@de .
+
+dbpedia:Yunus_Emre  a  foaf:Person ;
+        foaf:name  "Yunus Emre"@de .
+
+dbpedia:Na-Ga  a   foaf:Person ;
+        foaf:name  "Na-Ga"@de , "Na-Ga"@en .
+
+dbpedia:Richard_M._Daley
+        a          foaf:Person ;
+        foaf:name  "Richard Michael Daley"@en , "Richard M. Daley"@de .
+
+dbpedia:Rudolf_Reichelt
+        a          foaf:Person ;
+        foaf:name  "Rudolf Reichelt"@de .
+
+dbpedia:David_Berkowitz
+        a          foaf:Person ;
+        foaf:name  "David Berkowitz"@de , "David Richard Berkowitz"@en .
+
+dbpedia:Giles_Foden  a  foaf:Person ;
+        foaf:name  "Giles Foden"@de .
+
+dbpedia:Cody_Franson  a  foaf:Person ;
+        foaf:name  "Cody Franson"@de .
+
+dbpedia:Mao_Dun  a  foaf:Person ;
+        foaf:name  "Shen Dehong"@en , "Mao Dun"@de .
+
+dbpedia:Lucullus  a  foaf:Person ;
+        foaf:name  "Lucius Licinius Lucullus"@de .
+
+dbpedia:John_Chafee  a  foaf:Person ;
+        foaf:name  "John Chafee"@en , "John Chafee"@de .
+
+dbpedia:Sidney_Sonnino
+        a          foaf:Person ;
+        foaf:name  "Sidney Sonnino"@en , "Sidney Sonnino"@de .
+
+dbpedia:Pan_Geng  a  foaf:Person ;
+        foaf:name  "Pan Geng"@de .
+
+dbpedia:Kate_Mosse  a  foaf:Person ;
+        foaf:name  "Kate Mosse"@de , "Kate Mosse"@en .
+
+dbpedia:Bob_Wise  a  foaf:Person ;
+        foaf:name  "Bob Wise"@en , "Bob Wise"@de .
+
+dbpedia:Chayanne  a  foaf:Person ;
+        foaf:name  "Chayanne"@en , "Chayanne"@de .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Cardoso_Pires>
+        a          foaf:Person ;
+        foaf:name  "José Cardoso Pires"@en , "José Cardoso Pires"@de .
+
+<http://dbpedia.org/resource/Tahsin_Yaz%C4%B1c%C4%B1>
+        a          foaf:Person ;
+        foaf:name  "Tahsin Yazıcı"@en , "Tahsin Yazıcı"@de .
+
+dbpedia:Eric_Carr  a  foaf:Person ;
+        foaf:name  "Eric Carr"@en , "Eric Carr"@de .
+
+dbpedia:Steve_Ripley  a  foaf:Person ;
+        foaf:name  "Steve Ripley"@de .
+
+dbpedia:Anselm_Feuerbach
+        a          foaf:Person ;
+        foaf:name  "Anselm Feuerbach"@de , "Anselm Feuerbach"@en .
+
+dbpedia:Joel_Dorius  a  foaf:Person ;
+        foaf:name  "Raymond Joel Dorius"@de .
+
+dbpedia:John_Dewey  a  foaf:Person ;
+        foaf:name  "John Dewey"@en , "John Dewey"@de .
+
+dbpedia:Tony_Akins  a  foaf:Person ;
+        foaf:name  "Tony Akins"@en .
+
+dbpedia:Larry_Wall  a  foaf:Person ;
+        foaf:name  "Larry Wall"@en , "Larry Wall"@de .
+
+dbpedia:Prince_Valdemar_of_Denmark
+        a          foaf:Person ;
+        foaf:name  "Waldemar Prinz von Dänemark"@de , "Prince Valdemar"@en .
+
+<http://dbpedia.org/resource/S%C3%A9bastien_Frey>
+        a          foaf:Person ;
+        foaf:name  "Sébastien Frey"@en , "Sébastien Frey"@de .
+
+dbpedia:Sugizo  a  foaf:Person ;
+        foaf:name  "Sugizo"@de , "Sugizo"@en .
+
+dbpedia:Milton_Latham
+        a          foaf:Person ;
+        foaf:name  "Milton Latham"@en , "Milton Latham"@de .
+
+dbpedia:Ulysses_S._Grant
+        a          foaf:Person ;
+        foaf:name  "Ulysses S. Grant"@en , "Ulysses S. Grant"@de .
+
+dbpedia:Canute_VI_of_Denmark
+        a          foaf:Person ;
+        foaf:name  "Knut VI. von Dänemark"@de , "Canute VI"@en .
+
+dbpedia:Saki_Hiwatari
+        a          foaf:Person ;
+        foaf:name  "Saki Hiwatari"@de , "Saki Hiwatari"@en .
+
+dbpedia:Alexander_Slidell_MacKenzie
+        a          foaf:Person ;
+        foaf:name  "Alexander Slidell Mackenzie"@en .
+
+dbpedia:Cameron_Diaz  a  foaf:Person ;
+        foaf:name  "Cameron Michelle Diaz"@en , "Cameron Diaz"@de , "Cameron Diaz"@en .
+
+dbpedia:Brooks_Robinson
+        a          foaf:Person ;
+        foaf:name  "Brooks Robinson"@de , "Brooks Robinson"@en .
+
+dbpedia:Toto_Cutugno  a  foaf:Person ;
+        foaf:name  "Toto Cutugno"@en , "Toto Cutugno"@de .
+
+dbpedia:Aaliyah  a  foaf:Person ;
+        foaf:name  "Aaliyah"@en , "Aaliyah"@de .
+
+dbpedia:Edward_Moxon  a  foaf:Person ;
+        foaf:name  "Edward Moxon"@en .
+
+dbpedia:Henry_H._Barschall
+        a          foaf:Person ;
+        foaf:name  "Henry Herman Barschall"@en .
+
+dbpedia:Peter_Berg  a  foaf:Person ;
+        foaf:name  "Peter Berg"@de .
+
+dbpedia:Lars_Boom  a  foaf:Person ;
+        foaf:name  "Lars Boom"@en , "Lars Boom"@de .
+
+dbpedia:Mimi_Rogers  a  foaf:Person ;
+        foaf:name  "Mimi Rogers"@de .
+
+<http://dbpedia.org/resource/Ole_Martin_%C3%85rst>
+        a          foaf:Person ;
+        foaf:name  "Ole Martin Årst"@en , "Ole Martin Årst"@de .
+
+dbpedia:Debbie_Gibson
+        a          foaf:Person ;
+        foaf:name  "Deborah Ann Gibson"@de , "Deborah Gibson"@en , "Deborah Ann Gibson"@en .
+
+dbpedia:Isa_Genzken  a  foaf:Person ;
+        foaf:name  "Isa Genzken"@de .
+
+<http://dbpedia.org/resource/Ei%C3%B0ur_Gu%C3%B0johnsen>
+        a          foaf:Person ;
+        foaf:name  "Eiður Smári Guðjohnsen"@de , "Eiður Smári Guðjohnsen"@en , "Eiður Guðjohnsen"@en .
+
+dbpedia:Desmond_Armstrong
+        a          foaf:Person ;
+        foaf:name  "Desmond Kevin Armstrong"@en , "Desmond Armstrong"@de , "Desmond Armstrong"@en .
+
+dbpedia:Hui_Liangyu  a  foaf:Person ;
+        foaf:name  "Hui Liangyu"@en , "Hui Liangyu"@de .
+
+dbpedia:Linda_McCartney
+        a          foaf:Person ;
+        foaf:name  "Linda McCartney"@de , "Lady Linda McCartney"@en , "Linda McCartney"@en .
+
+dbpedia:Barry_Fitzgerald
+        a          foaf:Person ;
+        foaf:name  "Barry Fitzgerald"@de , "Barry Fitzgerald"@en .
+
+dbpedia:Vyvyan_Holland
+        a          foaf:Person ;
+        foaf:name  "Vyvyan Holland"@de , "Vyvyan Holland"@en .
+
+<http://dbpedia.org/resource/Jos%C3%A9_Azevedo>
+        a          foaf:Person ;
+        foaf:name  "José Azevedo"@en , "José Azevedo"@de , "José Bento Azevedo Carvalho"@en .
+
+dbpedia:Mellow_Man_Ace
+        a          foaf:Person ;
+        foaf:name  "Mellow Man Ace"@de , "Mellow Man Ace"@en .
+
+<http://dbpedia.org/resource/Johan_Alc%C3%A9n>
+        a          foaf:Person ;
+        foaf:name  "Johan Alcén"@de .
+
+dbpedia:Werner_Boy  a  foaf:Person ;
+        foaf:name  "Werner Boy"@de , "Werner Boy"@en .
+
+dbpedia:Bugs_Bunny  a  foaf:Person ;
+        foaf:name  "Bugs Bunny"@en .
+
+dbpedia:Ed_Bishop  a  foaf:Person ;
+        foaf:name  "Ed Bishop"@en , "Ed Bishop"@de .
+
+dbpedia:Carl_Brashear
+        a          foaf:Person ;
+        foaf:name  "Carl Brashear"@en , "Carl Maxie Brashear"@de .
+
+dbpedia:Adrianne_Curry
+        a          foaf:Person ;
+        foaf:name  "Adrianne Curry"@en , "Adrianne Curry"@de .
+
+dbpedia:Heinrich_Ritter
+        a          foaf:Person ;
+        foaf:name  "Heinrich Ritter"@de .
+
+dbpedia:Eric_Brook  a  foaf:Person ;
+        foaf:name  "Eric Fred Brook"@de , "Eric Brook"@en .
+
+dbpedia:Kuniwo_Nakamura
+        a          foaf:Person ;
+        foaf:name  "Kuniwo Nakamura"@en , "Kuniwo Nakamura"@de .
+
+dbpedia:Joseph_Lazarow
+        a          foaf:Person ;
+        foaf:name  "Joseph Lazarow"@de .
+
+dbpedia:Gershon_Kingsley
+        a          foaf:Person ;
+        foaf:name  "Gershon Kingsley"@de , "Gershon Kingsley"@en .
+
+dbpedia:Godfrey_Kneller
+        a          foaf:Person ;
+        foaf:name  "Godfrey Kneller"@de .
+
+dbpedia:Briana_Scurry
+        a          foaf:Person ;
+        foaf:name  "Briana Scurry"@de , "Briana Colette Scurry"@en , "Briana Scurry"@en .
+
+dbpedia:Eddy_Bouwmans
+        a          foaf:Person ;
+        foaf:name  "Eddy Bouwmans"@en .
+
+dbpedia:Lucy_Liu  a  foaf:Person ;
+        foaf:name  "Lucy Liu"@en , "刘玉玲"@en , "劉玉玲"@en , "Lucy Liu"@de , "Liú Yùlíng"@en .
+
+dbpedia:Joseph_Clemens_of_Bavaria
+        a          foaf:Person ;
+        foaf:name  "Joseph Clemens von Bayern"@de .
+
+dbpedia:Duns_Scotus  a  foaf:Person ;
+        foaf:name  "Johannes Duns Scotus"@de , "John Duns Scotus"@en .
+
+dbpedia:Dmitry_Medvedev
+        a          foaf:Person ;
+        foaf:name  "Dmitry Anatolyevich Medvedev"@en , "Dmitri Anatoljewitsch Medwedew"@de , "Dmitry Medvedev"@en .
+
+dbpedia:Richard_Helms
+        a          foaf:Person ;
+        foaf:name  "Richard Helms"@en , "Richard Helms"@de .
+
+dbpedia:Otto_Baum  a  foaf:Person ;
+        foaf:name  "Otto Baum"@de , "Otto Baum"@en .
+
+dbpedia:Dolly_Buster  a  foaf:Person ;
+        foaf:name  "Dolly Buster"@de .
+
+dbpedia:Gary_Busey  a  foaf:Person ;
+        foaf:name  "Gary Busey"@en , "Gary Busey"@de .
+
+dbpedia:Oliver_Ellsworth
+        a          foaf:Person ;
+        foaf:name  "Oliver Ellsworth"@en , "Oliver Ellsworth"@de .
+
+dbpedia:Fadil_Hoxha  a  foaf:Person ;
+        foaf:name  "Fadil Hoxha"@de , "Fadil Hoxha"@en .
+
+dbpedia:Joseph_Ujlaki
+        a          foaf:Person ;
+        foaf:name  "Joseph Ujlaki"@en , "Joseph Ujlaki"@de .
+
+dbpedia:Johnny_Galecki
+        a          foaf:Person ;
+        foaf:name  "Johnny Galecki"@de .
+
+dbpedia:Curtis_Lee  a  foaf:Person ;
+        foaf:name  "Curtis Lee"@en , "Curtis Lee"@de .
+
+dbpedia:Earl_Butz  a  foaf:Person ;
+        foaf:name  "Earl Butz"@de , "Earl Butz"@en .
+
+dbpedia:Horst_Stein  a  foaf:Person ;
+        foaf:name  "Horst Stein"@de .
+
+dbpedia:Alexander_Crum_Brown
+        a          foaf:Person ;
+        foaf:name  "Alexander Crum Brown"@de .
+
+dbpedia:Chen_Lu  a  foaf:Person ;
+        foaf:name  "Lu Chen"@de , "Chen Lu"@en .
+
+dbpedia:Pete_Rugolo  a  foaf:Person ;
+        foaf:name  "Pete Rugolo"@de .
+
+dbpedia:Isabelle_LaMal
+        a          foaf:Person ;
+        foaf:name  "Isabelle LaMal"@en .
+
+dbpedia:Ernst_Hartert
+        a          foaf:Person ;
+        foaf:name  "Ernst Hartert"@de .
+
+dbpedia:Lani_Hall  a  foaf:Person ;
+        foaf:name  "Lani Hall"@de .
+
+dbpedia:Donyell_Marshall
+        a          foaf:Person ;
+        foaf:name  "Donyell Marshall"@de , "Donyell Marshall"@en .
+
+dbpedia:Viola_Dana  a  foaf:Person ;
+        foaf:name  "Viola Dana"@en , "Viola Dana"@de .
+
+dbpedia:Gustav_Landauer
+        a          foaf:Person ;
+        foaf:name  "Gustav Landauer"@de .
+
+dbpedia:Mamoru_Miyano
+        a          foaf:Person ;
+        foaf:name  "Mamoru Miyano"@en , "宮野真守"@en , "Mamoru Miyano"@de .
+
+dbpedia:Paul_Blackthorne
+        a          foaf:Person ;
+        foaf:name  "Paul Blackthorne"@en , "Paul Blackthorne"@de .
+
+dbpedia:Gaetano_Reina
+        a          foaf:Person ;
+        foaf:name  "Gaetano Reina"@de .
+
+dbpedia:Jacques_Vergnes
+        a          foaf:Person ;
+        foaf:name  "Jacques Vergnes"@en , "Jacques Vergnes"@de .
+
+dbpedia:Ina_Balin  a  foaf:Person ;
+        foaf:name  "Ina Balin"@en , "Ina Balin"@de .
+
+dbpedia:Alexander_Braun
+        a          foaf:Person ;
+        foaf:name  "Alexander Braun"@en , "Alexander Carl Heinrich Braun"@de .
+
+dbpedia:Marc_Lamothe  a  foaf:Person ;
+        foaf:name  "Marc Lamothe"@de .
+
+<http://dbpedia.org/resource/Dulce_Chac%C3%B3n>
+        a          foaf:Person ;
+        foaf:name  "Dulce Chacón"@de .
+
+dbpedia:Henryk_Broder
+        a          foaf:Person ;
+        foaf:name  "Henryk M. Broder"@de .
+
+dbpedia:Boz_Boorer  a  foaf:Person ;
+        foaf:name  "Boz Boorer"@de , "Boz Boorer"@en .
+
+dbpedia:Paul_B._Huff  a  foaf:Person ;
+        foaf:name  "Paul B. Huff"@en .
+
+dbpedia:Alfred_Bohrmann
+        a          foaf:Person ;
+        foaf:name  "Alfred Bohrmann"@de .
+
+dbpedia:Gregory_of_Tours
+        a          foaf:Person ;
+        foaf:name  "Gregor von Tours"@de , "Saint Gregory of Tours"@en .
+
+<http://dbpedia.org/resource/Hans_Ernst_Karl%2C_Graf_von_Zieten>
+        a          foaf:Person ;
+        foaf:name  "Hans Ernst Karl von Zieten"@de .
+
+dbpedia:Adrien_Brody  a  foaf:Person ;
+        foaf:name  "Adrien Brody"@de .
+
+dbpedia:Norman_Brookes
+        a          foaf:Person ;
+        foaf:name  "Norman Brookes"@de .
+
+dbpedia:John_Hutton_Balfour
+        a          foaf:Person ;
+        foaf:name  "John Hutton Balfour"@de .
+
+dbpedia:Wim_Wenders  a  foaf:Person ;
+        foaf:name  "Wim Wenders"@de , "Wim Wenders"@en .
+
+dbpedia:Josef_Rubinstein
+        a          foaf:Person ;
+        foaf:name  "Joe Rubinstein"@de .
+
+dbpedia:George_Wythe  a  foaf:Person ;
+        foaf:name  "George Wythe"@de .
+
+dbpedia:Larry_Hagman  a  foaf:Person ;
+        foaf:name  "Larry Hagman"@de .
+
+dbpedia:John_Aylward  a  foaf:Person ;
+        foaf:name  "John Aylward"@en .
+
+dbpedia:Art_Farmer  a  foaf:Person ;
+        foaf:name  "Art Farmer"@en , "Art Farmer"@de .
+
+dbpedia:John_Parrott  a  foaf:Person ;
+        foaf:name  "John Parrott"@de .
+
+dbpedia:Zhai_Zhigang  a  foaf:Person ;
+        foaf:name  "Zhai Zhigang"@en , "Zhai Zhigang"@de .
+
+dbpedia:Subramanya_Bharathi
+        a          foaf:Person ;
+        foaf:name  "Subramaniya Bharati"@de .
+
+dbpedia:Brian_McFadden
+        a          foaf:Person ;
+        foaf:name  "Brian McFadden"@en , "Brian McFadden"@de .
+
+dbpedia:Angel_Williams
+        a          foaf:Person ;
+        foaf:name  "Angel Williams"@en , "Lauren Williams"@de , "Canadian Angel"@en , "Angelina Love"@en .
+
+dbpedia:Choo_Hoey  a  foaf:Person ;
+        foaf:name  "Choo Hoey"@de .
+
+dbpedia:Les_Claypool  a  foaf:Person ;
+        foaf:name  "Les Claypool"@en , "Les Claypool"@de .
+
+dbpedia:Terrence_Howard
+        a          foaf:Person ;
+        foaf:name  "Terrence Howard"@de .
+
+dbpedia:Nadine_Gordimer
+        a          foaf:Person ;
+        foaf:name  "Nadine Gordimer"@en , "Nadine Gordimer"@de .
+
+dbpedia:Jim_Sheridan  a  foaf:Person ;
+        foaf:name  "Jim Sheridan"@en , "Jim Sheridan"@de .
+
+dbpedia:Jean_Gerson  a  foaf:Person ;
+        foaf:name  "Jean Charlier de Gerson"@en , "Jean Gerson"@de .
+
+dbpedia:Jeffrey_Hunter
+        a          foaf:Person ;
+        foaf:name  "Jeffrey Hunter"@en , "Jeffrey Hunter"@de .
+
+dbpedia:Nicole_Sullivan
+        a          foaf:Person ;
+        foaf:name  "Nicole Sullivan"@en , "Nicole Sullivan"@de .
+
+dbpedia:Samo  a    foaf:Person ;
+        foaf:name  "Samo"@de .
+
+dbpedia:James_H._Ward
+        a          foaf:Person ;
+        foaf:name  "James H. Ward"@en .
+
+dbpedia:Ali_Mohammed_Mujur
+        a          foaf:Person ;
+        foaf:name  "Ali Mohammed Mujur"@en , "Ali Mohammed Mudschur"@de .
+
+<http://dbpedia.org/resource/Jacques_Boucher_de_Cr%C3%A8vec%C5%93ur_de_Perthes>
+        a          foaf:Person ;
+        foaf:name  "Jacques Boucher de Perthes"@de , "Jacques Boucher de Crèvecœur de Perthes"@en .
+
+dbpedia:Zhang_Ren  a  foaf:Person ;
+        foaf:name  "Zhang Ren"@de .
+
+dbpedia:Gabriele_Allegra
+        a          foaf:Person ;
+        foaf:name  "Gabriele Allegra"@en .
+
+dbpedia:Alan_Greenspan
+        a          foaf:Person ;
+        foaf:name  "Alan Greenspan"@en , "Alan Greenspan"@de .
+
+dbpedia:Gilles_Peterson
+        a          foaf:Person ;
+        foaf:name  "Gilles Peterson"@de .
+
+dbpedia:Ed_Pastor  a  foaf:Person ;
+        foaf:name  "Ed Pastor"@en , "Ed Pastor"@de .
+
+dbpedia:James_V._Selna
+        a          foaf:Person ;
+        foaf:name  "James V. Selna"@en .
+
+dbpedia:John_Carona  a  foaf:Person ;
+        foaf:name  "John Carona"@en , "John Joseph Carona"@en .
+
+<http://dbpedia.org/resource/Heinz_%28singer%29>
+        a          foaf:Person ;
+        foaf:name  "Heinz"@en , "Heinz"@de .
+
+dbpedia:Eddie_Boland  a  foaf:Person ;
+        foaf:name  "Eddie Boland"@en .
+
+dbpedia:Hans_Fischer  a  foaf:Person ;
+        foaf:name  "Hans Fischer"@de , "Hans Fischer"@en .
+
+dbpedia:Mario_Andretti
+        a          foaf:Person ;
+        foaf:name  "Mario Andretti"@de , "Mario Andretti"@en .
+
+dbpedia:Richard_Hammond
+        a          foaf:Person ;
+        foaf:name  "Richard Hammond"@de , "Richard Hammond"@en .
+
+dbpedia:Davie_Wilson  a  foaf:Person ;
+        foaf:name  "Davie Wilson"@en , "David Wilson"@en .
+
+dbpedia:Joscelin_Yeo  a  foaf:Person ;
+        foaf:name  "Joscelin Yeo Wei Ling"@de .
+
+dbpedia:Burkhard_Beins
+        a          foaf:Person ;
+        foaf:name  "Burkhard Beins"@de .
+
+dbpedia:Ebrahim_Nabavi
+        a          foaf:Person ;
+        foaf:name  "Ebrahim Nabavi"@de .
+
+dbpedia:Inge_Stoll  a  foaf:Person ;
+        foaf:name  "Ingeborg Stoll"@de .
+
+dbpedia:Sam_Worthington
+        a          foaf:Person ;
+        foaf:name  "Sam Worthington"@en , "Sam Worthington"@de .
+
+dbpedia:Fabien_Barthez
+        a          foaf:Person ;
+        foaf:name  "Fabien Barthez"@de , "Fabien Barthez"@en , "Fabien Alain Barthez"@en .
+
+dbpedia:Lucio_Battisti
+        a          foaf:Person ;
+        foaf:name  "Lucio Battisti"@en , "Lucio Battisti"@de .
+
+dbpedia:George_Burley
+        a          foaf:Person ;
+        foaf:name  "George Burley"@en , "George Elder Burley"@de , "George Elder Burley"@en .
+
+dbpedia:Norman_Whitfield
+        a          foaf:Person ;
+        foaf:name  "Norman Whitfield"@en , "Norman Jesse Whitfield"@de .
+
+dbpedia:Emil_Boc  a  foaf:Person ;
+        foaf:name  "Emil Boc"@en , "Emil Boc"@de .
+
+dbpedia:Steve_Bancroft
+        a          foaf:Person ;
+        foaf:name  "Steve Bancroft"@de .
+
+dbpedia:Matthew_McGrory
+        a          foaf:Person ;
+        foaf:name  "Matthew McGrory"@en , "Matthew McGrory"@de .
+
+dbpedia:Charles_D._B._King
+        a          foaf:Person ;
+        foaf:name  "Charles D.B. King"@en , "Charles D.B. King"@de .
+
+dbpedia:Doina_Cornea  a  foaf:Person ;
+        foaf:name  "Doina Cornea"@de .
+
+dbpedia:Kristin_Davis
+        a          foaf:Person ;
+        foaf:name  "Kristin Davis"@de , "Kristin Davis"@en .
+
+dbpedia:Blondie_Chaplin
+        a          foaf:Person ;
+        foaf:name  "Blondie Chaplin"@de , "Blondie Chaplin"@en .
+
+dbpedia:Pediamenopet  a  foaf:Person ;
+        foaf:name  "Pedamenopet"@de .
+
+dbpedia:Basil_Rathbone
+        a          foaf:Person ;
+        foaf:name  "Basil Rathbone"@de , "Basil Rathbone"@en .
+
+dbpedia:Frankie_Trumbauer
+        a          foaf:Person ;
+        foaf:name  "Frank Trumbauer"@de , "Frankie Trumbauer"@en .
+
+dbpedia:Kurt_Runge  a  foaf:Person ;
+        foaf:name  "Kurt Runge"@de .
+
+dbpedia:Joe_Besser  a  foaf:Person ;
+        foaf:name  "Joe Besser"@de , "Joe Besser"@en .
+
+dbpedia:Harun_al-Rashid
+        a          foaf:Person ;
+        foaf:name  "Harun ar-Raschid"@de , "Harun al-Rashid of Abbasid Dynasty"@en .
+
+<http://dbpedia.org/resource/Frederick_Stanley%2C_16th_Earl_of_Derby>
+        a          foaf:Person ;
+        foaf:name  "Stanley, Frederick Arthur, 16. Earl of Derby"@de , "The Earl of Derby"@en .
+
+dbpedia:Dietrich_von_Choltitz
+        a          foaf:Person ;
+        foaf:name  "Dietrich von Choltitz"@en , "Dietrich von Choltitz"@de .
+
+dbpedia:Tommie_van_der_Leegte
+        a          foaf:Person ;
+        foaf:name  "Tommie van der Leegte"@en , "Tom van der Leegte"@de .
+
+dbpedia:Paul_Emery  a  foaf:Person ;
+        foaf:name  "Paul Emery"@en , "Paul Emery"@de .
+
+dbpedia:Alfred_Moore_Scales
+        a          foaf:Person ;
+        foaf:name  "Alfred Moore Scales"@de , "Alfred Moore Scales"@en .
+
+dbpedia:John_Boyne  a  foaf:Person ;
+        foaf:name  "John Boyne"@de , "John Boyne"@en .
+
+dbpedia:Peter_Mullan  a  foaf:Person ;
+        foaf:name  "Peter Mullan"@en , "Peter Mullan"@de .

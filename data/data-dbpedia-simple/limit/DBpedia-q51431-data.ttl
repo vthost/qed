@@ -1,0 +1,575 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns4:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Karl-Liebknecht-Stadion
+        geo:lat       52.3991 ;
+        geo:long      13.0948 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Eintracht-Stadion
+        geo:lat       52.29 , "52.29"^^xsd:float ;
+        geo:long      10.5217 , "10.5214"^^xsd:float , "10.5217"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_am_Zoo
+        geo:lat       "51.2391"^^xsd:float , 51.2391 ;
+        geo:long      7.10508 , "7.10508"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_der_Weltjugend
+        geo:lat       52.5339 ;
+        geo:long      13.3767 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Tuja-Stadion  geo:lat  48.7444 , "48.7444"^^xsd:float ;
+        geo:long      "11.4431"^^xsd:float , 11.4431 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Poststadion  geo:lat  52.53 ;
+        geo:long      13.3594 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_am_Gesundbrunnen
+        geo:lat       52.55 ;
+        geo:long      13.3933 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Kurt-Wabbel_Stadion
+        geo:lat       51.4653 ;
+        geo:long      11.9619 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Donaustadion  geo:lat  48.4044 , "48.4044"^^xsd:float ;
+        geo:long      "10.0097"^^xsd:float , 10.0097 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Hermann_L%C3%B6ns_Stadium>
+        geo:lat       51.7567 ;
+        geo:long      8.70056 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Leimbachstadion
+        geo:lat       50.8522 ;
+        geo:long      8.02611 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Waldstadion_Homburg
+        geo:lat       49.3161 ;
+        geo:long      7.355 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Sportplatz_at_Rothenbaum
+        geo:lat       53.5718 ;
+        geo:long      9.99054 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Steigerwaldstadion
+        geo:lat       50.9603 , "50.9603"^^xsd:float ;
+        geo:long      "11.0372"^^xsd:float , 11.0372 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/B%C3%B6llenfalltor_Stadion>
+        geo:lat       49.8578 ;
+        geo:long      8.67222 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Dietmar-Hopp-Stadion
+        geo:lat       49.2783 , "49.2783"^^xsd:float ;
+        geo:long      8.84211 , "8.84211"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Rosenaustadion
+        geo:lat       48.3553 , "48.3553"^^xsd:float ;
+        geo:long      "10.8758"^^xsd:float , 10.8761 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Energieteam_Arena
+        geo:lat       51.7314 , "51.7314"^^xsd:float ;
+        geo:long      "8.71083"^^xsd:float , 8.71083 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_an_der_Kreuzeiche
+        geo:lat       48.4786 ;
+        geo:long      9.19 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Rhein-Neckar-Arena
+        geo:lat       "49.2391"^^xsd:float , 49.239 , "49.2392"^^xsd:float , "49.239"^^xsd:float ;
+        geo:long      8.88828 , "8.88833"^^xsd:float , "8.88828"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Riederwaldstadion
+        geo:lat       50.1331 , "50.1331"^^xsd:float ;
+        geo:long      "8.73028"^^xsd:float , 8.73028 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Westfalenstadion
+        geo:lat       "51.4925"^^xsd:float , "51.4926"^^xsd:float , 51.4926 ;
+        geo:long      "7.4517"^^xsd:float , 7.45184 , "7.45167"^^xsd:float , "7.45184"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Sportpark_Husterh%C3%B6he>
+        geo:lat       49.2177 ;
+        geo:long      7.59636 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Dreisamstadion
+        geo:lat       47.9889 , "47.9889"^^xsd:float ;
+        geo:long      7.89306 , "7.89306"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Stadion_an_der_Gisselberger_Stra%C3%9Fe>
+        geo:lat       50.7959 , "50.7959"^^xsd:float ;
+        geo:long      "8.75855"^^xsd:float , 8.75855 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Stadion_Am_Schloss_Str%C3%BCnkende>
+        geo:lat       51.5519 ;
+        geo:long      7.20861 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Zentralstadion
+        geo:lat       51.3458 , "51.3458"^^xsd:float ;
+        geo:long      "12.3482"^^xsd:float , 12.3482 , "12.3481"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Veltins-Arena
+        geo:lat       "51.5545"^^xsd:float , 51.5545 , "51.5544"^^xsd:float ;
+        geo:long      "7.06759"^^xsd:float , "7.0675"^^xsd:float , 7.06759 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_am_Brentanobad
+        geo:lat       50.125 , "50.125"^^xsd:float ;
+        geo:long      "8.621"^^xsd:float , 8.621 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Deutsches_Stadion_%28Berlin%29>
+        geo:lat       52.5147 ;
+        geo:long      13.2392 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Embdena-Stadion
+        geo:lat       53.3792 , "53.3792"^^xsd:float ;
+        geo:long      "7.20333"^^xsd:float , 7.20333 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Eilenriedestadion
+        geo:lat       52.3766 ;
+        geo:long      9.7729 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Waldstadion_an_der_Kaiserlinde
+        geo:lat       49.3186 ;
+        geo:long      7.12167 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:GAGFAH-Arena  geo:lat  48.2231 ;
+        geo:long      9.02667 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:VfL_Stadium  geo:lat  52.4253 ;
+        geo:long      10.7994 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Grotenburg_Stadion
+        geo:lat       51.3389 ;
+        geo:long      6.60361 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Ostragehege  geo:lat  51.0689 ;
+        geo:long      13.7131 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/BZA_Raumerstra%C3%9Fe>
+        geo:lat       51.4512 ;
+        geo:long      6.95816 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Heinrich_Germer_Stadium
+        geo:lat       "52.1056"^^xsd:float , 52.1056 ;
+        geo:long      11.6008 , "11.6008"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Auestadion  geo:lat  "51.2986"^^xsd:float , 51.2986 ;
+        geo:long      "9.48417"^^xsd:float , 9.48417 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_Oberwerth
+        geo:lat       50.3306 , "50.3304"^^xsd:float ;
+        geo:long      "7.58658"^^xsd:float , 7.58667 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Osnatel-Arena
+        geo:lat       52.2808 , "52.2808"^^xsd:float ;
+        geo:long      "8.07111"^^xsd:float , 8.07111 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Sportpark_Aschheim
+        geo:lat       48.1619 ;
+        geo:long      11.7236 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:HSH_Nordbank_Arena
+        geo:lat       "53.5872"^^xsd:float , 53.5872 , "53.5869"^^xsd:float ;
+        geo:long      "9.89861"^^xsd:float , "9.89862"^^xsd:float , 9.89862 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Carl-Benz-Stadion
+        geo:lat       49.4794 , "49.4794"^^xsd:float ;
+        geo:long      8.5025 , "8.50222"^^xsd:float , "8.5025"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Volkswagen_Arena
+        geo:lat       52.4319 , "52.4319"^^xsd:float ;
+        geo:long      "10.8039"^^xsd:float , 10.8039 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Bruno-Plache-Stadion
+        geo:lat       51.3028 ;
+        geo:long      12.4192 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Hans-Walter_Wild_Stadion
+        geo:lat       49.9453 ;
+        geo:long      11.5869 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Friedrich_Ludwig_Jahn_Sportpark
+        geo:lat       52.5431 ;
+        geo:long      13.4053 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Mommsenstadion
+        geo:lat       "52.5011"^^xsd:float , 52.5011 ;
+        geo:long      13.2639 , "13.2639"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Fritz_Walter_Stadion
+        geo:lat       "49.4347"^^xsd:float , 49.4347 ;
+        geo:long      7.77646 , "7.77667"^^xsd:float , "7.77646"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Wildparkstadion
+        geo:lat       "49.02"^^xsd:float , 49.02 ;
+        geo:long      "8.41306"^^xsd:float , 8.41306 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Heinz-Steyer-Stadion
+        geo:lat       51.0411 , "51.0411"^^xsd:float ;
+        geo:long      13.7483 , "13.7483"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Wormatia-Stadion
+        geo:lat       49.6314 ;
+        geo:long      8.3358 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Georg-Melches-Stadion
+        geo:lat       51.4858 , "51.4858"^^xsd:float ;
+        geo:long      "6.97778"^^xsd:float , "6.9778"^^xsd:float , 6.97778 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Borussia-Park
+        geo:lat       51.1746 , "51.1746"^^xsd:float , "51.1029"^^xsd:float ;
+        geo:long      "6.38546"^^xsd:float , 6.38546 , "6.38544"^^xsd:float , "6.23767"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_am_Bruchweg
+        geo:lat       "50.0008"^^xsd:float , 50.0008 ;
+        geo:long      8.24556 , "8.24556"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Olympic_Stadium_%28Munich%29>
+        geo:lat       48.1731 , "48.1731"^^xsd:float ;
+        geo:long      "11.5464"^^xsd:float , 11.5467 , "11.5466"^^xsd:float , "11.5465"^^xsd:float , "11.5467"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Mercedes-Benz_Arena
+        geo:lat       "48.7923"^^xsd:float , "48.7922"^^xsd:float , 48.7923 ;
+        geo:long      "9.23194"^^xsd:float , 9.23203 , "9.23203"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Lohrheide-Stadion
+        geo:lat       51.4858 , "51.4858"^^xsd:float ;
+        geo:long      7.11861 , "7.11861"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Tivoli%2C_Aachen>
+        geo:lat       50.7897 , "50.7897"^^xsd:float ;
+        geo:long      6.09389 , "6.09389"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Rudolf-Harbig-Stadion
+        geo:lat       51.0403 , "51.0403"^^xsd:float ;
+        geo:long      13.7478 , "13.7478"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Gr%C3%BCnwalder_Stadion>
+        geo:lat       "48.1108"^^xsd:float , 48.1108 ;
+        geo:long      "11.5744"^^xsd:float , 11.5744 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Lohm%C3%BChle_Stadion>
+        geo:lat       53.8811 ;
+        geo:long      10.6689 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Ludwigspark_Stadion
+        geo:lat       49.2475 ;
+        geo:long      6.98417 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/New_Tivoli%2C_Aachen>
+        geo:lat       50.7933 , "50.7933"^^xsd:float ;
+        geo:long      6.09722 , "6.09722"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Millerntor-Stadion
+        geo:lat       "53.5544"^^xsd:float , 53.5544 ;
+        geo:long      "9.96778"^^xsd:float , 9.96778 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_am_Halberg
+        geo:lat       50.16 ;
+        geo:long      8.18389 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Jahnstadion  geo:lat  "49.0156"^^xsd:float , 49.0156 ;
+        geo:long      12.0739 , "12.0739"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Grugastadion  geo:lat  51.424 ;
+        geo:long      6.994 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Playmobil-Stadion
+        geo:lat       49.4869 , "49.4869"^^xsd:float ;
+        geo:long      10.9992 , "10.9992"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Jahnstadion_%28G%C3%B6ttingen%29>
+        geo:lat       51.5192 ;
+        geo:long      9.92639 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:PCC-Stadion  geo:lat  51.462 ;
+        geo:long      6.701 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Olympic_Stadium_%28Berlin%29>
+        geo:lat       "52.5147"^^xsd:float , "52.5148"^^xsd:float , 52.5147 , "52.5144"^^xsd:float , "52.5146"^^xsd:float ;
+        geo:long      "13.2395"^^xsd:float , "13.2392"^^xsd:float , 13.2394 , "13.2394"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Impuls_Arena  geo:lat  "48.3225"^^xsd:float , 48.3225 ;
+        geo:long      "10.8822"^^xsd:float , 10.8822 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Scholz-Arena  geo:lat  48.8406 ;
+        geo:long      10.0722 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Erzgebirgsstadion
+        geo:lat       50.5978 , "50.5975"^^xsd:float ;
+        geo:long      12.7111 , "12.7111"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/S%C3%BCdweststadion>
+        geo:lat       "49.4683"^^xsd:float , 49.4683 ;
+        geo:long      "8.44139"^^xsd:float , 8.44139 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Zentralstadion_%281956%29>
+        geo:lat       51.3458 ;
+        geo:long      12.3482 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Nattenberg_Stadion
+        geo:lat       "51.2078"^^xsd:float , 51.2078 ;
+        geo:long      "7.61917"^^xsd:float , 7.61917 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:BayArena  geo:lat  51.0383 , "51.0383"^^xsd:float ;
+        geo:long      7.00221 , "7.00221"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Allianz_Arena
+        geo:lat       "48.2186"^^xsd:float , "48.2188"^^xsd:float , 48.2188 , "48.2192"^^xsd:float ;
+        geo:long      11.6248 , "11.6244"^^xsd:float , "11.6248"^^xsd:float , "11.6247"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Wedaustadion  geo:lat  51.409 ;
+        geo:long      6.77866 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Stadion_der_Freundschaft_%28Gera%29>
+        geo:lat       50.8797 ;
+        geo:long      12.0672 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Coface_Arena  geo:lat  49.9842 , "49.9842"^^xsd:float ;
+        geo:long      8.22417 , "8.22417"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Frankfurter_Volksbank_Stadion
+        geo:lat       50.1281 , "50.1281"^^xsd:float ;
+        geo:long      "8.72306"^^xsd:float , "8.72333"^^xsd:float , 8.72333 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Frankenstadion
+        geo:lat       49.4261 , "49.4264"^^xsd:float , "49.4261"^^xsd:float ;
+        geo:long      11.1258 , "11.1258"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Bielefelder_Alm
+        geo:lat       "52.0314"^^xsd:float , 52.0314 ;
+        geo:long      "8.51694"^^xsd:float , 8.51694 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Stadion_An_der_Alten_F%C3%B6rsterei>
+        geo:lat       "52.4572"^^xsd:float , 52.4572 ;
+        geo:long      13.5681 , "13.5681"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:ALNO-Arena  geo:lat  47.9184 ;
+        geo:long      9.26195 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Stadion_B%C3%A4uminghausstra%C3%9Fe>
+        geo:lat       51.4819 ;
+        geo:long      7.00677 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Commerzbank-Arena
+        geo:lat       "50.0686"^^xsd:float , "50.0689"^^xsd:float , 50.0686 ;
+        geo:long      "8.64528"^^xsd:float , 8.64546 , "8.64546"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:AWD-Arena  geo:lat  52.3601 , "52.36"^^xsd:float , "52.3601"^^xsd:float ;
+        geo:long      "9.7312"^^xsd:float , "9.7311"^^xsd:float , "9.73111"^^xsd:float , 9.7312 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_Rote_Erde
+        geo:lat       "51.4925"^^xsd:float , 51.4925 ;
+        geo:long      "7.45444"^^xsd:float , 7.45444 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Parkstadion  geo:lat  51.5592 , "51.5592"^^xsd:float ;
+        geo:long      "7.06667"^^xsd:float , 7.06667 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Bieberer_Berg_Stadion
+        geo:lat       50.0944 , "50.0944"^^xsd:float ;
+        geo:long      8.79861 , "8.79861"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:DKB-Arena  geo:lat  "54.0849"^^xsd:float , 54.0849 ;
+        geo:long      "12.0952"^^xsd:float , 12.0952 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Generali_Sportpark
+        geo:lat       48.0736 , "48.0736"^^xsd:float ;
+        geo:long      "11.6156"^^xsd:float , 11.6156 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Niederrheinstadion
+        geo:lat       51.4936 , "51.4936"^^xsd:float ;
+        geo:long      6.85444 , "6.85444"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:MDCC-Arena  geo:lat  52.1256 , "52.1256"^^xsd:float ;
+        geo:long      11.6708 , "11.6708"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:MSV-Arena  geo:lat  51.409 , "51.409"^^xsd:float ;
+        geo:long      6.77866 , "6.77866"^^xsd:float , "6.77864"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:BRITA-Arena  geo:lat  50.0711 , "50.0711"^^xsd:float ;
+        geo:long      8.25669 , "8.25669"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Wacker_Arena  geo:lat  "48.1789"^^xsd:float , 48.1789 ;
+        geo:long      "12.8364"^^xsd:float , 12.8364 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/B%C3%B6kelbergstadion>
+        geo:lat       51.2089 , "51.2089"^^xsd:float ;
+        geo:long      "6.43956"^^xsd:float , 6.43956 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Sportforum_Hohensch%C3%B6nhausen>
+        geo:lat       "52.5333"^^xsd:float , 52.5406 ;
+        geo:long      13.4828 , "13.4667"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+<http://dbpedia.org/resource/Georg-Ga%C3%9Fmann-Stadion>
+        geo:lat       50.7978 , "50.7978"^^xsd:float ;
+        geo:long      8.7546 , "8.7546"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Wersestadion  geo:lat  51.7533 , "51.7533"^^xsd:float ;
+        geo:long      7.905 , "7.905"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Rheinstadion  geo:lat  51.2603 , "51.2603"^^xsd:float ;
+        geo:long      "6.73417"^^xsd:float , 6.73417 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Paul_Greifzu_Stadium
+        geo:lat       51.8239 , "51.8239"^^xsd:float ;
+        geo:long      12.2517 , "12.2517"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Mathias-Stinnes-Stadion
+        geo:lat       51.5236 ;
+        geo:long      7.00889 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:PGW_Arena  geo:lat  52.2764 ;
+        geo:long      7.91667 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Esprit_Arena  geo:lat  "51.2616"^^xsd:float , 51.2616 , "51.2617"^^xsd:float ;
+        geo:long      "6.7332"^^xsd:float , 6.7332 , "6.73306"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Weserstadion  geo:lat  53.0664 , "53.0664"^^xsd:float ;
+        geo:long      8.83763 , "8.83763"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:RheinEnergieStadion
+        geo:lat       "50.9336"^^xsd:float , "50.9335"^^xsd:float , 50.9335 ;
+        geo:long      6.875 , "6.875"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Waldaustadion_Stuttgart
+        geo:lat       48.7539 ;
+        geo:long      9.18833 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Jadestadion  geo:lat  53.5347 ;
+        geo:long      8.09806 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Ruhrstadion  geo:lat  51.4899 , "51.4899"^^xsd:float ;
+        geo:long      "7.23654"^^xsd:float , 7.23654 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Ernst-Abbe-Sportfeld
+        geo:lat       "50.9158"^^xsd:float , 50.9161 , "50.9161"^^xsd:float ;
+        geo:long      11.5831 , "11.5831"^^xsd:float , "11.5828"^^xsd:float ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Ernst_Grube_Stadium
+        geo:lat       "52.1267"^^xsd:float , 52.1267 ;
+        geo:long      "11.6714"^^xsd:float , 11.6714 ;
+        skos:subject  ns4:Football_venues_in_Germany .
+
+dbpedia:Stadion_der_Freundschaft
+        geo:lat       "51.7514"^^xsd:float , 51.7514 ;
+        geo:long      "14.3456"^^xsd:float , 14.3456 ;
+        skos:subject  ns4:Football_venues_in_Germany .

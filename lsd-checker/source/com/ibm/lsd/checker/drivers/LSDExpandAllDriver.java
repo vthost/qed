@@ -20,13 +20,13 @@ import kodkod.instance.TupleSet;
 
 public class LSDExpandAllDriver extends LSDExpanderBase {
 
-	public LSDExpandAllDriver(String queryFile, boolean minimal) {
-		super(queryFile, minimal);
+	public LSDExpandAllDriver(String queryFile, boolean minimal, String dataDir) {
+		super(queryFile, minimal, dataDir);
 	}
 
 	public static void main(String[] args) throws Exception {
 		main(args[0], (String s) -> { 
-			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Boolean.parseBoolean(args[1])); 
+			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Boolean.parseBoolean(args[1]), args[2]); 
 			AllPaths paths = exp.new AllPaths();
 			exp.mainLoop(paths); });
 	}

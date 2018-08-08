@@ -1,0 +1,908 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "imdb_id" , "uriFB" , "id" ;
+  rs:size            "100"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "0073454"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000574a69> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Night_That_Panicked_America> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0423310"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000bf2f81> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Syrian_Bride> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0114496"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000df2259> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Something_to_Talk_About_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0453047"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000055d6547> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Elsa_y_Fred> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0279250"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000bfc1d3> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Murder_on_the_Orient_Express_%282001_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0483934"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000046c32be> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Offers> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0056480"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d1853> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sherlock_Holmes_and_the_Deadly_Necklace> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0108289"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000004c9089> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Flirting_Scholar> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0288424"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000047b2b0a> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/El_Amor_y_el_espanto> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0088889"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000029b973> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Cat%27s_Eye_%281985_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0047041"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d28c9> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Gorilla_at_Large> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0093565"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000ef261> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Moonstruck> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1068251"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b94a36> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Hantu_Jeruk_Purut> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0119731"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000007f2f65> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Murder_at_1600> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0041746"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000220a13> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Pinky_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0392728"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000004239cc> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Roundhay_Garden_Scene> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0110157"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000e06115> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Iron_Will> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0807952"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000466d93a> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Kalteva_torni> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0347332"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000d88f3c> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Khakee> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0057078"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000778a33> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Whip_and_the_Body> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0179761"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000009642ff> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Demolition_University> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0021984"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000047e3796> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Hush_Money> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0874952"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000005aad54c> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/My_Love_%282006_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0033187"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000047f1200> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tugboat_Annie_Sails_Again> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1010448"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000056a1c17> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Paano_Kita_Iibigin> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0045891"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003a978b> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/How_to_Marry_a_Millionaire> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0034930"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000560e5f4> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Junior_G-Men_of_the_Air> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0084904"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003781ae> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Wild_Style> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0038948"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000148c2d> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sister_Kenny> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0307681"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000569510> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/I_Not_Stupid> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0400426"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000a0fb51> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Far_Cry_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0093565"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://sw.opencyc.org/concept/Mx4rvrb3jJwpEbGdrcN5Y29ycA> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Moonstruck> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0118747"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000018517f> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Blues_Brothers_2000> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0053715"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000007517f3> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Cimarron_%281960_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0244149"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000466462b> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Princess_Clementina> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0077869"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000021ae0e> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Lord_of_the_Rings_%281978_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0123010"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000055be276> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Chimbela> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0101863"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000467d17d> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Favour%2C_the_Watch_and_the_Very_Big_Fish> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0106941"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000007b1679> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/For_Love_or_Money_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0113926"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000865de3> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Naked_Souls> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0087844"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000004624d26> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/One_Night_Stand_%281984_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0137455"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000005af6f92> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dastak> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0448154"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000008f48b1> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tirant_lo_Blanc_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0217355"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000a4c6ff> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dancing_at_the_Blue_Iguana> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0034912"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000004629917> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Japanese_Relocation_%281942_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0057393"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000396658> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/PT_109_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0095145"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000a7c526> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Feds> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0089853"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000583505> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Purple_Rose_of_Cairo> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0060182"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000002a9525> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Born_Free> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0062985"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000047b5207> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/For_Love_of_Ivy> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0807758"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000d43e0d> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Partner_%282007_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0097937"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://sw.opencyc.org/concept/Mx4rwGxo8ZwpEbGdrcN5Y29ycA> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/My_Left_Foot_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0017751"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000f3ea50> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Children_of_Divorce> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0051452"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000770c94> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Carry_On_Nurse> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0285879"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000067082d> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Passionada> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0119987"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000066beeb> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Real_Blonde> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0004545"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006eb4eda> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Rose_of_the_Rancho> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0120820"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000aa7171> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Senseless> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0061749"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001f91bb> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Happiest_Millionaire> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0097937"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000efb5b> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/My_Left_Foot_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0064643"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000372fe2> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Libertine_%281969_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0073580"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000006c1716> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Passenger_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0087803"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000038d452> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Nineteen_Eighty-Four_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0109361"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000abc22> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Cabin_Boy> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0221570"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000087e9a2> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Speak_White> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0006145"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006b72d16> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/That_Little_Band_of_Gold> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0056583"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000d47b05> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tiara_Tahiti> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0097965"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003df519> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/New_York_Stories> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0080491"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000018a183> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Caligula_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0020059"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000005591fe4> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_King_of_the_Kongo> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0151150"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000005d1842> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Josh_%282000_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0023300"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000004795afa> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/On_the_Loose_%281931_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0077834"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000863e1f> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Laserblast> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0428914"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000047df363> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/One_Night_with_Blue_Note> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0111440"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000875efc> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/To_Die_For_%281994_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0020438"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000011d02ec> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Speakeasy_%281929_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0418038"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000039e2f4> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Outfoxed> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0345841"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000007684dd> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Rainbow_Bird_and_Monster_Man> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0090180"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003ce42b> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/To_Live_and_Die_in_L.A._%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0067116"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000ab0c4> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_French_Connection_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0069974"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000f353e6> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Digby%2C_the_Biggest_Dog_in_the_World> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0102798"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000019e2ea> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Robin_Hood:_Prince_of_Thieves> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0239147"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000169bf2> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Totally_Minnie> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0814175"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000c73c89> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Knight_of_the_Living_Dead> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0086551"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000222921> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Confidentially_Yours> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0067570"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003766be> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Tales_of_Beatrix_Potter> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0948542"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000006bb647d> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Timboektoe> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0040603"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000077456d> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Mom_and_Dad> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0075177"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000002f4c53> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sebastiane> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0308671"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000046b2a9b> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Tycoon_%282002_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0050208"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000e80105> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Boy_on_a_Dolphin> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1198349"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000007663354> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Parugu> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0062203"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000075de9b> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Riot_on_Sunset_Strip> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0122574"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000b3d63f6> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Cry_%281963_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0107207"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000fa86c> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/In_the_Name_of_the_Father_%28film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0081190"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000d5786e> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Mr._Krueger%27s_Christmas> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0188030"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000c16861> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Butterfly_%281999_film%29> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0037567"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000005577e5a> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/La_Cabalgata_del_Circo> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0074937"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000032f6ae> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Murder_by_Death> ;
+                          rs:variable  "id"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "0058529"@en ;
+                                     rs:variable  "imdb_id"
+                                   ] ;
+            rs:binding  [ rs:value     <http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000262ba3> ;
+                          rs:variable  "uriFB"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Robin_and_the_7_Hoods> ;
+                          rs:variable  "id"
+                        ] ]
+] .

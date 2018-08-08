@@ -1,0 +1,1 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>SELECT DISTINCT ?artist WHERE {  ?artist <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Alternative_rock> .  ?artist <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Post-punk> .  ?artist <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Rock_music> .  } 

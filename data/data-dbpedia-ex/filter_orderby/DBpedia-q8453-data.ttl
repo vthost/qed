@@ -1,0 +1,135 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:The_Last_Samurai
+        a                 ns2:Film ;
+        rdfs:comment      "The Last Samurai is a 2003 American epic drama film directed and co-produced by Edward Zwick, who also co-wrote the screenplay based on a story by John Logan. The film was inspired by a project developed by writer and director Vincent Ward. Ward became executive producer on the film – working in development on it for nearly four years and after approaching several directors (Coppola, Weir), he interested Edward Zwick. The film went ahead with Zwick and was shot in Ward’s native New Zealand."@en ;
+        rdfs:label        "The Last Samurai"@en ;
+        ns2:releaseDate   "2003-12-05"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:All_the_Right_Moves
+        a                 ns2:Film ;
+        rdfs:comment      "All the Right Moves is a 1983 drama film directed by Michael Chapman and starring Tom Cruise, Craig T. Nelson, Lea Thompson, Chris Penn, and Gary Graham. It was filmed on location during WPIAL football season in Johnstown, Pennsylvania, and Pittsburgh."@en ;
+        rdfs:label        "All the Right Moves"@en ;
+        ns2:releaseDate   "1983-10-21"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Eyes_Wide_Shut
+        a                 ns2:Film ;
+        rdfs:comment      "Plačiai užmerktos akys (angl. Eyes Wide Shut) - paskutinis režisieriaus Stanley Kubrick filmas, išleistas 1999 m. , jau po jo mirties. Paplitusios dvi nuomonės: kad Kubrikas mirė vos pabaigęs jį redaguoti, ir kad režisierius mirė nespėjęs pabaigti redaguoti ir filmas buvo išleistas nebaigtas ar bent jau ne taip baigtas, kaip jį norėtų matyti režisierius (dalis fanų ir kritikų). Plačiai užmerktos akys pasakoja apie jauną porą - perspektyvų gydytoją William Harford ir jo žmoną Alice."@lt , "Очи широко затворени е американска драма од 1999 година, во режија на Стенли Кјубрик, кој исто така се јавува и како продуцент. Филмот е базиран на новелата Новела за сонот од Артур Шницлер. Овој филм е воедно и последниот филм на Кјубрик. Приказната е сместена во Њујорк, и ја следи неверојатната авантура на д-р Бил Харфорд, кој е шокиран откако неговата сопруга Алис, му кажува дека размислувала за неверство пред една година."@mk , "Eyes Wide Shut is a 1999 movie directed by Stanley Kubrick and starring Nicole Kidman and Tom Cruise."@en , "Eyes Wide Shut on Stanley Kubrickin viimeiseksi jäänyt elokuva, joka perustuu Arthur Schnitzlerin romaaniin Traumnovelle. Päähenkilöt, avioparia esittävät Tom Cruise ja Nicole Kidman, olivat kuvausten aikana naimisissa myös oikeasti. Kubrick kuoli pian saatuaan elokuvan leikkaustyön valmiiksi. Elokuva sai ristiriitaisen vastaanoton. Lääkäri Bill Harford (Tom Cruise) joutuu suunniltaan, kun hänen vaimonsa (Nicole Kidman) kertoo ajatelleensa pettämistä."@fi , "Eyes Wide Shut, amerikansk/brittisk film skapad av Stanley Kubrick från 1999."@sv , "Eyes Wide Shut è un film del 1999, diretto da Stanley Kubrick. Ultima opera del regista, tratto dal romanzo Doppio sogno di Arthur Schnitzler, uscì postumo negli Stati Uniti d'America il 16 luglio 1999 e fu presentata in anteprima europea alla 56ª Mostra internazionale d'arte cinematografica di Venezia il 1º settembre 1999."@it , "大開眼戒（Eyes Wide Shut）是一部1999年的電影，由史坦利·庫柏力克擔任導演、製片以及共同劇作。影片的劇情基礎來自亞瑟·史尼茲勒（Arthur Schnitzler）的小說《綺夢春色》（Traumnovelle）。主要演員為湯姆·克魯斯與妮可·基嫚。這是庫柏力克的最後一部作品。馬丁·斯科西斯曾表示這是他最喜愛的四部1990年代電影之一。"@zh , "Eyes Wide Shut er en britisk-amerikansk erotisk thriller-film fra 1999 regissert av Stanley Kubrick, med Tom Cruise og Nicole Kidman i hovedrollene. Den er basert på Traumnovelle av Arthur Schnitzler. Kubrick døde bare få dager etter at filmen var ferdig."@nn , "«З широко́ заплю́щеними очи́ма» (англ. Eyes Wide Shut) — повнометражний художній фільм спільного виробництва США і Великої Британії, режисера і продюсера Стенлі Кубрика; екранізація повісті австрійського письменника Артура Шніцлера «Оповідання сну»."@uk , "Eyes Wide Shut es el título del décimo tercer largometraje dirigido por Stanley Kubrick. Fue protagonizado por Tom Cruise y Nicole Kidman y estrenado en 1999. Eyes Wide Shut fue la última película de Kubrick así como su obra póstuma, ya que el director murió pocos días antes de poder acabar el montaje definitivo. Está basada en la novela Relato soñado de Arthur Schnitzler y su guión fue escrito por el mismo Kubrick y Frederic Raphael."@es , "『アイズ ワイド シャット』（Eyes Wide Shut）は1999年製作のアメリカ映画である。スタンリー・キューブリック監督の遺作となった。 原作はアルトゥール・シュニッツラーの『夢小説』（1926年）。"@ja , "עיניים עצומות לרווחה הוא מותחן המספר את סיפורם של זוג נשוי בניו יורק. הסרט הוא יצירתו הקולנועית האחרונה של הבמאי המפורסם סטנלי קובריק. הסרט, בכיכובם של טום קרוז וניקול קידמן, מסתמך על הנובלה הווינאית \"סיפור חלום\" מאת המחזאי ארתור שניצלר. קובריק, שאף הפיק את הסרט והשתתף בכתיבתו, נפטר בסמוך לסיום שלבי העריכה. ראה אור בקיץ 1999. הסרט מביא את סיפורם של ד\"ר ביל הרפורד (טום קרוז) ואשתו אליס (ניקול קידמן), זוג יפה ומצליח, המתגוררים עם בתם הקטנה בסנטרל פארק וסט שבמנהטן."@iw , "Oczy szeroko zamknięte (ang. Eyes Wide Shut) – thriller erotyczny z 1999 roku w reżyserii Stanleya Kubricka. Film nakręcono na podstawie powieści Arthura Schnitzlera."@pl , "Eyes Wide Shut [ˌaɪz ˌwaɪd ˈʃʌt] ist der letzte vollendete Film des US-amerikanischen Filmregisseurs Stanley Kubrick, der nur zwei Tage nach Fertigstellung des Schnittes im Jahr 1999 verstarb. In den Hauptrollen spielen Nicole Kidman und Tom Cruise, in Nebenrollen sind der Regisseur Sydney Pollack, der deutsche Schauspieler Sky du Mont sowie die US-amerikanische Schauspielerin Leelee Sobieski zu sehen."@de , "Spalující touha je ponurý eroticko-mysteriózní film s prvky epiky v britsko-americké koprodukci. Jedná se o poslední snímek režiséra a producenta Stanley Kubricka, který se již premiéry v kinech nedožil. V hlavních rolích se představil herecký manželský pár Tom Cruise a Nicole Kidman."@cs , "Masked ball es un canción de la compositora Jocelyn Pook, para la película Eyes Wide Shut de Stanley Kubrick. Jocelyn Pook es una reconocida compositora británica que combina la interpretación con la viola, la composición de bandas sonoras para el cine y la música para televisión, teatro o danza."@es , "Eyes Wide Shut is a 1999 American/British neo-noir drama film directed, produced and co-written by Stanley Kubrick, based on the 1926 novella Traumnovelle by Arthur Schnitzler. It was Kubrick's last film before his death. The slightly surreal story, set in and around New York City, follows the sexually charged adventures of Dr. Bill Harford, who is shocked by the revelation by his wife, Alice, that she had contemplated an affair a year earlier."@en , "Gözleri Tamamen Kapalı (Eyes Wide Shut), Arthur Schnitzler'in aynı adlı eserinden uyarlanan ve yönetmenliğini Stanley Kubrick'in yaptığı 1999 yapımı bir Hollywood filmidir."@tr , "چشمان کاملاً بسته فیلمی در گونهٔ معمایی به کارگردانی استنلی کوبریک و محصول سال ۱۹۹۹ است. فیلم پس از مرگ کوبریک در سال 1999 اکران عمومی شد."@fa , "Eyes Wide Shut er en amerikansk film fra 1999. Filmen er instrueret af Stanley Kubrick og har Tom Cruise og Nicole Kidman, som på tidspunktet for optagelserne var gift, i hovedrollerne. Filmen tog mere end et år at optage og var Stanley Kubricks sidste, han døde 4 dage efter han havde afleveret den færdigklippede film. Filmen er baseret på bogen Traumnovelle af Arthur Schnitzler."@da , "Eyes Wide Shut (De Olhos Bem Fechados no Brasil e em Portugal, embora em Portugal também apareça com o título original), é um filme de 1999, dirigido por Stanley Kubrick e estrelado pelo então casal-na-vida-real Nicole Kidman e Tom Cruise. Ele é baseado no conto Traumnovelle, de Arthur Schnitzler. Este é o último filme de Kubrick, que morreu pouco depois do fim da edição. Uma das canções do filme é a \"Valsa 2\" da Suíte Jazz 2 de Shostakovitch."@pt , "«С широко́ закры́тыми глаза́ми» (англ. «Eyes Wide Shut») — кинофильм режиссёра Стэнли Кубрика 1999 года по новелле Артура Шницлера «Траумновелле»."@ru , "Eyes Wide Shut is een neo noir psychologische thriller van Stanley Kubrick met in de hoofdrollen: Tom Cruise (Bill Harford), Nicole Kidman (Alice Harford) en Sydney Pollack (Ziegler). Eyes Wide Shut is gebaseerd op Traumnovelle van Arthur Schnitzler."@nl , "Eyes Wide Shut (Les yeux grands fermés au Québec) est le dernier long métrage de Stanley Kubrick, sorti en 1999. Adaptation cinématographique de La Nouvelle rêvée de l'écrivain autrichien Arthur Schnitzler à laquelle Kubrick a voulu rester fidèle. Le film met en scène le couple formé de Tom Cruise et Nicole Kidman dans les rôles principaux."@fr ;
+        rdfs:label        "С широко закрытыми глазами"@ru , "Із широко заплющеними очима"@uk , "Oczy szeroko zamknięte"@pl , "Plačiai užmerktos akys"@lt , "Spalující touha"@cs , "大开眼戒"@zh , "چشمان کاملاً بسته"@fa , "Gözleri Tamamen Kapalı"@tr , "Masked ball"@es , "Очи широко затворени"@mk , "アイズ・ワイド・シャット"@ja , "Eyes Wide Shut"@fr , "Eyes Wide Shut"@nn , "Eyes Wide Shut"@sv , "De Olhos Bem Fechados"@pt , "Eyes Wide Shut"@nl , "Eyes Wide Shut"@es , "Eyes Wide Shut"@fi , "Eyes Wide Shut"@it , "Eyes Wide Shut"@de , "Eyes Wide Shut"@da , "Eyes Wide Shut"@en , "עיניים עצומות לרווחה"@iw ;
+        ns2:releaseDate   "1999-07-16"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/A_Few_Good_Men_%28film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "A Few Good Men is a 1992 drama film, directed by Rob Reiner, and starring Tom Cruise, Jack Nicholson, and Demi Moore. It was based on a play of the same name by Aaron Sorkin. A courtroom drama, the film revolves around the trial of two US Marines charged with the murder of a fellow Marine and the tribulations of their lawyer, Daniel Kaffee (Cruise), as he prepares a case to defend his clients."@en ;
+        rdfs:label        "A Few Good Men (film)"@en ;
+        ns2:releaseDate   "1992-12-11"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:The_Color_of_Money
+        a                 ns2:Film ;
+        rdfs:comment      "The Color of Money is a 1984 novel by American writer Walter Tevis, and a 1986 film semi-adaptation by the same title, continuing the story of pool hustler and stakehorse Edward \"Fast Eddie\" Felson, with Paul Newman reprising his role from the The Hustler (1959) and its film adaptation (1961)."@en ;
+        rdfs:label        "The Color of Money"@en ;
+        ns2:releaseDate   "1986-10-17"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Lions_for_Lambs
+        a                 ns2:Film ;
+        rdfs:comment      "Lions for Lambs is a 2007 American drama film about the connection between a platoon of United States soldiers in Afghanistan, a U.S. senator, a reporter, and a California college professor. It stars Tom Cruise, Meryl Streep, and Robert Redford. It was the first Cruise/Wagner Productions film since the company joined with United Artists subsequent to Cruise's falling out with Paramount Pictures in 2006."@en ;
+        rdfs:label        "Lions for Lambs"@en ;
+        ns2:releaseDate   "2007-11-09"^^xsd:date , "2007-11-08"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Rain_Man  a       ns2:Film ;
+        rdfs:comment      "Rain Man is a 1988 drama film by Barry Morrow and Ronald Bass and directed by Barry Levinson. It tells the story of an abrasive and selfish yuppie, Charlie Babbitt, who discovers that his estranged father has died and bequeathed all of his multimillion-dollar estate to his other son, Raymond, a man with autism of whose existence Charlie was unaware. The film stars Tom Cruise as Charlie Babbitt, Dustin Hoffman as Raymond Babbitt, and Valeria Golino as Charlie's girlfriend, Susanna."@en ;
+        rdfs:label        "Rain Man"@en ;
+        ns2:releaseDate   "1988-12-16"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Top_Gun  a        ns2:Film ;
+        rdfs:comment      "Top Gun is a 1986 American action film directed by Tony Scott, and produced by Don Simpson and Jerry Bruckheimer, in association with the Paramount Pictures company. The screenplay was written by Jim Cash and Jack Epps, Jr. , and was inspired by the article \"Top Guns\" written by Ehud Yonay for the California Magazine. This film stars Tom Cruise, Kelly McGillis, Anthony Edwards, Val Kilmer, Meg Ryan, and Tom Skerritt."@en ;
+        rdfs:label        "Top Gun"@en ;
+        ns2:releaseDate   "1986-05-16"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Far_and_Away  a   ns2:Film ;
+        rdfs:comment      "Far and Away is a 1992 adventure-drama-romance film directed by Ron Howard from a script by Howard and Bob Dolman, and stars Tom Cruise and Nicole Kidman. It was photographed in Panavision System 65 by Mikael Salomon, with a music score by John Williams. It was screened out of competition at the 1992 Cannes Film Festival. Cruise and Kidman play Irish immigrants seeking their fortune in 1890s America, eventually taking part in the Land Run of 1893."@en ;
+        rdfs:label        "Far and Away"@en ;
+        ns2:releaseDate   "1992-05-22"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/Cocktail_%28film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "Cocktail is a drama film released by Touchstone Pictures in 1988. It stars Tom Cruise as a talented and ambitious bartender who aspires to working in business and finds love while working at a bar in Jamaica. The original music score was composed by Maurice Jarre."@en ;
+        rdfs:label        "Cocktail (film)"@en ;
+        ns2:releaseDate   "1988-07-29"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/Magnolia_%28film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "Magnolia is a 1999 American drama film, written and directed by Paul Thomas Anderson, and starring John C. Reilly, Tom Cruise, Julianne Moore, Philip Seymour Hoffman, William H. Macy, and Jeremy Blackman. It interweaves nine separate yet connected storylines, about the interactions among several people during one day in the San Fernando Valley, in Los Angeles, California. The film was distributed by New Line Cinema. Magnolia was a critical success in 1999."@en ;
+        rdfs:label        "Magnolia (film)"@en ;
+        ns2:releaseDate   "1999-12-25"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/Collateral_%28film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "Collateral is a 2004 crime thriller film starring Tom Cruise and Jamie Foxx. It was directed by Michael Mann and written by Stuart Beattie. The film is set in Los Angeles, California. In an HBO movie review, director Michael Mann stated that the film takes place on the night of January 24 to 25, 2004 from 6:30 PM to 5:40 AM. Foxx was widely praised for his performance, and was nominated for the Academy Award for Best Supporting Actor."@en ;
+        rdfs:label        "Collateral (film)"@en ;
+        ns2:releaseDate   "2004-08-06"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/Losin%27_It>
+        a                 ns2:Film ;
+        rdfs:comment      "Losin' It is a 1983 comedy film starring Tom Cruise, Shelley Long, Jackie Earle Haley, and John Stockwell. The film is directed by Curtis Hanson. It was filmed largely in Calexico, California."@en ;
+        rdfs:label        "Losin' It"@en ;
+        ns2:releaseDate   "1983-04-08"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Vanilla_Sky  a    ns2:Film ;
+        rdfs:comment      "Vanilla Sky is a 2001 American psychological thriller film directed by Cameron Crowe. The film is a \"very close remake\" of the 1997 Spanish film Open Your Eyes (Abre los ojos), which was written by Alejandro Amenábar and Mateo Gil. Vanilla Sky stars Tom Cruise, Cameron Diaz, Penélope Cruz (a reprise of her performance in Abre los ojos), Jason Lee, and Kurt Russell. The film is considered to be a cult classic."@en , "Vanilla Sky, amerikansk film, drama/sci-fi/thriller, från 2002"@sv , "David Aames es un joven que tiene todo lo que un hombre puede desear: mujeres, dinero y poder. Hasta que un día conoce, durante su fiesta de cumpleaños, a una chica llamada Sofía Serrano de quien se enamora instantáneamente, apartando a Julianna Gianni, quien hasta ese momento creía que tenía una especie de relación amorosa garantizada con David. El encuentro con Sofia le hace ver a David la necesidad de asentarse y de cambiar su despilfarrador estilo de vida."@es , "Vanilla Sky er en amerikansk psykologisk thriller fra 2001, instrueret af Cameron Crowe."@da , "Ванильное небо (англ. Vanilla Sky) — голливудский римейк фильма Алехандро Аменабара «Открой глаза» (1997), снятый Камероном Кроу. Фильм берёт своё название с картины Клода Моне «Ванильное небо»"@ru , "Vanilla Sky (Un ciel couleur vanille au Québec) est un film américain de 2001, réalisé par Cameron Crowe."@fr , "Vanilla Sky és una pel·lícula estatunidenca del 2001 de thriller psicològic que ha sigut descrita per els crítics com \"una estranya barreja de ciència ficció, romanç, i realitat distorsionada\", Es tracta d'un remake de la pel·lícula espanyola \"Abre los ojos\" (1997), escrita per Alejandro Amenábar i Mateo Gil, aquesta nova producció és protagonitzada per Tom Cruise, Cameron Diaz, Penélope Cruz (qui també aparegué en la pel·lícula original en el mateix paper), Jason Llig, i Kurt Russell."@ca , "ונילה סקיי הוא סרט משנת 2001 בבימויו של קמרון קרואו. הסרט מבוסס ברובו על עלילת הסרט הספרדי מ-1997 \"פקח את עיניך\", אשר נכתב על ידי אלחנדרו אמנבר ומתאו חיל. בסרט מככבים טום קרוז, קאמרון דיאז, פנלופה קרוז (אשר מגלמת את אותה הדמות, סופיה, אשר גילמה בסרט \"פקח את עיניך\"), ג'ייסון לי, קורט ראסל ואלישיה ויט."@iw , "Vanilla Sky é um filme estadunidense de 2001, do gênero drama, com roteiro e direção de Cameron Crowe. O filme é uma refilmagem do filme espanhol Abre los ojos, de 1997, escrito e dirigido por Alejandro Amenábar e Mateo Gil."@pt , "Vanilla Sky is een film uit 2001 onder regie van Cameron Crowe. De productie is een Amerikaanse remake van de Spaanse film Abre los ojos (Open Your Eyes/Open je ogen) van regisseur Alejandro Amenábar. In beide speelt Penélope Cruz een hoofdrol als Sofía. Het titelnummer van Vanilla Sky van de hand van Paul McCartney werd genomineerd voor een Academy Award, een Golden Globe, een Grammy Award en een Golden Satellite Award."@nl , "Vanilla Sky – amerykański thriller z 2001 roku w reżyserii Camerona Crowe. Vanilla Sky to remake hiszpańskiego filmu Abre Los Ojos (polski tytuł Otwórz oczy) z roku 1997. Film był kręcony od 6 listopada 2000 do 19 marca 2001 w Nowym Jorku i Los Angeles"@pl , "Vanilinis dangus yra 2001 metais sukurtas amerikietiškas psichologinis trileris, kritikų apibūdintas kaip \"keistas mokslinės fantastikos, romantikos ir iškreiptos realybės derinys\" arba \"erotinis nuotykis, meilės istorija, komedija, paslaptis ir psichologinis trileris su doze mokslinės fantastikos\". Tai yra 1997 metų ispaniško filmo Atverk savo akis (Abre los Ojos) perdarymas."@lt , "Небо боје ваниле је филм из 2001. у режији Камерона Кроуа. Главне улоге: Том Круз, Камерон Дијаз и Курт Расел."@sr , "Ванила Скай е американски игрален филм от 2001 г. на режисьора Камерън Кроу. В него участват Том Круз, Пенелопе Крус, Камерън Диас, Джейсън Лий, Кърт Ръсел и други. Филмът е римейк на испанския Отвори очи от 1997 г. , на режисьора Алехандро Аменабар. Филмът е по сценарий на Матео Хил и Алехандро Аменабар."@bg , "Vanilla Sky è un film del 2001 diretto da Cameron Crowe, con Tom Cruise, Cameron Diaz e Penélope Cruz. Narra la vicenda di un giovane milionario accusato di omicidio. Il film è un remake del film spagnolo Apri gli occhi del 1997, scritto da Alejandro Amenábar e da Mateo Gil. L'attrice spagnola Penélope Cruz appare in entrambi i film interpretando lo stesso ruolo. Il titolo deriva dal quadro La Seine à Argenteuil di Monet, menzionato dal protagonista all'inizio del film."@it , "السماء الفانيللية فيلم أمريكي من إنتاج عام 2001، وهو من بطولة توم كروز ، وكاميرون دياز ، وبينيلوب كروز .. وتدور أحداثه في إطار رومانسي شيق ، يتحول إلى مزيج يثير التوتر والشعور بالغموض والرعب في آن واحد ، لكن سرعان ما تتكشف الحقائق المذهلة حول حياة بطل الفيلم دافيد آيمز ، وكونها حياة إفتراضية وأنها ما إلا مجرد جزء من مشروع شركة إل إي اختصار عبارة تمديد الحياة ، وهو من أفلام الخيال العلمي المثيرة للغاية ."@ar , "『バニラ・スカイ』(Vanilla Sky)は2001年のアメリカ映画である。 1997年のスペイン映画『オープン・ユア・アイズ』 （Abre Los Ojos）のリメイク作品。ストーリーはほぼ同じで、舞台をニューヨークに移しているが、『オープン…』でヒロインを演じたペネロペ・クルスが同じ役で出演している。"@ja , "Vanilla Sky, 2001 ABD yapımı psikolojik gerilim filmidir. Türkiye'de de birçok ülkede olduğu gibi özgün adıyla gösterime sunulmuştur."@tr , "Vanilla Sky ist ein US-amerikanisches Filmdrama von Cameron Crowe aus dem Jahre 2001. Es ist ein Remake von Alejandro Amenábars Film Abre los ojos von 1997."@de ;
+        rdfs:label        "Vanilinis dangus"@lt , "バニラ・スカイ"@ja , "Vanilla Sky (film)"@tr , "السماء الفانيللية (فيلم)"@ar , "Vanilla Sky"@de , "Vanilla Sky"@es , "Vanilla Sky"@ca , "Vanilla Sky"@pt , "Vanilla Sky"@sv , "Vanilla Sky"@it , "Vanilla Sky"@fr , "Vanilla Sky"@en , "Vanilla Sky"@nl , "Vanilla Sky"@pl , "Vanilla Sky"@da , "Ванила Скай"@bg , "Ванильное небо"@ru , "ונילה סקיי"@iw , "Небо боје ваниле"@sr ;
+        ns2:releaseDate   "2001-12-14"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/Born_on_the_Fourth_of_July_%28film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "Born on the Fourth of July is a 1989 film adaptation of the best selling autobiography of the same name by Vietnam War veteran Ron Kovic. Tom Cruise plays Kovic, in a performance that earned him his first Academy Award nomination. Oliver Stone (himself a Vietnam veteran) co-wrote the screenplay with Kovic, and also produced and directed the film."@en ;
+        rdfs:label        "Born on the Fourth of July (film)"@en ;
+        ns2:releaseDate   "1990-03-02"^^xsd:date , "1989-12-20"^^xsd:date , "1990-02-08"^^xsd:date , "1990-03-01"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Risky_Business
+        a                 ns2:Film ;
+        rdfs:comment      "Risky Business is a 1983 teen comedy-drama film written by Paul Brickman in his directorial debut. It is best known for being the film that launched Tom Cruise to stardom. The film also stars Rebecca De Mornay as Lana and Joe Pantoliano as Guido. It features Curtis Armstrong as Miles, Richard Masur as Rutherford, the Princeton University interviewer, and Bronson Pinchot as Barry."@en ;
+        rdfs:label        "Risky Business"@en ;
+        ns2:releaseDate   "1983-08-05"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/Valkyrie_%28film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "Valkyrie is a 2008 historical thriller film set in Nazi Germany during World War II. The film depicts the 20 July plot by German army officers to assassinate Adolf Hitler and to use the Operation Valkyrie national emergency plan to take control of the country. Valkyrie was directed by Bryan Singer under the American studio United Artists, and the film stars Tom Cruise as Colonel Claus von Stauffenberg, one of the key plotters."@en ;
+        rdfs:label        "Valkyrie (film)"@en ;
+        ns2:releaseDate   "2008-12-25"^^xsd:date , "2009-01-23"^^xsd:date , "2009-01-22"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+dbpedia:Days_of_Thunder
+        a                 ns2:Film ;
+        rdfs:comment      "Days of Thunder is an auto racing drama film released in 1990 by producers Don Simpson and Jerry Bruckheimer and director Tony Scott. The cast includes Tom Cruise, Nicole Kidman, Robert Duvall, Randy Quaid, Cary Elwes and Michael Rooker. The film also features appearances by real life racers, such as Rusty Wallace, Neil Bonnett, and Harry Gant. Commentator Dr. Jerry Punch, of ESPN, has a cameo appearance, as does co-producer Don Simpson."@en , "Days of Thunder is a movie about auto racing. It has Tom Cruise and Nicole Kidman in it."@en ;
+        rdfs:label        "Days of Thunder"@en ;
+        ns2:releaseDate   "1990-06-27"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .
+
+<http://dbpedia.org/resource/The_Firm_%281993_film%29>
+        a                 ns2:Film ;
+        rdfs:comment      "The Firm is a legal thriller film released in 1993, directed by Sydney Pollack, and starring Tom Cruise, Jeanne Tripplehorn, Gene Hackman, Ed Harris, Holly Hunter, Gary Busey, and David Strathairn. The film is based on the 1991 novel The Firm by author John Grisham. Holly Hunter was nominated for the 1994 Academy Award for Best Supporting Actress, but lost to her co-star in The Piano, Anna Paquin."@en ;
+        rdfs:label        "The Firm (1993 film)"@en ;
+        ns2:releaseDate   "1993-06-30"^^xsd:date ;
+        dbpprop:starring  dbpedia:Tom_Cruise .

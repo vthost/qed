@@ -1,0 +1,1 @@
+SELECT DISTINCT ?X ?dc_subject  WHERE {  { ?X <http://purl.org/dc/elements/1.1/creator> <http://data.semanticweb.org/person/abraham-bernstein> } UNION  { ?X <http://xmlns.com/foaf/0.1/maker> <http://data.semanticweb.org/person/abraham-bernstein> } .  ?X a <http://ruleml.org/ontology#PosterPaper> .  ?X <http://purl.org/dc/elements/1.1/subject> ?dc_subject .   } LIMIT 50

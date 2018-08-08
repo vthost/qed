@@ -1,0 +1,443 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "description_de" , "description_en" , "film" ;
+  rs:size            "50"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "A Scanner Darkly is a 2006 Animated film directed by Richard Linklater based on the novel of the same name by Philip K. Dick. The film tells the story of identity and deception in a near-future dystopia constantly monitored by intensive high-technology police surveillance in the midst of a drug addiction epidemic. To give the film its distinct look, the movie was filmed digitally and then animated using interpolated rotoscope over the original footage."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "A Scanner Darkly – Der dunkle Schirm ist ein US-amerikanischer Science-Fiction-Film von Richard Linklater aus dem Jahr 2006. Die Handlung beruht auf dem dystopischen Roman Der dunkle Schirm von Philip K. Dick aus dem Jahr 1977."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/A_Scanner_Darkly_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Permanent Record is a 1988 American drama film starring Keanu Reeves, Alan Boyce and Jennifer Rubin. It was filmed on location in Portland and Cannon Beach, Oregon."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "The Last Song ist ein 1988 in den USA unter der Regie von Marisa Silver entstandener Kinofilm. Der von Paramount produzierte Film ist ein sensibel inszeniertes Jugenddrama um Freundschaft und Selbstfindung."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Permanent_Record_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix Reloaded is a 2003 film written and directed by the Wachowski brothers. It is a sequel to The Matrix (1999)."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Matrix Reloaded ist die zweite von drei Folgen eines Science-Fiction-Films, der 1999 mit Matrix begann. Der dritte und letzte Teil heißt Matrix Revolutions."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Lake House is a 2006 American romantic drama film remake of the Korean motion picture Il Mare (2000). It was written by David Auburn, directed by Alejandro Agresti, and stars Keanu Reeves and Sandra Bullock as Alex Wyler and Kate Forster, respectively an architect living in 2004 and a doctor living in 2006. The two are introduced and share correspondence across the years by leaving letters in a mailbox at the lake house they have both lived in at separate points in time."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "The Lake House is de Titel vun en US-amerikaansch Filmdrama ut dat Johr 2006, in dat Sandra Bullock un Keanu Reeves de Hööftrullen speelt. In de USA keem de Film an’n 16. Juni 2006 in de Kinos. In Düütschland weer de Filmstart an’n 6. Juli 2006. De Film stellt en Remake dor vun den süüdkoreaanschen Film Siworae ut dat Johr 2000."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Lake_House_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix is a 1999 Australian/American science fiction-action film directed by Larry and Andy Wachowski; starring Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Joe Pantoliano, and Hugo Weaving. It was first released in the U.S. on March 31, 1999, and is the first installment in The Matrix series of films, comic books, video games, and animation."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "The Matrix is de Titel vun en US-amerikaanschen Science-Fiction- un Actionfilm vun de beiden Bröder Andy un Larry Wachowski. Na de överraschend groten weertschopplichen un künstlerischen Spood vun dissen Film is de Geschicht mit de beiden Kinofilmen The Matrix Reloaded un The Matrix Revolutions wieder maakt worrn. Butendem geev dat dat Anime-Projekt Animatrix un dat Reknerspeel Enter the Matrix, de all 2003 rutkamen sünd."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Life Under Water is a PBS' American Playhouse TV movie, starring Sarah Jessica Parker, Joanna Gleason and Keanu Reeves. It was written by Richard Greenberg and based on his play."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Life_Under_Water> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Bill &amp; Ted's Bogus Journey is a 1991 American comedy science fiction film, the sequel to Bill &amp; Ted's Excellent Adventure. Like the first film, it stars Keanu Reeves as Theodore \"Ted\" Logan and Alex Winter as Bill S. Preston Esq. The film's original working title was Bill &amp; Ted Go To Hell."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Bill &amp; Ted’s verrückte Reise in die Zukunft ist eine Science-Fiction-Komödie von Peter Hewitt aus dem Jahr 1991. Der ursprüngliche Titel des Films lautete Bill &amp; Ted Go to Hell – Bill &amp; Ted fahren zur Hölle. Der Film ist das Sequel von Bill &amp; Teds verrückte Reise durch die Zeit."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Bill_%26_Ted%27s_Bogus_Journey> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Feeling Minnesota is a 1996 American romantic comedy film, starring Keanu Reeves, Vincent D'Onofrio, Cameron Diaz, Tuesday Weld and Courtney Love. The name comes from the Soundgarden song \"Outshined\" from the album Badmotorfinger (\"I'm looking California, and feeling Minnesota\")."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Minnesota (Feeling Minnesota) ist ein US-amerikanischer Kinofilm aus dem Jahre 1996. Der Titel entstand aus dem Soundgarden Song Outshined Off („I'm looking California, and feeling Minnesota“)."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Feeling_Minnesota> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Dracula (also known as Bram Stoker's Dracula) is a 1992 horror-romance thriller produced and directed by Francis Ford Coppola, based on the novel Dracula by Bram Stoker. It stars Gary Oldman as Count Dracula and Winona Ryder as Mina Harker in an ensemble cast, also featuring Anthony Hopkins as Professor Abraham Van Helsing, Keanu Reeves as Jonathan Harker, and Sadie Frost as Lucy Westenra in her first major film role."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Bram Stoker’s Dracula ist ein Horror-, Liebesdrama aus dem Jahr 1992 und basiert auf Bram Stokers gleichnamigem Roman. Regie führte Francis Ford Coppola und die Hauptrollen spielten Gary Oldman als Graf und Anthony Hopkins als sein Kontrahent Professor van Helsing. Coppolas Filmadaption gilt, trotz einiger dramaturgischer Abweichungen, als werkgetreueste Umsetzung des Vampirromans."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dracula_%281992_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Constantine is a 2005 movie starring Keanu Reeves and Rachel Weisz. It is based on a comic book series called Hellblazer. The main character, John Constantine, fights demons."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Constantine ist ein US-amerikanischer Mystery-Thriller nach der Comicserie Hellblazer, in dem es um einen Konflikt zwischen Himmel und Hölle geht. Hauptdarsteller sind Keanu Reeves und Rachel Weisz."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Constantine_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Chain Reaction is a 1996 American film starring Keanu Reeves, Rachel Weisz, Morgan Freeman, Kevin Dunn and Fred Ward. It presents a fictional account of the invention of bubble fusion using sonoluminescence and the attempts by the United States Government to prevent the spreading of this technology. Released on August 2, 1996, Chain Reaction was directed by Andrew Davis with screenplay by J. F. Lawton and Michael Bortman based on a story by Arne Schmidt, Rick Seaman and Josh Friedman."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Chain Reaction is de Titel vun en US-amerikaanschen Action-Thriller ut dat Johr 1996 mit Keanu Reeves un Morgan Freeman in de Hööftrullen."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Chain_Reaction_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "My Own Private Idaho is a 1991 independent film written and directed by Gus Van Sant, loosely based on Shakespeare's Henry IV, Part 1, Henry IV, Part 2, and Henry V. The story follows two friends, Mike and Scott, as they embark on a journey of personal discovery that takes them to Mike's hometown in Idaho and then to Italy in search of Mike's mother."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "My Private Idaho ist ein Roadmovie aus dem Jahr 1991. Regie führte Gus Van Sant, die Hauptdarsteller sind Keanu Reeves und River Phoenix."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/My_Own_Private_Idaho> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "For the 1957 film, see The River's Edge. River's Edge is a 1986 American drama movie starring Crispin Glover, Keanu Reeves, Ione Skye, Daniel Roebuck, Danyi Deats, and Dennis Hopper. It was awarded Best Picture from the Independent Spirit Award in 1986."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Das Messer am Ufer ist ein US-amerikanisches Filmdrama aus dem Jahr 1986. Regie führte Tim Hunter, das Drehbuch schrieb Neal Jimenez."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/River%27s_Edge> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point Break is a 1991 action film directed by Kathryn Bigelow and starring Keanu Reeves, Patrick Swayze, and Gary Busey. The title refers to the surfing term \"point break\". The film was a box office success upon its release and it has since gathered a cult following."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Gefährliche Brandung ist ein Actionfilm aus dem Jahr 1991 mit Keanu Reeves und Patrick Swayze, unter der Regie von Kathryn Bigelow. Der Originaltitel kommt aus dem Surferjargon point break, was eine Landspitze oder -zunge beschreibt, die das Brechen einer Welle verursacht. Der Film basiert auf dem Buch von Rick King."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Point_Break> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix is a science fiction action movie that was made in 1999. It was written and directed by the Wachowski Brothers. The main actors in the movie are Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, and Hugo Weaving. The main character is Neo, a hacker. A man named Morpheus shows Neo what the Matrix is. The Matrix is a computer program that is an unreal world. The computer program makes people think that they live in the real world. The machines built the Matrix."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Matrix ist ein US-amerikanischer Science-Fiction-Film der Wachowski-Brüder aus dem Jahr 1999. In den Hauptrollen spielen Keanu Reeves, Laurence Fishburne und Carrie-Anne Moss. Im Mai 2003 folgte Matrix Reloaded, der zweite Teil, und im November 2003 Matrix Revolutions, der dritte Teil."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix Reloaded is a 2003 American science fiction film and the second installment in The Matrix trilogy, written and directed by the Wachowski brothers. It premiered on May 7, 2003, in Westwood, Los Angeles, California, and went on general release by Warner Bros. in North American theatres on May 15, 2003, and around the world during the latter half of that month. It was also screened out of competition at the 2003 Cannes Film Festival."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Matrix Reloaded ist die zweite von drei Folgen eines Science-Fiction-Films, der 1999 mit Matrix begann. Der dritte und letzte Teil heißt Matrix Revolutions."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Lake House is a 2006 American romantic drama film remake of the Korean motion picture Il Mare (2000). It was written by David Auburn, directed by Alejandro Agresti, and stars Keanu Reeves and Sandra Bullock as Alex Wyler and Kate Forster, respectively an architect living in 2004 and a doctor living in 2006. The two are introduced and share correspondence across the years by leaving letters in a mailbox at the lake house they have both lived in at separate points in time."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Das Haus am See (The Lake House) ist ein US-amerikanisches Filmdrama aus dem Jahr 2006. In den Hauptrollen sind Sandra Bullock und Keanu Reeves zu sehen. In den USA kam er am 16. Juni 2006 in die Kinos. Der deutsche Premierentag war der 6. Juli 2006. Der Film ist ein Remake des südkoreanischen Films Il Mare aus dem Jahr 2000."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Lake_House_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Devil's Advocate is a 1997 American thriller/horror film directed by Taylor Hackford starring Keanu Reeves, Al Pacino and Charlize Theron, and based on a novel by Andrew Neiderman. The film's title is a reference to the common phrase \"devil's advocate\", and Pacino's character is named after the author of Paradise Lost, John Milton. The movie has some minor allusions to Milton's epic, such as the famous quotation \"Better to reign in Hell, than to serve in Heaven\"."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Im Auftrag des Teufels ist ein US-amerikanischer Mystery-Thriller aus dem Jahr 1997 von Regisseur Taylor Hackford mit Keanu Reeves und Al Pacino in den Hauptrollen. Er basiert auf dem gleichnamigen Roman von Andrew Neiderman."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Devil%27s_Advocate_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Parenthood is a 1989 comedy-drama film with an ensemble cast that includes Steve Martin, Dianne Wiest, Mary Steenburgen, Jason Robards, Rick Moranis, Tom Hulce, Martha Plimpton, Keanu Reeves, Harley Kozak, Eileen Ryan, Joaquin Phoenix (credited as Leaf Phoenix), and Dennis Dugan. The film was directed by Ron Howard, who assisted in developing the story with screenwriters Lowell Ganz &amp; Babaloo Mandel."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Eine Wahnsinnsfamilie ist eine US-amerikanische Filmkomödie aus dem Jahr 1989. Die Regie führte Ron Howard, das Drehbuch schrieben Lowell Ganz, Babaloo Mandel und Ron Howard."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Parenthood> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Night Before is a 1988 film starring Keanu Reeves and Lori Loughlin. Reeves plays Winston Connelly, the so-called high school nerd and vice president of the Astronomy club. Loughlin plays Tara Mitchell, the pretty and popular head cheerleader who also happens to be the local police chief's daughter. The Tagline was: \"You lost your father's car. Sold your prom date. And a guy named 'Tito' wants you dead. \" It was filmed and set entirely in Los Angeles, California."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Eine verrückte Reise durch die Nacht ist eine US-amerikanische Filmkomödie aus dem Jahr 1988."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Night_Before_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Last Time I Committed Suicide is a 1997 drama film directed by Stephen T. Kay. Based on a letter written by Neal Cassady to Jack Kerouac, it stars Thomas Jane as Cassady. The cast also includes Adrien Brody, Gretchen Mol, Claire Forlani and Keanu Reeves. The film takes place in 1946, and is loosely based on a letter from Cassady to Jack Kerouac. While the letter was written in 1950, the action of the letter took place when he was 20."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Wie ich zum ersten Mal Selbstmord beging (The Last Time I Committed Suicide) ist ein US-amerikanisches Filmdrama von Stephen T. Kay aus dem Jahr 1997."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Last_Time_I_Committed_Suicide> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Much Ado About Nothing is a 1993 film based on William Shakespeare's play. It was adapted for the screen and directed by Kenneth Branagh, who also played the role of Benedick. Much Ado About Nothing was released on May 7, 1993, reaching 200 U.S. screens at its widest release. It earned $22 million at the U.S."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Viel Lärm um nichts ist eine 1993 entstandene Literaturverfilmung des gleichnamigen Stückes von William Shakespeare. Regie führte Kenneth Branagh nach seinem eigenen Drehbuch."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Much_Ado_About_Nothing_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "A Walk in the Clouds is a 1995 American romantic drama film directed by Alfonso Arau. The screenplay by Robert Mark Kamen, Mark Miller, and Harvey Weitzman is based on the 1942 Italian film Four Steps in the Clouds by Piero Tellini, Cesare Zavattini, and Vittorio de Benedetti."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Dem Himmel so nah ist ein US-amerikanisches Filmdrama aus dem Jahr 1995. Die Regie führte Alfonso Arau, das Drehbuch schrieben Robert Mark Kamen, Mark Miller und Harvey Weitzman. Der Film ist ein Remake eines italienischen Films aus dem Jahr 1942."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/A_Walk_in_the_Clouds> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Youngblood is a 1986 American drama film, starring Rob Lowe, Patrick Swayze, Cynthia Gibb, Keanu Reeves and Ed Lauter."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Bodycheck ist ein Film aus dem Jahre 1986, in dem neben Rob Lowe, Patrick Swayze und Keanu Reeves mitspielen. Regie führte Peter Markle."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Youngblood_%281986_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Flying (also known as Dream To Believe and Teenage Dream) is 1986 drama film directed by Paul Lynch and starring Olivia d'Abo, Rita Tushingham, Keanu Reeves."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Flying_%281986_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Even Cowgirls Get the Blues is a 1993 American comedy-drama-romance film based on the 1976 Tom Robbins novel of the same name. The film was directed by Gus Van Sant, Jr. and starred Uma Thurman, Lorraine Bracco, Pat Morita, Angie Dickinson, Keanu Reeves, John Hurt, Rain Phoenix, and Grace Zabriskie. Tom Robbins himself was the narrator. The soundtrack was sung entirely by k.d. lang. The film was dedicated to the late River Phoenix. The film was a critical and commercial failure."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Even Cowgirls Get the Blues ist eine US-amerikanische Filmkomödie von Gus Van Sant aus dem Jahr 1993. Sie basiert auf dem gleichnamigen Roman von Tom Robbins aus dem Jahr 1976 . Im Film spielen unter anderem Uma Thurman und Keanu Reeves mit."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Even_Cowgirls_Get_the_Blues_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix Revisited is a feature-length documentary on the production of the movie The Matrix. The film goes behind the scenes of the 1999 sci-fi movie to give explanations of complicated scenes, previews of the then-forthcoming sequels, and interviews with the cast and crew, including the reclusive Wachowski brothers, who rarely give interviews. It was first released as a stand-alone DVD, but was later included as part of a two-disc Collector's Edition of The Matrix."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix_Revisited> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "I Love You to Death is a 1990 dark comedy film, directed by Lawrence Kasdan. It is loosely based on an attempted murder that happened in 1984, in Allentown, Pennsylvania, where Frances Toto repeatedly tried to kill her husband Anthony Toto. She spent four years in prison for attempted murder."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Ich liebe Dich zu Tode ist eine US-amerikanische Filmkomödie des Regisseurs Lawrence Kasdan aus dem Jahr 1990, in der es um die erfolglosen Versuche geht, einen untreuen Ehemann umzubringen."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/I_Love_You_to_Death> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Speed is a 1994 American action/thriller film directed by Jan de Bont, and set in Los Angeles. An LAPD officer, Police Officer III Jack Traven, becomes the focus of a bomber and extortionist, retired Atlanta bomb squad sergeant, Howard Payne. After Payne escapes his first entanglement with Traven, he sets up a bomb on a city bus which Traven boards and must keep moving above 50 miles per hour (80 km/h) or the bomb will explode. The film stars Keanu Reeves, Dennis Hopper and Sandra Bullock."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Speed ist ein Actionfilm und das Regiedebüt von Jan de Bont aus dem Jahre 1994 mit Keanu Reeves und Sandra Bullock."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Speed_%281994_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Street Kings (originally titled The Night Watchman) is a 2008 action-crime film, directed by David Ayer, and starring Keanu Reeves, Hugh Laurie and Forest Whitaker. It was released in theaters on April 11, 2008. The initial screenplay drafts were written by James Ellroy in the late 1990s under the title The Nightwatchman."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Street Kings ist ein US-amerikanischer Thriller aus dem Jahr 2008. Regie führte David Ayer, das Drehbuch schrieben James Ellroy, Kurt Wimmer und Jamie Moss."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Street_Kings> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Day the Earth Stood Still is a 2008 American science fiction film, a remake of the 1951 film of the same name. The screenplay is based on the 1940 classic science fiction short story \"Farewell to the Master\" by Harry Bates and the 1951 screenplay adaptation by Edmund H. North. Directed by Scott Derrickson and starring Keanu Reeves as Klaatu, this version replaces the Cold War theme of nuclear warfare with the contemporary issue of humankind's environmental damage to the planet."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Der Tag, an dem die Erde stillstand ist ein US-amerikanischer Science-Fiction-Film des Regisseurs Scott Derrickson aus dem Jahr 2008. Es handelt sich um eine Neuverfilmung des gleichnamigen Werkes Der Tag, an dem die Erde stillstand aus dem Jahr 1951. Beide Filme basieren auf der Erzählung Abschied vom Herrn von Harry Bates."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Day_the_Earth_Stood_Still_%282008_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Chain Reaction is a 1996 American film starring Keanu Reeves, Rachel Weisz, Morgan Freeman, Kevin Dunn and Fred Ward. It presents a fictional account of the invention of bubble fusion using sonoluminescence and the attempts by the United States Government to prevent the spreading of this technology. Released on August 2, 1996, Chain Reaction was directed by Andrew Davis with screenplay by J. F. Lawton and Michael Bortman based on a story by Arne Schmidt, Rick Seaman and Josh Friedman."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Außer Kontrolle ist ein Action-Thriller aus dem Jahr 1996 mit Keanu Reeves, Fred Ward und Morgan Freeman."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Chain_Reaction_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Something's Gotta Give is a 2003 American romantic comedy film, written, produced and directed by Nancy Meyers for both Columbia Pictures and Warner Bros. It stars Jack Nicholson and Diane Keaton as a successful 60-something and 50-something, who find love for each other at a different time of life, despite being complete opposites. Amanda Peet and Keanu Reeves co-star, with Frances McDormand, Paul Michael Glaser, Jon Favreau and KaDee Strickland playing key supporting roles."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Was das Herz begehrt ist eine US-amerikanische Filmkomödie von Regisseurin und Drehbuchautorin Nancy Meyers."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Something%27s_Gotta_Give_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Replacements is a 2000 American film directed by Howard Deutch. It stars Keanu Reeves, Gene Hackman, Brooke Langton and Orlando Jones."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Helden aus der zweiten Reihe ist ein US-Amerikanischer Sportfilm mit Keanu Reeves und Gene Hackman in den Hauptrollen. Regisseur des Films ist Howard Deutch, Produzent ist Dylan Sellers."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Replacements_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Speed is a 1994 movie. It stars Keanu Reeves, Sandra Bullock, Jeff Daniels, and Dennis Hopper. It is about a police officer (Reeves) who has to stop a bomber (Hopper), who has put a bomb on a city bus. The Movie was a Box Office success across the world It was followed by a 1997 sequel, '."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Speed ist ein Actionfilm und das Regiedebüt von Jan de Bont aus dem Jahre 1994 mit Keanu Reeves und Sandra Bullock."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Speed_%281994_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix Revolutions is a 2003 movie that was written and directed by the Wachowski brothers. It is the sequel to The Matrix Reloaded."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Matrix Revolutions ist ein Science-Fiction-Spielfilm der Wachowski-Brüder aus dem Jahr 2003. Er ist der dritte und abschließende Teil der Matrix-Trilogie, die 1999 mit Matrix eröffnet und 2003 mit Matrix Reloaded weitergeführt wurde."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix_Revolutions> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Little Buddha is a 1994 American movie by director Bernardo Bertolucci and starring Bridget Fonda and Keanu Reeves."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Little Buddha ist ein Film von Bernardo Bertolucci aus dem Jahr 1993 mit Keanu Reeves, Bridget Fonda und Chris Isaak."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Little_Buddha> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Johnny Mnemonic is a 1995 cyberpunk film, loosely based on the short story \"Johnny Mnemonic\" by William Gibson. The title character, a man with a cybernetic brain implant designed to store information, is played by Keanu Reeves. The film portrays Gibson's dystopian view of the future with the world dominated by megacorporations and with strong East Asian influences."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Vernetzt – Johnny Mnemonic ist ein Film des US-amerikanischen Regisseurs Robert Longo aus dem Jahr 1995. Der Actionfilm basiert auf der zum Science-Fiction Sub-Genre Cyberpunk gerechneten Kurzgeschichte Der mnemonische Johnny von William Gibson und wurde von den Filmstudios Alliance Communications Corporation, Cinévision und TriStar Pictures produziert. Die bisher einzige weitere Verfilmung eines Werkes von William Gibson ist New Rose Hotel."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Johnny_Mnemonic_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix is a science fiction action movie that was made in 1999. It was written and directed by the Wachowski Brothers. The main actors in the movie are Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, and Hugo Weaving. The main character is Neo, a hacker. A man named Morpheus shows Neo what the Matrix is. The Matrix is a computer program that is an unreal world. The computer program makes people think that they live in the real world. The machines built the Matrix."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "The Matrix is de Titel vun en US-amerikaanschen Science-Fiction- un Actionfilm vun de beiden Bröder Andy un Larry Wachowski. Na de överraschend groten weertschopplichen un künstlerischen Spood vun dissen Film is de Geschicht mit de beiden Kinofilmen The Matrix Reloaded un The Matrix Revolutions wieder maakt worrn. Butendem geev dat dat Anime-Projekt Animatrix un dat Reknerspeel Enter the Matrix, de all 2003 rutkamen sünd."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix is a 1999 Australian/American science fiction-action film directed by Larry and Andy Wachowski; starring Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Joe Pantoliano, and Hugo Weaving. It was first released in the U.S. on March 31, 1999, and is the first installment in The Matrix series of films, comic books, video games, and animation."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Matrix ist ein US-amerikanischer Science-Fiction-Film der Wachowski-Brüder aus dem Jahr 1999. In den Hauptrollen spielen Keanu Reeves, Laurence Fishburne und Carrie-Anne Moss. Im Mai 2003 folgte Matrix Reloaded, der zweite Teil, und im November 2003 Matrix Revolutions, der dritte Teil."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Speed is a 1994 movie. It stars Keanu Reeves, Sandra Bullock, Jeff Daniels, and Dennis Hopper. It is about a police officer (Reeves) who has to stop a bomber (Hopper), who has put a bomb on a city bus. The Movie was a Box Office success across the world It was followed by a 1997 sequel, '."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Speed is en US-amerikaanschen Action-Speelfilm vun 1994. In dissen Film werr Jan de Bont to’n eersten mol Speelbaas."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Speed_%281994_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Providence is an American/Canadian 1991 film directed by David Mackay starring Keanu Reeves."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Providence_%281991_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Speed is a 1994 American action/thriller film directed by Jan de Bont, and set in Los Angeles. An LAPD officer, Police Officer III Jack Traven, becomes the focus of a bomber and extortionist, retired Atlanta bomb squad sergeant, Howard Payne. After Payne escapes his first entanglement with Traven, he sets up a bomb on a city bus which Traven boards and must keep moving above 50 miles per hour (80 km/h) or the bomb will explode. The film stars Keanu Reeves, Dennis Hopper and Sandra Bullock."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Speed is en US-amerikaanschen Action-Speelfilm vun 1994. In dissen Film werr Jan de Bont to’n eersten mol Speelbaas."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Speed_%281994_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix Revolutions is a 2003 American science fiction film and the third and final installment of The Matrix trilogy. The film is a sequel to The Matrix Reloaded. The film was written and directed by the Wachowski brothers and released simultaneously in sixty countries on November 5, 2003. Despite the fact that it is the final film in the series, the Matrix storyline continued in The Matrix Online."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Matrix Revolutions ist ein Science-Fiction-Spielfilm der Wachowski-Brüder aus dem Jahr 2003. Er ist der dritte und abschließende Teil der Matrix-Trilogie, die 1999 mit Matrix eröffnet und 2003 mit Matrix Reloaded weitergeführt wurde."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix_Revolutions> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Constantine is a 2005 American film based on Vertigo Comics’ Hellblazer comic book, with some plot elements being taken from the “Dangerous Habits” story arc (issues #41–46) and others—such as the inclusion of Papa Midnite—from the Original Sins trade paperback. It was released on February 8, 2005 in Hong Kong, and on February 18, 2005 in the U.S. and Canada."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Constantine ist ein US-amerikanischer Mystery-Thriller nach der Comicserie Hellblazer, in dem es um einen Konflikt zwischen Himmel und Hölle geht. Hauptdarsteller sind Keanu Reeves und Rachel Weisz."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Constantine_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Sweet November is a 2001 American romantic drama starring Keanu Reeves and Charlize Theron. The film is based on an earlier version made in 1968 and written by Herman Raucher. Due to the poor response the film received from critics it was nominated for Worst Remake or Sequel and both Reeves and Theron nominated for Worst Actor and Worst Actress at the 2001 Golden Raspberry Awards."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Sweet November ist ein US-amerikanischer Film aus dem Jahre 2001 mit Keanu Reeves und Charlize Theron in den Hauptrollen. Er ist ein Remake des Filmes Sweet November – Adieu geliebter November aus dem Jahr 1968 mit Sandy Dennis und Anthony Newley in den Hauptrollen."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Sweet_November_%282001_film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Bill &amp; Ted's Excellent Adventure is a 1989 American science fiction–comedy buddy film in which two metalhead slackers travel through time in order to assemble a menagerie of historical figures for their high school history presentation. The film was written by Chris Matheson and Ed Solomon and directed by Stephen Herek. It stars Alex Winter as Bill S. Preston, Esquire, Keanu Reeves as Theodore \"Ted\" Logan, and George Carlin as Rufus."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Bill &amp; Teds verrückte Reise durch die Zeit (Bill &amp; Ted’s excellent adventure) ist eine Science-Fiction-Komödie von Stephen Herek aus dem Jahr 1988. Der Film basiert auf der Idee von Zeitreisen."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Bill_%26_Ted%27s_Excellent_Adventure> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Thumbsucker is a 2005 film directed by Mike Mills adapted from the Walter Kirn novel of the same name. The movie focuses on teenager Justin Cobb and how he copes with his thumb sucking problem, and his experiments with hypnosis, sex and drugs."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Thumbsucker ist ein amerikanischer Film von Mike Mills aus dem Jahre 2005. Die Handlung basiert auf einem 1999 erschienenen Roman von Walter Kirn."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Thumbsucker_%28film%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Matrix series primarily consists of a trilogy of science-fiction-action films written and directed by the Wachowski brothers and produced by Joel Silver. The first film The Matrix was released in March 1999; after its success, two sequels, The Matrix Reloaded and The Matrix Revolutions, were released in 2003. The characters and settings of the Matrix fictional universe are further explored in other media, including animation, comic books, and video games."@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Matrix_%28franchise%29> ;
+                          rs:variable  "film"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Hardball is a 2001 American film directed by Brian Robbins. It stars Keanu Reeves, Diane Lane and D. B. Sweeney. The screenplay by John Gatlins is based on the book Hardball: A Season in the Projects by Daniel Coyle. The original music score is composed by Mark Isham. The film is known in some parts of the U.S. as \"Little Sluggers.\""@en ;
+                                     rs:variable  "description_en"
+                                   ] ;
+            rs:binding  [ rs:value     "Hardball (alternativ Hard Ball) ist ein Filmdrama mit Keanu Reeves aus dem Jahr 2001."@de ;
+                          rs:variable  "description_de"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Hardball_%28film%29> ;
+                          rs:variable  "film"
+                        ] ]
+] .

@@ -1,0 +1,1 @@
+SELECT DISTINCT ?X ?rdfs_label  WHERE {  ?X <http://data.semanticweb.org/ns/swc/ontology#hasRelatedDocument> <http://data.semanticweb.org/conference/iswc-aswc/2007/tracks/research/papers/295> .  ?X a <http://purl.org/NET/c4dm/event.owl#Event> .  ?X <http://www.w3.org/2000/01/rdf-schema#label> ?rdfs_label .   } LIMIT 50

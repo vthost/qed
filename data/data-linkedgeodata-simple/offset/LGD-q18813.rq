@@ -1,0 +1,1 @@
+SELECT ?b WHERE { {{ ?b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linkedgeodata.org/ontology/City> } UNION { ?b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linkedgeodata.org/ontology/Town> } UNION { ?b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linkedgeodata.org/ontology/Village> }}. } OFFSET 0 LIMIT 100 

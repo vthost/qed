@@ -1,0 +1,100 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Dehumanizer  a    yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black-sabbath-dehumanizer.jpg"@en ;
+        dbpprop:name      "Dehumanizer"@en ;
+        dbpprop:released  "1992-06-22"^^xsd:date .
+
+dbpedia:Master_of_Reality
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black Sabbath Master of Reality.jpg"@en ;
+        dbpprop:name      "Master of Reality"@en , "マスター・オブ・リアリティ"@ja ;
+        dbpprop:released  "1971-07-21"^^xsd:date , "1971年7月21日"@ja .
+
+dbpedia:Technical_Ecstasy
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black-Sabbath-Technical-Ecstasy.jpg"@en ;
+        dbpprop:name      "Technical Ecstasy"@en ;
+        dbpprop:released  "1976-09-25"^^xsd:date .
+
+dbpedia:The_Best_of_Black_Sabbath
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Best of BS.jpg"@en ;
+        dbpprop:name      "The Best of Black Sabbath"@en ;
+        dbpprop:released  "2000"^^xsd:int .
+
+dbpedia:The_Eternal_Idol
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black Sabbath The Eternal Idol.jpg"@en ;
+        dbpprop:name      "The Eternal Idol"@en ;
+        dbpprop:released  "--12-08"^^xsd:gMonthDay , "--11-01"^^xsd:gMonthDay .
+
+dbpedia:Seventh_Star  a   yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black-Sabbath-seventh-star.jpg"@en ;
+        dbpprop:name      "Seventh Star"@en ;
+        dbpprop:released  "1986-01-28"^^xsd:date .
+
+dbpedia:Cross_Purposes
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "SabbathPurposes.jpg"@en ;
+        dbpprop:name      "Cross Purposes"@en ;
+        dbpprop:released  "1994-01-31"^^xsd:date .
+
+dbpedia:Live_at_Hammersmith_Odeon
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "SabbathHammer.jpg"@en ;
+        dbpprop:name      "Live at Hammersmith Odeon"@en ;
+        dbpprop:released  "2007-05-01"^^xsd:date .
+
+dbpedia:Cross_Purposes_Live
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black Sabbath - Cross Purposes Live.jpg"@en ;
+        dbpprop:name      "Cross Purposes Live"@en ;
+        dbpprop:released  "1995"^^xsd:int .
+
+dbpedia:Sabbath_Bloody_Sabbath
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black Sabbath SbS.jpg"@en ;
+        dbpprop:name      "Sabbath Bloody Sabbath"@en , "血まみれの安息日"@ja ;
+        dbpprop:released  "1974年1月"@ja , "1973-12-01"^^xsd:date , "1973年12月1日"@ja .
+
+<http://dbpedia.org/resource/Greatest_Hits_1970%E2%80%931978>
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black Sabbath - Greatest Hits 1970-1978.jpg"@en ;
+        dbpprop:name      "Greatest Hits 1970–1978"@en ;
+        dbpprop:released  "2006-03-14"^^xsd:date .
+
+dbpedia:The_Ozzy_Osbourne_Years
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "TheozzyyearsAP.JPG"@en ;
+        dbpprop:name      "The Ozzy Osbourne Years"@en ;
+        dbpprop:released  "1994-10-17"^^xsd:date .
+
+dbpedia:Live_Evil  a      yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "SabbathEvil.jpg"@en ;
+        dbpprop:name      "Live Evil"@en ;
+        dbpprop:released  "December 1982"@en .
+
+dbpedia:Headless_Cross
+        a                 yago:Album106591815 ;
+        dbpprop:artist    dbpedia:Black_Sabbath ;
+        dbpprop:cover     "Black-Sabbath-Headless-Cross.jpg"@en , "BlackSabbathHeadlessCross.jpg"@in , "Black-Sabbath-Headless-Cross.jpg"@ru ;
+        dbpprop:name      "Headless Cross"@in , "Headless Cross"@en ;
+        dbpprop:released  "1989"^^xsd:int , "1989-04-24"^^xsd:date .

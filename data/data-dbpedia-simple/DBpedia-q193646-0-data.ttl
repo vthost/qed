@@ -1,0 +1,2 @@
+<http://dbpedia.org/resource/Category:Ski_areas_and_resorts_in_Romania> <http://www.w3.org/2004/02/skos/core#prefLabel> "bg" .
+<http://dbpedia.org/resource/Category:Ski_areas_and_resorts_in_Romania> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/2> .
