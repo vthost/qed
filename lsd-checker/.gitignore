@@ -3,3 +3,4 @@
 /jni/
 /launchers/
 /lib/
+*.DS_Store
