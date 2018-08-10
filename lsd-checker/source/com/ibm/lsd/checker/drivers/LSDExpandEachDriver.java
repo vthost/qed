@@ -3,6 +3,7 @@ package com.ibm.lsd.checker.drivers;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.util.Collections;
+import java.util.Map;
 import java.util.Set;
 
 import com.hp.hpl.jena.query.Query;
@@ -15,15 +16,17 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.ast.Relation;
+import kodkod.engine.satlab.SATFactory;
+import kodkod.instance.TupleSet;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
 
-	public LSDExpandEachDriver(String queryFile, boolean minimal, String dataDir) {
-		super(queryFile, minimal, dataDir);
+	public LSDExpandEachDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir) {
+		super(queryFile, solutionLimit, datasetLimit, dataDir);
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Boolean.parseBoolean(args[1]), args[2]); exp.mainLoop(exp.new EachPath()); });
+		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3]); exp.mainLoop(exp.new EachPath()); });
 	}
 	
 	class EachPath implements Process {
@@ -32,13 +35,24 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
 				//System.out.println("p: "+p);
-				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
-					if (r.name().equals("solution")) {
-						Formula thisf = p.fst.and(ensureSolutions(r));
-						if ((Drivers.check(U, Pair.make(thisf, p.snd), "solution")) == null) {
+				Set<Relation> relations = ASTUtils.gatherRelations(p.fst);
+				for(Relation r : relations) {
+					if (r.name().equals("solution")) {		
+						Formula thisf = null;
+						if (datasetLimit > 0) {
+							for(Relation q : relations) {
+								if (q.name().equals("quads")) {		
+									thisf = p.fst.and(ensureSolutions(r, q));
+								}
+							}
+						} else {
+							thisf = p.fst.and(ensureSolutions(r));
+						}
+						Map<String, TupleSet> bindings = Drivers.check(U, SATFactory.MiniSat, Pair.make(thisf, p.snd));
+						if (bindings == null) {
 							continue formulae;
 						}
-						checkExpanded(ast, query, U, thisf, p.snd.fst, p.snd.snd);
+						checkExpanded(ast, query, U, bindings, thisf, p.snd.fst, p.snd.snd);
 					}
 				}
 			}

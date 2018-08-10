@@ -56,24 +56,25 @@ public abstract class LSDExpanderBase extends DriverBase {
 	
 	private int datasets = 0;
 	
-	protected boolean minimal;
+	protected int solutionLimit;
+	protected int datasetLimit;
 	
-	private String dataDir = "test-data/data/";
+	private String dataDir;
 	
-	public LSDExpanderBase(String queryFile, boolean minimal, String dataDir) {
+	public LSDExpanderBase(String queryFile, int solutionLimit, int datasetLimit, String dataDir) {
 		super();
 		this.queryFile = queryFile;
-		this.minimal = minimal;
-		this.dataDir = new File(dataDir).isDirectory() ? dataDir : this.dataDir;
+		this.solutionLimit = solutionLimit;
+		this.datasetLimit = datasetLimit;
+		this.dataDir = dataDir;
 	}
 
 //	TODO a check only occurs in the very beginning, no?
-	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Formula f, Formula s1, Formula s2)
+	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Map<String, TupleSet> t, Formula f, Formula s1, Formula s2)
 			throws URISyntaxException, FileNotFoundException {//System.out.println("check2: "+f);
 		SolutionRelation s;
 		JenaTranslator xlator;
 		Pair<Formula, Pair<Formula, Formula>> xlation;
-		Map<String, TupleSet> t = Drivers.check(U, Pair.make(f,  Pair.make(s1, s2)));
 		Dataset dataset = DatasetFactory.createMem();
 		Graph G = dataset.asDatasetGraph().getDefaultGraph();
 		if (t != null) {
@@ -85,9 +86,8 @@ public abstract class LSDExpanderBase extends DriverBase {
 					}
 				}
 			}
-			if (t.get("quads") != null) {
-				JenaUtil.addTupleSet(G, t.get("quads"), langs);
-			}
+			JenaUtil.addTupleSet(G, t.get("quads"), langs);
+
 		}
 
 		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
@@ -162,10 +162,10 @@ public abstract class LSDExpanderBase extends DriverBase {
 		RDFDataMgr.write(new FileOutputStream(
 				dataDir+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
 //		Utils.writeQueryDataFile2(Utils.DATA_DIR, stem(), dataset);
-//		System.out.println("\n\nthe solution:");
-//		System.out.println(Drivers.check(U, xlation, "solution"));
-//		System.out.println("the dataset:");
-//		RDFDataMgr.write(System.out, dataset, Lang.NQ);
+		System.out.println("\n\nthe solution:");
+		System.out.println(Drivers.check(U, xlation, "solution"));
+		System.out.println("the dataset:");
+		RDFDataMgr.write(System.out, dataset, Lang.NQ);
 ////		RDFDataMgr.write(new FileOutputStream(System.getProperty("java.io.tmpdir") + stem().substring(stem().lastIndexOf('/')) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
 //		System.out.println("\n\n");
 	}
@@ -193,7 +193,15 @@ public abstract class LSDExpanderBase extends DriverBase {
 	}
 
 	protected Formula ensureSolutions(Relation r) {
-		return minimal? r.count().eq(IntConstant.constant(1)): r.some();
+		return solutionLimit > 0? r.count().lte(IntConstant.constant(solutionLimit)).and(r.count().gt(IntConstant.constant(0))): r.some();
+	}
+
+	protected Formula ensureSolutions(Relation r, Relation q) {
+		return ensureSolutions(r).and(limitData(q));
+	}
+
+	protected Formula limitData(Relation q) {
+		return q.count().lte(IntConstant.constant(datasetLimit));
 	}
 
 }
