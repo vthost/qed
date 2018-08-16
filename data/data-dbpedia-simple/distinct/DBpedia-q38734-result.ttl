@@ -4,23 +4,8 @@
 
 [ a                  rs:ResultSet ;
   rs:resultVariable  "artist" ;
-  rs:size            "6"^^xsd:int ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/U218_Singles> ;
-                                     rs:variable  "artist"
-                                   ] ] ;
+  rs:size            "1"^^xsd:int ;
   rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/4-4-1> ;
-                                     rs:variable  "artist"
-                                   ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Pete_Wylie> ;
-                                     rs:variable  "artist"
-                                   ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Judging_Ronald> ;
-                                     rs:variable  "artist"
-                                   ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Whipping_Boy_%28Irish_band%29> ;
-                                     rs:variable  "artist"
-                                   ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Soda_Stereo> ;
                                      rs:variable  "artist"
                                    ] ]
 ] .

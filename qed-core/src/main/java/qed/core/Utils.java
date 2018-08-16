@@ -181,7 +181,7 @@ public class Utils implements Constants {
 			String path = directory.getPath() + File.separator + getQueryDataFileName(lsqIdUrl);
 			if(new File(path).isFile())
 				m.read(path);
-			
+
 			FileWriter writer = new FileWriter(path);
 			m.write(writer, "TURTLE");
 			size = m.size();

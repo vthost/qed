@@ -3,51 +3,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "o" , "p" ;
-  rs:size            "87"^^xsd:int ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.climate-charts.com/Locations/k/KO47108.html> ;
+  rs:resultVariable  "p" , "o" ;
+  rs:size            "25"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.britannica.com/nations/Korea> ;
+  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
+            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.turbomaps.com.ar/english/southkorea.php> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.5833"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/latd> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.0"^^xsd:float ;
+  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
@@ -56,247 +26,55 @@
   rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
+            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
+            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.turbomaps.com.ar/english/southkorea.php> ;
+  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
+                                     rs:variable  "o"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
+                          rs:variable  "p"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.nso.go.kr/eng2006/emain/index.html> ;
+  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
+                                     rs:variable  "o"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
+                          rs:variable  "p"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.britannica.com/nations/Korea> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.turbomaps.com.ar/english/southkorea.php> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.5833"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/l_percent_C3_percent_A6ngdeD> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.britannica.com/nations/Korea> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.nso.go.kr/eng2006/emain/index.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.climate-charts.com/Locations/k/KO47108.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.5833"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.climate-charts.com/Locations/k/KO47108.html> ;
-                                     rs:variable  "o"
-                                   ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/v_percent_C4_percent_A9_percent_C4_percent_90_percent_E1_percent_BB_percent_99> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/dnlc> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.turbomaps.com.ar/english/southkorea.php> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.britannica.com/nations/Korea> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.climate-charts.com/Locations/k/KO47108.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
@@ -305,25 +83,7 @@
             rs:binding  [ rs:value     <http://dbpedia.org/property/gdpNominalPerCapitaRank> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.britannica.com/nations/Korea> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
@@ -335,124 +95,16 @@
             rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.5833"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://lcweb2.loc.gov/frd/cs/krtoc.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "127"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/longd> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.turbomaps.com.ar/english/southkorea.php> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/breddeD> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.5833"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/gdpPppPerCapitaRank> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/bnpPr.IndbyggerPlacering> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.climate-charts.com/Locations/k/KO47108.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.nso.go.kr/eng2006/emain/index.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
-                          rs:variable  "p"
-                        ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
+                          rs:variable  "p"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
+                                     rs:variable  "o"
+                                   ] ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
@@ -464,67 +116,43 @@
   rs:solution        [ rs:binding  [ rs:value     "127.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.britannica.com/nations/Korea> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.5833"^^xsd:float ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/property/reference> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.nso.go.kr/eng2006/emain/index.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
+            rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
                           rs:variable  "p"
                         ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
+            rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.nso.go.kr/eng2006/emain/index.html> ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "37.0"^^xsd:float ;
-                                     rs:variable  "o"
-                                   ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
-                          rs:variable  "p"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.nso.go.kr/eng2006/emain/index.html> ;
+  rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/ontology/populationTotal> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.climate-charts.com/Locations/k/KO47108.html> ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.korea.net/> ;
                                      rs:variable  "o"
                                    ] ;
             rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
                           rs:variable  "p"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.turbomaps.com.ar/english/southkorea.php> ;
+  rs:solution        [ rs:binding  [ rs:value     "36"^^xsd:int ;
                                      rs:variable  "o"
                                    ] ;
-            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/homepage> ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
+                          rs:variable  "p"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "36.0"^^xsd:float ;
+                                     rs:variable  "o"
+                                   ] ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
                           rs:variable  "p"
                         ] ]
 ] .

@@ -3,116 +3,8 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "label" , "released" , "actors" , "subject" , "abstract" ;
-  rs:size            "15"^^xsd:int ;
-  rs:solution        [ rs:binding  [ rs:value     "Days of Thunder is a movie about auto racing. It has Tom Cruise and Nicole Kidman in it."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1990-06-27"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Days of Thunder"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Days_of_Thunder> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "All the Right Moves is a 1983 drama film directed by Michael Chapman and starring Tom Cruise, Craig T. Nelson, Lea Thompson, Chris Penn, and Gary Graham. It was filmed on location during WPIAL football season in Johnstown, Pennsylvania, and Pittsburgh."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1983-10-21"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "All the Right Moves"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/All_the_Right_Moves> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Top Gun is a 1986 American action film directed by Tony Scott, and produced by Don Simpson and Jerry Bruckheimer, in association with the Paramount Pictures company. The screenplay was written by Jim Cash and Jack Epps, Jr. , and was inspired by the article \"Top Guns\" written by Ehud Yonay for the California Magazine. This film stars Tom Cruise, Kelly McGillis, Anthony Edwards, Val Kilmer, Meg Ryan, and Tom Skerritt."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1986-05-16"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Top Gun"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Top_Gun> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Born on the Fourth of July is a 1989 film adaptation of the best selling autobiography of the same name by Vietnam War veteran Ron Kovic. Tom Cruise plays Kovic, in a performance that earned him his first Academy Award nomination. Oliver Stone (himself a Vietnam veteran) co-wrote the screenplay with Kovic, and also produced and directed the film."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1990-03-02"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Born on the Fourth of July (film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Born_on_the_Fourth_of_July_%28film%29> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Born on the Fourth of July is a 1989 film adaptation of the best selling autobiography of the same name by Vietnam War veteran Ron Kovic. Tom Cruise plays Kovic, in a performance that earned him his first Academy Award nomination. Oliver Stone (himself a Vietnam veteran) co-wrote the screenplay with Kovic, and also produced and directed the film."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1990-02-08"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Born on the Fourth of July (film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Born_on_the_Fourth_of_July_%28film%29> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Magnolia is a 1999 American drama film, written and directed by Paul Thomas Anderson, and starring John C. Reilly, Tom Cruise, Julianne Moore, Philip Seymour Hoffman, William H. Macy, and Jeremy Blackman. It interweaves nine separate yet connected storylines, about the interactions among several people during one day in the San Fernando Valley, in Los Angeles, California. The film was distributed by New Line Cinema. Magnolia was a critical success in 1999."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1999-12-25"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Magnolia (film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Magnolia_%28film%29> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Eyes Wide Shut is a 1999 American/British neo-noir drama film directed, produced and co-written by Stanley Kubrick, based on the 1926 novella Traumnovelle by Arthur Schnitzler. It was Kubrick's last film before his death. The slightly surreal story, set in and around New York City, follows the sexually charged adventures of Dr. Bill Harford, who is shocked by the revelation by his wife, Alice, that she had contemplated an affair a year earlier."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1999-07-16"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Eyes Wide Shut"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Eyes_Wide_Shut> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "The Firm is a legal thriller film released in 1993, directed by Sydney Pollack, and starring Tom Cruise, Jeanne Tripplehorn, Gene Hackman, Ed Harris, Holly Hunter, Gary Busey, and David Strathairn. The film is based on the 1991 novel The Firm by author John Grisham. Holly Hunter was nominated for the 1994 Academy Award for Best Supporting Actress, but lost to her co-star in The Piano, Anna Paquin."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1993-06-30"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "The Firm (1993 film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Firm_%281993_film%29> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Cocktail is a drama film released by Touchstone Pictures in 1988. It stars Tom Cruise as a talented and ambitious bartender who aspires to working in business and finds love while working at a bar in Jamaica. The original music score was composed by Maurice Jarre."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1988-07-29"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Cocktail (film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Cocktail_%28film%29> ;
-                          rs:variable  "subject"
-                        ] ] ;
+  rs:resultVariable  "abstract" , "released" , "label" , "subject" , "actors" ;
+  rs:size            "2"^^xsd:int ;
   rs:solution        [ rs:binding  [ rs:value     "Eyes Wide Shut is a 1999 movie directed by Stanley Kubrick and starring Nicole Kidman and Tom Cruise."@en ;
                                      rs:variable  "abstract"
                                    ] ;
@@ -125,64 +17,16 @@
             rs:binding  [ rs:value     <http://dbpedia.org/resource/Eyes_Wide_Shut> ;
                           rs:variable  "subject"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Days of Thunder is an auto racing drama film released in 1990 by producers Don Simpson and Jerry Bruckheimer and director Tony Scott. The cast includes Tom Cruise, Nicole Kidman, Robert Duvall, Randy Quaid, Cary Elwes and Michael Rooker. The film also features appearances by real life racers, such as Rusty Wallace, Neil Bonnett, and Harry Gant. Commentator Dr. Jerry Punch, of ESPN, has a cameo appearance, as does co-producer Don Simpson."@en ;
+  rs:solution        [ rs:binding  [ rs:value     "Eyes Wide Shut is a 1999 American/British neo-noir drama film directed, produced and co-written by Stanley Kubrick, based on the 1926 novella Traumnovelle by Arthur Schnitzler. It was Kubrick's last film before his death. The slightly surreal story, set in and around New York City, follows the sexually charged adventures of Dr. Bill Harford, who is shocked by the revelation by his wife, Alice, that she had contemplated an affair a year earlier."@en ;
                                      rs:variable  "abstract"
                                    ] ;
-            rs:binding  [ rs:value     "1990-06-27"^^xsd:date ;
+            rs:binding  [ rs:value     "1999-07-16"^^xsd:date ;
                           rs:variable  "released"
                         ] ;
-            rs:binding  [ rs:value     "Days of Thunder"@en ;
+            rs:binding  [ rs:value     "Eyes Wide Shut"@en ;
                           rs:variable  "label"
                         ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Days_of_Thunder> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Born on the Fourth of July is a 1989 film adaptation of the best selling autobiography of the same name by Vietnam War veteran Ron Kovic. Tom Cruise plays Kovic, in a performance that earned him his first Academy Award nomination. Oliver Stone (himself a Vietnam veteran) co-wrote the screenplay with Kovic, and also produced and directed the film."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1990-03-01"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Born on the Fourth of July (film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Born_on_the_Fourth_of_July_%28film%29> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "The Color of Money is a 1984 novel by American writer Walter Tevis, and a 1986 film semi-adaptation by the same title, continuing the story of pool hustler and stakehorse Edward \"Fast Eddie\" Felson, with Paul Newman reprising his role from the The Hustler (1959) and its film adaptation (1961)."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1986-10-17"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "The Color of Money"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/The_Color_of_Money> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Risky Business is a 1983 teen comedy-drama film written by Paul Brickman in his directorial debut. It is best known for being the film that launched Tom Cruise to stardom. The film also stars Rebecca De Mornay as Lana and Joe Pantoliano as Guido. It features Curtis Armstrong as Miles, Richard Masur as Rutherford, the Princeton University interviewer, and Bronson Pinchot as Barry."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1983-08-05"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Risky Business"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Risky_Business> ;
-                          rs:variable  "subject"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Born on the Fourth of July is a 1989 film adaptation of the best selling autobiography of the same name by Vietnam War veteran Ron Kovic. Tom Cruise plays Kovic, in a performance that earned him his first Academy Award nomination. Oliver Stone (himself a Vietnam veteran) co-wrote the screenplay with Kovic, and also produced and directed the film."@en ;
-                                     rs:variable  "abstract"
-                                   ] ;
-            rs:binding  [ rs:value     "1989-12-20"^^xsd:date ;
-                          rs:variable  "released"
-                        ] ;
-            rs:binding  [ rs:value     "Born on the Fourth of July (film)"@en ;
-                          rs:variable  "label"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Born_on_the_Fourth_of_July_%28film%29> ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Eyes_Wide_Shut> ;
                           rs:variable  "subject"
                         ] ]
 ] .

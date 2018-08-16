@@ -4,17 +4,11 @@
 
 [ a                  rs:ResultSet ;
   rs:resultVariable  "long" , "lat" , "label" ;
-  rs:size            "4"^^xsd:int ;
-  rs:solution        [ rs:binding  [ rs:value     "Ulrich von Türheim"@en ;
-                                     rs:variable  "label"
-                                   ] ] ;
+  rs:size            "2"^^xsd:int ;
   rs:solution        [ rs:binding  [ rs:value     "Ulrich von Türheim"@de ;
                                      rs:variable  "label"
                                    ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "Ulrich von Türheim"@it ;
-                                     rs:variable  "label"
-                                   ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "Ulrich von Türheim"@hu ;
                                      rs:variable  "label"
                                    ] ]
 ] .

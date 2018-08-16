@@ -5,12 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.riot.RiotNotFoundException;
 
 import com.hp.hpl.jena.graph.Graph;
 import com.hp.hpl.jena.query.Dataset;
@@ -38,6 +40,7 @@ import com.ibm.research.rdf.store.sparql11.semantics.DatasetUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaUtil;
+import com.ibm.research.rdf.store.sparql11.semantics.OpenDatasetUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.SolutionRelation;
 import com.ibm.research.rdf.store.utilities.io.SparqlSelectResult;
 import com.ibm.wala.util.collections.HashMapFactory;
@@ -64,7 +67,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 		super();
 		this.queryFile = queryFile;
 		this.minimal = minimal;
-		this.dataDir = new File(dataDir).isDirectory() ? dataDir : this.dataDir;
+		this.dataDir = dataDir == null || new File(dataDir).isDirectory() ? dataDir : this.dataDir;
 	}
 
 //	TODO a check only occurs in the very beginning, no?
@@ -160,7 +163,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 		xlation = xlator.translateSingle(Collections.<String,Object>emptyMap(), false).iterator().next();
 		
 		RDFDataMgr.write(new FileOutputStream(
-				dataDir+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+				"test-data/data/"+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
 //		Utils.writeQueryDataFile2(Utils.DATA_DIR, stem(), dataset);
 //		System.out.println("\n\nthe solution:");
 //		System.out.println(Drivers.check(U, xlation, "solution"));
@@ -176,7 +179,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 		String stem = stem();
 
-		BasicUniverse U = new BoundedUniverse();
+		BasicUniverse U = null; //new BoundedUniverse();
 //		try {
 //			U = new OpenDatasetUniverse(new URL(stem + QUERY_DATA_FILE_EXT));
 //		} catch (RiotNotFoundException e) {

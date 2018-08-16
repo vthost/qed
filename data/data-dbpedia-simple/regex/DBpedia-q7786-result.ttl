@@ -4,38 +4,11 @@
 
 [ a                  rs:ResultSet ;
   rs:resultVariable  "Birthday" , "Name" , "Person" ;
-  rs:size            "4"^^xsd:int ;
+  rs:size            "1"^^xsd:int ;
   rs:solution        [ rs:binding  [ rs:value     "1835-10-31"^^xsd:date ;
                                      rs:variable  "Birthday"
                                    ] ;
             rs:binding  [ rs:value     "Adolf von Baeyer"@in ;
-                          rs:variable  "Name"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_von_Baeyer> ;
-                          rs:variable  "Person"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "1835-10-31"^^xsd:date ;
-                                     rs:variable  "Birthday"
-                                   ] ;
-            rs:binding  [ rs:value     "Baeyer, Adolf von"@en ;
-                          rs:variable  "Name"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_von_Baeyer> ;
-                          rs:variable  "Person"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "1835-10-31"^^xsd:date ;
-                                     rs:variable  "Birthday"
-                                   ] ;
-            rs:binding  [ rs:value     "Adolf von Baeyer"@en ;
-                          rs:variable  "Name"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_von_Baeyer> ;
-                          rs:variable  "Person"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "1835-10-31"^^xsd:date ;
-                                     rs:variable  "Birthday"
-                                   ] ;
-            rs:binding  [ rs:value     "Baeyer, Adolf von"@de ;
                           rs:variable  "Name"
                         ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/resource/Adolf_von_Baeyer> ;
