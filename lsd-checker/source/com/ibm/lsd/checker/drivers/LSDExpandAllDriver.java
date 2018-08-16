@@ -3,6 +3,7 @@ package com.ibm.lsd.checker.drivers;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.util.Collections;
+import java.util.Map;
 import java.util.Set;
 
 import com.hp.hpl.jena.query.Query;
@@ -16,17 +17,18 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.ast.Relation;
+import kodkod.engine.satlab.SATFactory;
 import kodkod.instance.TupleSet;
 
 public class LSDExpandAllDriver extends LSDExpanderBase {
 
-	public LSDExpandAllDriver(String queryFile, boolean minimal, String dataDir) {
-		super(queryFile, minimal, dataDir);
+	public LSDExpandAllDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir) {
+		super(queryFile, solutionLimit, datasetLimit, dataDir);
 	}
 
 	public static void main(String[] args) throws Exception {
 		main(args[0], (String s) -> { 
-			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Boolean.parseBoolean(args[1]), args[2]); 
+			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3]); 
 			AllPaths paths = exp.new AllPaths();
 			exp.mainLoop(paths); });
 	}
@@ -35,17 +37,22 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 		public void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator)
 				throws URISyntaxException, FileNotFoundException {
 			Formula f = Formula.TRUE;
-			Formula s1 = null;
-			Formula s2 = null;
+			Formula s1 = Formula.TRUE;
+			Formula s2 = Formula.TRUE;
 
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 
-			Set<Relation> prs = HashSetFactory.make();
-			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {//System.out.println("pp "+p);
-				for(Relation r : ASTUtils.gatherRelations(p.fst)) {
+			Map<String, TupleSet> t = null;
+			
+			//Set<Relation> prs = HashSetFactory.make();
+			for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
+				Set<Relation> relations = ASTUtils.gatherRelations(p.fst);
+				for(Relation r : relations) {
 					if (r.name().equals("solution")) {
 
 						Formula thisf = p.fst.and(ensureSolutions(r));
+						
+						/*
 						for(Relation pr : prs) {
 							if (r.arity() == pr.arity()) {
 								thisf = thisf.and(pr.eq(r).not());
@@ -53,40 +60,28 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 						}
 
 						prs.add(r);
+						 */
 
-						TupleSet x;
-						if ((x = Drivers.check(U, Pair.make(thisf, p.snd), "solution")) == null) {
-							prs.clear();
-							continue formulae;
-						}
-
-//						TODO is this an error???
-						System.err.println("tuples:" + x);
-						
-						Formula nextf = f.and(thisf);
-						Formula nexts1 = s1==null? p.snd.fst: p.snd.fst==null? s1: p.snd.fst.and(s1);
-						Formula nexts2 = s2==null? p.snd.snd: p.snd.snd==null? s2: p.snd.snd.and(s2);
-
-						TupleSet t = Drivers.check(U, Pair.make(nextf,  Pair.make(nexts1, nexts2)), "quads");
-						if (t == null) {
-//							TODO why f here and not thisf. f is only TRUE in the beginning anyway?
-							checkExpanded(ast, query, U, f, s1, s2);
-							f = thisf;
-							s1 = p.snd.fst;
-							s2 = p.snd.snd;
-						} else {
-							f = nextf;
-							s1 = nexts1;
-							s2 = nexts2;
-						}
+						f = f.and(thisf);
+						s1 = p.snd.fst==null? s1: p.snd.fst.and(s1);
+						s2 = p.snd.snd==null? s2: p.snd.snd.and(s2);
 
 						break;
-					}
+					}					
+				}
+			}
+			
+			Set<Relation> relations = ASTUtils.gatherRelations(f);
+			for(Relation q : relations) {
+				if (q.name().equals("quads")) {		
+					f = f.and(limitData(q));
 				}
 			}
 
-			checkExpanded(ast, query, U, f, s1, s2);
+			t = Drivers.check(U, SATFactory.MiniSat, Pair.make(f,  Pair.make(s1, s2)));
+			if (t != null) {
+				checkExpanded(ast, query, U, t, f, s1, s2);
+			}
 		}
 	}
-
 }
