@@ -41,7 +41,7 @@ import org.apache.jena.sparql.syntax.ElementUnion;
 
 public class LogQueryDataExtractor {
 	
-	private int defaultDataLimit = 10000;
+	private int defaultDataLimit = 10;
 	
 //	jena sparql syntax Element that can be ignored:
 //	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
@@ -211,7 +211,9 @@ public class LogQueryDataExtractor {
 			} else {
 				els.add(e);
 			}
-				
+//				TODO this makes only sense if we also require that the filter is not sat for nother part?? 
+//			no bec that is also in sol. just if optional is around... bec neg 
+//			but it would not hurt if we req it generally?
 			int c = els.size();
 //			then, the variability for the filter itself
 			for (int i = 0; i < c; i++) {
@@ -425,12 +427,12 @@ public class LogQueryDataExtractor {
 //        		note that this number may count some data items multiple times
 				int cqsDataCountTotal = 0;
 				
-				String qid = lq[0];System.out.println(qid);
+				String qid = lq[0];//System.out.println(qid);
 				String q = lq[1];			
 	
 				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
 //				uncomment the following line to get a file with all the cqs
-//				Utils.writeConstructQueriesFile(d2,qid,cqs);
+				Utils.writeConstructQueriesFile(d2,qid,cqs);
 				
 				for (Query cq : cqs) {
 					System.out.println(cq);
@@ -534,7 +536,7 @@ public class LogQueryDataExtractor {
 	
 	public static void main(String[] args) {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
-		de.extractQueryDataAndResults("http://localhost:8080/sparql", 0);//http://dbpedia.org/sparql
+		de.extractQueryDataAndResults("http://localhost:8080/sparql", 5000);//http://dbpedia.org/sparql
 	}
 //finally, delete empty write report, make outprint nice
 

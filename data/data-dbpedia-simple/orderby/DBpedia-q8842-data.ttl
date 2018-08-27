@@ -4,66 +4,7 @@
 @prefix dbpprop: <http://dbpedia.org/property/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-dbpedia:Juan_Manuel_Mata
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Juan Mata"@en , "Juan Mata"@de , "Juan Manuel Mata García"@en .
-
-dbpedia:Juan_Carlos_Ablanedo
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Juan Carlos Ablanedo"@en , "Juan Carlos Ablanedo Iglesias"@en .
-
-<http://dbpedia.org/resource/Oliverio_Jes%C3%BAs_Alvarez_Gonz%C3%A1lez>
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Oliverio Jesús Alvarez González"@en , "Oli"@en .
-
-<http://dbpedia.org/resource/Miguel_%C3%81ngel_Angulo>
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Miguel Angulo"@de , "Miguel Ángel Angulo"@en , "Miguel Ángel Angulo Valderrey"@en .
-
-<http://dbpedia.org/resource/Cundi_%28footballer%29>
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Secundino Suárez Vázquez"@de , "Cundi"@en , "Secundino Suárez Vázquez"@en .
-
-<http://dbpedia.org/resource/Luis_Garc%C3%ADa_Fern%C3%A1ndez>
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Luis García Fernández"@de , "Luis García"@en , "Luis García Fernández"@en .
-
-<http://dbpedia.org/resource/Abelardo_Fern%C3%A1ndez>
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Abelardo Fernández"@de , "Abelardo Fernández Antuña"@en , "Abelardo"@en .
-
-dbpedia:Julio_Alberto_Moreno
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Julio Alberto Moreno Casas"@en , "Julio Alberto"@en .
-
-dbpedia:Quini  dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Quini"@de , "Quini"@en , "Enrique Castro González"@en .
-
 dbpedia:David_Villa  dbpprop:nationalteam
                 dbpedia:Spain_national_football_team ;
         skos:subject          ns2:Asturian_people ;
-        foaf:name             "David Villa"@de , "David Villa Sánchez"@en , "David Villa"@en .
-
-<http://dbpedia.org/resource/C%C3%A9sar_Mart%C3%ADn>
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "César Martín Villar"@en , "César"@en , "César Martín"@de .
-
-dbpedia:Santi_Cazorla
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Santi Cazorla"@en , "Santiago Cazorla"@de , "Santiago Cazorla González"@en .
-
-dbpedia:Marcelino_Elena
-        dbpprop:nationalteam  dbpedia:Spain_national_football_team ;
-        skos:subject          ns2:Asturian_people ;
-        foaf:name             "Marcelino"@en , "Marcelino Elena"@de , "Marcelino Elena Sierra"@en .
+        foaf:name             "David Villa"@de , "David Villa"@en .

@@ -3,9 +3,9 @@ package com.ibm.lsd.checker;
 import java.io.File;
 
 import com.ibm.lsd.checker.drivers.LSDExpandAllDriver;
+import com.ibm.lsd.checker.drivers.LSDExpandEachDriver;
 
 import qed.core.Constants;
-import qed.core.Utils;
 
 public class Demo {
 	
@@ -45,8 +45,24 @@ public class Demo {
 	
 
 	}
+	
+	
+	public void expand(String q, String datadir) { 
+		String[] data = {q,String.valueOf(true), datadir};
+
+		 try {
+			LSDExpandEachDriver.main(data);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+
 
 	public static void main(String[] args) {
-		new Demo().extendDatasets();
+//		new Demo().extendDatasets();
+//		String query = "test-data/DBpedia-q194196.rq";
+		
+//		new Demo().expand(query, null);
 	}
 }

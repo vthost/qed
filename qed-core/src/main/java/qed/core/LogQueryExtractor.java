@@ -32,8 +32,8 @@ public class LogQueryExtractor {
             while(rs.hasNext()) {
             		QuerySolution s = rs.next();  	
             		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());
-            		System.out.println(s.getResource("?id").toString());	
-            		System.out.println(s.getLiteral("?text").toString().substring(s.getLiteral("?text").toString().toLowerCase().indexOf("select")));	
+//            		System.out.println(s.getResource("?id").toString());	
+//            		System.out.println(s.getLiteral("?text").toString().substring(s.getLiteral("?text").toString().toLowerCase().indexOf("select")));	
             }
 
         } catch (Exception e) {

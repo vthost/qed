@@ -1,5 +1,6 @@
 package com.ibm.lsd.checker.drivers;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -64,7 +65,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 		this.queryFile = queryFile;
 		this.solutionLimit = solutionLimit;
 		this.datasetLimit = datasetLimit;
-		this.dataDir = dataDir;
+		this.dataDir = dataDir == null || new File(dataDir).isDirectory() ? dataDir : this.dataDir;
 	}
 
 //	TODO a check only occurs in the very beginning, no?
@@ -150,7 +151,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 		xlation = xlator.translateSingle(Collections.<String,Object>emptyMap(), false).iterator().next();
 		
 		RDFDataMgr.write(new FileOutputStream(
-				dataDir+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+				"test-data/data/"+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
 //		Utils.writeQueryDataFile2(Utils.DATA_DIR, stem(), dataset);
 		System.out.println("\n\nthe solution:");
 		System.out.println(Drivers.check(U, xlation, "solution"));
