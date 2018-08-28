@@ -3,7 +3,6 @@ package com.ibm.lsd.checker.drivers;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.util.Collections;
-import java.util.Map;
 import java.util.Set;
 
 import com.hp.hpl.jena.query.Query;
@@ -17,7 +16,7 @@ import com.ibm.wala.util.collections.Pair;
 import kodkod.ast.Formula;
 import kodkod.ast.Relation;
 import kodkod.engine.satlab.SATFactory;
-import kodkod.instance.TupleSet;
+import kodkod.instance.Instance;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
 
@@ -48,7 +47,7 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 						} else {
 							thisf = p.fst.and(ensureSolutions(r));
 						}
-						Map<String, TupleSet> bindings = Drivers.check(U, SATFactory.MiniSat, Pair.make(thisf, p.snd));
+						Instance bindings = Drivers.check(U, SATFactory.MiniSat, Pair.make(thisf, p.snd));
 						if (bindings == null) {
 							continue formulae;
 						}

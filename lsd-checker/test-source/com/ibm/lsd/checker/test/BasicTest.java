@@ -53,7 +53,7 @@ public class BasicTest {
 
 	@Test
 	public void testExpandEach1733() throws Exception {
-		testExpandEach("DBpedia-q1733.rq", -1, 5);
+		testExpandEach("DBpedia-q1733.rq", -1, -1);
 	}
 
 	@Test

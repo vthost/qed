@@ -26,17 +26,13 @@ public abstract class DriverBase implements Constants {
 
 	public static void main(String ff, ThrowingConsumer<String,Exception> process) throws Exception {
 		File f = new File(ff);
+		System.err.println(f);
 		if (f.exists()) {
 			if (f.isDirectory()) {
-				for(File rq : f.listFiles(new FileFilter() {
-					@Override
-					public boolean accept(File name) {
-						return name.getName().endsWith(QUERY_FILE_EXT);
-					}
-				})) {
-					main(rq.toURI().toURL().toString(), process);
+				for(File rq : f.listFiles()) {
+					main(rq.toString(), process);
 				}
-			} else {
+			} else if (f.getName().endsWith(QUERY_FILE_EXT)) {
 				process.call(f.toURI().toString());
 			}
 		} else {

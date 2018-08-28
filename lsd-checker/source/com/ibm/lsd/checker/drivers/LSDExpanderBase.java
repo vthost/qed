@@ -5,16 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.Collections;
 import java.util.Iterator;
-import java.util.Map;
 
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RiotNotFoundException;
 
-import com.hp.hpl.jena.graph.Graph;
 import com.hp.hpl.jena.query.Dataset;
 import com.hp.hpl.jena.query.DatasetFactory;
 import com.hp.hpl.jena.query.Query;
@@ -40,18 +36,18 @@ import com.ibm.research.rdf.store.sparql11.semantics.DatasetUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaUtil;
-import com.ibm.research.rdf.store.sparql11.semantics.OpenDatasetUniverse;
+import com.ibm.research.rdf.store.sparql11.semantics.QuadTableRelations;
 import com.ibm.research.rdf.store.sparql11.semantics.SolutionRelation;
 import com.ibm.research.rdf.store.utilities.io.SparqlSelectResult;
-import com.ibm.wala.util.collections.HashMapFactory;
+import com.ibm.wala.util.collections.EmptyIterator;
 import com.ibm.wala.util.collections.MapIterator;
+import com.ibm.wala.util.collections.NonNullSingletonIterator;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
-import kodkod.instance.Tuple;
-import kodkod.instance.TupleSet;
+import kodkod.instance.Instance;
 
 public abstract class LSDExpanderBase extends DriverBase {
 
@@ -73,32 +69,21 @@ public abstract class LSDExpanderBase extends DriverBase {
 	}
 
 //	TODO a check only occurs in the very beginning, no?
-	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Map<String, TupleSet> t, Formula f, Formula s1, Formula s2)
+	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Instance t, Formula f, Formula s1, Formula s2)
 			throws URISyntaxException, FileNotFoundException {//System.out.println("check2: "+f);
 		SolutionRelation s;
 		JenaTranslator xlator;
 		Pair<Formula, Pair<Formula, Formula>> xlation;
 		Dataset dataset = DatasetFactory.createMem();
-		Graph G = dataset.asDatasetGraph().getDefaultGraph();
 		if (t != null) {
-			Map<Object,String> langs = HashMapFactory.make();
-			if (t.get("literal_languages") != null) {
-				for(Tuple m : t.get("literal_languages")) {
-					if (m.atom(1) instanceof Pair && ((Pair<?,?>)m.atom(1)).fst instanceof String) {
-						langs.put(m.atom(0), (String) ((Pair<?,?>)m.atom(1)).fst);
-					}
-				}
-			}
-			JenaUtil.addTupleSet(G, t.get("quads"), langs);
-
+			JenaUtil.addTupleSet(dataset, t.tuples(QuadTableRelations.quads), U, t);
 		}
 
-		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
-		SparqlSelectResult rr = new SparqlSelectResult() {
-			private final ResultSet results = exec.execSelect();
-
+		SparqlSelectResult rr = new SparqlSelectResult() {			
 			@Override
 			public Iterator<Row> rows() {
+				QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
+				ResultSet results = exec.execSelect();
 				return new Iterator<Row>() {
 					@Override
 					public boolean hasNext() {
@@ -149,6 +134,8 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 			@Override
 			public Iterator<Variable> variables() {
+				QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
+				ResultSet results = exec.execSelect();
 				Iterator<String> vars = results.getResultVars().iterator();
 				return new MapIterator<String,Variable>(vars, (String name) -> {
 					return new Variable(name);
@@ -158,7 +145,8 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 		U = new DatasetUniverse(dataset);
 		s = new SolutionRelation(rr, ast.getProjectVars(), Collections.<String,Object>emptyMap());
-		s.init(U);
+		U.addSolution(s);
+
 		xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, s);
 		xlation = xlator.translateSingle(Collections.<String,Object>emptyMap(), false).iterator().next();
 		
@@ -177,16 +165,36 @@ public abstract class LSDExpanderBase extends DriverBase {
 		Query ast = JenaUtil.parse(queryFile);
 		Op query = JenaUtil.compile(ast);
 
-		String stem = stem();
-
-		BasicUniverse U = null; //new BoundedUniverse();
+		BasicUniverse U = new BoundedUniverse();
 //		try {
 //			U = new OpenDatasetUniverse(new URL(stem + QUERY_DATA_FILE_EXT));
 //		} catch (RiotNotFoundException e) {
 //			U = new BoundedUniverse();
 //		}
 
-		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, null);
+		SparqlSelectResult ask = new SparqlSelectResult() {
+			@Override
+			public Iterator<Row> rows() {
+				return new NonNullSingletonIterator<>(new Row() {
+					@Override
+					public QueryTripleTerm get(Variable v) {
+						assert false;
+						return null;
+					}
+					@Override
+					public Iterator<Variable> variables() {
+						return EmptyIterator.instance();
+					}					
+				});
+			}
+
+			@Override
+			public Iterator<Variable> variables() {
+				return EmptyIterator.instance();
+			}
+		};
+		
+		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, new SolutionRelation(ask, Collections.emptyList(), Collections.emptyNavigableMap()));
 
 		p.process(ast, query, U, xlator);
 	}
@@ -196,7 +204,8 @@ public abstract class LSDExpanderBase extends DriverBase {
 	}
 
 	protected Formula ensureSolutions(Relation r) {
-		return solutionLimit > 0? r.count().lte(IntConstant.constant(solutionLimit)).and(r.count().gt(IntConstant.constant(0))): r.some();
+		Formula some = r.count().gt(IntConstant.constant(0));
+		return solutionLimit > 0? r.count().lte(IntConstant.constant(solutionLimit)).and(some): some;
 	}
 
 	protected Formula ensureSolutions(Relation r, Relation q) {

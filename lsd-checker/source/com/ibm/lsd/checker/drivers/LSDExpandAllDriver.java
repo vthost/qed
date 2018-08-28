@@ -3,7 +3,6 @@ package com.ibm.lsd.checker.drivers;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.util.Collections;
-import java.util.Map;
 import java.util.Set;
 
 import com.hp.hpl.jena.query.Query;
@@ -18,7 +17,7 @@ import com.ibm.wala.util.collections.Pair;
 import kodkod.ast.Formula;
 import kodkod.ast.Relation;
 import kodkod.engine.satlab.SATFactory;
-import kodkod.instance.TupleSet;
+import kodkod.instance.Instance;
 
 public class LSDExpandAllDriver extends LSDExpanderBase {
 
@@ -42,33 +41,11 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 
-			Map<String, TupleSet> t = null;
-			
-			//Set<Relation> prs = HashSetFactory.make();
+			Instance t = null;			
 			for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
-				Set<Relation> relations = ASTUtils.gatherRelations(p.fst);
-				for(Relation r : relations) {
-					if (r.name().equals("solution")) {
-
-						Formula thisf = p.fst.and(ensureSolutions(r));
-						
-						/*
-						for(Relation pr : prs) {
-							if (r.arity() == pr.arity()) {
-								thisf = thisf.and(pr.eq(r).not());
-							}
-						}
-
-						prs.add(r);
-						 */
-
-						f = f.and(thisf);
-						s1 = p.snd.fst==null? s1: p.snd.fst.and(s1);
-						s2 = p.snd.snd==null? s2: p.snd.snd.and(s2);
-
-						break;
-					}					
-				}
+				f = f.and(p.fst);
+				s1 = p.snd.fst==null? s1: p.snd.fst.and(s1);
+				s2 = p.snd.snd==null? s2: p.snd.snd.and(s2);
 			}
 			
 			Set<Relation> relations = ASTUtils.gatherRelations(f);
