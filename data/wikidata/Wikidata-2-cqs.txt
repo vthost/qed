@@ -1,0 +1,24 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  https: <http://https>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?article schema:about ?author .
+    ?article schema:isPartOf <https://species.wikimedia.org/> .
+    ?author wdt:P31 wd:Q5 .
+    ?paper wdt:P50 ?author .
+  }
+WHERE
+  { ?article  schema:about     ?author ;
+              schema:isPartOf  <https://species.wikimedia.org/> .
+    ?author   wdt:P31          wd:Q5 .
+    ?paper    wdt:P50          ?author
+  }
+LIMIT   3
+
+----------------------------------------------

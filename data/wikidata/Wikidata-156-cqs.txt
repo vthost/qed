@@ -1,0 +1,96 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q2977 .
+    ?item wdt:P131 ?place .
+    ?place wdt:P131 wd:Q90 .
+    ?item wdt:P625 ?coords .
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { { ?item  wdt:P18  ?image }
+    { ?item  wdt:P625  ?coords }
+    ?item   wdt:P31   wd:Q2977 ;
+            wdt:P131  ?place .
+    ?place  wdt:P131  wd:Q90
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q2977 .
+    ?item wdt:P131 ?place .
+    ?place wdt:P131 wd:Q90 .
+    ?item wdt:P625 ?coords .
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P18  ?image }
+    { ?item  wdt:P625  ?coords }
+    ?item   wdt:P31   wd:Q2977 ;
+            wdt:P131  ?place .
+    ?place  wdt:P131  wd:Q90
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q2977 .
+    ?item wdt:P131 ?place .
+    ?place wdt:P131 wd:Q90 .
+    ?item wdt:P625 ?coords .
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { { ?item  wdt:P18  ?image }
+    FILTER NOT EXISTS { ?item  wdt:P625  ?coords }
+    ?item   wdt:P31   wd:Q2977 ;
+            wdt:P131  ?place .
+    ?place  wdt:P131  wd:Q90
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q2977 .
+    ?item wdt:P131 ?place .
+    ?place wdt:P131 wd:Q90 .
+    ?item wdt:P625 ?coords .
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P18  ?image }
+    FILTER NOT EXISTS { ?item  wdt:P625  ?coords }
+    ?item   wdt:P31   wd:Q2977 ;
+            wdt:P131  ?place .
+    ?place  wdt:P131  wd:Q90
+  }
+LIMIT   3
+
+----------------------------------------------

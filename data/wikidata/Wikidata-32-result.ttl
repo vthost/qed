@@ -1,0 +1,53 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label" , "image" , "coord" , "place" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/HAER-Starrucca%201.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-75.5834 41.9628)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Starrucca Viaduct"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/VanStadensRiverBridges.JPG> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(25.19703333 -33.90906667)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Van Stadens Bridge"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Stone%20Bridge%2C%20Spanning%20Bull%20Run%20%28Occoquan%20River%29.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-77.5037 38.8243)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Stone Bridge"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(36.69163764 32.83326255)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     "Bridge at Nimreh"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(13.38542461 42.76298833)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     "Ponte di Quintodecimo"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(28.44147384 40.20409959)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     "Constantine's Bridge"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

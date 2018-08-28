@@ -1,0 +1,54 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?object wdt:P31 wd:Q185441 .
+    ?object p:P1082 ?populationStatement .
+    ?populationStatement ps:P1082 ?population .
+    ?populationStatement pq:P585 ?date .
+  }
+WHERE
+  { FILTER ( year(?date) >= 1960 )
+    ?object   wdt:P31   wd:Q185441 ;
+              p:P1082   ?populationStatement .
+    ?populationStatement
+              ps:P1082  ?population ;
+              pq:P585   ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?object wdt:P31 wd:Q185441 .
+    ?object p:P1082 ?populationStatement .
+    ?populationStatement ps:P1082 ?population .
+    ?populationStatement pq:P585 ?date .
+  }
+WHERE
+  { FILTER ( ! ( year(?date) >= 1960 ) )
+    ?object   wdt:P31   wd:Q185441 ;
+              p:P1082   ?populationStatement .
+    ?populationStatement
+              ps:P1082  ?population ;
+              pq:P585   ?date
+  }
+LIMIT   3
+
+----------------------------------------------

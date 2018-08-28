@@ -1,0 +1,24 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?astronaut ?x1 wd:Q11631 .
+    ?astronaut wdt:P18 ?image .
+    ?astronaut wdt:P569 ?birthdate .
+    ?astronaut wdt:P19 ?birthplace .
+    ?birthplace wdt:P625 ?coord .
+  }
+WHERE
+  { ?astronaut  ?x1     wd:Q11631 ;
+              wdt:P18   ?image ;
+              wdt:P569  ?birthdate ;
+              wdt:P19   ?birthplace .
+    ?birthplace  wdt:P625  ?coord
+  }
+LIMIT   3
+
+----------------------------------------------

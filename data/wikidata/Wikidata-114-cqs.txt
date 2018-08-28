@@ -1,0 +1,216 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q199655 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q16387 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q199655 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q16387 }
+        { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q199655 }
+        { ?journal  wdt:P921  wd:Q16387 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q199655 }
+        { ?journal  wdt:P921  wd:Q16387 }
+        { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { { ?journal  wdt:P921  wd:Q199655 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q16387 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { { ?journal  wdt:P921  wd:Q199655 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q16387 }
+        { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { { ?journal  wdt:P921  wd:Q199655 }
+        { ?journal  wdt:P921  wd:Q16387 }
+        FILTER NOT EXISTS { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?journal wdt:P31 wd:Q5633421 .
+    ?journal wdt:P921 wd:Q199655 .
+    ?journal wdt:P921 wd:Q16387 .
+    ?journal wdt:P921 wd:Q13420675 .
+    ?journal rdfs:label ?name .
+  }
+WHERE
+  { ?journal  rdfs:label  ?name
+    { { { ?journal  wdt:P921  wd:Q199655 }
+        { ?journal  wdt:P921  wd:Q16387 }
+        { ?journal  wdt:P921  wd:Q13420675 }
+      }
+    }
+    ?journal  wdt:P31  wd:Q5633421
+  }
+LIMIT   3
+
+----------------------------------------------

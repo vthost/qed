@@ -1,0 +1,341 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( lang(?desc) = "en" )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! bound(?dummy) )
+    { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! bound(?dummy) )
+    { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?s  rdfs:label  ?desc
+                        FILTER ( lang(?desc) = "en" )
+                      }
+    FILTER ( ! bound(?dummy) )
+    { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( lang(?desc) = "en" )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! ( ! bound(?dummy) ) )
+    { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! ( ! bound(?dummy) ) )
+    { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?s  rdfs:label  ?desc
+                        FILTER ( lang(?desc) = "en" )
+                      }
+    FILTER ( ! ( ! bound(?dummy) ) )
+    { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( lang(?desc) = "en" )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! bound(?dummy) )
+    FILTER NOT EXISTS { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! bound(?dummy) )
+    FILTER NOT EXISTS { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?s  rdfs:label  ?desc
+                        FILTER ( lang(?desc) = "en" )
+                      }
+    FILTER ( ! bound(?dummy) )
+    FILTER NOT EXISTS { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( lang(?desc) = "en" )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! ( ! bound(?dummy) ) )
+    FILTER NOT EXISTS { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+    ?sitelink schema:about ?s .
+    ?s wdt:P18 ?dummy .
+    ?s rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?s  rdfs:label  ?desc
+    }
+    FILTER ( ! ( ! bound(?dummy) ) )
+    FILTER NOT EXISTS { ?s  wdt:P18  ?dummy }
+    ?sitelink  schema:about  ?s
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   3
+
+----------------------------------------------

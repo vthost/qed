@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix defaultView: <http://defaultView> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q82724  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(9.1125 47.992777777)"^^geo:wktLiteral .
+
+wd:Q2749  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(10.898333333 48.371666666)"^^geo:wktLiteral .
+
+wd:Q820923  rdfs:label  "Samuel of Speyer"@en ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q6829 .
+
+wd:Q6829  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(8.431111111 49.319444444)"^^geo:wktLiteral .
+
+wd:Q221170  rdfs:label  "Albrecht von Scharfenberg"@en ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q980 .
+
+wd:Q1794  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(8.679722222 50.113611111)"^^geo:wktLiteral .
+
+wd:Q48301  rdfs:label  "Martin Heidegger"@en ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q82724 ;
+        wdt:P569    "1889-09-26T00:00:00Z"^^xsd:dateTime .
+
+wd:Q108280  rdfs:label  "Jobus Fincelius"@en , "Jobus Fincelius"@de , "Jobus Fincelius"@da , "Jobus Fincelius"@ca ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q3955 .
+
+wd:Q1511  rdfs:label  "Вагнер, Рихард"@xal , "რიხარდ ვაგნერი"@xmf , "ריכארד וואגנער"@yi ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q2079 ;
+        wdt:P569    "1813-05-22T00:00:00Z"^^xsd:dateTime .
+
+wd:Q980  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(11.431111111 48.7775)"^^geo:wktLiteral .
+
+wd:Q2079  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(12.383333333 51.333333333)"^^geo:wktLiteral .
+
+wd:Q3955  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(11.316666666 50.983333333)"^^geo:wktLiteral .
+
+wd:Q5879  rdfs:label  "Johann Wolfgang von Goethe"@en ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q1794 ;
+        wdt:P569    "1749-08-28T00:00:00Z"^^xsd:dateTime .
+
+wd:Q38757  rdfs:label  "Bertolt Brecht"@en ;
+        wdt:P106    wd:Q49757 ;
+        wdt:P19     wd:Q2749 ;
+        wdt:P569    "1898-02-10T00:00:00Z"^^xsd:dateTime .

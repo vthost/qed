@@ -1,0 +1,66 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?pid wdt:P19 wd:Q64 .
+    ?pid wdt:P735 ?cid .
+    ?cid rdfs:label ?firstname .
+  }
+WHERE
+  { { FILTER ( lang(?firstname) = "en" )
+      ?cid  rdfs:label  ?firstname
+    }
+    ?pid  wdt:P19   wd:Q64 ;
+          wdt:P735  ?cid
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?pid wdt:P19 wd:Q64 .
+    ?pid wdt:P735 ?cid .
+    ?cid rdfs:label ?firstname .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?firstname) = "en" ) )
+      ?cid  rdfs:label  ?firstname
+    }
+    ?pid  wdt:P19   wd:Q64 ;
+          wdt:P735  ?cid
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?pid wdt:P19 wd:Q64 .
+    ?pid wdt:P735 ?cid .
+    ?cid rdfs:label ?firstname .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?cid  rdfs:label  ?firstname
+                        FILTER ( lang(?firstname) = "en" )
+                      }
+    ?pid  wdt:P19   wd:Q64 ;
+          wdt:P735  ?cid
+  }
+LIMIT   3
+
+----------------------------------------------

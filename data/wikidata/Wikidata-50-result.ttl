@@ -1,0 +1,17 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "population" , "countryLabel" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "146600"^^xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "4550368"^^xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "5707251"^^xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ]
+] .

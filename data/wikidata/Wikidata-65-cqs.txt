@@ -1,0 +1,32 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P374 ?inseeCode .
+  }
+WHERE
+  { FILTER ( ?inseeCode IN ("75056", "69123", "13055") )
+    ?entity  wdt:P374  ?inseeCode
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P374 ?inseeCode .
+  }
+WHERE
+  { FILTER ( ! ( ?inseeCode IN ("75056", "69123", "13055") ) )
+    ?entity  wdt:P374  ?inseeCode
+  }
+LIMIT   3
+
+----------------------------------------------

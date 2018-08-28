@@ -1,0 +1,44 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    wd:Q5571382 ?p wd:Q223243 .
+    ?property ?ref ?p .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?l .
+  }
+WHERE
+  { FILTER ( lang(?l) = "en" )
+    wd:Q5571382  ?p                 wd:Q223243 .
+    ?property  ?ref                 ?p ;
+              a                     wikibase:Property ;
+              rdfs:label            ?l
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    wd:Q5571382 ?p wd:Q223243 .
+    ?property ?ref ?p .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?l .
+  }
+WHERE
+  { FILTER ( ! ( lang(?l) = "en" ) )
+    wd:Q5571382  ?p                 wd:Q223243 .
+    ?property  ?ref                 ?p ;
+              a                     wikibase:Property ;
+              rdfs:label            ?l
+  }
+LIMIT   3
+
+----------------------------------------------

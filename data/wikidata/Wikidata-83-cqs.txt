@@ -1,0 +1,19 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?variant wdt:P3358 ?disease .
+    ?variant wdt:P3433 ?gene .
+  }
+WHERE
+  { VALUES ?disease { wd:Q188874 }
+    ?variant  wdt:P3358  ?disease ;
+              wdt:P3433  ?gene
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,18 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?thing wdt:P366 wd:Q132781 .
+    ?thing wdt:P18 ?image .
+  }
+WHERE
+  { ?thing  wdt:P366  wd:Q132781 ;
+            wdt:P18   ?image
+  }
+LIMIT   3
+
+----------------------------------------------

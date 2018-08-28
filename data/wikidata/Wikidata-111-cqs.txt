@@ -1,0 +1,22 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?inventor wdt:P157 ?gadget .
+    ?gadet wdt:P61 ?inventor .
+    ?inventor rdfs:label ?inventorLabel .
+    ?gadget rdfs:label ?gadgetLabel .
+  }
+WHERE
+  { ?inventor  wdt:P157   ?gadget .
+    ?gadet    wdt:P61     ?inventor .
+    ?inventor  rdfs:label  ?inventorLabel .
+    ?gadget   rdfs:label  ?gadgetLabel
+  }
+LIMIT   3
+
+----------------------------------------------

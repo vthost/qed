@@ -1,0 +1,54 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P2044 ?elev .
+    ?subj wdt:P625 ?coord .
+    ?subj wdt:P17 wd:Q38 .
+    ?subj wdt:P18 ?picture .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { ?subj  wdt:P625    ?coord ;
+           wdt:P17     wd:Q38 ;
+           wdt:P18     ?picture ;
+           rdfs:label  ?label
+    FILTER ( ?elev > 4000 )
+    ?subj  wdt:P2044  ?elev
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P2044 ?elev .
+    ?subj wdt:P625 ?coord .
+    ?subj wdt:P17 wd:Q38 .
+    ?subj wdt:P18 ?picture .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { ?subj  wdt:P625    ?coord ;
+           wdt:P17     wd:Q38 ;
+           wdt:P18     ?picture ;
+           rdfs:label  ?label
+    FILTER ( ! ( ?elev > 4000 ) )
+    ?subj  wdt:P2044  ?elev
+  }
+LIMIT   3
+
+----------------------------------------------

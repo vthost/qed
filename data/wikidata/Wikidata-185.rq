@@ -1,0 +1,1 @@
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT DISTINCT ?property ?propertyLabel ?propertyDescription ?subpropertyOf ?subpropertyOfLabel   WHERE {     ?property a wikibase:Property .     OPTIONAL {?property wdt:P1647  ?subpropertyOf .}	 } 

@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "picture" , "date" , "spaceProbeLabel" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Mars%20Orbiter%20Mission%20-%20India%20-%20ArtistsConcept.jpg> ;
+                                     rs:variable  "picture"
+                                   ] ;
+            rs:binding  [ rs:value     "2013-11-05T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "date"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Mariner%206and7.gif> ;
+                                     rs:variable  "picture"
+                                   ] ;
+            rs:binding  [ rs:value     "1969-03-27T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "date"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Pioneer-6-9.jpg> ;
+                                     rs:variable  "picture"
+                                   ] ;
+            rs:binding  [ rs:value     "1965-12-16T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "date"
+                        ] ]
+] .

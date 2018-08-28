@@ -1,8 +1,0 @@
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ns1:   <http://dbpedia.org/resource/Category:> .
-
-ns1:Particle_physics  rdfs:label  "Particle physics"@en , "تصنيف:فيزياء الجسيمات"@ar , "Categoría:Fesica nucleyar y de particlas"@an ;
-        skos:broader  ns1:Physics .
-
-ns1:Physics  rdfs:label  "Physics"@en , "Категория:Физика"@ru , "Categoria:Fisica"@it .

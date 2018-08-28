@@ -1,0 +1,56 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "year" , "creatorLabel" , "image" , "instanceLabel" , "itemLabel" , "item" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Delaunay%2C%20Rythmes%20sans%20fin%20-%20La%20Tour%20Eiffel%2C%201926.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     1926 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q19018536> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1912 ;
+                                     rs:variable  "year"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q20816314> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q30067851> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1925 ;
+                                     rs:variable  "year"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q28106303> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20jardin%20des%20Tuileries%20en%20automne%20-%20Paul%20de%20Castro.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     1921 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q19967305> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1889 ;
+                                     rs:variable  "year"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q30150375> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Delaunay%20-%20Window%20with%20Orange%20Curtains%20-%201912%20-%20Private%20collection.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     1912 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q28106350> ;
+                          rs:variable  "item"
+                        ] ]
+] .

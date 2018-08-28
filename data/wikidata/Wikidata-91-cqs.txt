@@ -1,0 +1,46 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?organism_item wdt:P276 wd:Q5880 .
+    ?organism_item rdfs:label ?organism_name .
+    ?gene wdt:P703 ?organism_item .
+    ?gene wdt:P1056 wd:Q319541 .
+  }
+WHERE
+  { FILTER ( lang(?organism_name) = "en" )
+    ?organism_item
+              wdt:P276    wd:Q5880 ;
+              rdfs:label  ?organism_name .
+    ?gene     wdt:P703    ?organism_item ;
+              wdt:P1056   wd:Q319541
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?organism_item wdt:P276 wd:Q5880 .
+    ?organism_item rdfs:label ?organism_name .
+    ?gene wdt:P703 ?organism_item .
+    ?gene wdt:P1056 wd:Q319541 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?organism_name) = "en" ) )
+    ?organism_item
+              wdt:P276    wd:Q5880 ;
+              rdfs:label  ?organism_name .
+    ?gene     wdt:P703    ?organism_item ;
+              wdt:P1056   wd:Q319541
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,1 @@
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>  SELECT ?s ?desc WHERE {   ?s wdt:P279 wd:Q7725634 .   OPTIONAL {      ?s rdfs:label ?desc filter (lang(?desc) = "en").    }  } 

@@ -1,0 +1,341 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { { ?item  wikibase:sitelinks  ?sl }
+    { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wikibase:sitelinks  ?sl }
+    { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { { ?item  wikibase:sitelinks  ?sl }
+    FILTER NOT EXISTS { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wikibase:sitelinks  ?sl }
+    FILTER NOT EXISTS { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { { ?item  wikibase:sitelinks  ?sl }
+    { ?item  wdt:P569  ?dob }
+    FILTER NOT EXISTS { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wikibase:sitelinks  ?sl }
+    { ?item  wdt:P569  ?dob }
+    FILTER NOT EXISTS { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { { ?item  wikibase:sitelinks  ?sl }
+    FILTER NOT EXISTS { ?item  wdt:P569  ?dob }
+    FILTER NOT EXISTS { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wikibase:sitelinks  ?sl }
+    FILTER NOT EXISTS { ?item  wdt:P569  ?dob }
+    FILTER NOT EXISTS { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! bound(?d) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { { ?item  wikibase:sitelinks  ?sl }
+    { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! ( ! bound(?d) ) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wikibase:sitelinks  ?sl }
+    { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! ( ! bound(?d) ) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P106 wd:Q33999 .
+    ?item wdt:P27 wd:Q668 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P570 ?d .
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P569 ?dob .
+    ?item wikibase:sitelinks ?sl .
+  }
+WHERE
+  { { ?item  wikibase:sitelinks  ?sl }
+    FILTER NOT EXISTS { ?item  wdt:P569  ?dob }
+    { ?item  wdt:P18  ?img }
+    ?item  wdt:P31  wd:Q5
+    FILTER ( ! ( ! bound(?d) ) )
+    { ?item  wdt:P570  ?d }
+    ?item  wdt:P106  wd:Q33999 ;
+           wdt:P27   wd:Q668 ;
+           wdt:P21   wd:Q6581072
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,28 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?compound wdt:P231 ?cas .
+  }
+WHERE
+  { FILTER ( ?items > 1 )
+    { ?compound  wdt:P231  ?cas }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?compound wdt:P231 ?cas .
+  }
+WHERE
+  { FILTER ( ! ( ?items > 1 ) )
+    { ?compound  wdt:P231  ?cas }
+  }
+LIMIT   3
+
+----------------------------------------------

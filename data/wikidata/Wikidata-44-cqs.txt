@@ -1,0 +1,224 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( lang(?pl) = "en" )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( lang(?ml) = "en" )
+    ?m  rdfs:label  ?ml
+    FILTER ( lang(?ul) = "en" )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( ! ( lang(?pl) = "en" ) )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( lang(?ml) = "en" )
+    ?m  rdfs:label  ?ml
+    FILTER ( lang(?ul) = "en" )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( lang(?pl) = "en" )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( ! ( lang(?ml) = "en" ) )
+    ?m  rdfs:label  ?ml
+    FILTER ( lang(?ul) = "en" )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( ! ( lang(?pl) = "en" ) )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( ! ( lang(?ml) = "en" ) )
+    ?m  rdfs:label  ?ml
+    FILTER ( lang(?ul) = "en" )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( lang(?pl) = "en" )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( lang(?ml) = "en" )
+    ?m  rdfs:label  ?ml
+    FILTER ( ! ( lang(?ul) = "en" ) )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( ! ( lang(?pl) = "en" ) )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( lang(?ml) = "en" )
+    ?m  rdfs:label  ?ml
+    FILTER ( ! ( lang(?ul) = "en" ) )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( lang(?pl) = "en" )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( ! ( lang(?ml) = "en" ) )
+    ?m  rdfs:label  ?ml
+    FILTER ( ! ( lang(?ul) = "en" ) )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?u rdfs:label ?ul .
+    ?m rdfs:label ?ml .
+    ?p wdt:P1080 ?u .
+    ?p wdt:P31 ?m .
+    ?p wdt:P1080 wd:Q931597 .
+    ?p rdfs:label ?pl .
+  }
+WHERE
+  { FILTER ( ! ( lang(?pl) = "en" ) )
+    ?p  wdt:P1080   ?u ;
+        wdt:P31     ?m ;
+        wdt:P1080   wd:Q931597 ;
+        rdfs:label  ?pl
+    FILTER ( ! ( lang(?ml) = "en" ) )
+    ?m  rdfs:label  ?ml
+    FILTER ( ! ( lang(?ul) = "en" ) )
+    ?u  rdfs:label  ?ul
+  }
+LIMIT   3
+
+----------------------------------------------

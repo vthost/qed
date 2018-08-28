@@ -1,0 +1,429 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) )
+    FILTER ( lang(?_continentLabel) = "en" )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ! ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) ) )
+    FILTER ( lang(?_continentLabel) = "en" )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) )
+    FILTER ( ! ( lang(?_continentLabel) = "en" ) )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ! ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) ) )
+    FILTER ( ! ( lang(?_continentLabel) = "en" ) )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) )
+    FILTER ( lang(?_continentLabel) = "en" )
+    FILTER ( ! ( lang(?_countryLabel) = "en" ) )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ! ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) ) )
+    FILTER ( lang(?_continentLabel) = "en" )
+    FILTER ( ! ( lang(?_countryLabel) = "en" ) )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) )
+    FILTER ( ! ( lang(?_continentLabel) = "en" ) )
+    FILTER ( ! ( lang(?_countryLabel) = "en" ) )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ! ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) ) )
+    FILTER ( ! ( lang(?_continentLabel) = "en" ) )
+    FILTER ( ! ( lang(?_countryLabel) = "en" ) )
+    FILTER bound(?year)
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) )
+    FILTER ( lang(?_continentLabel) = "en" )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER ( ! bound(?year) )
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ! ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) ) )
+    FILTER ( lang(?_continentLabel) = "en" )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER ( ! bound(?year) )
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q178561 .
+    ?subj wdt:P580 ?d1 .
+    ?subj wdt:P585 ?d2 .
+    ?subj wdt:P582 ?d3 .
+    ?subj wdt:P276 ?_loc .
+    ?_loc wdt:P17 ?_country .
+    ?_country wdt:P30 ?_continent .
+    ?_country rdfs:label ?_countryLabel .
+    ?_continent rdfs:label ?_continentLabel .
+  }
+WHERE
+  { FILTER ( ( 0 <= ?distance ) && ( ?distance < ( ( 31 * 12 ) * 80 ) ) )
+    FILTER ( ! ( lang(?_continentLabel) = "en" ) )
+    FILTER ( lang(?_countryLabel) = "en" )
+    FILTER ( ! bound(?year) )
+    BIND(( now() - ?date ) AS ?distance)
+    ?subj     wdt:P276    ?_loc .
+    ?_loc     wdt:P17     ?_country .
+    ?_country  wdt:P30    ?_continent ;
+              rdfs:label  ?_countryLabel .
+    ?_continent  rdfs:label  ?_continentLabel
+    BIND(str(year(?date)) AS ?year)
+    BIND(if(( ! bound(?d1) ), if(( ! bound(?d2) ), ?d3, ?d2), ?d1) AS ?date)
+    { ?subj  wdt:P582  ?d3 }
+    { ?subj  wdt:P585  ?d2 }
+    { ?subj  wdt:P580  ?d1 }
+    ?subj  wdt:P31  wd:Q178561
+  }
+LIMIT   3
+
+----------------------------------------------

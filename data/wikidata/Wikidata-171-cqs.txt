@@ -1,0 +1,25 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    ?wds wikibase:rank wikibase:DeprecatedRank .
+    ?wd ?p ?wds .
+    ?wds ?v ?value .
+    ?wdP wikibase:statementProperty ?v .
+    ?wdP wikibase:claim ?p .
+  }
+WHERE
+  { hint:Query  hint:optimizer      "None" .
+    ?wds      wikibase:rank         wikibase:DeprecatedRank .
+    ?wd       ?p                    ?wds .
+    ?wds      ?v                    ?value .
+    ?wdP      wikibase:statementProperty  ?v ;
+              wikibase:claim        ?p
+  }
+LIMIT   3
+
+----------------------------------------------

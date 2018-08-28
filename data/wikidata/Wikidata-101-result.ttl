@@ -1,0 +1,44 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "compound2Label" , "compound1" , "compound1Label" , "compound2" , "cas" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q27131768> ;
+                                     rs:variable  "compound2"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q411775> ;
+                          rs:variable  "compound1"
+                        ] ;
+            rs:binding  [ rs:value     "14307-02-9" ;
+                          rs:variable  "cas"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q4134928> ;
+                                     rs:variable  "compound2"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q410217> ;
+                          rs:variable  "compound1"
+                        ] ;
+            rs:binding  [ rs:value     "13782-01-9" ;
+                          rs:variable  "cas"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q410217> ;
+                                     rs:variable  "compound2"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q4134928> ;
+                          rs:variable  "compound1"
+                        ] ;
+            rs:binding  [ rs:value     "13782-01-9" ;
+                          rs:variable  "cas"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q411775> ;
+                                     rs:variable  "compound2"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q27131768> ;
+                          rs:variable  "compound1"
+                        ] ;
+            rs:binding  [ rs:value     "14307-02-9" ;
+                          rs:variable  "cas"
+                        ] ]
+] .

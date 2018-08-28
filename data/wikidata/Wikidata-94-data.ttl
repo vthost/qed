@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q27087990  p:P2699  wds:Q27087990-8d21b075-416b-97d1-e8d4-61bc8208fec6 .
+
+wd:P2699  wikibase:claim            p:P2699 ;
+        wikibase:statementProperty  ps:P2699 .
+
+wd:Q5188229  p:P2699  wds:Q5188229-be47152c-4ee8-6e8a-84ce-7b06457e3017 .
+
+wd:Q29211656  p:P2699  wds:Q29211656-aec16f96-442e-177f-3c63-c6ffcf769ff8 .
+
+wds:Q5188229-be47152c-4ee8-6e8a-84ce-7b06457e3017
+        pq:P31    wd:Q27075870 ;
+        ps:P2699  <http://api.eventdata.crossref.org/api> .
+
+wds:Q29211656-aec16f96-442e-177f-3c63-c6ffcf769ff8
+        pq:P31    wd:Q27075870 ;
+        ps:P2699  <https://rebilly.github.io/ReDoc/?url=https://open-tggates-api.cloud.douglasconnect.com/v2/swagger.json> .
+
+wds:Q27087990-8d21b075-416b-97d1-e8d4-61bc8208fec6
+        pq:P31    wd:Q27075870 ;
+        ps:P2699  <http://webservice.bridgedb.org/> .

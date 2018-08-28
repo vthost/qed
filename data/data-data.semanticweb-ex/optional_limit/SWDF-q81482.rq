@@ -1,1 +1,0 @@
-SELECT DISTINCT ?X ?X_display ?X_ont_affiliation ?X_foaf_status  WHERE {  ?X a <http://xmlns.com/foaf/0.1/Person> .  ?X <http://xmlns.com/foaf/0.1/name> ?X_display .  OPTIONAL {?X <http://data.semanticweb.org/ns/swc/ontology#affiliation> ?X_ont_affiliation }  OPTIONAL {?X <http://xmlns.com/foaf/0.1/status> ?X_foaf_status }  } LIMIT 200

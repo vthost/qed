@@ -1,0 +1,1 @@
+ PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT ?taxon ?eponym ?taxonName ?eponymLabel WHERE {   ?taxon wdt:P31 wd:Q16521;          wdt:P225 ?taxonName;          wdt:P138 ?eponym. } ORDER BY ?eponym 

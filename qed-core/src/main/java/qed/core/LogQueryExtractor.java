@@ -10,7 +10,7 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
 public class LogQueryExtractor {
 
-	private static String[][] defaultConfig = Feature.FEATURE_CONFIG_SIMPLE;
+	private static Feature[][] defaultConfig = Feature.getValuesAsConfig();
 	
 	private int defaultQueryNumMax = 10;
 	private int defaultQuerySizeMin = 3;
@@ -28,7 +28,7 @@ public class LogQueryExtractor {
 				qexec.addParam("default-graph-uri", graphUri) ;
        	
             ResultSet rs = qexec.execSelect();
-            
+            System.out.println(rs.hasNext());
             while(rs.hasNext()) {
             		QuerySolution s = rs.next();  	
             		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());
@@ -44,17 +44,17 @@ public class LogQueryExtractor {
 	
 //  queryNumMax is per config
 //	we might change this by using a big union
-	public void extractQueries(String logEndpoint, String graphUri, String[][] configs, 
+	public void extractQueries(String logEndpoint, String graphUri, Feature[][] configs, 
 			int queryNumMax, int querySizeMin, int queryResultSizeMin) {//, String dataDir
 		
 		if(Strings.isNullOrEmpty(logEndpoint)) return;
 		
 		Utils.cleanDataDir();
 		
-		for(String[] config: configs == null ? defaultConfig : configs) {
-			
+		for(Feature[] config: configs == null ? defaultConfig : configs) {
+
 			String filter = 
-					" FILTER(?rt < 100  && "
+					" FILTER("//?rt < 100  && "
 					+ " ?rs >= " + (queryResultSizeMin >= 0 ? queryResultSizeMin : defaultQueryResultSizeMin) 
 					+ " && ?tp >= " + (querySizeMin > 0 ? querySizeMin : defaultQuerySizeMin) + ") ";
 			
@@ -65,7 +65,7 @@ public class LogQueryExtractor {
 //			TODO consider also forms other than select!
 			+ "?id a sp:Select; "
 			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "		
-			+ "lsqv:usesFeature lsqv:" + String.join("; lsqv:usesFeature lsqv:", config) + ". "
+			+ "lsqv:usesFeature lsqv:" + String.join("; lsqv:usesFeature lsqv:", Feature.toStringArray(config)) + ". "
 			+ "FILTER NOT EXISTS {?id lsqv:parseError ?error .}. "
 			+ filter + " . "
 
@@ -94,7 +94,7 @@ public class LogQueryExtractor {
 
 			
 			+ "} ORDER BY ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
-
+System.out.println(query);
 			File f = Utils.cleanDataSubDir(config);
 			queryLogAndWriteFiles(logEndpoint, graphUri, query, f);
 			if(f.list().length == 0) f.delete();
@@ -116,7 +116,7 @@ public class LogQueryExtractor {
 				+ "FILTER ( (?id=<" + Utils.LSQR_RESOURCE_URI
 				+ String.join(">) || (?id=<" + Utils.LSQR_RESOURCE_URI, queryIds) + ">) ) }";
 
-		String[] dummyConfig = {"data"};
+		Feature[] dummyConfig = {};
 		
 		queryLogAndWriteFiles(logEndpoint, graphUri, query, Utils.cleanDataSubDir(dummyConfig));
 	}

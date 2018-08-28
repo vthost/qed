@@ -1,0 +1,35 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "place_served" , "connectsairport" , "place_servedLabel" , "connectsairportLabel" , "coor" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(-3.028205555 34.988780555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q824594> ;
+                          rs:variable  "place_served"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1432126> ;
+                          rs:variable  "connectsairport"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(9.991111 53.630278)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1055> ;
+                          rs:variable  "place_served"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q27706> ;
+                          rs:variable  "connectsairport"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(12.238888888 41.800277777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q220> ;
+                          rs:variable  "place_served"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q19101> ;
+                          rs:variable  "connectsairport"
+                        ] ]
+] .

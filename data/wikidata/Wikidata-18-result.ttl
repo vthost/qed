@@ -1,0 +1,80 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "_subclass_of" , "item" , "_subclass_ofLabel" , "itemLabel" , "_image" ;
+  rs:size            "12"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q38848> ;
+                                     rs:variable  "_subclass_of"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q132438> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q11401> ;
+                                     rs:variable  "_subclass_of"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q138020> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7749> ;
+                                     rs:variable  "_subclass_of"
+                                   ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Rockabillys%20im%20Tanzcafe%20LiBella.jpg> ;
+                          rs:variable  "_image"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q203720> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q155119> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q8341> ;
+                                     rs:variable  "_subclass_of"
+                                   ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/BrianOConnell05.jpg> ;
+                          rs:variable  "_image"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q906647> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q164444> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Morna%20group.jpg> ;
+                                     rs:variable  "_image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q502535> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q9778> ;
+                                     rs:variable  "_subclass_of"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q135637> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Musikantenstadl-Tournee%202010%2C%20Wien%20%2802%29%20Die%20jungen%20Original%20Oberkrainer.jpg> ;
+                                     rs:variable  "_image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q252833> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q38848> ;
+                                     rs:variable  "_subclass_of"
+                                   ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Heavy%20Metal%20im%20Fantasy.jpg> ;
+                          rs:variable  "_image"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1133657> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q133926> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Visual%20kei.jpg> ;
+                                     rs:variable  "_image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q131425> ;
+                          rs:variable  "item"
+                        ] ]
+] .

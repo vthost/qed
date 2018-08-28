@@ -1,0 +1,58 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  available: <http://available>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?human wdt:P31 wd:Q5 .
+    ?human wdt:P106 wd:Q33999 .
+    ?human wdt:P18 ?picture .
+    ?human wdt:P569 ?dob .
+    ?human wdt:P570 ?dod .
+  }
+WHERE
+  { BIND(year(?dod) AS ?yod)
+    BIND(year(?dob) AS ?yob)
+    { ?human  wdt:P569  ?dob ;
+              wdt:P570  ?dod
+    }
+    ?human  wdt:P31   wd:Q5 ;
+            wdt:P106  wd:Q33999 ;
+            wdt:P18   ?picture
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  available: <http://available>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?human wdt:P31 wd:Q5 .
+    ?human wdt:P106 wd:Q33999 .
+    ?human wdt:P18 ?picture .
+    ?human wdt:P569 ?dob .
+    ?human wdt:P570 ?dod .
+  }
+WHERE
+  { BIND(year(?dod) AS ?yod)
+    BIND(year(?dob) AS ?yob)
+    FILTER NOT EXISTS { ?human  wdt:P569  ?dob ;
+                                wdt:P570  ?dod
+                      }
+    ?human  wdt:P31   wd:Q5 ;
+            wdt:P106  wd:Q33999 ;
+            wdt:P18   ?picture
+  }
+LIMIT   3
+
+----------------------------------------------

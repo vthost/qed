@@ -1,0 +1,80 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "cityLabel" , "city" , "langLabel" , "population" , "countryLabel" , "country" , "lang" , "langCode" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "2731571"^^xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     "fr" ;
+                          rs:variable  "langCode"
+                        ] ;
+            rs:binding  [ rs:value     "français"@fr ;
+                          rs:variable  "langLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q150> ;
+                          rs:variable  "lang"
+                        ] ;
+            rs:binding  [ rs:value     "Canada"@fr ;
+                          rs:variable  "countryLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16> ;
+                          rs:variable  "country"
+                        ] ;
+            rs:binding  [ rs:value     "Toronto"@fr ;
+                          rs:variable  "cityLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q172> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "3021542"^^xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     "ar" ;
+                          rs:variable  "langCode"
+                        ] ;
+            rs:binding  [ rs:value     "اللغة العربية"@ar ;
+                          rs:variable  "langLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q13955> ;
+                          rs:variable  "lang"
+                        ] ;
+            rs:binding  [ rs:value     "مصر"@ar ;
+                          rs:variable  "countryLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q79> ;
+                          rs:variable  "country"
+                        ] ;
+            rs:binding  [ rs:value     "مدينة الجيزة"@ar ;
+                          rs:variable  "cityLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q81788> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1239220"^^xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     "fr" ;
+                          rs:variable  "langCode"
+                        ] ;
+            rs:binding  [ rs:value     "français"@fr ;
+                          rs:variable  "langLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q150> ;
+                          rs:variable  "lang"
+                        ] ;
+            rs:binding  [ rs:value     "Canada"@fr ;
+                          rs:variable  "countryLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16> ;
+                          rs:variable  "country"
+                        ] ;
+            rs:binding  [ rs:value     "Calgary"@fr ;
+                          rs:variable  "cityLabel"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q36312> ;
+                          rs:variable  "city"
+                        ] ]
+] .

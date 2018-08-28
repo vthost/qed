@@ -1,0 +1,76 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%B4%D1%8B%D0%B6%D0%B0%D0%BF%D0%B0%D1%80%D0%BE%D0%B2,_%D0%AD%D1%80%D0%BD%D0%B5%D1%81%D1%82_%D0%90%D0%BB%D0%BC%D0%B0%D1%81%D0%B1%D0%B5%D0%BA%D0%BE%D0%B2%D0%B8%D1%87>
+        schema:about  wd:Q4054647 .
+
+wd:Q51123  rdfs:label  "D. W. Griffith"@en ;
+        wdt:P106    wd:Q2526255 .
+
+wd:Q4054647  wdt:P106  wd:Q2526255 .
+
+wd:Q7261064  wdt:P57  wd:Q4054647 .
+
+wd:Q55218  rdfs:label  "استفان زابو"@ar ;
+        wdt:P106    wd:Q2526255 .
+
+<https://da.wikipedia.org/wiki/Istv%C3%A1n_Szab%C3%B3>
+        schema:about  wd:Q55218 .
+
+<https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%81%D9%8A%D8%AF_%D8%BA%D8%B1%D9%8A%D9%81%D9%8A%D8%AB>
+        schema:about  wd:Q51123 .
+
+wd:Q22323867  wdt:P57  wd:Q55218 .
+
+wd:Q4144881  wdt:P57  wd:Q4054647 .
+
+wd:Q192206  wdt:P57  wd:Q51123 .
+
+wd:Q166089  wdt:P57  wd:Q51123 .
+
+<https://cs.wikipedia.org/wiki/Istv%C3%A1n_Szab%C3%B3>
+        schema:about  wd:Q55218 .
+
+<https://ky.wikipedia.org/wiki/%D0%AD%D1%80%D0%BD%D0%B5%D1%81%D1%82_%D0%90%D0%B1%D0%B4%D1%8B%D0%B6%D0%B0%D0%BF%D0%B0%D1%80%D0%BE%D0%B2>
+        schema:about  wd:Q4054647 .
+
+wd:Q130769  wdt:P57  wd:Q51123 .
+
+<https://cs.wikiquote.org/wiki/Istv%C3%A1n_Szab%C3%B3>
+        schema:about  wd:Q55218 .

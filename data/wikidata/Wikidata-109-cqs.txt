@@ -1,0 +1,96 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P31 wd:Q13442814 .
+    ?entity wdt:P50 ?wd_author .
+    ?wd_author rdfs:label ?author .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?entity  rdfs:label  ?desc
+    FILTER ( lang(?author) = "en" )
+    ?entity   wdt:P31     wd:Q13442814 ;
+              wdt:P50     ?wd_author .
+    ?wd_author  rdfs:label  ?author
+    VALUES ?wd_author { wd:Q18016466 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P31 wd:Q13442814 .
+    ?entity wdt:P50 ?wd_author .
+    ?wd_author rdfs:label ?author .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?entity  rdfs:label  ?desc
+    FILTER ( lang(?author) = "en" )
+    ?entity   wdt:P31     wd:Q13442814 ;
+              wdt:P50     ?wd_author .
+    ?wd_author  rdfs:label  ?author
+    VALUES ?wd_author { wd:Q18016466 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P31 wd:Q13442814 .
+    ?entity wdt:P50 ?wd_author .
+    ?wd_author rdfs:label ?author .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?entity  rdfs:label  ?desc
+    FILTER ( ! ( lang(?author) = "en" ) )
+    ?entity   wdt:P31     wd:Q13442814 ;
+              wdt:P50     ?wd_author .
+    ?wd_author  rdfs:label  ?author
+    VALUES ?wd_author { wd:Q18016466 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P31 wd:Q13442814 .
+    ?entity wdt:P50 ?wd_author .
+    ?wd_author rdfs:label ?author .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?entity  rdfs:label  ?desc
+    FILTER ( ! ( lang(?author) = "en" ) )
+    ?entity   wdt:P31     wd:Q13442814 ;
+              wdt:P50     ?wd_author .
+    ?wd_author  rdfs:label  ?author
+    VALUES ?wd_author { wd:Q18016466 }
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,84 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q188451 .
+    ?item wdt:P279 ?_subclass_of .
+    ?item wdt:P18 ?_image .
+  }
+WHERE
+  { { ?item  wdt:P18  ?_image }
+    { ?item  wdt:P279  ?_subclass_of }
+    ?item  wdt:P31  wd:Q188451
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q188451 .
+    ?item wdt:P279 ?_subclass_of .
+    ?item wdt:P18 ?_image .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P18  ?_image }
+    { ?item  wdt:P279  ?_subclass_of }
+    ?item  wdt:P31  wd:Q188451
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q188451 .
+    ?item wdt:P279 ?_subclass_of .
+    ?item wdt:P18 ?_image .
+  }
+WHERE
+  { { ?item  wdt:P18  ?_image }
+    FILTER NOT EXISTS { ?item  wdt:P279  ?_subclass_of }
+    ?item  wdt:P31  wd:Q188451
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q188451 .
+    ?item wdt:P279 ?_subclass_of .
+    ?item wdt:P18 ?_image .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P18  ?_image }
+    FILTER NOT EXISTS { ?item  wdt:P279  ?_subclass_of }
+    ?item  wdt:P31  wd:Q188451
+  }
+LIMIT   3
+
+----------------------------------------------

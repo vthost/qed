@@ -1,0 +1,1 @@
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT DISTINCT ?cas ?compound1 ?compound1Label ?compound2 ?compound2Label WHERE {   ?compound1 wdt:P231 ?cas .   ?compound2 wdt:P231 ?cas .   FILTER (?compound1 != ?compound2)  } 

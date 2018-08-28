@@ -1,0 +1,18 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item wdt:P31 ?variant_type .
+  }
+WHERE
+  { ?item  wdt:P3329  ?civic_id ;
+           wdt:P31    ?variant_type
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,1 @@
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX schema: <http://schema.org/>  select distinct ?item ?label ?description (lang(?label) as ?lang) where {   ?item rdfs:label ?label         filter(str(?label) = str(?description)).   ?item schema:description ?description         filter(lang(?label) = lang(?description)). } limit 50 

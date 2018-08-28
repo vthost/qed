@@ -1,0 +1,363 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P569 ?date .
+    ?person wdt:P569 ?date .
+  }
+WHERE
+  { { FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date > "1940-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+      FILTER NOT EXISTS { SELECT  ?person (COUNT(?date) AS ?dateC)
+                          WHERE
+                            { ?person  wdt:P569  ?date
+                              FILTER ( ?date <= "1965-01-01T00:00:00Z"^^xsd:dateTime )
+                            }
+                          GROUP BY ?person
+                          ORDER BY DESC(?dateC)
+                          LIMIT   100
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

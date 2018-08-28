@@ -1,0 +1,84 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person wdt:P106 wd:Q33999 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER strends(?label, " (actor)")
+    FILTER ( lang(?label) = "es" )
+    ?person  wdt:P31     wd:Q5 ;
+             wdt:P106    wd:Q33999 ;
+             rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person wdt:P106 wd:Q33999 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! strends(?label, " (actor)") )
+    FILTER ( lang(?label) = "es" )
+    ?person  wdt:P31     wd:Q5 ;
+             wdt:P106    wd:Q33999 ;
+             rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person wdt:P106 wd:Q33999 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER strends(?label, " (actor)")
+    FILTER ( ! ( lang(?label) = "es" ) )
+    ?person  wdt:P31     wd:Q5 ;
+             wdt:P106    wd:Q33999 ;
+             rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person wdt:P106 wd:Q33999 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! strends(?label, " (actor)") )
+    FILTER ( ! ( lang(?label) = "es" ) )
+    ?person  wdt:P31     wd:Q5 ;
+             wdt:P106    wd:Q33999 ;
+             rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------

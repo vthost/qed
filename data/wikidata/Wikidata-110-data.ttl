@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix https: <http://https> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix http:  <http://http> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://az.wikipedia.org/wiki/K%C3%B6n%C3%BCl_B%C3%BCnyadzad%C9%99>
+        schema:about  wd:Q129825 .
+
+<https://ru.wikipedia.org/wiki/%D0%91%D1%83%D0%BD%D1%8C%D1%8F%D0%B4%D0%B7%D0%B0%D0%B4%D0%B5,_%D0%9A%D1%91%D0%BD%D1%83%D0%BB%D1%8C_%D0%AE%D1%81%D0%B8%D1%84_%D0%BA%D1%8B%D0%B7%D1%8B>
+        schema:about  wd:Q129825 .
+
+<https://commons.wikimedia.org/wiki/Category:K%C3%B6n%C3%BCl_B%C3%BCnyadzad%C9%99>
+        schema:about  wd:Q129825 .
+
+wd:Q129825  wdt:P106  wd:Q901 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P31   wd:Q5 .

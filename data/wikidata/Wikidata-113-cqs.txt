@@ -1,0 +1,15 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P698 ?pmid .
+    ?item wdt:P356 ?doi .
+  }
+WHERE
+  { ?item  wdt:P698  ?pmid ;
+           wdt:P356  ?doi
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,48 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pr:   <http://www.wikidata.org/prop/reference/>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?gene p:P351 ?ncbigene .
+    ?gene wdt:P351 ?ncbi_gene .
+    ?ncbigene prov:wasDerivedFrom ?derivedFrom .
+    ?derivedFrom pr:P813 ?date_update .
+  }
+WHERE
+  { FILTER ( ?date_range > 31 )
+    BIND(( now() - ?date_update ) AS ?date_range)
+    ?gene     p:P351               ?ncbigene ;
+              wdt:P351             ?ncbi_gene .
+    ?ncbigene  prov:wasDerivedFrom  ?derivedFrom .
+    ?derivedFrom  pr:P813          ?date_update
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pr:   <http://www.wikidata.org/prop/reference/>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?gene p:P351 ?ncbigene .
+    ?gene wdt:P351 ?ncbi_gene .
+    ?ncbigene prov:wasDerivedFrom ?derivedFrom .
+    ?derivedFrom pr:P813 ?date_update .
+  }
+WHERE
+  { FILTER ( ! ( ?date_range > 31 ) )
+    BIND(( now() - ?date_update ) AS ?date_range)
+    ?gene     p:P351               ?ncbigene ;
+              wdt:P351             ?ncbi_gene .
+    ?ncbigene  prov:wasDerivedFrom  ?derivedFrom .
+    ?derivedFrom  pr:P813          ?date_update
+  }
+LIMIT   3
+
+----------------------------------------------

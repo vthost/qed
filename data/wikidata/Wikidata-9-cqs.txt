@@ -1,0 +1,16 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?name wdt:P31 wd:Q202444 .
+    ?name wdt:P460 ?otherName .
+  }
+WHERE
+  { ?name  wdt:P31   wd:Q202444 ;
+           wdt:P460  ?otherName
+  }
+LIMIT   3
+
+----------------------------------------------

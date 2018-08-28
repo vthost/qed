@@ -1,0 +1,18 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P352 ?uniprotid .
+    ?item wdt:P703 wd:Q15978631 .
+  }
+WHERE
+  { ?item  wdt:P352  ?uniprotid ;
+           wdt:P703  wd:Q15978631
+  }
+LIMIT   3
+
+----------------------------------------------

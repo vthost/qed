@@ -1,0 +1,35 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "totalCityPopulation" , "ratio" , "country" , "countryLabel" , "population" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     0 ;
+                                     rs:variable  "totalCityPopulation"
+                                   ] ;
+            rs:binding  [ rs:value     "1000"^^xsd:decimal ;
+                          rs:variable  "population"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q237> ;
+                          rs:variable  "country"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     0 ;
+                                     rs:variable  "totalCityPopulation"
+                                   ] ;
+            rs:binding  [ rs:value     "31595"^^xsd:decimal ;
+                          rs:variable  "population"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q238> ;
+                          rs:variable  "country"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     0 ;
+                                     rs:variable  "totalCityPopulation"
+                                   ] ;
+            rs:binding  [ rs:value     "20918"^^xsd:decimal ;
+                          rs:variable  "population"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q695> ;
+                          rs:variable  "country"
+                        ] ]
+] .

@@ -1,0 +1,42 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?building wdt:P31 wd:Q7138926 .
+    ?building wdt:P18 ?picture .
+    ?building wdt:P17 ?country .
+  }
+WHERE
+  { { ?building  wdt:P17  ?country }
+    ?building  wdt:P31  wd:Q7138926 ;
+              wdt:P18  ?picture
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?building wdt:P31 wd:Q7138926 .
+    ?building wdt:P18 ?picture .
+    ?building wdt:P17 ?country .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?building  wdt:P17  ?country }
+    ?building  wdt:P31  wd:Q7138926 ;
+              wdt:P18  ?picture
+  }
+LIMIT   3
+
+----------------------------------------------

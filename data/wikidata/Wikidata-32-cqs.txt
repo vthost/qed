@@ -1,0 +1,100 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q14276458 .
+    ?subj wdt:P186 wd:Q22731 .
+    ?subj wdt:P625 ?coord .
+    ?subj wdt:P18 ?image .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?subj  wdt:P18  ?image }
+    ?subj  wdt:P31   wd:Q14276458 ;
+           wdt:P186  wd:Q22731 ;
+           wdt:P625  ?coord
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q14276458 .
+    ?subj wdt:P186 wd:Q22731 .
+    ?subj wdt:P625 ?coord .
+    ?subj wdt:P18 ?image .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?subj  wdt:P18  ?image }
+    ?subj  wdt:P31   wd:Q14276458 ;
+           wdt:P186  wd:Q22731 ;
+           wdt:P625  ?coord
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q14276458 .
+    ?subj wdt:P186 wd:Q22731 .
+    ?subj wdt:P625 ?coord .
+    ?subj wdt:P18 ?image .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?subj  wdt:P18  ?image }
+    ?subj  wdt:P31   wd:Q14276458 ;
+           wdt:P186  wd:Q22731 ;
+           wdt:P625  ?coord
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q14276458 .
+    ?subj wdt:P186 wd:Q22731 .
+    ?subj wdt:P625 ?coord .
+    ?subj wdt:P18 ?image .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?subj  wdt:P18  ?image }
+    ?subj  wdt:P31   wd:Q14276458 ;
+           wdt:P186  wd:Q22731 ;
+           wdt:P625  ?coord
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,1 +1,0 @@
-PREFIX  dct:  <http://purl.org/dc/terms/> PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>  SELECT DISTINCT  ?notation ?prefLabel WHERE   { _:b0 skos:inScheme _:b1 .     _:b0 skos:prefLabel ?prefLabel .     _:b0 skos:notation ?notation     FILTER langMatches(lang(?prefLabel), 'en')   } ORDER BY ASC(?notation) LIMIT   100  

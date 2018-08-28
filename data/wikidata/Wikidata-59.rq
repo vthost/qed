@@ -1,0 +1,1 @@
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>    SELECT ?subj ?label ?coord ?elev  WHERE { 	?subj wdt:P2044 ?elev	filter(?elev > 8000) . 	?subj wdt:P625 ?coord . 	?subj rdfs:label ?label . } 

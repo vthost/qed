@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "pic" , "item" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20067.jpg> ;
+                                     rs:variable  "pic"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2551417> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20010.jpg> ;
+                                     rs:variable  "pic"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1445107> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Kiss%20-%20Gustav%20Klimt%20-%20Google%20Cultural%20Institute.jpg> ;
+                                     rs:variable  "pic"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q698487> ;
+                          rs:variable  "item"
+                        ] ]
+] .

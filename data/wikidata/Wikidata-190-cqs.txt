@@ -1,0 +1,37 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item rdfs:label ?lab .
+    ?item wdt:P31 wd:Q4167836 .
+  }
+WHERE
+  { VALUES ?lab { "Agelenopsis pennsylvanica"@en "Agelenopsis potteri"@en "Anelosimus studiosus"@en }
+    { ?item  wdt:P31  wd:Q4167836 }
+    ?item  rdfs:label  ?lab
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item rdfs:label ?lab .
+    ?item wdt:P31 wd:Q4167836 .
+  }
+WHERE
+  { VALUES ?lab { "Agelenopsis pennsylvanica"@en "Agelenopsis potteri"@en "Anelosimus studiosus"@en }
+    MINUS
+      { ?item  wdt:P31  wd:Q4167836 }
+    ?item  rdfs:label  ?lab
+  }
+LIMIT   3
+
+----------------------------------------------

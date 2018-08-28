@@ -1,0 +1,36 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P569 ?date .
+  }
+WHERE
+  { FILTER ( ( month(?date) = ?nowMonth ) && ( day(?date) = ?nowDay ) )
+    ?entity  wdt:P569  ?date
+    BIND(day(now()) AS ?nowDay)
+    BIND(month(now()) AS ?nowMonth)
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?entity wdt:P569 ?date .
+  }
+WHERE
+  { FILTER ( ! ( ( month(?date) = ?nowMonth ) && ( day(?date) = ?nowDay ) ) )
+    ?entity  wdt:P569  ?date
+    BIND(day(now()) AS ?nowDay)
+    BIND(month(now()) AS ?nowMonth)
+  }
+LIMIT   3
+
+----------------------------------------------

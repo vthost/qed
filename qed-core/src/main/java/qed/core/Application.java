@@ -25,14 +25,14 @@ public class Application
 //		British Museum: http://bm.rkbexplorer.com
 	
 //	TODO we could add also parameters querySizeMax...
-	public void createDataSet(String logEndpoint, String graphUri, String[][] configs, int queryNumMax, int querySizeMin, 
+	public void createDataSet(String logEndpoint, String graphUri, Feature[][] configs, int queryNumMax, int querySizeMin, 
 			int queryResultSizeMin, String dataEndpoint, int datasetSizeMax, String dataFile) {
 		
 		if(!Strings.isNullOrEmpty(dataFile))//TODO check if valid file path
 			Utils.DATA_DIR = dataFile;	
 //System.out.println(Utils.DATA_DIR);
 		(new LogQueryExtractor()).extractQueries(logEndpoint, graphUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
-		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, datasetSizeMax);
+		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, datasetSizeMax, dataFile);
 	}
 	
 	public void createDataSet(String logEndpoint, String graphUri, String[] queryIds, String dataEndpoint, String dataFile) {
@@ -43,7 +43,7 @@ public class Application
 			Utils.DATA_DIR = dataFile;	
 
 		(new LogQueryExtractor()).extractQueries(logEndpoint, graphUri, queryIds);
-		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, queryIds.length);
+		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, queryIds.length, dataFile);
 	}
 	
 	

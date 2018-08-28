@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix defaultView: <http://defaultView> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q107690  p:P166  wds:Q107690-3d8ad4c9-4705-4105-2536-25972997adb2 ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Jean-Marie%20Lehn.JPG> .
+
+wds:Q76623-304e1f66-43d1-831f-58c9-87b88d794fb0
+        pq:P585  "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q244998-bd7be8a8-4f47-47da-f3c5-14ad1485af29
+        pq:P585  "1987-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q107690-3d8ad4c9-4705-4105-2536-25972997adb2
+        pq:P585  "1987-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q1351105-fe9c9a68-4b55-765a-2012-3a2977a90c6c
+        pq:P585  "2014-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q102419-476f09e6-49e1-9e33-4265-576115440321
+        pq:P585  "1969-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q190486-5f1fc53f-4506-68e3-c96d-aa8b63d4cee1
+        pq:P585  "1960-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wd:Q190486  p:P166  wds:Q190486-5f1fc53f-4506-68e3-c96d-aa8b63d4cee1 .
+
+wd:Q1351105  p:P166  wds:Q1351105-fe9c9a68-4b55-765a-2012-3a2977a90c6c ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Betzig.jpg> .
+
+wd:Q76623  p:P166  wds:Q76623-304e1f66-43d1-831f-58c9-87b88d794fb0 ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Huber.JPG> .
+
+wd:Q102419  p:P166  wds:Q102419-476f09e6-49e1-9e33-4265-576115440321 .
+
+wd:Q244998  p:P166  wds:Q244998-bd7be8a8-4f47-47da-f3c5-14ad1485af29 .

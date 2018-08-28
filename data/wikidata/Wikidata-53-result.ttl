@@ -1,0 +1,35 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "populatie2" , "location" , "cityLabel" , "city" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "227025"^^xsd:decimal ;
+                                     rs:variable  "populatie2"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(100.25 6.5)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "location"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q213467> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "226769"^^xsd:decimal ;
+                                     rs:variable  "populatie2"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(73.688643 20.7588488)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "location"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1135616> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "227098"^^xsd:decimal ;
+                                     rs:variable  "populatie2"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(68.243611111 43.3)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "location"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q848638> ;
+                          rs:variable  "city"
+                        ] ]
+] .

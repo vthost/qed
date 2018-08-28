@@ -1,0 +1,54 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item schema:description "introduza uma descrição"@pt .
+    ?item rdfs:label ?label .
+  }
+WHERE
+  { { FILTER ( lang(?label) = "pt" )
+      ?item  rdfs:label  ?label
+    }
+    ?item  schema:description  "introduza uma descrição"@pt
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item schema:description "introduza uma descrição"@pt .
+    ?item rdfs:label ?label .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?label) = "pt" ) )
+      ?item  rdfs:label  ?label
+    }
+    ?item  schema:description  "introduza uma descrição"@pt
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item schema:description "introduza uma descrição"@pt .
+    ?item rdfs:label ?label .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  rdfs:label  ?label
+                        FILTER ( lang(?label) = "pt" )
+                      }
+    ?item  schema:description  "introduza uma descrição"@pt
+  }
+LIMIT   3
+
+----------------------------------------------

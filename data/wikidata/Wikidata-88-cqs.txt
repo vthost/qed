@@ -1,0 +1,92 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item wdt:P921 wd:Q202864 .
+    ?item wdt:P921 wd:Q8071861 .
+    ?reference ?referenceType ?item .
+  }
+WHERE
+  { ?reference  ?referenceType  ?item
+    { FILTER NOT EXISTS { ?item  wdt:P921  wd:Q202864 }
+      FILTER NOT EXISTS { ?item  wdt:P921  wd:Q8071861 }
+    }
+    ?item  wdt:P31  wd:Q13442814
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item wdt:P921 wd:Q202864 .
+    ?item wdt:P921 wd:Q8071861 .
+    ?reference ?referenceType ?item .
+  }
+WHERE
+  { ?reference  ?referenceType  ?item
+    { FILTER NOT EXISTS { ?item  wdt:P921  wd:Q202864 }
+      { ?item  wdt:P921  wd:Q8071861 }
+    }
+    ?item  wdt:P31  wd:Q13442814
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item wdt:P921 wd:Q202864 .
+    ?item wdt:P921 wd:Q8071861 .
+    ?reference ?referenceType ?item .
+  }
+WHERE
+  { ?reference  ?referenceType  ?item
+    { { ?item  wdt:P921  wd:Q202864 }
+      FILTER NOT EXISTS { ?item  wdt:P921  wd:Q8071861 }
+    }
+    ?item  wdt:P31  wd:Q13442814
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item wdt:P921 wd:Q202864 .
+    ?item wdt:P921 wd:Q8071861 .
+    ?reference ?referenceType ?item .
+  }
+WHERE
+  { ?reference  ?referenceType  ?item
+    { { ?item  wdt:P921  wd:Q202864 }
+      { ?item  wdt:P921  wd:Q8071861 }
+    }
+    ?item  wdt:P31  wd:Q13442814
+  }
+LIMIT   3
+
+----------------------------------------------

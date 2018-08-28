@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q65621  rdfs:label  "Annika Becker"@en ;
+        wdt:P21     wd:Q6581072 ;
+        wdt:P31     wd:Q5 ;
+        wdt:P569    "1981-11-12T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1318572  wdt:P21  wd:Q6581072 ;
+        wdt:P31   wd:Q5 ;
+        wdt:P569  "1936-02-23T00:00:00Z"^^xsd:dateTime .
+
+<https://sl.wikipedia.org/wiki/Annika_Becker>
+        schema:about  wd:Q65621 .
+
+<https://ast.wikipedia.org/wiki/Ruth_Arnon>
+        schema:about  wd:Q7431 .
+
+<https://hu.wikipedia.org/wiki/T._Czene_%C3%81gnes>
+        schema:about  wd:Q1315655 .
+
+<https://commons.wikimedia.org/wiki/Category:Ruth_Arnon>
+        schema:about  wd:Q7431 .
+
+<https://de.wikipedia.org/wiki/Olivia_Pascal>
+        schema:about  wd:Q74171 .
+
+<https://cs.wikipedia.org/wiki/Rut_Arnonov%C3%A1>
+        schema:about  wd:Q7431 .
+
+<https://es.wikipedia.org/wiki/Annika_Becker>
+        schema:about  wd:Q65621 .
+
+<https://it.wikipedia.org/wiki/Annika_Becker>
+        schema:about  wd:Q65621 .
+
+wd:Q1315655  wdt:P21  wd:Q6581072 ;
+        wdt:P31   wd:Q5 ;
+        wdt:P569  "1941-01-01T00:00:00Z"^^xsd:dateTime .
+
+<https://ca.wikipedia.org/wiki/Ruth_Arnon>
+        schema:about  wd:Q7431 .
+
+wd:Q7431  rdfs:label  "Ruth Arnon"@ace , "Ruth Arnon"@ca , "Rut Arnonová"@cs , "Ruth Arnon"@en ;
+        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Arnon%20Ruth%201.jpg> ;
+        wdt:P21     wd:Q6581072 ;
+        wdt:P31     wd:Q5 ;
+        wdt:P569    "1933-06-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q74171  rdfs:label  "Olivia Pascal"@ca , "Olivia Pascal"@da , "Olivia Pascal"@de ;
+        wdt:P21     wd:Q6581072 ;
+        wdt:P31     wd:Q5 ;
+        wdt:P569    "1957-05-26T00:00:00Z"^^xsd:dateTime .
+
+<https://hu.wikipedia.org/wiki/Terszty%C3%A1nszkyn%C3%A9_Vasadi_%C3%89va>
+        schema:about  wd:Q1318572 .
+
+<https://cy.wikipedia.org/wiki/T._Czene_%C3%81gnes>
+        schema:about  wd:Q1315655 .

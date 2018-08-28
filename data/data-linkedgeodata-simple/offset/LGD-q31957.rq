@@ -1,1 +1,0 @@
-SELECT  ?recurso ?label WHERE   { ?recurso <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://linkedgeodata.org/ontology/City> .     ?recurso <http://linkedgeodata.org/property/is_in%3Acontinent> 'Europe' .     ?recurso <http://www.w3.org/2000/01/rdf-schema#label> ?label   } ORDER BY ?recurso OFFSET  0 LIMIT   1000  

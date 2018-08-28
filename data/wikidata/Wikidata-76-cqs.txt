@@ -1,0 +1,16 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?jurisdiction wdt:P1622 ?side .
+  }
+WHERE
+  { ?jurisdiction
+              wdt:P1622  ?side
+  }
+LIMIT   3
+
+----------------------------------------------

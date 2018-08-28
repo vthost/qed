@@ -1,0 +1,86 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "materials" , "year" , "image" , "collection" , "title" , "item" , "type" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Scream%20Pastel.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "private collection"@en ;
+                          rs:variable  "collection"
+                        ] ;
+            rs:binding  [ rs:value     "pastel, cardboard" ;
+                          rs:variable  "materials"
+                        ] ;
+            rs:binding  [ rs:value     "painting"@en ;
+                          rs:variable  "type"
+                        ] ;
+            rs:binding  [ rs:value     1895 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     "The Scream"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q18891157> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Skrik%201893.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Munch Museum"@en ;
+                          rs:variable  "collection"
+                        ] ;
+            rs:binding  [ rs:value     "pastel, cardboard" ;
+                          rs:variable  "materials"
+                        ] ;
+            rs:binding  [ rs:value     "painting"@en ;
+                          rs:variable  "type"
+                        ] ;
+            rs:binding  [ rs:value     1893 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     "The Scream"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q18891155> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Edvard%20Munch%20-%20The%20Scream%20-%20Google%20Art%20Project.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Munch Museum"@en ;
+                          rs:variable  "collection"
+                        ] ;
+            rs:binding  [ rs:value     "tempera" ;
+                          rs:variable  "materials"
+                        ] ;
+            rs:binding  [ rs:value     "painting"@en ;
+                          rs:variable  "type"
+                        ] ;
+            rs:binding  [ rs:value     1910 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     "The Scream"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q18891158> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Munch%20The%20Scream%20lithography.png> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "lithograph"@en ;
+                          rs:variable  "type"
+                        ] ;
+            rs:binding  [ rs:value     1895 ;
+                          rs:variable  "year"
+                        ] ;
+            rs:binding  [ rs:value     "The Scream"@en ;
+                          rs:variable  "title"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q18907540> ;
+                          rs:variable  "item"
+                        ] ]
+] .

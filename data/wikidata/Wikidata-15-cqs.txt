@@ -1,0 +1,66 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?pid wdt:P31 wd:Q5 .
+    ?pid wdt:P509 ?cid .
+    ?cid rdfs:label ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause) = "en" )
+      ?cid  rdfs:label  ?cause
+    }
+    ?pid  wdt:P31   wd:Q5 ;
+          wdt:P509  ?cid
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?pid wdt:P31 wd:Q5 .
+    ?pid wdt:P509 ?cid .
+    ?cid rdfs:label ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause) = "en" ) )
+      ?cid  rdfs:label  ?cause
+    }
+    ?pid  wdt:P31   wd:Q5 ;
+          wdt:P509  ?cid
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?pid wdt:P31 wd:Q5 .
+    ?pid wdt:P509 ?cid .
+    ?cid rdfs:label ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?cid  rdfs:label  ?cause
+                        FILTER ( lang(?cause) = "en" )
+                      }
+    ?pid  wdt:P31   wd:Q5 ;
+          wdt:P509  ?cid
+  }
+LIMIT   3
+
+----------------------------------------------

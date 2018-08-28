@@ -1,0 +1,19 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?airport wdt:P31 wd:Q1248784 .
+    ?airport ?range wd:Q31 .
+    ?airport wdt:P625 ?coor .
+  }
+WHERE
+  { ?airport  wdt:P31   wd:Q1248784 ;
+              ?range    wd:Q31 ;
+              wdt:P625  ?coor
+  }
+LIMIT   3
+
+----------------------------------------------

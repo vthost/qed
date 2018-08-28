@@ -1,0 +1,97 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix defaultView: <http://defaultView> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q183  rdfs:label  "Алмания"@tt , "Germany"@tum , "Gyaaman"@tw , "Germany"@en .
+
+wd:Q316843  wdt:P276  wd:Q14835 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1945-04-21T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1945-04-30T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1945-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q162357  wdt:P276  wd:Q2337 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1941-07-06T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1941-09-10T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1941-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q208379  wdt:P17  wd:Q801 .
+
+wd:Q2337  wdt:P17  wd:Q159 .
+
+wd:Q26496  wdt:P276  wd:Q11462 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1945-10-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1945-11-20T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1945-10-27T00:00:00Z"^^xsd:dateTime .
+
+wd:Q142  rdfs:label  "France"@en , "Францыя"@be , "Frankrijk"@nl , "Франция"@ru .
+
+wd:Q252  rdfs:label  "Indonesia"@en .
+
+wd:Q167259  wdt:P276  wd:Q2079 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1632-11-16T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1632-11-16T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1632-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q199371  wdt:P276  wd:Q208379 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1918-09-19T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1918-09-25T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1918-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q239255  wdt:P276  wd:Q131329 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1917-04-09T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1917-05-16T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1917-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q131329  wdt:P17  wd:Q142 .
+
+wd:Q11462  wdt:P17  wd:Q252 .
+
+wd:Q2079  wdt:P17  wd:Q183 .
+
+wd:Q159  rdfs:label  "Russia"@en .
+
+wd:Q14835  wdt:P17  wd:Q183 .
+
+wd:Q801  rdfs:label  "Israel"@en .

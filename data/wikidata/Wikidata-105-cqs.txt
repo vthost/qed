@@ -1,0 +1,21 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?spaceProbe wdt:P31 wd:Q26529 .
+    ?spaceProbe wdt:P18 ?picture .
+    ?spaceProbe wdt:P619 ?date .
+  }
+WHERE
+  { ?spaceProbe  wdt:P31  wd:Q26529 ;
+              wdt:P18   ?picture ;
+              wdt:P619  ?date
+  }
+LIMIT   3
+
+----------------------------------------------

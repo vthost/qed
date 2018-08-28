@@ -1,0 +1,104 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    ?tmp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?tmp skos:altLabel ?alias .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property skos:altLabel ?alias .
+  }
+WHERE
+  { FILTER ( ?occurences > 1 )
+    ?property  a                    wikibase:Property ;
+              skos:altLabel         ?alias
+    { FILTER ( lang(?alias) = "en" )
+      ?tmp  a                     wikibase:Property ;
+            skos:altLabel         ?alias
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    ?tmp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?tmp skos:altLabel ?alias .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property skos:altLabel ?alias .
+  }
+WHERE
+  { FILTER ( ! ( ?occurences > 1 ) )
+    ?property  a                    wikibase:Property ;
+              skos:altLabel         ?alias
+    { FILTER ( lang(?alias) = "en" )
+      ?tmp  a                     wikibase:Property ;
+            skos:altLabel         ?alias
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    ?tmp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?tmp skos:altLabel ?alias .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property skos:altLabel ?alias .
+  }
+WHERE
+  { FILTER ( ?occurences > 1 )
+    ?property  a                    wikibase:Property ;
+              skos:altLabel         ?alias
+    { FILTER ( ! ( lang(?alias) = "en" ) )
+      ?tmp  a                     wikibase:Property ;
+            skos:altLabel         ?alias
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    ?tmp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?tmp skos:altLabel ?alias .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property skos:altLabel ?alias .
+  }
+WHERE
+  { FILTER ( ! ( ?occurences > 1 ) )
+    ?property  a                    wikibase:Property ;
+              skos:altLabel         ?alias
+    { FILTER ( ! ( lang(?alias) = "en" ) )
+      ?tmp  a                     wikibase:Property ;
+            skos:altLabel         ?alias
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,23 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P138 ?eponym .
+    ?eponym wdt:P106 wd:Q170790 .
+  }
+WHERE
+  { { SELECT  ?eponym (COUNT(?item) AS ?count) (SAMPLE(?item) AS ?sample)
+      WHERE
+        { ?item    wdt:P138  ?eponym .
+          ?eponym  wdt:P106  wd:Q170790
+        }
+      GROUP BY ?eponym
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

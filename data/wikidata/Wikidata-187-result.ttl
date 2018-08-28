@@ -1,0 +1,44 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "lang" , "description" , "label" , "item" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "az" ;
+                                     rs:variable  "lang"
+                                   ] ;
+            rs:binding  [ rs:value     "Riyaziyyat"@az ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "Riyaziyyat"@az ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q395> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "hi" ;
+                                     rs:variable  "lang"
+                                   ] ;
+            rs:binding  [ rs:value     "भारतीय राज्य"@hi ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "भारतीय राज्य"@hi ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q13390680> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "bn" ;
+                                     rs:variable  "lang"
+                                   ] ;
+            rs:binding  [ rs:value     "মহাবিস্ফোরণ তত্ত্ব"@bn ;
+                          rs:variable  "description"
+                        ] ;
+            rs:binding  [ rs:value     "মহাবিস্ফোরণ তত্ত্ব"@bn ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q323> ;
+                          rs:variable  "item"
+                        ] ]
+] .

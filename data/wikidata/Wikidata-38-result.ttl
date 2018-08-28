@@ -1,0 +1,80 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coor" , "itemLabel" , "item" , "image" ;
+  rs:size            "12"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Nord%C3%B8yan%20lighthouse%20in%20Vikna.tif> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.5493 64.7977)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coor"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1998969> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Ulla%20lighthouse%20in%20Haram.tif> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(6.16527778 62.68472222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coor"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q908222> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q17750126> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Fyrstasjonen%20p%C3%A5%20Store%20F%C3%A6rder.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7619953> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(11.9681 66.4306)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7849129> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Grip%20fyr%202.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(7.60916667 63.23361111)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coor"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q923101> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(10.80111111 64.57444444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5365397> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(15.944333333 68.367805555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coor"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7370721> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Svolv%C3%A6r%2C%20V%C3%A5gan%20-%20S-1602U3%20070.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q12004450> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Skjelva%2C%20Alstadhaug%20-%20S-1602U3%20039.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q12001035> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q12010185> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q12716940> ;
+                                     rs:variable  "item"
+                                   ] ]
+] .

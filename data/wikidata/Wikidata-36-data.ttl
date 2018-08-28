@@ -1,0 +1,132 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix defaultView: <http://defaultView> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q2080325  rdfs:label  "Обсада на форт Уилям Хенри"@bg , "Bitva o pevnost William Henry"@cs , "Slaget ved Fort William Henry"@da , "Siege of Fort William Henry"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P582    "1757-08-09T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1757-08-03T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(-73.71111111 43.42027778)"^^geo:wktLiteral .
+
+wd:Q275019  rdfs:label  "Battle of Smolensk"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1943-08-07T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1943-10-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1943-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(32.05 54.7833)"^^geo:wktLiteral .
+
+wd:Q2664174  rdfs:label  "Battle of Kamdesh"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "2009-10-03T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "2009-10-03T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(71.34139 35.41)"^^geo:wktLiteral .
+
+wd:Q94545  rdfs:label  "Sitio de Glatz"@es ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1760-06-07T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1760-07-26T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(16.67 50.433)"^^geo:wktLiteral .
+
+wd:Q116222  rdfs:label  "Battle of Ferozeshah"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1845-12-21T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1845-12-22T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(74.7833 30.8833)"^^geo:wktLiteral .
+
+wd:Q26496  rdfs:label  "معركة سورابايا"@ar , "Patampuran Surabaya"@bjn , "Schlacht von Surabaya"@de , "Battle of Surabaya"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1945-11-20T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(115.24861111 -8.42305556)"^^geo:wktLiteral .
+
+wd:Q130847  rdfs:label  "Slag van Verdun"@af , "معركة فردان"@ar , "Battle of Verdun"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1916-02-21T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1916-12-18T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(5.421944444 49.208055555)"^^geo:wktLiteral .
+
+wd:Q74009  rdfs:label  "Invasion of Dominica"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P585    "1761-06-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(-61.383 15.3)"^^geo:wktLiteral .
+
+wd:Q68371  rdfs:label  "Battle of Mortemer"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P585    "1054-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(1.551111111 49.751666666)"^^geo:wktLiteral .
+
+wd:Q199371  rdfs:label  "Battle of Megiddo"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1918-09-19T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1918-09-25T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1918-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(34.883 32.4)"^^geo:wktLiteral .
+
+wd:Q124649  rdfs:label  "Second Battle of Algeciras"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1801-07-12T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1801-07-13T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(-5.42917 36.1333)"^^geo:wktLiteral .
+
+wd:Q2838431  rdfs:label  "Battle off Cape Gata"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1815-06-17T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(-2.193055555 36.721944444)"^^geo:wktLiteral .
+
+wd:Q74119  rdfs:label  "Battle of Langensalza"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P585    "1761-02-15T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(10.6468 51.108)"^^geo:wktLiteral .
+
+wd:Q473983  rdfs:label  "Schlacht in der Tucheler Heide"@de , "Batalla del bosque de Tuchola"@es , "bataille de la forêt de Tuchola"@fr , "Battle of Tuchola Forest"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1939-09-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(18.0 53.6)"^^geo:wktLiteral .
+
+wd:Q1634602  rdfs:label  "Battle of Scapezzano"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1815-05-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(13.170006 43.7204)"^^geo:wktLiteral .
+
+wd:Q1501750  rdfs:label  "Битва у Бергена"@ru , "Slaget i Bergen Bugt"@da , "Schlacht in der Bucht von Bergen"@de , "Battle of Vågen"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1665-08-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1665-08-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(5.317222222 60.397777777)"^^geo:wktLiteral .

@@ -1,0 +1,104 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q571 .
+    ?item wdt:P577 ?_publication_date .
+    ?item wdt:P136 ?_genre .
+    ?_genre rdfs:label ?_genreLabel .
+  }
+WHERE
+  { FILTER ( ?_publication_date >= "2000-00-00T00:00:00Z"^^xsd:dateTime )
+    FILTER ( lang(?_genreLabel) = "en" )
+    BIND(str(year(?_publication_date)) AS ?year)
+    ?item    wdt:P31     wd:Q571 ;
+             wdt:P577    ?_publication_date ;
+             wdt:P136    ?_genre .
+    ?_genre  rdfs:label  ?_genreLabel
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q571 .
+    ?item wdt:P577 ?_publication_date .
+    ?item wdt:P136 ?_genre .
+    ?_genre rdfs:label ?_genreLabel .
+  }
+WHERE
+  { FILTER ( ! ( ?_publication_date >= "2000-00-00T00:00:00Z"^^xsd:dateTime ) )
+    FILTER ( lang(?_genreLabel) = "en" )
+    BIND(str(year(?_publication_date)) AS ?year)
+    ?item    wdt:P31     wd:Q571 ;
+             wdt:P577    ?_publication_date ;
+             wdt:P136    ?_genre .
+    ?_genre  rdfs:label  ?_genreLabel
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q571 .
+    ?item wdt:P577 ?_publication_date .
+    ?item wdt:P136 ?_genre .
+    ?_genre rdfs:label ?_genreLabel .
+  }
+WHERE
+  { FILTER ( ?_publication_date >= "2000-00-00T00:00:00Z"^^xsd:dateTime )
+    FILTER ( ! ( lang(?_genreLabel) = "en" ) )
+    BIND(str(year(?_publication_date)) AS ?year)
+    ?item    wdt:P31     wd:Q571 ;
+             wdt:P577    ?_publication_date ;
+             wdt:P136    ?_genre .
+    ?_genre  rdfs:label  ?_genreLabel
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q571 .
+    ?item wdt:P577 ?_publication_date .
+    ?item wdt:P136 ?_genre .
+    ?_genre rdfs:label ?_genreLabel .
+  }
+WHERE
+  { FILTER ( ! ( ?_publication_date >= "2000-00-00T00:00:00Z"^^xsd:dateTime ) )
+    FILTER ( ! ( lang(?_genreLabel) = "en" ) )
+    BIND(str(year(?_publication_date)) AS ?year)
+    ?item    wdt:P31     wd:Q571 ;
+             wdt:P577    ?_publication_date ;
+             wdt:P136    ?_genre .
+    ?_genre  rdfs:label  ?_genreLabel
+  }
+LIMIT   3
+
+----------------------------------------------

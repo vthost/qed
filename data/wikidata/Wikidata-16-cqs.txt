@@ -1,0 +1,42 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q26529 .
+    ?item wdt:P619 ?launchdate .
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { { ?item  wdt:P18  ?image }
+    ?item  wdt:P31   wd:Q26529 ;
+           wdt:P619  ?launchdate
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q26529 .
+    ?item wdt:P619 ?launchdate .
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P18  ?image }
+    ?item  wdt:P31   wd:Q26529 ;
+           wdt:P619  ?launchdate
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,17 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?thing wdt:P31 ?class .
+    ?thing wdt:P279 ?class .
+  }
+WHERE
+  { ?thing  wdt:P31   ?class ;
+            wdt:P279  ?class
+  }
+LIMIT   3
+
+----------------------------------------------

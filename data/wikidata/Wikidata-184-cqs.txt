@@ -1,0 +1,12 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P18 ?image .
+  }
+WHERE
+  { ?item  wdt:P18  ?image }
+LIMIT   3
+
+----------------------------------------------

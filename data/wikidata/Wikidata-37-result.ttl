@@ -1,0 +1,53 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coord" , "lon" , "lat" , "name" , "item" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "6.37"^^xsd:double ;
+                                     rs:variable  "lon"
+                                   ] ;
+            rs:binding  [ rs:value     "45.860833333333"^^xsd:double ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Point(6.37 45.860833333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Manigod"@an ;
+                          rs:variable  "name"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q844641> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "6.37"^^xsd:double ;
+                                     rs:variable  "lon"
+                                   ] ;
+            rs:binding  [ rs:value     "45.860833333333"^^xsd:double ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Point(6.37 45.860833333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Manigod"@ast ;
+                          rs:variable  "name"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q844641> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "6.37"^^xsd:double ;
+                                     rs:variable  "lon"
+                                   ] ;
+            rs:binding  [ rs:value     "45.860833333333"^^xsd:double ;
+                          rs:variable  "lat"
+                        ] ;
+            rs:binding  [ rs:value     "Point(6.37 45.860833333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Manigod"@af ;
+                          rs:variable  "name"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q844641> ;
+                          rs:variable  "item"
+                        ] ]
+] .

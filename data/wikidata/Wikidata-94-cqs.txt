@@ -1,0 +1,24 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?database ?p ?wds .
+    ?wds ?v ?value .
+    ?wdP wikibase:statementProperty ?v .
+    ?wdP wikibase:claim ?p .
+    ?wds pq:P31 wd:Q27075870 .
+  }
+WHERE
+  { ?database  ?p                   ?wds .
+    ?wds      ?v                    ?value .
+    ?wdP      wikibase:statementProperty  ?v ;
+              wikibase:claim        ?p .
+    ?wds      pq:P31                wd:Q27075870
+  }
+LIMIT   3
+
+----------------------------------------------

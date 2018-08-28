@@ -1,58 +1,129 @@
+/**
+ * 
+ */
 package qed.core;
 
-public class Feature {
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
+/**
+ * @author veronika.thost@ibm.com
+ *
+ */
+public enum Feature {
 //	LSQ features we can query for 
-	public static String FEATURE_AVG ="Avg";
-	public static String FEATURE_BIND ="Bind";
-	public static String FEATURE_COUNT ="Count";
-	public static String FEATURE_DISTINCT ="Distinct";
-	public static String FEATURE_FILTER ="Filter";
-	public static String FEATURE_FROM_NAMED ="FromNamed";
-	public static String FEATURE_GROUP_BY ="GroupBy";
-	public static String FEATURE_HAVING ="Having";
-	public static String FEATURE_LIMIT ="Limit";
-	public static String FEATURE_MAX ="Max";
-	public static String FEATURE_MIN ="Min";
-	public static String FEATURE_MINUS ="Minus";
+	AVG,
+	BIND,
+	COUNT,
+	DISTINCT,
+	FILTER,
+	FROM_NAMED,
+	GROUP_BY,
+	HAVING,
+	LIMIT,
+	MAX,
+	MIN,
+	MINUS,
 	//<!-- typo in the current LSQ data ... should be NamedGraph, not namedGraph ... -->
-	public static String FEATURE_NAMED_GRAPH ="NamedGraph";
+	NAMED_GRAPH,
 	//rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
-	public static String FEATURE_OFFSET ="Offset";
-	public static String FEATURE_OPTIONAL ="Optional";
-	public static String FEATURE_ORDER_BY ="OrderBy";
-	public static String FEATURE_REGEX ="Regex";
-	public static String FEATURE_SERVICE ="Service";
-	public static String FEATURE_SUBQUERY ="SubQuery";
-	public static String FEATURE_SUM ="Sum";
-	public static String FEATURE_UNION ="Union";
-	public static String FEATURE_VALUES ="Values";
+	OFFSET,
+	OPTIONAL,
+	ORDER_BY,
+	REGEX,
+	SERVICE,
+	SUBQUERY,
+	SUM,
+	UNION,
+	VALUES,
+//	in addition (not in LSQ)
+	PROPERTY_PATH;
+	
+	
+	public static Feature[][] getValuesAsConfig(){
 
-//	one configuration specifies the SPARQL queries we look for
-//	(we look for queries that contain all features from one array)
-	public static String[][] FEATURE_CONFIG_SIMPLE = {
-	{ FEATURE_AVG },
-	{ FEATURE_BIND },
-	{ FEATURE_COUNT },
-	{ FEATURE_DISTINCT },
-	{ FEATURE_FILTER},
-	{ FEATURE_FROM_NAMED },
-	{ FEATURE_GROUP_BY },
-	{ FEATURE_HAVING },
-	{ FEATURE_LIMIT },
-	{ FEATURE_MAX },
-	{ FEATURE_MIN },
-	{ FEATURE_MINUS },
-	{ FEATURE_NAMED_GRAPH },
-	{ FEATURE_OFFSET },
-	{ FEATURE_OPTIONAL },
-	{ FEATURE_ORDER_BY },
-	{ FEATURE_REGEX },
-	{ FEATURE_SERVICE },
-	{ FEATURE_SUBQUERY },
-	{ FEATURE_SUM },
-	{ FEATURE_UNION },
-	{ FEATURE_VALUES }
-	};
+		Feature[][] result = new Feature[Feature.values().length][1];//Arrays.asList(Feature.values()).stream().map(f -> {f}).toArray(String[]::new);
+		int i = 0;
+		for (Feature feature : Feature.values()) {
+			result[i++][0] = feature;
+		}
+		
+		return result;
+	}
+	
+	public static String[] toStringArray(Feature[] config){
 
+		return Arrays.asList(config).stream().map(Feature::toString).toArray(String[]::new);		
+	}
+	
+//	public static String[][] toStringArrays(Feature[][] configs){
+//		
+//		return Arrays.asList(configs).stream().map(c -> toStringArray(c)).toArray(String[][]::new);
+//		
+//	}
+
+
+	public static boolean containsFeature(String query, Feature feature) {
+		switch(feature) {
+		case AVG:
+			break;
+		case BIND:
+			return query.matches("(?i).*\\sbind\\s*\\(.*");
+		case COUNT:
+			break;
+		case DISTINCT:
+			break;
+		case FILTER:
+			return query.matches("(?i).*\\s(filter not exists|filter\\s*\\().*");
+		case FROM_NAMED:
+			break;
+		case GROUP_BY:
+			return query.matches("(?i).*\\sgroup\\s+by.*");
+		case HAVING:
+			return query.matches("(?i).*\\shaving\\s*\\(.*");
+		case LIMIT:
+			query.matches("(?i).*\\slimit\\s+[0-9].*");
+			break;
+		case MAX:
+			break;
+		case MIN:
+			break;
+		case MINUS:
+			return query.matches("(?i).*\\sminus\\s+\\{.*");
+			//<!-- typo in the current LSQ data ... should be NamedGraph:
+			//not namedGraph ... -->
+		case NAMED_GRAPH:
+			break;
+			//rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
+		case OFFSET:
+			query.matches("(?i).*\\soffset\\s+[0-9].*");
+		case OPTIONAL:
+			return query.matches("(?i).*\\soptional\\s+\\{.*");
+		case ORDER_BY:
+			query.matches("(?i).*\\sorder by\\s+(asc|desc|\\?).*");
+		case REGEX:
+			return query.matches("(?i).*\\sregex\\s*\\(.*");
+		case SERVICE:
+			break;
+		case SUBQUERY:
+			return query.matches("(?i).*\\sselect\\s.*select\\s.*");
+		case SUM:
+			break;
+		case UNION:
+			return query.matches("(?i).*\\sunion\\s+\\{.*");
+		case VALUES:
+			return query.matches("(?i).*\\svalues\\s+(\\{|\\?|\\().*");
+//				in addition
+		case PROPERTY_PATH:
+			break;
+		default:
+			break;
+		}
+		return false;
+	}
+	
+	public static List<Feature> extractFeatures(String query){
+		return Arrays.asList(Feature.values()).stream().filter(f -> Feature.containsFeature(query, f)).collect(Collectors.toList());
+	}
 }

@@ -1,0 +1,53 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "birthplace" , "astronautLabel" , "astronaut" , "birthdate" , "coord" , "image" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(35.016666666 57.883333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q196798> ;
+                          rs:variable  "birthplace"
+                        ] ;
+            rs:binding  [ rs:value     "1933-01-06T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "birthdate"
+                        ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/USSR%20stamp%20Oleg.jpg> ;
+                          rs:variable  "image"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q467623> ;
+                          rs:variable  "astronaut"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(-100.274 35.4425)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q979821> ;
+                          rs:variable  "birthplace"
+                        ] ;
+            rs:binding  [ rs:value     "1932-03-15T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "birthdate"
+                        ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Alan%20bean.jpg> ;
+                          rs:variable  "image"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q310924> ;
+                          rs:variable  "astronaut"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(49.835183333 40.366655555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q9248> ;
+                          rs:variable  "birthplace"
+                        ] ;
+            rs:binding  [ rs:value     "1951-03-22T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "birthdate"
+                        ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/U2mir%20musa%20manarov.jpg> ;
+                          rs:variable  "image"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q467732> ;
+                          rs:variable  "astronaut"
+                        ] ]
+] .

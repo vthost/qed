@@ -1,0 +1,72 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item rdfs:label ?label .
+    ?item schema:description ?description .
+  }
+WHERE
+  { FILTER ( lang(?label) = lang(?description) )
+    ?item  schema:description  ?description
+    FILTER ( str(?label) = str(?description) )
+    ?item  rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item rdfs:label ?label .
+    ?item schema:description ?description .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = lang(?description) ) )
+    ?item  schema:description  ?description
+    FILTER ( str(?label) = str(?description) )
+    ?item  rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item rdfs:label ?label .
+    ?item schema:description ?description .
+  }
+WHERE
+  { FILTER ( lang(?label) = lang(?description) )
+    ?item  schema:description  ?description
+    FILTER ( ! ( str(?label) = str(?description) ) )
+    ?item  rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?item rdfs:label ?label .
+    ?item schema:description ?description .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = lang(?description) ) )
+    ?item  schema:description  ?description
+    FILTER ( ! ( str(?label) = str(?description) ) )
+    ?item  rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------

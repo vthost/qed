@@ -1,0 +1,29 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "personLabel" , "image" , "itemLabel" , "animal" , "animalLabel" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/WhiteHousePets%2C%20ValentinesDay2007.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2060630> ;
+                          rs:variable  "animal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/IndioCat.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2060630> ;
+                          rs:variable  "animal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2624688> ;
+                                     rs:variable  "animal"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/India%20the%20Cat%20Miss%20Beazley%20and%20Barney%20Halloween%202007%20%28cropped%29.jpg> ;
+                                     rs:variable  "image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2060630> ;
+                          rs:variable  "animal"
+                        ] ]
+] .

@@ -1,0 +1,1 @@
+ PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX defaultView: <http://defaultView> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT ?objectLabel ?objectDescription ?link ?coord WHERE {   ?object wdt:P31 wd:Q46169 ;           wdt:P856 ?link ;           wdt:P625 ?coord . } 

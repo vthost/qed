@@ -1,0 +1,40 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q744913 .
+    ?subj wdt:P625 ?coord .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  wdt:P31     wd:Q744913 ;
+           wdt:P625    ?coord ;
+           rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj wdt:P31 wd:Q744913 .
+    ?subj wdt:P625 ?coord .
+    ?subj rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  wdt:P31     wd:Q744913 ;
+           wdt:P625    ?coord ;
+           rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------

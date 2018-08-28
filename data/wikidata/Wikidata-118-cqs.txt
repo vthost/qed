@@ -1,0 +1,40 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?planet wdt:P31 wd:Q2775969 .
+    ?planet wdt:P1080 ?universe .
+    ?universe rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?planet   wdt:P31     wd:Q2775969 ;
+              wdt:P1080   ?universe .
+    ?universe  rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?planet wdt:P31 wd:Q2775969 .
+    ?planet wdt:P1080 ?universe .
+    ?universe rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?planet   wdt:P31     wd:Q2775969 ;
+              wdt:P1080   ?universe .
+    ?universe  rdfs:label  ?label
+  }
+LIMIT   3
+
+----------------------------------------------

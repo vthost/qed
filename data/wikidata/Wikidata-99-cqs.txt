@@ -1,0 +1,44 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?compound wdt:P31 wd:Q11173 .
+    ?compound wdt:P462 ?color .
+    ?color wdt:P465 ?rgb .
+  }
+WHERE
+  { BIND(if(bound(?rgb), ?rgb, "CCCCCC") AS ?rgb_)
+    { ?color  wdt:P465  ?rgb }
+    ?compound  wdt:P31  wd:Q11173 ;
+              wdt:P462  ?color
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?compound wdt:P31 wd:Q11173 .
+    ?compound wdt:P462 ?color .
+    ?color wdt:P465 ?rgb .
+  }
+WHERE
+  { BIND(if(bound(?rgb), ?rgb, "CCCCCC") AS ?rgb_)
+    FILTER NOT EXISTS { ?color  wdt:P465  ?rgb }
+    ?compound  wdt:P31  wd:Q11173 ;
+              wdt:P462  ?color
+  }
+LIMIT   3
+
+----------------------------------------------

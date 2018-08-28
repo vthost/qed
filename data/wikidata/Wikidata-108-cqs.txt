@@ -1,0 +1,21 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?object wdt:P31 wd:Q13442814 .
+    ?object wdt:P50 ?author .
+    ?author wdt:P106 ?occupation .
+  }
+WHERE
+  { ?object  wdt:P31   wd:Q13442814 ;
+             wdt:P50   ?author .
+    ?author  wdt:P106  ?occupation
+  }
+LIMIT   3
+
+----------------------------------------------

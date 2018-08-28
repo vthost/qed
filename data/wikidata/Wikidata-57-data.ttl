@@ -1,0 +1,91 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q24639  rdfs:label  "Vancouver"@fr ;
+        wdt:P1082   "631486"^^xsd:decimal ;
+        wdt:P17     wd:Q16 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q172  rdfs:label  "Toronto"@pt-br , "Toronto"@nb , "Toronto, Ontario"@sw , "Toronto"@lmo , "Toronto"@fr , "Toronto"@ro ;
+        wdt:P1082   "2731571"^^xsd:decimal ;
+        wdt:P17     wd:Q16 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q188  rdfs:label  "Deutsch"@de ;
+        wdt:P424    "de" .
+
+wd:Q13955  rdfs:label  "اللغة العربية"@ar ;
+        wdt:P424    "ar" .
+
+wd:Q150  rdfs:label  "Lang franse"@ht , "ֆրանսերեն"@hy , "francese"@ia , "الفرنسية"@ar , "צרפתית"@he , "フランス語"@ja , "français"@fr ;
+        wdt:P424    "fr" .
+
+wd:Q81788  rdfs:label  "مدينة الجيزة"@ar ;
+        wdt:P1082   "3021542"^^xsd:decimal ;
+        wdt:P17     wd:Q79 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q79  rdfs:label  "مصر"@ar ;
+        wdt:P37     wd:Q13955 .
+
+wd:Q36312  rdfs:label  "Calgary"@fr , "Калгари"@ru , "Calgary"@lfn , "Calgary"@en ;
+        wdt:P1082   "1239220"^^xsd:decimal ;
+        wdt:P17     wd:Q16 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q134121  rdfs:label  "Namur"@de ;
+        wdt:P1082   "110665"^^xsd:decimal ;
+        wdt:P17     wd:Q31 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q110989  rdfs:label  "Maaseik"@de ;
+        wdt:P1082   "25233"^^xsd:decimal ;
+        wdt:P17     wd:Q31 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q16  rdfs:label  "ཁ་ན་ཌ།"@bo , "কানাডা"@bn , "كندا"@aeb-arab , "ᱠᱟᱱᱟᱰᱟ"@sat , "Канада"@uk , "Canada"@vls , "Canada"@ch , "Canada"@vi , "Canada"@fr , "Canada"@vec , "Канада"@be , "Kanada"@de , "Kanada"@pl , "Kanada"@bi ;
+        wdt:P37     wd:Q150 .
+
+wd:Q3992  rdfs:label  "Lüttich"@de ;
+        wdt:P1082   "197885"^^xsd:decimal ;
+        wdt:P17     wd:Q31 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q31  rdfs:label  "Belgien"@de ;
+        wdt:P37     wd:Q188 .

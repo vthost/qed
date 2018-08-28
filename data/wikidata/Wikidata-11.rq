@@ -1,0 +1,1 @@
+ PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX defaultView: <http://defaultView>    SELECT DISTINCT ?airport ?coor ?range WHERE {   ?airport wdt:P31 wd:Q1248784 ;   ?range wd:Q31;   wdt:P625 ?coor. } 

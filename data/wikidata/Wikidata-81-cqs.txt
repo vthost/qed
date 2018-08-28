@@ -1,0 +1,42 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P351 ?ncbi_gene .
+    ?item wdt:P703 wd:Q15978631 .
+    ?item schema:dateModified ?date_modified .
+  }
+WHERE
+  { FILTER ( ?date_range < 8 )
+    BIND(( now() - ?date_modified ) AS ?date_range)
+    ?item  wdt:P351             ?ncbi_gene ;
+           wdt:P703             wd:Q15978631 ;
+           schema:dateModified  ?date_modified
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P351 ?ncbi_gene .
+    ?item wdt:P703 wd:Q15978631 .
+    ?item schema:dateModified ?date_modified .
+  }
+WHERE
+  { FILTER ( ! ( ?date_range < 8 ) )
+    BIND(( now() - ?date_modified ) AS ?date_range)
+    ?item  wdt:P351             ?ncbi_gene ;
+           wdt:P703             wd:Q15978631 ;
+           schema:dateModified  ?date_modified
+  }
+LIMIT   3
+
+----------------------------------------------

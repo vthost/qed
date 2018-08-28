@@ -1,0 +1,40 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?disease wdt:P699 ?doid .
+    ?disease rdfs:label ?label .
+    ?disease rdfs:label ?enLabel .
+  }
+WHERE
+  { BIND(lang(?label) AS ?language)
+    FILTER ( lang(?enLabel) = "en" )
+    ?disease  wdt:P699    ?doid ;
+              rdfs:label  ?label ;
+              rdfs:label  ?enLabel
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT 
+  { 
+    ?disease wdt:P699 ?doid .
+    ?disease rdfs:label ?label .
+    ?disease rdfs:label ?enLabel .
+  }
+WHERE
+  { BIND(lang(?label) AS ?language)
+    FILTER ( ! ( lang(?enLabel) = "en" ) )
+    ?disease  wdt:P699    ?doid ;
+              rdfs:label  ?label ;
+              rdfs:label  ?enLabel
+  }
+LIMIT   3
+
+----------------------------------------------

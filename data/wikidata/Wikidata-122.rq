@@ -1,0 +1,1 @@
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>   SELECT ?label ?coord ?place WHERE {    ?subj wdt:P31 wd:Q744913  .    ?subj wdt:P625 ?coord .    ?subj rdfs:label ?label filter (lang(?label) = "en") } 

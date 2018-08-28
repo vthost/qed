@@ -1,0 +1,48 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q16521 .
+    ?animal wdt:P31 ?item .
+    ?person wdt:P39 ?x .
+    ?animal wdt:P127 ?person .
+    ?animal wdt:P18 ?image .
+  }
+WHERE
+  { { ?animal  wdt:P18  ?image }
+    ?item    wdt:P31   wd:Q16521 .
+    ?animal  wdt:P31   ?item .
+    ?person  wdt:P39   ?x .
+    ?animal  wdt:P127  ?person
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q16521 .
+    ?animal wdt:P31 ?item .
+    ?person wdt:P39 ?x .
+    ?animal wdt:P127 ?person .
+    ?animal wdt:P18 ?image .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?animal  wdt:P18  ?image }
+    ?item    wdt:P31   wd:Q16521 .
+    ?animal  wdt:P31   ?item .
+    ?person  wdt:P39   ?x .
+    ?animal  wdt:P127  ?person
+  }
+LIMIT   3
+
+----------------------------------------------

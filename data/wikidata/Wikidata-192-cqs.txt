@@ -1,0 +1,96 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P735 ?name .
+    ?name rdfs:label ?nameLabelHE .
+    ?item rdfs:label ?itemLabelHE .
+  }
+WHERE
+  { FILTER ( lang(?itemLabelHE) = "he" )
+    ?item  rdfs:label  ?itemLabelHE
+    { FILTER ( lang(?nameLabelHE) = "he" )
+      ?name  rdfs:label  ?nameLabelHE
+    }
+    ?item  wdt:P31   wd:Q5 ;
+           wdt:P735  ?name
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P735 ?name .
+    ?name rdfs:label ?nameLabelHE .
+    ?item rdfs:label ?itemLabelHE .
+  }
+WHERE
+  { FILTER ( ! ( lang(?itemLabelHE) = "he" ) )
+    ?item  rdfs:label  ?itemLabelHE
+    { FILTER ( lang(?nameLabelHE) = "he" )
+      ?name  rdfs:label  ?nameLabelHE
+    }
+    ?item  wdt:P31   wd:Q5 ;
+           wdt:P735  ?name
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P735 ?name .
+    ?name rdfs:label ?nameLabelHE .
+    ?item rdfs:label ?itemLabelHE .
+  }
+WHERE
+  { FILTER ( lang(?itemLabelHE) = "he" )
+    ?item  rdfs:label  ?itemLabelHE
+    { FILTER ( ! ( lang(?nameLabelHE) = "he" ) )
+      ?name  rdfs:label  ?nameLabelHE
+    }
+    ?item  wdt:P31   wd:Q5 ;
+           wdt:P735  ?name
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P735 ?name .
+    ?name rdfs:label ?nameLabelHE .
+    ?item rdfs:label ?itemLabelHE .
+  }
+WHERE
+  { FILTER ( ! ( lang(?itemLabelHE) = "he" ) )
+    ?item  rdfs:label  ?itemLabelHE
+    { FILTER ( ! ( lang(?nameLabelHE) = "he" ) )
+      ?name  rdfs:label  ?nameLabelHE
+    }
+    ?item  wdt:P31   wd:Q5 ;
+           wdt:P735  ?name
+  }
+LIMIT   3
+
+----------------------------------------------

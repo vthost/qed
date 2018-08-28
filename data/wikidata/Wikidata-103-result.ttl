@@ -1,0 +1,71 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "date" , "itemLabel" , "pic" , "when" , "item" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     1987 ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     "1987-01-01T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "when"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q244998> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1969 ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     "1969-01-01T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "when"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q102419> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1960 ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     "1960-01-01T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "when"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q190486> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Huber.JPG> ;
+                                     rs:variable  "pic"
+                                   ] ;
+            rs:binding  [ rs:value     1988 ;
+                          rs:variable  "date"
+                        ] ;
+            rs:binding  [ rs:value     "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "when"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q76623> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Jean-Marie%20Lehn.JPG> ;
+                                     rs:variable  "pic"
+                                   ] ;
+            rs:binding  [ rs:value     1987 ;
+                          rs:variable  "date"
+                        ] ;
+            rs:binding  [ rs:value     "1987-01-01T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "when"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q107690> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Betzig.jpg> ;
+                                     rs:variable  "pic"
+                                   ] ;
+            rs:binding  [ rs:value     2014 ;
+                          rs:variable  "date"
+                        ] ;
+            rs:binding  [ rs:value     "2014-01-01T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "when"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1351105> ;
+                          rs:variable  "item"
+                        ] ]
+] .

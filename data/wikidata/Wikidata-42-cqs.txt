@@ -1,0 +1,72 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?director wdt:P106 wd:Q2526255 .
+    ?film wdt:P57 ?director .
+    ?sitelink schema:about ?director .
+    ?director rdfs:label ?director_label .
+  }
+WHERE
+  { { FILTER ( lang(?director_label) = "en" )
+      ?director  rdfs:label  ?director_label
+    }
+    ?director  wdt:P106     wd:Q2526255 .
+    ?film     wdt:P57       ?director .
+    ?sitelink  schema:about  ?director
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?director wdt:P106 wd:Q2526255 .
+    ?film wdt:P57 ?director .
+    ?sitelink schema:about ?director .
+    ?director rdfs:label ?director_label .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?director_label) = "en" ) )
+      ?director  rdfs:label  ?director_label
+    }
+    ?director  wdt:P106     wd:Q2526255 .
+    ?film     wdt:P57       ?director .
+    ?sitelink  schema:about  ?director
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?director wdt:P106 wd:Q2526255 .
+    ?film wdt:P57 ?director .
+    ?sitelink schema:about ?director .
+    ?director rdfs:label ?director_label .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?director  rdfs:label  ?director_label
+                        FILTER ( lang(?director_label) = "en" )
+                      }
+    ?director  wdt:P106     wd:Q2526255 .
+    ?film     wdt:P57       ?director .
+    ?sitelink  schema:about  ?director
+  }
+LIMIT   3
+
+----------------------------------------------

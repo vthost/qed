@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q12239143  rdfs:label  "BioCyc database collection"@en ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q187176  rdfs:label  "tz database"@en , "Zeitzonen-Datenbank"@de-ch , "Zeitzonen-Datenbank"@de , "Tz database"@ca ;
+        wdt:P275    wd:Q19652 ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q14075  rdfs:label  "free content"@en .
+
+wd:Q16800711  rdfs:label  "Foodb"@en ;
+        wdt:P275    wd:Q3238057 ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q18342728  rdfs:label  "Historisiertes Gemeindeverzeichnis der Schweiz"@de ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q6980476  rdfs:label  "Natural Earth"@en , "Natural Earth"@hu , "自然地球"@zh , "Natural Earth"@ru ;
+        wdt:P275    wd:Q19652 ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q18342406  rdfs:label  "CQ Ranking"@an , "CQ Ranking"@af ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q19652  rdfs:label  "Publieke domein"@af , "ملكية عامة"@ar , "public domain"@en , "domaine public"@fr .
+
+wd:Q76615  rdfs:label  "Fortune 500"@en ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q66683  rdfs:label  "Who Named It?"@en ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q131454  rdfs:label  "Library of Congress"@en ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q3238057  rdfs:label  "proprietary license"@en .

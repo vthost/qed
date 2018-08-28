@@ -1,0 +1,1 @@
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/>    SELECT * WHERE {   {     SELECT ?id (COUNT(?obj) AS ?count) (GROUP_CONCAT(?obj; SEPARATOR = " , ") AS ?items) WHERE { ?obj wdt:P345 ?id. }     GROUP BY ?id   }   FILTER(?count > 1) } 

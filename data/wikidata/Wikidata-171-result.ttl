@@ -1,0 +1,44 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "wds" , "wd" , "wdPLabel" , "wdP" , "value" , "wdLabel" , "valueLabel" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "2--4532" ;
+                                     rs:variable  "value"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/statement/Q34373-409733e5-4057-a60b-b5a8-afbabfb38b5a> ;
+                          rs:variable  "wds"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/P1036> ;
+                          rs:variable  "wdP"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q34373> ;
+                          rs:variable  "wd"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "2--4533" ;
+                                     rs:variable  "value"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/statement/Q34592-df07e4d5-45e2-b832-2b8b-3468d5729deb> ;
+                          rs:variable  "wds"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/P1036> ;
+                          rs:variable  "wdP"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q34592> ;
+                          rs:variable  "wd"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "2--623" ;
+                                     rs:variable  "value"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/statement/Q30650-beda7679-4496-6da7-5a08-0d5f8d618b59> ;
+                          rs:variable  "wds"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/P1036> ;
+                          rs:variable  "wdP"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q30650> ;
+                          rs:variable  "wd"
+                        ] ]
+] .

@@ -1,0 +1,50 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P1340 ?eyeColor .
+    ?person wdt:P1884 ?hairColor .
+    ?person wdt:P2048 ?height .
+    ?eyeColor rdfs:label ?_eyeColorLabel .
+  }
+WHERE
+  { BIND(concat(?_eyeColorLabel, " eyes") AS ?eyes)
+    FILTER ( lang(?_eyeColorLabel) = "en" )
+    ?person   wdt:P1340   ?eyeColor ;
+              wdt:P1884   ?hairColor ;
+              wdt:P2048   ?height .
+    ?eyeColor  rdfs:label  ?_eyeColorLabel
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P1340 ?eyeColor .
+    ?person wdt:P1884 ?hairColor .
+    ?person wdt:P2048 ?height .
+    ?eyeColor rdfs:label ?_eyeColorLabel .
+  }
+WHERE
+  { BIND(concat(?_eyeColorLabel, " eyes") AS ?eyes)
+    FILTER ( ! ( lang(?_eyeColorLabel) = "en" ) )
+    ?person   wdt:P1340   ?eyeColor ;
+              wdt:P1884   ?hairColor ;
+              wdt:P2048   ?height .
+    ?eyeColor  rdfs:label  ?_eyeColorLabel
+  }
+LIMIT   3
+
+----------------------------------------------

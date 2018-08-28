@@ -1,0 +1,25 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?airport wdt:P81 ?connectsairport .
+    ?airport wdt:P625 ?base_airport_coor .
+    ?connectsairport wdt:P931 ?place_served .
+    ?connectsairport wdt:P625 ?coor .
+  }
+WHERE
+  { VALUES ?airport { wd:Q17480 }
+    ?airport  wdt:P81   ?connectsairport ;
+              wdt:P625  ?base_airport_coor .
+    ?connectsairport
+              wdt:P931  ?place_served ;
+              wdt:P625  ?coor
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,1 @@
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>  SELECT ?entityLabel (YEAR(?date) as ?year)  WHERE {     BIND(MONTH(NOW()) AS ?nowMonth)     BIND(DAY(NOW()) AS ?nowDay)      ?entity wdt:P569 ?date .     FILTER (MONTH(?date) = ?nowMonth && DAY(?date) = ?nowDay) } LIMIT 10 

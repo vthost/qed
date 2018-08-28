@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "tax_node" , "uniprotid" , "itemLabel" , "item" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "P01584" ;
+                                     rs:variable  "uniprotid"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q411529> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "P21359" ;
+                                     rs:variable  "uniprotid"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q411610> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "P04049" ;
+                                     rs:variable  "uniprotid"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q410434> ;
+                          rs:variable  "item"
+                        ] ]
+] .

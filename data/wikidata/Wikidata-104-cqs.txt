@@ -1,0 +1,21 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?asteroid wdt:P31 wd:Q3863 .
+    ?asteroid wdt:P61 ?discoverer .
+    ?discoverer rdfs:label ?name .
+  }
+WHERE
+  { ?asteroid  wdt:P31    wd:Q3863 ;
+              wdt:P61     ?discoverer .
+    ?discoverer  rdfs:label  ?name
+  }
+LIMIT   3
+
+----------------------------------------------

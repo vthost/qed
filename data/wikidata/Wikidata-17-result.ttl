@@ -1,0 +1,53 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "_mass" , "_electronegativity" , "elementLabel" , "_melting_point" , "_boiling_point" , "_density" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     62.93 ;
+                                     rs:variable  "_mass"
+                                   ] ;
+            rs:binding  [ rs:value     8.94 ;
+                          rs:variable  "_density"
+                        ] ;
+            rs:binding  [ rs:value     1.9 ;
+                          rs:variable  "_electronegativity"
+                        ] ;
+            rs:binding  [ rs:value     "1981"^^xsd:decimal ;
+                          rs:variable  "_melting_point"
+                        ] ;
+            rs:binding  [ rs:value     "4703"^^xsd:decimal ;
+                          rs:variable  "_boiling_point"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     179.947 ;
+                                     rs:variable  "_mass"
+                                   ] ;
+            rs:binding  [ rs:value     "13"^^xsd:decimal ;
+                          rs:variable  "_density"
+                        ] ;
+            rs:binding  [ rs:value     "1"^^xsd:decimal ;
+                          rs:variable  "_electronegativity"
+                        ] ;
+            rs:binding  [ rs:value     "4041"^^xsd:decimal ;
+                          rs:variable  "_melting_point"
+                        ] ;
+            rs:binding  [ rs:value     "8316"^^xsd:decimal ;
+                          rs:variable  "_boiling_point"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     89.905 ;
+                                     rs:variable  "_mass"
+                                   ] ;
+            rs:binding  [ rs:value     6.51 ;
+                          rs:variable  "_density"
+                        ] ;
+            rs:binding  [ rs:value     "1"^^xsd:decimal ;
+                          rs:variable  "_electronegativity"
+                        ] ;
+            rs:binding  [ rs:value     "3375"^^xsd:decimal ;
+                          rs:variable  "_melting_point"
+                        ] ;
+            rs:binding  [ rs:value     "6471"^^xsd:decimal ;
+                          rs:variable  "_boiling_point"
+                        ] ]
+] .

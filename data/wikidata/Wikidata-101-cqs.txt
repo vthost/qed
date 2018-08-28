@@ -1,0 +1,36 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?compound1 wdt:P231 ?cas .
+    ?compound2 wdt:P231 ?cas .
+  }
+WHERE
+  { FILTER ( ?compound1 != ?compound2 )
+    ?compound1  wdt:P231  ?cas .
+    ?compound2  wdt:P231  ?cas
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?compound1 wdt:P231 ?cas .
+    ?compound2 wdt:P231 ?cas .
+  }
+WHERE
+  { FILTER ( ! ( ?compound1 != ?compound2 ) )
+    ?compound1  wdt:P231  ?cas .
+    ?compound2  wdt:P231  ?cas
+  }
+LIMIT   3
+
+----------------------------------------------

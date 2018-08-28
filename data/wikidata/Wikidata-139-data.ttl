@@ -1,0 +1,102 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wds:Q237994-333cd02c-4679-52ff-c330-5524d19c1b81
+        pq:P580  "2009-05-01T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q9682 ;
+        ps:P39   wd:Q877838 .
+
+wds:Q2679953-b881d438-4735-7776-6f00-e45a0f1afc5b
+        pq:P580  "1790-07-28T00:00:00Z"^^xsd:dateTime ;
+        pq:P582  "1813-08-11T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q127318 ;
+        ps:P39   wd:Q877838 .
+
+wds:Q1230771-797535ad-4acb-6438-c2fd-984917ec6d63
+        pq:P580  "1689-03-09T00:00:00Z"^^xsd:dateTime ;
+        pq:P582  "1692-11-01T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q130812 ;
+        ps:P39   wd:Q877838 .
+
+wd:Q506410  p:P39  wds:Q506410-9dc0b046-43a0-ad0a-0315-97a32b901e7a .
+
+wds:Q956310-39903e3a-4e93-1763-69c4-28922d8cd4e9
+        pq:P580  "1692-12-23T00:00:00Z"^^xsd:dateTime ;
+        pq:P582  "1715-07-30T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q129987 ;
+        ps:P39   wd:Q877838 .
+
+wd:Q956310  p:P39  wds:Q956310-39903e3a-4e93-1763-69c4-28922d8cd4e9 .
+
+wds:Q2127471-622e4b9d-4942-17b6-cdb3-ab0683dd06b2
+        pq:P580  "1718-12-10T00:00:00Z"^^xsd:dateTime ;
+        pq:P582  "1730-09-27T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q130805 ;
+        ps:P39   wd:Q877838 .
+
+wd:Q2127471  p:P39  wds:Q2127471-622e4b9d-4942-17b6-cdb3-ab0683dd06b2 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Laurence%20Eusden%20%281720%29.jpg> ;
+        wdt:P569  "1688-09-06T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570  "1730-09-27T00:00:00Z"^^xsd:dateTime .
+
+wds:Q954383-6cc2cc35-4d60-0039-955b-80c13fb4fefc
+        pq:P580  "1968-01-02T00:00:00Z"^^xsd:dateTime ;
+        pq:P582  "1972-05-22T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q9682 ;
+        ps:P39   wd:Q877838 .
+
+wd:Q954383  p:P39  wds:Q954383-6cc2cc35-4d60-0039-955b-80c13fb4fefc .
+
+wd:Q2679953  p:P39  wds:Q2679953-b881d438-4735-7776-6f00-e45a0f1afc5b ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20James%20Pye%20by%20Samuel%20James%20Arnold.jpg> ;
+        wdt:P569  "1745-02-20T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570  "1813-08-11T00:00:00Z"^^xsd:dateTime .
+
+wds:Q506410-9dc0b046-43a0-ad0a-0315-97a32b901e7a
+        pq:P580  "1999-05-19T00:00:00Z"^^xsd:dateTime ;
+        pq:P582  "2009-05-01T00:00:00Z"^^xsd:dateTime ;
+        pq:P748  wd:Q9682 ;
+        ps:P39   wd:Q877838 .
+
+wd:Q237994  p:P39  wds:Q237994-333cd02c-4679-52ff-c330-5524d19c1b81 .
+
+wd:Q1230771  p:P39  wds:Q1230771-797535ad-4acb-6438-c2fd-984917ec6d63 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Shadwell.jpg> ;
+        wdt:P569  "1642-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570  "1692-11-19T00:00:00Z"^^xsd:dateTime .

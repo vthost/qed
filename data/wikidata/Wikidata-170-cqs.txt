@@ -1,0 +1,31 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P27 wd:Q142 .
+    ?sitelink schema:about ?item .
+    ?wen schema:about ?item .
+    ?wen schema:inLanguage "en" .
+    ?wfr schema:about ?item .
+    ?wfr schema:inLanguage "fr" .
+  }
+WHERE
+  { ?item     wdt:P31       wd:Q5 ;
+              wdt:P27       wd:Q142 .
+    ?sitelink  schema:about  ?item
+    FILTER EXISTS { ?wen  schema:about       ?item ;
+                          schema:inLanguage  "en"
+                  }
+    FILTER NOT EXISTS { ?wfr  schema:about       ?item ;
+                              schema:inLanguage  "fr"
+                      }
+  }
+LIMIT   3
+
+----------------------------------------------

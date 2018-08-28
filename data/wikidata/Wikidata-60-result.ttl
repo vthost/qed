@@ -1,0 +1,53 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "subj" , "elev" , "coord" , "label" , "picture" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Alpenrelief%2001.jpg> ;
+                                     rs:variable  "picture"
+                                   ] ;
+            rs:binding  [ rs:value     4810.9 ;
+                          rs:variable  "elev"
+                        ] ;
+            rs:binding  [ rs:value     "Point(10.0 46.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Alpen"@id ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1286> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Alpenrelief%2001.jpg> ;
+                                     rs:variable  "picture"
+                                   ] ;
+            rs:binding  [ rs:value     4810.9 ;
+                          rs:variable  "elev"
+                        ] ;
+            rs:binding  [ rs:value     "Point(10.0 46.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Alpen"@de-ch ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1286> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Alpenrelief%2001.jpg> ;
+                                     rs:variable  "picture"
+                                   ] ;
+            rs:binding  [ rs:value     4810.9 ;
+                          rs:variable  "elev"
+                        ] ;
+            rs:binding  [ rs:value     "Point(10.0 46.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Alpen"@de ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1286> ;
+                          rs:variable  "subj"
+                        ] ]
+] .

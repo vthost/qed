@@ -1,0 +1,47 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "desc" , "s" , "linkcount" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     1 ;
+                                     rs:variable  "linkcount"
+                                   ] ;
+            rs:binding  [ rs:value     "Merlin"@en ;
+                          rs:variable  "desc"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q42303146> ;
+                          rs:variable  "s"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1 ;
+                                     rs:variable  "linkcount"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q4359786> ;
+                          rs:variable  "s"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     1 ;
+                                     rs:variable  "linkcount"
+                                   ] ;
+            rs:binding  [ rs:value     "Hebdomeros"@en ;
+                          rs:variable  "desc"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q47089834> ;
+                          rs:variable  "s"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     3 ;
+                                     rs:variable  "linkcount"
+                                   ] ;
+            rs:binding  [ rs:value     "Mahabharata"@en ;
+                          rs:variable  "desc"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q8276> ;
+                          rs:variable  "s"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     2 ;
+                                     rs:variable  "linkcount"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q3278347> ;
+                          rs:variable  "s"
+                        ] ]
+] .

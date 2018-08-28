@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q5432941  p:P699  wds:Q5432941-06006EAE-5CE7-4801-A598-533BCABA3CAC ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q2351083  p:P699  wds:Q2351083-BE442AC0-E8F4-4B7D-BEF1-76601BFAE016 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q161790  p:P699  wds:Q161790-B0455228-F9FB-40F6-9134-D54C3D5BB653 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q5445898  p:P699  wds:Q5445898-DF807AC1-F158-4CB4-87A5-899A3FC330B3 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q1320276  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q838145  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q727096  p:P699  wds:Q727096-CCA44006-C95A-4BD7-9787-C2DE7ED9E90A ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q76973  p:P699  wds:Q76973-74B7A3B8-1285-4782-A0F3-D2D6C23DE555 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q81867  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q188638  p:P699  wds:Q188638-1283E9EB-D20B-4E69-B734-987897305B77 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q79793  p:P699  wds:Q79793-846CD98E-B722-4A5D-A27A-5A50AC67F58C ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q119660  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q2712607  p:P699  wds:Q2712607-8dc94184-459c-301a-7a10-453261155006 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q133076  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q101991  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q112670  p:P699  wds:Q112670-405756EB-7CF0-48A0-A810-09005B9D5287 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q105688  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q101971  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q895930  wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .

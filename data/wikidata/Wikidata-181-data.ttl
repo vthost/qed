@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q143496  wdt:P231  "9003-56-9" ;
+        wdt:P235  "XECAHXYUAAWDEL-UHFFFAOYSA-N" ;
+        wdt:P274  "C₁₅H₁₇N" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P662  "24756" .
+
+wd:Q219660  wdt:P231  "57455-37-5" ;
+        wdt:P235  "IRERQBUNZFJFGC-UHFFFAOYSA-L" ;
+        wdt:P274  "Al₆Na₈O₂₄S₃Si₆" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "32699825" ;
+        wdt:P662  "71587188" .
+
+wd:Q3271346  wdt:P231  "1304-54-7" ;
+        wdt:P235  "WOTJDIQGXDRAMC-UHFFFAOYSA-N" ;
+        wdt:P274  "Be₃N₂" ;
+        wdt:P31   wd:Q11173 .
+
+wd:Q115469  wdt:P231  "100-58-3" ;
+        wdt:P235  "NIXOIRLDFIPNLJ-UHFFFAOYSA-M" ;
+        wdt:P274  "C₆H₅BrMg" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P662  "66852" .
+
+wd:Q410056  wdt:P231  "17082-12-1" ;
+        wdt:P235  "DMLAVOWQYNRWNQ-BUHFOSPRSA-N" ;
+        wdt:P274  "C₁₂H₁₀N₂" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "2185" .
+
+wd:Q219626  wdt:P231  "299-42-3" ;
+        wdt:P235  "KWGRBVOPPLSCSI-WPRPVWTQSA-N" ;
+        wdt:P274  "C₁₀H₁₅NO" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "8935" ;
+        wdt:P662  "9294" .
+
+wd:Q220108  wdt:P231  "598-30-1" ;
+        wdt:P235  "WGOPGODQLGJZGL-UHFFFAOYSA-N" ;
+        wdt:P274  "C₄H₉Li" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "92522" ;
+        wdt:P662  "102446" .
+
+wd:Q133767  wdt:P231  "14457-64-8" ;
+        wdt:P235  "AIRCTMFFNKZQPN-UHFFFAOYSA-N" ;
+        wdt:P274  "AlO" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P662  "142249" .
+
+wd:Q412706  wdt:P231  "114615-82-6" ;
+        wdt:P235  "NQSIKKSFBQCBSI-UHFFFAOYSA-N" ;
+        wdt:P274  "C₁₂H₂₈NO₄Ru" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "21170134" .
+
+wd:Q419361  wdt:P231  "149-64-4" ;
+        wdt:P274  "C₂₁H₃₀BrNO₄" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "16736107" ;
+        wdt:P662  "6852391" .
+
+wd:Q425036  wdt:P231  "12057-71-5" ;
+        wdt:P235  "QPYUARQCGTYKFP-UHFFFAOYSA-N" ;
+        wdt:P274  "Mg₃N₂" ;
+        wdt:P31   wd:Q11173 .
+
+wd:Q82804  wdt:P231  "99644-28-7" ;
+        wdt:P235  "HAHWYACNRLFPJX-UHFFFAOYSA-K" ;
+        wdt:P274  "EsI₃" ;
+        wdt:P31   wd:Q11173 .
+
+wd:Q411407  wdt:P231  "163731-16-6" ;
+        wdt:P235  "HEPJAPHKUAGBIG-UHFFFAOYSA-N" ;
+        wdt:P274  "HArF" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "15863741" .
+
+wd:Q415798  wdt:P231  "1414-45-5" ;
+        wdt:P274  "C₁₄₃H₂₃₀N₄₂O₃₇S₇" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "21106355" ;
+        wdt:P662  "16219761" .
+
+wd:Q326224  wdt:P231  "64-86-8" ;
+        wdt:P274  "C₂₂H₂₅NO₆" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "2731" ;
+        wdt:P662  "6167" .

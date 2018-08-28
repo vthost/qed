@@ -1,0 +1,20 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?highway wdt:P2789 ?city .
+    ?city wdt:P625 ?coordinates .
+  }
+WHERE
+  { VALUES ?highway { wd:Q327162 }
+    ?highway  wdt:P2789  ?city .
+    ?city     wdt:P625   ?coordinates
+  }
+LIMIT   3
+
+----------------------------------------------

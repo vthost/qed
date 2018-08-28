@@ -1,0 +1,12 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?v wikibase:geoGlobe ?globe .
+  }
+WHERE
+  { ?v  wikibase:geoGlobe  ?globe }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,168 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! bound(?d) )
+    FILTER ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime )
+    { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! ( ! bound(?d) ) )
+    FILTER ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime )
+    { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! bound(?d) )
+    FILTER ( ! ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime ) )
+    { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! ( ! bound(?d) ) )
+    FILTER ( ! ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime ) )
+    { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! bound(?d) )
+    FILTER ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime )
+    FILTER NOT EXISTS { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! ( ! bound(?d) ) )
+    FILTER ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime )
+    FILTER NOT EXISTS { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! bound(?d) )
+    FILTER ( ! ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime ) )
+    FILTER NOT EXISTS { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?h wdt:P31 wd:Q5 .
+    ?h wdt:P569 ?date .
+    ?h wdt:P570 ?d .
+  }
+WHERE
+  { FILTER ( ! ( ! bound(?d) ) )
+    FILTER ( ! ( ?date < "1880-01-01T00:00:00Z"^^xsd:dateTime ) )
+    FILTER NOT EXISTS { ?h  wdt:P570  ?d }
+    ?h  wdt:P31   wd:Q5 ;
+        wdt:P569  ?date
+  }
+LIMIT   3
+
+----------------------------------------------

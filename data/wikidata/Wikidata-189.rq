@@ -1,0 +1,1 @@
+ PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>  SELECT ?publisher ?publisherLabel ?work WHERE {      ?work wdt:P123 ?publisher .      ?publisher wdt:P31 wd:Q4167410 . } 

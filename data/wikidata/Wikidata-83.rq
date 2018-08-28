@@ -1,0 +1,1 @@
+ PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>  SELECT ?geneLabel ?variantLabel  WHERE {   	VALUES ?disease {wd:Q188874}     ?variant wdt:P3358 ?disease ;            wdt:P3433 ?gene .   } 

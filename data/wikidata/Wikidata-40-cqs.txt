@@ -1,0 +1,376 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { { ?awardEdition
+                  wdt:P585  ?time .
+        ?awardWork  wdt:P57  ?director
+      }
+      { FILTER NOT EXISTS { ?human    p:P166    ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805   ?awardEdition ;
+                                      pq:P1686  ?awardWork .
+                            ?human    wdt:P31   wd:Q5
+                          }
+        FILTER NOT EXISTS { ?awardWork  wdt:P31  wd:Q11424 ;
+                                      p:P166   ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805  ?awardEdition
+                          }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?awardEdition
+                                    wdt:P585  ?time .
+                          ?awardWork  wdt:P57  ?director
+                        }
+      { FILTER NOT EXISTS { ?human    p:P166    ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805   ?awardEdition ;
+                                      pq:P1686  ?awardWork .
+                            ?human    wdt:P31   wd:Q5
+                          }
+        FILTER NOT EXISTS { ?awardWork  wdt:P31  wd:Q11424 ;
+                                      p:P166   ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805  ?awardEdition
+                          }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { { ?awardEdition
+                  wdt:P585  ?time .
+        ?awardWork  wdt:P57  ?director
+      }
+      { FILTER NOT EXISTS { ?human    p:P166    ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805   ?awardEdition ;
+                                      pq:P1686  ?awardWork .
+                            ?human    wdt:P31   wd:Q5
+                          }
+        { ?awardWork  wdt:P31  wd:Q11424 ;
+                    p:P166   ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805  ?awardEdition
+        }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?awardEdition
+                                    wdt:P585  ?time .
+                          ?awardWork  wdt:P57  ?director
+                        }
+      { FILTER NOT EXISTS { ?human    p:P166    ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805   ?awardEdition ;
+                                      pq:P1686  ?awardWork .
+                            ?human    wdt:P31   wd:Q5
+                          }
+        { ?awardWork  wdt:P31  wd:Q11424 ;
+                    p:P166   ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805  ?awardEdition
+        }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { { ?awardEdition
+                  wdt:P585  ?time .
+        ?awardWork  wdt:P57  ?director
+      }
+      { { ?human    p:P166    ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805   ?awardEdition ;
+                    pq:P1686  ?awardWork .
+          ?human    wdt:P31   wd:Q5
+        }
+        FILTER NOT EXISTS { ?awardWork  wdt:P31  wd:Q11424 ;
+                                      p:P166   ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805  ?awardEdition
+                          }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?awardEdition
+                                    wdt:P585  ?time .
+                          ?awardWork  wdt:P57  ?director
+                        }
+      { { ?human    p:P166    ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805   ?awardEdition ;
+                    pq:P1686  ?awardWork .
+          ?human    wdt:P31   wd:Q5
+        }
+        FILTER NOT EXISTS { ?awardWork  wdt:P31  wd:Q11424 ;
+                                      p:P166   ?awardStat .
+                            ?awardStat  ps:P166  ?award ;
+                                      pq:P805  ?awardEdition
+                          }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { { ?awardEdition
+                  wdt:P585  ?time .
+        ?awardWork  wdt:P57  ?director
+      }
+      { { ?human    p:P166    ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805   ?awardEdition ;
+                    pq:P1686  ?awardWork .
+          ?human    wdt:P31   wd:Q5
+        }
+        { ?awardWork  wdt:P31  wd:Q11424 ;
+                    p:P166   ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805  ?awardEdition
+        }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?award wdt:P31 wd:Q19020 .
+    ?human p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardStat pq:P1686 ?awardWork .
+    ?human wdt:P31 wd:Q5 .
+    ?awardWork wdt:P31 wd:Q11424 .
+    ?awardWork p:P166 ?awardStat .
+    ?awardStat ps:P166 ?award .
+    ?awardStat pq:P805 ?awardEdition .
+    ?awardEdition wdt:P585 ?time .
+    ?awardWork wdt:P57 ?director .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?awardEdition
+                                    wdt:P585  ?time .
+                          ?awardWork  wdt:P57  ?director
+                        }
+      { { ?human    p:P166    ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805   ?awardEdition ;
+                    pq:P1686  ?awardWork .
+          ?human    wdt:P31   wd:Q5
+        }
+        { ?awardWork  wdt:P31  wd:Q11424 ;
+                    p:P166   ?awardStat .
+          ?awardStat  ps:P166  ?award ;
+                    pq:P805  ?awardEdition
+        }
+      }
+      ?award  wdt:P31  wd:Q19020
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,187 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wds:Q862317-59F7C4B6-879D-48CA-BA5B-5577CAD6E7FF
+        pq:P1686  wd:Q862317 ;
+        pq:P805   wd:Q910864 ;
+        ps:P166   wd:Q106291 .
+
+wd:Q4671338  wdt:P31  wd:Q19020 .
+
+wd:Q367032  p:P166  wds:Q367032-15993B0E-F7BB-4A48-9389-10BE153E30D3 ;
+        wdt:P31  wd:Q5 .
+
+wd:Q1352243  p:P166  wds:Q22108735-E9BCDFEE-CEAE-4121-AA6F-15CC6D1E1FF3 ;
+        wdt:P31  wd:Q11424 .
+
+wd:Q7451352  p:P166  wds:Q22101763-28C65B3C-65B3-4411-A48A-E951020E150A , wds:Q22101772-29209229-7D67-499D-AF95-6A35C73B0DF6 ;
+        wdt:P31  wd:Q11424 .
+
+wd:Q910864  wdt:P585  "1990-03-26T00:00:00Z"^^xsd:dateTime .
+
+wds:Q15783382-914FAB37-C32D-438D-A2EC-BBC6890CF160
+        pq:P1686  wd:Q16857406 ;
+        pq:P805   wd:Q22076019 ;
+        ps:P166   wd:Q393686 .
+
+wd:Q131520  wdt:P31  wd:Q19020 .
+
+wds:Q1509967-d614c3cd-4475-0bd5-a29b-9d079dfd33a5
+        pq:P1686  wd:Q1509967 ;
+        pq:P805   wd:Q917076 ;
+        ps:P166   wd:Q917808 .
+
+wds:Q22101772-29209229-7D67-499D-AF95-6A35C73B0DF6
+        pq:P1686  wd:Q7451352 ;
+        pq:P805   wd:Q289412 ;
+        ps:P166   wd:Q1425151 .
+
+wd:Q22101763  p:P166  wds:Q22101763-28C65B3C-65B3-4411-A48A-E951020E150A ;
+        wdt:P31  wd:Q5 .
+
+wd:Q1655139  p:P166  wds:Q1655139-8FAA01DB-B674-4FEB-852B-51FB4E41A456 ;
+        wdt:P31  wd:Q11424 .
+
+wds:Q1655139-8FAA01DB-B674-4FEB-852B-51FB4E41A456
+        pq:P1686  wd:Q1655139 ;
+        pq:P805   wd:Q944352 ;
+        ps:P166   wd:Q111332 .
+
+wd:Q463620  p:P166  wds:Q463620-B67C6EF7-A519-4361-8D43-DB6CAF5A467A ;
+        wdt:P31  wd:Q11424 ;
+        wdt:P57  wd:Q669045 .
+
+wd:Q393686  wdt:P31  wd:Q19020 .
+
+wds:Q22108735-E9BCDFEE-CEAE-4121-AA6F-15CC6D1E1FF3
+        pq:P1686  wd:Q1352243 ;
+        pq:P805   wd:Q257443 ;
+        ps:P166   wd:Q1425151 .
+
+wd:Q106291  wdt:P31  wd:Q19020 .
+
+wds:Q390731-DD4AF00A-DCD5-468B-8006-4C5968B27921
+        pq:P1686  wd:Q7786140 ;
+        pq:P805   wd:Q608130 ;
+        ps:P166   wd:Q22335251 .
+
+wds:Q1722396-0A6B36F5-4E9C-4A6F-8452-3D0D9F1B0773
+        pq:P1686  wd:Q1722396 ;
+        pq:P805   wd:Q508496 ;
+        ps:P166   wd:Q131520 .
+
+wd:Q22108735  p:P166  wds:Q22108735-E9BCDFEE-CEAE-4121-AA6F-15CC6D1E1FF3 ;
+        wdt:P31  wd:Q5 .
+
+wds:Q367032-15993B0E-F7BB-4A48-9389-10BE153E30D3
+        pq:P1686  wd:Q3548988 ;
+        pq:P805   wd:Q614408 ;
+        ps:P166   wd:Q4671338 .
+
+wd:Q3548988  p:P166  wds:Q367032-15993B0E-F7BB-4A48-9389-10BE153E30D3 ;
+        wdt:P31  wd:Q11424 ;
+        wdt:P57  wd:Q269796 .
+
+wd:Q917138  wdt:P585  "1965-04-05T00:00:00Z"^^xsd:dateTime .
+
+wd:Q111332  wdt:P31  wd:Q19020 .
+
+wd:Q7786140  p:P166  wds:Q390731-DD4AF00A-DCD5-468B-8006-4C5968B27921 ;
+        wdt:P31  wd:Q11424 ;
+        wdt:P57  wd:Q390731 .
+
+wd:Q1722396  p:P166  wds:Q1722396-0A6B36F5-4E9C-4A6F-8452-3D0D9F1B0773 ;
+        wdt:P31  wd:Q11424 .
+
+wds:Q22101763-28C65B3C-65B3-4411-A48A-E951020E150A
+        pq:P1686  wd:Q7451352 ;
+        pq:P805   wd:Q289412 ;
+        ps:P166   wd:Q1425151 .
+
+wd:Q16857406  p:P166  wds:Q15783382-914FAB37-C32D-438D-A2EC-BBC6890CF160 ;
+        wdt:P31  wd:Q11424 ;
+        wdt:P57  wd:Q295964 .
+
+wd:Q1425151  wdt:P31  wd:Q19020 .
+
+wds:Q463620-B67C6EF7-A519-4361-8D43-DB6CAF5A467A
+        pq:P1686  wd:Q463620 ;
+        pq:P805   wd:Q178809 ;
+        ps:P166   wd:Q102427 .
+
+wds:Q106440-920D1250-D22B-4921-9929-41573336AC1D
+        pq:P1686  wd:Q106440 ;
+        pq:P805   wd:Q917138 ;
+        ps:P166   wd:Q488645 .
+
+wd:Q608130  wdt:P585  "1955-03-30T00:00:00Z"^^xsd:dateTime .
+
+wd:Q917808  wdt:P31  wd:Q19020 .
+
+wd:Q1509967  p:P166  wds:Q1509967-d614c3cd-4475-0bd5-a29b-9d079dfd33a5 ;
+        wdt:P31  wd:Q11424 .
+
+wd:Q178809  wdt:P585  "1930-04-03T00:00:00Z"^^xsd:dateTime .
+
+wd:Q390731  p:P166  wds:Q390731-DD4AF00A-DCD5-468B-8006-4C5968B27921 ;
+        wdt:P31  wd:Q5 .
+
+wd:Q614408  wdt:P585  "1953-03-19T00:00:00Z"^^xsd:dateTime .
+
+wd:Q106440  p:P166  wds:Q106440-920D1250-D22B-4921-9929-41573336AC1D ;
+        wdt:P31  wd:Q11424 ;
+        wdt:P57  wd:Q363653 .
+
+wd:Q862317  p:P166  wds:Q862317-59F7C4B6-879D-48CA-BA5B-5577CAD6E7FF ;
+        wdt:P31  wd:Q11424 ;
+        wdt:P57  wd:Q314142 .
+
+wd:Q488645  wdt:P31  wd:Q19020 .
+
+wd:Q15783382  p:P166  wds:Q15783382-914FAB37-C32D-438D-A2EC-BBC6890CF160 ;
+        wdt:P31  wd:Q5 .
+
+wd:Q102427  wdt:P31  wd:Q19020 .
+
+wd:Q22335251  wdt:P31  wd:Q19020 .
+
+wd:Q22101772  p:P166  wds:Q22101772-29209229-7D67-499D-AF95-6A35C73B0DF6 ;
+        wdt:P31  wd:Q5 .
+
+wd:Q22076019  wdt:P585  "2017-02-26T00:00:00Z"^^xsd:dateTime .

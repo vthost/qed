@@ -1,0 +1,42 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?subject wdt:P31 wd:Q5 .
+    ?subject wdt:P935 ?gallery .
+    ?subject wdt:P18 ?x .
+  }
+WHERE
+  { FILTER regex(str(?subject), "Q211", "i")
+    { ?subject  wdt:P18  ?x }
+    ?subject  wdt:P31   wd:Q5 ;
+              wdt:P935  ?gallery
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?subject wdt:P31 wd:Q5 .
+    ?subject wdt:P935 ?gallery .
+    ?subject wdt:P18 ?x .
+  }
+WHERE
+  { FILTER ( ! regex(str(?subject), "Q211", "i") )
+    { ?subject  wdt:P18  ?x }
+    ?subject  wdt:P31   wd:Q5 ;
+              wdt:P935  ?gallery
+  }
+LIMIT   3
+
+----------------------------------------------

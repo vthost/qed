@@ -1,0 +1,18 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?disease ?p ?o .
+    ?disease wdt:P699 ?doid .
+    ?o owl:sameAs ?sa .
+  }
+WHERE
+  { ?disease  ?p          ?o ;
+              wdt:P699    ?doid .
+    ?o        owl:sameAs  ?sa
+  }
+LIMIT   3
+
+----------------------------------------------

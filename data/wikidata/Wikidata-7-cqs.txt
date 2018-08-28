@@ -1,0 +1,23 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wdno: <http://www.wikidata.org/prop/novalue/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?human wdt:P31 wd:Q5 .
+    ?human p:P40 ?childStatement .
+    ?childStatement <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wdno:P40 .
+  }
+WHERE
+  { ?human    wdt:P31               wd:Q5 ;
+              p:P40                 ?childStatement .
+    ?childStatement
+              a                     wdno:P40
+  }
+LIMIT   3
+
+----------------------------------------------

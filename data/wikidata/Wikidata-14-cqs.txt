@@ -1,0 +1,418 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( lang(?propLabel) = "en" )
+    { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( ! ( lang(?propLabel) = "en" ) )
+    { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( lang(?propLabel) = "en" )
+    FILTER NOT EXISTS { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( ! ( lang(?propLabel) = "en" ) )
+    FILTER NOT EXISTS { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( lang(?propLabel) = "en" )
+    { ?valUrl  wdt:P18  ?picture }
+    FILTER ( ! ( lang(?valLabel) = "en" ) )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( ! ( lang(?propLabel) = "en" ) )
+    { ?valUrl  wdt:P18  ?picture }
+    FILTER ( ! ( lang(?valLabel) = "en" ) )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( lang(?propLabel) = "en" )
+    FILTER NOT EXISTS { ?valUrl  wdt:P18  ?picture }
+    FILTER ( ! ( lang(?valLabel) = "en" ) )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( ! ( lang(?propLabel) = "en" ) )
+    FILTER NOT EXISTS { ?valUrl  wdt:P18  ?picture }
+    FILTER ( ! ( lang(?valLabel) = "en" ) )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      FILTER NOT EXISTS { entity:Q42  ?propUrl            ?valUrl .
+                          ?property  ?ref                 ?propUrl ;
+                                    a                     wikibase:Property ;
+                                    rdfs:label            ?propLabel
+                        }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( lang(?propLabel) = "en" )
+    { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      { entity:Q42  ?propUrl            ?valUrl .
+        ?property  ?ref                 ?propUrl ;
+                  a                     wikibase:Property ;
+                  rdfs:label            ?propLabel
+      }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( ! ( lang(?propLabel) = "en" ) )
+    { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      { entity:Q42  ?propUrl            ?valUrl .
+        ?property  ?ref                 ?propUrl ;
+                  a                     wikibase:Property ;
+                  rdfs:label            ?propLabel
+      }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  hint: <http://www.bigdata.com/queryHints#>
+PREFIX  http: <http://http>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  entity: <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    hint:Query hint:optimizer "None" .
+    entity:Q42 ?propUrl ?valUrl .
+    ?property ?ref ?propUrl .
+    ?property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> wikibase:Property .
+    ?property rdfs:label ?propLabel .
+    ?valUrl rdfs:label ?valLabel .
+    ?valUrl wdt:P18 ?picture .
+  }
+WHERE
+  { FILTER ( lang(?propLabel) = "en" )
+    FILTER NOT EXISTS { ?valUrl  wdt:P18  ?picture }
+    FILTER ( lang(?valLabel) = "en" )
+    ?valUrl  rdfs:label  ?valLabel
+    { FILTER NOT EXISTS { BIND(entity:Q42 AS ?valUrl)
+                          BIND("N/A" AS ?propUrl)
+                          BIND("identity"@en AS ?propLabel)
+                        }
+      { entity:Q42  ?propUrl            ?valUrl .
+        ?property  ?ref                 ?propUrl ;
+                  a                     wikibase:Property ;
+                  rdfs:label            ?propLabel
+      }
+    }
+    hint:Query  hint:optimizer  "None"
+  }
+LIMIT   3
+
+----------------------------------------------

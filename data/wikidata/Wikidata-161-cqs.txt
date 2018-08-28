@@ -1,0 +1,75 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    wd:Q11571 p:P166 ?statement .
+    ?statement ps:P166 ?entity .
+    ?statement pq:P585 ?real_year .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( lang(?desc) = "en" )
+      ?entity  rdfs:label  ?desc
+    }
+    wd:Q11571  p:P166  ?statement .
+    ?statement  ps:P166  ?entity ;
+              pq:P585  ?real_year
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    wd:Q11571 p:P166 ?statement .
+    ?statement ps:P166 ?entity .
+    ?statement pq:P585 ?real_year .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?entity  rdfs:label  ?desc
+    }
+    wd:Q11571  p:P166  ?statement .
+    ?statement  ps:P166  ?entity ;
+              pq:P585  ?real_year
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  ps:   <http://www.wikidata.org/prop/statement/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    wd:Q11571 p:P166 ?statement .
+    ?statement ps:P166 ?entity .
+    ?statement pq:P585 ?real_year .
+    ?entity rdfs:label ?desc .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?entity  rdfs:label  ?desc
+                        FILTER ( lang(?desc) = "en" )
+                      }
+    wd:Q11571  p:P166  ?statement .
+    ?statement  ps:P166  ?entity ;
+              pq:P585  ?real_year
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,17 +1,27 @@
 package qed.core;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.jena.query.Query;
@@ -29,7 +39,7 @@ import org.apache.jena.vocabulary.RDFS;
 
 public class Utils implements Constants {
 	
-	public static String DATA_DIR =  System.getProperty("user.dir")+ File.separator +".."+File.separator +".."+File.separator + "data" + File.separator;	
+	public static String DATA_DIR =  System.getProperty("user.dir")+ File.separator +".."+File.separator  + "data" + File.separator;	
 
 //	private static void deleteDir(File file) {
 //		
@@ -69,9 +79,9 @@ public class Utils implements Constants {
 	}
 	
 //	make sure that there is a (clean) directory for each name in config
-	public static File cleanDataSubDir(String[] config) {
+	public static File cleanDataSubDir(Feature[] config) {
 
-		String p = DATA_DIR + (config == null ? "" : toString(config) + File.separator);
+		String p = DATA_DIR + (config == null ? "data" : toString(config)) + File.separator;
 		
 		File f = new File(p);
 		if(f.exists()) {//should not be the case where we use this method currently
@@ -97,9 +107,9 @@ public class Utils implements Constants {
 		}
 	}
 	
-	public static String toString(String[] config) {
+	public static String toString(Feature[] config) {
 		return String.join("_", Arrays.asList(config).
-				stream().map(String::toLowerCase).collect(Collectors.toList()));
+				stream().map(Feature::toString).map(String::toLowerCase).collect(Collectors.toList()));
 	}
 	
 //	public static String getConfigTestsName(String config) {
@@ -174,7 +184,7 @@ public class Utils implements Constants {
 	}
 	
 //	extend existing file
-	public static long writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
+	public static int writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
 
 		long size = 0;
 		try {
@@ -190,7 +200,7 @@ public class Utils implements Constants {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return size;
+		return (int) size;
 	}
 	
 //	public static void writeQueryDataFile2(File directory, String lsqIdUrl, Dataset dataset) {
@@ -218,6 +228,230 @@ public class Utils implements Constants {
 		}
 	}
 	
+
+	public static void writeStatisticsFile1(List<String> ids, List<int[]> stats, List<List<Feature>> features, String path) {
+		try {		
+			FileWriter writer = new FileWriter(path + File.separator + "stats_detail.txt");		  	
+			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
+			
+			for (int i = 0; i < ids.size(); i++) {
+				try {
+					int[] stat = stats.get(i);
+					writer.write(ids.get(i) + ";" + stat[0] + ";" + stat[1] + ";" + stat[2] + ";" + stat[3] + ";" +//stat[4] + ";" +
+//							( stat[1] > 0 ? stat[2]/stat[1] : 0) + ";" + 
+							String.join(",", features.get(i).stream().map(f -> f.toString().replace("_", "\\_")).
+									collect(Collectors.toList())) + "\n");
+
+				} catch (IOException e1) {//config.replace("_", "\\_")
+					e1.printStackTrace();
+				}
+			}
+			writer.close();
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		
+	}
+	
+	public static void statsSummary(String path, int maxFeats) {
+		Map<String,List<String>> fqs = new HashMap<String,List<String>>();
+		Map<String,List<List<Integer>>> fss = new HashMap<String,List<List<Integer>>>();
+		
+		Map<String,Integer> ok = new HashMap<String,Integer>();
+		for (Feature f : Feature.values()) {
+			ok.put(f.name(),0);
+		}
+		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt"));
+			    BufferedReader reader =
+			      new BufferedReader(new InputStreamReader(in))) {
+			    String line = reader.readLine();
+			    while ((line = reader.readLine()) != null) {
+//			    System.out.println(line);
+			    for (Feature f : Feature.values()) {
+			    	if(line.contains(f.name()))
+					ok.put(f.toString(),ok.get(f.name()) + 1);
+				}}
+		} catch (IOException x) {
+		    System.err.println(x);
+		}
+
+		System.out.println(ok);
+		List<Integer> is = new ArrayList<Integer>();
+		is.addAll(ok.values());
+		List<String> ks = new ArrayList<String>();
+		ks.addAll(ok.keySet());
+		List<String> ks1 = new ArrayList<String>();
+		for (int i = 0; i < maxFeats; i++) {
+			int k = is.stream().mapToInt(j -> j).max().orElse(0);
+			int index = is.indexOf(k);
+			int e = is.remove(index);
+			ks1.add(ks.remove(index));
+			System.out.println(e == k);
+		}
+System.out.println(ks1);
+		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt"));
+		    BufferedReader reader =
+		      new BufferedReader(new InputStreamReader(in))) {
+		    String line = reader.readLine();int c = 0;
+		    while ((line = reader.readLine()) != null) {c++;
+		        String fs = String.join(",", Arrays.asList(line.substring(line.lastIndexOf(";")+1).split(",")).stream().
+		        		filter(s -> ks1.contains(s)).
+		        		map(s -> s.length() > 1? s.substring(0, 2):s).toArray(String[]::new));
+		        
+		        List<String> ids = null; //new ArrayList<String>();
+		        List<List<Integer>> stats = null;//new ArrayList<List<Integer>>();
+		        if(!fqs.containsKey(fs)) {
+		        	ids = new ArrayList<String>();
+		        	fqs.put(fs, ids);
+		        	stats = new ArrayList<List<Integer>>();
+		        	fss.put(fs, stats);
+		        	
+		        	for (int i = 0; i < 4; i++) {
+						stats.add(new ArrayList<Integer>());
+					}
+		        } else {
+		        	ids = fqs.get(fs);
+		        	stats = fss.get(fs);
+		        }
+		        
+		        int j = line.indexOf(";");
+	        	ids.add(line.substring(0, j));
+	        	
+	        	for (int i = 0; i < 4; i++) {
+	        		int j2 = line.indexOf(";", j+1);
+					stats.get(i).add((int)Double.parseDouble(line.substring(j+1,j2)));//Integer.parseInt(line.substring(j+1,j2)));
+					j = j2;
+				}
+		    }System.out.println(c);
+		} catch (IOException x) {
+		    System.err.println(x);
+		}
+//		System.out.println(fqs);
+//		System.out.println(fss);
+		
+		Map<String, List<List<Integer>>> treeMap = new TreeMap<>(
+		                (Comparator<String>) (o1, o2) -> o1.length() < o2.length() ? -1 : o2.length() < o1.length() ? 1 : o1.compareTo(o2)
+		        );
+		
+        treeMap.putAll(fss);
+
+
+		
+		try {		
+			FileWriter writer = new FileWriter(path + "stats.txt");		  	
+			writer.write("config& qs& qsize &cqs& cqs-with-data& triples\\\\hline\n");
+			
+			for (Entry<String, List<List<Integer>>> e : treeMap.entrySet()) {
+				List<List<Integer>> vs = e.getValue();
+				
+//				int s = com.google.common.collect.Streams.zip(vs.get(1).stream(), vs.get(2).stream(), (cqs,cqsd) -> cqsd/cqs));
+				List<Integer> tmp = IntStream
+				  .range(0, vs.get(1).size())
+				  .mapToObj(i -> 10000 * vs.get(2).get(i)/vs.get(1).get(i)).collect(Collectors.toList());
+				
+				writer.write(e.getKey()+"&"+vs.get(0).size()+"&"+
+						(int)vs.get(0).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //qtriples
+						(int)vs.get(1).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //cqs
+						(int)tmp.stream().mapToInt(i -> i).average().orElse(0)/100 +"&"+ 
+						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+ //triples
+						"\\\\\\hline\n");
+
+			}
+			writer.close();
+			
+		} catch (IOException x) {
+		    System.err.println(x);
+		}
+		
+	}
+	
+	public static void statsSummary2(String directory) {
+		Map<String,List<String>> fqs = new HashMap<String,List<String>>();
+		Map<String,List<List<Integer>>> fss = new HashMap<String,List<List<Integer>>>();
+		
+		
+		
+		File[] dirs = Utils.listDirectories(new File(directory));
+
+//		for each config directory
+		for(File d: dirs) {
+			try (InputStream in = Files.newInputStream(Paths.get(d + File.separator+"stats_detail.txt"));
+				    BufferedReader reader =
+				      new BufferedReader(new InputStreamReader(in))) {
+				    String line = reader.readLine();
+				    while ((line = reader.readLine()) != null) {
+				        String fs = String.join(",", Arrays.asList(line.substring(line.lastIndexOf(";")+1).split(",")).stream().map(s -> s.length() > 1? s.substring(0, 2):s).toArray(String[]::new));
+				        
+				        List<String> ids = null; //new ArrayList<String>();
+				        List<List<Integer>> stats = null;//new ArrayList<List<Integer>>();
+				        if(!fqs.containsKey(fs)) {
+				        	ids = new ArrayList<String>();
+				        	fqs.put(fs, ids);
+				        	stats = new ArrayList<List<Integer>>();
+				        	fss.put(fs, stats);
+				        	
+				        	for (int i = 0; i < 4; i++) {
+								stats.add(new ArrayList<Integer>());
+							}
+				        } else {
+				        	ids = fqs.get(fs);
+				        	stats = fss.get(fs);
+				        }
+				        
+				        int j = line.indexOf(";");
+			        	ids.add(line.substring(0, j));
+			        	
+			        	for (int i = 0; i < 4; i++) {
+			        		int j2 = line.indexOf(";", j+1);
+							stats.get(i).add((int)Double.parseDouble(line.substring(j+1,j2)));//Integer.parseInt(line.substring(j+1,j2)));
+							j = j2;
+						}
+				    }
+				} catch (IOException x) {
+				    System.err.println(x);
+				}
+		}
+
+		
+//		System.out.println(fqs);
+//		System.out.println(fss);
+		
+		Map<String, List<List<Integer>>> treeMap = new TreeMap<>(
+		                (Comparator<String>) (o1, o2) -> o1.length() < o2.length() ? -1 : o2.length() < o1.length() ? 1 : o1.compareTo(o2)
+		        );
+		
+        treeMap.putAll(fss);
+
+
+		
+		try {		
+			FileWriter writer = new FileWriter(directory + "stats.txt");		  	
+			writer.write("config& qs& qsize &cqs& cqs-with-data& triples\\\\hline\n");
+			
+			for (Entry<String, List<List<Integer>>> e : treeMap.entrySet()) {
+				List<List<Integer>> vs = e.getValue();
+				
+//				int s = com.google.common.collect.Streams.zip(vs.get(1).stream(), vs.get(2).stream(), (cqs,cqsd) -> cqsd/cqs));
+				List<Integer> tmp = IntStream
+				  .range(0, vs.get(1).size())
+				  .mapToObj(i -> 10000 * vs.get(2).get(i)/vs.get(1).get(i)).collect(Collectors.toList());
+				
+				writer.write(e.getKey()+"&"+vs.get(0).size()+"&"+
+						(int)vs.get(0).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //qtriples
+						(int)vs.get(1).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //cqs
+						(int)tmp.stream().mapToInt(i -> i).average().orElse(0)/100 +"&"+ 
+						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+ //triples
+						"\\\\\\hline\n");
+
+			}
+			writer.close();
+			
+		} catch (IOException x) {
+		    System.err.println(x);
+		}
+		
+	}
 	public static void writeStatisticsFile(Map<String,List<int[]>> stats) {
 		try {		
 			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
@@ -414,6 +648,7 @@ public static void main(String[] args) {
 //		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
 //		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
 	}
+
 	
 
 }

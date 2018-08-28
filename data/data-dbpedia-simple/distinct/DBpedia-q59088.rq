@@ -1,1 +1,0 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>         PREFIX type: <http://dbpedia.org/class/yago/> PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> SELECT DISTINCT ?country_name ?latitude WHERE {     ?country a type:LandlockedCountries ;              rdfs:label 'Norway' ;              geo:lat ?latitude .     FILTER (?latitude < 10) . } 

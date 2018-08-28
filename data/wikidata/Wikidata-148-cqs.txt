@@ -1,0 +1,21 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?painting wdt:P31 wd:Q3305213 .
+    ?painting wdt:P276 ?location .
+    ?location wdt:P625 ?coord .
+  }
+WHERE
+  { ?painting  wdt:P31  wd:Q3305213 ;
+              wdt:P276  ?location .
+    ?location  wdt:P625  ?coord
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -1,0 +1,92 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?p wdt:P1080 wd:Q620588 .
+    ?p rdfs:label ?pl .
+    ?p wdt:P25 ?m .
+    ?m rdfs:label ?ml .
+  }
+WHERE
+  { FILTER ( lang(?ml) = "en" )
+    ?p  wdt:P25     ?m .
+    ?m  rdfs:label  ?ml
+    FILTER ( lang(?pl) = "en" )
+    ?p  wdt:P1080   wd:Q620588 ;
+        rdfs:label  ?pl
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?p wdt:P1080 wd:Q620588 .
+    ?p rdfs:label ?pl .
+    ?p wdt:P25 ?m .
+    ?m rdfs:label ?ml .
+  }
+WHERE
+  { FILTER ( ! ( lang(?ml) = "en" ) )
+    ?p  wdt:P25     ?m .
+    ?m  rdfs:label  ?ml
+    FILTER ( lang(?pl) = "en" )
+    ?p  wdt:P1080   wd:Q620588 ;
+        rdfs:label  ?pl
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?p wdt:P1080 wd:Q620588 .
+    ?p rdfs:label ?pl .
+    ?p wdt:P25 ?m .
+    ?m rdfs:label ?ml .
+  }
+WHERE
+  { FILTER ( lang(?ml) = "en" )
+    ?p  wdt:P25     ?m .
+    ?m  rdfs:label  ?ml
+    FILTER ( ! ( lang(?pl) = "en" ) )
+    ?p  wdt:P1080   wd:Q620588 ;
+        rdfs:label  ?pl
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?p wdt:P1080 wd:Q620588 .
+    ?p rdfs:label ?pl .
+    ?p wdt:P25 ?m .
+    ?m rdfs:label ?ml .
+  }
+WHERE
+  { FILTER ( ! ( lang(?ml) = "en" ) )
+    ?p  wdt:P25     ?m .
+    ?m  rdfs:label  ?ml
+    FILTER ( ! ( lang(?pl) = "en" ) )
+    ?p  wdt:P1080   wd:Q620588 ;
+        rdfs:label  ?pl
+  }
+LIMIT   3
+
+----------------------------------------------

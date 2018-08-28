@@ -1,0 +1,73 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q54985720  rdfs:label  "Bgee"@en , "Bgee"@fr , "Bgee"@de ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q5379936  rdfs:label  "Ensembl Genomes"@en ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q278487  rdfs:label  "PubChem"@en , "പബ്‌കെം"@ml ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q14075  rdfs:label  "محتوى حر"@ar , "Эркенал баянал"@av , "free content"@en , "svobodný obsah"@cs , "ناوەرۆکی ئازاد"@ckb , "Маьрша гIирсаш"@ce .
+
+wd:Q796451  rdfs:label  "Fossilworks"@en , "Fossilworks"@be ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q5281152  rdfs:label  "DisProt"@en ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q5243761  rdfs:label  "dbSNP"@en ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q54857867  rdfs:label  "Treatmentbank"@en ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q24174701  rdfs:label  "MetaboLights"@uk , "ميتابوليتس"@ar ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q12239143  rdfs:label  "مجموعة قاعدة معطيات BioCyc"@ar ;
+        wdt:P275    wd:Q14075 ;
+        wdt:P31     wd:Q4117139 .

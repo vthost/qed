@@ -1,0 +1,35 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "item" , "_image" , "itemLabel" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Plattfuss%20am%20nil.svg> ;
+                                     rs:variable  "_image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q587854> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q232083> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Zwei%20sind%20nicht%20zu%20bremsen.svg> ;
+                                     rs:variable  "_image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q180638> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q116187> ;
+                                     rs:variable  "item"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Eine%20faust%20geht%20nach%20westen.svg> ;
+                                     rs:variable  "_image"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q780835> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q232044> ;
+                                     rs:variable  "item"
+                                   ] ]
+] .

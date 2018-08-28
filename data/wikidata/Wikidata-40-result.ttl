@@ -1,0 +1,41 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "awardLabel" , "awardWorkLabel" , "time" , "humanLabel" , "directorLabel" , "awardWork" , "human" , "awardEditionLabel" , "director" ;
+  rs:size            "11"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q463620> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7451352> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1509967> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1352243> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1722396> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16857406> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1655139> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q3548988> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q106440> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7786140> ;
+                                     rs:variable  "awardWork"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q862317> ;
+                                     rs:variable  "awardWork"
+                                   ] ]
+] .

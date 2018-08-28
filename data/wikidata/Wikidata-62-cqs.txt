@@ -1,0 +1,25 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?state wdt:P31 wd:Q35657 .
+    ?otherState wdt:P47 ?state .
+    ?otherState wdt:P31 wd:Q35657 .
+  }
+WHERE
+  { { SELECT  ?state (COUNT(?otherState) AS ?borders)
+      WHERE
+        { ?state    wdt:P31  wd:Q35657 .
+          ?otherState  wdt:P47  ?state ;
+                    wdt:P31  wd:Q35657
+        }
+      GROUP BY ?state
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

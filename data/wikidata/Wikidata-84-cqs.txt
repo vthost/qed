@@ -1,0 +1,256 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?item  ?property  wd:Q1164529 }
+      FILTER NOT EXISTS { ?item  p:P3354   ?o .
+                          ?o     pq:P2175  wd:Q1164529
+                        }
+      FILTER NOT EXISTS { ?item  p:P3354   ?o .
+                          ?o     pq:P2175  wd:Q1164529
+                        }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?item  ?property  wd:Q1164529 }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?item  ?property  wd:Q1164529 }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?item  ?property  wd:Q1164529 }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { { ?item  ?property  wd:Q1164529 }
+      FILTER NOT EXISTS { ?item  p:P3354   ?o .
+                          ?o     pq:P2175  wd:Q1164529
+                        }
+      FILTER NOT EXISTS { ?item  p:P3354   ?o .
+                          ?o     pq:P2175  wd:Q1164529
+                        }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { { ?item  ?property  wd:Q1164529 }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { { ?item  ?property  wd:Q1164529 }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P3329 ?civic_id .
+    ?item ?property wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+    ?item p:P3354 ?o .
+    ?o pq:P2175 wd:Q1164529 .
+  }
+WHERE
+  { { { ?item  ?property  wd:Q1164529 }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+      { ?item  p:P3354   ?o .
+        ?o     pq:P2175  wd:Q1164529
+      }
+    }
+    ?item  wdt:P3329  ?civic_id
+    VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
+  }
+LIMIT   3
+
+----------------------------------------------

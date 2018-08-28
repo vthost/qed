@@ -1,0 +1,98 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "journal" , "name" ;
+  rs:size            "15"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "D-Lib Magazine"@da ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5203268> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Cataloging & Classification Quarterly"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5051313> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journal of Information Science"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q152047> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "International Journal of Language & Communication Disorders"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q80802> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journal of Documentation"@da ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6295097> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "D-Lib Magazine"@de ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5203268> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journal of Documentation"@de ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6295097> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "International Journal of Language & Communication Disorders"@da ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q80802> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "International Journal of Language & Communication Disorders"@fi ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q80802> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journal of Documentation"@ca ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6295097> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "D-Lib Magazine"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5203268> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Cataloging & Classification Quarterly"@da ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5051313> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Cataloging & Classification Quarterly"@fi ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5051313> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journal of Information Science"@fi ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q152047> ;
+                          rs:variable  "journal"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journal of Information Science"@da ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q152047> ;
+                          rs:variable  "journal"
+                        ] ]
+] .

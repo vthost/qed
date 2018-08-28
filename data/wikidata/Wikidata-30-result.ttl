@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coord" , "itemLabel" , "item" ;
+  rs:size            "3"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(23.548055555 43.201388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q29837259> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(27.829444444 43.568888888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q29838383> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Point(56.24194445 58.05812779)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                                     rs:variable  "coord"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q4201599> ;
+                          rs:variable  "item"
+                        ] ]
+] .

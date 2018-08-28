@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "sa" , "doid" , "o" , "p" , "disease" ;
+  rs:size            "1"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q5007698> ;
+                                     rs:variable  "sa"
+                                   ] ;
+            rs:binding  [ rs:value     "DOID:2377" ;
+                          rs:variable  "doid"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q18042587> ;
+                          rs:variable  "o"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/prop/direct/P2293> ;
+                          rs:variable  "p"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q8277> ;
+                          rs:variable  "disease"
+                        ] ]
+] .

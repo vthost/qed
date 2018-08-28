@@ -1,0 +1,1 @@
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/>   SELECT ?cas ?items WHERE { 	{SELECT DISTINCT ?cas (count(?compound) as ?items) WHERE {   		?compound wdt:P231 ?cas . 	}     GROUP BY ?cas }     FILTER (?items >1) } ORDER BY desc(?items) 

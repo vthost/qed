@@ -1,0 +1,1 @@
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT ?tonalityLabel (COUNT(?tonalityLabel) as ?count) WHERE {   ?work wdt:P826 ?tonality. } GROUP BY ?tonalityLabel ORDER BY DESC(?count) 

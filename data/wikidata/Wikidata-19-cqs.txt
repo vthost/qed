@@ -1,0 +1,42 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P1971 ?_number_of_children .
+    ?item wdt:P569 ?_date_of_birth .
+  }
+WHERE
+  { FILTER ( ?year > 1900 )
+    BIND(year(?_date_of_birth) AS ?year)
+    ?item  wdt:P31    wd:Q5 ;
+           wdt:P1971  ?_number_of_children ;
+           wdt:P569   ?_date_of_birth
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  defaultView: <http://defaultView>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P1971 ?_number_of_children .
+    ?item wdt:P569 ?_date_of_birth .
+  }
+WHERE
+  { FILTER ( ! ( ?year > 1900 ) )
+    BIND(year(?_date_of_birth) AS ?year)
+    ?item  wdt:P31    wd:Q5 ;
+           wdt:P1971  ?_number_of_children ;
+           wdt:P569   ?_date_of_birth
+  }
+LIMIT   3
+
+----------------------------------------------

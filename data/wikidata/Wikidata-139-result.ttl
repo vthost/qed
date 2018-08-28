@@ -1,0 +1,74 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "yod" , "poetLabel" , "monarchLabel" , "start" , "yob" , "image" , "end" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "2009-05-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "end"
+                                   ] ;
+            rs:binding  [ rs:value     "1999-05-19T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "start"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "2009-05-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "start"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1730-09-27T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "end"
+                                   ] ;
+            rs:binding  [ rs:value     "1718-12-10T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "start"
+                        ] ;
+            rs:binding  [ rs:value     1730 ;
+                          rs:variable  "yod"
+                        ] ;
+            rs:binding  [ rs:value     1688 ;
+                          rs:variable  "yob"
+                        ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Laurence%20Eusden%20%281720%29.jpg> ;
+                          rs:variable  "image"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1692-11-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "end"
+                                   ] ;
+            rs:binding  [ rs:value     "1689-03-09T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "start"
+                        ] ;
+            rs:binding  [ rs:value     1692 ;
+                          rs:variable  "yod"
+                        ] ;
+            rs:binding  [ rs:value     1642 ;
+                          rs:variable  "yob"
+                        ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Shadwell.jpg> ;
+                          rs:variable  "image"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1972-05-22T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "end"
+                                   ] ;
+            rs:binding  [ rs:value     "1968-01-02T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "start"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1813-08-11T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "end"
+                                   ] ;
+            rs:binding  [ rs:value     "1790-07-28T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "start"
+                        ] ;
+            rs:binding  [ rs:value     1813 ;
+                          rs:variable  "yod"
+                        ] ;
+            rs:binding  [ rs:value     1745 ;
+                          rs:variable  "yob"
+                        ] ;
+            rs:binding  [ rs:value     <http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20James%20Pye%20by%20Samuel%20James%20Arnold.jpg> ;
+                          rs:variable  "image"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1715-07-30T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "end"
+                                   ] ;
+            rs:binding  [ rs:value     "1692-12-23T00:00:00Z"^^xsd:dateTime ;
+                          rs:variable  "start"
+                        ] ]
+] .

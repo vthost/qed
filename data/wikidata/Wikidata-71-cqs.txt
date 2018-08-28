@@ -1,0 +1,21 @@
+BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?parent wdt:P40 ?child .
+  }
+WHERE
+  { { SELECT  ?parent (COUNT(?child) AS ?count)
+      WHERE
+        { ?parent  wdt:P40  ?child }
+      GROUP BY ?parent
+      ORDER BY DESC(?count)
+      LIMIT   10
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
