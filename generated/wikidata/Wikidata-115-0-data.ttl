@@ -1,0 +1,7 @@
+<http://www.wikidata.org/entity/Q13442814> <http://synthetic/1> <http://synthetic/3> .
+<http://www.wikidata.org/entity/Q13442814> <http://synthetic/0> _:BX5FX3Ablank0 .
+<http://www.wikidata.org/entity/Q13442814> <http://synthetic/0> <http://synthetic/3> .
+<http://www.wikidata.org/entity/Q13442814> <http://synthetic/0> <http://synthetic/0> .
+<http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/prop/direct/P921> "num2"^^<http://any/number> .
+<http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/prop/direct/P921> <http://www.wikidata.org/entity/Q13442814> .
+<http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q13442814> .

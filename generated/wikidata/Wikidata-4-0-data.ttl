@@ -1,0 +1,10 @@
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.wikidata.org/prop/direct/P18> "lit4"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2001/XMLSchema#decimal> <http://www.wikidata.org/entity/Q146> .
+<http://synthetic/1> <http://synthetic/3> "lit4"^^<http://any/iri> .
+<http://synthetic/1> <http://synthetic/3> "ANY_LANGUAGE" .
+<http://synthetic/1> <http://synthetic/3> <http://www.wikidata.org/entity/Q146> .
+<http://synthetic/1> <http://synthetic/2> "lit4"^^<http://any/iri> .
+_:BX5FX3Ablank0 <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#boolean> <http://synthetic/2> .
+_:BX5FX3Ablank0 <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#string> <http://synthetic/2> .
+_:BX5FX3Ablank0 <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#float> <http://synthetic/2> .
+_:BX5FX3Ablank0 <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#double> <http://synthetic/2> .

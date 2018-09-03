@@ -1,0 +1,8 @@
+<http://synthetic/0> <http://www.wikidata.org/prop/direct/P61> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://synthetic/0> <http://www.wikidata.org/prop/direct/P61> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2000/01/rdf-schema#label> "num4"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#double> <http://synthetic/0> <http://synthetic/3> .
+<http://www.w3.org/2001/XMLSchema#double> <http://synthetic/0> <http://synthetic/0> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.wikidata.org/prop/direct/P157> <http://www.w3.org/2001/XMLSchema#integer> .
+_:BX5FX3Ablank0 <http://www.w3.org/2001/XMLSchema#decimal> "lit3"^^<ANY_LANGUAGE> <http://synthetic/2> .

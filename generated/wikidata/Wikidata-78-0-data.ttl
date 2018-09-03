@@ -1,0 +1,10 @@
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.wikidata.org/prop/direct/P2218> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://synthetic/1> "lit2"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.wikidata.org/prop/direct/P2218> "1000000000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.wikidata.org/prop/direct/P2218> "999344640"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P2218> ""^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P2218> "999344640"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P2218> "-1347424278"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://synthetic/1> <http://synthetic/0> <http://synthetic/1> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/2> <http://synthetic/0> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2001/XMLSchema#double> <http://synthetic/2> <http://synthetic/0> .

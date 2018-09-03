@@ -1,0 +1,10 @@
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/entity/Q13420675> "lit0"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "num2"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P921> <http://www.wikidata.org/entity/Q13420675> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P921> <http://www.wikidata.org/entity/Q16387> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P921> <http://www.wikidata.org/entity/Q199655> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5633421> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/2> <http://synthetic/0> .
+<http://www.wikidata.org/entity/Q199655> <http://synthetic/4> "num3"^^<http://any/number> <http://synthetic/0> .
+<http://www.wikidata.org/entity/Q199655> <http://synthetic/1> _:BX5FX3Ablank0 <http://synthetic/0> .
+<http://synthetic/4> <http://www.wikidata.org/prop/direct/P921> <http://www.wikidata.org/entity/Q13420675> <http://synthetic/0> .
