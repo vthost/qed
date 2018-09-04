@@ -1,0 +1,2 @@
+qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q83335;4;11;2;6;FILTER,UNION

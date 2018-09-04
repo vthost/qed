@@ -290,6 +290,8 @@ public class Utils implements Constants {
 			System.out.println(e == k);
 		}
 System.out.println(ks1);
+
+		Map<String,Integer> gcs = path.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
 		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt"));
 		    BufferedReader reader =
 		      new BufferedReader(new InputStreamReader(in))) {
@@ -302,25 +304,33 @@ System.out.println(ks1);
 		        List<String> ids = null; //new ArrayList<String>();
 		        List<List<Integer>> stats = null;//new ArrayList<List<Integer>>();
 		        if(!fqs.containsKey(fs)) {
-		        	ids = new ArrayList<String>();
-		        	fqs.put(fs, ids);
-		        	stats = new ArrayList<List<Integer>>();
-		        	fss.put(fs, stats);
-		        	
-		        	for (int i = 0; i < 4; i++) {
-						stats.add(new ArrayList<Integer>());
-					}
+			        	ids = new ArrayList<String>();
+			        	fqs.put(fs, ids);
+			        	stats = new ArrayList<List<Integer>>();
+			        	fss.put(fs, stats);
+			        	
+			        	for (int i = 0; i < 4; i++) {
+							stats.add(new ArrayList<Integer>());
+						}
 		        } else {
-		        	ids = fqs.get(fs);
-		        	stats = fss.get(fs);
+			        	ids = fqs.get(fs);
+			        	stats = fss.get(fs);
 		        }
 		        
 		        int j = line.indexOf(";");
-	        	ids.add(line.substring(0, j));
+	        		ids.add(line.substring(0, j));
 	        	
 	        	for (int i = 0; i < 4; i++) {
 	        		int j2 = line.indexOf(";", j+1);
-					stats.get(i).add((int)Double.parseDouble(line.substring(j+1,j2)));//Integer.parseInt(line.substring(j+1,j2)));
+	        		int co = (int)Double.parseDouble(line.substring(j+1,j2));
+	        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
+//	        			String li = line.substring(0,line.lastIndexOf(";"));
+//	        			System.out.println(li + " "+co);
+	        			co = co + gcs.get(line.substring(0,line.indexOf(";")));//Integer.parseInt(li.substring(li.lastIndexOf(";")+1));
+//	        			System.out.println(co);
+	        		}
+	        			
+					stats.get(i).add(co);//
 					j = j2;
 				}
 		    }System.out.println(c);
@@ -371,7 +381,8 @@ System.out.println(ks1);
 		Map<String,List<List<Integer>>> fss = new HashMap<String,List<List<Integer>>>();
 		
 		
-		
+		Map<String,Integer> gcs = directory.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
+
 		File[] dirs = Utils.listDirectories(new File(directory));
 
 //		for each config directory
@@ -404,7 +415,15 @@ System.out.println(ks1);
 			        	
 			        	for (int i = 0; i < 4; i++) {
 			        		int j2 = line.indexOf(";", j+1);
-							stats.get(i).add((int)Double.parseDouble(line.substring(j+1,j2)));//Integer.parseInt(line.substring(j+1,j2)));
+			        		int co = (int)Double.parseDouble(line.substring(j+1,j2));
+			        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
+//			        			String li = line.substring(0,line.lastIndexOf(";"));
+//			        			System.out.println(li + " "+co);
+			        			co = co + gcs.get(line.substring(0,line.indexOf(";")));//Integer.parseInt(li.substring(li.lastIndexOf(";")+1));
+//			        			System.out.println(co);
+			        		}
+
+							stats.get(i).add(co);
 							j = j2;
 						}
 				    }
@@ -642,9 +661,28 @@ System.out.println(ks1);
 		return null;
 	}
 	
+	public static Map<String,Integer> generatedCounts(Dataset d) {
+		Map<String,Integer> m = new HashMap<String,Integer>();
+		String d1 = System.getProperty("user.dir")+File.separator  + "../generated" + File.separator;	
+		try (InputStream in = Files.newInputStream(Paths.get(d1+ d.toString().toLowerCase() + ".txt"));
+			    BufferedReader reader =
+			      new BufferedReader(new InputStreamReader(in))) {
+			    String line = reader.readLine();
+			    while ((line = reader.readLine()) != null) {
+			    	int i = line.indexOf(" ");
+			    	int j = line.indexOf("-0-data.ttl");
+			    	m.put(line.substring(0, j), Integer.valueOf(line.substring(i+1).replaceAll(" ", "")));
+			    }
+		} catch (IOException x) {
+		    System.err.println(x);
+		}
+		System.out.println(m);
+		return m;
+	}
+	
 public static void main(String[] args) {
-//		Utils.writeManifestFiles();
-		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
+		Utils.generatedCounts(Dataset.DBPEDIA);//.writeManifestFiles();
+//		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
 //		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
 //		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
 	}

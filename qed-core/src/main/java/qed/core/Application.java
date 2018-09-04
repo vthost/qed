@@ -32,7 +32,7 @@ public class Application
 			Utils.DATA_DIR = dataFile;	
 //System.out.println(Utils.DATA_DIR);
 		(new LogQueryExtractor()).extractQueries(logEndpoint, graphUri, configs, queryNumMax, querySizeMin, queryResultSizeMin);
-		(new LogQueryDataExtractor()).extractQueryDataAndResults(dataEndpoint, datasetSizeMax, dataFile);
+		(new LogQueryDataExtractor()).extractAllQueryDataAndResults(dataEndpoint, datasetSizeMax, dataFile);
 	}
 	
 	public void createDataSet(String logEndpoint, String graphUri, String[] queryIds, String dataEndpoint, String dataFile) {
