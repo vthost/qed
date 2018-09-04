@@ -1,0 +1,3 @@
+qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q14085;12;11;3;25;UNION
+DBpedia-q83335;4;11;2;6;OFFSET,OPTIONAL,UNION

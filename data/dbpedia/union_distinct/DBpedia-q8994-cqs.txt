@@ -1,0 +1,140 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?item dbpp:series <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+    ?item dbpp:series ?brand .
+    ?brand dbpp:redirect <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?item  dbpp:series   <http://dbpedia.org/resource/Upstairs%2C_Downstairs> ;
+                                 foaf:name     ?title ;
+                                 rdfs:comment  ?description ;
+                                 rdf:type      <http://dbpedia.org/ontology/TelevisionEpisode>
+                        }
+      FILTER NOT EXISTS { ?item   dbpp:series    ?brand .
+                          ?brand  dbpp:redirect  <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+                          ?item   foaf:name      ?title ;
+                                  rdfs:comment   ?description ;
+                                  rdf:type       <http://dbpedia.org/ontology/TelevisionEpisode>
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?item dbpp:series <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+    ?item dbpp:series ?brand .
+    ?brand dbpp:redirect <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?item  dbpp:series   <http://dbpedia.org/resource/Upstairs%2C_Downstairs> ;
+                                 foaf:name     ?title ;
+                                 rdfs:comment  ?description ;
+                                 rdf:type      <http://dbpedia.org/ontology/TelevisionEpisode>
+                        }
+      { ?item   dbpp:series    ?brand .
+        ?brand  dbpp:redirect  <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+        ?item   foaf:name      ?title ;
+                rdfs:comment   ?description ;
+                rdf:type       <http://dbpedia.org/ontology/TelevisionEpisode>
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?item dbpp:series <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+    ?item dbpp:series ?brand .
+    ?brand dbpp:redirect <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+  }
+WHERE
+  { { { ?item  dbpp:series   <http://dbpedia.org/resource/Upstairs%2C_Downstairs> ;
+               foaf:name     ?title ;
+               rdfs:comment  ?description ;
+               rdf:type      <http://dbpedia.org/ontology/TelevisionEpisode>
+      }
+      FILTER NOT EXISTS { ?item   dbpp:series    ?brand .
+                          ?brand  dbpp:redirect  <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+                          ?item   foaf:name      ?title ;
+                                  rdfs:comment   ?description ;
+                                  rdf:type       <http://dbpedia.org/ontology/TelevisionEpisode>
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  dbpp: <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?item dbpp:series <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+    ?item dbpp:series ?brand .
+    ?brand dbpp:redirect <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+    ?item foaf:name ?title .
+    ?item rdfs:comment ?description .
+    ?item rdf:type <http://dbpedia.org/ontology/TelevisionEpisode> .
+  }
+WHERE
+  { { { ?item  dbpp:series   <http://dbpedia.org/resource/Upstairs%2C_Downstairs> ;
+               foaf:name     ?title ;
+               rdfs:comment  ?description ;
+               rdf:type      <http://dbpedia.org/ontology/TelevisionEpisode>
+      }
+      { ?item   dbpp:series    ?brand .
+        ?brand  dbpp:redirect  <http://dbpedia.org/resource/Upstairs%2C_Downstairs> .
+        ?item   foaf:name      ?title ;
+                rdfs:comment   ?description ;
+                rdf:type       <http://dbpedia.org/ontology/TelevisionEpisode>
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

@@ -2,6 +2,7 @@ package qed.core;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.jena.ext.com.google.common.base.Strings;
@@ -12,9 +13,16 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
 public class Demo {
 	
-	public static Feature[] exfs = {Feature.FILTER,Feature.OPTIONAL,Feature.REGEX, Feature.UNION, Feature.SUBQUERY};	
+	public static Feature[] exfs = {Feature.FILTER,Feature.OPTIONAL,//Feature.REGEX, 
+			Feature.UNION, Feature.SUBQUERY};
 	
-	private Feature[][] createBinaryConfigs(Feature[] fs) {
+	private static Feature[][] createSimpleConfigs(Feature[] fs) {
+		
+		return Arrays.asList(fs).stream().map(f -> {Feature [] f1 = {f}; return f1;}).
+				toArray(Feature[][]::new);
+	}
+	
+	private static Feature[][] createBinaryConfigs(Feature[] fs) {
 		List<Feature[]> cs = new ArrayList<Feature[]>();
 		for (int i = 0; i < fs.length; i++) {
 			for (int j = i+1; j < fs.length; j++) {
@@ -25,16 +33,11 @@ public class Demo {
 		return cs.stream().toArray(Feature[][]::new);
 	}
 
-	public void extractQueries(Dataset dataset) {
+	public void extractQueries(Dataset dataset, Feature[][] cs) {
 		
 		Utils.DATA_DIR = Utils.DATA_DIR + dataset.toString().toLowerCase() + File.separator;
 		
-		LogQueryExtractor qe = new LogQueryExtractor();
-		Feature[][] cs = createBinaryConfigs(exfs);
-		for (Feature[] fs : cs) {
-//		System.out.println(fs[0].name()+fs[1]);
-	}
-		qe.extractQueries(Constants.LSQR_SPARQL_EP, dataset.graphUri, cs, 15, 0, 0);
+		new LogQueryExtractor().extractQueries(Constants.LSQR_SPARQL_EP, dataset.graphUri, cs, 15, 0, 0);
 	}
 	
 	public void extractData(Dataset dataset) {
@@ -119,6 +122,13 @@ public class Demo {
 
 	}
 
+	public String removeCriticalFunctions(String s) {
+		String[] fs = {"YEAR"};
+		int i = s.indexOf(fs[0]);
+		int j = s.indexOf(")", i);
+//		System.out.println(s.re);
+		return s;
+	}
 
 	public static void main(String[] args) {
 //		for (Feature[] fs : new Demo().createBinaryConfigs(exfs)) {
@@ -127,7 +137,13 @@ public class Demo {
 
 		Demo d = new Demo();
 		
-		d.extractQueries(Dataset.DBPEDIA);
+//		Feature[][] cs = createBinaryConfigs(exfs);
+//		for (Feature[] fs : cs) {
+////		System.out.println(fs[0].name()+fs[1]);
+//	}
+		
+//		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs(exfs));
+		d.extractData(Dataset.DBPEDIA);
 //		d.extractData(Dataset.WIKIDATA);
 		
 //		Utils.statsSummary(Utils.DATA_DIR + Dataset.WIKIDATA + File.separator, 7);

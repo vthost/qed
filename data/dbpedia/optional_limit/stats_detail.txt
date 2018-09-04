@@ -1,0 +1,2 @@
+qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q151799;4;9;6;10;FILTER,OFFSET,OPTIONAL

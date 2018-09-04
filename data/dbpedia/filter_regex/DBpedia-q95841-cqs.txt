@@ -1,0 +1,66 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbowl: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  dbprop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?person rdf:type ?person .
+    ?person foaf:name ?name .
+    ?person dbprop:influenced ?person2 .
+    ?person2 rdf:type ?person .
+    ?person2 foaf:name ?name2 .
+  }
+WHERE
+  { FILTER regex(str(?name2), "Goethe")
+    ?person   rdf:type           ?person ;
+              foaf:name          ?name ;
+              dbprop:influenced  ?person2 .
+    ?person2  rdf:type           ?person ;
+              foaf:name          ?name2
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbowl: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  dbprop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?person rdf:type ?person .
+    ?person foaf:name ?name .
+    ?person dbprop:influenced ?person2 .
+    ?person2 rdf:type ?person .
+    ?person2 foaf:name ?name2 .
+  }
+WHERE
+  { FILTER ( ! regex(str(?name2), "Goethe") )
+    ?person   rdf:type           ?person ;
+              foaf:name          ?name ;
+              dbprop:influenced  ?person2 .
+    ?person2  rdf:type           ?person ;
+              foaf:name          ?name2
+  }
+LIMIT   3
+
+----------------------------------------------
