@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/THE_ELEPHANT_MAN> <http://dbpedia.org/property/redirect> <http://xmlns.com/foaf/0.1/name> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/0> .
+<http://xmlns.com/foaf/0.1/name> <http://dbpedia.org/ontology/releaseDate> "The Elephant Man (film)"^^<en> .
+<http://xmlns.com/foaf/0.1/name> <http://dbpedia.org/ontology/imdbid> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://xmlns.com/foaf/0.1/name> <http://dbpedia.org/ontology/imdbid> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2002/07/owl#sameAs> "ANY_LANGUAGE" .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2002/07/owl#sameAs> _:BX5FX3Ablank0 .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/property/name> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://dbpedia.org/resource/THE_ELEPHANT_MAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .

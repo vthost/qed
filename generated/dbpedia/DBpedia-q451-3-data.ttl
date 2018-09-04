@@ -1,0 +1,4 @@
+<http://www.w3.org/2001/XMLSchema#boolean> <http://en.wikipedia.org/wiki/Problem> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2000/01/rdf-schema#label> <http://en.wikipedia.org/wiki/Northern_Ireland> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://en.wikipedia.org/wiki/Northern_Ireland> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://xmlns.com/foaf/0.1/page> <http://en.wikipedia.org/wiki/Belfast> .

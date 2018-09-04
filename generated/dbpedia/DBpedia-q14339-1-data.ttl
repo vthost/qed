@@ -1,0 +1,10 @@
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "THE ELEPHANT MAN"^^<en> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://dbpedia.org/ontology/releaseDate> "THE ELEPHANT MAN"^^<en> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://dbpedia.org/ontology/releaseDate> "lit4"^^<http://any/iri> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://dbpedia.org/ontology/releaseDate> "lit2"^^<http://any/iri> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://dbpedia.org/resource/THE_ELEPHANT_MAN> <http://synthetic/0> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#boolean> <http://synthetic/0> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#string> <http://synthetic/0> .
+<http://dbpedia.org/resource/THE_ELEPHANT_MAN> <http://dbpedia.org/property/redirect> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .

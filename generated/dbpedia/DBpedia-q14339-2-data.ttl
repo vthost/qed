@@ -1,0 +1,10 @@
+<http://dbpedia.org/property/redirect> <http://www.w3.org/2000/01/rdf-schema#label> "lit3"^^<ANY_LANGUAGE> .
+<http://dbpedia.org/property/redirect> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dbpedia.org/property/redirect> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/0> .
+<http://dbpedia.org/property/redirect> <http://dbpedia.org/ontology/imdbid> "THE ELEPHANT MAN"^^<en> .
+<http://dbpedia.org/property/redirect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://dbpedia.org/resource/THE_ELEPHANT_MAN> <http://dbpedia.org/property/redirect> <http://dbpedia.org/property/redirect> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2002/07/owl#sameAs> _:BX5FX3Ablank0 .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://xmlns.com/foaf/0.1/page> "THE ELEPHANT MAN"^^<en> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://xmlns.com/foaf/0.1/page> "num3"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://xmlns.com/foaf/0.1/page> "num2"^^<http://any/number> .

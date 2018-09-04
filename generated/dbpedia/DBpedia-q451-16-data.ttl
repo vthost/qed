@@ -1,0 +1,10 @@
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://synthetic/2> <http://en.wikipedia.org/wiki/Belfast> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://synthetic/2> <http://en.wikipedia.org/wiki/Belfast> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://synthetic/2> <http://en.wikipedia.org/wiki/Belfast> <http://synthetic/0> .
+<http://synthetic/2> <http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/2000/01/rdf-schema#comment> .
+<http://synthetic/2> <http://www.w3.org/2000/01/rdf-schema#label> <http://xmlns.com/foaf/0.1/depiction> .
+<http://synthetic/2> <http://xmlns.com/foaf/0.1/page> "lit1"@ANY_LANGUAGE .
+<http://synthetic/2> <http://xmlns.com/foaf/0.1/page> <http://en.wikipedia.org/wiki/Next_Year> .
+<http://synthetic/4> <http://www.w3.org/2001/XMLSchema#double> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:BX5FX3Ablank0 <http://en.wikipedia.org/wiki/Next_Year> <http://synthetic/1> <http://synthetic/2> .

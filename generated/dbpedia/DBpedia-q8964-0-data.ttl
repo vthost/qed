@@ -1,0 +1,10 @@
+<http://synthetic/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/2001/XMLSchema#decimal> "num3"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://dbpedia.org/property/placeOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://synthetic/4> "lit3"^^<ANY_LANGUAGE> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/property/placeOfDeath> <http://synthetic/0> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Country> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "lit3"^^<ANY_LANGUAGE> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "ANY_LANGUAGE" .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .

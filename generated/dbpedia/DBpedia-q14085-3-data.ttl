@@ -1,0 +1,7 @@
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/2001/XMLSchema#string> <http://synthetic/2> .
+<http://dbpedia.org/resource/South_Korea> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "lit0"^^<http://any/iri> .
+<http://dbpedia.org/resource/South_Korea> <http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2003/01/geo/wgs84_pos#long> .
+<http://dbpedia.org/resource/South_Korea> <http://xmlns.com/foaf/0.1/homepage> "lit0"^^<http://any/iri> .
+<http://dbpedia.org/resource/South_Korea> <http://synthetic/4> "lit2"^^<http://any/iri> .
+<http://dbpedia.org/resource/South_Korea> <http://synthetic/4> "lit1"^^<ANY_LANGUAGE> .
+<http://dbpedia.org/resource/South_Korea> <http://synthetic/4> "ANY_LANGUAGE" .
