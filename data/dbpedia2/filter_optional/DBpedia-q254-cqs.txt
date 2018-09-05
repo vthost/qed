@@ -1,0 +1,341 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( lang(?abstract) = "en" )
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:long  ?long
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( ! ( lang(?abstract) = "en" ) )
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:long  ?long
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( lang(?abstract) = "en" )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:long  ?long
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( ! ( lang(?abstract) = "en" ) )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:long  ?long
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( lang(?abstract) = "en" )
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:long  ?long
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:lat  ?lat
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( ! ( lang(?abstract) = "en" ) )
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:long  ?long
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:lat  ?lat
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( lang(?abstract) = "en" )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:long  ?long
+                      }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:lat  ?lat
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( ! ( lang(?abstract) = "en" ) )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:long  ?long
+                      }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:lat  ?lat
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                foaf:depiction  ?img
+    }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( lang(?abstract) = "en" )
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:long  ?long
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  foaf:depiction  ?img
+                      }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( ! ( lang(?abstract) = "en" ) )
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:long  ?long
+    }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  foaf:depiction  ?img
+                      }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> p:abstract ?abstract .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:page ?wiki .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> foaf:depiction ?img .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:lat ?lat .
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.> geo:long ?long .
+  }
+WHERE
+  { FILTER ( lang(?abstract) = "en" )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  geo:long  ?long
+                      }
+    { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                geo:lat  ?lat
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+                                  foaf:depiction  ?img
+                      }
+    <http://dbpedia.org/resource/Alfred_Lawson,_Jr.>
+              p:abstract  ?abstract ;
+              foaf:page   ?wiki
+  }
+LIMIT   3
+
+----------------------------------------------
