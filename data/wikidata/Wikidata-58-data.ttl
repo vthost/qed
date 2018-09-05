@@ -37,14 +37,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q169986  rdfs:label  "Makalu"@en , "Makalu"@sv , "Makalu"@de ;
+wd:Q612  rdfs:label  "Dubai"@ceb , "杜拜"@zh , "Дубай"@ru ;
+        wdt:P2044   "0"^^xsd:decimal ;
+        wdt:P625    "Point(55.309444444 25.269722222)"^^geo:wktLiteral .
+
+wd:Q169986  rdfs:label  "Makalu"@en , "Makalu"@sv , "Makalu"@nl ;
         wdt:P2044   "8485"^^xsd:decimal ;
         wdt:P625    "Point(87.088611111 27.889166666)"^^geo:wktLiteral .
-
-wd:Q51844733  rdfs:label  "Echo"@es ;
-        wdt:P2044   "-255"^^xsd:decimal ;
-        wdt:P625    "Point(-19.422086111 25.373869444)"^^geo:wktLiteral .
-
-wd:Q5687  rdfs:label  "Jericho"@en , "Jericho"@de ;
-        wdt:P2044   "-275"^^xsd:decimal ;
-        wdt:P625    "Point(35.463055555 31.856111111)"^^geo:wktLiteral .

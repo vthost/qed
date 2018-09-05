@@ -36,9 +36,16 @@ public enum Feature {
 	SUBQUERY,
 	SUM,
 	UNION,
-	VALUES,
+	VALUES;
 //	in addition (not in LSQ)
-	PROPERTY_PATH;
+//	PROPERTY_PATH;
+	
+	
+
+    public String toString() {
+    		String n = name();
+        return n.charAt(0)+n.substring(1).toLowerCase();
+    }
 	
 	
 	public static Feature[][] getValuesAsConfig(){
@@ -115,8 +122,8 @@ public enum Feature {
 		case VALUES:
 			return query.matches("(?i).*\\svalues\\s+(\\{|\\?|\\().*");
 //				in addition
-		case PROPERTY_PATH:
-			break;
+//		case PROPERTY_PATH:
+//			break;
 		default:
 			break;
 		}

@@ -41,7 +41,12 @@ wd:Q905445  wdt:P106  wd:Q33999 ;
         wdt:P21   wd:Q6581072 ;
         wdt:P31   wd:Q5 .
 
-wd:Q41351  schema:description  "amerikansk skuespiller"@da ;
+wd:Q11617  schema:description  "שחקנית אמריקאית"@he ;
+        wdt:P106            wd:Q33999 ;
+        wdt:P21             wd:Q6581072 ;
+        wdt:P31             wd:Q5 .
+
+wd:Q11637  schema:description  "שחקנית אמריקאית"@he , "US-amerikanesch Schauspillerin"@lb ;
         wdt:P106            wd:Q33999 ;
         wdt:P21             wd:Q6581072 ;
         wdt:P31             wd:Q5 .
@@ -49,16 +54,6 @@ wd:Q41351  schema:description  "amerikansk skuespiller"@da ;
 wd:Q904776  wdt:P106  wd:Q33999 ;
         wdt:P21   wd:Q6581072 ;
         wdt:P31   wd:Q5 .
-
-wd:Q42018  schema:description  "ureueng meujangeun asai India"@ace ;
-        wdt:P106            wd:Q33999 ;
-        wdt:P21             wd:Q6581072 ;
-        wdt:P31             wd:Q5 .
-
-wd:Q41528  schema:description  "amerikansk skuespiller"@da ;
-        wdt:P106            wd:Q33999 ;
-        wdt:P21             wd:Q6581072 ;
-        wdt:P31             wd:Q5 .
 
 wd:Q870929  wdt:P106  wd:Q33999 ;
         wdt:P21   wd:Q6581072 ;

@@ -37,23 +37,31 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+wd:Q426354  wdt:P231  "10377-52-3" ;
+        wdt:P235  "TWQULNDIKKJZPH-UHFFFAOYSA-K" ;
+        wdt:P274  "Li₃O₄P" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "145361" ;
+        wdt:P662  "165867" .
+
 wd:Q143496  wdt:P231  "9003-56-9" ;
         wdt:P235  "XECAHXYUAAWDEL-UHFFFAOYSA-N" ;
         wdt:P274  "C₁₅H₁₇N" ;
         wdt:P31   wd:Q11173 ;
         wdt:P662  "24756" .
 
-wd:Q219660  wdt:P231  "57455-37-5" ;
-        wdt:P235  "IRERQBUNZFJFGC-UHFFFAOYSA-L" ;
-        wdt:P274  "Al₆Na₈O₂₄S₃Si₆" ;
+wd:Q411588  wdt:P231  "496775-61-2" ;
+        wdt:P235  "XDXWLKQMMKQXPV-QYQHSDTDSA-N" ;
+        wdt:P274  "C₂₅H₂₂N₄O₄" ;
         wdt:P31   wd:Q11173 ;
-        wdt:P661  "32699825" ;
-        wdt:P662  "71587188" .
+        wdt:P661  "19879943" .
 
-wd:Q3271346  wdt:P231  "1304-54-7" ;
-        wdt:P235  "WOTJDIQGXDRAMC-UHFFFAOYSA-N" ;
-        wdt:P274  "Be₃N₂" ;
-        wdt:P31   wd:Q11173 .
+wd:Q27102985  wdt:P231  "2956-16-3" ;
+        wdt:P235  "HSCJRCZFDFQWRP-LNYDKVEPSA-N" ;
+        wdt:P274  "C₁₅H₂₄N₂O₁₇P₂" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "5256749" ;
+        wdt:P662  "6857410" .
 
 wd:Q115469  wdt:P231  "100-58-3" ;
         wdt:P235  "NIXOIRLDFIPNLJ-UHFFFAOYSA-M" ;
@@ -67,31 +75,16 @@ wd:Q410056  wdt:P231  "17082-12-1" ;
         wdt:P31   wd:Q11173 ;
         wdt:P661  "2185" .
 
-wd:Q219626  wdt:P231  "299-42-3" ;
-        wdt:P235  "KWGRBVOPPLSCSI-WPRPVWTQSA-N" ;
-        wdt:P274  "C₁₀H₁₅NO" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "8935" ;
-        wdt:P662  "9294" .
-
-wd:Q220108  wdt:P231  "598-30-1" ;
-        wdt:P235  "WGOPGODQLGJZGL-UHFFFAOYSA-N" ;
-        wdt:P274  "C₄H₉Li" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "92522" ;
-        wdt:P662  "102446" .
+wd:Q16682750  wdt:P231  "12168-85-3" ;
+        wdt:P235  "LXYMYNFCFCULEO-UHFFFAOYSA-N" ;
+        wdt:P274  "Ca₃OSiO₄" ;
+        wdt:P31   wd:Q11173 .
 
 wd:Q133767  wdt:P231  "14457-64-8" ;
         wdt:P235  "AIRCTMFFNKZQPN-UHFFFAOYSA-N" ;
         wdt:P274  "AlO" ;
         wdt:P31   wd:Q11173 ;
         wdt:P662  "142249" .
-
-wd:Q412706  wdt:P231  "114615-82-6" ;
-        wdt:P235  "NQSIKKSFBQCBSI-UHFFFAOYSA-N" ;
-        wdt:P274  "C₁₂H₂₈NO₄Ru" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "21170134" .
 
 wd:Q419361  wdt:P231  "149-64-4" ;
         wdt:P274  "C₂₁H₃₀BrNO₄" ;
@@ -109,12 +102,6 @@ wd:Q82804  wdt:P231  "99644-28-7" ;
         wdt:P274  "EsI₃" ;
         wdt:P31   wd:Q11173 .
 
-wd:Q411407  wdt:P231  "163731-16-6" ;
-        wdt:P235  "HEPJAPHKUAGBIG-UHFFFAOYSA-N" ;
-        wdt:P274  "HArF" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "15863741" .
-
 wd:Q415798  wdt:P231  "1414-45-5" ;
         wdt:P274  "C₁₄₃H₂₃₀N₄₂O₃₇S₇" ;
         wdt:P31   wd:Q11173 ;
@@ -126,3 +113,16 @@ wd:Q326224  wdt:P231  "64-86-8" ;
         wdt:P31   wd:Q11173 ;
         wdt:P661  "2731" ;
         wdt:P662  "6167" .
+
+wd:Q27104386  wdt:P231  "992-67-6" ;
+        wdt:P235  "KFWWCMJSYSSPSK-CITAKDKDSA-N" ;
+        wdt:P274  "C₂₅H₄₀N₇O₁₇P₃S" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "21865275" ;
+        wdt:P662  "644064" .
+
+wd:Q407684  wdt:P231  "19287-45-7" ;
+        wdt:P235  "XTHHQYJDAMCIOL-UHFFFAOYSA-N" ;
+        wdt:P274  "B₂H₆" ;
+        wdt:P31   wd:Q11173 ;
+        wdt:P661  "17215804" .

@@ -170,6 +170,55 @@ public class Utils implements Constants {
 		}
 	}
 	
+
+	public static void mergeStatisticsFiles(String path){
+		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail.txt")) {		
+				  	
+			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
+			
+//			for each config directory
+			for(File d: Utils.listDirectories(new File(path))) {
+				InputStream in = Files.newInputStream(Paths.get(d + File.separator + "stats_detail.txt"));
+				BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+				String line = reader.readLine();
+				while ((line = reader.readLine()) != null) 
+					writer.write(line+'\n');
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+//	TODO until generation based on existing is fixed use generated only if not all cases by data
+	public static void integrateGenerationStatistics(String path){
+		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail+generated.txt")) {		
+				  	
+			Map<String,Integer> gcs = path.contains("dbpedia") ? 
+					generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
+
+			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
+			
+			InputStream in = Files.newInputStream(Paths.get(path + File.separator + "stats_detail.txt"));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+			String line = reader.readLine();
+			while ((line = reader.readLine()) != null) {
+				String id = line.substring(0,line.indexOf(";"));
+	    			int i1 = line.lastIndexOf(";");
+	    			int i2 = line.substring(0,i1).lastIndexOf(";");
+	    			int c = (int) Double.parseDouble(line.substring(i2+1,i1));
+    			
+        			if(gcs.containsKey(id)) {
+        				c = c + gcs.get(id);
+        				writer.write(line.substring(0,i2+1) + c + line.substring(i1)+'\n');
+        			} else if (c > 0){
+            			writer.write(line+'\n');
+        			} 
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
 	public static void writeConstructQueriesFile(File directory, String lsqIdUrl, List<Query> queries) {
 
 		try {
@@ -262,7 +311,7 @@ public class Utils implements Constants {
 		for (Feature f : Feature.values()) {
 			ok.put(f.name(),0);
 		}
-		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt"));
+		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt")); //+generated.txt"));
 			    BufferedReader reader =
 			      new BufferedReader(new InputStreamReader(in))) {
 			    String line = reader.readLine();
@@ -681,7 +730,7 @@ System.out.println(ks1);
 	}
 	
 public static void main(String[] args) {
-		Utils.generatedCounts(Dataset.DBPEDIA);//.writeManifestFiles();
+//		Utils.generatedCounts(Dataset.DBPEDIA);//.writeManifestFiles();
 //		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
 //		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
 //		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);

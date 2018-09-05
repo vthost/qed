@@ -38,29 +38,41 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q129433  rdfs:label  "Ma Jolie"@en ;
+wd:Q19884765  rdfs:label  "Woman in an Armchair"@en ;
         wdt:P170    wd:Q5593 ;
         wdt:P276    wd:Q188740 .
 
-wd:Q152849  rdfs:label  "Nude, Green Leaves and Bust"@en ;
+wd:Q19885084  rdfs:label  "Kitchen"@en ;
         wdt:P170    wd:Q5593 ;
-        wdt:P276    wd:Q193375 .
-
-wd:Q193375  wdt:P625  "Point(-0.099166666 51.507777777)"^^geo:wktLiteral .
+        wdt:P276    wd:Q188740 .
 
 wd:Q188740  wdt:P625  "Point(-73.977664 40.761484)"^^geo:wktLiteral .
-
-wd:Q1050032  wdt:P625  "Point(2.18103 41.38504)"^^geo:wktLiteral .
 
 wd:Q52986307  rdfs:label  "Young Girl with a Flower Basket"@en ;
         wdt:P170    wd:Q5593 .
 
+wd:Q20355770  rdfs:label  "Maisons à Gósol"@da ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q671384 .
+
+wd:Q22087601  rdfs:label  "Schilder en model"@nl ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q2365880 .
+
+wd:Q22087606  rdfs:label  "Drie naakten en schetsen"@nl ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q2365880 .
+
+wd:Q2365880  wdt:P625  "Point(3.72408 51.03814)"^^geo:wktLiteral .
+
+wd:Q19887562  rdfs:label  "Woman in an Armchair"@en ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q188740 .
+
 wd:Q30332241  rdfs:label  "Three Musicians"@en , "三個音樂家"@zh , "Three Musicians"@pt , "Drei Musikanten"@de ;
         wdt:P170    wd:Q5593 .
 
+wd:Q671384  wdt:P625  "Point(12.57861 55.68889)"^^geo:wktLiteral .
+
 wd:Q50222358  rdfs:label  "Femme au béret et à la robe quadrillée (Marie-Thérèse Walter)"@en ;
         wdt:P170    wd:Q5593 .
-
-wd:Q283822  rdfs:label  "Las Meninas"@en , "Las Meninas"@es , "Las Meninas"@ca , "Las Meninas"@af ;
-        wdt:P170    wd:Q5593 ;
-        wdt:P276    wd:Q1050032 .

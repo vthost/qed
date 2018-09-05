@@ -1,0 +1,374 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  category:States_of_the_United_States }
+      { ?id  skos:subject  ?usr
+        { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+      }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  category:States_of_the_United_States }
+      { ?id  skos:subject  ?usr
+        { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+      }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      { ?id  skos:subject  category:States_of_the_United_States }
+      { ?id  skos:subject  ?usr
+        { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+      }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      { ?id  skos:subject  category:States_of_the_United_States }
+      { ?id  skos:subject  ?usr
+        { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+      }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usm
+                          { ?usm  skos:broader  category:Mountains_of_the_United_States }
+                        }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      { ?id  skos:subject  ?usm
+        { ?usm  skos:broader  category:Mountains_of_the_United_States }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      FILTER NOT EXISTS { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      { ?id  skos:subject  ?usm
+        { ?usm  skos:broader  category:Mountains_of_the_United_States }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  category: <http://dbpedia.org/Category:>
+
+CONSTRUCT 
+  { 
+    ?id skos:subject ?usc .
+    ?usc skos:broader category:Cities_in_the_United_States_by_state .
+    ?id dbpedia-owl:populationTotal ?populationTotal .
+    ?id skos:subject category:States_of_the_United_States .
+    ?id skos:subject ?usr .
+    ?usr skos:broader category:Rivers_of_the_United_States_by_state .
+    ?id skos:subject ?usm .
+    ?usm skos:broader category:Mountains_of_the_United_States .
+  }
+WHERE
+  { { FILTER NOT EXISTS { ?id  skos:subject  ?usc
+                          { ?usc  skos:broader  category:Cities_in_the_United_States_by_state }
+                          ?id  dbpedia-owl:populationTotal  ?populationTotal
+                          FILTER ( ( ?populationTotal > 5000 ) && ( ?populationTotal < 30000000 ) )
+                        }
+      { ?id  skos:subject  category:States_of_the_United_States }
+      FILTER NOT EXISTS { ?id  skos:subject  ?usr
+                          { ?usr  skos:broader  category:Rivers_of_the_United_States_by_state }
+                        }
+      { ?id  skos:subject  ?usm
+        { ?usm  skos:broader  category:Mountains_of_the_United_States }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

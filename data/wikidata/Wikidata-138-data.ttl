@@ -37,37 +37,37 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://en.wikipedia.org/wiki/Jar_City>
-        schema:about  wd:Q140016 .
-
-<https://it.wikipedia.org/wiki/Corano>
-        schema:about  wd:Q428 .
-
 <https://es.wikipedia.org/wiki/Las_memorias_de_Judas>
         schema:about  wd:Q93673 .
 
+<https://af.wikipedia.org/wiki/Kommunistiese_Manifes>
+        schema:about  wd:Q40591 .
+
 wd:Q93673  wdt:P31  wd:Q571 .
 
-<https://es.wikipedia.org/wiki/Las_marismas>
-        schema:about  wd:Q140016 .
+<https://an.wikipedia.org/wiki/Manifest_der_Kommunistischen_Partei>
+        schema:about  wd:Q40591 .
 
-<https://fr.wikipedia.org/wiki/La_Cit%C3%A9_des_jarres>
-        schema:about  wd:Q140016 .
+wd:Q40591  rdfs:label  "The Communist Manifesto"@en ;
+        wdt:P31     wd:Q571 .
 
 <https://fr.wikipedia.org/wiki/Les_M%C3%A9moires_de_Judas>
         schema:about  wd:Q93673 .
 
+<https://ar.wikipedia.org/wiki/%D8%A8%D9%8A%D8%A7%D9%86_%D8%A7%D9%84%D8%AD%D8%B2%D8%A8_%D8%A7%D9%84%D8%B4%D9%8A%D9%88%D8%B9%D9%8A>
+        schema:about  wd:Q40591 .
+
 wd:Q428  rdfs:label  "Coran"@fr ;
         wdt:P31     wd:Q571 .
+
+<https://ace.wikipedia.org/wiki/Kuru%27an>
+        schema:about  wd:Q428 .
 
 <https://de.wikipedia.org/wiki/Die_Memoiren_des_Judas>
         schema:about  wd:Q93673 .
 
-<https://it.wikiquote.org/wiki/Corano>
+<https://af.wikipedia.org/wiki/Koran>
         schema:about  wd:Q428 .
 
-wd:Q140016  rdfs:label  "Jar City"@en ;
-        wdt:P31     wd:Q571 .
-
-<https://it.wikisource.org/wiki/Corano>
+<https://ady.wikipedia.org/wiki/%D0%9A%D1%8A%D1%83%D1%80I%D0%B0%D0%BD>
         schema:about  wd:Q428 .

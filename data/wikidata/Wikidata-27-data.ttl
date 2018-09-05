@@ -38,28 +38,16 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q222651  wdt:P1340  wd:Q17122705 ;
-        wdt:P1884  wd:Q1922956 ;
-        wdt:P2048  "178"^^xsd:decimal .
-
-wd:Q17122705  rdfs:label  "brown"@en , "بني"@ar .
-
-wd:Q287122  wdt:P1340  wd:Q17122705 ;
-        wdt:P1884  wd:Q2367101 ;
-        wdt:P2048  "170"^^xsd:decimal .
-
-wd:Q199801  wdt:P1340  wd:Q17122705 ;
-        wdt:P1884  wd:Q2367101 ;
-        wdt:P2048  "176"^^xsd:decimal .
-
-wd:Q289640  wdt:P1340  wd:Q17122705 ;
+wd:Q233096  wdt:P1340  wd:Q17122705 ;
         wdt:P1884  wd:Q5094009 ;
-        wdt:P2048  "183"^^xsd:decimal .
+        wdt:P2048  "160"^^xsd:decimal .
 
-wd:Q287805  wdt:P1340  wd:Q17122705 ;
-        wdt:P1884  wd:Q2367101 ;
-        wdt:P2048  1.55 .
+wd:Q231665  wdt:P1340  wd:Q17122705 ;
+        wdt:P1884  wd:Q1922956 ;
+        wdt:P2048  "163"^^xsd:decimal .
 
-wd:Q199369  wdt:P1340  wd:Q17122705 ;
-        wdt:P1884  wd:Q2367101 ;
+wd:Q236507  wdt:P1340  wd:Q17122705 ;
+        wdt:P1884  wd:Q1922956 ;
         wdt:P2048  "175"^^xsd:decimal .
+
+wd:Q17122705  rdfs:label  "Green"@en , "braun"@de , "hnědá"@cs , "חום"@he .

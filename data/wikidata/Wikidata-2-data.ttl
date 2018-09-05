@@ -38,26 +38,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q62938  wdt:P31  wd:Q5 .
-
-wd:Q64995  wdt:P31  wd:Q5 .
-
-<https://species.wikimedia.org/wiki/Johann_Christian_Gottlob_Baumgarten>
-        schema:about     wd:Q64999 ;
+<https://species.wikimedia.org/wiki/Spencer_Fullerton_Baird>
+        schema:about     wd:Q14049 ;
         schema:isPartOf  <https://species.wikimedia.org/> .
 
-<https://species.wikimedia.org/wiki/Karl_Anton_Eugen_Prantl>
-        schema:about     wd:Q64995 ;
-        schema:isPartOf  <https://species.wikimedia.org/> .
+wd:Q51391876  wdt:P50  wd:Q14049 .
 
-<https://species.wikimedia.org/wiki/Joseph_zu_Salm-Reifferscheidt-Dyck>
-        schema:about     wd:Q62938 ;
-        schema:isPartOf  <https://species.wikimedia.org/> .
+wd:Q14049  wdt:P31  wd:Q5 .
 
-wd:Q5738798  wdt:P50  wd:Q62938 .
+wd:Q51375581  wdt:P50  wd:Q14049 .
 
-wd:Q5834577  wdt:P50  wd:Q64999 .
-
-wd:Q5805802  wdt:P50  wd:Q64995 .
-
-wd:Q64999  wdt:P31  wd:Q5 .
+wd:Q51379677  wdt:P50  wd:Q14049 .

@@ -38,41 +38,41 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q107690  p:P166  wds:Q107690-3d8ad4c9-4705-4105-2536-25972997adb2 ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Jean-Marie%20Lehn.JPG> .
+wd:Q1886068  p:P166  wds:Q1886068-3dfecf26-4fe0-80af-a0a1-3235f7d4ce1e ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Tomas%20Lindahl%200113.jpg> .
 
-wds:Q76623-304e1f66-43d1-831f-58c9-87b88d794fb0
-        pq:P585  "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+wds:Q232289-c658c930-4c27-9475-e98f-5193eed2d250
+        pq:P585  "1993-01-01T00:00:00Z"^^xsd:dateTime ;
         ps:P166  wd:Q44585 .
 
-wds:Q244998-bd7be8a8-4f47-47da-f3c5-14ad1485af29
+wd:Q110952  p:P166  wds:Q110952-ef476fd9-4d2f-9c1f-fb8f-25b60a1a145e .
+
+wds:Q239067-943cda70-4fdc-c02b-040c-122106a27670
+        pq:P585  "1992-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wd:Q232289  p:P166  wds:Q232289-c658c930-4c27-9475-e98f-5193eed2d250 .
+
+wds:Q3169751-b3cd4f51-4b5b-4029-08bd-58ad4253ca52
+        pq:P585  "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wd:Q135151  p:P166  wds:Q135151-945AABE9-6DA4-452D-956A-1229A4E29053 .
+
+wd:Q3169751  p:P166  wds:Q3169751-b3cd4f51-4b5b-4029-08bd-58ad4253ca52 ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Jean-Pierre%20Sauvage.jpg> .
+
+wds:Q1886068-3dfecf26-4fe0-80af-a0a1-3235f7d4ce1e
+        pq:P585  "2015-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q110952-ef476fd9-4d2f-9c1f-fb8f-25b60a1a145e
+        pq:P585  "1972-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q44585 .
+
+wds:Q135151-945AABE9-6DA4-452D-956A-1229A4E29053
         pq:P585  "1987-01-01T00:00:00Z"^^xsd:dateTime ;
         ps:P166  wd:Q44585 .
 
-wds:Q107690-3d8ad4c9-4705-4105-2536-25972997adb2
-        pq:P585  "1987-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P166  wd:Q44585 .
-
-wds:Q1351105-fe9c9a68-4b55-765a-2012-3a2977a90c6c
-        pq:P585  "2014-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P166  wd:Q44585 .
-
-wds:Q102419-476f09e6-49e1-9e33-4265-576115440321
-        pq:P585  "1969-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P166  wd:Q44585 .
-
-wds:Q190486-5f1fc53f-4506-68e3-c96d-aa8b63d4cee1
-        pq:P585  "1960-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P166  wd:Q44585 .
-
-wd:Q190486  p:P166  wds:Q190486-5f1fc53f-4506-68e3-c96d-aa8b63d4cee1 .
-
-wd:Q1351105  p:P166  wds:Q1351105-fe9c9a68-4b55-765a-2012-3a2977a90c6c ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Betzig.jpg> .
-
-wd:Q76623  p:P166  wds:Q76623-304e1f66-43d1-831f-58c9-87b88d794fb0 ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Huber.JPG> .
-
-wd:Q102419  p:P166  wds:Q102419-476f09e6-49e1-9e33-4265-576115440321 .
-
-wd:Q244998  p:P166  wds:Q244998-bd7be8a8-4f47-47da-f3c5-14ad1485af29 .
+wd:Q239067  p:P166  wds:Q239067-943cda70-4fdc-c02b-040c-122106a27670 ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Prof.%20Dr.%20Rudolph%20A.%20Marcus.jpg> .

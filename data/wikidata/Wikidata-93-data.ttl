@@ -42,11 +42,11 @@ wd:Q166074  wdt:P1462  wd:Q37033 .
 wd:Q826165  wdt:P1462  wd:Q37033 ;
         wdt:P856   <http://www.w3.org/TR/owl2-overview/> .
 
-wd:Q6108942  wdt:P1462  wd:Q37033 ;
-        wdt:P856   <http://www.w3.org/TR/json-ld/> .
+wd:Q850661  wdt:P1462  wd:Q37033 ;
+        wdt:P856   <http://www.w3.org/XML/Query/> .
 
-wd:Q114409  wdt:P1462  wd:Q37033 ;
-        wdt:P856   <https://www.w3.org/TR/2014/REC-turtle-20140225/> .
+wd:Q1751819  wdt:P1462  wd:Q37033 ;
+        wdt:P856   <http://www.w3.org/TR/rdf-schema/> .
 
 wd:Q478149  wdt:P1462  wd:Q37033 .
 

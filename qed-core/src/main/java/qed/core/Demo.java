@@ -13,14 +13,20 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
 public class Demo {
 	
-	public static Feature[] exfs = {Feature.FILTER,Feature.OPTIONAL,//Feature.REGEX, 
-			Feature.UNION, Feature.SUBQUERY};
+	public static Feature[] exfs = {Feature.FILTER,Feature.MINUS,Feature.OPTIONAL,Feature.OFFSET,
+			Feature.UNION};
 	
-	private static Feature[][] createSimpleConfigs(Feature[] fs) {
+	private static Feature[][] createSimpleConfigs() {
 		
-		return Arrays.asList(fs).stream().map(f -> {Feature [] f1 = {f}; return f1;}).
+		return Arrays.asList(Feature.values()).stream().map(f -> {Feature [] f1 = {f}; return f1;}).
 				toArray(Feature[][]::new);
 	}
+	
+//	private static Feature[][] createSimpleConfigs(Feature[] fs) {
+//		
+//		return Arrays.asList(fs).stream().map(f -> {Feature [] f1 = {f}; return f1;}).
+//				toArray(Feature[][]::new);
+//	}
 	
 	private static Feature[][] createBinaryConfigs(Feature[] fs) {
 		List<Feature[]> cs = new ArrayList<Feature[]>();
@@ -35,7 +41,7 @@ public class Demo {
 
 	public void extractQueries(Dataset dataset, Feature[][] cs) {
 		
-		Utils.DATA_DIR = Utils.DATA_DIR + dataset.toString().toLowerCase() + File.separator;
+		Utils.DATA_DIR = Utils.DATA_DIR + dataset.toString().toLowerCase() + "2" + File.separator;
 		
 		new LogQueryExtractor().extractQueries(Constants.LSQR_SPARQL_EP, dataset.graphUri, cs, 15, 0, 0);
 	}
@@ -48,8 +54,9 @@ public class Demo {
 			de.extractQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset);
 			Utils.statsSummary(Utils.DATA_DIR + dataset + File.separator, 7);
 		} else {
-			de.extractAllQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset);
-			Utils.statsSummary2(Utils.DATA_DIR + dataset + File.separator);
+			de.extractAllQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset +"2");
+			Utils.mergeStatisticsFiles(Utils.DATA_DIR + dataset +"2");
+			Utils.statsSummary(Utils.DATA_DIR + dataset + File.separator, 7);
 		}
 	}
 	
@@ -122,14 +129,6 @@ public class Demo {
 
 	}
 
-	public String removeCriticalFunctions(String s) {
-		String[] fs = {"YEAR"};
-		int i = s.indexOf(fs[0]);
-		int j = s.indexOf(")", i);
-//		System.out.println(s.re);
-		return s;
-	}
-
 	public static void main(String[] args) {
 //		for (Feature[] fs : new Demo().createBinaryConfigs(exfs)) {
 //			System.out.println(fs[0].name()+fs[1]);
@@ -142,9 +141,14 @@ public class Demo {
 ////		System.out.println(fs[0].name()+fs[1]);
 //	}
 		
-//		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs(exfs));
-		d.extractData(Dataset.DBPEDIA);
+//		d.extractQueries(Dataset.DBPEDIA, createBinaryConfigs(exfs));//				createSimpleConfigs());
 //		d.extractData(Dataset.WIKIDATA);
+		d.extractData(Dataset.DBPEDIA);
+//		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"1");
+//		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA +"1"+ File.separator, 7);
+		
+//		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA);
+//		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);
 		
 //		Utils.statsSummary(Utils.DATA_DIR + Dataset.WIKIDATA + File.separator, 7);
 //

@@ -1,4 +1,4 @@
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -9,7 +9,6 @@ CONSTRUCT
     ?country wdt:P31 wd:Q185441 .
     ?person wdt:P31 wd:Q5 .
     ?person wdt:P27 ?country .
-    ?person wdt:P570 ?date .
     ?country wdt:P1082 ?population .
   }
 WHERE

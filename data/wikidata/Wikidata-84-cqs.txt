@@ -1,4 +1,4 @@
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -30,7 +30,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -62,7 +62,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -94,7 +94,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -126,7 +126,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -158,7 +158,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -190,7 +190,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
@@ -222,7 +222,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  pq:   <http://www.wikidata.org/prop/qualifier/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>

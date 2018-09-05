@@ -38,22 +38,22 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q750683  wdt:P1082  "0"^^xsd:decimal ;
-        wdt:P625   "Point(-81.608888888 4.002777777)"^^geo:wktLiteral .
-
-wd:Q213467  wdt:P1082  "227025"^^xsd:decimal ;
-        wdt:P625   "Point(100.25 6.5)"^^geo:wktLiteral .
-
-wd:Q750203  wdt:P1082  "0"^^xsd:decimal ;
-        wdt:P625   "Point(47.740833333 -10.086666666)"^^geo:wktLiteral .
-
-wd:Q751817  wdt:P1082  "0"^^xsd:decimal ;
-        wdt:P625   "Point(-164.821 54.2122)"^^geo:wktLiteral .
+wd:Q299062  wdt:P1082  "0"^^xsd:decimal ;
+        wdt:P625   "Point(-30.644055555 83.676333333)"^^geo:wktLiteral .
 
 wd:Q9832  wdt:P1082  "227751"^^xsd:decimal .
+
+wd:Q315038  wdt:P1082  "0"^^xsd:decimal ;
+        wdt:P625   "Point(13.119444444 54.428055555)"^^geo:wktLiteral .
 
 wd:Q1135616  wdt:P1082  "226769"^^xsd:decimal ;
         wdt:P625   "Point(73.688643 20.7588488)"^^geo:wktLiteral .
 
-wd:Q848638  wdt:P1082  "227098"^^xsd:decimal ;
-        wdt:P625   "Point(68.243611111 43.3)"^^geo:wktLiteral .
+wd:Q315275  wdt:P1082  "0"^^xsd:decimal ;
+        wdt:P625   "Point(14.258611111 53.706388888)"^^geo:wktLiteral .
+
+wd:Q2833  wdt:P1082  "227590"^^xsd:decimal ;
+        wdt:P625   "Point(7.849722222 47.994722222)"^^geo:wktLiteral .
+
+wd:Q2805  wdt:P1082  "226812"^^xsd:decimal ;
+        wdt:P625   "Point(6.566666666 51.333333333)"^^geo:wktLiteral .

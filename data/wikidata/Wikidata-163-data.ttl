@@ -37,56 +37,56 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wdref:79afeccad23d3bcebdba319fe7b4691907bfaec9
+wds:Q18027426-CEA9CC7E-E195-4CDE-B18F-E4CABF04CB17
+        prov:wasDerivedFrom  wdref:58177dd78adbc0bd170420776b9c056be7768fc0 .
+
+wds:Q5156407-F8AB04ED-0639-4D0A-ABC9-13563D113894
+        prov:wasDerivedFrom  wdref:5111355bf6807e693400c0f2ec173ec39f1960e6 .
+
+wd:Q18032715  p:P351  wds:Q18032715-4B7B2328-B50B-48A5-899A-3BE6003DA739 ;
+        wdt:P351  "8045" .
+
+wd:Q18027426  p:P351  wds:Q18027426-CEA9CC7E-E195-4CDE-B18F-E4CABF04CB17 ;
+        wdt:P351  "3352" .
+
+wd:Q14878377  p:P351  wds:q14878377-32CB0601-58BF-4071-9CC7-7A3C6A47219E ;
+        wdt:P351  "5728" .
+
+wd:Q17832889  p:P351  wds:Q17832889-FD8B808E-B528-4346-93D1-22C45E09C714 ;
+        wdt:P351  "475" .
+
+wd:Q17853226  p:P351  wds:Q17853226-8F396FF3-20F5-45A7-B381-1D4E7936A2C1 ;
+        wdt:P351  "673" .
+
+wdref:5111355bf6807e693400c0f2ec173ec39f1960e6
         pr:P813  "2018-05-11T00:00:00Z"^^xsd:dateTime .
 
-wdref:f25082a5fd27741df02e1021eab4b356eef68853
-        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .
+wd:Q5156407  p:P351  wds:Q5156407-F8AB04ED-0639-4D0A-ABC9-13563D113894 ;
+        wdt:P351  "730" .
 
-wdref:5fa27fe77d26c52c5c7a7259bea40103b484b3b3
-        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .
+wds:Q18032715-4B7B2328-B50B-48A5-899A-3BE6003DA739
+        prov:wasDerivedFrom  wdref:9727ee52e41129dbf0e1b0ef955d6d195f4c815b .
 
-wd:Q18026941  p:P351  wds:Q18026941-25C7A750-FF0D-433B-98F2-D1E46966DCEF ;
-        wdt:P351  "3115" .
-
-wds:Q18026941-25C7A750-FF0D-433B-98F2-D1E46966DCEF
-        prov:wasDerivedFrom  wdref:5fa27fe77d26c52c5c7a7259bea40103b484b3b3 .
-
-wd:Q18029818  p:P351  wds:Q18029818-0CEC89AB-CD99-4386-A75E-261A1FB98D12 ;
-        wdt:P351  "4659" .
-
-wd:Q29706325  p:P351  wds:Q29706325-02439C47-D0B9-4AF1-81AC-FCC9B1BF03D1 ;
-        wdt:P351  "175709" .
-
-wds:Q14905126-01AA1E6B-63CB-4782-9A72-A322BB1AB1FC
-        prov:wasDerivedFrom  wdref:a7b89ddd86a8fe8b865eabadddd962dd4e016b4b .
-
-wdref:a7b89ddd86a8fe8b865eabadddd962dd4e016b4b
-        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .
-
-wds:Q29706325-02439C47-D0B9-4AF1-81AC-FCC9B1BF03D1
-        prov:wasDerivedFrom  wdref:f25082a5fd27741df02e1021eab4b356eef68853 .
-
-wds:q14863103-EC537BCC-CA16-4D3D-93AC-D898E308451D
-        prov:wasDerivedFrom  wdref:5cd0cbdd1077e7f5c4d43c7aebef00bff56fb924 .
-
-wdref:c0c0073d228efe8fdeecf9db57c92e1d3fef607f
-        pr:P813  "2018-07-20T00:00:00Z"^^xsd:dateTime .
-
-wd:Q18271497  p:P351  wds:Q18271497-A4658FF3-CA64-4362-9972-8828286D66AE ;
-        wdt:P351  "102211" .
-
-wd:Q14863103  p:P351  wds:q14863103-EC537BCC-CA16-4D3D-93AC-D898E308451D ;
-        wdt:P351  "5744" .
-
-wdref:5cd0cbdd1077e7f5c4d43c7aebef00bff56fb924
+wdref:7ab4384b5ba8f1822c407d6cc2d22f08e492f6e4
         pr:P813  "2018-05-11T00:00:00Z"^^xsd:dateTime .
 
-wds:Q18271497-A4658FF3-CA64-4362-9972-8828286D66AE
-        prov:wasDerivedFrom  wdref:c0c0073d228efe8fdeecf9db57c92e1d3fef607f .
+wdref:67c7bc2b4b36e59855c51c52e49e713618657e6d
+        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .
 
-wd:Q14905126  p:P351  wds:Q14905126-01AA1E6B-63CB-4782-9A72-A322BB1AB1FC ;
-        wdt:P351  "1201" .
+wdref:58177dd78adbc0bd170420776b9c056be7768fc0
+        pr:P813  "2018-05-11T00:00:00Z"^^xsd:dateTime .
 
-wds:Q18029818-0CEC89AB-CD99-4386-A75E-261A1FB98D12
-        prov:wasDerivedFrom  wdref:79afeccad23d3bcebdba319fe7b4691907bfaec9 .
+wdref:9727ee52e41129dbf0e1b0ef955d6d195f4c815b
+        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .
+
+wds:q14878377-32CB0601-58BF-4071-9CC7-7A3C6A47219E
+        prov:wasDerivedFrom  wdref:b9dc1c250ae70eaa8afb5e4bcdd20879708b3701 .
+
+wdref:b9dc1c250ae70eaa8afb5e4bcdd20879708b3701
+        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .
+
+wds:Q17832889-FD8B808E-B528-4346-93D1-22C45E09C714
+        prov:wasDerivedFrom  wdref:7ab4384b5ba8f1822c407d6cc2d22f08e492f6e4 .
+
+wds:Q17853226-8F396FF3-20F5-45A7-B381-1D4E7936A2C1
+        prov:wasDerivedFrom  wdref:67c7bc2b4b36e59855c51c52e49e713618657e6d .

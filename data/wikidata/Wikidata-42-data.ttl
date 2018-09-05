@@ -37,40 +37,47 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%B4%D1%8B%D0%B6%D0%B0%D0%BF%D0%B0%D1%80%D0%BE%D0%B2,_%D0%AD%D1%80%D0%BD%D0%B5%D1%81%D1%82_%D0%90%D0%BB%D0%BC%D0%B0%D1%81%D0%B1%D0%B5%D0%BA%D0%BE%D0%B2%D0%B8%D1%87>
-        schema:about  wd:Q4054647 .
-
-wd:Q51123  rdfs:label  "D. W. Griffith"@en ;
+wd:Q28998  rdfs:label  "Reinhold Schünzel"@an ;
         wdt:P106    wd:Q2526255 .
 
-wd:Q4054647  wdt:P106  wd:Q2526255 .
-
-wd:Q7261064  wdt:P57  wd:Q4054647 .
-
-wd:Q55218  rdfs:label  "استفان زابو"@ar ;
-        wdt:P106    wd:Q2526255 .
-
-<https://da.wikipedia.org/wiki/Istv%C3%A1n_Szab%C3%B3>
+<https://bg.wikipedia.org/wiki/%D0%98%D1%89%D0%B2%D0%B0%D0%BD_%D0%A1%D0%B0%D0%B1%D0%BE>
         schema:about  wd:Q55218 .
 
-<https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%81%D9%8A%D8%AF_%D8%BA%D8%B1%D9%8A%D9%81%D9%8A%D8%AB>
-        schema:about  wd:Q51123 .
+<https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD,_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%90%D1%80%D1%82%D0%B5%D0%BC%D1%8C%D0%B5%D0%B2%D0%B8%D1%87>
+        schema:about  wd:Q4209474 .
+
+wd:Q4141085  wdt:P57  wd:Q4279808 .
+
+<https://kk.wikipedia.org/wiki/%D3%98%D0%B7%D1%96%D1%80%D0%B1%D0%B0%D0%B9%D0%B6%D0%B0%D0%BD_%D0%9C%D3%99%D0%B4%D0%B8%D2%B1%D0%BB%D1%8B_%D0%9C%D3%99%D0%BC%D0%B1%D0%B5%D1%82%D0%BE%D0%B2>
+        schema:about  wd:Q4279808 .
+
+<https://ast.wikipedia.org/wiki/Reinhold_Sch%C3%BCnzel>
+        schema:about  wd:Q28998 .
+
+wd:Q16950237  wdt:P57  wd:Q28998 .
+
+wd:Q55218  rdfs:label  "Sebastián Szabó"@en ;
+        wdt:P106    wd:Q2526255 .
+
+wd:Q4279808  wdt:P106  wd:Q2526255 .
+
+<https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BC%D0%B1%D0%B5%D1%82%D0%BE%D0%B2,_%D0%90%D0%B7%D0%B5%D1%80%D0%B1%D0%B0%D0%B9%D0%B6%D0%B0%D0%BD_%D0%9C%D0%B0%D0%B4%D0%B8%D0%B5%D0%B2%D0%B8%D1%87>
+        schema:about  wd:Q4279808 .
 
 wd:Q22323867  wdt:P57  wd:Q55218 .
 
-wd:Q4144881  wdt:P57  wd:Q4054647 .
+wd:Q4209474  wdt:P106  wd:Q2526255 .
 
-wd:Q192206  wdt:P57  wd:Q51123 .
-
-wd:Q166089  wdt:P57  wd:Q51123 .
-
-<https://cs.wikipedia.org/wiki/Istv%C3%A1n_Szab%C3%B3>
+<https://ca.wikipedia.org/wiki/Istv%C3%A1n_Szab%C3%B3>
         schema:about  wd:Q55218 .
 
-<https://ky.wikipedia.org/wiki/%D0%AD%D1%80%D0%BD%D0%B5%D1%81%D1%82_%D0%90%D0%B1%D0%B4%D1%8B%D0%B6%D0%B0%D0%BF%D0%B0%D1%80%D0%BE%D0%B2>
-        schema:about  wd:Q4054647 .
+wd:Q4096981  wdt:P57  wd:Q4209474 .
 
-wd:Q130769  wdt:P57  wd:Q51123 .
+<https://de.wikipedia.org/wiki/Reinhold_Sch%C3%BCnzel>
+        schema:about  wd:Q28998 .
 
-<https://cs.wikiquote.org/wiki/Istv%C3%A1n_Szab%C3%B3>
+<https://en.wikipedia.org/wiki/Reinhold_Sch%C3%BCnzel>
+        schema:about  wd:Q28998 .
+
+<https://ar.wikipedia.org/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D9%86_%D8%B2%D8%A7%D8%A8%D9%88>
         schema:about  wd:Q55218 .

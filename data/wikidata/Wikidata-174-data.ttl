@@ -37,10 +37,13 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q23  rdfs:label  "George Washington"@es , "George Washington"@en , "George Washington"@de , "ጆርጅ ዋሽንግተን"@am , "George Washington"@af , "George Washington"@ace ;
+wd:Q23  rdfs:label  "ጆርጅ ዋሽንግተን"@am , "George Washington"@af , "George Washington"@ace ;
         wdt:P31     wd:Q5 .
 
 wd:Q11515  rdfs:label  "(.)p(...)nin"@de , "(.)p(...)nin"@en , "(.)p(...)nin"@es ;
+        wdt:P31     wd:Q5 .
+
+wd:Q1744  rdfs:label  "Madonna"@es , "Madonna"@en , "Madonna"@de ;
         wdt:P31     wd:Q5 .
 
 wd:Q207  rdfs:label  "Τζορτζ Μπους (νεότερος)"@el ;

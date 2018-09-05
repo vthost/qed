@@ -43,11 +43,7 @@ wd:Q75248  rdfs:label  "Annuario Pontificio"@en ;
         wdt:P577    "1716-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P840    wd:Q237 .
 
-wd:Q210991  rdfs:label  "Piano Concerto No.20 in D minor, K.466"@en ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1785-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q6837  wdt:P625  "Point(12.649722222 51.865833333)"^^geo:wktLiteral .
+wd:Q220  wdt:P625  "Point(12.482777777 41.893055555)"^^geo:wktLiteral .
 
 wd:Q153297  rdfs:label  "The Gentleman's Magazine"@en ;
         wdt:P291    wd:Q84 ;
@@ -57,15 +53,27 @@ wd:Q153297  rdfs:label  "The Gentleman's Magazine"@en ;
 
 wd:Q6247  wdt:P625  "Point(10.791111111 45.156388888)"^^geo:wktLiteral .
 
-wd:Q83186  rdfs:label  "Romeo and Juliet"@en , "Roméo et Juliette"@fr , "רומיאו ויוליה"@he , "Romeo a Julie"@cs ;
+wd:Q83186  rdfs:label  "Romeo and Juliet"@en , "Ромео и Джульетта"@ru , "로미오와 줄리엣"@ko , "ロミオとジュリエット"@ja ;
         wdt:P291    wd:Q2028 , wd:Q6247 ;
         wdt:P31     wd:Q571 , wd:Q7725634 ;
         wdt:P577    "1597-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P840    wd:Q6247 , wd:Q2028 .
 
-wd:Q210711  rdfs:label  "Die Entführung aus dem Serail"@en , "Únos ze serailu"@cs , "El rapte en el serrall"@ca , "Отвличане от сарая"@bg ;
+wd:Q1134342  rdfs:label  "Inter caetera"@eu , "Inter caetera"@nl , "Inter Caetera"@it ;
+        wdt:P291    wd:Q220 ;
         wdt:P31     wd:Q7725634 , wd:Q571 ;
-        wdt:P577    "1786-01-01T00:00:00Z"^^xsd:dateTime , "1785-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "1493-05-13T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q220 .
+
+wd:Q169759  rdfs:label  "Declaration of the Rights of Man and of the Citizen"@en ;
+        wdt:P291    wd:Q90 ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1789-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q90 .
+
+wd:Q164779  rdfs:label  "100. Sinfonie"@de , "100. symfoni"@da , "Simfonia núm. 100"@ca ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1794-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q207410  rdfs:label  "Così fan tutte"@en ;
         wdt:P291    wd:Q2634 ;
@@ -77,20 +85,20 @@ wd:Q237  wdt:P625  "Point(12.453 41.904)"^^geo:wktLiteral .
 
 wd:Q2028  wdt:P625  "Point(10.993741666 45.438158333)"^^geo:wktLiteral .
 
-wd:Q157506  rdfs:label  "Ninety-five Theses"@en ;
-        wdt:P291    wd:Q6837 ;
+wd:Q567422  rdfs:label  "Annus Mirabilis"@en ;
         wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1557-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P840    wd:Q6837 .
+        wdt:P577    "1667-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q38234  wdt:P625  "Point(129.866666666 32.783333333)"^^geo:wktLiteral .
+wd:Q532011  rdfs:label  "Utendi wa Tambuka"@en ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1728-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q90  wdt:P625  "Point(2.351827777 48.856577777)"^^geo:wktLiteral .
+
+wd:Q127154  rdfs:label  "Landbuch der Mark Brandenburg"@en ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1781-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q84  wdt:P625  "Point(-0.1275 51.507222222)"^^geo:wktLiteral .
 
 wd:Q2634  wdt:P625  "Point(14.25 40.833333333)"^^geo:wktLiteral .
-
-wd:Q662115  rdfs:label  "Arte da Lingoa de Iapam"@pt , "Arte da Lingoa de Iapam"@nl , "Arte da lingoa de Iapam"@fr ;
-        wdt:P291    wd:Q38234 ;
-        wdt:P31     wd:Q7725634 , wd:Q571 ;
-        wdt:P577    "1604-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P840    wd:Q38234 .

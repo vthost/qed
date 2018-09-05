@@ -37,18 +37,28 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q768717  rdfs:label  "private collection"@en .
+wd:Q768717  rdfs:label  "private collection"@en , "Kunstsamlar"@nn .
 
-wd:Q844926  rdfs:label  "Munch Museum"@en , "Museu Munch"@ca , "Munchi muuseum"@et , "Museo Munch"@es , "Muzeo Munch"@eo .
+wd:Q18891156  rdfs:label  "The Scream"@en ;
+        wdt:P179    wd:Q471379 ;
+        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Scream.jpg> ;
+        wdt:P186    wd:Q175166 , wd:Q389782 ;
+        wdt:P195    wd:Q1132918 ;
+        wdt:P31     wd:Q3305213 ;
+        wdt:P571    "1893-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q844926  rdfs:label  "Munch Museum"@en .
+
+wd:Q1132918  rdfs:label  "National Museum of Art, Architecture and Design"@en , "Norra riiklik kunsti-, arhitektuuri- ja disainimuuseum"@et , "Nasjonalmuseet For Kunst, Arkitektur Og Design"@nl , "Národní muzeum umění, architektury a designu"@cs .
 
 wd:Q15123870  rdfs:label  "lithograph"@en .
 
-wd:Q389782  rdfs:label  "cardboard"@en , "qatırğı"@tt-latn , "咭紙"@yue , "cartón"@ast .
+wd:Q389782  rdfs:label  "cardboard"@en .
 
 wd:Q18891157  rdfs:label  "The Scream"@en ;
         wdt:P179    wd:Q471379 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Scream%20Pastel.jpg> ;
-        wdt:P186    wd:Q389782 , wd:Q189085 ;
+        wdt:P186    wd:Q189085 ;
         wdt:P195    wd:Q768717 ;
         wdt:P31     wd:Q3305213 ;
         wdt:P571    "1895-01-01T00:00:00Z"^^xsd:dateTime .
@@ -56,16 +66,16 @@ wd:Q18891157  rdfs:label  "The Scream"@en ;
 wd:Q18891155  rdfs:label  "The Scream"@en ;
         wdt:P179    wd:Q471379 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Skrik%201893.jpg> ;
-        wdt:P186    wd:Q389782 , wd:Q189085 ;
+        wdt:P186    wd:Q189085 ;
         wdt:P195    wd:Q844926 ;
         wdt:P31     wd:Q3305213 ;
         wdt:P571    "1893-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q175166  rdfs:label  "تمبرا"@ar , "تمبرا"@arz , "Tempera"@az , "tempera"@en .
+wd:Q175166  rdfs:label  "tempera"@en , "Tempera"@sk .
 
-wd:Q3305213  rdfs:label  "Gemälde"@de , "картина"@ru , "карціна"@be , "painting"@en , "pictură"@ro .
+wd:Q3305213  rdfs:label  "pictură"@ro , "ציור"@he , "peintiad"@cy , "painting"@en , "слика"@sr , "ຈິດຕະກຳ"@lo , "pintura"@es .
 
-wd:Q189085  rdfs:label  "pastel"@en , "Пастэль"@be , "Pastel"@az , "باستيل"@ar .
+wd:Q189085  rdfs:label  "pastel"@en , "Pastel"@en-ca , "pastel"@en-gb , "Paŝtelo"@eo , "粉彩"@zh , "Пастель"@ru , "pastel"@pl .
 
 wd:Q18891158  rdfs:label  "The Scream"@en ;
         wdt:P179    wd:Q471379 ;

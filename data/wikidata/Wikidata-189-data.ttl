@@ -41,10 +41,10 @@ wd:Q249944  wdt:P31  wd:Q4167410 .
 
 wd:Q5378081  wdt:P123  wd:Q249944 .
 
-wd:Q2025199  wdt:P123  wd:Q224030 .
-
 wd:Q249655  wdt:P31  wd:Q4167410 .
+
+wd:Q243085  wdt:P31  wd:Q4167410 .
 
 wd:Q1773497  wdt:P123  wd:Q249655 .
 
-wd:Q224030  wdt:P31  wd:Q4167410 .
+wd:Q19226805  wdt:P123  wd:Q243085 .

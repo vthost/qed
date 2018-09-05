@@ -37,11 +37,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q475225  wdt:P31  wd:Q212805 ;
-        wdt:P856  <https://www.wdl.org/> .
+wd:Q2944483  wdt:P31  wd:Q212805 ;
+        wdt:P856  <http://dp.la/> .
 
-wd:Q234110  wdt:P31  wd:Q212805 ;
-        wdt:P856  <https://www.europeana.eu> .
+wd:Q2915193  wdt:P31  wd:Q212805 ;
+        wdt:P856  <http://eric.ed.gov/> .
 
-wd:Q229883  wdt:P31  wd:Q212805 ;
-        wdt:P856  <http://www.ncbi.nlm.nih.gov/pmc/> .
+wd:Q240304  wdt:P31  wd:Q212805 ;
+        wdt:P856  <http://www.TheEuropeanLibrary.org> .

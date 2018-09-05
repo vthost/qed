@@ -40,5 +40,5 @@
 wd:Q5571382  wdt:P54  wd:Q223243 .
 
 wd:P54  a                     wikibase:Property ;
-        rdfs:label            "member of sports team"@en , "спартовы клюб"@be-tarask , "sportcsapat"@hu , "קבוצה"@he ;
+        rdfs:label            "member of sports team"@en , "lid van sportspan"@af , "sportcsapat"@hu , "קבוצה"@he ;
         wikibase:directClaim  wdt:P54 .

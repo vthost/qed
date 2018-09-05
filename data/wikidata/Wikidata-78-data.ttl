@@ -39,9 +39,9 @@
 
 wd:Q312556  wdt:P2218  "151100000000"^^xsd:decimal .
 
-wd:Q164119  wdt:P2218  "215000000"^^xsd:decimal .
+wd:Q3619256  wdt:P2218  "1000000000"^^xsd:decimal .
 
-wd:Q132952  wdt:P2218  "340000000"^^xsd:decimal .
+wd:Q19561253  wdt:P2218  "1000000000"^^xsd:decimal .
 
 wd:Q216932  wdt:P2218  "58700000000"^^xsd:decimal .
 

@@ -38,13 +38,23 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+wd:Q199940  wdt:P136  wd:Q8261 ;
+        wdt:P31   wd:Q571 ;
+        wdt:P577  "1874-01-01T00:00:00Z"^^xsd:dateTime .
+
 wd:Q25750  wdt:P136  wd:Q8261 ;
         wdt:P31   wd:Q571 ;
         wdt:P577  "2012-09-27T00:00:00Z"^^xsd:dateTime .
 
-wd:Q199940  wdt:P136  wd:Q8261 ;
+wd:Q699  rdfs:label  "Märchen"@de .
+
+wd:Q199073  wdt:P136  wd:Q8261 ;
         wdt:P31   wd:Q571 ;
-        wdt:P577  "1874-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "2013-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q48244  wdt:P136  wd:Q4184 ;
+        wdt:P31   wd:Q571 ;
+        wdt:P577  "1925-07-18T00:00:00Z"^^xsd:dateTime .
 
 wd:Q191288  wdt:P136  wd:Q8261 ;
         wdt:P31   wd:Q571 ;
@@ -54,16 +64,18 @@ wd:Q4791  wdt:P136  wd:Q8261 ;
         wdt:P31   wd:Q571 ;
         wdt:P577  "2002-01-01T00:00:00Z"^^xsd:dateTime .
 
+wd:Q8261  rdfs:label  "Roman"@de , "roman"@fr , "رمان"@fa , "novel"@en .
+
 wd:Q4710  wdt:P136  wd:Q8261 ;
         wdt:P31   wd:Q571 ;
         wdt:P577  "2003-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q8261  rdfs:label  "novel"@en , "رمان"@fa , "roman"@fr , "Roman"@de .
-
-wd:Q119534  wdt:P136  wd:Q8261 ;
-        wdt:P31   wd:Q571 ;
-        wdt:P577  "2006-01-01T00:00:00Z"^^xsd:dateTime .
+wd:Q4184  rdfs:label  "Autobiografia"@sq , "Autobiografia"@sk .
 
 wd:Q197243  wdt:P136  wd:Q8261 ;
         wdt:P31   wd:Q571 ;
         wdt:P577  "1957-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q45735  wdt:P136  wd:Q699 ;
+        wdt:P31   wd:Q571 ;
+        wdt:P577  "1952-01-01T00:00:00Z"^^xsd:dateTime .

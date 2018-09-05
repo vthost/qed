@@ -1,2 +1,9 @@
 qid;qtriples;cqs;cqs-with-data;triples;features
-DBpedia-q83335;4;11;2;6;FILTER,UNION
+DBpedia-q1099;3;11;0;0;Filter,Union
+DBpedia-q119324;4;11;0;0;Filter,Union
+DBpedia-q26454;8;11;0;0;Filter,Union
+DBpedia-q3912;4;10;0;0;Filter,Offset,Optional,Union
+DBpedia-q451;11;11;0;0;Offset,Optional,Union
+DBpedia-q532;15;11;0;0;Filter,Offset,Optional,Order\_by,Regex,Union
+DBpedia-q83335;4;11;0;0;Filter,Union
+DBpedia-q83773;12;11;0;0;Filter,Union

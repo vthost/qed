@@ -37,17 +37,49 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q34  rdfs:label  "Sweden"@en , "Schweden"@de , "瑞典"@zh .
+<https://ar.wikipedia.org/wiki/%D9%84%D9%8A%D9%88%D8%A8%D9%88%D9%84%D8%AF_%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%D8%8C_%D8%A3%D8%B1%D8%B4%D9%8A%D8%AF%D9%88%D9%82_%D8%A7%D9%84%D9%86%D9%85%D8%B3%D8%A7>
+        schema:about  wd:Q112066 .
 
-<https://ca.wikipedia.org/wiki/Werner_Wolf_Glaser>
-        schema:about  wd:Q68216 .
+wd:Q34  rdfs:label  "Sweden"@en .
+
+<https://bs.wikipedia.org/wiki/Leopold_V,_nadvojvoda_Prednje_Austrije>
+        schema:about  wd:Q112066 .
+
+<https://hy.wikipedia.org/wiki/%D4%BC%D5%A5%D5%B8%D5%BA%D5%B8%D5%AC%D5%A4_V_%D5%96%D5%A5%D6%80%D5%A4%D5%AB%D5%B6%D5%A1%D5%B6%D5%A4>
+        schema:about  wd:Q112066 .
+
+wd:Q112066  rdfs:label  "Leopold V, Archduke of Austria"@en , "Leopold V, nadvojvoda Prednje Austrije"@bs , "Леополд V"@bg , "ليوبولد الخامس، أرشيدوق النمسا"@ar ;
+        wdt:P106    wd:Q49757 , wd:Q482980 , wd:Q36180 ;
+        wdt:P27     []  ;
+        wdt:P27     []  .
+
+<https://ht.wikipedia.org/wiki/Alfred_Kastler>
+        schema:about  wd:Q71023 .
+
+wd:Q142  rdfs:label  "Францыя"@be-tarask .
 
 <https://en.wikipedia.org/wiki/Werner_Wolf_Glaser>
+        schema:about  wd:Q68216 .
+
+<https://ca.wikipedia.org/wiki/Werner_Wolf_Glaser>
         schema:about  wd:Q68216 .
 
 <https://de.wikipedia.org/wiki/Werner_Wolf_Glaser>
         schema:about  wd:Q68216 .
 
 wd:Q68216  rdfs:label  "Werner Wolf Glaser"@en ;
-        wdt:P106    wd:Q49757 , wd:Q482980 , wd:Q36180 ;
+        wdt:P106    wd:Q36180 , wd:Q482980 , wd:Q49757 ;
         wdt:P27     wd:Q34 .
+
+<https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A4%D7%A8%D7%93_%D7%A7%D7%A1%D7%98%D7%9C%D7%A8>
+        schema:about  wd:Q71023 .
+
+<https://hu.wikipedia.org/wiki/Alfred_Kastler>
+        schema:about  wd:Q71023 .
+
+wd:Q71023  rdfs:label  "Alfred Kastler"@en ;
+        wdt:P106    wd:Q49757 , wd:Q482980 , wd:Q36180 ;
+        wdt:P27     wd:Q142 .
+
+<https://bg.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BE%D0%BF%D0%BE%D0%BB%D0%B4_V_(%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F-%D0%A2%D0%B8%D1%80%D0%BE%D0%BB)>
+        schema:about  wd:Q112066 .

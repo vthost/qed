@@ -37,14 +37,18 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q11694  rdfs:label  "American Airlines Flight 11"@en , "Amerika Hava Yolları reys 11"@az , "الخطوط الجوية الأمريكية الرحلة 11"@ar ;
+wd:Q3156912  rdfs:label  "Air Philippines Flight 541"@en ;
         wdt:P31     wd:Q744913 ;
-        wdt:P625    "Point(-74.0125 40.7117)"^^geo:wktLiteral .
+        wdt:P625    "Point(125.70083333 7.15666667)"^^geo:wktLiteral .
 
-wd:Q11705  rdfs:label  "United Airlines Flight 175"@en ;
+wd:Q3087193  rdfs:label  "Santa Bárbara Airlines Flight 518"@en ;
         wdt:P31     wd:Q744913 ;
-        wdt:P625    "Point(-74.0125 40.7117)"^^geo:wktLiteral .
+        wdt:P625    "Point(-71.23805556 8.65916667)"^^geo:wktLiteral .
 
-wd:Q18173  rdfs:label  "Japan Airlines Flight 123"@en , "vol 123 Japan Airlines"@fr ;
+wd:Q3177188  rdfs:label  "TAM Transportes Aéreos Regionais Flight 402"@en ;
         wdt:P31     wd:Q744913 ;
-        wdt:P625    "Point(138.693888888 36.001388888)"^^geo:wktLiteral .
+        wdt:P625    "Point(-43.1964 -22.9083)"^^geo:wktLiteral .
+
+wd:Q689448  rdfs:label  "カナダ太平洋航空402便着陸失敗事故"@ja , "Vuelo 402 de Canadian Pacific Air Lines"@es , "Canadian-Pacific-Airlines-Flug 402"@de ;
+        wdt:P31     wd:Q744913 ;
+        wdt:P625    "Point(139.8065 35.5377)"^^geo:wktLiteral .

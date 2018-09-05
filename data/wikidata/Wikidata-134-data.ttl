@@ -37,14 +37,17 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q4577  rdfs:label  "سفر أيوب"@ar , "Libro de Chob"@an , "Job"@en , "Job"@af ;
+wd:Q185787  rdfs:label  "Was für ein schöner Sonntag!"@de ;
         wdt:P31     wd:Q7725634 .
 
 wd:Q178091  rdfs:label  "Abschied von den Eltern"@de , "Раздяла с родителите"@bg ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q2222  rdfs:label  "كوخ العم توم"@ar , "Tom dayının daxması"@az , "Чичо Томовата колиба"@bg ;
+wd:Q2222  rdfs:label  "Tom dayının daxması"@az , "Uncle Tom's Cabin"@en , "كوخ العم توم"@ar ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q185787  rdfs:label  "Was für ein schöner Sonntag!"@de ;
+wd:Q209719  rdfs:label  "II Samuel"@an , "سفر صموئيل الثاني"@ar , "2. Buach Samuel"@bar ;
+        wdt:P31     wd:Q7725634 .
+
+wd:Q4577  rdfs:label  "Job"@en , "Iov"@ro ;
         wdt:P31     wd:Q7725634 .

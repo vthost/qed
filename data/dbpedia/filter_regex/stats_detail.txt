@@ -1,3 +1,7 @@
 qid;qtriples;cqs;cqs-with-data;triples;features
-DBpedia-q141622;4;4;4;16;FILTER,ORDER\_BY,REGEX
-DBpedia-q7786;3;2;2;6;FILTER,OFFSET,OPTIONAL,ORDER\_BY,REGEX
+DBpedia-q141622;4;4;4;16;Filter,Order\_by,Regex
+DBpedia-q52066;9;11;0;0;Filter,Offset,Optional,Order\_by,Regex
+DBpedia-q532;15;11;0;0;Filter,Offset,Optional,Order\_by,Regex,Union
+DBpedia-q7786;3;2;2;6;Filter
+DBpedia-q8964;3;2;0;0;Filter
+DBpedia-q95841;5;2;0;0;Filter

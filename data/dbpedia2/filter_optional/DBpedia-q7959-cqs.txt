@@ -1,0 +1,240 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") )
+    { <http://dbpedia.org/resource/Funk_carioca>
+                foaf:depiction  ?img
+    }
+    { <http://dbpedia.org/resource/Funk_carioca>
+                dbpprop:popularity  ?popularity
+    }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( ! ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") ) )
+    { <http://dbpedia.org/resource/Funk_carioca>
+                foaf:depiction  ?img
+    }
+    { <http://dbpedia.org/resource/Funk_carioca>
+                dbpprop:popularity  ?popularity
+    }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  foaf:depiction  ?img
+                      }
+    { <http://dbpedia.org/resource/Funk_carioca>
+                dbpprop:popularity  ?popularity
+    }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( ! ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") ) )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  foaf:depiction  ?img
+                      }
+    { <http://dbpedia.org/resource/Funk_carioca>
+                dbpprop:popularity  ?popularity
+    }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") )
+    { <http://dbpedia.org/resource/Funk_carioca>
+                foaf:depiction  ?img
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  dbpprop:popularity  ?popularity
+                      }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( ! ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") ) )
+    { <http://dbpedia.org/resource/Funk_carioca>
+                foaf:depiction  ?img
+    }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  dbpprop:popularity  ?popularity
+                      }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  foaf:depiction  ?img
+                      }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  dbpprop:popularity  ?popularity
+                      }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:label ?name .
+    <http://dbpedia.org/resource/Funk_carioca> rdfs:comment ?abstract .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:page ?wikipedia .
+    <http://dbpedia.org/resource/Funk_carioca> dbpprop:popularity ?popularity .
+    <http://dbpedia.org/resource/Funk_carioca> foaf:depiction ?img .
+  }
+WHERE
+  { FILTER ( ! ( langMatches(lang(?name), "EN") && langMatches(lang(?abstract), "EN") ) )
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  foaf:depiction  ?img
+                      }
+    FILTER NOT EXISTS { <http://dbpedia.org/resource/Funk_carioca>
+                                  dbpprop:popularity  ?popularity
+                      }
+    <http://dbpedia.org/resource/Funk_carioca>
+              rdfs:label    ?name ;
+              rdfs:comment  ?abstract ;
+              foaf:page     ?wikipedia
+  }
+LIMIT   3
+
+----------------------------------------------

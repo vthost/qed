@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q539614  rdfs:label  "H.L. Hunley"@da , "CSS H. L. Hunley"@cs , "C.S.S. Hunley"@co ;
-        wdt:P61     wd:Q338532 .
+wd:Q27048453  rdfs:label  "Henry Smolinski"@ca , "Henry Smolinski"@br , "Henry Smolinski"@bar ;
+        wdt:P157    wd:Q609209 .
 
-wd:Q338532  rdfs:label  "Horace Lawson Hunley"@da ;
-        wdt:P157    wd:Q539614 .
+wd:Q609209  rdfs:label  "Mizar"@en ;
+        wdt:P61     wd:Q27048453 .

@@ -38,23 +38,17 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:Q756617-34ff87b0-4575-40f9-ba43-602107a8a598
+wds:Q16-70C898E9-476C-4285-8F6D-9EB91964B028
+        pq:P585   "1991-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P1082  "28171682"^^xsd:decimal .
+
+wds:Q16-55E8BB97-2241-44AD-97FF-6490B4601346
+        pq:P585   "1907-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P1082  "6411000"^^xsd:decimal .
+
+wds:Q16-cb0d6c67-41fb-d7b2-76e2-6b58d2e2095f
         pq:P585   "2016-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P1082  "5707251"^^xsd:decimal .
+        ps:P1082  "36155487"^^xsd:decimal .
 
-wd:Q756617  p:P1082  wds:Q756617-34ff87b0-4575-40f9-ba43-602107a8a598 ;
+wd:Q16  p:P1082  wds:Q16-55E8BB97-2241-44AD-97FF-6490B4601346 , wds:Q16-70C898E9-476C-4285-8F6D-9EB91964B028 , wds:Q16-cb0d6c67-41fb-d7b2-76e2-6b58d2e2095f ;
         wdt:P31  wd:Q6256 .
-
-wds:Q40362-e772b041-42e7-3b9f-2846-97ae2fff1286
-        pq:P585   "2010-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P1082  "502585"^^xsd:decimal .
-
-wd:Q219060  p:P1082  wds:Q219060-7f4dd90a-41d1-8e3c-42a7-b6a4bd78d07d ;
-        wdt:P31  wd:Q6256 .
-
-wd:Q40362  p:P1082  wds:Q40362-e772b041-42e7-3b9f-2846-97ae2fff1286 ;
-        wdt:P31  wd:Q6256 .
-
-wds:Q219060-7f4dd90a-41d1-8e3c-42a7-b6a4bd78d07d
-        pq:P585   "2014-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P1082  "4550368"^^xsd:decimal .

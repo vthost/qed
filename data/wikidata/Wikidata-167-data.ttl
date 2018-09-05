@@ -37,21 +37,23 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:Q558796-3b757c22-4afe-2b3f-e967-371889854360
-        prov:wasDerivedFrom  wdref:d80bbd0d2a4449eaf5ea828236de5ab13075e32b .
+wd:Q7989577  p:P646  wds:Q7989577-11C87F74-EE37-490C-A0BC-BEECD3677CEA .
 
-wds:q558796-5CDED8E5-7C7C-4DFA-9D13-FE8D6F7477BC
-        prov:wasDerivedFrom  wdref:d80bbd0d2a4449eaf5ea828236de5ab13075e32b .
+wds:Q7908005-8B293864-6D47-466C-882C-45F0AD6737CF
+        prov:wasDerivedFrom  wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f .
 
-wd:P2701  wikibase:reference  pr:P2701 ;
+wd:P459  wikibase:reference  pr:P459 ;
         wdt:P31             wd:Q15720608 .
 
-wd:Q558796  p:P1448  wds:Q558796-12936d0b-4d6b-7d1e-7761-db4ff7f29c2c ;
-        p:P439   wds:q558796-5CDED8E5-7C7C-4DFA-9D13-FE8D6F7477BC ;
-        p:P571   wds:Q558796-3b757c22-4afe-2b3f-e967-371889854360 .
+wds:Q7989577-11C87F74-EE37-490C-A0BC-BEECD3677CEA
+        prov:wasDerivedFrom  wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f .
 
-wds:Q558796-12936d0b-4d6b-7d1e-7761-db4ff7f29c2c
-        prov:wasDerivedFrom  wdref:d80bbd0d2a4449eaf5ea828236de5ab13075e32b .
+wd:Q7919977  p:P646  wds:Q7919977-F64370DA-4392-4A43-A27F-53896BE89105 .
 
-wdref:d80bbd0d2a4449eaf5ea828236de5ab13075e32b
-        pr:P2701  wd:Q42332 .
+wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f
+        pr:P459  wd:Q20680025 .
+
+wds:Q7919977-F64370DA-4392-4A43-A27F-53896BE89105
+        prov:wasDerivedFrom  wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f .
+
+wd:Q7908005  p:P646  wds:Q7908005-8B293864-6D47-466C-882C-45F0AD6737CF .

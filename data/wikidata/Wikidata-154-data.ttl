@@ -38,16 +38,16 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q19186181  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Catharina%20van%20Hemessen%20-%20Girl%20at%20the%20Virginal.jpg> ;
+wd:Q17780700  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/SA%201758-Aalmoezeniers%20op%20huisbezoek-Een%20aalmoezenier%20vergezeld%20door%20de%20hoofdprovoost%20brengt%20een%20huisbezoek%20bij%20de%20armen.jpg> ;
         wdt:P31   wd:Q3305213 ;
-        wdt:P350  "7600" .
-
-wd:Q18011072  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Hals%20-%20portrait%20of%20a%20woman%20clasping%20her%20hands%20and%20holding%20an%20open%20book.jpg> ;
-        wdt:P31   wd:Q3305213 ;
-        wdt:P350  "141967" .
+        wdt:P350  "1300" .
 
 wd:P350  wdt:P1630  "https://rkd.nl/explore/images/$1" .
 
-wd:Q27304843  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Visit%20to%20the%20nursery%2C%20by%20Matthijs%20Naiveu.jpg> ;
+wd:Q17897294  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/George%20des%20Mar%C3%A9es%20-%20Esther%20Barbara%20Blommarts-Sandrart%20%281651-ca.%201730%29%20-%20SA%2040408%20-%20Amsterdam%20Museum.jpg> ;
         wdt:P31   wd:Q3305213 ;
-        wdt:P350  "1428" .
+        wdt:P350  "133830" .
+
+wd:Q27006588  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Crijn%20Hendricksz.%20Volmarijn%20-%20Christus%20in%20Emma%C3%BCs%20-%2064457%20-%20Museum%20Rotterdam.jpg> ;
+        wdt:P31   wd:Q3305213 ;
+        wdt:P350  "1736" .

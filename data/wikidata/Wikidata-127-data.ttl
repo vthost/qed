@@ -38,17 +38,15 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q11081  rdfs:label  "Alzheimers disease"@en .
-
-wd:Q2840  rdfs:label  "influenza"@en , "Gripp"@lb , "Gripp"@et , "Грипп"@ky .
+wd:Q2840  rdfs:label  "influenza"@en , "إنفلونزا"@ar , "Gripe"@an , "Griep"@af .
 
 wd:Q11891  wdt:P39  wd:Q11696 ;
+        wdt:P509  wd:Q12090 .
+
+wd:Q11896  wdt:P39  wd:Q11696 ;
         wdt:P509  wd:Q12090 .
 
 wd:Q35678  wdt:P39  wd:Q11696 ;
         wdt:P509  wd:Q2840 .
 
 wd:Q12090  rdfs:label  "cholera"@en .
-
-wd:Q9960  wdt:P39  wd:Q11696 ;
-        wdt:P509  wd:Q11081 .

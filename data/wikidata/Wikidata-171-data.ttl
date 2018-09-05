@@ -37,25 +37,31 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q30650  p:P1036  wds:Q30650-beda7679-4496-6da7-5a08-0d5f8d618b59 .
-
-wd:Q34592  p:P1036  wds:Q34592-df07e4d5-45e2-b832-2b8b-3468d5729deb .
-
-wd:Q34373  p:P1036  wds:Q34373-409733e5-4057-a60b-b5a8-afbabfb38b5a .
-
-wds:Q30650-beda7679-4496-6da7-5a08-0d5f8d618b59
+wds:Q431-E352A89F-64A8-4307-809F-595061E29677
         wikibase:rank  wikibase:DeprecatedRank ;
-        ps:P1036       "2--623" .
+        ps:P31         wd:Q28598684 .
+
+wd:Q431  p:P31  wds:Q431-E352A89F-64A8-4307-809F-595061E29677 .
+
+wd:P47  wikibase:claim              p:P47 ;
+        wikibase:statementProperty  ps:P47 .
+
+wd:P31  wikibase:claim              p:P31 ;
+        wikibase:statementProperty  ps:P31 .
+
+wds:Q148-3ECEF26E-49EB-41A2-A2F9-9FF36D4BC6D9
+        wikibase:rank  wikibase:DeprecatedRank ;
+        ps:P47         wd:Q15180 .
+
+wd:Q1533  p:P1036  wds:Q1533-1c02c438-4c59-1651-bca5-e5a6a73a9803 .
 
 wd:P1036  wikibase:claim            p:P1036 ;
         wikibase:statementProperty  ps:P1036 .
 
-wds:Q34373-409733e5-4057-a60b-b5a8-afbabfb38b5a
+wds:Q1533-1c02c438-4c59-1651-bca5-e5a6a73a9803
         wikibase:rank  wikibase:DeprecatedRank ;
-        ps:P1036       "2--4532" .
-
-wds:Q34592-df07e4d5-45e2-b832-2b8b-3468d5729deb
-        wikibase:rank  wikibase:DeprecatedRank ;
-        ps:P1036       "2--4533" .
+        ps:P1036       "2--877" .
 
 hint:Query  hint:optimizer  "None" .
+
+wd:Q148  p:P47  wds:Q148-3ECEF26E-49EB-41A2-A2F9-9FF36D4BC6D9 .

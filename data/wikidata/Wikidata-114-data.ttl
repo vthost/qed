@@ -41,11 +41,11 @@ wd:Q5203268  rdfs:label  "D-Lib Magazine"@da , "D-Lib Magazine"@de , "D-Lib Maga
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q199655 , wd:Q16387 , wd:Q13420675 .
 
-wd:Q6295097  rdfs:label  "Journal of Documentation"@de , "Journal of Documentation"@da , "Journal of Documentation"@ca ;
+wd:Q6295441  rdfs:label  "Journal of Librarianship and Information Science"@en , "Journal of Librarianship and Information Science"@de , "Journal of Librarianship and Information Science"@da ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q13420675 , wd:Q16387 , wd:Q199655 .
 
-wd:Q80802  rdfs:label  "International Journal of Language & Communication Disorders"@fi , "International Journal of Language & Communication Disorders"@en , "International Journal of Language & Communication Disorders"@da ;
+wd:Q72223  rdfs:label  "European Journal of Anaesthesiology"@fi , "European Journal of Anaesthesiology"@en , "European Journal of Anaesthesiology"@da ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q13420675 , wd:Q16387 , wd:Q199655 .
 

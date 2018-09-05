@@ -38,14 +38,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q92644  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Professional%20Developers%20Conference%202009%20Technical%20Leaders%20Panel%206.jpg> ;
-        wdt:P2021  "6"^^xsd:decimal ;
+wd:Q92743  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Dr%20Vint%20Cerf%20ForMemRS.jpg> ;
+        wdt:P2021  "2"^^xsd:decimal ;
         wdt:P485   wd:Q964035 .
 
-wd:Q476466  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Martin-Hellman.jpg> ;
-        wdt:P2021  "3"^^xsd:decimal ;
+wd:Q1384851  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Genegolub.jpg> ;
+        wdt:P2021  "2"^^xsd:decimal ;
         wdt:P485   wd:Q964035 .
 
-wd:Q92614  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Douglas%20Engelbart%20in%202008.jpg> ;
-        wdt:P2021  "6"^^xsd:decimal ;
+wd:Q2644293  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/A.%20Quarteroni%202.jpg> ;
+        wdt:P2021  "4"^^xsd:decimal ;
         wdt:P485   wd:Q964035 .

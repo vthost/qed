@@ -1,0 +1,341 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( lang(?a) = "en" )
+      ?r  do:abstract  ?a
+    }
+    { ?r  dp:birthdate  ?b }
+    { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?a) = "en" ) )
+      ?r  do:abstract  ?a
+    }
+    { ?r  dp:birthdate  ?b }
+    { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?r  do:abstract  ?a
+                        FILTER ( lang(?a) = "en" )
+                      }
+    { ?r  dp:birthdate  ?b }
+    { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( lang(?a) = "en" )
+      ?r  do:abstract  ?a
+    }
+    FILTER NOT EXISTS { ?r  dp:birthdate  ?b }
+    { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?a) = "en" ) )
+      ?r  do:abstract  ?a
+    }
+    FILTER NOT EXISTS { ?r  dp:birthdate  ?b }
+    { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?r  do:abstract  ?a
+                        FILTER ( lang(?a) = "en" )
+                      }
+    FILTER NOT EXISTS { ?r  dp:birthdate  ?b }
+    { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( lang(?a) = "en" )
+      ?r  do:abstract  ?a
+    }
+    { ?r  dp:birthdate  ?b }
+    FILTER NOT EXISTS { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?a) = "en" ) )
+      ?r  do:abstract  ?a
+    }
+    { ?r  dp:birthdate  ?b }
+    FILTER NOT EXISTS { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?r  do:abstract  ?a
+                        FILTER ( lang(?a) = "en" )
+                      }
+    { ?r  dp:birthdate  ?b }
+    FILTER NOT EXISTS { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( lang(?a) = "en" )
+      ?r  do:abstract  ?a
+    }
+    FILTER NOT EXISTS { ?r  dp:birthdate  ?b }
+    FILTER NOT EXISTS { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  do:   <http://dbpedia.org/ontology/>
+PREFIX  dp:   <http://dbpedia.org/property/>
+PREFIX  dr:   <http://dbpedia.org/resource/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?r rdf:type do:Actor .
+    ?r dp:name ?n .
+    ?r dp:birthdate ?b .
+    ?r do:abstract ?a .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?a) = "en" ) )
+      ?r  do:abstract  ?a
+    }
+    FILTER NOT EXISTS { ?r  dp:birthdate  ?b }
+    FILTER NOT EXISTS { ?r  dp:name  ?n }
+    ?r  rdf:type  do:Actor
+  }
+LIMIT   3
+
+----------------------------------------------

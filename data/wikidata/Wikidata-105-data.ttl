@@ -38,14 +38,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q9178422  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mariner%206and7.gif> ;
+wd:Q1041855  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mars6.gif> ;
         wdt:P31   wd:Q26529 ;
-        wdt:P619  "1969-03-27T00:00:00Z"^^xsd:dateTime .
+        wdt:P619  "1973-08-09T00:00:00Z"^^xsd:dateTime .
 
-wd:Q11699464  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Pioneer-6-9.jpg> ;
+wd:Q935149  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Hiten.gif> ;
         wdt:P31   wd:Q26529 ;
-        wdt:P619  "1965-12-16T00:00:00Z"^^xsd:dateTime .
+        wdt:P619  "1990-01-24T00:00:00Z"^^xsd:dateTime .
 
-wd:Q2156739  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mars%20Orbiter%20Mission%20-%20India%20-%20ArtistsConcept.jpg> ;
+wd:Q909664  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mars6.gif> ;
         wdt:P31   wd:Q26529 ;
-        wdt:P619  "2013-11-05T00:00:00Z"^^xsd:dateTime .
+        wdt:P619  "1973-08-05T00:00:00Z"^^xsd:dateTime .

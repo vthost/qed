@@ -38,14 +38,18 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q390151  rdfs:label  "Ukonkivi"@fi , "Ukonkivi"@es , "Ukonkivi"@de ;
+wd:Q390151  rdfs:label  "Ukonkivi"@en ;
         wdt:P31     wd:Q839954 ;
         wdt:P625    "Point(27.292305555 68.938777777)"^^geo:wktLiteral .
 
-wd:Q189616  rdfs:label  "Ellora Caves"@en ;
+wd:Q318422  rdfs:label  "Quirigua"@bar , "كيوريجوا"@ar , "Quiriguá"@af ;
         wdt:P31     wd:Q839954 ;
-        wdt:P625    "Point(75.17757 20.02339)"^^geo:wktLiteral , "Point(75.179166666 20.026388888)"^^geo:wktLiteral .
+        wdt:P625    "Point(-89.040277777 15.269444444)"^^geo:wktLiteral .
 
-wd:Q189538  rdfs:label  "Zengpiyan"@en ;
+wd:Q391215  rdfs:label  "Volubilis"@en ;
         wdt:P31     wd:Q839954 ;
-        wdt:P625    "Point(110.277778 25.215556)"^^geo:wktLiteral .
+        wdt:P625    "Point(-5.553611111 34.071111111)"^^geo:wktLiteral .
+
+wd:Q113197  rdfs:label  "culuba"@en ;
+        wdt:P31     wd:Q839954 ;
+        wdt:P625    "Point(-87.84616667 21.11480556)"^^geo:wktLiteral .

@@ -37,15 +37,17 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q1747150  rdfs:label  "Halo"@en .
-
-wd:Q55440409  wdt:P1080  wd:Q18043309 ;
-        wdt:P31    wd:Q2775969 .
+wd:Q1747150  rdfs:label  "Halo"@en , "Halo"@id , "Halo"@he , "Halo"@fi .
 
 wd:Q55685811  wdt:P1080  wd:Q1747150 ;
         wdt:P31    wd:Q2775969 .
 
-wd:Q18043309  rdfs:label  "Star Trek multiverse"@en , "univers Star Trek"@ca , "Star Trek"@ro , "Ѕвездени патеки"@mk .
+wd:Q3551295  rdfs:label  "Star Wars expanded to other media"@en .
+
+wd:Q18043309  rdfs:label  "Star Trek multiverse"@en .
+
+wd:Q53384550  wdt:P1080  wd:Q3551295 ;
+        wdt:P31    wd:Q2775969 .
 
 wd:Q55313125  wdt:P1080  wd:Q18043309 ;
         wdt:P31    wd:Q2775969 .

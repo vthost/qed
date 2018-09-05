@@ -1,1 +1,2 @@
 qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q532;15;11;0;0;Filter,Offset,Optional,Order\_by,Regex,Union

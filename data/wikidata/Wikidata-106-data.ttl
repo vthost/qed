@@ -44,16 +44,16 @@ wd:Q310924  wdt:P106  wd:Q11631 ;
 
 wd:Q979821  wdt:P625  "Point(-100.274 35.4425)"^^geo:wktLiteral .
 
-wd:Q196798  wdt:P625  "Point(35.016666666 57.883333333)"^^geo:wktLiteral .
+wd:Q2792  wdt:P625  "Point(37.583333333 53.916666666)"^^geo:wktLiteral .
 
-wd:Q467732  wdt:P106  wd:Q11631 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/U2mir%20musa%20manarov.jpg> ;
-        wdt:P19   wd:Q9248 ;
-        wdt:P569  "1951-03-22T00:00:00Z"^^xsd:dateTime .
+wd:Q455669  wdt:P106  wd:Q11631 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Soviet%20Union%201969%20CPA%203724%20stamp%20from%20sheet%20Yevgeny%20Khrunov%20cropped.jpg> ;
+        wdt:P19   wd:Q2792 ;
+        wdt:P569  "1933-09-10T00:00:00Z"^^xsd:dateTime .
 
-wd:Q467623  wdt:P106  wd:Q11631 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/USSR%20stamp%20Oleg.jpg> ;
-        wdt:P19   wd:Q196798 ;
-        wdt:P569  "1933-01-06T00:00:00Z"^^xsd:dateTime .
+wd:Q353687  wdt:P106  wd:Q11631 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/TU%C3%82N%20PHAM.JPG> ;
+        wdt:P19   wd:Q36681 ;
+        wdt:P569  "1947-02-14T00:00:00Z"^^xsd:dateTime .
 
-wd:Q9248  wdt:P625  "Point(49.835183333 40.366655555)"^^geo:wktLiteral .
+wd:Q36681  wdt:P625  "Point(106.333333333 20.5)"^^geo:wktLiteral .

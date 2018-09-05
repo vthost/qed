@@ -37,16 +37,20 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q37859976  rdfs:label  "A Glimpse into Babel: An Analysis of Multilinguality in Wikidata"@en ;
-        wdt:P31     wd:Q13442814 ;
-        wdt:P50     wd:Q18016466 .
-
-wd:Q18016466  rdfs:label  "Lydia Pintscher"@af , "Lydia Pintscher"@an , "ليديا بينتشر"@ar , "Lydia Pintscher"@en , "Lydia Pintscher"@da .
-
 wd:Q26707522  rdfs:label  "Enabling Open Science: Wikidata for Research (Wiki4R)"@en ;
         wdt:P31     wd:Q13442814 ;
         wdt:P50     wd:Q18016466 .
 
-wd:Q24074986  rdfs:label  "From Freebase to Wikidata: The Great Migration"@en , "From Freebase to Wikidata: The Great Migration"@fr , "From Freebase to Wikidata: The Great Migration"@es , "From Freebase to Wikidata: The Great Migration"@da ;
+wd:Q18016466  rdfs:label  "Lydia Pintscher"@da , "Lydia Pintscher"@de , "Lydia Pintscher"@en , "לידיה פינצ'ר"@he .
+
+wd:Q29644957  rdfs:label  "Wikidata: How We Brought Structured Data to Wikipedia"@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P50     wd:Q18016466 .
+
+wd:Q37859976  rdfs:label  "A Glimpse into Babel: An Analysis of Multilinguality in Wikidata"@en , "A Glimpse into Babel: An Analysis of Multilinguality in Wikidata"@es , "A Glimpse into Babel: An Analysis of Multilinguality in Wikidata"@de , "A Glimpse into Babel: An Analysis of Multilinguality in Wikidata"@da ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P50     wd:Q18016466 .
+
+wd:Q24074986  rdfs:label  "From Freebase to Wikidata: The Great Migration"@en ;
         wdt:P31     wd:Q13442814 ;
         wdt:P50     wd:Q18016466 .

@@ -1,8 +1,3 @@
 config& qs& qsize &cqs& cqs-with-data& triples\\hline
-FI&2&4&4&87&13\\\hline
-UN&1&12&11&27&25\\\hline
-FI,UN&3&3&5&56&5\\\hline
-FI,OF,OP&1&4&9&66&10\\\hline
-FI,OR,RE&1&4&4&100&16\\\hline
-OF,OP,UN&1&4&11&18&6\\\hline
-FI,OF,OP,OR,RE&1&3&2&100&6\\\hline
+&27&6&8&20&3\\\hline
+RE&9&11&10&11&1\\\hline

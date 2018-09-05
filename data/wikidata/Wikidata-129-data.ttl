@@ -39,32 +39,26 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q65682  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/1571%20Hans-J%C3%BCrgen%20B%C3%A4umler.JPG> ;
+wd:Q43790  wdt:P106  wd:Q33999 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%20Tr%C3%BCbner%20Schauspieler%20Konrad%20Dreher.jpg> ;
+        wdt:P31   wd:Q5 ;
+        wdt:P569  "1859-10-30T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570  "1944-12-07T00:00:00Z"^^xsd:dateTime , "1944-12-06T00:00:00Z"^^xsd:dateTime .
+
+wd:Q66011  wdt:P106  wd:Q33999 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Joachim%20Kr%C3%B3l%20%28Berlin%20Film%20Festival%202009%29%20small-sized.jpg> ;
         wdt:P31   wd:Q5 .
 
-wd:Q26184  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Nikolai%20Simonov.JPG> ;
-        wdt:P31   wd:Q5 ;
-        wdt:P569  "1901-12-04T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570  "1973-04-20T00:00:00Z"^^xsd:dateTime .
-
-wd:Q32505  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Henry%20Irving%20portrait.jpg> ;
-        wdt:P31   wd:Q5 ;
-        wdt:P569  "1838-02-06T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570  "1905-10-13T00:00:00Z"^^xsd:dateTime .
-
-wd:Q32808  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Freiherr%20von%20Klesheim%201882%20Wiener%20Salonblatt.png> ;
-        wdt:P31   wd:Q5 ;
-        wdt:P569  "1812-02-09T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570  "1884-07-06T00:00:00Z"^^xsd:dateTime .
-
-wd:Q66742  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Eva%20Habermann%20%28Berlin%20Film%20Festival%202009%29%20revised.jpg> ;
+wd:Q68054  wdt:P106  wd:Q33999 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gudrun%20Landgrebe%20%282%29.JPG> ;
         wdt:P31   wd:Q5 .
 
-wd:Q66548  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Collien%20Fernandes%20-%20Jetix-Award%20-%20YOU%202008%20Berlin%20%286848%29.jpg> ;
+wd:Q42786  wdt:P106  wd:Q33999 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Audrey%20Hepburn%201956.jpg> ;
+        wdt:P31   wd:Q5 ;
+        wdt:P569  "1929-05-04T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570  "1993-01-20T00:00:00Z"^^xsd:dateTime .
+
+wd:Q65550  wdt:P106  wd:Q33999 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Katja%20Woywood%20Alarm%20f%C3%BCr%20Cobra%2011.jpg> ;
         wdt:P31   wd:Q5 .

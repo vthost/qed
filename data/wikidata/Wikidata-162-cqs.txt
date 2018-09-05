@@ -1,4 +1,4 @@
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 

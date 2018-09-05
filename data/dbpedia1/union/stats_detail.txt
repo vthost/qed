@@ -1,0 +1,16 @@
+qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q101209;6;4;2;12;Union
+DBpedia-q1099;3;11;0;0;Filter,Union
+DBpedia-q119324;4;11;0;0;Filter,Union
+DBpedia-q14085;12;11;3;25;Union
+DBpedia-q193646;5;11;0;0;Union
+DBpedia-q201755;4;11;0;0;Filter,Union
+DBpedia-q221970;6;4;2;12;Union
+DBpedia-q232836;3;8;3;11;Order\_by,Regex,Union
+DBpedia-q236052;6;11;5;1;Union
+DBpedia-q253122;3;8;3;11;Order\_by,Regex,Union
+DBpedia-q273843;3;11;5;13;Order\_by,Regex,Union
+DBpedia-q300496;13;11;0;0;Filter,Union
+DBpedia-q33334;13;11;0;0;Union
+DBpedia-q39020;5;8;0;0;Union
+DBpedia-q83335;4;11;2;6;Filter,Union

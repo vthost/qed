@@ -38,26 +38,26 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q310843  wdt:P1971  "1"^^xsd:decimal ;
+wd:Q2496  wdt:P1971  "1"^^xsd:decimal ;
         wdt:P31    wd:Q5 ;
-        wdt:P569   "1819-09-07T00:00:00Z"^^xsd:dateTime .
+        wdt:P569   "1897-02-04T00:00:00Z"^^xsd:dateTime .
 
-wd:Q310852  wdt:P1971  "1"^^xsd:decimal ;
+wd:Q27064031  wdt:P1971  "0"^^xsd:decimal ;
         wdt:P31    wd:Q5 ;
-        wdt:P569   "1823-03-23T00:00:00Z"^^xsd:dateTime .
+        wdt:P569   "1992-04-24T00:00:00Z"^^xsd:dateTime .
 
-wd:Q229056  wdt:P1971  "1"^^xsd:decimal ;
+wd:Q384990  wdt:P1971  "1"^^xsd:decimal ;
         wdt:P31    wd:Q5 ;
-        wdt:P569   "1970-01-31T00:00:00Z"^^xsd:dateTime .
+        wdt:P569   "1946-08-28T00:00:00Z"^^xsd:dateTime .
 
-wd:Q27768263  wdt:P1971  "0"^^xsd:decimal ;
+wd:Q15153  wdt:P1971  "1"^^xsd:decimal ;
         wdt:P31    wd:Q5 ;
-        wdt:P569   "1876-06-04T00:00:00Z"^^xsd:dateTime .
+        wdt:P569   "1890-01-16T00:00:00Z"^^xsd:dateTime .
 
-wd:Q427388  wdt:P1971  "1"^^xsd:decimal ;
+wd:Q15156  wdt:P1971  "1"^^xsd:decimal ;
         wdt:P31    wd:Q5 ;
-        wdt:P569   "1909-04-29T00:00:00Z"^^xsd:dateTime .
+        wdt:P569   "1900-01-10T00:00:00Z"^^xsd:dateTime .
 
-wd:Q229394  wdt:P1971  "1"^^xsd:decimal ;
+wd:Q78183  wdt:P1971  "1"^^xsd:decimal ;
         wdt:P31    wd:Q5 ;
-        wdt:P569   "1970-03-27T00:00:00Z"^^xsd:dateTime .
+        wdt:P569   "1970-02-10T00:00:00Z"^^xsd:dateTime .

@@ -1,0 +1,288 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { { FILTER ( lang(?description_de) = "de" )
+      ?film  rdfs:comment  ?description_de
+    }
+    { FILTER ( lang(?description_en) = "en" )
+      ?film  rdfs:comment  ?description_en
+    }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?description_de) = "de" ) )
+      ?film  rdfs:comment  ?description_de
+    }
+    { FILTER ( lang(?description_en) = "en" )
+      ?film  rdfs:comment  ?description_en
+    }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?film  rdfs:comment  ?description_de
+                        FILTER ( lang(?description_de) = "de" )
+                      }
+    { FILTER ( lang(?description_en) = "en" )
+      ?film  rdfs:comment  ?description_en
+    }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { { FILTER ( lang(?description_de) = "de" )
+      ?film  rdfs:comment  ?description_de
+    }
+    { FILTER ( ! ( lang(?description_en) = "en" ) )
+      ?film  rdfs:comment  ?description_en
+    }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?description_de) = "de" ) )
+      ?film  rdfs:comment  ?description_de
+    }
+    { FILTER ( ! ( lang(?description_en) = "en" ) )
+      ?film  rdfs:comment  ?description_en
+    }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?film  rdfs:comment  ?description_de
+                        FILTER ( lang(?description_de) = "de" )
+                      }
+    { FILTER ( ! ( lang(?description_en) = "en" ) )
+      ?film  rdfs:comment  ?description_en
+    }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { { FILTER ( lang(?description_de) = "de" )
+      ?film  rdfs:comment  ?description_de
+    }
+    FILTER NOT EXISTS { ?film  rdfs:comment  ?description_en
+                        FILTER ( lang(?description_en) = "en" )
+                      }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?description_de) = "de" ) )
+      ?film  rdfs:comment  ?description_de
+    }
+    FILTER NOT EXISTS { ?film  rdfs:comment  ?description_en
+                        FILTER ( lang(?description_en) = "en" )
+                      }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia2: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?film rdf:type <http://dbpedia.org/ontology/Film> .
+    ?film dbpedia2:starring :Keanu_Reeves .
+    ?film rdfs:comment ?description_en .
+    ?film rdfs:comment ?description_de .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?film  rdfs:comment  ?description_de
+                        FILTER ( lang(?description_de) = "de" )
+                      }
+    FILTER NOT EXISTS { ?film  rdfs:comment  ?description_en
+                        FILTER ( lang(?description_en) = "en" )
+                      }
+    ?film  rdf:type           <http://dbpedia.org/ontology/Film> ;
+           dbpedia2:starring  :Keanu_Reeves
+  }
+LIMIT   3
+
+----------------------------------------------

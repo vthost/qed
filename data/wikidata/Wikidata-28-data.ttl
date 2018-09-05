@@ -38,36 +38,38 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q50969  wdt:P136  wd:Q130232 ;
+wd:Q49003  wdt:P136  wd:Q130232 ;
         wdt:P31   wd:Q11424 ;
-        wdt:P577  "2000-09-21T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "1990-07-13T00:00:00Z"^^xsd:dateTime .
 
-wd:Q59503  wdt:P136  wd:Q130232 ;
+wd:Q52442  wdt:P136  wd:Q130232 ;
         wdt:P31   wd:Q11424 ;
-        wdt:P577  "2001-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "1933-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q130232  rdfs:label  "drama film"@en , "dramafilm"@nb , "Dram"@tr , "drama"@es .
+wd:Q130232  rdfs:label  "Драма"@sr-ec , "Drama"@sr-el , "డ్రామా"@te , "drama film"@en , "dramafilm"@nb , "Dram"@tr , "drama"@es .
 
-wd:Q59438  wdt:P136  wd:Q130232 ;
+wd:Q60506  wdt:P136  wd:Q130232 ;
         wdt:P31   wd:Q11424 ;
-        wdt:P577  "1999-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q51668  wdt:P136  wd:Q130232 ;
-        wdt:P31   wd:Q11424 ;
-        wdt:P577  "2004-04-02T00:00:00Z"^^xsd:dateTime , "2004-02-25T00:00:00Z"^^xsd:dateTime .
-
-wd:Q59501  wdt:P136  wd:Q130232 ;
-        wdt:P31   wd:Q11424 ;
-        wdt:P577  "1999-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "2011-11-24T00:00:00Z"^^xsd:dateTime .
 
 wd:Q59543  wdt:P136  wd:Q130232 ;
         wdt:P31   wd:Q11424 ;
-        wdt:P577  "2002-12-26T00:00:00Z"^^xsd:dateTime , "2001-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "2002-12-26T00:00:00Z"^^xsd:dateTime .
 
-wd:Q60021  wdt:P136  wd:Q130232 ;
+wd:Q51416  wdt:P136  wd:Q157443 ;
         wdt:P31   wd:Q11424 ;
-        wdt:P577  "1998-08-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "1997-09-11T00:00:00Z"^^xsd:dateTime .
 
-wd:Q38561  wdt:P136  wd:Q130232 ;
+wd:Q53095  wdt:P136  wd:Q157443 ;
         wdt:P31   wd:Q11424 ;
-        wdt:P577  "1969-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577  "1980-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q60296  wdt:P136  wd:Q130232 ;
+        wdt:P31   wd:Q11424 ;
+        wdt:P577  "2005-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q60487  wdt:P136  wd:Q130232 ;
+        wdt:P31   wd:Q11424 ;
+        wdt:P577  "2012-11-22T00:00:00Z"^^xsd:dateTime .
+
+wd:Q157443  rdfs:label  "comedy film"@en .

@@ -37,20 +37,16 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q172424  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Pope%20Sergius%20III.jpg> ;
-        wdt:P31  wd:Q5 ;
-        wdt:P39  wd:Q19546 .
-
 wd:Q2253264  wdt:P22  wd:Q161351 .
-
-wd:Q181959  wdt:P22  wd:Q172424 .
 
 wd:Q161351  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Innocent%20VIII.JPG> ;
         wdt:P31  wd:Q5 ;
         wdt:P39  wd:Q19546 .
 
-wd:Q22348311  wdt:P22  wd:Q173995 .
+wd:Q7293568  wdt:P22  wd:Q133001 .
 
-wd:Q173995  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Adrian%20II.jpg> ;
+wd:Q133001  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Tizian%20083b.jpg> ;
         wdt:P31  wd:Q5 ;
         wdt:P39  wd:Q19546 .
+
+wd:Q364023  wdt:P22  wd:Q133001 .

@@ -38,38 +38,34 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q377747  wdt:P136  wd:Q7749 ;
+wd:Q137804  wdt:P136  wd:Q3071 ;
         wdt:P31   wd:Q215380 ;
-        wdt:P571  "1950-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P571  "1991-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q163597  wdt:P136  wd:Q3071 ;
+wd:Q83440  rdfs:label  "country music"@en .
+
+wd:Q45981  rdfs:label  "rhythm and blues"@en .
+
+wd:Q25650  wdt:P136  wd:Q3071 ;
         wdt:P31   wd:Q215380 ;
-        wdt:P571  "1999-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P571  "2005-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q83440  rdfs:label  "country music"@en , "Кантры"@be , "Kantri musiqisi"@az , "Country"@ast .
-
-wd:Q7749  rdfs:label  "rock and roll"@en .
-
-wd:Q173180  wdt:P136  wd:Q3071 ;
+wd:Q178134  wdt:P136  wd:Q45981 ;
         wdt:P31   wd:Q215380 ;
-        wdt:P571  "2002-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P571  "1954-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q165846  wdt:P136  wd:Q3071 ;
+wd:Q18852  wdt:P136  wd:Q3071 ;
         wdt:P31   wd:Q215380 ;
-        wdt:P571  "1987-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P571  "1997-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q167408  wdt:P136  wd:Q83440 ;
         wdt:P31   wd:Q215380 ;
         wdt:P571  "1955-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q235858  rdfs:label  "folk music"@en .
+wd:Q235858  rdfs:label  "folk music"@en , "موسیقی فولکلور"@fa , "Folk music"@en-ca , "Volksmusik"@de .
 
 wd:Q59965  wdt:P136  wd:Q235858 ;
         wdt:P31   wd:Q215380 ;
         wdt:P571  "1957-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q3071  rdfs:label  "Punk"@de , "펑크 록"@ko , "بانك"@ckb , "punk rock"@en .
-
-wd:Q166006  wdt:P136  wd:Q3071 ;
-        wdt:P31   wd:Q215380 ;
-        wdt:P571  "1986-01-01T00:00:00Z"^^xsd:dateTime .
+wd:Q3071  rdfs:label  "Punk"@de , "Punko"@eo , "Punk"@an , "punk rock"@en .

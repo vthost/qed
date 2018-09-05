@@ -37,23 +37,23 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q27087990  p:P2699  wds:Q27087990-8d21b075-416b-97d1-e8d4-61bc8208fec6 .
+wd:Q27088182  p:P2699  wds:Q27088182-1b1c0721-4633-6c4a-1dcd-a14d1bd10d3e .
 
 wd:P2699  wikibase:claim            p:P2699 ;
         wikibase:statementProperty  ps:P2699 .
 
-wd:Q5188229  p:P2699  wds:Q5188229-be47152c-4ee8-6e8a-84ce-7b06457e3017 .
-
-wd:Q29211656  p:P2699  wds:Q29211656-aec16f96-442e-177f-3c63-c6ffcf769ff8 .
-
-wds:Q5188229-be47152c-4ee8-6e8a-84ce-7b06457e3017
+wds:Q27996491-048308b4-41a1-d1ff-9c31-0f26d9121494
         pq:P31    wd:Q27075870 ;
-        ps:P2699  <http://api.eventdata.crossref.org/api> .
+        ps:P2699  <https://api.opentrials.net/v1/swagger.yaml> .
 
-wds:Q29211656-aec16f96-442e-177f-3c63-c6ffcf769ff8
+wds:Q27088182-1b1c0721-4633-6c4a-1dcd-a14d1bd10d3e
         pq:P31    wd:Q27075870 ;
-        ps:P2699  <https://rebilly.github.io/ReDoc/?url=https://open-tggates-api.cloud.douglasconnect.com/v2/swagger.json> .
+        ps:P2699  <http://data.gramene.org/> .
 
-wds:Q27087990-8d21b075-416b-97d1-e8d4-61bc8208fec6
+wd:Q24088032  p:P2699  wds:Q24088032-6686a53a-4d2c-abf9-f56d-3f3eca8f9028 .
+
+wd:Q27996491  p:P2699  wds:Q27996491-048308b4-41a1-d1ff-9c31-0f26d9121494 .
+
+wds:Q24088032-6686a53a-4d2c-abf9-f56d-3f3eca8f9028
         pq:P31    wd:Q27075870 ;
-        ps:P2699  <http://webservice.bridgedb.org/> .
+        ps:P2699  <http://xmetdb.github.io/xmetdb-docs/> .

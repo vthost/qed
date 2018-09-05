@@ -40,14 +40,14 @@
 wd:Q20204100  wdt:P19  wd:Q73221 ;
         wdt:P39  wd:Q3044918 .
 
-wd:Q15781881  wdt:P19  wd:Q216990 ;
+wd:Q73221  wdt:P17  wd:Q55 .
+
+wd:Q2379348  wdt:P19  wd:Q101625 ;
         wdt:P39  wd:Q3044918 .
 
-wd:Q73221  wdt:P17  wd:Q142 , wd:Q55 .
-
-wd:Q216990  wdt:P17  wd:Q142 , wd:Q262 .
+wd:Q101625  wdt:P17  wd:Q1028 .
 
 wd:Q2246519  wdt:P19  wd:Q131818 ;
         wdt:P39  wd:Q3044918 .
 
-wd:Q131818  wdt:P17  wd:Q142 , wd:Q262 .
+wd:Q131818  wdt:P17  wd:Q262 .

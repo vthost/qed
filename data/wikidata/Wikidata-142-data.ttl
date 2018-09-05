@@ -38,15 +38,13 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q57845  wdt:P106  wd:Q36834 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Carolineamaliedenmark.jpg> ;
-        wdt:P19   wd:Q1748 .
-
 wd:Q64414  wdt:P106  wd:Q36834 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-1987-1023-055%2C%20Berlin%2C%20750-Jahr-Feier%2C%20Staatsakt%2C%20Konzert%2C%20Adam.jpg> ;
         wdt:P19   wd:Q1731 .
 
-wd:Q1748  wdt:P625  "Point(12.568888888 55.676111111)"^^geo:wktLiteral .
+wd:Q60908  wdt:P106  wd:Q36834 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Moritz%20Hauptmann.jpg> ;
+        wdt:P19   wd:Q1731 .
 
 wd:Q57879  wdt:P106  wd:Q36834 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%20M%C3%BCller%20by%20Schr%C3%B6ter.jpg> ;

@@ -1,0 +1,726 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    { FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ! ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    { FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?league  dbpedia-prop:teams  ?teams
+                        FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+                      }
+    { FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    { FILTER ( ! ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ! ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    { FILTER ( ! ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?league  dbpedia-prop:teams  ?teams
+                        FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+                      }
+    { FILTER ( ! ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    FILTER NOT EXISTS { ?league  dbpedia-prop:founded  ?founded
+                        FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+                      }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ! ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    FILTER NOT EXISTS { ?league  dbpedia-prop:founded  ?founded
+                        FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+                      }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?league  dbpedia-prop:teams  ?teams
+                        FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+                      }
+    FILTER NOT EXISTS { ?league  dbpedia-prop:founded  ?founded
+                        FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+                      }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    { FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Champions_League dbpedia-prop:redirect ?league .
+    ?league rdfs:label "Champions League"@en .
+    ?league dbpedia-prop:name "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdfs:label "Champions League"@en .
+    ?league foaf:name "Champions League" .
+    ?league rdf:type ?leagueType .
+    ?league skos:subject ?subject .
+    ?league dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?league foaf:page ?linkUrl .
+    ?league owl:sameAs ?sameAsUri .
+    ?league dbpedia-prop:founded ?founded .
+    ?league dbpedia-prop:teams ?teams .
+  }
+WHERE
+  { { FILTER ( ! ( ( datatype(?teams) = xsd:integer ) || ( datatype(?teams) = xsd:string ) ) )
+      ?league  dbpedia-prop:teams  ?teams
+    }
+    { FILTER ( ( datatype(?founded) = xsd:integer ) || ( datatype(?founded) = xsd:string ) )
+      ?league  dbpedia-prop:founded  ?founded
+    }
+    { { FILTER NOT EXISTS { ?league  foaf:page  ?linkUrl }
+        { ?league  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?league  rdf:type  ?leagueType
+                          FILTER regex(?leagueType, "http://dbpedia.org/class/yago/.*((SportsLeague)|(ballLeague)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((Sports_leagues)|(ball_League)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:.*((sports_league)|(football_league)).*", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :Champions_League
+                                    dbpedia-prop:redirect  ?league
+                        }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  dbpedia-prop:name  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+      FILTER NOT EXISTS { ?league  rdfs:label  "Champions League"@en }
+      FILTER NOT EXISTS { ?league  foaf:name  "Champions League" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

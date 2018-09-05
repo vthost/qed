@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q433224  wdt:P1163  "image/vnd.mozilla.apng" ;
-        wdt:P1195  "apng" , "png" ;
+wd:Q836370  wdt:P1163  "application/xml" , "text/xml" ;
+        wdt:P1195  "opml" ;
         wdt:P31    wd:Q235557 .
 
 wd:Q182293  wdt:P1195  "lit" ;
@@ -47,9 +47,9 @@ wd:Q182293  wdt:P1195  "lit" ;
 wd:Q296496  wdt:P1195  "arc" ;
         wdt:P31    wd:Q235557 .
 
-wd:Q33073902  wdt:P1163  "text/cache-manifest" ;
-        wdt:P1195  "appcache" ;
+wd:Q383305  wdt:P1195  "af" ;
         wdt:P31    wd:Q235557 .
 
-wd:Q296924  wdt:P1195  "art" ;
+wd:Q959950  wdt:P1163  "application/xml" ;
+        wdt:P1195  "xbrl" ;
         wdt:P31    wd:Q235557 .

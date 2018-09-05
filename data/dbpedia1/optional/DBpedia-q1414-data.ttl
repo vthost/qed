@@ -1,0 +1,4 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/resource/John_Stewart_%28musician%29>
+        rdfs:label  "John Stewart"@fi , "John Stewart (Musiker)"@de .

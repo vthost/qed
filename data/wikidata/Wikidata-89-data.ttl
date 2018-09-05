@@ -37,14 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q156767  wdt:P138  wd:Q46 ;
-        wdt:P225  "Sitta europaea" ;
+wd:Q597684  wdt:P138  wd:Q16 ;
+        wdt:P225  "Sitta canadensis" ;
         wdt:P31   wd:Q16521 .
 
-wd:Q15573489  wdt:P138  wd:Q41 ;
-        wdt:P225  "Silene graeca" ;
+wd:Q158793  wdt:P138  wd:Q23 ;
+        wdt:P225  "Washingtonia" ;
         wdt:P31   wd:Q16521 .
 
-wd:Q7398911  wdt:P138  wd:Q41 ;
-        wdt:P225  "Saga hellenica" ;
+wd:Q19838331  wdt:P138  wd:Q17 ;
+        wdt:P225  "Japanese encephalitis virus" ;
         wdt:P31   wd:Q16521 .

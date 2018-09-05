@@ -40,23 +40,23 @@
 wd:Q23  rdfs:label          "جورج واشنطن"@ar ;
         schema:description  "الرئيس الأول للولايات المتحدة الأمريكية"@ar .
 
-wd:Q7430  rdfs:label        "DNA"@en ;
-        schema:description  "DNA"@pt .
+wd:Q205892  rdfs:label      "data"@ast ;
+        schema:description  "data"@aln .
 
-wd:Q13390680  rdfs:label    "भारतीय राज्य"@hi ;
-        schema:description  "भारतीय राज्य"@hi .
+wd:Q4167836  rdfs:label     "kawan Wikimèdia"@ace ;
+        schema:description  "kawan Wikimèdia"@ace .
 
-wd:Q395  rdfs:label         "Riyaziyyat"@az ;
-        schema:description  "Riyaziyyat"@az .
+wd:Q463451  rdfs:label      "flor"@es ;
+        schema:description  "flor"@pt .
 
-wd:Q3   rdfs:label          "حياة"@ar , "vida"@ast , "Vida"@an ;
+wd:Q3   rdfs:label          "حياة"@ar , "vida"@ast , "জীৱন"@as ;
         schema:description  "doare materi gouest da dennañ energiezh diouzh e endro evit strujusaat"@br , "capacidá pa crecer y reproducise"@ast , "قدرة المادة على استخراج الطاقة من البيئة المحيطة من أجل التكاثر"@ar .
 
-wd:Q55829598  rdfs:label    "Life"@en ;
-        schema:description  "Life"@fr .
+wd:Q362  rdfs:label         "Ikkinchi jahon urushi"@uz ;
+        schema:description  "Ikkinchi jahon urushi"@uz .
 
-wd:Q648  rdfs:label         "Lille"@af ;
+wd:Q648  rdfs:label         "Lille"@ast ;
         schema:description  "Lille"@pcd .
 
-wd:Q323  rdfs:label         "মহাবিস্ফোরণ তত্ত্ব"@bn ;
-        schema:description  "মহাবিস্ফোরণ তত্ত্ব"@bn .
+wd:Q398  rdfs:label         "బహ్రయిన్"@te ;
+        schema:description  "బహ్రయిన్"@te .

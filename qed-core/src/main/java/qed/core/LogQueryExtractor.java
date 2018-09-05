@@ -28,7 +28,7 @@ public class LogQueryExtractor {
 				qexec.addParam("default-graph-uri", graphUri) ;
        	
             ResultSet rs = qexec.execSelect();
-            System.out.println(rs.hasNext());
+            
             while(rs.hasNext()) {
             		QuerySolution s = rs.next();  	
             		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());

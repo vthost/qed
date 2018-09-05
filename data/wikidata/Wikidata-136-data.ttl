@@ -37,11 +37,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q3278347  rdfs:label  "Mainet"@fr , "Mainet"@ca ;
+wd:Q3704089  rdfs:label  "De bello Gothico"@la , "De bello Gothico"@it ;
         wdt:P31     wd:Q37484 .
 
-wd:Q8275  rdfs:label  "Iliade"@it , "Iliada"@pl , "Ilias"@af , "الإلياذة"@ar , "Iliada"@an , "Iliad"@en ;
+wd:Q4166509  rdfs:label  "Doon Mohučský"@cs ;
         wdt:P31     wd:Q37484 .
 
-wd:Q1774828  rdfs:label  "Phoronis"@de ;
+wd:Q8275  rdfs:label  "Ilias"@af , "Ilias"@bar , "Ilias"@br , "الإلياذة"@ar , "Iliada"@an , "Iliad"@en ;
         wdt:P31     wd:Q37484 .

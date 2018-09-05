@@ -39,12 +39,12 @@
 
 wd:Q1050613  wdt:P569  "-2699-01-01T00:00:00Z"^^xsd:dateTime .
 
+wd:Q470636  wdt:P569  "1116-09-05T00:00:00Z"^^xsd:dateTime .
+
 wd:Q385862  wdt:P569  "-2550-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q3721525  wdt:P569  "1423-08-27T00:00:00Z"^^xsd:dateTime .
+wd:Q165284  wdt:P569  "1187-09-05T00:00:00Z"^^xsd:dateTime .
 
-wd:Q312458  wdt:P569  "1414-08-27T00:00:00Z"^^xsd:dateTime .
-
-wd:Q155473  wdt:P569  "1342-08-27T00:00:00Z"^^xsd:dateTime .
+wd:Q3107903  wdt:P569  "1134-09-05T00:00:00Z"^^xsd:dateTime .
 
 wd:Q199861  wdt:P569  "-2550-01-01T00:00:00Z"^^xsd:dateTime .

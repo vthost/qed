@@ -38,8 +38,16 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+wd:Q2840  rdfs:label  "Griep"@af .
+
+wd:Q4683667  wdt:P31  wd:Q5 ;
+        wdt:P509  wd:Q2840 .
+
 wd:Q23688786  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q198 .
+
+wd:Q4679063  wdt:P31  wd:Q5 ;
+        wdt:P509  wd:Q2840 .
 
 wd:Q1457651  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q198 .
@@ -47,10 +55,13 @@ wd:Q1457651  wdt:P31  wd:Q5 ;
 wd:Q7328  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q5793186 .
 
-wd:Q198  rdfs:label  "حرب"@aeb-arab , "Oorlog"@af , "Akoo"@ak , "war"@en .
+wd:Q198  rdfs:label  "war"@en .
 
 wd:Q4396561  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q198 .
+
+wd:Q4351745  wdt:P31  wd:Q5 ;
+        wdt:P509  wd:Q2840 .
 
 wd:Q454667  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q664971 .

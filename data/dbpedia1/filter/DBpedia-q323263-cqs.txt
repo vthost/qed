@@ -1,0 +1,40 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?entity foaf:page ?page .
+    ?r <http://dbpedia.org/property/redirect> ?entity .
+    ?r rdfs:label "Madonna_(entertainer)"@en .
+  }
+WHERE
+  { ?r  <http://dbpedia.org/property/redirect>  ?entity ;
+        rdfs:label            "Madonna_(entertainer)"@en
+    FILTER regex(?page, "http://en.wikipedia.org/wiki/")
+    ?entity  foaf:page  ?page
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?entity foaf:page ?page .
+    ?r <http://dbpedia.org/property/redirect> ?entity .
+    ?r rdfs:label "Madonna_(entertainer)"@en .
+  }
+WHERE
+  { ?r  <http://dbpedia.org/property/redirect>  ?entity ;
+        rdfs:label            "Madonna_(entertainer)"@en
+    FILTER ( ! regex(?page, "http://en.wikipedia.org/wiki/") )
+    ?entity  foaf:page  ?page
+  }
+LIMIT   3
+
+----------------------------------------------

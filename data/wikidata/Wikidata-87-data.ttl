@@ -37,17 +37,17 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+wd:Q38589833  rdfs:label  "Progress and problems in the care of mother and baby."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "41753" .
+
+wd:Q39065021  rdfs:label  "Induction of haploid glycoprotein mating factors in diploid yeasts."@nl , "Induction of haploid glycoprotein mating factors in diploid yeasts."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "590" .
+
 wd:Q24289613  rdfs:label  "Zika Virus, Microcephaly, and Ocular Findings-Reply"@en , "Zika Virus, Microcephaly, and Ocular Findings-Reply"@nl ;
         wdt:P31     wd:Q13442814 ;
         wdt:P698    "27253432" .
-
-wd:Q28574348  rdfs:label  "Autophagy-related changes of arylsulphatases A and B in rat liver lysosomes"@nl , "Autophagy-related changes of arylsulphatases A and B in rat liver lysosomes"@en ;
-        wdt:P31     wd:Q13442814 ;
-        wdt:P698    "8037" .
-
-wd:Q35219143  rdfs:label  "Microbiological oxidation of synthetic chalcocite and covellite by Thiobacillus ferrooxidans"@en ;
-        wdt:P31     wd:Q13442814 ;
-        wdt:P698    "8006" .
 
 wd:Q55084381  rdfs:label  "Breast milk transmission of flaviviruses in the context of Zika virus: A systematic review."@en ;
         wdt:P31     wd:Q13442814 ;

@@ -37,19 +37,19 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q42303146  rdfs:label  "Merlin"@en ;
-        wdt:P31     wd:Q37484 .
+<https://am.wikipedia.org/wiki/%E1%8A%A2%E1%88%8A%E1%8B%AB%E1%8B%B3>
+        schema:about  wd:Q8275 .
 
 wd:Q4359786  wdt:P31  wd:Q37484 .
 
-wd:Q8276  rdfs:label  "Махабхарата"@ru , "Mahabharata"@en ;
+wd:Q8276  rdfs:label  "Mahabharata"@en ;
         wdt:P31     wd:Q37484 .
+
+<https://ko.wikipedia.org/wiki/%EB%A7%88%ED%95%98%EB%B0%94%EB%9D%BC%ED%83%80>
+        schema:about  wd:Q8276 .
 
 <https://lt.wikipedia.org/wiki/Mahabharata>
         schema:about  wd:Q8276 .
-
-<https://fr.wikipedia.org/wiki/Hebdomeros>
-        schema:about  wd:Q47089834 .
 
 <https://br.wikipedia.org/wiki/Chanson_des_Saisnes>
         schema:about  wd:Q4359786 .
@@ -62,14 +62,14 @@ wd:Q8276  rdfs:label  "Махабхарата"@ru , "Mahabharata"@en ;
 
 wd:Q3278347  wdt:P31  wd:Q37484 .
 
+<https://af.wikipedia.org/wiki/Ilias>
+        schema:about  wd:Q8275 .
+
 <https://la.wikipedia.org/wiki/Mahabharatum>
         schema:about  wd:Q8276 .
 
-<https://lv.wikipedia.org/wiki/Mah%C4%81bh%C4%81rata>
-        schema:about  wd:Q8276 .
+<https://als.wikipedia.org/wiki/Ilias>
+        schema:about  wd:Q8275 .
 
-<https://en.wikipedia.org/wiki/Merlin_(poem)>
-        schema:about  wd:Q42303146 .
-
-wd:Q47089834  rdfs:label  "Hebdomeros"@en ;
+wd:Q8275  rdfs:label  "Ilias"@af ;
         wdt:P31     wd:Q37484 .

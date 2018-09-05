@@ -37,10 +37,7 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q11878  rdfs:label  "بريت جلادمان"@ar , "Brett J. Gladman"@an , "Гладман, Бретт"@ru .
+wd:Q11821  rdfs:label  "Sergei Iwanowitsch Beljawski"@de , "Sergej Ivanovič Beljavskij"@cs , "Sergey Belyavsky"@ca .
 
-wd:Q4140896  wdt:P31  wd:Q3863 ;
-        wdt:P61  wd:Q11878 .
-
-wd:Q12782095  wdt:P31  wd:Q3863 ;
-        wdt:P61  wd:Q11878 .
+wd:Q121464  wdt:P31  wd:Q3863 ;
+        wdt:P61  wd:Q11821 .

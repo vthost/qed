@@ -37,20 +37,20 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:Q11571-7DFEF3ED-A7AF-43C5-8007-37B413DDB90A
-        pq:P585  "2008-01-01T00:00:00Z"^^xsd:dateTime ;
-        ps:P166  wd:Q182529 .
-
 wds:Q11571-9093C2F6-686D-4798-AB36-C085C45C5359
         pq:P585  "2008-01-01T00:00:00Z"^^xsd:dateTime ;
         ps:P166  wd:Q233454 .
 
-wd:Q11571  p:P166  wds:Q11571-7DFEF3ED-A7AF-43C5-8007-37B413DDB90A , wds:Q11571-9093C2F6-686D-4798-AB36-C085C45C5359 , wds:Q11571-56CBDC78-5FAD-4BC0-B741-0F96419D7158 .
+wds:Q11571-5bbf02b0-429f-1ac8-cd2d-5cd5cdda5295
+        pq:P585  "2008-01-01T00:00:00Z"^^xsd:dateTime ;
+        ps:P166  wd:Q166177 .
 
-wd:Q182529  rdfs:label  "FIFA World Player of the Year"@en .
+wd:Q11571  p:P166  wds:Q11571-5bbf02b0-429f-1ac8-cd2d-5cd5cdda5295 , wds:Q11571-9093C2F6-686D-4798-AB36-C085C45C5359 , wds:Q11571-56CBDC78-5FAD-4BC0-B741-0F96419D7158 .
 
 wds:Q11571-56CBDC78-5FAD-4BC0-B741-0F96419D7158
         pq:P585  "2011-01-01T00:00:00Z"^^xsd:dateTime ;
         ps:P166  wd:Q233454 .
 
 wd:Q233454  rdfs:label  "European Golden Shoe"@en , "Залатая буца"@be , "Avropada qızıl buts mükafatı"@az , "الحذاء الذهبية الأوروبية"@ar .
+
+wd:Q166177  rdfs:label  "Peiris Award"@en .

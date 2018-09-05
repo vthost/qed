@@ -1,0 +1,16 @@
+qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q100951;4;9;6;11;Filter,Offset,Optional
+DBpedia-q138913;6;11;2;6;Filter,Offset,Optional
+DBpedia-q151799;4;9;6;10;Filter,Offset,Optional
+DBpedia-q1732;3;4;0;0;Filter,Offset,Optional
+DBpedia-q1892;3;4;0;0;Filter,Offset,Optional
+DBpedia-q190955;4;11;11;30;Filter,Offset,Optional
+DBpedia-q19339;3;3;0;0;Filter,Offset,Optional
+DBpedia-q194196;3;3;2;5;Filter,Offset,Optional
+DBpedia-q242246;4;4;2;5;Filter
+DBpedia-q3031;3;3;3;8;Filter,Offset,Optional
+DBpedia-q3737;3;8;3;10;Filter,Offset,Optional
+DBpedia-q3912;4;10;0;0;Filter,Offset,Optional,Union
+DBpedia-q451;11;11;0;0;Offset,Optional,Union
+DBpedia-q76213;5;11;10;37;Offset,Optional,Order\_by,Regex
+DBpedia-q7959;5;8;2;7;Filter,Offset,Optional

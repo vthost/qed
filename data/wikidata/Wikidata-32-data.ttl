@@ -49,15 +49,15 @@ wd:Q7618878  rdfs:label  "Stone Bridge"@en ;
         wdt:P31     wd:Q14276458 ;
         wdt:P625    "Point(-77.5037 38.8243)"^^geo:wktLiteral .
 
-wd:Q1782816  rdfs:label  "Constantine's Bridge"@en , "Konstantinbrücke (Mysien)"@de ;
-        wdt:P186    wd:Q22731 ;
-        wdt:P31     wd:Q14276458 ;
-        wdt:P625    "Point(28.44147384 40.20409959)"^^geo:wktLiteral .
-
-wd:Q1254175  rdfs:label  "Ponte di Quintodecimo"@en ;
+wd:Q1254175  rdfs:label  "Ponte di Quintodecimo"@en , "Ponte di Quintodecimo"@de ;
         wdt:P186    wd:Q22731 ;
         wdt:P31     wd:Q14276458 ;
         wdt:P625    "Point(13.38542461 42.76298833)"^^geo:wktLiteral .
+
+wd:Q1782816  rdfs:label  "Constantine's Bridge"@en ;
+        wdt:P186    wd:Q22731 ;
+        wdt:P31     wd:Q14276458 ;
+        wdt:P625    "Point(28.44147384 40.20409959)"^^geo:wktLiteral .
 
 wd:Q7602264  rdfs:label  "Starrucca Viaduct"@en , "スタールッカ高架橋"@ja ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/HAER-Starrucca%201.jpg> ;

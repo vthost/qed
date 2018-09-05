@@ -38,14 +38,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q1172666  wdt:P31  wd:Q5 ;
+wd:Q29394352  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q468455 ;
-        wdt:P570  "1153-12-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P570  "1582-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q1904120  wdt:P31  wd:Q5 ;
+wd:Q16201743  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q468455 ;
-        wdt:P570  "1421-08-21T00:00:00Z"^^xsd:dateTime .
+        wdt:P570  "1558-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q1896451  wdt:P31  wd:Q5 ;
+wd:Q42566992  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q468455 ;
-        wdt:P570  "1559-09-24T00:00:00Z"^^xsd:dateTime .
+        wdt:P570  "1461-01-01T00:00:00Z"^^xsd:dateTime .

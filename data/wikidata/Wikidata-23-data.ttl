@@ -38,7 +38,7 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q183  rdfs:label  "Алмания"@tt , "Germany"@tum , "Gyaaman"@tw , "Germany"@en .
+wd:Q183  rdfs:label  "Germany"@en .
 
 wd:Q316843  wdt:P276  wd:Q14835 ;
         wdt:P31   wd:Q178561 ;
@@ -52,7 +52,7 @@ wd:Q162357  wdt:P276  wd:Q2337 ;
         wdt:P582  "1941-09-10T00:00:00Z"^^xsd:dateTime ;
         wdt:P585  "1941-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q208379  wdt:P17  wd:Q801 .
+wd:Q1748  wdt:P17  wd:Q35 .
 
 wd:Q2337  wdt:P17  wd:Q159 .
 
@@ -62,21 +62,23 @@ wd:Q26496  wdt:P276  wd:Q11462 ;
         wdt:P582  "1945-11-20T00:00:00Z"^^xsd:dateTime ;
         wdt:P585  "1945-10-27T00:00:00Z"^^xsd:dateTime .
 
-wd:Q142  rdfs:label  "France"@en , "Францыя"@be , "Frankrijk"@nl , "Франция"@ru .
+wd:Q142  rdfs:label  "France"@en , "Франция"@ba , "فرانسه"@azb , "Fransa"@az .
 
-wd:Q252  rdfs:label  "Indonesia"@en .
+wd:Q376154  wdt:P276  wd:Q1748 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1807-08-16T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1807-09-05T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1807-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q35  rdfs:label  "Denmark"@en .
+
+wd:Q252  rdfs:label  "Indonesië"@nl , "Indonesia"@it , "Indonesia"@es , "Indonesia"@en .
 
 wd:Q167259  wdt:P276  wd:Q2079 ;
         wdt:P31   wd:Q178561 ;
         wdt:P580  "1632-11-16T00:00:00Z"^^xsd:dateTime ;
         wdt:P582  "1632-11-16T00:00:00Z"^^xsd:dateTime ;
         wdt:P585  "1632-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q199371  wdt:P276  wd:Q208379 ;
-        wdt:P31   wd:Q178561 ;
-        wdt:P580  "1918-09-19T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582  "1918-09-25T00:00:00Z"^^xsd:dateTime ;
-        wdt:P585  "1918-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q239255  wdt:P276  wd:Q131329 ;
         wdt:P31   wd:Q178561 ;
@@ -93,5 +95,3 @@ wd:Q2079  wdt:P17  wd:Q183 .
 wd:Q159  rdfs:label  "Russia"@en .
 
 wd:Q14835  wdt:P17  wd:Q183 .
-
-wd:Q801  rdfs:label  "Israel"@en .

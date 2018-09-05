@@ -38,18 +38,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q2080325  rdfs:label  "Обсада на форт Уилям Хенри"@bg , "Bitva o pevnost William Henry"@cs , "Slaget ved Fort William Henry"@da , "Siege of Fort William Henry"@en ;
+wd:Q2080325  rdfs:label  "Обсада на форт Уилям Хенри"@bg , "batalla de Fort William Henry"@ca , "Bitva o pevnost William Henry"@cs , "Siege of Fort William Henry"@en ;
         wdt:P31     wd:Q178561 ;
         wdt:P582    "1757-08-09T00:00:00Z"^^xsd:dateTime ;
         wdt:P585    "1757-08-03T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(-73.71111111 43.42027778)"^^geo:wktLiteral .
-
-wd:Q275019  rdfs:label  "Battle of Smolensk"@en ;
-        wdt:P31     wd:Q178561 ;
-        wdt:P580    "1943-08-07T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582    "1943-10-02T00:00:00Z"^^xsd:dateTime ;
-        wdt:P585    "1943-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(32.05 54.7833)"^^geo:wktLiteral .
 
 wd:Q2664174  rdfs:label  "Battle of Kamdesh"@en ;
         wdt:P31     wd:Q178561 ;
@@ -57,17 +50,17 @@ wd:Q2664174  rdfs:label  "Battle of Kamdesh"@en ;
         wdt:P585    "2009-10-03T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(71.34139 35.41)"^^geo:wktLiteral .
 
-wd:Q94545  rdfs:label  "Sitio de Glatz"@es ;
+wd:Q94545  rdfs:label  "Sitio de Glatz"@es , "siège de Glatz"@fr , "グラーツ包囲戦"@ja ;
         wdt:P31     wd:Q178561 ;
         wdt:P580    "1760-06-07T00:00:00Z"^^xsd:dateTime ;
         wdt:P582    "1760-07-26T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(16.67 50.433)"^^geo:wktLiteral .
 
-wd:Q116222  rdfs:label  "Battle of Ferozeshah"@en ;
+wd:Q151290  rdfs:label  "Battle of Moscow"@en ;
         wdt:P31     wd:Q178561 ;
-        wdt:P580    "1845-12-21T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582    "1845-12-22T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(74.7833 30.8833)"^^geo:wktLiteral .
+        wdt:P580    "1941-10-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1942-01-22T00:00:00Z"^^xsd:dateTime , "1942-01-31T00:00:00Z"^^xsd:dateTime , "1942-04-20T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(37.63333333 55.75)"^^geo:wktLiteral .
 
 wd:Q26496  rdfs:label  "معركة سورابايا"@ar , "Patampuran Surabaya"@bjn , "Schlacht von Surabaya"@de , "Battle of Surabaya"@en ;
         wdt:P31     wd:Q178561 ;
@@ -76,16 +69,10 @@ wd:Q26496  rdfs:label  "معركة سورابايا"@ar , "Patampuran Surabaya"@
         wdt:P585    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(115.24861111 -8.42305556)"^^geo:wktLiteral .
 
-wd:Q130847  rdfs:label  "Slag van Verdun"@af , "معركة فردان"@ar , "Battle of Verdun"@en ;
+wd:Q83002  rdfs:label  "First Battle of al-Faw"@en ;
         wdt:P31     wd:Q178561 ;
-        wdt:P580    "1916-02-21T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582    "1916-12-18T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(5.421944444 49.208055555)"^^geo:wktLiteral .
-
-wd:Q74009  rdfs:label  "Invasion of Dominica"@en ;
-        wdt:P31     wd:Q178561 ;
-        wdt:P585    "1761-06-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(-61.383 15.3)"^^geo:wktLiteral .
+        wdt:P585    "1986-02-11T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(48.4725 29.975277777)"^^geo:wktLiteral .
 
 wd:Q68371  rdfs:label  "Battle of Mortemer"@en ;
         wdt:P31     wd:Q178561 ;
@@ -99,11 +86,12 @@ wd:Q199371  rdfs:label  "Battle of Megiddo"@en ;
         wdt:P585    "1918-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(34.883 32.4)"^^geo:wktLiteral .
 
-wd:Q124649  rdfs:label  "Second Battle of Algeciras"@en ;
+wd:Q239255  rdfs:label  "Battle of Arras"@en ;
         wdt:P31     wd:Q178561 ;
-        wdt:P580    "1801-07-12T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582    "1801-07-13T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(-5.42917 36.1333)"^^geo:wktLiteral .
+        wdt:P580    "1917-04-09T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1917-05-16T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1917-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(2.780833333 50.289722222)"^^geo:wktLiteral .
 
 wd:Q2838431  rdfs:label  "Battle off Cape Gata"@en ;
         wdt:P31     wd:Q178561 ;

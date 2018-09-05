@@ -38,32 +38,26 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://de.wikipedia.org/wiki/Johann_Albrecht_Adelgrief>
-        schema:about     wd:Q87461 ;
-        schema:isPartOf  <https://de.wikipedia.org/> .
+wd:Q200441  rdfs:label  "Αντιόχεια"@el .
 
-wd:Q100224  rdfs:label      "Ralph Morgenstern"@sl ;
-        schema:description  "deutscher Moderator, Musiker und Schauspieler"@de ;
-        skos:altLabel       "Ralf Morgenstern"@de ;
-        wdt:P19             wd:Q2899 ;
-        wdt:P20             wd:Q19901436 ;
+wd:Q128538  rdfs:label      "Luca"@sc , "Apostol Luka"@sh , "ධර්මදූත ලූක් තුමා"@si ;
+        schema:description  "Verfasser des Lukasevangeliums"@de ;
+        skos:altLabel       "Lukasstier"@de ;
+        wdt:P19             wd:Q200441 ;
+        wdt:P20             wd:Q11225429 ;
         wdt:P31             wd:Q5 ;
-        wdt:P569            "1955-10-03T00:00:00Z"^^xsd:dateTime .
+        wdt:P570            "0084-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q4120832  rdfs:label  "Königsberg"@sv .
-
-wd:Q1533150  rdfs:label     "Gnaeus Pinarius Cornelius Clemens"@af ;
-        schema:description  "römischer Suffektkonsul wohl 72"@de ;
-        skos:altLabel       "Pinarius Clemens"@de ;
-        wdt:P19             wd:Q29 ;
-        wdt:P20             wd:Q20559 ;
+wd:Q347820  rdfs:label      "Severinus von Paris"@en , "Severinus von Paris"@de , "Severín Pařížský"@cs ;
+        schema:description  "Heiliger"@de ;
+        skos:altLabel       "Severin von Paris"@de ;
+        wdt:P19             wd:Q90 ;
+        wdt:P20             wd:Q90 ;
         wdt:P31             wd:Q5 .
 
-<https://de.wikipedia.org/wiki/Gnaeus_Pinarius_Cornelius_Clemens>
-        schema:about     wd:Q1533150 ;
-        schema:isPartOf  <https://de.wikipedia.org/> .
+wd:Q190113  rdfs:label  "Тонгерэн"@be , "Tongres"@fr , "Tongeren"@nl .
 
-wd:Q8022548  rdfs:label     "Willy Fick"@sl ;
+wd:Q8022548  rdfs:label     "Willy Fick"@de ;
         schema:description  "deutscher Maler, Kölner Dadaistin"@de ;
         skos:altLabel       "Wilhelm Peter Hubert Fick"@de ;
         wdt:P19             wd:Q365 ;
@@ -72,32 +66,34 @@ wd:Q8022548  rdfs:label     "Willy Fick"@sl ;
         wdt:P569            "1893-02-07T00:00:00Z"^^xsd:dateTime ;
         wdt:P570            "1967-10-05T00:00:00Z"^^xsd:dateTime .
 
-wd:Q29  rdfs:label  "Spagna"@co , "ئیسپانیا"@ckb , "Spain"@chy .
-
-wd:Q87461  rdfs:label       "Johann Albrecht Adelgrief"@ca ;
-        schema:description  "deutscher Theologe, theologischer Schriftsteller, als Hexer hingerichtet"@de ;
-        skos:altLabel       "Adelgrief"@de ;
-        wdt:P19             wd:Q36 ;
-        wdt:P20             wd:Q4120832 ;
-        wdt:P31             wd:Q5 ;
-        wdt:P570            "1636-10-11T00:00:00Z"^^xsd:dateTime .
-
-wd:Q2899  rdfs:label  "Mülheim"@eo , "Mülheim"@en-gb , "Mülheim"@en-ca .
-
-<https://de.wikipedia.org/wiki/Ralph_Morgenstern>
-        schema:about     wd:Q100224 ;
+<https://de.wikipedia.org/wiki/Severinus_von_Paris>
+        schema:about     wd:Q347820 ;
         schema:isPartOf  <https://de.wikipedia.org/> .
 
-wd:Q16  rdfs:label  "Канада"@ru .
+<https://de.wikipedia.org/wiki/Lukas_(Evangelist)>
+        schema:about     wd:Q128538 ;
+        schema:isPartOf  <https://de.wikipedia.org/> .
+
+wd:Q16  rdfs:label  "Canada"@nl .
 
 <https://de.wikipedia.org/wiki/Willy_Fick>
         schema:about     wd:Q8022548 ;
         schema:isPartOf  <https://de.wikipedia.org/> .
 
-wd:Q19901436  rdfs:label  "Suriname"@nl .
+<https://de.wikipedia.org/wiki/Everigisil>
+        schema:about     wd:Q316643 ;
+        schema:isPartOf  <https://de.wikipedia.org/> .
 
-wd:Q36  rdfs:label  "ܦܘܠܢܕ"@arc , "بولاندا"@arz , "প'লেণ্ড"@as .
+wd:Q90  rdfs:label  "パリ"@ja , "Pariis"@et .
 
-wd:Q20559  rdfs:label  "Spello"@da .
+wd:Q11225429  rdfs:label  "Theben"@de .
 
-wd:Q365  rdfs:label  "Кёльн"@be , "Кёльн"@be-tarask , "Кьолн"@bg .
+wd:Q365  rdfs:label  "Colonia"@ast , "Köln"@az , "کولن"@azb .
+
+wd:Q316643  rdfs:label      "Evergislus"@nl ;
+        schema:description  "Bischof von Köln, Heiliger"@de ;
+        skos:altLabel       "Heiliger Evergislus"@de ;
+        wdt:P19             wd:Q190113 ;
+        wdt:P20             wd:Q190113 ;
+        wdt:P31             wd:Q5 ;
+        wdt:P569            "0600-01-01T00:00:00Z"^^xsd:dateTime .

@@ -45,15 +45,16 @@ wd:Q7849129  wdt:P17  wd:Q20 ;
         wdt:P31   wd:Q39715 ;
         wdt:P625  "Point(11.9681 66.4306)"^^geo:wktLiteral .
 
-wd:Q7619953  wdt:P17  wd:Q20 ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Fyrstasjonen%20p%C3%A5%20Store%20F%C3%A6rder.jpg> ;
-        wdt:P31  wd:Q39715 .
-
 wd:Q17750126  wdt:P17  wd:Q20 ;
         wdt:P31  wd:Q39715 .
 
 wd:Q12716940  wdt:P17  wd:Q20 ;
         wdt:P31  wd:Q39715 .
+
+wd:Q2463341  wdt:P17  wd:Q20 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Tyrhaug%20Fyr.jpg> ;
+        wdt:P31   wd:Q39715 ;
+        wdt:P625  "Point(8.22639 63.31)"^^geo:wktLiteral , "Point(8.22666667 63.31027778)"^^geo:wktLiteral .
 
 wd:Q5365397  wdt:P17  wd:Q20 ;
         wdt:P31   wd:Q39715 ;
@@ -63,19 +64,13 @@ wd:Q7370721  wdt:P17  wd:Q20 ;
         wdt:P31   wd:Q39715 ;
         wdt:P625  "Point(15.944333333 68.367805555)"^^geo:wktLiteral .
 
-wd:Q923101  wdt:P17  wd:Q20 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Grip%20fyr%202.jpg> ;
-        wdt:P31   wd:Q39715 ;
-        wdt:P625  "Point(7.60916667 63.23361111)"^^geo:wktLiteral .
+wd:Q28375060  wdt:P17  wd:Q20 ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Sj%C3%A5berget%20fyr%2C%20Nordmela.jpg> ;
+        wdt:P31  wd:Q39715 .
 
 wd:Q12004450  wdt:P17  wd:Q20 ;
         wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Svolv%C3%A6r%2C%20V%C3%A5gan%20-%20S-1602U3%20070.jpg> ;
         wdt:P31  wd:Q39715 .
-
-wd:Q908222  wdt:P17  wd:Q20 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Ulla%20lighthouse%20in%20Haram.tif> ;
-        wdt:P31   wd:Q39715 ;
-        wdt:P625  "Point(6.16527778 62.68472222)"^^geo:wktLiteral .
 
 wd:Q12001035  wdt:P17  wd:Q20 ;
         wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Skjelva%2C%20Alstadhaug%20-%20S-1602U3%20039.jpg> ;

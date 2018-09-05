@@ -1,4 +1,4 @@
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -25,7 +25,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -52,7 +52,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -79,7 +79,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -106,7 +106,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -133,7 +133,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -160,7 +160,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -187,7 +187,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -214,7 +214,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -241,7 +241,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
@@ -268,7 +268,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  bd:   <http://www.bigdata.com/rdf#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>

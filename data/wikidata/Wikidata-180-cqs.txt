@@ -1,4 +1,4 @@
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  http: <http://http>
 PREFIX  prov: <http://www.w3.org/ns/prov#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
@@ -9,13 +9,11 @@ CONSTRUCT
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
-    ?item ?prop ?statement .
-    ?statement prov:wasDerivedFrom ?derivedFrom .
   }
 WHERE
-  { { ?item     ?prop                ?statement .
-      ?statement  prov:wasDerivedFrom  ?derivedFrom
-    }
+  { FILTER NOT EXISTS { ?item     ?prop                ?statement .
+                        ?statement  prov:wasDerivedFrom  ?derivedFrom
+                      }
     FILTER regex(str(?prop), "http://www.wikidata.org/prop/")
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") )
     ?item  wdt:P279  wd:Q7187 ;
@@ -25,7 +23,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  http: <http://http>
 PREFIX  prov: <http://www.w3.org/ns/prov#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
@@ -36,13 +34,11 @@ CONSTRUCT
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
-    ?item ?prop ?statement .
-    ?statement prov:wasDerivedFrom ?derivedFrom .
   }
 WHERE
-  { { ?item     ?prop                ?statement .
-      ?statement  prov:wasDerivedFrom  ?derivedFrom
-    }
+  { FILTER NOT EXISTS { ?item     ?prop                ?statement .
+                        ?statement  prov:wasDerivedFrom  ?derivedFrom
+                      }
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/") )
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") )
     ?item  wdt:P279  wd:Q7187 ;
@@ -52,7 +48,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  http: <http://http>
 PREFIX  prov: <http://www.w3.org/ns/prov#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
@@ -63,13 +59,11 @@ CONSTRUCT
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
-    ?item ?prop ?statement .
-    ?statement prov:wasDerivedFrom ?derivedFrom .
   }
 WHERE
-  { { ?item     ?prop                ?statement .
-      ?statement  prov:wasDerivedFrom  ?derivedFrom
-    }
+  { FILTER NOT EXISTS { ?item     ?prop                ?statement .
+                        ?statement  prov:wasDerivedFrom  ?derivedFrom
+                      }
     FILTER regex(str(?prop), "http://www.wikidata.org/prop/")
     FILTER ( ! ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") ) )
     ?item  wdt:P279  wd:Q7187 ;
@@ -79,7 +73,7 @@ WHERE
 LIMIT   3
 
 ----------------------------------------------
-BASE    <file:///Users/veronika.thost%40ibm.com/Desktop/git/projects/qed/qed-core/>
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
 PREFIX  http: <http://http>
 PREFIX  prov: <http://www.w3.org/ns/prov#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
@@ -90,13 +84,11 @@ CONSTRUCT
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
-    ?item ?prop ?statement .
-    ?statement prov:wasDerivedFrom ?derivedFrom .
   }
 WHERE
-  { { ?item     ?prop                ?statement .
-      ?statement  prov:wasDerivedFrom  ?derivedFrom
-    }
+  { FILTER NOT EXISTS { ?item     ?prop                ?statement .
+                        ?statement  prov:wasDerivedFrom  ?derivedFrom
+                      }
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/") )
     FILTER ( ! ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") ) )
     ?item  wdt:P279  wd:Q7187 ;

@@ -1,0 +1,1 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX dbp: <http://dbpedia.org/property/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX dbont: <http://dbpedia.org/ontology/> SELECT ?name ?link   WHERE {          {?link rdf:type dbont:MusicalArtist} UNION {?link rdf:type dbont:Band}.          ?link dbp:name ?name . FILTER regex(?name, 'beatles', 'i') .          }

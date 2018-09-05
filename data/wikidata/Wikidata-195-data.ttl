@@ -42,11 +42,11 @@ wd:Q3450391  wdt:P131  wd:Q90 , wd:Q270230 ;
         wdt:P17   wd:Q142 ;
         wdt:P31   wd:Q79007 .
 
-wd:Q3448870  wdt:P131  wd:Q270230 ;
-        wdt:P138  wd:Q91 ;
-        wdt:P17   wd:Q142 ;
-        wdt:P31   wd:Q79007 .
+wd:Q255  wdt:P31  wd:Q5 .
 
 wd:Q23  wdt:P31  wd:Q5 .
 
-wd:Q91  wdt:P31  wd:Q5 .
+wd:Q3447110  wdt:P131  wd:Q194420 ;
+        wdt:P138  wd:Q255 ;
+        wdt:P17   wd:Q142 ;
+        wdt:P31   wd:Q79007 .

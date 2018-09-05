@@ -40,29 +40,29 @@
 
 wd:Q155119  wdt:P31  wd:Q188451 .
 
+wd:Q388296  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Tony%20Allen%20mg%206469.jpg> ;
+        wdt:P31  wd:Q188451 .
+
 wd:Q138020  wdt:P279  wd:Q11401 ;
         wdt:P31   wd:Q188451 .
 
-wd:Q252833  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Musikantenstadl-Tournee%202010%2C%20Wien%20%2802%29%20Die%20jungen%20Original%20Oberkrainer.jpg> ;
-        wdt:P31  wd:Q188451 .
-
-wd:Q502535  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Morna%20group.jpg> ;
-        wdt:P31  wd:Q188451 .
-
-wd:Q906647  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/BrianOConnell05.jpg> ;
-        wdt:P279  wd:Q8341 ;
+wd:Q6010  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/50%20cent%20in%20concert.jpg> ;
+        wdt:P279  wd:Q1322198 ;
         wdt:P31   wd:Q188451 .
 
-wd:Q131425  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Visual%20kei.jpg> ;
+wd:Q606393  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Disco%20ball4.jpg> ;
         wdt:P31  wd:Q188451 .
+
+wd:Q10926  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Emo.JPG> ;
+        wdt:P279  wd:Q377910 ;
+        wdt:P31   wd:Q188451 .
 
 wd:Q203720  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Rockabillys%20im%20Tanzcafe%20LiBella.jpg> ;
         wdt:P279  wd:Q7749 ;
         wdt:P31   wd:Q188451 .
 
-wd:Q1133657  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Heavy%20Metal%20im%20Fantasy.jpg> ;
-        wdt:P279  wd:Q38848 ;
-        wdt:P31   wd:Q188451 .
+wd:Q464129  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Wikipedia%2010%20Guadalajara%20-%20Mariachi.jpg> ;
+        wdt:P31  wd:Q188451 .
 
 wd:Q132438  wdt:P279  wd:Q38848 ;
         wdt:P31   wd:Q188451 .

@@ -1,0 +1,704 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { FILTER NOT EXISTS { ?medium  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { FILTER NOT EXISTS { ?medium  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { FILTER NOT EXISTS { ?medium  foaf:page  ?linkUrl }
+        { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { FILTER NOT EXISTS { ?medium  foaf:page  ?linkUrl }
+        { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { { ?medium  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { { ?medium  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { { ?medium  foaf:page  ?linkUrl }
+        { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { { ?medium  foaf:page  ?linkUrl }
+        { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    FILTER NOT EXISTS {   { ?medium  foaf:page  ?linkUrl }
+                        UNION
+                          { ?medium  owl:sameAs  ?sameAsUri }
+                      }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    FILTER NOT EXISTS {   { ?medium  foaf:page  ?linkUrl }
+                        UNION
+                          { ?medium  owl:sameAs  ?sameAsUri }
+                      }
+    { FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "Better Homes and Gardens (magazine)"@en .
+    ?medium rdfs:label "Better Homes and Gardens (newspaper)"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdfs:label "Better Homes and Gardens"@en .
+    ?medium rdfs:label "The Better Homes and Gardens"@en .
+    ?medium foaf:name "Better Homes and Gardens" .
+    ?medium rdf:type dbpedia-owl:Newspaper .
+    ?medium rdf:type dbpedia-owl:Magazine .
+    ?medium rdf:type ?mediumType .
+    ?medium skos:subject ?subject .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_newspaper> .
+    ?medium dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_magazine> .
+    ?medium foaf:page ?linkUrl .
+    ?medium owl:sameAs ?sameAsUri .
+    ?medium dbpedia-prop:firstdate ?firstDate .
+  }
+WHERE
+  { { ?medium  dbpedia-prop:firstdate  ?firstDate }
+    { { FILTER NOT EXISTS { ?medium  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?medium  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { { ?medium  rdf:type  dbpedia-owl:Newspaper }
+      FILTER NOT EXISTS { ?medium  rdf:type  dbpedia-owl:Magazine }
+      FILTER NOT EXISTS { ?medium  rdf:type  ?mediumType
+                          FILTER regex(?mediumType, "((http://umbel.org/umbel/sc/)|(http://dbpedia.org/class/yago/)).*((Newspaper)|(Magazine)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((newspapers)|(magazines)|(journals)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_newspaper> }
+      FILTER NOT EXISTS { ?medium  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_magazine> }
+    }
+    { FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (magazine)"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens (newspaper)"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  rdfs:label  "The Better Homes and Gardens"@en }
+      FILTER NOT EXISTS { ?medium  foaf:name  "Better Homes and Gardens" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

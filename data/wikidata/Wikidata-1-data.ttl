@@ -38,14 +38,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://species.wikimedia.org/wiki/Luscinia_megarhynchos>
-        schema:about     wd:Q25393 ;
+<https://species.wikimedia.org/wiki/Category:Categories>
+        schema:about     wd:Q1281 ;
         schema:isPartOf  <https://species.wikimedia.org/> .
 
-<https://species.wikimedia.org/wiki/Marsupialia>
-        schema:about     wd:Q25336 ;
+<https://species.wikimedia.org/wiki/Fungi>
+        schema:about     wd:Q764 ;
         schema:isPartOf  <https://species.wikimedia.org/> .
 
-<https://species.wikimedia.org/wiki/Magnoliopsida>
-        schema:about     wd:Q25314 ;
+<https://species.wikimedia.org/wiki/Panthera_leo>
+        schema:about     wd:Q140 ;
         schema:isPartOf  <https://species.wikimedia.org/> .

@@ -1,0 +1,748 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?holiday  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?holiday  foaf:page  ?linkUrl }
+        { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { { ?holiday  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { { ?holiday  foaf:page  ?linkUrl }
+        { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { FILTER NOT EXISTS {   { ?holiday  foaf:page  ?linkUrl }
+                        UNION
+                          { ?holiday  owl:sameAs  ?sameAsUri }
+                      }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?holiday  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?holiday  foaf:page  ?linkUrl }
+        { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { { ?holiday  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { { ?holiday  foaf:page  ?linkUrl }
+        { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { FILTER NOT EXISTS {   { ?holiday  foaf:page  ?linkUrl }
+                        UNION
+                          { ?holiday  owl:sameAs  ?sameAsUri }
+                      }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    :Good_Friday_Day dbpedia-prop:redirect ?holiday .
+    :Good_Friday dbpedia-prop:redirect ?holiday .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday rdfs:label "Good Friday Day"@en .
+    ?holiday rdfs:label "Good Friday"@en .
+    ?holiday dbpedia-prop:name "Good Friday"@en .
+    ?holiday dbpedia-prop:holidayName "Good Friday"@en .
+    ?holiday dbpedia-prop:nickname "Good Friday" .
+    ?holiday dbpedia-prop:altname "Good Friday"@en .
+    ?holiday foaf:name "Good Friday" .
+    ?holiday foaf:name "Good Friday Day" .
+    ?holiday rdf:type ?holidayType .
+    ?holiday skos:subject ?subject .
+    ?holiday dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_holiday> .
+    ?holiday foaf:page ?linkUrl .
+    ?holiday owl:sameAs ?sameAsUri .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?holiday  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?holiday  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { FILTER NOT EXISTS { ?holiday  rdf:type  ?holidayType
+                          FILTER regex(?holidayType, "http://dbpedia.org/class/yago/.*((Observances)|(HolyDays)|(Holiday)|(Liturgical)|(Festivals)|(Customs)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category.*((observances)|(liturg)|(holy_days)|(holidays)|(festivals)|(national_days)|(customs)|(religion)).*", "i")
+                        }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_holiday> }
+    }
+    { FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { :Good_Friday_Day
+                                    dbpedia-prop:redirect  ?holiday
+                        }
+      FILTER NOT EXISTS { :Good_Friday  dbpedia-prop:redirect  ?holiday }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday Day"@en }
+      FILTER NOT EXISTS { ?holiday  rdfs:label  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:name  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:holidayName  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:nickname  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  dbpedia-prop:altname  "Good Friday"@en }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday" }
+      FILTER NOT EXISTS { ?holiday  foaf:name  "Good Friday Day" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

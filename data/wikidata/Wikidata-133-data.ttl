@@ -55,7 +55,7 @@ wd:Q28715857  wdt:P136  wd:Q49084 ;
         wdt:P31   wd:Q571 ;
         wdt:P50   wd:Q23434 .
 
-wd:Q482  rdfs:label  "poetry"@en , "Poezija"@bs , "barzhoniezh"@br , "কবিতা"@bpy .
+wd:Q482  rdfs:label  "poetry"@en , "شعر"@fa , "شعر"@ar , "Balak"@ceb .
 
 wd:Q23434  skos:altLabel  "Ernest Hemmingway"@en .
 

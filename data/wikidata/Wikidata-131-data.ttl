@@ -38,18 +38,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q82724  wdt:P17  wd:Q183 ;
-        wdt:P625  "Point(9.1125 47.992777777)"^^geo:wktLiteral .
-
-wd:Q2749  wdt:P17  wd:Q183 ;
-        wdt:P625  "Point(10.898333333 48.371666666)"^^geo:wktLiteral .
-
-wd:Q820923  rdfs:label  "Samuel of Speyer"@en ;
-        wdt:P106    wd:Q49757 ;
-        wdt:P19     wd:Q6829 .
-
-wd:Q6829  wdt:P17  wd:Q183 ;
-        wdt:P625  "Point(8.431111111 49.319444444)"^^geo:wktLiteral .
+wd:Q622  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(9.191944444 48.8975)"^^geo:wktLiteral .
 
 wd:Q221170  rdfs:label  "Albrecht von Scharfenberg"@en ;
         wdt:P106    wd:Q49757 ;
@@ -58,22 +48,25 @@ wd:Q221170  rdfs:label  "Albrecht von Scharfenberg"@en ;
 wd:Q1794  wdt:P17  wd:Q183 ;
         wdt:P625  "Point(8.679722222 50.113611111)"^^geo:wktLiteral .
 
-wd:Q48301  rdfs:label  "Martin Heidegger"@en ;
+wd:Q651  rdfs:label  "Friedrich Theodor Vischer"@af , "Friedrich Theodor Vischer"@an , "فريدريش ثيودور فيشر"@ar , "Friedrich Theodor Vischer"@en ;
         wdt:P106    wd:Q49757 ;
-        wdt:P19     wd:Q82724 ;
-        wdt:P569    "1889-09-26T00:00:00Z"^^xsd:dateTime .
+        wdt:P19     wd:Q622 ;
+        wdt:P569    "1807-06-30T00:00:00Z"^^xsd:dateTime .
 
 wd:Q108280  rdfs:label  "Jobus Fincelius"@en , "Jobus Fincelius"@de , "Jobus Fincelius"@da , "Jobus Fincelius"@ca ;
         wdt:P106    wd:Q49757 ;
         wdt:P19     wd:Q3955 .
 
-wd:Q1511  rdfs:label  "Вагнер, Рихард"@xal , "რიხარდ ვაგნერი"@xmf , "ריכארד וואגנער"@yi ;
+wd:Q1511  rdfs:label  "Richard Wagner"@en ;
         wdt:P106    wd:Q49757 ;
         wdt:P19     wd:Q2079 ;
         wdt:P569    "1813-05-22T00:00:00Z"^^xsd:dateTime .
 
 wd:Q980  wdt:P17  wd:Q183 ;
         wdt:P625  "Point(11.431111111 48.7775)"^^geo:wktLiteral .
+
+wd:Q2978  wdt:P17  wd:Q183 ;
+        wdt:P625  "Point(12.083333333 49.016666666)"^^geo:wktLiteral .
 
 wd:Q2079  wdt:P17  wd:Q183 ;
         wdt:P625  "Point(12.383333333 51.333333333)"^^geo:wktLiteral .
@@ -86,7 +79,6 @@ wd:Q5879  rdfs:label  "Johann Wolfgang von Goethe"@en ;
         wdt:P19     wd:Q1794 ;
         wdt:P569    "1749-08-28T00:00:00Z"^^xsd:dateTime .
 
-wd:Q38757  rdfs:label  "Bertolt Brecht"@en ;
+wd:Q790956  rdfs:label  "Avigdor Kara"@en ;
         wdt:P106    wd:Q49757 ;
-        wdt:P19     wd:Q2749 ;
-        wdt:P569    "1898-02-10T00:00:00Z"^^xsd:dateTime .
+        wdt:P19     wd:Q2978 .

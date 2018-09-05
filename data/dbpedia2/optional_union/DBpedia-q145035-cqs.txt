@@ -1,0 +1,792 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { { ?index  dbpedia-prop:foundation  ?found }
+    { { FILTER NOT EXISTS { ?index  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?index  dbpedia-prop:foundation  ?found }
+    { { FILTER NOT EXISTS { ?index  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { { ?index  dbpedia-prop:foundation  ?found }
+    { { FILTER NOT EXISTS { ?index  owl:sameAs  ?sameAsUri }
+        { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?index  dbpedia-prop:foundation  ?found }
+    { { FILTER NOT EXISTS { ?index  owl:sameAs  ?sameAsUri }
+        { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { { ?index  dbpedia-prop:foundation  ?found }
+    { { { ?index  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?index  dbpedia-prop:foundation  ?found }
+    { { { ?index  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { { ?index  dbpedia-prop:foundation  ?found }
+    { { { ?index  owl:sameAs  ?sameAsUri }
+        { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?index  dbpedia-prop:foundation  ?found }
+    { { { ?index  owl:sameAs  ?sameAsUri }
+        { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { { ?index  dbpedia-prop:foundation  ?found }
+    FILTER NOT EXISTS {   { ?index  owl:sameAs  ?sameAsUri }
+                        UNION
+                          { ?index  foaf:page  ?linkUrl }
+                      }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?index  dbpedia-prop:foundation  ?found }
+    FILTER NOT EXISTS {   { ?index  owl:sameAs  ?sameAsUri }
+                        UNION
+                          { ?index  foaf:page  ?linkUrl }
+                      }
+    { FILTER NOT EXISTS { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :Dow_30 dbpedia-prop:redirect ?index .
+    :Dow_30_index dbpedia-prop:redirect ?index .
+    :Dow_30_Index dbpedia-prop:redirect ?index .
+    :DOW_30 dbpedia-prop:redirect ?index .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 index"@en .
+    ?index rdfs:label "Dow 30 Index"@en .
+    ?index rdfs:label "Dow-30"@en .
+    ?index rdfs:label "Dow 30"@en .
+    ?index rdfs:label "Dow 30 Average"@en .
+    ?index rdfs:label "Dow index"@en .
+    ?index rdfs:label "Dow Index"@en .
+    ?index rdfs:label "DOW 30"@en .
+    ?index rdf:type yago:StockMarketIndices .
+    ?index skos:subject ?subject .
+    ?index dbpedia-prop:wikiPageUsesTemplate <http://dbpedia.org/resource/Template:infobox_index> .
+    ?index owl:sameAs ?sameAsUri .
+    ?index foaf:page ?linkUrl .
+    ?index dbpedia-prop:foundation ?found .
+  }
+WHERE
+  { { ?index  dbpedia-prop:foundation  ?found }
+    { { FILTER NOT EXISTS { ?index  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?index  foaf:page  ?linkUrl }
+      }
+    }
+    { { ?index  rdf:type  yago:StockMarketIndices }
+      FILTER NOT EXISTS { ?index  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:((Stock_market_indices)|(Econom.*)|(S%26P.*)|(Dow_Jones.*))", "i")
+                        }
+      FILTER NOT EXISTS { ?index  dbpedia-prop:wikiPageUsesTemplate  <http://dbpedia.org/resource/Template:infobox_index> }
+    }
+    { FILTER NOT EXISTS { :Dow_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { :Dow_30_index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :Dow_30_Index
+                                    dbpedia-prop:redirect  ?index
+                        }
+      FILTER NOT EXISTS { :DOW_30  dbpedia-prop:redirect  ?index }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow-30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow 30 Average"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "Dow Index"@en }
+      FILTER NOT EXISTS { ?index  rdfs:label  "DOW 30"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

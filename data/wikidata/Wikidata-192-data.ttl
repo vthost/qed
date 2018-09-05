@@ -37,24 +37,22 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q314661  rdfs:label  "ירוסלאב דרובני"@he ;
+wd:Q234395  rdfs:label  "גלינה צ'יסטקובה"@he ;
         wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q741 .
+        wdt:P735    wd:Q123699 .
 
-wd:Q12023840  rdfs:label  "Jaroslav Kabeš"@ast , "Jaroslav Kabeš"@an , "Jaroslav Kabeš"@af ;
+wd:Q4088070  rdfs:label  "גלינה בלייך"@he ;
         wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q741 .
+        wdt:P735    wd:Q123699 .
 
-wd:Q741  rdfs:label  "Jaroslav"@an , "ياروسلاف"@ar , "ירוסלב"@he , "Jaroslav"@af .
-
-wd:Q188943  rdfs:label  "יארוסלאב הראשון, נסיך קייב"@he ;
+wd:Q230916  rdfs:label  "גלינה וישנבסקאיה"@he ;
         wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q741 .
+        wdt:P735    wd:Q123699 .
 
-wd:Q157701  rdfs:label  "ירוסלאב היירובסקי"@he ;
+wd:Q15813172  rdfs:label  "Hiltrud Lotze"@zu ;
         wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q741 .
+        wdt:P735    wd:Q80347 .
 
-wd:Q2754  rdfs:label  "ירוסלב האשק"@he , "Jaroslav Hašek"@ast , "ياروسلاف هاسيك"@ar , "Jaroslav Hašek"@an ;
+wd:Q19285589  rdfs:label  "Hiltrud Westermann-Angerhausen"@en , "Hiltrud Westermann-Angerhausen"@de ;
         wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q741 .
+        wdt:P735    wd:Q80347 .

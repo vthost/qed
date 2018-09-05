@@ -37,9 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q1661  rdfs:label  "verse"@en ;
-        wdt:P279    wd:Q7725634 .
-
 wd:Q571  rdfs:label  "book"@en ;
         wdt:P279    wd:Q7725634 .
 
@@ -47,7 +44,10 @@ wd:Q12295065  wdt:P279  wd:Q7725634 .
 
 wd:Q55761626  wdt:P279  wd:Q7725634 .
 
-wd:Q482  rdfs:label  "시"@ko , "шеър"@tg , "puisi"@id , "poetry"@en ;
+wd:Q482  rdfs:label  "Balak"@ceb , "شعر"@ar , "شعر"@fa , "poetry"@en ;
         wdt:P279    wd:Q7725634 .
 
 wd:Q1617445  wdt:P279  wd:Q7725634 .
+
+wd:Q676  rdfs:label  "prose"@en ;
+        wdt:P279    wd:Q7725634 .

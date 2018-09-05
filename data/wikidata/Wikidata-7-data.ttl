@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q18568262  p:P40  wds:Q18568262-ab0be5d9-4b7d-8663-808b-1d3e59cd7d06 ;
-        wdt:P31  wd:Q5 .
+wds:Q11719072-0f544bd8-4f6a-1750-5525-94b513ade4d5
+        a       wdno:P40 .
 
 wds:Q16475398-998f33db-4f39-4688-f1c3-e75a07b91369
         a       wdno:P40 .
@@ -46,8 +46,8 @@ wds:Q16475398-998f33db-4f39-4688-f1c3-e75a07b91369
 wd:Q16475398  p:P40  wds:Q16475398-998f33db-4f39-4688-f1c3-e75a07b91369 ;
         wdt:P31  wd:Q5 .
 
-wds:Q18568262-ab0be5d9-4b7d-8663-808b-1d3e59cd7d06
-        a       wdno:P40 .
+wd:Q11719072  p:P40  wds:Q11719072-0f544bd8-4f6a-1750-5525-94b513ade4d5 ;
+        wdt:P31  wd:Q5 .
 
 wd:Q132090  p:P40  wds:Q132090-3ec17cd7-43ac-a32d-e37c-e60d3b104628 ;
         wdt:P31  wd:Q5 .

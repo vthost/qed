@@ -38,26 +38,18 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q332119  rdfs:label  "Abschnittsbefestigung im Taitinger Holz"@de ;
-        wdt:P31     wd:Q23413 , wd:Q839954 ;
-        wdt:P625    "Point(11.0275 48.4173)"^^geo:wktLiteral .
+wd:Q127627  rdfs:label  "Wüstegarten"@en ;
+        wdt:P31     wd:Q839954 , wd:Q23413 ;
+        wdt:P625    "Point(9.084166666 51.016388888)"^^geo:wktLiteral .
 
 wd:Q175213  rdfs:label  "Altenburg"@en ;
         wdt:P31     wd:Q839954 , wd:Q23413 ;
         wdt:P625    "Point(9.29062 51.2477)"^^geo:wktLiteral .
 
-wd:Q127627  rdfs:label  "Wüstegarten"@en ;
-        wdt:P31     wd:Q839954 , wd:Q23413 ;
-        wdt:P625    "Point(9.084166666 51.016388888)"^^geo:wktLiteral .
-
-wd:Q332109  rdfs:label  "Abschnittsbefestigung Schorn"@de ;
-        wdt:P31     wd:Q23413 , wd:Q839954 ;
-        wdt:P625    "Point(11.0769 48.6047)"^^geo:wktLiteral .
-
 wd:Q113579  rdfs:label  "Burgring"@en ;
         wdt:P31     wd:Q839954 , wd:Q23413 ;
         wdt:P625    "Point(8.76099 51.1969)"^^geo:wktLiteral .
 
-wd:Q371063  rdfs:label  "قلعة رباح"@ar ;
+wd:Q215315  rdfs:label  "Кярнаве"@be , "Kernave"@az , "Kernavė"@af ;
         wdt:P31     wd:Q23413 , wd:Q839954 ;
-        wdt:P625    "Point(-3.83252222 39.07433889)"^^geo:wktLiteral .
+        wdt:P625    "Point(24.85 54.883333333)"^^geo:wktLiteral .

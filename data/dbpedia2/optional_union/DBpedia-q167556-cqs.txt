@@ -1,0 +1,682 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?treatment  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?treatment  owl:sameAs  ?sameAsUri }
+        { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { { ?treatment  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { { ?treatment  owl:sameAs  ?sameAsUri }
+        { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { FILTER NOT EXISTS {   { ?treatment  owl:sameAs  ?sameAsUri }
+                        UNION
+                          { ?treatment  foaf:page  ?linkUrl }
+                      }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?treatment  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?treatment  owl:sameAs  ?sameAsUri }
+        { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { { ?treatment  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { { ?treatment  owl:sameAs  ?sameAsUri }
+        { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { FILTER NOT EXISTS {   { ?treatment  owl:sameAs  ?sameAsUri }
+                        UNION
+                          { ?treatment  foaf:page  ?linkUrl }
+                      }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :abdominoplasty dbpedia-prop:redirect ?treatment .
+    :Abdominoplasty dbpedia-prop:redirect ?treatment .
+    ?treatment rdfs:label "abdominoplasty"@en .
+    ?treatment dbpedia-prop:name "abdominoplasty"@en .
+    ?treatment foaf:name "abdominoplasty" .
+    ?treatment rdfs:label "Abdominoplasty"@en .
+    ?treatment foaf:name "Abdominoplasty" .
+    ?treatment rdf:type ?treatmentType .
+    ?treatment skos:subject ?subject .
+    ?treatment dbpedia-prop:wikiPageUsesTemplate ?template .
+    ?treatment owl:sameAs ?sameAsUri .
+    ?treatment foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?treatment  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?treatment  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER NOT EXISTS { ?treatment  rdf:type  ?treatmentType
+                          FILTER regex(?treatmentType, "http://dbpedia.org/class/yago/.*((((MedicalTreatment)|(Procedure)|(Surgery)|(Therapy)|(Prosthetic)).*)|(ics))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  skos:subject  ?subject
+                          FILTER regex(?subject, "http://dbpedia.org/resource/Category:.*((((Medical)|(surgery)|(procedure)|(medicine)|(therapy)|(acupuncture)|(treatment)|(Medical_terms)|(prosthetic)|(health)).*)|((ysis)|(logy)|(ication)))", "i")
+                        }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:wikiPageUsesTemplate  ?template
+                          FILTER regex(?template, "http://dbpedia.org/resource/Template:((infobox_intervention))", "i")
+                        }
+    }
+    { FILTER NOT EXISTS { :abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { :Abdominoplasty
+                                    dbpedia-prop:redirect  ?treatment
+                        }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  dbpedia-prop:name  "abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "abdominoplasty" }
+      FILTER NOT EXISTS { ?treatment  rdfs:label  "Abdominoplasty"@en }
+      FILTER NOT EXISTS { ?treatment  foaf:name  "Abdominoplasty" }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

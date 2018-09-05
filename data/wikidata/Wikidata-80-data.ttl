@@ -37,15 +37,15 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q5432941  p:P699  wds:Q5432941-06006EAE-5CE7-4801-A598-533BCABA3CAC ;
-        wdt:P279  wd:Q12136 ;
-        wdt:P31   wd:Q12136 .
-
 wd:Q2351083  p:P699  wds:Q2351083-BE442AC0-E8F4-4B7D-BEF1-76601BFAE016 ;
         wdt:P279  wd:Q12136 ;
         wdt:P31   wd:Q12136 .
 
 wd:Q161790  p:P699  wds:Q161790-B0455228-F9FB-40F6-9134-D54C3D5BB653 ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q3392853  p:P699  wds:Q3392853-AC5A450E-C9F2-4490-9C87-1458F8EA24FF ;
         wdt:P279  wd:Q12136 ;
         wdt:P31   wd:Q12136 .
 
@@ -75,6 +75,10 @@ wd:Q188638  p:P699  wds:Q188638-1283E9EB-D20B-4E69-B734-987897305B77 ;
         wdt:P31   wd:Q12136 .
 
 wd:Q79793  p:P699  wds:Q79793-846CD98E-B722-4A5D-A27A-5A50AC67F58C ;
+        wdt:P279  wd:Q12136 ;
+        wdt:P31   wd:Q12136 .
+
+wd:Q200779  p:P699  wds:Q200779-6485AC1A-622F-4669-BF96-949D8DD55150 ;
         wdt:P279  wd:Q12136 ;
         wdt:P31   wd:Q12136 .
 

@@ -40,7 +40,7 @@
 wd:Q874538  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Woeiriot%20Phalaris.jpg> ;
         wdt:P366  wd:Q132781 .
 
-wd:Q840649  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Fomfr%20garrote.jpg> ;
+wd:Q1251254  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Muzeum%20Ziemi%20Lubuskiej%20-%20Muzeum%20Tortur%20-%20Zaj%C4%85c%20hiszpa%C5%84ski-2.JPG> ;
         wdt:P366  wd:Q132781 .
 
 wd:Q1088532  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Fomfr%20judas%20cradle.jpg> ;

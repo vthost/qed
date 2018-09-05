@@ -1,0 +1,781 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        FILTER NOT EXISTS { ?place  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        FILTER NOT EXISTS { ?place  owl:sameAs  ?sameAsUri }
+        { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        { ?place  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        { ?place  owl:sameAs  ?sameAsUri }
+        { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        { ?place  geo:lat   ?latitude ;
+                  geo:long  ?longitude
+        }
+        FILTER NOT EXISTS { ?place  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        { ?place  geo:lat   ?latitude ;
+                  geo:long  ?longitude
+        }
+        FILTER NOT EXISTS { ?place  owl:sameAs  ?sameAsUri }
+        { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        { ?place  geo:lat   ?latitude ;
+                  geo:long  ?longitude
+        }
+        { ?place  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:latM   ?latm ;
+                                    dbpedia-prop:longM  ?longm
+                          }
+        { ?place  geo:lat   ?latitude ;
+                  geo:long  ?longitude
+        }
+        { ?place  owl:sameAs  ?sameAsUri }
+        { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        { ?place  dbpedia-prop:latM   ?latm ;
+                  dbpedia-prop:longM  ?longm
+        }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        FILTER NOT EXISTS { ?place  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        { ?place  dbpedia-prop:latM   ?latm ;
+                  dbpedia-prop:longM  ?longm
+        }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        FILTER NOT EXISTS { ?place  owl:sameAs  ?sameAsUri }
+        { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label "Slaughter"@en .
+    ?place rdfs:label "Slaughter, Louisiana"@en .
+    ?place dbpedia-prop:officialName "Slaughter"@en .
+    ?place dbpedia-prop:name "Slaughter"@en .
+    ?place foaf:name "Slaughter"@en .
+    ?place owl:sameAs <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> .
+    ?place rdf:type ?type .
+    ?place dbpedia-prop:population ?pop .
+    ?place rdfs:label ?label .
+    ?place dbpedia-prop:latm ?latm .
+    ?place dbpedia-prop:longm ?longm .
+    ?place dbpedia-prop:latM ?latm .
+    ?place dbpedia-prop:longM ?longm .
+    ?place geo:lat ?latitude .
+    ?place geo:long ?longitude .
+    ?place owl:sameAs ?sameAsUri .
+    ?place foaf:page ?linkUrl .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?place  dbpedia-prop:latm   ?latm ;
+                                    dbpedia-prop:longm  ?longm
+                          }
+        { ?place  dbpedia-prop:latM   ?latm ;
+                  dbpedia-prop:longM  ?longm
+        }
+        FILTER NOT EXISTS { ?place  geo:lat   ?latitude ;
+                                    geo:long  ?longitude
+                          }
+        { ?place  owl:sameAs  ?sameAsUri }
+        FILTER NOT EXISTS { ?place  foaf:page  ?linkUrl }
+      }
+    }
+    { FILTER ( lang(?label) = "en" )
+      ?place  rdfs:label  ?label
+    }
+    { { FILTER NOT EXISTS { ?place  rdf:type  ?type
+                            FILTER regex(?type, ".+/((Place)|(PopulatedPlace)|(Town)|(City)|(.*CitiesIn.*))$", "i")
+                          }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:population  ?pop }
+      }
+    }
+    { { FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  rdfs:label  "Slaughter, Louisiana"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:officialName  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  dbpedia-prop:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  foaf:name  "Slaughter"@en }
+        FILTER NOT EXISTS { ?place  owl:sameAs  <http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000000cc60a> }
+      }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

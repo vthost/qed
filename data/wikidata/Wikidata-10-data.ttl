@@ -37,59 +37,65 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+<https://de.wikipedia.org/wiki/Inge_Helten>
+        schema:about  wd:Q70569 .
+
+wd:Q70569  rdfs:label  "Inge Helten"@ca , "Inge Helten"@da , "Inge Helten"@de ;
+        wdt:P21     wd:Q6581072 ;
+        wdt:P31     wd:Q5 ;
+        wdt:P569    "1950-12-31T00:00:00Z"^^xsd:dateTime .
+
 wd:Q65621  rdfs:label  "Annika Becker"@en ;
         wdt:P21     wd:Q6581072 ;
         wdt:P31     wd:Q5 ;
         wdt:P569    "1981-11-12T00:00:00Z"^^xsd:dateTime .
 
-wd:Q1318572  wdt:P21  wd:Q6581072 ;
-        wdt:P31   wd:Q5 ;
-        wdt:P569  "1936-02-23T00:00:00Z"^^xsd:dateTime .
-
 <https://sl.wikipedia.org/wiki/Annika_Becker>
         schema:about  wd:Q65621 .
 
-<https://ast.wikipedia.org/wiki/Ruth_Arnon>
-        schema:about  wd:Q7431 .
+<https://en.wikipedia.org/wiki/Anja_Huber>
+        schema:about  wd:Q10108 .
 
-<https://hu.wikipedia.org/wiki/T._Czene_%C3%81gnes>
-        schema:about  wd:Q1315655 .
+<https://pl.wikiquote.org/wiki/Jelena_Diemientjewa>
+        schema:about  wd:Q11667 .
 
-<https://commons.wikimedia.org/wiki/Category:Ruth_Arnon>
-        schema:about  wd:Q7431 .
-
-<https://de.wikipedia.org/wiki/Olivia_Pascal>
-        schema:about  wd:Q74171 .
-
-<https://cs.wikipedia.org/wiki/Rut_Arnonov%C3%A1>
-        schema:about  wd:Q7431 .
+<https://de.wikipedia.org/wiki/Anja_Selbach>
+        schema:about  wd:Q10108 .
 
 <https://es.wikipedia.org/wiki/Annika_Becker>
         schema:about  wd:Q65621 .
 
+<https://de.wikipedia.org/wiki/Anastassija_Olegowna_Udalzowa>
+        schema:about  wd:Q487108 .
+
 <https://it.wikipedia.org/wiki/Annika_Becker>
         schema:about  wd:Q65621 .
 
-wd:Q1315655  wdt:P21  wd:Q6581072 ;
+wd:Q10108  rdfs:label  "Anja Huber"@en ;
+        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Anja%20Huber%20bei%20der%20Olympia-Einkleidung%20Erding%202014%20%28Martin%20Rulsch%29%2003.jpg> ;
+        wdt:P21     wd:Q6581072 ;
+        wdt:P31     wd:Q5 ;
+        wdt:P569    "1983-05-20T00:00:00Z"^^xsd:dateTime .
+
+wd:Q487108  wdt:P21  wd:Q6581072 ;
         wdt:P31   wd:Q5 ;
-        wdt:P569  "1941-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P569  "1978-09-02T00:00:00Z"^^xsd:dateTime .
 
-<https://ca.wikipedia.org/wiki/Ruth_Arnon>
-        schema:about  wd:Q7431 .
+<https://bg.wikipedia.org/wiki/%D0%A1%D0%BD%D0%B5%D0%B6%D0%B0%D0%BD%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0>
+        schema:about  wd:Q347753 .
 
-wd:Q7431  rdfs:label  "Ruth Arnon"@ace , "Ruth Arnon"@ca , "Rut Arnonová"@cs , "Ruth Arnon"@en ;
-        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Arnon%20Ruth%201.jpg> ;
+wd:Q347753  wdt:P21  wd:Q6581072 ;
+        wdt:P31   wd:Q5 ;
+        wdt:P569  "1953-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q11667  rdfs:label  "إيلينا ديمنتييفا"@ar , "ايلينا ديمنتييڤا"@arz , "Елена Дементиева"@bg ;
+        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Elena%20Dementieva%20at%20the%202010%20US%20Open%2006.jpg> ;
         wdt:P21     wd:Q6581072 ;
         wdt:P31     wd:Q5 ;
-        wdt:P569    "1933-06-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P569    "1981-10-15T00:00:00Z"^^xsd:dateTime .
 
-wd:Q74171  rdfs:label  "Olivia Pascal"@ca , "Olivia Pascal"@da , "Olivia Pascal"@de ;
-        wdt:P21     wd:Q6581072 ;
-        wdt:P31     wd:Q5 ;
-        wdt:P569    "1957-05-26T00:00:00Z"^^xsd:dateTime .
+<https://commons.wikimedia.org/wiki/Category:Anja_Huber>
+        schema:about  wd:Q10108 .
 
-<https://hu.wikipedia.org/wiki/Terszty%C3%A1nszkyn%C3%A9_Vasadi_%C3%89va>
-        schema:about  wd:Q1318572 .
-
-<https://cy.wikipedia.org/wiki/T._Czene_%C3%81gnes>
-        schema:about  wd:Q1315655 .
+<https://mk.wikipedia.org/wiki/%D0%A1%D0%BD%D0%B5%D0%B6%D0%B0%D0%BD%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0>
+        schema:about  wd:Q347753 .

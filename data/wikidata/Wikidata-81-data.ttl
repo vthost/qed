@@ -37,26 +37,26 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q4864556  schema:dateModified  "2018-08-16T06:34:44Z"^^xsd:dateTime ;
-        wdt:P351             "7204" ;
+wd:Q14906548  schema:dateModified  "2018-08-29T16:00:17Z"^^xsd:dateTime ;
+        wdt:P351             "1511" ;
         wdt:P703             wd:Q15978631 .
 
-wd:Q286987  schema:dateModified  "2018-08-27T20:03:00Z"^^xsd:dateTime ;
-        wdt:P351             "19" ;
+wd:Q414043  schema:dateModified  "2018-08-27T16:20:29Z"^^xsd:dateTime ;
+        wdt:P351             "5649" ;
         wdt:P703             wd:Q15978631 .
 
-wd:Q227339  schema:dateModified  "2018-08-25T03:53:38Z"^^xsd:dateTime ;
-        wdt:P351             "672" ;
+wd:Q410688  schema:dateModified  "2018-08-24T15:09:03Z"^^xsd:dateTime ;
+        wdt:P351             "2312" ;
         wdt:P703             wd:Q15978631 .
 
-wd:Q289013  schema:dateModified  "2018-08-24T23:01:52Z"^^xsd:dateTime ;
-        wdt:P351             "2" ;
+wd:Q410857  schema:dateModified  "2018-08-25T03:53:25Z"^^xsd:dateTime ;
+        wdt:P351             "3060" ;
         wdt:P703             wd:Q15978631 .
 
-wd:Q238509  schema:dateModified  "2018-08-16T06:16:05Z"^^xsd:dateTime ;
-        wdt:P351             "3350" ;
+wd:Q17855216  schema:dateModified  "2018-08-29T08:26:34Z"^^xsd:dateTime ;
+        wdt:P351             "786" ;
         wdt:P703             wd:Q15978631 .
 
-wd:Q5009656  schema:dateModified  "2018-08-01T12:12:13Z"^^xsd:dateTime ;
-        wdt:P351             "900" ;
+wd:Q14904941  schema:dateModified  "2018-09-03T11:12:57Z"^^xsd:dateTime ;
+        wdt:P351             "7253" ;
         wdt:P703             wd:Q15978631 .

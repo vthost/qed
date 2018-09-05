@@ -586,16 +586,17 @@ public class LogQueryDataExtractor {
 			String q = lq[1];	
 			fs.add(Feature.extractFeatures(q));
 			
-			List<Query> cqs = null;
+			List<Query> cqs = new ArrayList<Query>();
 			try {
 				cqs = createConstructQueries(q, datasetSizeMax);
 			} catch (Exception e) {
-				System.out.println("Exception "+ qid);//e.printStackTrace();
-				continue;
+				System.out.println("Exception (cqs): "+ qid);//e.printStackTrace();
+//				continue;
 			} 
 		
 //				uncomment the following line to get a file with all the cqs
-			Utils.writeConstructQueriesFile(d,qid,cqs);
+			if(cqs.size()>0)
+				Utils.writeConstructQueriesFile(d,qid,cqs);
 			
 			for (Query cq : cqs) {//					System.out.println(cq);
 				try (QueryEngineHTTP qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq)) {		
@@ -613,58 +614,59 @@ public class LogQueryDataExtractor {
 		            }
 		             
 		        } catch (Exception e) {
-		        	System.out.println(cq);
-					e.printStackTrace();
-					continue;
+		        	System.out.println("Exception (http-cq): "+ cqs.indexOf(cq));
+//		        		System.out.println(cq);
+//					e.printStackTrace();
+//					continue;
 		        }
 			}
 					
 			if(cqsWithData == 0) { 	
-	            	System.out.println("NO DATA "+ qid);
+	            	System.out.println("NO DATA: "+ qid);
 //		            	System.out.println(query);
             	
 //		            	delete other files
 //		            	(new File(d.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-            		continue;
+//            		continue;
 			}
 			
-//			RESULTS -------------------------------------------------------------------------------------					
-			InputStream in = null; Model m;
-			try {
-				
-				in = new FileInputStream(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid)));
-				 
-				// Create an empty in-memory model and populate it from the data
-				m = ModelFactory.createMemModelMaker().createModel(qid+"");
-				m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
-				
-				in.close();
-
-			} catch (Exception e) {
-				e.printStackTrace();
-				continue;
-			} 
-
+////			RESULTS -------------------------------------------------------------------------------------					
+//			InputStream in = null; Model m;
+//			try {
+//				
+//				in = new FileInputStream(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid)));
+//				 
+//				// Create an empty in-memory model and populate it from the data
+//				m = ModelFactory.createMemModelMaker().createModel(qid+"");
+//				m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
+//				
+//				in.close();
+//
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//				continue;
+//			} 
+//
 			Query query = QueryFactory.create(q);
-//				TODO	we sometimes cannot test this given our restricted dataset size
-//				fix maybe reset to smaller value
-			query.setOffset(0); 
-
-			QueryExecution qe1 = QueryExecutionFactory.create(query, m);
-			ResultSet rs = qe1.execSelect();
-//			int rss = rs.getRowNumber();
-			if(!rs.hasNext()) {			
-				System.out.println("NO RESULT "+ qid);
-//			            	System.out.println(q);
-            	
-            	//delete files
-//				(new File(d.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-//				(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
-            } else {
-            	Utils.writeQueryResultFile(d, qid, rs);
-            }
-
-			qe1.close();
+////				TODO	we sometimes cannot test this given our restricted dataset size
+////				fix maybe reset to smaller value
+//			query.setOffset(0); 
+//
+//			QueryExecution qe1 = QueryExecutionFactory.create(query, m);
+//			ResultSet rs = qe1.execSelect();
+////			int rss = rs.getRowNumber();
+//			if(!rs.hasNext()) {			
+//				System.out.println("NO RESULT "+ qid);
+////			            	System.out.println(q);
+//            	
+//            	//delete files
+////				(new File(d.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
+////				(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
+//            } else {
+//            	Utils.writeQueryResultFile(d, qid, rs);
+//            }
+//
+//			qe1.close();
 			
 			int qtriples = 0;
 			List<Element> es = extractBGPs(query.getQueryPattern());
@@ -688,7 +690,7 @@ public class LogQueryDataExtractor {
 			System.out.println(qid + ": cq nbr/cqs with data/total data: "+
 			cqs.size()+ "/" +cqsWithData+"/"+ triplesTotal );	
 			ids.add(qid);
-			int[] ns = {qtriples,cqs.size(), cqsWithData, triplesTotal};//TODO add query triples total
+			int[] ns = {qtriples,cqs.size(), cqsWithData, triplesTotal};
 			stats.add(ns);
 		}
 		
