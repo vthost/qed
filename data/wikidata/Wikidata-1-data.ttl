@@ -38,14 +38,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://species.wikimedia.org/wiki/Category:Categories>
-        schema:about     wd:Q1281 ;
+<https://species.wikimedia.org/wiki/Alexander_von_Bunge>
+        schema:about     wd:Q65899 ;
         schema:isPartOf  <https://species.wikimedia.org/> .
 
-<https://species.wikimedia.org/wiki/Fungi>
-        schema:about     wd:Q764 ;
-        schema:isPartOf  <https://species.wikimedia.org/> .
-
-<https://species.wikimedia.org/wiki/Panthera_leo>
-        schema:about     wd:Q140 ;
+<https://species.wikimedia.org/wiki/Ernst_Hugo_Heinrich_Pfitzer>
+        schema:about     wd:Q65762 ;
         schema:isPartOf  <https://species.wikimedia.org/> .

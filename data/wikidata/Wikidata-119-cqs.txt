@@ -19,7 +19,7 @@ WHERE
     ?item  wdt:P31     wd:Q4117139 ;
            rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -43,7 +43,7 @@ WHERE
     ?item  wdt:P31     wd:Q4117139 ;
            rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -67,7 +67,7 @@ WHERE
     ?item  wdt:P31     wd:Q4117139 ;
            rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -91,7 +91,7 @@ WHERE
     ?item  wdt:P31     wd:Q4117139 ;
            rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -115,7 +115,7 @@ WHERE
     ?item  wdt:P31     wd:Q4117139 ;
            rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -139,6 +139,6 @@ WHERE
     ?item  wdt:P31     wd:Q4117139 ;
            rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

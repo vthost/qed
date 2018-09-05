@@ -38,13 +38,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q753  wdt:P1108  1.9 ;
-        wdt:P2054  8.94 ;
-        wdt:P2067  62.93 ;
-        wdt:P2101  "1981"^^xsd:decimal ;
-        wdt:P2102  "4703"^^xsd:decimal ;
-        wdt:P31    wd:Q11344 .
-
 wd:Q1038  wdt:P1108  "1"^^xsd:decimal ;
         wdt:P2054  6.51 ;
         wdt:P2067  89.905 ;

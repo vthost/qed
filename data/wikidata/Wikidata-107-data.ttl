@@ -37,8 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q122318  wdt:P106  wd:Q170790 .
-
 wd:Q118292  wdt:P106  wd:Q170790 .
 
 wd:Q121108  wdt:P106  wd:Q170790 .

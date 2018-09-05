@@ -34,7 +34,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -73,7 +73,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -112,7 +112,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -151,7 +151,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -190,7 +190,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -229,7 +229,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -268,7 +268,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -307,7 +307,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -346,7 +346,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -385,7 +385,7 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -424,6 +424,6 @@ WHERE
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

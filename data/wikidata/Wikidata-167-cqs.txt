@@ -19,6 +19,6 @@ WHERE
     ?statement  prov:wasDerivedFrom  ?ref .
     ?entity   ?claim               ?statement
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -16,6 +16,6 @@ WHERE
     wd:Q235065  wdt:P625  ?broadWayLoc .
     ?venue    wdt:P625   ?coords
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -40,8 +40,5 @@
 wd:Q3704089  rdfs:label  "De bello Gothico"@la , "De bello Gothico"@it ;
         wdt:P31     wd:Q37484 .
 
-wd:Q4166509  rdfs:label  "Doon Mohučský"@cs ;
-        wdt:P31     wd:Q37484 .
-
-wd:Q8275  rdfs:label  "Ilias"@af , "Ilias"@bar , "Ilias"@br , "الإلياذة"@ar , "Iliada"@an , "Iliad"@en ;
+wd:Q8275  rdfs:label  "Iliade"@it , "Iliada"@pl , "Iliada"@an , "Iliad"@en , "ኢሊያዳ"@am ;
         wdt:P31     wd:Q37484 .

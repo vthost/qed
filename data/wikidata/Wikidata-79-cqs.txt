@@ -15,7 +15,7 @@ WHERE
               rdfs:label  ?label ;
               rdfs:label  ?enLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -35,6 +35,6 @@ WHERE
               rdfs:label  ?label ;
               rdfs:label  ?enLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

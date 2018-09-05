@@ -21,7 +21,7 @@ WHERE
     ?awardStat  ps:P166  wd:Q44585 ;
               pq:P585  ?when
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -47,6 +47,6 @@ WHERE
     ?awardStat  ps:P166  wd:Q44585 ;
               pq:P585  ?when
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -10,6 +10,6 @@ CONSTRUCT
   }
 WHERE
   { ?person  wdt:P1340  ?eyeColor }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

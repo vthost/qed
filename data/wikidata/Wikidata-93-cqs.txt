@@ -13,7 +13,7 @@ WHERE
   { { ?standard  wdt:P856  ?website }
     ?standard  wdt:P1462  wd:Q37033
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -31,6 +31,6 @@ WHERE
   { FILTER NOT EXISTS { ?standard  wdt:P856  ?website }
     ?standard  wdt:P1462  wd:Q37033
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

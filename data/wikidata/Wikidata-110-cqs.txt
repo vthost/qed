@@ -24,6 +24,6 @@ WHERE
                                   schema:isPartOf    <https://en.wikipedia.org/>
                       }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

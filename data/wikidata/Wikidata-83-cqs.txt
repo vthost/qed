@@ -14,6 +14,6 @@ WHERE
     ?variant  wdt:P3358  ?disease ;
               wdt:P3433  ?gene
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

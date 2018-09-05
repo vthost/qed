@@ -17,7 +17,7 @@ WHERE
     ?compound  wdt:P31  wd:Q11173 ;
               wdt:P462  ?color
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -39,6 +39,6 @@ WHERE
     ?compound  wdt:P31  wd:Q11173 ;
               wdt:P462  ?color
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

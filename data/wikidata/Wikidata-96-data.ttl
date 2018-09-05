@@ -42,10 +42,6 @@ wd:Q92743  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Dr%20Vin
         wdt:P2021  "2"^^xsd:decimal ;
         wdt:P485   wd:Q964035 .
 
-wd:Q1384851  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Genegolub.jpg> ;
-        wdt:P2021  "2"^^xsd:decimal ;
-        wdt:P485   wd:Q964035 .
-
-wd:Q2644293  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/A.%20Quarteroni%202.jpg> ;
-        wdt:P2021  "4"^^xsd:decimal ;
+wd:Q92746  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/John%20Backus%202.jpg> ;
+        wdt:P2021  "5"^^xsd:decimal ;
         wdt:P485   wd:Q964035 .

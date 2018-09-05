@@ -16,7 +16,7 @@ WHERE
            wdt:P703             wd:Q15978631 ;
            schema:dateModified  ?date_modified
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -37,6 +37,6 @@ WHERE
            wdt:P703             wd:Q15978631 ;
            schema:dateModified  ?date_modified
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

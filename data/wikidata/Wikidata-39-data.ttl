@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q674305  rdfs:label  "Make-Up"@en , "Make-Up"@fi , "Make-Up"@fr ;
+wd:Q466342  rdfs:label  "Mystic Prophecy"@de , "Mystic Prophecy"@el ;
         wdt:P31     wd:Q5741069 .
 
-wd:Q670620  rdfs:label  "Wizard"@es , "Wizard"@en , "Wizard"@de ;
+wd:Q189382  rdfs:label  "كينغ كريمسون"@ar , "King Crimson"@nl ;
         wdt:P31     wd:Q5741069 .

@@ -16,6 +16,6 @@ WHERE
             wdt:P19   ?place .
     ?place  wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

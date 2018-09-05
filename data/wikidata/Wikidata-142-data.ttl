@@ -38,18 +38,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q64414  wdt:P106  wd:Q36834 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-1987-1023-055%2C%20Berlin%2C%20750-Jahr-Feier%2C%20Staatsakt%2C%20Konzert%2C%20Adam.jpg> ;
-        wdt:P19   wd:Q1731 .
-
-wd:Q60908  wdt:P106  wd:Q36834 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Moritz%20Hauptmann.jpg> ;
-        wdt:P19   wd:Q1731 .
+wd:Q487070  wdt:P625  "Point(12.246111111 51.834166666)"^^geo:wktLiteral .
 
 wd:Q57879  wdt:P106  wd:Q36834 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%20M%C3%BCller%20by%20Schr%C3%B6ter.jpg> ;
         wdt:P19   wd:Q487070 .
 
-wd:Q487070  wdt:P625  "Point(12.246111111 51.834166666)"^^geo:wktLiteral .
-
 wd:Q1731  wdt:P625  "Point(13.733333333 51.033333333)"^^geo:wktLiteral .
+
+wd:Q64414  wdt:P106  wd:Q36834 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-1987-1023-055%2C%20Berlin%2C%20750-Jahr-Feier%2C%20Staatsakt%2C%20Konzert%2C%20Adam.jpg> ;
+        wdt:P19   wd:Q1731 .

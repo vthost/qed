@@ -13,7 +13,7 @@ WHERE
   { { ?item  wdt:P18  ?_image }
     ?item  wdt:P161  wd:Q221074
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -31,6 +31,6 @@ WHERE
   { FILTER NOT EXISTS { ?item  wdt:P18  ?_image }
     ?item  wdt:P161  wd:Q221074
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

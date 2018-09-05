@@ -37,14 +37,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q249944  wdt:P31  wd:Q4167410 .
-
 wd:Q5378081  wdt:P123  wd:Q249944 .
 
-wd:Q249655  wdt:P31  wd:Q4167410 .
-
-wd:Q243085  wdt:P31  wd:Q4167410 .
+wd:Q249944  wdt:P31  wd:Q4167410 .
 
 wd:Q1773497  wdt:P123  wd:Q249655 .
 
-wd:Q19226805  wdt:P123  wd:Q243085 .
+wd:Q249655  wdt:P31  wd:Q4167410 .

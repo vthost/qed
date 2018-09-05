@@ -16,6 +16,6 @@ WHERE
               wdt:P18   ?picture ;
               wdt:P619  ?date
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

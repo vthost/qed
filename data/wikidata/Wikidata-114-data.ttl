@@ -37,22 +37,22 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q5203268  rdfs:label  "D-Lib Magazine"@da , "D-Lib Magazine"@de , "D-Lib Magazine"@en ;
+wd:Q5203268  rdfs:label  "D-Lib Magazine"@da , "D-Lib Magazine"@de ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q199655 , wd:Q16387 , wd:Q13420675 .
 
-wd:Q6295441  rdfs:label  "Journal of Librarianship and Information Science"@en , "Journal of Librarianship and Information Science"@de , "Journal of Librarianship and Information Science"@da ;
+wd:Q6295441  rdfs:label  "Journal of Librarianship and Information Science"@de , "Journal of Librarianship and Information Science"@da ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q13420675 , wd:Q16387 , wd:Q199655 .
 
-wd:Q72223  rdfs:label  "European Journal of Anaesthesiology"@fi , "European Journal of Anaesthesiology"@en , "European Journal of Anaesthesiology"@da ;
+wd:Q72223  rdfs:label  "European Journal of Anaesthesiology"@en , "European Journal of Anaesthesiology"@da ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q13420675 , wd:Q16387 , wd:Q199655 .
 
-wd:Q152047  rdfs:label  "Journal of Information Science"@fi , "Journal of Information Science"@en , "Journal of Information Science"@da ;
+wd:Q152047  rdfs:label  "Journal of Information Science"@en , "Journal of Information Science"@da ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q13420675 , wd:Q16387 , wd:Q199655 .
 
-wd:Q5051313  rdfs:label  "Cataloging & Classification Quarterly"@da , "Cataloging & Classification Quarterly"@en , "Cataloging & Classification Quarterly"@fi ;
+wd:Q5051313  rdfs:label  "Cataloging & Classification Quarterly"@da , "Cataloging & Classification Quarterly"@en ;
         wdt:P31     wd:Q5633421 ;
         wdt:P921    wd:Q199655 , wd:Q16387 , wd:Q13420675 .

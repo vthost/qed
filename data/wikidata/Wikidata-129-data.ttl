@@ -43,14 +43,14 @@ wd:Q43790  wdt:P106  wd:Q33999 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%20Tr%C3%BCbner%20Schauspieler%20Konrad%20Dreher.jpg> ;
         wdt:P31   wd:Q5 ;
         wdt:P569  "1859-10-30T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570  "1944-12-07T00:00:00Z"^^xsd:dateTime , "1944-12-06T00:00:00Z"^^xsd:dateTime .
+        wdt:P570  "1944-12-07T00:00:00Z"^^xsd:dateTime .
+
+wd:Q65550  wdt:P106  wd:Q33999 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Katja%20Woywood%20Alarm%20f%C3%BCr%20Cobra%2011.jpg> ;
+        wdt:P31   wd:Q5 .
 
 wd:Q66011  wdt:P106  wd:Q33999 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Joachim%20Kr%C3%B3l%20%28Berlin%20Film%20Festival%202009%29%20small-sized.jpg> ;
-        wdt:P31   wd:Q5 .
-
-wd:Q68054  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gudrun%20Landgrebe%20%282%29.JPG> ;
         wdt:P31   wd:Q5 .
 
 wd:Q42786  wdt:P106  wd:Q33999 ;
@@ -58,7 +58,3 @@ wd:Q42786  wdt:P106  wd:Q33999 ;
         wdt:P31   wd:Q5 ;
         wdt:P569  "1929-05-04T00:00:00Z"^^xsd:dateTime ;
         wdt:P570  "1993-01-20T00:00:00Z"^^xsd:dateTime .
-
-wd:Q65550  wdt:P106  wd:Q33999 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Katja%20Woywood%20Alarm%20f%C3%BCr%20Cobra%2011.jpg> ;
-        wdt:P31   wd:Q5 .

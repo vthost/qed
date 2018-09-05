@@ -21,6 +21,6 @@ WHERE
                               schema:inLanguage  "en"
                       }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

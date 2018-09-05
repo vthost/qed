@@ -9,6 +9,6 @@ CONSTRUCT
   }
 WHERE
   { ?work  wdt:P826  ?tonality }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

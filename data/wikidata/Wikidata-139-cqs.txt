@@ -34,7 +34,7 @@ WHERE
               pq:P580  ?start ;
               pq:P748  ?monarch
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -73,7 +73,7 @@ WHERE
               pq:P580  ?start ;
               pq:P748  ?monarch
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -112,7 +112,7 @@ WHERE
               pq:P580  ?start ;
               pq:P748  ?monarch
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -151,6 +151,6 @@ WHERE
               pq:P580  ?start ;
               pq:P748  ?monarch
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

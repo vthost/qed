@@ -19,7 +19,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -43,7 +43,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -67,7 +67,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -91,7 +91,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -115,7 +115,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -139,7 +139,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -163,7 +163,7 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -187,6 +187,6 @@ WHERE
     ?item  wdt:P180  wd:Q243 ;
            wdt:P31   ?instance
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

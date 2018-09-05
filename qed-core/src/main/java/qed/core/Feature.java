@@ -80,7 +80,7 @@ public enum Feature {
 		case COUNT:
 			break;
 		case DISTINCT:
-			break;
+			return false; //break;
 		case FILTER:
 			return query.matches("(?i).*\\s(filter not exists|filter\\s*(langmatches\\s*)?\\().*");
 		case FROM_NAMED:
@@ -90,7 +90,7 @@ public enum Feature {
 		case HAVING:
 			return query.matches("(?i).*\\shaving\\s*\\(.*");
 		case LIMIT:
-			return query.matches("(?i).*\\slimit\\s+[0-9].*");
+			return false; //query.matches("(?i).*\\slimit\\s+[0-9].*");
 		case MAX:
 			break;
 		case MIN:

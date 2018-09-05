@@ -9,7 +9,7 @@ WHERE
   { FILTER ( ?count > 1 )
     { ?obj  wdt:P345  ?id }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -23,6 +23,6 @@ WHERE
   { FILTER ( ! ( ?count > 1 ) )
     { ?obj  wdt:P345  ?id }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

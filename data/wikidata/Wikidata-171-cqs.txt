@@ -20,6 +20,6 @@ WHERE
     ?wdP      wikibase:statementProperty  ?v ;
               wikibase:claim        ?p
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

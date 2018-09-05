@@ -37,9 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q2944483  wdt:P31  wd:Q212805 ;
-        wdt:P856  <http://dp.la/> .
-
 wd:Q2915193  wdt:P31  wd:Q212805 ;
         wdt:P856  <http://eric.ed.gov/> .
 

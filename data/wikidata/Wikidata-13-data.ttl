@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q496437  rdfs:label  "Sarah Connor"@en , "Sarah Connor"@de , "Sarah Connor"@da , "سارة كونور"@ar .
+wd:Q496437  rdfs:label  "Sarah Connor"@en , "Sarah Connor"@da , "سارة كونور"@ar .
 
-wd:Q376577  rdfs:label  "John Connor"@es , "John Connor"@it , "John Connor"@en , "John Connor"@nl ;
+wd:Q376577  rdfs:label  "John Connor"@de , "John Connor"@es , "John Connor"@en , "John Connor"@nl ;
         wdt:P1080   wd:Q620588 ;
         wdt:P25     wd:Q496437 .

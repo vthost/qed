@@ -18,6 +18,6 @@ WHERE
     ?place  wdt:P625  ?_coordinate_location .
     ?item   wdt:P18   ?_image
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

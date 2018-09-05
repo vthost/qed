@@ -15,6 +15,6 @@ WHERE
   { ?human  wdt:P31   wd:Q5 ;
             rdf:type  wdno:P40
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

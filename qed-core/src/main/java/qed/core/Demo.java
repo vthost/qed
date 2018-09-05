@@ -13,8 +13,9 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
 public class Demo {
 	
-	public static Feature[] exfs = {Feature.FILTER,Feature.MINUS,Feature.OPTIONAL,Feature.OFFSET,
-			Feature.UNION};
+	public static Feature[] exfs = {
+			Feature.FILTER,Feature.MINUS,Feature.OPTIONAL,Feature.OFFSET,
+			Feature.UNION, Feature.ORDER_BY};
 	
 	private static Feature[][] createSimpleConfigs() {
 		
@@ -51,13 +52,14 @@ public class Demo {
 		LogQueryDataExtractor de = new LogQueryDataExtractor();
 		
 		if(dataset == Dataset.WIKIDATA) {
-			de.extractQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset);
+			de.extractQueryDataAndResults(dataset.endpoint, 2, Utils.DATA_DIR + dataset);
 			Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);
 			Utils.statsSummary(Utils.DATA_DIR + dataset + File.separator, 7);
 		} else {
-			de.extractAllQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset +"2");
-			Utils.mergeStatisticsFiles(Utils.DATA_DIR + dataset +"2");
-			Utils.statsSummary(Utils.DATA_DIR + dataset +"2"+ File.separator, 7);
+			de.extractAllQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset +"1");
+			Utils.mergeStatisticsFiles(Utils.DATA_DIR + dataset +"1");
+			Utils.integrateGenerationStatistics(Utils.DATA_DIR + dataset +"1");
+			Utils.statsSummary(Utils.DATA_DIR + dataset +"1"+ File.separator, 7);
 		}
 	}
 	
@@ -145,10 +147,10 @@ public class Demo {
 //		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs());
 //		d.extractData(Dataset.WIKIDATA);
 //		d.extractData(Dataset.DBPEDIA);
-		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"2");
-		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2");
+//		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"2");
+		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"1");
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2");
-		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2"+ File.separator, 7);
+		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"1"+ File.separator, 7);
 		
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA);
 //		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);

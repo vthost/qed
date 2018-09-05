@@ -43,6 +43,3 @@ wd:Q244165  wdt:P1082  "146600"^^xsd:decimal ;
 
 wd:Q219060  wdt:P1082  "4550368"^^xsd:decimal ;
         wdt:P31    wd:Q6256 .
-
-wd:Q756617  wdt:P1082  "5707251"^^xsd:decimal ;
-        wdt:P31    wd:Q6256 .

@@ -12,6 +12,6 @@ CONSTRUCT
   }
 WHERE
   { ?continent  wdt:P31  wd:Q5107 }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

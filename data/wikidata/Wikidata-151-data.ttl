@@ -41,8 +41,5 @@
 wd:Q123935  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Vel%C3%A1zquez%20-%20El%20Triunfo%20de%20Baco%20o%20Los%20Borrachos%20%28Museo%20del%20Prado%2C%201628-29%29.jpg> ;
         wdt:P31  wd:Q3305213 .
 
-wd:Q113262  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20082.jpg> ;
-        wdt:P31  wd:Q3305213 .
-
 wd:Q75846  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/El%20Lavatorio%20%28Tintoretto%29.jpg> ;
         wdt:P31  wd:Q3305213 .

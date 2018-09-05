@@ -38,34 +38,36 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q137804  wdt:P136  wd:Q3071 ;
+wd:Q39004  wdt:P136  wd:Q1344 ;
         wdt:P31   wd:Q215380 ;
-        wdt:P571  "1991-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P571  "1943-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q83440  rdfs:label  "country music"@en .
 
+wd:Q1344  rdfs:label  "опера"@be , "òpera"@ca .
+
 wd:Q45981  rdfs:label  "rhythm and blues"@en .
-
-wd:Q25650  wdt:P136  wd:Q3071 ;
-        wdt:P31   wd:Q215380 ;
-        wdt:P571  "2005-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q178134  wdt:P136  wd:Q45981 ;
-        wdt:P31   wd:Q215380 ;
-        wdt:P571  "1954-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q18852  wdt:P136  wd:Q3071 ;
-        wdt:P31   wd:Q215380 ;
-        wdt:P571  "1997-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q167408  wdt:P136  wd:Q83440 ;
         wdt:P31   wd:Q215380 ;
         wdt:P571  "1955-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q235858  rdfs:label  "folk music"@en , "موسیقی فولکلور"@fa , "Folk music"@en-ca , "Volksmusik"@de .
-
-wd:Q59965  wdt:P136  wd:Q235858 ;
+wd:Q18852  wdt:P136  wd:Q3071 ;
         wdt:P31   wd:Q215380 ;
-        wdt:P571  "1957-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P571  "1997-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q3071  rdfs:label  "Punk"@de , "Punko"@eo , "Punk"@an , "punk rock"@en .
+wd:Q10926  rdfs:label  "emo"@en .
+
+wd:Q83814  wdt:P136  wd:Q3071 ;
+        wdt:P31   wd:Q215380 ;
+        wdt:P571  "1979-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q28231  wdt:P136  wd:Q45981 ;
+        wdt:P31   wd:Q215380 ;
+        wdt:P571  "1955-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16414  wdt:P136  wd:Q10926 ;
+        wdt:P31   wd:Q215380 ;
+        wdt:P571  "1997-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3071  rdfs:label  "Punk"@de , "펑크 록"@ko , "punk rock"@en .

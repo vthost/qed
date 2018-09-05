@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q27048453  rdfs:label  "Henry Smolinski"@ca , "Henry Smolinski"@br , "Henry Smolinski"@bar ;
-        wdt:P157    wd:Q609209 .
+wd:Q56131320  rdfs:label  "Michael Dacre"@en ;
+        wdt:P157    wd:Q300134 .
 
-wd:Q609209  rdfs:label  "Mizar"@en ;
-        wdt:P61     wd:Q27048453 .
+wd:Q300134  rdfs:label  "AVCEN Jetpod"@en , "AVCEN Jetpod"@de ;
+        wdt:P61     wd:Q56131320 .

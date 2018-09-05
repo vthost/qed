@@ -37,8 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q277463  wdt:P1236  "UDUUDUDUUDUDUUDUDUURDUUDRDUUDD" .
-
 wd:Q254110  wdt:P1236  "RDDRDDRDDRDUUDDDURDDRDDRDDDUDD" .
 
 wd:Q118018  wdt:P1236  "*rruu drruu drdrdrd rrruu drruu uuddddd" .

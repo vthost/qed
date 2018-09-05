@@ -37,15 +37,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q18883249  wdt:P1148  "130"^^xsd:decimal ;
-        wdt:P279   wd:Q925 .
+wd:Q2226267  wdt:P1148  "46"^^xsd:decimal ;
+        wdt:P279   wd:Q938 .
 
-wd:Q18883239  wdt:P1148  "122"^^xsd:decimal ;
-        wdt:P279   wd:Q925 .
+wd:Q544529  wdt:P1148  "52"^^xsd:decimal ;
+        wdt:P279   wd:Q938 .
 
-wd:Q18883238  wdt:P1148  "121"^^xsd:decimal ;
-        wdt:P279   wd:Q925 .
-
-wd:Q925  wdt:P1086  "80"^^xsd:decimal ;
-        wdt:P246   "Hg" ;
+wd:Q938  wdt:P1086  "38"^^xsd:decimal ;
+        wdt:P246   "Sr" ;
         wdt:P31    wd:Q11344 .

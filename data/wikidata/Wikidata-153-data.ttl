@@ -38,9 +38,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:Q20812742-11ba6153-4cf7-5b2b-087e-44e18697005a
-        a        wikibase:BestRank ;
-        pq:P495  wd:Q30 .
+wd:Q17330958  wdt:P170  wd:Q4233718 ;
+        wdt:P31   wd:Q3305213 .
 
 wd:Q20812742  p:P170  wds:Q20812742-11ba6153-4cf7-5b2b-087e-44e18697005a ;
         wdt:P170  wd:Q4233718 ;
@@ -50,24 +49,14 @@ wds:Q27974840-c2f97ccb-493a-23b3-eab4-d68c7575bb28
         a        wikibase:BestRank ;
         pq:P495  wd:Q794 .
 
-wds:Q24017992-dd9a9cd3-4bd6-96a7-fb1b-726068314edf
+wds:Q20812742-11ba6153-4cf7-5b2b-087e-44e18697005a
         a        wikibase:BestRank ;
-        pq:P495  wd:Q38 .
+        pq:P495  wd:Q30 .
 
-wd:Q178754  wdt:P170  wd:Q4233718 ;
+wd:Q17331021  wdt:P170  wd:Q4233718 ;
         wdt:P31   wd:Q3305213 .
 
 wd:Q27974840  p:P170  wds:Q27974840-c2f97ccb-493a-23b3-eab4-d68c7575bb28 ;
-        wdt:P170  wd:Q4233718 ;
-        wdt:P31   wd:Q3305213 .
-
-wd:Q372628  wdt:P170  wd:Q4233718 ;
-        wdt:P31   wd:Q3305213 .
-
-wd:Q469722  wdt:P170  wd:Q4233718 ;
-        wdt:P31   wd:Q3305213 .
-
-wd:Q24017992  p:P170  wds:Q24017992-dd9a9cd3-4bd6-96a7-fb1b-726068314edf ;
         wdt:P170  wd:Q4233718 ;
         wdt:P31   wd:Q3305213 .
 

@@ -16,7 +16,7 @@ WHERE
     ?building  wdt:P31  wd:Q7138926 ;
               wdt:P18  ?picture
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -37,6 +37,6 @@ WHERE
     ?building  wdt:P31  wd:Q7138926 ;
               wdt:P18  ?picture
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

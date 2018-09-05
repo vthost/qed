@@ -42,5 +42,3 @@
 wd:Q140709  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg> .
 
 wd:Q139778  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg> .
-
-wd:Q141003  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg> .

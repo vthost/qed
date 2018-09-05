@@ -39,22 +39,14 @@
 
 wd:Q194104  wdt:P180  wd:Q779939 .
 
-wd:Q4   rdfs:label  "death"@en .
+wd:Q26837591  wdt:P180  wd:Q4 .
+
+wd:Q4   rdfs:label  "مرگ"@fa , "death"@en .
 
 wd:Q50132179  wdt:P180  wd:Q4 .
 
-wd:Q5   rdfs:label  "mens"@nl .
-
-wd:Q688870  wdt:P180  wd:Q1560197 .
-
-wd:Q18918104  wdt:P180  wd:Q5 .
-
 wd:Q667124  wdt:P180  wd:Q1402893 .
 
-wd:Q55038748  wdt:P180  wd:Q4 .
-
-wd:Q18918102  wdt:P180  wd:Q5 .
-
-wd:Q18918100  wdt:P180  wd:Q5 .
+wd:Q22348421  wdt:P180  wd:Q4 .
 
 wd:Q53869465  wdt:P180  wd:Q4 .

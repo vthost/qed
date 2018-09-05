@@ -12,7 +12,7 @@ WHERE
   { { ?father  wdt:P18  ?picture }
     ?subj  wdt:P22  ?father
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -29,6 +29,6 @@ WHERE
   { FILTER NOT EXISTS { ?father  wdt:P18  ?picture }
     ?subj  wdt:P22  ?father
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

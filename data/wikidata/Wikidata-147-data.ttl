@@ -38,10 +38,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q3879244  wdt:P170  wd:Q34661 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20044.jpg> ;
-        wdt:P31   wd:Q3305213 .
-
 wd:Q2551417  wdt:P170  wd:Q34661 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20067.jpg> ;
         wdt:P31   wd:Q3305213 .

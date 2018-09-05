@@ -11,6 +11,6 @@ CONSTRUCT
   }
 WHERE
   { ?item  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg> }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

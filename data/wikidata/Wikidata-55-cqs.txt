@@ -15,6 +15,6 @@ WHERE
     ?highway  wdt:P2789  ?city .
     ?city     wdt:P625   ?coordinates
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -16,6 +16,6 @@ WHERE
              wdt:P50   ?author .
     ?author  wdt:P106  ?occupation
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

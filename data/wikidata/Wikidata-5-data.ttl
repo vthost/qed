@@ -39,12 +39,8 @@
 
 wd:Q462760  wdt:P21  []  .
 
-wd:Q131090  wdt:P21  []  .
-
 wd:Q82356  wdt:P21  wd:Q43445 .
-
-wd:Q483728  wdt:P21  []  .
 
 wd:Q138153  wdt:P21  wd:Q43445 .
 
-wd:Q155695  wdt:P21  wd:Q43445 .
+wd:Q131090  wdt:P21  []  .

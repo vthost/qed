@@ -17,7 +17,7 @@ WHERE
     ?s        wdt:P31       wd:Q571 .
     ?sitelink  schema:about  ?s
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -39,7 +39,7 @@ WHERE
     ?s        wdt:P31       wd:Q571 .
     ?sitelink  schema:about  ?s
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -61,6 +61,6 @@ WHERE
     ?s        wdt:P31       wd:Q571 .
     ?sitelink  schema:about  ?s
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

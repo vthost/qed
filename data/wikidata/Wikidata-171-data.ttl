@@ -37,31 +37,22 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:Q431-E352A89F-64A8-4307-809F-595061E29677
+wd:Q4582  p:P1036  wds:Q4582-4bfbdcf7-403f-4d27-7d28-763d51fb39d0 .
+
+wds:Q3680-bcd58caf-4724-8021-fd28-ab09be2a779a
         wikibase:rank  wikibase:DeprecatedRank ;
-        ps:P31         wd:Q28598684 .
-
-wd:Q431  p:P31  wds:Q431-E352A89F-64A8-4307-809F-595061E29677 .
-
-wd:P47  wikibase:claim              p:P47 ;
-        wikibase:statementProperty  ps:P47 .
-
-wd:P31  wikibase:claim              p:P31 ;
-        wikibase:statementProperty  ps:P31 .
-
-wds:Q148-3ECEF26E-49EB-41A2-A2F9-9FF36D4BC6D9
-        wikibase:rank  wikibase:DeprecatedRank ;
-        ps:P47         wd:Q15180 .
-
-wd:Q1533  p:P1036  wds:Q1533-1c02c438-4c59-1651-bca5-e5a6a73a9803 .
+        ps:P150        wd:Q39420 .
 
 wd:P1036  wikibase:claim            p:P1036 ;
         wikibase:statementProperty  ps:P1036 .
 
-wds:Q1533-1c02c438-4c59-1651-bca5-e5a6a73a9803
-        wikibase:rank  wikibase:DeprecatedRank ;
-        ps:P1036       "2--877" .
+wd:Q3680  p:P150  wds:Q3680-bcd58caf-4724-8021-fd28-ab09be2a779a .
+
+wd:P150  wikibase:claim             p:P150 ;
+        wikibase:statementProperty  ps:P150 .
 
 hint:Query  hint:optimizer  "None" .
 
-wd:Q148  p:P47  wds:Q148-3ECEF26E-49EB-41A2-A2F9-9FF36D4BC6D9 .
+wds:Q4582-4bfbdcf7-403f-4d27-7d28-763d51fb39d0
+        wikibase:rank  wikibase:DeprecatedRank ;
+        ps:P1036       "2--8332" .

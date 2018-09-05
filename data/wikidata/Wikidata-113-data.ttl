@@ -37,11 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q21090194  wdt:P356  "10.1371/JOURNAL.PBIO.0050254" ;
-        wdt:P698  "17803354" .
+wd:Q21003830  wdt:P356  "10.1371/JOURNAL.PCBI.1003092" ;
+        wdt:P698  "23785268" .
 
-wd:Q21090115  wdt:P356  "10.1371/JOURNAL.PONE.0000418" ;
-        wdt:P698  "17476339" .
-
-wd:Q21092822  wdt:P356  "10.1371/JOURNAL.PBIO.0020365" ;
-        wdt:P698  "15510225" .
+wd:Q21003953  wdt:P356  "10.1371/JOURNAL.PONE.0023852" ;
+        wdt:P698  "21909365" .

@@ -19,6 +19,6 @@ WHERE
     ?author   wdt:P31          wd:Q5 .
     ?paper    wdt:P50          ?author
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

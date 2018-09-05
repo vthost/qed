@@ -50,12 +50,6 @@ wd:Q143496  wdt:P231  "9003-56-9" ;
         wdt:P31   wd:Q11173 ;
         wdt:P662  "24756" .
 
-wd:Q411588  wdt:P231  "496775-61-2" ;
-        wdt:P235  "XDXWLKQMMKQXPV-QYQHSDTDSA-N" ;
-        wdt:P274  "C₂₅H₂₂N₄O₄" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "19879943" .
-
 wd:Q27102985  wdt:P231  "2956-16-3" ;
         wdt:P235  "HSCJRCZFDFQWRP-LNYDKVEPSA-N" ;
         wdt:P274  "C₁₅H₂₄N₂O₁₇P₂" ;
@@ -63,22 +57,17 @@ wd:Q27102985  wdt:P231  "2956-16-3" ;
         wdt:P661  "5256749" ;
         wdt:P662  "6857410" .
 
-wd:Q115469  wdt:P231  "100-58-3" ;
-        wdt:P235  "NIXOIRLDFIPNLJ-UHFFFAOYSA-M" ;
-        wdt:P274  "C₆H₅BrMg" ;
+wd:Q411588  wdt:P231  "496775-61-2" ;
+        wdt:P235  "XDXWLKQMMKQXPV-QYQHSDTDSA-N" ;
+        wdt:P274  "C₂₅H₂₂N₄O₄" ;
         wdt:P31   wd:Q11173 ;
-        wdt:P662  "66852" .
+        wdt:P661  "19879943" .
 
 wd:Q410056  wdt:P231  "17082-12-1" ;
         wdt:P235  "DMLAVOWQYNRWNQ-BUHFOSPRSA-N" ;
         wdt:P274  "C₁₂H₁₀N₂" ;
         wdt:P31   wd:Q11173 ;
         wdt:P661  "2185" .
-
-wd:Q16682750  wdt:P231  "12168-85-3" ;
-        wdt:P235  "LXYMYNFCFCULEO-UHFFFAOYSA-N" ;
-        wdt:P274  "Ca₃OSiO₄" ;
-        wdt:P31   wd:Q11173 .
 
 wd:Q133767  wdt:P231  "14457-64-8" ;
         wdt:P235  "AIRCTMFFNKZQPN-UHFFFAOYSA-N" ;
@@ -102,27 +91,8 @@ wd:Q82804  wdt:P231  "99644-28-7" ;
         wdt:P274  "EsI₃" ;
         wdt:P31   wd:Q11173 .
 
-wd:Q415798  wdt:P231  "1414-45-5" ;
-        wdt:P274  "C₁₄₃H₂₃₀N₄₂O₃₇S₇" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "21106355" ;
-        wdt:P662  "16219761" .
-
 wd:Q326224  wdt:P231  "64-86-8" ;
         wdt:P274  "C₂₂H₂₅NO₆" ;
         wdt:P31   wd:Q11173 ;
         wdt:P661  "2731" ;
         wdt:P662  "6167" .
-
-wd:Q27104386  wdt:P231  "992-67-6" ;
-        wdt:P235  "KFWWCMJSYSSPSK-CITAKDKDSA-N" ;
-        wdt:P274  "C₂₅H₄₀N₇O₁₇P₃S" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "21865275" ;
-        wdt:P662  "644064" .
-
-wd:Q407684  wdt:P231  "19287-45-7" ;
-        wdt:P235  "XTHHQYJDAMCIOL-UHFFFAOYSA-N" ;
-        wdt:P274  "B₂H₆" ;
-        wdt:P31   wd:Q11173 ;
-        wdt:P661  "17215804" .

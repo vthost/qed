@@ -20,7 +20,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -45,7 +45,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -70,7 +70,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -95,7 +95,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -120,7 +120,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -145,7 +145,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -170,7 +170,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -195,7 +195,7 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -220,6 +220,6 @@ WHERE
     ?h  wdt:P39   wd:Q11696 ;
         wdt:P509  ?cause
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

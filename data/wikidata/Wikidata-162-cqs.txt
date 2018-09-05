@@ -13,6 +13,6 @@ WHERE
               wdt:P699    ?doid .
     ?o        owl:sameAs  ?sa
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

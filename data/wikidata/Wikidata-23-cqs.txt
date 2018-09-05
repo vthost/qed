@@ -29,7 +29,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -63,7 +63,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -97,7 +97,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -131,7 +131,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -165,7 +165,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -199,7 +199,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -233,7 +233,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -267,7 +267,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -301,7 +301,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -335,7 +335,7 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -369,6 +369,6 @@ WHERE
     { ?subj  wdt:P580  ?d1 }
     ?subj  wdt:P31  wd:Q178561
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

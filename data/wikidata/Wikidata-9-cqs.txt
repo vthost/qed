@@ -11,6 +11,6 @@ WHERE
   { ?name  wdt:P31   wd:Q202444 ;
            wdt:P460  ?otherName
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

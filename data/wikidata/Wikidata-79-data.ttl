@@ -37,8 +37,8 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q8285  rdfs:label  "Miastenia"@pl , "myasthenia gravis"@en , "Miastenìa greva"@pms , "miastenia grave"@pt ;
-        wdt:P699    "DOID:437" .
+wd:Q2140130  rdfs:label  "sindrome di Wallenberg"@it , "lateral medullary syndrome"@en , "Wallenberg-Syndrom"@de ;
+        wdt:P699    "DOID:3522" .
 
-wd:Q819207  rdfs:label  "pseŭdohipoparatiroidismo"@eo , "Pseudohypoparathyreoidismus"@de , "قصور جارات الدرق الكاذب"@ar ;
-        wdt:P699    "DOID:4184" .
+wd:Q1233526  rdfs:label  "Osteosklerose"@de , "تصلب العظم"@ar , "Osteosclerosis"@cy ;
+        wdt:P699    "DOID:4254" .

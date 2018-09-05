@@ -16,7 +16,7 @@ WHERE
     }
     { ?person  wdt:P106  ?occup }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -37,7 +37,7 @@ WHERE
     }
     { ?person  wdt:P106  ?occup }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -58,7 +58,7 @@ WHERE
     }
     { ?person  wdt:P106  ?occup }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -79,7 +79,7 @@ WHERE
     }
     { ?person  wdt:P106  ?occup }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -100,7 +100,7 @@ WHERE
                       }
     { ?person  wdt:P106  ?occup }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -121,6 +121,6 @@ WHERE
                       }
     { ?person  wdt:P106  ?occup }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

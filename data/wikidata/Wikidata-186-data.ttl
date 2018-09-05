@@ -37,16 +37,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q201041  wdt:P106  wd:Q116 .
-
 wd:Q116  rdfs:label  "monarhs"@lv , "君主"@zh .
 
-wd:Q361740  wdt:P106  wd:Q116 .
+wd:Q113217  wdt:P106  wd:Q116 .
 
 wd:Q196527  wdt:P106  wd:Q116 .
 
-wd:Q361748  wdt:P106  wd:Q116 .
-
-wd:Q364751  wdt:P106  wd:Q116 .
+wd:Q114203  wdt:P106  wd:Q116 .
 
 wd:Q198486  wdt:P106  wd:Q116 .

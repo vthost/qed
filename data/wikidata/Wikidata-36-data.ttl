@@ -38,11 +38,17 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q2080325  rdfs:label  "Обсада на форт Уилям Хенри"@bg , "batalla de Fort William Henry"@ca , "Bitva o pevnost William Henry"@cs , "Siege of Fort William Henry"@en ;
+wd:Q2080325  rdfs:label  "Обсада на форт Уилям Хенри"@bg , "batalla de Fort William Henry"@ca , "Siege of Fort William Henry"@en ;
         wdt:P31     wd:Q178561 ;
         wdt:P582    "1757-08-09T00:00:00Z"^^xsd:dateTime ;
         wdt:P585    "1757-08-03T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(-73.71111111 43.42027778)"^^geo:wktLiteral .
+
+wd:Q132568  rdfs:label  "Bitva na Sommě"@cs , "Batalla del Somme"@es ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1916-07-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1916-11-17T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(2.69742 50.0155)"^^geo:wktLiteral .
 
 wd:Q2664174  rdfs:label  "Battle of Kamdesh"@en ;
         wdt:P31     wd:Q178561 ;
@@ -50,24 +56,25 @@ wd:Q2664174  rdfs:label  "Battle of Kamdesh"@en ;
         wdt:P585    "2009-10-03T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(71.34139 35.41)"^^geo:wktLiteral .
 
-wd:Q94545  rdfs:label  "Sitio de Glatz"@es , "siège de Glatz"@fr , "グラーツ包囲戦"@ja ;
+wd:Q94545  rdfs:label  "Siege of Glatz"@en ;
         wdt:P31     wd:Q178561 ;
         wdt:P580    "1760-06-07T00:00:00Z"^^xsd:dateTime ;
         wdt:P582    "1760-07-26T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(16.67 50.433)"^^geo:wktLiteral .
 
-wd:Q151290  rdfs:label  "Battle of Moscow"@en ;
-        wdt:P31     wd:Q178561 ;
-        wdt:P580    "1941-10-02T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582    "1942-01-22T00:00:00Z"^^xsd:dateTime , "1942-01-31T00:00:00Z"^^xsd:dateTime , "1942-04-20T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(37.63333333 55.75)"^^geo:wktLiteral .
-
-wd:Q26496  rdfs:label  "معركة سورابايا"@ar , "Patampuran Surabaya"@bjn , "Schlacht von Surabaya"@de , "Battle of Surabaya"@en ;
+wd:Q26496  rdfs:label  "Battle of Surabaya"@en ;
         wdt:P31     wd:Q178561 ;
         wdt:P580    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
         wdt:P582    "1945-11-20T00:00:00Z"^^xsd:dateTime ;
         wdt:P585    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(115.24861111 -8.42305556)"^^geo:wktLiteral .
+
+wd:Q376154  rdfs:label  "Battle of Copenhagen"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1807-08-16T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1807-09-05T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1807-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(12.566666666 55.666666666)"^^geo:wktLiteral .
 
 wd:Q83002  rdfs:label  "First Battle of al-Faw"@en ;
         wdt:P31     wd:Q178561 ;
@@ -79,31 +86,20 @@ wd:Q68371  rdfs:label  "Battle of Mortemer"@en ;
         wdt:P585    "1054-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(1.551111111 49.751666666)"^^geo:wktLiteral .
 
-wd:Q199371  rdfs:label  "Battle of Megiddo"@en ;
+wd:Q199371  rdfs:label  "معركة مجدو"@ar , "Bitka kod Megida"@bs ;
         wdt:P31     wd:Q178561 ;
         wdt:P580    "1918-09-19T00:00:00Z"^^xsd:dateTime ;
         wdt:P582    "1918-09-25T00:00:00Z"^^xsd:dateTime ;
         wdt:P585    "1918-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(34.883 32.4)"^^geo:wktLiteral .
 
-wd:Q239255  rdfs:label  "Battle of Arras"@en ;
+wd:Q82703  rdfs:label  "Battle of Arachova"@en ;
         wdt:P31     wd:Q178561 ;
-        wdt:P580    "1917-04-09T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582    "1917-05-16T00:00:00Z"^^xsd:dateTime ;
-        wdt:P585    "1917-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(2.780833333 50.289722222)"^^geo:wktLiteral .
+        wdt:P580    "1826-11-18T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1826-11-24T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(22.583333333 38.483333333)"^^geo:wktLiteral .
 
-wd:Q2838431  rdfs:label  "Battle off Cape Gata"@en ;
-        wdt:P31     wd:Q178561 ;
-        wdt:P580    "1815-06-17T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(-2.193055555 36.721944444)"^^geo:wktLiteral .
-
-wd:Q74119  rdfs:label  "Battle of Langensalza"@en ;
-        wdt:P31     wd:Q178561 ;
-        wdt:P585    "1761-02-15T00:00:00Z"^^xsd:dateTime ;
-        wdt:P625    "Point(10.6468 51.108)"^^geo:wktLiteral .
-
-wd:Q473983  rdfs:label  "Schlacht in der Tucheler Heide"@de , "Batalla del bosque de Tuchola"@es , "bataille de la forêt de Tuchola"@fr , "Battle of Tuchola Forest"@en ;
+wd:Q473983  rdfs:label  "Schlacht in der Tucheler Heide"@de , "Batalla del bosque de Tuchola"@es , "Battle of Tuchola Forest"@en ;
         wdt:P31     wd:Q178561 ;
         wdt:P580    "1939-09-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(18.0 53.6)"^^geo:wktLiteral .
@@ -113,7 +109,7 @@ wd:Q1634602  rdfs:label  "Battle of Scapezzano"@en ;
         wdt:P580    "1815-05-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P625    "Point(13.170006 43.7204)"^^geo:wktLiteral .
 
-wd:Q1501750  rdfs:label  "Битва у Бергена"@ru , "Slaget i Bergen Bugt"@da , "Schlacht in der Bucht von Bergen"@de , "Battle of Vågen"@en ;
+wd:Q1501750  rdfs:label  "Битва у Бергена"@ru , "Slaget i Bergen Bugt"@da , "Battle of Vågen"@en ;
         wdt:P31     wd:Q178561 ;
         wdt:P580    "1665-08-02T00:00:00Z"^^xsd:dateTime ;
         wdt:P585    "1665-08-02T00:00:00Z"^^xsd:dateTime ;

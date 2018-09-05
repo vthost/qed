@@ -38,17 +38,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q7605242  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese%20steak%20sandwich.jpg> ;
-        wdt:P279  wd:Q28803 .
-
-wd:Q895678  wdt:P279  wd:Q28803 .
-
-wd:Q5103667  wdt:P279  wd:Q28803 .
+wd:Q2662315  wdt:P279  wd:Q28803 .
 
 wd:Q7405551  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Salmon%20burger.jpg> ;
         wdt:P279  wd:Q28803 .
 
-wd:Q2662315  wdt:P279  wd:Q28803 .
-
 wd:Q7238914  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Prawn%20roll.jpg> ;
         wdt:P279  wd:Q28803 .
+
+wd:Q895678  wdt:P279  wd:Q28803 .

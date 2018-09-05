@@ -9,6 +9,6 @@ CONSTRUCT
   }
 WHERE
   { ?compound  wdt:P231  ?cas }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

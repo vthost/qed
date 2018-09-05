@@ -13,6 +13,6 @@ WHERE
   { ?work  wdt:P31   wd:Q13442814 ;
            wdt:P921  ?subject
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

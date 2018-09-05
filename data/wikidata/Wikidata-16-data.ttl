@@ -38,23 +38,16 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q251645  wdt:P31  wd:Q26529 ;
-        wdt:P619  "1972-03-27T00:00:00Z"^^xsd:dateTime .
+wd:Q1384564  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/IMP-E.jpg> ;
+        wdt:P31   wd:Q26529 ;
+        wdt:P619  "1967-07-19T00:00:00Z"^^xsd:dateTime .
 
 wd:Q932976  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Lunar%20orbiter%201%20%28large%29.jpg> ;
         wdt:P31   wd:Q26529 ;
         wdt:P619  "1966-08-10T00:00:00Z"^^xsd:dateTime .
 
-wd:Q1067650  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mars4.jpg> ;
-        wdt:P31   wd:Q26529 ;
-        wdt:P619  "1973-07-21T00:00:00Z"^^xsd:dateTime .
-
-wd:Q1384564  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/IMP-E.jpg> ;
-        wdt:P31   wd:Q26529 ;
-        wdt:P619  "1967-07-19T00:00:00Z"^^xsd:dateTime .
-
-wd:Q2503206  wdt:P31  wd:Q26529 ;
-        wdt:P619  "1971-05-10T00:00:00Z"^^xsd:dateTime .
+wd:Q251645  wdt:P31  wd:Q26529 ;
+        wdt:P619  "1972-03-27T00:00:00Z"^^xsd:dateTime .
 
 wd:Q2625667  wdt:P31  wd:Q26529 ;
         wdt:P619  "1969-04-02T00:00:00Z"^^xsd:dateTime .

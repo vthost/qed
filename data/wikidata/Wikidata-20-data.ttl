@@ -40,6 +40,4 @@
 
 wd:Q1201  wdt:P47  wd:Q183 .
 
-wd:Q32  wdt:P47  wd:Q183 .
-
 wd:Q16957  wdt:P47  wd:Q183 .

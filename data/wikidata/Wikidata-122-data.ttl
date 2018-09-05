@@ -37,18 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q3156912  rdfs:label  "Air Philippines Flight 541"@en ;
+wd:Q3156912  rdfs:label  "Voo 541 de Air Philippines"@gl , "Vol 541 Air Philippines"@fr ;
         wdt:P31     wd:Q744913 ;
         wdt:P625    "Point(125.70083333 7.15666667)"^^geo:wktLiteral .
 
-wd:Q3087193  rdfs:label  "Santa Bárbara Airlines Flight 518"@en ;
+wd:Q3270393  rdfs:label  "LOT Polish Airlines Flight 5055"@en ;
         wdt:P31     wd:Q744913 ;
-        wdt:P625    "Point(-71.23805556 8.65916667)"^^geo:wktLiteral .
+        wdt:P625    "Point(21.0442 52.1134)"^^geo:wktLiteral .
 
-wd:Q3177188  rdfs:label  "TAM Transportes Aéreos Regionais Flight 402"@en ;
+wd:Q3271379  rdfs:label  "Gulf Air Flight 072"@en ;
         wdt:P31     wd:Q744913 ;
-        wdt:P625    "Point(-43.1964 -22.9083)"^^geo:wktLiteral .
-
-wd:Q689448  rdfs:label  "カナダ太平洋航空402便着陸失敗事故"@ja , "Vuelo 402 de Canadian Pacific Air Lines"@es , "Canadian-Pacific-Airlines-Flug 402"@de ;
-        wdt:P31     wd:Q744913 ;
-        wdt:P625    "Point(139.8065 35.5377)"^^geo:wktLiteral .
+        wdt:P625    "Point(50.63333333 26.28888889)"^^geo:wktLiteral .

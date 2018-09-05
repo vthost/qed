@@ -22,7 +22,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -49,7 +49,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -76,7 +76,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -103,7 +103,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -130,7 +130,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -157,7 +157,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -184,7 +184,7 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -211,6 +211,6 @@ WHERE
     }
     ?journal  wdt:P31  wd:Q5633421
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

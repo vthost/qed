@@ -43,6 +43,3 @@ wd:Q992579  wdt:P31  wd:Q3957 ;
 
 wd:Q4770782  wdt:P31  wd:Q3957 ;
         wdt:P625  "Point(-1.212 53.362)"^^geo:wktLiteral .
-
-wd:Q4537936  wdt:P31  wd:Q3957 ;
-        wdt:P625  "Point(71.728055555 41.192222222)"^^geo:wktLiteral .

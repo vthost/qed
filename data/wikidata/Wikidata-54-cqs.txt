@@ -20,6 +20,6 @@ WHERE
               wdt:P931  ?place_served ;
               wdt:P625  ?coor
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

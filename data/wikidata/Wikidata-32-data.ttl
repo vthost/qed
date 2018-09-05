@@ -38,34 +38,23 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q256088  rdfs:label  "Bridge at Nimreh"@en , "Bridge at Nimreh"@nl , "Brücke bei Nimreh"@de ;
-        wdt:P186    wd:Q22731 ;
-        wdt:P31     wd:Q14276458 ;
-        wdt:P625    "Point(36.69163764 32.83326255)"^^geo:wktLiteral .
-
-wd:Q7618878  rdfs:label  "Stone Bridge"@en ;
-        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Stone%20Bridge%2C%20Spanning%20Bull%20Run%20%28Occoquan%20River%29.jpg> ;
-        wdt:P186    wd:Q22731 ;
-        wdt:P31     wd:Q14276458 ;
-        wdt:P625    "Point(-77.5037 38.8243)"^^geo:wktLiteral .
-
-wd:Q1254175  rdfs:label  "Ponte di Quintodecimo"@en , "Ponte di Quintodecimo"@de ;
-        wdt:P186    wd:Q22731 ;
-        wdt:P31     wd:Q14276458 ;
-        wdt:P625    "Point(13.38542461 42.76298833)"^^geo:wktLiteral .
-
 wd:Q1782816  rdfs:label  "Constantine's Bridge"@en ;
         wdt:P186    wd:Q22731 ;
         wdt:P31     wd:Q14276458 ;
         wdt:P625    "Point(28.44147384 40.20409959)"^^geo:wktLiteral .
 
-wd:Q7602264  rdfs:label  "Starrucca Viaduct"@en , "スタールッカ高架橋"@ja ;
-        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/HAER-Starrucca%201.jpg> ;
+wd:Q256088  rdfs:label  "Bridge at Nimreh"@en , "Bridge at Nimreh"@nl , "Brücke bei Nimreh"@de ;
         wdt:P186    wd:Q22731 ;
         wdt:P31     wd:Q14276458 ;
-        wdt:P625    "Point(-75.5834 41.9628)"^^geo:wktLiteral .
+        wdt:P625    "Point(36.69163764 32.83326255)"^^geo:wktLiteral .
 
-wd:Q7913672  rdfs:label  "Van Stadens Bridge"@en , "Puente del río Van Stadens"@es , "Van Stadensrivierbrug"@af ;
+wd:Q7593404  rdfs:label  "St Ives Bridge"@en ;
+        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/St%20ives%20bridge%20chapel.jpg> ;
+        wdt:P186    wd:Q22731 ;
+        wdt:P31     wd:Q14276458 ;
+        wdt:P625    "Point(-0.075338888 52.322827777)"^^geo:wktLiteral , "Point(-0.0753605 52.3228)"^^geo:wktLiteral .
+
+wd:Q7913672  rdfs:label  "Puente del río Van Stadens"@es , "Van Stadensrivierbrug"@af ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/VanStadensRiverBridges.JPG> ;
         wdt:P186    wd:Q22731 ;
         wdt:P31     wd:Q14276458 ;

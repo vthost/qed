@@ -37,22 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q234395  rdfs:label  "גלינה צ'יסטקובה"@he ;
+wd:Q1520274  rdfs:label  "Irmela Brender"@cs , "Irmela Brender"@crh-latn ;
+        wdt:P31     wd:Q5 ;
+        wdt:P735    wd:Q113240 .
+
+wd:Q3773  rdfs:label  "גלינה זיבינה"@he ;
         wdt:P31     wd:Q5 ;
         wdt:P735    wd:Q123699 .
 
-wd:Q4088070  rdfs:label  "גלינה בלייך"@he ;
+wd:Q28885  rdfs:label  "גלינה אולנובה"@he ;
         wdt:P31     wd:Q5 ;
         wdt:P735    wd:Q123699 .
-
-wd:Q230916  rdfs:label  "גלינה וישנבסקאיה"@he ;
-        wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q123699 .
-
-wd:Q15813172  rdfs:label  "Hiltrud Lotze"@zu ;
-        wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q80347 .
-
-wd:Q19285589  rdfs:label  "Hiltrud Westermann-Angerhausen"@en , "Hiltrud Westermann-Angerhausen"@de ;
-        wdt:P31     wd:Q5 ;
-        wdt:P735    wd:Q80347 .

@@ -21,7 +21,7 @@ WHERE
     }
     hint:Query  hint:optimizer  "None"
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -47,7 +47,7 @@ WHERE
     }
     hint:Query  hint:optimizer  "None"
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -73,7 +73,7 @@ WHERE
     }
     hint:Query  hint:optimizer  "None"
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -99,6 +99,6 @@ WHERE
     }
     hint:Query  hint:optimizer  "None"
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

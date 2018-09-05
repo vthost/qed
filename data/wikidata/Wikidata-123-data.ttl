@@ -37,18 +37,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q517  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis%20David%20-%20The%20Emperor%20Napoleon%20in%20His%20Study%20at%20the%20Tuileries%20-%20Google%20Art%20Project%202.jpg> .
-
 wd:Q61454  wdt:P22  wd:Q68632 .
-
-wd:Q153481  wdt:P22  wd:Q207 .
-
-wd:Q90227  wdt:P22  wd:Q517 .
 
 wd:Q61963  wdt:P22  wd:Q65819 .
 
-wd:Q62566  wdt:P22  wd:Q66882 .
+wd:Q1426  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/R%20federer.jpg> .
 
-wd:Q207  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/George-W-Bush.jpeg> .
+wd:Q17291300  wdt:P22  wd:Q1426 .
 
-wd:Q153730  wdt:P22  wd:Q207 .
+wd:Q17291294  wdt:P22  wd:Q1426 .

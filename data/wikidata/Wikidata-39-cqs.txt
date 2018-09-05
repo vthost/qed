@@ -13,7 +13,7 @@ WHERE
     ?band  wdt:P31     wd:Q5741069 ;
            rdfs:label  ?bandLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -31,6 +31,6 @@ WHERE
     ?band  wdt:P31     wd:Q5741069 ;
            rdfs:label  ?bandLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

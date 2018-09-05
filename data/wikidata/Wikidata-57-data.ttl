@@ -37,36 +37,44 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q34116  rdfs:label  "Thunder Bay"@fr ;
-        wdt:P1082   "108359"^^xsd:decimal ;
-        wdt:P17     wd:Q16 ;
-        wdt:P31     wd:Q515 .
+wd:Q13955  rdfs:label  "阿拉伯语"@zh-cn , "阿拉伯語"@zh-hant , "اللغة العربية"@ar ;
+        wdt:P424    "ar" .
 
-wd:Q172  rdfs:label  "Tô-lùn-tô"@hak , "টরোন্টো"@bn , "ટોરંટો"@gu , "Toronto, Ontario"@sw , "多倫多"@zh-tw , "टोरन्टो"@dty , "टोराँटो"@mr , "Торонто"@mk , "Торонто"@mn , "Toronto"@fr ;
+wd:Q172  rdfs:label  "Toronto"@pt-br , "Toronto"@nb , "ટોરંટો"@gu , "Toronto"@fr ;
         wdt:P1082   "2731571"^^xsd:decimal ;
         wdt:P17     wd:Q16 ;
         wdt:P31     wd:Q515 .
 
-wd:Q188  rdfs:label  "Deutsch"@de ;
-        wdt:P424    "de" .
+wd:Q28  rdfs:label  "Hungary"@en , "הונגריה"@he ;
+        wdt:P37     wd:Q9067 .
 
-wd:Q150  rdfs:label  "الفرنسية"@ar , "צרפתית"@he , "フランス語"@ja , "Prancūzu kalba"@sgs , "Francuski jezik"@sh , "ප් රංශ භාෂාව"@si , "français"@fr ;
+wd:Q150  rdfs:label  "الفرنسية"@ar , "צרפתית"@he , "SíFulentji"@ss , "Se-french"@st , "français"@fr ;
         wdt:P424    "fr" .
 
-wd:Q13955  rdfs:label  "Arabisch"@nl , "Arab"@id , "阿拉伯语"@zh-cn , "اللغة العربية"@ar ;
-        wdt:P424    "ar" .
-
-wd:Q310751  rdfs:label  "القصير"@ar ;
-        wdt:P1082   "24344"^^xsd:decimal ;
+wd:Q644  rdfs:label  "شرم الشيخ"@ar ;
+        wdt:P1082   "38478"^^xsd:decimal ;
         wdt:P17     wd:Q79 ;
         wdt:P31     wd:Q515 .
 
-wd:Q1296  rdfs:label  "Gent"@de ;
-        wdt:P1082   "257029"^^xsd:decimal ;
-        wdt:P17     wd:Q31 ;
+wd:Q29888  rdfs:label  "أسوان"@ar ;
+        wdt:P1082   "252246"^^xsd:decimal ;
+        wdt:P17     wd:Q79 ;
         wdt:P31     wd:Q515 .
 
-wd:Q79  rdfs:label  "مصر"@ar ;
+wd:Q81581  rdfs:label  "Szeged"@hu ;
+        wdt:P1082   "161137"^^xsd:decimal ;
+        wdt:P17     wd:Q28 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q81788  rdfs:label  "جیزه"@fa , "Guiza"@es ;
+        wdt:P1082   "3021542"^^xsd:decimal ;
+        wdt:P17     wd:Q79 ;
+        wdt:P31     wd:Q515 .
+
+wd:Q9067  rdfs:label  "magyar"@hu ;
+        wdt:P424    "hu" .
+
+wd:Q79  rdfs:label  "مصر"@ar , "Mesir"@bug , "Mesir"@id , "Egipto"@es ;
         wdt:P37     wd:Q13955 .
 
 wd:Q36312  rdfs:label  "Calgary"@fr ;
@@ -74,18 +82,10 @@ wd:Q36312  rdfs:label  "Calgary"@fr ;
         wdt:P17     wd:Q16 ;
         wdt:P31     wd:Q515 .
 
-wd:Q269960  rdfs:label  "Shubra al-Khayma"@da , "Shubrā al Khaymah"@ceb , "Shubra El-Kheima"@af , "شبرا الخيمة"@ar ;
+wd:Q269960  rdfs:label  "شبرا الخيمة"@ar , "Горад Шубра-Эль-Хейма"@be , "Шубра-Аль-ХаймахӀ"@ce ;
         wdt:P1082   "1025569"^^xsd:decimal ;
         wdt:P17     wd:Q79 ;
         wdt:P31     wd:Q515 .
 
-wd:Q16  rdfs:label  "কানাডা"@bn , "Cannada"@nrm , "کانادا"@fa , "Canada"@fr , "Canada"@nl , "Canadá"@es , "Kanada"@de , "Kanada"@bi , "Kanada"@bm ;
+wd:Q16  rdfs:label  "Канада"@be , "Canada"@fr , "Canada"@gd , "Canada"@frp ;
         wdt:P37     wd:Q150 .
-
-wd:Q3992  rdfs:label  "Lüttich"@de ;
-        wdt:P1082   "197885"^^xsd:decimal ;
-        wdt:P17     wd:Q31 ;
-        wdt:P31     wd:Q515 .
-
-wd:Q31  rdfs:label  "Belgien"@de , "Belgia"@id , "Belgica"@ia , "Բելգիա"@hy ;
-        wdt:P37     wd:Q188 .

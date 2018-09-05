@@ -38,13 +38,13 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q279  rdfs:label  "Modena"@pl , "Modena"@en , "মদিনা"@bn ;
+wd:Q279  rdfs:label  "Modena"@en , "মদিনা"@bn ;
         wdt:P17     wd:Q38 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Collage%20Modena.jpg> ;
         wdt:P2044   "34"^^xsd:decimal ;
         wdt:P625    "Point(10.92572 44.64582)"^^geo:wktLiteral .
 
-wd:Q583  rdfs:label  "Mont Blanc"@de , "mont Blanc"@fr , "Монблан"@uk ;
+wd:Q583  rdfs:label  "Mont Blanc"@de , "mont Blanc"@fr ;
         wdt:P17     wd:Q38 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Mont%20Blanc%20and%20Dome%20du%20Gouter.jpg> ;
         wdt:P2044   4808.72 ;

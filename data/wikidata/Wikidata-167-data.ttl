@@ -37,16 +37,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q7989577  p:P646  wds:Q7989577-11C87F74-EE37-490C-A0BC-BEECD3677CEA .
-
 wds:Q7908005-8B293864-6D47-466C-882C-45F0AD6737CF
         prov:wasDerivedFrom  wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f .
 
 wd:P459  wikibase:reference  pr:P459 ;
         wdt:P31             wd:Q15720608 .
-
-wds:Q7989577-11C87F74-EE37-490C-A0BC-BEECD3677CEA
-        prov:wasDerivedFrom  wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f .
 
 wd:Q7919977  p:P646  wds:Q7919977-F64370DA-4392-4A43-A27F-53896BE89105 .
 

@@ -37,12 +37,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q205460  wdt:P1082  500.42 .
-
-wd:Q75413  wdt:P1082  "0"^^xsd:decimal .
-
-wd:Q644481  wdt:P1082  87.374 .
+wd:Q68605  wdt:P1082  "0"^^xsd:decimal .
 
 wd:Q73723  wdt:P1082  "0"^^xsd:decimal .
 
-wd:Q68605  wdt:P1082  "0"^^xsd:decimal .
+wd:Q205460  wdt:P1082  500.42 .
+
+wd:Q644481  wdt:P1082  87.374 .

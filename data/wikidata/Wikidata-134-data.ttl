@@ -37,17 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q185787  rdfs:label  "Was für ein schöner Sonntag!"@de ;
+wd:Q184547  rdfs:label  "Zehn Millionen Kinder. Die Erziehung der Jugend im Dritten Reich"@de ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q178091  rdfs:label  "Abschied von den Eltern"@de , "Раздяла с родителите"@bg ;
+wd:Q275297  rdfs:label  "Brútus"@is , "Brutus"@pt , "Brutus"@fr ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q2222  rdfs:label  "Tom dayının daxması"@az , "Uncle Tom's Cabin"@en , "كوخ العم توم"@ar ;
+wd:Q4577  rdfs:label  "Libro de Chob"@an , "Job"@en , "Job"@af ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q209719  rdfs:label  "II Samuel"@an , "سفر صموئيل الثاني"@ar , "2. Buach Samuel"@bar ;
-        wdt:P31     wd:Q7725634 .
-
-wd:Q4577  rdfs:label  "Job"@en , "Iov"@ro ;
+wd:Q185050  rdfs:label  "Zeit der Schuldlosen"@de ;
         wdt:P31     wd:Q7725634 .

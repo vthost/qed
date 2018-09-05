@@ -28,6 +28,6 @@ WHERE
               wikibase:geoLongitude  ?lon .
     ?item     rdfs:label            ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

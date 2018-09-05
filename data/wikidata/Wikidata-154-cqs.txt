@@ -17,6 +17,6 @@ WHERE
              wdt:P350   ?rkdid
     BIND(iri(replace(?rkdid, "^(.+)$", ?formatterurl)) AS ?rkdurl)
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

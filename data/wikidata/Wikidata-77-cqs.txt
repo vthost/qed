@@ -32,7 +32,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -69,7 +69,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -106,7 +106,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -143,7 +143,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -180,7 +180,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -217,7 +217,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -254,7 +254,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -291,7 +291,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -329,7 +329,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -367,7 +367,7 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -405,6 +405,6 @@ WHERE
       FILTER NOT EXISTS { ?person  wd:P101  wd:Q8134 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -38,7 +38,7 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q189764  rdfs:label  "Pont du Gard"@en , "पोंट डु गार्ड"@bho , "بونت دي غار"@ar ;
+wd:Q189764  rdfs:label  "Pont du Gard"@en , "بونت دي غار"@ar ;
         wdt:P31     wd:Q474 ;
         wdt:P625    "Point(4.5355 43.9473)"^^geo:wktLiteral .
 
@@ -46,6 +46,6 @@ wd:Q3067  rdfs:label  "Aqueduct of the Gier"@en ;
         wdt:P31     wd:Q474 ;
         wdt:P625    "Point(4.760181 45.721417)"^^geo:wktLiteral .
 
-wd:Q3078  rdfs:label  "Aqueduc de l'Yzeron"@en , "acquedotto dell'Yzeron"@it ;
+wd:Q3078  rdfs:label  "acquedotto dell'Yzeron"@it ;
         wdt:P31     wd:Q474 ;
         wdt:P625    "Point(4.735333 45.749777)"^^geo:wktLiteral .

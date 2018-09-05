@@ -17,7 +17,7 @@ WHERE
     ?father  wdt:P31  wd:Q5 ;
              wdt:P39  wd:Q19546
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -39,6 +39,6 @@ WHERE
     ?father  wdt:P31  wd:Q5 ;
              wdt:P39  wd:Q19546
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

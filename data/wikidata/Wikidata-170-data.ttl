@@ -37,14 +37,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://de.wikipedia.org/wiki/Philippe_Kruchten>
-        schema:about  wd:Q92887 .
+<https://commons.wikimedia.org/wiki/Category:Alon_Day>
+        schema:about  wd:Q80631 .
 
-wd:Q92887  wdt:P27  wd:Q142 ;
+wd:Q80631  wdt:P27  wd:Q142 ;
         wdt:P31  wd:Q5 .
 
-<https://mg.wikipedia.org/wiki/Philippe_Kruchten>
-        schema:about  wd:Q92887 .
-
-<https://en.wikipedia.org/wiki/Philippe_Kruchten>
-        schema:about  wd:Q92887 .
+<https://de.wikipedia.org/wiki/Alon_Day>
+        schema:about  wd:Q80631 .

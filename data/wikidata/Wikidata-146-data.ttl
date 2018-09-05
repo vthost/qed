@@ -43,12 +43,6 @@ wd:Q28106350  wdt:P170  wd:Q33978 ;
         wdt:P31   wd:Q3305213 ;
         wdt:P571  "1912-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q19018536  wdt:P170  wd:Q33978 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Delaunay%2C%20Rythmes%20sans%20fin%20-%20La%20Tour%20Eiffel%2C%201926.jpg> ;
-        wdt:P180  wd:Q243 ;
-        wdt:P31   wd:Q3305213 ;
-        wdt:P571  "1926-01-01T00:00:00Z"^^xsd:dateTime .
-
 wd:Q28106303  wdt:P170  wd:Q33978 ;
         wdt:P180  wd:Q243 ;
         wdt:P31   wd:Q3305213 ;
@@ -56,11 +50,6 @@ wd:Q28106303  wdt:P170  wd:Q33978 ;
 
 wd:Q30067851  wdt:P180  wd:Q243 ;
         wdt:P31   wd:Q18670161 .
-
-wd:Q20816314  wdt:P170  wd:Q33978 ;
-        wdt:P180  wd:Q243 ;
-        wdt:P31   wd:Q3305213 ;
-        wdt:P571  "1912-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q19967305  wdt:P170  wd:Q2063308 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20jardin%20des%20Tuileries%20en%20automne%20-%20Paul%20de%20Castro.jpg> ;

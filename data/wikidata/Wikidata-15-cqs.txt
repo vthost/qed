@@ -17,7 +17,7 @@ WHERE
     ?pid  wdt:P31   wd:Q5 ;
           wdt:P509  ?cid
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -39,7 +39,7 @@ WHERE
     ?pid  wdt:P31   wd:Q5 ;
           wdt:P509  ?cid
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -61,6 +61,6 @@ WHERE
     ?pid  wdt:P31   wd:Q5 ;
           wdt:P509  ?cid
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

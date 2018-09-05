@@ -37,8 +37,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q24049228  wdt:P2093  "Andrew J Tatem" , "David M Pigott" , "Freya M Shearer" ;
+wd:Q26247035  wdt:P2093  "Kate Traynor" ;
         wdt:P921   wd:Q202864 , wd:Q8071861 .
 
-wd:Q23008981  wdt:P2093  "Peng Jin" , "Kimberly M. Christian" , "Bing Yao" ;
+wd:Q26247024  wdt:P2093  "Dominique Rousset" ;
+        wdt:P921   wd:Q202864 , wd:Q8071861 .
+
+wd:Q23008981  wdt:P2093  "Kimberly M. Christian" , "Bing Yao" ;
         wdt:P921   wd:Q8071861 , wd:Q202864 .

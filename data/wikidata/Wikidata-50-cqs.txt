@@ -14,6 +14,6 @@ WHERE
   { ?country  wdt:P31    wd:Q6256 ;
               wdt:P1082  ?population
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
