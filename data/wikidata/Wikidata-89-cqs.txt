@@ -15,6 +15,6 @@ WHERE
             wdt:P225  ?taxonName ;
             wdt:P138  ?eponym
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

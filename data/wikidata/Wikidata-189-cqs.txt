@@ -13,6 +13,6 @@ WHERE
   { ?work     wdt:P123  ?publisher .
     ?publisher  wdt:P31  wd:Q4167410
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

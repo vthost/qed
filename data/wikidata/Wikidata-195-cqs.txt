@@ -19,6 +19,6 @@ WHERE
              wdt:P138  ?person .
     ?person  wdt:P31   wd:Q5
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

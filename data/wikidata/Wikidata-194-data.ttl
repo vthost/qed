@@ -37,8 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:P268  wikibase:propertyType  wikibase:ExternalId .
-
 wd:P267  wikibase:propertyType  wikibase:ExternalId .
 
 wd:P269  wikibase:propertyType  wikibase:ExternalId .

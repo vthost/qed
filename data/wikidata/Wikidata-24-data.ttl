@@ -38,15 +38,24 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q275019  wdt:P276  wd:Q2337 ;
+wd:Q162284  wdt:P276  wd:Q1899 ;
         wdt:P31   wd:Q178561 ;
-        wdt:P580  "1943-08-07T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582  "1943-10-02T00:00:00Z"^^xsd:dateTime ;
-        wdt:P585  "1943-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P580  "1941-08-07T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1941-09-26T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1941-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q48  rdfs:label  "Azië"@nl , "Asia"@en , "アジア"@ja , "ܐܣܝܐ"@arc , "Асия"@mo .
+wd:Q1899  wdt:P17  wd:Q212 .
 
-wd:Q1748  wdt:P17  wd:Q35 .
+wd:Q162357  wdt:P276  wd:Q2337 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1941-07-06T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1941-09-10T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1941-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q48  rdfs:label  "アジア"@ja , "Asia"@en , "ܐܣܝܐ"@arc .
+
+wd:Q212  rdfs:label  "Ukraine"@en ;
+        wdt:P30     wd:Q46 .
 
 wd:Q2337  wdt:P17  wd:Q159 .
 
@@ -56,22 +65,19 @@ wd:Q26496  wdt:P276  wd:Q11462 ;
         wdt:P582  "1945-11-20T00:00:00Z"^^xsd:dateTime ;
         wdt:P585  "1945-10-27T00:00:00Z"^^xsd:dateTime .
 
-wd:Q142  rdfs:label  "France"@en ;
+wd:Q142  rdfs:label  "France"@en , "Франци"@cv , "Franciaország"@hu , "ഫ്രാൻസ്"@ml , "Франција"@mk ;
         wdt:P30     wd:Q46 .
 
-wd:Q376154  wdt:P276  wd:Q1748 ;
-        wdt:P31   wd:Q178561 ;
-        wdt:P580  "1807-08-16T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582  "1807-09-05T00:00:00Z"^^xsd:dateTime ;
-        wdt:P585  "1807-01-01T00:00:00Z"^^xsd:dateTime .
+wd:Q46  rdfs:label  "Europa"@lfn , "Europa"@kw , "Europe"@en , "Европа"@ru .
 
-wd:Q46  rdfs:label  "歐羅巴洲"@lzh , "ئوروٙپا"@lrc , "ເອີລົບ"@lo , "Europe"@en , "Europa"@de .
-
-wd:Q35  rdfs:label  "Denmark"@en , "Danska"@bs , "ডেনমার্ক"@bn , "Дания"@ba , "Dánsko"@cs , "Danimarka"@crh-latn , "Danimarca"@co ;
-        wdt:P30     wd:Q46 .
-
-wd:Q252  rdfs:label  "Indonesia"@gom-latn , "Indonesia"@gor , "Indonesie"@gsw , "Indonésie"@fr , "Indonesia"@an , "Indonesia"@ast , "Indonesia"@en ;
+wd:Q252  rdfs:label  "इंडोनेशिया"@gom , "इंडोनेशिया"@gom-deva , "Indonesia"@an , "Indonesia"@ast , "Indonesia"@en ;
         wdt:P30     wd:Q48 .
+
+wd:Q199371  wdt:P276  wd:Q12560 ;
+        wdt:P31   wd:Q178561 ;
+        wdt:P580  "1918-09-19T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582  "1918-09-25T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1918-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q239255  wdt:P276  wd:Q131329 ;
         wdt:P31   wd:Q178561 ;
@@ -81,15 +87,11 @@ wd:Q239255  wdt:P276  wd:Q131329 ;
 
 wd:Q131329  wdt:P17  wd:Q142 .
 
-wd:Q12770  wdt:P17  wd:Q142 .
-
 wd:Q11462  wdt:P17  wd:Q252 .
 
-wd:Q1992231  wdt:P276  wd:Q12770 ;
-        wdt:P31   wd:Q178561 ;
-        wdt:P580  "1916-07-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P582  "1916-07-13T00:00:00Z"^^xsd:dateTime ;
-        wdt:P585  "1916-01-01T00:00:00Z"^^xsd:dateTime .
-
 wd:Q159  rdfs:label  "Russia"@en ;
-        wdt:P30     wd:Q48 , wd:Q46 .
+        wdt:P30     wd:Q46 .
+
+wd:Q12560  rdfs:label  "Ottoman Empire"@en ;
+        wdt:P17     wd:Q12560 ;
+        wdt:P30     wd:Q48 .

@@ -13,7 +13,7 @@ WHERE
     ?compound1  wdt:P231  ?cas .
     ?compound2  wdt:P231  ?cas
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -31,6 +31,6 @@ WHERE
     ?compound1  wdt:P231  ?cas .
     ?compound2  wdt:P231  ?cas
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -38,62 +38,64 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q200441  rdfs:label  "Αντιόχεια"@el .
+<https://de.wikipedia.org/wiki/Johann_Albrecht_Adelgrief>
+        schema:about     wd:Q87461 ;
+        schema:isPartOf  <https://de.wikipedia.org/> .
 
-wd:Q128538  rdfs:label      "Luca"@sc , "Apostol Luka"@sh , "ධර්මදූත ලූක් තුමා"@si ;
-        schema:description  "Verfasser des Lukasevangeliums"@de ;
-        skos:altLabel       "Lukasstier"@de ;
-        wdt:P19             wd:Q200441 ;
-        wdt:P20             wd:Q11225429 ;
+wd:Q17  rdfs:label  "Japó"@ca .
+
+<https://de.wikipedia.org/wiki/William_R._Gorham>
+        schema:about     wd:Q2580296 ;
+        schema:isPartOf  <https://de.wikipedia.org/> .
+
+wd:Q100224  rdfs:label      "Ralph Morgenstern"@sl ;
+        schema:description  "deutscher Moderator, Musiker und Schauspieler"@de ;
+        skos:altLabel       "Ralf Morgenstern"@de ;
+        wdt:P19             wd:Q2899 ;
+        wdt:P20             wd:Q19901436 ;
         wdt:P31             wd:Q5 ;
-        wdt:P570            "0084-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P569            "1955-10-03T00:00:00Z"^^xsd:dateTime .
 
-wd:Q347820  rdfs:label      "Severinus von Paris"@en , "Severinus von Paris"@de , "Severín Pařížský"@cs ;
+wd:Q2580296  rdfs:label     "William R. Gorham"@cy ;
+        schema:description  "Ingenieur"@de ;
+        skos:altLabel       "Gorham Katsundo"@de ;
+        wdt:P19             wd:Q62 ;
+        wdt:P20             wd:Q17 ;
+        wdt:P31             wd:Q5 ;
+        wdt:P569            "1888-01-04T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570            "1949-10-24T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4120832  rdfs:label  "Königsberg"@de .
+
+wd:Q347820  rdfs:label      "Séverin de Paris"@sl ;
         schema:description  "Heiliger"@de ;
         skos:altLabel       "Severin von Paris"@de ;
         wdt:P19             wd:Q90 ;
         wdt:P20             wd:Q90 ;
         wdt:P31             wd:Q5 .
 
-wd:Q190113  rdfs:label  "Тонгерэн"@be , "Tongres"@fr , "Tongeren"@nl .
-
-wd:Q8022548  rdfs:label     "Willy Fick"@de ;
-        schema:description  "deutscher Maler, Kölner Dadaistin"@de ;
-        skos:altLabel       "Wilhelm Peter Hubert Fick"@de ;
-        wdt:P19             wd:Q365 ;
-        wdt:P20             wd:Q16 ;
+wd:Q87461  rdfs:label       "Johann Albrecht Adelgrief"@ca ;
+        schema:description  "deutscher Theologe, theologischer Schriftsteller, als Hexer hingerichtet"@de ;
+        skos:altLabel       "Adelgrief"@de ;
+        wdt:P19             wd:Q36 ;
+        wdt:P20             wd:Q4120832 ;
         wdt:P31             wd:Q5 ;
-        wdt:P569            "1893-02-07T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570            "1967-10-05T00:00:00Z"^^xsd:dateTime .
+        wdt:P570            "1636-10-11T00:00:00Z"^^xsd:dateTime .
 
 <https://de.wikipedia.org/wiki/Severinus_von_Paris>
         schema:about     wd:Q347820 ;
         schema:isPartOf  <https://de.wikipedia.org/> .
 
-<https://de.wikipedia.org/wiki/Lukas_(Evangelist)>
-        schema:about     wd:Q128538 ;
+wd:Q2899  rdfs:label  "Mülheim"@pt , "Mülheim"@ie .
+
+<https://de.wikipedia.org/wiki/Ralph_Morgenstern>
+        schema:about     wd:Q100224 ;
         schema:isPartOf  <https://de.wikipedia.org/> .
 
-wd:Q16  rdfs:label  "Canada"@nl .
+wd:Q19901436  rdfs:label  "Surinam"@es .
 
-<https://de.wikipedia.org/wiki/Willy_Fick>
-        schema:about     wd:Q8022548 ;
-        schema:isPartOf  <https://de.wikipedia.org/> .
+wd:Q90  rdfs:label  "Parijs"@nl , "Paryż"@pl .
 
-<https://de.wikipedia.org/wiki/Everigisil>
-        schema:about     wd:Q316643 ;
-        schema:isPartOf  <https://de.wikipedia.org/> .
+wd:Q36  rdfs:label  "Poloni"@kw , "Poloni"@ln .
 
-wd:Q90  rdfs:label  "パリ"@ja , "Pariis"@et .
-
-wd:Q11225429  rdfs:label  "Theben"@de .
-
-wd:Q365  rdfs:label  "Colonia"@ast , "Köln"@az , "کولن"@azb .
-
-wd:Q316643  rdfs:label      "Evergislus"@nl ;
-        schema:description  "Bischof von Köln, Heiliger"@de ;
-        skos:altLabel       "Heiliger Evergislus"@de ;
-        wdt:P19             wd:Q190113 ;
-        wdt:P20             wd:Q190113 ;
-        wdt:P31             wd:Q5 ;
-        wdt:P569            "0600-01-01T00:00:00Z"^^xsd:dateTime .
+wd:Q62  rdfs:label  "سان فرانسيسكو"@ar , "San Francisco"@da .

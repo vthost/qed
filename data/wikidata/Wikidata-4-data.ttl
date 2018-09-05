@@ -38,17 +38,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q204416  wdt:P921  wd:Q146 .
-
 wd:Q192179  wdt:P4675  wd:Q146 .
 
+wd:Q3819310  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/IndolenteBonnard.jpg> ;
+        wdt:P180  wd:Q146 .
+
+wd:Q129260  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Gayer-Anderson%20Cat%2001-black.jpg> ;
+        wdt:P180  wd:Q146 .
+
 wd:Q75564  wdt:P180  wd:Q146 .
-
-wd:Q55018830  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Mrs.%20Mary%20Carol%20%284671349%29.jpg> ;
-        wdt:P180  wd:Q146 .
-
-wd:Q55096575  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Judith%20Leyster%20-%20young%20man%20stroking%20a%20cat%20-%201635.jpg> ;
-        wdt:P180  wd:Q146 .
-
-wd:Q55018833  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Mrs.%20Mary%20Carol%20%284671350%29.jpg> ;
-        wdt:P180  wd:Q146 .

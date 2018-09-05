@@ -37,20 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q2112735  wdt:P31  wd:Q5 ;
-        wdt:P935  "Willem van Diest" .
+wd:Q21153506  wdt:P31  wd:Q5 ;
+        wdt:P935  "Bettino Ricasoli" .
 
-wd:Q77121  wdt:P31  wd:Q5 ;
-        wdt:P935  "Joseph Gerhard Zuccarini" .
+wd:Q85616  wdt:P31  wd:Q5 ;
+        wdt:P935  "Frank R. Paul" .
 
-wd:Q2116186  wdt:P31  wd:Q5 ;
-        wdt:P935  "Albert Eckhout" .
-
-wd:Q65866  wdt:P31  wd:Q5 ;
-        wdt:P935  "Johann Heinrich Zedler" .
+wd:Q21152873  wdt:P31  wd:Q5 ;
+        wdt:P935  "Baek Hye Kyoung" .
 
 wd:Q84844  wdt:P31  wd:Q5 ;
         wdt:P935  "Gustav Seitz" .
-
-wd:Q2118101  wdt:P31  wd:Q5 ;
-        wdt:P935  "Serge Chermayeff" .

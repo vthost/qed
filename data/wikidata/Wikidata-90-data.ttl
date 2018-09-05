@@ -37,14 +37,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q407721  wdt:P117  <http://commons.wikimedia.org/wiki/Special:FilePath/Buprenorphin.svg> ;
-        wdt:P274  "C₂₉H₄₁NO₄" ;
+wd:Q71969  wdt:P117  <http://commons.wikimedia.org/wiki/Special:FilePath/Hexamine.svg> ;
+        wdt:P274  "C₆H₁₂N₄" ;
         wdt:P31   wd:Q12140 .
 
-wd:Q409665  wdt:P117  <http://commons.wikimedia.org/wiki/Special:FilePath/Disulfiram2.svg> ;
-        wdt:P274  "C₁₀H₂₀N₂S₄" ;
-        wdt:P31   wd:Q12140 .
-
-wd:Q395229  wdt:P117  <http://commons.wikimedia.org/wiki/Special:FilePath/Agomelatine%20Structural%20Formula%20V.1.svg> ;
-        wdt:P274  "C₁₅H₁₇NO₂" ;
+wd:Q80863  wdt:P117  <http://commons.wikimedia.org/wiki/Special:FilePath/Adenosintriphosphat%20protoniert.svg> ;
+        wdt:P274  "C₁₀H₁₆N₅O₁₃P₃" ;
         wdt:P31   wd:Q12140 .

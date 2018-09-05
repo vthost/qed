@@ -37,26 +37,20 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q23  rdfs:label          "جورج واشنطن"@ar ;
-        schema:description  "الرئيس الأول للولايات المتحدة الأمريكية"@ar .
-
-wd:Q205892  rdfs:label      "data"@ast ;
-        schema:description  "data"@aln .
-
-wd:Q4167836  rdfs:label     "kawan Wikimèdia"@ace ;
-        schema:description  "kawan Wikimèdia"@ace .
+wd:Q23  rdfs:label          "جورج واشنطن"@ar , "George Washington"@ang ;
+        schema:description  "1-ы прэзідэнт ЗША"@be , "الرئيس الأول للولايات المتحدة الأمريكية"@ar .
 
 wd:Q463451  rdfs:label      "flor"@es ;
         schema:description  "flor"@pt .
 
-wd:Q3   rdfs:label          "حياة"@ar , "vida"@ast , "জীৱন"@as ;
-        schema:description  "doare materi gouest da dennañ energiezh diouzh e endro evit strujusaat"@br , "capacidá pa crecer y reproducise"@ast , "قدرة المادة على استخراج الطاقة من البيئة المحيطة من أجل التكاثر"@ar .
+wd:Q395  rdfs:label         "Riyaziyyat"@az ;
+        schema:description  "Riyaziyyat"@az .
 
-wd:Q362  rdfs:label         "Ikkinchi jahon urushi"@uz ;
-        schema:description  "Ikkinchi jahon urushi"@uz .
+wd:Q8   rdfs:label          "সুখ"@as ;
+        schema:description  "ভালে থকাৰ এক মানসিক অৱস্থা যাক যথেষ্ট অনুভৱ কৰাৰপৰা অতি ফূৰ্তি লৈকে ধনাত্মক বা ভাল লগা ভাবেৰে সংজ্ঞায়িত কৰা হয়"@as .
 
-wd:Q648  rdfs:label         "Lille"@ast ;
+wd:Q648  rdfs:label         "Lille"@af ;
         schema:description  "Lille"@pcd .
 
-wd:Q398  rdfs:label         "బహ్రయిన్"@te ;
-        schema:description  "బహ్రయిన్"@te .
+wd:Q323  rdfs:label         "মহাবিস্ফোরণ তত্ত্ব"@bn ;
+        schema:description  "মহাবিস্ফোরণ তত্ত্ব"@bn .

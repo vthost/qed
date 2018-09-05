@@ -23,6 +23,6 @@ WHERE
               pq:P585   ?date
     BIND(str(year(?date)) AS ?year)
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

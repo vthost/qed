@@ -10,6 +10,6 @@ WHERE
   { ?item  wdt:P698  ?pmid ;
            wdt:P356  ?doi
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

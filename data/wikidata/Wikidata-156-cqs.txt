@@ -19,7 +19,7 @@ WHERE
             wdt:P131  ?place .
     ?place  wdt:P131  wd:Q90
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -43,7 +43,7 @@ WHERE
             wdt:P131  ?place .
     ?place  wdt:P131  wd:Q90
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -67,7 +67,7 @@ WHERE
             wdt:P131  ?place .
     ?place  wdt:P131  wd:Q90
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -91,6 +91,6 @@ WHERE
             wdt:P131  ?place .
     ?place  wdt:P131  wd:Q90
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

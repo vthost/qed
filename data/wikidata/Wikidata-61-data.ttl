@@ -45,6 +45,3 @@ wd:Q1393081  wdt:P1217  "1252" ;
 
 wd:Q6235625  wdt:P1217  "1265" ;
         wdt:P625   "Point(-73.9878 40.7586)"^^geo:wktLiteral .
-
-wd:Q5522338  wdt:P1217  "1167" ;
-        wdt:P625   "Point(-73.986 40.743)"^^geo:wktLiteral .

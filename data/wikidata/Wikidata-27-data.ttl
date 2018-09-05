@@ -46,8 +46,4 @@ wd:Q231665  wdt:P1340  wd:Q17122705 ;
         wdt:P1884  wd:Q1922956 ;
         wdt:P2048  "163"^^xsd:decimal .
 
-wd:Q236507  wdt:P1340  wd:Q17122705 ;
-        wdt:P1884  wd:Q1922956 ;
-        wdt:P2048  "175"^^xsd:decimal .
-
-wd:Q17122705  rdfs:label  "Green"@en , "braun"@de , "hnědá"@cs , "חום"@he .
+wd:Q17122705  rdfs:label  "Green"@en , "hnědá"@cs , "חום"@he .

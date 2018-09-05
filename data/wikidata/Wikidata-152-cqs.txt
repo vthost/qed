@@ -27,7 +27,7 @@ WHERE
     ?item  wdt:P31   wd:Q3305213 ;
            wdt:P170  wd:Q4233718
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -59,6 +59,6 @@ WHERE
     ?item  wdt:P31   wd:Q3305213 ;
            wdt:P170  wd:Q4233718
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

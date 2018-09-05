@@ -9,7 +9,7 @@ WHERE
   { FILTER contains(?label, "&quot;")
     ?item  rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -23,6 +23,6 @@ WHERE
   { FILTER ( ! contains(?label, "&quot;") )
     ?item  rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

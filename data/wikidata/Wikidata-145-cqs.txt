@@ -19,7 +19,7 @@ WHERE
     }
     ?subj  wdt:P170  wd:Q5593
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -43,7 +43,7 @@ WHERE
     }
     ?subj  wdt:P170  wd:Q5593
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -67,7 +67,7 @@ WHERE
                       }
     ?subj  wdt:P170  wd:Q5593
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -91,6 +91,6 @@ WHERE
                       }
     ?subj  wdt:P170  wd:Q5593
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -37,20 +37,20 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q11081  rdfs:label  "Alzheimers disease"@en , "Alzheimers sjukdom"@nn , "ziekte van Alzheimer"@nl , "अल्जाइमर"@ne .
+wd:Q11081  rdfs:label  "Alzheimers disease"@en .
 
-wd:Q2840  rdfs:label  "influenza"@en , "إنفلونزا"@ar , "Gripe"@an , "Griep"@af .
+wd:Q2840  rdfs:label  "influenza"@en , "Gripe"@an , "Griep"@af .
 
-wd:Q11891  rdfs:label  "James K. Polk"@en ;
-        wdt:P39     wd:Q11696 ;
-        wdt:P509    wd:Q12090 .
-
-wd:Q35678  rdfs:label  "Benjamin Harrison"@tr , "Бенджамін Гаррісон"@uk , "بنجمن ہیریسن"@ur , "Benjamin Harrison"@en , "Benjamin Harrison"@af ;
+wd:Q35678  rdfs:label  "Benjamin Harrison"@lfn , "Бенджамін Гаррісон"@uk , "Benjamin Harrison"@en , "Benjamin Harrison"@af ;
         wdt:P39     wd:Q11696 ;
         wdt:P509    wd:Q2840 .
 
-wd:Q12090  rdfs:label  "cholera"@en .
+wd:Q12152  rdfs:label  "Hartaanval"@af , "心臟病"@zh-hant .
 
 wd:Q9960  rdfs:label  "Ronald Reagan"@en ;
         wdt:P39     wd:Q11696 ;
         wdt:P509    wd:Q11081 .
+
+wd:Q9640  rdfs:label  "Lyndon B. Johnson"@en ;
+        wdt:P39     wd:Q11696 ;
+        wdt:P509    wd:Q12152 .

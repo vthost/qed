@@ -45,19 +45,16 @@ wd:Q221170  rdfs:label  "Albrecht von Scharfenberg"@en ;
         wdt:P106    wd:Q49757 ;
         wdt:P19     wd:Q980 .
 
-wd:Q1794  wdt:P17  wd:Q183 ;
-        wdt:P625  "Point(8.679722222 50.113611111)"^^geo:wktLiteral .
-
-wd:Q651  rdfs:label  "Friedrich Theodor Vischer"@af , "Friedrich Theodor Vischer"@an , "فريدريش ثيودور فيشر"@ar , "Friedrich Theodor Vischer"@en ;
+wd:Q651  rdfs:label  "Friedrich Theodor Vischer"@en ;
         wdt:P106    wd:Q49757 ;
         wdt:P19     wd:Q622 ;
         wdt:P569    "1807-06-30T00:00:00Z"^^xsd:dateTime .
 
-wd:Q108280  rdfs:label  "Jobus Fincelius"@en , "Jobus Fincelius"@de , "Jobus Fincelius"@da , "Jobus Fincelius"@ca ;
+wd:Q108280  rdfs:label  "Jobus Fincelius"@en , "Jobus Fincelius"@da , "Jobus Fincelius"@ca ;
         wdt:P106    wd:Q49757 ;
         wdt:P19     wd:Q3955 .
 
-wd:Q1511  rdfs:label  "Richard Wagner"@en ;
+wd:Q1511  rdfs:label  "ริชชาร์ท วากเนอร์"@th , "రిచర్డ్ వాగ్నెర్"@te , "Richard Wagner"@en ;
         wdt:P106    wd:Q49757 ;
         wdt:P19     wd:Q2079 ;
         wdt:P569    "1813-05-22T00:00:00Z"^^xsd:dateTime .
@@ -65,20 +62,8 @@ wd:Q1511  rdfs:label  "Richard Wagner"@en ;
 wd:Q980  wdt:P17  wd:Q183 ;
         wdt:P625  "Point(11.431111111 48.7775)"^^geo:wktLiteral .
 
-wd:Q2978  wdt:P17  wd:Q183 ;
-        wdt:P625  "Point(12.083333333 49.016666666)"^^geo:wktLiteral .
-
 wd:Q2079  wdt:P17  wd:Q183 ;
         wdt:P625  "Point(12.383333333 51.333333333)"^^geo:wktLiteral .
 
 wd:Q3955  wdt:P17  wd:Q183 ;
         wdt:P625  "Point(11.316666666 50.983333333)"^^geo:wktLiteral .
-
-wd:Q5879  rdfs:label  "Johann Wolfgang von Goethe"@en ;
-        wdt:P106    wd:Q49757 ;
-        wdt:P19     wd:Q1794 ;
-        wdt:P569    "1749-08-28T00:00:00Z"^^xsd:dateTime .
-
-wd:Q790956  rdfs:label  "Avigdor Kara"@en ;
-        wdt:P106    wd:Q49757 ;
-        wdt:P19     wd:Q2978 .

@@ -37,20 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q905445  wdt:P106  wd:Q33999 ;
-        wdt:P21   wd:Q6581072 ;
-        wdt:P31   wd:Q5 .
-
-wd:Q11617  schema:description  "שחקנית אמריקאית"@he ;
-        wdt:P106            wd:Q33999 ;
-        wdt:P21             wd:Q6581072 ;
-        wdt:P31             wd:Q5 .
-
-wd:Q11637  schema:description  "שחקנית אמריקאית"@he , "US-amerikanesch Schauspillerin"@lb ;
-        wdt:P106            wd:Q33999 ;
-        wdt:P21             wd:Q6581072 ;
-        wdt:P31             wd:Q5 .
-
 wd:Q904776  wdt:P106  wd:Q33999 ;
         wdt:P21   wd:Q6581072 ;
         wdt:P31   wd:Q5 .
@@ -58,3 +44,13 @@ wd:Q904776  wdt:P106  wd:Q33999 ;
 wd:Q870929  wdt:P106  wd:Q33999 ;
         wdt:P21   wd:Q6581072 ;
         wdt:P31   wd:Q5 .
+
+wd:Q41340  schema:description  "US-amerikanische Schauspielerin"@de ;
+        wdt:P106            wd:Q33999 ;
+        wdt:P21             wd:Q6581072 ;
+        wdt:P31             wd:Q5 .
+
+wd:Q41342  schema:description  "US-amerikanische Schauspielerin"@de ;
+        wdt:P106            wd:Q33999 ;
+        wdt:P21             wd:Q6581072 ;
+        wdt:P31             wd:Q5 .

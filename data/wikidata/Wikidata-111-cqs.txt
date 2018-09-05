@@ -17,6 +17,6 @@ WHERE
     ?inventor  rdfs:label  ?inventorLabel .
     ?gadget   rdfs:label  ?gadgetLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

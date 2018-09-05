@@ -16,7 +16,7 @@ WHERE
            wdt:P625    ?coord ;
            rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -37,6 +37,6 @@ WHERE
            wdt:P625    ?coord ;
            rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

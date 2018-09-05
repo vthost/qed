@@ -40,27 +40,21 @@
 
 wd:Q292691  rdfs:label  "Ernst"@en .
 
-wd:Q632842  rdfs:label  "Hans"@aa , "Hans"@ace , "Hans"@af , "Hans"@en .
+wd:Q250267  rdfs:label  "Nora"@lv , "Nora"@de .
 
 wd:Q923  rdfs:label  "Alexander"@en .
 
-wd:Q72591  wdt:P19  wd:Q64 ;
-        wdt:P735  wd:Q632842 .
-
-wd:Q70521  wdt:P19  wd:Q64 ;
-        wdt:P735  wd:Q632842 .
-
-wd:Q1163969  wdt:P19  wd:Q64 ;
-        wdt:P735  wd:Q40203849 .
-
-wd:Q72338  wdt:P19  wd:Q64 ;
-        wdt:P735  wd:Q923 .
-
 wd:Q62777  wdt:P19  wd:Q64 ;
         wdt:P735  wd:Q292691 .
+
+wd:Q63228  wdt:P19  wd:Q64 ;
+        wdt:P735  wd:Q250267 .
 
 wd:Q76711  wdt:P19  wd:Q64 ;
         wdt:P735  wd:Q19501190 .
 
 wd:Q109557  wdt:P19  wd:Q64 ;
         wdt:P735  wd:Q56240286 .
+
+wd:Q63439  wdt:P19  wd:Q64 ;
+        wdt:P735  wd:Q923 .

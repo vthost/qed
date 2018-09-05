@@ -37,8 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q5519230  wdt:P625  "Point(-177.833 -85.15)"^^geo:wktLiteral .
-
 wd:Q24041662  wdt:P625  "Point(0.0 0.0)"^^geo:wktLiteral .
 
 wd:Q6920204  wdt:P625  "Point(-177.13333 -84.66667)"^^geo:wktLiteral .

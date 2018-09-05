@@ -28,7 +28,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -61,7 +61,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -94,7 +94,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -127,7 +127,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -160,7 +160,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -193,7 +193,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -226,7 +226,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -259,7 +259,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -292,7 +292,7 @@ WHERE
       FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -325,7 +325,7 @@ WHERE
       { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -358,6 +358,6 @@ WHERE
       { ?s  wdt:P106  wd:Q49757 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -16,7 +16,7 @@ WHERE
              wdt:P106    wd:Q33999 ;
              rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -37,7 +37,7 @@ WHERE
              wdt:P106    wd:Q33999 ;
              rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -58,7 +58,7 @@ WHERE
              wdt:P106    wd:Q33999 ;
              rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -79,6 +79,6 @@ WHERE
              wdt:P106    wd:Q33999 ;
              rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

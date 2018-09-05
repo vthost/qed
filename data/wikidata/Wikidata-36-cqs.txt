@@ -24,7 +24,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -53,7 +53,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -82,7 +82,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -111,7 +111,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -140,7 +140,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -169,7 +169,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -198,7 +198,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -227,7 +227,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -256,7 +256,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -285,7 +285,7 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -314,6 +314,6 @@ WHERE
     ?subj  wdt:P31   wd:Q178561 ;
            wdt:P625  ?coord
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

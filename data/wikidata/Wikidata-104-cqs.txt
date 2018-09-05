@@ -16,6 +16,6 @@ WHERE
               wdt:P61     ?discoverer .
     ?discoverer  rdfs:label  ?name
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -14,7 +14,7 @@ WHERE
       FILTER NOT EXISTS { ?item  wdt:P921  wd:Q8071861 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -33,7 +33,7 @@ WHERE
       { ?item  wdt:P921  wd:Q8071861 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -52,7 +52,7 @@ WHERE
       FILTER NOT EXISTS { ?item  wdt:P921  wd:Q8071861 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -71,6 +71,6 @@ WHERE
       { ?item  wdt:P921  wd:Q8071861 }
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

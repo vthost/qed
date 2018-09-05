@@ -38,14 +38,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q317226  wdt:P31  wd:Q46169 ;
-        wdt:P625  "Point(24.75 68.733333333)"^^geo:wktLiteral ;
-        wdt:P856  <http://www.dirnat.no/anarjakka/> .
+wd:Q829305  wdt:P31  wd:Q46169 ;
+        wdt:P625  "Point(-67.06416667 -32.55083333)"^^geo:wktLiteral ;
+        wdt:P856  <http://www.parquesnacionales.gov.ar/03_ap/35_squijadas_PN/35_squijadas_PN.htm> .
 
-wd:Q268533  wdt:P31  wd:Q46169 ;
-        wdt:P625  "Point(21.889 56.044)"^^geo:wktLiteral ;
-        wdt:P856  <http://www.zemaitijosnp.lt> .
-
-wd:Q113952  wdt:P31  wd:Q46169 ;
-        wdt:P625  "Point(34.313611111 -18.690277777)"^^geo:wktLiteral ;
-        wdt:P856  <http://www.gorongosa.net/> .
+wd:Q892884  wdt:P31  wd:Q46169 ;
+        wdt:P625  "Point(20.45 -34.0667)"^^geo:wktLiteral ;
+        wdt:P856  <http://www.sanparks.org/parks/bontebok> .

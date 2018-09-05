@@ -23,7 +23,7 @@ WHERE
     FILTER ( lang(?ul) = "en" )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -51,7 +51,7 @@ WHERE
     FILTER ( lang(?ul) = "en" )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -79,7 +79,7 @@ WHERE
     FILTER ( lang(?ul) = "en" )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -107,7 +107,7 @@ WHERE
     FILTER ( lang(?ul) = "en" )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -135,7 +135,7 @@ WHERE
     FILTER ( ! ( lang(?ul) = "en" ) )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -163,7 +163,7 @@ WHERE
     FILTER ( ! ( lang(?ul) = "en" ) )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -191,7 +191,7 @@ WHERE
     FILTER ( ! ( lang(?ul) = "en" ) )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -219,6 +219,6 @@ WHERE
     FILTER ( ! ( lang(?ul) = "en" ) )
     ?u  rdfs:label  ?ul
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

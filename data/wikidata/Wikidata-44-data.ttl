@@ -37,48 +37,42 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+wd:Q838088  rdfs:label  "Hombre de Hielo"@es , "Παγάνθρωπος"@el ;
+        wdt:P1080   wd:Q931597 ;
+        wdt:P31     wd:Q188784 .
+
 wd:Q1132395  rdfs:label  "Spider-Slayer"@en ;
         wdt:P1080   wd:Q931597 ;
         wdt:P31     wd:Q24577840 .
 
-wd:Q554789  rdfs:label  "Doorman"@de , "Doorman (komiks)"@tl , "Ajtónálló (Marvel Comics)"@hu ;
-        wdt:P1080   wd:Q931597 ;
-        wdt:P31     wd:Q1094617 .
+wd:Q188784  rdfs:label  "superhero"@en .
 
-wd:Q1114461  rdfs:label  "comics character"@en , "комикслар персонажы"@tt-cyrl .
-
-wd:Q2267017  rdfs:label  "Cable"@en ;
-        wdt:P1080   wd:Q931597 ;
-        wdt:P31     wd:Q1094617 .
-
-wd:Q3895768  rdfs:label  "fictional location"@en .
-
-wd:Q557250  rdfs:label  "Big House"@en ;
-        wdt:P1080   wd:Q931597 ;
-        wdt:P31     wd:Q3895768 .
-
-wd:Q15773317  rdfs:label  "телевизион персонаж"@tt .
-
-wd:Q1132203  rdfs:label  "Liz Allan"@pt , "Liz Allan"@nl , "리즈 앨런"@ko ;
+wd:Q1748505  rdfs:label  "Aron"@en ;
         wdt:P1080   wd:Q931597 ;
         wdt:P31     wd:Q1114461 .
 
-wd:Q1131724  rdfs:label  "Dracula"@en ;
+wd:Q554789  rdfs:label  "Doorman (komiks)"@tl , "Ajtónálló (Marvel Comics)"@hu ;
+        wdt:P1080   wd:Q931597 ;
+        wdt:P31     wd:Q1094617 .
+
+wd:Q1114461  rdfs:label  "comics character"@en , "personaggio dei fumetti"@it .
+
+wd:Q1748380  rdfs:label  "Deacon Frost"@en ;
         wdt:P1080   wd:Q931597 ;
         wdt:P31     wd:Q6498903 .
 
-wd:Q931597  rdfs:label  "Univers Marvel"@fr , "Marvel Universe"@sco , "驚奇漫畫宇宙"@zh , "Marvel Universum"@nl , "Marvel Universe"@en , "Universo Marvel"@pt , "驚奇宇宙"@yue .
-
-wd:Q1753322  rdfs:label  "Kingpin"@en ;
-        wdt:P1080   wd:Q931597 ;
-        wdt:P31     wd:Q15773317 , wd:Q6498903 .
-
-wd:Q1094617  rdfs:label  "mutáns"@hu , "mutant"@en , "מוטנט"@he , "ミュータント"@ja .
-
-wd:Q555791  rdfs:label  "Henry Peter Gyrich"@en , "Henry Peter Gyrich"@tl , "Генри Питер Гайрич"@ru , "Henry Peter Gyrich"@pt ;
+wd:Q1132203  rdfs:label  "Liz Allan"@en ;
         wdt:P1080   wd:Q931597 ;
         wdt:P31     wd:Q1114461 .
 
-wd:Q6498903  rdfs:label  "supervillano"@es , "ابر ضد قهرمان"@fa , "superroisto"@fi , "Penjahat super"@id .
+wd:Q931597  rdfs:label  "Marvel Universe"@sco , "驚奇宇宙"@yue , "Marvel Universe"@en , "Universo Marvel"@gl , "Marvel Universum"@de .
 
-wd:Q24577840  rdfs:label  "fictional group of characters"@en .
+wd:Q1094617  rdfs:label  "מוטנט"@he .
+
+wd:Q555791  rdfs:label  "ヘンリー・ピーター・ガイリック"@ja , "Henry Peter Gyrich"@es ;
+        wdt:P1080   wd:Q931597 ;
+        wdt:P31     wd:Q1114461 .
+
+wd:Q24577840  rdfs:label  "grup de personatges de ficció"@ca , "fiktive Charaktergruppe"@de , "fictional group of characters"@en .
+
+wd:Q6498903  rdfs:label  "supervillain"@en .

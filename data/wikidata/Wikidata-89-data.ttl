@@ -37,10 +37,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q597684  wdt:P138  wd:Q16 ;
-        wdt:P225  "Sitta canadensis" ;
-        wdt:P31   wd:Q16521 .
-
 wd:Q158793  wdt:P138  wd:Q23 ;
         wdt:P225  "Washingtonia" ;
         wdt:P31   wd:Q16521 .

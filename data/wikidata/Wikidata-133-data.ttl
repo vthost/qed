@@ -42,28 +42,17 @@ wd:Q7727168  wdt:P136  wd:Q482 ;
         wdt:P50   wd:Q23434 ;
         wdt:P577  "1979-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q7735671  wdt:P136  wd:Q49084 ;
-        wdt:P31   wd:Q571 ;
-        wdt:P50   wd:Q23434 .
+wd:Q482  rdfs:label  "poetry"@en , "شعر"@ar , "Balak"@ceb .
 
-wd:Q2052363  wdt:P136  wd:Q4184 ;
-        wdt:P31   wd:Q571 ;
-        wdt:P50   wd:Q23434 ;
-        wdt:P577  "1964-01-01T00:00:00Z"^^xsd:dateTime .
+wd:Q23434  skos:altLabel  "Ernest Hemmingway"@en .
 
 wd:Q28715857  wdt:P136  wd:Q49084 ;
         wdt:P31   wd:Q571 ;
         wdt:P50   wd:Q23434 .
 
-wd:Q482  rdfs:label  "poetry"@en , "شعر"@fa , "شعر"@ar , "Balak"@ceb .
-
-wd:Q23434  skos:altLabel  "Ernest Hemmingway"@en .
-
 wd:Q5437732  wdt:P136  wd:Q49084 ;
         wdt:P31   wd:Q571 ;
         wdt:P50   wd:Q23434 .
-
-wd:Q4184  rdfs:label  "autobiography"@en .
 
 wd:Q3600050  wdt:P136  wd:Q482 ;
         wdt:P31   wd:Q571 ;

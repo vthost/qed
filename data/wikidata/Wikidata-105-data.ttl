@@ -42,10 +42,6 @@ wd:Q1041855  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mars6.
         wdt:P31   wd:Q26529 ;
         wdt:P619  "1973-08-09T00:00:00Z"^^xsd:dateTime .
 
-wd:Q935149  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Hiten.gif> ;
-        wdt:P31   wd:Q26529 ;
-        wdt:P619  "1990-01-24T00:00:00Z"^^xsd:dateTime .
-
 wd:Q909664  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Mars6.gif> ;
         wdt:P31   wd:Q26529 ;
         wdt:P619  "1973-08-05T00:00:00Z"^^xsd:dateTime .

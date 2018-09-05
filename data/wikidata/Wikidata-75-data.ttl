@@ -38,14 +38,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q18005324  wdt:P17  wd:Q29 ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Palau%20Parl%20Cat.jpg> ;
-        wdt:P31  wd:Q7138926 .
-
-wd:Q13473018  wdt:P17  wd:Q16 ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Legislative%20Assembly%20of%20New%20Brunswick.jpg> ;
-        wdt:P31  wd:Q7138926 .
-
-wd:Q2533594  wdt:P17  wd:Q31 ;
-        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Postchequegebouw1.JPG> ;
+wd:Q56476211  wdt:P17  wd:Q40 ;
+        wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Innsbruck%20-%20Das%20Stadtcaf%C3%A9.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Innsbrucker%20Stadts%C3%A4le.jpg> ;
         wdt:P31  wd:Q7138926 .

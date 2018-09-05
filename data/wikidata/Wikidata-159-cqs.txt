@@ -17,7 +17,7 @@ WHERE
               a                     wikibase:Property ;
               rdfs:label            ?l
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -39,6 +39,6 @@ WHERE
               a                     wikibase:Property ;
               rdfs:label            ?l
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

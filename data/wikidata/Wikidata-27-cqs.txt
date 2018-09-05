@@ -20,7 +20,7 @@ WHERE
               wdt:P2048   ?height .
     ?eyeColor  rdfs:label  ?_eyeColorLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -45,6 +45,6 @@ WHERE
               wdt:P2048   ?height .
     ?eyeColor  rdfs:label  ?_eyeColorLabel
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

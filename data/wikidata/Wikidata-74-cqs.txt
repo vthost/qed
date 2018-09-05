@@ -16,6 +16,6 @@ WHERE
     ?place  wdt:P17  ?country
     FILTER NOT EXISTS { ?place  wdt:P17  wd:Q142 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

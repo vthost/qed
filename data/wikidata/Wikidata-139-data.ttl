@@ -48,37 +48,18 @@ wds:Q2679953-b881d438-4735-7776-6f00-e45a0f1afc5b
         pq:P748  wd:Q127318 ;
         ps:P39   wd:Q877838 .
 
-wd:Q213355  p:P39  wds:Q213355-650ad414-4227-c78a-4987-87c57bc61734 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/John%20Dryden%20portrait.jpg> ;
-        wdt:P569  "1631-08-09T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570  "1700-05-01T00:00:00Z"^^xsd:dateTime .
-
 wds:Q1230771-797535ad-4acb-6438-c2fd-984917ec6d63
         pq:P580  "1689-03-09T00:00:00Z"^^xsd:dateTime ;
         pq:P582  "1692-11-01T00:00:00Z"^^xsd:dateTime ;
-        pq:P748  wd:Q129987 ;
+        pq:P748  wd:Q130812 ;
         ps:P39   wd:Q877838 .
 
 wd:Q506410  p:P39  wds:Q506410-9dc0b046-43a0-ad0a-0315-97a32b901e7a .
-
-wds:Q956310-39903e3a-4e93-1763-69c4-28922d8cd4e9
-        pq:P580  "1692-12-23T00:00:00Z"^^xsd:dateTime ;
-        pq:P582  "1715-07-30T00:00:00Z"^^xsd:dateTime ;
-        pq:P748  wd:Q129987 ;
-        ps:P39   wd:Q877838 .
-
-wd:Q956310  p:P39  wds:Q956310-39903e3a-4e93-1763-69c4-28922d8cd4e9 .
 
 wds:Q954383-6cc2cc35-4d60-0039-955b-80c13fb4fefc
         pq:P580  "1968-01-02T00:00:00Z"^^xsd:dateTime ;
         pq:P582  "1972-05-22T00:00:00Z"^^xsd:dateTime ;
         pq:P748  wd:Q9682 ;
-        ps:P39   wd:Q877838 .
-
-wds:Q213355-650ad414-4227-c78a-4987-87c57bc61734
-        pq:P580  "1668-04-13T00:00:00Z"^^xsd:dateTime ;
-        pq:P582  "1688-01-01T00:00:00Z"^^xsd:dateTime ;
-        pq:P748  wd:Q122553 ;
         ps:P39   wd:Q877838 .
 
 wd:Q954383  p:P39  wds:Q954383-6cc2cc35-4d60-0039-955b-80c13fb4fefc .

@@ -40,5 +40,3 @@
 wd:Q237  wdt:P1082  "1000"^^xsd:decimal .
 
 wd:Q695  wdt:P1082  "20918"^^xsd:decimal .
-
-wd:Q238  wdt:P1082  "31595"^^xsd:decimal .

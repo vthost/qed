@@ -17,6 +17,6 @@ WHERE
            wdt:P625  ?coor
     FILTER NOT EXISTS { ?article  schema:about  ?city }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

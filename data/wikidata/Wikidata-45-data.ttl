@@ -37,23 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q146444  wikibase:sitelinks  25 ;
+wd:Q270691  wikibase:sitelinks  58 ;
         wdt:P106            wd:Q33999 ;
-        wdt:P18             <http://commons.wikimedia.org/wiki/Special:FilePath/Nutan%20Hindi%20Movie%20Actress%20%288%29.jpg> ;
+        wdt:P18             <http://commons.wikimedia.org/wiki/Special:FilePath/Sridevi.jpg> ;
         wdt:P21             wd:Q6581072 ;
         wdt:P27             wd:Q668 ;
         wdt:P31             wd:Q5 ;
-        wdt:P569            "1936-06-04T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570            "1991-02-21T00:00:00Z"^^xsd:dateTime .
-
-wd:Q159169  wikibase:sitelinks  39 ;
-        wdt:P106            wd:Q33999 ;
-        wdt:P18             <http://commons.wikimedia.org/wiki/Special:FilePath/Nargis%20in%20Awaara%20film.jpg> ;
-        wdt:P21             wd:Q6581072 ;
-        wdt:P27             wd:Q668 ;
-        wdt:P31             wd:Q5 ;
-        wdt:P569            "1929-06-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570            "1981-05-03T00:00:00Z"^^xsd:dateTime .
+        wdt:P569            "1963-08-13T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570            "2018-02-24T00:00:00Z"^^xsd:dateTime .
 
 wd:Q36881  wikibase:sitelinks  31 ;
         wdt:P106            wd:Q33999 ;

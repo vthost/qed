@@ -31,6 +31,6 @@ WHERE
       GROUP BY ?country ?year
     }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

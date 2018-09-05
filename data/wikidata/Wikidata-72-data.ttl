@@ -37,30 +37,22 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q4899405  rdfs:label  "Beverley Flynn"@fr , "Beverley Flynn"@es , "Beverley Flynn"@de ;
+wd:Q12849  rdfs:label  "Trevor Sargent"@en ;
+        wdt:P21     wd:Q6581097 ;
+        wdt:P39     wd:Q654291 .
+
+wd:Q4899405  rdfs:label  "Beverley Flynn"@es , "Beverley Flynn"@de ;
         wdt:P21     wd:Q6581072 ;
         wdt:P39     wd:Q654291 .
 
-wd:Q560499  rdfs:label  "Richard Mulcahy"@da , "Richard Mulcahy"@ca , "ريتشارد ملكاهي"@ar ;
+wd:Q560499  rdfs:label  "Richard Mulcahy"@ca , "ريتشارد ملكاهي"@ar ;
         wdt:P21     wd:Q6581097 ;
         wdt:P39     wd:Q654291 .
 
-wd:Q2120114  rdfs:label  "Pádraic McCormack"@en ;
+wd:Q6581072  rdfs:label  "female"@en .
+
+wd:Q57276  rdfs:label  "Michael D. Higgins"@en ;
         wdt:P21     wd:Q6581097 ;
         wdt:P39     wd:Q654291 .
 
-wd:Q6581072  rdfs:label  "femenino"@es , "féminin"@fr , "נקבה"@he , "female"@en .
-
-wd:Q1459247  rdfs:label  "Niamh Bhreathnach"@en ;
-        wdt:P21     wd:Q6581072 ;
-        wdt:P39     wd:Q654291 .
-
-wd:Q2057804  rdfs:label  "Patrick McGrath"@en ;
-        wdt:P21     wd:Q6581097 ;
-        wdt:P39     wd:Q654291 .
-
-wd:Q6581097  rdfs:label  "male"@en , "maschio"@it .
-
-wd:Q2058966  rdfs:label  "Paul Bradford"@en ;
-        wdt:P21     wd:Q6581097 ;
-        wdt:P39     wd:Q654291 .
+wd:Q6581097  rdfs:label  "पुरुष"@hi , "muž"@cs , "male"@en , "maschio"@it .

@@ -19,7 +19,7 @@ WHERE
     ?wd_author  rdfs:label  ?author
     VALUES ?wd_author { wd:Q18016466 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -43,7 +43,7 @@ WHERE
     ?wd_author  rdfs:label  ?author
     VALUES ?wd_author { wd:Q18016466 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -67,7 +67,7 @@ WHERE
     ?wd_author  rdfs:label  ?author
     VALUES ?wd_author { wd:Q18016466 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -91,6 +91,6 @@ WHERE
     ?wd_author  rdfs:label  ?author
     VALUES ?wd_author { wd:Q18016466 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

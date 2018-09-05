@@ -39,7 +39,7 @@
 
 wd:Q345  wdt:P21  wd:Q6581072 .
 
-wd:Q3451473  wdt:P131  wd:Q90 , wd:Q3413190 , wd:Q200126 ;
+wd:Q3451473  wdt:P131  wd:Q3413190 , wd:Q200126 ;
         wdt:P138  wd:Q345 ;
         wdt:P17   wd:Q142 ;
         wdt:P31   wd:Q79007 .

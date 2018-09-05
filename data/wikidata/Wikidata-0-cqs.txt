@@ -10,6 +10,6 @@ CONSTRUCT
   }
 WHERE
   { ?item  wdt:P31  wd:Q146 }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

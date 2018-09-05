@@ -12,6 +12,6 @@ WHERE
   { ?thing  wdt:P31   ?class ;
             wdt:P279  ?class
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

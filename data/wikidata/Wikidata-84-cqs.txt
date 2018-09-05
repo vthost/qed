@@ -27,7 +27,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -59,7 +59,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -91,7 +91,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -123,7 +123,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -155,7 +155,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -187,7 +187,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -219,7 +219,7 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -251,6 +251,6 @@ WHERE
     ?item  wdt:P3329  ?civic_id
     VALUES ?property { wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359 }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

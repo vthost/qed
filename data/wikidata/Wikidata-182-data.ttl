@@ -38,17 +38,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://da.wikipedia.org/wiki/Lunde_(Varde_Kommune)>
-        schema:about  wd:Q2516470 .
+wd:Q2509173  wdt:P31  wd:Q3957 ;
+        wdt:P625  "Point(9.26417 55.3208)"^^geo:wktLiteral .
 
 <https://da.wikipedia.org/wiki/M%C3%B8lby_(Haderslev_Kommune)>
         schema:about  wd:Q2509173 .
 
 <https://nl.wikipedia.org/wiki/M%C3%B8lby>
         schema:about  wd:Q2509173 .
-
-wd:Q2509173  wdt:P31  wd:Q3957 ;
-        wdt:P625  "Point(9.26417 55.3208)"^^geo:wktLiteral .
-
-wd:Q2516470  wdt:P31  wd:Q3957 ;
-        wdt:P625  "Point(8.3683 55.7589)"^^geo:wktLiteral .

@@ -47,7 +47,3 @@ wd:P350  wdt:P1630  "https://rkd.nl/explore/images/$1" .
 wd:Q17897294  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/George%20des%20Mar%C3%A9es%20-%20Esther%20Barbara%20Blommarts-Sandrart%20%281651-ca.%201730%29%20-%20SA%2040408%20-%20Amsterdam%20Museum.jpg> ;
         wdt:P31   wd:Q3305213 ;
         wdt:P350  "133830" .
-
-wd:Q27006588  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Crijn%20Hendricksz.%20Volmarijn%20-%20Christus%20in%20Emma%C3%BCs%20-%2064457%20-%20Museum%20Rotterdam.jpg> ;
-        wdt:P31   wd:Q3305213 ;
-        wdt:P350  "1736" .

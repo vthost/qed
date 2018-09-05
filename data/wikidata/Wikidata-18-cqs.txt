@@ -16,7 +16,7 @@ WHERE
     { ?item  wdt:P279  ?_subclass_of }
     ?item  wdt:P31  wd:Q188451
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -37,7 +37,7 @@ WHERE
     { ?item  wdt:P279  ?_subclass_of }
     ?item  wdt:P31  wd:Q188451
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -58,7 +58,7 @@ WHERE
     FILTER NOT EXISTS { ?item  wdt:P279  ?_subclass_of }
     ?item  wdt:P31  wd:Q188451
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -79,6 +79,6 @@ WHERE
     FILTER NOT EXISTS { ?item  wdt:P279  ?_subclass_of }
     ?item  wdt:P31  wd:Q188451
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

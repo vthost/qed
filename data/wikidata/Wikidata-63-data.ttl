@@ -42,6 +42,3 @@ wdv:8000d48d1b1deb503df911f245cd2f61
 
 wdv:8000f9fc599627617d6a265a5740ed60
         wikibase:geoGlobe  wd:Q2 .
-
-wdv:80005798145aa6ff336ab9c02f4939e2
-        wikibase:geoGlobe  wd:Q2 .

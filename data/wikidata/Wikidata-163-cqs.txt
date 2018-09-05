@@ -19,7 +19,7 @@ WHERE
     ?ncbigene  prov:wasDerivedFrom  ?derivedFrom .
     ?derivedFrom  pr:P813          ?date_update
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -43,6 +43,6 @@ WHERE
     ?ncbigene  prov:wasDerivedFrom  ?derivedFrom .
     ?derivedFrom  pr:P813          ?date_update
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

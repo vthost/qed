@@ -40,8 +40,5 @@
 wd:Q34501886  wdt:P31  wd:Q13442814 ;
         wdt:P921  wd:Q3 .
 
-wd:Q24644366  wdt:P31  wd:Q13442814 ;
-        wdt:P921  wd:Q5 .
-
-wd:Q29041230  wdt:P31  wd:Q13442814 ;
-        wdt:P921  wd:Q4 .
+wd:Q22679843  wdt:P31  wd:Q13442814 ;
+        wdt:P921  wd:Q16 .

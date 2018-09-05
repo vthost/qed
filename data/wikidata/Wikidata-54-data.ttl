@@ -44,8 +44,5 @@ wd:Q19101  wdt:P625  "Point(12.238888888 41.800277777)"^^geo:wktLiteral ;
 wd:Q1432126  wdt:P625  "Point(-3.028205555 34.988780555)"^^geo:wktLiteral ;
         wdt:P931  wd:Q824594 .
 
-wd:Q27706  wdt:P625  "Point(9.991111 53.630278)"^^geo:wktLiteral ;
-        wdt:P931  wd:Q1055 .
-
 wd:Q17480  wdt:P625  "Point(4.460277777 51.189444444)"^^geo:wktLiteral ;
-        wdt:P81   wd:Q27706 , wd:Q19101 , wd:Q1432126 .
+        wdt:P81   wd:Q19101 , wd:Q1432126 .

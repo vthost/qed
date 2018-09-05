@@ -8,6 +8,6 @@ CONSTRUCT
   }
 WHERE
   { ?property  wikibase:propertyType  wikibase:ExternalId }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

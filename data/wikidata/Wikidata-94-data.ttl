@@ -50,10 +50,4 @@ wds:Q27088182-1b1c0721-4633-6c4a-1dcd-a14d1bd10d3e
         pq:P31    wd:Q27075870 ;
         ps:P2699  <http://data.gramene.org/> .
 
-wd:Q24088032  p:P2699  wds:Q24088032-6686a53a-4d2c-abf9-f56d-3f3eca8f9028 .
-
 wd:Q27996491  p:P2699  wds:Q27996491-048308b4-41a1-d1ff-9c31-0f26d9121494 .
-
-wds:Q24088032-6686a53a-4d2c-abf9-f56d-3f3eca8f9028
-        pq:P31    wd:Q27075870 ;
-        ps:P2699  <http://xmetdb.github.io/xmetdb-docs/> .

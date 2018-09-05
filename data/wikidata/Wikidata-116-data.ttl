@@ -39,6 +39,4 @@
 
 wd:Q852580  wdt:P31  wd:Q11538 .
 
-wd:Q902630  wdt:P31  wd:Q11538 .
-
 wd:Q852568  wdt:P31  wd:Q11538 .

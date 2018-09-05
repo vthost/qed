@@ -42,10 +42,6 @@ wd:Q29394352  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q468455 ;
         wdt:P570  "1582-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q16201743  wdt:P31  wd:Q5 ;
-        wdt:P509  wd:Q468455 ;
-        wdt:P570  "1558-01-01T00:00:00Z"^^xsd:dateTime .
-
 wd:Q42566992  wdt:P31  wd:Q5 ;
         wdt:P509  wd:Q468455 ;
         wdt:P570  "1461-01-01T00:00:00Z"^^xsd:dateTime .

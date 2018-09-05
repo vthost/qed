@@ -11,7 +11,7 @@ WHERE
   { FILTER isBlank(?gender)
     ?human  wdt:P21  ?gender
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -27,6 +27,6 @@ WHERE
   { FILTER ( ! isBlank(?gender) )
     ?human  wdt:P21  ?gender
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

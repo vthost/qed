@@ -18,6 +18,6 @@ WHERE
     ?childStatement
               a                     wdno:P40
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

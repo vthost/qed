@@ -37,68 +37,48 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q75248  rdfs:label  "Annuario Pontificio"@en ;
-        wdt:P291    wd:Q237 ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1716-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P840    wd:Q237 .
-
 wd:Q220  wdt:P625  "Point(12.482777777 41.893055555)"^^geo:wktLiteral .
-
-wd:Q153297  rdfs:label  "The Gentleman's Magazine"@en ;
-        wdt:P291    wd:Q84 ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1731-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P840    wd:Q84 .
 
 wd:Q6247  wdt:P625  "Point(10.791111111 45.156388888)"^^geo:wktLiteral .
 
-wd:Q83186  rdfs:label  "Romeo and Juliet"@en , "Ромео и Джульетта"@ru , "로미오와 줄리엣"@ko , "ロミオとジュリエット"@ja ;
+wd:Q60  wdt:P625  "Point(-73.94 40.67)"^^geo:wktLiteral .
+
+wd:Q83186  rdfs:label  "Romeo and Juliet"@en , "Roméo et Juliette"@fr , "Romeo a Julie"@cs ;
         wdt:P291    wd:Q2028 , wd:Q6247 ;
         wdt:P31     wd:Q571 , wd:Q7725634 ;
         wdt:P577    "1597-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P840    wd:Q6247 , wd:Q2028 .
 
-wd:Q1134342  rdfs:label  "Inter caetera"@eu , "Inter caetera"@nl , "Inter Caetera"@it ;
+wd:Q1003760  rdfs:label  "Freedom's Journal"@en ;
+        wdt:P291    wd:Q60 ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1829-03-28T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q60 .
+
+wd:Q1134342  rdfs:label  "Inter caetera"@en ;
         wdt:P291    wd:Q220 ;
-        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
         wdt:P577    "1493-05-13T00:00:00Z"^^xsd:dateTime ;
         wdt:P840    wd:Q220 .
 
-wd:Q169759  rdfs:label  "Declaration of the Rights of Man and of the Citizen"@en ;
-        wdt:P291    wd:Q90 ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1789-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P840    wd:Q90 .
-
-wd:Q164779  rdfs:label  "100. Sinfonie"@de , "100. symfoni"@da , "Simfonia núm. 100"@ca ;
+wd:Q164779  rdfs:label  "100. symfoni"@da , "Simfonia núm. 100"@ca ;
         wdt:P31     wd:Q7725634 , wd:Q571 ;
         wdt:P577    "1794-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q207410  rdfs:label  "Così fan tutte"@en ;
-        wdt:P291    wd:Q2634 ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1792-01-01T00:00:00Z"^^xsd:dateTime ;
-        wdt:P840    wd:Q2634 .
-
-wd:Q237  wdt:P625  "Point(12.453 41.904)"^^geo:wktLiteral .
-
 wd:Q2028  wdt:P625  "Point(10.993741666 45.438158333)"^^geo:wktLiteral .
 
-wd:Q567422  rdfs:label  "Annus Mirabilis"@en ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1667-01-01T00:00:00Z"^^xsd:dateTime .
+wd:Q903424  rdfs:label  "伊芙琴尼亞"@zh-hant , "伊芙琴尼亚"@zh-cn ;
+        wdt:P291    wd:Q90 ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1674-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q90 .
 
-wd:Q532011  rdfs:label  "Utendi wa Tambuka"@en ;
+wd:Q93304  rdfs:label  "The Code of Hammuraby"@en ;
         wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1728-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "-1751-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q68931  rdfs:label  "Ballade des pendus"@en ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1489-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q90  wdt:P625  "Point(2.351827777 48.856577777)"^^geo:wktLiteral .
-
-wd:Q127154  rdfs:label  "Landbuch der Mark Brandenburg"@en ;
-        wdt:P31     wd:Q571 , wd:Q7725634 ;
-        wdt:P577    "1781-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q84  wdt:P625  "Point(-0.1275 51.507222222)"^^geo:wktLiteral .
-
-wd:Q2634  wdt:P625  "Point(14.25 40.833333333)"^^geo:wktLiteral .

@@ -37,23 +37,16 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q310924  wdt:P106  wd:Q11631 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Alan%20bean.jpg> ;
-        wdt:P19   wd:Q979821 ;
-        wdt:P569  "1932-03-15T00:00:00Z"^^xsd:dateTime .
-
-wd:Q979821  wdt:P625  "Point(-100.274 35.4425)"^^geo:wktLiteral .
-
 wd:Q2792  wdt:P625  "Point(37.583333333 53.916666666)"^^geo:wktLiteral .
+
+wd:Q342953  wdt:P106  wd:Q11631 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/YuriMalenchenko.jpg> ;
+        wdt:P19   wd:Q1011435 ;
+        wdt:P569  "1961-12-22T00:00:00Z"^^xsd:dateTime .
 
 wd:Q455669  wdt:P106  wd:Q11631 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Soviet%20Union%201969%20CPA%203724%20stamp%20from%20sheet%20Yevgeny%20Khrunov%20cropped.jpg> ;
         wdt:P19   wd:Q2792 ;
         wdt:P569  "1933-09-10T00:00:00Z"^^xsd:dateTime .
 
-wd:Q353687  wdt:P106  wd:Q11631 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/TU%C3%82N%20PHAM.JPG> ;
-        wdt:P19   wd:Q36681 ;
-        wdt:P569  "1947-02-14T00:00:00Z"^^xsd:dateTime .
-
-wd:Q36681  wdt:P625  "Point(106.333333333 20.5)"^^geo:wktLiteral .
+wd:Q1011435  wdt:P625  "Point(33.25 49.083333333)"^^geo:wktLiteral .

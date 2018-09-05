@@ -41,9 +41,4 @@
 wd:Q21183907  wdt:P31  wd:Q13442814 ;
         wdt:P50  wd:Q181 .
 
-wd:Q55693414  wdt:P31  wd:Q13442814 ;
-        wdt:P50  wd:Q80 .
-
-wd:Q80  wdt:P106  wd:Q81096 .
-
-wd:Q181  wdt:P106  wd:Q43845 , wd:Q82594 .
+wd:Q181  wdt:P106  wd:Q1424605 , wd:Q131524 .

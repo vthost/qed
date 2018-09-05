@@ -37,10 +37,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q612  rdfs:label  "Dubai"@ceb , "杜拜"@zh , "Дубай"@ru ;
-        wdt:P2044   "0"^^xsd:decimal ;
-        wdt:P625    "Point(55.309444444 25.269722222)"^^geo:wktLiteral .
+wd:Q43512  rdfs:label  "K2"@en , "K2"@fi ;
+        wdt:P2044   "8611"^^xsd:decimal ;
+        wdt:P625    "Point(76.513333333 35.881111111)"^^geo:wktLiteral .
 
-wd:Q169986  rdfs:label  "Makalu"@en , "Makalu"@sv , "Makalu"@nl ;
-        wdt:P2044   "8485"^^xsd:decimal ;
-        wdt:P625    "Point(87.088611111 27.889166666)"^^geo:wktLiteral .
+wd:Q9694  rdfs:label  "مطار سخيبول أمستردام"@ar , "Lughawe Schiphol"@af ;
+        wdt:P2044   "-11"^^xsd:decimal ;
+        wdt:P625    "Point(4.764169444 52.3081)"^^geo:wktLiteral .

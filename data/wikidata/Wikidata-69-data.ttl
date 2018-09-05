@@ -38,12 +38,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q56148533  wdt:P19  wd:Q67632 ;
+wd:Q494728  wdt:P625  "Point(-117.918611111 34.056666666)"^^geo:wktLiteral .
+
+wd:Q2560036  wdt:P19  wd:Q494728 ;
         wdt:P735  wd:Q15235674 .
 
-wd:Q55986107  wdt:P19  wd:Q42168 ;
+wd:Q2667925  wdt:P19  wd:Q6397 ;
         wdt:P735  wd:Q15235674 .
 
-wd:Q67632  wdt:P625  "Point(7.67084 47.06296)"^^geo:wktLiteral , "Point(7.659722222 47.064444444)"^^geo:wktLiteral .
-
-wd:Q42168  wdt:P625  "Point(3.086944444 45.779722222)"^^geo:wktLiteral .
+wd:Q6397  wdt:P625  "Point(4.808333333 43.948611111)"^^geo:wktLiteral .

@@ -37,10 +37,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q54985720  rdfs:label  "Bgee"@en , "Bgee"@fr , "Bgee"@de ;
+wd:Q54985720  rdfs:label  "Bgee"@en ;
         wdt:P31     wd:Q4117139 .
 
-wd:Q7388138  rdfs:label  "S/MARt"@en-ca , "S/MARt"@en-gb ;
+wd:Q7277174  rdfs:label  "RNA helicase database"@en ;
+        wdt:P275    wd:Q3238057 ;
+        wdt:P31     wd:Q4117139 .
+
+wd:Q7388138  rdfs:label  "S/MARt"@en , "S/MARt"@en-gb , "S/MARt"@en-ca ;
         wdt:P275    wd:Q3238057 ;
         wdt:P31     wd:Q4117139 .
 
@@ -48,24 +52,16 @@ wd:Q17081135  rdfs:label  "BacMap"@en ;
         wdt:P275    wd:Q14075 ;
         wdt:P31     wd:Q4117139 .
 
-wd:Q14075  rdfs:label  "Vaba juurdepääs"@et , "ناوەرۆکی ئازاد"@ckb , "Свабодныя матэрыялы"@be , "free content"@en .
+wd:Q14075  rdfs:label  "Маьрша гIирсаш"@ce , "ناوەرۆکی ئازاد"@ckb , "Эркенал баянал"@av , "محتوى حر"@ar .
 
 wd:Q54857867  rdfs:label  "Treatmentbank"@en ;
         wdt:P31     wd:Q4117139 .
 
-wd:Q24174701  rdfs:label  "MetaboLights"@en ;
-        wdt:P275    wd:Q14075 ;
+wd:Q51885189  rdfs:label  "Проміжний реєстр морських та неморських родів"@uk , "Interim Register of Marine and Nonmarine Genera"@de ;
         wdt:P31     wd:Q4117139 .
 
-wd:Q7102194  rdfs:label  "OriDB"@en ;
-        wdt:P275    wd:Q3238057 ;
-        wdt:P31     wd:Q4117139 .
+wd:Q3238057  rdfs:label  "proprietary license"@en .
 
-wd:Q51885189  rdfs:label  "Interim Register of Marine and Nonmarine Genera"@en , "السجل المؤقت للنوع البحري وغير البحري"@ar ;
-        wdt:P31     wd:Q4117139 .
-
-wd:Q3238057  rdfs:label  "proprietary license"@en , "proprietary licence"@en-gb , "proprietary licence"@en-ca , "Proprietäre Lizenz"@de .
-
-wd:Q12239143  rdfs:label  "BioCyc database collection"@en , "مجموعة قاعدة معطيات BioCyc"@ar ;
+wd:Q12239143  rdfs:label  "مجموعة قاعدة معطيات BioCyc"@ar ;
         wdt:P275    wd:Q14075 ;
         wdt:P31     wd:Q4117139 .

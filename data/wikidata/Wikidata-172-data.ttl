@@ -41,23 +41,19 @@ wd:Q35387  rdfs:label  "Ariana Jollee"@es ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q312783  rdfs:label  "Vivek (actor)"@nl ;
+wd:Q11485  rdfs:label  "Jean-Claude Killy"@af ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q380178  rdfs:label  "Henricus Lloyd (actor)"@la ;
+wd:Q11617  rdfs:label  "אליה"@he ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q392  rdfs:label  "Bob Dylan"@es ;
+wd:Q314427  rdfs:label  "Kevin McHale (actor)"@ca ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
 wd:Q55317537  rdfs:label  "Gustavo Angarita Jr (actor)"@es ;
-        wdt:P106    wd:Q33999 ;
-        wdt:P31     wd:Q5 .
-
-wd:Q26053  rdfs:label  "Carlos PenaVega"@ast , "كارلوس بينا فيغا"@ar , "Carlos PenaVega"@an ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 

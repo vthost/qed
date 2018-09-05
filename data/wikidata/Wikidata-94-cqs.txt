@@ -19,6 +19,6 @@ WHERE
               wikibase:claim        ?p .
     ?wds      pq:P31                wd:Q27075870
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

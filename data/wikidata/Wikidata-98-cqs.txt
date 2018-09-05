@@ -17,6 +17,6 @@ WHERE
     ?isotope  wdt:P279   ?element ;
               wdt:P1148  ?neutrons
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

@@ -15,6 +15,6 @@ WHERE
               wdt:P274  ?formule ;
               wdt:P117  ?picture
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

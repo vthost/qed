@@ -18,7 +18,7 @@ WHERE
     ?gene     wdt:P703    ?organism_item ;
               wdt:P1056   wd:Q319541
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -41,6 +41,6 @@ WHERE
     ?gene     wdt:P703    ?organism_item ;
               wdt:P1056   wd:Q319541
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

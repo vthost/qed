@@ -40,12 +40,12 @@
 wd:Q146  wdt:P31  wd:Q16521 .
 
 wd:Q2060630  wdt:P127  wd:Q207 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/India%20the%20Cat%20Miss%20Beazley%20and%20Barney%20Halloween%202007%20%28cropped%29.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/IndioCat.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/WhiteHousePets%2C%20ValentinesDay2007.jpg> ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/India%20the%20Cat%20Miss%20Beazley%20and%20Barney%20Halloween%202007%20%28cropped%29.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/IndioCat.jpg> ;
         wdt:P31   wd:Q146 .
 
-wd:Q296639  wdt:P39  wd:Q531471 , wd:Q140686 , wd:Q111784 .
+wd:Q296639  wdt:P39  wd:Q140686 , wd:Q111784 .
 
-wd:Q207  wdt:P39  wd:Q11696 .
+wd:Q207  wdt:P39  wd:Q5589725 .
 
 wd:Q2624688  wdt:P127  wd:Q296639 ;
         wdt:P31   wd:Q146 .

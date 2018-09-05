@@ -15,7 +15,7 @@ WHERE
               wdt:P1080   ?universe .
     ?universe  rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -35,6 +35,6 @@ WHERE
               wdt:P1080   ?universe .
     ?universe  rdfs:label  ?label
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

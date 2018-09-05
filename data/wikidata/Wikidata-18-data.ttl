@@ -43,18 +43,8 @@ wd:Q155119  wdt:P31  wd:Q188451 .
 wd:Q388296  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Tony%20Allen%20mg%206469.jpg> ;
         wdt:P31  wd:Q188451 .
 
-wd:Q138020  wdt:P279  wd:Q11401 ;
-        wdt:P31   wd:Q188451 .
-
 wd:Q6010  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/50%20cent%20in%20concert.jpg> ;
         wdt:P279  wd:Q1322198 ;
-        wdt:P31   wd:Q188451 .
-
-wd:Q606393  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Disco%20ball4.jpg> ;
-        wdt:P31  wd:Q188451 .
-
-wd:Q10926  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Emo.JPG> ;
-        wdt:P279  wd:Q377910 ;
         wdt:P31   wd:Q188451 .
 
 wd:Q203720  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Rockabillys%20im%20Tanzcafe%20LiBella.jpg> ;
@@ -68,8 +58,6 @@ wd:Q132438  wdt:P279  wd:Q38848 ;
         wdt:P31   wd:Q188451 .
 
 wd:Q133926  wdt:P31  wd:Q188451 .
-
-wd:Q164444  wdt:P31  wd:Q188451 .
 
 wd:Q135637  wdt:P279  wd:Q9778 ;
         wdt:P31   wd:Q188451 .

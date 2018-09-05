@@ -37,47 +37,38 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:q794-D5A2187A-127D-4650-8417-DA98CE8A8ACB
-        ps:P6   wd:Q348144 .
-
-wd:Q54806925  wdt:P569  "1961-03-27T00:00:00Z"^^xsd:dateTime .
-
-wds:q423-d2a7cffa-4ab6-4c95-758d-421ba403a252
-        ps:P6   wd:Q494800 .
-
-wd:Q494800  wdt:P569  "1939-10-24T00:00:00Z"^^xsd:dateTime , "1939-04-10T00:00:00Z"^^xsd:dateTime .
-
-wd:Q408  p:P6    wds:Q408-a3b71a18-45fb-7f35-e433-50219978b59c ;
+wd:Q258  p:P6    wds:Q258-cc9b45b1-41a8-6b6f-6d78-cfdf8de2984b ;
         wdt:P31  wd:Q3624078 ;
-        wdt:P6   wd:Q7436908 .
+        wdt:P6   wd:Q1148669 .
 
-wd:Q7436908  wdt:P569  "1968-05-13T00:00:00Z"^^xsd:dateTime .
+wd:Q27058418  wdt:P569  "1968-06-14T00:00:00Z"^^xsd:dateTime .
 
-wd:Q9368300  wdt:P569  "1963-12-16T00:00:00Z"^^xsd:dateTime .
+wds:Q965-fc4aa805-4d58-c53d-a8f6-13f74c9e2562
+        ps:P6   wd:Q22043905 .
 
-wd:Q423  p:P6    wds:q423-d2a7cffa-4ab6-4c95-758d-421ba403a252 ;
+wd:Q262  p:P6    wds:Q262-783a3ab7-461b-8490-98b4-79918c1a70a0 ;
         wdt:P31  wd:Q3624078 ;
-        wdt:P6   wd:Q494800 .
+        wdt:P6   wd:Q57613 .
 
-wd:Q348144  wdt:P569  "1948-11-12T00:00:00Z"^^xsd:dateTime .
+wds:Q262-783a3ab7-461b-8490-98b4-79918c1a70a0
+        ps:P6   wd:Q57613 .
 
-wds:q1019-374A14F9-4943-48DF-9A49-279BFE497DF0
-        ps:P6   wd:Q54806925 .
+wd:Q57613  wdt:P569  "1952-07-02T00:00:00Z"^^xsd:dateTime .
 
-wd:Q794  p:P6    wds:q794-D5A2187A-127D-4650-8417-DA98CE8A8ACB ;
+wd:Q22043905  wdt:P569  "1960-07-28T00:00:00Z"^^xsd:dateTime .
+
+wd:Q965  p:P6    wds:Q965-fc4aa805-4d58-c53d-a8f6-13f74c9e2562 ;
         wdt:P31  wd:Q3624078 ;
-        wdt:P6   wd:Q348144 .
+        wdt:P6   wd:Q22043905 .
 
-wd:Q218  p:P6    wds:Q218-65605f34-4b3f-0094-47c4-1fa1475b175d ;
+wd:Q1148669  wdt:P569  "1952-11-17T00:00:00Z"^^xsd:dateTime .
+
+wds:Q258-cc9b45b1-41a8-6b6f-6d78-cfdf8de2984b
+        ps:P6   wd:Q1148669 .
+
+wds:Q711-653fbb0d-4bb9-8044-8b07-139f5174bf3c
+        ps:P6   wd:Q27058418 .
+
+wd:Q711  p:P6    wds:Q711-653fbb0d-4bb9-8044-8b07-139f5174bf3c ;
         wdt:P31  wd:Q3624078 ;
-        wdt:P6   wd:Q9368300 .
-
-wds:Q218-65605f34-4b3f-0094-47c4-1fa1475b175d
-        ps:P6   wd:Q9368300 .
-
-wd:Q1019  p:P6   wds:q1019-374A14F9-4943-48DF-9A49-279BFE497DF0 ;
-        wdt:P31  wd:Q3624078 ;
-        wdt:P6   wd:Q54806925 .
-
-wds:Q408-a3b71a18-45fb-7f35-e433-50219978b59c
-        ps:P6   wd:Q7436908 .
+        wdt:P6   wd:Q27058418 .

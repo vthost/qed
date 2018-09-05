@@ -192,9 +192,8 @@ public class Utils implements Constants {
 //	TODO until generation based on existing is fixed use generated only if not all cases by data
 	public static void integrateGenerationStatistics(String path){
 		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail+generated.txt")) {		
-				  	
-			Map<String,Integer> gcs = path.contains("dbpedia") ? 
-					generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
+//				  	System.out.println(path.substring(path.lastIndexOf(File.separator)+1));
+			Map<String,Integer> gcs = generatedCounts(path.substring(path.lastIndexOf(File.separator)+1));
 
 			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
 			
@@ -425,174 +424,7 @@ System.out.println(ks1);
 		
 	}
 	
-	public static void statsSummary2(String directory) {
-		Map<String,List<String>> fqs = new HashMap<String,List<String>>();
-		Map<String,List<List<Integer>>> fss = new HashMap<String,List<List<Integer>>>();
-		
-		
-		Map<String,Integer> gcs = directory.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
 
-		File[] dirs = Utils.listDirectories(new File(directory));
-
-//		for each config directory
-		for(File d: dirs) {
-			try (InputStream in = Files.newInputStream(Paths.get(d + File.separator+"stats_detail.txt"));
-				    BufferedReader reader =
-				      new BufferedReader(new InputStreamReader(in))) {
-				    String line = reader.readLine();
-				    while ((line = reader.readLine()) != null) {
-				        String fs = String.join(",", Arrays.asList(line.substring(line.lastIndexOf(";")+1).split(",")).stream().map(s -> s.length() > 1? s.substring(0, 2):s).toArray(String[]::new));
-				        
-				        List<String> ids = null; //new ArrayList<String>();
-				        List<List<Integer>> stats = null;//new ArrayList<List<Integer>>();
-				        if(!fqs.containsKey(fs)) {
-				        	ids = new ArrayList<String>();
-				        	fqs.put(fs, ids);
-				        	stats = new ArrayList<List<Integer>>();
-				        	fss.put(fs, stats);
-				        	
-				        	for (int i = 0; i < 4; i++) {
-								stats.add(new ArrayList<Integer>());
-							}
-				        } else {
-				        	ids = fqs.get(fs);
-				        	stats = fss.get(fs);
-				        }
-				        
-				        int j = line.indexOf(";");
-			        	ids.add(line.substring(0, j));
-			        	
-			        	for (int i = 0; i < 4; i++) {
-			        		int j2 = line.indexOf(";", j+1);
-			        		int co = (int)Double.parseDouble(line.substring(j+1,j2));
-			        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
-//			        			String li = line.substring(0,line.lastIndexOf(";"));
-//			        			System.out.println(li + " "+co);
-			        			co = co + gcs.get(line.substring(0,line.indexOf(";")));//Integer.parseInt(li.substring(li.lastIndexOf(";")+1));
-//			        			System.out.println(co);
-			        		}
-
-							stats.get(i).add(co);
-							j = j2;
-						}
-				    }
-				} catch (IOException x) {
-				    System.err.println(x);
-				}
-		}
-
-		
-//		System.out.println(fqs);
-//		System.out.println(fss);
-		
-		Map<String, List<List<Integer>>> treeMap = new TreeMap<>(
-		                (Comparator<String>) (o1, o2) -> o1.length() < o2.length() ? -1 : o2.length() < o1.length() ? 1 : o1.compareTo(o2)
-		        );
-		
-        treeMap.putAll(fss);
-
-
-		
-		try {		
-			FileWriter writer = new FileWriter(directory + "stats.txt");		  	
-			writer.write("config& qs& qsize &cqs& cqs-with-data& triples\\\\hline\n");
-			
-			for (Entry<String, List<List<Integer>>> e : treeMap.entrySet()) {
-				List<List<Integer>> vs = e.getValue();
-				
-//				int s = com.google.common.collect.Streams.zip(vs.get(1).stream(), vs.get(2).stream(), (cqs,cqsd) -> cqsd/cqs));
-				List<Integer> tmp = IntStream
-				  .range(0, vs.get(1).size())
-				  .mapToObj(i -> 10000 * vs.get(2).get(i)/vs.get(1).get(i)).collect(Collectors.toList());
-				
-				writer.write(e.getKey()+"&"+vs.get(0).size()+"&"+
-						(int)vs.get(0).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //qtriples
-						(int)vs.get(1).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //cqs
-						(int)tmp.stream().mapToInt(i -> i).average().orElse(0)/100 +"&"+ 
-						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+ //triples
-						"\\\\\\hline\n");
-
-			}
-			writer.close();
-			
-		} catch (IOException x) {
-		    System.err.println(x);
-		}
-		
-	}
-	public static void writeStatisticsFile(Map<String,List<int[]>> stats) {
-		try {		
-			FileWriter writer = new FileWriter(Utils.DATA_DIR + File.separator + "stats_detail.txt");		  	
-			writer.write("config;cqs;cqs-with-data;stmt-avg\n");
-			
-			stats.entrySet().stream().forEach(e -> {
-								
-				String config = e.getKey();
-				e.getValue().stream().forEach(ns -> {
-					try {
-						writer.write(config.replace("_", "\\_") + ";" + ns[0] + ";" + ns[1] + ";" + ( ns[1] > 0 ? ns[2]/ns[1] : 0) + "\n");
-	
-					} catch (IOException e1) {
-						e1.printStackTrace();
-					}
-				});	
-			});
-			writer.close();
-			
-			
-			FileWriter writer2 = new FileWriter(Utils.DATA_DIR + File.separator + "stats.txt");
-			writer2.write("config;cqs;cmin;cmed;cavg;cmax;ecmin;ecmed;ecavg;ecmax;smin;smed;savg;smax\n");
-
-			stats.entrySet().stream().forEach(e -> {
-				
-				String config = e.getKey();
-				List<int[]> v = e.getValue();
-				if (v.size() > 0) {
-				int[] a = v.stream().mapToInt(ns -> ns[0]).sorted().toArray();
-				int l = a.length;
-				int cqsmin = v.stream().mapToInt(ns -> ns[0]).min().orElse(0);
-				int cqsmed = l % 2 == 0 ? (a[l/2-1] + a[l/2]) / 2 : a[l/2];
-				int cqsavg = (int) v.stream().mapToInt(ns -> ns[0]).average().orElse(0);
-				int cqsmax = v.stream().mapToInt(ns -> ns[0]).max().orElse(0);
-
-				double[] a2 = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).sorted().toArray();
-				int l2 = a2.length;
-				double cqs2min = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).min().orElse(0);
-				double cqs2med = l2 % 2 == 0 ? (a2[l2/2-1] + a2[l2/2]) / 2 : a2[l2/2];
-				double cqs2avg = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).average().orElse(0);
-				double cqs2max = v.stream().mapToDouble(ns -> ns[0]==0? 0:ns[1]/ns[0]).max().orElse(0);
-				
-				int[] a3 = v.stream().mapToInt(ns -> ns[2]).sorted().toArray();
-				int l3 = a3.length;
-				int smin = v.stream().mapToInt(ns -> ns[2]).min().orElse(0);
-				int smed = l3 % 2 == 0 ? (a3[l3/2-1] + a3[l3/2]) / 2 : a3[l3/2];
-				int savg = (int) v.stream().mapToInt(ns -> ns[2]).average().orElse(0);
-				int smax = v.stream().mapToInt(ns -> ns[2]).max().orElse(0);
-				
-				DecimalFormat f = new DecimalFormat("#.##");
-				try {
-					writer2.write(config.replace("_", "\\_") + ";"+v.size()+ ";"  
-				+ cqsmin+ ";"  +cqsmed+ ";"+cqsavg+ ";" +cqsmax   + ";" 
-				+f.format(cqs2min)+ ";"
-				+f.format(cqs2med)+ ";"
-				+f.format(cqs2avg)+ ";"
-				+f.format(cqs2max)+ ";"
-				+smin +";" + smed+ ";" + savg  +";" + smax  + "\n" );
-
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-				}
-			});
-			
-			writer2.close();
-						
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-
-	}
-	
 //	one simple in each subdir and manifest-all.ttl
 	public static void writeManifestFiles() { //, String lsqId) {
 
@@ -710,10 +542,10 @@ System.out.println(ks1);
 		return null;
 	}
 	
-	public static Map<String,Integer> generatedCounts(Dataset d) {
+	public static Map<String,Integer> generatedCounts(String d) {
 		Map<String,Integer> m = new HashMap<String,Integer>();
 		String d1 = System.getProperty("user.dir")+File.separator  + "../generated" + File.separator;	
-		try (InputStream in = Files.newInputStream(Paths.get(d1+ d.toString().toLowerCase() + ".txt"));
+		try (InputStream in = Files.newInputStream(Paths.get(d1+ d + ".txt"));
 			    BufferedReader reader =
 			      new BufferedReader(new InputStreamReader(in))) {
 			    String line = reader.readLine();

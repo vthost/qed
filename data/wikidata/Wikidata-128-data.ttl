@@ -40,5 +40,3 @@
 wd:Q83186  wdt:P31  wd:Q25379 .
 
 wd:Q80383  wdt:P31  wd:Q25379 .
-
-wd:Q86440  wdt:P31  wd:Q25379 .

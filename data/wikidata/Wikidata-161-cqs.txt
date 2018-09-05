@@ -20,7 +20,7 @@ WHERE
     ?statement  ps:P166  ?entity ;
               pq:P585  ?real_year
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -45,7 +45,7 @@ WHERE
     ?statement  ps:P166  ?entity ;
               pq:P585  ?real_year
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -70,6 +70,6 @@ WHERE
     ?statement  ps:P166  ?entity ;
               pq:P585  ?real_year
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

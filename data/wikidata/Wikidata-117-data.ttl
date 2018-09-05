@@ -37,32 +37,45 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q25932135  rdfs:label  "GCatholic.org"@en ;
+wd:Q12239143  rdfs:label  "مجموعة قاعدة معطيات BioCyc"@ar ;
+        wdt:P275    wd:Q14075 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q25834722  rdfs:label  "Common Core of Data"@en ;
-        wdt:P31     wd:Q8513 .
+wd:Q6938433  rdfs:label  "CC0"@en .
 
-wd:Q187176  rdfs:label  "tz database"@en , "Zeitzonen-Datenbank"@de-ch , "Zeitzonen-Datenbank"@de , "Tz database"@ca ;
+wd:Q187176  rdfs:label  "tz database"@en ;
         wdt:P275    wd:Q19652 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q25713895  rdfs:label  "British Book Trade Index"@en ;
-        wdt:P31     wd:Q8513 .
+wd:Q14075  rdfs:label  "Эркенал баянал"@av , "محتوى حر"@ar .
 
-wd:Q6980476  rdfs:label  "Natural Earth"@en , "自然地球"@zh , "Natural Earth"@ru , "Natural Earth"@hu ;
+wd:Q6980476  rdfs:label  "Natural Earth"@en ;
         wdt:P275    wd:Q19652 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q18336371  rdfs:label  "BBC Things"@mk , "BBC Things"@fr , "أشياء بي بي سي"@ar ;
+wd:Q1224853  rdfs:label  "Open Database License"@en .
+
+wd:Q26382154  rdfs:label  "OpenCitations Corpus"@de ;
+        wdt:P275    wd:Q6938433 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q19652  rdfs:label  "Publieke domein"@af , "ملكية عامة"@ar , "Dominiu públicu"@ast , "public domain"@en , "domaine public"@fr .
+wd:Q19652  rdfs:label  "domaine public"@fr , "public domain"@en .
 
-wd:Q468215  rdfs:label  "HomoloGene"@en ;
-        wdt:P275    wd:Q19652 ;
+wd:Q6140060  rdfs:label  "Tebeosfera"@en ;
+        wdt:P275    wd:Q6905942 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q1194038  rdfs:label  "GEOnet Names Server"@en ;
-        wdt:P275    wd:Q19652 ;
+wd:Q66683  rdfs:label  "Who Named It?"@en ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q6905942  rdfs:label  "CC-BY-SA"@ro .
+
+wd:Q131454  rdfs:label  "Library of Congress"@en , "مكتبة الكونغرس"@ar ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q76615  rdfs:label  "Fortune 500"@ca ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q28481333  rdfs:label  "Open Beauty Facts"@en , "Open Beauty Facts"@fr ;
+        wdt:P275    wd:Q1224853 ;
         wdt:P31     wd:Q8513 .

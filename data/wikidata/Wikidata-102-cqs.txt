@@ -9,7 +9,7 @@ WHERE
   { FILTER ( ?items > 1 )
     { ?compound  wdt:P231  ?cas }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
 BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
@@ -23,6 +23,6 @@ WHERE
   { FILTER ( ! ( ?items > 1 ) )
     { ?compound  wdt:P231  ?cas }
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------

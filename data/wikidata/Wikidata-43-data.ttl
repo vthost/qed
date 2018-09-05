@@ -37,17 +37,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q232044  wdt:P161  wd:Q221074 .
-
 wd:Q116187  wdt:P161  wd:Q221074 .
+
+wd:Q232175  wdt:P161  wd:Q221074 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Zwei%20baerenstarke%20typen.svg> .
 
 wd:Q180638  wdt:P161  wd:Q221074 ;
         wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Zwei%20sind%20nicht%20zu%20bremsen.svg> .
 
-wd:Q780835  wdt:P161  wd:Q221074 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Eine%20faust%20geht%20nach%20westen.svg> .
-
-wd:Q232083  wdt:P161  wd:Q221074 .
-
-wd:Q587854  wdt:P161  wd:Q221074 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Plattfuss%20am%20nil.svg> .
+wd:Q232044  wdt:P161  wd:Q221074 .

@@ -11,6 +11,6 @@ WHERE
   { ?jurisdiction
               wdt:P1622  ?side
   }
-LIMIT   3
+LIMIT   2
 
 ----------------------------------------------
