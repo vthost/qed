@@ -1,7 +1,0 @@
-qid;qtriples;cqs;cqs-with-data;triples;features
-DBpedia-q114153;3;4;3;12;FILTER
-DBpedia-q119324;4;11;0;0;FILTER,UNION
-DBpedia-q26454;8;11;0;0;FILTER,UNION
-DBpedia-q7786;3;2;2;6;FILTER
-DBpedia-q8406;3;2;1;4;FILTER
-DBpedia-q8453;5;4;4;15;FILTER

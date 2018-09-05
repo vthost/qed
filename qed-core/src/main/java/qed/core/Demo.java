@@ -52,6 +52,7 @@ public class Demo {
 		
 		if(dataset == Dataset.WIKIDATA) {
 			de.extractQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset);
+			Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);
 			Utils.statsSummary(Utils.DATA_DIR + dataset + File.separator, 7);
 		} else {
 			de.extractAllQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset +"2");
@@ -143,9 +144,11 @@ public class Demo {
 		
 //		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs());
 //		d.extractData(Dataset.WIKIDATA);
-		d.extractData(Dataset.DBPEDIA);
-//		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"1");
-//		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2"+ File.separator, 7);
+//		d.extractData(Dataset.DBPEDIA);
+		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"2");
+		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2");
+//		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2");
+		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2"+ File.separator, 7);
 		
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA);
 //		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);

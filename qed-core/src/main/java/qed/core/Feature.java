@@ -42,7 +42,7 @@ public enum Feature {
 	
 	
 
-    public String toString() {
+    public String toString1() {
     		String n = name();
         return n.charAt(0)+n.substring(1).toLowerCase();
     }
@@ -61,7 +61,7 @@ public enum Feature {
 	
 	public static String[] toStringArray(Feature[] config){
 
-		return Arrays.asList(config).stream().map(Feature::toString).toArray(String[]::new);		
+		return Arrays.asList(config).stream().map(Feature::toString1).toArray(String[]::new);		
 	}
 	
 //	public static String[][] toStringArrays(Feature[][] configs){

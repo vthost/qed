@@ -311,7 +311,7 @@ public class Utils implements Constants {
 		for (Feature f : Feature.values()) {
 			ok.put(f.name(),0);
 		}
-		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt")); //+generated.txt"));
+		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail+generated.txt"));
 			    BufferedReader reader =
 			      new BufferedReader(new InputStreamReader(in))) {
 			    String line = reader.readLine();
@@ -341,7 +341,7 @@ public class Utils implements Constants {
 System.out.println(ks1);
 
 //		Map<String,Integer> gcs = path.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
-		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt"));
+		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail+generated.txt"));
 		    BufferedReader reader =
 		      new BufferedReader(new InputStreamReader(in))) {
 		    String line = reader.readLine();int c = 0;
