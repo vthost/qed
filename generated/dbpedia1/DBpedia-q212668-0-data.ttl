@@ -1,0 +1,15 @@
+<http://dbpedia.org/resource/Peugeot> <http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://dbpedia.org/resource/Peugeot> <http://www.w3.org/2001/XMLSchema#float> <http://xmlns.com/foaf/0.1/name> .
+<http://dbpedia.org/resource/Peugeot> <http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2001/XMLSchema#float> "num3"^^<http://any/number> .
+_:BX5FX3Ablank0 <http://www.w3.org/2001/XMLSchema#float> _:BX5FX3Ablank0 .
+_:BX5FX3Ablank0 <http://synthetic/0> "Peugeot S.A."^^<en> .
+<http://www.w3.org/2001/XMLSchema#float> <http://xmlns.com/foaf/0.1/name> "Peugeot S.A."^^<en> .
+<http://www.w3.org/2001/XMLSchema#string> <http://synthetic/3> "lit3"^^<ANY_LANGUAGE> .
+<http://www.w3.org/2001/XMLSchema#string> <http://synthetic/2> <http://synthetic/2> .
+<http://www.w3.org/2001/XMLSchema#string> <http://synthetic/1> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2001/XMLSchema#decimal> <http://dbpedia.org/resource/Peugeot> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/4> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://synthetic/3> _:BX5FX3Ablank0 .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://synthetic/1> "num2"^^<http://any/number> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .

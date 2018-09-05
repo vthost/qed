@@ -1,0 +1,20 @@
+<http://synthetic/3> <http://www.w3.org/2004/02/skos/core#broader> <http://dbpedia.org/resource/Vector_field_reconstruction> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2004/02/skos/core#broader> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2004/02/skos/core#broader> <http://dbpedia.org/resource/Vector_field_reconstruction> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> "lit1"@en .
+<http://www.w3.org/2001/XMLSchema#float> <http://synthetic/1> <http://synthetic/0> .
+<http://www.w3.org/2001/XMLSchema#float> <http://synthetic/0> _:BX5FX3Ablank0 .
+<http://www.w3.org/2001/XMLSchema#float> <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3.org/2001/XMLSchema#float> <http://synthetic/0> <http://synthetic/0> .
+<http://synthetic/0> <http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2001/XMLSchema#float> .
+<http://synthetic/0> <http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2001/XMLSchema#double> .
+<http://synthetic/0> <http://www.w3.org/2000/01/rdf-schema#label> "lit2"^^<http://any/iri> .
+<http://synthetic/0> <http://www.w3.org/2000/01/rdf-schema#label> "lit1"@en .
+<http://synthetic/0> <http://www.w3.org/2000/01/rdf-schema#label> "lit0"^^<http://any/iri> .
+<http://synthetic/0> <http://www.w3.org/2000/01/rdf-schema#label> "ANY_LANGUAGE" .
+<http://synthetic/0> <http://www.w3.org/2004/02/skos/core#broader> <http://dbpedia.org/resource/Vector_field_reconstruction> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit1"@en .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2004/02/skos/core#broader> <http://dbpedia.org/resource/Vector_field_reconstruction> .
+<http://synthetic/0> <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#double> <http://synthetic/0> .
+<http://synthetic/1> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2001/XMLSchema#string> <http://synthetic/4> <http://synthetic/0> .
