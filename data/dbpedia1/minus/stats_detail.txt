@@ -1,3 +1,2 @@
 qid;qtriples;cqs;cqs-with-data;triples;features
-DBpedia-q212668;3;2;2;6;Minus
-DBpedia-q330524;3;2;1;3;Minus
+DBpedia-q212668;3;2;2;6;MINUS

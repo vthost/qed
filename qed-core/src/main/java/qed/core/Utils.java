@@ -288,7 +288,7 @@ public class Utils implements Constants {
 					int[] stat = stats.get(i);
 					writer.write(ids.get(i) + ";" + stat[0] + ";" + stat[1] + ";" + stat[2] + ";" + stat[3] + ";" +//stat[4] + ";" +
 //							( stat[1] > 0 ? stat[2]/stat[1] : 0) + ";" + 
-							String.join(",", features.get(i).stream().map(f -> f.toString().replace("_", "\\_")).
+							String.join(",", features.get(i).stream().map(f -> f.name().replace("_", "\\_")).
 									collect(Collectors.toList())) + "\n");
 
 				} catch (IOException e1) {//config.replace("_", "\\_")
@@ -340,7 +340,7 @@ public class Utils implements Constants {
 		}
 System.out.println(ks1);
 
-		Map<String,Integer> gcs = path.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
+//		Map<String,Integer> gcs = path.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
 		try (InputStream in = Files.newInputStream(Paths.get(path + "stats_detail.txt"));
 		    BufferedReader reader =
 		      new BufferedReader(new InputStreamReader(in))) {
@@ -372,12 +372,12 @@ System.out.println(ks1);
 	        	for (int i = 0; i < 4; i++) {
 	        		int j2 = line.indexOf(";", j+1);
 	        		int co = (int)Double.parseDouble(line.substring(j+1,j2));
-	        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
-//	        			String li = line.substring(0,line.lastIndexOf(";"));
-//	        			System.out.println(li + " "+co);
-	        			co = co + gcs.get(line.substring(0,line.indexOf(";")));//Integer.parseInt(li.substring(li.lastIndexOf(";")+1));
-//	        			System.out.println(co);
-	        		}
+//	        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
+////	        			String li = line.substring(0,line.lastIndexOf(";"));
+////	        			System.out.println(li + " "+co);
+//	        			co = co + gcs.get(line.substring(0,line.indexOf(";")));//Integer.parseInt(li.substring(li.lastIndexOf(";")+1));
+////	        			System.out.println(co);
+//	        		}
 	        			
 					stats.get(i).add(co);//
 					j = j2;

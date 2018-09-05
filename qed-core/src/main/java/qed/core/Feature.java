@@ -82,7 +82,7 @@ public enum Feature {
 		case DISTINCT:
 			break;
 		case FILTER:
-			return query.matches("(?i).*\\s(filter not exists|filter\\s*\\().*");
+			return query.matches("(?i).*\\s(filter not exists|filter\\s*(langmatches\\s*)?\\().*");
 		case FROM_NAMED:
 			break;
 		case GROUP_BY:
@@ -90,8 +90,7 @@ public enum Feature {
 		case HAVING:
 			return query.matches("(?i).*\\shaving\\s*\\(.*");
 		case LIMIT:
-			query.matches("(?i).*\\slimit\\s+[0-9].*");
-			break;
+			return query.matches("(?i).*\\slimit\\s+[0-9].*");
 		case MAX:
 			break;
 		case MIN:
@@ -104,11 +103,11 @@ public enum Feature {
 			break;
 			//rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
 		case OFFSET:
-			query.matches("(?i).*\\soffset\\s+[0-9].*");
+			return query.matches("(?i).*(\\s|\\})offset\\s+[0-9].*");
 		case OPTIONAL:
-			return query.matches("(?i).*\\soptional\\s+\\{.*");
+			return query.matches("(?i).*\\soptional\\s*\\{.*");
 		case ORDER_BY:
-			query.matches("(?i).*\\sorder by\\s+(asc|desc|\\?).*");
+			return query.matches("(?i).*\\sorder by\\s+(asc|desc|\\?).*");
 		case REGEX:
 			return query.matches("(?i).*\\sregex\\s*\\(.*");
 		case SERVICE:

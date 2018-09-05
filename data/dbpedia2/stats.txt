@@ -1,1 +1,3 @@
 config& qs& qsize &cqs& cqs-with-data& triples\\hline
+&36&6&8&21&4\\\hline
+RE&2&14&11&0&0\\\hline

@@ -1,5 +1,5 @@
 qid;qtriples;cqs;cqs-with-data;triples;features
-DBpedia-q156;8;11;0;0;Filter,Offset,Optional
-DBpedia-q26454;8;11;0;0;Filter,Union
-DBpedia-q27290;4;1;1;4;
-DBpedia-q3017;3;2;2;5;Offset,Optional
+DBpedia-q156;8;11;0;0;FILTER,LIMIT,OFFSET,OPTIONAL
+DBpedia-q26454;8;11;0;0;FILTER,LIMIT,OFFSET,UNION
+DBpedia-q27290;4;1;1;4;LIMIT,OFFSET
+DBpedia-q3017;3;2;2;5;LIMIT,OFFSET,OPTIONAL

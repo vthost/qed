@@ -41,7 +41,7 @@ public class Demo {
 
 	public void extractQueries(Dataset dataset, Feature[][] cs) {
 		
-		Utils.DATA_DIR = Utils.DATA_DIR + dataset.toString().toLowerCase() + "2" + File.separator;
+		Utils.DATA_DIR = Utils.DATA_DIR + dataset.toString().toLowerCase() + "10" + File.separator;
 		
 		new LogQueryExtractor().extractQueries(Constants.LSQR_SPARQL_EP, dataset.graphUri, cs, 15, 0, 0);
 	}
@@ -56,7 +56,7 @@ public class Demo {
 		} else {
 			de.extractAllQueryDataAndResults(dataset.endpoint, 3, Utils.DATA_DIR + dataset +"2");
 			Utils.mergeStatisticsFiles(Utils.DATA_DIR + dataset +"2");
-			Utils.statsSummary(Utils.DATA_DIR + dataset + File.separator, 7);
+			Utils.statsSummary(Utils.DATA_DIR + dataset +"2"+ File.separator, 7);
 		}
 	}
 	
@@ -141,11 +141,11 @@ public class Demo {
 ////		System.out.println(fs[0].name()+fs[1]);
 //	}
 		
-//		d.extractQueries(Dataset.DBPEDIA, createBinaryConfigs(exfs));//				createSimpleConfigs());
+//		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs());
 //		d.extractData(Dataset.WIKIDATA);
 		d.extractData(Dataset.DBPEDIA);
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"1");
-//		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA +"1"+ File.separator, 7);
+//		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2"+ File.separator, 7);
 		
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA);
 //		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);

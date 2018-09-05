@@ -66,7 +66,7 @@ public class LogQueryExtractor {
 			+ "?id a sp:Select; "
 			+ "sp:text ?text ; lsqv:resultSize ?rs ; lsqv:runTimeMs ?rt ; lsqv:triplePatterns ?tp; "		
 			+ "lsqv:usesFeature lsqv:" + String.join("; lsqv:usesFeature lsqv:", Feature.toStringArray(config)) + ". "
-			+ "FILTER NOT EXISTS {?id lsqv:parseError ?error .}. "
+			+ "FILTER NOT EXISTS {?id lsqv:parseError ?error .}. FILTER NOT EXISTS {?id lsqv:usesFeature lsqv:Regex .}."
 			+ filter + " . "
 
 			//this is a shortcut to sort out "bot" queries that only differ in some values in the queries
