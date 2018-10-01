@@ -1,12 +1,13 @@
 package com.ibm.lsd.checker.drivers;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.Set;
 
-import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.sparql.algebra.Op;
+import org.apache.jena.query.Query;
+import org.apache.jena.sparql.algebra.Op;
 import com.ibm.research.rdf.store.sparql11.semantics.ASTUtils;
 import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
@@ -15,6 +16,7 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.ast.Relation;
+import kodkod.engine.CapacityExceededException;
 import kodkod.engine.satlab.SATFactory;
 import kodkod.instance.Instance;
 
@@ -30,29 +32,39 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 	
 	class EachPath implements Process {
 		public void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator)
-				throws URISyntaxException, FileNotFoundException {
+				throws URISyntaxException, MalformedURLException, IOException {
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 			formulae: for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
 				//System.out.println("p: "+p);
+				Formula thisf = p.fst;
+				
 				Set<Relation> relations = ASTUtils.gatherRelations(p.fst);
-				for(Relation r : relations) {
-					if (r.name().equals("solution")) {		
-						Formula thisf = null;
-						if (datasetLimit > 0) {
-							for(Relation q : relations) {
-								if (q.name().equals("quads")) {		
-									thisf = p.fst.and(ensureSolutions(r, q));
-								}
-							}
-						} else {
-							thisf = p.fst.and(ensureSolutions(r));
+				
+				if (! USE_EXISTENTIALS) {
+					for(Relation r : relations) {
+						if (r.name().equals("solution")) {		
+							thisf = thisf.and(ensureSolutions(r));
 						}
-						Instance bindings = Drivers.check(U, SATFactory.MiniSat, Pair.make(thisf, p.snd));
-						if (bindings == null) {
-							continue formulae;
-						}
-						checkExpanded(ast, query, U, bindings, thisf, p.snd.fst, p.snd.snd);
 					}
+				}
+				
+				if (datasetLimit > 0) {
+					for(Relation q : relations) {
+						if (q.name().equals("quads")) {		
+							thisf = p.fst.and(limitData(q));
+						}
+					}
+				}
+				
+				Instance bindings = Drivers.check(U, SATFactory.MiniSat, Pair.make(thisf, p.snd));
+				if (bindings == null) {
+					continue formulae;
+				}
+				
+				try {
+					checkExpanded(ast, query, U, bindings, thisf, p.snd.fst, p.snd.snd);
+				} catch (CapacityExceededException e) {
+					
 				}
 			}
 		}

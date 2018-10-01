@@ -144,13 +144,13 @@ public class Demo {
 ////		System.out.println(fs[0].name()+fs[1]);
 //	}
 		
-//		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs());
+		d.extractQueries(Dataset.DBPEDIA, createSimpleConfigs());
 //		d.extractData(Dataset.WIKIDATA);
 //		d.extractData(Dataset.DBPEDIA);
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA +"2");
-		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"1");
+//		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"1");
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"2");
-		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"1"+ File.separator, 7);
+//		Utils.statsSummary(Utils.DATA_DIR + Dataset.DBPEDIA.toString().toLowerCase() +"1"+ File.separator, 7);
 		
 //		Utils.mergeStatisticsFiles(Utils.DATA_DIR + Dataset.DBPEDIA);
 //		Utils.integrateGenerationStatistics(Utils.DATA_DIR + Dataset.WIKIDATA);

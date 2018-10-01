@@ -1,1 +1,0 @@
- PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>  select (count(?work) as ?count) ?subject ?subjectLabel where {   ?work wdt:P31 wd:Q13442814;          wdt:P921 ?subject . } group by ?subject ?subjectLabel order by desc(?count) limit 200 

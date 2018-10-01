@@ -1,9 +1,0 @@
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix ns3:   <http://dbpedia.org/resource/Category:> .
-
-dbpedia:Aharon_Razel  rdfs:comment  "Aharon Razel (אהרן רזאל), born in New York in 1974, is an Israeli musician and his music explores topics such as Torah, Orthodox Judaism and living in Israel."@en , "אהרן רזאל, זמר ומלחין של מוזיקה חסידית אלטרנטיבית."@iw ;
-        skos:subject  ns3:Israeli_musicians ;
-        foaf:name     "Aharon Razel"@en .

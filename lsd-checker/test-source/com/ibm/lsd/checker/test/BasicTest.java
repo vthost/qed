@@ -19,7 +19,7 @@ public class BasicTest {
 		LSDCheckerDriver.mainLoop(url.toString());
 	}
 
-	@Test
+	// @Test
 	public void testCheck626806() throws URISyntaxException, IOException {
 		testQuery("DBpedia-q626806.rq");
 	}
@@ -64,6 +64,11 @@ public class BasicTest {
 	@Test
 	public void testExpandEach759686() throws Exception {
 		testExpandEach("DBpedia-759686.rq", 1, 5);
+	}
+
+	@Test
+	public void testExpandEachPath() throws Exception {
+		testExpandEach("path1.rq", 1, 5);
 	}
 
 	public void testExpandAll(String query, int solutionLimit, int datasetLimit) throws Exception {

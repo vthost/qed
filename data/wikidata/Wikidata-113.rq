@@ -1,1 +1,0 @@
- PREFIX wdt: <http://www.wikidata.org/prop/direct/>   SELECT DISTINCT ?pmid ?doi WHERE { 	?item wdt:P698 ?pmid ;               wdt:P356 ?doi . } 

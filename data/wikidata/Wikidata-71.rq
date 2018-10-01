@@ -1,1 +1,0 @@
- PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>  SELECT ?parent ?parentLabel ?count WHERE {   {     SELECT ?parent (COUNT(?child) AS ?count)     WHERE     {       ?parent wdt:P40 ?child.     }     GROUP BY ?parent     ORDER BY DESC(?count)     LIMIT 10   } } ORDER BY DESC(?count) LIMIT 10 

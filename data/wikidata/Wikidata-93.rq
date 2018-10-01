@@ -1,1 +1,0 @@
- PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT DISTINCT ?standard ?standardLabel ?website WHERE {         ?standard wdt:P1462 wd:Q37033 .         OPTIONAL{ ?standard wdt:P856 ?website } }  ORDER BY ?standardLabel 

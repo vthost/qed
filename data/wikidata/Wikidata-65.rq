@@ -1,1 +1,0 @@
- PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>  SELECT ?entityLabel ?inseeCode ?entity WHERE  { 	?entity wdt:P374 ?inseeCode . 	FILTER ( 		 ?inseeCode in ("75056", "69123", "13055") 	)  } 

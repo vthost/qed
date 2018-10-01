@@ -1,1 +1,0 @@
- PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX defaultView: <http://defaultView> PREFIX bd: <http://www.bigdata.com/rdf#>    SELECT ?item ?itemLabel ?pic WHERE { 	?item ?prop wd:Q146 .  	OPTIONAL { 		?item wdt:P18 ?pic 	}   } 

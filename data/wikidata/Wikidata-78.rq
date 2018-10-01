@@ -1,1 +1,0 @@
- PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT ?item ?itemLabel ?billions WHERE {   ?item wdt:P2218 ?worth.   FILTER(?worth>1000000000).   BIND(?worth/1000000000 AS ?billions). } ORDER BY DESC(?billions) 

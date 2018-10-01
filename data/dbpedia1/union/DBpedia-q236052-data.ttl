@@ -1,4 +1,0 @@
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix dbpprop: <http://dbpedia.org/property/> .
-
-dbpedia:Horus  dbpprop:parents  "Osiris and Isis"@en .

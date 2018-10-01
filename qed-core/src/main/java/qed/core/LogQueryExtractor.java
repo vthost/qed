@@ -93,7 +93,7 @@ public class LogQueryExtractor {
 			//subquery end
 
 			
-			+ "} ORDER BY ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
+			+ "} ORDER BY ASC(?tp) ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
 System.out.println(query);
 			File f = Utils.cleanDataSubDir(config);
 			queryLogAndWriteFiles(logEndpoint, graphUri, query, f);

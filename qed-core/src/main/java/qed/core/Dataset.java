@@ -7,7 +7,7 @@ public enum Dataset {
 //	BM ( "http://bm.rkbexplorer.com", "https://collection.britishmuseum.org/resource/sparql"),
 	WIKIDATA ("","https://query.wikidata.org/bigdata/namespace/wdq/sparql");
 	
-	String graphUri = null;
+	public String graphUri = null;
 	String endpoint = null;
 	private Dataset(String graphUri, String endpoint) {
 		this.graphUri = graphUri;

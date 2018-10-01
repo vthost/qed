@@ -1,1 +1,0 @@
- PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT ?moleculeLabel ?formule ?picture ?molecule WHERE {  	?molecule  wdt:P31 wd:Q12140 	; wdt:P274 ?formule 	; wdt:P117 ?picture }  ORDER BY ?moleculeLabel 

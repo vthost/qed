@@ -1,1 +1,0 @@
- PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX defaultView: <http://defaultView> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT  ?variant_typeLabel (count(?variant_typeLabel) as ?counts) WHERE { 	?item wdt:P3329 ?civic_id ;           wdt:P31 ?variant_type .  } GROUP BY ?variant_typeLabel ORDER BY ?counts 

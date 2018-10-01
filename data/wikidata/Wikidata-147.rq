@@ -1,1 +1,0 @@
- PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX defaultView: <http://defaultView>  SELECT *  WHERE {   ?item wdt:P31 wd:Q3305213 .   ?item wdt:P170 wd:Q34661 .   ?item wdt:P18 ?pic . } 

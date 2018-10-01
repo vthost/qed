@@ -1,9 +1,0 @@
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix ns3:   <http://dbpedia.org/resource/Category:> .
-
-dbpedia:Lou_Bega  rdfs:comment  "David Lubega (born April 13, 1975), also known as Lou Bega, is a German musician of Italian and Ugandan descent, and is famous for his song \"Mambo No. 5\". This song is a remake of the Perez Prado instrumental from 1949. Bega added his own words to the song and sampled the original version extensively."@en , "Lou Bega je německý zpěvák latinskoamerické hudby, jenž se proslavil zejména díky písni Mambo No. 5."@cs ;
-        skos:subject  ns3:German_musicians ;
-        foaf:name     "Lou Bega"@de , "Lou Bega"@en .

@@ -1,29 +1,31 @@
 package com.ibm.lsd.checker.drivers;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.Iterator;
 
+import org.apache.jena.query.Dataset;
+import org.apache.jena.query.DatasetFactory;
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
+import org.apache.jena.rdf.model.AnonId;
+import org.apache.jena.rdf.model.Literal;
+import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.RDFVisitor;
+import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
+import org.apache.jena.riot.RDFFormat;
+import org.apache.jena.sparql.algebra.Op;
 
-import com.hp.hpl.jena.query.Dataset;
-import com.hp.hpl.jena.query.DatasetFactory;
-import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.QuerySolution;
-import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.AnonId;
-import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.RDFVisitor;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.sparql.algebra.Op;
 import com.ibm.research.rdf.store.sparql11.model.BlankNodeVariable;
 import com.ibm.research.rdf.store.sparql11.model.Constant;
 import com.ibm.research.rdf.store.sparql11.model.IRI;
@@ -32,7 +34,6 @@ import com.ibm.research.rdf.store.sparql11.model.StringLiteral;
 import com.ibm.research.rdf.store.sparql11.model.Variable;
 import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.BoundedUniverse;
-import com.ibm.research.rdf.store.sparql11.semantics.DatasetUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaUtil;
@@ -51,6 +52,8 @@ import kodkod.instance.Instance;
 
 public abstract class LSDExpanderBase extends DriverBase {
 
+	protected final static boolean USE_EXISTENTIALS = true;
+	
 	private final String queryFile;
 	
 	private int datasets = 0;
@@ -70,11 +73,9 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 //	TODO a check only occurs in the very beginning, no?
 	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Instance t, Formula f, Formula s1, Formula s2)
-			throws URISyntaxException, FileNotFoundException {//System.out.println("check2: "+f);
-		SolutionRelation s;
-		JenaTranslator xlator;
-		Pair<Formula, Pair<Formula, Formula>> xlation;
-		Dataset dataset = DatasetFactory.createMem();
+			throws URISyntaxException, MalformedURLException, IOException {//System.out.println("check2: "+f);
+		Dataset dataset = DatasetFactory.create();
+
 		if (t != null) {
 			JenaUtil.addTupleSet(dataset, t.tuples(QuadTableRelations.quads), U, t);
 		}
@@ -142,26 +143,20 @@ public abstract class LSDExpanderBase extends DriverBase {
 				});
 			}
 		};
-
-		U = new DatasetUniverse(dataset);
-		s = new SolutionRelation(rr, ast.getProjectVars(), Collections.<String,Object>emptyMap());
-		U.addSolution(s);
-
-		xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, s);
-		xlation = xlator.translateSingle(Collections.<String,Object>emptyMap(), false).iterator().next();
+		
+		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
+		ResultSet results = exec.execSelect();
+		ResultSetFormatter.outputAsXML(new FileOutputStream(
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + QUERY_RESULT_FILE_EXT), results);
 		
 		RDFDataMgr.write(new FileOutputStream(
-				"test-data/data/"+ stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
-//		Utils.writeQueryDataFile2(Utils.DATA_DIR, stem(), dataset);
-		System.out.println("\n\nthe solution:");
-		System.out.println(Drivers.check(U, xlation, "solution"));
-		System.out.println("the dataset:");
-		RDFDataMgr.write(System.out, dataset, Lang.NQ);
-////		RDFDataMgr.write(new FileOutputStream(System.getProperty("java.io.tmpdir") + stem().substring(stem().lastIndexOf('/')) + "_ds" + datasets++ + ".ttl"), dataset, Lang.NQ);
-//		System.out.println("\n\n");
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+	
+		Drivers.tryToCheck(dataset, rr, ast, ast.getProjectVars(), Collections.emptyMap(), "solution", false);
 	}
 
-	public void mainLoop(Process p) throws URISyntaxException, IOException {
+	public void mainLoop(Process p) {
+		try {
 		Query ast = JenaUtil.parse(queryFile);
 		Op query = JenaUtil.compile(ast);
 
@@ -194,9 +189,12 @@ public abstract class LSDExpanderBase extends DriverBase {
 			}
 		};
 		
-		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, new SolutionRelation(ask, Collections.emptyList(), Collections.emptyNavigableMap()));
+		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, USE_EXISTENTIALS? new SolutionRelation(ask, Collections.emptyList(), Collections.emptyNavigableMap()): null);
 
 		p.process(ast, query, U, xlator);
+		} catch (Exception e) {
+			System.err.println(e);
+		}
 	}
 
 	private String stem() {

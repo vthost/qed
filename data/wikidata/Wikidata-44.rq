@@ -1,1 +1,0 @@
- PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>   SELECT * WHERE { 	?u rdfs:label ?ul . 	FILTER (lang(?ul) = "en")  	?m rdfs:label ?ml . 	FILTER (lang(?ml) = "en")  	?p wdt:P1080 ?u. 	?p wdt:P31 ?m . 	?p wdt:P1080 wd:Q931597 . 	?p rdfs:label ?pl .  	FILTER (lang(?pl) = "en")  } 

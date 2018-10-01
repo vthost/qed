@@ -1,1 +1,0 @@
- PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX bd: <http://www.bigdata.com/rdf#>   SELECT DISTINCT ?digitalLibrary  ?digitalLibraryLabel ?website WHERE { 	?digitalLibrary wdt:P31 wd:Q212805 	; wdt:P856 ?website . }  ORDER BY ?digitalLibraryLabel 
