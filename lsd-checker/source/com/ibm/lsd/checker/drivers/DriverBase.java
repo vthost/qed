@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -33,20 +34,22 @@ public abstract class DriverBase implements Constants {
 
 	private static void runit(ThrowingConsumer<String,Exception> process, String name) {
 		final ExecutorService executor = Executors.newSingleThreadExecutor();
-		final Future<?> future = executor.submit(new Runnable() {
+		final Future<Boolean> future = executor.submit(new Callable<Boolean>() {
 			@Override
-			public void run() {
+			public Boolean call() {
 				try {
 					process.call(name);
+					return true;
 				} catch (Exception e) {
 					e.printStackTrace();
+					return false;
 				}
 			}
 		});
 		executor.shutdown(); // This does not cancel the already-scheduled task.
 
 		try { 
-		  future.get(10, TimeUnit.MINUTES);
+		  assert future.get(2, TimeUnit.MINUTES);
 		}
 		catch (InterruptedException ie) { 
 			ie.printStackTrace();
