@@ -19,7 +19,7 @@ public class BasicTest {
 		LSDCheckerDriver.mainLoop(url.toString());
 	}
 
-	// @Test
+    @Test
 	public void testCheck626806() throws URISyntaxException, IOException {
 		testQuery("DBpedia-q626806.rq");
 	}
@@ -71,6 +71,11 @@ public class BasicTest {
 		testExpandEach("path1.rq", 1, 5);
 	}
 
+	@Test
+	public void testExpandEachMinus() throws Exception {
+		testExpandEach("minus1.rq", 1, 5);
+	}
+
 	public void testExpandAll(String query, int solutionLimit, int datasetLimit) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
@@ -113,4 +118,13 @@ public class BasicTest {
 		testExpandAll("DBpedia-759686.rq", 1, 10);
 	}
 
+	@Test
+	public void testExpandAllOptional1() throws Exception {
+		testExpandAll("optional1.rq", 1, 10);
+	}
+
+	@Test
+	public void testExpandEachOptional1() throws Exception {
+		testExpandEach("optional1.rq", 1, 10);
+	}
 }

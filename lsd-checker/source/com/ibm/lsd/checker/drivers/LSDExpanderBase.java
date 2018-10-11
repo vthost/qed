@@ -7,6 +7,8 @@ import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 import org.apache.jena.query.Dataset;
 import org.apache.jena.query.DatasetFactory;
@@ -23,7 +25,6 @@ import org.apache.jena.rdf.model.RDFVisitor;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.riot.RDFFormat;
 import org.apache.jena.sparql.algebra.Op;
 
 import com.ibm.research.rdf.store.sparql11.model.BlankNodeVariable;
@@ -40,10 +41,10 @@ import com.ibm.research.rdf.store.sparql11.semantics.JenaUtil;
 import com.ibm.research.rdf.store.sparql11.semantics.QuadTableRelations;
 import com.ibm.research.rdf.store.sparql11.semantics.SolutionRelation;
 import com.ibm.research.rdf.store.utilities.io.SparqlSelectResult;
+import com.ibm.research.rdf.store.utilities.io.SparqlSelectResult.Row;
 import com.ibm.wala.util.collections.EmptyIterator;
 import com.ibm.wala.util.collections.MapIterator;
 import com.ibm.wala.util.collections.NonNullSingletonIterator;
-import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.ast.IntConstant;
@@ -80,6 +81,31 @@ public abstract class LSDExpanderBase extends DriverBase {
 			JenaUtil.addTupleSet(dataset, t.tuples(QuadTableRelations.quads), U, t);
 		}
 
+		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
+		ResultSet results = exec.execSelect();
+		ResultSetFormatter.outputAsXML(new FileOutputStream(
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + QUERY_RESULT_FILE_EXT), results);
+		
+		RDFDataMgr.write(new FileOutputStream(
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+	
+		boolean answers = runQuery(ast, dataset).rows().hasNext();
+		
+		if (answers) {
+		System.err.println("results:");
+			runQuery(ast, dataset).rows().forEachRemaining((Row r) -> {
+				r.variables().forEachRemaining((Variable v) -> {
+					System.err.print(r.get(v) + " ");
+				});
+				System.err.println();
+			});
+		}
+		
+		Set<List<Object>> result = Drivers.tryToCheck(dataset, runQuery(ast, dataset), ast, ast.getProjectVars(), Collections.emptyMap(), "solution", false);
+		assert (result != null && result.size() > 0) == answers;
+	}
+
+	private SparqlSelectResult runQuery(Query ast, Dataset dataset) {
 		SparqlSelectResult rr = new SparqlSelectResult() {			
 			@Override
 			public Iterator<Row> rows() {
@@ -111,12 +137,12 @@ public abstract class LSDExpanderBase extends DriverBase {
 									@Override
 									public Object visitLiteral(Literal l) {
 										StringLiteral s = new StringLiteral(l.getLexicalForm());
-										if (l.getLanguage() != null) {
+										if (l.getLanguage() != null && !"".equals(l.getLanguage())) {
 											s.setLanguage(l.getLanguage());
-										}
-										if (l.getDatatypeURI() != null) {
+										} else if (l.getDatatypeURI() != null) {
 											s.setType(new IRI(l.getDatatypeURI()));
 										}
+										assert s.getLanguage() != null  || s.getType() != null;
 										return new QueryTripleTerm(new Constant(s));
 									}
 								});
@@ -143,16 +169,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 				});
 			}
 		};
-		
-		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
-		ResultSet results = exec.execSelect();
-		ResultSetFormatter.outputAsXML(new FileOutputStream(
-			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + QUERY_RESULT_FILE_EXT), results);
-		
-		RDFDataMgr.write(new FileOutputStream(
-			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
-	
-		Drivers.tryToCheck(dataset, rr, ast, ast.getProjectVars(), Collections.emptyMap(), "solution", false);
+		return rr;
 	}
 
 	public void mainLoop(Process p) {

@@ -19,7 +19,7 @@ public class Demo {
 	
 	public static void main(String[] args) throws Exception {
 		Feature[][] cs = new Feature[][] {
-			new Feature[] { Feature.UNION }
+			new Feature[] { Feature.MINUS }
 		};
 	
 		generateDatasets(args[0], args[1], Dataset.valueOf(args[2]), cs);

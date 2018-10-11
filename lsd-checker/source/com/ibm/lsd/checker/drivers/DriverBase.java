@@ -46,16 +46,16 @@ public abstract class DriverBase implements Constants {
 		executor.shutdown(); // This does not cancel the already-scheduled task.
 
 		try { 
-		  future.get(2, TimeUnit.MINUTES); 
+		  future.get(10, TimeUnit.MINUTES);
 		}
 		catch (InterruptedException ie) { 
-		  /* Handle the interruption. Or ignore it. */ 
+			ie.printStackTrace();
 		}
 		catch (ExecutionException ee) { 
-		  /* Handle the error. Or ignore it. */ 
+			ee.printStackTrace();
 		}
 		catch (TimeoutException te) { 
-		  /* Handle the timeout. Or ignore it. */ 
+			te.printStackTrace();
 		}
 		if (!executor.isTerminated())
 		    executor.shutdownNow();

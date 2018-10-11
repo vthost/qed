@@ -16,5 +16,5 @@
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ibm.lsd.checker.test.BasicTest"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="qed-checker"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea -Djava.library.path=${project_loc:rdfstore-checker}/jni/darwin_x86_64:${project_loc:rdfstore-checker}/jni/linux_x86_64"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea -Djava.library.path=${project_loc:/rdfstore-checker}/jni/darwin_x86_64:${project_loc:/rdfstore-checker}/jni/linux_x86_64"/>
 </launchConfiguration>
