@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -53,6 +54,8 @@ import kodkod.instance.Instance;
 
 public abstract class LSDExpanderBase extends DriverBase {
 
+	protected final static boolean VERBOSE = false;
+			
 	protected final static boolean USE_EXISTENTIALS = true;
 	
 	private final String queryFile;
@@ -73,6 +76,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 	}
 
 //	TODO a check only occurs in the very beginning, no?
+	@SuppressWarnings("unused")
 	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Instance t, Formula f, Formula s1, Formula s2)
 			throws URISyntaxException, MalformedURLException, IOException {//System.out.println("check2: "+f);
 		Dataset dataset = DatasetFactory.create();
@@ -89,11 +93,15 @@ public abstract class LSDExpanderBase extends DriverBase {
 		RDFDataMgr.write(new FileOutputStream(
 			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
 	
-		boolean answers = runQuery(ast, dataset).rows().hasNext();
+		List<Row> jenaResult = new LinkedList<>();
+		Iterator<Row> jenaRows = runQuery(ast, dataset).rows();
+		while (jenaRows.hasNext()) {
+			jenaResult.add(jenaRows.next());
+		}
 		
-		if (answers) {
-		System.err.println("results:");
-			runQuery(ast, dataset).rows().forEachRemaining((Row r) -> {
+		if (VERBOSE && !jenaResult.isEmpty()) {
+			System.err.println("results:");
+			jenaResult.forEach((Row r) -> {
 				r.variables().forEachRemaining((Variable v) -> {
 					System.err.print(r.get(v) + " ");
 				});
@@ -102,7 +110,31 @@ public abstract class LSDExpanderBase extends DriverBase {
 		}
 		
 		Set<List<Object>> result = Drivers.tryToCheck(dataset, runQuery(ast, dataset), ast, ast.getProjectVars(), Collections.emptyMap(), "solution", false);
-		assert (result != null && result.size() > 0) == answers;
+		
+		if (result == null? jenaResult.size() != 0: result.size() != jenaResult.size()) {
+			disagreement(jenaResult, result, ast, dataset, f);
+		}
+	}
+
+	private void disagreement(List<Row> jenaResult, Set<List<Object>> result, Query ast, Dataset dataset, Formula f) {
+		System.out.println("========================================");
+		System.out.println("============= DISAGREEMENT =============");
+		System.out.println("========================================");
+		System.out.println(ast);
+		System.out.println("----------------------------------------");
+		RDFDataMgr.write(System.out, dataset, Lang.NQ);
+		System.out.println("----------------------------------------");
+		jenaResult.forEach((Row r) -> {
+			r.variables().forEachRemaining((Variable v) -> {
+				System.out.print(r.get(v) + " ");
+			});
+			System.out.println();
+		});
+		System.out.println("----------------------------------------");
+		result.forEach((List<Object> row) -> { 
+			System.out.println(row);
+		});
+		System.out.println("========================================");
 	}
 
 	private SparqlSelectResult runQuery(Query ast, Dataset dataset) {

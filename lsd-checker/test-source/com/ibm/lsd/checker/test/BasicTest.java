@@ -76,6 +76,11 @@ public class BasicTest {
 		testExpandEach("minus1.rq", 1, 5);
 	}
 
+	@Test
+	public void testExpandAllMinus() throws Exception {
+		testExpandAll("minus1.rq", 1, 10);
+	}
+
 	public void testExpandAll(String query, int solutionLimit, int datasetLimit) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;

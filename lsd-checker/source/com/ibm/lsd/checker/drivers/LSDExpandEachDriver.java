@@ -61,11 +61,7 @@ public class LSDExpandEachDriver extends LSDExpanderBase {
 					continue formulae;
 				}
 				
-				try {
-					checkExpanded(ast, query, U, bindings, thisf, p.snd.fst, p.snd.snd);
-				} catch (CapacityExceededException e) {
-					
-				}
+				checkExpanded(ast, query, U, bindings, thisf, p.snd.fst, p.snd.snd);
 			}
 		}
 	}

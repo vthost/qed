@@ -8,13 +8,12 @@ PREFIX : <http://dbpedia.org/resource/>
 PREFIX dbpedia2: <http://dbpedia.org/property/>
 PREFIX dbpedia: <http://dbpedia.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT ?name ?musician WHERE {
-  {
-     ?musician foaf:name ?name .
-     OPTIONAL {
-       ?musician foaf:member ?band .
-     }
-  } MINUS {
+SELECT ?name ?musician ?band WHERE {
+  ?musician foaf:name ?name .
+  OPTIONAL {
+   ?musician foaf:member ?band .
+  }
+  MINUS {
      ?x foaf:homepage "some bad page" .
      OPTIONAL {
        ?x foaf:member ?band .

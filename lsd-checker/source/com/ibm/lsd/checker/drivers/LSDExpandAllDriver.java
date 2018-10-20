@@ -96,6 +96,8 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 			t = Drivers.check(U, SATFactory.MiniSat, Pair.make(f,  Pair.make(s1, s2)));
 			if (t != null) {
 				checkExpanded(ast, query, U, t, f, s1, s2);
+			} else {
+				System.err.println("unsatisfiable expansion");
 			}
 		}
 	}
