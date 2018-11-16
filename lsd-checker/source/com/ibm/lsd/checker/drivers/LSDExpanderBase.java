@@ -27,6 +27,7 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.sparql.algebra.Op;
+import org.apache.jena.sparql.resultset.ResultsFormat;
 
 import com.ibm.research.rdf.store.sparql11.model.BlankNodeVariable;
 import com.ibm.research.rdf.store.sparql11.model.Constant;
@@ -87,9 +88,11 @@ public abstract class LSDExpanderBase extends DriverBase {
 
 		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
 		ResultSet results = exec.execSelect();
-		ResultSetFormatter.outputAsXML(new FileOutputStream(
-			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + QUERY_RESULT_FILE_EXT), results);
-		
+		ResultSetFormatter.output(
+			new FileOutputStream(dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + QUERY_RESULT_FILE_EXT), 
+			results, 
+			ResultsFormat.FMT_RDF_TURTLE);
+
 		RDFDataMgr.write(new FileOutputStream(
 			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
 	
@@ -121,6 +124,8 @@ public abstract class LSDExpanderBase extends DriverBase {
 		System.out.println("============= DISAGREEMENT =============");
 		System.out.println("========================================");
 		System.out.println(ast);
+		System.out.println("----------------------------------------");
+		System.out.println(f);
 		System.out.println("----------------------------------------");
 		RDFDataMgr.write(System.out, dataset, Lang.NQ);
 		System.out.println("----------------------------------------");

@@ -41,7 +41,7 @@ public class LSDCheckerDriver extends DriverBase {
 		} catch (RiotNotFoundException e) {
 			return;
 		}
-		SparqlSelectResult answer = new SparqlRdfResultReader(stem + QUERY_RESULT_FILE_EXT);
+		SparqlSelectResult answer = new SparqlRdfResultReader(stem + "-result.ttl");
 		SolutionRelation s = new SolutionRelation(answer, ast.getProjectVars(), Collections.<String,Object>emptyMap());
 		s.init(U);
 		JenaTranslator xlator = JenaTranslator.make(ast.getProjectVars(), Collections.singleton(query), U, s);
