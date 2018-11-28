@@ -15,6 +15,7 @@ import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
 import com.ibm.research.rdf.store.sparql11.semantics.JenaTranslator;
 import com.ibm.wala.util.collections.HashMapFactory;
+import com.ibm.wala.util.collections.HashSetFactory;
 import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Expression;
@@ -41,13 +42,17 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 	class AllPaths implements Process {
 		public void process(Query ast, Op query, BasicUniverse U, JenaTranslator xlator)
 				throws URISyntaxException, MalformedURLException, IOException {
-			Formula f = Formula.TRUE;
-			Formula s1 = Formula.TRUE;
-			Formula s2 = Formula.TRUE;
 
 			Set<Pair<Formula, Pair<Formula, Formula>>> fs = xlator.translateSingle(Collections.<String,Object>emptyMap(), true);
 
-			int i = 0;
+			checkPart(ast, query, U, fs);
+		}
+
+		private void checkPart(Query ast, Op query, BasicUniverse U, Set<Pair<Formula, Pair<Formula, Formula>>> fs)
+				throws URISyntaxException, MalformedURLException, IOException {
+			Formula f = Formula.TRUE;
+			Formula s1 = Formula.TRUE;
+			Formula s2 = Formula.TRUE;
 			Instance t = null;			
 			for(Pair<Formula, Pair<Formula, Formula>> p : fs) {
 				class Renamer extends AbstractReplacer {
@@ -74,8 +79,6 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 				f = f.and(p.fst);
 				s1 = p.snd.fst==null? s1: p.snd.fst.and(s1);
 				s2 = p.snd.snd==null? s2: p.snd.snd.and(s2);
-				
-				i++;
 			}
 			
 			Set<Relation> relations = ASTUtils.gatherRelations(f);
@@ -95,7 +98,19 @@ public class LSDExpandAllDriver extends LSDExpanderBase {
 			
 			t = Drivers.check(U, SATFactory.MiniSat, Pair.make(f,  Pair.make(s1, s2)));
 			if (t != null) {
+				System.err.println("solved " + fs.size());
 				checkExpanded(ast, query, U, t, f, s1, s2);
+			} else if (fs.size() > 1) {
+				System.err.println("splitting for " + fs.size());
+				boolean first = true;
+				Set<Pair<Formula, Pair<Formula, Formula>>> fs1 = HashSetFactory.make();
+				Set<Pair<Formula, Pair<Formula, Formula>>> fs2 = HashSetFactory.make();
+				for(Pair<Formula, Pair<Formula, Formula>> piece : fs) {
+					(first? fs1: fs2).add(piece);
+					first = !first;
+				}
+				checkPart(ast, query, U, fs1);
+				checkPart(ast, query, U, fs2);
 			} else {
 				System.err.println("unsatisfiable expansion");
 			}
