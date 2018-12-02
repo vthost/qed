@@ -1,0 +1,57 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P180 ?depicts .
+    ?depicts rdfs:label ?dL .
+  }
+WHERE
+  { { FILTER ( lang(?dL) = "en" )
+      ?depicts  rdfs:label  ?dL
+    }
+    ?item  wdt:P180  ?depicts
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P180 ?depicts .
+    ?depicts rdfs:label ?dL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?dL) = "en" ) )
+      ?depicts  rdfs:label  ?dL
+    }
+    ?item  wdt:P180  ?depicts
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P180 ?depicts .
+    ?depicts rdfs:label ?dL .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?depicts  rdfs:label  ?dL
+                        FILTER ( lang(?dL) = "en" )
+                      }
+    ?item  wdt:P180  ?depicts
+  }
+LIMIT   2
+
+----------------------------------------------

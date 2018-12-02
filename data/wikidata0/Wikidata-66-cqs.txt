@@ -1,0 +1,13 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?x wdt:P131 ?x .
+  }
+WHERE
+  { ?x  wdt:P131  ?x }
+LIMIT   2
+
+----------------------------------------------

@@ -1,0 +1,4489 @@
+SELECT ?item ?itemLabel 
+WHERE 
+{
+  ?item wdt:P31 wd:Q146.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+SELECT ?item ?itemLabel 
+WHERE 
+{
+  ?item wdt:P31 wd:Q2934.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+
+#Illustrates optional fields, instances of subclasses, language fallback on label service, date to year conversion
+#Horses on Wikidata
+SELECT DISTINCT ?horse ?horseLabel ?mother ?father (year(?birthdate) as ?birthyear) (year(?deathdate) as ?deathyear) ?genderLabel
+WHERE
+{
+	?horse wdt:P31/wdt:P279* wd:Q726 .     # Instance et sous-classes de Q726-Cheval
+	 
+	OPTIONAL{?horse wdt:P25 ?mother .}       # P25  : M\u00e8re
+	OPTIONAL{?horse wdt:P22 ?father .}       # P22  : P\u00e8re
+	OPTIONAL{?horse wdt:P569 ?birthdate .} # P569 : Date de naissance
+	OPTIONAL{?horse wdt:P570 ?deathdate .}     # P570 : Date de d\u00e9c\u00e8s
+	OPTIONAL{?horse wdt:P21 ?gender .}       # P21  : Sexe
+ 
+	SERVICE wikibase:label { #BabelRainbow
+		bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,ar,be,bg,bn,ca,cs,da,de,el,en,es,et,fa,fi,he,hi,hu,hy,id,it,ja,jv,ko,nb,nl,eo,pa,pl,pt,ro,ru,sh,sk,sr,sv,sw,te,th,tr,uk,yue,vec,vi,zh"
+	}
+}
+ORDER BY ?horse
+
+######
+#added before 2016-10
+
+#defaultView:ImageGrid
+SELECT ?item ?itemLabel ?pic
+WHERE
+{
+?item wdt:P31 wd:Q146 .
+?item wdt:P18 ?pic
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+#added 2017-08
+#defaultView:Map
+SELECT * WHERE {
+  ?item wdt:P31*/wdt:P279* wd:Q16917;
+        wdt:P625 ?geo .
+}
+
+######
+
+SELECT (COUNT(?item) AS ?count)
+WHERE {
+	?item wdt:P31/wdt:P279* wd:Q5 .
+}
+
+######
+#added before 2016-10
+#Demonstrates "no value" handling
+SELECT ?human ?humanLabel
+WHERE
+{
+	?human wdt:P31 wd:Q5 .       #find humans
+	?human rdf:type wdno:P40 .   #with at least one P40 (child) statement defined to be "no value"
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+SELECT ?human ?humanLabel 
+WHERE
+{
+  ?human wdt:P31 wd:Q5 .         #find humans
+  ?human p:P40 ?childStatement . #with at least one P40 (child) statement
+  ?childStatement rdf:type wdno:P40 .   #where the P40 (child) statement is defined to be "no value"
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+}
+
+######
+#added before 2016-10
+#illustrates sitelink selection, ";" notation
+SELECT ?item ?itemLabel ?article
+WHERE
+{
+	?article 	schema:about ?item ;
+			schema:isPartOf <https://species.wikimedia.org/> .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+LIMIT 200
+
+######
+
+SELECT ?author ?authorLabel (COUNT(?paper) AS ?count)
+WHERE
+{
+	?article 	schema:about ?author ;
+			schema:isPartOf <https://species.wikimedia.org/> .
+    ?author wdt:P31 wd:Q5.
+    ?paper wdt:P50 ?author.
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+GROUP BY ?author ?authorLabel
+ORDER BY DESC(?count)
+LIMIT 200
+
+######
+SELECT ?event ?eventLabel ?date
+WHERE
+{
+	# find events
+	?event wdt:P31/wdt:P279* wd:Q1190554.
+	# with a point in time or start date
+	OPTIONAL { ?event wdt:P585 ?date. }
+	OPTIONAL { ?event wdt:P580 ?date. }
+	# but at least one of those
+	FILTER(BOUND(?date) && DATATYPE(?date) = xsd:dateTime).
+	# not in the future, and not more than 31 days ago
+	BIND(NOW() - ?date AS ?distance).
+	FILTER(0 <= ?distance && ?distance < 31).
+	# and get a label as well
+	OPTIONAL {
+		?event rdfs:label ?eventLabel.
+		FILTER(LANG(?eventLabel) = "en").
+	}
+}
+# limit to 10 results so we don't timeout
+LIMIT 10
+
+######
+#added before 2016-10
+#illustrates bubblechart view, count
+
+#defaultView:BubbleChart
+SELECT ?eyeColorLabel (COUNT(?human) AS ?count)
+WHERE
+{
+	?human wdt:P31 wd:Q5.
+	?human wdt:P1340 ?eyeColor.
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY ?eyeColorLabel
+
+######
+#added before 2016-10
+# Demonstrates filtering for "unknown value"
+SELECT ?human ?humanLabel
+WHERE
+{
+	?human wdt:P21 ?gender
+	FILTER isBLANK(?gender) .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+PREFIX schema: <http://schema.org/>
+
+SELECT ?sitelink
+WHERE 
+{
+  BIND(wd:Q52 AS ?wikipedia)
+  ?sitelink schema:about ?wikipedia .
+  FILTER REGEX(STR(?sitelink), ".wikipedia.org/wiki/") .
+}
+
+######
+SELECT DISTINCT ?lang ?name WHERE {
+  ?article schema:about wd:Q5; schema:inLanguage ?lang; schema:name ?name .
+  FILTER(?lang in ('en', 'uz', 'ru', 'ko')) .
+  FILTER (!CONTAINS(?name, ':')) .
+}
+
+######
+# Sample to query all values of a property
+# Property talk pages on Wikidata include basic queries adapted to each property
+SELECT
+  ?item ?itemLabel
+  ?value ?valueLabel
+# valueLabel is only useful for properties with item-datatype
+WHERE 
+{
+  ?item wdt:P1800 ?value
+  # change P1800 to another property        
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+# remove or change limit for more results
+LIMIT 10
+
+######
+#added before 2016-10
+SELECT ?country ?countryLabel (count(*) AS ?count)
+WHERE
+{
+	?city wdt:P31/wdt:P279* wd:Q515 . # find instances of subclasses of city
+	?city p:P6 ?statement .           # with a P6 (head of goverment) statement
+	?statement ps:P6 ?mayor .         # ... that has the value ?mayor
+	?mayor wdt:P21 wd:Q6581072 .      # ... where the ?mayor has P21 (sex or gender) female
+	FILTER NOT EXISTS { ?statement pq:P582 ?x }  # ... but the statement has no P582 (end date) qualifier
+	?city wdt:P17 ?country .          # Also find the country of the city
+ 	
+	# If available, get the "ru" label of the country, use "en" as fallback:
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "ru,en" .
+	}
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?count)
+LIMIT 100
+
+######
+#added before 2016-10
+
+#defaultView:BubbleChart
+SELECT ?surname ?surnameLabel ?count
+WHERE
+{
+  {
+    SELECT ?surname (COUNT(?human) AS ?count) WHERE {
+      ?human wdt:P31 wd:Q5.
+      ?human wdt:P734 ?surname.
+    }
+    GROUP BY ?surname
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY DESC(?count)
+LIMIT 100
+
+######
+#added before 2016-10
+
+SELECT ?name (COUNT(?otherName) AS ?count)
+WHERE
+{
+  ?name wdt:P31 wd:Q202444;
+        wdt:P460 ?otherName.
+}
+GROUP BY ?name
+ORDER BY DESC(?count)
+LIMIT 10
+
+######
+#added before 2016-10
+
+#defaultView:BubbleChart
+SELECT ?surname ?surnameLabel ?count
+WHERE
+{
+  {
+    SELECT ?surname (COUNT(?person) AS ?count) WHERE {
+      ?person (wdt:P31/wdt:P279*) wd:Q95074.
+      ?person wdt:P734 ?surname.
+    }
+    GROUP BY ?surname
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY DESC(?count)
+LIMIT 100
+
+######
+SELECT ?s ?desc ?linkcount
+WHERE
+{
+  ?s wdt:P31 wd:Q5 ;   # human
+     wdt:P21 wd:Q6581072 ;  # gender: female
+     wdt:P569 ?born .
+  FILTER (?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime) .
+  ?s wikibase:sitelinks ?linkcount .
+  MINUS {
+    ?s wdt:P18 []  # exclude if there is an image
+  }
+?s rdfs:label ?desc FILTER(lang(?desc)="en").
+}
+GROUP BY ?s ?desc ?linkcount
+ORDER BY DESC(?linkcount)
+LIMIT 50
+
+######
+
+#Whose birthday is today?
+SELECT ?entityLabel (YEAR(?date) as ?year)
+WHERE
+{
+    BIND(MONTH(NOW()) AS ?nowMonth)
+    BIND(DAY(NOW()) AS ?nowDay)
+
+    ?entity wdt:P569 ?date .
+    FILTER (MONTH(?date) = ?nowMonth && DAY(?date) = ?nowDay)
+    SERVICE wikibase:label {
+        bd:serviceParam wikibase:language "en" .
+    }
+}
+LIMIT 10
+
+######
+#added before 2016-10
+
+PREFIX entity: <http://www.wikidata.org/entity/>
+#partial results
+
+SELECT ?propUrl ?propLabel ?valUrl ?valLabel ?picture
+WHERE
+{
+	hint:Query hint:optimizer 'None' .
+	{	BIND(entity:Q42 AS ?valUrl) .
+		BIND("N/A" AS ?propUrl ) .
+		BIND("identity"@en AS ?propLabel ) .
+	}
+	UNION
+	{	entity:Q42 ?propUrl ?valUrl .
+		?property ?ref ?propUrl .
+		?property rdf:type wikibase:Property .
+		?property rdfs:label ?propLabel
+	}
+	
+  	?valUrl rdfs:label ?valLabel
+	FILTER (LANG(?valLabel) = 'en') .
+	OPTIONAL{ ?valUrl wdt:P18 ?picture .}
+	FILTER (lang(?propLabel) = 'en' )
+}
+ORDER BY ?propUrl ?valUrl
+LIMIT 200
+
+######
+PREFIX entity: <http://www.wikidata.org/entity/>
+
+#  In addition to the original query this one comes with some advantages:
+#  - You will get only literals as results, (even if the values are stored as IRI in wikibase)
+#  - That means you will also get properties as birth date, alphanumeric identifier and so on.
+#  - The list is ordered numerically by property number. (So P19 comes before P100) 
+#  - All label, altLabel and description in a given Language are included.
+#  You may open a separate column ?valUrl if you need also the IRI
+#
+#  Please advise, if there is an option to put the Q-Number  and/or the Language 
+#  code into a runtime variable. 
+
+SELECT ?propNumber ?propLabel ?val
+WHERE
+{
+	hint:Query hint:optimizer 'None' .
+	{	BIND(entity:Q42 AS ?valUrl) .
+		BIND("N/A" AS ?propUrl ) .
+		BIND("Name"@de AS ?propLabel ) .
+       entity:Q42 rdfs:label ?val .
+      
+        FILTER (LANG(?val) = "de") 
+	}
+    UNION
+    {   BIND(entity:Q42 AS ?valUrl) .
+      
+        BIND("AltLabel"@de AS ?propLabel ) .
+        optional{entity:Q42 skos:altLabel ?val}.
+        FILTER (LANG(?val) = "de") 
+    }
+    UNION
+    {   BIND(entity:Q42 AS ?valUrl) .
+      
+        BIND("Beschreibung"@de AS ?propLabel ) .
+        optional{entity:Q42 schema:description ?val}.
+        FILTER (LANG(?val) = "de") 
+    }
+   	UNION
+	{	entity:Q42 ?propUrl ?valUrl .
+		?property ?ref ?propUrl .
+		?property rdf:type wikibase:Property .
+		?property rdfs:label ?propLabel.
+     	FILTER (lang(?propLabel) = 'de' )
+        filter  isliteral(?valUrl) 
+        BIND(?valUrl AS ?val)
+	}
+	UNION
+	{	entity:Q42 ?propUrl ?valUrl .
+		?property ?ref ?propUrl .
+		?property rdf:type wikibase:Property .
+		?property rdfs:label ?propLabel.
+     	FILTER (lang(?propLabel) = 'de' ) 
+        filter  isIRI(?valUrl) 
+        ?valUrl rdfs:label ?valLabel 
+		FILTER (LANG(?valLabel) = "de") 
+         BIND(CONCAT(?valLabel) AS ?val)
+	}
+        BIND( SUBSTR(str(?propUrl),38, 250) AS ?propNumber)
+}
+ORDER BY xsd:integer(?propNumber)
+
+######
+#defaultView:BubbleChart
+#TEMPLATE={"template":"Overall causes of death ranking of ?thing ","variables":{"?thing": {"query":"SELECT ?id  (COUNT(?id) AS ?count) WHERE {  ?sub wdt:P509 ?y.  ?sub wdt:P31 ?id. } GROUP BY ?id "} } }
+SELECT ?cid ?cause (COUNT(*) AS ?count) WHERE {
+  BIND(wd:Q5 AS ?thing)
+  ?pid wdt:P31 ?thing;
+      wdt:P509 ?cid.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". ?cid rdfs:label ?cause}
+}
+GROUP BY ?cid ?cause
+ORDER BY DESC(?count) ?cause
+
+######
+#defaultView:BubbleChart
+SELECT DISTINCT ?item ?itemLabel (?end - ?start AS ?duration)
+WHERE
+{
+	?item wdt:P361* wd:Q362 ;
+          wdt:P31/wdt:P279* wd:Q178561 ;
+          wdt:P580 ?start ;
+          wdt:P582 ?end .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+#defaultView:BubbleChart
+#TEMPLATE={ "template": "The top 10 heaviest ?type ", "variables": { "?type": { "query": "SELECT DISTINCT ?id WHERE { ?i wdt:P2067 ?v. ?i wdt:P31 ?id}" } } }
+SELECT ?item ?itemLabel ?mass ?image WHERE {
+  BIND(wd:Q5 AS ?type)
+  ?item wdt:P31 ?type;
+        p:P2067/psn:P2067/wikibase:quantityAmount ?mass.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es,fr,de" }
+}
+ORDER BY DESC(?mass)
+LIMIT 10
+
+######
+#defaultView:Timeline
+SELECT ?item ?itemLabel ?launchdate (SAMPLE(?image) AS ?image)
+WHERE
+{
+	?item wdt:P31 wd:Q26529 .
+    ?item wdt:P619 ?launchdate .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+    OPTIONAL { ?item wdt:P18 ?image }
+}
+GROUP BY ?item ?itemLabel ?launchdate
+
+######
+#defaultView:Timeline
+SELECT DISTINCT ?item ?itemLabel ?catalog_code ?publication_date
+WHERE {
+	?item wdt:P86 wd:Q254 ; # composer: W. A. Mozart
+          wdt:P528 ?catalog_code ;
+          wdt:P577 ?publication_date .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+#defaultView:Dimensions
+SELECT ?elementLabel ?boiling_point ?melting_point ?electronegativity ?density ?mass WHERE {
+?element wdt:P31 wd:Q11344;
+   wdt:P2102 ?boiling_point;
+   wdt:P2101 ?melting_point;
+   wdt:P1108 ?electronegativity;
+   wdt:P2054 ?density;
+   wdt:P2067 ?mass.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+LIMIT 100
+
+######
+#defaultView:Graph
+PREFIX gas: <http://www.bigdata.com/rdf/gas#>
+
+SELECT ?item ?itemLabel ?pic ?linkTo
+WHERE {
+  SERVICE gas:service {
+    gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.SSSP" ;
+                gas:in wd:Q720 ;
+                gas:traversalDirection "Forward" ;
+                gas:out ?item ;
+                gas:out1 ?depth ;
+
+                gas:maxIterations 4 ;
+                gas:linkType wdt:P40 .
+  }
+  OPTIONAL { ?item wdt:P40 ?linkTo }
+  OPTIONAL { ?item wdt:P18 ?pic }
+  SERVICE wikibase:label {bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+#Show firearms cartridges and which they are based on
+#defaultView:Graph
+SELECT 
+?item ?itemLabel ?image 
+?other ?otherLabel ?image2
+WHERE
+{
+    ?item  wdt:P279+ wd:Q37144 .   # cartridges
+    ?item  wdt:P144    ?other  .   # if the cartridge is based on another
+    OPTIONAL {
+      ?item  wdt:P18     ?image  .   # grab image
+      ?other wdt:P18     ?image2 .   # grab image
+    }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+#defaultView:Graph
+SELECT ?char ?charLabel ?group ?groupLabel ("7FFF00" as ?rgb)
+WHERE {
+	?group wdt:P31 wd:Q14514600 ;  # group of fictional characters
+          wdt:P1080 wd:Q931597.  # from Marvel universe
+ ?char wdt:P463 ?group # member of group
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".}
+}
+
+######
+#defaultView:BarChart
+
+SELECT(SAMPLE(?year) AS ?year) (COUNT(?_country) AS ?battles) (SAMPLE(?_countryLabel) AS ?_countryLabel)  WHERE {
+  ?subj wdt:P31 wd:Q178561.  # instance of battle
+  OPTIONAL { ?subj wdt:P580 ?d1. }  # start time
+  OPTIONAL { ?subj wdt:P585 ?d2. }  # point in time
+  OPTIONAL { ?subj wdt:P582 ?d3. }  # end time
+  BIND(IF(!BOUND(?d1), IF(!BOUND(?d2), ?d3, ?d2), ?d1) AS ?date)
+  BIND(STR(YEAR(?date)) AS ?year)
+  FILTER(BOUND(?year))
+  ?subj wdt:P276/wdt:P17 ?_country.  # country of location of battle
+  BIND((NOW()) - ?date AS ?distance)
+  FILTER((0 <= ?distance) && (?distance < 31 * 12 * 80))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+                          ?_country rdfs:label ?_countryLabel.}
+}
+GROUP BY ?year ?_country
+ORDER BY ?_countryLabel
+
+######
+#defaultView:BarChart
+SELECT (SAMPLE(?year) AS ?year) (COUNT(?_country) AS ?count) (SAMPLE(?_countryLabel) AS ?_countryLabel) WHERE {
+  ?object wdt:P31/wdt:P279* wd:Q134447. # Power stations or subtypes
+  BIND(STR(YEAR(?_inception)) AS ?year)
+  ?object wdt:P571 ?_inception;
+          wdt:P17 ?_country.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+                        ?_country rdfs:label ?_countryLabel. }
+}
+GROUP BY ?year ?_country
+ORDER BY ?_countryLabel
+
+######
+
+#defaultView:BarChart
+SELECT ?year (COUNT(?year) as ?count) WHERE {
+  ?painting wdt:P31 wd:Q3305213.
+  ?painting wdt:P170 wd:Q151803.
+  ?painting wdt:P571 ?inception.
+  BIND(str(year(?inception)) AS ?year)
+  OPTIONAL { ?painting wdt:P18 ?image. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,nl". }
+} GROUP BY ?year ?count ORDER BY ?year
+
+######
+
+
+######
+#added before 2016-10
+
+#defaultView:TreeMap
+SELECT ?show ?showLabel  ?season ?cleanSeasonLabel ?episode ?episodeLabel
+WHERE
+{
+	{
+		BIND(wd:Q886 as ?show) .
+		?season wdt:P361 ?show .
+		?season rdfs:label ?_seasonLabel.
+		FILTER((LANG(?_seasonLabel)) = "en")
+		BIND(SUBSTR(?_seasonLabel, 0, STRLEN(?_seasonLabel)-23) AS ?cleanSeasonLabel)
+		?episode wdt:P361 ?season .
+	} 
+	UNION
+	{
+		BIND(wd:Q16538 as ?show) .
+		?season wdt:P361 ?show .
+		?season rdfs:label ?_seasonLabel.
+		FILTER((LANG(?_seasonLabel)) = "en")
+		BIND(SUBSTR(?_seasonLabel, 0, STRLEN(?_seasonLabel)-20) AS ?cleanSeasonLabel)
+		?episode wdt:P361 ?season .
+	}  
+	UNION
+	{
+		BIND(wd:Q147235 as ?show) .
+		?season wdt:P361 ?show .
+		?season rdfs:label ?_seasonLabel.
+		FILTER((LANG(?_seasonLabel)) = "en")
+		BIND(CONCAT("S", SUBSTR(?_seasonLabel, 25)) AS ?cleanSeasonLabel)
+		?episode wdt:P361 ?season .
+	}
+
+	SERVICE wikibase:label {  bd:serviceParam wikibase:language "en" }
+}
+
+######
+#defaultView:TreeMap
+SELECT ?eyes ?hairColorLabel (COUNT(?person) as ?count)
+WHERE
+{
+	?person wdt:P1340 ?eyeColor.
+    ?person wdt:P1884 ?hairColor.
+    ?person wdt:P2048 ?height.
+    ?eyeColor rdfs:label ?_eyeColorLabel.
+    FILTER((LANG(?_eyeColorLabel)) = "en")
+    BIND(CONCAT(?_eyeColorLabel, " eyes") AS ?eyes)
+   
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+GROUP BY ?eyes ?hairColorLabel
+
+######
+
+#defaultView:Map{"layer":"?instance_ofLabel"}
+SELECT ?place ?placeLabel ?image ?coordinate_location ?dist ?instance_of ?instance_ofLabel WHERE {
+  SERVICE wikibase:around {
+    ?place wdt:P625 ?coordinate_location.
+    bd:serviceParam wikibase:center "[AUTO_COORDINATES]".
+    bd:serviceParam wikibase:radius "1".
+    bd:serviceParam wikibase:distance ?dist.
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  OPTIONAL { ?place wdt:P18 ?image. }
+  OPTIONAL { ?place wdt:P31 ?instance_of. }
+}
+
+######
+#defaultView:Map
+SELECT ?objectLabel ?objectDescription ?link ?coord
+WHERE {
+  ?object wdt:P31/wdt:P279? wd:Q46169 .
+          OPTIONAL { ?object wdt:P856 ?link. } 
+          OPTIONAL { ?object wdt:P625 ?coord . }
+          SERVICE wikibase:label {
+               bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,fr"
+          }
+}
+
+######
+
+#defaultView:Map
+SELECT DISTINCT ?city ?cityLabel (SAMPLE(?location) AS ?location) (MAX(?population) AS ?population) (SAMPLE(?layer) AS ?layer)
+WHERE
+{
+  ?city wdt:P31/wdt:P279* wd:Q515;
+        wdt:P625 ?location;
+        wdt:P1082 ?population.
+  FILTER(?population >= 500000).
+  BIND(
+    IF(?population < 1000000, "<1M",
+    IF(?population < 2000000, "1M-2M",
+    IF(?population < 5000000, "2M-5M",
+    IF(?population < 10000000, "5M-10M",
+    IF(?population < 20000000, "10M-20M",
+    ">20M")))))
+    AS ?layer).
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY ?city ?cityLabel
+
+######
+#defaultView:Map
+# Places with free wi-fi
+SELECT ?item ?itemLabel (SAMPLE(?coord) AS ?coord)
+WHERE {
+	?item wdt:P2848 wd:Q1543615 ;  # wi-fi gratis
+	      wdt:P625 ?coord .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} GROUP BY ?item ?itemLabel
+
+######
+#added before 2016-10
+#defaultView:Map
+SELECT ?stationLabel ?coord
+WHERE {
+	?station wdt:P81 wd:Q99691 ;
+		 wdt:P625 ?coord .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],de" }
+}
+
+######
+#added before 2016-10
+#defaultView:Map
+SELECT ?universityLabel ?universityDescription ?website ?coord
+WHERE {
+	?university wdt:P31/wdt:P279* wd:Q3918 ;
+		wdt:P17 wd:Q1009 ;
+		wdt:P625 ?coord .
+	OPTIONAL {
+		?university wdt:P856 ?website
+	}
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en,de" .
+	}
+}
+
+######
+#added before 2016-10
+
+######
+#defaultView:Map
+SELECT DISTINCT ?objectLabel ?coord ?layer
+WHERE
+{
+  ?object wdt:P31/wdt:P279* wd:Q159719;
+     wdt:P625 ?coord.
+  ?object wdt:P31 ?type. ?type wdt:P279* wd:Q159719.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". ?type rdfs:label ?layer }
+}
+
+######
+#defaultView:Map
+SELECT ?label ?coord ?place ?image
+WHERE {
+	?place wdt:P31 wd:Q14276458 ;  # instance of deck arch bridge
+            wdt:P186 wd:Q22731 ;  # made of stone
+            wdt:P625 ?coord .
+	OPTIONAL { ?place wdt:P18 ?image }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+                        ?place rdfs:label ?label }
+}
+
+######
+#defaultView:Map
+SELECT ?place ?placeLabel ?coord ?layer
+WHERE {
+   ?place wdt:P31/wdt:P279? wd:Q474 ; # instance of aqueduct
+          wdt:P625 ?coord ;
+          wdt:P31 ?type.
+  ?type wdt:P279* wd:Q474
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". 
+                       ?type rdfs:label ?layer}
+}
+
+######
+#defaultView:Map
+SELECT ?siteLabel ?coord ?image ?site
+WHERE {
+   ?site wdt:P31/wdt:P279* wd:Q839954 ;
+      wdt:P625 ?coord ;
+      wdt:P18 ?image .
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".}
+}
+
+######
+#defaultView:Map
+SELECT ?label ?coord ?subj
+WHERE {
+   ?subj wdt:P31 wd:Q839954 ; # instance of archaeological site
+         wdt:P31/wdt:P279* wd:Q23413 ;  # instance or subclass of castle
+         wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". 
+                         ?subj rdfs:label ?label}
+}
+
+######
+#added before 2016-10
+#defaultView:Map
+SELECT ?label ?coord ?subj ?year
+WHERE
+{
+	?subj wdt:P31 wd:Q178561 .
+	?subj wdt:P625 ?coord .
+	OPTIONAL {?subj wdt:P580 ?d1}
+	OPTIONAL {?subj wdt:P585 ?d2}
+  	OPTIONAL {?subj wdt:P582 ?d3}
+	BIND(IF(!BOUND(?d1),(IF(!BOUND(?d2),?d3,?d2)),?d1) as ?date)
+	BIND(YEAR(?date) as ?year)
+	?subj rdfs:label ?label filter (lang(?label) = "en")
+}
+
+######
+#added before 2016-10
+
+#defaultView:Map
+SELECT ?item ?itemLabel ?_coordinate_location ?_image WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q1370598.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+   ?item wdt:P625 ?_coordinate_location.
+  ?item wdt:P18 ?_image.
+}
+
+######
+#added before 2016-10
+#defaultView:Map
+SELECT DISTINCT ?item ?name ?coord ?lat ?lon
+WHERE {
+   ?item wdt:P131* wd:Q61 .
+   ?item wdt:P31/wdt:P279* wd:Q33506 .
+   ?item wdt:P625 ?coord .
+   ?item p:P625 ?coordinate .
+   ?coordinate psv:P625 ?coordinate_node .
+   ?coordinate_node wikibase:geoLatitude ?lat .
+   ?coordinate_node wikibase:geoLongitude ?lon .
+   SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+    ?item rdfs:label ?name
+   }
+}
+ORDER BY ASC (?name)
+######
+#defaultView:Map
+SELECT ?item ?itemLabel ?coord #?lat ?lon
+WHERE
+{
+   ?item               wdt:P31        wd:Q130003.
+   ?item               wdt:P625         ?coord.
+
+#  ?item                 p:P625         ?statementnode.
+#  ?statementnode      psv:P625         ?valuenode.
+#  ?valuenode     wikibase:geoLatitude  ?lat.
+#  ?valuenode     wikibase:geoLongitude ?lon.
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#added before 2016-10
+#defaultView:Map
+SELECT DISTINCT ?item ?itemLabel ?coords ?image
+WHERE {
+	?item wdt:P31 wd:Q39715 ;
+          wdt:P17 wd:Q20 ;
+          wdt:P625 ?coords
+	OPTIONAL { ?item wdt:P18 ?image } 
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nb,nn,en,fi"  } 
+}
+ORDER BY ?itemLabel
+
+######
+#defaultView:Map
+SELECT ?item ?itemLabel ?geoLocation ?image
+WHERE {
+    ?item wdt:P463 wd:Q1010307 ;  # member of Les Plus Beaux Villages de France (organisation)
+          wdt:P625 ?geoLocation .
+    OPTIONAL { ?item wdt:P18 ?image }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr" }
+}
+
+######
+#defaultView:Map
+select ?item ?coords_ where {
+  ?item wdt:P17 wd:Q712 .
+  ?item p:P625/psv:P625 ?coords .
+  ?coords wikibase:geoLatitude ?lat ;
+          wikibase:geoLongitude ?lon .
+  bind(strdt(concat("Point(", if((?lon < 0), str(?lon + 360), str(?lon)), " ", str(?lat), ")"), geo:wktLiteral) as ?coords_) .
+}
+
+######
+#defaultView:Map{"layer":"?typeLabel"}
+SELECT ?item ?itemLabel ?geo ?type ?typeLabel (SAMPLE(?_image) AS ?image) WHERE {
+  ?type wdt:P279* wd:Q3839081 .
+  ?item wdt:P31 ?type ;
+        wdt:P625 ?geo .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  OPTIONAL { ?item wdt:P18 ?_image }
+}
+GROUP BY ?item ?itemLabel ?geo ?type ?typeLabel
+
+######
+#defaultView:Map
+select distinct ?monument ?monumentLabel ?heritageLabel (sample(?distance) as ?distance) (sample(?location) as ?location) (sample(?image) as ?image) where {
+  ?monument wdt:P1435 ?heritage.
+  
+  service wikibase:around {   
+    ?monument wdt:P625 ?location.
+    bd:serviceParam wikibase:center "[AUTO_COORDINATES]".
+    bd:serviceParam wikibase:radius "1" . 
+    bd:serviceParam wikibase:distance ?distance .
+  }
+  
+  optional {
+    ?monument wdt:P18 ?image.
+  }
+  
+  service wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,fr,de,es,nl". }
+} group by ?monument ?monumentLabel ?heritageLabel order by ?distance
+
+######
+#defaultView:Map
+
+
+######
+#Properties grouped by their parent property
+#TODO: should display links and numeric ids
+#defaultView:Tree
+SELECT ?property2 ?property2Label ?property1 ?property1Label WHERE {
+  ?property1 rdf:type wikibase:Property. #not replaceable with wikibase:Item, wikibase:Statement, wikibase:Reference at WDQS
+                                         #https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format#WDQS_data_differences
+  ?property1 wdt:P1647 ?property2.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#Subproperties of location (P276)
+SELECT DISTINCT ?subProperties ?subPropertiesLabel WHERE {
+  ?subProperties wdt:P1647* wd:P276.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#Properties grouped by their type with number of properties
+SELECT (COUNT(?property) as ?pcount ) ?wbtype WHERE {
+  ?property rdf:type               wikibase:Property.
+  ?property wikibase:propertyType  ?wbtype.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY ?wbtype
+ORDER BY DESC(?pcount)
+
+######
+SELECT ?property ?propertyType ?propertyLabel ?propertyDescription ?propertyAltLabel WHERE {
+  ?property wikibase:propertyType ?propertyType .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY ASC(xsd:integer(STRAFTER(STR(?property), 'P')))
+
+######
+
+# See also the SPARQL manual
+# https://en.wikibooks.org/wiki/SPARQL/WIKIDATA_Qualifiers,_References_and_Ranks
+# In this example we look for statements which assign a specific value (Q51955019)
+# to the property P1343 and then look for references of that property, specifically
+# the string associated to P958 for the reference. May actually bring up references
+# for other P1343 statements; uses the shortened expression syntax with brackets.
+SELECT ?item ?reference
+WHERE
+{
+?item wdt:P1343 wd:Q51955019 .
+?item p:P1343 [ prov:wasDerivedFrom [ pr:P958 ?reference ] ] .
+}
+
+######
+SELECT ?country ?countryLabel ?article WHERE {
+
+    ?country wdt:P31 wd:Q3624078 . # sovereign state
+    ?article schema:about ?country .
+    ?article schema:isPartOf <https://en.wikipedia.org/>.
+
+    SERVICE wikibase:label {
+       bd:serviceParam wikibase:language "en"
+    }
+}
+
+######
+SELECT ?sitelink ?itemLabel WHERE {
+  ?item wdt:P31 wd:Q6256.
+  ?sitelink schema:isPartOf <https://ru.wikipedia.org/>;
+     schema:about ?item;
+     wikibase:badge wd:Q17437796 . # Sitelink is badged as a Featured Article
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } .
+} ORDER BY ?itemLabel
+
+######
+SELECT ?lang (COUNT(DISTINCT ?article) AS ?count) WHERE {
+  ?article schema:about/wdt:P1367 ?yp_id .  # find articles about things with a BBC 'Your paintings' artist identifier
+  FILTER (SUBSTR(str(?article), 11, 15) = ".wikipedia.org/") .
+  ?article schema:inLanguage ?lang .
+} GROUP BY ?lang
+ORDER BY DESC (?count)
+
+######
+#Show titles of articles about Ukrainian villages on Romanian Wikipedia, plus English and Ukrainian labels in Wikidata items
+#added in 2017-05
+SELECT DISTINCT ?item ?LabelEN ?LabelUK ?page_titleRO WHERE {
+  ?item wdt:P31 wd:Q532 .  
+  ?item wdt:P17 wd:Q212 .
+  ?article schema:about ?item ; schema:isPartOf <https://ro.wikipedia.org/> ;  schema:name ?page_titleRO .
+  ?item rdfs:label ?LabelEN filter (lang(?LabelEN) = "en") .
+  ?item rdfs:label ?LabelUK filter (lang(?LabelUK) = "uk") .
+}
+LIMIT 300
+
+######
+#Wikisource pages for authors of scientific articles, ordered by Wikisource language
+#added in 2017-09
+SELECT DISTINCT ?item ?wikisourceSitelink ?wikisourceLanguage WHERE {
+  ?wikisourceSitelink schema:isPartOf [ wikibase:wikiGroup "wikisource" ];
+                      schema:inLanguage ?wikisourceLanguage;
+                      schema:about ?item.
+  ?paper wdt:P31 wd:Q13442814;
+         wdt:P50 ?item.
+}
+ORDER BY ?wikisourceLanguage
+LIMIT 300
+
+######
+select ?item ?itemLabel ?gtaa ?articleEn ?articleNl where {
+  ?item wdt:P1741 ?gtaa .
+  optional {
+    ?articleEn schema:about ?item.
+    ?articleNl schema:about ?item.
+    ?articleEn schema:isPartOf <https://en.wikipedia.org/>.
+    ?articleNl schema:isPartOf <https://nl.wikipedia.org/>.
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,nl". }
+}
+
+######
+select ?person ?personLabel ?died ?sitelinks where {
+  ?person wdt:P31 wd:Q5;
+          wdt:P570 ?died.
+  filter (?died >= "2018-01-01T00:00:00Z"^^xsd:dateTime && ?died < "2019-01-01T00:00:00Z"^^xsd:dateTime)
+  ?person wikibase:sitelinks ?sitelinks.
+  service wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}  order by desc(?sitelinks) limit 100
+
+######
+
+SELECT DISTINCT ?band ?bandLabel
+WHERE
+{
+	?band  wdt:P31 wd:Q5741069 .
+        ?band rdfs:label ?bandLabel .
+	FILTER(STRSTARTS(?bandLabel, 'M')) .
+}
+
+######
+SELECT DISTINCT ?item ?itemLabel ?awardLabel ?time
+{
+    ?item wdt:P106/wdt:P279* wd:Q3455803 ; # Items with the Occupation(P106) of Director(Q3455803) or a subclass(P279)
+          p:P166 ?awardStat .              # ... with an awarded(P166) statement
+    ?awardStat pq:P805 ?award ;            # Get the award (which is "subject of" XXth Academy Awards)
+               ps:P166 wd:Q103360 .        # ... that has the value Academy Award for Best Director(Q103360)
+    ?award wdt:P585 ?time .                # the "point of time" of the Academy Award
+    SERVICE wikibase:label {               # ... include the labels
+        bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en"
+    }
+}
+ORDER BY DESC(?time)
+
+######
+SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P166/wdt:P31? wd:Q7191 .
+  ?person wdt:P166/wdt:P31? wd:Q19020 .
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+  }
+}
+
+######
+#added before 2016-10
+
+SELECT ?awardCount ?award ?awardLabel WHERE {
+	{
+		SELECT (COUNT(?award) AS ?awardCount) ?award
+		WHERE
+		{
+			{
+				SELECT (SAMPLE(?human) AS ?human) ?award ?awardWork (SAMPLE(?director) AS ?director) (SAMPLE(?awardEdition) AS ?awardEdition) (SAMPLE(?time) AS ?time) WHERE {
+					?award wdt:P31 wd:Q19020 .			# All items that are instance of(P31) of Academy awards (Q19020)
+					{
+						?human p:P166 ?awardStat .              # Humans with an awarded(P166) statement
+						?awardStat ps:P166 ?award .     	 # ... that has any of the values of ?award
+						?awardStat pq:P805 ?awardEdition . # Get the award edition (which is "subject of" XXth Academy Awards)
+						?awardStat pq:P1686 ?awardWork . # The work they have been awarded for
+						?human wdt:P31 wd:Q5 . 				# Humans
+					} UNION {
+						?awardWork wdt:P31 wd:Q11424 . # Films
+						?awardWork p:P166 ?awardStat . # ... with an awarded(P166) statement
+						?awardStat ps:P166 ?award .     	 # ... that has any of the values of ?award
+						?awardStat pq:P805 ?awardEdition . # Get the award edition (which is "subject of" XXth Academy Awards)
+					}
+					OPTIONAL {
+						?awardEdition wdt:P585 ?time . # the "point of time" of the Academy Award
+						?awardWork wdt:P57 ?director .
+					}
+				}
+				GROUP BY ?awardWork ?award # We only want every movie once for a category (a 'random' person is selected)
+			}
+		} GROUP BY ?award
+		ORDER BY ASC(?awardCount)
+	}
+	SERVICE wikibase:label {            # ... include the labels
+		bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+	}
+}
+
+######
+SELECT ?director ?director_label ?films ?sitelinks ((?films * ?sitelinks) as ?rank)
+WHERE {
+  {SELECT ?director (count(distinct ?film) as ?films) (count(distinct ?sitelink) as ?sitelinks)
+     WHERE { 
+       ?director wdt:P106 wd:Q2526255 .  				# has "film director" as occupation
+	   ?film wdt:P57 ?director . 	 					# get all films directed by the director
+       ?sitelink schema:about ?director .				# get all the sitelinks about the director
+       } GROUP BY ?director }
+SERVICE wikibase:label { 
+  bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".  # Get label if it exists
+?director rdfs:label ?director_label } 	
+} ORDER BY DESC(?rank)
+LIMIT 100
+
+######
+SELECT ?show ?showLabel ?seasonNumber ?episode ?episodeLabel
+WHERE {
+	BIND(wd:Q886 as ?show) .
+	?season wdt:P361 ?show .
+	?episode wdt:P361 ?season .
+	?season p:P179 [
+	        pq:P1545 ?seasonNumber] .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} ORDER BY xsd:integer(?seasonNumber)
+
+######
+# All Law & Order episodes on Wikidata.
+# According to enwp, \u201c[a] total of 456 original episodes\u2026 aired before cancellation\u201d (https://en.wikipedia.org/wiki/List_of_Law_%26_Order_episodes).
+# As of this writing, the query returns 451 results, so some episodes are missing (either without item or lacking the necessary statements to match this query).
+
+SELECT (SAMPLE(?seasonNumber) AS ?seasonNumber) (SAMPLE(?episodeNumber) AS ?episodeNumber) (SAMPLE(?title) AS ?title) (MIN(?pubDate) AS ?pubDate) ?episode
+{
+  # All episodes should be instance of episode with series Law & Order.
+  ?episode wdt:P31 wd:Q21191270;
+           wdt:P179 wd:Q321423.
+  # Many of them also have the season as series, so we can get episode and season number from qualifiers there.
+  OPTIONAL {
+    ?episode p:P179 [
+      # the season also has series Law & Order
+      ps:P179/p:P179 [
+        ps:P179 wd:Q321423;
+                pq:P1545 ?seasonNumber
+      ] ;
+      pq:P1545 ?episodeNumber
+    ]
+  }
+  OPTIONAL { ?episode wdt:P1476 ?title. }
+  OPTIONAL { ?episode wdt:P577 ?pubDate. }
+}
+GROUP BY ?episode # make sure we return each episode only once \u2013 a few have multiple publication dates, for example
+ORDER BY IF(BOUND(?seasonNumber), xsd:integer(?seasonNumber), 1000) xsd:integer(?episodeNumber) ?title
+
+######
+SELECT DISTINCT ?episode ?ordinal ?episodeLabel ?subject ?subjectLabel
+WHERE {
+  ?episode wdt:P31/wdt:P279* wd:Q1983062;
+           p:P179 ?statement.
+  OPTIONAL{ ?episode wdt:P921 ?subject }
+  ?statement ps:P179 wd:Q3577037;
+             pq:P1545 ?ordinal
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} ORDER BY xsd:integer(?ordinal)
+
+######
+SELECT ?item ?itemLabel (MIN(?date) AS ?date) ?_image
+WHERE {
+  ?item wdt:P161 wd:Q221074;
+        wdt:P577 ?date
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  OPTIONAL { ?item wdt:P18 ?_image. }
+} GROUP BY ?item ?itemLabel ?_image
+ORDER BY (?date)
+
+######
+SELECT ?char ?charName (GROUP_CONCAT(DISTINCT ?typeLabel;separator=", ") AS ?types) (GROUP_CONCAT(DISTINCT ?universeLabel;separator=", ") AS ?universes)
+WHERE {
+	?char wdt:P1080 wd:Q931597;
+          wdt:P31 ?type ;
+          wdt:P1080 ?universe .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+                         ?char rdfs:label ?charName .
+                         ?universe rdfs:label ?universeLabel .
+                         ?type rdfs:label ?typeLabel .}
+} GROUP BY ?char ?charName
+
+######
+SELECT ?item ?itemLabel ?itemDescription (SAMPLE(?img) AS ?image) (SAMPLE(?dob) AS ?dob) ?sl
+WHERE {
+	?item wdt:P106 wd:Q33999 ;
+          wdt:P27 wd:Q668 ;
+          wdt:P21 wd:Q6581072 .
+	MINUS { ?item wdt:P570 [] }
+	OPTIONAL { ?item wdt:P18 ?img }
+	OPTIONAL { ?item wdt:P569 ?dob } 
+	OPTIONAL { ?item wikibase:sitelinks ?sl } 
+  	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en"}
+} GROUP BY ?item ?itemLabel ?itemDescription ?sl
+ORDER BY DESC(?sl)
+
+######
+#added 2017-03-25 (46 results)
+SELECT ?sitelink
+WHERE
+{
+	# gender = female
+  	?item wdt:P21 wd:Q6581072 .
+
+  	# country = Pakistan (Q25)
+  	{ ?item wdt:P27 wd:Q843 }
+
+        # occupation = actress (Q33999)
+  	{ ?item wdt:P106 wd:Q33999 }
+ 
+	# look for articles (sitelinks) in Punjabi ("pa")
+  	{ ?sitelink schema:about ?item . ?sitelink schema:inLanguage "pa" }
+
+	# humans only
+  	?item wdt:P31 wd:Q5 .
+}
+#Listeria can only handle up to 5000
+LIMIT 5000
+
+######
+#added 2017-07-16
+SELECT ?doctor ?doctorLabel ?ordinal ?performer ?performerLabel WHERE {
+  ?doctor wdt:P31 wd:Q34358 .
+  OPTIONAL { ?doctor wdt:P1545 ?ordinal }
+  OPTIONAL { ?doctor wdt:P175 ?performer }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} ORDER BY ASC(xsd:integer(?ordinal) )
+
+######
+#defaultView:Map
+SELECT ?movie ?movieLabel ?narrative_location ?narrative_locationLabel ?coordinates WHERE {
+   ?movie wdt:P840 ?narrative_location ;
+          wdt:P31 wd:Q11424 .
+   ?narrative_location wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+
+SELECT DISTINCT ?item ?itemLabel WHERE {
+  ?item wdt:P31 wd:Q11424.
+  ?item wdt:P577 ?pubdate.
+  FILTER((?pubdate >= "2017-01-01T00:00:00Z"^^xsd:dateTime) && (?pubdate <= "2017-12-31T00:00:00Z"^^xsd:dateTime))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#added before 2016-10
+
+SELECT ?continent ?continentLabel
+WHERE
+{
+  ?continent wdt:P31 wd:Q5107.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY xsd:integer(SUBSTR(STR(?continent),STRLEN("http://www.wikidata.org/entity/Q")+1))
+
+######
+#added before 2016-10
+
+SELECT ?continentLabel
+WHERE
+{
+  { # subquery for optimization so the label service doesn\u2019t have to do as much work (228?ms vs 20731?ms)
+    SELECT DISTINCT ?continent
+    WHERE
+    {
+      [] wdt:P30 ?continent.
+    }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY xsd:integer(SUBSTR(STR(?continent),STRLEN("http://www.wikidata.org/entity/Q")+1))
+
+######
+#added before 2016-10
+
+#defaultView:Map
+SELECT ?place ?placeLabel ?location WHERE {
+  wd:Q933 wdt:P625 ?southPole.                         # coordinates of south pole
+  ?place wdt:P30 wd:Q51;                               # continent: antarctica
+         wdt:P625 ?location.
+  FILTER(geof:distance(?location, ?southPole) > 3000). # over 3000?km away from south pole
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+SELECT DISTINCT ?country ?countryLabel ?capital ?capitalLabel
+WHERE
+{
+  ?country wdt:P31 wd:Q3624078 .
+  #not a former country
+  FILTER NOT EXISTS {?country wdt:P31 wd:Q3024240}
+  #and no an ancient civilisation (needed to exclude ancient Egypt)
+  FILTER NOT EXISTS {?country wdt:P31 wd:Q28171280}
+  OPTIONAL { ?country wdt:P36 ?capital } .
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+ORDER BY ?countryLabel
+
+######
+# defaultView:BubbleChart
+SELECT DISTINCT ?countryLabel ?population
+{
+  ?country wdt:P31 wd:Q6256 ;
+           wdt:P1082 ?population .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+GROUP BY ?population ?countryLabel
+ORDER BY DESC(?population)
+
+######
+
+SELECT ?country ?countryLabel ?population ?totalCityPopulation (?population / ?totalCityPopulation AS ?ratio) {
+  ?country wdt:P1082 ?population .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+  {
+    SELECT ?country (SUM(?cityPopulation) AS ?totalCityPopulation) WHERE {
+      ?city wdt:P31 wd:Q515 .
+      ?city wdt:P17 ?country .
+      ?city wdt:P1082 ?cityPopulation .
+    } GROUP BY ?country
+  }
+} ORDER BY ?ratio
+
+######
+
+SELECT DISTINCT ?item ?itemLabel_ol ?official_language ?itemLabel_en WHERE {
+  ?item wdt:P30 wd:Q15 ;
+        wdt:P37 ?officiallanguage ;
+        wdt:P31 wd:Q6256 .
+  ?officiallanguage wdt:P424 ?langcode .
+  ?item rdfs:label ?itemLabel_ol . FILTER(lang(?itemLabel_ol)=?langcode)
+  ?item rdfs:label ?itemLabel_en . FILTER(lang(?itemLabel_en)='en')
+  ?officiallanguage rdfs:label ?official_language . FILTER(lang(?official_language)='en')
+}
+ORDER BY ?item ?itemLabel_lol ?official_language
+
+######
+#added before 2016-10
+
+#defaultView:Map
+
+######
+
+#defaultView:BarChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from ?to ?distGrp WHERE {
+  {
+    SELECT ?from ?to ?distNum ?mun ?mun2 WHERE {
+      { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+        WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                     wdt:P131 var_area:;
+                     wdt:P625 ?loc. }
+        GROUP BY ?mun
+      }
+      OPTIONAL {
+        { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+          WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                       wdt:P131 var_area:;
+                       wdt:P625 ?loc. }
+          GROUP BY ?mun
+        }
+      }
+      BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+        ?mun rdfs:label ?from.
+        ?mun2 rdfs:label ?to.
+      }
+    }
+  }
+  FILTER(CONCAT(?from,STR(?mun)) <= CONCAT(?to,STR(?mun2))).
+  #BIND(IF(STR(?from) < STR(?to),CONCAT(?from," <--> ",?to),
+  #  CONCAT(?to," <--> ",?from)) AS ?distLabel).
+
+  BIND(COALESCE(
+    IF(?distNum >= 40, "40 - .. km", 1/0),
+    IF(?distNum >= 30, "30 - 40 km", 1/0),
+    IF(?distNum >= 20, "20 - 30 km", 1/0),
+    IF(?distNum >= 10, "10 - 20 km", 1/0),
+    IF(?distNum >= 5, "05 - 10 km", 1/0),
+    IF(?distNum >= 1, "01 - 05 km", "00 - 01 km")) AS ?distGrp).
+}
+ORDER BY ?from ?distGrp
+
+######
+
+#defaultView:ScatterChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from (?distGrp1 AS ?kilometers) ?to WHERE {
+  { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+    WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                 wdt:P131 var_area:;
+                 wdt:P625 ?loc. }
+    GROUP BY ?mun
+  }
+  OPTIONAL {
+    { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+      WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                   wdt:P131 var_area:;
+                   wdt:P625 ?loc. }
+      GROUP BY ?mun
+    }
+  }
+  BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+  BIND(STR(ROUND(?distNum)) AS ?distGrp0).
+  BIND(CONCAT(SUBSTR("000",STRLEN(?distGrp0)+1),?distGrp0,".",STR(ROUND((?distNum-FLOOR(?distNum))*10))," km") AS ?distGrp1).
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?mun rdfs:label ?from.
+    ?mun2 rdfs:label ?to.
+  }
+}
+ORDER BY ?from ?kilometers
+
+######
+
+#defaultView:ScatterChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from (?distNum AS ?kilometers) ?to WHERE {
+  { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+    WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                 wdt:P131 var_area:;
+                 wdt:P625 ?loc. }
+    GROUP BY ?mun
+  }
+  OPTIONAL {
+    { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+      WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                   wdt:P131 var_area:;
+                   wdt:P625 ?loc. }
+      GROUP BY ?mun
+    }
+  }
+  BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?mun rdfs:label ?from.
+    ?mun2 rdfs:label ?to.
+  }
+}
+ORDER BY ?from ?kilometers
+
+######
+
+#defaultView:ScatterChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from (?distNum AS ?kilometers) ?to (?from AS ?animation) WHERE {
+  { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+    WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                 wdt:P131 var_area:;
+                 wdt:P625 ?loc. }
+    GROUP BY ?mun
+  }
+  OPTIONAL {
+    { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+      WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                   wdt:P131 var_area:;
+                   wdt:P625 ?loc. }
+      GROUP BY ?mun
+    }
+  }
+  BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?mun rdfs:label ?from.
+    ?mun2 rdfs:label ?to.
+  }
+}
+ORDER BY ?from ?kilometers
+
+######
+
+#defaultView:ScatterChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from (?distNum AS ?kilometers) ?to (?to AS ?animation) WHERE {
+  { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+    WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                 wdt:P131 var_area:;
+                 wdt:P625 ?loc. }
+    GROUP BY ?mun
+  }
+  OPTIONAL {
+    { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+      WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                   wdt:P131 var_area:;
+                   wdt:P625 ?loc. }
+      GROUP BY ?mun
+    }
+  }
+  BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?mun rdfs:label ?from.
+    ?mun2 rdfs:label ?to.
+  }
+}
+ORDER BY ?from ?kilometers
+
+######
+
+#defaultView:ScatterChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from (?distNum AS ?kilometers) ?to (?distGrp AS ?animation) WHERE {
+  { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+    WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                 wdt:P131 var_area:;
+                 wdt:P625 ?loc. }
+    GROUP BY ?mun
+  }
+  OPTIONAL {
+    { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+      WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                   wdt:P131 var_area:;
+                   wdt:P625 ?loc. }
+      GROUP BY ?mun
+    }
+  }
+  #FILTER (STR(?mun) <= STR(?mun2)).
+  BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+  BIND(COALESCE(
+    IF(?distNum >= 40, "40 km und mehr", 1/0),
+    IF(?distNum >= 30, "30 - 40 km", 1/0),
+    IF(?distNum >= 20, "20 - 30 km", 1/0),
+    IF(?distNum >= 10, "10 - 20 km", 1/0),
+    IF(?distNum >= 5, "05 - 10 km", 1/0),
+    IF(?distNum >= 1, "01 - 05 km", "00 - 01 km")) AS ?distGrp).
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?mun rdfs:label ?from.
+    ?mun2 rdfs:label ?to.
+  }
+}
+ORDER BY ?animation ?from ?kilometers
+
+######
+
+#defaultView:ScatterChart
+PREFIX var_muntype: <http://www.wikidata.org/entity/Q15284>
+PREFIX var_area: <http://www.wikidata.org/entity/Q6308>
+SELECT ?from ?kilometers ?to ?rank_group
+WHERE {
+  {
+    SELECT (SAMPLE(?mun) AS ?mun) (SAMPLE(?mun2) AS ?mun2) (SAMPLE(?distNum) AS ?kilometers)
+           (COUNT(*)-1 AS ?rg) (SUBSTR("00",1+STRLEN(STR(?rg))) AS ?rgpad)
+           (IF(FLOOR((?rg-(100*FLOOR(?rg/100)))/10)=1,0,?rg-(10*FLOOR(?rg/10))) AS ?rgmod)
+           (IF(?rgmod=1,"st",IF(?rgmod=2,"nd",IF(?rgmod=3,"rd","th"))) AS ?rgord)
+           (CONCAT(?rgpad,STR(?rg),?rgord,"-most farthest places") AS ?rank_group)
+    WHERE {
+      { SELECT ?mun (SAMPLE(?loc) AS ?loc)
+        WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                     wdt:P131 var_area:;
+                     wdt:P625 ?loc. }
+        GROUP BY ?mun
+      }
+      OPTIONAL {
+        { SELECT (?mun AS ?mun2) (SAMPLE(?loc) AS ?loc2)
+          WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                       wdt:P131 var_area:;
+                       wdt:P625 ?loc. }
+          GROUP BY ?mun
+        }
+      }
+      OPTIONAL {
+        { SELECT (?mun AS ?mun3) (SAMPLE(?loc) AS ?loc3)
+          WHERE { ?mun wdt:P31/wdt:P279* var_muntype:;
+                       wdt:P131 var_area:;
+                       wdt:P625 ?loc. }
+          GROUP BY ?mun
+        }
+      }
+      BIND(geof:distance(?loc, ?loc2) AS ?distNum).
+      BIND(geof:distance(?loc, ?loc3) AS ?d).
+      FILTER(?distNum >= ?d).
+    } GROUP BY ?mun ?mun2 ?distNum
+  }
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+    ?mun rdfs:label ?from.
+    ?mun2 rdfs:label ?to.
+  }
+}
+ORDER BY ?rank_group ?kilometers ?from
+
+######
+#added before 2016-10
+
+SELECT ?continent ?river ?continentLabel ?riverLabel
+WHERE
+{
+  {
+    SELECT ?continent (MAX(?length) AS ?length)
+    WHERE
+    {
+      ?river wdt:P31/wdt:P279* wd:Q355304;
+             wdt:P2043 ?length;
+             wdt:P30 ?continent.
+    }
+    GROUP BY ?continent
+  }
+  ?river wdt:P31/wdt:P279* wd:Q355304;
+         wdt:P2043 ?length;
+         wdt:P30 ?continent.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?continentLabel
+
+
+######
+#added before 2016-10
+
+SELECT ?river ?riverLabel ?location
+WHERE
+{
+  ?river wdt:P31/wdt:P279* wd:Q355304; # watercourse; includes a few creeks \u2013 use wd:Q4022 for rivers only
+         wdt:P30 wd:Q51.
+  OPTIONAL { ?river wdt:P625 ?location. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+
+# Bodies of water that most watercourses end in (transitive).
+# For example, over 4000 watercourses eventually flow into the Ob,
+# and since the Ob flows into the Kara Sea, the Kara Sea has over 4000 results as well.
+SELECT ?mouth (COUNT(?watercourse) AS ?count)
+WHERE
+{
+  ?watercourse wdt:P403+ ?mouth.
+}
+GROUP BY ?mouth
+ORDER BY DESC(?count)
+LIMIT 10
+
+######
+
+######
+SELECT DISTINCT ?item ?name ?coord ?lat ?lon ?globe
+{
+   ?item wdt:P31 wd:Q8502 ;
+         p:P625 [
+           psv:P625 [
+             wikibase:geoLatitude ?lat ;
+             wikibase:geoLongitude ?lon ;
+             wikibase:geoGlobe ?globe ;
+           ] ;
+           ps:P625 ?coord
+         ]
+  FILTER ( ?globe != wd:Q2 )
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+    ?item rdfs:label ?name
+   }
+}
+ORDER BY ASC (?name)
+
+######
+#added before 2016-10
+
+#Mountains over 8000 elevation
+SELECT ?subj ?label ?coord ?elev
+WHERE
+{
+	?subj wdt:P2044 ?elev	filter(?elev > 8000) .
+	?subj wdt:P625 ?coord .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en,zh" . ?subj rdfs:label ?label }
+}
+
+######
+#added before 2016-10
+
+SELECT ?subj ?label ?coord ?elev
+WHERE
+{
+	?subj wdt:P2044 ?elev	filter(?elev > 8000) .
+	?subj wdt:P625 ?coord .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en,zh" . ?subj rdfs:label ?label }
+}
+
+######
+#defaultView:ImageGrid
+SELECT ?item ?itemLabel ?coord ?elev ?picture
+{
+  ?item p:P2044/psn:P2044/wikibase:quantityAmount ?elev ;  # normalized height
+        wdt:P625 ?coord ;
+        wdt:P17 wd:Q38 ;
+        wdt:P18 ?picture
+  FILTER(?elev > 4000)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "it" }
+}
+
+######
+SELECT ?item ?itemLabel ?adjacent ?adjacentL ?coords
+{
+  ?item wdt:P31/wdt:P279* wd:Q928830 ;
+        wdt:P81 wd:Q13224 ;
+        wdt:P625 ?coords .
+  OPTIONAL {
+    ?item p:P197 [ ps:P197 ?adjacent ; pq:P560 wd:Q585752 ] .
+    ?adjacent rdfs:label ?adjacentL filter (lang(?adjacentL) = "en")
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+} ORDER BY ?itemLabel
+
+######
+#added before 2016-10
+
+#defaultView:Map
+# Venues in Broadway
+SELECT DISTINCT ?venue ?venueLabel ?coords {
+  	?venue wdt:P1217 ?IDBDB .
+    wd:Q235065 wdt:P625 ?broadWayLoc .
+
+    SERVICE wikibase:around {
+      ?venue wdt:P625 ?coords .
+      bd:serviceParam wikibase:center ?broadWayLoc .
+      bd:serviceParam wikibase:radius "1.5" .
+    }
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" .
+  }
+}
+
+######
+#added before 2016-10
+SELECT ?state ?stateLabel ?borders
+WHERE
+{
+	{
+		SELECT ?state (COUNT(?otherState) as ?borders)
+		WHERE
+		{
+		?state wdt:P31 wd:Q35657 .
+		?otherState wdt:P47 ?state .
+		?otherState wdt:P31 wd:Q35657 .
+		}
+		GROUP BY ?state
+	}
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+	}
+}        
+ORDER BY DESC(?borders)
+
+######
+#added before 2016-10
+
+#defaultView:Map
+
+######
+#added before 2016-10
+SELECT (count(?v) as ?c) ?globe
+WHERE
+{
+	?v wikibase:geoGlobe ?globe
+}
+GROUP BY ?globe
+ORDER BY DESC(?c)
+
+######
+#added before 2016-10
+SELECT ?place ?placeLabel ?location ?instanceLabel
+WHERE
+{
+  wd:Q9188 wdt:P625 ?loc .
+  SERVICE wikibase:around {
+      ?place wdt:P625 ?location .
+      bd:serviceParam wikibase:center ?loc .
+      bd:serviceParam wikibase:radius "1" .
+  }
+  OPTIONAL {  	?place wdt:P31 ?instance  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+  BIND(geof:distance(?loc, ?location) as ?dist)
+} ORDER BY ?dist
+
+######
+SELECT ?item ?itemLabel ?inseeCode {
+  ?item wdt:P374 ?inseeCode .
+  FILTER (?inseeCode in ("75056", "69123", "13055"))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+#added before 2016-10
+SELECT ?item ?itemLabel ?count
+WHERE
+{
+  {
+    SELECT ?item (COUNT(DISTINCT ?country) AS ?count) WHERE {
+      ?item wdt:P31/wdt:P279* wd:Q41176 .
+      ?item wdt:P17 ?country .
+      FILTER NOT EXISTS { ?country wdt:P576 ?end }
+    }
+    GROUP BY ?item
+  }
+  FILTER ( ?count > 1 )
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}
+ORDER BY DESC(?count) ?itemL
+
+######
+
+#defaultView:Map{"hide":["?atm","?geometry"], "layer": "?bankLabel"}
+
+PREFIX lgdo: <http://linkedgeodata.org/ontology/>
+PREFIX geom: <http://geovocab.org/geometry#>
+PREFIX bif: <bif:>
+
+SELECT ?atm ?geometry ?bank ?bankLabel WHERE {
+  hint:Query hint:optimizer "None".
+  
+  SERVICE <http://linkedgeodata.org/sparql> {
+    { ?atm a lgdo:Bank; lgdo:atm true. }
+    UNION { ?atm a lgdo:Atm. }
+    
+    ?atm geom:geometry [geo:asWKT ?geometry];
+         lgdo:operator ?operator.
+    FILTER(bif:st_intersects(?geometry, bif:st_point(11.5746898, 48.1479876), 5)) # 5 km around Munich
+  }
+  
+  BIND(STRLANG(?operator, "de") as ?bankLabel) 
+  ?bank rdfs:label ?bankLabel.
+  
+  # bank is part of the Bankcard service network, either via an explicit statement or implicitly due to its legal form (unless explicitly excluded)
+  { ?bank wdt:P527 wd:Q806724. }
+  UNION { ?bank wdt:P1454 wd:Q5349747. }
+  MINUS { wd:Q806724 wdt:P3113 ?bank. }
+}
+
+######
+
+SELECT ?place ?location ?distance ?placeLabel WHERE {
+    SERVICE wikibase:around { 
+      ?place wdt:P625 ?location . 
+      bd:serviceParam wikibase:center "Point(-122.399523 37.786952)"^^geo:wktLiteral .
+      bd:serviceParam wikibase:radius "1" . 
+      bd:serviceParam wikibase:distance ?distance .
+    } 
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} ORDER BY ?distance LIMIT 100
+
+######
+#added before 2016-10
+
+# Coordinates of the birth places of people named Antoine
+#defaultView:Map
+SELECT ?item ?itemLabel ?coord
+WHERE
+{
+  ?item wdt:P31 wd:Q5 .   # human
+  ?item wdt:P735 wd:Q15235674.
+  ?item wdt:P19 ?place.
+  ?place wdt:P625 ?coord.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
+}
+
+######
+ #Kandidaten voor de Nederlandse tk verkiezingen van 2017
+#defaultView:Dimensions
+SELECT ?positie_op_lijst ?genderLabel ?politieke_partijLabel WHERE {
+  ?item p:P3602 ?node.
+  ?item wdt:P21 ?gender.
+  ?node ps:P3602 wd:Q16061881 .
+  ?node pq:P1545 ?positie_op_lijst.
+  ?node pq:P1268 ?politieke_partij.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl". }
+}
+
+######
+SELECT ?item ?itemLabel ?twitter ?LinkedIN ?politieke_partij ?politieke_partijLabel ?positie_op_lijst WHERE {
+  ?item p:P3602 ?node.
+  ?item wdt:P551 wd:Q12892.
+  OPTIONAL { ?item wdt:P2002 ?twitter. }
+  OPTIONAL { ?item wdt:P2035 ?LinkedIN. }
+  ?node ps:P3602 wd:Q16061881.
+  OPTIONAL { ?node pq:P1545 ?positie_op_lijst. }
+  OPTIONAL { ?node pq:P1268 ?politieke_partij. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl". }
+}
+
+######
+#Kandidaten voor de Nederlandse TK verkiezingen van 2017
+#defaultView:Dimensions
+SELECT ?positie_op_lijst ?genderLabel ?occupationLabel ?politieke_partijLabel WHERE {
+  VALUES ?politieke_partij {wd:Q747910 wd:Q275441}
+  ?item p:P3602 ?node.
+  ?item wdt:P21 ?gender.
+  ?item wdt:P106 ?occupation.
+  ?node ps:P3602 wd:Q16061881.
+  ?node pq:P1545 ?positie_op_lijst.
+  ?node pq:P1268 ?politieke_partij.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl". }
+}
+
+######
+SELECT ?cc (COUNT(DISTINCT ?child) AS ?number) {
+  ?child wdt:P31 wd:Q5 ; # Looking for real humans and not fictional ones
+         wdt:P39/wdt:P279* wd:Q83307 ;
+         (wdt:P22|wdt:P25) [wdt:P39/wdt:P279* wd:Q83307] ;
+         wdt:P27/wdt:P901 ?cc
+}
+GROUP BY ?cc
+ORDER BY DESC(?number)
+
+######
+#added before 2016-10
+
+#defaultView:ImageGrid
+SELECT ?building ?buildingLabel ?country ?countryLabel ?picture
+WHERE
+{
+	?building wdt:P31 wd:Q7138926 .
+	?building wdt:P18 ?picture .
+	OPTIONAL { ?building wdt:P17 ?country } .   #if available
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en" .
+	}
+}
+ORDER BY ?countryLabel
+LIMIT 188
+
+######
+#defaultView:Map
+SELECT DISTINCT ?person ?name ?birthplace ?birthyear ?coord ?layer WHERE {
+{?person wdt:P106 wd:Q188094} UNION {?person wdt:P101 wd:Q8134}
+?person wdt:P570 ?dod;
+   wdt:P19 ?place .
+?place wdt:P625 ?coord
+OPTIONAL { ?person wdt:P569 ?dob }
+BIND(YEAR(?dob) as ?birthyear)
+BIND(IF( (?birthyear < 1700), "Pre-1700", IF((?birthyear < 1751), "1700-1750", IF((?birthyear < 1801), "1751-1800", IF((?birthyear < 1851), "1801-1850", IF((?birthyear < 1901), "1851-1900", IF((?birthyear < 1951), "1901-1950", "Post-1950") ) ) ) )) AS ?layer )
+?person rdfs:label ?name filter (lang(?name) = "en")
+?place rdfs:label ?birthplace filter (lang(?birthplace) = "en")
+} ORDER BY ?birthyear
+
+######
+#added before 2016-10
+
+SELECT ?disease ?doid ?enLabel (count(?language) as ?languages)
+WHERE
+{
+	?disease wdt:P699 ?doid ;
+             rdfs:label ?label ;
+             rdfs:label ?enLabel .
+    FILTER (lang(?enLabel) = "en")
+   
+    BIND (lang(?label) AS ?language)
+}
+group by ?disease ?doid ?enLabel
+order by desc(?languages)
+
+######
+#added before 2016-10
+#defaultView:Graph
+SELECT DISTINCT ?item ?itemLabel ?rgb ?link
+WHERE
+{
+  VALUES ?toggle { true false }
+  ?disease wdt:P699 ?doid;
+           wdt:P279+ wd:Q18123741;
+           wdt:P2176 ?drug.
+  ?drug rdfs:label ?drugLabel.
+		FILTER(LANG(?drugLabel) = "en").
+  ?disease rdfs:label ?diseaseLabel.
+		FILTER(LANG(?diseaseLabel) = "en").
+  BIND(IF(?toggle,?disease,?drug) AS ?item).
+  BIND(IF(?toggle,?diseaseLabel,?drugLabel) AS ?itemLabel).
+  BIND(IF(?toggle,"FFA500","7FFF00") AS ?rgb).
+  BIND(IF(?toggle,"",?disease) AS ?link).
+}
+
+######
+#added before 2016-10
+
+SELECT (COUNT(?disease) AS ?total) (SUM(?ref) AS ?byDO) (100*?byDO/?total AS ?percent)
+WHERE
+{
+  {?disease wdt:P31 wd:Q12136 }
+  UNION
+  {?disease wdt:P279 wd:Q12136 .}
+  OPTIONAL {
+    ?disease p:P699 ?statement.
+    BIND(1 AS ?ref).
+  }
+}
+
+######
+
+SELECT DISTINCT ?item ?ncbi_gene ?date_modified
+WHERE
+{
+	?item wdt:P351 ?ncbi_gene ;
+          wdt:P703 wd:Q15978631 ;
+          schema:dateModified ?date_modified .
+    BIND (now() - ?date_modified as ?date_range)
+    FILTER (?date_range < 8)
+}
+
+######
+
+#defaultView:BarChart
+SELECT  ?variant_typeLabel (count(?variant_typeLabel) as ?counts)
+WHERE
+{
+	?item wdt:P3329 ?civic_id ;
+          wdt:P31 ?variant_type .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+GROUP BY ?variant_typeLabel
+ORDER BY ?counts
+
+######
+
+SELECT ?geneLabel ?variantLabel
+WHERE
+{ 
+	VALUES ?disease {wd:Q188874}
+    ?variant wdt:P3358 ?disease ; # P3358 Positive prognostic predictor
+          wdt:P3433 ?gene . # P3433 biological variant of
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+# variants that are associated with renal cell carcinoma
+SELECT DISTINCT ?civic_id ?item ?itemLabel
+WHERE
+{
+	VALUES ?property {
+                      wdt:P3356 # positive diagnostic predictor
+                      wdt:P3357 # negative diagnostic predictor
+                      wdt:P3358 # positive prognostic predicator
+                      wdt:P3359 # negative prognostic predictor
+                     }
+    ?item wdt:P3329 ?civic_id .
+    {?item  ?property wd:Q1164529.} # wd:Q1164529 = renal cell carcinoma
+    UNION
+    {?item p:P3354 ?o . # positive therapeutic predictor
+     ?o pq:P2175 wd:Q1164529 .}
+    UNION
+    {?item p:P3354 ?o . # negative therapeutic predictor
+     ?o pq:P2175 wd:Q1164529 .}
+     
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+# variants that are associated with renal cell carcinoma
+SELECT DISTINCT  ?reference ?referenceLabel ?pmid
+WHERE
+{
+	?item wdt:P3329 ?civicId ;
+          ?property  ?object .
+    ?object prov:wasDerivedFrom ?provenance .
+    ?provenance pr:P248 ?reference .
+    ?reference wdt:P31 wd:Q13442814 ;
+               wdt:P698 ?pmid .
+   
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+#defaultView:BubbleChart
+SELECT  ?propertyLabel (count(?prognostic_type) as ?counts)
+WHERE
+{
+	VALUES ?prognostic_type {wdt:P3354 wdt:P3355 wdt:P3356 wdt:P3357 wdt:P3358 wdt:P3359}
+    ?item wdt:P3329 ?civic_id ;
+          ?prognostic_type ?prognostic_value .
+    ?property wikibase:directClaim ?prognostic_type . 
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+GROUP BY ?propertyLabel ?prognostic_typeLabel
+ORDER BY ?counts
+
+######
+
+SELECT ?item ?itemLabel ?uniprotid ?tax_node
+WHERE
+{
+	?item wdt:P352 ?uniprotid ;
+          wdt:P703 wd:Q15978631 .
+   
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?compound ?compoundLabel ?speciesLabel ?sourceLabel ?doi ?wpid WHERE {
+  ?compound wdt:P31 wd:Q11173.
+  MINUS { ?compound wdt:P31 wd:Q8054. }
+  ?compound p:P703 ?statement.
+  ?statement rdf:type wikibase:BestRank.
+  ?statement ps:P703 ?species.
+  OPTIONAL {
+    ?statement (prov:wasDerivedFrom/pr:P248) ?source.
+    OPTIONAL { ?statement (prov:wasDerivedFrom/pr:P2410) ?wpid. }
+    OPTIONAL { ?statement (prov:wasDerivedFrom/pr:P356) ?doi. }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ASC(?compound)
+
+######
+
+#defaultView:Dimensions
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wp:    <http://vocabularies.wikipathways.org/wp#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?wpid ?metaboliteLabel ?pKa ?pKa2 ?metabolite2Label ?wpid2
+WITH {
+  SELECT ?wpid ?source_pathway ?metabolite ?pKa ?pKa2 ?metabolite2 ?wpid2
+  WHERE {
+    # VALUES ?wpid { "WP550" }
+    ?pathway wdt:P2410 ?wpid ;
+             wdt:P527 ?metabolite ;
+             wdt:P2888 ?source_pathway .
+    ?metabolite wdt:P1117 ?pKa .
+
+    SERVICE <http://sparql.wikipathways.org/> {
+      ?wp_mb1 wp:bdbWikidata ?metabolite .
+      ?wp_mb1 dcterms:isPartOf ?interaction .
+      ?interaction rdf:type wp:Interaction .
+      ?wp_mb2 dcterms:isPartOf ?interaction .
+      ?wp_mb2 wp:bdbWikidata ?metabolite2 .
+      FILTER (?wp_mb1 != ?wp_mb2)
+    }
+  }
+} AS %result
+WHERE {
+  INCLUDE %result
+  ?metabolite2 wdt:P1117 ?pKa2 .
+  ?pathway2 wdt:P2410 ?wpid2 ;
+             wdt:P527 ?metabolite2 ;
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+
+#defaultView:Graph
+PREFIX gas: <http://www.bigdata.com/rdf/gas#>
+
+SELECT ?item ?itemLabel ?pic ?linkTo
+WHERE
+{
+  SERVICE gas:service {
+    gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.SSSP" ;
+                gas:in wd:Q1968598;
+                gas:traversalDirection "Reverse" ;
+                gas:out ?item ;
+                gas:out1 ?depth ;
+                gas:maxIterations 3 ;
+                gas:linkType wdt:P171 .
+  }
+  OPTIONAL { ?item wdt:P171 ?linkTo }
+  OPTIONAL { ?item wdt:P18 ?pic }
+  SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+SELECT ?pathway ?pathwayLabel ?wpid WHERE {
+   ?pathway wdt:P2410 ?wpid ;
+            wdt:P703 wd:Q15978631 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+
+SELECT ?citation ?citationLabel (count(?pathway) as ?times_cited) WHERE {
+  ?pathway wdt:P2410 ?WikiPathwaysID ;
+           wdt:P2860 ?citation .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }
+GROUP BY ?pathway ?citation ?citationLabel
+
+######
+
+SELECT ?pathway ?genes ?metabolites ((?genes/?metabolites) as ?g2m_ratio) WHERE {
+{SELECT DISTINCT ?pathway (count(?pwPart) as ?genes) WHERE {
+  ?pathway wdt:P2410 ?WikiPathwaysID ;
+           wdt:P527 ?pwPart .
+  ?pwPart wdt:P31 wd:Q7187 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }
+GROUP BY ?pathway ?genes }
+{SELECT DISTINCT ?pathway (count(?pwPart) as ?metabolites) WHERE {
+  ?pathway wdt:P2410 ?WikiPathwaysID ;
+           wdt:P527 ?pwPart .
+  ?pwPart wdt:P31 wd:Q11173 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  }
+GROUP BY ?pathway ?metabolites}
+  }
+
+ORDER BY DESC(?genes)
+
+######
+
+SELECT ?pathway ?pathwayLabel ?WikiPathways ?Reactome (COUNT(DISTINCT ?protein) as ?count) WHERE {
+  VALUES ?pathwayType { wd:Q4915012 wd:Q2996394 }
+  ?pathway wdt:P31 ?pathwayType .
+  { ?pathway wdt:P527/wdt:P688 ?protein . } UNION { ?pathway wdt:P527 ?protein . }
+  ?protein wdt:P638 ?PDBID .
+  OPTIONAL { ?pathway wdt:P2410 ?WikiPathways }
+  OPTIONAL { ?pathway wdt:P3937 ?Reactome }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} GROUP BY ?pathway ?pathwayLabel ?WikiPathways ?Reactome
+  ORDER BY DESC(?count)
+
+######
+SELECT DISTINCT ?pathway ?pathwayLabel ?pwpart ?pwpartLabel ?variant ?variantLabel ?disease?diseaseLabel WHERE {
+
+   VALUES ?predictor {p:P3354 p:P3355 p:P3356 p:P3357 p:P3358 p:P3359}
+   VALUES ?predictorQualifier {pq:P2175}
+   VALUES ?wpID {"WP2828"}
+  
+   ?pathway wdt:P2410 ?wpID ; # Pathways has a Wikipathways identifier
+          wdt:P527 ?pwpart . # which contains pathways parts
+  
+   ?disease wdt:P279+ wd:Q504775 .  # The disease is a subclass of urinary bladder cancer 
+                                    # based on annotations in the Disease ontology
+   ?variant wdt:P3329 ?civicID ; # a variant known in CIViC 
+             ?predictor ?node ; # has a predicting relation with diseases
+                                   # labeled as being a subclass of urinary bladder cancer
+             wdt:P3433 ?pwpart .  # variant is biological variant of
+   
+   {?node ?predictorStatement ?drug_label ;
+              ?predictorQualifier ?disease .}
+   UNION 
+   {
+      ?node ?predictorStatement ?disease  .
+   }
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+SELECT DISTINCT ?interaction_type WHERE {
+  VALUES ?wpid {"WP716"}
+  ?item wdt:P2410 ?wpid ;
+        wdt:P2888 ?source_pathway .
+ 
+  SERVICE <http://sparql.wikipathways.org/> {
+     ?wp_pathway dc:identifier ?source_pathway .
+     ?s dcterms:isPartOf ?wp_pathway, ?interaction .
+     ?interaction rdf:type wp:Interaction .
+     ?interaction rdf:type ?interaction_type .
+     ?interaction wp:participants ?participants .
+  }
+}
+
+######
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+SELECT DISTINCT ?item ?pw_annotation  WHERE {
+  VALUES ?wpid {"WP716"}
+  ?item wdt:P2410 ?wpid ;
+        wdt:P2888 ?source_pathway .
+ 
+  SERVICE <http://sparql.wikipathways.org/> {
+     ?wp_pathway dc:identifier ?source_pathway .
+     ?wp_pathway wp:ontologyTag ?pw_annotation .
+     # ?pw_annotation rdfs:label ?annotation_label .
+   }
+}
+
+######
+#added before 2016-10
+
+#cases where a drug physically interacts with the product of gene known to be genetically associated a disease
+#these cases may show opportunities to repurpose a drug for a new disease
+#See http://database.oxfordjournals.org/content/2016/baw083.long  and
+#http://drug-repurposing.nationwidechildrens.org/search
+#an example that was recently validated involved a new link between Metformin wd:Q19484 and cancer survival
+#https://jamia.oxfordjournals.org/content/22/1/179
+#currently set up to find drugs for cancers that target genes related to cell proliferation
+#adapt by changing constraints (e.g. to 'heart disease' Q190805) or removing them
+SELECT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel
+WHERE {
+  ?drug wdt:P129 ?gene_product .   # drug interacts with a gene_product
+  ?gene wdt:P688 ?gene_product .  # gene_product (usually a protein) is a product of a gene (a region of DNA)
+  ?disease	wdt:P2293 ?gene .    # genetic association between disease and gene
+  ?disease wdt:P279*  wd:Q12078 .  # limit to cancers wd:Q12078 (the * operator runs up a transitive relation..)
+  ?gene_product wdt:P682 ?biological_process . #add information about the GO biological processes that the gene is related to 
+  #limit to genes related to certain biological processes (and their sub-processes):
+  		#apoptosis wd:Q14599311
+  		#cell proliferation wd:Q14818032
+   ?biological_process (wdt:P361|wdt:P279)* wd:Q14818032  # chain down subclass/part-of
+
+    #uncomment the next line to find a subset of the known true positives (there are not a lot of them in here yet)
+  #?disease wdt:P2176 ?drug . 	# disease is treated by a drug
+  	SERVICE wikibase:label {
+        bd:serviceParam wikibase:language "en" .
+	}
+}
+LIMIT 1000
+
+
+######
+#added before 2016-10
+
+SELECT ?taxon ?eponym ?taxonName ?eponymLabel
+WHERE
+{
+  ?taxon wdt:P31 wd:Q16521;
+         wdt:P225 ?taxonName;
+         wdt:P138 ?eponym.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?eponym
+
+######
+SELECT DISTINCT ?personLabel (CONCAT("https://twitter.com/",?twitterName) AS ?twitterlink) ?pic
+WHERE {
+  ?person wdt:P2002 ?twitterName ;
+    wdt:P106 ?occupation .
+  OPTIONAL { ?person wdt:P18 ?pic . }
+  ?occupation wdt:P279* wd:Q864503 . # all subclasses of biologists
+   SERVICE wikibase:label {
+     bd:serviceParam wikibase:language "en"
+   }
+}
+
+######
+# Cell lines with names that could also be URLs (Internet of Cell Lines).
+SELECT * WHERE {
+  {
+    SELECT ?cell_line ?cell_line_name WHERE {
+      ?cell_line wdt:P31 wd:Q21014462;
+                 rdfs:label ?cell_line_name.
+          FILTER(LANG(?cell_line_name) = "en").
+          Filter REGEX(STR(?cell_line_name), "^[\\w\\-\\.]+\\.[A-z]+$")
+    }
+  }
+  ?tld wdt:P31/wdt:P279* wd:Q14296;
+       rdfs:label ?tld_name.
+  FILTER(LANG(?tld_name) = "en").
+  FILTER REGEX(STR(?cell_line_name), CONCAT(REPLACE(?tld_name, "\\.", "\\\\."), "$"), "i")
+  BIND(URI(CONCAT("http://", ?cell_line_name)) as ?url)
+}
+
+######
+#added before 2016-10
+
+SELECT ?moleculeLabel ?formule ?picture ?molecule
+WHERE
+{
+	?molecule  wdt:P31 wd:Q12140
+	; wdt:P274 ?formule
+	; wdt:P117 ?picture 
+	SERVICE wikibase:label {  bd:serviceParam wikibase:language "en, de" . }
+}
+ORDER BY ?moleculeLabel
+
+######
+#added before 2016-10
+
+SELECT ?organism_name
+WHERE
+{  
+	?organism_item wdt:P276 wd:Q5880
+	; rdfs:label ?organism_name .
+	?gene wdt:P703 ?organism_item
+	; wdt:P1056 wd:Q319541 .
+	FILTER (LANG(?organism_name) = "en") .   
+}
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?idExtension ?extension ?mediaType ?idExtensionLabel
+WHERE
+{
+	?idExtension wdt:P31 wd:Q235557
+	; wdt:P1195 ?extension .
+	OPTIONAL { ?idExtension wdt:P1163 ?mediaType }
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+ORDER BY ?extension ?mediaType
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?standard ?standardLabel ?website
+WHERE
+{
+        ?standard wdt:P1462 wd:Q37033 .
+        OPTIONAL{ ?standard wdt:P856 ?website }
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+ORDER BY ?standardLabel
+
+######
+SELECT ?software ?softwareLabel ?date (ROUND((NOW() - ?date)/365.2425) AS ?age)
+{
+  ?software wdt:P31/wdt:P139* wd:Q7397.
+  OPTIONAL { ?software wdt:P571 ?date. }
+  OPTIONAL { ?software p:P348/pq:P577 ?date. }
+  FILTER(BOUND(?date)).
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?date
+LIMIT 10
+
+######
+#defaultView:BubbleChart 
+SELECT ?app ?appLabel (COUNT(?format) AS ?count)
+WHERE {
+  ?app (p:P31/ps:P31/wdt:P279) wd:Q7397 .
+  ?app wdt:P1072 ?format .
+            
+  SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en" .
+    
+}
+  }
+
+GROUP BY ?app ?appLabel
+ORDER BY DESC(?count)
+
+######
+SELECT DISTINCT ?mediaType (COUNT (?ff) as ?count)
+WHERE
+{
+	?ff wdt:P31/wdt:P279* wd:Q235557.
+	?ff wdt:P1163 ?mediaType.
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+GROUP BY ?mediaType 
+ORDER BY DESC (?count)
+
+######
+#added before 2016-10
+
+SELECT ?compound ?compoundLabel ?pKa ?source ?sourceLabel ?doi
+WHERE
+{
+  ?compound wdt:P31 wd:Q11173 ; p:P1117 ?statement .
+  ?statement rdf:type wikibase:BestRank ;
+    ps:P1117 ?pKa .
+  OPTIONAL {
+    ?statement prov:wasDerivedFrom/pr:P248 ?source .
+    OPTIONAL { ?source wdt:P356 ?doi . }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } #English label
+}
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?compound ?compoundLabel ?cas
+WHERE
+{
+  ?compound wdt:P231 ?cas .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+
+#two chemical compounds with the same CAS registry number
+SELECT DISTINCT ?cas ?compound1 ?compound1Label ?compound2 ?compound2Label WHERE {
+  ?compound1 wdt:P231 ?cas .
+  ?compound2 wdt:P231 ?cas .
+  FILTER (?compound1 != ?compound2)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+
+#The number of times a cas registry number is shared by distinct Wikidata items
+SELECT ?cas ?items
+WHERE
+{
+	{SELECT DISTINCT ?cas (count(?compound) as ?items) WHERE {
+  		?compound wdt:P231 ?cas .
+	}
+    GROUP BY ?cas }
+    FILTER (?items >1)
+}
+ORDER BY desc(?items)
+
+######
+
+
+#defaultView:Timeline
+SELECT DISTINCT ?item ?itemLabel ?when (YEAR(?when) as ?date) ?pic
+WHERE {
+  ?item p:P166 ?awardStat . # \u2026 with an awarded(P166) statement
+  ?awardStat ps:P166 wd:Q44585 . # \u2026 that has the value Nobel Prize in Chemistry (Q35637)
+  ?awardStat pq:P585 ?when . # when did he receive the Nobel prize
+ 
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+OPTIONAL { ?item wdt:P18 ?pic }
+}
+
+######
+
+#defaultView:ImageGrid
+SELECT ?compound ?compoundLabel ?image WHERE {
+  ?compound wdt:P279+|wdt:P31+ wd:Q421948 ;
+            wdt:P18|wdt:P117 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#added before 2016-10
+SELECT ?discoverer ?name (COUNT(?asteroid) AS ?count)
+WHERE
+{
+	?asteroid wdt:P31 wd:Q3863 .
+	?asteroid wdt:P61 ?discoverer .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" .
+		?discoverer rdfs:label ?name
+	}
+}
+GROUP BY ?discoverer ?name
+ORDER BY DESC(?count)
+LIMIT 20
+
+######
+#added before 2016-10
+SELECT
+	?discoverer ?discovererLabel 
+	(COUNT(DISTINCT ?planet) as ?count)
+	(GROUP_CONCAT(DISTINCT(?planetLabel); separator=", ") as ?planets)
+WHERE
+{
+	?ppart wdt:P279* wd:Q634 .
+	?planet wdt:P31 ?ppart .
+	?planet wdt:P61 ?discoverer .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en" .
+		?discoverer rdfs:label ?discovererLabel .
+		?planet rdfs:label ?planetLabel           
+	}
+}
+GROUP BY ?discoverer ?discovererLabel
+ORDER BY DESC(?count)
+
+######
+#added before 2016-10
+
+#defaultView:ImageGrid
+SELECT ?spaceProbeLabel ?date ?picture
+WHERE
+{
+	?spaceProbe wdt:P31 wd:Q26529;
+        wdt:P18 ?picture;
+        wdt:P619 ?date . #mandatory
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "fr,en" .
+	}
+}
+ORDER BY ?date
+LIMIT 88
+
+######
+#added before 2016-10
+SELECT ?gender (count(distinct ?human) as ?number)
+WHERE
+{
+	?human wdt:P31 wd:Q5
+	; wdt:P21 ?gender
+	; wdt:P106/wdt:P279* wd:Q901 .
+}
+GROUP BY ?gender
+LIMIT 10
+
+######
+#added before 2016-10
+
+SELECT ?eponym ?eponymLabel ?count ?sample ?sampleLabel
+WHERE
+{
+	{
+	SELECT ?eponym (COUNT(?item) as ?count) (SAMPLE(?item) AS ?sample)
+	WHERE
+	{
+		?item wdt:P138 ?eponym.
+		?eponym wdt:P106 wd:Q170790.
+	}
+	GROUP BY ?eponym
+	}
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+ORDER BY DESC(?count)
+
+######
+#added before 2016-10
+
+#defaultView:BubbleChart
+SELECT ?occupationLabel (count(DISTINCT ?author) as ?count)
+WHERE
+{
+        ?object wdt:P31 wd:Q13442814
+        ; wdt:P50 ?author .
+        ?author wdt:P106 ?occupation .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en,fr" }
+}
+GROUP BY ?occupationLabel
+ORDER BY DESC(?count)
+
+######
+#added in 2016-10
+
+#Authors of scientific articles who received a Nobel prize
+SELECT ?item ?itemLabel ?person ?personLabel ?_image ?award ?awardLabel
+WHERE {
+  ?person wdt:P166 ?award ; #person received an award
+          wdt:P31 wd:Q5 . #person is instance of human
+  ?award wdt:P31/wdt:P279* wd:Q7191 . #award is a Nobel Prize
+  ?item wdt:P50 ?person ; #person is an author of item
+        wdt:P31 wd:Q13442814 . #item is a scientific article
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+ 
+OPTIONAL { ?person wdt:P18 ?_image. } #Wikimedia Commons has an image of person
+}
+
+######
+SELECT ?entity ?entityLabel ?authorLabel WHERE {
+  VALUES ?author {wd:Q18016466} #initialize "?author with the Wikidata item "Lydia Pintscher" 
+  ?entity wdt:P31 wd:Q13442814. #filter by scientific articles
+  ?entity wdt:P50 ?author.
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } 
+}
+
+######
+#added before 2016-10
+#Female scientists with most number of sitelinks (but not English Wikipedia)
+PREFIX schema: <http://schema.org/>
+
+SELECT ?item ?itemLabel ?linkcount WHERE {
+    ?item wdt:P31 wd:Q5 .
+    ?item wdt:P21 wd:Q6581072 .
+    ?item wdt:P106 wd:Q901 .
+    ?item wikibase:sitelinks ?linkcount .
+  FILTER (?linkcount >= 1) .       # only include items with 1 or more sitelinks
+  FILTER NOT EXISTS {
+    ?article schema:about ?item .
+    ?article schema:inLanguage "en" .
+    ?article schema:isPartOf <https://en.wikipedia.org/>
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,de,es,ar,fr" }
+}
+GROUP BY ?item ?itemLabel ?linkcount
+ORDER BY DESC(?linkcount)
+
+######
+#added before 2016-10
+SELECT ?inventor ?inventorLabel ?gadget ?gadgetLabel WHERE {
+  ?inventor wdt:P157 ?gadget.
+  ?gadget wdt:P61 ?inventor.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#added 2016-12
+##defaultView:BubbleChart
+SELECT ?author ?authorLabel (COUNT(?publication) AS ?count)
+WHERE
+{
+    ?item wdt:P2860 ?publication . #citations
+    ?publication wdt:P50 ?author . #authors
+    ?author wdt:P21 wd:Q6581072. #females
+    SERVICE wikibase:label {
+        bd:serviceParam wikibase:language "en" .
+    }
+}
+GROUP BY ?author ?authorLabel
+ORDER BY DESC(?count)
+######
+#added before 2016-10
+
+# Finds authors who have published scientific articles together,
+# but whose Erdos numbers are more than one apart.
+# These would appear to violate the definition of the Erdos number.
+
+SELECT
+	# Q#s
+	?paper
+	?author1
+	?author2
+	# title (either from title statement or label)
+	(IF(BOUND(?title), ?title, ?paperLabel) AS ?title)
+	# author labels (should be names) and their Erdos numbers
+	?author1Label
+	?erdos1
+	?author2Label
+	?erdos2
+	# distance between Erdos numbers
+	?distance
+WHERE
+{
+	# paper, instance of or subclass of scientific article; also has two authors
+	?paper wdt:P31/wdt:P279* wd:Q13442814;
+	         wdt:P50 ?author1, ?author2.
+	# if it has a title, we\u2019ll grab that as well, but it\u2019s also okay if there\u2019s no title
+	OPTIONAL { ?paper wdt:P1476 ?title. }
+	# grab Erdos numbers of the two authors
+	?author1 wdt:P2021 ?erdos1.
+	?author2 wdt:P2021 ?erdos2.
+	# introduce a new variable for the difference of the Erdos numbers
+	BIND(?erdos2 - ?erdos1 AS ?distance).
+	# select those cases where the distance is > 1
+	# (note: by *not* taking the absolute value of the distance, we avoid getting duplicated cases because the author variables might be swapped)
+	FILTER(?distance > 1).
+	# get *Label variables automagically
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+# sort by distance first (descending), then by first author, then by second author
+ORDER BY DESC(?distance) ?author1Label ?author2Label
+
+######
+
+#defaultView:Map
+SELECT DISTINCT ?institution ?institutionLabel ?academics ?academicsLabel ?degree ?degreeLabel ?geoloc  ?image WHERE {
+  ?academics wdt:P31 wd:Q5 ; # instances (P31) of humans (Q5)
+             wdt:P27 wd:Q16 ; # country of citizenship
+             p:P69 ?statement . # check for an "educated at" (P69) statement
+  OPTIONAL { ?academics wdt:P18 ?image }. #image
+  
+  ?statement ps:P69 ?institution . # get value of the "educated at" statement, i.e. the institution
+  ?institution wdt:P625 ?geoloc . # get the geolocation of the institution
+
+  ?statement pq:P512 ?degree . # get qualifier "academic degree" (P512) 
+  ?degree wdt:P31*/wdt:P279* wd:Q849697 . # filter for doctoral degrees
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+
+}
+
+######
+SELECT ?doi (COUNT (?entry) as ?entries)
+{
+  ?entry ?p ?statement .
+  ?statement prov:wasDerivedFrom/pr:P248/wdt:P356 ?doi .
+}
+GROUP BY ?doi
+ORDER BY DESC(?entries)
+
+######
+#added before 2016-10
+
+SELECT (COUNT (?statement) as ?statements)
+WHERE
+{
+  ?entry ?p ?statement .
+  ?statement prov:wasDerivedFrom/
+       <http://www.wikidata.org/prop/reference/P248>/
+       wdt:P356 ?doi .
+}
+
+######
+#added before 2016-10
+
+SELECT ?entryRes ?entry ?statement
+WHERE
+{
+  ?entryRes ?p ?statement ;
+    rdfs:label ?entry .
+  ?statement prov:wasDerivedFrom/
+       <http://www.wikidata.org/prop/reference/P248>/
+       wdt:P356 "10.1021/JA01577A030" .
+   FILTER(lang(?entry) = "en")
+}
+
+######
+SELECT ?English ?language ?label WHERE {
+	?disease wdt:P699 "DOID:399";
+             rdfs:label ?English;
+             rdfs:label ?label .
+	BIND(LANG(?label) as ?languageCode)
+	?wdLanguage wdt:P424 ?languageCode;
+	            rdfs:label ?language .
+    FILTER EXISTS {?wdLanguage wdt:P31?/wdt:P279+ wd:Q17376908}
+	FILTER (LANG(?English)="en")  
+	FILTER (LANG(?language)="en")             
+} ORDER BY ?language
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?journal ?name WHERE {
+    ?journal wdt:P31 wd:Q5633421 . # is scientific journal
+    {
+            { ?journal wdt:P921 wd:Q199655 }   # with topic library science
+      UNION { ?journal wdt:P921 wd:Q16387 }    # and/or topic information science
+      UNION { ?journal wdt:P921 wd:Q13420675 } # and/or topic library and information science  
+    }
+    SERVICE wikibase:label {
+        bd:serviceParam wikibase:language "en" .
+        ?journal rdfs:label ?name .
+    }
+}
+
+######
+
+select (count(?work) as ?count) ?subject ?subjectLabel where {
+  ?work wdt:P31 wd:Q13442814;
+        wdt:P921 ?subject .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+group by ?subject ?subjectLabel
+order by desc(?count)
+limit 200
+
+######
+
+SELECT ?journal ?journalLabel ?editor ?editorLabel ?twitter ?ex_publisher ?ex_publisherLabel
+WITH {
+  SELECT ?journal ?editor ?twitter (SAMPLE(?publisher) AS ?ex_publisher) WHERE {
+    ?journal wdt:P31 wd:Q5633421 ; wdt:P98 ?editor .
+    OPTIONAL { ?journal wdt:P123 ?publisher }
+    ?editor wdt:P2002 ?twitter .
+  } GROUP BY ?journal ?editor ?twitter
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} ORDER BY ?journalLabel
+######
+#added before 2016-10
+
+SELECT ?proof ?proofLabel
+WHERE
+{
+  ?proof wdt:P31 wd:Q11538.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+
+SELECT DISTINCT *
+WHERE
+{
+	?item 	wdt:P31 wd:Q8513 ;
+		rdfs:label ?name .
+	OPTIONAL {	?item  wdt:P275 ?licenseItem .
+			?licenseItem rdfs:label ?license .
+			FILTER (LANG(?license) = "en")}
+	FILTER (LANG(?name) = "en")	
+}
+
+######
+#added before 2016-10
+
+SELECT ?universe (SAMPLE(?label) AS ?label) (COUNT(?planet) AS ?count)
+WHERE
+{
+  ?planet wdt:P31 wd:Q2775969;
+          wdt:P1080 ?universe.
+  ?universe rdfs:label ?label.
+  FILTER(LANG(?label) = "en").
+}
+GROUP BY ?universe
+ORDER BY DESC(?count)
+
+######
+
+SELECT ?object ?objectLabel ?mass WHERE {
+  {
+    SELECT ?object (MAX(?mass) AS ?mass) WHERE {
+      ?object p:P2067/psn:P2067/wikibase:quantityAmount ?mass.
+      MINUS { ?object wdt:P31 wd:Q3647172. }
+    }
+    GROUP BY ?object
+    ORDER BY DESC(?mass)
+    LIMIT 100
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC(?mass)
+
+######
+SELECT ?item ?itemLabel ?url ?licence ?licenceLabel
+WHERE {
+  ?item wdt:P31 wd:Q4117139.
+  OPTIONAL { ?item wdt:P856 ?url }
+  OPTIONAL { ?item wdt:P275 ?licence }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} ORDER BY ?itemLabel
+
+######
+SELECT ?uLabel ?founded ?stateLabel ?stateStart
+WHERE {
+	?u wdt:P31/wdt:P279* wd:Q3918 ;
+       wdt:P131+ ?state ;
+       wdt:P571 ?founded .
+	?state wdt:P31 wd:Q35657 ;
+           wdt:P571 ?stateStart .
+	FILTER (?founded < ?stateStart) .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+	}
+}
+LIMIT 10
+
+######
+PREFIX vrank:<http://purl.org/voc/vrank#>
+
+SELECT DISTINCT ?uni ?uniLabel ?pr WHERE {
+  ?uni wdt:P31/wdt:P279* wd:Q3918.
+  SERVICE <http://dbpedia.org/sparql> {
+    ?uni vrank:hasRank/vrank:rankValue ?pr
+  }
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
+  }
+} ORDER BY DESC(?pr) LIMIT 50
+
+######
+#added before 2016-10
+#TEMPLATE={"template":"Presidents of ?country and their spouses","variables":{"?country":{"query":" SELECT ?id WHERE { ?id wdt:P31 wd:Q6256 . }"} } }
+
+SELECT ?p ?pLabel ?ppicture ?w ?wLabel ?wpicture WHERE {
+  BIND(wd:Q30 AS ?country)
+  ?country (p:P6/ps:P6) ?p.
+  ?p wdt:P26 ?w.
+  OPTIONAL {
+    ?p wdt:P18 ?ppicture.
+    ?w wdt:P18 ?wpicture.
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+
+######
+SELECT ?h ?hLabel ?cause ?causeLabel (YEAR(?date) AS ?year) WHERE {
+?h wdt:P39 wd:Q11696;
+   wdt:P509 ?cause;
+   wdt:P570 ?date
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} ORDER BY ?year
+
+######
+#added before 2016-10
+
+#defaultView:BubbleChart
+SELECT ?cid ?cause (count(*) as ?count)
+WHERE
+{
+	?pid wdt:P39 wd:Q11696 .
+	?pid wdt:P509 ?cid .
+	OPTIONAL {
+		?cid rdfs:label ?cause filter (lang(?cause) = "en") .
+	}
+}
+GROUP BY ?cid ?cause
+ORDER BY DESC(?count) ASC(?cause)
+
+######
+#added before 2016-10
+SELECT ?politician ?cause ?politician_label ?cause_of_death_label
+WHERE
+{
+	?politician wdt:P106 wd:Q82955 .    # find items that have "occupation (P106): politician (Q82955)"
+	?politician wdt:P509 ?cause .       # with a P509 (cause of death) claim
+	?cause wdt:P279* wd:Q12078 .        # ... where the cause is a subclass of (P279*) cancer (Q12078)
+	# ?politician wdt:P39 wd:Q11696 .   # Uncomment this line to include only U.S. Presidents
+	 
+	OPTIONAL {?politician rdfs:label ?politician_label filter (lang(?politician_label) = "en") .}
+	OPTIONAL {?cause rdfs:label ?cause_of_death_label filter (lang(?cause_of_death_label) = "en").}
+}
+ORDER BY ASC (?politician)
+
+######
+#added before 2016-10
+
+SELECT ?link ?linkLabel ?picture ?age
+WHERE
+{
+	?link wdt:P31 wd:Q5 ;
+          p:P39 [ ps:P39 wd:Q19546 ; pq:P580 ?startTime ] .
+	OPTIONAL { ?link wdt:P569 ?dateOfBirth }
+	OPTIONAL { ?link wdt:P18 ?picture }
+	OPTIONAL { ?link wdt:P570 ?dateOfDeath }
+	BIND(YEAR(?dateOfDeath) - YEAR(?dateOfBirth) as ?age)
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr,en" }
+}
+ORDER BY DESC(?startTime)
+
+######
+#added before 2016-10
+
+######
+#added before 2016-10
+
+SELECT  ?objectLabel    (YEAR(?date) as ?year)
+        ?population     (?objectLabel as ?Location)
+WHERE
+{
+        wd:Q458 wdt:P150 ?object .   # European Union  contains administrative territorial entity
+        ?object p:P1082 ?populationStatement .
+        ?populationStatement    ps:P1082 ?population
+        ;	pq:P585 ?date .
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }               
+	FILTER (YEAR(?date) >= 1960)
+}
+ORDER BY ?objectLabel ?year
+
+######
+#added before 2016-10
+
+SELECT ?h ?hLabel ?location (CONCAT("injured: ",str(?injured)) as ?injuredl) (concat("dead: ",str(?dead)) as ?deadl) ?date ?image
+WHERE
+{
+        ?h wdt:P31 ?attack. 
+    values (?attack) {
+      (wd:Q18493502)
+      (wd:Q217327)
+     
+     
+    }
+    optional {    ?h wdt:P1339 ?injured . }
+    optional {    ?h wdt:P1120 ?dead. }
+    optional {    ?h wdt:P276?/wdt:P625 ?location }
+    optional {    ?h wdt:P585 ?date }
+    optional {    ?h wdt:P18 ?image }
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+
+# persons who were stateless (country of citizenship: no value) for some time (start time and end time qualifiers)
+SELECT ?person ?personLabel ?start ?end WHERE {
+  ?person wdt:P31 wd:Q5;
+          p:P27 [
+            rdf:type wdno:P27;
+            pq:P580 ?start;
+            pq:P582 ?end
+          ].
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+ORDER BY DESC(?end - ?start)
+
+######
+
+# Poets who were through An Lushan Rebellion
+SELECT ?poet ?poetLabel WHERE {
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],zh-hant,zh". }
+ wd:Q253774 wdt:P580 ?battleStartTime.
+ wd:Q253774 wdt:P582 ?battleEndTime.
+ ?poet wdt:P106 wd:Q49757.
+ ?poet wdt:P497 ?cbdbId.
+ ?poet wdt:P569 ?birthDate.
+  FILTER(?birthDate < ?battleStartTime).
+  ?poet wdt:P570 ?deathDate.
+  FILTER(?deathDate > ?battleEndTime).
+}
+
+######
+SELECT ?era ?eraLabel (YEAR(?start_time) AS ?start) (YEAR(?end_time) AS ?end) ?namedLabel ?namedDescription WHERE {
+?era wdt:P31 wd:Q6428674; wdt:P361 wd:Q130436; # eras of the history of Japan
+  wdt:P580 ?start_time.
+MINUS { ?era wdt:P2348/wdt:P361 wd:Q130436 } # exclude sub-eras
+OPTIONAL { ?era wdt:P582 ?end_time } # optional end-time to make sure we include the current era
+OPTIONAL { ?era wdt:P138 ?named }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} ORDER BY ?start DESC(?end)
+
+######
+SELECT DISTINCT ?item ?itemLabel ?dateofbirth WHERE {
+  wd:Q154952 (wdt:P22|wdt:P25)* ?item .
+  OPTIONAL { ?item wdt:P569 ?dateofbirth } .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} ORDER BY ?itemLabel
+
+######
+#added before 2016-10
+SELECT DISTINCT ?museumLabel ?museumDescription ?villeId ?villeIdLabel (?villeIdLabel AS ?ville) ?coord ?lat ?lon
+WHERE
+{
+  ?museum wdt:P539 ?museofile.  # french museofile Id
+  ?museum wdt:P131* wd:Q12130. # in Brittany
+  ?museum wdt:P131 ?villeId. #city of the museum
+  # ?object wdt:P166 wd:Q2275045 # that have french label "mus\u00e9es de France"
+  OPTIONAL {?museum wdt:P856 ?link.}     # official website
+  OPTIONAL {?museum wdt:P625 ?coord .} # geographic coord
+  OPTIONAL {
+    ?museum p:P625 ?statement.
+    ?statement psv:P625 ?node.
+    ?node wikibase:geoLatitude ?lat.
+    ?node wikibase:geoLongitude ?lon.
+   }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". } #french label
+}
+ORDER BY  ?villeIdLabel
+
+######
+#added before 2016-10
+
+#All museums (including subclass of museum) in Barcelona with coordinates
+SELECT DISTINCT ?item ?name ?coord ?lat ?lon
+WHERE
+{
+ ?item wdt:P131* wd:Q1492 .
+ ?item wdt:P31/wdt:P279* wd:Q33506 .
+ ?item wdt:P625 ?coord .
+ ?item p:P625 ?coordinate .
+ ?coordinate psv:P625 ?coordinate_node .
+ ?coordinate_node wikibase:geoLatitude ?lat .
+ ?coordinate_node wikibase:geoLongitude ?lon .
+ SERVICE wikibase:label {
+ bd:serviceParam wikibase:language "ca" .
+ ?item rdfs:label ?name
+ }
+}
+ORDER BY ASC (?name)
+
+######
+#added before 2016-10
+
+SELECT ?play ?playLabel
+WHERE
+{
+	?play wdt:P31 wd:Q25379 .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en,es,pt,de,fr,ja,zh" . }
+}
+LIMIT 1000
+
+######
+#added before 2016-10
+
+#defaultView:ImageGrid
+SELECT ?human ?humanLabel ?yob ?yod ?picture
+WHERE
+{
+	?human wdt:P31 wd:Q5
+	; wdt:P106 wd:Q33999 .
+	?human wdt:P18 ?picture .
+	OPTIONAL { ?human wdt:P569 ?dob . ?human wdt:P570 ?dod }.
+	BIND(YEAR(?dob) as ?yob) . #if available: year
+	BIND(YEAR(?dod) as ?yod) .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en" .
+	}
+}
+LIMIT 88
+
+######
+SELECT DISTINCT ?actor ?actorLabel ?characterLabel ?movie1Label ?movie2Label WHERE {
+  ?movie1 p:P161 [
+            ps:P161 ?actor;
+            pq:P453 ?character
+          ];
+          wdt:P577 ?movie1Publication.
+  ?movie2  p:P161 [
+            ps:P161 ?actor;
+            pq:P453 ?character
+          ];
+          wdt:P577 ?movie2Publication.
+  MINUS{?movie1 wdt:P31/wdt:P279? wd:Q24856} # Not a series
+  MINUS{?movie2 wdt:P31/wdt:P279? wd:Q24856} # Not a series
+  FILTER(?character != wd:Q18086706). # Not as "himself/herself"
+  FILTER(?movie1Publication + "P40Y"^^xsd:duration < ?movie2Publication) # 40 years between them
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+#added before 2016-10
+SELECT distinct ?writer ?place ?linkcount
+WHERE
+{
+  {?s wdt:P106 wd:Q36180 .} UNION { ?s wdt:P106 wd:Q482980 . } UNION { ?s wdt:P106 wd:Q49757 . }
+  ?s wdt:P27 ?pl .
+  ?s wikibase:sitelinks ?linkcount .
+  OPTIONAL {
+     ?s rdfs:label ?writer filter (lang(?writer) = "en").
+   }
+    OPTIONAL {
+     ?pl rdfs:label ?place filter (lang(?place) = "en").
+   }
+} GROUP BY ?place ?writer ?linkcount HAVING (?linkcount > 10) ORDER BY DESC(?linkcount)
+
+######
+#defaultView:Map{"hide": ["?coord"]}
+SELECT ?subj ?subjLabel ?place ?placeLabel ?coord ?birthyear
+WHERE {
+   ?subj wdt:P106 wd:Q49757 .
+   ?subj wdt:P19 ?place .
+   ?place wdt:P17 wd:Q183 .
+   ?place wdt:P625 ?coord .
+   OPTIONAL { ?subj wdt:P569 ?dob }
+   BIND(YEAR(?dob) as ?birthyear)
+SERVICE wikibase:label {  bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+
+######
+#added before 2016-10
+SELECT ?subj ?label ?coord ?place
+WHERE
+{
+  {?subj wdt:P31 wd:Q571 } UNION {?subj wdt:P31 wd:Q7725634}.
+   ?subj wdt:P577 ?date FILTER (?date < "1830-01-01T00:00:00Z"^^xsd:dateTime) .
+  OPTIONAL { {?subj wdt:P291 ?place} UNION {?subj wdt:P840 ?place }.
+    ?place wdt:P625 ?coord }.
+   ?subj rdfs:label ?label filter (lang(?label) = "en")
+}
+
+######
+#added before 2016-10
+SELECT ?book ?bookLabel ?authorLabel ?genre_label ?series_label ?publicationDate
+WHERE
+{
+	?author ?label "Ernest Hemmingway"@en .
+	?book wdt:P31 wd:Q571 .
+	?book wdt:P50 ?author .
+	OPTIONAL {
+		?book wdt:P136 ?genre .
+		?genre rdfs:label ?genre_label filter (lang(?genre_label) = "en").
+	}
+	OPTIONAL {
+		?book wdt:P179 ?series .
+		?series rdfs:label ?series_label filter (lang(?series_label) = "en").
+	}
+	OPTIONAL {
+		?book wdt:P577 ?publicationDate .
+	}
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en" .
+	}
+}
+
+######
+select distinct ?item ?authorLabel ?itemLabel ?image where {
+  ?item wdt:P31/wdt:P279* wd:Q234460.
+
+  ?author ?label 'Bram Stoker'.
+  ?item wdt:P50 ?author.
+
+  ?item rdfs:label ?itemLabel.
+  filter contains(lcase(?itemLabel), 'dracula').
+
+  optional {?item wdt:P18 ?image.}
+
+  service wikibase:label {bd:serviceParam wikibase:language "[AUTO_LANGUAGE]".}
+} limit 50
+
+######
+#added before 2016-10
+SELECT ?s ?desc (COUNT(DISTINCT ?label) as ?labelcount)
+WHERE
+{
+  ?s wdt:P31 wd:Q7725634 .
+  ?s rdfs:label ?label .
+  OPTIONAL {
+     ?s rdfs:label ?desc filter (lang(?desc) = "en").
+   }
+ } GROUP BY ?s ?desc ORDER BY DESC(?labelcount)
+
+######
+#added before 2016-10
+SELECT ?s ?desc
+WHERE
+{
+  ?s wdt:P279 wd:Q7725634 .
+  OPTIONAL {
+     ?s rdfs:label ?desc filter (lang(?desc) = "en").
+   }
+ } 
+
+######
+#added before 2016-10
+SELECT ?s ?desc (COUNT(DISTINCT ?label) as ?labelcount)
+WHERE
+{
+  ?s wdt:P31 wd:Q37484 .
+  ?s rdfs:label ?label .
+  OPTIONAL {
+     ?s rdfs:label ?desc filter (lang(?desc) = "en").
+   }
+ } GROUP BY ?s ?desc ORDER BY DESC(?labelcount)
+
+######
+#added before 2016-10
+#old method for sitelink count
+SELECT ?s ?desc ?linkcount
+WHERE
+{
+  ?s wdt:P31 wd:Q37484 .
+  ?s wikibase:sitelinks ?linkcount .
+  OPTIONAL {
+     ?s rdfs:label ?desc filter (lang(?desc) = "en").
+   }
+ } GROUP BY ?s ?desc ?linkcount ORDER BY DESC(?linkcount)
+
+######
+#added before 2016-10
+#old method for sitelink count
+SELECT ?s ?desc ?linkcount
+WHERE
+{
+  ?s wdt:P31 wd:Q571 .
+  ?s wikibase:sitelinks ?linkcount .
+  OPTIONAL {
+     ?s rdfs:label ?desc filter (lang(?desc) = "en").
+   }
+ } GROUP BY ?s ?desc ?linkcount ORDER BY DESC(?linkcount)
+
+######
+#added before 2016-10
+
+SELECT ?poetLabel ?image ?yob ?yod ?start ?end ?monarchLabel
+WHERE
+{
+  ?poet p:P39 ?positionStat.
+  ?positionStat ps:P39 wd:Q877838;
+                pq:P580 ?start;
+                pq:P748 ?monarch.
+  OPTIONAL {
+    ?positionStat pq:P582 ?end.
+  }
+  OPTIONAL {
+    ?poet wdt:P18 ?image;
+          wdt:P569 ?dob;
+          wdt:P570 ?dod.
+  }
+  BIND(YEAR(?dob) AS ?yob).
+  BIND(YEAR(?dod) AS ?yod).
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+ORDER BY ?start DESC(?monarchLabel)
+
+######
+SELECT DISTINCT ?item ?itemLabel ?website
+WHERE {
+?item wdt:P31/wdt:P279* wd:Q212805   # digital libraries or subtypes
+OPTIONAL { ?item wdt:P856 ?website }   # Official URL if known
+MINUS { ?item wdt:P576 [] }   # Exclude those that have shut down
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en, es, ca, fr, de, pl, uk, ru, he" }
+}
+ORDER BY ?itemLabel
+
+######
+
+# Canadian libraries on a map (must have coordinates!)
+#defaultView:Map
+SELECT ?library ?libraryLabel ?coords WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,fr". }
+  ?library (wdt:P31/wdt:P279*) wd:Q7075.
+  ?library wdt:P17 wd:Q16.
+  ?library wdt:P625 ?coords.
+}
+LIMIT 100
+
+######
+
+SELECT ?nominee ?nomineeLabel (SAMPLE(?citizenshipLabel) AS ?country) (COUNT(DISTINCT ?year) as ?timesNominated)
+WHERE
+{
+    BIND( wd:Q37922 as ?prize )
+    ?nominee p:P1411 [ ps:P1411 ?prize; pq:P585 ?time ]
+    BIND( year(?time) as ?year )                   
+    OPTIONAL { 
+      ?nominee wdt:P27 [ rdfs:label ?citizenshipLabel ] filter (lang(?citizenshipLabel) = "en") .
+    }
+    FILTER NOT EXISTS { ?nominee wdt:P166 ?prize . } 
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+GROUP BY ?nominee ?nomineeLabel
+ORDER BY DESC(?timesNominated) ?nomineeLabel
+
+######
+SELECT DISTINCT ?item WHERE
+{
+  ?item wdt:P31 wd:Q5 ;
+  wdt:P106/wdt:P279* wd:Q482980 .
+  ?item wdt:P570 ?time0 .
+  FILTER((?time0 >= "1945-01-01T00:00:00Z"^^xsd:dateTime) && (?time0 <= "1946-01-01T00:00:00Z"^^xsd:dateTime))
+}
+
+######
+select ?translator ?translatorLabel ?work ?workLabel ?author ?authorLabel {  
+    ?work wdt:P655 ?translator;        
+          wdt:P50 ?author.    
+
+    ?author wdt:P2533 ?wid;          
+            wdt:P21 wd:Q6581072;          
+            wdt:P569 ?birth;            
+
+    filter (?birth > "1800-01-01"^^xsd:dateTime && ?birth < "1900-01-01"^^xsd:dateTime)
+
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,nl,fr". }
+}
+
+######
+
+#defaultView:Timeline
+SELECT ?album ?performerLabel ?albumLabel ?publication_date WHERE {
+  VALUES ?performer {
+      wd:Q936474
+      wd:Q207898
+    }
+   ?album wdt:P175 ?performer ;
+      wdt:P577 ?publication_date .
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#defaultView:Map
+SELECT ?item ?itemLabel ?_coordinates ?_image WHERE {
+  ?item wdt:P106 wd:Q36834;   # occupation: composer
+        wdt:P18 ?_image;   # with an image depicting them
+        wdt:P19/wdt:P625 ?_coordinates   # their birthplace, specifically the coordinates of their birthplace
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }  # labels in English
+}
+
+######
+#added before 2016-10
+
+# Each composer\u2019s most used tonality, with number of works in that tonality.
+# (If this is ambiguous \u2013 multiple tonalities with the same number \u2013 there are multiple results for one composer.)
+#
+# The SPARQL for this is an evil perversion of three subqueries (one of them nested in another).
+# To understand it, you have to go inside out\u2026 follow the numbers.
+
+SELECT ?composerLabel ?tonalityLabel ?count
+WHERE
+{
+  {
+    # 4. Group again, this time just by the composer.
+    #    We also select the highest count of a tonality.
+    #    Notice that we don\u2019t know what tonality this count is associated with \u2013 we\u2019ll get to that.
+    #    So now we have each composer, along with how often they used whatever tonality they used most.
+    SELECT ?composer (MAX(?count) AS ?count)
+    WHERE
+    {
+      {
+        # 2. Group by composer and tonality, so that for each composer and tonality, we get a count of how often the composer used this tonality.
+        SELECT ?composer ?tonality (COUNT(?composition) AS ?count)
+        WHERE
+        {
+          # 1. Extremely straightforward: the ?composition has the composer ?composer and the tonality ?tonality.
+          #    (I\u2019m not bothering with any \u201cinstance of\u201d because the presence of these two properties is a sufficient indicator of ?composition being a composition.)
+          ?composition wdt:P86 ?composer;
+                       wdt:P826 ?tonality.
+        }
+        GROUP BY ?composer ?tonality
+        HAVING(?count > 1) # 3. Limit that to counts > 1, because using a tonality once is hardly \u201cmost used\u201d.
+      }
+    }
+    GROUP BY ?composer
+  }
+  {
+    # 6. Identical to 2.
+    SELECT ?composer ?tonality (COUNT(?composition) AS ?count)
+    WHERE
+    {
+      # 5. Identical to 1.
+      ?composition wdt:P86 ?composer;
+                   wdt:P826 ?tonality.
+    }
+    GROUP BY ?composer ?tonality
+    HAVING(?count > 1) # 7. Identical to 3.
+  }
+  # 8. That\u2019s it. Wait, what?
+  #    From 4, we now have ?composer, any composer, and ?count, the count of how often they used whatever tonality they used most.
+  #    From 6, we also have a ?composer, as well as a ?tonality, and the count of how often they used that particular tonality.
+  #    The trick is that ?composer and ?count are the same variable in each subquery, and so now, when the two subqueries are joined,
+  #    we select only that ?tonality from 6 where the ?composer and the ?count are identical to those from 4 \u2013
+  #    that is, where this tonality was used as often as the composer\u2019s most-used tonality.
+  #    In other words, this must *be* the composer\u2019s most-used tonality (except when there are multiple tonalities with the same count).
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC(?count) # 9. Order by count (highest first), because the result isn\u2019t very meaningful for low counts (many compositions aren\u2019t on Wikidata or don\u2019t have a tonality statement).
+
+######
+#added before 2016-10
+
+#defaultView:Map
+SELECT ?label ?coord ?subj
+WHERE
+{
+   ?subj wdt:P170 wd:Q5593 .
+  OPTIONAL {?subj wdt:P276 ?loc .
+    ?loc wdt:P625 ?coord } .   
+   ?subj rdfs:label ?label filter (lang(?label) = "en")
+}
+
+######
+#added before 2016-10
+SELECT DISTINCT ?item ?itemLabel ?instanceLabel ?creatorLabel (YEAR(?date) as ?year) ?image
+WHERE
+{
+  ?item wdt:P180 wd:Q243 .
+  ?item wdt:P31 ?instance .
+  OPTIONAL { ?item wdt:P170 ?creator }
+  OPTIONAL { ?item wdt:P571 ?date }
+  OPTIONAL { ?item wdt:P18 ?image }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}
+ORDER BY ?itemLabel
+
+######
+#added before 2016-10
+#defaultView:ImageGrid
+SELECT *
+WHERE
+{
+  ?item wdt:P31 wd:Q3305213 .
+  ?item wdt:P170 wd:Q34661 .
+  ?item wdt:P18 ?pic .
+}
+
+######
+#added before 2016-10
+
+#Map of all the paintings for which we know a location with the count per location
+#defaultView:Map
+SELECT ?locationLabel ?coord (count(*) as ?count)
+WHERE
+{
+    ?painting wdt:P31 wd:Q3305213 .
+    ?painting wdt:P276 ?location .
+	?location wdt:P625 ?coord
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }      
+}
+GROUP BY ?locationLabel ?coord
+
+######
+#added before 2016-10
+
+SELECT
+  ?item
+  (SAMPLE (?itemL) AS ?title)
+  (SAMPLE (?y) AS ?year)
+  (SAMPLE (?typeL) AS ?type)
+  (group_concat(distinct ?materialL ; separator = ", ") as ?materials)
+  (SAMPLE (?collectionL) AS ?collection)
+  (SAMPLE (?img) AS ?image)
+{
+  SELECT ?item ?itemL (YEAR(?date) AS ?y) ?typeL ?collectionL ?img ?materialL
+  WHERE {
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL filter (lang(?itemL) = "en").
+    ?instance rdfs:label ?typeL filter (lang(?typeL) = "en").
+    OPTIONAL {
+      ?item wdt:P195 ?collection .
+      ?collection rdfs:label ?collectionL filter (lang(?collectionL) = "en").
+    }
+    OPTIONAL {
+      ?item wdt:P186 ?material .
+      ?material rdfs:label ?materialL filter (lang(?materialL) = "en").
+    }
+  }
+}
+GROUP BY ?item
+ORDER BY ?year ?item ?itemLabel
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?depicts (SAMPLE(?dL) AS ?depictsLabel) (COUNT(DISTINCT ?item) AS ?count)
+WHERE
+{
+	?item wdt:P180 ?depicts .
+	OPTIONAL { ?depicts rdfs:label ?dL	filter (lang(?dL) = "en")  }
+}
+GROUP BY ?depicts
+ORDER BY DESC(?count) ?depictsLabel
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?item ?itemLabel ?countryLabel ?placeLabel (YEAR(?date) as ?year) ?coords ?image
+WHERE
+{
+  ?item wdt:P31/wdt:P279* wd:Q860861 .
+  ?item wdt:P170 wd:Q123454 .
+  OPTIONAL { ?item wdt:P17 ?country . }
+  OPTIONAL { ?item wdt:P131 ?place . }
+  OPTIONAL { ?item wdt:P571 ?date . }
+  OPTIONAL { ?item wdt:P625 ?coords . }
+  OPTIONAL { ?item wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}
+ORDER BY ?itemLabel ?placeLabel
+
+######
+#defaultView:ImageGrid
+
+
+######
+
+# Make a list of the most used authority control properties for works for paintings
+SELECT ?propertyLabel ?propertyDescription (COUNT(?propertyclaim) AS ?count) WHERE {
+  ?item wdt:P31 wd:Q3305213 .
+
+  ?property wikibase:propertyType wikibase:ExternalId .
+  ?property wdt:P31 wd:Q19833377 .
+  ?property wikibase:claim ?propertyclaim .
+
+  ?item ?propertyclaim [] .
+	SERVICE wikibase:label {            # ... include the labels
+		bd:serviceParam wikibase:language "en" .
+	}  
+} GROUP BY ?propertyLabel ?propertyDescription ORDER BY DESC (?count)
+LIMIT 100
+
+######
+
+# Make a list of the most used authority control properties for people for painters
+SELECT ?propertyLabel ?propertyDescription ?count WHERE {
+	{
+		select ?propertyclaim (COUNT(*) AS ?count) where {
+			?item wdt:P106 wd:Q1028181 .
+			?item wdt:P31 wd:Q5 .
+			?item ?propertyclaim [] .
+		} group by ?propertyclaim
+	}
+	?property wikibase:propertyType wikibase:ExternalId .
+	?property wdt:P31 wd:Q19595382 .
+	?property wikibase:claim ?propertyclaim .
+	SERVICE wikibase:label {            # ... include the labels
+		bd:serviceParam wikibase:language "en" .
+	}
+} ORDER BY DESC (?count)
+LIMIT 100
+
+######
+
+# This returns 10 random painting images
+# RAND() returns one random number (cached like every query).
+# The string representation of the item and the random number are hashed.
+# This will give a complete different ordering every time you have a different random number.
+# You can change the LIMIT if you want to trigger a new random number
+#defaultView:ImageGrid
+SELECT ?item ?itemLabel ?image (MD5(CONCAT(str(?item),str(RAND()))) as ?random)  WHERE {
+  ?item wdt:P31 wd:Q3305213.
+  ?item wdt:P18 ?image.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en"}
+} ORDER BY ?random
+LIMIT 10
+
+######
+
+#Paintings by anonymous painters, but are related to some other painter
+#defaultView:BubbleChart
+SELECT ?creatorqualifierLabel (COUNT(?creatorqualifier) AS ?count) WHERE {
+  ?item wdt:P31 wd:Q3305213 .
+  ?item wdt:P170 wd:Q4233718 .
+  OPTIONAL { ?item p:P170 ?creatorstatement .
+             ?creatorstatement rdf:type	wikibase:BestRank .
+             ?creatorstatement ?qualifier ?creatorqualifier .
+             ?qualifierproperty wikibase:qualifier ?qualifier }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }         
+  } GROUP BY ?creatorqualifierLabel
+HAVING (?count > 2)
+LIMIT 20000
+
+######
+
+#Paintings by anonymous painters, types of relationships with other painters
+#defaultView:BubbleChart
+SELECT ?qualifierpropertyLabel (COUNT(?creatorqualifier) AS ?count) WHERE {
+  ?item wdt:P31 wd:Q3305213 .
+  ?item wdt:P170 wd:Q4233718 .
+  OPTIONAL { ?item p:P170 ?creatorstatement .
+             ?creatorstatement rdf:type	wikibase:BestRank .
+             ?creatorstatement ?qualifier ?creatorqualifier .
+             ?qualifierproperty wikibase:qualifier ?qualifier }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }         
+  } GROUP BY ?qualifierpropertyLabel
+HAVING (?count > 2)
+LIMIT 2000
+
+######
+
+# Get 10 paintings that have a link to RKDimages (P350)
+# Use the formatter URL (P1630) to construct the links to RKDimages
+#defaultView:ImageGrid
+SELECT ?item ?image ?rkdurl  WHERE {
+  wd:P350 wdt:P1630 ?formatterurl .
+  ?item wdt:P31 wd:Q3305213 .
+  ?item wdt:P18 ?image .
+  ?item wdt:P350 ?rkdid .
+  BIND(IRI(REPLACE(?rkdid, '^(.+)$', ?formatterurl)) AS ?rkdurl).
+  } LIMIT 10
+
+######
+#added before 2016-10
+
+SELECT ?item ?itemLabel ?placeLabel ?coords ?image
+WHERE
+{
+  ?item wdt:P31 wd:Q2977 .
+  ?item wdt:P131 ?place .
+  ?place wdt:P131 wd:Q90 .
+  OPTIONAL { ?item wdt:P625 ?coords . }
+  OPTIONAL { ?item wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "fr" . }
+} ORDER BY ?placeLabel ?itemLabel
+
+######
+#added before 2016-10
+
+SELECT DISTINCT
+  ?item
+  (SAMPLE (?titleL) AS ?title)
+  (group_concat(distinct ?creatorL ; separator = ", ") as ?creator)
+  (group_concat(distinct ?genreL ; separator = ", ") as ?genre)
+  (group_concat(distinct ?placeL ; separator = ", ") as ?place)
+  (group_concat(distinct ?arr ; separator = ", ") as ?arrondissement)
+  (SAMPLE (?img) AS ?image)
+  (SAMPLE (?coord) AS ?coordinates)
+WHERE
+{
+  SELECT ?item ?titleL ?creatorL ?genreL ?placeL ?arr ?img ?coord
+  WHERE {
+    # selecting items...
+    {
+      # items in Paris...
+      ?item wdt:P131 wd:Q90 .
+    } UNION {
+      # ...or in an arrondissement of Paris
+      ?item wdt:P131/wdt:P131* wd:Q90 .
+    }
+    # genre: public art
+    ?item wdt:P136 wd:Q557141 .
+   
+    # creators
+    OPTIONAL {
+      ?item wdt:P170 ?c.
+      ?c rdfs:label ?creatorL filter (lang(?creatorL) = "fr") .
+    }
+   
+    #genre
+    OPTIONAL {
+      {
+        ?item wdt:P136 ?g .
+        FILTER ( STR(?g) != 'http://www.wikidata.org/entity/Q557141')
+      } UNION {
+        ?item wdt:P31 ?g .
+      }
+      ?g rdfs:label ?genreL filter (lang(?genreL) = "fr") .
+    }
+   
+    # place
+    OPTIONAL {
+      ?item wdt:P276 ?p .
+      ?p rdfs:label ?placeL filter (lang(?placeL) = "fr") .
+    }
+   
+    # arrondissement
+    OPTIONAL {
+      ?item wdt:P131 ?a .
+      ?a wdt:P131 wd:Q90 .
+      ?a rdfs:label ?arrL filter (lang(?arrL) = "fr").
+      BIND(REPLACE(?arrL, '^([0-9]+).*$', "$1", "si") AS ?arr)
+    }
+
+######
+#added before 2016-10
+SELECT ?work ?title
+WHERE
+{
+  ?work wdt:P31/wdt:P279* wd:Q838948;
+        wdt:P1476 ?title.
+  FILTER(REGEX(?title, "^\\w*(\\w{3})(\\W+\\w*\\1)+$", "i") && !REGEX(?title, "^(\\w+)(\\W+\\1)+$", "i")).
+}
+ORDER BY STR(?title)
+
+######
+#added before 2016-10
+SELECT ?work ?title
+WHERE
+{
+  ?work wdt:P31/wdt:P279* wd:Q838948;
+        wdt:P1476 ?title.
+  FILTER(REGEX(STR(?title), "^(\\p{L})\\w+(?:\\W+\\1\\w+){2,}$", "i")).
+}
+ORDER BY STR(?title)
+
+######
+#added before 2016-10
+
+SELECT ?place ?placeLabel (COUNT(*) AS ?count) WHERE {
+  ?item wdt:P136 wd:Q557141 .
+  ?item wdt:P131 ?place .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}
+GROUP BY ?place ?placeLabel
+ORDER BY DESC(?count) ?placeLabel
+
+######
+#added before 2016-10
+
+#defaultView:Map
+SELECT ?creator ?creatorLabel ?placebirthLabel ?geoloc where {
+  ?item wdt:P31/wdt:P279* wd:Q838948 .  # \u0153uvre d\u2019art et ss-classe
+  ?item wdt:P608 wd:Q20980830 . # du projet Europeana 280
+  ?item wdt:P170 ?creator . # cr\u00e9ateur
+  ?creator wdt:P19 ?placebirth . # lieu de naissance
+  ?placebirth wdt:P625 ?geoloc . #coordonn\u00e9es g\u00e9o
+  SERVICE wikibase:label {
+       bd:serviceParam wikibase:language "fr,es,en" .
+    } 
+}
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?women ?womenLabel
+WHERE
+{
+       ?women wdt:P31 wd:Q5 .
+       ?women wdt:P21 wd:Q6581072 .
+       ?women wdt:P106/wdt:P279* wd:Q483501 . # artists
+       SERVICE wikibase:label {bd:serviceParam wikibase:language "fr,en" }
+}
+LIMIT 500
+
+######
+#added before 2016-10
+
+SELECT ?q ?qLabel
+WHERE
+{
+	?q wdt:P31 wd:Q15841920.
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+#added before 2017-02
+
+SELECT ?item ?itemLabel ?genderLabel (GROUP_CONCAT(DISTINCT ?occupationLabel; SEPARATOR=", ") AS ?occupations) (GROUP_CONCAT(DISTINCT ?countryLabel; SEPARATOR=", ") AS ?countries) ?death {
+   VALUES ?target_country { wd:Q16 wd:Q31 wd:Q39 wd:Q142 } . #countries: Canada, France, Switzerland, Belgium. Remove this line to get worldwide.
+  VALUES ?occupation { wd:Q483501 wd:Q36834 wd:Q639669 wd:Q753110 wd:Q488205 wd:Q49757 wd:Q4964182 wd:Q1281618 wd:Q36180 wd:Q482980 wd:Q1028181 wd:Q6625963 wd:Q28389 wd:Q1930187 wd:Q33999 wd:Q3282637 wd:Q81096 wd:Q201788 wd:Q18939491 wd:Q486748 wd:Q3658608 wd:Q214917 wd:Q11774202 wd:Q205375 } . #occupation: composer, poet, sculptor, writer, artist, painter, etc.
+   ?item wdt:P31 wd:Q5;
+               wdt:P21 ?gender;
+               wdt:P570 ?death;
+               wdt:P27 ?target_country;
+               wdt:P27 ?country;
+               wdt:P106 ?occupation .
+   FILTER( YEAR( ?death ) = 1966 ) .
+   SERVICE wikibase:label {
+       bd:serviceParam wikibase:language "fr,en,ru,el,es,fa" .
+       ?item rdfs:label ?itemLabel .
+       ?gender rdfs:label ?genderLabel .
+       ?occupation rdfs:label ?occupationLabel .
+       ?country rdfs:label ?countryLabel .
+   } .
+} GROUP BY ?item ?itemLabel ?genderLabel ?death ORDER BY ?itemLabel
+
+######
+#added before 2016-10
+#Locations of breweries in Germany
+#defaultView:Map
+select ?breweryLabel ?breweryDescription ?coord
+WHERE
+{
+	?brewery wdt:P31/wdt:P279* wd:Q131734 ;
+		wdt:P17 wd:Q183 ;
+		wdt:P625 ?coord .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en, de" .
+	}
+}
+
+######
+#added before 2016-10
+SELECT ?l
+WHERE {
+	wd:Q5571382 ?p wd:Q223243 .
+	?property ?ref ?p .
+	?property rdf:type wikibase:Property .
+	?property rdfs:label ?l FILTER (lang(?l) = "en")
+}
+
+######
+
+SELECT ?doi (count(?doi) as ?counts) WHERE {
+   ?statement prov:wasDerivedFrom ?ref . 
+   ?ref pr:P356 ?doi .
+   FILTER (CONTAINS(lcase(?doi), "figshare"))   
+}
+GROUP BY ?doi
+ORDER BY DESC(?counts)
+
+######
+
+SELECT DISTINCT ?wikiciteLabel ?doi  WHERE {
+   ?wikicite p:P356/ps:P356 ?doi .
+   ?statement prov:wasDerivedFrom ?ref . 
+   ?ref pr:P356 ?doi .
+   FILTER (CONTAINS(lcase(?doi), "figshare")) 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+
+SELECT DISTiNCT ?item ?itemLabel WHERE {
+   ?item ?p ?statement.
+   ?statement prov:wasDerivedFrom ?ref . 
+   ?ref ?prop wd:Q28061352 .
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+
+SELECT DISTINCT ?item ?itemLabel ?_PubMed_ID
+WHERE
+{
+  ?item wdt:P31 wd:Q13442814 ;
+        rdfs:label ?itemLabel .
+  OPTIONAL { ?item wdt:P698 ?_PubMed_ID. }
+  FILTER(CONTAINS(LCASE(?itemLabel), "zika"))
+  FILTER (LANG(?itemLabel)="en")
+}
+
+######
+
+
+SELECT ?short_author ?short_authorLabel (count(?item) as ?count)
+WHERE
+{
+  { ?item wdt:P921 wd:Q202864 . } UNION { ?item wdt:P921 wd:Q8071861 . }
+  {?item wdt:P2093 ?short_author .} UNION {?item wdt:P50 ?short_author .}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+GROUP BY ?short_author ?short_authorLabel
+ORDER BY DESC(?count)
+
+######
+#added before 2016-10
+SELECT ?item ?itemLabel ?reference  ?referenceType
+WHERE
+{
+  ?item wdt:P31 wd:Q13442814 #Scientific article
+  { ?item wdt:P921 wd:Q202864 } #Zika virus
+  UNION
+  { ?item wdt:P921 wd:Q8071861 } #Zika fever
+  ?reference ?referenceType ?item  #find references to item having any property and store reference type
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+SELECT DISTINCT ?pmid ?citation ?citationLabel
+WHERE
+{
+	VALUES ?predictor {p:P3354 p:P3355 p:P3356 p:P3357 p:P3358 p:P3359 }
+    ?item p:P3329 ?civicId  ;     
+          ?predictor ?predictor_value .
+    ?civicId ps:P3329 ?id .
+    ?predictor_value prov:wasDerivedFrom ?reference .
+    ?reference pr:P248 ?citation . 
+    ?citation wdt:P698 ?pmid ;
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+SELECT ?id ?item ?itemLabel ?referenceLabel
+WHERE
+{
+	{?item wdt:P3937 ?id } UNION
+        {?item wdt:P2410 ?id }
+        ?item wdt:P2860 ?reference .
+   
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+SELECT ?wpid ?item ?itemLabel ?referenceLabel
+WHERE
+{
+	?item wdt:P2410 ?wpid ;
+          wdt:P2860 ?reference ;
+   
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+SELECT ?reactome_id ?item ?itemLabel ?referenceLabel
+WHERE
+{
+	?item wdt:P3937  ?reactome_id ;
+          wdt:P2860 ?reference ;
+   
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+
+SELECT ?item ?itemLabel ?_PubMed_ID
+WHERE
+{
+  ?item wdt:P31 wd:Q13442814 ;
+        rdfs:label ?itemLabel .
+ 
+  FILTER(CONTAINS(LCASE(?itemLabel), "suriname"))
+  OPTIONAL { ?item wdt:P698 ?_PubMed_ID. }
+}
+
+######
+#added before 2016-10
+
+SELECT *
+WHERE
+{
+   ?disease ?p ?o ;
+            wdt:P699 ?doid.
+   ?o owl:sameAs ?sa .
+}
+
+######
+SELECT DISTINCT ?date_range ?date_update (count(?disease) as ?counts)
+                (GROUP_CONCAT(?disease ;separator = "; ") as ?diseases)
+                (GROUP_CONCAT(?do_id ;separator = "; ") as ?doids)
+{
+  ?disease p:P699/prov:wasDerivedFrom/pr:P813 ?date_update ;
+           wdt:P699 ?do_id .
+  BIND (now() - ?date_update as ?date_range)
+  FILTER (?date_range > 31)
+}
+GROUP BY ?date_range ?date_update
+ORDER BY DESC(?counts)
+
+######
+#added before 2016-10
+
+SELECT DISTINCT ?date_range ?date_update (count(?gene) as ?counts) (GROUP_CONCAT(?gene ;separator = "; ") as ?genes)  (GROUP_CONCAT(?ncbi_gene ;separator = "; ") as ?gene_ids) WHERE {
+  ?gene p:P351 ?ncbigene ;
+           wdt:P351 ?ncbi_gene .
+  ?ncbigene prov:wasDerivedFrom ?derivedFrom  .
+  ?derivedFrom pr:P813 ?date_update .
+  BIND (now() - ?date_update as ?date_range)
+  FILTER (?date_range > 31)
+  }
+GROUP BY ?date_range ?date_update
+ORDER BY DESC(?counts)
+
+######
+
+#Search for labels in other languages that do not exist in a target language
+#Can be input for Q29032512
+SELECT ?item ?itemLabel ?itemDescription WHERE {
+ ?item wdt:P31 wd:Q5.  #instance of human
+ ?item wdt:P27 wd:Q31. #country of citizenship Belgium
+
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,fr,en,de,it,es,no,pt". }
+ FILTER(NOT EXISTS {
+   ?item rdfs:label ?lang_label.
+   FILTER(LANG(?lang_label) = "it") #with missing Italian label
+ })
+}
+ORDER BY ?itemLabel
+######
+
+#Search for missing descriptions in a target language.
+#Can be input for Q29032512
+SELECT ?item ?itemLabel ?genderLabel ?occupationLabel ?domainLabel ?positionLabel ?itemDescription WHERE {
+  ?item wdt:P31 wd:Q5.  # instance of human
+  ?item wdt:P27 wd:Q31. # country of citizenship Belgium
+optional{ ?item wdt:P21 ?gender.}
+optional{ ?item wdt:P106 ?occupation.}
+optional{ ?item wdt:P101 ?domain.}
+optional{ ?item wdt:P39 ?position.}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,fr,en,de,it,es,pt,no". }
+  FILTER(NOT EXISTS {
+    ?item schema:description ?itemdesc.
+    FILTER(LANG(?itemdesc) = "nl") # with missing Dutch description
+  })
+}
+order by ?itemLabel
+######
+# Identify redirects using item property owl:sameAs
+
+SELECT (REPLACE(STR(?item),".*Q","Q") AS ?qid) (REPLACE(STR(?tgt),".*Q","Q") AS ?tgtQid) ?tgtLabel 
+WHERE {
+   VALUES (?item) {
+      (wd:Q6636058)   (wd:Q8989284)  (wd:Q243634)   (wd:Q13383295)
+      (wd:Q659516)    (wd:Q1020776)  (wd:Q10124662) (wd:Q9066399)
+      (wd:Q12309669)  (wd:Q16033883) (wd:Q733744)   (wd:Q226569)
+      (wd:Q14210256)  (wd:Q408041)   (wd:Q750594)   (wd:Q11075312)
+     }
+  ?item owl:sameAs ?tgt .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+ORDER BY ?qid
+
+######
+#added before 2016-10
+
+SELECT * WHERE {
+  {
+    SELECT ?id (COUNT(?obj) AS ?count) (GROUP_CONCAT(?obj; SEPARATOR = " , ") AS ?items) WHERE { ?obj wdt:P345 ?id. }
+    GROUP BY ?id
+  }
+  FILTER(?count > 1)
+}
+
+######
+#added before 2016-10
+
+SELECT ?x WHERE {
+  ?x wdt:P131 ?x .
+}
+
+######
+#added before 2016-10
+SELECT ?h ?date
+WHERE
+{
+	?h wdt:P31 wd:Q5 .
+	?h wdt:P569 ?date .
+	OPTIONAL {?h wdt:P570 ?d }
+	FILTER (?date < "1880-01-01T00:00:00Z"^^xsd:dateTime)
+	FILTER (!bound(?d))
+}
+LIMIT 100
+
+######
+#added before 2016-10
+SELECT ?entity ?claim ?prop
+WHERE
+{
+	?prop wdt:P31 wd:Q15720608 .
+	?prop wikibase:reference ?propClaim .
+	?ref ?propClaim ?o .
+	?statement prov:wasDerivedFrom ?ref .
+	?entity ?claim ?statement .
+}
+LIMIT 100
+
+######
+#added before 2016-10
+
+SELECT ?item ?body ?globe
+WHERE {
+?item wdt:P376 ?body .
+?item p:P625/psv:P625/wikibase:geoGlobe ?globe .
+filter (?globe != ?body) .
+} LIMIT 30
+
+######
+#added before 2016-10
+SELECT ?property ?alias ?occurences
+WHERE
+{
+  hint:Query hint:optimizer "None" .
+
+  {
+    SELECT ?alias (COUNT (?alias) as ?occurences) WHERE {	
+      ?tmp rdf:type wikibase:Property .
+      ?tmp skos:altLabel ?alias FILTER (LANG (?alias) = "en")
+    } GROUP BY ?alias
+  }
+
+  ?property rdf:type wikibase:Property .
+  ?property skos:altLabel ?alias FILTER (?occurences > 1) .
+}
+ORDER BY ?alias
+
+######
+#added before 2016-10
+SELECT DISTINCT ?item ?itemLabel
+WHERE
+{
+	?item wdt:P106 wd:Q33999 .
+	?item wdt:P21 wd:Q6581072 .
+	OPTIONAL { ?item schema:description ?itemDescription  }
+	FILTER (!BOUND(?itemDescription))
+	?item wdt:P31 wd:Q5 .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "es"}
+}
+LIMIT 111
+
+######
+#added before 2016-10
+SELECT ?item ?itemLabel (COUNT(distinct ?sitelink) as ?count)
+WHERE
+{
+	?item wdt:P31 wd:Q5 .
+	?item wdt:P27 wd:Q142 .
+	?sitelink schema:about ?item .
+	FILTER EXISTS { ?wen schema:about ?item . ?wen schema:inLanguage "en" }
+	FILTER NOT EXISTS { ?wfr schema:about ?item . ?wfr schema:inLanguage "fr" }
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "fr,en" .
+	}
+}
+GROUP BY ?item ?itemLabel
+ORDER BY DESC(?count)
+
+######
+#added before 2016-10
+SELECT ?wdLabel ?wdPLabel ?valueLabel ?wd ?wdP ?wds ?value
+WHERE
+{
+	hint:Query hint:optimizer "None" .
+	?wds wikibase:rank wikibase:DeprecatedRank .
+	?wd ?p ?wds .
+	?wds ?v ?value .
+	?wdP wikibase:statementProperty ?v .
+	?wdP wikibase:claim ?p .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+LIMIT 100
+
+######
+#added before 2016-10
+
+# Actors whose Spanish label ends with \u201c (actor)\u201d.
+# This is almost certainly imported from the Wikipedia label, which needs to be unique (distinguish between John Doe the actor, John Doe the author, etc.).
+# Wikidata labels have no such restrictions, and therefore should contain no such disambiguatory additions.
+# Most likely, all these \u201c (actor)\u201d suffixes can be removed.
+# (This concept obviously applies equally to other professions and languages.)
+SELECT ?person ?label (LANG(?label) AS ?lang)
+WHERE
+{
+  ?person wdt:P31 wd:Q5;
+          wdt:P106 wd:Q33999;
+          rdfs:label ?label.
+  FILTER(LANG(?label) = "es").
+  FILTER(STRENDS(?label, " (actor)")).
+}
+
+######
+#added before 2016-10
+
+SELECT ?item ?label
+WHERE
+{
+  ?item rdfs:label ?label.
+  FILTER CONTAINS(?label, "&quot;").
+}
+LIMIT 1
+
+######
+#added before 2016-10
+
+SELECT ?person ?label (LANG(?label) AS ?lang)
+WHERE
+{
+  ?person wdt:P31 wd:Q5;
+          rdfs:label ?label.
+  FILTER(LANG(?label) IN ("en", "es", "fr", "de")). # tweak to taste
+  FILTER(CONTAINS(?label, "(")).
+}
+LIMIT 10
+
+######
+#added before 2016-10
+
+SELECT ?country ?countryLabel ?population
+WHERE
+{
+  ?country wdt:P1082 ?population.
+  FILTER(?population - ROUND(?population) != 0).
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY ?population
+
+######
+#added before 2016-10
+
+SELECT ?item ?country ?itemLabel ?countryLabel
+WHERE
+{
+  ?item wdt:P17 ?country.
+  MINUS { ?country wdt:P31/wdt:P279* wd:Q7275. }     # excludes normal countries
+  MINUS { ?country wdt:P31/wdt:P279* wd:Q183366. }   # excludes Scotland
+  MINUS { ?country wdt:P31/wdt:P279* wd:Q15893266. } # excludes Brittany
+  MINUS { ?country wdt:P31/wdt:P279* wd:Q1048835. }  # excludes the European Union
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+LIMIT 1000
+
+######
+#added before 2016-10
+
+SELECT ?material ?painting ?materialLabel ?paintingLabel
+WHERE
+{
+  ?painting wdt:P31/wdt:P279* wd:Q3305213;
+            p:P186 [ ps:P186 ?material; pq:P518 wd:Q861259 ].
+  ?material wdt:P31 wd:Q16521.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+
+SELECT ?item ?label
+WHERE
+{
+  ?item schema:description "introduza uma descri\u00e7\u00e3o"@pt.
+  OPTIONAL {
+    ?item rdfs:label ?label.
+    FILTER(LANG(?label) = "pt").
+  }
+}
+
+######
+#added before 2016-10
+
+SELECT ?thingLabel ?classLabel ?thing ?class
+WHERE
+{
+	?thing wdt:P31 ?class.
+	?thing wdt:P279 ?class.
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+#added before 2016-10
+
+SELECT ?item ?itemLabel
+WHERE
+{
+?item wdt:P18 <http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg>
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+LIMIT 100
+
+######
+#added before 2016-10
+
+
+######
+#added before 2016-10
+
+SELECT ?person ?personLabel ?duration
+WHERE
+{
+  ?person wdt:P31 wd:Q5;
+          ?p [ pq:P580 ?start; pq:P582 ?end ].
+  BIND(ROUND((?end - ?start)/365.2425) AS ?duration).
+  FILTER(?duration > 100).
+  FILTER(?p != p:P119) . # "place of burial" can be an exception
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC(?duration)
+
+######
+#added before 2016-10
+
+SELECT ?prop (count(?prop) as ?counts) WHERE
+{SELECT DISTINCT ?item ?prop WHERE {
+   ?item wdt:P279 wd:Q7187 ;
+         wdt:P703 wd:Q5 ;
+         ?prop ?statement .
+  FILTER(!(regex(str(?prop), "http://www.wikidata.org/prop/direct/" ) ))
+  FILTER(regex(str(?prop), "http://www.wikidata.org/prop/" ) )
+  FILTER NOT EXISTS {
+               ?item ?prop ?statement .
+               ?statement prov:wasDerivedFrom ?derivedFrom  .}
+}
+}
+GROUP BY ?prop
+ORDER BY desc(?counts)
+
+######
+#added before 2016-10
+
+SELECT ?capital ?capitalLabel ?ofLabel ?start ?end
+WHERE
+{
+  ?capital p:P31 ?capitalStat.
+  ?capitalStat ps:P31 wd:Q5119.
+  OPTIONAL { ?capitalStat pq:P642 ?of. }
+  OPTIONAL { ?capitalStat pq:P580 ?start. }
+  OPTIONAL { ?capitalStat pq:P582 ?end. }
+  MINUS { [] wdt:P36 ?capital. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+######
+#added before 2016-10
+
+#All CAS registry numbers in Wikidata
+SELECT DISTINCT ?compound ?compoundLabel ?formula ?inchikey ?chemspider ?pubchem WHERE {
+  ?compound wdt:P31 wd:Q11173 .
+  OPTIONAL { ?compound wdt:P231 ?cas . }
+  OPTIONAL { ?compound wdt:P274 ?formula . }
+  OPTIONAL { ?compound wdt:P235 ?inchikey . }
+  OPTIONAL { ?compound wdt:P661 ?chemspider . }
+  OPTIONAL { ?compound wdt:P662 ?pubchem . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  FILTER(!BOUND(?cas))
+}
+
+######
+# Human settlements without an article in the English Wikipedia
+#defaultView:Map
+SELECT DISTINCT ?settlement ?settlementLabel ?coor WHERE {
+  VALUES ?type {wd:Q3957 wd:Q515 wd:Q532 wd:Q486972}
+  ?settlement wdt:P31 wd:Q3957 ;
+              wdt:P625 ?coor .   
+  ?article schema:about ?settlement .
+  FILTER NOT EXISTS { ?wen schema:about ?settlement ; schema:inLanguage "en" }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+
+######
+#added before 2016-10
+
+# Human settlements without an article in any language version of Wikipedia
+#defaultView:Map
+SELECT DISTINCT ?city ?cityLabel ?coor WHERE {
+    VALUES ?type { wd:Q3957 wd:Q515 wd:Q532 wd:Q486972 } .
+    ?city wdt:P31 wd:Q3957 ;
+          wdt:P625 ?coor .
+
+    FILTER NOT EXISTS {?article schema:about ?city } .
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } .
+}
+
+######
+#added before 2016-10
+
+SELECT ?image (count(?image) AS ?cnt) (group_concat(?item) AS ?items) {
+  ?item wdt:P18 ?image
+  } group by ?image having (?cnt>10)
+
+######
+ 
+SELECT ?image ?speciesLabel ?mayorLabel ?placeLabel WHERE {
+ 
+ VALUES ?species {wd:Q144 wd:Q146 wd:Q780}
+ ?mayor wdt:P31 ?species .
+ ?mayor p:P39 ?node .
+ ?node ps:P39 wd:Q30185 .
+ ?node pq:P642 ?place .
+ ?mayor wdt:P18 ?image
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+ 
+SELECT ?image ?speciesLabel ?mayorLabel ?placeLabel WHERE {
+ ?species wdt:P279* wd:Q622852 .
+ ?mayor wdt:P31 ?species . 
+ 
+ ?mayor p:P39 ?node .
+ ?node ps:P39 wd:Q30185 .
+ ?node pq:P642 ?place .
+ optional{?mayor wdt:P18 ?image}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+######
+ 
+SELECT DISTINCT ?painter ?painterLabel (count (DISTINCT ?exhibition) as ?exhibition_count) 
+(group_concat(DISTINCT ?exhibitionLabel; separator=", ") as ?exhibitions)
+WHERE {
+  ?painter wdt:P106 wd:Q1028181 . #give me all people with occupation (P106) painter (Q1028181)
+  ?painter wdt:P135 wd:Q40415 . #who belonged to the impressionist (Q40415) movement (P135)  
+  ?painting wdt:P170  ?painter . #the paintings created by (P170) the painter
+  ?painting wdt:P608 ?exhibition . #have an exhibition history (P608) at an exhibition
+  ?exhibition rdfs:label ?exhibitionLabel . #give me the english Labels of these exhibitions, if possible
+  FILTER (lang(?exhibitionLabel) = "en") 
+
+  SERVICE wikibase:label {bd:serviceParam wikibase:language "en".}
+} GROUP BY ?painter ?painterLabel
+
+######
+
+# What is or are the lowest common ancestor(s) of a 
+# church, a mosque, a synagogue and a palace in the 
+# Wikidata ontology ? Answer : an architectural structure
+
+SELECT ?lcs ?lcsLabel WHERE {
+    ?lcs ^wdt:P279* wd:Q32815, wd:Q34627, wd:Q16970, wd:Q16560 .
+    filter not exists {
+    ?sublcs ^wdt:P279* wd:Q32815, wd:Q34627, wd:Q16970, wd:Q16560 ;
+          wdt:P279 ?lcs . }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en" . }
+  }
+
+######

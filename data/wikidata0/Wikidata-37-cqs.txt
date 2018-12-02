@@ -1,0 +1,150 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q8513 .
+    ?item rdfs:label ?name .
+    ?item wdt:P275 ?licenseItem .
+    ?licenseItem rdfs:label ?license .
+  }
+WHERE
+  { FILTER ( lang(?name) = "en" )
+    { FILTER ( lang(?license) = "en" )
+      ?item     wdt:P275    ?licenseItem .
+      ?licenseItem  rdfs:label  ?license
+    }
+    ?item  wdt:P31     wd:Q8513 ;
+           rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q8513 .
+    ?item rdfs:label ?name .
+    ?item wdt:P275 ?licenseItem .
+    ?licenseItem rdfs:label ?license .
+  }
+WHERE
+  { FILTER ( ! ( lang(?name) = "en" ) )
+    { FILTER ( lang(?license) = "en" )
+      ?item     wdt:P275    ?licenseItem .
+      ?licenseItem  rdfs:label  ?license
+    }
+    ?item  wdt:P31     wd:Q8513 ;
+           rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q8513 .
+    ?item rdfs:label ?name .
+    ?item wdt:P275 ?licenseItem .
+    ?licenseItem rdfs:label ?license .
+  }
+WHERE
+  { FILTER ( lang(?name) = "en" )
+    { FILTER ( ! ( lang(?license) = "en" ) )
+      ?item     wdt:P275    ?licenseItem .
+      ?licenseItem  rdfs:label  ?license
+    }
+    ?item  wdt:P31     wd:Q8513 ;
+           rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q8513 .
+    ?item rdfs:label ?name .
+    ?item wdt:P275 ?licenseItem .
+    ?licenseItem rdfs:label ?license .
+  }
+WHERE
+  { FILTER ( ! ( lang(?name) = "en" ) )
+    { FILTER ( ! ( lang(?license) = "en" ) )
+      ?item     wdt:P275    ?licenseItem .
+      ?licenseItem  rdfs:label  ?license
+    }
+    ?item  wdt:P31     wd:Q8513 ;
+           rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q8513 .
+    ?item rdfs:label ?name .
+    ?item wdt:P275 ?licenseItem .
+    ?licenseItem rdfs:label ?license .
+  }
+WHERE
+  { FILTER ( lang(?name) = "en" )
+    FILTER NOT EXISTS { ?item     wdt:P275    ?licenseItem .
+                        ?licenseItem  rdfs:label  ?license
+                        FILTER ( lang(?license) = "en" )
+                      }
+    ?item  wdt:P31     wd:Q8513 ;
+           rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q8513 .
+    ?item rdfs:label ?name .
+    ?item wdt:P275 ?licenseItem .
+    ?licenseItem rdfs:label ?license .
+  }
+WHERE
+  { FILTER ( ! ( lang(?name) = "en" ) )
+    FILTER NOT EXISTS { ?item     wdt:P275    ?licenseItem .
+                        ?licenseItem  rdfs:label  ?license
+                        FILTER ( lang(?license) = "en" )
+                      }
+    ?item  wdt:P31     wd:Q8513 ;
+           rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------

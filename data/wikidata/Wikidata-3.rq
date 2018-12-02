@@ -1,0 +1,1 @@
+PREFIX schema: <http://schema.org/> PREFIX p: <http://www.wikidata.org/prop/> PREFIX wd: <http://www.wikidata.org/entity/>  SELECT ?sitelink WHERE  {   BIND(wd:Q52 AS ?wikipedia)   ?sitelink schema:about ?wikipedia .   FILTER REGEX(STR(?sitelink), ".wikipedia.org/wiki/") . } 

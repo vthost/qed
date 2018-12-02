@@ -1,0 +1,13 @@
+config& qs& qsize &cqs& cqs-with-data& triples\\hline
+&6&2&3&85&11\\\hline
+BI&1&3&8&50&22\\\hline
+FI&11&4&4&89&17\\\hline
+HA&1&1&2&50&2\\\hline
+OP&3&5&4&81&18\\\hline
+BI,FI&4&3&6&96&31\\\hline
+FI,OP&8&2&2&100&11\\\hline
+BI,FI,OP&1&6&1&100&12\\\hline
+BI,FI,VA&1&1&1&100&2\\\hline
+BI,OP,UN&1&3&3&100&9\\\hline
+BI,FI,OP,UN&2&5&6&63&15\\\hline
+FI,HA,OP,UN&1&7&11&27&28\\\hline

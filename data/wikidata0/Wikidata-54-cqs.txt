@@ -1,0 +1,22 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    wd:P350 wdt:P1630 ?formatterurl .
+    ?item wdt:P31 wd:Q3305213 .
+    ?item wdt:P18 ?image .
+    ?item wdt:P350 ?rkdid .
+  }
+WHERE
+  { wd:P350  wdt:P1630  ?formatterurl .
+    ?item    wdt:P31    wd:Q3305213 ;
+             wdt:P18    ?image ;
+             wdt:P350   ?rkdid
+    BIND(iri(replace(?rkdid, "^(.+)$", ?formatterurl)) AS ?rkdurl)
+  }
+LIMIT   2
+
+----------------------------------------------

@@ -1,0 +1,30 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?obj wdt:P345 ?id .
+  }
+WHERE
+  { FILTER ( ?count > 1 )
+    { ?obj  wdt:P345  ?id }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?obj wdt:P345 ?id .
+  }
+WHERE
+  { FILTER ( ! ( ?count > 1 ) )
+    { ?obj  wdt:P345  ?id }
+  }
+LIMIT   2
+
+----------------------------------------------
