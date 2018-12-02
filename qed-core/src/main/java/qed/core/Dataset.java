@@ -1,16 +1,28 @@
 package qed.core;
 
-public enum Dataset {
-	DBPEDIA ("http://dbpedia.org", "http://localhost:8080/sparql"),
-	GEODATA ("http://linkedgeodata.org", "http://linkedgeodata.org/sparql"),
-//	SEMANTIC_WEB ("http://data.semanticweb.org", "http://www.scholarlydata.org/sparql/"),
-//	BM ( "http://bm.rkbexplorer.com", "https://collection.britishmuseum.org/resource/sparql"),
-	WIKIDATA ("","https://query.wikidata.org/bigdata/namespace/wdq/sparql");
+public class Dataset {
 	
-	public String graphUri = null;
-	String endpoint = null;
-	private Dataset(String graphUri, String endpoint) {
-		this.graphUri = graphUri;
+	private String name = null;
+	private String endpoint = null;//where to find data
+	
+	public Dataset(String name, String endpoint) {
+		this.setName(name);
+		this.setEndpoint(endpoint);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEndpoint() {
+		return endpoint;
+	}
+
+	public void setEndpoint(String endpoint) {
 		this.endpoint = endpoint;
 	}
 

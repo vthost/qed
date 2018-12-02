@@ -10,7 +10,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -39,7 +38,7 @@ import org.apache.jena.vocabulary.RDFS;
 
 public class Utils implements Constants {
 	
-	public static String DATA_DIR =  System.getProperty("user.dir")+ File.separator +".."+File.separator  + "data" + File.separator;	
+//	public static String DATA_DIR =  System.getProperty("user.dir")+ File.separator +".."+File.separator  + "data" + File.separator;	
 
 //	private static void deleteDir(File file) {
 //		
@@ -54,6 +53,11 @@ public class Utils implements Constants {
 //	    file.delete();
 //	}
 	
+	public static String toString(Feature[] config) {
+		return String.join("_", Arrays.asList(config).
+				stream().map(Feature::toString).map(String::toLowerCase).collect(Collectors.toList()));
+	}
+	
 	public static File[] listDirectories(File directory) {
 		return directory.listFiles(
 				(current, name) -> new File(current+File.separator+name).isDirectory());
@@ -65,9 +69,9 @@ public class Utils implements Constants {
 	}
 	
 //	make sure that there is an empty data directory 
-	public static void cleanDataDir() {
+	public static File makeDir(String path) {
 		
-		File f = new File(DATA_DIR);
+		File f = new File(path);
 		if(f.exists()) {
 			try {
 				FileUtils.deleteDirectory(f);
@@ -75,13 +79,15 @@ public class Utils implements Constants {
 				e.printStackTrace();
 			}
 		}
-		new File(DATA_DIR).mkdir();
+		File dir = new File(path);
+		dir.mkdir();
+		return dir;
 	}
 	
-//	make sure that there is a (clean) directory for each name in config
-	public static File cleanDataSubDir(Feature[] config) {
+//	make sure that there is a (clean) directory for the given config
+	public static File makeSubDir(String path, Feature[] config) {
 
-		String p = DATA_DIR + (config == null ? "data" : toString(config)) + File.separator;
+		String p = path + (config == null ? "data" : toString(config)) + File.separator;
 		
 		File f = new File(p);
 		if(f.exists()) {//should not be the case where we use this method currently
@@ -97,7 +103,7 @@ public class Utils implements Constants {
 		return f;
 	}
 	
-//	do not delete files with extensions
+//	delete files with extensions in delExtensions
 	public static void cleanDir(File directory, String[] delExtensions) {
 		
 		for(File f: directory.listFiles(
@@ -107,58 +113,48 @@ public class Utils implements Constants {
 		}
 	}
 	
-	public static String toString(Feature[] config) {
-		return String.join("_", Arrays.asList(config).
-				stream().map(Feature::toString).map(String::toLowerCase).collect(Collectors.toList()));
-	}
-	
-//	public static String getConfigTestsName(String config) {
-//		return config + " test cases";
-//	}
-	
-//	public static String getTestName(String config, String lsqId) {
-//		return config + " semantics: " + lsqId;
-//	}
 
-	public static String getQueryId(String lsqIdUrl) {
-		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf(File.separator) + 1);
-	}
+//
+//	public static String getQueryId(String lsqIdUrl) {
+//		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf(File.separator) + 1);
+//	}
 	
-	public static String getQueryIdUrl(String lsqId) {
-		return LSQR_RESOURCE_URI + lsqId;
-	}
+//	public static String getQueryIdUrl(String lsqId) {
+//		return LSQR_RESOURCE_URI + lsqId;
+//	}
 
 	
 //	public static String getQueryFilePath(String lsqIdUrl, String[] config) {
 //		return DATA_DIR + (config == null ? "" : String.join("_", config) + File.separator) + 
 //				getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
 //	}
-	public static String getQueryFileName(String lsqIdUrl) {
-		return getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
-	}
+
 	
-	public static String getQueryIdFromFileName(String queryFileName) {
+	public static String getQueryIdFromQueryFileName(String queryFileName) {
 		return queryFileName.replace(QUERY_FILE_EXT, "");
 	}
 	
-	public static String getConstructQueriesFileName(String lsqIdUrl) {
-		return getQueryId(lsqIdUrl) + CONSTRUCT_QUERIES_FILE_EXT;
+	public static String getQueryFileName(String qid) {
+		return qid + QUERY_FILE_EXT;
 	}
 	
-	public static String getQueryDataFileName(String lsqIdUrl) {
-		return getQueryId(lsqIdUrl) + QUERY_DATA_FILE_EXT;
+	public static String getConstructQueriesFileName(String qid) {
+		return qid + CONSTRUCT_QUERIES_FILE_EXT;
 	}
 	
-	public static String getQueryResultFileName(String lsqIdUrl) {
-		return getQueryId(lsqIdUrl) + QUERY_RESULT_FILE_EXT;
+	public static String getDataFileName(String qid) {
+		return qid + DATA_FILE_EXT;
 	}
 	
-	public static void writeQueryFile(File directory, String lsqIdUrl, String query) {
+	public static String getResultFileName(String qid) {
+		return qid + RESULT_FILE_EXT;
+	}
+	
+	public static void writeQueryFile(File directory, String qid, String query) {
 
 		try {
-			String p = directory == null ? Utils.DATA_DIR : directory.getPath() + File.separator;
-			
-			FileWriter writer = new FileWriter(p + Utils.getQueryFileName(lsqIdUrl));
+
+			FileWriter writer = new FileWriter(directory.getPath() + File.separator + Utils.getQueryFileName(qid));
 //		  	writer.write(lsqIdUrl);
 //		  	writer.write("\n");
 //		  	using the factory we get a formatting that is more readable. 
@@ -170,7 +166,51 @@ public class Utils implements Constants {
 		}
 	}
 	
+	public static void writeConstructQueriesFile(File directory, String qid, List<Query> queries) {
 
+		try {
+			FileWriter writer = new FileWriter(directory.getPath() + File.separator + getConstructQueriesFileName(qid));
+		  	for (Query query : queries) {
+		  		writer.write(query + "\n----------------------------------------------\n"); 
+			}
+		  	writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+//	extend existing file
+	public static int writeDataFile(File directory, String qid, Model m) {
+
+		long size = 0;
+		try {
+			String path = directory.getPath() + File.separator + getDataFileName(qid);
+			if(new File(path).isFile())
+				m.read(path);
+
+			FileWriter writer = new FileWriter(path);
+			m.write(writer, "TURTLE");
+			size = m.size();
+    	  		writer.close();
+    	  	
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return (int) size;
+	}
+	
+	public static void writeResultFile(File directory, String qid, ResultSet rs) {
+
+		try {
+			ResultSetFormatter.output(new FileOutputStream(
+					directory.getPath() + File.separator + getResultFileName(qid)), 
+					rs, ResultsFormat.FMT_RDF_TURTLE);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void mergeStatisticsFiles(String path){
 		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail.txt")) {		
 				  	
@@ -215,64 +255,6 @@ public class Utils implements Constants {
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
-		}
-	}
-	
-	public static void writeConstructQueriesFile(File directory, String lsqIdUrl, List<Query> queries) {
-
-		try {
-			FileWriter writer = new FileWriter(directory.getPath() + File.separator + getConstructQueriesFileName(lsqIdUrl));
-		  	for (Query query : queries) {
-		  		writer.write(query + "\n----------------------------------------------\n"); 
-			}
-		  	writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-//	extend existing file
-	public static int writeQueryDataFile(File directory, String lsqIdUrl, Model m) {
-
-		long size = 0;
-		try {
-			String path = directory.getPath() + File.separator + getQueryDataFileName(lsqIdUrl);
-			if(new File(path).isFile())
-				m.read(path);
-
-			FileWriter writer = new FileWriter(path);
-			m.write(writer, "TURTLE");
-			size = m.size();
-    	  		writer.close();
-    	  	
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return (int) size;
-	}
-	
-//	public static void writeQueryDataFile2(File directory, String lsqIdUrl, Dataset dataset) {
-//
-//		String path = directory.getPath() + File.separator + getQueryDataFileName(lsqIdUrl);
-//		
-//		try {
-//			RDFDataMgr.write(new FileOutputStream(path), dataset, Lang.TURTLE);
-//			
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		}
-//
-//	}
-	
-	public static void writeQueryResultFile(File directory, String lsqIdUrl, ResultSet rs) {
-
-		try {
-			ResultSetFormatter.output(new FileOutputStream(
-					directory.getPath() + File.separator + getQueryResultFileName(lsqIdUrl)), 
-					rs, ResultsFormat.FMT_RDF_TURTLE);
-			
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
 	}
 	
@@ -424,9 +406,15 @@ System.out.println(ks1);
 		
 	}
 	
+	public static void finalizeStatistics(String path, int features) { 
+		mergeStatisticsFiles(path);
+		integrateGenerationStatistics(path);
+		statsSummary(path, features);
+	}
+	
 
 //	one simple in each subdir and manifest-all.ttl
-	public static void writeManifestFiles() { //, String lsqId) {
+	public static void writeManifestFiles(String path, String qbaseURI) { //, String lsqId) {
 
 		String mfURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest/";
 		String qtURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-query/";
@@ -445,7 +433,7 @@ System.out.println(ks1);
 		Property query = ResourceFactory.createProperty(qtURI, "query"); 
 		Property data = ResourceFactory.createProperty(qtURI, "data"); 
 		
-		File[] dirs = listDirectories(new File(DATA_DIR));
+		File[] dirs = listDirectories(new File(path));
 		
 		for(File f: dirs) {		
 			//create one manifest file for each test config
@@ -469,16 +457,16 @@ System.out.println(ks1);
 			for(File qf: f.listFiles(
 					(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT))) {
 
-				String lsqId = getQueryIdFromFileName(qf.getName());
-				String lsqIdUrl = getQueryIdUrl(lsqId);
-				
-				Resource test = m.createResource(dummyURI+"dawg-"+config+"-"+lsqId).
+				String qid = getQueryIdFromQueryFileName(qf.getName());
+				String qidUrl = qbaseURI + qid;
+//				TODO test if below we neeed uris insead iof qids
+				Resource test = m.createResource(dummyURI+"dawg-"+config+"-"+qid).
 						addProperty(RDF.type, queryEvaluationTest).
-						addProperty(name, config + " semantics: " + getQueryIdFromFileName(qf.getName())).
+						addProperty(name, config + " semantics: " + getQueryIdFromQueryFileName(qf.getName())).
 						addProperty(action, m.createResource().
-								addProperty(query, m.createResource(getQueryFileName(lsqIdUrl))).
-								addProperty(data, m.createResource(getQueryDataFileName(lsqIdUrl)))).							
-						addProperty(result, m.createResource(getQueryResultFileName(lsqIdUrl)));
+								addProperty(query, m.createResource(getQueryFileName(qid))).
+								addProperty(data, m.createResource(getDataFileName(qid)))).							
+						addProperty(result, m.createResource(getResultFileName(qid)));
 	//							to describe syntax tree
 	//							test.addProperty(RDFS.comment, );
 	//							to add instance of dawgt:Approved
@@ -491,7 +479,7 @@ System.out.println(ks1);
 			
 			try {
 				m.write(new FileOutputStream(
-						DATA_DIR + f.getName() + File.separator + MANIFEST_FILE_NAME),
+						path + f.getName() + File.separator + MANIFEST_FILE_NAME),
 						"TURTLE");
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
@@ -515,7 +503,7 @@ System.out.println(ks1);
 		
 		try {
 			m.write(new FileOutputStream(
-					Utils.DATA_DIR + MANIFEST_EVALUATION_FILE_NAME),
+					path + MANIFEST_EVALUATION_FILE_NAME),
 					"TURTLE");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -527,7 +515,7 @@ System.out.println(ks1);
 	public static String[] readQueryFile(File f) {
 		try {
 			Scanner s = new Scanner(f);
-			String id = getQueryIdFromFileName(f.getName()) ;//s.nextLine();
+			String id = getQueryIdFromQueryFileName(f.getName()) ;//s.nextLine();
 			String q = s.nextLine();
 			while(s.hasNextLine()) q += s.nextLine();
 			String[] result = {id, q};

@@ -40,7 +40,7 @@ import org.apache.jena.sparql.syntax.ElementTriplesBlock;
 import org.apache.jena.sparql.syntax.ElementUnion;
 
 
-public class LogQueryDataExtractor {
+public class DataExtractor {
 	
 	private int defaultDataLimit = 10;
 	
@@ -555,7 +555,7 @@ public class LogQueryDataExtractor {
 		File d = new File(directory);
 		
 		String[] todelete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
-				Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT};		
+				Utils.DATA_FILE_EXT, Utils.RESULT_FILE_EXT};		
 		
 		Utils.cleanDir(d, todelete);
 //	   -------------------------------------------------------------------------------------			
@@ -610,7 +610,7 @@ public class LogQueryDataExtractor {
 
 		            if(m.listStatements().hasNext()) {
 		            		cqsWithData++;
-		            		triplesTotal = Utils.writeQueryDataFile(d,qid, m);
+		            		triplesTotal = Utils.writeDataFile(d,qid, m);
 		            }
 		             
 		        } catch (Exception e) {
@@ -647,7 +647,16 @@ public class LogQueryDataExtractor {
 //				continue;
 //			} 
 //
-			Query query = QueryFactory.create(q);
+//			System.out.println(q);
+			Query query = null;
+			try {
+				query = QueryFactory.create(q);
+			} catch(Exception e) {
+				e.printStackTrace();
+				System.out.println(q);
+				continue;
+			}
+		
 ////				TODO	we sometimes cannot test this given our restricted dataset size
 ////				fix maybe reset to smaller value
 //			query.setOffset(0); 

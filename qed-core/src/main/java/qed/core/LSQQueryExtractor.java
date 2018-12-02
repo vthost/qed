@@ -8,7 +8,11 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
-public class LogQueryExtractor {
+public class LSQQueryExtractor {
+	
+	
+	public static String LSQR_RESOURCE_URI = "http://lsq.aksw.org/res/";
+	public static String LSQR_SPARQL_EP = "http://lsq.aksw.org/sparql";
 
 	private static Feature[][] defaultConfig = Feature.getValuesAsConfig();
 	
@@ -44,12 +48,13 @@ public class LogQueryExtractor {
 	
 //  queryNumMax is per config
 //	we might change this by using a big union
-	public void extractQueries(String logEndpoint, String graphUri, Feature[][] configs, 
-			int queryNumMax, int querySizeMin, int queryResultSizeMin) {//, String dataDir
+	public void extractQueries(String graphUri, Feature[][] configs, 
+			int queryNumMax, int querySizeMin, int queryResultSizeMin, String path) {//
 		
-		if(Strings.isNullOrEmpty(logEndpoint)) return;
+		String logEndpoint = LSQR_SPARQL_EP;
+//		if(Strings.isNullOrEmpty(logEndpoint)) return;
 		
-		Utils.cleanDataDir();
+		Utils.makeDir(path);
 		
 		for(Feature[] config: configs == null ? defaultConfig : configs) {
 
@@ -95,7 +100,7 @@ public class LogQueryExtractor {
 			
 			+ "} ORDER BY ASC(?tp) ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
 System.out.println(query);
-			File f = Utils.cleanDataSubDir(config);
+			File f = Utils.makeSubDir(path,config);
 			queryLogAndWriteFiles(logEndpoint, graphUri, query, f);
 			if(f.list().length == 0) f.delete();
 			
@@ -103,22 +108,22 @@ System.out.println(query);
 
 	}
 
-	public void extractQueries(String logEndpoint, String graphUri, String[] queryIds) {
+	public void extractQueries(String logEndpoint, String graphUri, String[] queryIds, String path) {
 		
 		if(Strings.isNullOrEmpty(logEndpoint) || queryIds == null || queryIds.length == 0) return;
 		
-		Utils.cleanDataDir();
+		Utils.makeDir(path);
 		
 		String query =  "PREFIX  sp:   <http://spinrdf.org/sp#> "
 				+ "PREFIX  lsqv: <http://lsq.aksw.org/vocab#>  "
 				+ "SELECT  ?id ?text WHERE { "
 				+ "?id sp:text ?text . "
-				+ "FILTER ( (?id=<" + Utils.LSQR_RESOURCE_URI
-				+ String.join(">) || (?id=<" + Utils.LSQR_RESOURCE_URI, queryIds) + ">) ) }";
+				+ "FILTER ( (?id=<" + LSQR_RESOURCE_URI
+				+ String.join(">) || (?id=<" + LSQR_RESOURCE_URI, queryIds) + ">) ) }";
 
 		Feature[] dummyConfig = {};
 		
-		queryLogAndWriteFiles(logEndpoint, graphUri, query, Utils.cleanDataSubDir(dummyConfig));
+		queryLogAndWriteFiles(logEndpoint, graphUri, query, Utils.makeSubDir(path,dummyConfig));
 	}
 
 	public static void main(String[] args) {

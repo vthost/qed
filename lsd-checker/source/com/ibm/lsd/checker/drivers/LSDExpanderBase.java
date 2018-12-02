@@ -52,6 +52,7 @@ import kodkod.ast.Formula;
 import kodkod.ast.IntConstant;
 import kodkod.ast.Relation;
 import kodkod.instance.Instance;
+import qed.core.Constants;
 
 public abstract class LSDExpanderBase extends DriverBase {
 
@@ -83,7 +84,11 @@ public abstract class LSDExpanderBase extends DriverBase {
 	@SuppressWarnings("unused")
 	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Instance t, Formula f, Formula s1, Formula s2)
 			throws URISyntaxException, MalformedURLException, IOException {//System.out.println("check2: "+f);
-		Dataset dataset = originalDataset == null? DatasetFactory.create(): RDFDataMgr.loadDataset(originalDataset);
+			
+		String originalDatasetDefault = queryFile.replace(Constants.QUERY_FILE_EXT,"") + Constants.DATA_FILE_EXT;
+		Dataset dataset = originalDataset == null ? 
+				new File(originalDatasetDefault).exists() ? RDFDataMgr.loadDataset(originalDataset) :  DatasetFactory.create()
+						: RDFDataMgr.loadDataset(originalDataset);
 
 		if (t != null) {
 			JenaUtil.addTupleSet(dataset, t.tuples(QuadTableRelations.quads), U, t);
@@ -92,12 +97,12 @@ public abstract class LSDExpanderBase extends DriverBase {
 		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
 		ResultSet results = exec.execSelect();
 		ResultSetFormatter.output(
-			new FileOutputStream(dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + QUERY_RESULT_FILE_EXT), 
+			new FileOutputStream(dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + Constants.RESULT_FILE_EXT), 
 			results, 
 			ResultsFormat.FMT_RDF_TURTLE);
 
 		RDFDataMgr.write(new FileOutputStream(
-			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + QUERY_DATA_FILE_EXT), dataset, Lang.NQ);
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + Constants.DATA_FILE_EXT), dataset, Lang.NQ);
 	
 		List<Row> jenaResult = new LinkedList<>();
 		Iterator<Row> jenaRows = runQuery(ast, dataset).rows();

@@ -37,7 +37,7 @@ public class LSDCheckerDriver extends DriverBase {
 	
 		BasicUniverse U;
 		try {
-			U = new DatasetUniverse(new URL(stem + QUERY_DATA_FILE_EXT));
+			U = new DatasetUniverse(new URL(stem + DATA_FILE_EXT));
 		} catch (RiotNotFoundException e) {
 			return;
 		}
