@@ -11,14 +11,9 @@ import qed.core.Utils;
 
 public class Demo {
 		
-	public static void generateLogFileBasedDatasets(String path, String name, LogFileDataset dataset) { //(String queries, String outputDir, Dataset dataset, Feature[][] cs) throws Exception {
+	public static void generateLogFileBasedDatasets(String path, String name, LogFileDataset dataset) { 
+
 		
-//		new LSQQueryExtractor().extractQueries(dataset.graphUri, cs, 100, 1, 0, queries);
-//
-//		LSDExpandAllDriver.main(new String[] { queries, "1", "10", outputDir });
-//		
-		
-			 
 			path = qed.core.Demo.getNewDirectory(path + name);
 			
 			new LogFileQueryExtractor().extractQueries(dataset.getLocation(),path,dataset.getIdStr());
@@ -45,14 +40,25 @@ public class Demo {
 //		generateDatasets(args[0], args[1], Dataset.valueOf(args[2]), cs);
 		
 		
-		Demo d = new Demo();
+//		Demo d = new Demo();
 		
-		LogFileDataset wd = new LogFileDataset("wikidata", Constants.DATA_DIR+"wikidata.txt", "https://query.wikidata.org/bigdata/namespace/wdq/sparql", "Wikidata-");
-//		d.extractLogFileBasedDatasets(Constants.DATA_DIR, wd);
+//		LogFileDataset wd = new LogFileDataset("wikidata", Constants.DATA_DIR+"wikidata.txt", "https://query.wikidata.org/bigdata/namespace/wdq/sparql", "Wikidata-");
+//		d.generateLogFileBasedDatasets( ,wd);
+//		LSQDataset dbp = new LSQDataset("dbpedia", "http://localhost:8080/sparql", "http://dbpedia.org");
 		
 		
-		LSQDataset dbp = new LSQDataset("dbpedia", "http://localhost:8080/sparql", "http://dbpedia.org");
-//		d.extractLSQDatasets(Constants.DATA_DIR, dbp, createBinaryConfigs(exfs));
+		// First test with extracted data...
+		String path = Constants.DATA_DIR + "wikidata0";
+		
+		try {
+			LSDExpandAllDriver.main(new String[] { path, "1", "10", Constants.DATA_DIR });
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
 
 	}
 
