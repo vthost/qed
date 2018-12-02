@@ -87,7 +87,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 			
 		String originalDatasetDefault = queryFile.replace(Constants.QUERY_FILE_EXT,"") + Constants.DATA_FILE_EXT;
 		Dataset dataset = originalDataset == null ? 
-				new File(originalDatasetDefault).exists() ? RDFDataMgr.loadDataset(originalDataset) :  DatasetFactory.create()
+				new File(originalDatasetDefault).exists() ? RDFDataMgr.loadDataset(originalDatasetDefault) :  DatasetFactory.create()
 						: RDFDataMgr.loadDataset(originalDataset);
 
 		if (t != null) {
