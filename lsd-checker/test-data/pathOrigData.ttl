@@ -1,0 +1,5 @@
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2002/07/owl#sameAs> <http://original/3> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2001/XMLSchema#integer> <http://original/0> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://original/4> <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2002/07/owl#sameAs> .
+<http://original/4> <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2001/XMLSchema#boolean> .

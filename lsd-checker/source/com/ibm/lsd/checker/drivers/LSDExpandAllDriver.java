@@ -1,6 +1,5 @@
 package com.ibm.lsd.checker.drivers;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -10,6 +9,7 @@ import java.util.Set;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.sparql.algebra.Op;
+
 import com.ibm.research.rdf.store.sparql11.semantics.ASTUtils;
 import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
@@ -28,13 +28,13 @@ import kodkod.instance.Instance;
 
 public class LSDExpandAllDriver extends LSDExpanderBase {
 
-	public LSDExpandAllDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir) {
-		super(queryFile, solutionLimit, datasetLimit, dataDir);
+	public LSDExpandAllDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
+		super(queryFile, solutionLimit, datasetLimit, dataDir, originalDataset);
 	}
 
 	public static void main(String[] args) throws Exception {
 		main(args[0], (String s) -> { 
-			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3]); 
+			LSDExpandAllDriver exp = new LSDExpandAllDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3],args.length>4? args[4]: null); 
 			AllPaths paths = exp.new AllPaths();
 			exp.mainLoop(paths); });
 	}

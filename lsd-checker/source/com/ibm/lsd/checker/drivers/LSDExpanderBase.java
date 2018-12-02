@@ -63,16 +63,19 @@ public abstract class LSDExpanderBase extends DriverBase {
 	
 	private int datasets = 0;
 	
+	protected final String originalDataset;
+	
 	protected int solutionLimit;
 	protected int datasetLimit;
 	
 	private String dataDir;
 	
-	public LSDExpanderBase(String queryFile, int solutionLimit, int datasetLimit, String dataDir) {
+	public LSDExpanderBase(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
 		super();
 		this.queryFile = queryFile;
 		this.solutionLimit = solutionLimit;
 		this.datasetLimit = datasetLimit;
+		this.originalDataset = originalDataset;
 		this.dataDir = dataDir == null || new File(dataDir).isDirectory() ? dataDir : this.dataDir;
 	}
 
@@ -80,7 +83,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 	@SuppressWarnings("unused")
 	protected void checkExpanded(Query ast, Op query, BasicUniverse U, Instance t, Formula f, Formula s1, Formula s2)
 			throws URISyntaxException, MalformedURLException, IOException {//System.out.println("check2: "+f);
-		Dataset dataset = DatasetFactory.create();
+		Dataset dataset = originalDataset == null? DatasetFactory.create(): RDFDataMgr.loadDataset(originalDataset);
 
 		if (t != null) {
 			JenaUtil.addTupleSet(dataset, t.tuples(QuadTableRelations.quads), U, t);

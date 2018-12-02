@@ -8,6 +8,7 @@ import java.util.Set;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.sparql.algebra.Op;
+
 import com.ibm.research.rdf.store.sparql11.semantics.ASTUtils;
 import com.ibm.research.rdf.store.sparql11.semantics.BasicUniverse;
 import com.ibm.research.rdf.store.sparql11.semantics.Drivers;
@@ -16,18 +17,17 @@ import com.ibm.wala.util.collections.Pair;
 
 import kodkod.ast.Formula;
 import kodkod.ast.Relation;
-import kodkod.engine.CapacityExceededException;
 import kodkod.engine.satlab.SATFactory;
 import kodkod.instance.Instance;
 
 public class LSDExpandEachDriver extends LSDExpanderBase {
 
-	public LSDExpandEachDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir) {
-		super(queryFile, solutionLimit, datasetLimit, dataDir);
+	public LSDExpandEachDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
+		super(queryFile, solutionLimit, datasetLimit, dataDir, originalDataset);
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3]); exp.mainLoop(exp.new EachPath()); });
+		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3], args.length>4? args[4]: null); exp.mainLoop(exp.new EachPath()); });
 	}
 	
 	class EachPath implements Process {

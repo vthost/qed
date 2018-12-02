@@ -24,13 +24,23 @@ public class BasicTest {
 		testQuery("DBpedia-q626806.rq");
 	}
 	
+	public void testExpandEach(String query, int solutionLimit, int datasetLimit, String originalDataset) throws Exception {
+		URL url = BasicTest.class.getClassLoader().getResource(query);
+		assert url != null;
+
+		URL ds = BasicTest.class.getClassLoader().getResource(originalDataset);
+		assert ds != null;
+
+		LSDExpandEachDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-each/", ds.toString()});
+	}
+
 	public void testExpandEach(String query, int solutionLimit, int datasetLimit) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
 		LSDExpandEachDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-each/"});
 	}
-
+ 
 	@Test
 	public void testExpandEach626806() throws Exception {
 		testExpandEach("DBpedia-q626806.rq", 1, 5);
@@ -69,6 +79,11 @@ public class BasicTest {
 	@Test
 	public void testExpandEachPath() throws Exception {
 		testExpandEach("path1.rq", 1, 5);
+	}
+
+	@Test
+	public void testExpandEachPathDs() throws Exception {
+		testExpandEach("path1.rq", 1, 5, "pathOrigData.ttl");
 	}
 
 	@Test
