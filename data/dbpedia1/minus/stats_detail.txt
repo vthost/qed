@@ -1,0 +1,2 @@
+qid;qtriples;cqs;cqs-with-data;triples;features
+DBpedia-q212668;3;2;2;6;MINUS

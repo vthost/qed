@@ -1,0 +1,21 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/The_Matrix_%28franchise%29>
+        a                 ns1:Film ;
+        rdfs:comment      "The Matrix series primarily consists of a trilogy of science-fiction-action films written and directed by the Wachowski brothers and produced by Joel Silver. The first film The Matrix was released in March 1999; after its success, two sequels, The Matrix Reloaded and The Matrix Revolutions, were released in 2003. The characters and settings of the Matrix fictional universe are further explored in other media, including animation, comic books, and video games."@en ;
+        dbpprop:starring  dbpedia:Keanu_Reeves .
+
+<http://dbpedia.org/resource/Constantine_%28film%29>
+        a                 ns1:Film ;
+        rdfs:comment      "Constantine ist ein US-amerikanischer Mystery-Thriller nach der Comicserie Hellblazer, in dem es um einen Konflikt zwischen Himmel und Hölle geht. Hauptdarsteller sind Keanu Reeves und Rachel Weisz."@de , "Constantine is a 2005 American film based on Vertigo Comics’ Hellblazer comic book, with some plot elements being taken from the “Dangerous Habits” story arc (issues #41–46) and others—such as the inclusion of Papa Midnite—from the Original Sins trade paperback. It was released on February 8, 2005 in Hong Kong, and on February 18, 2005 in the U.S. and Canada."@en , "کنستانتین فیلمی آمریکایی محصول سال ۲۰۰۵ به کارگردانی فرانسیس لارنس است. این فیلم بر اساس مجموعه کمیک Hellblazer ساخته شده."@fa ;
+        dbpprop:starring  dbpedia:Keanu_Reeves .
+
+dbpedia:The_Matrix_Revisited
+        a                 ns1:Film ;
+        rdfs:comment      "The Matrix Revisited (Matrix Os Segredos da Produção no Brasil, 1999 - 123 minutos) é um documentário dirigido por John Oreck, que fala sobre o início da trilogia futurista."@pt ;
+        dbpprop:starring  dbpedia:Keanu_Reeves .

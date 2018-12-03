@@ -1,0 +1,8 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/Abbyville%2C_Kansas>
+        a             ns1:City ;
+        rdfs:comment  "Abbyville is a city in Reno County, Kansas, United States. The population was 128 at the 2000 census."@en , "Abbyville esas urbo en Reno Komtio, Kansas, Usa. Segun la 2000 kontado, la populo esas 128."@io , "Abbyville, Kansas se yon vil Etazini. Li sitye nan leta Kansas. Chèf-lye li se ? Nan lane 2004, popilasyon l te konte 10,650 moun. Lòt lane yo te genyen : 2003 (10,360), 2002 (10,093), 2001 (9,778), 2000 (9,026). ."@ht ;
+        rdfs:label    "Abbyville, Kansas"@en .

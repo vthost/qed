@@ -1,0 +1,605 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    FILTER NOT EXISTS { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    FILTER NOT EXISTS { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    FILTER NOT EXISTS { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    FILTER NOT EXISTS { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { FILTER NOT EXISTS { ?movie  foaf:page  ?linkUrl }
+        { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  umbel-sc: <http://umbel.org/umbel/sc/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  yago: <http://dbpedia.org/class/yago/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpedia: <http://dbpedia.org/>
+PREFIX  dbpedia-prop: <http://dbpedia.org/property/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+
+CONSTRUCT 
+  { 
+    :THE_ELEPHANT_MAN dbpedia-prop:redirect ?movie .
+    ?movie rdfs:label "THE ELEPHANT MAN"@en .
+    ?movie dbpedia-prop:name "THE ELEPHANT MAN"@en .
+    ?movie foaf:name "THE ELEPHANT MAN"@en .
+    ?movie rdfs:label "THE ELEPHANT MAN (film)"@en .
+    ?movie rdfs:label "The Elephant Man"@en .
+    ?movie rdfs:label "The Elephant Man (film)"@en .
+    ?movie foaf:name "The Elephant Man"@en .
+    ?movie rdf:type dbpedia-owl:Film .
+    ?movie foaf:page ?linkUrl .
+    ?movie owl:sameAs ?sameAsUri .
+    ?movie dbpedia-owl:imdbid ?imdbId .
+    ?movie dbpedia-owl:releaseDate ?releaseDate .
+  }
+WHERE
+  { { ?movie  dbpedia-owl:releaseDate  ?releaseDate }
+    FILTER NOT EXISTS { ?movie  dbpedia-owl:imdbid  ?imdbId }
+    { { { ?movie  foaf:page  ?linkUrl }
+        FILTER NOT EXISTS { ?movie  owl:sameAs  ?sameAsUri }
+      }
+    }
+    { ?movie  rdf:type  dbpedia-owl:Film }
+    { FILTER NOT EXISTS { :THE_ELEPHANT_MAN
+                                    dbpedia-prop:redirect  ?movie
+                        }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  dbpedia-prop:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "THE ELEPHANT MAN"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "THE ELEPHANT MAN (film)"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man"@en }
+      FILTER NOT EXISTS { ?movie  rdfs:label  "The Elephant Man (film)"@en }
+      FILTER NOT EXISTS { ?movie  foaf:name  "The Elephant Man"@en }
+    }
+  }
+LIMIT   3
+
+----------------------------------------------

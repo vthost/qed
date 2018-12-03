@@ -1,0 +1,13 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Jeff_Coffin  rdfs:comment  "Jeff Coffin (born August 5, 1965) is an American jazz and alternative rock musician best known as the current saxophonist for Béla Fleck and the Flecktones and Dave Matthews Band. In addition to the saxophone, he plays clarinet and flute."@en ;
+        skos:subject  ns3:American_musicians ;
+        foaf:name     "Jeff Coffin"@en .
+
+dbpedia:David_Lynch  rdfs:comment  "ديفيد كيث لينش هو مخرج، وسيناريست، ومنتج، ورسام، وفنان كرتوني، وملحن، وفنان فيديو، ومؤدي أمريكي. حصل على ثلاثة ترشيحات لجائزة الأوسكار لأفضل مخرج عن أفلام الرجل الفيل (1980)، ومخمل أزرق (1986)، وطريق مولهولاند (2001). كذلك حصل على جوائز من مهرجان كان السينمائي، و مهرجان فينيسيا السينمائي."@ar ;
+        skos:subject  ns3:American_musicians ;
+        foaf:name     "David Lynch"@en .

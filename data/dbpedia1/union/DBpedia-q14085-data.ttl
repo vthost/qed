@@ -1,0 +1,23 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns4:   <http://dbpedia.org/ontology/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:South_Korea  ns3:populationTotal
+                "36"^^xsd:int , "127.0"^^xsd:float , "36.0"^^xsd:float ;
+        ns3:populationTotal  <http://www.korea.net/> ;
+        dbpprop:gdpNominalPerCapitaRank
+                "36"^^xsd:int ;
+        dbpprop:reference    "127.0"^^xsd:float , "36"^^xsd:int , "36.0"^^xsd:float ;
+        dbpprop:reference    <http://www.korea.net/> ;
+        geo:lat              "36.0"^^xsd:float , "127.0"^^xsd:float , "36"^^xsd:int ;
+        geo:lat              <http://www.korea.net/> ;
+        geo:long             "36"^^xsd:int , "127.0"^^xsd:float , "36.0"^^xsd:float ;
+        geo:long             <http://www.korea.net/> ;
+        foaf:homepage        "36"^^xsd:int , "127.0"^^xsd:float , "36.0"^^xsd:float ;
+        foaf:homepage        <http://www.korea.net/> ;
+        foaf:name            "36"^^xsd:int , "127.0"^^xsd:float , "36.0"^^xsd:float ;
+        foaf:name            <http://www.korea.net/> .

@@ -1,0 +1,270 @@
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        FILTER NOT EXISTS { <http://dbpedia.org/resource/Little_Napoleons>
+                                      owl:sameAs  ?sameas
+                          }
+      }
+    }
+    FILTER ( lang(?description) = "en" )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        { <http://dbpedia.org/resource/Little_Napoleons>
+                    owl:sameAs  ?sameas
+        }
+      }
+    }
+    FILTER ( lang(?description) = "en" )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        FILTER NOT EXISTS { <http://dbpedia.org/resource/Little_Napoleons>
+                                      owl:sameAs  ?sameas
+                          }
+      }
+    }
+    FILTER ( lang(?description) = "en" )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        { <http://dbpedia.org/resource/Little_Napoleons>
+                    owl:sameAs  ?sameas
+        }
+      }
+    }
+    FILTER ( lang(?description) = "en" )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { FILTER NOT EXISTS {   { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+                        UNION
+                          { <http://dbpedia.org/resource/Little_Napoleons>
+                                      owl:sameAs  ?sameas
+                          }
+                      }
+    FILTER ( lang(?description) = "en" )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        FILTER NOT EXISTS { <http://dbpedia.org/resource/Little_Napoleons>
+                                      owl:sameAs  ?sameas
+                          }
+      }
+    }
+    FILTER ( ! ( lang(?description) = "en" ) )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { FILTER NOT EXISTS { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        { <http://dbpedia.org/resource/Little_Napoleons>
+                    owl:sameAs  ?sameas
+        }
+      }
+    }
+    FILTER ( ! ( lang(?description) = "en" ) )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        FILTER NOT EXISTS { <http://dbpedia.org/resource/Little_Napoleons>
+                                      owl:sameAs  ?sameas
+                          }
+      }
+    }
+    FILTER ( ! ( lang(?description) = "en" ) )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { { { { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+        { <http://dbpedia.org/resource/Little_Napoleons>
+                    owl:sameAs  ?sameas
+        }
+      }
+    }
+    FILTER ( ! ( lang(?description) = "en" ) )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
+BASE    <file:///Users/Veronika/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Little_Napoleons> foaf:name ?title .
+    <http://dbpedia.org/resource/Little_Napoleons> rdfs:comment ?description .
+    ?sameas owl:sameAs <http://dbpedia.org/resource/Little_Napoleons> .
+    <http://dbpedia.org/resource/Little_Napoleons> owl:sameAs ?sameas .
+  }
+WHERE
+  { FILTER NOT EXISTS {   { ?sameas  owl:sameAs  <http://dbpedia.org/resource/Little_Napoleons> }
+                        UNION
+                          { <http://dbpedia.org/resource/Little_Napoleons>
+                                      owl:sameAs  ?sameas
+                          }
+                      }
+    FILTER ( ! ( lang(?description) = "en" ) )
+    <http://dbpedia.org/resource/Little_Napoleons>
+              foaf:name     ?title ;
+              rdfs:comment  ?description
+  }
+LIMIT   3
+
+----------------------------------------------
