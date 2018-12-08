@@ -1,0 +1,224 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coord" , "label" , "place" , "subj" ;
+  rs:size            "20"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Gallia Christiana"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q748022> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6247> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.791111111 45.156388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gallia Christiana"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q748022> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2028> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.993741666 45.438158333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2028> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.993741666 45.438158333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q793424> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(24.943643614 49.44642725)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Placard in Berezhany"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q849505> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6247> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.791111111 45.156388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q793424> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(24.943643614 49.44642725)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Placard in Berezhany"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q849505> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6247> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.791111111 45.156388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q793424> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(24.943643614 49.44642725)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Placard in Berezhany"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q849505> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gallia Christiana"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q748022> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q84> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Tales of the Dead"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q478023> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2028> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.993741666 45.438158333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q2028> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.993741666 45.438158333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q6247> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(10.791111111 45.156388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Romeo and Juliet"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q83186> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q793424> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(24.943643614 49.44642725)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Placard in Berezhany"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q849505> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q84> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Tales of the Dead"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q478023> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q84> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Tales of the Dead"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q478023> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q84> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Tales of the Dead"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q478023> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gallia Christiana"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q748022> ;
+                          rs:variable  "subj"
+                        ] ]
+] .

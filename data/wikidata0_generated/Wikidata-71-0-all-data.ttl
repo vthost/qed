@@ -1,0 +1,32 @@
+<http://www.w3.org/2001/XMLSchema#boolean> <http://www.wikidata.org/prop/direct/P31> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.wikidata.org/entity/Q16214587> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q16214587> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q16214587> <http://www.w3.org/2000/01/rdf-schema#label> "Adam Reid (actor)"@es .
+<http://www.wikidata.org/entity/Q41221> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q41221> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q41221> <http://www.w3.org/2000/01/rdf-schema#label> "Asier Oruesagasti"@es .
+<http://www.wikidata.org/entity/Q55317537> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q55317537> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q55317537> <http://www.w3.org/2000/01/rdf-schema#label> "Gustavo Angarita Jr (actor)"@es .
+<http://www.wikidata.org/entity/Q349166> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q349166> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q349166> <http://www.w3.org/2000/01/rdf-schema#label> "Ben Johnson (actor)"@gl .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2001/XMLSchema#boolean> <http://www.wikidata.org/prop/direct/P106> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/prop/direct/P31> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/prop/direct/P31> "num0"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/entity/Q5> "ANY_LANGUAGE" .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/entity/Q5> "num3"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.wikidata.org/prop/direct/P106> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2000/01/rdf-schema#label> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.wikidata.org/entity/Q11617> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q11617> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q11617> <http://www.w3.org/2000/01/rdf-schema#label> "Aaliyah"@an .
+<http://www.wikidata.org/entity/Q11617> <http://www.w3.org/2000/01/rdf-schema#label> "Aaliyah"@ca .
+<http://www.wikidata.org/entity/Q41220> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q41220> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q41220> <http://www.w3.org/2000/01/rdf-schema#label> "Asier Hernández"@es .
+<http://www.wikidata.org/entity/Q283512> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q283512> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q33999> .
+<http://www.wikidata.org/entity/Q283512> <http://www.w3.org/2000/01/rdf-schema#label> "Siddique (actor)"@nl .

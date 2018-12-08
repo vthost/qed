@@ -1,0 +1,16 @@
+<http://www.wikidata.org/entity/P54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<http://www.wikidata.org/entity/P54> <http://wikiba.se/ontology#directClaim> <http://www.wikidata.org/prop/direct/P54> .
+<http://www.wikidata.org/entity/P54> <http://www.w3.org/2000/01/rdf-schema#label> "member of sports team"@en .
+<http://www.wikidata.org/entity/P54> <http://www.w3.org/2000/01/rdf-schema#label> "קבוצה"@he .
+<http://www.wikidata.org/entity/P54> <http://www.w3.org/2000/01/rdf-schema#label> "sportcsapat"@hu .
+<http://www.w3.org/2001/XMLSchema#string> <http://synthetic/3> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.w3.org/2001/XMLSchema#string> <http://synthetic/3> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.wikidata.org/entity/Q5571382> <http://www.wikidata.org/prop/direct/P54> <http://www.wikidata.org/entity/Q223243> .
+<http://www.wikidata.org/entity/Q5571382> <http://www.w3.org/2001/XMLSchema#string> <http://www.wikidata.org/entity/Q223243> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2001/XMLSchema#string> "lit3"@en .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2001/XMLSchema#string> <http://synthetic/4> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2001/XMLSchema#decimal> "lit1"@en .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2000/01/rdf-schema#label> "lit3"@en .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/1> .
