@@ -1,0 +1,240 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album p:released ?dateofrelease .
+    ?album p:name ?name .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { { ?album  p:released  ?dateofrelease }
+    { ?album  p:name  ?name }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album28 p:released ?dateofrelease31 .
+    ?album p:name ?name .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { { ?album28  p:released  ?dateofrelease31 }
+    { ?album  p:name  ?name }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+    FILTER ( ( ( ( ?album != ?album28 ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album p:name ?name .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { {  }
+    { ?album  p:name  ?name }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album p:name ?name .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?album  p:released  ?dateofrelease }
+    { ?album  p:name  ?name }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album p:released ?dateofrelease .
+    ?album28 p:name ?name30 .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { { ?album  p:released  ?dateofrelease }
+    { ?album28  p:name  ?name30 }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+    FILTER ( ( ( ( ?album != ?album28 ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album28 p:released ?dateofrelease31 .
+    ?album28 p:name ?name30 .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { { ?album28  p:released  ?dateofrelease31 }
+    { ?album28  p:name  ?name30 }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+    FILTER ( ( ( ?album != ?album28 ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album28 p:name ?name30 .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { {  }
+    { ?album28  p:name  ?name30 }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+    FILTER ( ( ( ?album != ?album28 ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album28 p:name ?name30 .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?album  p:released  ?dateofrelease }
+    { ?album28  p:name  ?name30 }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+    FILTER ( ( ( ?album != ?album28 ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album p:released ?dateofrelease .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { { ?album  p:released  ?dateofrelease }
+    {  }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album28 p:released ?dateofrelease31 .
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { { ?album28  p:released  ?dateofrelease31 }
+    {  }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+    FILTER ( ( ( ?album != ?album28 ) || ( ?album != ?album28 ) ) || ( ?album != ?album28 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT 
+  { 
+    ?album p:cover ?cover .
+    ?album p:artist <http://dbpedia.org/resource/Black_Sabbath> .
+    ?album rdf:type <http://dbpedia.org/class/yago/Album106591815> .
+  }
+WHERE
+  { {  }
+    {  }
+    { ?album  p:cover  ?cover }
+    ?album  p:artist  <http://dbpedia.org/resource/Black_Sabbath> ;
+            rdf:type  <http://dbpedia.org/class/yago/Album106591815>
+  }
+LIMIT   2
+
+----------------------------------------------

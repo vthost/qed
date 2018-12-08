@@ -1,0 +1,35 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+<http://dbpedia.org/resource/Overboard_%28film%29>
+        dbpprop:starring  dbpedia:Kurt_Russell , dbpedia:Goldie_Hawn .
+
+dbpedia:Heath_Ledger  a  ns2:Actor ;
+        ns2:partner  <http://dbpedia.org/resource/Michelle_Williams_%28actress%29> .
+
+dbpedia:Brokeback_Mountain
+        dbpprop:starring  <http://dbpedia.org/resource/Michelle_Williams_%28actress%29> , dbpedia:Heath_Ledger .
+
+dbpedia:Spies_Like_Us
+        dbpprop:starring  dbpedia:Donna_Dixon , dbpedia:Dan_Aykroyd .
+
+dbpedia:Kurt_Russell  a  ns2:Actor ;
+        ns2:partner  dbpedia:Goldie_Hawn .
+
+dbpedia:Goldie_Hawn  a  ns2:Actor .
+
+<http://dbpedia.org/resource/Swing_Shift_%28film%29>
+        dbpprop:starring  dbpedia:Kurt_Russell , dbpedia:Goldie_Hawn .
+
+dbpedia:Donna_Dixon  a  ns2:Actor .
+
+dbpedia:The_Couch_Trip
+        dbpprop:starring  dbpedia:Dan_Aykroyd , dbpedia:Donna_Dixon .
+
+<http://dbpedia.org/resource/Michelle_Williams_%28actress%29>
+        a       ns2:Actor .
+
+dbpedia:Dan_Aykroyd  a  ns2:Actor ;
+        ns2:spouse  dbpedia:Donna_Dixon .

@@ -1,1 +1,0 @@
-PREFIX psv: <http://www.wikidata.org/prop/statement/value/> PREFIX p: <http://www.wikidata.org/prop/> PREFIX wikibase: <http://wikiba.se/ontology#> PREFIX wdt: <http://www.wikidata.org/prop/direct/>  SELECT ?item ?body ?globe WHERE { ?item wdt:P376 ?body . ?item p:P625/psv:P625/wikibase:geoGlobe ?globe . filter (?globe != ?body) . } LIMIT 30 

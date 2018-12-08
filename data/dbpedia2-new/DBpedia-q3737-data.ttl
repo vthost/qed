@@ -1,0 +1,25 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/resource/Template:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Template:Infobox_nrhp
+        rdfs:label  "Plantilla:Ficha de NRHP/doc"@es .
+
+<http://dbpedia.org/resource/Canton%2C_Massachusetts>
+        rdfs:label  "Canton, Massachusetts"@en , "Canton, Massachusetts"@ht .
+
+owl:Class  rdfs:label  "Class" .
+
+dbpprop:wikilink  rdfs:label  "wikilink"@da .
+
+dbpprop:built  rdfs:label  "built"@ar .
+
+owl:Thing  rdfs:label  "Thing" .
+
+dbpedia:Blue_Hills_Reservation_Parkways
+        dbpprop:built                 "1894"^^xsd:int ;
+        dbpprop:wikiPageUsesTemplate  dbpedia:Template:Infobox_nrhp ;
+        dbpprop:wikilink              <http://dbpedia.org/resource/Canton%2C_Massachusetts> .

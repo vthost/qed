@@ -1,0 +1,61 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+dbpedia:Adam_and_Evelyne
+        ns0:starring  dbpedia:Stewart_Granger , dbpedia:Jean_Simmons .
+
+dbpedia:Tom_Cruise  a             ns0:Actor ;
+        ns0:activeYearsStartYear  "1981-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns0:spouse                dbpedia:Nicole_Kidman .
+
+dbpedia:Scary_Movie_3
+        ns0:director     dbpedia:David_Zucker ;
+        ns0:releaseDate  "2003-10-24"^^xsd:date ;
+        ns0:starring     dbpedia:Charlie_Sheen , dbpedia:Denise_Richards .
+
+dbpedia:Days_of_Thunder
+        ns0:starring  dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Young_Bess  ns0:director  dbpedia:George_Sidney ;
+        ns0:releaseDate  "1953-05-21"^^xsd:date ;
+        ns0:starring     dbpedia:Jean_Simmons , dbpedia:Stewart_Granger .
+
+dbpedia:Far_and_Away  ns0:starring  dbpedia:Nicole_Kidman , dbpedia:Tom_Cruise .
+
+dbpedia:Eyes_Wide_Shut
+        ns0:director     dbpedia:Stanley_Kubrick ;
+        ns0:releaseDate  "1999-07-16"^^xsd:date ;
+        ns0:starring     dbpedia:Nicole_Kidman , dbpedia:Tom_Cruise .
+
+dbpedia:Denise_Richards
+        a                         ns0:Actor ;
+        ns0:activeYearsStartYear  "1990-01-01T00:00:00+01:00"^^xsd:gYear .
+
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29>
+        ns0:director     dbpedia:David_Lynch ;
+        ns0:releaseDate  "1990-08-17"^^xsd:date .
+
+dbpedia:Stewart_Granger
+        a                         ns0:Actor ;
+        ns0:activeYearsStartYear  "1933-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:Nicole_Kidman
+        a                         ns0:Actor ;
+        ns0:activeYearsStartYear  "1983-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:Charlie_Sheen
+        a                         ns0:Actor ;
+        ns0:activeYearsStartYear  "1972-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns0:spouse                dbpedia:Denise_Richards .
+
+dbpedia:The_New_Odd_Couple
+        ns0:director     dbpedia:Joel_Zwick ;
+        ns0:releaseDate  "1982-10-29"^^xsd:date .
+
+dbpedia:Good_Advice  ns0:starring  dbpedia:Charlie_Sheen , dbpedia:Denise_Richards .
+
+dbpedia:Jean_Simmons  a           ns0:Actor ;
+        ns0:activeYearsStartYear  "1944-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns0:spouse                dbpedia:Stewart_Granger .

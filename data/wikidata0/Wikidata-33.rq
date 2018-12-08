@@ -1,1 +1,0 @@
-PREFIX pr: <http://www.wikidata.org/prop/reference/> PREFIX prov: <http://www.w3.org/ns/prov#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/>  SELECT ?doi (COUNT (?entry) as ?entries) {   ?entry ?p ?statement .   ?statement prov:wasDerivedFrom/pr:P248/wdt:P356 ?doi . } GROUP BY ?doi ORDER BY DESC(?entries)  

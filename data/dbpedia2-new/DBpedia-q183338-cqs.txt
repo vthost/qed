@@ -1,0 +1,416 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x dbpprop:birthPlace ?birthPlace .
+    ?x dbpprop:origin ?hometown .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { { ?x  dbpprop:birthPlace  ?birthPlace }
+    { ?x  dbpprop:origin  ?hometown }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x43 dbpprop:birthPlace ?birthPlace48 .
+    ?x dbpprop:origin ?hometown .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { { ?x43  dbpprop:birthPlace  ?birthPlace48 }
+    { ?x  dbpprop:origin  ?hometown }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+    FILTER ( ( ( ( ( ( ( ( ?x != ?x43 ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x dbpprop:origin ?hometown .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { {  }
+    { ?x  dbpprop:origin  ?hometown }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x dbpprop:origin ?hometown .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?x  dbpprop:birthPlace  ?birthPlace }
+    { ?x  dbpprop:origin  ?hometown }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x dbpprop:birthPlace ?birthPlace .
+    ?x43 dbpprop:origin ?hometown47 .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { { ?x  dbpprop:birthPlace  ?birthPlace }
+    { ?x43  dbpprop:origin  ?hometown47 }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+    FILTER ( ( ( ( ( ( ( ( ?x != ?x43 ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x43 dbpprop:birthPlace ?birthPlace48 .
+    ?x43 dbpprop:origin ?hometown47 .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { { ?x43  dbpprop:birthPlace  ?birthPlace48 }
+    { ?x43  dbpprop:origin  ?hometown47 }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+    FILTER ( ( ( ( ( ( ( ?x != ?x43 ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x43 dbpprop:origin ?hometown47 .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { {  }
+    { ?x43  dbpprop:origin  ?hometown47 }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+    FILTER ( ( ( ( ( ( ( ?x != ?x43 ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x43 dbpprop:origin ?hometown47 .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?x  dbpprop:birthPlace  ?birthPlace }
+    { ?x43  dbpprop:origin  ?hometown47 }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+    FILTER ( ( ( ( ( ( ( ?x != ?x43 ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x dbpprop:birthPlace ?birthPlace .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { { ?x  dbpprop:birthPlace  ?birthPlace }
+    {  }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x43 dbpprop:birthPlace ?birthPlace48 .
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { { ?x43  dbpprop:birthPlace  ?birthPlace48 }
+    {  }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+    FILTER ( ( ( ( ( ( ( ?x != ?x43 ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) ) || ( ?x != ?x43 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  mo:   <http://purl.org/ontology/mo/>
+PREFIX  dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbpprop: <http://dbpedia.org/property/>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/elements/1.1/>
+PREFIX  tags: <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+
+CONSTRUCT 
+  { 
+    ?x dbpedia-owl:activeYearsEndYear ?end .
+    ?x dbpedia-owl:activeYearsStartYear ?start .
+    ?x dbpedia-owl:thumbnail ?thumbnail .
+    ?wiki foaf:primaryTopic ?x .
+    ?x rdfs:label "Alain Johannes"@en .
+    ?x dbpedia-owl:abstract ?biography .
+    ?x rdf:type dbpedia-owl:MusicalArtist .
+  }
+WHERE
+  { {  }
+    {  }
+    { ?x  dbpedia-owl:activeYearsEndYear  ?end }
+    { ?x  dbpedia-owl:activeYearsStartYear  ?start }
+    { ?x  dbpedia-owl:thumbnail  ?thumbnail }
+    ?wiki  foaf:primaryTopic  ?x
+    FILTER langMatches(lang(?biography), "en")
+    ?x  rdfs:label            "Alain Johannes"@en ;
+        dbpedia-owl:abstract  ?biography
+    { ?x  rdf:type  dbpedia-owl:MusicalArtist }
+  }
+LIMIT   2
+
+----------------------------------------------

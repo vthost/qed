@@ -1,0 +1,309 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album o:releaseDate ?dateofrelease .
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER langMatches(lang(?comment), "en")
+    { ?album  o:releaseDate  ?dateofrelease }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album o:releaseDate ?dateofrelease .
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( ! langMatches(lang(?comment), "en") )
+    { ?album  o:releaseDate  ?dateofrelease }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album32 o:releaseDate ?dateofrelease34 .
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER langMatches(lang(?comment), "en")
+    { ?album32  o:releaseDate  ?dateofrelease34 }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+    FILTER ( ( ( ( ( ?album != ?album32 ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album32 o:releaseDate ?dateofrelease34 .
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( ! langMatches(lang(?comment), "en") )
+    { ?album32  o:releaseDate  ?dateofrelease34 }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+    FILTER ( ( ( ( ( ?album != ?album32 ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER langMatches(lang(?comment), "en")
+    {  }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( ! langMatches(lang(?comment), "en") )
+    {  }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER langMatches(lang(?comment), "en")
+    FILTER NOT EXISTS { ?album  o:releaseDate  ?dateofrelease }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album p:cover ?cover .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( ! langMatches(lang(?comment), "en") )
+    FILTER NOT EXISTS { ?album  o:releaseDate  ?dateofrelease }
+    { ?album  p:cover  ?cover }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album o:releaseDate ?dateofrelease .
+    ?album32 p:cover ?cover33 .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER langMatches(lang(?comment), "en")
+    { ?album  o:releaseDate  ?dateofrelease }
+    { ?album32  p:cover  ?cover33 }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+    FILTER ( ( ( ( ( ?album != ?album32 ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album o:releaseDate ?dateofrelease .
+    ?album32 p:cover ?cover33 .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER ( ! langMatches(lang(?comment), "en") )
+    { ?album  o:releaseDate  ?dateofrelease }
+    { ?album32  p:cover  ?cover33 }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+    FILTER ( ( ( ( ( ?album != ?album32 ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://dbpedia.org/property/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  o:    <http://dbpedia.org/ontology/>
+
+CONSTRUCT 
+  { 
+    ?album32 o:releaseDate ?dateofrelease34 .
+    ?album32 p:cover ?cover33 .
+    ?album rdfs:comment ?comment .
+    ?album p:artist <http://dbpedia.org/resource/The_Velvet_Underground> .
+    ?album rdf:type o:Album .
+    ?album rdfs:label ?name .
+  }
+WHERE
+  { FILTER langMatches(lang(?comment), "en")
+    { ?album32  o:releaseDate  ?dateofrelease34 }
+    { ?album32  p:cover  ?cover33 }
+    { ?album  rdfs:comment  ?comment }
+    FILTER ( lang(?name) = "en" )
+    ?album  p:artist    <http://dbpedia.org/resource/The_Velvet_Underground> ;
+            rdf:type    o:Album ;
+            rdfs:label  ?name
+    FILTER ( ( ( ( ?album != ?album32 ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) ) || ( ?album != ?album32 ) )
+  }
+LIMIT   2
+
+----------------------------------------------

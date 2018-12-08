@@ -1,1 +1,1 @@
-PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>  SELECT * WHERE {   ?item wdt:P31 wd:Q3305213 .   ?item wdt:P170 wd:Q34661 .   ?item wdt:P18 ?pic . }  
+PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>  SELECT ?work ?title WHERE {   ?work wdt:P31/wdt:P279* wd:Q838948;         wdt:P1476 ?title.   FILTER(REGEX(STR(?title), "^(\\p{L})\\w+(?:\\W+\\1\\w+){2,}$", "i")). } ORDER BY STR(?title)  

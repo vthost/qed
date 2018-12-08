@@ -1,0 +1,384 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city p:redirect ?city3 .
+    ?city3 geo:lat ?lat .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { ?city   p:redirect  ?city3 .
+      ?city3  geo:lat     ?lat
+    }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city geo:lat ?lat .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { ?city  geo:lat  ?lat }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city geo:lat ?lat .
+    ?city p:redirect ?city3 .
+    ?city3 geo:lat ?lat .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { { ?city  geo:lat  ?lat }
+      { ?city   p:redirect  ?city3 .
+        ?city3  geo:lat     ?lat
+      }
+    }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city8 p:redirect ?city314 .
+    ?city314 geo:lat ?lat4 .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { ?city8    p:redirect  ?city314 .
+      ?city314  geo:lat     ?lat4
+    }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+    FILTER ( ( ?city != ?city8 ) || ( ?city != ?city8 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city8 geo:lat ?lat4 .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { ?city8  geo:lat  ?lat4 }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+    FILTER ( ( ?city != ?city8 ) || ( ?city != ?city8 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city8 geo:lat ?lat4 .
+    ?city8 p:redirect ?city314 .
+    ?city314 geo:lat ?lat4 .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { { ?city8  geo:lat  ?lat4 }
+      { ?city8    p:redirect  ?city314 .
+        ?city314  geo:lat     ?lat4
+      }
+    }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+    FILTER ( ( ?city != ?city8 ) || ( ?city != ?city8 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { {  }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city p:redirect ?city3 .
+    ?city3 geo:lat ?lat .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { FILTER NOT EXISTS { { { ?city   p:redirect  ?city3 .
+                            ?city3  geo:lat     ?lat
+                          }
+                        }
+                      }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city geo:lat ?lat .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { FILTER NOT EXISTS { { { ?city  geo:lat  ?lat } } }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city geo:lat ?lat .
+    ?city p:redirect ?city3 .
+    ?city3 geo:lat ?lat .
+    ?city p:redirect ?city2 .
+    ?city2 geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { FILTER NOT EXISTS { { { ?city  geo:lat  ?lat }
+                          { ?city   p:redirect  ?city3 .
+                            ?city3  geo:lat     ?lat
+                          }
+                        }
+                      }
+    { ?city   p:redirect  ?city2 .
+      ?city2  geo:long    ?long
+    }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  :     <http://dbpedia.org/resource/>
+PREFIX  geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  p:    <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?city p:redirect ?city3 .
+    ?city3 geo:lat ?lat .
+    ?city geo:long ?long .
+    ?player p:image ?image .
+    ?player p:position ?position .
+    ?player p:clubnumber ?no .
+    ?player p:birth ?dob .
+    ?player p:cityofbirth ?city .
+    ?player p:currentclub <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> .
+  }
+WHERE
+  { { ?city   p:redirect  ?city3 .
+      ?city3  geo:lat     ?lat
+    }
+    { ?city  geo:long  ?long }
+    { ?player  p:image  ?image }
+    { ?player  p:position  ?position }
+    { ?player  p:clubnumber  ?no }
+    { ?player  p:birth  ?dob }
+    { ?player  p:cityofbirth  ?city }
+    ?player  p:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.>
+  }
+LIMIT   2
+
+----------------------------------------------

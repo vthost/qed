@@ -1,1 +1,1 @@
-PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/>  SELECT ?x WHERE {   ?x wdt:P131 ?x . } 
+PREFIX schema: <http://schema.org/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  SELECT ?item ?label WHERE {   ?item schema:description "introduza uma descri\u00e7\u00e3o"@pt.   OPTIONAL {     ?item rdfs:label ?label.     FILTER(LANG(?label) = "pt").   } }  

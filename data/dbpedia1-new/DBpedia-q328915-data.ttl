@@ -1,0 +1,32 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+
+ns1:Gene_expression  skos:broader  ns1:Molecular_biology , ns1:Molecular_genetics .
+
+ns1:Blood_proteins  skos:broader  ns1:Proteins .
+
+ns1:Structural_proteins
+        skos:broader  ns1:Proteins , ns1:Cytoskeleton .
+
+ns1:Proteins  skos:broader  ns1:Molecular_biology .
+
+ns1:Molecular_biologists_by_nationality
+        skos:broader  ns1:Molecular_biologists .
+
+ns1:Carcinogens  skos:broader  ns1:Biomolecules .
+
+ns1:Biomolecules  skos:broader  ns1:Biochemistry .
+
+ns1:IARC_Group_2A_carcinogens
+        skos:broader  ns1:Carcinogens .
+
+ns1:Molecular_genetics
+        skos:broader  ns1:Molecular_biology .
+
+ns1:Cytoskeleton  skos:broader  ns1:Proteins .
+
+ns1:Molecular_biologists
+        skos:broader  ns1:Molecular_biology .
+
+ns1:Turkish_molecular_biologists
+        skos:broader  ns1:Molecular_biologists_by_nationality .

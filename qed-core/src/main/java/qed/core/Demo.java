@@ -53,7 +53,7 @@ public class Demo {
 
 		new DataExtractor().extractAllQueryDataAndResults(dataset.getEndpoint(), 3, path);
 		
-		Utils.finalizeStatistics(path, 7);
+//		Utils.finalizeStatistics(path, 7);
 	}
 	
 	public void extractLogFileBasedDatasets(String path, LogFileDataset dataset) {
@@ -67,9 +67,9 @@ public class Demo {
 		
 		new LogFileQueryExtractor().extractQueries(dataset.getLocation(),path,dataset.getIdStr());
 
-		new DataExtractor().extractQueryDataAndResults(dataset.getEndpoint(), 2, path);
+		new DataExtractor3().extractQueryDataAndResults(dataset.getEndpoint(), 2, path);
 		
-		Utils.finalizeStatistics(path, 7);
+//		Utils.finalizeStatistics(path, 7);
 	}
 	
 	public void printQueriesInDir(String directory) {
@@ -145,10 +145,11 @@ public class Demo {
 		Demo d = new Demo();
 		
 		LogFileDataset wd = new LogFileDataset("wikidata", Constants.DATA_DIR+"wikidata.txt", "https://query.wikidata.org/bigdata/namespace/wdq/sparql", "Wikidata-");
-		d.extractLogFileBasedDatasets(Constants.DATA_DIR, wd);
+//		d.extractLogFileBasedDatasets(Constants.DATA_DIR, wd);
 		
 		LSQDataset dbp = new LSQDataset("dbpedia", "http://localhost:8080/sparql", "http://dbpedia.org");
-		d.extractLSQDatasets(Constants.DATA_DIR, dbp, createBinaryConfigs(exfs));
+		new DataExtractor3().extractQueryDataAndResults(dbp.getEndpoint(), 2, Constants.DATA_DIR+"dbpedia2-new");
+//		d.extractLSQDatasets(Constants.DATA_DIR, dbp, createBinaryConfigs(exfs));
 	}
 	
 	

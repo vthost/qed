@@ -1,1 +1,1 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>  SELECT DISTINCT ?band ?bandLabel WHERE { 	?band  wdt:P31 wd:Q5741069 .         ?band rdfs:label ?bandLabel . 	FILTER(STRSTARTS(?bandLabel, 'M')) . } 
+PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/>  SELECT ?mouth (COUNT(?watercourse) AS ?count) WHERE {   ?watercourse wdt:P403+ ?mouth. } GROUP BY ?mouth ORDER BY DESC(?count) LIMIT 10  

@@ -1,0 +1,263 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?first .
+  }
+WHERE
+  { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+    ?subject  skos:broader  ?first
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?second .
+    ?second skos:broader ?first .
+  }
+WHERE
+  { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+    ?subject  skos:broader  ?second .
+    ?second   skos:broader  ?first
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+  }
+WHERE
+  { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+    ?subject  skos:broader  ?third .
+    ?third    skos:broader  ?second .
+    ?second   skos:broader  ?first
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?third .
+      ?third    skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?second .
+    ?second skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?third .
+      ?third    skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?third .
+      ?third    skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+  }
+WHERE
+  { FILTER ( ?first = <http://dbpedia.org/resource/Category:Biochemistry> )
+    ?subject  skos:broader  ?third .
+    ?third    skos:broader  ?second .
+    ?second   skos:broader  ?first
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Biochemistry> )
+      ?subject  skos:broader  ?third .
+      ?third    skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?second .
+    ?second skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Biochemistry> )
+      ?subject  skos:broader  ?third .
+      ?third    skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  dbpedia_property: <http://dbpedia.org/property/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?subject skos:broader ?third .
+    ?third skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?second .
+    ?second skos:broader ?first .
+    ?subject skos:broader ?first .
+  }
+WHERE
+  { { FILTER ( ?first = <http://dbpedia.org/resource/Category:Biochemistry> )
+      ?subject  skos:broader  ?third .
+      ?third    skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?second .
+      ?second   skos:broader  ?first
+    }
+    { FILTER ( ?first = <http://dbpedia.org/resource/Category:Molecular_biology> )
+      ?subject  skos:broader  ?first
+    }
+  }
+LIMIT   2
+
+----------------------------------------------

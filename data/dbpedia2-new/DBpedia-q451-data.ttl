@@ -1,0 +1,10 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ns3:   <http://en.wikipedia.org/wiki/> .
+
+dbpedia:Purge  rdfs:comment  "In history and political science, a purge is the removal of people who are considered undesirable by those in power from a government, from another organization, or from society as a whole. Purges can be peaceful or violent; many will end with the imprisonment or exile of those purged, but in some cases they will simply be removed from office. Restoring people who have been purged is known as rehabilitation."@en , "Čistka je odstranění nežádoucích osob z nějaké organizace nebo země z cílem zajistit její „čistotu“ tak, jak ji vnímá ten, kdo čistku organizuje. Prakticky se přitom může jednat o vyloučení, vyhnání nebo fyzickou likvidaci nežádoucích osob. Slovo se často používá v souvislosti se stalinskými čistkami v komunistické straně nebo v souvislosti s etnickými čistkami, jaké proběhly například v bývalé Jugoslávii v 90. letech 20. století."@cs ;
+        rdfs:label    "Purge"@en ;
+        foaf:page     ns3:Purge .
+
+dbpedia:Vitamin  foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/b/be/La_Boqueria.JPG> .

@@ -1,0 +1,15 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns1:   <http://www.w3.org/2002/07/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+ns1:owl  rdfs:comment  "This file specifies in RDF Schema format the\r\n    built-in classes and properties that together form the basis of\r\n    the RDF/XML syntax of OWL Full, OWL DL and OWL Lite.\r\n    We do not expect people to import this file\r\n    explicitly into their ontology. People that do import this file\r\n    should expect their ontology to be an OWL Full ontology. \r\n  " .
+
+<http://dbpedia.org/resource/%C3%89milie_Heymans>
+        rdfs:comment  "Émilie-Joane Heymans (born December 14, 1981) is a Canadian diver. Born in Brussels, Belgium and raised in Greenfield Park, a suburb of Montreal, she started diving in 1993, at age 11. She is currently being coached in Pointe-Claire, Québec by Yihua Li."@en .
+
+dbpedia:Albrecht_von_Roon
+        rdfs:comment        "Албрехт Теодор Емил граф фон Роон е пруски военен деец и политик. Роон, заедно с Ото фон Бисмарк и Хелмут фон Молтке Старши, е една от водещите фигури в пруското правителство по време на ключовото седмо десетилетие от 19. век, когато, след Френско-пруската война, повечето германски държави, начело с Прусия, образуват Германската империя."@bg , "Albrecht Theodor Emil Graf von Roon (30 April 1803 &ndash; 23 February 1879) was a Prussian soldier and politician. Roon, along with Otto von Bismarck and Helmuth von Moltke, was one of the leading figures in Prussia's government during the key decade of the 1860s, when Germany was unified under Prussia's leadership."@en ;
+        dbpprop:deathPlace  dbpedia:Berlin ;
+        foaf:name           "Albrecht von Roon"@en .

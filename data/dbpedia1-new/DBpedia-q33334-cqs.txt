@@ -1,0 +1,246 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { <http://dbpedia.org/resource/Http>
+              <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+    ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?b
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?bx <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { <http://dbpedia.org/resource/Http>
+              <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+    ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+    ?bx       <http://www.w3.org/2004/02/skos/core#broader>  ?b
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?bx <http://www.w3.org/2004/02/skos/core#broader> ?b .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?bx       <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+  }
+WHERE
+  { <http://dbpedia.org/resource/Http>
+              <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+    ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+    ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?bx <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?bx       <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?bx <http://www.w3.org/2004/02/skos/core#broader> ?b .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?bx       <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:Http> <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+  }
+WHERE
+  { <http://dbpedia.org/resource/Category:Http>
+              <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+    ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:Http> <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Category:Http>
+                <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:Http> <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?bx <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Category:Http>
+                <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?bx       <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+
+CONSTRUCT 
+  { 
+    <http://dbpedia.org/resource/Category:Http> <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?b <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?bx .
+    ?bx <http://www.w3.org/2004/02/skos/core#broader> ?b .
+    <http://dbpedia.org/resource/Http> <http://www.w3.org/2004/02/skos/core#subject> ?sub .
+    ?sub <http://www.w3.org/2004/02/skos/core#broader> ?b .
+  }
+WHERE
+  { { <http://dbpedia.org/resource/Category:Http>
+                <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?b        <http://www.w3.org/2004/02/skos/core#broader>  ?bx
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?bx .
+      ?bx       <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+    { <http://dbpedia.org/resource/Http>
+                <http://www.w3.org/2004/02/skos/core#subject>  ?sub .
+      ?sub      <http://www.w3.org/2004/02/skos/core#broader>  ?b
+    }
+  }
+LIMIT   2
+
+----------------------------------------------

@@ -1,0 +1,91 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  movie: <http://data.linkedmdb.org/resource/movie/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/terms/>
+
+CONSTRUCT 
+  { 
+    ?a dbpedia:director ?t1 .
+    ?t1 rdfs:label ?v0 .
+    ?a rdf:type dbpedia:Film .
+  }
+WHERE
+  { { ?a   dbpedia:director  ?t1 .
+      ?t1  rdfs:label        ?v0
+    }
+    ?a  rdf:type  dbpedia:Film
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  movie: <http://data.linkedmdb.org/resource/movie/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/terms/>
+
+CONSTRUCT 
+  { 
+    ?a7 dbpedia:director ?t127 .
+    ?t127 rdfs:label ?v012 .
+    ?a rdf:type dbpedia:Film .
+  }
+WHERE
+  { { ?a7    dbpedia:director  ?t127 .
+      ?t127  rdfs:label        ?v012
+    }
+    ?a  rdf:type  dbpedia:Film
+    FILTER ( ?a != ?a7 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  movie: <http://data.linkedmdb.org/resource/movie/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/terms/>
+
+CONSTRUCT 
+  { 
+    ?a rdf:type dbpedia:Film .
+  }
+WHERE
+  { {  }
+    ?a  rdf:type  dbpedia:Film
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  movie: <http://data.linkedmdb.org/resource/movie/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX  dc:   <http://purl.org/dc/terms/>
+
+CONSTRUCT 
+  { 
+    ?a rdf:type dbpedia:Film .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?a   dbpedia:director  ?t1 .
+                        ?t1  rdfs:label        ?v0
+                      }
+    ?a  rdf:type  dbpedia:Film
+  }
+LIMIT   2
+
+----------------------------------------------

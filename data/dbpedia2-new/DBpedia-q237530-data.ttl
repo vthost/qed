@@ -1,0 +1,112 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Warren_Beatty
+        a                         ns2:Actor ;
+        rdfs:label                "Warren Beatty"@en ;
+        ns2:activeYearsStartYear  "1957-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:David_Lynch  a  yago:AmericanFilmDirectors .
+
+dbpedia:Nicole_Kidman
+        a                         ns2:Actor ;
+        rdfs:label                "Nicole Kidman"@pt ;
+        ns2:activeYearsStartYear  "1983-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:Bugsy  ns2:director  dbpedia:Barry_Levinson ;
+        ns2:releaseDate  "1991-12-13"^^xsd:date ;
+        ns2:starring     dbpedia:Warren_Beatty , dbpedia:Annette_Bening .
+
+dbpedia:Eyes_Wide_Shut
+        ns2:director     dbpedia:Stanley_Kubrick ;
+        ns2:releaseDate  "1999-07-16"^^xsd:date ;
+        ns2:starring     dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Adam_and_Evelyne
+        ns2:starring  dbpedia:Jean_Simmons , dbpedia:Stewart_Granger .
+
+dbpedia:Steven_Spielberg
+        a       yago:AmericanFilmDirectors .
+
+<http://dbpedia.org/resource/Boom%21_%281968_film%29>
+        ns2:director     dbpedia:Joseph_Losey ;
+        ns2:releaseDate  "1968-05-28"^^xsd:date ;
+        ns2:starring     dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Stanley_Kubrick
+        a       yago:AmericanFilmDirectors .
+
+dbpedia:Annette_Bening
+        a                         ns2:Actor ;
+        rdfs:label                "Annette Bening"@ca ;
+        ns2:activeYearsStartYear  "1986-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns2:spouse                dbpedia:Warren_Beatty .
+
+dbpedia:Barry_Levinson
+        a       yago:AmericanFilmDirectors .
+
+dbpedia:Jean_Simmons  a           ns2:Actor ;
+        rdfs:label                "Jean Simmons"@ca ;
+        ns2:activeYearsStartYear  "1944-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns2:spouse                dbpedia:Stewart_Granger .
+
+dbpedia:Simon_Baker  a            ns2:Actor ;
+        rdfs:label                "Simon Baker"@cs ;
+        ns2:activeYearsStartYear  "1987-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns2:spouse                dbpedia:Rebecca_Rigg .
+
+dbpedia:Far_and_Away  ns2:starring  dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Joseph_Losey  a  yago:AmericanFilmDirectors .
+
+dbpedia:Tom_Cruise  a             ns2:Actor ;
+        rdfs:label                "Tom Cruise"@pt ;
+        ns2:activeYearsStartYear  "1981-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns2:spouse                dbpedia:Nicole_Kidman .
+
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29>
+        ns2:director     dbpedia:David_Lynch ;
+        ns2:releaseDate  "1990-08-17"^^xsd:date .
+
+dbpedia:The_Goonies  ns2:director  dbpedia:Steven_Spielberg ;
+        ns2:releaseDate  "1985-06-07"^^xsd:date .
+
+dbpedia:George_Sidney
+        a       yago:AmericanFilmDirectors .
+
+dbpedia:Richard_Burton
+        a                         ns2:Actor ;
+        rdfs:label                "Richard Burton"@an ;
+        ns2:activeYearsStartYear  "1944-01-01T00:00:00+01:00"^^xsd:gYear ;
+        ns2:spouse                dbpedia:Elizabeth_Taylor .
+
+dbpedia:Young_Bess  ns2:director  dbpedia:George_Sidney ;
+        ns2:releaseDate  "1953-05-21"^^xsd:date ;
+        ns2:starring     dbpedia:Stewart_Granger , dbpedia:Jean_Simmons .
+
+dbpedia:E_Street  ns2:starring  dbpedia:Rebecca_Rigg , dbpedia:Simon_Baker .
+
+dbpedia:Rebecca_Rigg  a           ns2:Actor ;
+        rdfs:label                "Rebecca Rigg"@de ;
+        ns2:activeYearsStartYear  "1977-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:The_Sandpiper
+        ns2:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Elizabeth_Taylor
+        a                         ns2:Actor ;
+        rdfs:label                "Elizabeth Taylor"@en ;
+        ns2:activeYearsStartYear  "1942-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:Stewart_Granger
+        a                         ns2:Actor ;
+        rdfs:label                "Stewart Granger"@de ;
+        ns2:activeYearsStartYear  "1933-01-01T00:00:00+01:00"^^xsd:gYear .
+
+dbpedia:Days_of_Thunder
+        ns2:starring  dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .

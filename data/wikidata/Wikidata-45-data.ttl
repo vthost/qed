@@ -1,0 +1,84 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q129433  rdfs:label  "Ma Jolie"@en ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q20189534  rdfs:label  "Woman Ironing"@en ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q160236 .
+
+wd:Q80317  rdfs:label  "Ragazzo con pipa"@it , "Ծխամորճով տղան"@hy ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q152849  rdfs:label  "Nude, Green Leaves and Bust"@en ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q160236  wdt:P625  "Point(-73.96367 40.77891)"^^geo:wktLiteral .
+
+wd:Q1767343  rdfs:label  "Sylvette"@en ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q2365880  wdt:P625  "Point(3.72408 51.03814)"^^geo:wktLiteral .
+
+wd:Q22087601  rdfs:label  "Schilder en model"@nl ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q2365880 .
+
+wd:Q22087606  rdfs:label  "Drie naakten en schetsen"@nl ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q2365880 .
+
+wd:Q361  wdt:P276  wd:Q15 .
+
+wd:Q15  wdt:P625  "Point(17.0 1.0)"^^geo:wktLiteral .
+
+wd:Q175036  rdfs:label  "Guernica"@en , "Guernica"@an , "Guernica"@af ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q613872  rdfs:label  "Picasso's Rose Period"@en , "Roza Periodo de Pikaso"@eo , "Picasso's Rose Period"@de ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q362  wdt:P276  wd:Q15 .
+
+wd:Q20198971  rdfs:label  "Santiago Rusiñol"@en ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q160236 .

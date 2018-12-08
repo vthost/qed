@@ -1,0 +1,101 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix yago:  <http://dbpedia.org/class/yago/> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Warren_Beatty
+        a           ns2:Actor ;
+        rdfs:label  "Warren Beatty"@en .
+
+dbpedia:David_Lynch  a  yago:AmericanFilmDirectors .
+
+dbpedia:Dan_Aykroyd  a    ns2:Actor ;
+        rdfs:label        "Дан Акройд"@bg ;
+        ns2:spouse        dbpedia:Donna_Dixon ;
+        dbpprop:wikilink  dbpedia:Donna_Dixon , dbpedia:Dan_Aykroyd .
+
+dbpedia:Nicole_Kidman
+        a           ns2:Actor ;
+        rdfs:label  "Nicole Kidman"@pt .
+
+dbpedia:Bugsy  ns2:director  dbpedia:Barry_Levinson ;
+        ns2:releaseDate  "1991-12-13"^^xsd:date ;
+        ns2:starring     dbpedia:Annette_Bening , dbpedia:Warren_Beatty .
+
+dbpedia:Eyes_Wide_Shut
+        ns2:director     dbpedia:Stanley_Kubrick ;
+        ns2:releaseDate  "1999-07-16"^^xsd:date ;
+        ns2:starring     dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Adam_and_Evelyne
+        ns2:starring  dbpedia:Jean_Simmons , dbpedia:Stewart_Granger .
+
+<http://dbpedia.org/resource/Boom%21_%281968_film%29>
+        ns2:director     dbpedia:Joseph_Losey ;
+        ns2:releaseDate  "1968-05-28"^^xsd:date ;
+        ns2:starring     dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Jean_Simmons  a  ns2:Actor ;
+        rdfs:label  "Jean Simmons"@ca ;
+        ns2:spouse  dbpedia:Stewart_Granger .
+
+dbpedia:Annette_Bening
+        a           ns2:Actor ;
+        rdfs:label  "Annette Bening"@ca ;
+        ns2:spouse  dbpedia:Warren_Beatty .
+
+dbpedia:Barry_Levinson
+        a       yago:AmericanFilmDirectors .
+
+dbpedia:Stanley_Kubrick
+        a       yago:AmericanFilmDirectors .
+
+dbpedia:Far_and_Away  ns2:starring  dbpedia:Tom_Cruise , dbpedia:Nicole_Kidman .
+
+dbpedia:Joseph_Losey  a  yago:AmericanFilmDirectors .
+
+dbpedia:Tom_Cruise  a  ns2:Actor ;
+        rdfs:label  "Tom Cruise"@pt ;
+        ns2:spouse  dbpedia:Nicole_Kidman .
+
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29>
+        ns2:director     dbpedia:David_Lynch ;
+        ns2:releaseDate  "1990-08-17"^^xsd:date .
+
+dbpedia:July_20  dbpprop:wikilink  dbpedia:Donna_Dixon , dbpedia:Dan_Aykroyd .
+
+dbpedia:Richard_Burton
+        a           ns2:Actor ;
+        rdfs:label  "Richard Burton"@an ;
+        ns2:spouse  dbpedia:Elizabeth_Taylor .
+
+dbpedia:George_Sidney
+        a       yago:AmericanFilmDirectors .
+
+dbpedia:Young_Bess  ns2:director  dbpedia:George_Sidney ;
+        ns2:releaseDate  "1953-05-21"^^xsd:date ;
+        ns2:starring     dbpedia:Stewart_Granger , dbpedia:Jean_Simmons .
+
+<http://dbpedia.org/resource/Love_Affair_%281994_film%29>
+        ns2:starring  dbpedia:Warren_Beatty , dbpedia:Annette_Bening .
+
+dbpedia:The_Sandpiper
+        ns2:starring  dbpedia:Richard_Burton , dbpedia:Elizabeth_Taylor .
+
+dbpedia:Elizabeth_Taylor
+        a           ns2:Actor ;
+        rdfs:label  "Elizabeth Taylor"@en .
+
+dbpedia:Donna_Dixon  a  ns2:Actor ;
+        rdfs:label  "Donna Dixon"@de .
+
+dbpedia:Stewart_Granger
+        a           ns2:Actor ;
+        rdfs:label  "Stewart Granger"@de .
+
+dbpedia:Days_of_Thunder
+        ns2:starring  dbpedia:Nicole_Kidman , dbpedia:Tom_Cruise .

@@ -1,0 +1,383 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a wgs84_pos:lat ?v9 .
+    ?a foaf:page ?v7 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { { ?a  wgs84_pos:lat  ?v9 }
+    { ?a  foaf:page  ?v7 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a15 wgs84_pos:lat ?v922 .
+    ?a foaf:page ?v7 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { { ?a15  wgs84_pos:lat  ?v922 }
+    { ?a  foaf:page  ?v7 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+    FILTER ( ( ( ( ( ( ( ?a != ?a15 ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a foaf:page ?v7 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { {  }
+    { ?a  foaf:page  ?v7 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a foaf:page ?v7 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?a  wgs84_pos:lat  ?v9 }
+    { ?a  foaf:page  ?v7 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a wgs84_pos:lat ?v9 .
+    ?a15 foaf:page ?v721 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { { ?a  wgs84_pos:lat  ?v9 }
+    { ?a15  foaf:page  ?v721 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+    FILTER ( ( ( ( ( ( ( ?a != ?a15 ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a15 wgs84_pos:lat ?v922 .
+    ?a15 foaf:page ?v721 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { { ?a15  wgs84_pos:lat  ?v922 }
+    { ?a15  foaf:page  ?v721 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+    FILTER ( ( ( ( ( ( ?a != ?a15 ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a15 foaf:page ?v721 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { {  }
+    { ?a15  foaf:page  ?v721 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+    FILTER ( ( ( ( ( ( ?a != ?a15 ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a15 foaf:page ?v721 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?a  wgs84_pos:lat  ?v9 }
+    { ?a15  foaf:page  ?v721 }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+    FILTER ( ( ( ( ( ( ?a != ?a15 ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a wgs84_pos:lat ?v9 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { { ?a  wgs84_pos:lat  ?v9 }
+    {  }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a15 wgs84_pos:lat ?v922 .
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { { ?a15  wgs84_pos:lat  ?v922 }
+    {  }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+    FILTER ( ( ( ( ( ( ?a != ?a15 ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) ) || ( ?a != ?a15 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  gn:   <http://www.geonames.org/ontology#>
+PREFIX  wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX  dbpedia: <http://dbpedia.org/ontology/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?a rdfs:label ?v0 .
+    ?a dbpedia:populationEstimate ?v4 .
+    ?a wgs84_pos:long ?v11 .
+    ?a dbpedia:populationTotal ?v6 .
+    ?a rdfs:label ?v2 .
+    ?a rdf:type dbpedia:Settlement .
+  }
+WHERE
+  { {  }
+    {  }
+    { FILTER ( lang(?v0) = "en" )
+      ?a  rdfs:label  ?v0
+    }
+    { ?a  dbpedia:populationEstimate  ?v4 }
+    { ?a  wgs84_pos:long  ?v11 }
+    { ?a  dbpedia:populationTotal  ?v6 }
+    { ?a  rdfs:label  ?v2 }
+    ?a  rdf:type  dbpedia:Settlement
+  }
+LIMIT   2
+
+----------------------------------------------

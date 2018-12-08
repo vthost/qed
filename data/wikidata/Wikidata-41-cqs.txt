@@ -3,31 +3,19 @@ PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
 
 CONSTRUCT 
   { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
+    ?s rdfs:label ?desc .
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
   }
 WHERE
-  { { FILTER ( lang(?place) = "en" )
-      ?pl  rdfs:label  ?place
+  { { FILTER ( lang(?desc) = "en" )
+      ?s  rdfs:label  ?desc
     }
-    { FILTER ( lang(?writer) = "en" )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
   }
 LIMIT   2
 
@@ -37,31 +25,19 @@ PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
 
 CONSTRUCT 
   { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
+    ?s rdfs:label ?desc .
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
   }
 WHERE
-  { { FILTER ( ! ( lang(?place) = "en" ) )
-      ?pl  rdfs:label  ?place
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?s  rdfs:label  ?desc
     }
-    { FILTER ( lang(?writer) = "en" )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
   }
 LIMIT   2
 
@@ -71,31 +47,84 @@ PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
 
 CONSTRUCT 
   { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
+    ?s0 rdfs:label ?desc1 .
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
   }
 WHERE
-  { FILTER NOT EXISTS { ?pl  rdfs:label  ?place
-                        FILTER ( lang(?place) = "en" )
+  { { FILTER ( lang(?desc) = "en" )
+      ?s0  rdfs:label  ?desc1
+    }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
+    FILTER ( ( ?s != ?s0 ) || ( ?s != ?s0 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s0 rdfs:label ?desc1 .
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?desc) = "en" ) )
+      ?s0  rdfs:label  ?desc1
+    }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
+    FILTER ( ( ?s != ?s0 ) || ( ?s != ?s0 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
+  }
+WHERE
+  { {  }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?desc) = "en" )
+                        ?s  rdfs:label  ?desc
                       }
-    { FILTER ( lang(?writer) = "en" )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
   }
 LIMIT   2
 
@@ -105,269 +134,19 @@ PREFIX  p:    <http://www.wikidata.org/prop/>
 PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX  wd:   <http://www.wikidata.org/entity/>
 PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
 
 CONSTRUCT 
   { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
+    ?s rdfs:label ?desc .
+    ?s wdt:P31 wd:Q37484 .
+    ?s rdfs:label ?label .
   }
 WHERE
-  { { FILTER ( lang(?place) = "en" )
-      ?pl  rdfs:label  ?place
-    }
-    { FILTER ( ! ( lang(?writer) = "en" ) )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { { FILTER ( ! ( lang(?place) = "en" ) )
-      ?pl  rdfs:label  ?place
-    }
-    { FILTER ( ! ( lang(?writer) = "en" ) )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { FILTER NOT EXISTS { ?pl  rdfs:label  ?place
-                        FILTER ( lang(?place) = "en" )
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?desc) = "en" ) )
+                        ?s  rdfs:label  ?desc
                       }
-    { FILTER ( ! ( lang(?writer) = "en" ) )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { { FILTER ( lang(?place) = "en" )
-      ?pl  rdfs:label  ?place
-    }
-    FILTER NOT EXISTS { ?s  rdfs:label  ?writer
-                        FILTER ( lang(?writer) = "en" )
-                      }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { { FILTER ( ! ( lang(?place) = "en" ) )
-      ?pl  rdfs:label  ?place
-    }
-    FILTER NOT EXISTS { ?s  rdfs:label  ?writer
-                        FILTER ( lang(?writer) = "en" )
-                      }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { FILTER NOT EXISTS { ?pl  rdfs:label  ?place
-                        FILTER ( lang(?place) = "en" )
-                      }
-    FILTER NOT EXISTS { ?s  rdfs:label  ?writer
-                        FILTER ( lang(?writer) = "en" )
-                      }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { { FILTER ( lang(?place) = "en" )
-      ?pl  rdfs:label  ?place
-    }
-    { FILTER ( lang(?writer) = "en" )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      { ?s  wdt:P106  wd:Q49757 }
-    }
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-PREFIX  wikibase: <http://wikiba.se/ontology#>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P106 wd:Q36180 .
-    ?s wdt:P106 wd:Q482980 .
-    ?s wdt:P106 wd:Q49757 .
-    ?s wdt:P27 ?pl .
-    ?s wikibase:sitelinks ?linkcount .
-    ?s rdfs:label ?writer .
-    ?pl rdfs:label ?place .
-  }
-WHERE
-  { { FILTER ( ! ( lang(?place) = "en" ) )
-      ?pl  rdfs:label  ?place
-    }
-    { FILTER ( lang(?writer) = "en" )
-      ?s  rdfs:label  ?writer
-    }
-    ?s  wdt:P27             ?pl ;
-        wikibase:sitelinks  ?linkcount
-    { FILTER NOT EXISTS { ?s  wdt:P106  wd:Q36180 }
-      FILTER NOT EXISTS { ?s  wdt:P106  wd:Q482980 }
-      { ?s  wdt:P106  wd:Q49757 }
-    }
+    ?s  wdt:P31     wd:Q37484 ;
+        rdfs:label  ?label
   }
 LIMIT   2
 

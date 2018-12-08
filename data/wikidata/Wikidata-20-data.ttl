@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q27757140  wdt:P569  "+0000-00-00T00:00:00Z" .
+
+wd:Q15836482  wdt:P569  "-1500-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4470081  rdfs:label  "John Williams"@da , "John Burr Williams"@en ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q30 ;
+        wdt:P569    "1900-11-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "1989-09-15T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1966737  rdfs:label  "Sidney Weintraub"@de , "Sidney Weintraub"@en ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P569    "1914-04-28T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "1983-06-19T00:00:00Z"^^xsd:dateTime .
+
+wd:Q60  rdfs:label  "Њујорк"@sr-ec , "Nueva York"@es , "New York"@nl , "New York"@sk , "New York"@so , "New York"@hu , "New York City"@pap , "New York City"@en , "New York Ceety"@sco ;
+        wdt:P625    "Point(-73.94 40.67)"^^geo:wktLiteral .
+
+wd:Q446574  rdfs:label  "Anna Schwartz"@en , "Anna Schwartz"@ca , "Ана Шварц"@bg ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P570    "2012-06-21T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3427125  wdt:P569  "+0000-00-00T00:00:00Z" .
+
+wd:Q30  rdfs:label  "अमेरिका"@bho , "Ameriketako Estatu Batuak"@eu , "United States of America"@en ;
+        wdt:P625    "Point(-112.0 44.0)"^^geo:wktLiteral .
+
+wd:Q520631  rdfs:label  "ウィリアム・ボーモル"@ja , "William Baumol"@it ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P569    "1922-02-26T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "2017-05-04T00:00:00Z"^^xsd:dateTime .
+
+wd:Q427309  wdt:P569  "-3099-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2743673  rdfs:label  "Edwin Robert Anderson Seligman"@en , "Edwin Robert Anderson Seligman"@nb ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P569    "1861-04-25T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "1939-07-08T00:00:00Z"^^xsd:dateTime .
+
+wd:Q240256  wdt:P569  "-1503-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q156290  wdt:P569  "-3073-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4060600  rdfs:label  "Peter S. Albin"@it ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P570    "2008-02-20T00:00:00Z"^^xsd:dateTime .

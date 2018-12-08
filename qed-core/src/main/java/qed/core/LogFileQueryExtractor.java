@@ -13,6 +13,10 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.Syntax;
+
 
 
 
@@ -96,7 +100,13 @@ public class LogFileQueryExtractor {
 									q = p[1]+ " " + q;
 							}
 //		    				String[] qq = {"Wikidata-"+id++,q};
-		    				qs.add(q);
+		    				
+		    				try {
+		    					
+		    					Query q2 = QueryFactory.create(q, Syntax.syntaxARQ);
+		    					qs.add(q);
+		    				} catch (Exception E) {}
+		    				
 //		    				Utils.writeQueryFile(dir, "Wikidata-"+id++, q);
 //		    				int ix = q.toLowerCase().indexOf("select");
 //		    				ix = q.toLowerCase().indexOf("select",ix+1);

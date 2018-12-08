@@ -1,0 +1,297 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource foaf:depiction ?image .
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { { ?resource  foaf:depiction  ?image }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource30 foaf:depiction ?image12 .
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { { ?resource30  foaf:depiction  ?image12 }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+    FILTER ( ( ( ( ?resource != ?resource30 ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { {  }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?resource  foaf:depiction  ?image }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource foaf:depiction ?image .
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { { ?resource  foaf:depiction  ?image }
+    { FILTER ( ! langMatches(lang(?comment), "en") )
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource30 foaf:depiction ?image12 .
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { { ?resource30  foaf:depiction  ?image12 }
+    { FILTER ( ! langMatches(lang(?comment), "en") )
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+    FILTER ( ( ( ( ?resource != ?resource30 ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { {  }
+    { FILTER ( ! langMatches(lang(?comment), "en") )
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource rdfs:comment ?comment .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?resource  foaf:depiction  ?image }
+    { FILTER ( ! langMatches(lang(?comment), "en") )
+      ?resource  rdfs:comment  ?comment
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource foaf:depiction ?image .
+    ?resource30 rdfs:comment ?comment31 .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { { ?resource  foaf:depiction  ?image }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource30  rdfs:comment  ?comment31
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+    FILTER ( ( ( ( ?resource != ?resource30 ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource30 foaf:depiction ?image12 .
+    ?resource30 rdfs:comment ?comment31 .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { { ?resource30  foaf:depiction  ?image12 }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource30  rdfs:comment  ?comment31
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+    FILTER ( ( ( ?resource != ?resource30 ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  dbp:  <http://dbpedia.org/property/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource30 rdfs:comment ?comment31 .
+    ?resource foaf:page ?uri .
+    ?resource rdfs:label ?wtitle .
+    ?resource foaf:page <http://en.wikipedia.org/wiki/Purge> .
+  }
+WHERE
+  { {  }
+    { FILTER langMatches(lang(?comment), "en")
+      ?resource30  rdfs:comment  ?comment31
+    }
+    FILTER langMatches(lang(?wtitle), "en")
+    ?resource  foaf:page  ?uri ;
+              rdfs:label  ?wtitle
+    { ?resource  foaf:page  <http://en.wikipedia.org/wiki/Purge> }
+    FILTER ( ( ( ?resource != ?resource30 ) || ( ?resource != ?resource30 ) ) || ( ?resource != ?resource30 ) )
+  }
+LIMIT   2
+
+----------------------------------------------

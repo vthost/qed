@@ -1,0 +1,7 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:Web_application
+        rdfs:comment    "In software engineering, a web application is an application that is accessed via a web browser over a network such as the Internet or an intranet. The term may also mean a computer software application that is hosted in a browser-controlled environment or coded in a browser-supported languageand reliant on a common web browser to render the application executable."@en , "Eine Webanwendung oder Webapplikation ist ein Computer-Programm, das auf einem Webserver ausgeführt wird, wobei eine Interaktion mit dem Benutzer über einen Webbrowser erfolgen kann. Hierzu sind der Computer des Benutzers und der des Dienstanbieters über ein Netzwerk wie das Internet oder über ein Intranet miteinander verbunden, so dass die räumliche Entfernung zwischen Client und Server unerheblich ist."@de ;
+        foaf:depiction  <http://upload.wikimedia.org/wikipedia/commons/6/6b/Horde-portal.png> .

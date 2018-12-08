@@ -1,0 +1,30 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0:   <http://dbpedia.org/ontology/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:Dara_Singh  a      ns2:Actor ;
+        dbpprop:birthdate  "1928-11-19"^^xsd:date ;
+        dbpprop:name       "Dara Singh Randhawa"@en .
+
+dbpedia:Anders_Thomas_Jensen
+        a             ns2:Actor ;
+        dbpprop:name  "Jensen, Anders Thomas"@de .
+
+dbpedia:Mai_Shiranui  dbpprop:birthdate
+                "1"^^xsd:int .
+
+dbpedia:Adrien_Brody  a    ns2:Actor ;
+        ns2:abstract       "Adrien Brody (born April 14, 1973) is an American actor. He received widespread recognition and subsequent acclaim after starring in Roman Polanski's The Pianist (2002). He is notable as the youngest actor ever to receive an Academy Award for Best Actor and the only American actor ever to win a César Award."@en , "Adrien Brody ye un actor estatounitense d'orichen chodigo, naxito o 14 d'abril de 1973 en Woodhaven."@an ;
+        dbpprop:birthdate  "1973-04-14"^^xsd:date ;
+        dbpprop:name       "Adrien Brody"@en .
+
+<http://dbpedia.org/resource/%C3%89milie_Heymans>
+        ns2:abstract  "Émilie-Joane Heymans (born December 14, 1981) is a Canadian diver. Born in Brussels, Belgium and raised in Greenfield Park, a suburb of Montreal, she started diving in 1993, at age 11. She is currently being coached in Pointe-Claire, Québec by Yihua Li."@en .
+
+dbpedia:Connor_Trinneer
+        a                  ns2:Actor ;
+        dbpprop:birthdate  "1969-03-19"^^xsd:date ;
+        dbpprop:name       "Конър Триниър"@bg .

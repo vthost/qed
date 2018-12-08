@@ -1,0 +1,62 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/ontology/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+@prefix ns3:   <http://dbpedia.org/ontology/> .
+
+dbpedia:Fun_for_Fan  ns3:releaseDate  "0001-05-30"^^xsd:date .
+
+dbpedia:Dan_Aykroyd  a  ns3:Actor ;
+        ns3:spouse  dbpedia:Donna_Dixon .
+
+dbpedia:A_Heart_in_Winter
+        ns3:releaseDate   "1992-09-02"^^xsd:date ;
+        dbpprop:starring  dbpedia:Daniel_Auteuil , <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> .
+
+<http://dbpedia.org/resource/Emmanuelle_B%C3%A9art>
+        a           ns3:Actor ;
+        ns3:spouse  dbpedia:Daniel_Auteuil .
+
+dbpedia:Dhan_Dhana_Dhan_Goal
+        ns3:releaseDate   "2007-11-23"^^xsd:date ;
+        dbpprop:starring  dbpedia:Bipasha_Basu , <http://dbpedia.org/resource/John_Abraham_%28actor%29> .
+
+dbpedia:Bipasha_Basu  a  ns3:Actor ;
+        ns3:partner  <http://dbpedia.org/resource/John_Abraham_%28actor%29> .
+
+<http://dbpedia.org/resource/Swing_Shift_%28film%29>
+        dbpprop:starring  dbpedia:Goldie_Hawn , dbpedia:Kurt_Russell .
+
+dbpedia:The_Couch_Trip
+        dbpprop:starring  dbpedia:Dan_Aykroyd , dbpedia:Donna_Dixon .
+
+dbpedia:One_Foot_in_the_Grave
+        ns3:releaseDate  "1990-01-04"^^xsd:date .
+
+dbpedia:Daniel_Auteuil
+        a       ns3:Actor .
+
+<http://dbpedia.org/resource/Manon_des_Sources_%281986_film%29>
+        dbpprop:starring  <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> , dbpedia:Daniel_Auteuil .
+
+<http://dbpedia.org/resource/John_Abraham_%28actor%29>
+        a       ns3:Actor .
+
+dbpedia:Madhoshi  dbpprop:starring  <http://dbpedia.org/resource/John_Abraham_%28actor%29> , dbpedia:Bipasha_Basu .
+
+dbpedia:Goldie_Hawn  a  ns3:Actor .
+
+dbpedia:Spies_Like_Us
+        ns3:releaseDate   "1985-12-06"^^xsd:date ;
+        dbpprop:starring  dbpedia:Dan_Aykroyd , dbpedia:Donna_Dixon .
+
+<http://dbpedia.org/resource/Overboard_%28film%29>
+        ns3:releaseDate   "1987-12-16"^^xsd:date ;
+        dbpprop:starring  dbpedia:Goldie_Hawn , dbpedia:Kurt_Russell .
+
+dbpedia:Kurt_Russell  a  ns3:Actor ;
+        ns3:partner  dbpedia:Goldie_Hawn .
+
+dbpedia:Donna_Dixon  a  ns3:Actor .

@@ -1,0 +1,94 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q39550551  rdfs:label  "Human immunodeficiency virus type 1 (HIV-1) Vpr functions as an immediate-early protein during HIV-1 infection."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "10196306" .
+
+wd:Q221226  rdfs:label  "سمات الخلايا السرطانية"@ar , "The Hallmarks of Cancer"@da , "The Hallmarks of Cancer"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q28317604  rdfs:label  "On the antiarrhythmic activity of one N-substituted piperazine derivative of trans-2-amino-3-hydroxy-1, 2, 3, 4-tetrahydroanaphthalene"@nl ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "44072" .
+
+wd:Q1542532  rdfs:label  "The Magical Number Seven, Plus or Minus Two"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q58426213  wdt:P698  "10035761" .
+
+wd:Q334622  rdfs:label  "tragedy of the commons"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q330955  rdfs:label  "Sense and reference"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q28114553  rdfs:label  "2,8-bis(trifluoromethyl)quinoline analogs show improved anti-Zika virus activity, compared to mefloquine"@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "28068604" .
+
+wd:Q22330702  rdfs:label  "Zika Virus Outbreak, Bahia, Brazil"@nl , "Zika Virus Outbreak, Bahia, Brazil"@en-gb , "Zika Virus Outbreak, Bahia, Brazil"@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "26401719" .
+
+wd:Q39977309  wdt:P698  "175709" .
+
+wd:Q39657275  wdt:P698  "107557" .
+
+wd:Q39683797  wdt:P698  "113452" .
+
+wd:Q39621700  rdfs:label  "Congenital thyroid disease detected by screening program."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "100020" .
+
+wd:Q44474799  wdt:P698  "1000007" .
+
+wd:Q21144503  rdfs:label  "Genetic characterization of Zika virus strains: geographic expansion of the Asian lineage"@nl , "Genetic characterization of Zika virus strains: geographic expansion of the Asian lineage"@en-gb , "Genetic characterization of Zika virus strains: geographic expansion of the Asian lineage"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q46521210  wdt:P698  "10645083" .
+
+wd:Q22242058  rdfs:label  "Zika virus spreads across Americas as concerns mount over birth defects"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q27134853  rdfs:label  "A case of allergic granulomatous angitis (author's transl)"@nl ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "444" .
