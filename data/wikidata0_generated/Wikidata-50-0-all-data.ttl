@@ -1,0 +1,26 @@
+<http://www.wikidata.org/entity/Q613872> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q613872> <http://www.w3.org/2000/01/rdf-schema#label> "Roza Periodo de Pikaso"@eo .
+<http://www.wikidata.org/entity/Q613872> <http://www.w3.org/2000/01/rdf-schema#label> "Picasso's Rose Period"@de .
+<http://www.wikidata.org/entity/Q1050032> <http://www.wikidata.org/prop/direct/P625> "Point(2.18103 41.38504)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q188740> <http://www.wikidata.org/prop/direct/P625> "Point(-73.977664 40.761484)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q30332241> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q30332241> <http://www.w3.org/2000/01/rdf-schema#label> "Three Musicians"@en .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> "num0"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> "lit1"@ANY_LANGUAGE .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit3"@ANY_LANGUAGE .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit4"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit0"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "num0"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/2> .
+<http://www.wikidata.org/entity/Q283822> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q283822> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q1050032> .
+<http://www.wikidata.org/entity/Q283822> <http://www.w3.org/2000/01/rdf-schema#label> "Las Meninas"@af .
+<http://www.wikidata.org/entity/Q283822> <http://www.w3.org/2000/01/rdf-schema#label> "Las Meninas"@ca .
+<http://www.wikidata.org/entity/Q283822> <http://www.w3.org/2000/01/rdf-schema#label> "Las Meninas"@en .
+<http://www.wikidata.org/entity/Q50222358> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q50222358> <http://www.w3.org/2000/01/rdf-schema#label> "Femme au béret et à la robe quadrillée (Marie-Thérèse Walter)"@en .
+<http://www.wikidata.org/entity/Q129433> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q129433> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q188740> .
+<http://www.wikidata.org/entity/Q129433> <http://www.w3.org/2000/01/rdf-schema#label> "Ma Jolie"@en .

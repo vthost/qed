@@ -1,0 +1,10 @@
+<http://synthetic/2> <http://www.w3.org/2000/01/rdf-schema#label> "num3"^^<http://any/number> .
+<http://synthetic/2> <http://www.w3.org/2000/01/rdf-schema#label> "num2"^^<http://any/number> .
+<http://synthetic/2> <http://www.w3.org/2000/01/rdf-schema#label> "num0"^^<http://any/number> .
+<http://synthetic/2> <http://www.w3.org/2000/01/rdf-schema#label> "lit3"@en .
+<http://synthetic/2> <http://www.wikidata.org/entity/Q8513> <http://www.w3.org/2001/XMLSchema#double> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P31> "" .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P31> "num1"^^<http://any/number> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q8513> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit3"@en .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .

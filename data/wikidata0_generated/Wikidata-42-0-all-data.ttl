@@ -1,0 +1,50 @@
+<http://www.wikidata.org/entity/Q748022> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q748022> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q748022> <http://www.wikidata.org/prop/direct/P577> "1751-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q748022> <http://www.wikidata.org/prop/direct/P577> "1725-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q748022> <http://www.w3.org/2000/01/rdf-schema#label> "Gallia Christiana"@de .
+<http://www.wikidata.org/entity/Q748022> <http://www.w3.org/2000/01/rdf-schema#label> "Gallia Christiana"@en .
+<http://www.wikidata.org/entity/Q748022> <http://www.w3.org/2000/01/rdf-schema#label> "Gallia christiana"@es .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P577> "1597-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q6247> .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q2028> .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q6247> .
+<http://www.wikidata.org/entity/Q83186> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q2028> .
+<http://www.wikidata.org/entity/Q83186> <http://www.w3.org/2000/01/rdf-schema#label> "Romeo ir Džuljeta"@lt .
+<http://www.wikidata.org/entity/Q83186> <http://www.w3.org/2000/01/rdf-schema#label> "Romeo and Juliet"@en .
+<http://www.wikidata.org/entity/Q83186> <http://www.w3.org/2000/01/rdf-schema#label> "ڕۆمێئۆ و ژوولیێت"@ckb .
+<http://www.wikidata.org/entity/Q6247> <http://www.wikidata.org/prop/direct/P625> "Point(10.791111111 45.156388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> "1830-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P577> <http://www.w3.org/2001/XMLSchema#double> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P625> "" .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/1> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#string> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.wikidata.org/entity/Q84> <http://www.wikidata.org/prop/direct/P625> "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P840> <http://synthetic/4> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P840> <http://synthetic/3> .
+<http://www.wikidata.org/entity/Q478023> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q478023> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q478023> <http://www.wikidata.org/prop/direct/P577> "1813-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q478023> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q478023> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q478023> <http://www.w3.org/2000/01/rdf-schema#label> "Tales of the Dead"@en .
+<http://www.wikidata.org/entity/Q153297> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q153297> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q153297> <http://www.wikidata.org/prop/direct/P577> "1731-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q153297> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q153297> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q153297> <http://www.w3.org/2000/01/rdf-schema#label> "مجلة السيد"@ar .
+<http://www.wikidata.org/entity/Q793424> <http://www.wikidata.org/prop/direct/P625> "Point(24.943643614 49.44642725)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q849505> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q849505> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q849505> <http://www.wikidata.org/prop/direct/P577> "1703-05-12T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q849505> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q793424> .
+<http://www.wikidata.org/entity/Q849505> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q793424> .
+<http://www.wikidata.org/entity/Q849505> <http://www.w3.org/2000/01/rdf-schema#label> "Breznai kiáltvány"@hu .
+<http://www.wikidata.org/entity/Q849505> <http://www.w3.org/2000/01/rdf-schema#label> "Placard in Berezhany"@en .
+<http://www.wikidata.org/entity/Q2028> <http://www.wikidata.org/prop/direct/P625> "Point(10.993741666 45.438158333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .

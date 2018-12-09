@@ -71,12 +71,25 @@ public abstract class LSDExpanderBase extends DriverBase {
 	
 	private String dataDir;
 	
+	private static String checkData(String queryFile, String originalDataset) {
+		if (originalDataset != null) {
+			return originalDataset;
+		} else {
+			String stem = queryFile.substring(0, queryFile.length()-QUERY_FILE_EXT.length());
+			String data = stem + "-data.ttl";
+			if (new File(data.substring(5)).exists()) {
+				return data;
+			} else {
+				return null;
+			}
+		}
+	}
 	public LSDExpanderBase(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
 		super();
 		this.queryFile = queryFile;
 		this.solutionLimit = solutionLimit;
 		this.datasetLimit = datasetLimit;
-		this.originalDataset = originalDataset;
+		this.originalDataset = checkData(queryFile, originalDataset);
 		this.dataDir = dataDir == null || new File(dataDir).isDirectory() ? dataDir : this.dataDir;
 	}
 
@@ -86,12 +99,14 @@ public abstract class LSDExpanderBase extends DriverBase {
 			throws URISyntaxException, MalformedURLException, IOException {//System.out.println("check2: "+f);
 			
 		String originalDatasetDefault = queryFile.replace(Constants.QUERY_FILE_EXT,"") + Constants.DATA_FILE_EXT;
-		Dataset dataset = originalDataset == null ? 
+		Dataset dataset_all = originalDataset == null ? 
 				new File(originalDatasetDefault).exists() ? RDFDataMgr.loadDataset(originalDatasetDefault) :  DatasetFactory.create()
 						: RDFDataMgr.loadDataset(originalDataset);
+		Dataset dataset = DatasetFactory.create();
 
 		if (t != null) {
 			JenaUtil.addTupleSet(dataset, t.tuples(QuadTableRelations.quads), U, t);
+			JenaUtil.addTupleSet(dataset_all, t.tuples(QuadTableRelations.quads), U, t);
 		}
 
 		QueryExecution exec = QueryExecutionFactory.create(ast, dataset);
@@ -101,8 +116,17 @@ public abstract class LSDExpanderBase extends DriverBase {
 			results, 
 			ResultsFormat.FMT_RDF_TURTLE);
 
+		QueryExecution exec_all = QueryExecutionFactory.create(ast, dataset_all);
+		ResultSet results_all = exec_all.execSelect();
+		ResultSetFormatter.output(
+			new FileOutputStream(dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + "-all" + Constants.RESULT_FILE_EXT), 
+			results_all, 
+			ResultsFormat.FMT_RDF_TURTLE);
+
 		RDFDataMgr.write(new FileOutputStream(
-			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + Constants.DATA_FILE_EXT), dataset, Lang.NQ);
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets + Constants.DATA_FILE_EXT), dataset, Lang.NQ);
+		RDFDataMgr.write(new FileOutputStream(
+			dataDir + stem().substring(stem().lastIndexOf('/'))  + "-" + datasets++ + "-all" + Constants.DATA_FILE_EXT), dataset_all, Lang.NQ);
 	
 		List<Row> jenaResult = new LinkedList<>();
 		Iterator<Row> jenaRows = runQuery(ast, dataset).rows();
