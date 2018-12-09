@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/Dak_Bangla_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://synthetic/4> <http://synthetic/0> <http://synthetic/0> .
+<http://dbpedia.org/resource/The_Blue_Villa> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Alain_Robbe-Grillet> .
+<http://dbpedia.org/resource/5_Rifles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://www.w3.org/2001/XMLSchema#double> <http://synthetic/0> <http://synthetic/0> .
+<http://dbpedia.org/resource/Alain_Robbe-Grillet> <http://www.w3.org/2000/01/rdf-schema#label> "Alain Robbe-Grillet"@en .
+<http://dbpedia.org/resource/David_Lynch> <http://www.w3.org/2000/01/rdf-schema#label> "David Lynch"@en .
+<http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/0> <http://synthetic/0> .
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/David_Lynch> .
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://synthetic/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .

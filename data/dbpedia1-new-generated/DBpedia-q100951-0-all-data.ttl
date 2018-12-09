@@ -1,0 +1,19 @@
+<http://www.w3.org/2002/07/owl> <http://www.w3.org/2000/01/rdf-schema#comment> "This file specifies in RDF Schema format the\r\n    built-in classes and properties that together form the basis of\r\n    the RDF/XML syntax of OWL Full, OWL DL and OWL Lite.\r\n    We do not expect people to import this file\r\n    explicitly into their ontology. People that do import this file\r\n    should expect their ontology to be an OWL Full ontology. \r\n  " .
+<http://synthetic/4> <http://dbpedia.org/property/starring> "ANY_LANGUAGE" .
+<http://dbpedia.org/resource/The_Matrix_%28franchise%29> <http://www.w3.org/2000/01/rdf-schema#comment> "The Matrix series primarily consists of a trilogy of science-fiction-action films written and directed by the Wachowski brothers and produced by Joel Silver. The first film The Matrix was released in March 1999; after its success, two sequels, The Matrix Reloaded and The Matrix Revolutions, were released in 2003. The characters and settings of the Matrix fictional universe are further explored in other media, including animation, comic books, and video games."@en .
+<http://dbpedia.org/resource/The_Matrix_%28franchise%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Keanu_Reeves> .
+<http://dbpedia.org/resource/The_Matrix_%28franchise%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://dbpedia.org/resource/Constantine_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Constantine is a 2005 American film based on Vertigo Comics’ Hellblazer comic book, with some plot elements being taken from the “Dangerous Habits” story arc (issues #41–46) and others—such as the inclusion of Papa Midnite—from the Original Sins trade paperback. It was released on February 8, 2005 in Hong Kong, and on February 18, 2005 in the U.S. and Canada."@en .
+<http://dbpedia.org/resource/Constantine_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Constantine ist ein US-amerikanischer Mystery-Thriller nach der Comicserie Hellblazer, in dem es um einen Konflikt zwischen Himmel und Hölle geht. Hauptdarsteller sind Keanu Reeves und Rachel Weisz."@de .
+<http://dbpedia.org/resource/Constantine_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Keanu_Reeves> .
+<http://dbpedia.org/resource/Constantine_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://dbpedia.org/resource/%C3%89milie_Heymans> <http://www.w3.org/2000/01/rdf-schema#comment> "Émilie-Joane Heymans (born December 14, 1981) is a Canadian diver. Born in Brussels, Belgium and raised in Greenfield Park, a suburb of Montreal, she started diving in 1993, at age 11. She is currently being coached in Pointe-Claire, Québec by Yihua Li."@en .
+<http://synthetic/2> <http://synthetic/4> <http://dbpedia.org/ontology/Film> .
+<http://synthetic/2> <http://dbpedia.org/property/starring> "lit3"@ANY_LANGUAGE .
+<http://synthetic/2> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Keanu_Reeves> .
+<http://synthetic/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "ANY_LANGUAGE" .
+<http://synthetic/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://synthetic/2> <http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2001/XMLSchema#string> .
+<http://synthetic/2> <http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/0> "num0"^^<http://any/number> .
+<http://synthetic/3> <http://synthetic/3> <http://synthetic/0> .

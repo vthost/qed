@@ -1,0 +1,62 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "b" , "bx" ;
+  rs:size            "10"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:boolean ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Category:Http> ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:boolean ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "ANY_LANGUAGE" ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit4"^^<http://any/iri> ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://dbpedia.org/resource/Category:Http> ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:integer ;
+                                     rs:variable  "b"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:integer ;
+                                     rs:variable  "b"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "ANY_LANGUAGE" ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit4"^^<http://any/iri> ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:integer ;
+                          rs:variable  "bx"
+                        ] ]
+] .

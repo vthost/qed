@@ -1,0 +1,56 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label" , "subj" , "coord" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q152849> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Nude, Green Leaves and Bust"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q20198971> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-73.96367 40.77891)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Santiago Rusiñol"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q175036> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Guernica"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1767343> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Sylvette"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q613872> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Picasso's Rose Period"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q129433> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Ma Jolie"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q20189534> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-73.96367 40.77891)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Woman Ironing"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

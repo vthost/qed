@@ -1,0 +1,11 @@
+<http://dbpedia.org/resource/%C3%96zer_Hurmac%C4%B1> <http://xmlns.com/foaf/0.1/name> "Özer Hurmacı"@de .
+<http://dbpedia.org/resource/%C3%96zer_Hurmac%C4%B1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/Anne_Main> <http://xmlns.com/foaf/0.1/name> "Anne Main"@en .
+<http://synthetic/0> <http://xmlns.com/foaf/0.1/Person> "lit4"^^<http://any/iri> .
+<http://synthetic/0> <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2001/XMLSchema#double> .
+<http://synthetic/0> <http://xmlns.com/foaf/0.1/Person> _:BX5FX3Ablank0 .
+<http://synthetic/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://synthetic/4> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .
+<http://synthetic/1> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .
+<http://synthetic/2> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .

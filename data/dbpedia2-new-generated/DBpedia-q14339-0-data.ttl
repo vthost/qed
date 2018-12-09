@@ -1,0 +1,10 @@
+<http://dbpedia.org/ontology/releaseDate> <http://xmlns.com/foaf/0.1/name> "THE ELEPHANT MAN"@en .
+<http://dbpedia.org/resource/THE_ELEPHANT_MAN> <http://dbpedia.org/property/redirect> <http://xmlns.com/foaf/0.1/name> .
+<http://xmlns.com/foaf/0.1/name> <http://xmlns.com/foaf/0.1/name> "The Elephant Man"@en .
+<http://xmlns.com/foaf/0.1/name> <http://xmlns.com/foaf/0.1/name> "THE ELEPHANT MAN"@en .
+<http://xmlns.com/foaf/0.1/name> <http://dbpedia.org/property/name> "THE ELEPHANT MAN"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "The Elephant Man (film)"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "The Elephant Man"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "THE ELEPHANT MAN (film)"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "THE ELEPHANT MAN"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .

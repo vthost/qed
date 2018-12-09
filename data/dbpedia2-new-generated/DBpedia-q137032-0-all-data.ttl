@@ -1,0 +1,72 @@
+<http://dbpedia.org/resource/Nicole_Kidman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Nicole_Kidman> <http://www.w3.org/2000/01/rdf-schema#label> "Nicole Kidman"@pt .
+<http://dbpedia.org/resource/Eyes_Wide_Shut> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Stanley_Kubrick> .
+<http://dbpedia.org/resource/Eyes_Wide_Shut> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Nicole_Kidman> .
+<http://dbpedia.org/resource/Eyes_Wide_Shut> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Eyes_Wide_Shut> <http://dbpedia.org/ontology/releaseDate> "1999-07-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Barry_Levinson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+<http://dbpedia.org/resource/Adam_and_Evelyne> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Jean_Simmons> .
+<http://dbpedia.org/resource/Adam_and_Evelyne> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Stewart_Granger> .
+<http://dbpedia.org/resource/George_Sidney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+<http://dbpedia.org/resource/Joseph_Losey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+<http://dbpedia.org/resource/Jean_Simmons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Jean_Simmons> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Stewart_Granger> .
+<http://dbpedia.org/resource/Jean_Simmons> <http://www.w3.org/2000/01/rdf-schema#label> "Jean Simmons"@ca .
+<http://dbpedia.org/resource/Donna_Dixon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Donna_Dixon> <http://www.w3.org/2000/01/rdf-schema#label> "Donna Dixon"@de .
+<http://dbpedia.org/resource/Elizabeth_Taylor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Elizabeth_Taylor> <http://www.w3.org/2000/01/rdf-schema#label> "Elizabeth Taylor"@en .
+<http://dbpedia.org/resource/Annette_Bening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Annette_Bening> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Warren_Beatty> .
+<http://dbpedia.org/resource/Annette_Bening> <http://www.w3.org/2000/01/rdf-schema#label> "Annette Bening"@ca .
+<http://dbpedia.org/resource/Bugsy> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Barry_Levinson> .
+<http://dbpedia.org/resource/Bugsy> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Annette_Bening> .
+<http://dbpedia.org/resource/Bugsy> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Warren_Beatty> .
+<http://dbpedia.org/resource/Bugsy> <http://dbpedia.org/ontology/releaseDate> "1991-12-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://synthetic/1> <http://dbpedia.org/class/yago/AmericanFilmDirectors> "num3"^^<http://any/number> .
+<http://synthetic/1> <http://dbpedia.org/class/yago/AmericanFilmDirectors> "lit2"^^<http://any/iri> .
+<http://synthetic/1> <http://dbpedia.org/ontology/spouse> <http://synthetic/1> .
+<http://synthetic/1> <http://dbpedia.org/ontology/partner> <http://synthetic/1> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+<http://dbpedia.org/resource/Tom_Cruise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Tom_Cruise> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Nicole_Kidman> .
+<http://dbpedia.org/resource/Tom_Cruise> <http://www.w3.org/2000/01/rdf-schema#label> "Tom Cruise"@pt .
+<http://dbpedia.org/resource/July_20> <http://dbpedia.org/property/wikilink> <http://dbpedia.org/resource/Donna_Dixon> .
+<http://dbpedia.org/resource/July_20> <http://dbpedia.org/property/wikilink> <http://dbpedia.org/resource/Dan_Aykroyd> .
+<http://dbpedia.org/resource/Boom%21_%281968_film%29> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Joseph_Losey> .
+<http://dbpedia.org/resource/Boom%21_%281968_film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Elizabeth_Taylor> .
+<http://dbpedia.org/resource/Boom%21_%281968_film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Richard_Burton> .
+<http://dbpedia.org/resource/Boom%21_%281968_film%29> <http://dbpedia.org/ontology/releaseDate> "1968-05-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Richard_Burton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Richard_Burton> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Elizabeth_Taylor> .
+<http://dbpedia.org/resource/Richard_Burton> <http://www.w3.org/2000/01/rdf-schema#label> "Richard Burton"@an .
+<http://dbpedia.org/resource/The_Sandpiper> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Elizabeth_Taylor> .
+<http://dbpedia.org/resource/The_Sandpiper> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Richard_Burton> .
+<http://dbpedia.org/resource/Dan_Aykroyd> <http://dbpedia.org/property/wikilink> <http://dbpedia.org/resource/Donna_Dixon> .
+<http://dbpedia.org/resource/Dan_Aykroyd> <http://dbpedia.org/property/wikilink> <http://dbpedia.org/resource/Dan_Aykroyd> .
+<http://dbpedia.org/resource/Dan_Aykroyd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Dan_Aykroyd> <http://dbpedia.org/ontology/spouse> <http://dbpedia.org/resource/Donna_Dixon> .
+<http://dbpedia.org/resource/Dan_Aykroyd> <http://www.w3.org/2000/01/rdf-schema#label> "Дан Акройд"@bg .
+<http://dbpedia.org/resource/Days_of_Thunder> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Nicole_Kidman> .
+<http://dbpedia.org/resource/Days_of_Thunder> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Young_Bess> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/George_Sidney> .
+<http://dbpedia.org/resource/Young_Bess> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Jean_Simmons> .
+<http://dbpedia.org/resource/Young_Bess> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Stewart_Granger> .
+<http://dbpedia.org/resource/Young_Bess> <http://dbpedia.org/ontology/releaseDate> "1953-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Love_Affair_%281994_film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Annette_Bening> .
+<http://dbpedia.org/resource/Love_Affair_%281994_film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Warren_Beatty> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://dbpedia.org/ontology/director> <http://synthetic/0> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://dbpedia.org/ontology/releaseDate> <http://synthetic/1> .
+<http://dbpedia.org/resource/David_Lynch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/4> <http://synthetic/1> .
+<http://dbpedia.org/resource/Stewart_Granger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Stewart_Granger> <http://www.w3.org/2000/01/rdf-schema#label> "Stewart Granger"@de .
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/David_Lynch> .
+<http://dbpedia.org/resource/Wild_at_Heart_%28film%29> <http://dbpedia.org/ontology/releaseDate> "1990-08-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Stanley_Kubrick> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+<http://synthetic/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/AmericanFilmDirectors> .
+<http://dbpedia.org/resource/Far_and_Away> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Nicole_Kidman> .
+<http://dbpedia.org/resource/Far_and_Away> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Warren_Beatty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Warren_Beatty> <http://www.w3.org/2000/01/rdf-schema#label> "Warren Beatty"@en .

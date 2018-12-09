@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "categ" , "name" , "res" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
+                                     rs:variable  "categ"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit4"^^<http://any/iri> ;
+                                     rs:variable  "categ"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit4"^^<http://any/iri> ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:string ;
+                          rs:variable  "res"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit4"^^<http://any/iri> ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Category:Ski_areas_and_resorts_in_Romania> ;
+                          rs:variable  "res"
+                        ] ]
+] .

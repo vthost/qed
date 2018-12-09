@@ -1,0 +1,16 @@
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#comment> "Funk Carioca, favela funk and, elsewhere in the world, baile funk, is a type of dance music from Rio de Janeiro, derived from Miami bass. In Rio de Janeiro it is most often simply known as funk, although it is very different musically from what funk means in most other places. \"Baile funk\", in Rio, refers not to the music, but to the actual parties in which the music is played."@en .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#comment> <http://synthetic/3> .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#comment> "Rio Funk (auch Favela Funk oder Baile Funk, in Brasilien meist einfach nur Funk oder Funk Carioca) nennt man eine in den 90er Jahren sehr populär gewordene Form des Hip-Hop aus Brasilien."@de .
+<http://dbpedia.org/resource/Funk_carioca> <http://dbpedia.org/property/popularity> "Large mid-1990s and current in Brazil, Moderate mid-2000s in Eastern Europe."@en .
+<http://dbpedia.org/resource/Funk_carioca> <http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://dbpedia.org/resource/Funk_carioca> <http://xmlns.com/foaf/0.1/page> <http://dbpedia.org/resource/Funk_carioca> .
+<http://dbpedia.org/resource/Funk_carioca> <http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dbpedia.org/resource/Funk_carioca> <http://xmlns.com/foaf/0.1/page> <http://en.wikipedia.org/wiki/Funk_carioca> .
+<http://dbpedia.org/resource/Funk_carioca> <http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#label> "num1"^^<http://any/number> .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#label> "num4"^^<http://any/number> .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#label> "Rio Funk"@de .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#label> "Funk carioca"@en .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#label> "num3"^^<http://any/number> .
+<http://dbpedia.org/resource/Funk_carioca> <http://www.w3.org/2000/01/rdf-schema#label> "num0"^^<http://any/number> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#double> <http://dbpedia.org/property/popularity> .

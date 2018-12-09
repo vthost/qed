@@ -1,0 +1,38 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "homepage" , "depiction" , "abstract" ;
+  rs:size            "10"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/1> ;
+                                     rs:variable  "depiction"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     false ;
+                                     rs:variable  "depiction"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "In software engineering, a web application is an application that is accessed via a web browser over a network such as the Internet or an intranet. The term may also mean a computer software application that is hosted in a browser-controlled environment or coded in a browser-supported languageand reliant on a common web browser to render the application executable."@en ;
+                                     rs:variable  "abstract"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://upload.wikimedia.org/wikipedia/commons/6/6b/Horde-portal.png> ;
+                                     rs:variable  "depiction"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
+                                     rs:variable  "homepage"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/3> ;
+                                     rs:variable  "depiction"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit3"@en ;
+                                     rs:variable  "abstract"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "" ;
+                                     rs:variable  "depiction"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/1> ;
+                                     rs:variable  "homepage"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/2> ;
+                                     rs:variable  "depiction"
+                                   ] ]
+] .

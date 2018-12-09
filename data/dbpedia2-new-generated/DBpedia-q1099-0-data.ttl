@@ -1,0 +1,10 @@
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/homepage> <http://synthetic/1> .
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/homepage> <http://synthetic/0> .
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/depiction> "" .
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/depiction> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/depiction> <http://synthetic/3> .
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/depiction> <http://synthetic/2> .
+<http://dbpedia.org/resource/Web_application> <http://xmlns.com/foaf/0.1/depiction> <http://synthetic/1> .
+<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "num4"^^<http://any/number> .
+<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "lit3"@en .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/0> <http://synthetic/1> .

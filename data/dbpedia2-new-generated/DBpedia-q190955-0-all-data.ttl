@@ -1,0 +1,25 @@
+<http://www.w3.org/2001/XMLSchema#boolean> <http://synthetic/1> <http://synthetic/1> .
+<http://www.w3.org/2001/XMLSchema#boolean> <http://synthetic/1> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dbpedia.org/resource/Dara_Singh> <http://dbpedia.org/property/birthdate> "1928-11-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Dara_Singh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Dara_Singh> <http://dbpedia.org/property/name> "Dara Singh Randhawa"@en .
+<http://dbpedia.org/resource/Adrien_Brody> <http://dbpedia.org/property/birthdate> "1973-04-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Adrien_Brody> <http://dbpedia.org/ontology/abstract> "Adrien Brody (born April 14, 1973) is an American actor. He received widespread recognition and subsequent acclaim after starring in Roman Polanski's The Pianist (2002). He is notable as the youngest actor ever to receive an Academy Award for Best Actor and the only American actor ever to win a César Award."@en .
+<http://dbpedia.org/resource/Adrien_Brody> <http://dbpedia.org/ontology/abstract> "Adrien Brody ye un actor estatounitense d'orichen chodigo, naxito o 14 d'abril de 1973 en Woodhaven."@an .
+<http://dbpedia.org/resource/Adrien_Brody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Adrien_Brody> <http://dbpedia.org/property/name> "Adrien Brody"@en .
+<http://www.w3.org/2001/XMLSchema#float> <http://dbpedia.org/ontology/abstract> _:BX5FX3Ablank0 .
+<http://www.w3.org/2001/XMLSchema#float> <http://dbpedia.org/ontology/abstract> "lit1"@ANY_LANGUAGE .
+<http://dbpedia.org/resource/Anders_Thomas_Jensen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Anders_Thomas_Jensen> <http://dbpedia.org/property/name> "Jensen, Anders Thomas"@de .
+<http://dbpedia.org/resource/Connor_Trinneer> <http://dbpedia.org/property/birthdate> "1969-03-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Connor_Trinneer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://dbpedia.org/resource/Connor_Trinneer> <http://dbpedia.org/property/name> "Конър Триниър"@bg .
+<http://dbpedia.org/resource/Mai_Shiranui> <http://dbpedia.org/property/birthdate> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://dbpedia.org/resource/%C3%89milie_Heymans> <http://dbpedia.org/ontology/abstract> "Émilie-Joane Heymans (born December 14, 1981) is a Canadian diver. Born in Brussels, Belgium and raised in Greenfield Park, a suburb of Montreal, she started diving in 1993, at age 11. She is currently being coached in Pointe-Claire, Québec by Yihua Li."@en .
+<http://www.w3.org/2001/XMLSchema#string> <http://dbpedia.org/ontology/abstract> <http://synthetic/1> .
+<http://www.w3.org/2001/XMLSchema#string> <http://dbpedia.org/ontology/abstract> _:BX5FX3Ablank0 .
+<http://www.w3.org/2001/XMLSchema#string> <http://dbpedia.org/ontology/abstract> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3.org/2001/XMLSchema#string> <http://dbpedia.org/ontology/abstract> <http://synthetic/0> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Actor> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/property/name> .

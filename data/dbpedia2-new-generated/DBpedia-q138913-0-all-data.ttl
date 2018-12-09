@@ -1,0 +1,19 @@
+<http://dbpedia.org/resource/Fun_for_Fan> <http://dbpedia.org/ontology/releaseDate> "0001-05-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Hats_Off_to_the_Insane> <http://dbpedia.org/property/cover> <http://dbpedia.org/resource/C:%5CDocuments_and_Settings%5CGlen%5CMy_Documents%5CMy_Pictures%5Ctherapy.jpg> .
+<http://dbpedia.org/resource/Hats_Off_to_the_Insane> <http://dbpedia.org/ontology/releaseDate> "1993-09-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> <http://www.w3.org/2000/01/rdf-schema#comment> "The Velvet Underground and Nico ist das einflussreiche Debütalbum der Band The Velvet Underground. Das Album wurde von Andy Warhol produziert und im März 1967 veröffentlicht."@de .
+<http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> <http://www.w3.org/2000/01/rdf-schema#comment> "The Velvet Underground &amp; Nico is the debut album by American rock band The Velvet Underground and vocal collaborator Nico. It was originally released in March 1967 by Verve Records. Recorded in 1966 during Andy Warhol's Exploding Plastic Inevitable multimedia event tour, The Velvet Underground &amp; Nico would gain notoriety for its experimentalist performance sensibilities, as well as its focus on controversial subject matter expressed in many of their songs."@en .
+<http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Album> .
+<http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> <http://dbpedia.org/property/cover> "Velvet Underground and Nico.jpg"@en .
+<http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> <http://dbpedia.org/property/artist> <http://dbpedia.org/resource/The_Velvet_Underground> .
+<http://dbpedia.org/resource/The_Velvet_Underground_%26_Nico> <http://www.w3.org/2000/01/rdf-schema#label> "The Velvet Underground & Nico"@en .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> <http://dbpedia.org/resource/The_Velvet_Underground> .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Album> .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "ANY_LANGUAGE" .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "lit0"^^<http://any/iri> .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "lit2"^^<http://any/iri> .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> "lit1"@ANY_LANGUAGE .
+<http://synthetic/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/releaseDate> .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#string> "" .
+<http://synthetic/1> <http://dbpedia.org/property/artist> <http://dbpedia.org/resource/The_Velvet_Underground> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#double> .

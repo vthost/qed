@@ -1,0 +1,32 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "date" , "h" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "-2250-01-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q230774> ;
+                          rs:variable  "h"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "-2700-01-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q122426> ;
+                          rs:variable  "h"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "-2700-01-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q161904> ;
+                          rs:variable  "h"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "-2100-01-01T00:00:00Z"^^xsd:dateTime ;
+                                     rs:variable  "date"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q15630830> ;
+                          rs:variable  "h"
+                        ] ]
+] .

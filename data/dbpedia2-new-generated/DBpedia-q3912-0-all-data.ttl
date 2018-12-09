@@ -1,0 +1,4 @@
+<http://dbpedia.org/resource/Little_Napoleons> <http://www.w3.org/2000/01/rdf-schema#comment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://dbpedia.org/resource/Little_Napoleons> <http://www.w3.org/2000/01/rdf-schema#comment> "lit3"@en .
+<http://dbpedia.org/resource/Little_Napoleons> <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2001/XMLSchema#float> .
+<http://dbpedia.org/resource/Little_Napoleons> <http://dbpedia.org/resource/Little_Napoleons> <http://www.w3.org/2001/XMLSchema#decimal> .

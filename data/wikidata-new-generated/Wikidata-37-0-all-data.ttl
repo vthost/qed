@@ -1,0 +1,62 @@
+<http://www.wikidata.org/entity/Q16> <http://www.wikidata.org/prop/direct/P625> "Point(-109.0 56.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q2870402> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q16> .
+<http://www.wikidata.org/entity/Q330985> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q330985> <http://www.wikidata.org/prop/direct/P577> "1793-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q330985> <http://www.w3.org/2000/01/rdf-schema#label> "On the Common Saying “That may be correct in theory, but it is of no use in practice”"@en .
+<http://www.wikidata.org/entity/Q371558> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q371558> <http://www.wikidata.org/prop/direct/P577> "1536-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q371558> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q78> .
+<http://www.wikidata.org/entity/Q371558> <http://www.w3.org/2000/01/rdf-schema#label> "Учењата за христијанската религија"@mk .
+<http://www.wikidata.org/entity/Q371558> <http://www.w3.org/2000/01/rdf-schema#label> "Institutie"@nl .
+<http://www.wikidata.org/entity/Q371558> <http://www.w3.org/2000/01/rdf-schema#label> "Institutes of the Christian Religion"@en .
+<http://www.wikidata.org/entity/Q8717> <http://www.wikidata.org/prop/direct/P625> "Point(-5.983333333 37.383333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q15> <http://www.wikidata.org/prop/direct/P625> "Point(17.0 1.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q248096> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q248096> <http://www.wikidata.org/prop/direct/P577> "1749-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q248096> <http://www.w3.org/2000/01/rdf-schema#label> "Tom Jones"@fi .
+<http://www.wikidata.org/entity/Q20036800> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q20036800> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q251848> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q251848> <http://www.wikidata.org/prop/direct/P577> "1392-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q251848> <http://www.w3.org/2000/01/rdf-schema#label> "דוכוס הורנט"@he .
+<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P625> "Point(136.0 35.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> "1830-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P577> <http://www.w3.org/2001/XMLSchema#double> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P625> "" .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/1> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#string> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.wikidata.org/entity/Q36479> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q15> .
+<http://www.wikidata.org/entity/Q288274> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q701996> <http://www.wikidata.org/prop/direct/P625> "Point(8.359722222 49.630277777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q1584849> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q16> .
+<http://www.wikidata.org/entity/Q10720461> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q16> .
+<http://www.wikidata.org/entity/Q8279> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q8279> <http://www.wikidata.org/prop/direct/P577> "1000-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q8279> <http://www.w3.org/2000/01/rdf-schema#label> "Shahnameh"@en .
+<http://www.wikidata.org/entity/Q78> <http://www.wikidata.org/prop/direct/P625> "Point(7.591111111 47.550555555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q131719> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q131719> <http://www.wikidata.org/prop/direct/P577> "1532-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q131719> <http://www.w3.org/2000/01/rdf-schema#label> "Патша"@cv .
+<http://www.wikidata.org/entity/Q84> <http://www.wikidata.org/prop/direct/P625> "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q3852> <http://www.wikidata.org/prop/direct/P625> "Point(8.365277777 49.631944444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P840> <http://synthetic/4> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P840> <http://synthetic/3> .
+<http://www.wikidata.org/entity/Q815580> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q815580> <http://www.wikidata.org/prop/direct/P577> "1545-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q815580> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q8717> .
+<http://www.wikidata.org/entity/Q815580> <http://www.w3.org/2000/01/rdf-schema#label> "Belianis"@en .
+<http://www.wikidata.org/entity/Q702432> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q16> .
+<http://www.wikidata.org/entity/Q629792> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q629792> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q90> <http://www.wikidata.org/prop/direct/P625> "Point(2.351827777 48.856577777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P577> "1203-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q701996> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q3852> .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Нибелункăн унки"@cv .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Nibelungenlied"@en .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Cant dels Nibelungs"@ca .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Песен за Нибелунгите"@bg .

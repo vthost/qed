@@ -1,0 +1,68 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coord" , "place" , "label" , "subj" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Shahnameh"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q8279> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q8717> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-5.983333333 37.383333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Belianis"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q815580> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q3852> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(8.365277777 49.631944444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Nibelungenlied"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q131554> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "On the Common Saying “That may be correct in theory, but it is of no use in practice”"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q330985> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q701996> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(8.359722222 49.630277777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Nibelungenlied"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q131554> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q78> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(7.591111111 47.550555555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Institutes of the Christian Religion"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q371558> ;
+                          rs:variable  "subj"
+                        ] ]
+] .

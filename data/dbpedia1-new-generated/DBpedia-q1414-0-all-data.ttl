@@ -1,0 +1,9 @@
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/2003/01/geo/wgs84_pos#long> .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://synthetic/1> "num2"^^<http://any/number> .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://www.w3.org/2001/XMLSchema#integer> "lit1"@ANY_LANGUAGE .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://synthetic/3> "lit4"^^<http://any/iri> .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://synthetic/0> "num4"^^<http://any/number> .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://synthetic/0> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://synthetic/0> <http://synthetic/0> .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://www.w3.org/2000/01/rdf-schema#label> "John Stewart"@fi .
+<http://dbpedia.org/resource/John_Stewart_%28musician%29> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/2> .

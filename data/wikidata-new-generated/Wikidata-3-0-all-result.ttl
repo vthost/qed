@@ -1,0 +1,14 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "sitelink" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <https://ty.wikipedia.org/wiki/Vitipetia> ;
+                                     rs:variable  "sitelink"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <https://sat.wikipedia.org/wiki/%E1%B1%A3%E1%B1%A4%E1%B1%A0%E1%B1%A4%E1%B1%AF%E1%B1%A4%E1%B1%B0%E1%B1%A4%E1%B1%AD%E1%B1%9F> ;
+                                     rs:variable  "sitelink"
+                                   ] ]
+] .

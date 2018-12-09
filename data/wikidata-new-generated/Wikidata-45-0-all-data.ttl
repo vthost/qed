@@ -1,0 +1,43 @@
+<http://www.wikidata.org/entity/Q80317> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q80317> <http://www.w3.org/2000/01/rdf-schema#label> "Ծխամորճով տղան"@hy .
+<http://www.wikidata.org/entity/Q80317> <http://www.w3.org/2000/01/rdf-schema#label> "Ragazzo con pipa"@it .
+<http://www.wikidata.org/entity/Q160236> <http://www.wikidata.org/prop/direct/P625> "Point(-73.96367 40.77891)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q152849> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q152849> <http://www.w3.org/2000/01/rdf-schema#label> "Nude, Green Leaves and Bust"@en .
+<http://www.wikidata.org/entity/Q613872> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q613872> <http://www.w3.org/2000/01/rdf-schema#label> "Roza Periodo de Pikaso"@eo .
+<http://www.wikidata.org/entity/Q613872> <http://www.w3.org/2000/01/rdf-schema#label> "Picasso's Rose Period"@de .
+<http://www.wikidata.org/entity/Q613872> <http://www.w3.org/2000/01/rdf-schema#label> "Picasso's Rose Period"@en .
+<http://www.wikidata.org/entity/Q361> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q15> .
+<http://www.wikidata.org/entity/Q2365880> <http://www.wikidata.org/prop/direct/P625> "Point(3.72408 51.03814)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q1767343> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q1767343> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvette"@en .
+<http://www.wikidata.org/entity/Q15> <http://www.wikidata.org/prop/direct/P625> "Point(17.0 1.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q22087606> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q22087606> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q2365880> .
+<http://www.wikidata.org/entity/Q22087606> <http://www.w3.org/2000/01/rdf-schema#label> "Drie naakten en schetsen"@nl .
+<http://www.wikidata.org/entity/Q20198971> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q20198971> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q160236> .
+<http://www.wikidata.org/entity/Q20198971> <http://www.w3.org/2000/01/rdf-schema#label> "Santiago Rusiñol"@en .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> "num0"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> "lit1"@ANY_LANGUAGE .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.wikidata.org/prop/direct/P170> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit3"@ANY_LANGUAGE .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit4"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "lit0"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> "num0"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/2> .
+<http://www.wikidata.org/entity/Q362> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q15> .
+<http://www.wikidata.org/entity/Q175036> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q175036> <http://www.w3.org/2000/01/rdf-schema#label> "Guernica"@af .
+<http://www.wikidata.org/entity/Q175036> <http://www.w3.org/2000/01/rdf-schema#label> "Guernica"@an .
+<http://www.wikidata.org/entity/Q175036> <http://www.w3.org/2000/01/rdf-schema#label> "Guernica"@en .
+<http://www.wikidata.org/entity/Q20189534> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q20189534> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q160236> .
+<http://www.wikidata.org/entity/Q20189534> <http://www.w3.org/2000/01/rdf-schema#label> "Woman Ironing"@en .
+<http://www.wikidata.org/entity/Q22087601> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q22087601> <http://www.wikidata.org/prop/direct/P276> <http://www.wikidata.org/entity/Q2365880> .
+<http://www.wikidata.org/entity/Q22087601> <http://www.w3.org/2000/01/rdf-schema#label> "Schilder en model"@nl .
+<http://www.wikidata.org/entity/Q129433> <http://www.wikidata.org/prop/direct/P170> <http://www.wikidata.org/entity/Q5593> .
+<http://www.wikidata.org/entity/Q129433> <http://www.w3.org/2000/01/rdf-schema#label> "Ma Jolie"@en .

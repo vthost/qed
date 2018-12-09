@@ -1,0 +1,10 @@
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/2004/02/skos/core#subject> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2000/01/rdf-schema#comment> "de" .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2000/01/rdf-schema#comment> "num3"^^<http://any/number> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://xmlns.com/foaf/0.1/name> <http://synthetic/2> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://xmlns.com/foaf/0.1/name> <http://synthetic/1> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://xmlns.com/foaf/0.1/name> <http://synthetic/0> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://dbpedia.org/resource/Category:German_musicians> "de" .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2004/02/skos/core#subject> <http://www.w3.org/2000/01/rdf-schema#comment> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2004/02/skos/core#subject> <http://dbpedia.org/resource/Category:German_musicians> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .

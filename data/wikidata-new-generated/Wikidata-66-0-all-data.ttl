@@ -1,0 +1,8 @@
+<http://synthetic/0> <http://schema.org/description> "introduza uma descrição"@pt .
+<http://synthetic/0> <http://www.w3.org/2001/XMLSchema#double> "num3"^^<http://any/number> .
+<http://synthetic/0> <http://synthetic/2> "introduza uma descrição"@pt .
+<http://synthetic/0> <http://synthetic/1> "ANY_LANGUAGE" .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/2> .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#double> "lit4"^^<http://any/iri> .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2001/XMLSchema#string> .
+<http://synthetic/1> <http://synthetic/1> <http://schema.org/description> .

@@ -1,0 +1,8 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "v6" , "v7" , "a" , "v4" , "v2" , "v9" , "v0" , "v11" ;
+  rs:size            "0"^^xsd:int
+] .

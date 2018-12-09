@@ -1,0 +1,23 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "Who" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
+                                     rs:variable  "Who"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
+                                     rs:variable  "Who"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:float ;
+                                     rs:variable  "Who"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:string ;
+                                     rs:variable  "Who"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit3"@ANY_LANGUAGE ;
+                                     rs:variable  "Who"
+                                   ] ]
+] .

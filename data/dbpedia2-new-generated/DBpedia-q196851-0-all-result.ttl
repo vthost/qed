@@ -1,0 +1,80 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "pelicula3" , "pelicula2" , "actor1" , "actor2" , "pelicula1" , "releaseDate" ;
+  rs:size            "4"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "2007-11-23"^^xsd:date ;
+                                     rs:variable  "releaseDate"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dhan_Dhana_Dhan_Goal> ;
+                          rs:variable  "pelicula3"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dhan_Dhana_Dhan_Goal> ;
+                          rs:variable  "pelicula2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Madhoshi> ;
+                          rs:variable  "pelicula1"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/John_Abraham_%28actor%29> ;
+                          rs:variable  "actor2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Bipasha_Basu> ;
+                          rs:variable  "actor1"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1992-09-02"^^xsd:date ;
+                                     rs:variable  "releaseDate"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/A_Heart_in_Winter> ;
+                          rs:variable  "pelicula3"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Manon_des_Sources_%281986_film%29> ;
+                          rs:variable  "pelicula2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/A_Heart_in_Winter> ;
+                          rs:variable  "pelicula1"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Daniel_Auteuil> ;
+                          rs:variable  "actor2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> ;
+                          rs:variable  "actor1"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "2007-11-23"^^xsd:date ;
+                                     rs:variable  "releaseDate"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dhan_Dhana_Dhan_Goal> ;
+                          rs:variable  "pelicula3"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Madhoshi> ;
+                          rs:variable  "pelicula2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Dhan_Dhana_Dhan_Goal> ;
+                          rs:variable  "pelicula1"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/John_Abraham_%28actor%29> ;
+                          rs:variable  "actor2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Bipasha_Basu> ;
+                          rs:variable  "actor1"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "1992-09-02"^^xsd:date ;
+                                     rs:variable  "releaseDate"
+                                   ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/A_Heart_in_Winter> ;
+                          rs:variable  "pelicula3"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/A_Heart_in_Winter> ;
+                          rs:variable  "pelicula2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Manon_des_Sources_%281986_film%29> ;
+                          rs:variable  "pelicula1"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Daniel_Auteuil> ;
+                          rs:variable  "actor2"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> ;
+                          rs:variable  "actor1"
+                        ] ]
+] .
