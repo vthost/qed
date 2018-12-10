@@ -21,8 +21,8 @@ Contains the data and answer generation.
 # Examples
 The datasets described in the paper can be found in /data. Demo classes in both qed-core and qed-gen show how to run the system. 
 The /data directory also contains a text file with the example queries from Wikidata for running the query and data extraction, and the generation. 
-For reproducing the DBpedia experiments, we recommend to host the DBpedia data from the time point at which the LSQ data set was created (DBpedia
-v.3.5.1, available at http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-set-351), since some properties represented in the LSQ data set are specific to that (see the LSQ paper for a more detailed overview of that query format, it is linked at http://aksw.github.io/LSQ/). However, if you want to just get an idea of QED (maybe with custom queries over DBpedia) you can also take the current DBpedia version hosted at http://dbpedia.org/sparql.
+For reproducing the DBpedia experiments, we recommend to host the DBpedia data from the time point at which the LSQ data set was created ([DBpedia
+v.3.5.1](http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-set-351)), since some properties represented in the LSQ data set are specific to that (see the LSQ paper for a more detailed overview of that query format, it is linked at http://aksw.github.io/LSQ/). However, if you want to just get an idea of QED (maybe with custom queries over DBpedia) you can also take the current [DBpedia version](http://dbpedia.org/sparql).
 
 # Note
 This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or jdolbyATgmail.com!
