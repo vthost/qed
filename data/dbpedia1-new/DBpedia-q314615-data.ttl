@@ -1,9 +1,0 @@
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-
-<http://dbpedia.org/resource/%C3%96zer_Hurmac%C4%B1>
-        a          foaf:Person ;
-        foaf:name  "Özer Hurmacı"@de .
-
-dbpedia:Anne_Main  foaf:name  "Anne Main"@en .

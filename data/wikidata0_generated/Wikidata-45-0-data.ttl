@@ -1,6 +1,0 @@
-<http://synthetic/1> <http://www.wikidata.org/entity/Q7725634> <http://synthetic/0> .
-<http://synthetic/1> <http://www.wikidata.org/prop/direct/P279> "en" .
-<http://synthetic/1> <http://www.wikidata.org/prop/direct/P279> <http://www.wikidata.org/entity/Q7725634> .
-<http://synthetic/1> <http://www.wikidata.org/prop/direct/P279> <http://synthetic/3> .
-<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> "num4"^^<http://any/number> .
-<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> "lit3"@ANY_LANGUAGE .
