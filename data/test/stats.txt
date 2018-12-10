@@ -1,1 +1,0 @@
-config& qs& qsize &cqs& cqs-with-data& triples\\hline

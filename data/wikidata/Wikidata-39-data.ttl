@@ -39,7 +39,7 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q178091  rdfs:label  "Раздяла с родителите"@bg , "Abschied von den Eltern"@de ;
+wd:Q184547  rdfs:label  "Zehn Millionen Kinder. Die Erziehung der Jugend im Dritten Reich"@de ;
         wdt:P31     wd:Q7725634 .
 
 wd:Q4655556  rdfs:label  "A Book of Heroes and Heroines"@en ;
@@ -48,8 +48,11 @@ wd:Q4655556  rdfs:label  "A Book of Heroes and Heroines"@en ;
 wd:Q4655560  rdfs:label  "A Book of Kings and Queens"@en ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q208971  rdfs:label  "1Q84"@en , "1Q84"@ca , "إيتشي كيو هاتشي يون"@ar ;
+wd:Q131554  rdfs:label  "Nibelungoen eraztuna"@eu , "Nibelungenlied"@nb ;
         wdt:P31     wd:Q7725634 .
 
-wd:Q480  rdfs:label  "Don Quixote"@cy , "Don Kixot"@az , "Don Quixote"@en-ca ;
+wd:Q228987  rdfs:label  "Zum Nachdenken für Herrenreiter"@de ;
+        wdt:P31     wd:Q7725634 .
+
+wd:Q480  rdfs:label  "Don Quixote"@en , "ዶን ኪሖቴ"@am , "Don Quixot d'A Mancha"@an ;
         wdt:P31     wd:Q7725634 .

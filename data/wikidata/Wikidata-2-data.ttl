@@ -1,0 +1,183 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q1054281  wdt:P585  "-13000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1194400  rdfs:label  "Деветоаприлска трагедија"@sr ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P585    "1989-04-09T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3076763  rdfs:label  "Новите определения в SI"@bg , "Redefinition of SI base units"@en-ca , "Định nghĩa lại đơn vị đo lường quốc tế cơ bản 2019"@vi , "redefinition of SI base units"@en ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P585    "2018-11-16T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3748186  wdt:P585  "-5000000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1065985  wdt:P585  "-443800000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q20107043  wdt:P31  wd:Q1190554 ;
+        wdt:P580  "1975-04-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q422450  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "1953-02-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q726866  wdt:P580  "-3200000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4608512  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "2007-05-08T00:00:00Z"^^xsd:dateTime .
+
+wd:Q42059422  rdfs:label  "Incendis del nord-oest de la península ibèrica de 2017"@ca ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P580    "2017-10-13T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1462714  wdt:P580  "+0000-00-00T00:00:00Z" .
+
+wd:Q1428557  rdfs:label  "Borkum Island war crimes trial"@en ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P585    "1944-08-04T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2931705  wdt:P585  "-150000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q11930524  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "1649-09-29T00:00:00Z"^^xsd:dateTime .
+
+wd:Q19878509  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "2015-02-14T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1054258  wdt:P585  "-15000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q56153210  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "2018-08-12T00:00:00Z"^^xsd:dateTime .
+
+wd:Q491497  wdt:P580  "-13000000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q11992151  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "1921-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q837561  wdt:P585  "-2450000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q310846  wdt:P580  "-1200000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q105784  wdt:P580  "-600000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2224966  wdt:P580  "-12700000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q210774  wdt:P580  "-1760000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16931905  rdfs:label  "Lambeth slavery case"@en ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P585    "2013-10-25T00:00:00Z"^^xsd:dateTime .
+
+wd:Q955075  rdfs:label  "Incident Max Headroom"@fr , "El Incidente Max Headroom"@es , "Max Headroom broadcast signal intrusion"@en ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P580    "1987-11-22T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1987-11-22T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2549910  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "2012-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q194257  wdt:P580  "-400000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q473809  wdt:P580  "-750000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q744718  wdt:P580  "-358900000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16938335  rdfs:label  "2014 Isla Vista massacre"@en ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P580    "2014-05-23T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "2014-05-23T00:00:00Z"^^xsd:dateTime .
+
+wd:Q10908  wdt:P580  "-370000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3206221  wdt:P585  "-70000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q188654  wdt:P580  "-635000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4550130  wdt:P585  "-15000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q12581170  wdt:P585  "-11300-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q6728568  wdt:P580  "-1500000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q382180  rdfs:label  "Affair of the Placards"@en , "Asunto de los pasquines"@es , "Affaire des Placards"@de ;
+        wdt:P31     wd:Q1190554 ;
+        wdt:P585    "1534-10-17T00:00:00Z"^^xsd:dateTime .
+
+wd:Q26183497  wdt:P31  wd:Q1190554 ;
+        wdt:P580  "1996-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "1996-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1358  wdt:P580  "-380000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q9505308  wdt:P580  "-1000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q597383  wdt:P580  "-2050000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q57404471  wdt:P580  "+0000-00-00T00:00:00Z" .
+
+wd:Q3430245  wdt:P31  wd:Q1190554 ;
+        wdt:P580  "1702-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q160  wdt:P580  "-50000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q79064  wdt:P580  "-541000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4604552  wdt:P31  wd:Q1190554 ;
+        wdt:P580  "2005-02-02T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1936316  wdt:P580  "-182000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q992653  wdt:P585  "-781000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3011135  wdt:P585  "-700000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4406982  wdt:P31  wd:Q1190554 ;
+        wdt:P580  "1960-01-17T00:00:00Z"^^xsd:dateTime .
+
+wd:Q151542  wdt:P580  "-600000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4607841  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "2007-05-15T00:00:00Z"^^xsd:dateTime .
+
+wd:Q12582111  wdt:P585  "-11900-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q59282119  wdt:P31  wd:Q1190554 ;
+        wdt:P585  "2018-11-28T00:00:00Z"^^xsd:dateTime .

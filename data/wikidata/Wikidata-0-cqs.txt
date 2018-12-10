@@ -1,0 +1,14 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P625 ?geo .
+  }
+WHERE
+  { ?item  wdt:P625  ?geo }
+LIMIT   2
+
+----------------------------------------------

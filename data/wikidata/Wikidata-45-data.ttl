@@ -39,46 +39,53 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q129433  rdfs:label  "Ma Jolie"@en ;
-        wdt:P170    wd:Q5593 .
-
-wd:Q20189534  rdfs:label  "Woman Ironing"@en ;
-        wdt:P170    wd:Q5593 ;
-        wdt:P276    wd:Q160236 .
-
-wd:Q80317  rdfs:label  "Ragazzo con pipa"@it , "Ծխամորճով տղան"@hy ;
-        wdt:P170    wd:Q5593 .
-
-wd:Q152849  rdfs:label  "Nude, Green Leaves and Bust"@en ;
-        wdt:P170    wd:Q5593 .
-
-wd:Q160236  wdt:P625  "Point(-73.96367 40.77891)"^^geo:wktLiteral .
-
-wd:Q1767343  rdfs:label  "Sylvette"@en ;
-        wdt:P170    wd:Q5593 .
-
-wd:Q2365880  wdt:P625  "Point(3.72408 51.03814)"^^geo:wktLiteral .
-
 wd:Q22087601  rdfs:label  "Schilder en model"@nl ;
         wdt:P170    wd:Q5593 ;
         wdt:P276    wd:Q2365880 .
+
+wd:Q3816338  rdfs:label  "Scena erotica"@it ;
+        wdt:P170    wd:Q5593 .
 
 wd:Q22087606  rdfs:label  "Drie naakten en schetsen"@nl ;
         wdt:P170    wd:Q5593 ;
         wdt:P276    wd:Q2365880 .
 
-wd:Q361  wdt:P276  wd:Q15 .
+wd:Q75564  rdfs:label  "Dora Maar au Chat"@en ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q17  wdt:P625  "Point(136.0 35.0)"^^geo:wktLiteral .
+
+wd:Q129433  rdfs:label  "Ma Jolie"@en ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q188740 .
+
+wd:Q283822  rdfs:label  "Las Meninas"@en ;
+        wdt:P170    wd:Q5593 ;
+        wdt:P276    wd:Q1050032 .
+
+wd:Q613872  rdfs:label  "Roza Periodo de Pikaso"@eo , "Picasso's Rose Period"@de ;
+        wdt:P170    wd:Q5593 .
+
+wd:Q16  wdt:P625  "Point(-109.0 56.0)"^^geo:wktLiteral .
+
+wd:Q188740  wdt:P625  "Point(-73.977664 40.761484)"^^geo:wktLiteral .
 
 wd:Q15  wdt:P625  "Point(17.0 1.0)"^^geo:wktLiteral .
 
-wd:Q175036  rdfs:label  "Guernica"@en , "Guernica"@an , "Guernica"@af ;
+wd:Q59534605  rdfs:label  "Woman in a Hat with Flowers"@en ;
         wdt:P170    wd:Q5593 .
 
-wd:Q613872  rdfs:label  "Picasso's Rose Period"@en , "Roza Periodo de Pikaso"@eo , "Picasso's Rose Period"@de ;
+wd:Q50828855  wdt:P276  wd:Q15 .
+
+wd:Q1671798  wdt:P276  wd:Q17 .
+
+wd:Q6145647  wdt:P276  wd:Q17 .
+
+wd:Q1560445  wdt:P276  wd:Q16 .
+
+wd:Q2365880  wdt:P625  "Point(3.72408 51.03814)"^^geo:wktLiteral .
+
+wd:Q1050032  wdt:P625  "Point(2.18103 41.38504)"^^geo:wktLiteral .
+
+wd:Q80317  rdfs:label  "Garçon à la pipe"@en ;
         wdt:P170    wd:Q5593 .
-
-wd:Q362  wdt:P276  wd:Q15 .
-
-wd:Q20198971  rdfs:label  "Santiago Rusiñol"@en ;
-        wdt:P170    wd:Q5593 ;
-        wdt:P276    wd:Q160236 .

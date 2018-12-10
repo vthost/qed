@@ -94,17 +94,18 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P698 ?_PubMed_ID14 .
+    ?item12 wdt:P698 ?_PubMed_ID13 .
     ?item wdt:P31 wd:Q13442814 .
     ?item rdfs:label ?itemLabel .
   }
 WHERE
   { FILTER ( lang(?itemLabel) = "en" )
     FILTER contains(lcase(?itemLabel), "zika")
-    { ?item13  wdt:P698  ?_PubMed_ID14 }
+    OPTIONAL
+      { ?item12  wdt:P698  ?_PubMed_ID13 }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
-    FILTER ( ( ?item != ?item13 ) || ( ?item != ?item13 ) )
+    FILTER ( ( ?item != ?item12 ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -117,17 +118,18 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P698 ?_PubMed_ID14 .
+    ?item12 wdt:P698 ?_PubMed_ID13 .
     ?item wdt:P31 wd:Q13442814 .
     ?item rdfs:label ?itemLabel .
   }
 WHERE
   { FILTER ( ! ( lang(?itemLabel) = "en" ) )
     FILTER contains(lcase(?itemLabel), "zika")
-    { ?item13  wdt:P698  ?_PubMed_ID14 }
+    OPTIONAL
+      { ?item12  wdt:P698  ?_PubMed_ID13 }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
-    FILTER ( ( ?item != ?item13 ) || ( ?item != ?item13 ) )
+    FILTER ( ( ?item != ?item12 ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -140,17 +142,18 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P698 ?_PubMed_ID14 .
+    ?item12 wdt:P698 ?_PubMed_ID13 .
     ?item wdt:P31 wd:Q13442814 .
     ?item rdfs:label ?itemLabel .
   }
 WHERE
   { FILTER ( lang(?itemLabel) = "en" )
     FILTER ( ! contains(lcase(?itemLabel), "zika") )
-    { ?item13  wdt:P698  ?_PubMed_ID14 }
+    OPTIONAL
+      { ?item12  wdt:P698  ?_PubMed_ID13 }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
-    FILTER ( ( ?item != ?item13 ) || ( ?item != ?item13 ) )
+    FILTER ( ( ?item != ?item12 ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -163,17 +166,18 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P698 ?_PubMed_ID14 .
+    ?item12 wdt:P698 ?_PubMed_ID13 .
     ?item wdt:P31 wd:Q13442814 .
     ?item rdfs:label ?itemLabel .
   }
 WHERE
   { FILTER ( ! ( lang(?itemLabel) = "en" ) )
     FILTER ( ! contains(lcase(?itemLabel), "zika") )
-    { ?item13  wdt:P698  ?_PubMed_ID14 }
+    OPTIONAL
+      { ?item12  wdt:P698  ?_PubMed_ID13 }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
-    FILTER ( ( ?item != ?item13 ) || ( ?item != ?item13 ) )
+    FILTER ( ( ?item != ?item12 ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -192,7 +196,7 @@ CONSTRUCT
 WHERE
   { FILTER ( lang(?itemLabel) = "en" )
     FILTER contains(lcase(?itemLabel), "zika")
-    {  }
+    FILTER NOT EXISTS { ?item  wdt:P698  ?_PubMed_ID }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
   }
@@ -213,7 +217,7 @@ CONSTRUCT
 WHERE
   { FILTER ( ! ( lang(?itemLabel) = "en" ) )
     FILTER contains(lcase(?itemLabel), "zika")
-    {  }
+    FILTER NOT EXISTS { ?item  wdt:P698  ?_PubMed_ID }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
   }
@@ -234,7 +238,28 @@ CONSTRUCT
 WHERE
   { FILTER ( lang(?itemLabel) = "en" )
     FILTER ( ! contains(lcase(?itemLabel), "zika") )
-    {  }
+    FILTER NOT EXISTS { ?item  wdt:P698  ?_PubMed_ID }
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { FILTER ( ! ( lang(?itemLabel) = "en" ) )
+    FILTER ( ! contains(lcase(?itemLabel), "zika") )
+    FILTER NOT EXISTS { ?item  wdt:P698  ?_PubMed_ID }
     ?item  wdt:P31     wd:Q13442814 ;
            rdfs:label  ?itemLabel
   }

@@ -39,19 +39,15 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q35387  rdfs:label  "Ariana Jollee"@en ;
+wd:Q11485  rdfs:label  "Jean-Claude Killy"@es ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q312783  rdfs:label  "Vivek (actor)"@nl ;
+wd:Q41221  rdfs:label  "Asier Oruesagasti"@es ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q35385  rdfs:label  "Glukoza"@pl ;
-        wdt:P106    wd:Q33999 ;
-        wdt:P31     wd:Q5 .
-
-wd:Q41224  rdfs:label  "Kandido Uranga"@es ;
+wd:Q314427  rdfs:label  "Kevin McHale (actor)"@ca ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
@@ -59,14 +55,14 @@ wd:Q16214587  rdfs:label  "Adam Reid (actor)"@es ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q41233  rdfs:label  "Timothy Dalton"@es ;
-        wdt:P106    wd:Q33999 ;
-        wdt:P31     wd:Q5 .
-
 wd:Q55317537  rdfs:label  "Gustavo Angarita Jr (actor)"@es ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .
 
-wd:Q349166  rdfs:label  "Ben Johnson (actor)"@gl ;
+wd:Q283512  rdfs:label  "Siddique (actor)"@nl ;
+        wdt:P106    wd:Q33999 ;
+        wdt:P31     wd:Q5 .
+
+wd:Q26045  rdfs:label  "Barbara Myasnikov"@ast , "Barbara Myasnikov"@an ;
         wdt:P106    wd:Q33999 ;
         wdt:P31     wd:Q5 .

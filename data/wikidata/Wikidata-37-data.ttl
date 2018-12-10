@@ -39,73 +39,519 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q330985  rdfs:label  "On the Common Saying “That may be correct in theory, but it is of no use in practice”"@en ;
+wd:Q862536  rdfs:label  "Three Fat Men"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1928-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q7774872  rdfs:label  "The Wild Irish Girl"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1806-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q27 .
+
+wd:Q230307  rdfs:label  "За еврейския въпрос"@bg ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1843-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q331092  rdfs:label  "Civil Disobedience"@nl ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1849-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q18  wdt:P625  "Point(-59.0 -21.0)"^^geo:wktLiteral .
+
+wd:Q5450418  rdfs:label  "Finity's End"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1997-08-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q813935  rdfs:label  "Ji̍t-pún Su-kì"@nan , "Nihon Shoki"@en ;
+        wdt:P291    wd:Q17 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "0720-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q785001  rdfs:label  "The Golden Man"@en ;
         wdt:P31     wd:Q7725634 ;
-        wdt:P577    "1793-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "1980-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q84  wdt:P625  "Point(-0.1275 51.507222222)"^^geo:wktLiteral .
+wd:Q117293  rdfs:label  "Бедныя людзі"@be-tarask ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1846-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q131554  rdfs:label  "Нибелункăн унки"@cv , "Песен за Нибелунгите"@bg , "Cant dels Nibelungs"@ca , "Nibelungenlied"@en ;
+wd:Q15102491  rdfs:label  "فالنشتاين"@ar ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1920-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q813031  rdfs:label  "Kociki"@az , "קוג'יקי"@he , "Kojiki"@hr ;
+        wdt:P291    wd:Q17 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "0712-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16385930  rdfs:label  "Harrington"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1817-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q27 .
+
+wd:Q509209  rdfs:label  "Государство и революция"@ru ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1918-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q668  wdt:P625  "Point(77.0 22.0)"^^geo:wktLiteral .
+
+wd:Q474088  rdfs:label  "Amores"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "-014-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q55855202  rdfs:label  "Gli scrittori d'Italia"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1763-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q131554  rdfs:label  "Песен за Нибелунгите"@bg , "Cant dels Nibelungs"@ca , "Nibelungenlied"@en ;
         wdt:P31     wd:Q7725634 ;
         wdt:P577    "1203-01-01T00:00:00Z"^^xsd:dateTime ;
         wdt:P840    wd:Q3852 , wd:Q701996 .
 
-wd:Q702432  wdt:P840  wd:Q16 .
+wd:Q41545  rdfs:label  "Ода до радості"@uk ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1786-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q212687  rdfs:label  "Die Waffen nieder!"@en ;
+        wdt:P291    wd:Q1731 ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1889-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q259655  wdt:P291  wd:Q20 .
+
+wd:Q629792  wdt:P291  wd:Q90 ;
+        wdt:P840  wd:Q90 .
+
+wd:Q69539  rdfs:label  "政治学"@ja , "Politics"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "-400-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q47524780  rdfs:label  "Startup and New Venture Management"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "2014-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1193812  rdfs:label  "محضر الأرواح"@ar , "La Fantomviziulo"@eo , "The Ghost-Seer"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1787-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q34329353  wdt:P291  wd:Q29 .
+
+wd:Q19571567  rdfs:label  "The Eighth Day"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1967-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3024077  wdt:P291  wd:Q90 ;
+        wdt:P840  wd:Q90 .
 
 wd:Q17  wdt:P625  "Point(136.0 35.0)"^^geo:wktLiteral .
 
-wd:Q16  wdt:P625  "Point(-109.0 56.0)"^^geo:wktLiteral .
-
-wd:Q1584849  wdt:P840  wd:Q16 .
-
-wd:Q78  wdt:P625  "Point(7.591111111 47.550555555)"^^geo:wktLiteral .
-
-wd:Q131719  rdfs:label  "Патша"@cv ;
+wd:Q72309  rdfs:label  "أسطورة سليبي هولو"@ar , "La llegenda de Sleepy Hollow"@ca , "The Legend of Sleepy Hollow"@en ;
         wdt:P31     wd:Q7725634 ;
-        wdt:P577    "1532-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "1820-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q2870402  wdt:P291  wd:Q16 .
+wd:Q315187  wdt:P625  "Point(10.6858 53.8683)"^^geo:wktLiteral .
 
-wd:Q36479  wdt:P840  wd:Q15 .
+wd:Q51567977  rdfs:label  "Estrictament personal"@ca ;
+        wdt:P291    wd:Q1492 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1955-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q1492 .
 
-wd:Q701996  wdt:P625  "Point(8.359722222 49.630277777)"^^geo:wktLiteral .
+wd:Q274744  rdfs:label  "Sense and Sensibility"@id , "Акылдуулук менен сезгичтик"@ky ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1811-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q21 .
 
-wd:Q20036800  wdt:P291  wd:Q84 ;
-        wdt:P840  wd:Q84 .
+wd:Q1185104  wdt:P291  wd:Q90 ;
+        wdt:P840  wd:Q90 .
 
-wd:Q90  wdt:P625  "Point(2.351827777 48.856577777)"^^geo:wktLiteral .
-
-wd:Q15  wdt:P625  "Point(17.0 1.0)"^^geo:wktLiteral .
-
-wd:Q8279  rdfs:label  "Shahnameh"@en ;
+wd:Q432574  rdfs:label  "Espejo de caballerías"@es , "Espejo de caballerías"@eu ;
         wdt:P31     wd:Q7725634 ;
-        wdt:P577    "1000-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "1527-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q371558  rdfs:label  "Учењата за христијанската религија"@mk , "Institutie"@nl , "Institutes of the Christian Religion"@en ;
-        wdt:P291    wd:Q78 ;
+wd:Q20036800  rdfs:label  "The Black Prince"@nl , "The Black Prince"@en ;
+        wdt:P291    wd:Q84 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1811-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q84 .
+
+wd:Q22810454  wdt:P840  wd:Q16 .
+
+wd:Q58909933  wdt:P291  wd:Q20 .
+
+wd:Q330926  rdfs:label  "On Love and Death"@en ;
         wdt:P31     wd:Q7725634 ;
-        wdt:P577    "1536-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "2006-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3321418  wdt:P291  wd:Q90 ;
+        wdt:P840  wd:Q90 .
 
 wd:Q3852  wdt:P625  "Point(8.365277777 49.631944444)"^^geo:wktLiteral .
 
-wd:Q288274  wdt:P291  wd:Q17 .
+wd:Q207797  wdt:P840  wd:Q17 .
 
-wd:Q251848  rdfs:label  "דוכוס הורנט"@he ;
+wd:Q482554  rdfs:label  "An den Mond"@en ;
         wdt:P31     wd:Q7725634 ;
-        wdt:P577    "1392-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "1778-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q8717  wdt:P625  "Point(-5.983333333 37.383333333)"^^geo:wktLiteral .
+wd:Q107790  rdfs:label  "The Green Book"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1975-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q128670  rdfs:label  "Hymner til natten"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1800-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q78  wdt:P625  "Point(7.591111111 47.550555555)"^^geo:wktLiteral .
+
+wd:Q6746412  wdt:P291  wd:Q29 .
+
+wd:Q16312117  rdfs:label  "Thambiran Vanakkam"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1578-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q701996  wdt:P625  "Point(8.359722222 49.630277777)"^^geo:wktLiteral .
+
+wd:Q25111210  rdfs:label  "The Model of Poesy"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1599-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q326914  rdfs:label  "The Adventures of Tom Sawyer"@pt ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1878-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4104  wdt:P840  wd:Q17 .
+
+wd:Q19493211  rdfs:label  "Viento del pueblo"@en ;
+        wdt:P291    wd:Q29 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1937-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q40562470  rdfs:label  "La communication scientifique et le numérique"@fr ;
+        wdt:P291    wd:Q21 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "2011-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q493574  rdfs:label  "L'ultimo dei Mohicani"@it , "آخر الموهيكيين"@ar ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1826-02-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2500544  rdfs:label  "Urfaust"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1887-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q74483  rdfs:label  "The Wisdom of Father Brown"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1914-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16  wdt:P625  "Point(-109.0 56.0)"^^geo:wktLiteral .
+
+wd:Q7034086  rdfs:label  "Nightwing"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1977-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q30 .
+
+wd:Q5447420  rdfs:label  "Fifteen"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1956-09-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q29  wdt:P625  "Point(-3.0 40.0)"^^geo:wktLiteral .
+
+wd:Q861527  rdfs:label  "Ecce homo"@fr ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1908-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q50875024  wdt:P625  "Point(11.4605 43.898888888)"^^geo:wktLiteral .
+
+wd:Q4410249  rdfs:label  "দ্য লাইট অফ এশিয়া"@bn , "La Lumière de l'Asie"@fr , "The Light of Asia"@en ;
+        wdt:P291    wd:Q84 ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1879-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q17212810  wdt:P291  wd:Q17 .
+
+wd:Q25506  wdt:P840  wd:Q17 .
+
+wd:Q153656  wdt:P625  "Point(11.5728 48.1379)"^^geo:wktLiteral .
+
+wd:Q1425915  rdfs:label  "Heptaméron"@de , "Heptamerón"@es , "Heptaméron"@en ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1558-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q207130  wdt:P840  wd:Q17 .
+
+wd:Q18822109  rdfs:label  "Letter to a teacher"@en ;
+        wdt:P291    wd:Q50875024 ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1967-05-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q969963  wdt:P291  wd:Q20 .
+
+wd:Q24286889  rdfs:label  "O Fim do Mundo"@pt , "The End of the World"@en ;
+        wdt:P291    wd:Q8678 ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1856-06-13T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q8678 .
+
+wd:Q353180  rdfs:label  "Lenz"@ca ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1839-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q540894  rdfs:label  "Juliette"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1801-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1079681  rdfs:label  "The Hunting of the Snark"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1876-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1061693  rdfs:label  "Die fröhliche Wissenschaft"@de ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1882-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q15880299  rdfs:label  "War and Turpentine"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "2013-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q47153  rdfs:label  "੨ ਸਟੇਟਸ"@pa , "2 سٹیٹس"@pnb , "2 States: The Story of My Marriage"@en ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "2009-10-08T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q668 .
+
+wd:Q38279394  wdt:P291  wd:Q17 .
+
+wd:Q30  wdt:P625  "Point(-112.0 44.0)"^^geo:wktLiteral .
+
+wd:Q55539216  wdt:P291  wd:Q17 .
+
+wd:Q192551  rdfs:label  "Primary Chronicle"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1200-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q70784  rdfs:label  "Le Voyage en Occident"@fr , "Journey to the West"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1592-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q5163441  rdfs:label  "Conspiracy in Death"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1999-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q15  wdt:P625  "Point(17.0 1.0)"^^geo:wktLiteral .
+
+wd:Q84  wdt:P625  "Point(-0.1275 51.507222222)"^^geo:wktLiteral .
+
+wd:Q119246  rdfs:label  "পয়েন্ট কাউন্টার পয়েন্ট"@bn , "Kontrapunkt des Lebens"@de , "Point Counter Point"@en ;
+        wdt:P291    wd:Q84 ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1928-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16438  rdfs:label  "Декамерон"@uk ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1352-01-01T00:00:00Z"^^xsd:dateTime , "1351-01-01T00:00:00Z"^^xsd:dateTime .
 
 wd:Q815580  rdfs:label  "Belianis"@en ;
         wdt:P291    wd:Q8717 ;
         wdt:P31     wd:Q7725634 ;
         wdt:P577    "1545-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q248096  rdfs:label  "Tom Jones"@fi ;
+wd:Q27020440  wdt:P840  wd:Q15 .
+
+wd:Q7366231  wdt:P291  wd:Q21 .
+
+wd:Q1057575  rdfs:label  "Le Petit Chose"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1868-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q833645  rdfs:label  "第一对开本"@zh ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1623-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q58912650  wdt:P291  wd:Q20 .
+
+wd:Q112472  rdfs:label  "芸人交換日記〜イエローハーツの物語〜"@ja ;
         wdt:P31     wd:Q7725634 ;
-        wdt:P577    "1749-01-01T00:00:00Z"^^xsd:dateTime .
+        wdt:P577    "2011-03-11T00:00:00Z"^^xsd:dateTime .
 
-wd:Q10720461  wdt:P291  wd:Q16 .
+wd:Q1731  wdt:P625  "Point(13.738361111 51.049258333)"^^geo:wktLiteral .
 
-wd:Q629792  wdt:P291  wd:Q90 ;
-        wdt:P840  wd:Q90 .
+wd:Q17352486  rdfs:label  "Les Chroniques de la Canongate"@fr , "Chronicles of the Canongate"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1828-05-15T00:00:00Z"^^xsd:dateTime .
+
+wd:Q217100  rdfs:label  "Kalevipoeg"@nn , "Калевіпаэг"@be-tarask ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1857-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3221842  rdfs:label  "The Shot"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1831-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2843  wdt:P625  "Point(10.686388888 53.869722222)"^^geo:wktLiteral .
+
+wd:Q371558  rdfs:label  "Учењата за христијанската религија"@mk , "Institutie"@nl , "Institutes of the Christian Religion"@en ;
+        wdt:P291    wd:Q78 ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1536-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q883305  rdfs:label  "Bleak House"@en , "Samotnia"@pl ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1853-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q5160043  rdfs:label  "Confessions of an Actor: An Autobiography"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1982-05-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q40879557  wdt:P291  wd:Q17 .
+
+wd:Q480  rdfs:label  "Don Quijote"@wa ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1615-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q57449832  rdfs:label  "Mandíbula"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "2018-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1055881  rdfs:label  "自由論"@ja ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1859-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q8717  wdt:P625  "Point(-5.983333333 37.383333333)"^^geo:wktLiteral .
+
+wd:Q24946837  rdfs:label  "Elegiarum libri IV, eiusdem Foricoenia sive Epigrammatum libellus"@pl ;
+        wdt:P291    wd:Q31487 ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1584-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q840974  rdfs:label  "撒克遜英雄傳"@zh ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1820-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q185427  rdfs:label  "The Song of Roland"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1100-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1898036  rdfs:label  "Պիոներները կամ Սասքուեհաննայի աղբյուրները"@hy , "Bőrharisnya"@hu , "The Pioneers"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1823-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q1384 .
+
+wd:Q74287  rdfs:label  "The Hobbit"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1937-09-21T00:00:00Z"^^xsd:dateTime .
+
+wd:Q27  wdt:P625  "Point(-8.0 53.0)"^^geo:wktLiteral .
+
+wd:Q49959810  rdfs:label  "Supplementum Apollonii Redivivi sive analysis problematis bactenus desiderati ad Apollonii Pergaei doctrinam a Marino Ghetaldo Patritio Regusino hujusque non ita pridem institutam"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1612-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1199417  rdfs:label  "آخر يوم لمحكوم عليه بالإعدام"@ar , "بیر اعدامی نین سون گونلری"@azb ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1829-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q58840822  wdt:P291  wd:Q17 .
+
+wd:Q25338  rdfs:label  "Пĕчĕк Тиккĕ"@cv ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1943-04-06T00:00:00Z"^^xsd:dateTime .
+
+wd:Q79762  rdfs:label  "سيلماريليون"@ar , "Сільмарыліян"@be , "The Silmarillion"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1977-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q21  wdt:P625  "Point(-1.0 53.0)"^^geo:wktLiteral .
+
+wd:Q90  wdt:P625  "Point(2.351827777 48.856577777)"^^geo:wktLiteral .
+
+wd:Q25094843  wdt:P291  wd:Q20 .
+
+wd:Q14911972  rdfs:label  "洪吉童传"@zh-hans ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "1612-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1492  wdt:P625  "Point(2.176944444 41.3825)"^^geo:wktLiteral .
+
+wd:Q8678  wdt:P625  "Point(-43.196388888 -22.908333333)"^^geo:wktLiteral .
+
+wd:Q55722661  rdfs:label  "Systematisch-alphabetisches Verzeichniss aller bisher bey den Fürbildungen zur Sammlung europäischer Schmetterlinge angegebenen Gattungsbenennungen"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1822-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q49478642  rdfs:label  "Soledades"@en ;
+        wdt:P291    wd:Q29 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1903-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q6745556  wdt:P291  wd:Q29 .
+
+wd:Q5708785  wdt:P291  wd:Q21 .
+
+wd:Q15094156  rdfs:label  "Stargirl"@zh ;
+        wdt:P31     wd:Q571 , wd:Q7725634 ;
+        wdt:P577    "2000-08-08T00:00:00Z"^^xsd:dateTime .
+
+wd:Q611399  rdfs:label  "Shoku Nihongi"@en ;
+        wdt:P291    wd:Q17 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "0797-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q29021490  wdt:P291  wd:Q16 .
+
+wd:Q7750613  rdfs:label  "The Master as I Saw Him"@nl ;
+        wdt:P291    wd:Q21 ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1910-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q251848  rdfs:label  "Dukus Horant"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1392-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q326909  rdfs:label  "Buddenbrooks"@nl , "Les Buddenbrook"@fr , "Buddenbrooks"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1901-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q153656 , wd:Q315187 , wd:Q2843 .
+
+wd:Q49959715  rdfs:label  "Variorum de rebus mathematicis responsorum liber VIII"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1593-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q16359576  rdfs:label  "Os libertinos"@pt-br , "The Adventurers"@sq ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1966-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q18 .
+
+wd:Q31487  wdt:P625  "Point(19.937222222 50.061388888)"^^geo:wktLiteral .
+
+wd:Q10860215  rdfs:label  "Colorless Tsukuru Tazaki and His Years of Pilgrimage"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "2013-04-12T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q17 .
+
+wd:Q1101819  rdfs:label  "Den andre jungelboken"@nb , "Lo dusau libre de la jungle"@oc ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1895-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q913599  rdfs:label  "Emile, or On Education"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1762-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q272506  rdfs:label  "The Phantom of the Opera"@en ;
+        wdt:P31     wd:Q7725634 , wd:Q571 ;
+        wdt:P577    "1910-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q90 .
+
+wd:Q80817  rdfs:label  "Harry Potter and the Order of the Phoenix"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "2003-06-21T00:00:00Z"^^xsd:dateTime .
+
+wd:Q20  wdt:P625  "Point(11.0 65.0)"^^geo:wktLiteral .
+
+wd:Q58456164  wdt:P291  wd:Q17 .
+
+wd:Q1384  wdt:P625  "Point(-75.0 43.0)"^^geo:wktLiteral .
+
+wd:Q560352  rdfs:label  "The World as Will and Representation"@en ;
+        wdt:P31     wd:Q571 ;
+        wdt:P577    "1819-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q44257263  wdt:P291  wd:Q29 .

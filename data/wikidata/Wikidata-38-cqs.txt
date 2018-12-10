@@ -1,0 +1,188 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" .
+    ?item wdt:P18 ?image .
+    ?item wdt:P31 wd:Q234460 .
+    ?author ?label "Bram Stoker" .
+    ?item wdt:P50 ?author .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { bd:serviceParam
+                wikibase:language  "[AUTO_LANGUAGE]"
+    }
+    { ?item  wdt:P18  ?image }
+    FILTER contains(lcase(?itemLabel), "dracula")
+    ?item    wdt:P31     wd:Q234460 .
+    ?author  ?label      "Bram Stoker" .
+    ?item    wdt:P50     ?author ;
+             rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" .
+    ?item12 wdt:P18 ?image34 .
+    ?item wdt:P31 wd:Q234460 .
+    ?author ?label "Bram Stoker" .
+    ?item wdt:P50 ?author .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { bd:serviceParam
+                wikibase:language  "[AUTO_LANGUAGE]"
+    }
+    OPTIONAL
+      { ?item12  wdt:P18  ?image34 }
+    FILTER contains(lcase(?itemLabel), "dracula")
+    ?item    wdt:P31     wd:Q234460 .
+    ?author  ?label      "Bram Stoker" .
+    ?item    wdt:P50     ?author ;
+             rdfs:label  ?itemLabel
+    FILTER ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" .
+    ?item wdt:P31 wd:Q234460 .
+    ?author ?label "Bram Stoker" .
+    ?item wdt:P50 ?author .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { bd:serviceParam
+                wikibase:language  "[AUTO_LANGUAGE]"
+    }
+    FILTER NOT EXISTS { ?item  wdt:P18  ?image }
+    FILTER contains(lcase(?itemLabel), "dracula")
+    ?item    wdt:P31     wd:Q234460 .
+    ?author  ?label      "Bram Stoker" .
+    ?item    wdt:P50     ?author ;
+             rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" .
+    ?item wdt:P18 ?image .
+    ?item wdt:P31 wd:Q234460 .
+    ?author ?label "Bram Stoker" .
+    ?item wdt:P50 ?author .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { bd:serviceParam
+                wikibase:language  "[AUTO_LANGUAGE]"
+    }
+    { ?item  wdt:P18  ?image }
+    FILTER ( ! contains(lcase(?itemLabel), "dracula") )
+    ?item    wdt:P31     wd:Q234460 .
+    ?author  ?label      "Bram Stoker" .
+    ?item    wdt:P50     ?author ;
+             rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" .
+    ?item12 wdt:P18 ?image34 .
+    ?item wdt:P31 wd:Q234460 .
+    ?author ?label "Bram Stoker" .
+    ?item wdt:P50 ?author .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { bd:serviceParam
+                wikibase:language  "[AUTO_LANGUAGE]"
+    }
+    OPTIONAL
+      { ?item12  wdt:P18  ?image34 }
+    FILTER ( ! contains(lcase(?itemLabel), "dracula") )
+    ?item    wdt:P31     wd:Q234460 .
+    ?author  ?label      "Bram Stoker" .
+    ?item    wdt:P50     ?author ;
+             rdfs:label  ?itemLabel
+    FILTER ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  bd:   <http://www.bigdata.com/rdf#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE]" .
+    ?item wdt:P31 wd:Q234460 .
+    ?author ?label "Bram Stoker" .
+    ?item wdt:P50 ?author .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { bd:serviceParam
+                wikibase:language  "[AUTO_LANGUAGE]"
+    }
+    FILTER NOT EXISTS { ?item  wdt:P18  ?image }
+    FILTER ( ! contains(lcase(?itemLabel), "dracula") )
+    ?item    wdt:P31     wd:Q234460 .
+    ?author  ?label      "Bram Stoker" .
+    ?item    wdt:P50     ?author ;
+             rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------

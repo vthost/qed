@@ -39,38 +39,38 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wds:Q18050997-0418532B-DD0C-4B09-B96B-13BD2DB635FC
-        prov:wasDerivedFrom  wdref:47a3b8baf4f03c631acdb9addaaceb364d6f9d2d .
+wdref:6cba95d41aba8dede6cb0baf4859c9987a3b291f
+        pr:P813  "2018-11-30T00:00:00Z"^^xsd:dateTime .
 
-wd:Q18038168  p:P351  wds:Q18038168-6C966E35-4F2C-4A33-83B7-53A9F7D6F88B ;
-        wdt:P351  "26220" .
+wdref:a697d42f8948fa4eb9dd5f7788b8cf8136e0a8e3
+        pr:P813  "2018-11-30T00:00:00Z"^^xsd:dateTime .
 
-wdref:8559b067fe0121176d9f374cac2b8f44062cb5b8
-        pr:P813  "2018-11-09T00:00:00Z"^^xsd:dateTime .
+wd:Q18030825  p:P351  wds:Q18030825-63ABF884-3B54-4609-9EA5-2A9585803E2A ;
+        wdt:P351  "5646" .
 
-wds:Q18295525-61FD779F-DF33-4D93-97FA-7391A4106BCF
-        prov:wasDerivedFrom  wdref:9bae363bb01ffc3849e70ac10d49208efdc8794c .
+wd:Q29717534  p:P351  wds:Q29717534-7CCCC3AF-3FD9-4B4B-83A0-E2A527E0FF13 ;
+        wdt:P351  "37261" .
 
-wds:Q18038168-6C966E35-4F2C-4A33-83B7-53A9F7D6F88B
-        prov:wasDerivedFrom  wdref:8559b067fe0121176d9f374cac2b8f44062cb5b8 .
-
-wdref:47a3b8baf4f03c631acdb9addaaceb364d6f9d2d
+wdref:6072982fbff9ba704fa72f16e4699623498bd1a2
         pr:P813  "2018-10-12T00:00:00Z"^^xsd:dateTime .
 
-wds:q14819473-219585DD-2A66-4C94-BF6E-4C488833B28D
-        prov:wasDerivedFrom  wdref:444b0482ea68a9f8b0aafaaa540ce4029aeb917b .
+wds:Q27943662-45B6CE6C-868D-4F16-AD09-F996E49B0F88
+        prov:wasDerivedFrom  wdref:6cba95d41aba8dede6cb0baf4859c9987a3b291f .
 
-wd:Q14819473  p:P351  wds:q14819473-219585DD-2A66-4C94-BF6E-4C488833B28D ;
-        wdt:P351  "2335" .
+wds:Q18030825-63ABF884-3B54-4609-9EA5-2A9585803E2A
+        prov:wasDerivedFrom  wdref:6072982fbff9ba704fa72f16e4699623498bd1a2 .
 
-wdref:444b0482ea68a9f8b0aafaaa540ce4029aeb917b
-        pr:P813  "2018-11-09T00:00:00Z"^^xsd:dateTime .
+wd:Q27943662  p:P351  wds:Q27943662-45B6CE6C-868D-4F16-AD09-F996E49B0F88 ;
+        wdt:P351  "1245629" .
 
-wd:Q18050997  p:P351  wds:Q18050997-0418532B-DD0C-4B09-B96B-13BD2DB635FC ;
-        wdt:P351  "140825" .
+wds:Q29717534-7CCCC3AF-3FD9-4B4B-83A0-E2A527E0FF13
+        prov:wasDerivedFrom  wdref:c36127a6e92b2943afc98cd0dd90426f2f16cc11 .
 
-wdref:9bae363bb01ffc3849e70ac10d49208efdc8794c
-        pr:P813  "2018-07-20T00:00:00Z"^^xsd:dateTime .
+wds:Q23327222-B7440839-B0C4-491A-9C57-DB143C8739DC
+        prov:wasDerivedFrom  wdref:a697d42f8948fa4eb9dd5f7788b8cf8136e0a8e3 .
 
-wd:Q18295525  p:P351  wds:Q18295525-61FD779F-DF33-4D93-97FA-7391A4106BCF ;
-        wdt:P351  "170643" .
+wd:Q23327222  p:P351  wds:Q23327222-B7440839-B0C4-491A-9C57-DB143C8739DC ;
+        wdt:P351  "949772" .
+
+wdref:c36127a6e92b2943afc98cd0dd90426f2f16cc11
+        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .

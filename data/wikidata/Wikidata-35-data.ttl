@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q15486021  rdfs:label  "Manuel María de Salcedo"@en ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q10264768 .
+
+wd:Q1394102  rdfs:label  "Виталиј Чуркин"@sr , "Vitalij Ivanovič Čurkin"@sl ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    []  .
+
+wd:Q24579006  rdfs:label  "Thomas Burges"@en ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q2840 .
+
+wd:Q12090  rdfs:label  "cholera"@en .
+
+wd:Q329408  rdfs:label  "Erik Oxenstierna"@es , "Erik Oxenstierna"@et ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q10500739 .
+
+wd:Q705617  rdfs:label  "Chōmo Hanashiro"@en ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q362 .
+
+wd:Q2840  rdfs:label  "influenza"@en , "Gripe"@an , "Griep"@af , "Gripa"@bs , "Grip"@br .
+
+wd:Q293385  rdfs:label  "Óscar Humberto Mejía Víctores"@en ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    []  .
+
+wd:Q15053838  wdt:P106  wd:Q82955 ;
+        wdt:P509  wd:Q12090 .
+
+wd:Q7087849  wdt:P106  wd:Q82955 ;
+        wdt:P509  wd:Q210392 .
+
+wd:Q356118  rdfs:label  "Ōkubo Toshimichi"@en ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q11605028 .
+
+wd:Q362  rdfs:label  "World War II"@en .
+
+wd:Q5672712  rdfs:label  "Harry T. Bagley"@da , "Harry T. Bagley"@de ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q2840 .
+
+wd:Q4220640  wdt:P106  wd:Q82955 ;
+        wdt:P509  wd:Q12136 .
+
+wd:Q4250968  rdfs:label  "Achmad Soebardjo"@en , "阿玛德·苏巴尔佐"@zh-cn ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    wd:Q2840 .
+
+wd:Q12136  rdfs:label  "disease"@en .
+
+wd:Q1532708  wdt:P106  wd:Q82955 ;
+        wdt:P509  wd:Q175111 .
+
+wd:Q210392  rdfs:label  "killed in action"@en , "zabitý v boji"@cs , "mortis en batalo"@eo .
+
+wd:Q940651  rdfs:label  "Daniel Piscopo"@en ;
+        wdt:P106    wd:Q82955 ;
+        wdt:P509    []  .
+
+wd:Q175111  rdfs:label  "hanging"@en , "aforcamientu"@ast , "شنق"@ar .

@@ -1,0 +1,40 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?article schema:inLanguage ?lang .
+    ?article schema:about ?QED_VAR2 .
+    ?QED_VAR2 wdt:P1367 ?yp_id .
+  }
+WHERE
+  { ?article  schema:inLanguage  ?lang
+    FILTER ( substr(str(?article), 11, 15) = ".wikipedia.org/" )
+    ?article  schema:about  ?QED_VAR2 .
+    ?QED_VAR2  wdt:P1367    ?yp_id
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?article schema:inLanguage ?lang .
+    ?article schema:about ?QED_VAR2 .
+    ?QED_VAR2 wdt:P1367 ?yp_id .
+  }
+WHERE
+  { ?article  schema:inLanguage  ?lang
+    FILTER ( ! ( substr(str(?article), 11, 15) = ".wikipedia.org/" ) )
+    ?article  schema:about  ?QED_VAR2 .
+    ?QED_VAR2  wdt:P1367    ?yp_id
+  }
+LIMIT   2
+
+----------------------------------------------

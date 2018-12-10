@@ -39,12 +39,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q29856448  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Vonck%20-%20Stilleven%20met%20dode%20vogels%20en%20een%20bloempot%20-%202205%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg> ;
+wd:Q22006029  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20-%20Portrait%20of%20a%20Woman%20with%20Gloves%20-%20NGI.808.jpg> ;
         wdt:P31   wd:Q3305213 ;
-        wdt:P350  "8373" .
-
-wd:Q55060497  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Hendrick%20Goltzius%20-%20Helen%20of%20Troy%20P1160535%2001.jpg> ;
-        wdt:P31   wd:Q3305213 ;
-        wdt:P350  "667" .
+        wdt:P350  "8023" .
 
 wd:P350  wdt:P1630  "https://rkd.nl/explore/images/$1" .
+
+wd:Q17856036  wdt:P18  <http://commons.wikimedia.org/wiki/Special:FilePath/Egbert%20van%20Drielst%20-%20Landweg%20met%20bomen%20-%20SA%20880%20-%20Amsterdam%20Museum.jpg> ;
+        wdt:P31   wd:Q3305213 ;
+        wdt:P350  "5963" .

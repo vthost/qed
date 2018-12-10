@@ -1,0 +1,23 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?child wdt:P31 wd:Q5 .
+    ?child wdt:P39 wd:Q83307 .
+    ?QED_VAR35 wdt:P39 wd:Q83307 .
+    ?child wdt:P27 ?QED_VAR36 .
+    ?QED_VAR36 wdt:P901 ?cc .
+  }
+WHERE
+  { ?child    wdt:P31   wd:Q5 ;
+              wdt:P39   wd:Q83307 .
+    ?QED_VAR35  wdt:P39  wd:Q83307 .
+    ?child    wdt:P27   ?QED_VAR36 .
+    ?QED_VAR36  wdt:P901  ?cc
+  }
+LIMIT   2
+
+----------------------------------------------

@@ -42,11 +42,12 @@
 wd:Q7237264  wikibase:sitelinks  1 ;
         wdt:P31             wd:Q37484 .
 
-wd:Q30423813  wikibase:sitelinks  0 ;
+wd:Q8276  rdfs:label        "Mahabharata"@en ;
+        wikibase:sitelinks  131 ;
         wdt:P31             wd:Q37484 .
 
-wd:Q8279  rdfs:label        "Shahnameh"@en ;
-        wikibase:sitelinks  102 ;
+wd:Q54853002  rdfs:label    "I cantari del Danese"@it , "I cantari del Danese"@fr ;
+        wikibase:sitelinks  0 ;
         wdt:P31             wd:Q37484 .
 
 wd:Q3278347  wikibase:sitelinks  3 ;
@@ -55,12 +56,9 @@ wd:Q3278347  wikibase:sitelinks  3 ;
 wd:Q7733203  wikibase:sitelinks  1 ;
         wdt:P31             wd:Q37484 .
 
-wd:Q29594024  wikibase:sitelinks  1 ;
-        wdt:P31             wd:Q37484 .
-
 wd:Q1774828  wikibase:sitelinks  2 ;
         wdt:P31             wd:Q37484 .
 
-wd:Q8275  rdfs:label        "ኢሊያዳ"@am , "Iliada"@an , "Iliad"@en ;
+wd:Q8275  rdfs:label        "Iliad"@en ;
         wikibase:sitelinks  134 ;
         wdt:P31             wd:Q37484 .

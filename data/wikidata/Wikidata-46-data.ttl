@@ -39,10 +39,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q1445107  wdt:P170  wd:Q34661 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20010.jpg> ;
+wd:Q2551417  wdt:P170  wd:Q34661 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20067.jpg> ;
         wdt:P31   wd:Q3305213 .
 
-wd:Q698487  wdt:P170  wd:Q34661 ;
-        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Kiss%20-%20Gustav%20Klimt%20-%20Google%20Cultural%20Institute.jpg> ;
+wd:Q2041139  wdt:P170  wd:Q34661 ;
+        wdt:P18   <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20038.jpg> ;
         wdt:P31   wd:Q3305213 .

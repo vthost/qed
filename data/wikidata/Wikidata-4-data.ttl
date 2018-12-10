@@ -39,27 +39,27 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-<https://gl.wikiquote.org/wiki/Home>
-        schema:about       wd:Q5 ;
-        schema:inLanguage  "gl" ;
-        schema:name        "Home"@gl .
-
 <https://ru.wikinews.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA>
         schema:about       wd:Q5 ;
         schema:inLanguage  "ru" ;
         schema:name        "Категория:Человек"@ru .
 
-<https://ru.wikiquote.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA>
+<https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%8C>
         schema:about       wd:Q5 ;
-        schema:inLanguage  "ru" ;
-        schema:name        "Человек"@ru .
+        schema:inLanguage  "ko" ;
+        schema:name        "사람"@ko .
 
-<https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA>
+<https://en.wikipedia.org/wiki/Human>
         schema:about       wd:Q5 ;
-        schema:inLanguage  "ru" ;
-        schema:name        "Человек"@ru .
+        schema:inLanguage  "en" ;
+        schema:name        "Human"@en .
 
-<https://als.wikipedia.org/wiki/Mensch>
+<https://rmy.wikipedia.org/wiki/Manush>
         schema:about       wd:Q5 ;
-        schema:inLanguage  "gsw" ;
-        schema:name        "Mensch"@gsw .
+        schema:inLanguage  "rmy" ;
+        schema:name        "Manush"@rmy .
+
+<https://sat.wikipedia.org/wiki/%E1%B1%A2%E1%B1%9F%E1%B1%B9%E1%B1%B1%E1%B1%A2%E1%B1%A4>
+        schema:about       wd:Q5 ;
+        schema:inLanguage  "sat" ;
+        schema:name        "ᱢᱟᱹᱱᱢᱤ"@sat .

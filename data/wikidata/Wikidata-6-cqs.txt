@@ -1,0 +1,360 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wdt:P18 ?QED_VAR5 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?s  rdfs:label  ?desc
+    { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wdt:P18 ?QED_VAR5 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?s  rdfs:label  ?desc
+    { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?s  rdfs:label  ?desc
+    FILTER NOT EXISTS { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?s  rdfs:label  ?desc
+    FILTER NOT EXISTS { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s0 wdt:P18 ?QED_VAR56 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?s  rdfs:label  ?desc
+    { ?s0  wdt:P18  ?QED_VAR56 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+    FILTER ( ( ( ( ( ?s != ?s0 ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s0 wdt:P18 ?QED_VAR56 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?s  rdfs:label  ?desc
+    { ?s0  wdt:P18  ?QED_VAR56 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+    FILTER ( ( ( ( ( ?s != ?s0 ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wdt:P18 ?QED_VAR5 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?s  rdfs:label  ?desc
+    { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ! ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wdt:P18 ?QED_VAR5 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?s  rdfs:label  ?desc
+    { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ! ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?s  rdfs:label  ?desc
+    FILTER NOT EXISTS { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ! ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?s  rdfs:label  ?desc
+    FILTER NOT EXISTS { ?s  wdt:P18  ?QED_VAR5 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ! ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s0 wdt:P18 ?QED_VAR56 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( lang(?desc) = "en" )
+    ?s  rdfs:label  ?desc
+    { ?s0  wdt:P18  ?QED_VAR56 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ! ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+    FILTER ( ( ( ( ( ?s != ?s0 ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?s rdfs:label ?desc .
+    ?s0 wdt:P18 ?QED_VAR56 .
+    ?s wikibase:sitelinks ?linkcount .
+    ?s wdt:P31 wd:Q5 .
+    ?s wdt:P21 wd:Q6581072 .
+    ?s wdt:P569 ?born .
+  }
+WHERE
+  { FILTER ( ! ( lang(?desc) = "en" ) )
+    ?s  rdfs:label  ?desc
+    { ?s0  wdt:P18  ?QED_VAR56 }
+    ?s  wikibase:sitelinks  ?linkcount
+    FILTER ( ! ( ?born >= "1921-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?s  wdt:P31   wd:Q5 ;
+        wdt:P21   wd:Q6581072 ;
+        wdt:P569  ?born
+    FILTER ( ( ( ( ( ?s != ?s0 ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) ) || ( ?s != ?s0 ) )
+  }
+LIMIT   2
+
+----------------------------------------------

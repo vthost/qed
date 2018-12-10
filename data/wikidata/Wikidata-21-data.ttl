@@ -39,8 +39,5 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q576349  rdfs:label  "encefalopatia"@ca , "brain disease"@en-gb , "encefalopathie"@nl ;
-        wdt:P699    "DOID:936" .
-
-wd:Q1233526  rdfs:label  "ostosklerozo"@eo , "osteosclerosis"@en , "Osteosclerosis"@cy ;
-        wdt:P699    "DOID:4254" .
+wd:Q819207  rdfs:label  "قصور جارات الدرق الكاذب"@ar , "pseudohypoparathyroidism"@en , "거짓부갑상샘저하증"@ko , "Pseudohypoparathyreoidismus"@de ;
+        wdt:P699    "DOID:4184" .

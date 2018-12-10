@@ -39,12 +39,12 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q40108  schema:dateModified  "2018-10-16T08:47:11Z"^^xsd:dateTime ;
-        wdt:P351             "5925" ;
-        wdt:P703             wd:Q15978631 .
-
 wd:Q407983  schema:dateModified  "2018-12-05T02:41:00Z"^^xsd:dateTime ;
         wdt:P351             "43" ;
+        wdt:P703             wd:Q15978631 .
+
+wd:Q390540  schema:dateModified  "2018-11-20T19:44:11Z"^^xsd:dateTime ;
+        wdt:P351             "1909" ;
         wdt:P703             wd:Q15978631 .
 
 wd:Q390543  schema:dateModified  "2018-10-15T19:58:20Z"^^xsd:dateTime ;

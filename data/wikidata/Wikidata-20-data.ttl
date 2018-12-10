@@ -39,54 +39,182 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q27757140  wdt:P569  "+0000-00-00T00:00:00Z" .
-
-wd:Q15836482  wdt:P569  "-1500-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q4470081  rdfs:label  "John Williams"@da , "John Burr Williams"@en ;
+wd:Q4470081  rdfs:label  "John Williams"@sv , "John Burr Williams"@en , "John Williams"@pt ;
         wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
         wdt:P19     wd:Q30 ;
         wdt:P569    "1900-11-27T00:00:00Z"^^xsd:dateTime ;
         wdt:P570    "1989-09-15T00:00:00Z"^^xsd:dateTime .
 
-wd:Q1966737  rdfs:label  "Sidney Weintraub"@de , "Sidney Weintraub"@en ;
+wd:Q28220082  wdt:P569  "-3200-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2263584  wdt:P569  "-2999-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q10921342  wdt:P569  "-2886-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q89439  rdfs:label  "Adolf Damaschke"@en ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q64 ;
+        wdt:P570    "1935-07-30T00:00:00Z"^^xsd:dateTime .
+
+wd:Q60  rdfs:label  "Niu York"@bi , "Mueva York"@lad , "Νέα Υόρκη"@el , "Nova York"@gl , "Nueva York"@bcl , "New York"@sk , "New York"@hu , "New York City"@en , "New York City"@en-gb , "New York City"@da , "Çĕнĕ Йорк"@cv ;
+        wdt:P625    "Point(-73.94 40.67)"^^geo:wktLiteral .
+
+wd:Q151817  wdt:P569  "-2900-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4202987  wdt:P569  "-3000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q4252047  rdfs:label  "Paul René Lavollée"@en ;
         wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q90 ;
+        wdt:P570    "1927-11-29T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1055  rdfs:label  "Hamburg"@en ;
+        wdt:P625    "Point(10.0 53.55)"^^geo:wktLiteral .
+
+wd:Q19074  rdfs:label  "Samuel Hantinqton"@az , "ساموئل هانتینقتون"@azb ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P569    "1927-04-18T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "2008-12-24T00:00:00Z"^^xsd:dateTime .
+
+wd:Q255585  wdt:P569  "-3499-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1027800  rdfs:label  "Pottsville"@en ;
+        wdt:P625    "Point(-76.2028 40.685)"^^geo:wktLiteral .
+
+wd:Q65  rdfs:label  "Los Angeles"@en ;
+        wdt:P625    "Point(-118.24368 34.05223)"^^geo:wktLiteral .
+
+wd:Q57940  rdfs:label  "Franz Oppenheimer"@en ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q64 ;
+        wdt:P569    "1864-03-30T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "1943-09-30T00:00:00Z"^^xsd:dateTime .
+
+wd:Q191020  rdfs:label  "Gary Becker"@en ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q1027800 ;
+        wdt:P570    "2014-05-03T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3140885  wdt:P569  "-3099-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q152751  wdt:P569  "-2900-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q517429  wdt:P569  "-2800-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q63176  rdfs:label  "Adam Müller von Nitterdorf"@sv , "Adam Heinrich Müller"@pl ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q64 ;
+        wdt:P569    "1779-06-30T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "1829-01-17T00:00:00Z"^^xsd:dateTime .
+
+wd:Q268647  wdt:P569  "-4000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q64  rdfs:label  "ဘာလင်မြို့"@my , "ベルリン"@ja , "Berliin"@et , "Berlin"@en ;
+        wdt:P625    "Point(13.383333333 52.516666666)"^^geo:wktLiteral .
+
+wd:Q11031  rdfs:label  "فيلفريدو باريتو"@ar ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q90 ;
+        wdt:P570    "1923-08-19T00:00:00Z"^^xsd:dateTime .
+
+wd:Q28035824  rdfs:label  "Sara Ginaite"@en ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q4115712 ;
+        wdt:P570    "2018-04-02T00:00:00Z"^^xsd:dateTime .
+
+wd:Q58040  rdfs:label  "Andre Gunder Frank"@en ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q64 ;
+        wdt:P569    "1929-02-24T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "2005-04-23T00:00:00Z"^^xsd:dateTime .
+
+wd:Q322437  rdfs:label  "Ablitas"@en , "ابلیتاس"@azb , "Ablitas"@ast ;
+        wdt:P625    "Point(-1.638611111 41.973611111)"^^geo:wktLiteral .
+
+wd:Q312799  rdfs:label  "نيكولاي كوندراتييف"@ar , "Nikolay Kondratyev"@az , "Nikolai Kondratiev"@en , "Николай Кондратиев"@bg ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q133102 ;
+        wdt:P570    "1938-09-17T00:00:00Z"^^xsd:dateTime .
+
+wd:Q30  rdfs:label  "United States of America"@en , "美国"@zh , "États-Unis"@fr ;
+        wdt:P625    "Point(-112.0 44.0)"^^geo:wktLiteral .
+
+wd:Q192592  rdfs:label  "Kenneth Arrow"@en , "Kenneth Arrow"@af ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q60 ;
+        wdt:P569    "1921-08-23T00:00:00Z"^^xsd:dateTime ;
+        wdt:P570    "2017-02-21T00:00:00Z"^^xsd:dateTime .
+
+wd:Q830183  wdt:P569  "-3759-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1449221  rdfs:label  "Franz Suchan"@en ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q1055 ;
+        wdt:P570    "1971-02-03T00:00:00Z"^^xsd:dateTime .
+
+wd:Q133102  rdfs:label  "Vichuga"@en , "Горад Вічуга"@be , "Wičuga"@hsb , "ویچوقا"@azb , "Вічуга"@uk , "Vichuga"@sco ;
+        wdt:P625    "Point(41.916666666 57.2)"^^geo:wktLiteral .
+
+wd:Q3920142  rdfs:label  "Isaac Hourwich"@it ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P19     wd:Q216 ;
+        wdt:P570    "1924-07-09T00:00:00Z"^^xsd:dateTime .
+
+wd:Q21662816  wdt:P569  "+0000-00-00T00:00:00Z" .
+
+wd:Q6981339  wdt:P569  "-7000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q25974049  wdt:P569  "-3734-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q156290  wdt:P569  "-3073-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1966737  rdfs:label  "Sidney Weintraub"@en ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
         wdt:P19     wd:Q60 ;
         wdt:P569    "1914-04-28T00:00:00Z"^^xsd:dateTime ;
         wdt:P570    "1983-06-19T00:00:00Z"^^xsd:dateTime .
 
-wd:Q60  rdfs:label  "Њујорк"@sr-ec , "Nueva York"@es , "New York"@nl , "New York"@sk , "New York"@so , "New York"@hu , "New York City"@pap , "New York City"@en , "New York Ceety"@sco ;
-        wdt:P625    "Point(-73.94 40.67)"^^geo:wktLiteral .
+wd:Q1726357  wdt:P569  "-3000-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q446574  rdfs:label  "Anna Schwartz"@en , "Anna Schwartz"@ca , "Ана Шварц"@bg ;
+wd:Q921090  wdt:P569  "-77986-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q90  rdfs:label  "Paris"@en , "巴黎"@yue ;
+        wdt:P625    "Point(2.351827777 48.856577777)"^^geo:wktLiteral .
+
+wd:Q153761  rdfs:label  "埃莉諾·奧斯特羅姆"@zh-hant ;
+        wdt:P101    wd:Q8134 ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q65 ;
+        wdt:P570    "2012-06-12T00:00:00Z"^^xsd:dateTime .
+
+wd:Q2274836  wdt:P569  "-2879-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1974179  wdt:P569  "-2800-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q216  rdfs:label  "Vilnius"@en ;
+        wdt:P625    "Point(25.283333333 54.683333333)"^^geo:wktLiteral .
+
+wd:Q446574  rdfs:label  "Anna Schwartz"@ca , "Ана Шварц"@bg , "Anna Schwartz"@en ;
         wdt:P101    wd:Q8134 ;
         wdt:P19     wd:Q60 ;
+        wdt:P569    "1915-11-11T00:00:00Z"^^xsd:dateTime ;
         wdt:P570    "2012-06-21T00:00:00Z"^^xsd:dateTime .
 
-wd:Q3427125  wdt:P569  "+0000-00-00T00:00:00Z" .
+wd:Q4115712  rdfs:label  "Kaunas"@en ;
+        wdt:P625    "Point(23.933333333 54.9)"^^geo:wktLiteral .
 
-wd:Q30  rdfs:label  "अमेरिका"@bho , "Ameriketako Estatu Batuak"@eu , "United States of America"@en ;
-        wdt:P625    "Point(-112.0 44.0)"^^geo:wktLiteral .
+wd:Q131171  wdt:P569  "-2800-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q520631  rdfs:label  "ウィリアム・ボーモル"@ja , "William Baumol"@it ;
-        wdt:P101    wd:Q8134 ;
-        wdt:P19     wd:Q60 ;
-        wdt:P569    "1922-02-26T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570    "2017-05-04T00:00:00Z"^^xsd:dateTime .
+wd:Q2263551  wdt:P569  "-2999-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q427309  wdt:P569  "-3099-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q2743673  rdfs:label  "Edwin Robert Anderson Seligman"@en , "Edwin Robert Anderson Seligman"@nb ;
-        wdt:P101    wd:Q8134 ;
-        wdt:P19     wd:Q60 ;
-        wdt:P569    "1861-04-25T00:00:00Z"^^xsd:dateTime ;
-        wdt:P570    "1939-07-08T00:00:00Z"^^xsd:dateTime .
-
-wd:Q240256  wdt:P569  "-1503-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q156290  wdt:P569  "-3073-01-01T00:00:00Z"^^xsd:dateTime .
-
-wd:Q4060600  rdfs:label  "Peter S. Albin"@it ;
-        wdt:P101    wd:Q8134 ;
-        wdt:P19     wd:Q60 ;
-        wdt:P570    "2008-02-20T00:00:00Z"^^xsd:dateTime .
+wd:Q5423311  rdfs:label  "Ezmel de Ablitas"@de , "Ezmel de Ablitas"@es , "Ezmel de Ablitas"@en ;
+        wdt:P106    wd:Q188094 ;
+        wdt:P19     wd:Q322437 ;
+        wdt:P570    "1342-01-01T00:00:00Z"^^xsd:dateTime .

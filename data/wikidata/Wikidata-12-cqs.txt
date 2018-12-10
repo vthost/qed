@@ -1,0 +1,29 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  schema: <http://schema.org/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?wikisourceSitelink schema:isPartOf ?QED_VAR46 .
+    ?QED_VAR47 wikibase:wikiGroup "wikisource" .
+    ?wikisourceSitelink schema:inLanguage ?wikisourceLanguage .
+    ?wikisourceSitelink schema:about ?item .
+    ?paper wdt:P31 wd:Q13442814 .
+    ?paper wdt:P50 ?item .
+  }
+WHERE
+  { ?wikisourceSitelink
+              schema:isPartOf     ?QED_VAR46 .
+    ?QED_VAR47  wikibase:wikiGroup  "wikisource" .
+    ?wikisourceSitelink
+              schema:inLanguage   ?wikisourceLanguage ;
+              schema:about        ?item .
+    ?paper    wdt:P31             wd:Q13442814 ;
+              wdt:P50             ?item
+  }
+LIMIT   2
+
+----------------------------------------------

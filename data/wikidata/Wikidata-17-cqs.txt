@@ -1,0 +1,13 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?watercourse wdt:P403 ?mouth .
+  }
+WHERE
+  { ?watercourse  wdt:P403  ?mouth }
+LIMIT   2
+
+----------------------------------------------

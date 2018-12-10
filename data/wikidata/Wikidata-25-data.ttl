@@ -1,0 +1,91 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q39006  rdfs:label  ".ao"@en ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q20571765  rdfs:label  ".corsica"@fr ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q54895475  rdfs:label  "Hs 199.Ad"@fr , "Hs 199.Ad"@de ;
+        wdt:P31     wd:Q21014462 .
+
+wd:Q1881253  rdfs:label  "MCF-7"@en ;
+        wdt:P31     wd:Q21014462 .
+
+wd:Q54581325  rdfs:label  "1283.Lu"@de , "1283.Lu"@en , "1283.Lu"@fr ;
+        wdt:P31     wd:Q21014462 .
+
+wd:Q16052728  rdfs:label  ".best"@en ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q31633  rdfs:label  ".name"@en ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q20571898  rdfs:label  ".cyou"@eml ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q16049745  rdfs:label  ".我爱你"@nl , ".我爱你"@eml ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q16303402  rdfs:label  ".guru"@en ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q20571927  rdfs:label  ".dad"@oc , ".dad"@nl ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q20573453  rdfs:label  ".hangout"@en ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q36552  rdfs:label  ".ad"@en ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q489618  rdfs:label  "HEK293"@de ;
+        wdt:P31     wd:Q21014462 .
+
+wd:Q37407  rdfs:label  ".af"@ar , ".af"@af ;
+        wdt:P31     wd:Q14296 .
+
+wd:Q56646  rdfs:label  "CHO"@ca , "CHO"@de , "CHO"@en ;
+        wdt:P31     wd:Q21014462 .
+
+wd:Q54835366  rdfs:label  "G15.AO"@de , "G15.AO"@fr ;
+        wdt:P31     wd:Q21014462 .

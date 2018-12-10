@@ -39,13 +39,13 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q207  rdfs:label  "Τζορτζ Μπους (νεότερος)"@el ;
+wd:Q2252  rdfs:label  "Էդվին(Բազ) Օլդրին"@hy ;
+        wdt:P31     wd:Q5 .
+
+wd:Q2291  rdfs:label  "トト (俳優)"@ja ;
         wdt:P31     wd:Q5 .
 
 wd:Q23  rdfs:label  "George Washington"@en , "George Washington"@de , "George Washington"@af , "George Washington"@ace ;
-        wdt:P31     wd:Q5 .
-
-wd:Q2252  rdfs:label  "Էդվին(Բազ) Օլդրին"@hy ;
         wdt:P31     wd:Q5 .
 
 wd:Q11515  rdfs:label  "(.)p(...)nin"@de , "(.)p(...)nin"@en ;

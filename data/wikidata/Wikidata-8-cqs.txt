@@ -1,0 +1,27 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  geo:  <http://www.opengis.net/ont/geosparql#>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  psv:  <http://www.wikidata.org/prop/statement/value/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P17 wd:Q712 .
+    ?item p:P625 ?QED_VAR29 .
+    ?QED_VAR29 psv:P625 ?coords .
+    ?coords wikibase:geoLatitude ?lat .
+    ?coords wikibase:geoLongitude ?lon .
+  }
+WHERE
+  { BIND(strdt(concat("Point(", if(( ?lon < 0 ), str(( ?lon + 360 )), str(?lon)), " ", str(?lat), ")"), geo:wktLiteral) AS ?coords_)
+    ?item     wdt:P17               wd:Q712 ;
+              p:P625                ?QED_VAR29 .
+    ?QED_VAR29  psv:P625            ?coords .
+    ?coords   wikibase:geoLatitude  ?lat ;
+              wikibase:geoLongitude  ?lon
+  }
+LIMIT   2
+
+----------------------------------------------

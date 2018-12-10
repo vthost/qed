@@ -182,21 +182,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?place32 wdt:P625 ?coord9 .
-    ?subj7 wdt:P840 ?place32 .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
     ?subj wdt:P577 ?date .
     ?subj wdt:P31 wd:Q7725634 .
   }
 WHERE
   { FILTER ( lang(?label) = "en" )
     ?subj  rdfs:label  ?label
-    { ?place32  wdt:P625  ?coord9
-      { ?subj7  wdt:P840  ?place32 }
-    }
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
     FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
     ?subj  wdt:P577  ?date
     { ?subj  wdt:P31  wd:Q7725634 }
-    FILTER ( ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) ) || ( ?subj != ?subj7 ) )
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
   }
 LIMIT   2
 
@@ -211,21 +212,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?place32 wdt:P625 ?coord9 .
-    ?subj7 wdt:P840 ?place32 .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
     ?subj wdt:P577 ?date .
     ?subj wdt:P31 wd:Q7725634 .
   }
 WHERE
   { FILTER ( ! ( lang(?label) = "en" ) )
     ?subj  rdfs:label  ?label
-    { ?place32  wdt:P625  ?coord9
-      { ?subj7  wdt:P840  ?place32 }
-    }
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
     FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
     ?subj  wdt:P577  ?date
     { ?subj  wdt:P31  wd:Q7725634 }
-    FILTER ( ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) ) || ( ?subj != ?subj7 ) )
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
   }
 LIMIT   2
 
@@ -240,21 +242,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?place32 wdt:P625 ?coord9 .
-    ?subj7 wdt:P291 ?place32 .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
     ?subj wdt:P577 ?date .
     ?subj wdt:P31 wd:Q7725634 .
   }
 WHERE
   { FILTER ( lang(?label) = "en" )
     ?subj  rdfs:label  ?label
-    { ?place32  wdt:P625  ?coord9
-      { ?subj7  wdt:P291  ?place32 }
-    }
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
     FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
     ?subj  wdt:P577  ?date
     { ?subj  wdt:P31  wd:Q7725634 }
-    FILTER ( ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) ) || ( ?subj != ?subj7 ) )
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
   }
 LIMIT   2
 
@@ -269,21 +272,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?place32 wdt:P625 ?coord9 .
-    ?subj7 wdt:P291 ?place32 .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
     ?subj wdt:P577 ?date .
     ?subj wdt:P31 wd:Q7725634 .
   }
 WHERE
   { FILTER ( ! ( lang(?label) = "en" ) )
     ?subj  rdfs:label  ?label
-    { ?place32  wdt:P625  ?coord9
-      { ?subj7  wdt:P291  ?place32 }
-    }
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
     FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
     ?subj  wdt:P577  ?date
     { ?subj  wdt:P31  wd:Q7725634 }
-    FILTER ( ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) ) || ( ?subj != ?subj7 ) )
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
   }
 LIMIT   2
 
@@ -298,24 +302,3010 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?place32 wdt:P625 ?coord9 .
-    ?subj7 wdt:P291 ?place32 .
-    ?subj7 wdt:P840 ?place32 .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
     ?subj wdt:P577 ?date .
     ?subj wdt:P31 wd:Q7725634 .
   }
 WHERE
   { FILTER ( lang(?label) = "en" )
     ?subj  rdfs:label  ?label
-    { ?place32  wdt:P625  ?coord9
-      { { ?subj7  wdt:P291  ?place32 }
-        { ?subj7  wdt:P840  ?place32 }
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q7725634 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
       }
     }
     FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
     ?subj  wdt:P577  ?date
-    { ?subj  wdt:P31  wd:Q7725634 }
-    FILTER ( ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) ) || ( ?subj != ?subj7 ) )
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+    FILTER ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { ?subj  wdt:P31  wd:Q571 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P840  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { ?subj  wdt:P291  ?place }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    { ?place  wdt:P625  ?coord
+      { { ?subj  wdt:P291  ?place }
+        { ?subj  wdt:P840  ?place }
+      }
+    }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P840  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { ?subj9  wdt:P291  ?place50 }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place50 wdt:P625 ?coord11 .
+    ?subj9 wdt:P291 ?place50 .
+    ?subj9 wdt:P840 ?place50 .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    OPTIONAL
+      { ?place50  wdt:P625  ?coord11
+        { { ?subj9  wdt:P291  ?place50 }
+          { ?subj9  wdt:P840  ?place50 }
+        }
+      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+    FILTER ( ( ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) ) || ( ?subj != ?subj9 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P840  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place } }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?subj rdfs:label ?label .
+    ?place wdt:P625 ?coord .
+    ?subj wdt:P291 ?place .
+    ?subj wdt:P840 ?place .
+    ?subj wdt:P577 ?date .
+    ?subj wdt:P31 wd:Q571 .
+    ?subj wdt:P31 wd:Q7725634 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    ?subj  rdfs:label  ?label
+    FILTER NOT EXISTS { ?place  wdt:P625  ?coord
+                        { { ?subj  wdt:P291  ?place }
+                          { ?subj  wdt:P840  ?place }
+                        }
+                      }
+    FILTER ( ! ( ?date < "1830-01-01T00:00:00Z"^^xsd:dateTime ) )
+    ?subj  wdt:P577  ?date
+    { { ?subj  wdt:P31  wd:Q571 }
+      { ?subj  wdt:P31  wd:Q7725634 }
+    }
   }
 LIMIT   2
 

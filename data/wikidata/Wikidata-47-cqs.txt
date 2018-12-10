@@ -86,8 +86,8 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P186 ?material28 .
-    ?material28 rdfs:label ?materialL29 .
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
     ?item wdt:P195 ?collection .
     ?collection rdfs:label ?collectionL .
     ?instance rdfs:label ?typeL .
@@ -98,10 +98,11 @@ CONSTRUCT
     ?item rdfs:label ?itemL .
   }
 WHERE
-  { { FILTER ( lang(?materialL) = "en" )
-      ?item13   wdt:P186    ?material28 .
-      ?material28  rdfs:label  ?materialL29
-    }
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
     { FILTER ( lang(?collectionL) = "en" )
       ?item     wdt:P195    ?collection .
       ?collection  rdfs:label  ?collectionL
@@ -114,7 +115,7 @@ WHERE
            wdt:P571    ?date ;
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
-    FILTER ( ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) )
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -127,8 +128,8 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P186 ?material28 .
-    ?material28 rdfs:label ?materialL29 .
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
     ?item wdt:P195 ?collection .
     ?collection rdfs:label ?collectionL .
     ?instance rdfs:label ?typeL .
@@ -139,10 +140,11 @@ CONSTRUCT
     ?item rdfs:label ?itemL .
   }
 WHERE
-  { { FILTER ( ! ( lang(?materialL) = "en" ) )
-      ?item13   wdt:P186    ?material28 .
-      ?material28  rdfs:label  ?materialL29
-    }
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
     { FILTER ( lang(?collectionL) = "en" )
       ?item     wdt:P195    ?collection .
       ?collection  rdfs:label  ?collectionL
@@ -155,42 +157,7 @@ WHERE
            wdt:P571    ?date ;
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
-    FILTER ( ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?item wdt:P195 ?collection .
-    ?collection rdfs:label ?collectionL .
-    ?instance rdfs:label ?typeL .
-    ?item wdt:P179 wd:Q471379 .
-    ?item wdt:P18 ?img .
-    ?item wdt:P571 ?date .
-    ?item wdt:P31 ?instance .
-    ?item rdfs:label ?itemL .
-  }
-WHERE
-  { {  }
-    { FILTER ( lang(?collectionL) = "en" )
-      ?item     wdt:P195    ?collection .
-      ?collection  rdfs:label  ?collectionL
-    }
-    FILTER ( lang(?typeL) = "en" )
-    ?instance  rdfs:label  ?typeL
-    FILTER ( lang(?itemL) = "en" )
-    ?item  wdt:P179    wd:Q471379 ;
-           wdt:P18     ?img ;
-           wdt:P571    ?date ;
-           wdt:P31     ?instance ;
-           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -363,8 +330,8 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P186 ?material28 .
-    ?material28 rdfs:label ?materialL29 .
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
     ?item wdt:P195 ?collection .
     ?collection rdfs:label ?collectionL .
     ?instance rdfs:label ?typeL .
@@ -375,10 +342,11 @@ CONSTRUCT
     ?item rdfs:label ?itemL .
   }
 WHERE
-  { { FILTER ( lang(?materialL) = "en" )
-      ?item13   wdt:P186    ?material28 .
-      ?material28  rdfs:label  ?materialL29
-    }
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
     { FILTER ( ! ( lang(?collectionL) = "en" ) )
       ?item     wdt:P195    ?collection .
       ?collection  rdfs:label  ?collectionL
@@ -391,7 +359,7 @@ WHERE
            wdt:P571    ?date ;
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
-    FILTER ( ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) )
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
   }
 LIMIT   2
 
@@ -404,8 +372,8 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 wdt:P186 ?material28 .
-    ?material28 rdfs:label ?materialL29 .
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
     ?item wdt:P195 ?collection .
     ?collection rdfs:label ?collectionL .
     ?instance rdfs:label ?typeL .
@@ -416,10 +384,11 @@ CONSTRUCT
     ?item rdfs:label ?itemL .
   }
 WHERE
-  { { FILTER ( ! ( lang(?materialL) = "en" ) )
-      ?item13   wdt:P186    ?material28 .
-      ?material28  rdfs:label  ?materialL29
-    }
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
     { FILTER ( ! ( lang(?collectionL) = "en" ) )
       ?item     wdt:P195    ?collection .
       ?collection  rdfs:label  ?collectionL
@@ -432,7 +401,5583 @@ WHERE
            wdt:P571    ?date ;
            wdt:P31     ?instance ;
            rdfs:label  ?itemL
-    FILTER ( ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) )
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( lang(?itemL) = "en" )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( lang(?typeL) = "en" )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( lang(?collectionL) = "en" )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    { FILTER ( ! ( lang(?collectionL) = "en" ) )
+      ?item     wdt:P195    ?collection .
+      ?collection  rdfs:label  ?collectionL
+    }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( lang(?collectionL) = "en" )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item12 wdt:P195 ?collection41 .
+    ?collection41 rdfs:label ?collectionL42 .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?collectionL) = "en" ) )
+        ?item12   wdt:P195    ?collection41 .
+        ?collection41
+                  rdfs:label  ?collectionL42
+      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?collectionL) = "en" )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( lang(?materialL) = "en" )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?materialL) = "en" ) )
+      ?item     wdt:P186    ?material .
+      ?material  rdfs:label  ?materialL
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?materialL) = "en" )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 wdt:P186 ?material43 .
+    ?material43 rdfs:label ?materialL44 .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?materialL) = "en" ) )
+        ?item12   wdt:P186    ?material43 .
+        ?material43  rdfs:label  ?materialL44
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?materialL) = "en" )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P186 ?material .
+    ?material rdfs:label ?materialL .
+    ?item wdt:P195 ?collection .
+    ?collection rdfs:label ?collectionL .
+    ?instance rdfs:label ?typeL .
+    ?item wdt:P179 wd:Q471379 .
+    ?item wdt:P18 ?img .
+    ?item wdt:P571 ?date .
+    ?item wdt:P31 ?instance .
+    ?item rdfs:label ?itemL .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?materialL) = "en" ) )
+                        ?item     wdt:P186    ?material .
+                        ?material  rdfs:label  ?materialL
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?collectionL) = "en" ) )
+                        ?item     wdt:P195    ?collection .
+                        ?collection  rdfs:label  ?collectionL
+                      }
+    FILTER ( ! ( lang(?typeL) = "en" ) )
+    ?instance  rdfs:label  ?typeL
+    FILTER ( ! ( lang(?itemL) = "en" ) )
+    ?item  wdt:P179    wd:Q471379 ;
+           wdt:P18     ?img ;
+           wdt:P571    ?date ;
+           wdt:P31     ?instance ;
+           rdfs:label  ?itemL
   }
 LIMIT   2
 

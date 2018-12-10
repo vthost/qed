@@ -233,9 +233,10 @@ public class Utils implements Constants {
 	public static void integrateGenerationStatistics(String path){
 		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail+generated.txt")) {		
 //				  	System.out.println(path.substring(path.lastIndexOf(File.separator)+1));
-			Map<String,Integer> gcs = generatedCounts(path.substring(path.lastIndexOf(File.separator)+1));
+			Map<String,Integer> gcs = getGeneratedCounts(path+"-generated");
+//					generatedCounts(path.substring(path.lastIndexOf(File.separator)+1));
 
-			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
+			writer.write("qid;qtriples;cqs;cqs-with-data;extriples;alltriples;features\n");//rtriples;
 			
 			InputStream in = Files.newInputStream(Paths.get(path + File.separator + "stats_detail.txt"));
 			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
@@ -245,12 +246,18 @@ public class Utils implements Constants {
 	    			int i1 = line.lastIndexOf(";");
 	    			int i2 = line.substring(0,i1).lastIndexOf(";");
 	    			int c = (int) Double.parseDouble(line.substring(i2+1,i1));
-    			
+	    			
+//	    			if (c == 0 && !gcs.containsKey(id) )
+//	    			{
+//            			System.out.println(id);
+//            			continue;
+//        			} 
+	    			
+	    			writer.write(line.substring(0,i1+1));
         			if(gcs.containsKey(id)) {
-        				c = c + gcs.get(id);
-        				writer.write(line.substring(0,i2+1) + c + line.substring(i1)+'\n');
-        			} else if (c > 0){
-            			writer.write(line+'\n');
+        				writer.write(gcs.get(id) + line.substring(i1)+'\n');
+        			} else {
+        				writer.write(c + line.substring(i1)+'\n');
         			} 
 			}
 		} catch (Exception ex) {
@@ -306,6 +313,7 @@ public class Utils implements Constants {
 		    System.err.println(x);
 		}
 
+		System.out.println("Feature -> Nbr of Qs where it occurs:");
 		System.out.println(ok);
 		List<Integer> is = new ArrayList<Integer>();
 		is.addAll(ok.values());
@@ -315,10 +323,12 @@ public class Utils implements Constants {
 		for (int i = 0; i < maxFeats; i++) {
 			int k = is.stream().mapToInt(j -> j).max().orElse(0);
 			int index = is.indexOf(k);
-			int e = is.remove(index);
+//			int e = 
+			is.remove(index);
 			ks1.add(ks.remove(index));
-			System.out.println(e == k);
+//			System.out.println(e == k);
 		}
+		System.out.println("Considered Features:");
 System.out.println(ks1);
 
 //		Map<String,Integer> gcs = path.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
@@ -339,7 +349,7 @@ System.out.println(ks1);
 			        	stats = new ArrayList<List<Integer>>();
 			        	fss.put(fs, stats);
 			        	
-			        	for (int i = 0; i < 4; i++) {
+			        	for (int i = 0; i < 5; i++) {
 							stats.add(new ArrayList<Integer>());
 						}
 		        } else {
@@ -350,7 +360,7 @@ System.out.println(ks1);
 		        int j = line.indexOf(";");
 	        		ids.add(line.substring(0, j));
 	        	
-	        	for (int i = 0; i < 4; i++) {
+	        	for (int i = 0; i < 5; i++) {
 	        		int j2 = line.indexOf(";", j+1);
 	        		int co = (int)Double.parseDouble(line.substring(j+1,j2));
 //	        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
@@ -379,8 +389,8 @@ System.out.println(ks1);
 
 		
 		try {		
-			FileWriter writer = new FileWriter(path + "stats.txt");		  	
-			writer.write("config& qs& qsize &cqs& cqs-with-data& triples\\\\hline\n");
+			FileWriter writer = new FileWriter(path + "/stats.txt");		  	
+			writer.write("config& qs& qsize &cqs& cqs-with-data& extriples& alltriples\\\\hline\n");
 			
 			for (Entry<String, List<List<Integer>>> e : treeMap.entrySet()) {
 				List<List<Integer>> vs = e.getValue();
@@ -394,7 +404,8 @@ System.out.println(ks1);
 						(int)vs.get(0).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //qtriples
 						(int)vs.get(1).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //cqs
 						(int)tmp.stream().mapToInt(i -> i).average().orElse(0)/100 +"&"+ 
-						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+ //triples
+						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //extriples
+						(int)vs.get(4).stream().mapToInt(i -> i).average().orElse(0)+ //alltriples
 						"\\\\\\hline\n");
 
 			}
@@ -549,7 +560,33 @@ System.out.println(ks1);
 		return m;
 	}
 	
+	public static Map<String,Integer> getGeneratedCounts(String path) {
+		Map<String,Integer> m = new HashMap<String,Integer>();
+		
+		for(File f: new File(path).listFiles((dir,name) -> name.endsWith("count"))) {
+			try (Scanner s = new Scanner(f);) {
+//				System.out.println(f.getName());
+				
+				int i = f.getName().indexOf("-all-data.ttl.count");
+				i = i>0 ? i : f.getName().indexOf("-data.ttl.count");
+				String id = f.getName().substring(0,i);
+				id = id.substring(0,id.lastIndexOf("-"));
+
+				m.put(id, Integer.valueOf(s.nextLine().strip())) ;
+
+				
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+				
+		}	
+
+		return m;
+	}
+
+	
 public static void main(String[] args) {
+	Utils.finalizeStatistics(Constants.DATA_DIR+"dbpedia1-new", 7, false);
 //		Utils.generatedCounts(Dataset.DBPEDIA);//.writeManifestFiles();
 //		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
 //		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};

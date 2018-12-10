@@ -1,0 +1,356 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?language) = "en" )
+    FILTER ( lang(?English) = "en" )
+    { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?language) = "en" ) )
+    FILTER ( lang(?English) = "en" )
+    { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?language) = "en" )
+    FILTER ( ! ( lang(?English) = "en" ) )
+    { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?language) = "en" ) )
+    FILTER ( ! ( lang(?English) = "en" ) )
+    { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?language) = "en" )
+    FILTER ( lang(?English) = "en" )
+    FILTER NOT EXISTS { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?language) = "en" ) )
+    FILTER ( lang(?English) = "en" )
+    FILTER NOT EXISTS { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?language) = "en" )
+    FILTER ( ! ( lang(?English) = "en" ) )
+    FILTER NOT EXISTS { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?language) = "en" ) )
+    FILTER ( ! ( lang(?English) = "en" ) )
+    FILTER NOT EXISTS { ?wdLanguage  wdt:P279  wd:Q17376908 }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage45 wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?language) = "en" )
+    FILTER ( lang(?English) = "en" )
+    { ?wdLanguage45
+                wdt:P279  wd:Q17376908
+    }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+    FILTER ( ( ?wdLanguage != ?wdLanguage45 ) || ( ?wdLanguage != ?wdLanguage45 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage45 wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?language) = "en" ) )
+    FILTER ( lang(?English) = "en" )
+    { ?wdLanguage45
+                wdt:P279  wd:Q17376908
+    }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+    FILTER ( ( ?wdLanguage != ?wdLanguage45 ) || ( ?wdLanguage != ?wdLanguage45 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage45 wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?language) = "en" )
+    FILTER ( ! ( lang(?English) = "en" ) )
+    { ?wdLanguage45
+                wdt:P279  wd:Q17376908
+    }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+    FILTER ( ( ?wdLanguage != ?wdLanguage45 ) || ( ?wdLanguage != ?wdLanguage45 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?wdLanguage45 wdt:P279 wd:Q17376908 .
+    ?wdLanguage wdt:P424 ?languageCode .
+    ?wdLanguage rdfs:label ?language .
+    ?disease wdt:P699 "DOID:399" .
+    ?disease rdfs:label ?English .
+    ?disease rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?language) = "en" ) )
+    FILTER ( ! ( lang(?English) = "en" ) )
+    { ?wdLanguage45
+                wdt:P279  wd:Q17376908
+    }
+    ?wdLanguage  wdt:P424  ?languageCode ;
+              rdfs:label  ?language
+    BIND(lang(?label) AS ?languageCode)
+    ?disease  wdt:P699    "DOID:399" ;
+              rdfs:label  ?English ;
+              rdfs:label  ?label
+    FILTER ( ( ?wdLanguage != ?wdLanguage45 ) || ( ?wdLanguage != ?wdLanguage45 ) )
+  }
+LIMIT   2
+
+----------------------------------------------

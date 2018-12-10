@@ -48,5 +48,5 @@ wd:Q23016341  rdfs:label  "Vladimir Ilyich Lenin"@en ;
 wd:Q7237264  rdfs:label  "Prabhulingaleele"@en ;
         wdt:P31     wd:Q37484 .
 
-wd:Q8275  rdfs:label  "ኢሊያዳ"@am , "Ilias"@af , "Iliada"@an , "Iliad"@en , "Iliada"@pl , "Iliade"@it ;
+wd:Q8275  rdfs:label  "Iliad"@en , "Iliade"@it , "Iliada"@pl , "Iliada"@an , "Ilias"@af , "ኢሊያዳ"@am ;
         wdt:P31     wd:Q37484 .

@@ -1,0 +1,124 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?disease rdfs:label ?diseaseLabel .
+    ?disease wdt:P699 ?doid .
+    ?disease wdt:P279 wd:Q18123741 .
+    ?disease wdt:P2176 ?drug .
+    ?drug rdfs:label ?drugLabel .
+  }
+WHERE
+  { BIND(if(?toggle, "", ?disease) AS ?link)
+    BIND(if(?toggle, "FFA500", "7FFF00") AS ?rgb)
+    BIND(if(?toggle, ?diseaseLabel, ?drugLabel) AS ?itemLabel)
+    BIND(if(?toggle, ?disease, ?drug) AS ?item)
+    FILTER ( lang(?diseaseLabel) = "en" )
+    ?disease  rdfs:label  ?diseaseLabel
+    FILTER ( lang(?drugLabel) = "en" )
+    ?disease  wdt:P699    ?doid ;
+              wdt:P279    wd:Q18123741 ;
+              wdt:P2176   ?drug .
+    ?drug     rdfs:label  ?drugLabel
+    VALUES ?toggle { true false }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?disease rdfs:label ?diseaseLabel .
+    ?disease wdt:P699 ?doid .
+    ?disease wdt:P279 wd:Q18123741 .
+    ?disease wdt:P2176 ?drug .
+    ?drug rdfs:label ?drugLabel .
+  }
+WHERE
+  { BIND(if(?toggle, "", ?disease) AS ?link)
+    BIND(if(?toggle, "FFA500", "7FFF00") AS ?rgb)
+    BIND(if(?toggle, ?diseaseLabel, ?drugLabel) AS ?itemLabel)
+    BIND(if(?toggle, ?disease, ?drug) AS ?item)
+    FILTER ( ! ( lang(?diseaseLabel) = "en" ) )
+    ?disease  rdfs:label  ?diseaseLabel
+    FILTER ( lang(?drugLabel) = "en" )
+    ?disease  wdt:P699    ?doid ;
+              wdt:P279    wd:Q18123741 ;
+              wdt:P2176   ?drug .
+    ?drug     rdfs:label  ?drugLabel
+    VALUES ?toggle { true false }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?disease rdfs:label ?diseaseLabel .
+    ?disease wdt:P699 ?doid .
+    ?disease wdt:P279 wd:Q18123741 .
+    ?disease wdt:P2176 ?drug .
+    ?drug rdfs:label ?drugLabel .
+  }
+WHERE
+  { BIND(if(?toggle, "", ?disease) AS ?link)
+    BIND(if(?toggle, "FFA500", "7FFF00") AS ?rgb)
+    BIND(if(?toggle, ?diseaseLabel, ?drugLabel) AS ?itemLabel)
+    BIND(if(?toggle, ?disease, ?drug) AS ?item)
+    FILTER ( lang(?diseaseLabel) = "en" )
+    ?disease  rdfs:label  ?diseaseLabel
+    FILTER ( ! ( lang(?drugLabel) = "en" ) )
+    ?disease  wdt:P699    ?doid ;
+              wdt:P279    wd:Q18123741 ;
+              wdt:P2176   ?drug .
+    ?drug     rdfs:label  ?drugLabel
+    VALUES ?toggle { true false }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?disease rdfs:label ?diseaseLabel .
+    ?disease wdt:P699 ?doid .
+    ?disease wdt:P279 wd:Q18123741 .
+    ?disease wdt:P2176 ?drug .
+    ?drug rdfs:label ?drugLabel .
+  }
+WHERE
+  { BIND(if(?toggle, "", ?disease) AS ?link)
+    BIND(if(?toggle, "FFA500", "7FFF00") AS ?rgb)
+    BIND(if(?toggle, ?diseaseLabel, ?drugLabel) AS ?itemLabel)
+    BIND(if(?toggle, ?disease, ?drug) AS ?item)
+    FILTER ( ! ( lang(?diseaseLabel) = "en" ) )
+    ?disease  rdfs:label  ?diseaseLabel
+    FILTER ( ! ( lang(?drugLabel) = "en" ) )
+    ?disease  wdt:P699    ?doid ;
+              wdt:P279    wd:Q18123741 ;
+              wdt:P2176   ?drug .
+    ?drug     rdfs:label  ?drugLabel
+    VALUES ?toggle { true false }
+  }
+LIMIT   2
+
+----------------------------------------------

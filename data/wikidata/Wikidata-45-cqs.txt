@@ -55,18 +55,19 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?subj7 wdt:P276 ?loc8 .
-    ?loc8 wdt:P625 ?coord9 .
+    ?subj9 wdt:P276 ?loc10 .
+    ?loc10 wdt:P625 ?coord11 .
     ?subj wdt:P170 wd:Q5593 .
   }
 WHERE
   { FILTER ( lang(?label) = "en" )
     ?subj  rdfs:label  ?label
-    { ?subj7  wdt:P276  ?loc8 .
-      ?loc8   wdt:P625  ?coord9
-    }
+    OPTIONAL
+      { ?subj9  wdt:P276  ?loc10 .
+        ?loc10  wdt:P625  ?coord11
+      }
     ?subj  wdt:P170  wd:Q5593
-    FILTER ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) )
+    FILTER ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) )
   }
 LIMIT   2
 
@@ -80,58 +81,19 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 CONSTRUCT 
   { 
     ?subj rdfs:label ?label .
-    ?subj7 wdt:P276 ?loc8 .
-    ?loc8 wdt:P625 ?coord9 .
+    ?subj9 wdt:P276 ?loc10 .
+    ?loc10 wdt:P625 ?coord11 .
     ?subj wdt:P170 wd:Q5593 .
   }
 WHERE
   { FILTER ( ! ( lang(?label) = "en" ) )
     ?subj  rdfs:label  ?label
-    { ?subj7  wdt:P276  ?loc8 .
-      ?loc8   wdt:P625  ?coord9
-    }
+    OPTIONAL
+      { ?subj9  wdt:P276  ?loc10 .
+        ?loc10  wdt:P625  ?coord11
+      }
     ?subj  wdt:P170  wd:Q5593
-    FILTER ( ( ?subj != ?subj7 ) || ( ?subj != ?subj7 ) )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?subj rdfs:label ?label .
-    ?subj wdt:P170 wd:Q5593 .
-  }
-WHERE
-  { FILTER ( lang(?label) = "en" )
-    ?subj  rdfs:label  ?label
-    {  }
-    ?subj  wdt:P170  wd:Q5593
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?subj rdfs:label ?label .
-    ?subj wdt:P170 wd:Q5593 .
-  }
-WHERE
-  { FILTER ( ! ( lang(?label) = "en" ) )
-    ?subj  rdfs:label  ?label
-    {  }
-    ?subj  wdt:P170  wd:Q5593
+    FILTER ( ( ?subj != ?subj9 ) || ( ?subj != ?subj9 ) )
   }
 LIMIT   2
 

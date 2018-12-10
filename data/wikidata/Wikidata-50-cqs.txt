@@ -1,0 +1,36 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?work wdt:P31 wd:Q838948 .
+    ?work wdt:P1476 ?title .
+  }
+WHERE
+  { FILTER ( regex(?title, "^\\w*(\\w{3})(\\W+\\w*\\1)+$", "i") && ( ! regex(?title, "^(\\w+)(\\W+\\1)+$", "i") ) )
+    ?work  wdt:P31    wd:Q838948 ;
+           wdt:P1476  ?title
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?work wdt:P31 wd:Q838948 .
+    ?work wdt:P1476 ?title .
+  }
+WHERE
+  { FILTER ( ! ( regex(?title, "^\\w*(\\w{3})(\\W+\\w*\\1)+$", "i") && ( ! regex(?title, "^(\\w+)(\\W+\\1)+$", "i") ) ) )
+    ?work  wdt:P31    wd:Q838948 ;
+           wdt:P1476  ?title
+  }
+LIMIT   2
+
+----------------------------------------------

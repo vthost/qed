@@ -39,6 +39,6 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q149892  rdfs:label  "كلب"@aeb-arab .
+wd:Q158657  rdfs:label  "تفّاح"@aeb-arab .
 
 wd:Q159816  rdfs:label  "Leeu"@af .

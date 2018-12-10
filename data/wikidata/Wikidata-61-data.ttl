@@ -39,21 +39,18 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:P459  wikibase:reference  pr:P459 ;
+wd:Q285110  p:P635  wds:q285110-D5D3CE37-74A7-4B9D-98DB-E22028BCF8D9 .
+
+wd:P2701  wikibase:reference  pr:P2701 ;
         wdt:P31             wd:Q15720608 .
 
-wds:Q1811729-11E53129-0EB4-434C-BE34-EA6B77862E70
-        prov:wasDerivedFrom  wdref:9a3aa34cf178c22efb25fface7ad7f40b3243365 .
+wdref:48caf1c69cae8b1e2a06110a24951681c1acbf4b
+        pr:P2701  wd:Q136218 .
 
-wds:Q5254206-53D250B6-AB89-4C6D-A740-8D0163FDF432
-        prov:wasDerivedFrom  wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f .
+wds:q285077-0B2DD09E-4C9B-485D-9E9F-46C490E94A4D
+        prov:wasDerivedFrom  wdref:48caf1c69cae8b1e2a06110a24951681c1acbf4b .
 
-wdref:9a3aa34cf178c22efb25fface7ad7f40b3243365
-        pr:P459  wd:Q20899244 .
+wds:q285110-D5D3CE37-74A7-4B9D-98DB-E22028BCF8D9
+        prov:wasDerivedFrom  wdref:48caf1c69cae8b1e2a06110a24951681c1acbf4b .
 
-wd:Q1811729  p:P735  wds:Q1811729-11E53129-0EB4-434C-BE34-EA6B77862E70 .
-
-wdref:3a93a78a0af027e37a69ac2afa79654e939fff8f
-        pr:P459  wd:Q20680025 .
-
-wd:Q5254206  p:P646  wds:Q5254206-53D250B6-AB89-4C6D-A740-8D0163FDF432 .
+wd:Q285077  p:P635  wds:q285077-0B2DD09E-4C9B-485D-9E9F-46C490E94A4D .

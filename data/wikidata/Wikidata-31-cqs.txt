@@ -1,0 +1,50 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entryRes ?p ?statement .
+    ?entryRes rdfs:label ?entry .
+    ?statement prov:wasDerivedFrom ?QED_VAR16 .
+    ?QED_VAR16 <http://www.wikidata.org/prop/reference/P248> ?QED_VAR17 .
+    ?QED_VAR17 wdt:P356 "10.1021/JA01577A030" .
+  }
+WHERE
+  { FILTER ( lang(?entry) = "en" )
+    ?entryRes  ?p                   ?statement ;
+              rdfs:label            ?entry .
+    ?statement  prov:wasDerivedFrom  ?QED_VAR16 .
+    ?QED_VAR16  <http://www.wikidata.org/prop/reference/P248>  ?QED_VAR17 .
+    ?QED_VAR17  wdt:P356            "10.1021/JA01577A030"
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entryRes ?p ?statement .
+    ?entryRes rdfs:label ?entry .
+    ?statement prov:wasDerivedFrom ?QED_VAR16 .
+    ?QED_VAR16 <http://www.wikidata.org/prop/reference/P248> ?QED_VAR17 .
+    ?QED_VAR17 wdt:P356 "10.1021/JA01577A030" .
+  }
+WHERE
+  { FILTER ( ! ( lang(?entry) = "en" ) )
+    ?entryRes  ?p                   ?statement ;
+              rdfs:label            ?entry .
+    ?statement  prov:wasDerivedFrom  ?QED_VAR16 .
+    ?QED_VAR16  <http://www.wikidata.org/prop/reference/P248>  ?QED_VAR17 .
+    ?QED_VAR17  wdt:P356            "10.1021/JA01577A030"
+  }
+LIMIT   2
+
+----------------------------------------------

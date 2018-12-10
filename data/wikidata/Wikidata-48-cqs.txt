@@ -43,15 +43,16 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?depicts24 rdfs:label ?dL25 .
+    ?depicts37 rdfs:label ?dL38 .
     ?item wdt:P180 ?depicts .
   }
 WHERE
-  { { FILTER ( lang(?dL) = "en" )
-      ?depicts24  rdfs:label  ?dL25
-    }
+  { OPTIONAL
+      { FILTER ( lang(?dL) = "en" )
+        ?depicts37  rdfs:label  ?dL38
+      }
     ?item  wdt:P180  ?depicts
-    FILTER ( ?depicts != ?depicts24 )
+    FILTER ( ?depicts != ?depicts37 )
   }
 LIMIT   2
 
@@ -63,31 +64,16 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?depicts24 rdfs:label ?dL25 .
+    ?depicts37 rdfs:label ?dL38 .
     ?item wdt:P180 ?depicts .
   }
 WHERE
-  { { FILTER ( ! ( lang(?dL) = "en" ) )
-      ?depicts24  rdfs:label  ?dL25
-    }
+  { OPTIONAL
+      { FILTER ( ! ( lang(?dL) = "en" ) )
+        ?depicts37  rdfs:label  ?dL38
+      }
     ?item  wdt:P180  ?depicts
-    FILTER ( ?depicts != ?depicts24 )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?item wdt:P180 ?depicts .
-  }
-WHERE
-  { {  }
-    ?item  wdt:P180  ?depicts
+    FILTER ( ?depicts != ?depicts37 )
   }
 LIMIT   2
 

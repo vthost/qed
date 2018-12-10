@@ -1,6 +1,0 @@
-qid;qtriples;cqs;cqs-with-data;triples;features
-simple-optional;3;4;4;12;OPTIONAL
-simple-union;3;3;3;9;UNION
-simple-exists;1;3;3;10;
-simple-notexists;1;3;3;10;FILTER
-simple-minus;3;3;3;10;MINUS

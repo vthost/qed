@@ -39,8 +39,11 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q670620  rdfs:label  "Wizard"@en , "Wizard"@de ;
+wd:Q261  rdfs:label  "Linkin Park"@nl , "聯合公園"@zh ;
         wdt:P31     wd:Q5741069 .
 
-wd:Q914074  rdfs:label  "Moonspell"@az , "Moonspell"@be-tarask ;
+wd:Q192843  rdfs:label  "Mors"@la ;
+        wdt:P31     wd:Q5741069 .
+
+wd:Q466342  rdfs:label  "Mystic Prophecy"@de ;
         wdt:P31     wd:Q5741069 .

@@ -50,9 +50,10 @@ CONSTRUCT
     ?s wdt:P279 wd:Q7725634 .
   }
 WHERE
-  { { FILTER ( lang(?desc) = "en" )
-      ?s0  rdfs:label  ?desc1
-    }
+  { OPTIONAL
+      { FILTER ( lang(?desc) = "en" )
+        ?s0  rdfs:label  ?desc1
+      }
     ?s  wdt:P279  wd:Q7725634
     FILTER ( ?s != ?s0 )
   }
@@ -71,28 +72,12 @@ CONSTRUCT
     ?s wdt:P279 wd:Q7725634 .
   }
 WHERE
-  { { FILTER ( ! ( lang(?desc) = "en" ) )
-      ?s0  rdfs:label  ?desc1
-    }
+  { OPTIONAL
+      { FILTER ( ! ( lang(?desc) = "en" ) )
+        ?s0  rdfs:label  ?desc1
+      }
     ?s  wdt:P279  wd:Q7725634
     FILTER ( ?s != ?s0 )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?s wdt:P279 wd:Q7725634 .
-  }
-WHERE
-  { {  }
-    ?s  wdt:P279  wd:Q7725634
   }
 LIMIT   2
 

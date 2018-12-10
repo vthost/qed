@@ -39,40 +39,41 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q936  rdfs:label  "OpenStreetMap"@pt , "OpenStreetMap"@en ;
-        wdt:P31     wd:Q8513 .
+wd:Q7603  rdfs:label  "GNU General Public License"@da , "GNU General Public License"@en .
 
 wd:Q187176  rdfs:label  "tz database"@en ;
         wdt:P275    wd:Q19652 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q7095760  rdfs:label  "الشركات المفتوحة"@ar , "OpenCorporates"@it ;
+wd:Q23887435  rdfs:label  "hwids"@en ;
+        wdt:P275    wd:Q7603 ;
+        wdt:P31     wd:Q8513 .
+
+wd:Q3353146  rdfs:label  "Open Food Facts"@de , "Open Food Facts"@cs ;
         wdt:P275    wd:Q1224853 ;
         wdt:P31     wd:Q8513 .
 
 wd:Q1224853  rdfs:label  "Open Database License"@en .
 
-wd:Q6140060  rdfs:label  "Tebeosfera"@br , "Tebeosfera"@co ;
+wd:Q6140060  rdfs:label  "Tebeosfera"@fr , "Tebeosfera"@es ;
         wdt:P275    wd:Q6905942 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q19652  rdfs:label  "public domain"@en , "רשות הציבור"@he .
-
-wd:Q468215  rdfs:label  "HomoloGene"@en ;
-        wdt:P275    wd:Q19652 ;
-        wdt:P31     wd:Q8513 .
-
-wd:Q6905942  rdfs:label  "CC-BY-SA"@hi .
+wd:Q19652  rdfs:label  "Publieke domein"@af .
 
 wd:Q66683  rdfs:label  "Who Named It?"@en ;
         wdt:P31     wd:Q8513 .
 
-wd:Q1194038  rdfs:label  "GEOnet Names Server"@en ;
-        wdt:P275    wd:Q19652 ;
+wd:Q24170714  rdfs:label  "NMRShiftDB"@en ;
+        wdt:P275    wd:Q22169 ;
         wdt:P31     wd:Q8513 .
 
-wd:Q131454  rdfs:label  "Library of Congress"@en ;
+wd:Q6905942  rdfs:label  "CC-BY-SA"@hi .
+
+wd:Q131454  rdfs:label  "Library of Congress"@en , "Library of Congress"@de ;
         wdt:P31     wd:Q8513 .
 
-wd:P4051  rdfs:label  "معرف تشريعات أوكرانيا"@ar , "Ukrainian regulations base ID"@en ;
+wd:Q76615  rdfs:label  "Fortune 500"@ca ;
         wdt:P31     wd:Q8513 .
+
+wd:Q22169  rdfs:label  "GNU Free Documentation License"@en .

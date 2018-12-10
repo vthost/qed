@@ -41,17 +41,19 @@
 
 wd:Q768717  rdfs:label  "private collection"@en .
 
-wd:Q18891156  rdfs:label  "The Scream"@en ;
+wd:Q18891156  rdfs:label  "Der Schrei"@de , "The Scream"@en , "Викът"@bg ;
         wdt:P179    wd:Q471379 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Scream.jpg> ;
-        wdt:P186    wd:Q389782 ;
+        wdt:P186    wd:Q175166 , wd:Q69158 ;
         wdt:P195    wd:Q1132918 ;
         wdt:P31     wd:Q3305213 ;
         wdt:P571    "1893-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q844926  rdfs:label  "Munch Museum"@en , "Museu Munch"@ca .
+wd:Q844926  rdfs:label  "Munchmuseet"@pt , "ムンク美術館"@ja , "Munch Museum"@en , "Munch-museet"@pl , "Museu Munch"@ca , "متحف مونك"@ar , "Μουσείο Μουνκ"@el .
 
-wd:Q1132918  rdfs:label  "Национальный музей искусства, архитектуры и дизайна"@ru , "Національний музей мистецтва, архітектури і дизайну"@uk , "National Museum of Art, Architecture and Design"@en .
+wd:Q1132918  rdfs:label  "Nasjonalmuseet for kunst, arkitektur og design"@fi , "Արվեստի, ճարտարապետության և դիզայնի ազգային թանգարան"@hy , "National Museum of Art, Architecture and Design"@en .
+
+wd:Q15123870  rdfs:label  "litografaĵo"@eo , "літаграфія"@be , "litografie"@cs , "lithograph"@en .
 
 wd:Q389782  rdfs:label  "cardboard"@en .
 
@@ -66,21 +68,29 @@ wd:Q18891157  rdfs:label  "The Scream"@en ;
 wd:Q18891155  rdfs:label  "The Scream"@en ;
         wdt:P179    wd:Q471379 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Skrik%201893.jpg> ;
-        wdt:P186    wd:Q189085 ;
+        wdt:P186    wd:Q189085 , wd:Q389782 ;
         wdt:P195    wd:Q844926 ;
         wdt:P31     wd:Q3305213 ;
         wdt:P571    "1893-01-01T00:00:00Z"^^xsd:dateTime .
 
-wd:Q175166  rdfs:label  "eggtempera"@nn , "tempera"@sco , "tempera"@cs , "Τέμπερα"@el .
+wd:Q175166  rdfs:label  "tempera"@sco , "Tempera"@sh , "Τέμπερα"@el , "tempera"@cs , "tempera"@en .
 
-wd:Q3305213  rdfs:label  "painting"@en .
+wd:Q3305213  rdfs:label  "painting"@en , "målning"@sv , "ציור"@he , "مصوری"@ur , "карціна"@be-tarask , "Skilderij"@fy , "نقاشی"@fa .
 
-wd:Q189085  rdfs:label  "pastel"@en .
+wd:Q189085  rdfs:label  "pastel"@ca , "Pastel"@ro , "pastel"@en .
 
-wd:Q18891158  rdfs:label  "The Scream"@en ;
+wd:Q18891158  rdfs:label  "The Scream"@en , "Ճիչ"@hy , "Le Cri"@fr , "Der Schrei"@de , "Skrik"@nb ;
         wdt:P179    wd:Q471379 ;
         wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Edvard%20Munch%20-%20The%20Scream%20-%20Google%20Art%20Project.jpg> ;
         wdt:P186    wd:Q175166 ;
         wdt:P195    wd:Q844926 ;
         wdt:P31     wd:Q3305213 ;
         wdt:P571    "1910-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q69158  rdfs:label  "crayon"@en .
+
+wd:Q18907540  rdfs:label  "The Scream"@en , "Skrik"@nb , "Le Cri"@fr ;
+        wdt:P179    wd:Q471379 ;
+        wdt:P18     <http://commons.wikimedia.org/wiki/Special:FilePath/Munch%20The%20Scream%20lithography.png> ;
+        wdt:P31     wd:Q15123870 ;
+        wdt:P571    "1895-01-01T00:00:00Z"^^xsd:dateTime .

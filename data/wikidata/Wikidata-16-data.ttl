@@ -39,28 +39,23 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q150  rdfs:label  "French"@en , "فرانسیسی"@ur , "צרפתית"@he , "الفرنسية"@ar , "francês"@pt ;
+wd:Q150  rdfs:label  "French"@en , "Francês"@frp , "צרפתית"@he , "الفرنسية"@ar ;
         wdt:P424    "fr" .
 
-wd:Q912  rdfs:label  "Mali"@fr , "Mali"@en , "Mali"@ca , "ማሊ"@am , "Мали"@bxr ;
+wd:Q912  rdfs:label  "Mali"@ace , "Мали"@ady , "Mali"@en , "Mali"@fr ;
         wdt:P30     wd:Q15 ;
         wdt:P31     wd:Q6256 ;
         wdt:P37     wd:Q150 .
 
-wd:Q114  rdfs:label  "Kėnėjė"@sgs , "Кения"@kk , "Kenya"@en ;
+wd:Q114  rdfs:label  "Cenia"@cy , "Kėnėjė"@sgs , "Keniya"@uz , "Kenya"@fr , "Kenya"@en ;
         wdt:P30     wd:Q15 ;
         wdt:P31     wd:Q6256 ;
         wdt:P37     wd:Q1860 .
 
-wd:Q1860  rdfs:label  "English"@en , "Ingles"@tl ;
+wd:Q1860  rdfs:label  "English"@en , "Lengua Inglés"@cbk-zam ;
         wdt:P424    "en" .
 
-wd:Q929  rdfs:label  "Central African Republic"@en , "Kesk-Afriga Vabariik"@vro , "Republika han Butnga nga Aprika"@war ;
-        wdt:P30     wd:Q15 ;
-        wdt:P31     wd:Q6256 ;
-        wdt:P37     wd:Q150 .
-
-wd:Q657  rdfs:label  "Чад"@ady , "Chad"@ace , "Chad"@en , "Tsjad"@af , "Tchad"@fr , "乍得"@zh-mo , "乍得"@zh-my ;
+wd:Q657  rdfs:label  "Tchad"@fr , "Чад"@ady , "Chad"@ace , "Tsjad"@af ;
         wdt:P30     wd:Q15 ;
         wdt:P31     wd:Q6256 ;
         wdt:P37     wd:Q150 .

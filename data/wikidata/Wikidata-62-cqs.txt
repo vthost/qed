@@ -1,0 +1,46 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  psv:  <http://www.wikidata.org/prop/statement/value/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P376 ?body .
+    ?item p:P625 ?QED_VAR58 .
+    ?QED_VAR58 psv:P625 ?QED_VAR59 .
+    ?QED_VAR59 wikibase:geoGlobe ?globe .
+  }
+WHERE
+  { FILTER ( ?globe != ?body )
+    ?item     wdt:P376           ?body ;
+              p:P625             ?QED_VAR58 .
+    ?QED_VAR58  psv:P625         ?QED_VAR59 .
+    ?QED_VAR59  wikibase:geoGlobe  ?globe
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  psv:  <http://www.wikidata.org/prop/statement/value/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  wikibase: <http://wikiba.se/ontology#>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P376 ?body .
+    ?item p:P625 ?QED_VAR58 .
+    ?QED_VAR58 psv:P625 ?QED_VAR59 .
+    ?QED_VAR59 wikibase:geoGlobe ?globe .
+  }
+WHERE
+  { FILTER ( ! ( ?globe != ?body ) )
+    ?item     wdt:P376           ?body ;
+              p:P625             ?QED_VAR58 .
+    ?QED_VAR58  psv:P625         ?QED_VAR59 .
+    ?QED_VAR59  wikibase:geoGlobe  ?globe
+  }
+LIMIT   2
+
+----------------------------------------------

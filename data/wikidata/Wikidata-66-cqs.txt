@@ -40,15 +40,16 @@ PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 CONSTRUCT 
   { 
-    ?item13 rdfs:label ?label36 .
+    ?item12 rdfs:label ?label54 .
     ?item schema:description "introduza uma descrição"@pt .
   }
 WHERE
-  { { FILTER ( lang(?label) = "pt" )
-      ?item13  rdfs:label  ?label36
-    }
+  { OPTIONAL
+      { FILTER ( lang(?label) = "pt" )
+        ?item12  rdfs:label  ?label54
+      }
     ?item  schema:description  "introduza uma descrição"@pt
-    FILTER ( ?item != ?item13 )
+    FILTER ( ?item != ?item12 )
   }
 LIMIT   2
 
@@ -59,30 +60,16 @@ PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 CONSTRUCT 
   { 
-    ?item13 rdfs:label ?label36 .
+    ?item12 rdfs:label ?label54 .
     ?item schema:description "introduza uma descrição"@pt .
   }
 WHERE
-  { { FILTER ( ! ( lang(?label) = "pt" ) )
-      ?item13  rdfs:label  ?label36
-    }
+  { OPTIONAL
+      { FILTER ( ! ( lang(?label) = "pt" ) )
+        ?item12  rdfs:label  ?label54
+      }
     ?item  schema:description  "introduza uma descrição"@pt
-    FILTER ( ?item != ?item13 )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  schema: <http://schema.org/>
-PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-CONSTRUCT 
-  { 
-    ?item schema:description "introduza uma descrição"@pt .
-  }
-WHERE
-  { {  }
-    ?item  schema:description  "introduza uma descrição"@pt
+    FILTER ( ?item != ?item12 )
   }
 LIMIT   2
 

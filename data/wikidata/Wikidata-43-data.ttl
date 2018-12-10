@@ -39,28 +39,25 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q289387  wikibase:sitelinks  10 ;
+wd:Q55285  rdfs:label       "Star Wars Galaxies: The Ruins of Dantooine"@en-gb , "Star Wars Galaxies: The Ruins of Dantooine"@en-ca ;
+        wikibase:sitelinks  1 ;
         wdt:P31             wd:Q571 .
 
-wd:Q470  rdfs:label         "World Brain"@ca , "World Brain"@de ;
+wd:Q470  rdfs:label         "World Brain"@en ;
         wikibase:sitelinks  10 ;
         wdt:P31             wd:Q571 .
 
 wd:Q3210368  wikibase:sitelinks  0 ;
         wdt:P31             wd:Q571 .
 
-wd:Q721  wikibase:sitelinks  24 ;
+wd:Q3224421  wikibase:sitelinks  2 ;
         wdt:P31             wd:Q571 .
 
-wd:Q1050479  rdfs:label     "Persian Letters"@en ;
-        wikibase:sitelinks  22 ;
+wd:Q721  rdfs:label         "Life, the Universe and Everything"@en ;
+        wikibase:sitelinks  25 ;
         wdt:P31             wd:Q571 .
 
-wd:Q82530  wikibase:sitelinks  4 ;
-        wdt:P31             wd:Q571 .
-
-wd:Q1050556  rdfs:label     "Muwatta Imam Malik"@en ;
-        wikibase:sitelinks  23 ;
+wd:Q3224855  wikibase:sitelinks  0 ;
         wdt:P31             wd:Q571 .
 
 wd:Q4465921  wikibase:sitelinks  1 ;

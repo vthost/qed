@@ -44,14 +44,14 @@
         schema:isPartOf  <https://ro.wikipedia.org/> ;
         schema:name      "Ivanivka, Karlivka"@ro .
 
-wd:Q2076876  rdfs:label  "Верхня Кутузовка"@uk , "Verkhnia Kutuzovka"@en ;
+wd:Q800072  rdfs:label  "Приморський"@uk , "Prymorskyi"@en ;
         wdt:P17     wd:Q212 ;
         wdt:P31     wd:Q532 .
 
-<https://ro.wikipedia.org/wiki/Verhnea_Kutuzovka,_Alu%C8%99ta>
-        schema:about     wd:Q2076876 ;
+<https://ro.wikipedia.org/wiki/Pr%C3%AEmorsk%C3%AEi>
+        schema:about     wd:Q800072 ;
         schema:isPartOf  <https://ro.wikipedia.org/> ;
-        schema:name      "Verhnea Kutuzovka, Alușta"@ro .
+        schema:name      "Prîmorskîi"@ro .
 
 wd:Q100114  rdfs:label  "Іванівка"@uk , "Ivanivka"@fr , "Ivanivka"@en , "Ivanivka"@ro , "Իվանովկա"@hy , "伊瓦尼夫卡"@zh ;
         wdt:P17     wd:Q212 ;

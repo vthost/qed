@@ -39,28 +39,143 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q28  rdfs:label  "Hungary"@en , "Magyarország"@hu , "匈牙利"@zh , "Ungarn"@nb , "Ungarn"@lb .
+wd:Q231270  wikibase:sitelinks  41 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q30 .
 
-wd:Q17  rdfs:label  "Japan"@en .
+wd:Q11329627  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q17 .
 
-wd:Q18197514  rdfs:label    "Edmond Estève"@en ;
-        wikibase:sitelinks  2 ;
-        wdt:P106            wd:Q49757 ;
+wd:Q24265168  rdfs:label    "Josef Lautenbacher"@en ;
+        wikibase:sitelinks  0 ;
+        wdt:P106            wd:Q482980 ;
         wdt:P27             []  .
 
-wd:Q45121  rdfs:label       "Ferenc Faludi"@en ;
-        wikibase:sitelinks  8 ;
+wd:Q5617  rdfs:label        "Marie de France"@en ;
+        wikibase:sitelinks  42 ;
         wdt:P106            wd:Q49757 ;
-        wdt:P27             wd:Q28 .
+        wdt:P27             wd:Q142 .
 
-wd:Q20901601  rdfs:label    "Jean-Pierre Veyrat"@en ;
+wd:Q40  rdfs:label  "Austria"@en , "Austria"@ia , "Austria"@gl , "Avstriya"@uz .
+
+wd:Q21544184  rdfs:label    "John Shaw"@fr , "John Shaw"@nl , "John Shaw"@en ;
+        wikibase:sitelinks  0 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             []  ;
+        wdt:P27             []  .
+
+wd:Q668  rdfs:label  "India"@en .
+
+wd:Q6188251  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q928 .
+
+wd:Q13003819  wikibase:sitelinks  3 ;
+        wdt:P106            wd:Q49757 , wd:Q482980 ;
+        wdt:P27             wd:Q129286 .
+
+wd:Q84011  rdfs:label       "David Bezmozgis"@ca ;
+        wikibase:sitelinks  7 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q16 .
+
+wd:Q57276  rdfs:label       "Michael D. Higgins"@af , "Michael Higgins"@nl ;
+        wikibase:sitelinks  64 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q27 .
+
+wd:Q18197553  rdfs:label    "Alfons Haase"@en ;
+        wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             []  .
+
+wd:Q17  rdfs:label  "Japan"@en , "Japan"@fy .
+
+wd:Q7273874  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q21 .
+
+wd:Q142  rdfs:label  "Франция"@ru , "Frankryk"@af , "France"@en .
+
+wd:Q20901601  rdfs:label    "Jean-Pierre Veyrat"@en , "Jean-Pierre Veyrat"@de ;
         wikibase:sitelinks  2 ;
         wdt:P106            wd:Q49757 ;
         wdt:P27             wd:Q1845111 .
 
-wd:Q18002253  rdfs:label    "A. C."@en ;
+wd:Q81807  rdfs:label       "Sadakichi Hartmann"@ms , "Sadakichi Hartmann"@ace ;
+        wikibase:sitelinks  5 ;
+        wdt:P106            wd:Q482980 , wd:Q49757 ;
+        wdt:P27             wd:Q17 .
+
+wd:Q5623  rdfs:label        "Aimeric de Peguilhan"@en ;
+        wikibase:sitelinks  15 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q142 .
+
+wd:Q215530  rdfs:label  "Kingdom of Ireland"@en , "Reĝlando Irlando"@eo , "Βασίλειο της Ιρλανδίας"@el , "Koninkryk van Ierland"@af , "Ír Királyság"@hu .
+
+wd:Q84755  rdfs:label       "György Pray"@en ;
+        wikibase:sitelinks  8 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q28 .
+
+wd:Q16  rdfs:label  "Canada"@en , "Kanada"@bm , "Kanada"@bi .
+
+wd:Q88161  rdfs:label       "Peter Hammerschlag"@en ;
+        wikibase:sitelinks  3 ;
+        wdt:P106            wd:Q482980 , wd:Q49757 ;
+        wdt:P27             wd:Q40 .
+
+wd:Q174193  rdfs:label  "United Kingdom of Great Britain and Ireland"@en .
+
+wd:Q4080594  wikibase:sitelinks  2 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q4147589 .
+
+wd:Q24049383  rdfs:label    "Mehshar Badayuni"@nl ;
         wikibase:sitelinks  1 ;
         wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q24752242 .
+
+wd:Q11319495  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q17 .
+
+wd:Q6218200  rdfs:label     "John Adams"@es ;
+        wikibase:sitelinks  2 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             []  .
+
+wd:Q84455  rdfs:label       "Ödön von Horváth"@en ;
+        wikibase:sitelinks  37 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q28 .
+
+wd:Q87161  rdfs:label       "Joseph Ennemoser"@ca , "Joseph Ennemoser"@da ;
+        wikibase:sitelinks  5 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q40 .
+
+wd:Q30  rdfs:label  "United States of America"@en , "États-Unis"@fr , "ארצות הברית"@he .
+
+wd:Q87532  rdfs:label       "Gerhard Fritsch"@en , "Gerhard Fritsch"@de , "Gerhard Fritsch"@da ;
+        wikibase:sitelinks  5 ;
+        wdt:P106            wd:Q49757 , wd:Q482980 ;
+        wdt:P27             wd:Q40 .
+
+wd:Q159  rdfs:label  "Russia"@en .
+
+wd:Q28  rdfs:label  "Hungary"@en , "Hungario"@eo , "Ungarn"@bar .
+
+wd:Q16685634  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q482980 , wd:Q49757 ;
+        wdt:P27             wd:Q668 .
+
+wd:Q18002253  rdfs:label    "A. C."@fr , "A. C."@en ;
+        wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             []  ;
         wdt:P27             []  .
 
 wd:Q15631539  rdfs:label    "Neveux"@en ;
@@ -68,17 +183,61 @@ wd:Q15631539  rdfs:label    "Neveux"@en ;
         wdt:P106            wd:Q49757 ;
         wdt:P27             []  .
 
-wd:Q44606  rdfs:label       "Gackt"@en ;
-        wikibase:sitelinks  32 ;
-        wdt:P106            wd:Q49757 ;
-        wdt:P27             wd:Q17 .
+wd:Q18536011  rdfs:label    "John Williams"@de , "جون وليامز"@ar ;
+        wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             []  .
 
-wd:Q57074  rdfs:label       "Nelly Sachs"@en ;
-        wikibase:sitelinks  86 ;
+wd:Q5355  rdfs:label        "Gilles de Paris"@en ;
+        wikibase:sitelinks  4 ;
         wdt:P106            wd:Q49757 ;
-        wdt:P27             wd:Q183 , wd:Q34 .
+        wdt:P27             wd:Q142 .
 
-wd:Q12773  rdfs:label       "Julio Baghy"@ast , "Дзьюла Багі"@be , "Julio Baghy"@ca ;
-        wikibase:sitelinks  21 ;
+wd:Q76409  rdfs:label       "Charles Bukowski"@en ;
+        wikibase:sitelinks  89 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q30 .
+
+wd:Q18757194  wikibase:sitelinks  0 ;
+        wdt:P106            wd:Q49757 , wd:Q482980 ;
+        wdt:P27             wd:Q215530 .
+
+wd:Q27  rdfs:label  "Ierland"@nl , "Irlando"@eo .
+
+wd:Q481345  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q159 .
+
+wd:Q18911144  wikibase:sitelinks  1 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             wd:Q174193 .
+
+wd:Q928  rdfs:label  "Philippines"@en , "Filipijnen"@nl , "Filipini"@hr .
+
+wd:Q21  rdfs:label  "England"@en .
+
+wd:Q18197514  rdfs:label    "Edmond Estève"@en ;
+        wikibase:sitelinks  2 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             []  .
+
+wd:Q129286  rdfs:label  "British Raj"@en , "Briti India"@et , "Brit India"@hu .
+
+wd:Q776689  wikibase:sitelinks  1 ;
         wdt:P106            wd:Q49757 ;
         wdt:P27             wd:Q28 .
+
+wd:Q23897419  rdfs:label    "Alexander Buchholtz"@en ;
+        wikibase:sitelinks  0 ;
+        wdt:P106            wd:Q482980 ;
+        wdt:P27             []  .
+
+wd:Q88642  rdfs:label       "Hans Stoiber"@en ;
+        wikibase:sitelinks  2 ;
+        wdt:P106            wd:Q482980 , wd:Q49757 ;
+        wdt:P27             wd:Q40 .
+
+wd:Q18800  rdfs:label       "Tablo"@an , "Tablo"@pl ;
+        wikibase:sitelinks  10 ;
+        wdt:P106            wd:Q49757 ;
+        wdt:P27             wd:Q16 .

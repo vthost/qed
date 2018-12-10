@@ -1,0 +1,22 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  pr:   <http://www.wikidata.org/prop/reference/>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?entry ?p ?statement .
+    ?statement prov:wasDerivedFrom ?QED_VAR39 .
+    ?QED_VAR39 pr:P248 ?QED_VAR40 .
+    ?QED_VAR40 wdt:P356 ?doi .
+  }
+WHERE
+  { ?entry    ?p                   ?statement .
+    ?statement  prov:wasDerivedFrom  ?QED_VAR39 .
+    ?QED_VAR39  pr:P248            ?QED_VAR40 .
+    ?QED_VAR40  wdt:P356           ?doi
+  }
+LIMIT   2
+
+----------------------------------------------

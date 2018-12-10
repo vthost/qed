@@ -1,0 +1,992 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause_of_death_label) = "en" )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    { FILTER ( lang(?politician_label) = "en" )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    { FILTER ( lang(?politician_label) = "en" )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?cause_of_death_label) = "en" )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    { FILTER ( lang(?politician_label) = "en" )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    { FILTER ( lang(?politician_label) = "en" )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?cause_of_death_label) = "en" )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    { FILTER ( lang(?politician_label) = "en" )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    { FILTER ( lang(?politician_label) = "en" )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause_of_death_label) = "en" )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    { FILTER ( ! ( lang(?politician_label) = "en" ) )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    { FILTER ( ! ( lang(?politician_label) = "en" ) )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?cause_of_death_label) = "en" )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    { FILTER ( ! ( lang(?politician_label) = "en" ) )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    { FILTER ( ! ( lang(?politician_label) = "en" ) )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?cause_of_death_label) = "en" )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    { FILTER ( ! ( lang(?politician_label) = "en" ) )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    { FILTER ( ! ( lang(?politician_label) = "en" ) )
+      ?politician  rdfs:label  ?politician_label
+    }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause_of_death_label) = "en" )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    OPTIONAL
+      { FILTER ( lang(?politician_label) = "en" )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    OPTIONAL
+      { FILTER ( lang(?politician_label) = "en" )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?cause_of_death_label) = "en" )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    OPTIONAL
+      { FILTER ( lang(?politician_label) = "en" )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) ) || ( ?cause != ?cause4 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    OPTIONAL
+      { FILTER ( lang(?politician_label) = "en" )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) ) || ( ?cause != ?cause4 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?cause_of_death_label) = "en" )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    OPTIONAL
+      { FILTER ( lang(?politician_label) = "en" )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    OPTIONAL
+      { FILTER ( lang(?politician_label) = "en" )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause_of_death_label) = "en" )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?politician_label) = "en" ) )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    OPTIONAL
+      { FILTER ( ! ( lang(?politician_label) = "en" ) )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?cause_of_death_label) = "en" )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?politician_label) = "en" ) )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) ) || ( ?cause != ?cause4 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?politician_label) = "en" ) )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) ) || ( ?cause != ?cause4 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?cause_of_death_label) = "en" )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?politician_label) = "en" ) )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician20 rdfs:label ?politician_label21 .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    OPTIONAL
+      { FILTER ( ! ( lang(?politician_label) = "en" ) )
+        ?politician20
+                  rdfs:label  ?politician_label21
+      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ( ?politician != ?politician20 ) || ( ?politician != ?politician20 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause_of_death_label) = "en" )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?politician_label) = "en" )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    FILTER NOT EXISTS { FILTER ( lang(?politician_label) = "en" )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?cause_of_death_label) = "en" )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?politician_label) = "en" )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    FILTER NOT EXISTS { FILTER ( lang(?politician_label) = "en" )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?cause_of_death_label) = "en" )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?politician_label) = "en" )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    FILTER NOT EXISTS { FILTER ( lang(?politician_label) = "en" )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( lang(?cause_of_death_label) = "en" )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?politician_label) = "en" ) )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+      ?cause  rdfs:label  ?cause_of_death_label
+    }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?politician_label) = "en" ) )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( lang(?cause_of_death_label) = "en" )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?politician_label) = "en" ) )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause4 rdfs:label ?cause_of_death_label22 .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { OPTIONAL
+      { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+        ?cause4  rdfs:label  ?cause_of_death_label22
+      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?politician_label) = "en" ) )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+    FILTER ( ?cause != ?cause4 )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( lang(?cause_of_death_label) = "en" )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?politician_label) = "en" ) )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?cause rdfs:label ?cause_of_death_label .
+    ?politician rdfs:label ?politician_label .
+    ?politician wdt:P106 wd:Q82955 .
+    ?politician wdt:P509 ?cause .
+  }
+WHERE
+  { FILTER NOT EXISTS { FILTER ( ! ( lang(?cause_of_death_label) = "en" ) )
+                        ?cause  rdfs:label  ?cause_of_death_label
+                      }
+    FILTER NOT EXISTS { FILTER ( ! ( lang(?politician_label) = "en" ) )
+                        ?politician  rdfs:label  ?politician_label
+                      }
+    ?politician  wdt:P106  wd:Q82955 ;
+              wdt:P509  ?cause
+  }
+LIMIT   2
+
+----------------------------------------------

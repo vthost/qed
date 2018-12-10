@@ -58,22 +58,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 ?prop33 ?statement34 .
-    ?statement34 prov:wasDerivedFrom ?derivedFrom35 .
+    ?item12 ?prop51 ?statement52 .
+    ?statement52 prov:wasDerivedFrom ?derivedFrom53 .
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
   }
 WHERE
-  { { ?item13   ?prop33              ?statement34 .
-      ?statement34  prov:wasDerivedFrom  ?derivedFrom35
+  { { ?item12   ?prop51              ?statement52 .
+      ?statement52  prov:wasDerivedFrom  ?derivedFrom53
     }
     FILTER regex(str(?prop), "http://www.wikidata.org/prop/")
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") )
     ?item  wdt:P279  wd:Q7187 ;
            wdt:P703  wd:Q5 ;
            ?prop     ?statement
-    FILTER ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?prop != ?prop33 ) ) || ( ?statement != ?statement34 ) )
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?prop != ?prop51 ) ) || ( ?statement != ?statement52 ) )
   }
 LIMIT   2
 
@@ -138,22 +138,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 ?prop33 ?statement34 .
-    ?statement34 prov:wasDerivedFrom ?derivedFrom35 .
+    ?item12 ?prop51 ?statement52 .
+    ?statement52 prov:wasDerivedFrom ?derivedFrom53 .
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
   }
 WHERE
-  { { ?item13   ?prop33              ?statement34 .
-      ?statement34  prov:wasDerivedFrom  ?derivedFrom35
+  { { ?item12   ?prop51              ?statement52 .
+      ?statement52  prov:wasDerivedFrom  ?derivedFrom53
     }
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/") )
     FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") )
     ?item  wdt:P279  wd:Q7187 ;
            wdt:P703  wd:Q5 ;
            ?prop     ?statement
-    FILTER ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?prop != ?prop33 ) ) || ( ?statement != ?statement34 ) )
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?prop != ?prop51 ) ) || ( ?statement != ?statement52 ) )
   }
 LIMIT   2
 
@@ -218,22 +218,22 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?item13 ?prop33 ?statement34 .
-    ?statement34 prov:wasDerivedFrom ?derivedFrom35 .
+    ?item12 ?prop51 ?statement52 .
+    ?statement52 prov:wasDerivedFrom ?derivedFrom53 .
     ?item wdt:P279 wd:Q7187 .
     ?item wdt:P703 wd:Q5 .
     ?item ?prop ?statement .
   }
 WHERE
-  { { ?item13   ?prop33              ?statement34 .
-      ?statement34  prov:wasDerivedFrom  ?derivedFrom35
+  { { ?item12   ?prop51              ?statement52 .
+      ?statement52  prov:wasDerivedFrom  ?derivedFrom53
     }
     FILTER regex(str(?prop), "http://www.wikidata.org/prop/")
     FILTER ( ! ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") ) )
     ?item  wdt:P279  wd:Q7187 ;
            wdt:P703  wd:Q5 ;
            ?prop     ?statement
-    FILTER ( ( ( ( ( ?item != ?item13 ) || ( ?item != ?item13 ) ) || ( ?item != ?item13 ) ) || ( ?prop != ?prop33 ) ) || ( ?statement != ?statement34 ) )
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?prop != ?prop51 ) ) || ( ?statement != ?statement52 ) )
   }
 LIMIT   2
 
@@ -286,6 +286,34 @@ WHERE
     ?item  wdt:P279  wd:Q7187 ;
            wdt:P703  wd:Q5 ;
            ?prop     ?statement
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  prov: <http://www.w3.org/ns/prov#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item12 ?prop51 ?statement52 .
+    ?statement52 prov:wasDerivedFrom ?derivedFrom53 .
+    ?item wdt:P279 wd:Q7187 .
+    ?item wdt:P703 wd:Q5 .
+    ?item ?prop ?statement .
+  }
+WHERE
+  { { ?item12   ?prop51              ?statement52 .
+      ?statement52  prov:wasDerivedFrom  ?derivedFrom53
+    }
+    FILTER ( ! regex(str(?prop), "http://www.wikidata.org/prop/") )
+    FILTER ( ! ( ! regex(str(?prop), "http://www.wikidata.org/prop/direct/") ) )
+    ?item  wdt:P279  wd:Q7187 ;
+           wdt:P703  wd:Q5 ;
+           ?prop     ?statement
+    FILTER ( ( ( ( ( ?item != ?item12 ) || ( ?item != ?item12 ) ) || ( ?item != ?item12 ) ) || ( ?prop != ?prop51 ) ) || ( ?statement != ?statement52 ) )
   }
 LIMIT   2
 

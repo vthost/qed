@@ -24,31 +24,16 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?disease37 p:P699 ?statement34 .
+    ?disease55 p:P699 ?statement52 .
     ?disease wdt:P279 wd:Q12136 .
   }
 WHERE
-  { { BIND(1 AS ?ref)
-      ?disease37  p:P699  ?statement34
-    }
+  { OPTIONAL
+      { BIND(1 AS ?ref)
+        ?disease55  p:P699  ?statement52
+      }
     { ?disease  wdt:P279  wd:Q12136 }
-    FILTER ( ?disease != ?disease37 )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?disease wdt:P279 wd:Q12136 .
-  }
-WHERE
-  { {  }
-    { ?disease  wdt:P279  wd:Q12136 }
+    FILTER ( ?disease != ?disease55 )
   }
 LIMIT   2
 
@@ -98,31 +83,16 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?disease37 p:P699 ?statement34 .
+    ?disease55 p:P699 ?statement52 .
     ?disease wdt:P31 wd:Q12136 .
   }
 WHERE
-  { { BIND(1 AS ?ref)
-      ?disease37  p:P699  ?statement34
-    }
+  { OPTIONAL
+      { BIND(1 AS ?ref)
+        ?disease55  p:P699  ?statement52
+      }
     { ?disease  wdt:P31  wd:Q12136 }
-    FILTER ( ?disease != ?disease37 )
-  }
-LIMIT   2
-
-----------------------------------------------
-BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
-PREFIX  p:    <http://www.wikidata.org/prop/>
-PREFIX  wd:   <http://www.wikidata.org/entity/>
-PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
-
-CONSTRUCT 
-  { 
-    ?disease wdt:P31 wd:Q12136 .
-  }
-WHERE
-  { {  }
-    { ?disease  wdt:P31  wd:Q12136 }
+    FILTER ( ?disease != ?disease55 )
   }
 LIMIT   2
 
@@ -175,18 +145,19 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?disease37 p:P699 ?statement34 .
+    ?disease55 p:P699 ?statement52 .
     ?disease wdt:P31 wd:Q12136 .
     ?disease wdt:P279 wd:Q12136 .
   }
 WHERE
-  { { BIND(1 AS ?ref)
-      ?disease37  p:P699  ?statement34
-    }
+  { OPTIONAL
+      { BIND(1 AS ?ref)
+        ?disease55  p:P699  ?statement52
+      }
     { { ?disease  wdt:P31  wd:Q12136 }
       { ?disease  wdt:P279  wd:Q12136 }
     }
-    FILTER ( ( ?disease != ?disease37 ) || ( ?disease != ?disease37 ) )
+    FILTER ( ( ?disease != ?disease55 ) || ( ?disease != ?disease55 ) )
   }
 LIMIT   2
 
@@ -198,11 +169,14 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
+    ?disease p:P699 ?statement .
     ?disease wdt:P31 wd:Q12136 .
     ?disease wdt:P279 wd:Q12136 .
   }
 WHERE
-  { {  }
+  { FILTER NOT EXISTS { BIND(1 AS ?ref)
+                        ?disease  p:P699  ?statement
+                      }
     { { ?disease  wdt:P31  wd:Q12136 }
       { ?disease  wdt:P279  wd:Q12136 }
     }

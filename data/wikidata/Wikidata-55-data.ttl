@@ -39,20 +39,14 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q17485679  rdfs:label  "History of malaria research and its contribution to the malaria control success in Suriname: a review"@en , "History of malaria research and its contribution to the malaria control success in Suriname: a review"@nl ;
-        wdt:P31     wd:Q13442814 .
-
 wd:Q39311965  rdfs:label  "Histochemical and biophysical study of cuticle sclerotization in Pycnoscelus surinamensis L. (Blattaria)."@en , "Histochemical and biophysical study of cuticle sclerotization in Pycnoscelus surinamensis L."@nl ;
         wdt:P31     wd:Q13442814 ;
         wdt:P698    "45833" .
 
-wd:Q39667992  wdt:P698  "109978" .
-
-wd:Q39657648  rdfs:label  "Panel on employee assistance program."@nl , "Panel on employee assistance program."@en ;
+wd:Q36333940  rdfs:label  "Induction of cellulolytic enzymes in Trichoderma reesei by sophorose."@en ;
         wdt:P31     wd:Q13442814 ;
-        wdt:P698    "107643" .
+        wdt:P698    "39061" .
 
-wd:Q221226  rdfs:label  "The Hallmarks of Cancer"@da , "سمات الخلايا السرطانية"@ar ;
-        wdt:P31     wd:Q13442814 .
-
-wd:Q27905658  wdt:P698  "1" .
+wd:Q30451656  rdfs:label  "Methods to improve detection of pneumococci in respiratory secretions."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "421" .
