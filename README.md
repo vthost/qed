@@ -10,11 +10,11 @@ Contains the query and data extraction.
 # /qed-gen
 Contains the data and answer generation. 
 
-# Requirements:
+# Requirements
 - qed-core: [maven](https://maven.apache.org/)
 - qed-gen: qed-core, [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
 
-# Setup:
+# Setup
 - qed-core: Run 'mvn clean install' in qed-core.
 - qed-gen:
 
