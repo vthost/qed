@@ -1,0 +1,26 @@
+<http://dbpedia.org/resource/Spring_%28film%29> <http://dbpedia.org/property/released> "-1971"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://dbpedia.org/resource/Sabbath_Bloody_Sabbath> <http://dbpedia.org/property/released> "1973-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Sabbath_Bloody_Sabbath> <http://dbpedia.org/property/released> "1973年12月1日"@ja .
+<http://dbpedia.org/resource/Sabbath_Bloody_Sabbath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/Album106591815> .
+<http://dbpedia.org/resource/Sabbath_Bloody_Sabbath> <http://dbpedia.org/property/cover> "Black Sabbath SbS.jpg"@en .
+<http://dbpedia.org/resource/Sabbath_Bloody_Sabbath> <http://dbpedia.org/property/artist> <http://dbpedia.org/resource/Black_Sabbath> .
+<http://dbpedia.org/resource/Sabbath_Bloody_Sabbath> <http://dbpedia.org/property/name> "Sabbath Bloody Sabbath"@en .
+<http://dbpedia.org/resource/%C3%96zer_Hurmac%C4%B1> <http://dbpedia.org/property/name> "Hurmacı, Özer"@de .
+<http://dbpedia.org/property/released> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/resource/Black_Sabbath> .
+<http://dbpedia.org/property/released> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/Album106591815> .
+<http://dbpedia.org/property/released> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/property/released> .
+<http://dbpedia.org/property/released> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:BX5FX3Ablank0 .
+<http://dbpedia.org/property/released> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2001/XMLSchema#string> .
+<http://dbpedia.org/resource/5_Rifles> <http://dbpedia.org/property/released> "1974-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/5_Rifles> <http://dbpedia.org/property/name> "5 Rifles"@en .
+<http://dbpedia.org/resource/James_Taylor_discography> <http://dbpedia.org/property/cover> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://dbpedia.org/property/cover> <http://dbpedia.org/resource/Black_Sabbath> <http://synthetic/0> .
+<http://dbpedia.org/property/cover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/Album106591815> .
+<http://dbpedia.org/property/cover> <http://dbpedia.org/property/artist> <http://dbpedia.org/resource/Black_Sabbath> .
+<http://dbpedia.org/property/cover> <http://dbpedia.org/property/artist> <http://dbpedia.org/property/artist> .
+<http://dbpedia.org/resource/%C5%8Ckami> <http://dbpedia.org/property/released> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://dbpedia.org/resource/%C5%8Ckami> <http://dbpedia.org/property/cover> "Ōkami soundtrack.jpg"@en .
+<http://dbpedia.org/resource/%C5%8Ckami> <http://dbpedia.org/property/name> "Ōkami"@en .
+<http://dbpedia.org/resource/All_Money_Is_Legal> <http://dbpedia.org/property/cover> "All money is legal.jpg"@en .
+<http://dbpedia.org/resource/All_Money_Is_Legal> <http://dbpedia.org/property/name> "A.M.I.L."@en .
+_:BX5FX3Ablank0 <http://dbpedia.org/resource/Black_Sabbath> "lit0"^^<http://any/iri> <http://synthetic/2> .

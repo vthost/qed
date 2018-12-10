@@ -1,0 +1,15 @@
+<http://www.wikidata.org/entity/Q819207> <http://www.wikidata.org/prop/direct/P699> "DOID:4184" .
+<http://www.wikidata.org/entity/Q819207> <http://www.w3.org/2000/01/rdf-schema#label> "Pseudohypoparathyreoidismus"@de .
+<http://www.wikidata.org/entity/Q819207> <http://www.w3.org/2000/01/rdf-schema#label> "قصور جارات الدرق الكاذب"@ar .
+<http://www.wikidata.org/entity/Q819207> <http://www.w3.org/2000/01/rdf-schema#label> "pseudohypoparathyroidism"@en .
+<http://www.wikidata.org/entity/Q819207> <http://www.w3.org/2000/01/rdf-schema#label> "거짓부갑상샘저하증"@ko .
+_:BX5FX3Ablank0 <http://www.wikidata.org/prop/direct/P699> "" .
+_:BX5FX3Ablank0 <http://www.w3.org/2000/01/rdf-schema#label> "num1"^^<http://any/number> .
+_:BX5FX3Ablank0 <http://www.w3.org/2000/01/rdf-schema#label> "en" .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.wikidata.org/prop/direct/P699> "" .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.wikidata.org/prop/direct/P699> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.wikidata.org/prop/direct/P699> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/1> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.wikidata.org/prop/direct/P699> "lit0"^^<http://any/iri> .
+<http://www.w3.org/2001/XMLSchema#decimal> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> "lit0"^^<http://any/iri> .

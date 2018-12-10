@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "lang" , "label" , "person" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "es" ;
+                                     rs:variable  "lang"
+                                   ] ;
+            rs:binding  [ rs:value     "Gustavo Angarita Jr (actor)"@es ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q55317537> ;
+                          rs:variable  "person"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "es" ;
+                                     rs:variable  "lang"
+                                   ] ;
+            rs:binding  [ rs:value     "Adam Reid (actor)"@es ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16214587> ;
+                          rs:variable  "person"
+                        ] ]
+] .
