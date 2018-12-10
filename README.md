@@ -2,14 +2,13 @@
 
 SPAQRL QED is a system generating out-of-the-box datasets for SPARQL queries over linked data. It distinguishes the queries according to the different SPARQL features and creates, for each query, a small but exhaustive dataset comprising linked data and the query answers over this data. We ensure that the created datasets are diverse and cover various practical use cases and, of course, that the sets of answers included are the correct ones.
 
-For a more detailed introduction into the approach and a coarse overview of the system see paper.pdf.
+For a more detailed introduction into the approach and a coarse overview of the system see /paper.pdf.
 
 # /qed-core
-Contains he query and data extraction. 
+Contains the query and data extraction. 
 
 # /qed-gen
 Contains the data and answer generation. 
-
 
 # Requirements:
 - qed-core: [maven](https://maven.apache.org/)
@@ -18,7 +17,6 @@ Contains the data and answer generation.
 # Setup:
 - qed-core: Run 'mvn clean install' in qed-core.
 - qed-gen:
-
 
 # Examples
 The datasets described in the paper can be found in /data. Demo classes in both qed-core and qed-gen show how to run the system. 
