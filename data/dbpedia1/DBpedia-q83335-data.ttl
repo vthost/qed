@@ -1,0 +1,7 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:   <http://dbpedia.org/ontology/> .
+
+<http://dbpedia.org/resource/%C4%90%E1%BB%97_Anh_V%C5%A9>
+        a           ns1:Chancellor ;
+        rdfs:label  "Đỗ Anh Vũ"@en , "Đỗ Anh Vũ"@fr .
