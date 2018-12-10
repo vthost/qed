@@ -1,8 +1,0 @@
-DBpedia-q1099-0-data.ttl 20
-DBpedia-q1892-0-data.ttl 18
-DBpedia-q19339-0-data.ttl 20
-DBpedia-q194196-0-data.ttl 20
-DBpedia-q26454-0-data.ttl 20
-DBpedia-q3017-0-data.ttl 20
-DBpedia-q3031-0-data.ttl 20
-DBpedia-q83773-0-data.ttl 20

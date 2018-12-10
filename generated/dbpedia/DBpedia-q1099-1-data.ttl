@@ -1,7 +1,0 @@
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> ""^^<http://www.w3.org/2001/XMLSchema#string> .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "num2"^^<http://any/number> .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "lit4"^^<http://any/iri> .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "lit1"@ANY_LANGUAGE .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "lit0"^^<http://any/iri> .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> _:BX5FX3Ablank0 .

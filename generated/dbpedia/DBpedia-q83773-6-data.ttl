@@ -1,8 +1,0 @@
-<http://synthetic/0> <http://synthetic/0> <http://synthetic/2> .
-<http://synthetic/3> <http://www.w3.org/2001/XMLSchema#boolean> "lit1"@ANY_LANGUAGE .
-<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2004/02/skos/core#broader> "num4"^^<http://any/number> .
-<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/4> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/2> "lit4"^^<http://any/iri> .
-<http://synthetic/4> <http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://synthetic/0> <http://synthetic/0> <http://synthetic/2> <http://synthetic/1> .
