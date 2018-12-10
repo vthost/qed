@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q30451656  rdfs:label  "Methods to improve detection of pneumococci in respiratory secretions."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "421" .
+
+wd:Q17485679  rdfs:label  "History of malaria research and its contribution to the malaria control success in Suriname: a review"@en , "History of malaria research and its contribution to the malaria control success in Suriname: a review"@nl ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q330955  rdfs:label  "Über Sinn und Bedeutung"@de , "Sense and reference"@en ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q39311965  rdfs:label  "Histochemical and biophysical study of cuticle sclerotization in Pycnoscelus surinamensis L. (Blattaria)."@en , "Histochemical and biophysical study of cuticle sclerotization in Pycnoscelus surinamensis L."@nl ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "45833" .
+
+wd:Q39667992  wdt:P698  "109978" .
+
+wd:Q221226  rdfs:label  "The Hallmarks of Cancer"@da , "سمات الخلايا السرطانية"@ar ;
+        wdt:P31     wd:Q13442814 .
+
+wd:Q36333940  rdfs:label  "Induction of cellulolytic enzymes in Trichoderma reesei by sophorose."@en ;
+        wdt:P31     wd:Q13442814 ;
+        wdt:P698    "39061" .
+
+wd:Q27905658  wdt:P698  "1" .

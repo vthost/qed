@@ -1,0 +1,353 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P569 ?dob .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( lang(?birthplace) = "en" )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( lang(?name) = "en" )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person  wdt:P569  ?dob }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P569 ?dob .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?birthplace) = "en" ) )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( lang(?name) = "en" )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person  wdt:P569  ?dob }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P569 ?dob .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( lang(?birthplace) = "en" )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( ! ( lang(?name) = "en" ) )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person  wdt:P569  ?dob }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P569 ?dob .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?birthplace) = "en" ) )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( ! ( lang(?name) = "en" ) )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person  wdt:P569  ?dob }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person5 wdt:P569 ?dob6 .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( lang(?birthplace) = "en" )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( lang(?name) = "en" )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person5  wdt:P569  ?dob6 }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+    FILTER ( ( ( ( ?person != ?person5 ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person5 wdt:P569 ?dob6 .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?birthplace) = "en" ) )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( lang(?name) = "en" )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person5  wdt:P569  ?dob6 }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+    FILTER ( ( ( ( ?person != ?person5 ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person5 wdt:P569 ?dob6 .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( lang(?birthplace) = "en" )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( ! ( lang(?name) = "en" ) )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person5  wdt:P569  ?dob6 }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+    FILTER ( ( ( ( ?person != ?person5 ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person5 wdt:P569 ?dob6 .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?birthplace) = "en" ) )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( ! ( lang(?name) = "en" ) )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    { ?person5  wdt:P569  ?dob6 }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+    FILTER ( ( ( ( ?person != ?person5 ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) ) || ( ?person != ?person5 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( lang(?birthplace) = "en" )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( lang(?name) = "en" )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    {  }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( ! ( lang(?birthplace) = "en" ) )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( lang(?name) = "en" )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    {  }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?place rdfs:label ?birthplace .
+    ?person rdfs:label ?name .
+    ?person wdt:P570 ?dod .
+    ?person wdt:P19 ?place .
+    ?place wdt:P625 ?coord .
+    ?person wdt:P101 wd:Q8134 .
+  }
+WHERE
+  { FILTER ( lang(?birthplace) = "en" )
+    ?place  rdfs:label  ?birthplace
+    FILTER ( ! ( lang(?name) = "en" ) )
+    ?person  rdfs:label  ?name
+    BIND(if(( ?birthyear < 1700 ), "Pre-1700", if(( ?birthyear < 1751 ), "1700-1750", if(( ?birthyear < 1801 ), "1751-1800", if(( ?birthyear < 1851 ), "1801-1850", if(( ?birthyear < 1901 ), "1851-1900", if(( ?birthyear < 1951 ), "1901-1950", "Post-1950")))))) AS ?layer)
+    BIND(year(?dob) AS ?birthyear)
+    {  }
+    ?person  wdt:P570  ?dod ;
+             wdt:P19   ?place .
+    ?place   wdt:P625  ?coord
+    { ?person  wdt:P101  wd:Q8134 }
+  }
+LIMIT   2
+
+----------------------------------------------

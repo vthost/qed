@@ -1,0 +1,7 @@
+PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>  
+
+SELECT ?cc (COUNT(DISTINCT ?child) AS ?number) {   
+?child wdt:P31 wd:Q5 ;           
+wdt:P39/wdt:P279* wd:Q83307 ;          
+(wdt:P22|wdt:P25) [wdt:P39/wdt:P279* wd:Q83307] ;          
+wdt:P27/wdt:P901 ?cc } GROUP BY ?cc ORDER BY DESC(?number)  

@@ -1,0 +1,23 @@
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix ns2:   <http://dbpedia.org/resource/Category:> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix ns1:   <http://dbpedia.org/resource/Category:> .
+@prefix ns3:   <http://dbpedia.org/resource/Category:> .
+
+dbpedia:Predeal  dbpprop:officialName  "Predeal"@en ;
+        skos:subject          dbpedia:Category:Ski_areas_and_resorts_in_Romania .
+
+dbpedia:Category:Ski_areas_and_resorts_in_Romania
+        rdfs:label      "Ski areas and resorts in Romania"@en ;
+        skos:prefLabel  "Ski areas and resorts in Romania"@en .
+
+<http://dbpedia.org/resource/Arie%C5%9Feni>
+        rdfs:label    "Arieşeni"@de ;
+        skos:subject  dbpedia:Category:Ski_areas_and_resorts_in_Romania .
+
+<http://dbpedia.org/resource/B%C4%83ile_Herculane>
+        rdfs:label            "Băile Herculane"@en ;
+        dbpprop:officialName  "Băile Herculane"@en ;
+        skos:subject          dbpedia:Category:Ski_areas_and_resorts_in_Romania .

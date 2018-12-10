@@ -233,7 +233,7 @@ public class Utils implements Constants {
 	public static void integrateGenerationStatistics(String path){
 		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail+generated.txt")) {		
 //				  	System.out.println(path.substring(path.lastIndexOf(File.separator)+1));
-			Map<String,Integer> gcs = getGeneratedCounts(path+"-generated");
+			Map<String,Integer> gcs = getGeneratedCounts(path+"-12-10");
 //					generatedCounts(path.substring(path.lastIndexOf(File.separator)+1));
 
 			writer.write("qid;qtriples;cqs;cqs-with-data;extriples;alltriples;features\n");//rtriples;
@@ -247,11 +247,11 @@ public class Utils implements Constants {
 	    			int i2 = line.substring(0,i1).lastIndexOf(";");
 	    			int c = (int) Double.parseDouble(line.substring(i2+1,i1));
 	    			
-//	    			if (c == 0 && !gcs.containsKey(id) )
-//	    			{
-//            			System.out.println(id);
-//            			continue;
-//        			} 
+	    			if (c == 0 && !gcs.containsKey(id) ||gcs.containsKey(id) &&gcs.get(id) == 0 )
+	    			{
+            			System.out.println(id);
+            			continue;
+        			} 
 	    			
 	    			writer.write(line.substring(0,i1+1));
         			if(gcs.containsKey(id)) {
@@ -406,7 +406,7 @@ System.out.println(ks1);
 						(int)tmp.stream().mapToInt(i -> i).average().orElse(0)/100 +"&"+ 
 						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //extriples
 						(int)vs.get(4).stream().mapToInt(i -> i).average().orElse(0)+ //alltriples
-						"\\\\\\hline\n");
+						"\\Tstrut\\Bstrut\\\\\\hline\n");
 
 			}
 			writer.close();
@@ -586,7 +586,7 @@ System.out.println(ks1);
 
 	
 public static void main(String[] args) {
-	Utils.finalizeStatistics(Constants.DATA_DIR+"dbpedia1-new", 7, false);
+	Utils.finalizeStatistics(Constants.DATA_DIR+"wikidata", 7, false);
 //		Utils.generatedCounts(Dataset.DBPEDIA);//.writeManifestFiles();
 //		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
 //		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};

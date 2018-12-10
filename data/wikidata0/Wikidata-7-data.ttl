@@ -1,0 +1,109 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q16471  rdfs:label  "Slag van Normandië"@af ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1944-06-06T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1944-07-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(-0.566666666 49.333333333)"^^geo:wktLiteral .
+
+wd:Q18889141  wdt:P585  "+0000-01-01T00:00:00Z" .
+
+wd:Q1127723  wdt:P582  "-199-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q6861027  wdt:P582  "-145-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "-145-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q275019  rdfs:label  "Battle of Smolensk"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1943-08-07T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1943-10-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1943-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(32.05 54.7833)"^^geo:wktLiteral .
+
+wd:Q2664174  rdfs:label  "Battle of Kamdesh"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "2009-10-03T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "2009-10-03T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(71.34139 35.41)"^^geo:wktLiteral .
+
+wd:Q591571  wdt:P582  "-3800000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q26496  rdfs:label  "Pertempuran Surabaya"@id , "Сурабайська битва"@uk , "Battle of Surabaya"@en , "Slaget om Surabaya"@nb , "Schlacht von Surabaya"@de , "bataille de Surabaya"@fr , "معركة سورابايا"@ar ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1945-11-20T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1945-10-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(115.24861111 -8.42305556)"^^geo:wktLiteral .
+
+wd:Q3019802  wdt:P585  "-22000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q38789  rdfs:label  "Battle of Stalingrad"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1942-08-23T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(44.516666666 48.7)"^^geo:wktLiteral .
+
+wd:Q1030049  wdt:P582  "-3800000000-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1638026  wdt:P582  "-249-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q28855  wdt:P585  "-12300-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1055755  wdt:P582  "-204-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585  "-205-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q1501750  rdfs:label  "Slaget i Bergen Bugt"@da , "Schlacht in der Bucht von Bergen"@de , "Battle of Vågen"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1665-08-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P585    "1665-08-02T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(5.317222222 60.397777777)"^^geo:wktLiteral .
+
+wd:Q192660  rdfs:label  "Battle of Okinawa"@en ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1945-04-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1945-06-23T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(128.0 26.5)"^^geo:wktLiteral .
+
+wd:Q3956  rdfs:label  "Batalha de Jarama"@pt ;
+        wdt:P31     wd:Q178561 ;
+        wdt:P580    "1937-02-06T00:00:00Z"^^xsd:dateTime ;
+        wdt:P582    "1937-02-27T00:00:00Z"^^xsd:dateTime ;
+        wdt:P625    "Point(-3.50403333 40.2179)"^^geo:wktLiteral .

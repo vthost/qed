@@ -1,0 +1,80 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER contains(?label, "(")
+    FILTER ( lang(?label) IN ("en", "es", "fr", "de") )
+    ?person  wdt:P31     wd:Q5 ;
+             rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! contains(?label, "(") )
+    FILTER ( lang(?label) IN ("en", "es", "fr", "de") )
+    ?person  wdt:P31     wd:Q5 ;
+             rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER contains(?label, "(")
+    FILTER ( ! ( lang(?label) IN ("en", "es", "fr", "de") ) )
+    ?person  wdt:P31     wd:Q5 ;
+             rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?person wdt:P31 wd:Q5 .
+    ?person rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! contains(?label, "(") )
+    FILTER ( ! ( lang(?label) IN ("en", "es", "fr", "de") ) )
+    ?person  wdt:P31     wd:Q5 ;
+             rdfs:label  ?label
+  }
+LIMIT   2
+
+----------------------------------------------

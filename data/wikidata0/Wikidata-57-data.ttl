@@ -1,0 +1,76 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q18038168  p:P351  wds:Q18038168-6C966E35-4F2C-4A33-83B7-53A9F7D6F88B ;
+        wdt:P351  "26220" .
+
+wdref:8559b067fe0121176d9f374cac2b8f44062cb5b8
+        pr:P813  "2018-11-09T00:00:00Z"^^xsd:dateTime .
+
+wd:Q18030825  p:P351  wds:Q18030825-63ABF884-3B54-4609-9EA5-2A9585803E2A ;
+        wdt:P351  "5646" .
+
+wd:Q29717534  p:P351  wds:Q29717534-7CCCC3AF-3FD9-4B4B-83A0-E2A527E0FF13 ;
+        wdt:P351  "37261" .
+
+wds:Q18038168-6C966E35-4F2C-4A33-83B7-53A9F7D6F88B
+        prov:wasDerivedFrom  wdref:8559b067fe0121176d9f374cac2b8f44062cb5b8 .
+
+wdref:6072982fbff9ba704fa72f16e4699623498bd1a2
+        pr:P813  "2018-10-12T00:00:00Z"^^xsd:dateTime .
+
+wds:q14819473-219585DD-2A66-4C94-BF6E-4C488833B28D
+        prov:wasDerivedFrom  wdref:444b0482ea68a9f8b0aafaaa540ce4029aeb917b .
+
+wd:Q14819473  p:P351  wds:q14819473-219585DD-2A66-4C94-BF6E-4C488833B28D ;
+        wdt:P351  "2335" .
+
+wds:Q18030825-63ABF884-3B54-4609-9EA5-2A9585803E2A
+        prov:wasDerivedFrom  wdref:6072982fbff9ba704fa72f16e4699623498bd1a2 .
+
+wdref:444b0482ea68a9f8b0aafaaa540ce4029aeb917b
+        pr:P813  "2018-11-09T00:00:00Z"^^xsd:dateTime .
+
+wds:Q29717534-7CCCC3AF-3FD9-4B4B-83A0-E2A527E0FF13
+        prov:wasDerivedFrom  wdref:c36127a6e92b2943afc98cd0dd90426f2f16cc11 .
+
+wdref:c36127a6e92b2943afc98cd0dd90426f2f16cc11
+        pr:P813  "2018-08-10T00:00:00Z"^^xsd:dateTime .

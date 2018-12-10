@@ -1,0 +1,341 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { ?res  rdfs:label  ?name }
+    ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+  }
+WHERE
+  { categories:Ski_areas_and_resorts_in_Romania
+              rdfs:label  ?categ
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+    { { ?res  rdfs:label  ?name }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+  }
+WHERE
+  { categories:Ski_areas_and_resorts_in_Romania
+              skos:prefLabel  ?categ
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { { ?res  rdfs:label  ?name }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+    { { ?res  rdfs:label  ?name }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?res prop:officialName ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { ?res  prop:officialName  ?name }
+    ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+    ?res prop:officialName ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+    { { ?res  prop:officialName  ?name }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    ?res prop:officialName ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { { ?res  prop:officialName  ?name }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+    ?res prop:officialName ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+    { { ?res  prop:officialName  ?name }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    ?res prop:officialName ?name .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { { ?res  prop:officialName  ?name }
+      { ?res  rdfs:label  ?name }
+    }
+    ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+    ?res prop:officialName ?name .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+    { { { ?res  prop:officialName  ?name }
+        { ?res  rdfs:label  ?name }
+      }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    ?res prop:officialName ?name .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { { { ?res  prop:officialName  ?name }
+        { ?res  rdfs:label  ?name }
+      }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  categories: <http://dbpedia.org/resource/Category:>
+PREFIX  prop: <http://dbpedia.org/property/>
+
+CONSTRUCT 
+  { 
+    categories:Ski_areas_and_resorts_in_Romania skos:prefLabel ?categ .
+    categories:Ski_areas_and_resorts_in_Romania rdfs:label ?categ .
+    ?res prop:officialName ?name .
+    ?res rdfs:label ?name .
+    ?res skos:subject categories:Ski_areas_and_resorts_in_Romania .
+  }
+WHERE
+  { { categories:Ski_areas_and_resorts_in_Romania
+                skos:prefLabel  ?categ
+    }
+    { categories:Ski_areas_and_resorts_in_Romania
+                rdfs:label  ?categ
+    }
+    { { { ?res  prop:officialName  ?name }
+        { ?res  rdfs:label  ?name }
+      }
+      ?res  skos:subject  categories:Ski_areas_and_resorts_in_Romania
+    }
+  }
+LIMIT   2
+
+----------------------------------------------

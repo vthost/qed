@@ -1,0 +1,13 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+SELECT ?city ?cityLabel ?country ?countryLabel ?population WHERE {
+  
+    ?city wdt:P1082 ?population.
+  
+  FILTER EXISTS
+  {
+    wd:Q458 wdt:P150 ?country.
+    ?city wdt:P17 ?country.
+  }
+}
+LIMIT 100

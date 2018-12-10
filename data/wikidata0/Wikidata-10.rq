@@ -1,0 +1,1 @@
+PREFIX schema: <http://schema.org/> PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/>  SELECT ?lang (COUNT(DISTINCT ?article) AS ?count) WHERE {   ?article schema:about/wdt:P1367 ?yp_id .     FILTER (SUBSTR(str(?article), 11, 15) = ".wikipedia.org/") .   ?article schema:inLanguage ?lang . } GROUP BY ?lang ORDER BY DESC (?count) 

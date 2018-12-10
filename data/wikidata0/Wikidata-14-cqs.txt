@@ -1,0 +1,38 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?band wdt:P31 wd:Q5741069 .
+    ?band rdfs:label ?bandLabel .
+  }
+WHERE
+  { FILTER strstarts(?bandLabel, "M")
+    ?band  wdt:P31     wd:Q5741069 ;
+           rdfs:label  ?bandLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?band wdt:P31 wd:Q5741069 .
+    ?band rdfs:label ?bandLabel .
+  }
+WHERE
+  { FILTER ( ! strstarts(?bandLabel, "M") )
+    ?band  wdt:P31     wd:Q5741069 ;
+           rdfs:label  ?bandLabel
+  }
+LIMIT   2
+
+----------------------------------------------

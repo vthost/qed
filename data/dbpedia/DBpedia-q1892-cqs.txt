@@ -1,0 +1,176 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  address: <http://schemas.talis.com/2005/address/schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  terms: <http://purl.org/dc/terms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  emocom: <http://www.emotion-and-computing.de/resource/>
+PREFIX  timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX  bibo: <http://purl.org/ontology/bibo/>
+PREFIX  event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource foaf:page ?page .
+    ?resource skos:broader <http://dbpedia.org/resource/Vector_field_reconstruction> .
+    ?resource rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    { ?resource  foaf:page  ?page }
+    ?resource  skos:broader  <http://dbpedia.org/resource/Vector_field_reconstruction> ;
+              rdfs:label    ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  address: <http://schemas.talis.com/2005/address/schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  terms: <http://purl.org/dc/terms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  emocom: <http://www.emotion-and-computing.de/resource/>
+PREFIX  timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX  bibo: <http://purl.org/ontology/bibo/>
+PREFIX  event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource foaf:page ?page .
+    ?resource skos:broader <http://dbpedia.org/resource/Vector_field_reconstruction> .
+    ?resource rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    { ?resource  foaf:page  ?page }
+    ?resource  skos:broader  <http://dbpedia.org/resource/Vector_field_reconstruction> ;
+              rdfs:label    ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  address: <http://schemas.talis.com/2005/address/schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  terms: <http://purl.org/dc/terms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  emocom: <http://www.emotion-and-computing.de/resource/>
+PREFIX  timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX  bibo: <http://purl.org/ontology/bibo/>
+PREFIX  event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource31 foaf:page ?page32 .
+    ?resource skos:broader <http://dbpedia.org/resource/Vector_field_reconstruction> .
+    ?resource rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    OPTIONAL
+      { ?resource31  foaf:page  ?page32 }
+    ?resource  skos:broader  <http://dbpedia.org/resource/Vector_field_reconstruction> ;
+              rdfs:label    ?label
+    FILTER ( ( ?resource != ?resource31 ) || ( ?resource != ?resource31 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  address: <http://schemas.talis.com/2005/address/schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  terms: <http://purl.org/dc/terms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  emocom: <http://www.emotion-and-computing.de/resource/>
+PREFIX  timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX  bibo: <http://purl.org/ontology/bibo/>
+PREFIX  event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource31 foaf:page ?page32 .
+    ?resource skos:broader <http://dbpedia.org/resource/Vector_field_reconstruction> .
+    ?resource rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    OPTIONAL
+      { ?resource31  foaf:page  ?page32 }
+    ?resource  skos:broader  <http://dbpedia.org/resource/Vector_field_reconstruction> ;
+              rdfs:label    ?label
+    FILTER ( ( ?resource != ?resource31 ) || ( ?resource != ?resource31 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  address: <http://schemas.talis.com/2005/address/schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  terms: <http://purl.org/dc/terms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  emocom: <http://www.emotion-and-computing.de/resource/>
+PREFIX  timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX  bibo: <http://purl.org/ontology/bibo/>
+PREFIX  event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource skos:broader <http://dbpedia.org/resource/Vector_field_reconstruction> .
+    ?resource rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( lang(?label) = "en" )
+    FILTER NOT EXISTS { ?resource  foaf:page  ?page }
+    ?resource  skos:broader  <http://dbpedia.org/resource/Vector_field_reconstruction> ;
+              rdfs:label    ?label
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  address: <http://schemas.talis.com/2005/address/schema#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  terms: <http://purl.org/dc/terms/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  emocom: <http://www.emotion-and-computing.de/resource/>
+PREFIX  timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX  bibo: <http://purl.org/ontology/bibo/>
+PREFIX  event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX  foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT 
+  { 
+    ?resource skos:broader <http://dbpedia.org/resource/Vector_field_reconstruction> .
+    ?resource rdfs:label ?label .
+  }
+WHERE
+  { FILTER ( ! ( lang(?label) = "en" ) )
+    FILTER NOT EXISTS { ?resource  foaf:page  ?page }
+    ?resource  skos:broader  <http://dbpedia.org/resource/Vector_field_reconstruction> ;
+              rdfs:label    ?label
+  }
+LIMIT   2
+
+----------------------------------------------

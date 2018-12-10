@@ -1,0 +1,166 @@
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P698 ?_PubMed_ID .
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { ?item  wdt:P698  ?_PubMed_ID }
+    FILTER contains(lcase(?itemLabel), "suriname")
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item13 wdt:P698 ?_PubMed_ID14 .
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { ?item13  wdt:P698  ?_PubMed_ID14 }
+    FILTER contains(lcase(?itemLabel), "suriname")
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+    FILTER ( ( ?item != ?item13 ) || ( ?item != ?item13 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { {  }
+    FILTER contains(lcase(?itemLabel), "suriname")
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P698  ?_PubMed_ID }
+    FILTER contains(lcase(?itemLabel), "suriname")
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P698 ?_PubMed_ID .
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { ?item  wdt:P698  ?_PubMed_ID }
+    FILTER ( ! contains(lcase(?itemLabel), "suriname") )
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item13 wdt:P698 ?_PubMed_ID14 .
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { { ?item13  wdt:P698  ?_PubMed_ID14 }
+    FILTER ( ! contains(lcase(?itemLabel), "suriname") )
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+    FILTER ( ( ?item != ?item13 ) || ( ?item != ?item13 ) )
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { {  }
+    FILTER ( ! contains(lcase(?itemLabel), "suriname") )
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------
+BASE    <file:///Users/veronika.thost/Desktop/git/qed/qed-core/>
+PREFIX  p:    <http://www.wikidata.org/prop/>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT 
+  { 
+    ?item wdt:P31 wd:Q13442814 .
+    ?item rdfs:label ?itemLabel .
+  }
+WHERE
+  { FILTER NOT EXISTS { ?item  wdt:P698  ?_PubMed_ID }
+    FILTER ( ! contains(lcase(?itemLabel), "suriname") )
+    ?item  wdt:P31     wd:Q13442814 ;
+           rdfs:label  ?itemLabel
+  }
+LIMIT   2
+
+----------------------------------------------

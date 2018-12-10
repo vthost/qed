@@ -67,7 +67,7 @@ public class Demo {
 		
 		new LogFileQueryExtractor().extractQueries(dataset.getLocation(),path,dataset.getIdStr());
 
-		new DataExtractor3().extractQueryDataAndResults(dataset.getEndpoint(), 2, path);
+		new DataExtractor().extractQueryDataAndResults(dataset.getEndpoint(), 2, path);
 		
 //		Utils.finalizeStatistics(path, 7);
 	}

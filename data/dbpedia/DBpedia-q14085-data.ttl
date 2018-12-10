@@ -1,0 +1,13 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+dbpedia:South_Korea  rdfs:label  "South Korea"@en ;
+        dbpprop:reference  <http://www.visitkorea.or.kr/intro.html> ;
+        geo:lat            "36.0"^^xsd:float ;
+        geo:long           "127.0"^^xsd:float ;
+        foaf:homepage      <http://www.visitkorea.or.kr/intro.html> ;
+        foaf:name          "South Korea"@en .

@@ -1,0 +1,42 @@
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+
+dbpedia:16th_Street_Mall
+        geo:lat   39.7486 ;
+        geo:long  -104.997 .
+
+<http://dbpedia.org/resource/Saint_Andrew%2C_Jamaica>
+        dbpprop:redirect  <http://dbpedia.org/resource/Saint_Andrew_Parish%2C_Jamaica> .
+
+dbpedia:Alishan  dbpprop:redirect  dbpedia:Alishan_National_Scenic_Area ;
+        geo:lat           "23.5167"^^xsd:float .
+
+dbpedia:Sixteenth_Street_Mall
+        dbpprop:redirect  dbpedia:16th_Street_Mall .
+
+dbpedia:Ricardo_Gardner
+        dbpprop:birth        "1978-09-25"^^xsd:date ;
+        dbpprop:cityofbirth  <http://dbpedia.org/resource/Saint_Andrew%2C_Jamaica> ;
+        dbpprop:clubnumber   "11"^^xsd:int ;
+        dbpprop:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> ;
+        dbpprop:position     <http://dbpedia.org/resource/Defender_%28association_football%29%23Wingback> .
+
+dbpedia:OSV-96  dbpprop:image  "-96"^^xsd:int .
+
+<http://dbpedia.org/resource/Saint_Andrew_Parish%2C_Jamaica>
+        geo:lat   "18.0167"^^xsd:float ;
+        geo:long  "-76.9"^^xsd:float .
+
+dbpedia:Kevin_Davies  dbpprop:birth  "1977-03-26"^^xsd:date ;
+        dbpprop:cityofbirth  dbpedia:Sheffield ;
+        dbpprop:clubnumber   "14"^^xsd:int ;
+        dbpprop:currentclub  <http://dbpedia.org/resource/Bolton_Wanderers_F.C.> ;
+        dbpprop:position     dbpedia:Striker .
+
+dbpedia:Alishan_National_Scenic_Area
+        geo:lat  "23.5167"^^xsd:float .
+
+dbpedia:Sheffield  geo:lat  "53.3825"^^xsd:float ;
+        geo:long  "-1.47194"^^xsd:float .

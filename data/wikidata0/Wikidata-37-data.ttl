@@ -1,0 +1,102 @@
+@prefix schema: <http://schema.org/> .
+@prefix pq:    <http://www.wikidata.org/prop/qualifier/> .
+@prefix bd:    <http://www.bigdata.com/rdf#> .
+@prefix pr:    <http://www.wikidata.org/prop/reference/> .
+@prefix ps:    <http://www.wikidata.org/prop/statement/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix geof:  <http://www.opengis.net/def/geosparql/function/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix wds:   <http://www.wikidata.org/entity/statement/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix wdv:   <http://www.wikidata.org/value/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix psn:   <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn:   <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix psv:   <http://www.wikidata.org/prop/statement/value/> .
+@prefix pqv:   <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix gas:   <http://www.bigdata.com/rdf/gas#> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix prn:   <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix p:     <http://www.wikidata.org/prop/> .
+@prefix bds:   <http://www.bigdata.com/rdf/search#> .
+@prefix wdtn:  <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prv:   <http://www.wikidata.org/prop/reference/value/> .
+@prefix hint:  <http://www.bigdata.com/queryHints#> .
+@prefix wdno:  <http://www.wikidata.org/prop/novalue/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+wd:Q84  wdt:P625  "Point(-0.1275 51.507222222)"^^geo:wktLiteral .
+
+wd:Q886391  wdt:P840  wd:Q17 .
+
+wd:Q131554  rdfs:label  "Pieśń o Nibelungach"@pl , "Canção dos Nibelungos"@pt , "Nibelungenlied"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1203-01-01T00:00:00Z"^^xsd:dateTime ;
+        wdt:P840    wd:Q701996 , wd:Q3852 .
+
+wd:Q17  wdt:P625  "Point(136.0 35.0)"^^geo:wktLiteral .
+
+wd:Q25094843  wdt:P291  wd:Q20 .
+
+wd:Q20  wdt:P625  "Point(11.0 65.0)"^^geo:wktLiteral .
+
+wd:Q382721  rdfs:label  "Versuch einer gründlichen Violinschule"@nl , "Versuch einer gründlichen Violinschule"@it ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1756-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q888131  wdt:P840  wd:Q17 .
+
+wd:Q16  wdt:P625  "Point(-109.0 56.0)"^^geo:wktLiteral .
+
+wd:Q78  wdt:P625  "Point(7.591111111 47.550555555)"^^geo:wktLiteral .
+
+wd:Q36479  wdt:P840  wd:Q15 .
+
+wd:Q701996  wdt:P625  "Point(8.359722222 49.630277777)"^^geo:wktLiteral .
+
+wd:Q480  rdfs:label  "Don Quixote"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1605-01-01T00:00:00Z"^^xsd:dateTime , "1615-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q20036800  wdt:P291  wd:Q84 ;
+        wdt:P840  wd:Q84 .
+
+wd:Q15  wdt:P625  "Point(17.0 1.0)"^^geo:wktLiteral .
+
+wd:Q371558  rdfs:label  "Institutio religionis christianae"@pl , "Institutas da Religião Cristã"@pt , "Institutes of the Christian Religion"@en ;
+        wdt:P291    wd:Q78 ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1536-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q3852  wdt:P625  "Point(8.365277777 49.631944444)"^^geo:wktLiteral .
+
+wd:Q19390538  wdt:P291  wd:Q20 .
+
+wd:Q8717  wdt:P625  "Point(-5.983333333 37.383333333)"^^geo:wktLiteral .
+
+wd:Q16245499  wdt:P291  wd:Q16 .
+
+wd:Q815580  rdfs:label  "Belianis"@en ;
+        wdt:P291    wd:Q8717 ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1545-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q383855  rdfs:label  "Africa (Petrarca)"@de , "Africa (poemat)"@pl , "Africa"@en ;
+        wdt:P31     wd:Q7725634 ;
+        wdt:P577    "1339-01-01T00:00:00Z"^^xsd:dateTime .
+
+wd:Q10720461  wdt:P291  wd:Q16 .
