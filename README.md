@@ -5,10 +5,10 @@ SPAQRL QED is a system generating out-of-the-box datasets for SPARQL queries ove
 For a more detailed introduction into the approach and a coarse overview of the system see /paper.pdf.
 
 # /qed-core
-Contains the query and data extraction. 
+Contains the query and data extraction. It also contains code for retrieving the answers based on only the extracted datasets. 
 
 # /qed-gen
-Contains the data and answer generation. 
+Contains the data generation, integration with the extracted data, and the answer generation. 
 
 # Requirements
 - qed-core: [maven](https://maven.apache.org/)
