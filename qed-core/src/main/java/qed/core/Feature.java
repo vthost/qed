@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author veronika.thost@ibm.com
- *
+ * features we consider
+ * are those from LSQ
  */
 public enum Feature {
-//	LSQ features we can query for 
+	
 	AVG,
 	BIND,
 	COUNT,
@@ -25,9 +25,7 @@ public enum Feature {
 	MAX,
 	MIN,
 	MINUS,
-	//<!-- typo in the current LSQ data ... should be NamedGraph, not namedGraph ... -->
 	NAMED_GRAPH,
-	//rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
 	OFFSET,
 	OPTIONAL,
 	ORDER_BY,
@@ -39,14 +37,7 @@ public enum Feature {
 	VALUES;
 //	in addition (not in LSQ)
 //	PROPERTY_PATH;
-	
-	
 
-    public String toString1() {
-    		String n = name();
-        return n.charAt(0)+n.substring(1).toLowerCase();
-    }
-	
 	
 	public static Feature[][] getValuesAsConfig(){
 
@@ -58,6 +49,11 @@ public enum Feature {
 		
 		return result;
 	}
+
+    public String toString1() {
+    	String n = name();
+        return n.charAt(0)+n.substring(1).toLowerCase();
+    }
 	
 	public static String[] toStringArray(Feature[] config){
 
@@ -71,6 +67,7 @@ public enum Feature {
 //	}
 
 
+	// currently only returns true for features we want to consider 
 	public static boolean containsFeature(String query, Feature feature) {
 		switch(feature) {
 		case AVG:
@@ -80,7 +77,7 @@ public enum Feature {
 		case COUNT:
 			break;
 		case DISTINCT:
-			return false; //break;
+			break;
 		case FILTER:
 			return query.matches("(?i).*\\s(filter not exists|filter\\s*(langmatches\\s*)?\\().*");
 		case FROM_NAMED:
@@ -90,18 +87,15 @@ public enum Feature {
 		case HAVING:
 			return query.matches("(?i).*\\shaving\\s*\\(.*");
 		case LIMIT:
-			return false; //query.matches("(?i).*\\slimit\\s+[0-9].*");
+			break; //query.matches("(?i).*\\slimit\\s+[0-9].*");
 		case MAX:
 			break;
 		case MIN:
 			break;
 		case MINUS:
 			return query.matches("(?i).*\\sminus\\s+\\{.*");
-			//<!-- typo in the current LSQ data ... should be NamedGraph:
-			//not namedGraph ... -->
 		case NAMED_GRAPH:
 			break;
-			//rdfs:label="NamedGraph"><owl:sameAs rdf:resource="http://lsq.aksw.org/vocab#namedGraph" /></sd:Feature>
 		case OFFSET:
 			return query.matches("(?i).*(\\s|\\})offset\\s+[0-9].*");
 		case OPTIONAL:

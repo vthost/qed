@@ -3,7 +3,7 @@ package qed.core;
 public class Dataset {
 	
 	private String name = null;
-	private String endpoint = null;//where to find data
+	private String endpoint = null;//where to find the data
 	
 	public Dataset(String name, String endpoint) {
 		this.setName(name);

@@ -1,26 +1,15 @@
 package qed.core;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.TreeMap;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.jena.query.Query;
@@ -38,7 +27,6 @@ import org.apache.jena.vocabulary.RDFS;
 
 public class Utils implements Constants {
 	
-//	public static String DATA_DIR =  System.getProperty("user.dir")+ File.separator +".."+File.separator  + "data" + File.separator;	
 
 //	private static void deleteDir(File file) {
 //		
@@ -113,23 +101,6 @@ public class Utils implements Constants {
 		}
 	}
 	
-
-//
-//	public static String getQueryId(String lsqIdUrl) {
-//		return lsqIdUrl.substring(lsqIdUrl.lastIndexOf(File.separator) + 1);
-//	}
-	
-//	public static String getQueryIdUrl(String lsqId) {
-//		return LSQR_RESOURCE_URI + lsqId;
-//	}
-
-	
-//	public static String getQueryFilePath(String lsqIdUrl, String[] config) {
-//		return DATA_DIR + (config == null ? "" : String.join("_", config) + File.separator) + 
-//				getQueryId(lsqIdUrl) + QUERY_FILE_EXT;
-//	}
-
-	
 	public static String getQueryIdFromQueryFileName(String queryFileName) {
 		return queryFileName.replace(QUERY_FILE_EXT, "");
 	}
@@ -155,9 +126,7 @@ public class Utils implements Constants {
 		try {
 
 			FileWriter writer = new FileWriter(directory.getPath() + File.separator + Utils.getQueryFileName(qid));
-//		  	writer.write(lsqIdUrl);
-//		  	writer.write("\n");
-//		  	using the factory we get a formatting that is more readable. 
+//		  	using the factory we would get a formatting that is more readable. 
 //		  	but sometimes it then writes no whitespace ?! (http://lsq.aksw.org/res/DBpedia-q390826)
 		  	writer.write(query);//QueryFactory.create(query).toString()); 
 		  	writer.close();
@@ -211,221 +180,8 @@ public class Utils implements Constants {
 		}
 	}
 	
-	public static void mergeStatisticsFiles(String path){
-		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail.txt")) {		
-				  	
-			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
-			
-//			for each config directory
-			for(File d: Utils.listDirectories(new File(path))) {
-				InputStream in = Files.newInputStream(Paths.get(d + File.separator + "stats_detail.txt"));
-				BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-				String line = reader.readLine();
-				while ((line = reader.readLine()) != null) 
-					writer.write(line+'\n');
-			}
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
-	
-//	TODO until generation based on existing is fixed use generated only if not all cases by data
-	public static void integrateGenerationStatistics(String path){
-		try(FileWriter writer = new FileWriter(path + File.separator + "stats_detail+generated.txt")) {		
-//				  	System.out.println(path.substring(path.lastIndexOf(File.separator)+1));
-			Map<String,Integer> gcs = getGeneratedCounts(path+"-12-10");
-//					generatedCounts(path.substring(path.lastIndexOf(File.separator)+1));
-
-			writer.write("qid;qtriples;cqs;cqs-with-data;extriples;alltriples;features\n");//rtriples;
-			
-			InputStream in = Files.newInputStream(Paths.get(path + File.separator + "stats_detail.txt"));
-			BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-			String line = reader.readLine();
-			while ((line = reader.readLine()) != null) {
-				String id = line.substring(0,line.indexOf(";"));
-	    			int i1 = line.lastIndexOf(";");
-	    			int i2 = line.substring(0,i1).lastIndexOf(";");
-	    			int c = (int) Double.parseDouble(line.substring(i2+1,i1));
-	    			
-	    			if (c == 0 && !gcs.containsKey(id) ||gcs.containsKey(id) &&gcs.get(id) == 0 )
-	    			{
-            			System.out.println(id);
-            			continue;
-        			} 
-	    			
-	    			writer.write(line.substring(0,i1+1));
-        			if(gcs.containsKey(id)) {
-        				writer.write(gcs.get(id) + line.substring(i1)+'\n');
-        			} else {
-        				writer.write(c + line.substring(i1)+'\n');
-        			} 
-			}
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
-	
-
-	public static void writeStatisticsFile1(List<String> ids, List<int[]> stats, List<List<Feature>> features, String path) {
-		try {		
-			FileWriter writer = new FileWriter(path + File.separator + "stats_detail.txt");		  	
-			writer.write("qid;qtriples;cqs;cqs-with-data;triples;features\n");//rtriples;
-			
-			for (int i = 0; i < ids.size(); i++) {
-				try {
-					int[] stat = stats.get(i);
-					writer.write(ids.get(i) + ";" + stat[0] + ";" + stat[1] + ";" + stat[2] + ";" + stat[3] + ";" +//stat[4] + ";" +
-//							( stat[1] > 0 ? stat[2]/stat[1] : 0) + ";" + 
-							String.join(",", features.get(i).stream().map(f -> f.name().replace("_", "\\_")).
-									collect(Collectors.toList())) + "\n");
-
-				} catch (IOException e1) {//config.replace("_", "\\_")
-					e1.printStackTrace();
-				}
-			}
-			writer.close();
-
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-		
-	}
-	
-	public static void statsSummary(String path, int maxFeats) {
-		Map<String,List<String>> fqs = new HashMap<String,List<String>>();
-		Map<String,List<List<Integer>>> fss = new HashMap<String,List<List<Integer>>>();
-		
-		Map<String,Integer> ok = new HashMap<String,Integer>();
-		for (Feature f : Feature.values()) {
-			ok.put(f.name(),0);
-		}
-		try (InputStream in = Files.newInputStream(Paths.get(path + "/stats_detail+generated.txt"));
-			    BufferedReader reader =
-			      new BufferedReader(new InputStreamReader(in))) {
-			    String line = reader.readLine();
-			    while ((line = reader.readLine()) != null) {
-//			    System.out.println(line);
-			    for (Feature f : Feature.values()) {
-			    	if(line.contains(f.name()))
-					ok.put(f.toString(),ok.get(f.name()) + 1);
-				}}
-		} catch (IOException x) {
-		    System.err.println(x);
-		}
-
-		System.out.println("Feature -> Nbr of Qs where it occurs:");
-		System.out.println(ok);
-		List<Integer> is = new ArrayList<Integer>();
-		is.addAll(ok.values());
-		List<String> ks = new ArrayList<String>();
-		ks.addAll(ok.keySet());
-		List<String> ks1 = new ArrayList<String>();
-		for (int i = 0; i < maxFeats; i++) {
-			int k = is.stream().mapToInt(j -> j).max().orElse(0);
-			int index = is.indexOf(k);
-//			int e = 
-			is.remove(index);
-			ks1.add(ks.remove(index));
-//			System.out.println(e == k);
-		}
-		System.out.println("Considered Features:");
-System.out.println(ks1);
-
-//		Map<String,Integer> gcs = path.contains("dbpedia")? generatedCounts(Dataset.DBPEDIA) : generatedCounts(Dataset.WIKIDATA);
-		try (InputStream in = Files.newInputStream(Paths.get(path + "/stats_detail+generated.txt"));
-		    BufferedReader reader =
-		      new BufferedReader(new InputStreamReader(in))) {
-		    String line = reader.readLine();int c = 0;
-		    while ((line = reader.readLine()) != null) {c++;
-		        String fs = String.join(",", Arrays.asList(line.substring(line.lastIndexOf(";")+1).split(",")).stream().
-		        		filter(s -> ks1.contains(s)).
-		        		map(s -> s.length() > 1? s.substring(0, 2):s).toArray(String[]::new));
-		        
-		        List<String> ids = null; //new ArrayList<String>();
-		        List<List<Integer>> stats = null;//new ArrayList<List<Integer>>();
-		        if(!fqs.containsKey(fs)) {
-			        	ids = new ArrayList<String>();
-			        	fqs.put(fs, ids);
-			        	stats = new ArrayList<List<Integer>>();
-			        	fss.put(fs, stats);
-			        	
-			        	for (int i = 0; i < 5; i++) {
-							stats.add(new ArrayList<Integer>());
-						}
-		        } else {
-			        	ids = fqs.get(fs);
-			        	stats = fss.get(fs);
-		        }
-		        
-		        int j = line.indexOf(";");
-	        		ids.add(line.substring(0, j));
-	        	
-	        	for (int i = 0; i < 5; i++) {
-	        		int j2 = line.indexOf(";", j+1);
-	        		int co = (int)Double.parseDouble(line.substring(j+1,j2));
-//	        		if(i == 3 && gcs.containsKey(line.substring(0,line.indexOf(";")))) {
-////	        			String li = line.substring(0,line.lastIndexOf(";"));
-////	        			System.out.println(li + " "+co);
-//	        			co = co + gcs.get(line.substring(0,line.indexOf(";")));//Integer.parseInt(li.substring(li.lastIndexOf(";")+1));
-////	        			System.out.println(co);
-//	        		}
-	        			
-					stats.get(i).add(co);//
-					j = j2;
-				}
-		    }System.out.println(c);
-		} catch (IOException x) {
-		    System.err.println(x);
-		}
-//		System.out.println(fqs);
-//		System.out.println(fss);
-		
-		Map<String, List<List<Integer>>> treeMap = new TreeMap<>(
-		                (Comparator<String>) (o1, o2) -> o1.length() < o2.length() ? -1 : o2.length() < o1.length() ? 1 : o1.compareTo(o2)
-		        );
-		
-        treeMap.putAll(fss);
-
-
-		
-		try {		
-			FileWriter writer = new FileWriter(path + "/stats.txt");		  	
-			writer.write("config& qs& qsize &cqs& cqs-with-data& extriples& alltriples\\\\hline\n");
-			
-			for (Entry<String, List<List<Integer>>> e : treeMap.entrySet()) {
-				List<List<Integer>> vs = e.getValue();
-				
-//				int s = com.google.common.collect.Streams.zip(vs.get(1).stream(), vs.get(2).stream(), (cqs,cqsd) -> cqsd/cqs));
-				List<Integer> tmp = IntStream
-				  .range(0, vs.get(1).size())
-				  .mapToObj(i -> 10000 * vs.get(2).get(i)/vs.get(1).get(i)).collect(Collectors.toList());
-				
-				writer.write(e.getKey()+"&"+vs.get(0).size()+"&"+
-						(int)vs.get(0).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //qtriples
-						(int)vs.get(1).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //cqs
-						(int)tmp.stream().mapToInt(i -> i).average().orElse(0)/100 +"&"+ 
-						(int)vs.get(3).stream().mapToInt(i -> i).average().orElse(0)+"&"+ //extriples
-						(int)vs.get(4).stream().mapToInt(i -> i).average().orElse(0)+ //alltriples
-						"\\Tstrut\\Bstrut\\\\\\hline\n");
-
-			}
-			writer.close();
-			
-		} catch (IOException x) {
-		    System.err.println(x);
-		}
-		
-	}
-	
-	public static void finalizeStatistics(String path, int features, boolean merge) { 
-		if(merge) mergeStatisticsFiles(path);
-		integrateGenerationStatistics(path);
-		statsSummary(path, features);
-	}
-	
-
-//	one simple in each subdir and manifest-all.ttl
-	public static void writeManifestFiles(String path, String qbaseURI) { //, String lsqId) {
+	//	one simple in each subdir and manifest-all.ttl
+	public static void writeManifestFiles(String path, String qbaseURI) { 
 
 		String mfURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest/";
 		String qtURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-query/";
@@ -444,7 +200,14 @@ System.out.println(ks1);
 		Property query = ResourceFactory.createProperty(qtURI, "query"); 
 		Property data = ResourceFactory.createProperty(qtURI, "data"); 
 		
-		File[] dirs = listDirectories(new File(path));
+		
+		File[] dirs = listDirectories(new File(path));		
+		boolean onedir = false;
+		if(dirs.length == 0) {
+			onedir = true;
+			dirs = new File[1];
+			dirs[0] = new File(path);
+		}
 		
 		for(File f: dirs) {		
 			//create one manifest file for each test config
@@ -469,7 +232,7 @@ System.out.println(ks1);
 					(dir, name1) -> name1.toLowerCase().endsWith(QUERY_FILE_EXT))) {
 
 				String qid = getQueryIdFromQueryFileName(qf.getName());
-				String qidUrl = qbaseURI + qid;
+//				String qidUrl = qbaseURI + qid;
 //				TODO test if below we neeed uris insead iof qids
 				Resource test = m.createResource(dummyURI+"dawg-"+config+"-"+qid).
 						addProperty(RDF.type, queryEvaluationTest).
@@ -490,7 +253,7 @@ System.out.println(ks1);
 			
 			try {
 				m.write(new FileOutputStream(
-						path + f.getName() + File.separator + MANIFEST_FILE_NAME),
+						path + (onedir? "":f.getName() + File.separator) + MANIFEST_FILE_NAME),
 						"TURTLE");
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
@@ -541,56 +304,8 @@ System.out.println(ks1);
 		return null;
 	}
 	
-	public static Map<String,Integer> generatedCounts(String d) {
-		Map<String,Integer> m = new HashMap<String,Integer>();
-		String d1 = System.getProperty("user.dir")+File.separator  + "../generated" + File.separator;	
-		try (InputStream in = Files.newInputStream(Paths.get(d1+ d + ".txt"));
-			    BufferedReader reader =
-			      new BufferedReader(new InputStreamReader(in))) {
-			    String line = reader.readLine();
-			    while ((line = reader.readLine()) != null) {
-			    	int i = line.indexOf(" ");
-			    	int j = line.indexOf("-0-data.ttl");
-			    	m.put(line.substring(0, j), Integer.valueOf(line.substring(i+1).replaceAll(" ", "")));
-			    }
-		} catch (IOException x) {
-		    System.err.println(x);
-		}
-		System.out.println(m);
-		return m;
-	}
-	
-	public static Map<String,Integer> getGeneratedCounts(String path) {
-		Map<String,Integer> m = new HashMap<String,Integer>();
-		
-		for(File f: new File(path).listFiles((dir,name) -> name.endsWith("count"))) {
-			try (Scanner s = new Scanner(f);) {
-//				System.out.println(f.getName());
-				
-				int i = f.getName().indexOf("-all-data.ttl.count");
-				i = i>0 ? i : f.getName().indexOf("-data.ttl.count");
-				String id = f.getName().substring(0,i);
-				id = id.substring(0,id.lastIndexOf("-"));
-
-				m.put(id, Integer.valueOf(s.nextLine().strip())) ;
-
-				
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			}
-				
-		}	
-
-		return m;
-	}
-
-	
-public static void main(String[] args) {
-	Utils.finalizeStatistics(Constants.DATA_DIR+"wikidata", 7, false);
-//		Utils.generatedCounts(Dataset.DBPEDIA);//.writeManifestFiles();
-//		System.out.println(ResultsFormat.FMT_RDF_TURTLE);
-//		String[] a = {CONSTRUCT_QUERIES_FILE_EXT,"-data.xml","-result.xml"};
-//		Utils.cleanDir(new File("/Users/thost/Desktop/git/2017/code/workspace_lsd/lsd/data/optional"), a);
+	public static void main(String[] args) {
+		Utils.writeManifestFiles(DATA_DIR+"wikidata/", "wikidatauri");
 	}
 
 	

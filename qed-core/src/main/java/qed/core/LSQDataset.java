@@ -1,14 +1,17 @@
-/**
- * 
- */
+
 package qed.core;
 
 /**
- * @author veronika.thost
  *
  */
 public class LSQDataset extends Dataset {
-	private String graphUri = null;
+//	currently one of:
+//		DBpedia: http://dbpedia.org
+//		Linked Geo Data: http://linkedgeodata.org
+//		Semantic Web Dog Food: http://data.semanticweb.org
+//		British Museum: http://bm.rkbexplorer.com	
+	private String graphUri = null; // identifying the dataset at LSQ
+	
 	
 	public LSQDataset(String name, String endpoint, String graphUri) {
 		super(name, endpoint);

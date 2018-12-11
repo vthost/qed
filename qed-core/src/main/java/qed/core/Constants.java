@@ -4,7 +4,7 @@ import java.io.File;
 
 public interface Constants {
 
-	public static String DATA_DIR = System.getProperty("user.dir")+ File.separator +".."+File.separator +//".."+File.separator +
+	public static String DATA_DIR = System.getProperty("user.dir")+ File.separator +".."+File.separator +
 			"data" + File.separator;	
 	
 	public static String MANIFEST_EVALUATION_FILE_NAME = "manifest_evaluation.ttl";

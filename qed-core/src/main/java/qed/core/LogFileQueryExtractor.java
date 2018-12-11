@@ -13,34 +13,22 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.Syntax;
 
-
-
-
-
 /**
- * @author veronika.thost@ibm.com
  *
  */
-public class LogFileQueryExtractor {
+public class LogFileQueryExtractor implements QueryExtractor {
 	
-	String sourceFilename = "wikidata.txt";
-	String directory = "wikidata";
 	String COMMENT = "#";
-	String SELECT = "select";
 	
-	public List<String>  readSourceFile(String path) { //, String idstr) { , String dir) {
+	private List<String> readSourceFile(String path) {
 		
 		List<String> qs = new ArrayList<String>();
-//		String srcpath = path + sourceFilename;
-//		File dir = Utils.makeDir(path + directory);
-//		int id = 0;
-		
+
 		try (InputStream in = Files.newInputStream(Paths.get(path));
-		    BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
+				BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
 		    
 			String line = null;
 			String q = "";
@@ -52,29 +40,19 @@ public class LogFileQueryExtractor {
 
 		    	if(i == 0)
 		    		continue;
-		    	if(i > 0 && ((line.length() == i+1) || (line.charAt(i+1) != '>'))) 
+		    	
+		    	if(i > 0 && ((line.length() == i+1) || (line.charAt(i+1) != '>'))) //if comment sign is part of iri, then ignore it
 		    		line = line.substring(0, i);
 
-		    	if(line.startsWith("PREFIX") || line.toLowerCase().startsWith(SELECT)) {
+		    	if(line.toLowerCase().startsWith("prefix") || line.toLowerCase().startsWith("select")) {
+		    		
+		    		//starting new query, so finalize previously collected query
 		    		if(!readingPrefixes) {
 		    			readingPrefixes = true;
-//		    			if(q.matches("(?i).*prov:wasDerivedFrom/.*"))System.out.println("1"+q);
-//		    			if(q.matches("(?i).*\\w*:\\w+/.*"))System.out.println("0"+q);
-		    			if(!q.contains("CONSTRUCT") && 
-//		    					!q.matches("(?i).*\\^(\\w*:\\w+|<(:|/|\\.|\\w)+>)\\s.*") &&
-//		    					!q.matches("(?i).*(\\w*:\\w+|<(:|/|\\.|\\w)+>)(\\*|\\+)\\s.*") &&
-//		    					!q.matches("(?i).*(\\w*:\\w+|<(:|/|\\.|\\w)+>)\\??(/|\\|)\\s*(\\w*:\\w+|<(:|/|\\.|\\w)+>).*") &&
-//		    					!q.matches("(?i).*\\[.*\\].*") &&
-//		    					!q.toLowerCase().contains("wasderivedfrom/") &&
-//		    					!q.matches("(?i).*\\s\\w*:\\w+\\/.*") &&
-//		    					!q.toLowerCase().contains(" group by ") && !q.matches("(?i).*\\/\\s*\\w*:\\w+(\\s|\\)).*") &&
-//		    					!q.contains("OFFSET") && 
-//		  TODO SERVICE take qs but drop pattern  					!q.contains("GROUP BY") && 
-		    					!q.contains("SERVICE")) {
+
+		    			if(!q.toLowerCase().contains("construct") &&  !q.toLowerCase().contains("service")) {
 		    				
-//		    				if(q.contains("SERVICE"))System.out.println("2 "+id +" "+q);
-//		    				System.out.println(q);
-//		    				id++;
+		    				//add prefix if necessary
 		    				String[][] ps = {
 		    						{"wd:",	"PREFIX wd: <http://www.wikidata.org/entity/>"},
 		    						{"wdt:",	"PREFIX wdt: <http://www.wikidata.org/prop/direct/>"},
@@ -95,45 +73,31 @@ public class LogFileQueryExtractor {
 		    				
 		    				for (String[] p : ps) {
 								if(q.contains(p[0]) && !q.contains("PREFIX "+p[0]))
-//									System.out.println(p[0]);
-//									System.out.println(q);
+
 									q = p[1]+ " " + q;
 							}
-//		    				String[] qq = {"Wikidata-"+id++,q};
 		    				
 		    				try {
+		    					//only consider query if no parse exception
+		    					QueryFactory.create(q, Syntax.syntaxARQ);
 		    					
-		    					Query q2 = QueryFactory.create(q, Syntax.syntaxARQ);
 		    					qs.add(q);
-		    				} catch (Exception E) {}
-		    				
-//		    				Utils.writeQueryFile(dir, "Wikidata-"+id++, q);
-//		    				int ix = q.toLowerCase().indexOf("select");
-//		    				ix = q.toLowerCase().indexOf("select",ix+1);
-//		    				if(ix>0) {
-//		    					System.out.println(q);
-//		    					System.out.println(Feature.containsFeature(q, Feature.SUBQUERY));
-//		    				}
-//		    				if(q.matches("(?i).*\\*(\\s|\\)).*"))System.out.println("2 "+id +" "+q);
-//		    				if(q.matches("(?i).*(\\w*:\\w+|<(:|/|\\.|\\w)+>)/\\s*(\\w*:\\w+|<(:|/|\\.|\\w)+>).*"))System.out.println("---- "+id +" "+q);
-//		    				if(q.matches("(?i).*(\\w*:\\w+|<(:|/|\\w)+>)/.*"))System.out.println("---- "+id +" "+q);
-//		    				id++;
-		    			} 
-//		    			System.out.println(q);
-//		    			if(q.matches("(?i).*prov:wasDerivedFrom/.*"))System.out.println("2 "+id +" "+q);
-//		    			if(q.matches("(?i).*\\w*:\\w+/.*"))
-//		    					System.out.println("3 "+id );
-		    			
-		    		} q = "";
+		    					
+		    				} catch (Exception e) {}	
+		    			} 	
+		    		} 
+		    		
+		    		q = "";
+		    		
 		    	} else if (readingPrefixes && !line.isEmpty() && !line.matches("\\s+")) {
 		    		readingPrefixes = false; 
 		    	}
 		    	
 		    	q += " " + line;
 		    }
-//System.out.println(id+1);
-		} catch (IOException x) {
-		    System.err.println(x);
+
+		} catch (IOException e) {
+		    System.err.println(e);
 		}
 		
 		return qs;
@@ -147,15 +111,6 @@ public class LogFileQueryExtractor {
 			Utils.writeQueryFile(dir, idstr+id++, q);
 		}
 		
-	}
-	
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-//		new LogFileQueryExtractor().extractQueries(src, dst, idstr);
-
 	}
 
 }

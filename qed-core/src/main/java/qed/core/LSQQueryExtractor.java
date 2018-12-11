@@ -8,7 +8,7 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
-public class LSQQueryExtractor {
+public class LSQQueryExtractor implements QueryExtractor {
 	
 	
 	public static String LSQR_RESOURCE_URI = "http://lsq.aksw.org/res/";
@@ -36,8 +36,6 @@ public class LSQQueryExtractor {
             while(rs.hasNext()) {
             		QuerySolution s = rs.next();  	
             		Utils.writeQueryFile(directory, s.getResource("?id").toString(), s.getLiteral("?text").getString());
-//            		System.out.println(s.getResource("?id").toString());	
-//            		System.out.println(s.getLiteral("?text").toString().substring(s.getLiteral("?text").toString().toLowerCase().indexOf("select")));	
             }
 
         } catch (Exception e) {
@@ -47,13 +45,10 @@ public class LSQQueryExtractor {
 	}
 	
 //  queryNumMax is per config
-//	we might change this by using a big union
 	public void extractQueries(String graphUri, Feature[][] configs, 
-			int queryNumMax, int querySizeMin, int queryResultSizeMin, String path) {//
+			int queryNumMax, int querySizeMin, int queryResultSizeMin, String path) {
 		
 		String logEndpoint = LSQR_SPARQL_EP;
-//		if(Strings.isNullOrEmpty(logEndpoint)) return;
-		
 		Utils.makeDir(path);
 		
 		for(Feature[] config: configs == null ? defaultConfig : configs) {
@@ -99,9 +94,10 @@ public class LSQQueryExtractor {
 
 			
 			+ "} ORDER BY ASC(?tp) ASC(?vcountsum) LIMIT " + (queryNumMax > 0 ? queryNumMax : defaultQueryNumMax); 
-System.out.println(query);
+
 			File f = Utils.makeSubDir(path,config);
 			queryLogAndWriteFiles(logEndpoint, graphUri, query, f);
+			//delete directory if no queries were retrieved
 			if(f.list().length == 0) f.delete();
 			
 		}
@@ -124,17 +120,6 @@ System.out.println(query);
 		Feature[] dummyConfig = {};
 		
 		queryLogAndWriteFiles(logEndpoint, graphUri, query, Utils.makeSubDir(path,dummyConfig));
-	}
-
-	public static void main(String[] args) {
-		
-//		LogQueryExtractor qe = new LogQueryExtractor();
-//		qe.extractQueries("http://lsq.aksw.org/sparql", "http://dbpedia.org", Feature.FEATURE_CONFIG_THREE, 30, 0, 0);
-		
-//		String[] ids = {"DBpedia-q626806"//"DBpedia-q482443","DBpedia-q330584"
-//				};
-//		
-//		qe.extractQueries("http://lsq.aksw.org/sparql", "http://dbpedia.org",ids);
 	}
 
 }

@@ -33,8 +33,6 @@ import org.apache.jena.sparql.path.P_Link;
 import org.apache.jena.sparql.path.P_OneOrMore1;
 import org.apache.jena.sparql.path.P_Seq;
 import org.apache.jena.sparql.path.P_ZeroOrMore1;
-import org.apache.jena.sparql.path.Path;
-import org.apache.jena.sparql.path.PathVisitor;
 import org.apache.jena.sparql.path.PathVisitorBase;
 import org.apache.jena.sparql.syntax.Element;
 import org.apache.jena.sparql.syntax.Element1;
@@ -66,163 +64,96 @@ public class DataExtractor {
 	private int defaultDataLimit = 10;
 	private int nextVarId = 0;
 	private Map<Var,Var> renames = new HashMap<Var,Var>();
-	
-//	public void extractQueryDataAndResults(String logEndpoint, int datasetSizeMax) {
-	//		
-	//		File[] dirs = Utils.listDirectories(new File(Utils.DATA_DIR));
-	////		to collect statistics for construct queries
-	//		Map<String,List<int[]>> stats = Arrays.asList(dirs).stream().
-	//				collect(Collectors.toMap(d -> d.getName(), d -> new ArrayList<int[]>()));
-	//
-	////		for each config directory
-	//		for(File d2: dirs) {
-	//
-	//			String[] delete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
-	//					Utils.QUERY_DATA_FILE_EXT, Utils.QUERY_RESULT_FILE_EXT};		
-	//			Utils.cleanDir(d2, delete);
-	//
-	//			List<int[]> stat = stats.get(d2.getName());
-	//			List<String[]> lqs = new ArrayList<String[]>();
-	//			
-	//			try { 		
-	//				
-	//				for(File f: d2.listFiles((dir,name) -> name.endsWith(Utils.QUERY_FILE_EXT))) {
-	//					lqs.add(Utils.readQueryFile(f));
-	//				}	
-	//				
-	//			} catch (Exception e) {
-	//				e.printStackTrace();
-	//			}
-	//			
-	//			for (String[] lq: lqs) {
-	//				
-	//				int cqsWithData = 0; 
-	//				int cqsDataCountTotal = 0;
-	//				
-	//				String qid = lq[0];//System.out.println(qid);
-	//				String q = lq[1];			
-	//	
-	//				List<Query> cqs = createConstructQueries(q, datasetSizeMax);
-	////				uncomment the following line to get a file with all the cqs
-	//				Utils.writeConstructQueriesFile(d2,qid,cqs);
-	//				
-	//				for (Query cq : cqs) {
-	//					System.out.println(cq);
-	//					QueryEngineHTTP qe = null;
-	//					try {		
-	//						
-	//						qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq);
-	//			            qe.addParam("timeout", "10000") ;
-	//
-	//			            Model m = qe.execConstruct();
-	//			            StmtIterator i = m.listStatements();
-	//			             while(i.hasNext()) {
-	//			             	System.out.println(i.next());
-	//			             } 
-	//
-	//			            if(m.listStatements().hasNext()) {
-	//			            		cqsWithData++;
-	////			            		cqsDataCountTotal += m.listStatements().toList().size();
-	//
-	//			            		cqsDataCountTotal = (int) Utils.writeQueryDataFile(d2,qid, m);
-	//			            }
-	//			             
-	//			        } catch (Exception e) { 
-	//
-	//			        	System.out.println("EXCEPTION " + qid);e.printStackTrace();
-	////				        	System.out.println("------------------ Query failed START");
-	////				        	System.out.println(qid);
-	////				        	System.out.println(e);
-	////				        	System.out.println("------------------ ");
-	////				        	System.out.println(q);
-	////				        	System.out.println("------------------ Query failed END");
-	//		            	//or just leave this in currently to be able to look at the query
-	////			        (new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
-	////			        	
-	//			        } finally {
-	//			        		if(qe != null) qe.close();
-	//			        }
-	//				}
-	//				
-	////				//exceptions
-	////				if(cqsDataCountTotal==0)         (new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
-	////				
-	//				
-	//				System.out.println(qid + ": cq nbr/cqs with data/total data: "+
-	//				cqs.size()+ "/" +cqsWithData+"/"+ cqsDataCountTotal );	
-	//				int[] ns = {cqs.size(), cqsWithData, cqsDataCountTotal};
-	//				stat.add(ns);
-	//				
-	//				if(cqsWithData == 0) { 	
-	//		            	System.out.println("NO DATA "+ qid);
-	////		            	System.out.println(query);
-	//	            	
-	////		            	delete other files
-	////		            	(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-	//	            		continue;
-	//				}
-	//				
-	//				InputStream in = null; Model m;
-	//				try {
-	//					
-	//					in = new FileInputStream(new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid)));
-	//					 
-	//					// Create an empty in-memory model and populate it from the data
-	//					m = ModelFactory.createMemModelMaker().createModel(qid+"");
-	//					m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
-	//					
-	//					in.close();
-	//
-	//				} catch (Exception e) {
-	//					e.printStackTrace();
-	//					continue;
-	//				} 
-	//
-	//				Query query = QueryFactory.create(q);
-	////				TODO	we sometimes cannot allow/might not test this given our restricted dataset size
-	////				fix maybe reset to smaller value
-	////				query.setOffset(0);
-	//
-	//				QueryExecution qe1 = QueryExecutionFactory.create(query, m);
-	//				ResultSet rs = qe1.execSelect();
-	//				 
-	//				if(!rs.hasNext()) {
-	//					
-	//					System.out.println("NO RESULT "+ qid);
-	////			            	System.out.println(q);
-	//	            	
-	//	            	//delete files
-	////					(new File(d2.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-	////					(new File(d2.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
-	//	            } else {
-	//	            	Utils.writeQueryResultFile(d2, qid, rs);
-	//	            }
-	//
-	//				qe1.close();
-	//			}
-	//		}
-	//
-	//		Utils.writeStatisticsFile(stats);
-	//		
-	//	}
+
 		
-		private boolean isBlankVarNode(Node n) {
-			if(n.isBlank())
-				return true;
-			
-			if(n.isVariable() && ((Var)n).isBlankNodeVar())
-				return true;
-			
-			return false;
+	private boolean isBlankVarNode(Node n) {
+		if(n.isBlank())
+			return true;
+		
+		if(n.isVariable() && ((Var)n).isBlankNodeVar())
+			return true;
+		
+		return false;
 //			
 //			try {
 //				Integer.parseInt(n.getName().substring(1));
 //				return true;
 //			} catch (Exception E) {}
 //			return false;
-		}
+	}
 
-//	jena sparql syntax Element that can be ignored:
+private Node getSecurePart(TriplePath t, int i) {
+		if(i == 0) {
+			if(isBlankVarNode(t.getSubject()))
+				return Var.alloc(BVAR + (this.nextVarId++));
+			else
+				return t.getSubject();
+		} else if(i == 1) {
+			if(isBlankVarNode(t.getPredicate()))
+				return Var.alloc(BVAR + (this.nextVarId++));
+			else
+				return t.getPredicate();
+		} else {
+			if(isBlankVarNode(t.getObject()))
+				return Var.alloc(BVAR + (this.nextVarId++));
+			else
+				return t.getObject();
+		}
+		
+	}
+
+	private Element getVarRenamedCopy(Element e) {
+
+	for (Var var : extractVars(e)) {
+		if(!renames.containsKey(var))
+		renames.put(var, Var.alloc(var.getName()+this.nextVarId++));
+	}
+	
+	Element e1 = ElementTransformer.transform(e, new ElementTransformSubst(renames));
+	
+	return e1;
+}
+
+	private List<Var> extractVars(Element e) {
+		List<Var> vs = new ArrayList<Var>();
+		
+		
+		ElementWalker.walk(e,
+			    // For each element...
+			    new ElementVisitorBase() {
+			        // ...when it's a block of triples...
+			        public void visit(ElementPathBlock el) {
+			            // ...go through all the triples...
+			            Iterator<TriplePath> triples = el.patternElts();
+			            while (triples.hasNext()) {
+			            	Triple t = triples.next().asTriple();
+			            	if(t == null) continue;
+			            	Node[] ns = {t.getSubject(),t.getPredicate(),t.getObject()};
+			            	for (Node n : ns) {
+			            		if(n.isVariable())
+			            			vs.add((Var) n);
+							}
+			            }
+			        }
+			        
+			        public void visit(ElementTriplesBlock el) {
+			            // ...go through all the triples...
+			            Iterator<Triple> triples = el.patternElts();
+			            while (triples.hasNext()) {
+			            	Triple t = triples.next();
+			            	Node[] ns = {t.getSubject(),t.getPredicate(),t.getObject()};
+			            	for (Node n : ns) {
+			            		if(n.isVariable())
+			            			vs.add((Var) n);
+							}
+			            }
+			        }
+			    }
+			);
+		return vs;
+	}
+
+	//	jena sparql syntax Element that can be ignored:
 //	ElementAssign, ElementBind: neither jena sparql syntax Elements nor bgps in expressions
 //	(except in (not) exists, but that may only occur in filters - according to the spec)
 //	ElementData: (looks as if it) represents rdf data, bindings of variables to nodes
@@ -419,7 +350,7 @@ public class DataExtractor {
 			List<List<Element>> l1 = getInVariability(((ElementGroup) e).getElements(),qs);
 
 			for (List<Element> els2 : oneElementPowerset(l1)) {
-//System.out.println();e.toString();
+
 				ElementGroup e1 = new ElementGroup(); 
 				e1.getElements().addAll(els2);
 
@@ -456,15 +387,10 @@ public class DataExtractor {
 			els.addAll(l1);
 
 			els.addAll(l1.stream().map(e1 -> new ElementOptional(getVarRenamedCopy(e1))).collect(Collectors.toList()));	
-
 			
 			//make trivial before  case (optional false) more secure for us only.. ie is ensure that it appears
 			els.addAll(l1.stream().map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));	
 			
-//			els.add(new ElementFilter(new E_NotExists(((ElementOptional) e).getOptionalElement())));			
-
-//			els.addAll(l1.stream().
-//					map(e1 -> new ElementFilter(new E_NotExists(e1))).collect(Collectors.toList()));			
 			return els;
 		
 		} else if(e instanceof ElementService) {
@@ -541,7 +467,6 @@ public class DataExtractor {
                 				blanks[0]? Var.alloc(BVAR+t.getSubject().getName().substring(1)) : t.getSubject(), 
                 						blanks[1]? Var.alloc(BVAR+t.getPredicate().getName().substring(1)) : t.getPredicate(),
                 								blanks[2]? Var.alloc(BVAR+t.getObject().getName().substring(1)) : t.getObject()));
-
             			
             		} else {
             			e2.addTriple(t);
@@ -550,15 +475,9 @@ public class DataExtractor {
             		continue;
             	}
             	
-//            	List<Node> nodes = new ArrayList<Node>();
             	List<List<Node>> stack = new ArrayList<List<Node>>();
             	
             	tp.getPath().visit(new PathVisitorBase() {
-            		
-//            		List<Node> links = new ArrayList<Node>();
-//            		boolean left = false;
-//            		boolean right = false;
-//            		boolean first = true;
             		
             		public void visit(P_Seq pathSeq) {
 
@@ -566,15 +485,12 @@ public class DataExtractor {
             			pathSeq.getLeft().visit(this);
             			List<Node> ns = stack.get(0);
             			stack.remove(0);
-            			
-//            			left = false;
-//            			right = true;
+
             			pathSeq.getRight().visit(this);
             			ns.addAll(stack.get(0));
             			stack.remove(0);
             			
             			stack.add(0,ns);
-//            			right = false;
 //            			System.out.println(pathSeq);
 			        }
             		
@@ -607,12 +523,12 @@ public class DataExtractor {
             	if(nodes.size() == 1)
             		e2.addTriple(Triple.create(getSecurePart(tp, 0), nodes.get(0), getSecurePart(tp, 2)));
             	else if(nodes.size() > 1){
-            		e2.addTriple(Triple.create(getSecurePart(tp, 0), nodes.get(0), Var.alloc("QED_VAR" + this.nextVarId++)));
+            		e2.addTriple(Triple.create(getSecurePart(tp, 0), nodes.get(0), Var.alloc(NVAR + this.nextVarId++)));
             		for (int i = 1; i < nodes.size()-1; i++) {
-            			e2.addTriple(Triple.create(Var.alloc("QED_VAR" + (this.nextVarId-1)), nodes.get(i), Var.alloc("QED_VAR" + this.nextVarId++)));
+            			e2.addTriple(Triple.create(Var.alloc(NVAR + (this.nextVarId-1)), nodes.get(i), Var.alloc(NVAR + this.nextVarId++)));
                     	
 					}
-            		e2.addTriple(Triple.create(Var.alloc("QED_VAR" + (this.nextVarId-1)), nodes.get(nodes.size()-1), getSecurePart(tp, 2)));
+            		e2.addTriple(Triple.create(Var.alloc(NVAR + (this.nextVarId-1)), nodes.get(nodes.size()-1), getSecurePart(tp, 2)));
             	}
 
             }
@@ -656,26 +572,6 @@ public class DataExtractor {
 		
 	}
 	
-	private Node getSecurePart(TriplePath t, int i) {
-		if(i == 0) {
-			if(isBlankVarNode(t.getSubject()))
-				return Var.alloc("QED_VAR" + (this.nextVarId++));
-			else
-				return t.getSubject();
-		} else if(i == 1) {
-			if(isBlankVarNode(t.getPredicate()))
-				return Var.alloc("QED_VAR" + (this.nextVarId++));
-			else
-				return t.getPredicate();
-		} else {
-			if(isBlankVarNode(t.getObject()))
-				return Var.alloc("QED_VAR" + (this.nextVarId++));
-			else
-				return t.getObject();
-		}
-		
-	}
-
 	private List<List<Element>> getInVariability(List<Element> elements, String queryString) {		
 		
 		List<List<Element>> els = new ArrayList<List<Element>>();		
@@ -693,7 +589,7 @@ public class DataExtractor {
 		Element p = q.getQueryPattern();
 
 		List<Query> cqs = new ArrayList<Query>();
-		int i = 0;
+
 		for (Element e : getInVariability(p,selectOrAskQueryString)) {
 
 			
@@ -723,10 +619,6 @@ public class DataExtractor {
 				
 			}
 			
-			
-			
-			
-			
 			Query cq = QueryFactory.make();
 			cq.setQueryConstructType();
 			cq.setBaseURI(q.getBaseURI());
@@ -736,17 +628,11 @@ public class DataExtractor {
 			cq.setQueryPattern(e);                              
 			cq.setLimit(datasetSizeMax > 0 ? datasetSizeMax : defaultDataLimit);
 			
-			
-			
-
 //			create the construct part of the query
 			List<String> l1 = new ArrayList<String>();
 			for (Element b: extractBGPs(e)) { //TODO make method dependent on kind of SELECT clause
 				l1.add(b.toString());
 			}
-			
-			
-			//TODO add ineq filter for renames if orig still in q
 			
 			cq.setConstructTemplate(QueryFactory.createTemplate("{"+ String.join(".", l1) +"}"));
 			
@@ -767,7 +653,7 @@ public class DataExtractor {
 		return cqs;		
 	}
 
-public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax, String directory) {
+	public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax, String directory) {
 		File[] dirs = Utils.listDirectories(new File(directory));
 
 //		for each config directory
@@ -808,7 +694,7 @@ public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax
 			int cqsWithData = 0; 
 			int triplesTotal = 0;
 			
-			String qid = lq[0];System.out.println(qid);
+			String qid = lq[0]; System.out.println(qid);
 			String q = lq[1];	
 			fs.add(Feature.extractFeatures(q));
 			
@@ -816,23 +702,19 @@ public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax
 			try {
 				cqs = createConstructQueries(q, datasetSizeMax);
 			} catch (Exception e) {
-				System.out.println("Exception (cqs): "+ qid);//e.printStackTrace();
-//				continue;
+				System.out.println("Exception (cqs): "+ qid);
 			} 
 		
 //				uncomment the following line to get a file with all the cqs
 			if(cqs.size()>0)
 				Utils.writeConstructQueriesFile(d,qid,cqs);
 			int i = 0;
-			for (Query cq : cqs) {//					System.out.println(cq);
+			for (Query cq : cqs) {
 				try (QueryEngineHTTP qe = (QueryEngineHTTP) QueryExecutionFactory.sparqlService(logEndpoint, cq)) {		
 										
-		            qe.setTimeout(100000);//addParam("timeout", "100000") ;//			            System.out.println(cq);
+		            qe.setTimeout(100000);
 		            Model m = qe.execConstruct();
-//		            StmtIterator i = m.listStatements();
-//			             while(i.hasNext()) {
-//			             	System.out.println(i.next());
-//			             } 
+
 
 		            if(m.listStatements().hasNext()) {
 		            		cqsWithData++;
@@ -842,23 +724,18 @@ public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax
 		             
 		        } catch (Exception e) {
 		        	System.out.println("Exception (http-cq): "+ cqs.indexOf(cq));
-//		        		System.out.println(cq);
-//					e.printStackTrace();
-//					continue;
+
 		        }
 				if(i >100) break;
 			}
 					
 			if(cqsWithData == 0) { 	
 	            	System.out.println("NO DATA: "+ qid);
-//		            	System.out.println(query);
-            	
-//		            	delete other files
-//		            	(new File(d.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-//            		continue;
 			}
 			
-////			RESULTS -------------------------------------------------------------------------------------					
+//			RESULTS 1 -------------------------------------------------------------------------------------					
+//			USE code like this if you want to generate result sets using Jena (ie instead of with qed-gen)
+//			
 //			InputStream in = null; Model m;
 //			try {
 //				
@@ -889,6 +766,9 @@ public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax
 ////				fix maybe reset to smaller value
 //			query.setOffset(0); 
 //
+		
+//			RESULTS 2
+//			
 //			QueryExecution qe1 = QueryExecutionFactory.create(query, m);
 //			ResultSet rs = qe1.execSelect();
 ////			int rss = rs.getRowNumber();
@@ -931,73 +811,18 @@ public void extractAllQueryDataAndResults(String logEndpoint, int datasetSizeMax
 			stats.add(ns);
 		}
 		
-		Utils.writeStatisticsFile1(ids, stats, fs, directory);
+		Statistics.writeStatisticsFile(ids, stats, fs, directory);
 	}
 
 		
-	private List<Var> extractVars(Element e) {
-		List<Var> vs = new ArrayList<Var>();
-		
-		
-		ElementWalker.walk(e,
-			    // For each element...
-			    new ElementVisitorBase() {
-			        // ...when it's a block of triples...
-			        public void visit(ElementPathBlock el) {
-			            // ...go through all the triples...
-			            Iterator<TriplePath> triples = el.patternElts();
-			            while (triples.hasNext()) {
-			            	Triple t = triples.next().asTriple();
-			            	if(t == null) continue;
-			            	Node[] ns = {t.getSubject(),t.getPredicate(),t.getObject()};
-			            	for (Node n : ns) {
-			            		if(n.isVariable())
-			            			vs.add((Var) n);
-							}
-			            }
-			        }
-			        
-			        public void visit(ElementTriplesBlock el) {
-			            // ...go through all the triples...
-			            Iterator<Triple> triples = el.patternElts();
-			            while (triples.hasNext()) {
-			            	Triple t = triples.next();
-			            	Node[] ns = {t.getSubject(),t.getPredicate(),t.getObject()};
-			            	for (Node n : ns) {
-			            		if(n.isVariable())
-			            			vs.add((Var) n);
-							}
-			            }
-			        }
-			    }
-			);
-		return vs;
-	}
-	
-	
-	private Element getVarRenamedCopy(Element e) {
-
-		for (Var var : extractVars(e)) {
-			if(!renames.containsKey(var))
-			renames.put(var, Var.alloc(var.getName()+this.nextVarId++));
-		}
-		
-		Element e1 = ElementTransformer.transform(e, new ElementTransformSubst(renames));
-		
-		return e1;
-	}
-
 	public static void main(String[] args) {
+		
 		LogFileDataset wd = new LogFileDataset("wikidata", Constants.DATA_DIR+"wikidata.txt", "https://query.wikidata.org/bigdata/namespace/wdq/sparql", "Wikidata-");
 
 		DataExtractor de = new DataExtractor();
 		de.extractQueryDataAndResults(wd.getEndpoint(),2, Constants.DATA_DIR+"test");
 //		"http://localhost:8080/sparql", 2, Constants.DATA_DIR+"dbpedia2");
-//		Utils.statsSummary(Constants.DATA_DIR+"test", 7);
 
-//		LogQueryDataExtractor de = new LogQueryDataExtractor();
-//		de.extractQueryDataAndResults("http://localhost:8080/sparql", 5000);//http://dbpedia.org/sparql
 	}
-//finally, delete empty write report, make outprint nice
 
 }

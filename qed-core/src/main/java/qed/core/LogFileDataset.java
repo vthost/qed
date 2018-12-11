@@ -1,15 +1,12 @@
-/**
- * 
- */
+
 package qed.core;
 
 /**
- * @author veronika.thost
  *
  */
 public class LogFileDataset extends Dataset {
 	private String location = null;//of queries
-	private String idStr = null;
+	private String idStr = null;//base of id (integer is appended)
 	
 	public LogFileDataset(String name, String location, String endpoint, String idsStr) {
 		super(name, endpoint);

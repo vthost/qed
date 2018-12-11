@@ -145,9 +145,9 @@ public class Demo {
 		Demo d = new Demo();
 		
 		LogFileDataset wd = new LogFileDataset("wikidata", Constants.DATA_DIR+"wikidata.txt", "https://query.wikidata.org/bigdata/namespace/wdq/sparql", "Wikidata-");
-//		d.extractLogFileBasedDatasets(Constants.DATA_DIR, wd);
+		d.extractLogFileBasedDatasets(Constants.DATA_DIR, wd);
 		
-		Utils.finalizeStatistics(Constants.DATA_DIR+"wikidata", 7, false);
+//		Utils.finalizeStatistics(Constants.DATA_DIR+"wikidata", 7, false);
 		
 //		LSQDataset dbp = new LSQDataset("dbpedia", "http://localhost:8080/sparql", "http://dbpedia.org");
 //		new DataExtractor3().extractQueryDataAndResults(dbp.getEndpoint(), 2, Constants.DATA_DIR+"dbpedia2-new");
