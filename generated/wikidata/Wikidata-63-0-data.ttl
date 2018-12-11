@@ -1,4 +1,0 @@
-<http://wikiba.se/ontology#geoGlobe> <http://wikiba.se/ontology#geoGlobe> <http://synthetic/1> .
-<http://wikiba.se/ontology#geoGlobe> <http://www.w3.org/2001/XMLSchema#boolean> "num4"^^<http://any/number> .
-<http://wikiba.se/ontology#geoGlobe> <http://www.w3.org/2001/XMLSchema#boolean> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://wikiba.se/ontology#geoGlobe> <http://www.w3.org/2001/XMLSchema#boolean> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .

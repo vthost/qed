@@ -1,4 +1,0 @@
-<http://synthetic/0> <http://www.wikidata.org/prop/direct/P356> "num3"^^<http://any/number> .
-<http://synthetic/0> <http://www.wikidata.org/prop/direct/P698> <http://www.wikidata.org/prop/direct/P698> .
-<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#string> "num1"^^<http://any/number> .
-<http://synthetic/1> <http://synthetic/0> <http://www.w3.org/2001/XMLSchema#float> .

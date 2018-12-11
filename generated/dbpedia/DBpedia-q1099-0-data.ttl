@@ -1,4 +1,0 @@
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "en" .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "lit4"^^<http://any/iri> .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> "lit1"@en .
-<http://dbpedia.org/resource/Web_application> <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2001/XMLSchema#double> .
