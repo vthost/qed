@@ -8,7 +8,7 @@ For a more detailed introduction into the approach and a coarse overview of the 
 Contains the query and data extraction. It also contains code for retrieving the answers based on only the extracted datasets. 
 
 # /qed-gen
-Contains the data generation, integration with the extracted data, and the answer generation. 
+Contains the data generation, integration of generated and extracted data, and the answer generation. 
 
 # Requirements
 - qed-core: [maven](https://maven.apache.org/)
