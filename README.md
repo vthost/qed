@@ -12,11 +12,17 @@ Contains the data and answer generation.
 
 # Requirements
 - qed-core: [maven](https://maven.apache.org/)
-- qed-gen: qed-core, [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
+- qed-gen: qed-core, [ant](https://ant.apache.org/), [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
 
 # Setup
-- qed-core: Run 'mvn clean install' in qed-core.
-- qed-gen:
+If you only want to use qed-core: Run 'mvn clean install' in the top-level directory.
+
+Otherwise:
+- Clone the quetzal project 
+- Run 'checkout Jena_3.4.0' in the top-level directory of quetzal
+- Run 'ant' in both quetzal/com.ibm.research.quetzal.core
+- Run 'ant' in quetzal/rdfstore-checker
+- Run 'mvn clean install' in the top-level directory of qed
 
 # Examples
 The datasets described in the paper can be found in /data. Demo classes in both qed-core and qed-gen show how to run the system. 
