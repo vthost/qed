@@ -20,7 +20,6 @@ If you only want to use qed-core: Run 'mvn clean install' in the top-level direc
 Otherwise:
 - Clone the quetzal project 
 - Run 'checkout Jena_3.4.0' in the top-level directory of quetzal
-- Run 'ant' in both quetzal/com.ibm.research.quetzal.core
 - Run 'ant' in quetzal/rdfstore-checker
 - Run 'mvn clean install' in the top-level directory of qed
 
