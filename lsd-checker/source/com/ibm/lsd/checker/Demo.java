@@ -4,10 +4,9 @@ import com.ibm.lsd.checker.drivers.LSDExpandAllDriver;
 
 import qed.core.Constants;
 import qed.core.DataExtractor;
-import qed.core.LSQDataset;
 import qed.core.LogFileDataset;
 import qed.core.LogFileQueryExtractor;
-import qed.core.Utils;
+import qed.core.Statistics;
 
 public class Demo {
 		
@@ -20,7 +19,7 @@ public class Demo {
 
 			new DataExtractor().extractQueryDataAndResults(dataset.getEndpoint(), 2, path);
 			
-			Utils.finalizeStatistics(path, 7);
+			Statistics.finalizeStatistics(path, 7, true, "stats");
 			
 			try {
 				LSDExpandAllDriver.main(new String[] { path, "1", "10", Constants.DATA_DIR });
