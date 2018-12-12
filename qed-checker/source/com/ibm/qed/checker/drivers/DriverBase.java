@@ -1,4 +1,4 @@
-package com.ibm.lsd.checker.drivers;
+package com.ibm.qed.checker.drivers;
 
 import java.io.File;
 import java.io.FileNotFoundException;

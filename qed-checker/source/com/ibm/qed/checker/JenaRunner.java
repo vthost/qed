@@ -1,4 +1,4 @@
-package com.ibm.lsd.checker;
+package com.ibm.qed.checker;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

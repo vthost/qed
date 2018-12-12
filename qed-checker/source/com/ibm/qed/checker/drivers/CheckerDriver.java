@@ -1,4 +1,4 @@
-package com.ibm.lsd.checker.drivers;
+package com.ibm.qed.checker.drivers;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -23,7 +23,7 @@ import kodkod.ast.Formula;
 import kodkod.instance.Instance;
 import kodkod.instance.TupleSet;
 
-public class LSDCheckerDriver extends DriverBase {
+public class CheckerDriver extends DriverBase {
 
 	public static void main(String[] args) throws Exception {
 		main(args[0], (String s) -> { mainLoop(s); });

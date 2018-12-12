@@ -1,6 +1,6 @@
-package com.ibm.lsd.checker;
+package com.ibm.qed.checker;
 
-import com.ibm.lsd.checker.drivers.LSDExpandAllDriver;
+import com.ibm.qed.checker.drivers.ExpandAllDriver;
 
 import qed.core.Constants;
 import qed.core.DataExtractor;
@@ -22,7 +22,7 @@ public class Demo {
 			Statistics.finalizeStatistics(path, 7, true, "stats");
 			
 			try {
-				LSDExpandAllDriver.main(new String[] { path, "1", "10", Constants.DATA_DIR });
+				ExpandAllDriver.main(new String[] { path, "1", "10", Constants.DATA_DIR });
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -50,7 +50,7 @@ public class Demo {
 		String path = Constants.DATA_DIR + "wikidata0";
 		
 		try {
-			LSDExpandAllDriver.main(new String[] { path, "1", "10", Constants.DATA_DIR });
+			ExpandAllDriver.main(new String[] { path, "1", "10", Constants.DATA_DIR });
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

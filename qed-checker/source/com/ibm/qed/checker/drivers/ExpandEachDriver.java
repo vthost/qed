@@ -1,4 +1,4 @@
-package com.ibm.lsd.checker.drivers;
+package com.ibm.qed.checker.drivers;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -20,14 +20,14 @@ import kodkod.ast.Relation;
 import kodkod.engine.satlab.SATFactory;
 import kodkod.instance.Instance;
 
-public class LSDExpandEachDriver extends LSDExpanderBase {
+public class ExpandEachDriver extends ExpanderBase {
 
-	public LSDExpandEachDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
+	public ExpandEachDriver(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
 		super(queryFile, solutionLimit, datasetLimit, dataDir, originalDataset);
 	}
 
 	public static void main(String[] args) throws Exception {
-		main(args[0], (String s) -> { LSDExpandEachDriver exp = new LSDExpandEachDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3], args.length>4? args[4]: null); exp.mainLoop(exp.new EachPath()); });
+		main(args[0], (String s) -> { ExpandEachDriver exp = new ExpandEachDriver(s, Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3], args.length>4? args[4]: null); exp.mainLoop(exp.new EachPath()); });
 	}
 	
 	class EachPath implements Process {

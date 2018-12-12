@@ -6,9 +6,9 @@ import java.net.URL;
 
 import org.junit.Test;
 
-import com.ibm.lsd.checker.drivers.LSDCheckerDriver;
-import com.ibm.lsd.checker.drivers.LSDExpandAllDriver;
-import com.ibm.lsd.checker.drivers.LSDExpandEachDriver;
+import com.ibm.qed.checker.drivers.CheckerDriver;
+import com.ibm.qed.checker.drivers.ExpandAllDriver;
+import com.ibm.qed.checker.drivers.ExpandEachDriver;
 
 public class BasicTest {
 
@@ -16,7 +16,7 @@ public class BasicTest {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
-		LSDCheckerDriver.mainLoop(url.toString());
+		CheckerDriver.mainLoop(url.toString());
 	}
 
     @Test
@@ -31,14 +31,14 @@ public class BasicTest {
 		URL ds = BasicTest.class.getClassLoader().getResource(originalDataset);
 		assert ds != null;
 
-		LSDExpandEachDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-each/", ds.toString()});
+		ExpandEachDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-each/", ds.toString()});
 	}
 
 	public void testExpandEach(String query, int solutionLimit, int datasetLimit) throws Exception {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
-		LSDExpandEachDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-each/"});
+		ExpandEachDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-each/"});
 	}
  
 	@Test
@@ -100,7 +100,7 @@ public class BasicTest {
 		URL url = BasicTest.class.getClassLoader().getResource(query);
 		assert url != null;
 		
-		LSDExpandAllDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-all/"});
+		ExpandAllDriver.main(new String[] {url.toString(), String.valueOf(solutionLimit), String.valueOf(datasetLimit), "test-data/data-all/"});
 	}
 
 	@Test

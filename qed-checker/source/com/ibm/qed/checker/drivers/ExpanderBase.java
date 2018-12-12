@@ -1,4 +1,4 @@
-package com.ibm.lsd.checker.drivers;
+package com.ibm.qed.checker.drivers;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -54,7 +54,7 @@ import kodkod.ast.Relation;
 import kodkod.instance.Instance;
 import qed.core.Constants;
 
-public abstract class LSDExpanderBase extends DriverBase {
+public abstract class ExpanderBase extends DriverBase {
 
 	protected final static boolean VERBOSE = false;
 			
@@ -84,7 +84,7 @@ public abstract class LSDExpanderBase extends DriverBase {
 			}
 		}
 	}
-	public LSDExpanderBase(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
+	public ExpanderBase(String queryFile, int solutionLimit, int datasetLimit, String dataDir, String originalDataset) {
 		super();
 		this.queryFile = queryFile;
 		this.solutionLimit = solutionLimit;
