@@ -39,24 +39,10 @@
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-wd:Q183  wdt:P901  "GM" .
+wd:Q207  wdt:P39  wd:Q11696 .
 
-wd:Q140694  wdt:P22  wd:Q3134450 ;
-        wdt:P27  wd:Q142 ;
-        wdt:P31  wd:Q5 ;
-        wdt:P39  wd:Q7330070 .
+wd:Q91  wdt:P39  wd:Q11696 .
 
-wd:Q142  wdt:P901  "FR" .
+wd:Q153481  wdt:P22  wd:Q207 .
 
-wd:Q7330070  wdt:P279  wd:Q83307 .
-
-wd:Q468055  wdt:P39  wd:Q14212 .
-
-wd:Q14212  wdt:P279  wd:Q83307 .
-
-wd:Q353922  wdt:P39  wd:Q14212 .
-
-wd:Q59904  wdt:P22  wd:Q8442 ;
-        wdt:P27  wd:Q183 ;
-        wdt:P31  wd:Q5 ;
-        wdt:P39  wd:Q7330070 .
+wd:Q135687  wdt:P22  wd:Q91 .

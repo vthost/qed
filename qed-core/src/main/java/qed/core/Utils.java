@@ -181,7 +181,7 @@ public class Utils implements Constants {
 	}
 	
 	//	one simple in each subdir and manifest-all.ttl
-	public static void writeManifestFiles(String path, String qbaseURI) { 
+	public static void writeManifestFiles(String path) { //, String qbaseURI) { 
 
 		String mfURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest/";
 		String qtURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-query/";
@@ -202,9 +202,8 @@ public class Utils implements Constants {
 		
 		
 		File[] dirs = listDirectories(new File(path));		
-		boolean onedir = false;
+		boolean onedir = dirs.length == 0? true : false;
 		if(dirs.length == 0) {
-			onedir = true;
 			dirs = new File[1];
 			dirs[0] = new File(path);
 		}
@@ -271,7 +270,7 @@ public class Utils implements Constants {
 				addProperty(include, m.createList(
 						Arrays.asList(dirs).stream().
 						map(dir -> { 
-							return m.createResource(dir.getName()+File.separator+MANIFEST_FILE_NAME);}).
+							return m.createResource((onedir?"":dir.getName()+File.separator)+MANIFEST_FILE_NAME);}).
 						collect(Collectors.toList()).toArray(new RDFNode[0])));
 
 		
@@ -305,7 +304,7 @@ public class Utils implements Constants {
 	}
 	
 	public static void main(String[] args) {
-		Utils.writeManifestFiles(DATA_DIR+"wikidata/", "wikidatauri");
+		Utils.writeManifestFiles(DATA_DIR+"wikidata/");//, "wikidatauri");
 	}
 
 	

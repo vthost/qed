@@ -1,6 +1,8 @@
 package qed.core;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -13,10 +15,13 @@ import java.util.stream.Collectors;
 import org.apache.jena.graph.Node;
 import org.apache.jena.graph.Triple;
 import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.Syntax;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.sparql.core.TriplePath;
 import org.apache.jena.sparql.core.Var;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
@@ -85,34 +90,35 @@ public class DataExtractor {
 private Node getSecurePart(TriplePath t, int i) {
 		if(i == 0) {
 			if(isBlankVarNode(t.getSubject()))
-				return Var.alloc(BVAR + (this.nextVarId++));
+				return Var.alloc(BVAR+t.getSubject().getName().substring(1));
 			else
 				return t.getSubject();
 		} else if(i == 1) {
 			if(isBlankVarNode(t.getPredicate()))
-				return Var.alloc(BVAR + (this.nextVarId++));
+				return Var.alloc(BVAR+t.getPredicate().getName().substring(1));
 			else
 				return t.getPredicate();
 		} else {
 			if(isBlankVarNode(t.getObject()))
-				return Var.alloc(BVAR + (this.nextVarId++));
+				return Var.alloc(BVAR+t.getObject().getName().substring(1));
 			else
 				return t.getObject();
 		}
 		
 	}
 
+	//the naming scheme could get problematic if the queries contain variables that are similar but only differ in number suffixes...
 	private Element getVarRenamedCopy(Element e) {
 
-	for (Var var : extractVars(e)) {
-		if(!renames.containsKey(var))
-		renames.put(var, Var.alloc(var.getName()+this.nextVarId++));
+		for (Var var : extractVars(e)) {
+			if(!renames.containsKey(var))
+			renames.put(var, Var.alloc(var.getName()+this.nextVarId++));
+		}
+		
+		Element e1 = ElementTransformer.transform(e, new ElementTransformSubst(renames));
+		
+		return e1;
 	}
-	
-	Element e1 = ElementTransformer.transform(e, new ElementTransformSubst(renames));
-	
-	return e1;
-}
 
 	private List<Var> extractVars(Element e) {
 		List<Var> vs = new ArrayList<Var>();
@@ -463,10 +469,7 @@ private Node getSecurePart(TriplePath t, int i) {
 
             		if (Arrays.asList(blanks).stream().anyMatch(v -> v)) {
             			
-                		e2.addTriple(Triple.create(
-                				blanks[0]? Var.alloc(BVAR+t.getSubject().getName().substring(1)) : t.getSubject(), 
-                						blanks[1]? Var.alloc(BVAR+t.getPredicate().getName().substring(1)) : t.getPredicate(),
-                								blanks[2]? Var.alloc(BVAR+t.getObject().getName().substring(1)) : t.getObject()));
+                		e2.addTriple(Triple.create(getSecurePart(tp, 0),getSecurePart(tp, 1),getSecurePart(tp, 2)));
             			
             		} else {
             			e2.addTriple(t);
@@ -475,8 +478,17 @@ private Node getSecurePart(TriplePath t, int i) {
             		continue;
             	}
             	
+            	// visitor steps into paths, inner methods put results at stack position 0
+            	// subsequent outer methods should then look there to get last inner method's output
+            	// result = a List<Node>
+            	// TODO 
+            	// 1 replace by result = List<List<Node>> s.t. stack is List<List<List<Node>>>
+            	// then result contains alternatives
+            	// and we also need to create alternative e2s!
+            	// 2 adapt inner methods (for P_alt etc to return alternatives)
             	List<List<Node>> stack = new ArrayList<List<Node>>();
             	
+            	// TODO currently only covers paths occurring wikidata example queries
             	tp.getPath().visit(new PathVisitorBase() {
             		
             		public void visit(P_Seq pathSeq) {
@@ -494,12 +506,12 @@ private Node getSecurePart(TriplePath t, int i) {
 //            			System.out.println(pathSeq);
 			        }
             		
-            		//TODO FOR NOW ignore treat as one ie treat as zero
+            		//TODO FOR NOW ignore/ treat as one
             		public void visit(P_ZeroOrMore1 node) {
                			//should be at stack 0
                			node.getSubPath().visit(this);
 			        }
-            		//TODO FOR NOW ignore ie treat as one
+            		//TODO FOR NOW ignore/ treat as one
                		public void visit(P_OneOrMore1 node) {
                			//should be at stack 0
                			node.getSubPath().visit(this);
@@ -735,22 +747,22 @@ private Node getSecurePart(TriplePath t, int i) {
 			
 //			RESULTS 1 -------------------------------------------------------------------------------------					
 //			USE code like this if you want to generate result sets using Jena (ie instead of with qed-gen)
-//			
-//			InputStream in = null; Model m;
-//			try {
-//				
-//				in = new FileInputStream(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid)));
-//				 
-//				// Create an empty in-memory model and populate it from the data
-//				m = ModelFactory.createMemModelMaker().createModel(qid+"");
-//				m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
-//				
-//				in.close();
-//
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//				continue;
-//			} 
+			
+			InputStream in = null; Model m;
+			try {
+				
+				in = new FileInputStream(new File(d.getPath() + File.separator + Utils.getDataFileName(qid)));
+				 
+				// Create an empty in-memory model and populate it from the data
+				m = ModelFactory.createMemModelMaker().createModel(qid+"");
+				m.read(in,null,"TURTLE"); // null base URI, since model URIs are absolute
+				
+				in.close();
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				continue;
+			} 
 //
 //			System.out.println(q);
 			Query query = null;
@@ -764,26 +776,26 @@ private Node getSecurePart(TriplePath t, int i) {
 		
 ////				TODO	we sometimes cannot test this given our restricted dataset size
 ////				fix maybe reset to smaller value
-//			query.setOffset(0); 
-//
+			query.setOffset(0); 
+
 		
 //			RESULTS 2
-//			
-//			QueryExecution qe1 = QueryExecutionFactory.create(query, m);
-//			ResultSet rs = qe1.execSelect();
-////			int rss = rs.getRowNumber();
-//			if(!rs.hasNext()) {			
-//				System.out.println("NO RESULT "+ qid);
-////			            	System.out.println(q);
-//            	
-//            	//delete files
-////				(new File(d.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
-////				(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
-//            } else {
-//            	Utils.writeQueryResultFile(d, qid, rs);
-//            }
-//
-//			qe1.close();
+			
+			QueryExecution qe1 = QueryExecutionFactory.create(query, m);
+			ResultSet rs = qe1.execSelect();
+//			int rss = rs.getRowNumber();
+			if(!rs.hasNext()) {			
+				System.out.println("NO RESULT "+ qid);
+//			            	System.out.println(q);
+            	
+            	//delete files
+//				(new File(d.getPath() + File.separator + Utils.getQueryFileName(qid))).delete();
+//				(new File(d.getPath() + File.separator + Utils.getQueryDataFileName(qid))).delete();
+            } else {
+            	Utils.writeResultFile(d, qid, rs);
+            }
+
+			qe1.close();
 			
 			int qtriples = 0;
 			List<Element> es = extractBGPs(query.getQueryPattern());
