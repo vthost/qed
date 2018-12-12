@@ -139,38 +139,16 @@ public class Demo {
 	}
 
 	public static void main(String[] args) {
-//		for (Feature[] fs : new Demo().createBinaryConfigs(exfs)) {
-//			System.out.println(fs[0].name()+fs[1]);
-//		}
 		
 		Demo d = new Demo();
 		
 		LogFileDataset wd = new LogFileDataset("wikidata", Constants.DATA_DIR+"wikidata.txt", "https://query.wikidata.org/bigdata/namespace/wdq/sparql", "Wikidata-");
 		d.extractLogFileBasedDatasets(Constants.DATA_DIR, wd);
 		
-//		Utils.finalizeStatistics(Constants.DATA_DIR+"wikidata", 7, false);
+
 		
 //		LSQDataset dbp = new LSQDataset("dbpedia", "http://localhost:8080/sparql", "http://dbpedia.org");
 //		new DataExtractor3().extractQueryDataAndResults(dbp.getEndpoint(), 2, Constants.DATA_DIR+"dbpedia2-new");
 //		d.extractLSQDatasets(Constants.DATA_DIR, dbp, createBinaryConfigs(exfs));
 	}
-	
-	
-//	public void generateAllDatasets() {
-//		
-//		LogQueryExtractor qe = new LogQueryExtractor();
-//		LogQueryDataExtractor de = new LogQueryDataExtractor();
-//		String tmp = System.getProperty("user.dir")+ File.separator +".."+File.separator +"data"+File.separator + "data-" ;
-//		
-//		for (int i = 0; i < graphs.length; i++) {
-//			String g = graphs[i];
-//			for (int j = 0; j < configs.length; j++) {			
-//				Utils.DATA_DIR = tmp + g.substring(7,g.length()-4) + "-" + confignames[j] + File.separator;
-//				System.out.println(Utils.DATA_DIR);
-//				qe.extractQueries(Constants.LSQR_SPARQL_EP, g, configs[j], 10, 0, 0);
-////				if(i != 2)
-////				de.extractQueryDataAndResults(eps[i], 3);
-//			}
-//		}
-//	}
 }
