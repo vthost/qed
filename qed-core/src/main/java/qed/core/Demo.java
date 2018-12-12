@@ -53,7 +53,7 @@ public class Demo {
 
 		new DataExtractor().extractAllQueryDataAndResults(dataset.getEndpoint(), 3, path);
 		
-//		Utils.finalizeStatistics(path, 7);
+		Utils.writeManifestFiles(path);
 	}
 	
 	public void extractLogFileBasedDatasets(String path, LogFileDataset dataset) {
@@ -69,7 +69,8 @@ public class Demo {
 
 		new DataExtractor().extractQueryDataAndResults(dataset.getEndpoint(), 2, path);
 		
-//		Utils.finalizeStatistics(path, 7);
+		Utils.writeManifestFiles(path);
+		
 	}
 	
 	public void printQueriesInDir(String directory) {

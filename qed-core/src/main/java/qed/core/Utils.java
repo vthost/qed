@@ -181,7 +181,7 @@ public class Utils implements Constants {
 	}
 	
 	//	one simple in each subdir and manifest-all.ttl
-	public static void writeManifestFiles(String path, String qbaseURI) { 
+	public static void writeManifestFiles(String path) { //, String qbaseURI) { 
 
 		String mfURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-manifest/";
 		String qtURI = "http://www.w3.org/2001/sw/DataAccess/tests/test-query/";
@@ -304,7 +304,7 @@ public class Utils implements Constants {
 	}
 	
 	public static void main(String[] args) {
-		Utils.writeManifestFiles(DATA_DIR+"wikidata/", "wikidatauri");
+		Utils.writeManifestFiles(DATA_DIR+"wikidata/");//, "wikidatauri");
 	}
 
 	
