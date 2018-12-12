@@ -245,7 +245,7 @@ public class Statistics {
 				String id = f.getName().substring(0,i);
 				id = id.substring(0,id.lastIndexOf("-"));
 
-				m.put(id, Integer.valueOf(s.nextLine().strip())) ;
+				m.put(id, Integer.valueOf(s.nextLine().trim())) ;
 
 				
 			} catch (FileNotFoundException e) {
