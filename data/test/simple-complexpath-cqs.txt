@@ -5,12 +5,12 @@ PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
 
 CONSTRUCT 
   { 
-    ?child wdt:P22 ?QED_BVAR0 .
-    ?QED_BVAR0 wdt:P39 wd:Q83307 .
+    ?child wdt:P22 ?QED_VAR0 .
+    ?QED_VAR0 wdt:P39 ?x .
   }
 WHERE
-  { ?child    wdt:P22  ?QED_BVAR0 .
-    ?QED_BVAR0  wdt:P39  wd:Q83307
+  { ?child    wdt:P22  ?QED_VAR0 .
+    ?QED_VAR0  wdt:P39  ?x
   }
 LIMIT   2
 

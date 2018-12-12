@@ -1,0 +1,4 @@
+PREFIX p: <http://www.wikidata.org/prop/> PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX wd: <http://www.wikidata.org/entity/>  
+
+SELECT ?child WHERE {   
+?child ((wdt:P22/wdt:P39)*|wdt:P25) ?x . } 
