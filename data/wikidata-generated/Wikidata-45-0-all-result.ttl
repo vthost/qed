@@ -1,0 +1,44 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "label" , "coord" , "subj" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q283822> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(2.18103 41.38504)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Las Meninas"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q129433> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-73.977664 40.761484)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Ma Jolie"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q59534605> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Woman in a Hat with Flowers"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q75564> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Dora Maar au Chat"@en ;
+                          rs:variable  "label"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q80317> ;
+                                     rs:variable  "subj"
+                                   ] ;
+            rs:binding  [ rs:value     "Garçon à la pipe"@en ;
+                          rs:variable  "label"
+                        ] ]
+] .

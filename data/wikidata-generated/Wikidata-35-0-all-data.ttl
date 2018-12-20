@@ -1,0 +1,66 @@
+<http://www.wikidata.org/entity/Q5672712> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q5672712> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q2840> .
+<http://www.wikidata.org/entity/Q5672712> <http://www.w3.org/2000/01/rdf-schema#label> "Harry T. Bagley"@de .
+<http://www.wikidata.org/entity/Q5672712> <http://www.w3.org/2000/01/rdf-schema#label> "Harry T. Bagley"@da .
+<http://www.wikidata.org/entity/Q12078> <http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.wikidata.org/entity/Q12078> <http://synthetic/1> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.wikidata.org/entity/Q12078> <http://synthetic/3> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.wikidata.org/entity/Q293385> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q293385> <http://www.wikidata.org/prop/direct/P509> _:B5320b380060eec50763f3c0b7bfa34dc .
+<http://www.wikidata.org/entity/Q293385> <http://www.w3.org/2000/01/rdf-schema#label> "Óscar Humberto Mejía Víctores"@en .
+<http://www.wikidata.org/entity/Q7087849> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q7087849> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q210392> .
+<http://www.wikidata.org/entity/Q4220640> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q4220640> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q12136> .
+<http://www.wikidata.org/entity/Q705617> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q705617> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q362> .
+<http://www.wikidata.org/entity/Q705617> <http://www.w3.org/2000/01/rdf-schema#label> "Chōmo Hanashiro"@en .
+<http://www.wikidata.org/entity/Q1394102> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q1394102> <http://www.wikidata.org/prop/direct/P509> _:B7298e44df2a0450c7d5033314299a960 .
+<http://www.wikidata.org/entity/Q1394102> <http://www.w3.org/2000/01/rdf-schema#label> "Виталиј Чуркин"@sr .
+<http://www.wikidata.org/entity/Q1394102> <http://www.w3.org/2000/01/rdf-schema#label> "Vitalij Ivanovič Čurkin"@sl .
+<http://www.wikidata.org/entity/Q15053838> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q15053838> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q12090> .
+<http://www.wikidata.org/entity/Q940651> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q940651> <http://www.wikidata.org/prop/direct/P509> _:B470f23e2e891aeac4f33ff034e55f068 .
+<http://www.wikidata.org/entity/Q940651> <http://www.w3.org/2000/01/rdf-schema#label> "Daniel Piscopo"@en .
+<http://www.wikidata.org/entity/Q2840> <http://www.w3.org/2000/01/rdf-schema#label> "Grip"@br .
+<http://www.wikidata.org/entity/Q2840> <http://www.w3.org/2000/01/rdf-schema#label> "Gripe"@an .
+<http://www.wikidata.org/entity/Q2840> <http://www.w3.org/2000/01/rdf-schema#label> "Gripa"@bs .
+<http://www.wikidata.org/entity/Q2840> <http://www.w3.org/2000/01/rdf-schema#label> "Griep"@af .
+<http://www.wikidata.org/entity/Q2840> <http://www.w3.org/2000/01/rdf-schema#label> "influenza"@en .
+<http://www.wikidata.org/entity/Q175111> <http://www.w3.org/2000/01/rdf-schema#label> "aforcamientu"@ast .
+<http://www.wikidata.org/entity/Q175111> <http://www.w3.org/2000/01/rdf-schema#label> "شنق"@ar .
+<http://www.wikidata.org/entity/Q175111> <http://www.w3.org/2000/01/rdf-schema#label> "hanging"@en .
+<http://www.wikidata.org/entity/Q210392> <http://www.w3.org/2000/01/rdf-schema#label> "mortis en batalo"@eo .
+<http://www.wikidata.org/entity/Q210392> <http://www.w3.org/2000/01/rdf-schema#label> "zabitý v boji"@cs .
+<http://www.wikidata.org/entity/Q210392> <http://www.w3.org/2000/01/rdf-schema#label> "killed in action"@en .
+<http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/prop/direct/P106> <http://synthetic/1> .
+<http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/prop/direct/P106> <http://www.w3.org/2001/XMLSchema#double> "lit1"@ANY_LANGUAGE .
+<http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q12078> .
+<http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> "num3"^^<http://any/number> .
+<http://www.wikidata.org/entity/Q329408> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q329408> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q10500739> .
+<http://www.wikidata.org/entity/Q329408> <http://www.w3.org/2000/01/rdf-schema#label> "Erik Oxenstierna"@et .
+<http://www.wikidata.org/entity/Q329408> <http://www.w3.org/2000/01/rdf-schema#label> "Erik Oxenstierna"@es .
+<http://www.wikidata.org/entity/Q15486021> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q15486021> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q10264768> .
+<http://www.wikidata.org/entity/Q15486021> <http://www.w3.org/2000/01/rdf-schema#label> "Manuel María de Salcedo"@en .
+<http://www.wikidata.org/entity/Q362> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<http://www.wikidata.org/entity/Q12136> <http://www.w3.org/2000/01/rdf-schema#label> "disease"@en .
+<http://www.wikidata.org/entity/Q356118> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q356118> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q11605028> .
+<http://www.wikidata.org/entity/Q356118> <http://www.w3.org/2000/01/rdf-schema#label> "Ōkubo Toshimichi"@en .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P509> <http://synthetic/1> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P509> <http://synthetic/0> .
+<http://www.wikidata.org/entity/Q1532708> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q1532708> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q175111> .
+<http://www.wikidata.org/entity/Q12090> <http://www.w3.org/2000/01/rdf-schema#label> "cholera"@en .
+<http://www.wikidata.org/entity/Q4250968> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q4250968> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q2840> .
+<http://www.wikidata.org/entity/Q4250968> <http://www.w3.org/2000/01/rdf-schema#label> "阿玛德·苏巴尔佐"@zh-cn .
+<http://www.wikidata.org/entity/Q4250968> <http://www.w3.org/2000/01/rdf-schema#label> "Achmad Soebardjo"@en .
+<http://www.wikidata.org/entity/Q24579006> <http://www.wikidata.org/prop/direct/P106> <http://www.wikidata.org/entity/Q82955> .
+<http://www.wikidata.org/entity/Q24579006> <http://www.wikidata.org/prop/direct/P509> <http://www.wikidata.org/entity/Q2840> .
+<http://www.wikidata.org/entity/Q24579006> <http://www.w3.org/2000/01/rdf-schema#label> "Thomas Burges"@en .

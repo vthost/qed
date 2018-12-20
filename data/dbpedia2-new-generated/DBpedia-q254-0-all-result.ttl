@@ -3,9 +3,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "img" , "lat" , "wiki" , "abstract" , "long" ;
+  rs:resultVariable  "lat" , "long" , "img" , "wiki" , "abstract" ;
   rs:size            "4"^^xsd:int ;
-  rs:solution        [ rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
+  rs:solution        [ rs:binding  [ rs:value     []  ;
                                      rs:variable  "wiki"
                                    ] ;
             rs:binding  [ rs:value     "lit1"@en ;
@@ -17,13 +17,13 @@
             rs:binding  [ rs:value     "lit1"@en ;
                           rs:variable  "abstract"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     []  ;
+  rs:solution        [ rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/depiction> ;
                                      rs:variable  "wiki"
                                    ] ;
             rs:binding  [ rs:value     "lit1"@en ;
                           rs:variable  "abstract"
                         ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/depiction> ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
                                      rs:variable  "wiki"
                                    ] ;
             rs:binding  [ rs:value     "lit1"@en ;

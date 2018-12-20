@@ -3,6 +3,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "start" , "biography" , "end" , "hometown" , "birthPlace" , "thumbnail" , "wiki" , "x" ;
+  rs:resultVariable  "start" , "birthPlace" , "thumbnail" , "end" , "hometown" , "wiki" , "biography" , "x" ;
   rs:size            "0"^^xsd:int
 ] .

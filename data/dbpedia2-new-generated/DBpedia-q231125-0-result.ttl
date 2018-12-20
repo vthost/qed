@@ -3,7 +3,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "position" , "lat" , "city" , "long" , "no" , "city3" , "image" , "city2" , "player" , "dob" ;
+  rs:resultVariable  "dob" , "player" , "lat" , "no" , "city" , "city3" , "position" , "long" , "city2" , "image" ;
   rs:size            "2"^^xsd:int ;
   rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
                                      rs:variable  "player"

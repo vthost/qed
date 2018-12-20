@@ -1,0 +1,32 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "itemLabel_en" , "official_language" , "itemLabel_ol" , "item" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Mali"@en ;
+                                     rs:variable  "itemLabel_en"
+                                   ] ;
+            rs:binding  [ rs:value     "French"@en ;
+                          rs:variable  "official_language"
+                        ] ;
+            rs:binding  [ rs:value     "Mali"@fr ;
+                          rs:variable  "itemLabel_ol"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q912> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Kenya"@en ;
+                                     rs:variable  "itemLabel_en"
+                                   ] ;
+            rs:binding  [ rs:value     "English"@en ;
+                          rs:variable  "official_language"
+                        ] ;
+            rs:binding  [ rs:value     "Kenya"@en ;
+                          rs:variable  "itemLabel_ol"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q114> ;
+                          rs:variable  "item"
+                        ] ]
+] .

@@ -1,0 +1,26 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "statement" , "entry" , "entryRes" ;
+  rs:size            "2"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
+                                     rs:variable  "statement"
+                                   ] ;
+            rs:binding  [ rs:value     "lit1"@en ;
+                          rs:variable  "entry"
+                        ] ;
+            rs:binding  [ rs:value     <http://synthetic/0> ;
+                          rs:variable  "entryRes"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/0> ;
+                                     rs:variable  "statement"
+                                   ] ;
+            rs:binding  [ rs:value     "lit1"@en ;
+                          rs:variable  "entry"
+                        ] ;
+            rs:binding  [ rs:value     <http://synthetic/0> ;
+                          rs:variable  "entryRes"
+                        ] ]
+] .

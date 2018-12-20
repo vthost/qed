@@ -1,0 +1,13 @@
+<http://dbpedia.org/resource/%C4%90%E1%BB%97_Anh_V%C5%A9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Chancellor> .
+<http://dbpedia.org/resource/%C4%90%E1%BB%97_Anh_V%C5%A9> <http://www.w3.org/2000/01/rdf-schema#label> "Đỗ Anh Vũ"@fr .
+<http://dbpedia.org/resource/%C4%90%E1%BB%97_Anh_V%C5%A9> <http://www.w3.org/2000/01/rdf-schema#label> "Đỗ Anh Vũ"@en .
+<http://www.w3.org/2001/XMLSchema#double> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Chancellor> .
+<http://synthetic/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/Chancellor> .
+<http://synthetic/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Chancellor> .
+<http://synthetic/3> <http://www.w3.org/2004/02/skos/core#subject> <http://dbpedia.org/resource/Category:Chancellor> .
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> <http://dbpedia.org/resource/Category:Chancellor> .
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2004/02/skos/core#subject> .
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> "lit2"^^<http://any/iri> .
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://synthetic/3> <http://www.w3.org/2000/01/rdf-schema#label> "lit1"@ANY_LANGUAGE .

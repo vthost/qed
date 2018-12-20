@@ -1,0 +1,56 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "item" , "name" , "licenseItem" , "license" ;
+  rs:size            "6"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "tz database"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q187176> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Library of Congress"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q131454> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "GNU Free Documentation License"@en ;
+                                     rs:variable  "license"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q22169> ;
+                          rs:variable  "licenseItem"
+                        ] ;
+            rs:binding  [ rs:value     "NMRShiftDB"@en ;
+                          rs:variable  "name"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q24170714> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit3"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://synthetic/2> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "GNU General Public License"@en ;
+                                     rs:variable  "license"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7603> ;
+                          rs:variable  "licenseItem"
+                        ] ;
+            rs:binding  [ rs:value     "hwids"@en ;
+                          rs:variable  "name"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q23887435> ;
+                          rs:variable  "item"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Who Named It?"@en ;
+                                     rs:variable  "name"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q66683> ;
+                          rs:variable  "item"
+                        ] ]
+] .

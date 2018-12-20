@@ -1,0 +1,38 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "country" , "countryLabel" , "city" , "cityLabel" , "population" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/prop/direct/P17> ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://synthetic/0> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/prop/direct/P150> ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://synthetic/0> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit2"^^<http://any/iri> ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://synthetic/0> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "num2"^^<http://any/number> ;
+                                     rs:variable  "country"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:double ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:float ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://synthetic/0> ;
+                          rs:variable  "city"
+                        ] ]
+] .

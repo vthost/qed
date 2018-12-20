@@ -3,6 +3,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "v6" , "v4" , "v2" , "v9" , "a" , "v0" , "v11" , "v7" ;
+  rs:resultVariable  "v4" , "a" , "v7" , "v11" , "v2" , "v9" , "v6" , "v0" ;
   rs:size            "0"^^xsd:int
 ] .

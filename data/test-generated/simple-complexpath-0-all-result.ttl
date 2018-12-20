@@ -1,0 +1,53 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "child" ;
+  rs:size            "15"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q207> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:float ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:integer ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q135687> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q11696> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:double ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "ANY_LANGUAGE" ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q153481> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q153481> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:decimal ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/3> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q135687> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q91> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://synthetic/4> ;
+                                     rs:variable  "child"
+                                   ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "num4"^^<http://any/number> ;
+                                     rs:variable  "child"
+                                   ] ]
+] .

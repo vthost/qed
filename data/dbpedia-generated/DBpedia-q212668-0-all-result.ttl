@@ -1,0 +1,71 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "a" , "c" , "b" ;
+  rs:size            "7"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:double ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:decimal ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Peugeot> ;
+                          rs:variable  "a"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.w3.org/2002/07/owl#Thing> ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Peugeot> ;
+                          rs:variable  "a"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Peugeot S.A."@en ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Peugeot> ;
+                          rs:variable  "a"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:double ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     xsd:decimal ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                          rs:variable  "a"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.w3.org/2002/07/owl#Thing> ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     rdf:type ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                          rs:variable  "a"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Peugeot - Fransada istehsal olunan avtomobil, velosiped və motorsiklet markası, indiki vaxtda PSA Peugeot Citroënun bir parçasıdır. Əslində 19-cu əsrin sonlarında velosiped çıxaran bir firma olaraq qurulmuşdur."@az ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                          rs:variable  "a"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Peugeot S.A."@en ;
+                                     rs:variable  "c"
+                                   ] ;
+            rs:binding  [ rs:value     <http://xmlns.com/foaf/0.1/name> ;
+                          rs:variable  "b"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                          rs:variable  "a"
+                        ] ]
+] .

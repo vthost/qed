@@ -1,0 +1,38 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "city" , "countryLabel" , "country" , "population" , "cityLabel" ;
+  rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/prop/direct/P150> ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q458> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:boolean ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q458> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "lit0"^^<http://any/iri> ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q458> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:decimal ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q458> ;
+                          rs:variable  "city"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q458> ;
+                                     rs:variable  "population"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q458> ;
+                          rs:variable  "city"
+                        ] ]
+] .

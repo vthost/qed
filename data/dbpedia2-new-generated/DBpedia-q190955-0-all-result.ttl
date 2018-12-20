@@ -3,8 +3,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 [ a                  rs:ResultSet ;
-  rs:resultVariable  "r" , "a" , "n" , "b" ;
+  rs:resultVariable  "b" , "n" , "r" , "a" ;
   rs:size            "5"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "1969-03-19"^^xsd:date ;
+                                     rs:variable  "b"
+                                   ] ;
+            rs:binding  [ rs:value     "Конър Триниър"@bg ;
+                          rs:variable  "n"
+                        ] ;
+            rs:binding  [ rs:value     <http://dbpedia.org/resource/Connor_Trinneer> ;
+                          rs:variable  "r"
+                        ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "Adrien Brody (born April 14, 1973) is an American actor. He received widespread recognition and subsequent acclaim after starring in Roman Polanski's The Pianist (2002). He is notable as the youngest actor ever to receive an Academy Award for Best Actor and the only American actor ever to win a César Award."@en ;
                                      rs:variable  "a"
                                    ] ;
@@ -26,22 +35,13 @@
             rs:binding  [ rs:value     <http://dbpedia.org/resource/Dara_Singh> ;
                           rs:variable  "r"
                         ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     xsd:string ;
+                                     rs:variable  "r"
+                                   ] ] ;
   rs:solution        [ rs:binding  [ rs:value     "Jensen, Anders Thomas"@de ;
                                      rs:variable  "n"
                                    ] ;
             rs:binding  [ rs:value     <http://dbpedia.org/resource/Anders_Thomas_Jensen> ;
-                          rs:variable  "r"
-                        ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     xsd:string ;
-                                     rs:variable  "r"
-                                   ] ] ;
-  rs:solution        [ rs:binding  [ rs:value     "1969-03-19"^^xsd:date ;
-                                     rs:variable  "b"
-                                   ] ;
-            rs:binding  [ rs:value     "Конър Триниър"@bg ;
-                          rs:variable  "n"
-                        ] ;
-            rs:binding  [ rs:value     <http://dbpedia.org/resource/Connor_Trinneer> ;
                           rs:variable  "r"
                         ] ]
 ] .

@@ -1,0 +1,440 @@
+<http://www.wikidata.org/entity/Q25338> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q25338> <http://www.wikidata.org/prop/direct/P577> "1943-04-06T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q25338> <http://www.w3.org/2000/01/rdf-schema#label> "Пĕчĕк Тиккĕ"@cv .
+<http://www.wikidata.org/entity/Q74287> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q74287> <http://www.wikidata.org/prop/direct/P577> "1937-09-21T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q74287> <http://www.w3.org/2000/01/rdf-schema#label> "The Hobbit"@en .
+<http://www.wikidata.org/entity/Q44257263> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q29> .
+<http://www.wikidata.org/entity/Q785001> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q785001> <http://www.wikidata.org/prop/direct/P577> "1980-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q785001> <http://www.w3.org/2000/01/rdf-schema#label> "The Golden Man"@en .
+<http://www.wikidata.org/entity/Q862536> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q862536> <http://www.wikidata.org/prop/direct/P577> "1928-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q862536> <http://www.w3.org/2000/01/rdf-schema#label> "Three Fat Men"@en .
+<http://www.wikidata.org/entity/Q272506> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q272506> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q272506> <http://www.wikidata.org/prop/direct/P577> "1910-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q272506> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q272506> <http://www.w3.org/2000/01/rdf-schema#label> "The Phantom of the Opera"@en .
+<http://www.wikidata.org/entity/Q1055881> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1055881> <http://www.wikidata.org/prop/direct/P577> "1859-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1055881> <http://www.w3.org/2000/01/rdf-schema#label> "自由論"@ja .
+<http://www.wikidata.org/entity/Q1384> <http://www.wikidata.org/prop/direct/P625> "Point(-75.0 43.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q16> <http://www.wikidata.org/prop/direct/P625> "Point(-109.0 56.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q27020440> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q15> .
+<http://www.wikidata.org/entity/Q474088> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q474088> <http://www.wikidata.org/prop/direct/P577> "-014-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q474088> <http://www.w3.org/2000/01/rdf-schema#label> "Amores"@en .
+<http://www.wikidata.org/entity/Q17352486> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q17352486> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q17352486> <http://www.wikidata.org/prop/direct/P577> "1828-05-15T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q17352486> <http://www.w3.org/2000/01/rdf-schema#label> "Les Chroniques de la Canongate"@fr .
+<http://www.wikidata.org/entity/Q17352486> <http://www.w3.org/2000/01/rdf-schema#label> "Chronicles of the Canongate"@en .
+<http://www.wikidata.org/entity/Q55855202> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q55855202> <http://www.wikidata.org/prop/direct/P577> "1763-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q55855202> <http://www.w3.org/2000/01/rdf-schema#label> "Gli scrittori d'Italia"@en .
+<http://www.wikidata.org/entity/Q1492> <http://www.wikidata.org/prop/direct/P625> "Point(2.176944444 41.3825)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q74483> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q74483> <http://www.wikidata.org/prop/direct/P577> "1914-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q74483> <http://www.w3.org/2000/01/rdf-schema#label> "The Wisdom of Father Brown"@en .
+<http://www.wikidata.org/entity/Q6745556> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q29> .
+<http://www.wikidata.org/entity/Q29> <http://www.wikidata.org/prop/direct/P625> "Point(-3.0 40.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q112472> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q112472> <http://www.wikidata.org/prop/direct/P577> "2011-03-11T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q112472> <http://www.w3.org/2000/01/rdf-schema#label> "芸人交換日記〜イエローハーツの物語〜"@ja .
+<http://www.wikidata.org/entity/Q79762> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q79762> <http://www.wikidata.org/prop/direct/P577> "1977-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q79762> <http://www.w3.org/2000/01/rdf-schema#label> "Сільмарыліян"@be .
+<http://www.wikidata.org/entity/Q79762> <http://www.w3.org/2000/01/rdf-schema#label> "The Silmarillion"@en .
+<http://www.wikidata.org/entity/Q79762> <http://www.w3.org/2000/01/rdf-schema#label> "سيلماريليون"@ar .
+<http://www.wikidata.org/entity/Q119246> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q119246> <http://www.wikidata.org/prop/direct/P577> "1928-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q119246> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q119246> <http://www.w3.org/2000/01/rdf-schema#label> "Kontrapunkt des Lebens"@de .
+<http://www.wikidata.org/entity/Q119246> <http://www.w3.org/2000/01/rdf-schema#label> "Point Counter Point"@en .
+<http://www.wikidata.org/entity/Q119246> <http://www.w3.org/2000/01/rdf-schema#label> "পয়েন্ট কাউন্টার পয়েন্ট"@bn .
+<http://www.wikidata.org/entity/Q1731> <http://www.wikidata.org/prop/direct/P625> "Point(13.738361111 51.049258333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q29021490> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q16> .
+<http://www.wikidata.org/entity/Q7034086> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q7034086> <http://www.wikidata.org/prop/direct/P577> "1977-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q7034086> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q30> .
+<http://www.wikidata.org/entity/Q7034086> <http://www.w3.org/2000/01/rdf-schema#label> "Nightwing"@en .
+<http://www.wikidata.org/entity/Q49959810> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q49959810> <http://www.wikidata.org/prop/direct/P577> "1612-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q49959810> <http://www.w3.org/2000/01/rdf-schema#label> "Supplementum Apollonii Redivivi sive analysis problematis bactenus desiderati ad Apollonii Pergaei doctrinam a Marino Ghetaldo Patritio Regusino hujusque non ita pridem institutam"@en .
+<http://www.wikidata.org/entity/Q5447420> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q5447420> <http://www.wikidata.org/prop/direct/P577> "1956-09-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q5447420> <http://www.w3.org/2000/01/rdf-schema#label> "Fifteen"@en .
+<http://www.wikidata.org/entity/Q50875024> <http://www.wikidata.org/prop/direct/P625> "Point(11.4605 43.898888888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q18822109> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q18822109> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q18822109> <http://www.wikidata.org/prop/direct/P577> "1967-05-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q18822109> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q50875024> .
+<http://www.wikidata.org/entity/Q18822109> <http://www.w3.org/2000/01/rdf-schema#label> "Letter to a teacher"@en .
+<http://www.wikidata.org/entity/Q41545> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q41545> <http://www.wikidata.org/prop/direct/P577> "1786-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q41545> <http://www.w3.org/2000/01/rdf-schema#label> "Ода до радості"@uk .
+<http://www.wikidata.org/entity/Q326914> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q326914> <http://www.wikidata.org/prop/direct/P577> "1878-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q326914> <http://www.w3.org/2000/01/rdf-schema#label> "The Adventures of Tom Sawyer"@pt .
+<http://www.wikidata.org/entity/Q540894> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q540894> <http://www.wikidata.org/prop/direct/P577> "1801-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q540894> <http://www.w3.org/2000/01/rdf-schema#label> "Juliette"@en .
+<http://www.wikidata.org/entity/Q480> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q480> <http://www.wikidata.org/prop/direct/P577> "1615-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q480> <http://www.w3.org/2000/01/rdf-schema#label> "Don Quijote"@wa .
+<http://www.wikidata.org/entity/Q326909> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q326909> <http://www.wikidata.org/prop/direct/P577> "1901-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q326909> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q2843> .
+<http://www.wikidata.org/entity/Q326909> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q315187> .
+<http://www.wikidata.org/entity/Q326909> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q153656> .
+<http://www.wikidata.org/entity/Q326909> <http://www.w3.org/2000/01/rdf-schema#label> "Buddenbrooks"@en .
+<http://www.wikidata.org/entity/Q326909> <http://www.w3.org/2000/01/rdf-schema#label> "Buddenbrooks"@nl .
+<http://www.wikidata.org/entity/Q326909> <http://www.w3.org/2000/01/rdf-schema#label> "Les Buddenbrook"@fr .
+<http://www.wikidata.org/entity/Q58909933> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q20> .
+<http://www.wikidata.org/entity/Q1199417> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1199417> <http://www.wikidata.org/prop/direct/P577> "1829-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1199417> <http://www.w3.org/2000/01/rdf-schema#label> "آخر يوم لمحكوم عليه بالإعدام"@ar .
+<http://www.wikidata.org/entity/Q1199417> <http://www.w3.org/2000/01/rdf-schema#label> "بیر اعدامی نین سون گونلری"@azb .
+<http://www.wikidata.org/entity/Q861527> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q861527> <http://www.wikidata.org/prop/direct/P577> "1908-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q861527> <http://www.w3.org/2000/01/rdf-schema#label> "Ecce homo"@fr .
+<http://www.wikidata.org/entity/Q371558> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q371558> <http://www.wikidata.org/prop/direct/P577> "1536-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q371558> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q78> .
+<http://www.wikidata.org/entity/Q371558> <http://www.w3.org/2000/01/rdf-schema#label> "Учењата за христијанската религија"@mk .
+<http://www.wikidata.org/entity/Q371558> <http://www.w3.org/2000/01/rdf-schema#label> "Institutie"@nl .
+<http://www.wikidata.org/entity/Q371558> <http://www.w3.org/2000/01/rdf-schema#label> "Institutes of the Christian Religion"@en .
+<http://www.wikidata.org/entity/Q47153> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q47153> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q47153> <http://www.wikidata.org/prop/direct/P577> "2009-10-08T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q47153> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q668> .
+<http://www.wikidata.org/entity/Q47153> <http://www.w3.org/2000/01/rdf-schema#label> "2 States: The Story of My Marriage"@en .
+<http://www.wikidata.org/entity/Q47153> <http://www.w3.org/2000/01/rdf-schema#label> "2 سٹیٹس"@pnb .
+<http://www.wikidata.org/entity/Q47153> <http://www.w3.org/2000/01/rdf-schema#label> "੨ ਸਟੇਟਸ"@pa .
+<http://www.wikidata.org/entity/Q1425915> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q1425915> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1425915> <http://www.wikidata.org/prop/direct/P577> "1558-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1425915> <http://www.w3.org/2000/01/rdf-schema#label> "Heptamerón"@es .
+<http://www.wikidata.org/entity/Q1425915> <http://www.w3.org/2000/01/rdf-schema#label> "Heptaméron"@en .
+<http://www.wikidata.org/entity/Q1425915> <http://www.w3.org/2000/01/rdf-schema#label> "Heptaméron"@de .
+<http://www.wikidata.org/entity/Q212687> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q212687> <http://www.wikidata.org/prop/direct/P577> "1889-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q212687> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q1731> .
+<http://www.wikidata.org/entity/Q212687> <http://www.w3.org/2000/01/rdf-schema#label> "Die Waffen nieder!"@en .
+<http://www.wikidata.org/entity/Q813935> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q813935> <http://www.wikidata.org/prop/direct/P577> "0720-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q813935> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q813935> <http://www.w3.org/2000/01/rdf-schema#label> "Ji̍t-pún Su-kì"@nan .
+<http://www.wikidata.org/entity/Q813935> <http://www.w3.org/2000/01/rdf-schema#label> "Nihon Shoki"@en .
+<http://www.wikidata.org/entity/Q1057575> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1057575> <http://www.wikidata.org/prop/direct/P577> "1868-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1057575> <http://www.w3.org/2000/01/rdf-schema#label> "Le Petit Chose"@en .
+<http://www.wikidata.org/entity/Q8717> <http://www.wikidata.org/prop/direct/P625> "Point(-5.983333333 37.383333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q1193812> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q1193812> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1193812> <http://www.wikidata.org/prop/direct/P577> "1787-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1193812> <http://www.w3.org/2000/01/rdf-schema#label> "La Fantomviziulo"@eo .
+<http://www.wikidata.org/entity/Q1193812> <http://www.w3.org/2000/01/rdf-schema#label> "محضر الأرواح"@ar .
+<http://www.wikidata.org/entity/Q1193812> <http://www.w3.org/2000/01/rdf-schema#label> "The Ghost-Seer"@en .
+<http://www.wikidata.org/entity/Q15> <http://www.wikidata.org/prop/direct/P625> "Point(17.0 1.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q2500544> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q2500544> <http://www.wikidata.org/prop/direct/P577> "1887-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q2500544> <http://www.w3.org/2000/01/rdf-schema#label> "Urfaust"@en .
+<http://www.wikidata.org/entity/Q4410249> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q4410249> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q4410249> <http://www.wikidata.org/prop/direct/P577> "1879-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q4410249> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q4410249> <http://www.w3.org/2000/01/rdf-schema#label> "La Lumière de l'Asie"@fr .
+<http://www.wikidata.org/entity/Q4410249> <http://www.w3.org/2000/01/rdf-schema#label> "দ্য লাইট অফ এশিয়া"@bn .
+<http://www.wikidata.org/entity/Q4410249> <http://www.w3.org/2000/01/rdf-schema#label> "The Light of Asia"@en .
+<http://www.wikidata.org/entity/Q16385930> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q16385930> <http://www.wikidata.org/prop/direct/P577> "1817-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q16385930> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q27> .
+<http://www.wikidata.org/entity/Q16385930> <http://www.w3.org/2000/01/rdf-schema#label> "Harrington"@en .
+<http://www.wikidata.org/entity/Q34329353> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q29> .
+<http://www.wikidata.org/entity/Q16359576> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q16359576> <http://www.wikidata.org/prop/direct/P577> "1966-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q16359576> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q18> .
+<http://www.wikidata.org/entity/Q16359576> <http://www.w3.org/2000/01/rdf-schema#label> "The Adventurers"@sq .
+<http://www.wikidata.org/entity/Q16359576> <http://www.w3.org/2000/01/rdf-schema#label> "Os libertinos"@pt-br .
+<http://www.wikidata.org/entity/Q1185104> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q1185104> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q5160043> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q5160043> <http://www.wikidata.org/prop/direct/P577> "1982-05-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q5160043> <http://www.w3.org/2000/01/rdf-schema#label> "Confessions of an Actor: An Autobiography"@en .
+<http://www.wikidata.org/entity/Q7750613> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q7750613> <http://www.wikidata.org/prop/direct/P577> "1910-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q7750613> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q21> .
+<http://www.wikidata.org/entity/Q7750613> <http://www.w3.org/2000/01/rdf-schema#label> "The Master as I Saw Him"@nl .
+<http://www.wikidata.org/entity/Q55539216> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q107790> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q107790> <http://www.wikidata.org/prop/direct/P577> "1975-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q107790> <http://www.w3.org/2000/01/rdf-schema#label> "The Green Book"@en .
+<http://www.wikidata.org/entity/Q10860215> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q10860215> <http://www.wikidata.org/prop/direct/P577> "2013-04-12T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q10860215> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q10860215> <http://www.w3.org/2000/01/rdf-schema#label> "Colorless Tsukuru Tazaki and His Years of Pilgrimage"@en .
+<http://www.wikidata.org/entity/Q69539> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q69539> <http://www.wikidata.org/prop/direct/P577> "-400-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q69539> <http://www.w3.org/2000/01/rdf-schema#label> "政治学"@ja .
+<http://www.wikidata.org/entity/Q69539> <http://www.w3.org/2000/01/rdf-schema#label> "Politics"@en .
+<http://www.wikidata.org/entity/Q1898036> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q1898036> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1898036> <http://www.wikidata.org/prop/direct/P577> "1823-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1898036> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q1384> .
+<http://www.wikidata.org/entity/Q1898036> <http://www.w3.org/2000/01/rdf-schema#label> "Bőrharisnya"@hu .
+<http://www.wikidata.org/entity/Q1898036> <http://www.w3.org/2000/01/rdf-schema#label> "The Pioneers"@en .
+<http://www.wikidata.org/entity/Q1898036> <http://www.w3.org/2000/01/rdf-schema#label> "Պիոներները կամ Սասքուեհաննայի աղբյուրները"@hy .
+<http://www.wikidata.org/entity/Q331092> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q331092> <http://www.wikidata.org/prop/direct/P577> "1849-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q331092> <http://www.w3.org/2000/01/rdf-schema#label> "Civil Disobedience"@nl .
+<http://www.wikidata.org/entity/Q7366231> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q21> .
+<http://www.wikidata.org/entity/Q5163441> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q5163441> <http://www.wikidata.org/prop/direct/P577> "1999-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q5163441> <http://www.w3.org/2000/01/rdf-schema#label> "Conspiracy in Death"@en .
+<http://www.wikidata.org/entity/Q20036800> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q20036800> <http://www.wikidata.org/prop/direct/P577> "1811-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q20036800> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q20036800> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q84> .
+<http://www.wikidata.org/entity/Q20036800> <http://www.w3.org/2000/01/rdf-schema#label> "The Black Prince"@en .
+<http://www.wikidata.org/entity/Q20036800> <http://www.w3.org/2000/01/rdf-schema#label> "The Black Prince"@nl .
+<http://www.wikidata.org/entity/Q25111210> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q25111210> <http://www.wikidata.org/prop/direct/P577> "1599-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q25111210> <http://www.w3.org/2000/01/rdf-schema#label> "The Model of Poesy"@en .
+<http://www.wikidata.org/entity/Q251848> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q251848> <http://www.wikidata.org/prop/direct/P577> "1392-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q251848> <http://www.w3.org/2000/01/rdf-schema#label> "Dukus Horant"@en .
+<http://www.wikidata.org/entity/Q207130> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q17> <http://www.wikidata.org/prop/direct/P625> "Point(136.0 35.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q117293> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q117293> <http://www.wikidata.org/prop/direct/P577> "1846-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q117293> <http://www.w3.org/2000/01/rdf-schema#label> "Бедныя людзі"@be-tarask .
+<http://www.wikidata.org/entity/Q18> <http://www.wikidata.org/prop/direct/P625> "Point(-59.0 -21.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> "1830-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P577> <http://www.w3.org/2001/XMLSchema#double> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P625> "" .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/1> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#string> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.wikidata.org/entity/Q16438> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q16438> <http://www.wikidata.org/prop/direct/P577> "1351-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q16438> <http://www.wikidata.org/prop/direct/P577> "1352-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q16438> <http://www.w3.org/2000/01/rdf-schema#label> "Декамерон"@uk .
+<http://www.wikidata.org/entity/Q15880299> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q15880299> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q15880299> <http://www.wikidata.org/prop/direct/P577> "2013-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q15880299> <http://www.w3.org/2000/01/rdf-schema#label> "War and Turpentine"@en .
+<http://www.wikidata.org/entity/Q40879557> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q1101819> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1101819> <http://www.wikidata.org/prop/direct/P577> "1895-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1101819> <http://www.w3.org/2000/01/rdf-schema#label> "Lo dusau libre de la jungle"@oc .
+<http://www.wikidata.org/entity/Q1101819> <http://www.w3.org/2000/01/rdf-schema#label> "Den andre jungelboken"@nb .
+<http://www.wikidata.org/entity/Q22810454> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q16> .
+<http://www.wikidata.org/entity/Q27> <http://www.wikidata.org/prop/direct/P625> "Point(-8.0 53.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q840974> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q840974> <http://www.wikidata.org/prop/direct/P577> "1820-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q840974> <http://www.w3.org/2000/01/rdf-schema#label> "撒克遜英雄傳"@zh .
+<http://www.wikidata.org/entity/Q230307> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q230307> <http://www.wikidata.org/prop/direct/P577> "1843-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q230307> <http://www.w3.org/2000/01/rdf-schema#label> "За еврейския въпрос"@bg .
+<http://www.wikidata.org/entity/Q217100> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q217100> <http://www.wikidata.org/prop/direct/P577> "1857-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q217100> <http://www.w3.org/2000/01/rdf-schema#label> "Kalevipoeg"@nn .
+<http://www.wikidata.org/entity/Q217100> <http://www.w3.org/2000/01/rdf-schema#label> "Калевіпаэг"@be-tarask .
+<http://www.wikidata.org/entity/Q432574> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q432574> <http://www.wikidata.org/prop/direct/P577> "1527-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q432574> <http://www.w3.org/2000/01/rdf-schema#label> "Espejo de caballerías"@eu .
+<http://www.wikidata.org/entity/Q432574> <http://www.w3.org/2000/01/rdf-schema#label> "Espejo de caballerías"@es .
+<http://www.wikidata.org/entity/Q128670> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q128670> <http://www.wikidata.org/prop/direct/P577> "1800-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q128670> <http://www.w3.org/2000/01/rdf-schema#label> "Hymner til natten"@en .
+<http://www.wikidata.org/entity/Q2843> <http://www.wikidata.org/prop/direct/P625> "Point(10.686388888 53.869722222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q353180> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q353180> <http://www.wikidata.org/prop/direct/P577> "1839-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q353180> <http://www.w3.org/2000/01/rdf-schema#label> "Lenz"@ca .
+<http://www.wikidata.org/entity/Q25094843> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q20> .
+<http://www.wikidata.org/entity/Q3024077> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q3024077> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q4104> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q15094156> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q15094156> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q15094156> <http://www.wikidata.org/prop/direct/P577> "2000-08-08T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q15094156> <http://www.w3.org/2000/01/rdf-schema#label> "Stargirl"@zh .
+<http://www.wikidata.org/entity/Q20> <http://www.wikidata.org/prop/direct/P625> "Point(11.0 65.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q3321418> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q3321418> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q25506> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q482554> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q482554> <http://www.wikidata.org/prop/direct/P577> "1778-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q482554> <http://www.w3.org/2000/01/rdf-schema#label> "An den Mond"@en .
+<http://www.wikidata.org/entity/Q72309> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q72309> <http://www.wikidata.org/prop/direct/P577> "1820-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q72309> <http://www.w3.org/2000/01/rdf-schema#label> "أسطورة سليبي هولو"@ar .
+<http://www.wikidata.org/entity/Q72309> <http://www.w3.org/2000/01/rdf-schema#label> "The Legend of Sleepy Hollow"@en .
+<http://www.wikidata.org/entity/Q72309> <http://www.w3.org/2000/01/rdf-schema#label> "La llegenda de Sleepy Hollow"@ca .
+<http://www.wikidata.org/entity/Q19493211> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q19493211> <http://www.wikidata.org/prop/direct/P577> "1937-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q19493211> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q29> .
+<http://www.wikidata.org/entity/Q19493211> <http://www.w3.org/2000/01/rdf-schema#label> "Viento del pueblo"@en .
+<http://www.wikidata.org/entity/Q5450418> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q5450418> <http://www.wikidata.org/prop/direct/P577> "1997-08-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q5450418> <http://www.w3.org/2000/01/rdf-schema#label> "Finity's End"@en .
+<http://www.wikidata.org/entity/Q47524780> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q47524780> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q47524780> <http://www.wikidata.org/prop/direct/P577> "2014-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q47524780> <http://www.w3.org/2000/01/rdf-schema#label> "Startup and New Venture Management"@en .
+<http://www.wikidata.org/entity/Q192551> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q192551> <http://www.wikidata.org/prop/direct/P577> "1200-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q192551> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Chronicle"@en .
+<http://www.wikidata.org/entity/Q493574> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q493574> <http://www.wikidata.org/prop/direct/P577> "1826-02-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q493574> <http://www.w3.org/2000/01/rdf-schema#label> "آخر الموهيكيين"@ar .
+<http://www.wikidata.org/entity/Q493574> <http://www.w3.org/2000/01/rdf-schema#label> "L'ultimo dei Mohicani"@it .
+<http://www.wikidata.org/entity/Q969963> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q20> .
+<http://www.wikidata.org/entity/Q701996> <http://www.wikidata.org/prop/direct/P625> "Point(8.359722222 49.630277777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q8678> <http://www.wikidata.org/prop/direct/P625> "Point(-43.196388888 -22.908333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q185427> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q185427> <http://www.wikidata.org/prop/direct/P577> "1100-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q185427> <http://www.w3.org/2000/01/rdf-schema#label> "The Song of Roland"@en .
+<http://www.wikidata.org/entity/Q80817> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q80817> <http://www.wikidata.org/prop/direct/P577> "2003-06-21T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q80817> <http://www.w3.org/2000/01/rdf-schema#label> "Harry Potter and the Order of the Phoenix"@en .
+<http://www.wikidata.org/entity/Q31487> <http://www.wikidata.org/prop/direct/P625> "Point(19.937222222 50.061388888)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q55722661> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q55722661> <http://www.wikidata.org/prop/direct/P577> "1822-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q55722661> <http://www.w3.org/2000/01/rdf-schema#label> "Systematisch-alphabetisches Verzeichniss aller bisher bey den Fürbildungen zur Sammlung europäischer Schmetterlinge angegebenen Gattungsbenennungen"@en .
+<http://www.wikidata.org/entity/Q315187> <http://www.wikidata.org/prop/direct/P625> "Point(10.6858 53.8683)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q24286889> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q24286889> <http://www.wikidata.org/prop/direct/P577> "1856-06-13T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q24286889> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q8678> .
+<http://www.wikidata.org/entity/Q24286889> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q8678> .
+<http://www.wikidata.org/entity/Q24286889> <http://www.w3.org/2000/01/rdf-schema#label> "O Fim do Mundo"@pt .
+<http://www.wikidata.org/entity/Q24286889> <http://www.w3.org/2000/01/rdf-schema#label> "The End of the World"@en .
+<http://www.wikidata.org/entity/Q833645> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q833645> <http://www.wikidata.org/prop/direct/P577> "1623-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q833645> <http://www.w3.org/2000/01/rdf-schema#label> "第一对开本"@zh .
+<http://www.wikidata.org/entity/Q813031> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q813031> <http://www.wikidata.org/prop/direct/P577> "0712-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q813031> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q813031> <http://www.w3.org/2000/01/rdf-schema#label> "Kojiki"@hr .
+<http://www.wikidata.org/entity/Q813031> <http://www.w3.org/2000/01/rdf-schema#label> "קוג'יקי"@he .
+<http://www.wikidata.org/entity/Q813031> <http://www.w3.org/2000/01/rdf-schema#label> "Kociki"@az .
+<http://www.wikidata.org/entity/Q207797> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q70784> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q70784> <http://www.wikidata.org/prop/direct/P577> "1592-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q70784> <http://www.w3.org/2000/01/rdf-schema#label> "Journey to the West"@en .
+<http://www.wikidata.org/entity/Q70784> <http://www.w3.org/2000/01/rdf-schema#label> "Le Voyage en Occident"@fr .
+<http://www.wikidata.org/entity/Q153656> <http://www.wikidata.org/prop/direct/P625> "Point(11.5728 48.1379)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q78> <http://www.wikidata.org/prop/direct/P625> "Point(7.591111111 47.550555555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q84> <http://www.wikidata.org/prop/direct/P625> "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q883305> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q883305> <http://www.wikidata.org/prop/direct/P577> "1853-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q883305> <http://www.w3.org/2000/01/rdf-schema#label> "Samotnia"@pl .
+<http://www.wikidata.org/entity/Q883305> <http://www.w3.org/2000/01/rdf-schema#label> "Bleak House"@en .
+<http://www.wikidata.org/entity/Q3852> <http://www.wikidata.org/prop/direct/P625> "Point(8.365277777 49.631944444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q1079681> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1079681> <http://www.wikidata.org/prop/direct/P577> "1876-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1079681> <http://www.w3.org/2000/01/rdf-schema#label> "The Hunting of the Snark"@en .
+<http://www.wikidata.org/entity/Q21> <http://www.wikidata.org/prop/direct/P625> "Point(-1.0 53.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q259655> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q20> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P840> <http://synthetic/4> .
+<http://synthetic/2> <http://www.wikidata.org/prop/direct/P840> <http://synthetic/3> .
+<http://www.wikidata.org/entity/Q6746412> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q29> .
+<http://www.wikidata.org/entity/Q815580> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q815580> <http://www.wikidata.org/prop/direct/P577> "1545-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q815580> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q8717> .
+<http://www.wikidata.org/entity/Q815580> <http://www.w3.org/2000/01/rdf-schema#label> "Belianis"@en .
+<http://www.wikidata.org/entity/Q1061693> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q1061693> <http://www.wikidata.org/prop/direct/P577> "1882-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q1061693> <http://www.w3.org/2000/01/rdf-schema#label> "Die fröhliche Wissenschaft"@de .
+<http://www.wikidata.org/entity/Q24946837> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q24946837> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q24946837> <http://www.wikidata.org/prop/direct/P577> "1584-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q24946837> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q31487> .
+<http://www.wikidata.org/entity/Q24946837> <http://www.w3.org/2000/01/rdf-schema#label> "Elegiarum libri IV, eiusdem Foricoenia sive Epigrammatum libellus"@pl .
+<http://www.wikidata.org/entity/Q58456164> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q19571567> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q19571567> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q19571567> <http://www.wikidata.org/prop/direct/P577> "1967-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q19571567> <http://www.w3.org/2000/01/rdf-schema#label> "The Eighth Day"@en .
+<http://www.wikidata.org/entity/Q611399> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q611399> <http://www.wikidata.org/prop/direct/P577> "0797-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q611399> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q611399> <http://www.w3.org/2000/01/rdf-schema#label> "Shoku Nihongi"@en .
+<http://www.wikidata.org/entity/Q40562470> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q40562470> <http://www.wikidata.org/prop/direct/P577> "2011-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q40562470> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q21> .
+<http://www.wikidata.org/entity/Q40562470> <http://www.w3.org/2000/01/rdf-schema#label> "La communication scientifique et le numérique"@fr .
+<http://www.wikidata.org/entity/Q14911972> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q14911972> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q14911972> <http://www.wikidata.org/prop/direct/P577> "1612-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q14911972> <http://www.w3.org/2000/01/rdf-schema#label> "洪吉童传"@zh-hans .
+<http://www.wikidata.org/entity/Q16312117> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q16312117> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q16312117> <http://www.wikidata.org/prop/direct/P577> "1578-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q16312117> <http://www.w3.org/2000/01/rdf-schema#label> "Thambiran Vanakkam"@en .
+<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P625> "Point(-112.0 44.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q629792> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q629792> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q90> .
+<http://www.wikidata.org/entity/Q330926> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q330926> <http://www.wikidata.org/prop/direct/P577> "2006-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q330926> <http://www.w3.org/2000/01/rdf-schema#label> "On Love and Death"@en .
+<http://www.wikidata.org/entity/Q58912650> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q20> .
+<http://www.wikidata.org/entity/Q49959715> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q49959715> <http://www.wikidata.org/prop/direct/P577> "1593-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q49959715> <http://www.w3.org/2000/01/rdf-schema#label> "Variorum de rebus mathematicis responsorum liber VIII"@en .
+<http://www.wikidata.org/entity/Q668> <http://www.wikidata.org/prop/direct/P625> "Point(77.0 22.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q49478642> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q49478642> <http://www.wikidata.org/prop/direct/P577> "1903-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q49478642> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q29> .
+<http://www.wikidata.org/entity/Q49478642> <http://www.w3.org/2000/01/rdf-schema#label> "Soledades"@en .
+<http://www.wikidata.org/entity/Q7774872> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q7774872> <http://www.wikidata.org/prop/direct/P577> "1806-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q7774872> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q27> .
+<http://www.wikidata.org/entity/Q7774872> <http://www.w3.org/2000/01/rdf-schema#label> "The Wild Irish Girl"@en .
+<http://www.wikidata.org/entity/Q560352> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q560352> <http://www.wikidata.org/prop/direct/P577> "1819-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q560352> <http://www.w3.org/2000/01/rdf-schema#label> "The World as Will and Representation"@en .
+<http://www.wikidata.org/entity/Q51567977> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q51567977> <http://www.wikidata.org/prop/direct/P577> "1955-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q51567977> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q1492> .
+<http://www.wikidata.org/entity/Q51567977> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q1492> .
+<http://www.wikidata.org/entity/Q51567977> <http://www.w3.org/2000/01/rdf-schema#label> "Estrictament personal"@ca .
+<http://www.wikidata.org/entity/Q90> <http://www.wikidata.org/prop/direct/P625> "Point(2.351827777 48.856577777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<http://www.wikidata.org/entity/Q913599> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q913599> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q913599> <http://www.wikidata.org/prop/direct/P577> "1762-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q913599> <http://www.w3.org/2000/01/rdf-schema#label> "Emile, or On Education"@en .
+<http://www.wikidata.org/entity/Q58840822> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q15102491> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q15102491> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q15102491> <http://www.wikidata.org/prop/direct/P577> "1920-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q15102491> <http://www.w3.org/2000/01/rdf-schema#label> "فالنشتاين"@ar .
+<http://www.wikidata.org/entity/Q38279394> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q274744> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q274744> <http://www.wikidata.org/prop/direct/P577> "1811-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q274744> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q21> .
+<http://www.wikidata.org/entity/Q274744> <http://www.w3.org/2000/01/rdf-schema#label> "Sense and Sensibility"@id .
+<http://www.wikidata.org/entity/Q274744> <http://www.w3.org/2000/01/rdf-schema#label> "Акылдуулук менен сезгичтик"@ky .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P577> "1203-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q701996> .
+<http://www.wikidata.org/entity/Q131554> <http://www.wikidata.org/prop/direct/P840> <http://www.wikidata.org/entity/Q3852> .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Nibelungenlied"@en .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Cant dels Nibelungs"@ca .
+<http://www.wikidata.org/entity/Q131554> <http://www.w3.org/2000/01/rdf-schema#label> "Песен за Нибелунгите"@bg .
+<http://www.wikidata.org/entity/Q5708785> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q21> .
+<http://www.wikidata.org/entity/Q509209> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q509209> <http://www.wikidata.org/prop/direct/P577> "1918-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q509209> <http://www.w3.org/2000/01/rdf-schema#label> "Государство и революция"@ru .
+<http://www.wikidata.org/entity/Q17212810> <http://www.wikidata.org/prop/direct/P291> <http://www.wikidata.org/entity/Q17> .
+<http://www.wikidata.org/entity/Q3221842> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q3221842> <http://www.wikidata.org/prop/direct/P577> "1831-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q3221842> <http://www.w3.org/2000/01/rdf-schema#label> "The Shot"@en .
+<http://www.wikidata.org/entity/Q57449832> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q7725634> .
+<http://www.wikidata.org/entity/Q57449832> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q571> .
+<http://www.wikidata.org/entity/Q57449832> <http://www.wikidata.org/prop/direct/P577> "2018-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.wikidata.org/entity/Q57449832> <http://www.w3.org/2000/01/rdf-schema#label> "Mandíbula"@en .

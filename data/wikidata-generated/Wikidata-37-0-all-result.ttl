@@ -1,0 +1,296 @@
+@prefix rs:    <http://www.w3.org/2001/sw/DataAccess/tests/result-set#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+[ a                  rs:ResultSet ;
+  rs:resultVariable  "coord" , "subj" , "label" , "place" ;
+  rs:size            "36"^^xsd:int ;
+  rs:solution        [ rs:binding  [ rs:value     "Heptaméron"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1425915> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Gli scrittori d'Italia"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q55855202> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q17> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(136.0 35.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Shoku Nihongi"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q611399> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The World as Will and Representation"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q560352> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Juliette"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q540894> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q17> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(136.0 35.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Nihon Shoki"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q813935> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Model of Poesy"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q25111210> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Journey to the West"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q70784> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Chronicles of the Canongate"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q17352486> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Supplementum Apollonii Redivivi sive analysis problematis bactenus desiderati ad Apollonii Pergaei doctrinam a Marino Ghetaldo Patritio Regusino hujusque non ita pridem institutam"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q49959810> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1384> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-75.0 43.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "The Pioneers"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1898036> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1384> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-75.0 43.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "The Pioneers"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1898036> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Heptaméron"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1425915> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q84> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "The Black Prince"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q20036800> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Systematisch-alphabetisches Verzeichniss aller bisher bey den Fürbildungen zur Sammlung europäischer Schmetterlinge angegebenen Gattungsbenennungen"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q55722661> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Thambiran Vanakkam"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16312117> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "An den Mond"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q482554> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q78> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(7.591111111 47.550555555)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Institutes of the Christian Religion"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q371558> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Emile, or On Education"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q913599> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q8717> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-5.983333333 37.383333333)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Belianis"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q815580> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Ghost-Seer"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1193812> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Chronicles of the Canongate"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q17352486> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Primary Chronicle"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q192551> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Emile, or On Education"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q913599> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q27> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-8.0 53.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "The Wild Irish Girl"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q7774872> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Variorum de rebus mathematicis responsorum liber VIII"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q49959715> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q27> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-8.0 53.0)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Harrington"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16385930> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Legend of Sleepy Hollow"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q72309> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Hymner til natten"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q128670> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Song of Roland"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q185427> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "The Ghost-Seer"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q1193812> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q701996> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(8.359722222 49.630277777)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Nibelungenlied"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q131554> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q3852> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(8.365277777 49.631944444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "Nibelungenlied"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q131554> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Dukus Horant"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q251848> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     "Thambiran Vanakkam"@en ;
+                                     rs:variable  "label"
+                                   ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q16312117> ;
+                          rs:variable  "subj"
+                        ] ] ;
+  rs:solution        [ rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q84> ;
+                                     rs:variable  "place"
+                                   ] ;
+            rs:binding  [ rs:value     "Point(-0.1275 51.507222222)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+                          rs:variable  "coord"
+                        ] ;
+            rs:binding  [ rs:value     "The Black Prince"@en ;
+                          rs:variable  "label"
+                        ] ;
+            rs:binding  [ rs:value     <http://www.wikidata.org/entity/Q20036800> ;
+                          rs:variable  "subj"
+                        ] ]
+] .

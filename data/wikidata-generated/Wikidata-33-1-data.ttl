@@ -1,0 +1,10 @@
+<http://synthetic/0> <http://www.wikidata.org/prop/direct/P275> "lit0"^^<http://any/iri> .
+<http://synthetic/0> <http://www.w3.org/2000/01/rdf-schema#label> <http://synthetic/3> .
+<http://synthetic/0> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q8513> .
+<http://synthetic/0> <http://synthetic/3> "num2"^^<http://any/number> .
+<http://synthetic/0> <http://synthetic/1> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/3> .
+<http://synthetic/0> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .
+<http://synthetic/2> <http://synthetic/0> <http://synthetic/1> <http://synthetic/0> .
+<http://synthetic/1> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .
+<http://synthetic/4> <http://synthetic/0> <http://synthetic/0> <http://synthetic/0> .

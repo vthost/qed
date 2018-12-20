@@ -1,0 +1,22 @@
+<http://www.wikidata.org/entity/Q2291> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q2291> <http://www.w3.org/2000/01/rdf-schema#label> "トト (俳優)"@ja .
+<http://www.wikidata.org/entity/Q2252> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q2252> <http://www.w3.org/2000/01/rdf-schema#label> "Էդվին(Բազ) Օլդրին"@hy .
+<http://synthetic/1> <http://www.w3.org/2001/XMLSchema#boolean> "lit3"@ANY_LANGUAGE .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> "lit4"^^<http://any/iri> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> "num4"^^<http://any/number> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> "num2"^^<http://any/number> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> _:BX5FX3Ablank0 .
+<http://synthetic/1> <http://www.wikidata.org/prop/direct/P31> "num0"^^<http://any/number> .
+<http://synthetic/1> <http://www.wikidata.org/entity/Q5> <http://synthetic/0> .
+<http://synthetic/1> <http://www.w3.org/2000/01/rdf-schema#label> "num3"^^<http://any/number> .
+<http://www.wikidata.org/entity/Q23> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q23> <http://www.w3.org/2000/01/rdf-schema#label> "George Washington"@ace .
+<http://www.wikidata.org/entity/Q23> <http://www.w3.org/2000/01/rdf-schema#label> "George Washington"@af .
+<http://www.wikidata.org/entity/Q23> <http://www.w3.org/2000/01/rdf-schema#label> "George Washington"@de .
+<http://www.wikidata.org/entity/Q23> <http://www.w3.org/2000/01/rdf-schema#label> "George Washington"@en .
+<http://www.wikidata.org/entity/Q11515> <http://www.wikidata.org/prop/direct/P31> <http://www.wikidata.org/entity/Q5> .
+<http://www.wikidata.org/entity/Q11515> <http://www.w3.org/2000/01/rdf-schema#label> "(.)p(...)nin"@en .
+<http://www.wikidata.org/entity/Q11515> <http://www.w3.org/2000/01/rdf-schema#label> "(.)p(...)nin"@de .
+<http://synthetic/3> <http://www.w3.org/2001/XMLSchema#boolean> "ANY_LANGUAGE" .
