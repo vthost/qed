@@ -1,0 +1,25 @@
+SELECT DISTINCT ?item ?LabelEN ?LabelUK ?page_titleRO WHERE {
+ ?item wdt:P31 wd:Q532 .
+ ?item wdt:P17 wd:Q212 .
+ ?article schema:about ?item ;
+             schema:isPartOf <https://ro.wikipedia.org/> ;
+	     schema:name ?page_titleRO .
+ ?item rdfs:label ?LabelEN filter (lang(?LabelEN) = "en") .
+ ?item rdfs:label ?LabelUK filter (lang(?LabelUK) = "uk") .
+} LIMIT 300
+
+######
+SELECT DISTINCT ?item ?wikisourceSitelink ?wikisourceLanguage WHERE {
+ ?wikisourceSitelink schema:isPartOf [ wikibase:wikiGroup "wikisource" ];
+                                schema:inLanguage ?wikisourceLanguage;
+				schema:about ?item.
+ ?paper wdt:P31 wd:Q13442814;
+            wdt:P50 ?item .
+} ORDER BY ?wikisourceLanguage LIMIT 300
+
+######
+SELECT DISTINCT ?band ?bandLabel WHERE {
+ ?band  wdt:P31 wd:Q5741069 .
+ ?band rdfs:label ?bandLabel .
+ FILTER(STRSTARTS(?bandLabel, 'M')) .
+} 
