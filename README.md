@@ -7,12 +7,12 @@ For a more detailed introduction into the approach and a coarse overview of the 
 # /qed-core
 Contains the query and data extraction. It also contains code for retrieving the answers based on only the extracted datasets. 
 
-# /qed-gen
+# /qed-generator
 Contains the data generation, integration of generated and extracted data, and the answer generation. 
 
 # Requirements
 - qed-core: [maven](https://maven.apache.org/)
-- qed-gen: qed-core, [ant](https://ant.apache.org/), [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
+- qed-generator: qed-core, [ant](https://ant.apache.org/), [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
 
 # Setup
 If you only want to use qed-core: Run 'mvn clean install' in the top-level directory.
