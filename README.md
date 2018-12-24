@@ -7,12 +7,12 @@ For a more detailed introduction into the approach and a coarse overview of the 
 # /qed-core
 Contains the query and data extraction. It also contains code for retrieving the answers based on only the extracted datasets. 
 
-# /qed-gen
+# /qed-generator
 Contains the data generation, integration of generated and extracted data, and the answer generation. 
 
 # Requirements
 - qed-core: [maven](https://maven.apache.org/)
-- qed-gen: qed-core, [ant](https://ant.apache.org/), [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
+- qed-generator: qed-core, [ant](https://ant.apache.org/), [maven](https://maven.apache.org/), [quetzal](https://github.com/Quetzal-RDF/quetzal)
 
 # Setup
 If you only want to use qed-core: Run 'mvn clean install' in the top-level directory.
@@ -29,8 +29,11 @@ The /data directory also contains a text file with the example queries from Wiki
 For reproducing the DBpedia experiments, we recommend to host the DBpedia data from the time point at which the LSQ data set was created ([DBpedia
 v.3.5.1](http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-set-351)), since some properties represented in the LSQ data set are specific to that (see the LSQ paper for a more detailed overview of that query format, it is linked at http://aksw.github.io/LSQ/). However, if you want to just get an idea of QED (maybe with custom queries over DBpedia) you can also take the current [DBpedia version](http://dbpedia.org/sparql).
 
+# Generator demo
+To illustrate how the generator system can work, take a look at the qed-generator/source/com/ibm/qed/genertor/Demo class.  That class runs QED to create download data for Wikidata queries, and then  generate additional data to fill out the dataset.  There is a run configuration in qed-generator/launchers/Demo.launch that provides aguments to run on the provided test queries in qed-generator/demo/wikidata.txt; it specifies both the data file and also the lirary path needed for native libraries required by the solver.
+
 # Note
-This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or jdolbyATgmail.com!
+This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or juliandolbyATgmail.com!
 
 
 
