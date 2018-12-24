@@ -23,6 +23,6 @@
 
   <modules>
     <module>qed-core</module>
-    <module>lsd-checker</module>
+    <module>qed-generator</module>
   </modules>
 </project>

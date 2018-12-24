@@ -1,4 +1,0 @@
-<http://synthetic/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
-<http://www.w3.org/2001/XMLSchema#integer> <http://synthetic/0> <http://synthetic/0> .
-<http://www.w3.org/2001/XMLSchema#double> <http://synthetic/0> <http://synthetic/0> .
-<http://synthetic/4> <http://synthetic/0> <http://synthetic/0> .

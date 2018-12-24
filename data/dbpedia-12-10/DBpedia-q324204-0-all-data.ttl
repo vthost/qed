@@ -1,4 +1,0 @@
-_:BX5FX3Ablank0 <http://xmlns.com/foaf/0.1/name> "lit1"@ANY_LANGUAGE .
-_:BX5FX3Ablank0 <http://dbpedia.org/resource/Category:Israeli_musicians> <http://www.w3.org/2001/XMLSchema#double> .
-_:BX5FX3Ablank0 <http://www.w3.org/2004/02/skos/core#subject> <http://dbpedia.org/resource/Category:Israeli_musicians> .
-_:BX5FX3Ablank0 <http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/2001/XMLSchema#boolean> .

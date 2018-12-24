@@ -1,4 +1,4 @@
-package com.ibm.qed.checker.drivers;
+package com.ibm.qed.generator.drivers;
 
 import java.io.File;
 import java.io.FileOutputStream;

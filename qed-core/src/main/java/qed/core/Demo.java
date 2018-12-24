@@ -56,12 +56,12 @@ public class Demo {
 		Utils.writeManifestFiles(path);
 	}
 	
-	public void extractLogFileBasedDatasets(String path, LogFileDataset dataset) {
+	public String extractLogFileBasedDatasets(String path, LogFileDataset dataset) {
 		 
-		extractLogFileBasedDatasets(path, dataset.getName(), dataset);
+		return extractLogFileBasedDatasets(path, dataset.getName(), dataset);
 	}
 	
-	public void extractLogFileBasedDatasets(String path, String name, LogFileDataset dataset) {
+	public String extractLogFileBasedDatasets(String path, String name, LogFileDataset dataset) {
 		 
 		path = getNewDirectory(path + name);
 		
@@ -71,6 +71,7 @@ public class Demo {
 		
 		Utils.writeManifestFiles(path);
 		
+		return path;
 	}
 	
 	public void printQueriesInDir(String directory) {

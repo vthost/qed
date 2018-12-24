@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/qed-checker/test-source/com/ibm/lsd/checker/test/BasicTest.java"/>
+        <listEntry value="/qed-generator/test-source/com/ibm/lsd/checker/test/BasicTest.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
@@ -14,7 +14,7 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ibm.lsd.checker.test.BasicTest"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="qed-checker"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="qed-generator"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea -Djava.library.path=${project_loc:/rdfstore-checker}/jni/darwin_x86_64:${project_loc:/rdfstore-checker}/jni/linux_x86_64"/>
 </launchConfiguration>

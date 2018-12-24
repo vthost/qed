@@ -681,7 +681,11 @@ private Node getSecurePart(TriplePath t, int i) {
 		String[] todelete = { Utils.CONSTRUCT_QUERIES_FILE_EXT, 
 				Utils.DATA_FILE_EXT, Utils.RESULT_FILE_EXT};		
 		
-		Utils.cleanDir(d, todelete);
+		if (d.exists()) {
+			Utils.cleanDir(d, todelete);
+		} else {
+			d.mkdirs();
+		}
 //	   -------------------------------------------------------------------------------------			
 	
 		List<String[]> lqs = new ArrayList<String[]>();

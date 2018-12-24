@@ -1,4 +1,0 @@
-<http://dbpedia.org/resource/Kij%C5%ABr%C5%8D_Shidehara> <http://xmlns.com/foaf/0.1/page> <http://synthetic/0> .
-<http://dbpedia.org/resource/Kij%C5%ABr%C5%8D_Shidehara> <http://dbpedia.org/property/abstract> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://dbpedia.org/resource/Kij%C5%ABr%C5%8D_Shidehara> <http://dbpedia.org/property/abstract> "lit1"@en .
-<http://dbpedia.org/resource/Kij%C5%ABr%C5%8D_Shidehara> <http://dbpedia.org/property/abstract> <http://www.w3.org/2001/XMLSchema#double> .

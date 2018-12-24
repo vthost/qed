@@ -6,9 +6,9 @@ import java.net.URL;
 
 import org.junit.Test;
 
-import com.ibm.qed.checker.drivers.CheckerDriver;
-import com.ibm.qed.checker.drivers.ExpandAllDriver;
-import com.ibm.qed.checker.drivers.ExpandEachDriver;
+import com.ibm.qed.generator.drivers.CheckerDriver;
+import com.ibm.qed.generator.drivers.ExpandAllDriver;
+import com.ibm.qed.generator.drivers.ExpandEachDriver;
 
 public class BasicTest {
 

@@ -1,4 +1,4 @@
-package com.ibm.qed.checker;
+package com.ibm.qed.generator;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
