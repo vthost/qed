@@ -29,7 +29,7 @@ The /data directory contains a text file with the example queries from Wikidata 
 For reproducing the DBpedia experiments, we recommend to host the DBpedia data from the time point at which the LSQ data set was created ([DBpedia
 v.3.5.1](http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-set-351)), since some properties represented in the LSQ data set are specific to that (see the LSQ paper for a more detailed overview of that query format, it is linked at http://aksw.github.io/LSQ/). However, if you want to just get an idea of QED (maybe with custom queries over DBpedia) you can also query the (current) [DBpedia endpoint](http://dbpedia.org/sparql).
 
-# /qed-generator demo
+# /qed-generator Demo
 To illustrate how the generator system can work, take a look at the qed-generator/source/com/ibm/qed/generator/Demo class.  That class downloads data from Wikidata, and then generates additional data to fill out the dataset.  There is a run configuration in qed-generator/launchers/Demo.launch that provides aguments to run on the provided test queries in qed-generator/demo/wikidata.txt; it specifies both the data file and also the library path needed for native libraries required by the solver.
 
 # Note
