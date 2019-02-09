@@ -33,7 +33,7 @@ v.3.5.1](http://wiki.dbpedia.org/services-resources/datasets/data-set-35/data-se
 To illustrate how the generator system can work, take a look at the qed-generator/source/com/ibm/qed/generator/Demo class.  That class downloads data from Wikidata, and then generates additional data to fill out the dataset.  There is a run configuration in qed-generator/launchers/Demo.launch that provides aguments to run on the provided test queries in qed-generator/demo/wikidata.txt; it specifies both the data file and also the library path needed for native libraries required by the solver.
 
 # Note
-This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to contact us under veronika.thostATgmail.com or juliandolbyATgmail.com!
+This is the initial version of QED, and we are heavily working on a more stable version. If you have questions, ideas for extensions, or other issues, do not hesitate to open an issue!
 
 
 
